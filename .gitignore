@@ -35,3 +35,6 @@ dist-ssr
 .impeccable/mocks/comp-c.png*
 .impeccable/mocks/decision/*
 !.impeccable/mocks/decision/canon.png
+
+# wrangler working files
+.wrangler

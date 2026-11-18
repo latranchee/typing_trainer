@@ -1,0 +1,19 @@
+// Cloudflare Worker that serves the built trainer as static assets at petitdoigt.ca.
+// There is no Worker script: every request is answered from ./dist.
+// Build first (`npm run build`), then `npx wrangler deploy`.
+{
+  "name": "petitdoigt",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "petitdoigt.ca",
+      "custom_domain": true
+    }
+  ],
+  // The custom domain is the only public address.
+  "workers_dev": false,
+  "preview_urls": false
+}

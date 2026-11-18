@@ -1,6 +1,6 @@
-import { fingerKind } from '../core/fingers';
+import { fingerKind, fingerName } from '../core/fingers';
 import type { Layout } from '../core/layouts';
-import { ROWS } from '../core/physical';
+import { ROW_IDS, ROWS } from '../core/physical';
 import { el, flash } from './dom';
 
 export type KeyRole = 'next' | 'shift' | 'anchor';
@@ -22,12 +22,27 @@ export class KeyboardView {
   readonly root = el('div.kb', { 'aria-hidden': 'true' });
   private keys = new Map<string, HTMLElement>();
   private marked: HTMLElement[] = [];
+  private layout: Layout | null = null;
+  private picker: ((code: string) => void) | null = null;
+  private picked: string | null = null;
 
   constructor() {
+    const pick = (event: Event): void => {
+      const keyEl = (event.target as Element).closest<HTMLElement>('.key[data-f]');
+      if (this.picker && keyEl?.dataset.code) this.picker(keyEl.dataset.code);
+    };
+    this.root.addEventListener('click', pick);
+    this.root.addEventListener('keydown', (event) => {
+      if (!this.picker || (event.key !== 'Enter' && event.key !== ' ')) return;
+      event.preventDefault();
+      pick(event);
+    });
+
     ROWS.forEach((row, rowIndex) => {
-      const rowEl = el('div.kb-row');
+      // The row sets the shade of its keys and the legend mark beside it.
+      const rowEl = el('div.kb-row', { 'data-row': ROW_IDS[rowIndex] });
       for (const key of row) {
-        const keyEl = el('div.key', { 'data-code': key.code });
+        const keyEl = el('div.key', { 'data-code': key.code, 'data-row': ROW_IDS[rowIndex] });
         keyEl.style.setProperty('--span', String(key.w * 4));
         if (rowIndex === QUIET_ROW) keyEl.classList.add('is-quiet');
         keyEl.append(el('div.cap'));
@@ -39,6 +54,7 @@ export class KeyboardView {
   }
 
   setLayout(layout: Layout): void {
+    this.layout = layout;
     for (const key of ROWS.flat()) {
       const keyEl = this.keys.get(key.code)!;
       const cap = keyEl.firstElementChild as HTMLElement;
@@ -89,8 +105,12 @@ export class KeyboardView {
     if (keyEl) flash(keyEl, 'is-wrong', 220);
   }
 
-  /** Stats view: key strength follows how much work the key needs, on a fixed five-step ramp. */
+  /**
+   * Stats view: key strength follows how much work the key needs, on a fixed
+   * five-step ramp. Row shades switch off there, so brightness means one thing.
+   */
   setHeat(weakness: ((code: string) => number) | null): void {
+    this.root.classList.toggle('is-heat', weakness !== null);
     for (const [code, keyEl] of this.keys) {
       if (!weakness) {
         keyEl.style.removeProperty('--heat');
@@ -100,6 +120,34 @@ export class KeyboardView {
       const step = Math.min(HEAT_STEPS.length - 1, Math.floor(weakness(code) * HEAT_STEPS.length));
       keyEl.style.setProperty('--heat', String(HEAT_STEPS[step]));
       keyEl.classList.toggle('is-dim', step < DIM_STEPS);
+    }
+  }
+
+  /**
+   * Stats view: with a picker, every key that has a finger becomes a button, and
+   * `picked` is the one shown as chosen. Without one the board is a picture again.
+   */
+  setPicker(picker: ((code: string) => void) | null, picked: string | null = null): void {
+    this.picker = picker;
+    this.picked = picker ? picked : null;
+    this.root.classList.toggle('is-pick', picker !== null);
+    if (picker) this.root.removeAttribute('aria-hidden');
+    else {
+      if (this.root.contains(document.activeElement)) (document.activeElement as HTMLElement).blur();
+      this.root.setAttribute('aria-hidden', 'true');
+    }
+    for (const [code, keyEl] of this.keys) {
+      const on = picker !== null && keyEl.hasAttribute('data-f') && !keyEl.dataset.fTarget;
+      keyEl.classList.toggle('is-picked', on && code === this.picked);
+      if (!on) {
+        for (const name of ['role', 'tabindex', 'aria-label', 'aria-pressed']) keyEl.removeAttribute(name);
+        continue;
+      }
+      const label = code === 'Space' ? 'space bar' : `key ${this.layout?.legend(code)?.base ?? code}`;
+      keyEl.setAttribute('role', 'button');
+      keyEl.setAttribute('tabindex', '0');
+      keyEl.setAttribute('aria-label', this.layout ? `${label}, ${fingerName(this.layout.fingerOf(code))}` : label);
+      keyEl.setAttribute('aria-pressed', String(code === this.picked));
     }
   }
 

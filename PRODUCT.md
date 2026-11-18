@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Vite + TypeScript (user's choice, 2026-11-17). Runs from a localhost URL on the owner's Windows machine. Progress is stored in the browser. No backend.
+Vite + TypeScript (user's choice, 2026-11-17). Runs from a localhost URL on the owner's Windows machine and, since 2026-11-18, at https://petitdoigt.ca as a static-assets Cloudflare Worker. Progress is stored in the browser. No backend.
 
 ## Users
 
@@ -20,7 +20,7 @@ A typing trainer that retrains which finger hits each key, so the ring and pinky
 
 ## Positioning
 
-Ordinary typing tests score which key was hit. This trainer teaches which finger hits it: every key carries its finger's color and shape, and the active finger is highlighted on screen.
+Ordinary typing tests score which key was hit. This trainer teaches which finger hits it: every key carries its finger's color, its shape and shade say which row it sits on, and the active finger is highlighted on screen.
 
 ## Operating Context
 
@@ -31,19 +31,24 @@ Practice sessions at his desk, eyes on the screen. The keycaps do not match the 
 Confirmed by the user:
 
 - Several exercises aimed at ring and pinky use.
-- One exercise in the falling-notes rhythm genre: each letter arrives with a color and shape per finger, plus a highlight of the finger to use.
+- One exercise in the falling-notes rhythm genre: each letter arrives with a color per finger, plus a highlight of the finger to use.
+- Color means the finger; shape and shade mean the row (2026-11-18, replacing the first build's one shape per finger). The bottom row is darker, the home row the plain color, the top row brighter.
 - A rolling average WPM counter.
 - Layout dropdown: Canadian French and Colemak-DH at minimum. The app applies the layout itself from physical key positions, so Colemak-DH can be tried without installing it.
 - On-screen keyboard with the selected layout's legends.
 - Practice text: English words, French words (accents included), and a no-words mode that drills the most common letter associations.
+- Score history (2026-11-18): for the layout, for each finger and for each letter.
+- A profile switcher (2026-11-18): each profile keeps its own options and numbers, so another typist or another experiment does not mix into his.
+- A toggle that stops performance tracking (2026-11-18). While it is off nothing is saved, and the screen says so.
 
 Hard constraint: a browser cannot see which finger pressed a key. The trainer may only claim what key events can prove (which key, which Shift, which keys are held, timing).
 
-Undecided: extra layouts beyond the two named, any deployment beyond localhost.
+Undecided: extra layouts beyond the two named.
 
 ## Brand Commitments
 
-- Name: auriculaire (confirmed 2026-11-17), lowercase.
+- Name: petitdoigt, lowercase (2026-11-18, with the petitdoigt.ca domain; it replaces the first name, auriculaire, which survives only in the browser storage keys).
+- Mark: four finger bars with the pinky lit in its own color.
 - Visual stance: the category-standard quiet-dark typing-test look, chosen by the user over bolder directions. Standing preference: convention played straight, no themed skin.
 - Quality bar named by the user: Linear / Raycast (tight spacing, soft surfaces, crisp motion).
 - The user's bar, in his words: "Make it look super good."
@@ -61,4 +66,4 @@ None. No benchmarks, testimonials or learning-speed claims exist; future work mu
 
 ## Accessibility & Inclusion
 
-Finger coding uses color and shape together, never color alone.
+Color is the finger; shape and shade are the row. Neither is ever the only cue: a finger is also told by its lane, its key column, its lit finger or its name, and a row by its shape as well as its shade.

@@ -2,6 +2,7 @@ import { fingerKind, fingerName } from '../core/fingers';
 import type { AnchorFinger, AnchorSet } from '../core/generator';
 import { ANCHOR_FINGERS, makeAnchorSet } from '../core/generator';
 import type { KeyEvt } from '../core/input';
+import { rowOf } from '../core/physical';
 import { el, flash } from '../ui/dom';
 import type { Drill, DrillHost, Note, OptionGroup } from './types';
 
@@ -53,6 +54,7 @@ export class AnchorsDrill implements Drill {
       stroke,
       label: layout.strokeLabel(stroke),
       finger,
+      row: rowOf(stroke.code),
       char: layout.strokeLabel(stroke),
       last: true,
     }));
@@ -76,7 +78,8 @@ export class AnchorsDrill implements Drill {
       }
     }
 
-    this.tokens = this.notes.map((note) => el('span.tok', { 'data-f': kind }, el('span', {}, note.label)));
+    // One finger, so one color: the shape and shade say which row each tap reaches.
+    this.tokens = this.notes.map((note) => el('span.tok', { 'data-f': kind, 'data-row': note.row }, el('span', {}, note.label)));
     this.track.replaceChildren(...this.tokens);
     this.status.textContent = '';
     this.status.classList.remove('is-error');

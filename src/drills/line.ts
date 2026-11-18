@@ -60,9 +60,13 @@ export class LineDrill implements Drill {
     this.notes.forEach((note, i) => {
       const firstOfChar = i === 0 || this.notes[i - 1].last;
       if (firstOfChar) {
-        // The finger shown is the one that finishes the character.
+        // The finger and row shown are those of the stroke that finishes the character.
         const closing = this.notes.slice(i).find((candidate) => candidate.last) ?? note;
-        cell = el(note.char === ' ' ? 'span.ch.sp' : 'span.ch', { 'data-f': fingerKind(closing.finger) }, note.char === ' ' ? String.fromCharCode(0xa0) : note.char);
+        cell = el(
+          note.char === ' ' ? 'span.ch.sp' : 'span.ch',
+          { 'data-f': fingerKind(closing.finger), 'data-row': closing.row },
+          note.char === ' ' ? String.fromCharCode(0xa0) : note.char,
+        );
         word.append(cell);
         this.total++;
         if (note.char === ' ') {

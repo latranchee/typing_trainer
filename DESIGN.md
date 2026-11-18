@@ -1,5 +1,5 @@
 ---
-name: auriculaire
+name: petitdoigt
 description: A typing trainer that teaches which finger hits each key.
 colors:
   charcoal-ground: "#212227"
@@ -16,10 +16,18 @@ colors:
   mustard: "#f8d95c"
   miss-coral: "#f2715f"
   finger-ink: "#1d1e22"
+  finger-pinky-top: "#fcb3ca"
   finger-pinky: "#fb8ab1"
+  finger-pinky-bottom: "#e46695"
+  finger-ring-top: "#ffe99f"
   finger-ring: "#fbd75a"
+  finger-ring-bottom: "#e1b905"
+  finger-middle-top: "#aeddae"
   finger-middle: "#7fcc81"
+  finger-middle-bottom: "#57b25c"
+  finger-index-top: "#9ac1ef"
   finger-index: "#6ba9f2"
+  finger-index-bottom: "#448cde"
   finger-thumb: "#aab0ba"
 typography:
   display:
@@ -201,15 +209,45 @@ components:
     backgroundColor: "{colors.bar-track}"
     rounded: "{rounded.hair}"
     height: "0.5rem"
+  tracking-switch:
+    backgroundColor: "{colors.key-slate}"
+    textColor: "{colors.cool-grey-text}"
+    typography: "{typography.label}"
+    rounded: "{rounded.pill}"
+    height: "1.125rem"
+  tracking-switch-on:
+    backgroundColor: "{colors.hairline-strong}"
+  profile-menu:
+    backgroundColor: "{colors.key-slate}"
+    rounded: "{rounded.cap}"
+    padding: "0.25rem"
+    width: "15.5rem"
+  profile-input:
+    backgroundColor: "{colors.charcoal-ground}"
+    textColor: "{colors.warm-paper-text}"
+    typography: "{typography.label}"
+    rounded: "{rounded.inner}"
+    height: "2rem"
+  stats-pick:
+    textColor: "{colors.warm-paper-text}"
+    typography: "{typography.label}"
+    rounded: "{rounded.inner}"
+    padding: "0.25rem 0.5rem"
+  stats-pick-on:
+    backgroundColor: "{colors.hairline-strong}"
+  history-chart:
+    textColor: "{colors.muted-label}"
+    typography: "{typography.micro}"
+    height: "6.5rem"
 ---
 
-# Design System: auriculaire
+# Design System: petitdoigt
 
 ## Overview
 
 **Creative North Star: "The Practice Cockpit"**
 
-auriculaire is the familiar quiet-dark typing test finished to the Linear / Raycast standard, with one change of unit: the finger, not the key, is what the screen teaches. One fixed screen holds three zones on a charcoal ground. The left rail carries the product's numbers, the centre stage drops falling notes straight onto an on-screen keyboard, and the right rail shows the hands with the finger to use filled in. Nothing scrolls on desktop and nothing needs a click to start; the primary action is typing.
+petitdoigt is the familiar quiet-dark typing test finished to the Linear / Raycast standard, with one change of unit: the finger, not the key, is what the screen teaches. One fixed screen holds three zones on a charcoal ground. The left rail carries the product's numbers, the centre stage drops falling notes straight onto an on-screen keyboard, and the right rail shows the hands with the finger to use filled in. Nothing scrolls on desktop and nothing needs a click to start; the primary action is typing.
 
 The palette is restrained everywhere except where it carries meaning. Chrome stays in four steps of cool slate and three greys of text; color arrives only as finger hues, one mustard accent for the product's own figures, and a coral for misses. Zones are separated by space and low-contrast hairlines rather than cards or boxes. Roboto Mono runs through everything, so legends, drill text and numerals share one grid and tabular digits never jump.
 
@@ -217,24 +255,28 @@ Motion is short and ease-out, with no bounce. The signature beat is a note landi
 
 **Key Characteristics:**
 - One screen scaled from a 1536 x 1024 reference frame through the root font size.
-- Finger hue plus finger shape is the system's only chromatic language besides mustard and coral.
+- Color is the finger; shape and shade are the row. That coding is the system's only chromatic language besides mustard and coral.
 - Flat charcoal surfaces; soft 8px key caps lit by a one-pixel top highlight.
 - Lowercase text throughout, monospace throughout.
 - Every control shares one hover / release / press timing.
 
 ## Colors
 
-A cool charcoal chrome with four soft finger hues, one mustard accent and one coral for misses.
+A cool charcoal chrome with four soft finger hues in three row shades each, one mustard accent and one coral for misses.
 
 ### Primary
 - **Mustard** (`mustard`): the wordmark and the product's own numbers: the live WPM numeral, acc and streak values, the result WPM, the stats average and its trend line. On a result or stats view the live WPM steps back to Muted Label so the centre figure leads. The build also uses mustard for the focus ring, text selection and the active language; those are the existing exceptions and new surfaces should not add more.
 
 ### Secondary (finger hues)
-- **Pinky Pink** (`finger-pinky`): pinky keys, notes, bars and mattes. Shape: diamond.
-- **Ring Yellow** (`finger-ring`): ring-finger keys, notes, bars and mattes. Shape: triangle. Its value sits within a hair of Mustard (both about oklch 89% 0.15 at hue 93 to 95), so on screen the two read as one color. Treat that as an open defect; see Do's and Don'ts.
-- **Middle Green** (`finger-middle`): middle-finger keys, notes, bars and mattes. Shape: square.
-- **Index Blue** (`finger-index`): index-finger keys, notes, bars and mattes. Shape: circle.
-- **Thumb Grey** (`finger-thumb`): the space bar's finger. Shape: horizontal bar. Same value as Cool Grey Text.
+The hue names the finger. Each hue comes in three shades, one per letter row; the named value is the home-row shade and is also the finger's own color wherever no row is involved (bars, fingertip dots, finger markers).
+
+- **Pinky Pink** (`finger-pinky`): pinky keys, notes, bars and mattes. Top row `finger-pinky-top`, bottom row `finger-pinky-bottom`.
+- **Ring Yellow** (`finger-ring`): ring-finger keys, notes, bars and mattes. Top row `finger-ring-top`, bottom row `finger-ring-bottom`. Its home value sits within a hair of Mustard (both about oklch 89% 0.15 at hue 93 to 95), so on screen the two read as one color. Treat that as an open defect; see Do's and Don'ts.
+- **Middle Green** (`finger-middle`): middle-finger keys, notes, bars and mattes. Top row `finger-middle-top`, bottom row `finger-middle-bottom`.
+- **Index Blue** (`finger-index`): index-finger keys, notes, bars and mattes. Top row `finger-index-top`, bottom row `finger-index-bottom`.
+- **Thumb Grey** (`finger-thumb`): the space bar's finger, one shade. Shape: horizontal bar. Same value as Cool Grey Text.
+
+**Row shades.** Top-row shades are brighter and softer (about +0.075 OKLCH lightness at 0.6 of the chroma; the yellow, already near white, steps up +0.05 so it stays yellow). Bottom-row shades are darker and richer (-0.09 lightness, chroma pushed to the gamut edge). The darkest shade, `finger-index-bottom`, still carries Finger Ink at 4.8:1 and reads on Charcoal Ground at 4.6:1; a new shade has to clear the same two checks.
 
 ### Tertiary
 - **Miss Coral** (`miss-coral`): a wrong key, a wrong letter, a missing anchor, the error ring around the front note, error notes. Nothing else.
@@ -258,7 +300,11 @@ The highway fades notes in at the top through a mask (`linear-gradient(to bottom
 ### Named Rules
 **The Finger Means Finger Rule.** Pink, yellow, green, blue and the thumb grey mean a finger and nothing else. Never use them for status, category, decoration or charts that are not about fingers.
 
-**The Shape Pairing Rule.** A finger color standing alone (a falling note, an anchor token, a stats-table marker) always takes its finger's shape: diamond pinky, triangle ring, square middle, circle index, bar thumb. Finger-colored elements that are anchored to a key position or a finger name (key caps, hand mattes, fingertip dots, labelled bars) carry that position or name as their second channel.
+**The Row Shape Rule.** Shape and shade mean the row and nothing else. A mark for a key takes its row's shape, which points the way the finger travels from the home row: a triangle pointing up in the brighter shade for the top row, a circle in the plain hue for the home row, a triangle pointing down in the darker shade for the bottom row. The number row, when it is a target, is a diamond in the top-row shade; the space bar is a horizontal bar. A mark for a finger with no key in play (a stats-table finger marker, a result line) is that finger's home circle.
+
+**The Second Channel Rule.** Color is never the only cue for the finger. A falling note sits in its finger's lane, a key cap sits in its finger's column, a matte fills the finger itself, and bars, tables and the next-key line spell the finger's name. The row is never shade alone either: shape always travels with it, and the next-key line spells the row.
+
+**The One Brightness Rule.** In the stats view the keyboard's brightness means how much work a key needs, so the row shades switch off there and every key shows its home shade.
 
 **The Mustard Is Ours Rule.** Mustard is for the wordmark and the figures the product measures. It is never a fill, never a button, never a finger.
 
@@ -278,12 +324,12 @@ The highway fades notes in at the top through a mask (`linear-gradient(to bottom
 - **Headline Small** (700, 3.5rem, 1): the stats average; on narrow screens also the live WPM.
 - **Title** (700, 1.9375rem, 1.1): acc and streak values.
 - **Drill** (400, 1.75rem, 3.5rem line box): words and pairs drill text and the anchors heading.
-- **Wordmark** (600, 1.4375rem, 0.01em): "auriculaire", lowercase, mustard.
+- **Wordmark** (600, 1.4375rem, 0.01em): "petitdoigt", lowercase, mustard. The mark leads it, 0.4em away: four finger bars standing on the baseline (index, middle, ring, pinky; the middle reaches the ascender line) in Muted Label, with the pinky bar in the pinky's plain hue. The favicon is the same mark on a Charcoal Ground tile.
 - **Body** (400, 1.0625rem, 1.3): tabs, stat labels, captions, finger names, result list.
 - **Base** (400, 1rem, 1.3): the body default, the fr / en toggle, anchor copy and status (1.5 line height on the anchor explanation), the result hint.
 - **Label** (400, 0.9375rem): dropdown, menu options, table cells, line meta, stage notes, stats headings.
 - **Label Small** (400, 0.875rem): option labels and segments, option notes, key hints, neutral and modifier key legends.
-- **Micro** (400, 0.8125rem): shifted legends on key caps, the stats chart caption.
+- **Micro** (400, 0.8125rem): shifted legends on key caps, the stats chart's caption, values and dates, the unit line under the stats figure, profile menu messages.
 - **Legend** (500, 1.0625rem, 1): finger key legends in Finger Ink.
 
 The root scale is itself part of the ramp: `root` (`clamp(11px, min(1.04167vw, 1.5625vh), 28px)`, 16px at the reference frame) sizes every rem step above.
@@ -312,7 +358,7 @@ The system is flat and tonal. Depth comes from three slate steps over the charco
 ### Shadow Vocabulary
 - **Cap top light** (`box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07)`): neutral, quiet and dimmed key caps.
 - **Finger cap top light** (`box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26)`): key caps filled with a finger hue.
-- **Menu float** (`box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 0.35)`): the open layout dropdown.
+- **Menu float** (`box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 0.35)`): the open layout dropdown and profile menu.
 
 ### Named Rules
 **The No Boxes Rule.** Zones are separated by space and Hairline rules, never by cards, panels or bordered containers. Filled shapes are reserved for controls, key caps and finger tokens.
@@ -333,6 +379,12 @@ Text-only and quiet: tabs and language toggles are bare text with no fill.
 - **Button:** 1px Hairline Strong border, 0.5rem radius, Cool Grey Text, a chevron that rotates 180 degrees when open. Hover or open: Muted Label border, Key Slate fill, Warm Paper Text.
 - **Menu:** Key Slate panel, Hairline Strong border, Menu float shadow; fades and drops 0.25rem in over 160ms, out over 240ms. Options highlight on Key Slate Lit; the selected option is Warm Paper Text at weight 600.
 
+### Profile menu
+The dropdown's button and Key Slate popover, 15.5rem wide, as a dialog. The profiles come first, the active one in Warm Paper Text at weight 600. Under a Hairline Strong rule sit the tools: new profile, rename, delete. A tool opens in place: a name field on Charcoal Ground with a 1px Hairline Strong border (Muted Label on hover, Miss Coral when the name is refused, a Mustard caret) beside a Key Slate Lit button, or the delete question with keep and delete. Escape steps back, then closes.
+
+### Tracking switch
+A label and a 1.875 by 1.125rem pill in the top strip. On: Hairline Strong track, Warm Paper Text knob at the right. Off: Key Slate track with a Hairline Strong border, Muted Label knob at the left. The knob slides over 240ms. While it is off, the left rail and the set result say that nothing is saved.
+
 ### Segmented control
 - **Track:** Key Slate, 0.5rem radius, 0.1875rem inset.
 - **Segments:** Cool Grey Text, 0.3125rem radius; hover to Key Slate Lit; the chosen segment sits on Hairline Strong with Warm Paper Text.
@@ -340,24 +392,31 @@ Text-only and quiet: tabs and language toggles are bare text with no fill.
 
 ### On-screen keyboard (signature)
 - **Neutral cap:** Key Slate, Cool Grey Text, cap top light.
-- **Finger cap:** the finger hue mixed toward Charcoal Ground by a heat value (90% by default), Finger Ink legend at 500. The stats view dims low-work keys to a dark mix with light legends.
+- **Finger cap:** the finger hue in its row's shade at full strength, Finger Ink legend at 500, so the three letter rows read as three bands of brightness. The stats view drops the row shades, mixes the home shade toward Charcoal Ground by a heat value, and dims low-work keys to a dark mix with light legends.
+- **Row legend:** a 0.625rem Muted Label mark in the gutter left of each letter row, in that row's shape. Hidden on the narrow layout, which has no gutter.
 - **Number row:** stays neutral until it is the target, so the letter rows lead.
-- **Next / shift target:** full finger hue with a Warm Paper Text outline offset 0.125rem.
+- **Next / shift target:** its row's shade with a Warm Paper Text outline offset 0.125rem. The outline is what marks the target; the fill does not change.
 - **Anchor:** outline in the finger's hue.
 - **Pressed:** scales to 0.93 in 80ms.
 - **Wrong:** Miss Coral fill, Finger Ink legend.
 
 ### Finger token (signature)
-The finger's shape filled with its hue, letter in Finger Ink at 600 and 45% of the token size. Sizes: 2.75rem in drills, 1.125rem as a stats-table marker. On the highway the current note is drawn on canvas with the same geometry, plus a small caret above it when the letter needs Shift.
+The row's shape filled with the finger's hue in the row's shade, letter in Finger Ink at 600 and 45% of the token size. Triangles have rounded corners and carry the letter at their centroid, toward the flat side. Sizes: 2.75rem in drills, 1.125rem as a stats-table marker, 1rem beside the next key. On the highway each note is drawn on canvas with the same geometry, plus a small caret above it when the letter needs Shift.
 
 ### Note highway (signature)
 Canvas stage: vertical Lane Rule edges taken from the keyboard, a 2px Strike Line, notes fading in through a 3rem top mask. A landed note pops (150ms) and lights its lane's stretch of the strike line in its hue (220ms). A miss shakes the front note (180ms) and rings it in Miss Coral; reduced motion keeps the notes falling and drops the shake and pop.
 
 ### Hands plate and next key
-An outline plate of both hands with a fingertip dot in each finger's hue. The finger to use fills with its hue through a matte cut from the plate, fading in over 80ms. Below it, the next key sits in a 4.625rem cap filled with its finger hue. Under the cap the finger's name is paired with a 1rem token in that finger's shape, so shape and name accompany the color in every drill, the text drills included.
+An outline plate of both hands with a fingertip dot in each finger's hue. The finger to use fills through a matte cut from the plate, in the shade of the row it is about to reach, fading in over 80ms. Below it, the next key sits in a 4.625rem cap filled with the same shade. Under the cap a 1rem token in the row's shape sits beside the finger and the row spelled out ("right ring, top row"), so the words accompany color and shape in every drill, the text drills included.
 
 ### Stat rail
 The live WPM in Display Mustard, a caption that cycles the rolling window, a sparkline, acc and streak split by a vertical Hairline between top and bottom Hairline rules, then four finger bars (0.5rem tall, Bar Track, fill grows over 600ms ease-out).
+
+### Stats view
+- **Figure:** Headline Small in Mustard: the current last-ten average of the chart's subject. Under it the subject, with its token when it is a finger or a key, the unit and window in Micro, and one slot that holds either the picking hint or the "back to all keys" button.
+- **History chart:** a 6.5rem canvas. One mark per saved set, oldest at the left: Key Slate Lit bars from zero for speed, Muted Label dots for accuracy on a range that opens near the top. Over them runs a 0.125rem line, the average of the last ten sets, ending in a dot on the figure's value. The line takes its subject's color: Mustard for the layout, the finger's hue for a finger, the row's shade of it for a key. Value rules are Hairline with Micro labels in a 2.5rem gutter; a date label marks where a day starts. Pointing at a set puts its date, drill and value in the caption.
+- **Lists:** fingers, slowest keys and slowest pairs: three tables of eight 1.875rem rows that end together. A finger or key name is a button (Key Slate on hover, Hairline Strong when picked) that makes it the chart's subject.
+- **Keyboard:** every finger key is a button there as well. A hovered key takes a Muted Label outline, the picked key the Warm Paper Text outline.
 
 ### Drill text
 Words and pairs in the Drill style. Each letter carries a 0.125rem underline in its finger hue at 75% opacity; the current letter turns its finger hue over a 0.3125rem bar; typed letters turn Muted Label; a wrong letter turns Miss Coral.
@@ -368,13 +427,16 @@ Words and pairs in the Drill style. Each letter carries a 0.125rem underline in 
 - **Do** size everything in rem from the 1536 x 1024 reference frame so the cockpit scales as one piece.
 - **Do** give every interactive element the shared interaction timing: 160ms hover in, 240ms release, 80ms press, 0.96 scale dip, ease-out `cubic-bezier(0.16, 1, 0.3, 1)`.
 - **Do** keep the reduced-motion override that collapses transitions and animations to near zero.
-- **Do** pair every free-standing finger color with its finger's shape (diamond, triangle, square, circle, bar).
+- **Do** give every mark for a key its row's shape and shade: triangle up and brighter for the top row, circle and plain for the home row, triangle down and darker for the bottom row.
+- **Do** keep a second cue for the finger beside its color: the lane, the key column, the lit finger or the finger's name.
 - **Do** set text on a finger hue or on Miss Coral in Finger Ink.
+- **Do** draw a history line in its subject's color: Mustard for the layout's own number, the finger's hue for a finger, the row's shade of it for a key.
 - **Do** separate zones with space and Hairline rules.
 - **Do** keep all copy lowercase and in Roboto Mono.
 
 ### Don't:
-- **Don't** use a finger hue for anything that is not a finger: no status, category, link or chart color.
+- **Don't** use a finger hue for anything that is not a finger: no status, category or link color, and no chart color except that finger's own history.
+- **Don't** use shape or shade for anything that is not the row, and never tie a shape to a finger.
 - **Don't** extend Mustard beyond the wordmark, the product's numbers and the few selection marks the build already carries.
 - **Don't** add a new yellow, or reuse Ring Yellow or Mustard for each other's role; the two values already sit too close and need separating rather than more overlap.
 - **Don't** wrap rails or drills in cards, panels or bordered boxes.

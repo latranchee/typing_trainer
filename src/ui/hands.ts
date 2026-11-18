@@ -1,6 +1,7 @@
 import handsPlate from '../../assets/plates/hands.png';
 import type { Finger } from '../core/fingers';
 import { FINGERS, fingerKind } from '../core/fingers';
+import type { Row } from '../core/physical';
 import { el } from './dom';
 
 /** Plate size the fingertip coordinates are measured in. */
@@ -55,10 +56,16 @@ export class HandsView {
     this.root.append(el('img.hands-plate', { src: handsPlate, alt: '', draggable: 'false' }), ...dots);
   }
 
-  setActive(fingers: Finger[]): void {
+  /** Light the fingers to use. Each fills in the shade of the row it is about to reach. */
+  setActive(reaches: { finger: Finger; row: Row }[]): void {
     for (const [finger, marks] of this.marks) {
-      const active = fingers.includes(finger);
-      for (const mark of marks) mark.classList.toggle('is-active', active);
+      const reach = reaches.find((candidate) => candidate.finger === finger);
+      for (const mark of marks) {
+        mark.classList.toggle('is-active', reach !== undefined);
+        // Only the fill takes the row's shade: the fingertip dot keeps the finger's own color.
+        // The shade stays through the fade-out so a released finger does not flick back.
+        if (reach && mark.classList.contains('finger-matte')) mark.dataset.row = reach.row;
+      }
     }
   }
 }

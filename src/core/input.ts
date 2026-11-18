@@ -31,7 +31,7 @@ const COMMANDS: Record<string, Command> = {
 /** True while focus sits on a control, where keys belong to that control. */
 const focusIsOnControl = (): boolean => {
   const active = document.activeElement;
-  return active instanceof HTMLElement && active !== document.body && active.matches('button, a, input, select, [role="option"]');
+  return active instanceof HTMLElement && active !== document.body && active.matches('button, a, input, select, [role="option"], [role="button"]');
 };
 
 /**

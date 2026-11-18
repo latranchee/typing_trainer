@@ -13,9 +13,9 @@ Audience and job: the owner, at his desk, eyes on screen, retraining ring and pi
 
 Content: rolling WPM, accuracy, streak, per-finger bars, the active drill (highway, words, pairs, anchors) or stats, the on-screen keyboard with the selected layout's legends, the hands with the active finger.
 
-Constraints: the screen may only claim what key events prove. Finger coding uses color and shape together.
+Constraints: the screen may only claim what key events prove. Color is the finger; shape and shade are the row (user decision, 2026-11-18: bottom row darker, home row the plain color, top row brighter). The finger always has a second cue: lane, key column, lit finger or name.
 
-Approved comp: `.impeccable/mocks/comp-b.png` ("Cockpit"), approved by the user on the layout decision page, 2026-11-17. Quality bar named by the user: Linear / Raycast. Name confirmed: auriculaire.
+Approved comp: `.impeccable/mocks/comp-b.png` ("Cockpit"), approved by the user on the layout decision page, 2026-11-17. Quality bar named by the user: Linear / Raycast. Name confirmed then: auriculaire; renamed petitdoigt on 2026-11-18 with the petitdoigt.ca domain.
 
 Font note: font-match ranked Roboto Mono for the wordmark. It recorded Hanuman for the three-glyph `acc` numeral region, a mis-measure on a serif Khmer face; numerals are built in Roboto Mono 700 at the measured cap height so the screen keeps one family.
 
@@ -23,7 +23,7 @@ Font note: font-match ranked Roboto Mono for the wordmark. It recorded Hanuman f
 
 THESIS: The familiar quiet-dark typing test at Linear/Raycast finish, with the finger as the unit of practice. A three-zone cockpit where the falling-note highway lands on the keyboard. Refused: the centred single column with the keyboard as an afterthought.
 
-OWN-WORLD: Charcoal ground, warm light grey text, muted grey labels, one mustard accent reserved for the wordmark and the product's own numbers. Four soft finger hues (pink pinky, yellow ring, green middle, blue index) that mean a finger and nothing else. Roboto Mono throughout. Softly rounded dark key caps, hairlines at very low contrast, no cards and no boxes around zones.
+OWN-WORLD: Charcoal ground, warm light grey text, muted grey labels, one mustard accent reserved for the wordmark and the product's own numbers. Four soft finger hues (pink pinky, yellow ring, green middle, blue index) that mean a finger and nothing else, each in three row shades. Row marks point the way the finger travels: triangle up for the top row, circle for the home row, triangle down for the bottom row. Roboto Mono throughout. Softly rounded dark key caps, hairlines at very low contrast, no cards and no boxes around zones.
 
 STORY: He sees which finger is next before the key arrives, types at the pace the highway pulls, and watches the pinky and ring bars climb.
 

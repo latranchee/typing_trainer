@@ -2,6 +2,7 @@ import type { FingerKind } from '../core/fingers';
 import { fingerKind, fingerLane } from '../core/fingers';
 import { makePairs, makeWords } from '../core/generator';
 import type { KeyEvt } from '../core/input';
+import type { Row } from '../core/physical';
 import { css, el, fitCanvas } from '../ui/dom';
 import type { Drill, DrillHost, Note, OptionGroup } from './types';
 import { matches, toNotes } from './types';
@@ -24,12 +25,22 @@ interface Pop {
 
 /** A frozen frame for visual checks: notes at fixed heights instead of a live queue. */
 export interface HighwayFixture {
-  notes: { kind: FingerKind; lane: number; y: number; label: string }[];
+  notes: { kind: FingerKind; row: Row; lane: number; y: number; label: string }[];
 }
 
+/** A finger's hue in its three shades: brighter above the home row, darker below it. */
+type Shades = Record<'up' | 'home' | 'down', string>;
+const SHADE_OF: Record<Row, keyof Shades> = { number: 'up', top: 'up', home: 'home', bottom: 'down', thumb: 'home' };
+const shadesOf = (kind: FingerKind): Shades =>
+  kind === 'thumb'
+    ? { up: css('--f-thumb'), home: css('--f-thumb'), down: css('--f-thumb') }
+    : { up: css(`--f-${kind}-top`), home: css(`--f-${kind}`), down: css(`--f-${kind}-bottom`) };
+
 /**
- * Falling notes. Each letter comes down its finger's lane with that finger's
- * color and shape. By default the road follows the typist: it brings the next
+ * Falling notes. Each letter comes down its finger's lane in that finger's
+ * color; its shape and shade say which row the key is on: a brighter triangle
+ * pointing up for the top row, a circle for the home row, a darker triangle
+ * pointing down for the bottom row. By default the road follows the typist: it brings the next
  * note to the line when the next keypress is due and waits if it is late.
  * With the tempo locked it holds one speed and refuses keys that come early.
  */
@@ -47,10 +58,10 @@ export class HighwayDrill implements Drill {
   private started = false;
   private done = false;
   private pops: Pop[] = [];
-  private flashes: { lane: number; kind: FingerKind; at: number }[] = [];
+  private flashes: { lane: number; kind: FingerKind; row: Row; at: number }[] = [];
   private shakeAt = -1e9;
   private fixture: HighwayFixture | null = null;
-  private colors: Record<FingerKind, string> | null = null;
+  private colors: Record<FingerKind, Shades> | null = null;
   private resizer = new ResizeObserver(() => this.draw(performance.now()));
   /** Shake and pop are feedback flourishes; the falling notes themselves are the task and stay. */
   private calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -159,7 +170,7 @@ export class HighwayDrill implements Drill {
     this.lastHit = event.time;
 
     this.pops.push({ note, y: this.yOf(this.cursor), at: event.time });
-    this.flashes.push({ lane: fingerLane(note.finger), kind: fingerKind(note.finger), at: event.time });
+    this.flashes.push({ lane: fingerLane(note.finger), kind: fingerKind(note.finger), row: note.row, at: event.time });
     this.cursor++;
     this.host.hit(note, event);
 
@@ -202,13 +213,13 @@ export class HighwayDrill implements Drill {
     return this.lineY - (index - this.progress) * this.gap;
   }
 
-  private palette(): Record<FingerKind, string> {
+  private palette(): Record<FingerKind, Shades> {
     return (this.colors ??= {
-      pinky: css('--f-pinky'),
-      ring: css('--f-ring'),
-      middle: css('--f-middle'),
-      index: css('--f-index'),
-      thumb: css('--f-thumb'),
+      pinky: shadesOf('pinky'),
+      ring: shadesOf('ring'),
+      middle: shadesOf('middle'),
+      index: shadesOf('index'),
+      thumb: shadesOf('thumb'),
     });
   }
 
@@ -247,14 +258,14 @@ export class HighwayDrill implements Drill {
     this.flashes = this.flashes.filter((flash) => now - flash.at < FLASH_MS);
     for (const flash of this.flashes) {
       ctx.globalAlpha = 1 - (now - flash.at) / FLASH_MS;
-      ctx.fillStyle = colors[flash.kind];
+      ctx.fillStyle = colors[flash.kind][SHADE_OF[flash.row]];
       ctx.fillRect(edges[flash.lane], this.lineY - 3, edges[flash.lane + 1] - edges[flash.lane], 4);
     }
     ctx.globalAlpha = 1;
 
     if (this.fixture) {
       for (const note of this.fixture.notes) {
-        this.token(ctx, laneX(note.lane), note.y * height, size, note.kind, note.label, colors, 1);
+        this.token(ctx, laneX(note.lane), note.y * height, size, note.kind, note.row, note.label, colors);
       }
       return;
     }
@@ -269,7 +280,7 @@ export class HighwayDrill implements Drill {
       const kind = fingerKind(note.finger);
       const front = i === this.cursor;
       const x = laneX(fingerLane(note.finger)) + (front ? shake : 0);
-      this.token(ctx, x, y, size, kind, note.label, colors, 1, note.stroke.shift);
+      this.token(ctx, x, y, size, kind, note.row, note.label, colors, note.stroke.shift);
       if (front && wrong) this.ring(ctx, x, y, size, css('--error'));
     }
 
@@ -278,68 +289,73 @@ export class HighwayDrill implements Drill {
       const t = (now - pop.at) / POP_MS;
       const kind = fingerKind(pop.note.finger);
       ctx.globalAlpha = 1 - t;
-      this.token(ctx, laneX(fingerLane(pop.note.finger)), pop.y - size * 0.62, size * (this.calm ? 1 : 1 + t * 0.35), kind, '', colors, 1);
+      this.token(ctx, laneX(fingerLane(pop.note.finger)), pop.y - size * 0.62, size * (this.calm ? 1 : 1 + t * 0.35), kind, pop.note.row, '', colors);
     }
     ctx.globalAlpha = 1;
   }
 
-  /** One note: the finger's shape in the finger's color, with its letter. */
+  /**
+   * One note with its letter. The finger gives the hue. The row gives the shade
+   * and the shape, which points the way the finger travels from the home row.
+   */
   private token(
     ctx: CanvasRenderingContext2D,
     x: number,
     y: number,
     size: number,
     kind: FingerKind,
+    row: Row,
     label: string,
-    colors: Record<FingerKind, string>,
-    alpha: number,
+    colors: Record<FingerKind, Shades>,
     shifted = false,
   ): void {
     const half = size / 2;
     const radius = size * 0.14;
+    const fill = colors[kind][SHADE_OF[row]];
+    // Triangles carry their letter at the centroid, toward the flat side.
+    let labelShift = size * 0.03;
     ctx.save();
-    ctx.globalAlpha *= alpha;
-    ctx.fillStyle = colors[kind];
+    ctx.fillStyle = fill;
     ctx.translate(x, y);
     ctx.beginPath();
-    if (kind === 'index') {
-      ctx.arc(0, 0, half, 0, Math.PI * 2);
-    } else if (kind === 'middle') {
-      ctx.roundRect(-half * 0.92, -half * 0.92, size * 0.92, size * 0.92, radius);
-    } else if (kind === 'pinky') {
+    if (kind === 'thumb') {
+      ctx.roundRect(-half * 1.25, -half * 0.36, size * 1.25, size * 0.72, half * 0.36);
+    } else if (row === 'top' || row === 'bottom') {
+      // Rounded triangle, tip up for the top row and down for the bottom row.
+      // Start mid-base so every corner gets an arc.
+      const up = row === 'top' ? 1 : -1;
+      const tip = -half * 0.98 * up;
+      const base = half * 0.86 * up;
+      const reach = half * 1.12;
+      ctx.moveTo(0, base);
+      ctx.arcTo(reach, base, 0, tip, radius);
+      ctx.arcTo(0, tip, -reach, base, radius);
+      ctx.arcTo(-reach, base, 0, base, radius);
+      ctx.closePath();
+      labelShift = size * (up === 1 ? 0.14 : -0.09);
+    } else if (row === 'number') {
       ctx.rotate(Math.PI / 4);
       ctx.roundRect(-half * 0.78, -half * 0.78, size * 0.78, size * 0.78, radius);
-    } else if (kind === 'ring') {
-      // Rounded triangle: start mid-base so every corner gets an arc.
-      const top = -half * 0.98;
-      const bottom = half * 0.86;
-      const reach = half * 1.12;
-      ctx.moveTo(0, bottom);
-      ctx.arcTo(reach, bottom, 0, top, radius);
-      ctx.arcTo(0, top, -reach, bottom, radius);
-      ctx.arcTo(-reach, bottom, 0, bottom, radius);
-      ctx.closePath();
     } else {
-      ctx.roundRect(-half * 1.25, -half * 0.36, size * 1.25, size * 0.72, half * 0.36);
+      ctx.arc(0, 0, half, 0, Math.PI * 2);
     }
     ctx.fill();
     ctx.restore();
 
     if (label.trim() !== '') {
       ctx.save();
-      ctx.globalAlpha *= alpha;
       ctx.fillStyle = css('--ink');
       ctx.font = `600 ${Math.round(size * 0.46)}px ${css('--font')}`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(label, x, y + (kind === 'ring' ? size * 0.14 : size * 0.03));
+      ctx.fillText(label, x, y + labelShift);
       ctx.restore();
     }
 
     if (shifted) {
       // A small caret over the note: this letter needs Shift.
       ctx.save();
-      ctx.strokeStyle = colors[kind];
+      ctx.strokeStyle = fill;
       ctx.lineWidth = Math.max(1.5, size * 0.07);
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';

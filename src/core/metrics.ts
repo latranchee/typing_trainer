@@ -85,3 +85,9 @@ export class SetStats {
 
 /** Speed a per-key interval corresponds to, in words per minute. */
 export const intervalToWpm = (ms: number): number => (ms > 0 ? 60000 / ms / CHARS_PER_WORD : 0);
+
+/** Speed for a count of characters typed over a stretch of active typing time. */
+export const charsToWpm = (chars: number, ms: number): number => (ms > 0 ? (chars / CHARS_PER_WORD) * (60000 / ms) : 0);
+
+/** Samples a key, a finger or a history line needs before its numbers mean anything. */
+export const MIN_SAMPLES = 5;

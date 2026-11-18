@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Four fingers of one hand, the little one lit in the pinky's color. -->
   <rect width="32" height="32" rx="7" fill="#212227"/>
-  <rect x="9.5" y="9.5" width="13" height="13" rx="2.2" fill="#fb8ab1" transform="rotate(45 16 16)"/>
+  <rect x="6" y="10" width="4" height="14" rx="2" fill="#8a8f9b"/>
+  <rect x="12" y="6" width="4" height="18" rx="2" fill="#8a8f9b"/>
+  <rect x="18" y="8" width="4" height="16" rx="2" fill="#8a8f9b"/>
+  <rect x="24" y="14" width="4" height="10" rx="2" fill="#fb8ab1"/>
 </svg>

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-17T21:30:28.327Z",
-  "title": "Design System: auriculaire",
+  "generatedAt": "2026-11-18T19:31:22.563Z",
+  "title": "Design System: petitdoigt",
   "extensions": {
     "colorMeta": {
       "charcoal-ground": {
@@ -242,6 +242,23 @@
           "oklch(95.0% 0.008 274.6)"
         ]
       },
+      "finger-pinky-top": {
+        "role": "secondary",
+        "displayName": "Pinky Pink, top row",
+        "canonical": "#fcb3ca",
+        "oklch": "oklch(84.2% 0.089 358.6)",
+        "cssVar": "--f-pinky-top",
+        "tonalRamp": [
+          "oklch(15.0% 0.089 358.6)",
+          "oklch(26.4% 0.089 358.6)",
+          "oklch(37.9% 0.089 358.6)",
+          "oklch(49.3% 0.089 358.6)",
+          "oklch(60.7% 0.089 358.6)",
+          "oklch(72.1% 0.089 358.6)",
+          "oklch(83.6% 0.089 358.6)",
+          "oklch(95.0% 0.089 358.6)"
+        ]
+      },
       "finger-pinky": {
         "role": "secondary",
         "displayName": "Pinky Pink",
@@ -257,6 +274,40 @@
           "oklch(72.1% 0.143 359.0)",
           "oklch(83.6% 0.143 359.0)",
           "oklch(95.0% 0.143 359.0)"
+        ]
+      },
+      "finger-pinky-bottom": {
+        "role": "secondary",
+        "displayName": "Pinky Pink, bottom row",
+        "canonical": "#e46695",
+        "oklch": "oklch(67.7% 0.163 359.0)",
+        "cssVar": "--f-pinky-bottom",
+        "tonalRamp": [
+          "oklch(15.0% 0.163 359.0)",
+          "oklch(26.4% 0.163 359.0)",
+          "oklch(37.9% 0.163 359.0)",
+          "oklch(49.3% 0.163 359.0)",
+          "oklch(60.7% 0.163 359.0)",
+          "oklch(72.1% 0.163 359.0)",
+          "oklch(83.6% 0.163 359.0)",
+          "oklch(95.0% 0.163 359.0)"
+        ]
+      },
+      "finger-ring-top": {
+        "role": "secondary",
+        "displayName": "Ring Yellow, top row",
+        "canonical": "#ffe99f",
+        "oklch": "oklch(93.5% 0.096 93.5)",
+        "cssVar": "--f-ring-top",
+        "tonalRamp": [
+          "oklch(15.0% 0.096 93.5)",
+          "oklch(26.4% 0.096 93.5)",
+          "oklch(37.9% 0.096 93.5)",
+          "oklch(49.3% 0.096 93.5)",
+          "oklch(60.7% 0.096 93.5)",
+          "oklch(72.1% 0.096 93.5)",
+          "oklch(83.6% 0.096 93.5)",
+          "oklch(95.0% 0.096 93.5)"
         ]
       },
       "finger-ring": {
@@ -276,6 +327,40 @@
           "oklch(95.0% 0.147 93.0)"
         ]
       },
+      "finger-ring-bottom": {
+        "role": "secondary",
+        "displayName": "Ring Yellow, bottom row",
+        "canonical": "#e1b905",
+        "oklch": "oklch(79.8% 0.163 93.0)",
+        "cssVar": "--f-ring-bottom",
+        "tonalRamp": [
+          "oklch(15.0% 0.163 93.0)",
+          "oklch(26.4% 0.163 93.0)",
+          "oklch(37.9% 0.163 93.0)",
+          "oklch(49.3% 0.163 93.0)",
+          "oklch(60.7% 0.163 93.0)",
+          "oklch(72.1% 0.163 93.0)",
+          "oklch(83.6% 0.163 93.0)",
+          "oklch(95.0% 0.163 93.0)"
+        ]
+      },
+      "finger-middle-top": {
+        "role": "secondary",
+        "displayName": "Middle Green, top row",
+        "canonical": "#aeddae",
+        "oklch": "oklch(85.2% 0.081 144.8)",
+        "cssVar": "--f-middle-top",
+        "tonalRamp": [
+          "oklch(15.0% 0.081 144.8)",
+          "oklch(26.4% 0.081 144.8)",
+          "oklch(37.9% 0.081 144.8)",
+          "oklch(49.3% 0.081 144.8)",
+          "oklch(60.7% 0.081 144.8)",
+          "oklch(72.1% 0.081 144.8)",
+          "oklch(83.6% 0.081 144.8)",
+          "oklch(95.0% 0.081 144.8)"
+        ]
+      },
       "finger-middle": {
         "role": "secondary",
         "displayName": "Middle Green",
@@ -293,6 +378,40 @@
           "oklch(95.0% 0.130 144.8)"
         ]
       },
+      "finger-middle-bottom": {
+        "role": "secondary",
+        "displayName": "Middle Green, bottom row",
+        "canonical": "#57b25c",
+        "oklch": "oklch(68.7% 0.150 144.8)",
+        "cssVar": "--f-middle-bottom",
+        "tonalRamp": [
+          "oklch(15.0% 0.150 144.8)",
+          "oklch(26.4% 0.150 144.8)",
+          "oklch(37.9% 0.150 144.8)",
+          "oklch(49.3% 0.150 144.8)",
+          "oklch(60.7% 0.150 144.8)",
+          "oklch(72.1% 0.150 144.8)",
+          "oklch(83.6% 0.150 144.8)",
+          "oklch(95.0% 0.150 144.8)"
+        ]
+      },
+      "finger-index-top": {
+        "role": "secondary",
+        "displayName": "Index Blue, top row",
+        "canonical": "#9ac1ef",
+        "oklch": "oklch(79.9% 0.078 252.9)",
+        "cssVar": "--f-index-top",
+        "tonalRamp": [
+          "oklch(15.0% 0.078 252.9)",
+          "oklch(26.4% 0.078 252.9)",
+          "oklch(37.9% 0.078 252.9)",
+          "oklch(49.3% 0.078 252.9)",
+          "oklch(60.7% 0.078 252.9)",
+          "oklch(72.1% 0.078 252.9)",
+          "oklch(83.6% 0.078 252.9)",
+          "oklch(95.0% 0.078 252.9)"
+        ]
+      },
       "finger-index": {
         "role": "secondary",
         "displayName": "Index Blue",
@@ -308,6 +427,23 @@
           "oklch(72.1% 0.125 253.4)",
           "oklch(83.6% 0.125 253.4)",
           "oklch(95.0% 0.125 253.4)"
+        ]
+      },
+      "finger-index-bottom": {
+        "role": "secondary",
+        "displayName": "Index Blue, bottom row",
+        "canonical": "#448cde",
+        "oklch": "oklch(63.3% 0.143 253.5)",
+        "cssVar": "--f-index-bottom",
+        "tonalRamp": [
+          "oklch(15.0% 0.143 253.5)",
+          "oklch(26.4% 0.143 253.5)",
+          "oklch(37.9% 0.143 253.5)",
+          "oklch(49.3% 0.143 253.5)",
+          "oklch(60.7% 0.143 253.5)",
+          "oklch(72.1% 0.143 253.5)",
+          "oklch(83.6% 0.143 253.5)",
+          "oklch(95.0% 0.143 253.5)"
         ]
       },
       "finger-thumb": {
@@ -355,7 +491,7 @@
       },
       "wordmark": {
         "displayName": "Wordmark",
-        "purpose": "The lowercase \"auriculaire\" wordmark in Mustard."
+        "purpose": "The lowercase \"petitdoigt\" wordmark in Mustard, led by the four-finger mark with the pinky bar lit."
       },
       "body": {
         "displayName": "Body",
@@ -375,7 +511,7 @@
       },
       "micro": {
         "displayName": "Micro",
-        "purpose": "Shifted legends on key caps, the stats chart caption."
+        "purpose": "Shifted legends on key caps, the stats chart's caption, values and dates, the unit line under the stats figure, profile menu messages."
       },
       "legend": {
         "displayName": "Legend",
@@ -421,7 +557,7 @@
       {
         "name": "menu-float",
         "value": "0 0.75rem 2rem rgb(0 0 0 / 0.35)",
-        "purpose": "The open layout dropdown; the only cast shadow."
+        "purpose": "The open layout dropdown and profile menu; the only cast shadow."
       },
       {
         "name": "focus-ring",
@@ -431,7 +567,7 @@
       {
         "name": "target-outline",
         "value": "outline: 0.125rem solid; outline-offset: 0.125rem",
-        "purpose": "Next / shift key (Warm Paper Text), anchor key (finger hue), missing anchor (Miss Coral)."
+        "purpose": "Next / shift key (Warm Paper Text), anchor key (finger hue), missing anchor (Miss Coral). On the next key the outline is the only change: its fill stays the row's shade."
       }
     ],
     "motion": [
@@ -493,7 +629,7 @@
       {
         "name": "lane-flash",
         "value": "220ms",
-        "purpose": "Strike-line stretch lit in the finger hue on a hit."
+        "purpose": "Strike-line stretch lit in the note's finger hue and row shade on a hit."
       },
       {
         "name": "miss-shake",
@@ -558,25 +694,25 @@
       "name": "Key Caps",
       "kind": "custom",
       "refersTo": "key-cap-finger",
-      "description": "On-screen keyboard caps: neutral slate, finger-filled, next-key target, wrong.",
-      "html": "<div class=\"ds-kb\"><span class=\"ds-cap\">tab</span><span class=\"ds-cap ds-f\" style=\"--f:#fb8ab1\">a</span><span class=\"ds-cap ds-f\" style=\"--f:#fbd75a\">s</span><span class=\"ds-cap ds-f is-next\" style=\"--f:#7fcc81\">d</span><span class=\"ds-cap ds-f\" style=\"--f:#6ba9f2\">f</span><span class=\"ds-cap is-wrong\">g</span></div>",
-      "css": ".ds-kb { display: flex; gap: 0.625rem; } .ds-cap { width: 3.125rem; height: 3.125rem; display: grid; place-items: center; border-radius: 0.5rem; background: var(--key, #33363c); color: var(--text-2, #aab0ba); font: 400 0.875rem/1 'Roboto Mono Variable', ui-monospace, monospace; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07); outline: 0.125rem solid transparent; outline-offset: 0.125rem; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1), outline-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-cap.ds-f { background: color-mix(in oklab, var(--f) 90%, #212227); color: #1d1e22; font-size: 1.0625rem; font-weight: 500; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26); } .ds-cap.is-next { background: var(--f); outline-color: #e6e6e2; } .ds-cap.is-wrong { background: #f2715f; color: #1d1e22; } .ds-cap:active { scale: 0.93; transition-duration: 80ms; }"
+      "description": "On-screen keyboard caps: neutral slate, finger-filled in the row's shade (top, home, bottom), next-key target, wrong.",
+      "html": "<div class=\"ds-kb\"><span class=\"ds-cap\">tab</span><span class=\"ds-cap ds-f\" style=\"--f:#fcb3ca\">q</span><span class=\"ds-cap ds-f\" style=\"--f:#fb8ab1\">a</span><span class=\"ds-cap ds-f\" style=\"--f:#e46695\">z</span><span class=\"ds-cap ds-f is-next\" style=\"--f:#7fcc81\">d</span><span class=\"ds-cap ds-f\" style=\"--f:#6ba9f2\">f</span><span class=\"ds-cap is-wrong\">g</span></div>",
+      "css": ".ds-kb { display: flex; gap: 0.625rem; } .ds-cap { width: 3.125rem; height: 3.125rem; display: grid; place-items: center; border-radius: 0.5rem; background: var(--key, #33363c); color: var(--text-2, #aab0ba); font: 400 0.875rem/1 'Roboto Mono Variable', ui-monospace, monospace; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07); outline: 0.125rem solid transparent; outline-offset: 0.125rem; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1), outline-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-cap.ds-f { background: var(--f); color: #1d1e22; font-size: 1.0625rem; font-weight: 500; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26); } .ds-cap.is-next { outline-color: #e6e6e2; } .ds-cap.is-wrong { background: #f2715f; color: #1d1e22; } .ds-cap:active { scale: 0.93; transition-duration: 80ms; }"
     },
     {
       "name": "Finger Tokens",
       "kind": "custom",
       "refersTo": "finger-token",
-      "description": "The five finger shapes in their hues, letter in Finger Ink: diamond, triangle, square, circle, bar.",
-      "html": "<div class=\"ds-toks\"><span class=\"ds-tok ds-pinky\"><span>a</span></span><span class=\"ds-tok ds-ring\"><span>s</span></span><span class=\"ds-tok ds-middle\"><span>d</span></span><span class=\"ds-tok ds-index\"><span>f</span></span><span class=\"ds-tok ds-thumb\"><span></span></span></div>",
-      "css": ".ds-toks { display: flex; gap: 0.75rem; } .ds-tok { --size: 2.75rem; position: relative; width: var(--size); height: var(--size); display: grid; place-items: center; color: #1d1e22; font: 600 calc(var(--size) * 0.45)/1 'Roboto Mono Variable', ui-monospace, monospace; } .ds-tok::before { content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--f); } .ds-tok > span { position: relative; } .ds-pinky { --f: #fb8ab1; } .ds-pinky::before { inset: 13%; border-radius: 14%; rotate: 45deg; } .ds-ring { --f: #fbd75a; } .ds-ring::before { border-radius: 0; clip-path: polygon(50% 4%, 98% 92%, 2% 92%); } .ds-ring > span { translate: 0 14%; } .ds-middle { --f: #7fcc81; } .ds-middle::before { inset: 4%; border-radius: 14%; } .ds-index { --f: #6ba9f2; } .ds-thumb { --f: #aab0ba; } .ds-thumb::before { inset: 30% 0; border-radius: 1rem; }"
+      "description": "Color is the finger; shape and shade are the row. One hue in its three row marks (triangle up and brighter, circle and plain, triangle down and darker), a second hue, the number-row diamond and the thumb bar. Letter in Finger Ink.",
+      "html": "<div class=\"ds-toks\"><span class=\"ds-tok ds-top\" style=\"--f:#fcb3ca\"><span>q</span></span><span class=\"ds-tok\" style=\"--f:#fb8ab1\"><span>a</span></span><span class=\"ds-tok ds-bottom\" style=\"--f:#e46695\"><span>z</span></span><span class=\"ds-tok ds-top\" style=\"--f:#9ac1ef\"><span>r</span></span><span class=\"ds-tok\" style=\"--f:#6ba9f2\"><span>f</span></span><span class=\"ds-tok ds-bottom\" style=\"--f:#448cde\"><span>v</span></span><span class=\"ds-tok ds-number\" style=\"--f:#aeddae\"><span>3</span></span><span class=\"ds-tok ds-thumb\" style=\"--f:#aab0ba\"><span></span></span></div>",
+      "css": ".ds-toks { display: flex; gap: 0.75rem; } .ds-tok { --size: 2.75rem; position: relative; width: var(--size); height: var(--size); display: grid; place-items: center; color: #1d1e22; font: 600 calc(var(--size) * 0.45)/1 'Roboto Mono Variable', ui-monospace, monospace; } .ds-tok::before { content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--f); } .ds-tok > span { position: relative; } .ds-top::before, .ds-bottom::before { border-radius: 0; -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 13 90 85H10Z' stroke='%23000' stroke-width='14' stroke-linejoin='round'/%3E%3C/svg%3E\") center / 100% 100% no-repeat; mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 13 90 85H10Z' stroke='%23000' stroke-width='14' stroke-linejoin='round'/%3E%3C/svg%3E\") center / 100% 100% no-repeat; } .ds-bottom::before { rotate: 180deg; } .ds-top > span { translate: 0 14%; } .ds-bottom > span { translate: 0 -10%; } .ds-number::before { inset: 13%; border-radius: 14%; rotate: 45deg; } .ds-thumb::before { inset: 30% 0; border-radius: 1rem; }"
     },
     {
       "name": "Next Key",
       "kind": "card",
       "refersTo": "next-cap",
-      "description": "Right-rail next key: large cap in the finger hue; under it the finger name paired with a 1rem token in that finger's shape.",
-      "html": "<div class=\"ds-next\"><div class=\"ds-next-label\">next key</div><div class=\"ds-next-cap\">p</div><div class=\"ds-next-finger\"><span class=\"ds-mini\"></span>right pinky</div></div>",
-      "css": ".ds-next { text-align: center; font-family: 'Roboto Mono Variable', ui-monospace, monospace; } .ds-next-label, .ds-next-finger { font-size: 1.0625rem; color: var(--muted, #8a8f9b); } .ds-next-cap { width: 4.625rem; height: 4.625rem; margin: 0.8125rem auto 0; border-radius: 0.75rem; background: #fb8ab1; color: #1d1e22; display: grid; place-items: center; font-size: 1.75rem; font-weight: 500; transition: background-color 80ms cubic-bezier(0.16,1,0.3,1); } .ds-next-finger { margin-top: 0.6875rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; } .ds-mini { position: relative; width: 1rem; height: 1rem; } .ds-mini::before { content: ''; position: absolute; inset: 13%; border-radius: 14%; rotate: 45deg; background: #fb8ab1; }"
+      "description": "Right-rail next key: large cap in the finger's hue at the row's shade; under it a 1rem token in the row's shape beside the finger and the row spelled out.",
+      "html": "<div class=\"ds-next\"><div class=\"ds-next-label\">next key</div><div class=\"ds-next-cap\">p</div><div class=\"ds-next-finger\"><span class=\"ds-mini\"></span>right pinky, top row</div></div>",
+      "css": ".ds-next { text-align: center; font-family: 'Roboto Mono Variable', ui-monospace, monospace; } .ds-next-label, .ds-next-finger { font-size: 1.0625rem; color: var(--muted, #8a8f9b); } .ds-next-cap { width: 4.625rem; height: 4.625rem; margin: 0.8125rem auto 0; border-radius: 0.75rem; background: #fcb3ca; color: #1d1e22; display: grid; place-items: center; font-size: 1.75rem; font-weight: 500; transition: background-color 80ms cubic-bezier(0.16,1,0.3,1); } .ds-next-finger { margin-top: 0.6875rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; } .ds-mini { position: relative; width: 1rem; height: 1rem; } .ds-mini::before { content: ''; position: absolute; inset: 0; background: #fcb3ca; -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 13 90 85H10Z' stroke='%23000' stroke-width='14' stroke-linejoin='round'/%3E%3C/svg%3E\") center / 100% 100% no-repeat; mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 13 90 85H10Z' stroke='%23000' stroke-width='14' stroke-linejoin='round'/%3E%3C/svg%3E\") center / 100% 100% no-repeat; }"
     },
     {
       "name": "Stat Rail",
@@ -593,14 +729,38 @@
       "description": "Labelled per-finger progress bar on a slate track.",
       "html": "<div class=\"ds-frow\"><span>ring</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"--f:#fbd75a; --v:0.7\"></div></div></div>",
       "css": ".ds-frow { display: grid; grid-template-columns: 4.375rem 1fr; align-items: center; width: 17rem; font: 400 0.9375rem 'Roboto Mono Variable', ui-monospace, monospace; color: var(--text-2, #aab0ba); } .ds-track { height: 0.5rem; border-radius: 0.25rem; background: var(--track, #31353d); overflow: hidden; } .ds-fill { height: 100%; border-radius: 0.25rem; background: var(--f); transform-origin: left center; scale: var(--v) 1; transition: scale 600ms cubic-bezier(0.16,1,0.3,1); }"
+    },
+    {
+      "name": "Tracking Switch",
+      "kind": "input",
+      "refersTo": "tracking-switch",
+      "description": "Top-strip switch that stops the trainer from saving numbers. On: Hairline Strong track, Warm Paper Text knob at the right. Off: Key Slate track, Muted Label knob at the left.",
+      "html": "<div class=\"ds-tracks\"><button class=\"ds-track\" role=\"switch\" aria-checked=\"true\">tracking<span class=\"ds-switch\"></span></button><button class=\"ds-track\" role=\"switch\" aria-checked=\"false\">tracking<span class=\"ds-switch\"></span></button></div>",
+      "css": ".ds-tracks { display: flex; gap: 2rem; } .ds-track { display: inline-flex; align-items: center; gap: 0.625rem; height: 2.1875rem; padding: 0; background: none; border: 0; font: 400 0.9375rem 'Roboto Mono Variable', ui-monospace, monospace; color: var(--text-2, #aab0ba); cursor: pointer; transition: color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1); } .ds-track:hover { color: var(--text, #e6e6e2); transition-duration: 160ms; } .ds-track:active { scale: 0.96; transition-duration: 80ms; } .ds-switch { position: relative; width: 1.875rem; height: 1.125rem; box-sizing: border-box; border: 1px solid var(--line-strong, #4b4f57); border-radius: 1rem; background: var(--key, #33363c); transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), border-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-switch::after { content: ''; position: absolute; top: 50%; left: 0.125rem; width: 0.75rem; height: 0.75rem; border-radius: 50%; background: var(--muted, #8a8f9b); translate: 0 -50%; transition: translate 240ms cubic-bezier(0.16,1,0.3,1), background-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-track:hover .ds-switch { border-color: var(--muted, #8a8f9b); } .ds-track[aria-checked='true'] .ds-switch { background: var(--line-strong, #4b4f57); } .ds-track[aria-checked='true'] .ds-switch::after { translate: 0.75rem -50%; background: var(--text, #e6e6e2); } .ds-track:focus-visible { outline: 0.125rem solid var(--accent, #f8d95c); outline-offset: 0.1875rem; }"
+    },
+    {
+      "name": "Profile Menu",
+      "kind": "input",
+      "refersTo": "profile-menu",
+      "description": "The dropdown's Key Slate popover as a dialog: the profiles, the active one at weight 600, then the tools that add, rename and delete one. A tool opens in place, here the name field of a new profile.",
+      "html": "<div class=\"ds-profile\"><button class=\"ds-profile-opt is-current\">main</button><button class=\"ds-profile-opt\">guest</button><div class=\"ds-profile-rule\"></div><div class=\"ds-profile-form\"><input class=\"ds-profile-input\" placeholder=\"name\" aria-label=\"name of the new profile\"><button class=\"ds-profile-go\">add</button><p class=\"ds-profile-msg\">starts with the current options and no numbers</p></div></div>",
+      "css": ".ds-profile { width: 15.5rem; padding: 0.25rem; background: var(--key, #33363c); border: 1px solid var(--line-strong, #4b4f57); border-radius: 0.5rem; box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 0.35); font: 400 0.9375rem 'Roboto Mono Variable', ui-monospace, monospace; } .ds-profile-opt { display: block; width: 100%; padding: 0.5rem 0.75rem; background: none; border: 0; border-radius: 0.25rem; font: inherit; text-align: left; color: var(--text-2, #aab0ba); cursor: pointer; transition: color 240ms cubic-bezier(0.16,1,0.3,1), background-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-profile-opt:hover { background: var(--key-hover, #3c4047); color: var(--text, #e6e6e2); transition-duration: 160ms; } .ds-profile-opt:active { background: var(--line-strong, #4b4f57); transition-duration: 80ms; } .ds-profile-opt.is-current { color: var(--text, #e6e6e2); font-weight: 600; } .ds-profile-rule { height: 1px; margin: 0.25rem 0.5rem; background: var(--line-strong, #4b4f57); } .ds-profile-form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.375rem; padding: 0.25rem 0.5rem 0.5rem; } .ds-profile-input { min-width: 0; height: 2rem; box-sizing: border-box; padding: 0 0.625rem; border: 1px solid var(--line-strong, #4b4f57); border-radius: 0.3125rem; background: var(--bg, #212227); color: var(--text, #e6e6e2); font: inherit; caret-color: var(--accent, #f8d95c); transition: border-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-profile-input::placeholder { color: var(--muted, #8a8f9b); opacity: 1; } .ds-profile-input:hover { border-color: var(--muted, #8a8f9b); transition-duration: 160ms; } .ds-profile-input:focus-visible { outline: 0.125rem solid var(--accent, #f8d95c); outline-offset: 0.0625rem; } .ds-profile-go { height: 2rem; padding: 0 0.75rem; border: 0; border-radius: 0.3125rem; background: var(--key-hover, #3c4047); color: var(--text, #e6e6e2); font: 400 0.875rem 'Roboto Mono Variable', ui-monospace, monospace; cursor: pointer; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1); } .ds-profile-go:hover { background: var(--line-strong, #4b4f57); transition-duration: 160ms; } .ds-profile-go:active { scale: 0.96; transition-duration: 80ms; } .ds-profile-msg { grid-column: 1 / -1; margin: 0; font-size: 0.8125rem; line-height: 1.45; color: var(--text-2, #aab0ba); }"
+    },
+    {
+      "name": "History Chart",
+      "kind": "custom",
+      "refersTo": "history-chart",
+      "description": "Stats view: the figure and its subject beside the history chart. One bar per saved set, the average of the last ten drawn over them in the subject's color (Mustard for the layout, the finger's hue for a finger, the row's shade for a key), ending in a dot on the figure's value. A finger or key name in the lists is a button that picks the subject.",
+      "html": "<div class=\"ds-hist\"><div><div class=\"ds-hist-num\">60</div><p class=\"ds-hist-sub\"><span class=\"ds-hist-tok\"></span>left pinky</p><p class=\"ds-hist-unit\">wpm, last 10 sets</p><button class=\"ds-hist-pick\" aria-pressed=\"true\"><span class=\"ds-hist-tok\"></span>left pinky</button></div><svg class=\"ds-hist-plot\" viewBox=\"0 0 240 80\" aria-hidden=\"true\"><g fill=\"#3c4047\"><rect x=\"8\" y=\"34\" width=\"10\" height=\"46\" rx=\"2\"/><rect x=\"27\" y=\"30\" width=\"10\" height=\"50\" rx=\"2\"/><rect x=\"46\" y=\"36\" width=\"10\" height=\"44\" rx=\"2\"/><rect x=\"65\" y=\"27\" width=\"10\" height=\"53\" rx=\"2\"/><rect x=\"84\" y=\"29\" width=\"10\" height=\"51\" rx=\"2\"/><rect x=\"103\" y=\"24\" width=\"10\" height=\"56\" rx=\"2\"/><rect x=\"122\" y=\"26\" width=\"10\" height=\"54\" rx=\"2\"/><rect x=\"141\" y=\"20\" width=\"10\" height=\"60\" rx=\"2\"/><rect x=\"160\" y=\"22\" width=\"10\" height=\"58\" rx=\"2\"/><rect x=\"179\" y=\"17\" width=\"10\" height=\"63\" rx=\"2\"/><rect x=\"198\" y=\"19\" width=\"10\" height=\"61\" rx=\"2\"/><rect x=\"217\" y=\"14\" width=\"10\" height=\"66\" rx=\"2\"/></g><path d=\"M13 34 32 32 51 33 70 31 89 30 108 28 127 27 146 25 165 23 184 21 203 20 222 18\" fill=\"none\" stroke=\"#fb8ab1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"222\" cy=\"18\" r=\"4\" fill=\"#fb8ab1\" stroke=\"#212227\" stroke-width=\"2\"/></svg></div>",
+      "css": ".ds-hist { display: grid; grid-template-columns: 13.5rem 15rem; gap: 2rem; align-items: start; font: 400 0.9375rem 'Roboto Mono Variable', ui-monospace, monospace; color: var(--text, #e6e6e2); } .ds-hist-num { font-size: 3.5rem; line-height: 1; font-weight: 700; color: var(--accent, #f8d95c); } .ds-hist-sub { display: flex; align-items: center; gap: 0.5rem; margin: 0.625rem 0 0; } .ds-hist-unit { margin: 0.25rem 0 0.5rem; font-size: 0.8125rem; color: var(--muted, #8a8f9b); } .ds-hist-tok { width: 1rem; height: 1rem; border-radius: 50%; background: #fb8ab1; } .ds-hist-pick { display: inline-flex; align-items: center; gap: 0.625rem; padding: 0.25rem 0.5rem; background: none; border: 0; border-radius: 0.3125rem; font: inherit; color: var(--text, #e6e6e2); cursor: pointer; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1); } .ds-hist-pick:hover { background: var(--key, #33363c); transition-duration: 160ms; } .ds-hist-pick:active { scale: 0.96; transition-duration: 80ms; } .ds-hist-pick[aria-pressed='true'] { background: var(--line-strong, #4b4f57); } .ds-hist-plot { display: block; width: 100%; border-bottom: 1px solid var(--line, #32353b); }"
     }
   ],
   "narrative": {
     "northStar": "The Practice Cockpit",
-    "overview": "auriculaire is the familiar quiet-dark typing test finished to the Linear / Raycast standard, with one change of unit: the finger, not the key, is what the screen teaches. One fixed screen holds three zones on a charcoal ground. The left rail carries the product's numbers, the centre stage drops falling notes straight onto an on-screen keyboard, and the right rail shows the hands with the finger to use filled in. Nothing scrolls on desktop and nothing needs a click to start; the primary action is typing.\n\nThe palette is restrained everywhere except where it carries meaning. Chrome stays in four steps of cool slate and three greys of text; color arrives only as finger hues, one mustard accent for the product's own figures, and a coral for misses. Zones are separated by space and low-contrast hairlines rather than cards or boxes. Roboto Mono runs through everything, so legends, drill text and numerals share one grid and tabular digits never jump.\n\nMotion is short and ease-out, with no bounce. The signature beat is a note landing on the strike line, its key cap pressing, and its finger lighting on the hands plate, all within about 80 to 220ms.",
+    "overview": "petitdoigt is the familiar quiet-dark typing test finished to the Linear / Raycast standard, with one change of unit: the finger, not the key, is what the screen teaches. One fixed screen holds three zones on a charcoal ground. The left rail carries the product's numbers, the centre stage drops falling notes straight onto an on-screen keyboard, and the right rail shows the hands with the finger to use filled in. Nothing scrolls on desktop and nothing needs a click to start; the primary action is typing.\n\nThe palette is restrained everywhere except where it carries meaning. Chrome stays in four steps of cool slate and three greys of text; color arrives only as finger hues in three row shades, one mustard accent for the product's own figures, and a coral for misses. Zones are separated by space and low-contrast hairlines rather than cards or boxes. Roboto Mono runs through everything, so legends, drill text and numerals share one grid and tabular digits never jump.\n\nMotion is short and ease-out, with no bounce. The signature beat is a note landing on the strike line, its key cap pressing, and its finger lighting on the hands plate, all within about 80 to 220ms.",
     "keyCharacteristics": [
       "One screen scaled from a 1536 x 1024 reference frame through the root font size.",
-      "Finger hue plus finger shape is the system's only chromatic language besides mustard and coral.",
+      "Color is the finger; shape and shade are the row. That coding is the system's only chromatic language besides mustard and coral.",
       "Flat charcoal surfaces; soft 8px key caps lit by a one-pixel top highlight.",
       "Lowercase text throughout, monospace throughout.",
       "Every control shares one hover / release / press timing."
@@ -612,8 +772,18 @@
         "section": "colors"
       },
       {
-        "name": "The Shape Pairing Rule",
-        "body": "A finger color standing alone (a falling note, an anchor token, a stats-table marker) always takes its finger's shape: diamond pinky, triangle ring, square middle, circle index, bar thumb. Finger-colored elements that are anchored to a key position or a finger name (key caps, hand mattes, fingertip dots, labelled bars) carry that position or name as their second channel.",
+        "name": "The Row Shape Rule",
+        "body": "Shape and shade mean the row and nothing else. A mark for a key takes its row's shape, which points the way the finger travels from the home row: a triangle pointing up in the brighter shade for the top row, a circle in the plain hue for the home row, a triangle pointing down in the darker shade for the bottom row. The number row, when it is a target, is a diamond in the top-row shade; the space bar is a horizontal bar. A mark for a finger with no key in play (a stats-table finger marker, a result line) is that finger's home circle.",
+        "section": "colors"
+      },
+      {
+        "name": "The Second Channel Rule",
+        "body": "Color is never the only cue for the finger. A falling note sits in its finger's lane, a key cap sits in its finger's column, a matte fills the finger itself, and bars, tables and the next-key line spell the finger's name. The row is never shade alone either: shape always travels with it, and the next-key line spells the row.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Brightness Rule",
+        "body": "In the stats view the keyboard's brightness means how much work a key needs, so the row shades switch off there and every key shows its home shade.",
         "section": "colors"
       },
       {
@@ -646,13 +816,16 @@
       "Do size everything in rem from the 1536 x 1024 reference frame so the cockpit scales as one piece.",
       "Do give every interactive element the shared interaction timing: 160ms hover in, 240ms release, 80ms press, 0.96 scale dip, ease-out `cubic-bezier(0.16, 1, 0.3, 1)`.",
       "Do keep the reduced-motion override that collapses transitions and animations to near zero.",
-      "Do pair every free-standing finger color with its finger's shape (diamond, triangle, square, circle, bar).",
+      "Do give every mark for a key its row's shape and shade: triangle up and brighter for the top row, circle and plain for the home row, triangle down and darker for the bottom row.",
+      "Do keep a second cue for the finger beside its color: the lane, the key column, the lit finger or the finger's name.",
       "Do set text on a finger hue or on Miss Coral in Finger Ink.",
       "Do separate zones with space and Hairline rules.",
-      "Do keep all copy lowercase and in Roboto Mono."
+      "Do keep all copy lowercase and in Roboto Mono.",
+      "Do draw a history line in its subject's color: Mustard for the layout's own number, the finger's hue for a finger, the row's shade of it for a key."
     ],
     "donts": [
-      "Don't use a finger hue for anything that is not a finger: no status, category, link or chart color.",
+      "Don't use a finger hue for anything that is not a finger: no status, category or link color, and no chart color except that finger's own history.",
+      "Don't use shape or shade for anything that is not the row, and never tie a shape to a finger.",
       "Don't extend Mustard beyond the wordmark, the product's numbers and the few selection marks the build already carries.",
       "Don't add a new yellow, or reuse Ring Yellow or Mustard for each other's role; the two values already sit too close and need separating rather than more overlap.",
       "Don't wrap rails or drills in cards, panels or bordered boxes.",

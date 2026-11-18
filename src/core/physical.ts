@@ -20,6 +20,16 @@ export const ROWS: PhysKey[][] = [
   [k('ControlLeft', 1.75, 'ctrl'), k('AltLeft', 1.75, 'alt'), k('Space', 8, 'space'), k('AltRight', 1.75, 'alt'), k('ControlRight', 1.75, 'ctrl')],
 ];
 
+/**
+ * Which row a key sits on. The row sets a note's shape and shade: the finger
+ * reaches up for the top row, rests on the home row, curls down for the bottom row.
+ */
+export type Row = 'number' | 'top' | 'home' | 'bottom' | 'thumb';
+export const ROW_IDS: Row[] = ['number', 'top', 'home', 'bottom', 'thumb'];
+
+const ROW_OF = new Map<string, Row>(ROWS.flatMap((row, i) => row.map((key) => [key.code, ROW_IDS[i]] as [string, Row])));
+export const rowOf = (code: string): Row => ROW_OF.get(code) ?? 'home';
+
 const assign = (finger: Finger, codes: string): [string, Finger][] => codes.split(' ').map((c) => [c, finger]);
 
 /** Standard touch-typing finger for each physical key. Layouts may override single keys. */

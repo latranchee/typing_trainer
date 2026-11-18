@@ -1,13 +1,16 @@
 import type { Finger, FingerKind } from '../core/fingers';
 import { FINGER_KINDS, fingerKind, fingerName } from '../core/fingers';
 import type { Weakness } from '../core/generator';
+import type { KeyTally } from '../core/history';
 import type { Command, KeyEvt } from '../core/input';
 import { attachInput } from '../core/input';
 import type { Layout } from '../core/layouts';
 import { getLayout, LAYOUTS } from '../core/layouts';
-import { intervalToWpm, RollingWpm, SetStats } from '../core/metrics';
+import { intervalToWpm, MIN_SAMPLES, RollingWpm, SetStats } from '../core/metrics';
+import type { Row } from '../core/physical';
+import { rowOf } from '../core/physical';
 import type { DrillId, Lang, Settings } from '../core/store';
-import { DRILL_IDS, MIN_SAMPLES, Store } from '../core/store';
+import { DRILL_IDS, Store } from '../core/store';
 import { AnchorsDrill } from '../drills/anchors';
 import type { HighwayFixture } from '../drills/highway';
 import { HighwayDrill } from '../drills/highway';
@@ -18,6 +21,8 @@ import { css, el, fitCanvas } from './dom';
 import { HandsView } from './hands';
 import type { KeyRole } from './keyboard';
 import { KeyboardView } from './keyboard';
+import { brandMark } from './mark';
+import { ProfileMenu } from './profile';
 import { Select } from './select';
 
 /** A gap longer than this between strokes is a pause and is not measured. */
@@ -69,10 +74,15 @@ export class App implements DrillHost {
   private frozen = false;
   private resultOpen = false;
   private sayTimer: ReturnType<typeof setTimeout> | null = null;
+  /** Per-key numbers of the set in progress. They join the set's history entry when it finishes. */
+  private setKeys: Record<string, KeyTally> = {};
 
   private root: HTMLElement;
   private tabs = new Map<DrillId, HTMLButtonElement>();
   private langButtons = new Map<Lang, HTMLButtonElement>();
+  private layoutSelect!: Select;
+  private profileMenu!: ProfileMenu;
+  private trackSwitch = el('button.track.ctl', { type: 'button', role: 'switch' }, el('span', {}, 'tracking'), el('span.switch', { 'aria-hidden': 'true' }));
   private wpmEl = el('output.wpm', { 'aria-label': 'rolling words per minute' }, '0');
   private wpmCap = el('button.wpm-cap.ctl', { type: 'button', title: 'change the rolling window' });
   private spark = el('canvas.spark', { role: 'img', 'aria-label': 'rolling words per minute over the last minute' });
@@ -94,6 +104,7 @@ export class App implements DrillHost {
     this.rolling = new RollingWpm(this.store.settings.window * 1000);
     this.build();
     this.keyboard.setLayout(this.layout);
+    this.syncTrack();
 
     attachInput({
       key: (event) => this.onKey(event),
@@ -135,6 +146,11 @@ export class App implements DrillHost {
 
     this.stats.hit(now, note.last);
     this.store.recordStroke(this.layout.id, code, clean ? gap : null);
+    if (clean && gap !== null) {
+      const tally = (this.setKeys[code] ??= [0, 0, 0]);
+      tally[0]++;
+      tally[2] += gap;
+    }
     if (note.last) {
       this.rolling.add(now);
       const pairGap = now - this.previousCharAt;
@@ -162,6 +178,7 @@ export class App implements DrillHost {
   miss(expected: Note, event: KeyEvt): void {
     this.stats.miss(event.time);
     this.store.recordError(this.layout.id, expected.stroke.code);
+    (this.setKeys[expected.stroke.code] ??= [0, 0, 0])[1]++;
     this.keyboard.wrong(event.code);
     this.missedSince = true;
     this.touch(event.time);
@@ -170,18 +187,18 @@ export class App implements DrillHost {
   setNext(hint: NextHint): void {
     if (this.frozen) return;
     const targets: { code: string; role: KeyRole }[] = [];
-    const fingers: Finger[] = [];
+    const reaches: { finger: Finger; row: Row }[] = [];
     const { note } = hint;
     let extra = '';
 
     for (const code of hint.anchors ?? []) targets.push({ code, role: 'anchor' });
     if (note) {
       targets.push({ code: note.stroke.code, role: 'next' });
-      fingers.push(note.finger);
+      reaches.push({ finger: note.finger, row: note.row });
       if (note.stroke.shift) {
         const proper = this.layout.properShift(note.stroke.code);
         targets.push({ code: proper, role: 'shift' });
-        fingers.push(proper === 'ShiftLeft' ? 'LP' : 'RP');
+        reaches.push({ finger: proper === 'ShiftLeft' ? 'LP' : 'RP', row: rowOf(proper) });
         extra = `+ ${proper === 'ShiftLeft' ? 'left' : 'right'} shift`;
       }
       if (hint.anchors?.length) {
@@ -190,24 +207,28 @@ export class App implements DrillHost {
     }
 
     this.keyboard.setTargets(targets);
-    this.hands.setActive(fingers);
+    this.hands.setActive(reaches);
     this.nextEl.classList.toggle('is-empty', !note);
-    if (note) this.showNext(note.label, note.finger, hint.message ?? extra);
+    if (note) this.showNext(note.label, note.finger, note.row, hint.message ?? extra);
   }
 
   finish(): void {
     const { stats, layout, settings } = this;
     this.updateBars();
     if (stats.chars > 0) {
+      // Rounded on the way in: browser storage holds years of these.
+      const keys: Record<string, KeyTally> = {};
+      for (const [code, [n, err, ms]] of Object.entries(this.setKeys)) keys[code] = [n, err, Math.round(ms)];
       this.store.addHistory({
         t: Date.now(),
         drill: this.drill.id,
         layout: layout.id,
         lang: settings.lang,
-        wpm: stats.wpm,
-        acc: stats.accuracy,
+        wpm: Math.round(stats.wpm * 100) / 100,
+        acc: Math.round(stats.accuracy * 10000) / 10000,
         chars: stats.chars,
-        secs: stats.activeMs / 1000,
+        secs: Math.round(stats.activeMs / 100) / 10,
+        keys,
       });
     }
 
@@ -237,6 +258,8 @@ export class App implements DrillHost {
     this.result.replaceChildren(
       el('p.result-wpm', {}, String(Math.round(stats.wpm)), el('small', {}, 'wpm for this set')),
       el('dl.result-list', {}, ...rows),
+      // A set typed with tracking off: the page says it kept nothing.
+      ...(this.store.tracking ? [] : [el('p.result-unsaved', {}, 'not saved: tracking is off')]),
       el('p.result-hint', {}, el('kbd', {}, 'enter'), 'next set'),
     );
     this.stage.append(this.result);
@@ -247,6 +270,10 @@ export class App implements DrillHost {
 
   lanes(): { edges: number[]; centres: number[] } {
     return this.keyboard.lanes();
+  }
+
+  refresh(): void {
+    this.renderOptions();
   }
 
   say(message: string, tone: 'plain' | 'error' = 'plain'): void {
@@ -272,10 +299,11 @@ export class App implements DrillHost {
       if (kind !== 'thumb') this.fingerFills.get(kind)!.style.setProperty('--v', String(fixture.fingers[kind]));
     }
     if (this.drill instanceof HighwayDrill) this.drill.freeze(fixture.highway);
+    const row = rowOf(fixture.next.code);
     this.keyboard.setTargets([{ code: fixture.next.code, role: 'next' }]);
-    this.hands.setActive([fixture.next.finger]);
+    this.hands.setActive([{ finger: fixture.next.finger, row }]);
     this.nextEl.classList.remove('is-empty');
-    this.showNext(fixture.next.label, fixture.next.finger, '');
+    this.showNext(fixture.next.label, fixture.next.finger, row, '');
   }
 
   // ---------- input ----------
@@ -301,6 +329,7 @@ export class App implements DrillHost {
     this.resultOpen = false;
     this.syncRest();
     this.stats = new SetStats();
+    this.setKeys = {};
     this.lastHitAt = null;
     this.missedSince = false;
     this.previousChar = '';
@@ -331,8 +360,8 @@ export class App implements DrillHost {
     return DRILL_IDS.includes(id) ? id : this.settings.drill;
   }
 
-  private setDrill(id: DrillId): void {
-    if (this.drill?.id === id) return;
+  private setDrill(id: DrillId, force = false): void {
+    if (!force && this.drill?.id === id) return;
     this.drill?.unmount();
     this.result.remove();
     this.resultOpen = false;
@@ -353,6 +382,7 @@ export class App implements DrillHost {
             ? new StatsView(this)
             : new LineDrill(id, this);
     this.stats = new SetStats();
+    this.setKeys = {};
     this.lastHitAt = null;
     this.drill.mount(this.stage);
     this.syncRest();
@@ -372,22 +402,62 @@ export class App implements DrillHost {
 
   private setLang(lang: Lang): void {
     this.store.update({ lang });
-    for (const [id, button] of this.langButtons) {
-      button.classList.toggle('is-active', id === lang);
-      button.setAttribute('aria-pressed', String(id === lang));
-    }
+    this.syncLang();
     this.newSet();
     this.renderOptions();
   }
 
+  private syncLang(): void {
+    for (const [id, button] of this.langButtons) {
+      const active = id === this.settings.lang;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    }
+  }
+
+  private setTrack(on: boolean): void {
+    this.store.update({ track: on });
+    this.syncTrack();
+    // A set is saved whole or not at all, so the switch starts a fresh one.
+    this.newSet();
+    this.renderOptions();
+  }
+
+  private syncTrack(): void {
+    const on = this.store.tracking;
+    this.trackSwitch.setAttribute('aria-checked', String(on));
+    this.trackSwitch.title = on ? 'sets and key numbers are saved' : 'nothing is saved while this is off';
+    this.root.dataset.track = String(on);
+  }
+
+  /** Another profile became active: load its layout, language and numbers. The open tab stays. */
+  private applyProfile(): void {
+    const { settings } = this;
+    this.layout = getLayout(settings.layout);
+    this.keyboard.setLayout(this.layout);
+    this.layoutSelect.set(this.layout.id);
+    this.syncLang();
+    this.syncTrack();
+    this.rolling.windowMs = settings.window * 1000;
+    this.rolling.reset();
+    this.samples = [];
+    this.drawSpark();
+    this.setDrill(this.drill.id, true);
+    this.updateBars();
+  }
+
   // ---------- rendering ----------
 
-  private showNext(label: string, finger: Finger, extra: string): void {
+  private showNext(label: string, finger: Finger, row: Row, extra: string): void {
     const kind = fingerKind(finger);
     this.nextCap.textContent = label === ' ' ? '' : label;
     this.nextCap.dataset.f = kind;
-    // The finger's shape rides with its name in every drill, so color is never the only cue.
-    this.nextFinger.replaceChildren(el('span.tok', { 'data-f': kind }), label === ' ' ? 'thumb, space' : fingerName(finger));
+    this.nextCap.dataset.row = row;
+    // Finger and row are also spelled out, so neither color nor shape is ever the only cue.
+    this.nextFinger.replaceChildren(
+      el('span.tok', { 'data-f': kind, 'data-row': row }),
+      label === ' ' ? 'thumb, space' : `${fingerName(finger)}, ${row} row`,
+    );
     this.nextExtra.textContent = extra;
   }
 
@@ -423,6 +493,9 @@ export class App implements DrillHost {
   private renderOptions(): void {
     // Runs on every drill, layout and option change, so the stats heat map always matches the saved numbers.
     this.keyboard.setHeat(this.drill.id === 'stats' ? this.heat : null);
+    // A drill that charts single keys turns the board's keys into buttons.
+    const { drill } = this;
+    this.keyboard.setPicker(drill.pickKey ? (code) => drill.pickKey?.(code) : null, drill.pickedKey?.() ?? null);
     const groups: OptionGroup[] = this.drill.options();
     const groupEls = groups.map((group) =>
       el(
@@ -534,12 +607,17 @@ export class App implements DrillHost {
       tabs.append(tab);
     }
 
-    const select = new Select(
+    this.layoutSelect = new Select(
       'keyboard layout',
       LAYOUTS.map((layout) => ({ value: layout.id, label: layout.name })),
       this.layout.id,
       (value) => this.setLayout(value),
     );
+    this.profileMenu = new ProfileMenu(this.store, () => this.applyProfile());
+    this.trackSwitch.addEventListener('click', () => {
+      this.trackSwitch.blur();
+      this.setTrack(!this.store.tracking);
+    });
 
     const lang = el('div.lang', { role: 'group', 'aria-label': 'practice language' });
     (['fr', 'en'] as Lang[]).forEach((id, i) => {
@@ -573,7 +651,7 @@ export class App implements DrillHost {
     });
 
     this.root.append(
-      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, 'auriculaire'), tabs, el('div.top-right', {}, select.root, lang))),
+      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, brandMark(), 'petitdoigt'), tabs, el('div.top-right', {}, this.trackSwitch, el('div.top-selects', {}, this.profileMenu.root, this.layoutSelect.root), lang))),
       el(
         'main.cockpit',
         {},
@@ -591,6 +669,7 @@ export class App implements DrillHost {
             el('div.stat', {}, el('span.stat-label', {}, 'streak'), this.streakEl),
           ),
           fingers,
+          el('p.rail-note', {}, 'tracking is off: nothing you type is saved'),
         ),
         el('section.centre', { 'aria-label': 'drill' }, this.stage, this.keyboard.root, el('div.foot', {}, this.optionsEl, this.noteEl)),
         el('aside.rail-right', { 'aria-label': 'finger to use' }, this.hands.root, this.nextEl),

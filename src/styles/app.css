@@ -1,4 +1,4 @@
-/* auriculaire: one screen, sized from the 1536 x 1024 reference frame.
+/* petitdoigt: one screen, sized from the 1536 x 1024 reference frame.
    1rem is 16px at that frame and scales with the viewport so the cockpit always fits. */
 
 :root {
@@ -21,11 +21,24 @@
   /* Text that sits on a finger color. */
   --ink: #1d1e22;
 
+  /* Color is the finger. Each hue has three shades, one per letter row:
+     brighter for the top row, the plain hue for the home row, darker for the bottom row. */
+  --f-pinky-top: #fcb3ca;
   --f-pinky: #fb8ab1;
+  --f-pinky-bottom: #e46695;
+  --f-ring-top: #ffe99f;
   --f-ring: #fbd75a;
+  --f-ring-bottom: #e1b905;
+  --f-middle-top: #aeddae;
   --f-middle: #7fcc81;
+  --f-middle-bottom: #57b25c;
+  --f-index-top: #9ac1ef;
   --f-index: #6ba9f2;
+  --f-index-bottom: #448cde;
   --f-thumb: #aab0ba;
+
+  /* Rounded triangle, tip up: the top-row mark. Turned over, it is the bottom-row mark. */
+  --tri: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 13 90 85H10Z' stroke='%23000' stroke-width='14' stroke-linejoin='round'/%3E%3C/svg%3E");
 
   --font: 'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -88,11 +101,17 @@ p {
   border-radius: var(--radius-inner);
 }
 
-[data-f='pinky'] { --f: var(--f-pinky); }
-[data-f='ring'] { --f: var(--f-ring); }
-[data-f='middle'] { --f: var(--f-middle); }
-[data-f='index'] { --f: var(--f-index); }
-[data-f='thumb'] { --f: var(--f-thumb); }
+/* Finger coding. `data-f` picks the hue, `data-row` picks the shade of it.
+   Without a row an element shows the finger's own color, the home-row shade. */
+[data-f='pinky'] { --f-up: var(--f-pinky-top); --f-home: var(--f-pinky); --f-down: var(--f-pinky-bottom); }
+[data-f='ring'] { --f-up: var(--f-ring-top); --f-home: var(--f-ring); --f-down: var(--f-ring-bottom); }
+[data-f='middle'] { --f-up: var(--f-middle-top); --f-home: var(--f-middle); --f-down: var(--f-middle-bottom); }
+[data-f='index'] { --f-up: var(--f-index-top); --f-home: var(--f-index); --f-down: var(--f-index-bottom); }
+[data-f='thumb'] { --f-up: var(--f-thumb); --f-home: var(--f-thumb); --f-down: var(--f-thumb); }
+[data-f] { --f: var(--f-home); }
+[data-f][data-row='number'],
+[data-f][data-row='top'] { --f: var(--f-up); }
+[data-f][data-row='bottom'] { --f: var(--f-down); }
 
 /* Interaction system: every control eases in on hover, eases out slower, and dips on press. */
 .ctl {
@@ -143,8 +162,24 @@ p {
   font-weight: 600;
   letter-spacing: 0.01em;
   color: var(--accent);
-  width: 9.5rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4em;
+  white-space: nowrap;
   margin-right: 3.25rem;
+}
+
+/* The mark stands on the wordmark's baseline and scales with its type size:
+   the tallest finger reaches the ascender line. */
+.mark {
+  flex: none;
+  width: 0.9565em;
+  height: 0.7826em;
+  fill: var(--muted);
+}
+
+.mark-pinky {
+  fill: var(--f-pinky);
 }
 
 .tabs {
@@ -169,6 +204,12 @@ p {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.top-selects {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .lang {
@@ -273,6 +314,163 @@ p {
 .select-option[aria-selected='true'] {
   color: var(--text);
   font-weight: 600;
+}
+
+.select-option[aria-current='true'] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---------- profile menu ----------
+   The layout select's button and popover, with a list of profiles over the tools that manage them. */
+
+.profile .select-btn {
+  min-width: 6.5rem;
+  max-width: 11rem;
+}
+.profile .select-btn > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.profile-menu {
+  width: 15.5rem;
+}
+.profile-list {
+  display: grid;
+  max-height: 15rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+.profile-list .select-option {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile-rule {
+  height: 1px;
+  margin: 0.25rem 0.5rem;
+  background: var(--line-strong);
+}
+.profile-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.375rem;
+  margin: 0;
+  padding: 0.25rem 0.5rem 0.5rem;
+}
+.profile-input {
+  min-width: 0;
+  height: 2rem;
+  padding: 0 0.625rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-inner);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9375rem;
+  caret-color: var(--accent);
+  user-select: text;
+  transition: border-color var(--hover-out) var(--ease-out);
+}
+.profile-input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.profile-input:hover {
+  border-color: var(--muted);
+  transition-duration: var(--hover-in);
+}
+.profile-input:focus-visible {
+  outline-offset: 0.0625rem;
+}
+.profile-input.is-bad {
+  border-color: var(--error);
+}
+.profile-go {
+  height: 2rem;
+  padding: 0 0.75rem;
+  border-radius: var(--radius-inner);
+  background: var(--key-hover);
+  color: var(--text);
+  font-size: 0.875rem;
+}
+.profile-go:hover {
+  background: var(--line-strong);
+}
+.profile-msg {
+  grid-column: 1 / -1;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-2);
+}
+.profile-msg:empty {
+  display: none;
+}
+.profile-ask {
+  padding: 0.375rem 0.75rem 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--text);
+}
+.profile-confirm {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.375rem;
+  padding: 0.5rem;
+}
+
+/* ---------- tracking switch ---------- */
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  height: 2.1875rem;
+  margin-top: 0.25rem;
+  font-size: 0.9375rem;
+  color: var(--text-2);
+}
+.track:hover {
+  color: var(--text);
+}
+.switch {
+  position: relative;
+  flex: none;
+  width: 1.875rem;
+  height: 1.125rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 1rem;
+  background: var(--key);
+  transition:
+    background-color var(--hover-out) var(--ease-out),
+    border-color var(--hover-out) var(--ease-out);
+}
+.switch::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0.125rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--muted);
+  translate: 0 -50%;
+  transition:
+    translate var(--hover-out) var(--ease-out),
+    background-color var(--hover-out) var(--ease-out);
+}
+.track:hover .switch {
+  border-color: var(--muted);
+  transition-duration: var(--hover-in);
+}
+.track[aria-checked='true'] .switch {
+  background: var(--line-strong);
+}
+.track[aria-checked='true'] .switch::after {
+  translate: 0.75rem -50%;
+  background: var(--text);
 }
 
 /* ---------- cockpit ---------- */
@@ -383,6 +581,19 @@ p {
   transition: scale 600ms var(--ease-out);
 }
 
+/* Shown while tracking is off, next to the numbers that are not being saved. */
+.rail-note {
+  display: none;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-2);
+  animation: fade 180ms var(--ease-out);
+}
+.app[data-track='false'] .rail-note {
+  display: block;
+}
+
 .centre {
   flex: none;
   width: 49.75rem;
@@ -451,9 +662,33 @@ p {
   row-gap: 0.625rem;
 }
 .kb-row {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(60, minmax(0, 1fr));
   height: 3.125rem;
+}
+/* Row legend: beside each letter row, the shape its notes take. */
+.kb-row[data-row='top']::before,
+.kb-row[data-row='home']::before,
+.kb-row[data-row='bottom']::before {
+  content: '';
+  position: absolute;
+  left: -1.125rem;
+  top: 50%;
+  width: 0.625rem;
+  height: 0.625rem;
+  translate: 0 -50%;
+  background: var(--muted);
+  border-radius: 50%;
+}
+.kb-row[data-row='top']::before,
+.kb-row[data-row='bottom']::before {
+  border-radius: 0;
+  -webkit-mask: var(--tri) center / 100% 100% no-repeat;
+  mask: var(--tri) center / 100% 100% no-repeat;
+}
+.kb-row[data-row='bottom']::before {
+  rotate: 180deg;
 }
 .key {
   grid-column: span var(--span);
@@ -483,12 +718,18 @@ p {
   outline: 0.125rem solid transparent;
   outline-offset: 0.125rem;
 }
+/* A key shows its finger's hue in its row's shade, at full strength: the darkest shade
+   still carries a dark legend at 4.5:1. `--heat` only dims the fill in the stats view. */
 .key[data-f] .cap {
-  background: color-mix(in oklab, var(--f) calc(var(--heat, 0.9) * 100%), var(--bg));
+  background: color-mix(in oklab, var(--f) calc(var(--heat, 1) * 100%), var(--bg));
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26);
   color: var(--ink);
   font-size: 1.0625rem;
   font-weight: 500;
+}
+/* Stats view: brightness there means how much work a key needs, so the row shades step aside. */
+.kb.is-heat .key[data-f] {
+  --f: var(--f-home);
 }
 /* Stats view: keys that need little work drop to a dim fill and switch to light legends. */
 .key[data-f].is-dim .cap {
@@ -532,6 +773,28 @@ p {
   background: var(--error);
   color: var(--ink);
   transition-duration: var(--press);
+}
+
+/* Stats view: a key is a button that puts its history on the chart. The outline marks the chosen one. */
+.kb.is-pick .key[data-f] {
+  cursor: pointer;
+}
+.kb.is-pick .key[data-f]:hover .cap {
+  outline-color: var(--muted);
+  transition-duration: var(--hover-in);
+}
+.kb.is-pick .key[data-f]:active .cap {
+  scale: 0.93;
+  transition-duration: var(--press);
+}
+.kb.is-pick .key.is-picked .cap {
+  outline-color: var(--text);
+}
+.kb .key:focus-visible {
+  outline: none;
+}
+.kb .key:focus-visible .cap {
+  outline-color: var(--accent);
 }
 
 /* ---------- options ---------- */
@@ -691,7 +954,10 @@ p {
   color: var(--error);
 }
 
-/* ---------- finger tokens (DOM) ---------- */
+/* ---------- finger tokens (DOM) ----------
+   The hue is the finger. The shape is the row and points the way the finger travels:
+   triangle up for the top row, circle for the home row, triangle down for the bottom row.
+   A token with no row is the finger itself, shown as its home circle. */
 
 .tok {
   --size: 2.75rem;
@@ -714,25 +980,34 @@ p {
   border-radius: 50%;
   transition: background-color var(--hover-out) var(--ease-out);
 }
-.tok[data-f='middle']::before {
-  inset: 4%;
-  border-radius: 14%;
+.tok[data-row='top']::before,
+.tok[data-row='bottom']::before {
+  border-radius: 0;
+  -webkit-mask: var(--tri) center / 100% 100% no-repeat;
+  mask: var(--tri) center / 100% 100% no-repeat;
 }
-.tok[data-f='pinky']::before {
+.tok[data-row='bottom']::before {
+  rotate: 180deg;
+}
+/* A triangle carries its letter at the centroid, toward the flat side. */
+.tok[data-row='top'] > span {
+  translate: 0 14%;
+}
+.tok[data-row='bottom'] > span {
+  translate: 0 -10%;
+}
+.tok[data-row='number']::before {
   inset: 13%;
   border-radius: 14%;
   rotate: 45deg;
 }
-.tok[data-f='ring']::before {
-  border-radius: 0;
-  clip-path: polygon(50% 4%, 98% 92%, 2% 92%);
-}
-.tok[data-f='ring'] > span {
-  translate: 0 14%;
-}
+/* The space bar's mark is a bar whatever the row. */
 .tok[data-f='thumb']::before {
   inset: 30% 0;
   border-radius: 1rem;
+  -webkit-mask: none;
+  mask: none;
+  rotate: none;
 }
 .tok > span {
   position: relative;
@@ -974,6 +1249,11 @@ p {
   align-items: center;
   gap: 0.625rem;
 }
+.result-unsaved {
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  color: var(--text-2);
+}
 .result-hint {
   margin-top: 2rem;
   font-size: 1rem;
@@ -996,10 +1276,12 @@ p {
   scrollbar-color: var(--line-strong) transparent;
   user-select: text;
 }
+/* The figure names what the chart follows: the layout, one finger or one key. */
 .stats-top {
-  display: flex;
-  align-items: flex-end;
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: 13.5rem minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
 }
 .stats-avg {
   font-size: 3.5rem;
@@ -1007,32 +1289,78 @@ p {
   font-weight: 700;
   color: var(--accent);
 }
-.stats-avg small {
-  display: block;
-  margin-top: 0.625rem;
-  font-size: 0.9375rem;
-  font-weight: 400;
+.stats-avg.is-none {
   color: var(--muted);
 }
+.stats-subject {
+  margin-top: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+.stats-subject .tok {
+  --size: 1rem;
+}
+.stats-window {
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+/* Under the figure, one slot of one height: the hint, or the button that leaves a picked subject. */
+.stats-hint {
+  margin-top: 0.375rem;
+  padding: 0.25rem 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.stats-clear {
+  margin: 0.375rem 0 0 -0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-inner);
+  font-size: 0.8125rem;
+  color: var(--text-2);
+}
+.stats-clear:hover {
+  color: var(--text);
+  background: var(--key);
+}
 .stats-chart-wrap {
-  flex: 1;
   min-width: 0;
 }
 .stats-chart {
   display: block;
   width: 100%;
-  height: 4.25rem;
+  height: 6.5rem;
+  cursor: crosshair;
+  touch-action: pan-y;
 }
+/* Starts where the plot starts, past the gutter that holds the values. */
 .stats-chart-cap {
-  margin-top: 0.5rem;
+  margin-top: 0.375rem;
+  padding-left: 2.5rem;
+  min-height: 1.0625rem;
   font-size: 0.8125rem;
   color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+.stats-chart-none {
+  max-width: 30rem;
+  padding-top: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+/* Fingers, slowest keys, slowest pairs: three lists of eight rows on one row grid, so they end together. */
 .stats-cols {
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
   display: grid;
-  grid-template-columns: 1.35fr 1fr;
-  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 1.75rem;
 }
 .stats h2 {
   font-size: 0.9375rem;
@@ -1058,7 +1386,8 @@ p {
   padding-left: 0;
 }
 .stats-table td {
-  padding: 0.3125rem 0 0.3125rem 1rem;
+  height: 1.875rem;
+  padding: 0 0 0 1rem;
   text-align: right;
   color: var(--text);
   border-top: 1px solid var(--line);
@@ -1067,13 +1396,24 @@ p {
   text-align: left;
   padding-left: 0;
 }
-.stats-name {
-  display: flex;
+/* A finger or a key in a list is a button: it puts its history on the chart. */
+.stats-pick {
+  display: inline-flex;
   align-items: center;
   gap: 0.625rem;
+  margin-left: -0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-inner);
+  color: var(--text);
 }
-.stats-name .tok {
+.stats-pick .tok {
   --size: 1.125rem;
+}
+.stats-pick:hover {
+  background: var(--key);
+}
+.stats-pick[aria-pressed='true'] {
+  background: var(--line-strong);
 }
 .stats-dim {
   color: var(--muted);
@@ -1121,12 +1461,38 @@ p {
     margin-right: auto;
     font-size: 1.25rem;
   }
+  /* Line one: wordmark, tracking, language. Line two: the two selects. Line three: the tabs. */
   .top-right {
-    margin-left: 0;
-    gap: 1rem;
+    display: contents;
+  }
+  .track {
+    order: 1;
+    height: auto;
+    margin-top: 0;
+  }
+  .lang {
+    order: 2;
+  }
+  .top-selects {
+    order: 3;
+    width: 100%;
+  }
+  .top-selects .select {
+    flex: 1;
+    min-width: 0;
+    margin-top: 0;
+  }
+  .top-selects .select-btn {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+  .profile-menu {
+    right: auto;
+    left: 0;
   }
   .tabs {
-    order: 3;
+    order: 4;
     width: 100%;
     gap: 1.5rem;
     overflow-x: auto;
@@ -1191,12 +1557,20 @@ p {
     padding-top: 1.25rem;
     grid-template-rows: 44vh auto auto;
   }
+  /* The stats view is a page of lists, not a stage: it takes the height it needs. */
+  .app[data-drill='stats'] .centre {
+    grid-template-rows: auto auto auto;
+  }
   .kb {
     margin: 1.25rem 0 0;
     row-gap: 0.25rem;
   }
   .kb-row {
     height: 2rem;
+  }
+  /* No gutter beside the board here: the next-key line names the row instead. */
+  .kb .kb-row::before {
+    display: none;
   }
   .key {
     padding: 0 0.125rem;
@@ -1244,8 +1618,16 @@ p {
     margin-top: 0;
     font-size: 0.9375rem;
   }
+  .stats-top,
   .stats-cols {
     grid-template-columns: 1fr;
+  }
+  .stats-top {
+    gap: 1rem;
+  }
+  .rail-note {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
   }
   .stats {
     position: static;

@@ -1,22 +1,63 @@
+import type { FingerKind } from '../core/fingers';
 import { fingerKind, fingerName } from '../core/fingers';
-import { intervalToWpm } from '../core/metrics';
-import { MIN_SAMPLES } from '../core/store';
+import type { HistoryEntry, Metric, Point, Subject } from '../core/history';
+import { rolling, series, trend } from '../core/history';
+import { intervalToWpm, MIN_SAMPLES } from '../core/metrics';
+import { rowOf } from '../core/physical';
 import { css, el, fitCanvas } from '../ui/dom';
 import type { Drill, DrillHost, OptionGroup } from './types';
 
 const ROLLING_SETS = 10;
-const CHART_SETS = 40;
+const RECENT_SETS = 40;
+/** Rows in the slowest-keys and slowest-pairs lists: as many as there are fingers, so the three lists end together. */
+const LIST_ROWS = 8;
+const DOT = String.fromCharCode(0xb7);
+const MINUS = String.fromCharCode(0x2212);
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+/** Chart geometry in rem: the value labels' gutter, the date band, and the head room over the plot. */
+const GUTTER = 2.5;
+const DATE_BAND = 1.375;
+const HEAD = 0.25;
 
 const percent = (value: number): string => `${Math.round(value * 100)}%`;
 const wpm = (ms: number): string => String(Math.round(intervalToWpm(ms)));
+const two = (value: number): string => String(value).padStart(2, '0');
+const sameDay = (a: number, b: number): boolean => new Date(a).toDateString() === new Date(b).toDateString();
+const subjectId = (subject: Subject): string =>
+  subject.kind === 'all' ? 'all' : subject.kind === 'finger' ? `finger:${subject.finger}` : `key:${subject.code}`;
 
-/** What the keyboard has measured on the selected layout. Read-only: no typing here. */
+function dayLabel(t: number): string {
+  const date = new Date(t);
+  const label = `${MONTHS[date.getMonth()]} ${date.getDate()}`;
+  return date.getFullYear() === new Date().getFullYear() ? label : `${label} ${date.getFullYear()}`;
+}
+
+/** When an entry was typed: a day rollup has a date, a set also has its time. */
+function when(entry: HistoryEntry): string {
+  if (entry.sets !== undefined) return dayLabel(entry.t);
+  const date = new Date(entry.t);
+  return `${dayLabel(entry.t)}, ${two(date.getHours())}:${two(date.getMinutes())}`;
+}
+
+/**
+ * What the keyboard has measured on the selected layout, and how it moved over time.
+ * The chart follows one subject: the whole layout, a finger, or a key. Read-only: no typing here.
+ */
 export class StatsView implements Drill {
   readonly id = 'stats' as const;
   private host: DrillHost;
   private root = el('div.stats');
   private chart: HTMLCanvasElement | null = null;
+  private cap: HTMLElement | null = null;
   private armed = false;
+  private subject: Subject = { kind: 'all' };
+  private metric: Metric = 'wpm';
+  private range: 'recent' | 'all' = 'recent';
+  private points: Point[] = [];
+  private line: (number | null)[] = [];
+  private hover: number | null = null;
+  /** Where the last draw put the slots, for reading the pointer. */
+  private slots = { left: 0, width: 1 };
   private resizer = new ResizeObserver(() => this.drawChart());
 
   constructor(host: DrillHost) {
@@ -41,22 +82,60 @@ export class StatsView implements Drill {
 
   key(): void {}
 
+  /** A key picked on the on-screen keyboard: its history goes on the chart. Picking it again returns to all keys. */
+  pickKey(code: string): void {
+    this.select({ kind: 'key', code });
+  }
+
+  pickedKey(): string | null {
+    return this.subject.kind === 'key' ? this.subject.code : null;
+  }
+
   options(): OptionGroup[] {
     return [
+      {
+        label: 'chart',
+        value: this.metric,
+        choices: [
+          { value: 'wpm', label: 'speed' },
+          { value: 'acc', label: 'accuracy' },
+        ],
+        set: (value) => {
+          this.metric = value as Metric;
+          this.hover = null;
+          this.render();
+        },
+      },
+      {
+        label: 'range',
+        value: this.range,
+        choices: [
+          { value: 'recent', label: `${RECENT_SETS} sets` },
+          { value: 'all', label: 'all' },
+        ],
+        set: (value) => {
+          this.range = value as 'recent' | 'all';
+          this.hover = null;
+          this.render();
+        },
+      },
       {
         label: 'saved numbers',
         value: this.armed ? 'armed' : 'keep',
         choices: this.armed
           ? [
               { value: 'keep', label: 'keep' },
-              { value: 'erase', label: 'erase everything' },
+              { value: 'erase', label: `erase all of ${this.host.store.profileName}` },
             ]
           : [
               { value: 'keep', label: 'keep' },
               { value: 'armed', label: 'erase' },
             ],
         set: (value) => {
-          if (value === 'erase') this.host.store.resetStats();
+          if (value === 'erase') {
+            this.host.store.resetStats();
+            this.subject = { kind: 'all' };
+          }
           this.armed = value === 'armed';
           this.render();
         },
@@ -64,55 +143,153 @@ export class StatsView implements Drill {
     ];
   }
 
+  private select(subject: Subject): void {
+    this.subject = subjectId(subject) === subjectId(this.subject) ? { kind: 'all' } : subject;
+    this.hover = null;
+    // The lists are rebuilt, so the focus goes back to the control that was used.
+    const focused = document.activeElement instanceof HTMLElement && this.root.contains(document.activeElement) ? document.activeElement.dataset.pick : undefined;
+    this.render();
+    if (focused) this.root.querySelector<HTMLElement>(`[data-pick="${focused}"]`)?.focus();
+    this.host.refresh();
+  }
+
+  private subjectName(subject: Subject): string {
+    const { layout } = this.host;
+    if (subject.kind === 'all') return 'all keys';
+    if (subject.kind === 'finger') return fingerName(subject.finger);
+    if (subject.code === 'Space') return 'space bar, thumb';
+    return `key ${layout.strokeLabel({ code: subject.code, shift: false })}, ${fingerName(layout.fingerOf(subject.code))}`;
+  }
+
+  private subjectToken(): HTMLElement | null {
+    const { layout } = this.host;
+    if (this.subject.kind === 'all') return null;
+    if (this.subject.kind === 'finger') return el('span.tok', { 'data-f': fingerKind(this.subject.finger) });
+    return el('span.tok', { 'data-f': fingerKind(layout.fingerOf(this.subject.code)), 'data-row': rowOf(this.subject.code) });
+  }
+
+  /** The line takes the subject's color: mustard for the layout, the finger's hue, the key's row shade of it. */
+  private subjectColor(): string {
+    if (this.subject.kind === 'all') return css('--accent');
+    const kind: FingerKind = fingerKind(this.subject.kind === 'finger' ? this.subject.finger : this.host.layout.fingerOf(this.subject.code));
+    if (this.subject.kind === 'finger' || kind === 'thumb') return css(`--f-${kind}`);
+    const row = rowOf(this.subject.code);
+    return css(row === 'top' || row === 'number' ? `--f-${kind}-top` : row === 'bottom' ? `--f-${kind}-bottom` : `--f-${kind}`);
+  }
+
+  private format(value: number): string {
+    return this.metric === 'wpm' ? `${Math.round(value)} wpm` : percent(value);
+  }
+
+  /** A change in the chart's unit: words per minute, or points of accuracy. */
+  private signed(change: number): string {
+    const value = this.metric === 'wpm' ? Math.round(change) : Math.round(change * 1000) / 10;
+    if (value === 0) return '0';
+    return `${value > 0 ? '+' : MINUS}${Math.abs(value)}`;
+  }
+
+  private pick(subject: Subject, ...children: (Node | string)[]): HTMLButtonElement {
+    const button = el(
+      'button.stats-pick.ctl',
+      { type: 'button', 'aria-pressed': String(subjectId(subject) === subjectId(this.subject)), 'data-pick': subjectId(subject) },
+      ...children,
+    );
+    button.addEventListener('click', () => this.select(subject));
+    return button;
+  }
+
   private render(): void {
     const { store, layout } = this.host;
-    const profile = store.profile(layout.id);
+    const stats = store.layoutStats(layout.id);
     const sets = store.history.filter((entry) => entry.layout === layout.id);
-    const measured = Object.entries(profile.keys).filter(([code, stat]) => code !== 'Space' && stat.n >= MIN_SAMPLES);
+    const measured = Object.entries(stats.keys).filter(([code, stat]) => code !== 'Space' && stat.n >= MIN_SAMPLES);
+    const trackingOff = store.tracking ? '' : ' Tracking is off, so nothing is being saved.';
 
     this.resizer.disconnect();
     this.chart = null;
+    this.cap = null;
     if (sets.length === 0 && measured.length === 0) {
       this.root.replaceChildren(
-        el('p.stats-empty', {}, `Nothing measured on ${layout.name} yet. Finish a set in any drill and the per-finger numbers show up here.`),
+        el(
+          'p.stats-empty',
+          {},
+          `Nothing measured on ${layout.name} for ${store.profileName} yet. Finish a set in any drill and the per-finger numbers show up here.${trackingOff}`,
+        ),
       );
       return;
     }
 
-    const recent = sets.slice(-ROLLING_SETS);
-    const average = recent.length > 0 ? recent.reduce((sum, entry) => sum + entry.wpm, 0) / recent.length : 0;
-    this.chart = el('canvas.stats-chart', { role: 'img', 'aria-label': 'words per minute for recent sets' });
-    const top = el(
-      'div.stats-top',
+    this.points = series(store.history, layout, this.subject, this.metric);
+    this.line = rolling(this.points, ROLLING_SETS, MIN_SAMPLES);
+    const pooled = Math.min(ROLLING_SETS, this.points.filter((point) => point.value !== null).length);
+    const current = this.line.length > 0 ? this.line[this.line.length - 1] : null;
+    const metricName = this.metric === 'wpm' ? 'wpm' : 'accuracy';
+    const name = this.subjectName(this.subject);
+
+    const figure = el(
+      'div.stats-figure',
       {},
-      el('div.stats-avg', {}, String(Math.round(average)), el('small', {}, `wpm, average of last ${recent.length} ${recent.length === 1 ? 'set' : 'sets'}`)),
-      el('div.stats-chart-wrap', {}, this.chart, el('p.stats-chart-cap', {}, 'bars: wpm of each set. line: average of the last ten.')),
+      el(current === null ? 'div.stats-avg.is-none' : 'div.stats-avg', {}, current === null ? 'n/a' : this.metric === 'wpm' ? String(Math.round(current)) : percent(current)),
+      el('p.stats-subject', {}, this.subjectToken(), name),
+      el('p.stats-window', {}, current === null ? `${metricName}, too few sets yet` : `${metricName}, last ${pooled} ${pooled === 1 ? 'set' : 'sets'}`),
     );
+    // One slot under the figure: how to pick a subject, or the way back from one.
+    if (this.subject.kind === 'all') {
+      figure.append(el('p.stats-hint', {}, 'pick a finger or key below'));
+    } else {
+      const clear = el('button.stats-clear.ctl', { type: 'button', 'data-pick': 'all' }, 'back to all keys');
+      clear.addEventListener('click', () => this.select(this.subject));
+      figure.append(clear);
+    }
+
+    const wrap = el('div.stats-chart-wrap');
+    if (this.points.some((point) => point.value !== null)) {
+      const chart = el('canvas.stats-chart', { role: 'img', 'aria-label': `${metricName} of ${name} over the saved sets` });
+      this.chart = chart;
+      this.cap = el('p.stats-chart-cap');
+      chart.addEventListener('pointermove', (event) => this.setHover(event));
+      chart.addEventListener('pointerdown', (event) => this.setHover(event));
+      chart.addEventListener('pointerleave', () => this.setHover(null));
+      wrap.append(chart, this.cap);
+    } else {
+      wrap.append(
+        el(
+          'p.stats-chart-none',
+          {},
+          this.subject.kind === 'all'
+            ? 'No finished set on this layout yet. The chart starts with the first one.'
+            : `No history for ${name} yet. Finger and key history starts with the next set you finish.`,
+        ),
+      );
+    }
 
     const fingerRows = store
       .fingerSummary(layout)
       .filter((summary) => fingerKind(summary.finger) !== 'thumb')
       .map((summary) => {
         const enough = summary.n >= MIN_SAMPLES;
+        const subject: Subject = { kind: 'finger', finger: summary.finger };
+        const change = trend(series(store.history, layout, subject, this.metric), ROLLING_SETS, MIN_SAMPLES);
         return el(
           'tr',
           {},
-          el('td', {}, el('span.stats-name', {}, el('span.tok', { 'data-f': fingerKind(summary.finger) }), fingerName(summary.finger))),
+          el('td', {}, this.pick(subject, el('span.tok', { 'data-f': fingerKind(summary.finger) }), fingerName(summary.finger))),
           el(enough ? 'td' : 'td.stats-dim', {}, enough ? wpm(summary.ms) : 'n/a'),
           el(enough ? 'td' : 'td.stats-dim', {}, enough ? percent(summary.n / (summary.n + summary.err)) : 'n/a'),
+          el(change === null ? 'td.stats-dim' : 'td', {}, change === null ? 'n/a' : this.signed(change)),
           el('td.stats-dim', {}, String(summary.n)),
         );
       });
     const fingerTable = el(
       'table.stats-table',
       {},
-      el('thead', {}, el('tr', {}, el('th', {}, 'finger'), el('th', {}, 'wpm'), el('th', {}, 'accuracy'), el('th', {}, 'keys'))),
+      el('thead', {}, el('tr', {}, el('th', {}, 'finger'), el('th', {}, 'wpm'), el('th', {}, 'acc'), el('th', {}, 'trend'), el('th', {}, 'keys'))),
       el('tbody', {}, ...fingerRows),
     );
 
     const slowKeys = measured
       .sort(([, a], [, b]) => b.ms - a.ms)
-      .slice(0, 6)
+      .slice(0, LIST_ROWS)
       .map(([code, stat]) =>
         el(
           'tr',
@@ -120,89 +297,234 @@ export class StatsView implements Drill {
           el(
             'td',
             {},
-            el('span.stats-name', {}, el('span.tok', { 'data-f': fingerKind(layout.fingerOf(code)) }), layout.strokeLabel({ code, shift: false })),
+            this.pick(
+              { kind: 'key', code },
+              el('span.tok', { 'data-f': fingerKind(layout.fingerOf(code)), 'data-row': rowOf(code) }),
+              layout.strokeLabel({ code, shift: false }),
+            ),
           ),
           el('td', {}, wpm(stat.ms)),
           el('td', {}, percent(stat.n / (stat.n + stat.err))),
         ),
       );
-    const slowPairs = Object.entries(profile.pairs)
+    const slowPairs = Object.entries(stats.pairs)
       .filter(([, stat]) => stat.n >= MIN_SAMPLES)
       .sort(([, a], [, b]) => b.ms - a.ms)
-      .slice(0, 6)
+      .slice(0, LIST_ROWS)
       .map(([pair, stat]) => el('tr', {}, el('td', {}, pair), el('td', {}, wpm(stat.ms)), el('td.stats-dim', {}, String(stat.n))));
 
-    const side = el('div');
+    const lists = [el('div', {}, el('h2', {}, 'by finger'), fingerTable)];
     if (slowKeys.length > 0) {
-      side.append(
-        el('h2', {}, 'slowest keys'),
+      lists.push(
         el(
-          'table.stats-table',
+          'div',
           {},
-          el('thead', {}, el('tr', {}, el('th', {}, 'key'), el('th', {}, 'wpm'), el('th', {}, 'accuracy'))),
-          el('tbody', {}, ...slowKeys),
+          el('h2', {}, 'slowest keys'),
+          el(
+            'table.stats-table',
+            {},
+            el('thead', {}, el('tr', {}, el('th', {}, 'key'), el('th', {}, 'wpm'), el('th', {}, 'acc'))),
+            el('tbody', {}, ...slowKeys),
+          ),
         ),
       );
     }
     if (slowPairs.length > 0) {
-      side.append(
-        el('h2', {}, 'slowest letter pairs'),
+      lists.push(
         el(
-          'table.stats-table',
+          'div',
           {},
-          el('thead', {}, el('tr', {}, el('th', {}, 'pair'), el('th', {}, 'wpm'), el('th', {}, 'seen'))),
-          el('tbody', {}, ...slowPairs),
+          el('h2', {}, 'slowest pairs'),
+          el(
+            'table.stats-table',
+            {},
+            el('thead', {}, el('tr', {}, el('th', {}, 'pair'), el('th', {}, 'wpm'), el('th', {}, 'seen'))),
+            el('tbody', {}, ...slowPairs),
+          ),
         ),
       );
     }
 
-    const shifts = profile.shiftOk + profile.shiftBad;
+    const shifts = stats.shiftOk + stats.shiftBad;
     const foot = el(
       'p.stats-foot',
       {},
-      shifts > 0
-        ? `Shift on the opposite hand: ${percent(profile.shiftOk / shifts)} of ${shifts} capitals. `
-        : '',
-      'The keyboard below shows the same numbers: the stronger the color, the more work the key needs.',
+      'Pick a finger or a key, in these lists or on the keyboard, to chart its history. ',
+      `Trend is the last ten sets against the ten before, in ${this.metric === 'wpm' ? 'wpm' : 'points of accuracy'}. `,
+      'On the keyboard, a stronger color means the key needs more work.',
+      shifts > 0 ? ` Shift on the opposite hand: ${percent(stats.shiftOk / shifts)} of ${shifts} capitals.` : '',
+      trackingOff,
     );
 
-    this.root.replaceChildren(top, el('div.stats-cols', {}, el('div', {}, el('h2', {}, 'by finger'), fingerTable), side), foot);
-    this.resizer.observe(this.chart);
+    this.root.replaceChildren(el('div.stats-top', {}, figure, wrap), el('div.stats-cols', {}, ...lists), foot);
+    if (this.chart) {
+      this.resizer.observe(this.chart);
+      this.drawChart();
+    }
+  }
+
+  /** The entries the chart shows: the last forty, or everything saved. */
+  private view(): { points: Point[]; line: (number | null)[] } {
+    if (this.range === 'all') return { points: this.points, line: this.line };
+    return { points: this.points.slice(-RECENT_SETS), line: this.line.slice(-RECENT_SETS) };
+  }
+
+  private setHover(event: PointerEvent | null): void {
+    let index: number | null = null;
+    if (event && this.chart) {
+      const at = Math.floor((event.clientX - this.chart.getBoundingClientRect().left - this.slots.left) / this.slots.width);
+      if (at >= 0 && at < this.view().points.length) index = at;
+    }
+    if (index === this.hover) return;
+    this.hover = index;
     this.drawChart();
   }
 
-  /** One bar per set, with the running average of the last ten sets drawn over them. */
+  private caption(): string {
+    const { points, line } = this.view();
+    if (this.hover !== null && points[this.hover]) {
+      const { entry, value } = points[this.hover];
+      const average = line[this.hover];
+      const parts = [
+        when(entry),
+        entry.sets !== undefined ? `${entry.sets} ${entry.sets === 1 ? 'set' : 'sets'}` : entry.drill,
+        value === null ? 'nothing typed' : this.format(value),
+      ];
+      if (average !== null) parts.push(`last ten: ${this.format(average)}`);
+      return parts.join(` ${DOT} `);
+    }
+    const marks = this.metric === 'wpm' ? 'bars' : 'dots';
+    const grouped = points.some((point) => point.entry.sets !== undefined) ? ', older ones per day' : '';
+    return `${marks}: each set${grouped}. line: last-ten average.`;
+  }
+
+  /** Value range of the chart, and the values that get a labelled rule. */
+  private scale(points: Point[], line: (number | null)[]): { low: number; high: number; ticks: number[] } {
+    const values = points.flatMap((point) => (point.value === null ? [] : [point.value])).sort((a, b) => a - b);
+    const averages = line.flatMap((value) => (value === null ? [] : [value]));
+    const at = (share: number): number => values[Math.min(values.length - 1, Math.floor(values.length * share))];
+    const ticks: number[] = [];
+
+    if (this.metric === 'wpm') {
+      // One lucky interval can read as 200 wpm. The range follows the bulk of the sets and the line, and such a bar is cut at the top.
+      const high = Math.max(20, at(0.9) * 1.08, ...averages.map((value) => value * 1.25));
+      const step = [5, 10, 20, 25, 50, 100, 200].find((size) => high / size < 4.5) ?? 500;
+      for (let tick = step; tick < high * 0.97; tick += step) ticks.push(tick);
+      return { low: 0, high, ticks };
+    }
+
+    // Accuracy lives near the top of its range, so the chart opens on that part and marks sets with dots, which need no zero line.
+    const floor = Math.min(at(0.1), ...averages) - 0.02;
+    const low = Math.max(0, Math.min(0.9, Math.floor(floor * 20) / 20));
+    const span = 1 - low;
+    const step = [0.05, 0.1, 0.2, 0.25].find((size) => span / size <= 4) ?? 0.5;
+    for (let tick = 1; tick > low + step / 4; tick -= step) ticks.push(tick);
+    return { low, high: 1 + span * 0.08, ticks };
+  }
+
+  /** One mark per saved entry, with the average of the last ten drawn over them in the subject's color. */
   private drawChart(): void {
     if (!this.chart) return;
     const { ctx, width, height } = fitCanvas(this.chart);
     ctx.clearRect(0, 0, width, height);
-    const sets = this.host.store.history.filter((entry) => entry.layout === this.host.layout.id).slice(-CHART_SETS);
-    if (sets.length === 0) return;
-    const peak = Math.max(...sets.map((entry) => entry.wpm), 20) * 1.1;
-    const slot = width / CHART_SETS;
-    const barW = Math.max(2, slot * 0.6);
-    const y = (value: number): number => height - (value / peak) * (height - 2);
+    const { points, line } = this.view();
+    if (this.cap) this.cap.textContent = this.caption();
+    if (points.length === 0 || width < 4) return;
 
-    ctx.fillStyle = css('--key-hover');
-    sets.forEach((entry, i) => {
+    const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    const left = GUTTER * rem;
+    const top = HEAD * rem;
+    const base = height - DATE_BAND * rem;
+    const slot = (width - left) / Math.max(points.length, RECENT_SETS);
+    this.slots = { left, width: slot };
+    const { low, high, ticks } = this.scale(points, line);
+    const y = (value: number): number => base - ((Math.min(high, Math.max(low, value)) - low) / (high - low)) * (base - top);
+    const centre = (i: number): number => left + i * slot + slot / 2;
+    const muted = css('--muted');
+    const color = this.subjectColor();
+
+    // Rules and their values.
+    ctx.font = `400 ${0.8125 * rem}px ${css('--font')}`;
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = css('--line');
+    ctx.fillStyle = muted;
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    for (const tick of [low, ...ticks]) {
+      const at = Math.round(y(tick)) + 0.5;
       ctx.beginPath();
-      ctx.roundRect(i * slot + (slot - barW) / 2, y(entry.wpm), barW, height - y(entry.wpm), 2);
+      ctx.moveTo(left, at);
+      ctx.lineTo(width, at);
+      ctx.stroke();
+      if (tick !== low) ctx.fillText(this.metric === 'wpm' ? String(tick) : percent(tick), left - 0.5 * rem, at);
+    }
+
+    // Days along the bottom: a label where a new day starts, when there is room for it.
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+    let free = -Infinity;
+    points.forEach((point, i) => {
+      if (i > 0 && sameDay(points[i - 1].entry.t, point.entry.t)) return;
+      const label = dayLabel(point.entry.t);
+      const labelWidth = ctx.measureText(label).width;
+      const at = Math.min(left + i * slot, width - labelWidth);
+      if (at < free) return;
+      ctx.fillStyle = css('--line-strong');
+      ctx.fillRect(Math.round(left + i * slot), base + 1, 1, 0.25 * rem);
+      ctx.fillStyle = muted;
+      ctx.fillText(label, at, height - 0.125 * rem);
+      free = at + labelWidth + 0.75 * rem;
+    });
+
+    if (this.hover !== null && this.hover < points.length) {
+      ctx.strokeStyle = css('--line-strong');
+      ctx.beginPath();
+      ctx.moveTo(Math.round(centre(this.hover)) + 0.5, top);
+      ctx.lineTo(Math.round(centre(this.hover)) + 0.5, base);
+      ctx.stroke();
+    }
+
+    // Each entry: a bar from zero for speed, a dot for accuracy.
+    const quiet = css('--key-hover');
+    const barWidth = slot >= 4 ? slot * 0.6 : Math.max(1, slot - 0.5);
+    const dot = Math.max(1, Math.min(0.1875 * rem, slot * 0.32));
+    points.forEach((point, i) => {
+      if (point.value === null) return;
+      const at = y(point.value);
+      ctx.beginPath();
+      if (this.metric === 'wpm') {
+        ctx.fillStyle = i === this.hover ? muted : quiet;
+        ctx.roundRect(centre(i) - barWidth / 2, Math.min(at, base - 1), barWidth, Math.max(1, base - at), slot >= 4 ? 2 : 0);
+      } else {
+        ctx.fillStyle = i === this.hover ? css('--text') : muted;
+        ctx.arc(centre(i), at, dot, 0, Math.PI * 2);
+      }
       ctx.fill();
     });
 
-    ctx.strokeStyle = css('--accent');
-    ctx.lineWidth = 2;
+    // The average of the last ten, ending in a dot on the value the figure shows.
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 0.125 * rem;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
     ctx.beginPath();
-    sets.forEach((_, i) => {
-      const from = Math.max(0, i - ROLLING_SETS + 1);
-      const window = sets.slice(from, i + 1);
-      const average = window.reduce((sum, entry) => sum + entry.wpm, 0) / window.length;
-      const x = i * slot + slot / 2;
-      if (i === 0) ctx.moveTo(x, y(average));
-      else ctx.lineTo(x, y(average));
+    let last = -1;
+    line.forEach((value, i) => {
+      if (value === null) return;
+      if (last < 0) ctx.moveTo(centre(i), y(value));
+      else ctx.lineTo(centre(i), y(value));
+      last = i;
     });
     ctx.stroke();
+    const marked = this.hover !== null && line[this.hover] !== null && line[this.hover] !== undefined ? this.hover : last;
+    if (marked >= 0) {
+      ctx.fillStyle = color;
+      ctx.strokeStyle = css('--bg');
+      ctx.lineWidth = 0.125 * rem;
+      ctx.beginPath();
+      ctx.arc(centre(marked), y(line[marked]!), 0.25 * rem, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+    }
   }
 }
