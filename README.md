@@ -59,3 +59,7 @@ If the anchor drill reports a lifted anchor while your fingers are down, your ke
 - `src/ui/`: shell, keyboard, hands, dropdown.
 - `PRODUCT.md`: product record. `DESIGN.md`: the design system. `.impeccable/`: design tokens, the surface brief and the approved mock.
 - `?demo=comp` freezes the screen on fixed values for visual checks.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
