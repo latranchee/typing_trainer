@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T21:30:28.327Z",
+  "title": "Design System: auriculaire",
+  "extensions": {
+    "colorMeta": {
+      "charcoal-ground": {
+        "role": "neutral",
+        "displayName": "Charcoal Ground",
+        "canonical": "#212227",
+        "oklch": "oklch(25.3% 0.010 276.7)",
+        "cssVar": "--bg",
+        "tonalRamp": [
+          "oklch(15.0% 0.010 276.7)",
+          "oklch(26.4% 0.010 276.7)",
+          "oklch(37.9% 0.010 276.7)",
+          "oklch(49.3% 0.010 276.7)",
+          "oklch(60.7% 0.010 276.7)",
+          "oklch(72.1% 0.010 276.7)",
+          "oklch(83.6% 0.010 276.7)",
+          "oklch(95.0% 0.010 276.7)"
+        ]
+      },
+      "key-slate": {
+        "role": "neutral",
+        "displayName": "Key Slate",
+        "canonical": "#33363c",
+        "oklch": "oklch(33.2% 0.011 264.4)",
+        "cssVar": "--key",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 264.4)",
+          "oklch(26.4% 0.011 264.4)",
+          "oklch(37.9% 0.011 264.4)",
+          "oklch(49.3% 0.011 264.4)",
+          "oklch(60.7% 0.011 264.4)",
+          "oklch(72.1% 0.011 264.4)",
+          "oklch(83.6% 0.011 264.4)",
+          "oklch(95.0% 0.011 264.4)"
+        ]
+      },
+      "key-slate-lit": {
+        "role": "neutral",
+        "displayName": "Key Slate Lit",
+        "canonical": "#3c4047",
+        "oklch": "oklch(37.0% 0.013 261.7)",
+        "cssVar": "--key-hover",
+        "tonalRamp": [
+          "oklch(15.0% 0.013 261.7)",
+          "oklch(26.4% 0.013 261.7)",
+          "oklch(37.9% 0.013 261.7)",
+          "oklch(49.3% 0.013 261.7)",
+          "oklch(60.7% 0.013 261.7)",
+          "oklch(72.1% 0.013 261.7)",
+          "oklch(83.6% 0.013 261.7)",
+          "oklch(95.0% 0.013 261.7)"
+        ]
+      },
+      "bar-track": {
+        "role": "neutral",
+        "displayName": "Bar Track",
+        "canonical": "#31353d",
+        "oklch": "oklch(32.8% 0.015 264.3)",
+        "cssVar": "--track",
+        "tonalRamp": [
+          "oklch(15.0% 0.015 264.3)",
+          "oklch(26.4% 0.015 264.3)",
+          "oklch(37.9% 0.015 264.3)",
+          "oklch(49.3% 0.015 264.3)",
+          "oklch(60.7% 0.015 264.3)",
+          "oklch(72.1% 0.015 264.3)",
+          "oklch(83.6% 0.015 264.3)",
+          "oklch(95.0% 0.015 264.3)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#32353b",
+        "oklch": "oklch(32.8% 0.011 264.4)",
+        "cssVar": "--line",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 264.4)",
+          "oklch(26.4% 0.011 264.4)",
+          "oklch(37.9% 0.011 264.4)",
+          "oklch(49.3% 0.011 264.4)",
+          "oklch(60.7% 0.011 264.4)",
+          "oklch(72.1% 0.011 264.4)",
+          "oklch(83.6% 0.011 264.4)",
+          "oklch(95.0% 0.011 264.4)"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#4b4f57",
+        "oklch": "oklch(42.7% 0.014 264.4)",
+        "cssVar": "--line-strong",
+        "tonalRamp": [
+          "oklch(15.0% 0.014 264.4)",
+          "oklch(26.4% 0.014 264.4)",
+          "oklch(37.9% 0.014 264.4)",
+          "oklch(49.3% 0.014 264.4)",
+          "oklch(60.7% 0.014 264.4)",
+          "oklch(72.1% 0.014 264.4)",
+          "oklch(83.6% 0.014 264.4)",
+          "oklch(95.0% 0.014 264.4)"
+        ]
+      },
+      "lane-rule": {
+        "role": "neutral",
+        "displayName": "Lane Rule",
+        "canonical": "#4a4d55",
+        "oklch": "oklch(42.0% 0.014 269.4)",
+        "cssVar": "--lane",
+        "tonalRamp": [
+          "oklch(15.0% 0.014 269.4)",
+          "oklch(26.4% 0.014 269.4)",
+          "oklch(37.9% 0.014 269.4)",
+          "oklch(49.3% 0.014 269.4)",
+          "oklch(60.7% 0.014 269.4)",
+          "oklch(72.1% 0.014 269.4)",
+          "oklch(83.6% 0.014 269.4)",
+          "oklch(95.0% 0.014 269.4)"
+        ]
+      },
+      "strike-line": {
+        "role": "neutral",
+        "displayName": "Strike Line",
+        "canonical": "#848b97",
+        "oklch": "oklch(63.5% 0.020 261.3)",
+        "cssVar": "--strike",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 261.3)",
+          "oklch(26.4% 0.020 261.3)",
+          "oklch(37.9% 0.020 261.3)",
+          "oklch(49.3% 0.020 261.3)",
+          "oklch(60.7% 0.020 261.3)",
+          "oklch(72.1% 0.020 261.3)",
+          "oklch(83.6% 0.020 261.3)",
+          "oklch(95.0% 0.020 261.3)"
+        ]
+      },
+      "warm-paper-text": {
+        "role": "neutral",
+        "displayName": "Warm Paper Text",
+        "canonical": "#e6e6e2",
+        "oklch": "oklch(92.4% 0.005 106.5)",
+        "cssVar": "--text",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 106.5)",
+          "oklch(26.4% 0.005 106.5)",
+          "oklch(37.9% 0.005 106.5)",
+          "oklch(49.3% 0.005 106.5)",
+          "oklch(60.7% 0.005 106.5)",
+          "oklch(72.1% 0.005 106.5)",
+          "oklch(83.6% 0.005 106.5)",
+          "oklch(95.0% 0.005 106.5)"
+        ]
+      },
+      "cool-grey-text": {
+        "role": "neutral",
+        "displayName": "Cool Grey Text",
+        "canonical": "#aab0ba",
+        "oklch": "oklch(75.6% 0.016 260.7)",
+        "cssVar": "--text-2",
+        "tonalRamp": [
+          "oklch(15.0% 0.016 260.7)",
+          "oklch(26.4% 0.016 260.7)",
+          "oklch(37.9% 0.016 260.7)",
+          "oklch(49.3% 0.016 260.7)",
+          "oklch(60.7% 0.016 260.7)",
+          "oklch(72.1% 0.016 260.7)",
+          "oklch(83.6% 0.016 260.7)",
+          "oklch(95.0% 0.016 260.7)"
+        ]
+      },
+      "muted-label": {
+        "role": "neutral",
+        "displayName": "Muted Label",
+        "canonical": "#8a8f9b",
+        "oklch": "oklch(65.0% 0.019 267.7)",
+        "cssVar": "--muted",
+        "tonalRamp": [
+          "oklch(15.0% 0.019 267.7)",
+          "oklch(26.4% 0.019 267.7)",
+          "oklch(37.9% 0.019 267.7)",
+          "oklch(49.3% 0.019 267.7)",
+          "oklch(60.7% 0.019 267.7)",
+          "oklch(72.1% 0.019 267.7)",
+          "oklch(83.6% 0.019 267.7)",
+          "oklch(95.0% 0.019 267.7)"
+        ]
+      },
+      "mustard": {
+        "role": "primary",
+        "displayName": "Mustard",
+        "canonical": "#f8d95c",
+        "oklch": "oklch(88.8% 0.146 95.3)",
+        "cssVar": "--accent",
+        "tonalRamp": [
+          "oklch(15.0% 0.146 95.3)",
+          "oklch(26.4% 0.146 95.3)",
+          "oklch(37.9% 0.146 95.3)",
+          "oklch(49.3% 0.146 95.3)",
+          "oklch(60.7% 0.146 95.3)",
+          "oklch(72.1% 0.146 95.3)",
+          "oklch(83.6% 0.146 95.3)",
+          "oklch(95.0% 0.146 95.3)"
+        ]
+      },
+      "miss-coral": {
+        "role": "tertiary",
+        "displayName": "Miss Coral",
+        "canonical": "#f2715f",
+        "oklch": "oklch(69.9% 0.162 29.8)",
+        "cssVar": "--error",
+        "tonalRamp": [
+          "oklch(15.0% 0.162 29.8)",
+          "oklch(26.4% 0.162 29.8)",
+          "oklch(37.9% 0.162 29.8)",
+          "oklch(49.3% 0.162 29.8)",
+          "oklch(60.7% 0.162 29.8)",
+          "oklch(72.1% 0.162 29.8)",
+          "oklch(83.6% 0.162 29.8)",
+          "oklch(95.0% 0.162 29.8)"
+        ]
+      },
+      "finger-ink": {
+        "role": "neutral",
+        "displayName": "Finger Ink",
+        "canonical": "#1d1e22",
+        "oklch": "oklch(23.6% 0.008 274.6)",
+        "cssVar": "--ink",
+        "tonalRamp": [
+          "oklch(15.0% 0.008 274.6)",
+          "oklch(26.4% 0.008 274.6)",
+          "oklch(37.9% 0.008 274.6)",
+          "oklch(49.3% 0.008 274.6)",
+          "oklch(60.7% 0.008 274.6)",
+          "oklch(72.1% 0.008 274.6)",
+          "oklch(83.6% 0.008 274.6)",
+          "oklch(95.0% 0.008 274.6)"
+        ]
+      },
+      "finger-pinky": {
+        "role": "secondary",
+        "displayName": "Pinky Pink",
+        "canonical": "#fb8ab1",
+        "oklch": "oklch(76.7% 0.143 359.0)",
+        "cssVar": "--f-pinky",
+        "tonalRamp": [
+          "oklch(15.0% 0.143 359.0)",
+          "oklch(26.4% 0.143 359.0)",
+          "oklch(37.9% 0.143 359.0)",
+          "oklch(49.3% 0.143 359.0)",
+          "oklch(60.7% 0.143 359.0)",
+          "oklch(72.1% 0.143 359.0)",
+          "oklch(83.6% 0.143 359.0)",
+          "oklch(95.0% 0.143 359.0)"
+        ]
+      },
+      "finger-ring": {
+        "role": "secondary",
+        "displayName": "Ring Yellow",
+        "canonical": "#fbd75a",
+        "oklch": "oklch(88.7% 0.147 93.0)",
+        "cssVar": "--f-ring",
+        "tonalRamp": [
+          "oklch(15.0% 0.147 93.0)",
+          "oklch(26.4% 0.147 93.0)",
+          "oklch(37.9% 0.147 93.0)",
+          "oklch(49.3% 0.147 93.0)",
+          "oklch(60.7% 0.147 93.0)",
+          "oklch(72.1% 0.147 93.0)",
+          "oklch(83.6% 0.147 93.0)",
+          "oklch(95.0% 0.147 93.0)"
+        ]
+      },
+      "finger-middle": {
+        "role": "secondary",
+        "displayName": "Middle Green",
+        "canonical": "#7fcc81",
+        "oklch": "oklch(77.6% 0.130 144.8)",
+        "cssVar": "--f-middle",
+        "tonalRamp": [
+          "oklch(15.0% 0.130 144.8)",
+          "oklch(26.4% 0.130 144.8)",
+          "oklch(37.9% 0.130 144.8)",
+          "oklch(49.3% 0.130 144.8)",
+          "oklch(60.7% 0.130 144.8)",
+          "oklch(72.1% 0.130 144.8)",
+          "oklch(83.6% 0.130 144.8)",
+          "oklch(95.0% 0.130 144.8)"
+        ]
+      },
+      "finger-index": {
+        "role": "secondary",
+        "displayName": "Index Blue",
+        "canonical": "#6ba9f2",
+        "oklch": "oklch(72.3% 0.125 253.4)",
+        "cssVar": "--f-index",
+        "tonalRamp": [
+          "oklch(15.0% 0.125 253.4)",
+          "oklch(26.4% 0.125 253.4)",
+          "oklch(37.9% 0.125 253.4)",
+          "oklch(49.3% 0.125 253.4)",
+          "oklch(60.7% 0.125 253.4)",
+          "oklch(72.1% 0.125 253.4)",
+          "oklch(83.6% 0.125 253.4)",
+          "oklch(95.0% 0.125 253.4)"
+        ]
+      },
+      "finger-thumb": {
+        "role": "secondary",
+        "displayName": "Thumb Grey",
+        "canonical": "#aab0ba",
+        "oklch": "oklch(75.6% 0.016 260.7)",
+        "cssVar": "--f-thumb",
+        "tonalRamp": [
+          "oklch(15.0% 0.016 260.7)",
+          "oklch(26.4% 0.016 260.7)",
+          "oklch(37.9% 0.016 260.7)",
+          "oklch(49.3% 0.016 260.7)",
+          "oklch(60.7% 0.016 260.7)",
+          "oklch(72.1% 0.016 260.7)",
+          "oklch(83.6% 0.016 260.7)",
+          "oklch(95.0% 0.016 260.7)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "root": {
+        "displayName": "Root",
+        "purpose": "Root scale: 16px at the 1536x1024 reference frame; every rem step scales from it."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "The live rolling WPM numeral in the left rail only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The result WPM."
+      },
+      "headline-sm": {
+        "displayName": "Headline Small",
+        "purpose": "The stats average; on narrow screens also the live WPM."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Acc and streak values."
+      },
+      "drill": {
+        "displayName": "Drill",
+        "purpose": "Words and pairs drill text and the anchors heading; 3.5rem line box."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The lowercase \"auriculaire\" wordmark in Mustard."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Tabs, stat labels, captions, finger names, result list."
+      },
+      "base": {
+        "displayName": "Base",
+        "purpose": "Body default, fr / en toggle, anchor copy and status, result hint."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Dropdown, menu options, table cells, line meta, stage notes, stats headings."
+      },
+      "label-sm": {
+        "displayName": "Label Small",
+        "purpose": "Option labels and segments, option notes, key hints, neutral and modifier key legends."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Shifted legends on key caps, the stats chart caption."
+      },
+      "legend": {
+        "displayName": "Legend",
+        "purpose": "Finger key legends in Finger Ink."
+      },
+      "root-narrow": {
+        "displayName": "Root (narrow)",
+        "purpose": "Narrow layout only: root locked to 14px below 900px."
+      },
+      "narrow-wordmark": {
+        "displayName": "Wordmark (narrow)",
+        "purpose": "Narrow layout only: wordmark."
+      },
+      "narrow-next-cap": {
+        "displayName": "Next cap (narrow)",
+        "purpose": "Narrow layout only: letter in the 2.5rem next-key cap."
+      },
+      "narrow-legend": {
+        "displayName": "Legend (narrow)",
+        "purpose": "Narrow layout only: all key legends."
+      },
+      "narrow-legend-modifier": {
+        "displayName": "Modifier legend (narrow)",
+        "purpose": "Narrow layout only: legends on keys with no finger (tab, shift, ctrl...)."
+      }
+    },
+    "rootScale": {
+      "referenceFrame": "1536x1024",
+      "value": "clamp(11px, min(1.04167vw, 1.5625vh), 28px)",
+      "purpose": "1rem = 16px at the reference frame; the whole cockpit scales through the root font size."
+    },
+    "shadows": [
+      {
+        "name": "cap-top-light",
+        "value": "inset 0 1px 0 rgb(255 255 255 / 0.07)",
+        "purpose": "Neutral, quiet and dimmed key caps: an edge without a border."
+      },
+      {
+        "name": "finger-cap-top-light",
+        "value": "inset 0 1px 0 rgb(255 255 255 / 0.26)",
+        "purpose": "Key caps filled with a finger hue."
+      },
+      {
+        "name": "menu-float",
+        "value": "0 0.75rem 2rem rgb(0 0 0 / 0.35)",
+        "purpose": "The open layout dropdown; the only cast shadow."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 0.125rem solid var(--accent); outline-offset: 0.1875rem",
+        "purpose": "Keyboard focus on any control."
+      },
+      {
+        "name": "target-outline",
+        "value": "outline: 0.125rem solid; outline-offset: 0.125rem",
+        "purpose": "Next / shift key (Warm Paper Text), anchor key (finger hue), missing anchor (Miss Coral)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing in the system; no bounce."
+      },
+      {
+        "name": "hover-in",
+        "value": "160ms",
+        "purpose": "Control hover in; menu open."
+      },
+      {
+        "name": "hover-out",
+        "value": "240ms",
+        "purpose": "Control hover out and release; default for state fades."
+      },
+      {
+        "name": "press",
+        "value": "80ms",
+        "purpose": "Press, key down, target lighting, finger matte fill."
+      },
+      {
+        "name": "press-scale",
+        "value": "scale: 0.96",
+        "purpose": "Press dip on every .ctl control; full-width menu options darken instead."
+      },
+      {
+        "name": "key-down-scale",
+        "value": "scale: 0.93",
+        "purpose": "On-screen key cap while its physical key is held."
+      },
+      {
+        "name": "finger-bar-fill",
+        "value": "600ms",
+        "purpose": "Finger bar fill growth."
+      },
+      {
+        "name": "line-scroll",
+        "value": "200ms",
+        "purpose": "Drill text scrolling to the next line."
+      },
+      {
+        "name": "fade-in",
+        "value": "180ms",
+        "purpose": "Drill and stats entrance."
+      },
+      {
+        "name": "rise-in",
+        "value": "260ms, translate 0 0.5rem",
+        "purpose": "Result entrance."
+      },
+      {
+        "name": "note-pop",
+        "value": "150ms",
+        "purpose": "Highway note hit pop (dropped under reduced motion)."
+      },
+      {
+        "name": "lane-flash",
+        "value": "220ms",
+        "purpose": "Strike-line stretch lit in the finger hue on a hit."
+      },
+      {
+        "name": "miss-shake",
+        "value": "180ms",
+        "purpose": "Front note shake on a miss (dropped under reduced motion)."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration and animation-duration 0.01ms",
+        "purpose": "prefers-reduced-motion override for every element."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "900px",
+        "purpose": "Root locks to 14px, page scrolls, rails stack, sparkline / finger bars / hands hidden."
+      }
+    ],
+    "radiusMeta": {
+      "underline-end": {
+        "purpose": "Pill end of the 0.125rem finger underline under drill letters (half its height)."
+      },
+      "cursor-end": {
+        "purpose": "Pill end of the 0.3125rem cursor bar under the current letter (half its height)."
+      }
+    },
+    "maskValues": [
+      {
+        "name": "highway-top-fade",
+        "value": "linear-gradient(to bottom, transparent 0, var(--bg) 3rem)",
+        "purpose": "The opaque stop reuses the ground token; only its alpha matters."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Tab",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "Text-only top-strip tab; muted at rest, white when active.",
+      "html": "<nav class=\"ds-tabs\"><button class=\"ds-tab is-active\">highway</button><button class=\"ds-tab\">words</button><button class=\"ds-tab\">pairs</button></nav>",
+      "css": ".ds-tabs { display: flex; gap: 2.75rem; } .ds-tab { font: 400 1.0625rem 'Roboto Mono Variable', ui-monospace, monospace; background: none; border: 0; padding: 0.5rem 0; color: var(--muted, #8a8f9b); cursor: pointer; transition: color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1); } .ds-tab:hover { color: var(--text-2, #aab0ba); transition-duration: 160ms; } .ds-tab:active { scale: 0.96; transition-duration: 80ms; } .ds-tab.is-active { color: var(--text, #e6e6e2); } .ds-tab:focus-visible { outline: 0.125rem solid var(--accent, #f8d95c); outline-offset: 0.1875rem; border-radius: 0.3125rem; }"
+    },
+    {
+      "name": "Layout Select",
+      "kind": "input",
+      "refersTo": "select-button",
+      "description": "Hairline-bordered dropdown button for the keyboard layout.",
+      "html": "<button class=\"ds-select\">canadian french <svg viewBox=\"0 0 10 10\" width=\"10\" height=\"10\" aria-hidden=\"true\"><path d=\"M2 3.5 5 6.5 8 3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-select { display: inline-flex; align-items: center; justify-content: space-between; gap: 1rem; min-width: 8.8125rem; height: 2.1875rem; padding: 0 0.75rem 0 0.875rem; background: none; border: 1px solid var(--line-strong, #4b4f57); border-radius: 0.5rem; font: 400 0.9375rem 'Roboto Mono Variable', ui-monospace, monospace; color: var(--text-2, #aab0ba); cursor: pointer; transition: color 240ms cubic-bezier(0.16,1,0.3,1), background-color 240ms cubic-bezier(0.16,1,0.3,1), border-color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1); } .ds-select:hover { border-color: var(--muted, #8a8f9b); background: var(--key, #33363c); color: var(--text, #e6e6e2); transition-duration: 160ms; } .ds-select:active { scale: 0.96; transition-duration: 80ms; } .ds-select:focus-visible { outline: 0.125rem solid var(--accent, #f8d95c); outline-offset: 0.1875rem; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented-track",
+      "description": "Option switch in the bottom row: slate track, chosen segment on Hairline Strong.",
+      "html": "<div class=\"ds-seg\"><button class=\"ds-seg-btn is-on\">follows you</button><button class=\"ds-seg-btn\">locked 40 wpm</button></div>",
+      "css": ".ds-seg { display: inline-flex; padding: 0.1875rem; border-radius: 0.5rem; background: var(--key, #33363c); } .ds-seg-btn { padding: 0.375rem 0.625rem; border: 0; border-radius: 0.3125rem; background: none; font: 400 0.875rem 'Roboto Mono Variable', ui-monospace, monospace; color: var(--text-2, #aab0ba); white-space: nowrap; cursor: pointer; transition: color 240ms cubic-bezier(0.16,1,0.3,1), background-color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1); } .ds-seg-btn:hover { color: var(--text, #e6e6e2); background: var(--key-hover, #3c4047); transition-duration: 160ms; } .ds-seg-btn:active { scale: 0.96; transition-duration: 80ms; } .ds-seg-btn.is-on { background: var(--line-strong, #4b4f57); color: var(--text, #e6e6e2); } .ds-seg-btn:focus-visible { outline: 0.125rem solid var(--accent, #f8d95c); outline-offset: 0.1875rem; }"
+    },
+    {
+      "name": "Key Caps",
+      "kind": "custom",
+      "refersTo": "key-cap-finger",
+      "description": "On-screen keyboard caps: neutral slate, finger-filled, next-key target, wrong.",
+      "html": "<div class=\"ds-kb\"><span class=\"ds-cap\">tab</span><span class=\"ds-cap ds-f\" style=\"--f:#fb8ab1\">a</span><span class=\"ds-cap ds-f\" style=\"--f:#fbd75a\">s</span><span class=\"ds-cap ds-f is-next\" style=\"--f:#7fcc81\">d</span><span class=\"ds-cap ds-f\" style=\"--f:#6ba9f2\">f</span><span class=\"ds-cap is-wrong\">g</span></div>",
+      "css": ".ds-kb { display: flex; gap: 0.625rem; } .ds-cap { width: 3.125rem; height: 3.125rem; display: grid; place-items: center; border-radius: 0.5rem; background: var(--key, #33363c); color: var(--text-2, #aab0ba); font: 400 0.875rem/1 'Roboto Mono Variable', ui-monospace, monospace; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07); outline: 0.125rem solid transparent; outline-offset: 0.125rem; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), scale 240ms cubic-bezier(0.16,1,0.3,1), outline-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-cap.ds-f { background: color-mix(in oklab, var(--f) 90%, #212227); color: #1d1e22; font-size: 1.0625rem; font-weight: 500; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26); } .ds-cap.is-next { background: var(--f); outline-color: #e6e6e2; } .ds-cap.is-wrong { background: #f2715f; color: #1d1e22; } .ds-cap:active { scale: 0.93; transition-duration: 80ms; }"
+    },
+    {
+      "name": "Finger Tokens",
+      "kind": "custom",
+      "refersTo": "finger-token",
+      "description": "The five finger shapes in their hues, letter in Finger Ink: diamond, triangle, square, circle, bar.",
+      "html": "<div class=\"ds-toks\"><span class=\"ds-tok ds-pinky\"><span>a</span></span><span class=\"ds-tok ds-ring\"><span>s</span></span><span class=\"ds-tok ds-middle\"><span>d</span></span><span class=\"ds-tok ds-index\"><span>f</span></span><span class=\"ds-tok ds-thumb\"><span></span></span></div>",
+      "css": ".ds-toks { display: flex; gap: 0.75rem; } .ds-tok { --size: 2.75rem; position: relative; width: var(--size); height: var(--size); display: grid; place-items: center; color: #1d1e22; font: 600 calc(var(--size) * 0.45)/1 'Roboto Mono Variable', ui-monospace, monospace; } .ds-tok::before { content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--f); } .ds-tok > span { position: relative; } .ds-pinky { --f: #fb8ab1; } .ds-pinky::before { inset: 13%; border-radius: 14%; rotate: 45deg; } .ds-ring { --f: #fbd75a; } .ds-ring::before { border-radius: 0; clip-path: polygon(50% 4%, 98% 92%, 2% 92%); } .ds-ring > span { translate: 0 14%; } .ds-middle { --f: #7fcc81; } .ds-middle::before { inset: 4%; border-radius: 14%; } .ds-index { --f: #6ba9f2; } .ds-thumb { --f: #aab0ba; } .ds-thumb::before { inset: 30% 0; border-radius: 1rem; }"
+    },
+    {
+      "name": "Next Key",
+      "kind": "card",
+      "refersTo": "next-cap",
+      "description": "Right-rail next key: large cap in the finger hue; under it the finger name paired with a 1rem token in that finger's shape.",
+      "html": "<div class=\"ds-next\"><div class=\"ds-next-label\">next key</div><div class=\"ds-next-cap\">p</div><div class=\"ds-next-finger\"><span class=\"ds-mini\"></span>right pinky</div></div>",
+      "css": ".ds-next { text-align: center; font-family: 'Roboto Mono Variable', ui-monospace, monospace; } .ds-next-label, .ds-next-finger { font-size: 1.0625rem; color: var(--muted, #8a8f9b); } .ds-next-cap { width: 4.625rem; height: 4.625rem; margin: 0.8125rem auto 0; border-radius: 0.75rem; background: #fb8ab1; color: #1d1e22; display: grid; place-items: center; font-size: 1.75rem; font-weight: 500; transition: background-color 80ms cubic-bezier(0.16,1,0.3,1); } .ds-next-finger { margin-top: 0.6875rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; } .ds-mini { position: relative; width: 1rem; height: 1rem; } .ds-mini::before { content: ''; position: absolute; inset: 13%; border-radius: 14%; rotate: 45deg; background: #fb8ab1; }"
+    },
+    {
+      "name": "Stat Rail",
+      "kind": "custom",
+      "refersTo": "stat-value",
+      "description": "Live WPM numeral and the acc / streak pair split by hairlines; numbers in Mustard.",
+      "html": "<div class=\"ds-rail\"><span class=\"ds-wpm\">109</span><span class=\"ds-cap-line\">wpm · rolling 10 s</span><div class=\"ds-pair\"><div><span class=\"ds-label\">acc</span><span class=\"ds-value\">97%</span></div><div class=\"ds-rule\"></div><div class=\"ds-second\"><span class=\"ds-label\">streak</span><span class=\"ds-value\">0</span></div></div></div>",
+      "css": ".ds-rail { width: 17rem; font-family: 'Roboto Mono Variable', ui-monospace, monospace; font-variant-numeric: tabular-nums; } .ds-wpm { display: block; font-size: 6.5rem; line-height: 0.846; font-weight: 700; letter-spacing: -0.03em; color: var(--accent, #f8d95c); } .ds-cap-line { display: block; margin-top: 0.8125rem; font-size: 1.0625rem; color: var(--muted, #8a8f9b); } .ds-pair { display: grid; grid-template-columns: 8rem 1px 1fr; margin-top: 2.25rem; padding: 1.6875rem 0 2.5rem; border-top: 1px solid var(--line, #32353b); border-bottom: 1px solid var(--line, #32353b); } .ds-rule { background: var(--line, #32353b); } .ds-second { padding-left: 3rem; } .ds-label { display: block; font-size: 1.0625rem; color: var(--text-2, #aab0ba); } .ds-value { display: block; margin-top: 0.375rem; font-size: 1.9375rem; line-height: 1.1; font-weight: 700; color: var(--accent, #f8d95c); }"
+    },
+    {
+      "name": "Finger Bar",
+      "kind": "custom",
+      "refersTo": "finger-bar",
+      "description": "Labelled per-finger progress bar on a slate track.",
+      "html": "<div class=\"ds-frow\"><span>ring</span><div class=\"ds-track\"><div class=\"ds-fill\" style=\"--f:#fbd75a; --v:0.7\"></div></div></div>",
+      "css": ".ds-frow { display: grid; grid-template-columns: 4.375rem 1fr; align-items: center; width: 17rem; font: 400 0.9375rem 'Roboto Mono Variable', ui-monospace, monospace; color: var(--text-2, #aab0ba); } .ds-track { height: 0.5rem; border-radius: 0.25rem; background: var(--track, #31353d); overflow: hidden; } .ds-fill { height: 100%; border-radius: 0.25rem; background: var(--f); transform-origin: left center; scale: var(--v) 1; transition: scale 600ms cubic-bezier(0.16,1,0.3,1); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Practice Cockpit",
+    "overview": "auriculaire is the familiar quiet-dark typing test finished to the Linear / Raycast standard, with one change of unit: the finger, not the key, is what the screen teaches. One fixed screen holds three zones on a charcoal ground. The left rail carries the product's numbers, the centre stage drops falling notes straight onto an on-screen keyboard, and the right rail shows the hands with the finger to use filled in. Nothing scrolls on desktop and nothing needs a click to start; the primary action is typing.\n\nThe palette is restrained everywhere except where it carries meaning. Chrome stays in four steps of cool slate and three greys of text; color arrives only as finger hues, one mustard accent for the product's own figures, and a coral for misses. Zones are separated by space and low-contrast hairlines rather than cards or boxes. Roboto Mono runs through everything, so legends, drill text and numerals share one grid and tabular digits never jump.\n\nMotion is short and ease-out, with no bounce. The signature beat is a note landing on the strike line, its key cap pressing, and its finger lighting on the hands plate, all within about 80 to 220ms.",
+    "keyCharacteristics": [
+      "One screen scaled from a 1536 x 1024 reference frame through the root font size.",
+      "Finger hue plus finger shape is the system's only chromatic language besides mustard and coral.",
+      "Flat charcoal surfaces; soft 8px key caps lit by a one-pixel top highlight.",
+      "Lowercase text throughout, monospace throughout.",
+      "Every control shares one hover / release / press timing."
+    ],
+    "rules": [
+      {
+        "name": "The Finger Means Finger Rule",
+        "body": "Pink, yellow, green, blue and the thumb grey mean a finger and nothing else. Never use them for status, category, decoration or charts that are not about fingers.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shape Pairing Rule",
+        "body": "A finger color standing alone (a falling note, an anchor token, a stats-table marker) always takes its finger's shape: diamond pinky, triangle ring, square middle, circle index, bar thumb. Finger-colored elements that are anchored to a key position or a finger name (key caps, hand mattes, fingertip dots, labelled bars) carry that position or name as their second channel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mustard Is Ours Rule",
+        "body": "Mustard is for the wordmark and the figures the product measures. It is never a fill, never a button, never a finger.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dim Fill, Never Dim Letter Rule",
+        "body": "Upcoming and finished tokens dim their fill (30% and 12% mixed toward Charcoal Ground) and switch their letter to light text, so the letter stays readable.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lowercase Voice Rule",
+        "body": "Every visible string is lowercase, the wordmark included. No uppercase labels, no tracked small caps.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Roboto Mono for everything, numerals included; no second face.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Boxes Rule",
+        "body": "Zones are separated by space and Hairline rules, never by cards, panels or bordered containers. Filled shapes are reserved for controls, key caps and finger tokens.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do size everything in rem from the 1536 x 1024 reference frame so the cockpit scales as one piece.",
+      "Do give every interactive element the shared interaction timing: 160ms hover in, 240ms release, 80ms press, 0.96 scale dip, ease-out `cubic-bezier(0.16, 1, 0.3, 1)`.",
+      "Do keep the reduced-motion override that collapses transitions and animations to near zero.",
+      "Do pair every free-standing finger color with its finger's shape (diamond, triangle, square, circle, bar).",
+      "Do set text on a finger hue or on Miss Coral in Finger Ink.",
+      "Do separate zones with space and Hairline rules.",
+      "Do keep all copy lowercase and in Roboto Mono."
+    ],
+    "donts": [
+      "Don't use a finger hue for anything that is not a finger: no status, category, link or chart color.",
+      "Don't extend Mustard beyond the wordmark, the product's numbers and the few selection marks the build already carries.",
+      "Don't add a new yellow, or reuse Ring Yellow or Mustard for each other's role; the two values already sit too close and need separating rather than more overlap.",
+      "Don't wrap rails or drills in cards, panels or bordered boxes.",
+      "Don't introduce a second typeface or uppercase labels.",
+      "Don't use bounce, overshoot or spring easing."
+    ]
+  }
+}
