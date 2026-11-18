@@ -2,6 +2,8 @@
 
 A typing trainer that teaches which finger hits each key. Built for one typist who plateaued near 100 WPM because the ring and pinky fingers were doing almost nothing.
 
+**Try it: https://latranchee.github.io/typing_trainer/**
+
 ## Run it
 
 ```
@@ -9,7 +11,9 @@ npm install
 npm run dev -- --port 5183
 ```
 
-Then open http://127.0.0.1:5183/. Progress is saved in the browser's local storage.
+Then open http://127.0.0.1:5183/. Progress is saved in the browser's local storage, separately for each address: the hosted page and a local copy do not share it.
+
+Every push to `main` runs the tests, builds, and publishes to GitHub Pages (`.github/workflows/deploy.yml`).
 
 Other commands: `npm test` (engine tests), `npm run typecheck`, `npm run build`.
 
