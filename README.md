@@ -15,7 +15,7 @@ npm run dev -- --port 5183
 
 Then open http://127.0.0.1:5183/. Progress is saved in the browser's local storage, separately for each address: the hosted page and a local copy do not share it.
 
-petitdoigt.ca is a Cloudflare Worker that serves the built files as static assets (`wrangler.jsonc`): `npm run build`, then `npx wrangler deploy`. Every push to `main` also runs the tests, builds, and publishes a copy to GitHub Pages (`.github/workflows/deploy.yml`).
+petitdoigt.ca is a Cloudflare Worker that serves the built files as static assets (`wrangler.jsonc`). Every push to `main` runs the tests, builds, and deploys there through Cloudflare's Git integration (Workers Builds). The same push publishes a copy to GitHub Pages (`.github/workflows/deploy.yml`). To deploy by hand: `npm run build`, then `npx wrangler deploy`.
 
 Other commands: `npm test` (engine tests), `npm run typecheck`, `npm run build`.
 
