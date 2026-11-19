@@ -43,9 +43,13 @@ export class KeyboardView {
     ROWS.forEach((row, rowIndex) => {
       // The row sets the shade of its keys and the legend mark beside it.
       const rowEl = el('div.kb-row', { 'data-row': ROW_IDS[rowIndex] });
+      let left = 0;
       for (const key of row) {
         const keyEl = el('div.key', { 'data-code': key.code, 'data-row': ROW_IDS[rowIndex] });
         keyEl.style.setProperty('--span', String(key.w * 4));
+        // Where the key's middle sits across the board, 0 at the left edge and 1 at the right: the wave travels by it.
+        keyEl.style.setProperty('--x', ((left + key.w / 2) / 15).toFixed(3));
+        left += key.w;
         if (rowIndex === QUIET_ROW) keyEl.classList.add('is-quiet');
         keyEl.append(el('div.cap'));
         this.keys.set(key.code, keyEl);
@@ -105,6 +109,11 @@ export class KeyboardView {
   wrong(code: string): void {
     const keyEl = this.keys.get(code);
     if (keyEl) flash(keyEl, 'is-wrong', 220);
+  }
+
+  /** A record fell: one wave runs across the board, left to right, each cap lifting as it passes. */
+  cheer(): void {
+    flash(this.root, 'is-cheering', 900);
   }
 
   /**

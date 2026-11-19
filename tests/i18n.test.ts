@@ -59,6 +59,24 @@ describe('interface strings', () => {
     expect(stringsOf('fr').stats.window('mpm', 10)).toBe('mpm, 10 dernières séries');
   });
 
+  it('counts the sets of a hardcore run in the singular and the plural', () => {
+    expect(stringsOf('en').hardcore.runValue(1, '0:42')).toBe('1 set, 0:42');
+    expect(stringsOf('en').hardcore.runValue(3, '2:05')).toBe('3 sets, 2:05');
+    expect(stringsOf('fr').hardcore.runValue(1, '0:42')).toBe('1 série, 0:42');
+    expect(stringsOf('fr').hardcore.runValue(0, '0:07')).toBe('0 série, 0:07');
+    expect(stringsOf('fr').hardcore.runValue(2, '1:10')).toBe('2 séries, 1:10');
+  });
+
+  it('mentions the climb of the floor only at a difficulty that has one', () => {
+    for (const lang of ['en', 'fr'] as const) {
+      const { floorTitle } = stringsOf(lang).hardcore;
+      expect(floorTitle(60, 2, 15)).toContain('60');
+      expect(floorTitle(60, 2, 15)).toContain('15 s');
+      expect(floorTitle(60, 0, 15)).not.toContain('15 s');
+      expect(floorTitle(60, 0, 15)).not.toMatch(/[.,]$/);
+    }
+  });
+
   it('takes the first language of the browser that the interface speaks', () => {
     expect(preferredLang(['fr-CA', 'en-CA'])).toBe('fr');
     expect(preferredLang(['en-US', 'fr'])).toBe('en');

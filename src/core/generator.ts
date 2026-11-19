@@ -1,4 +1,4 @@
-import { PAIRS, TRIPLES, WORDS } from './corpus';
+import { PAIRS, SENTENCES, TRIPLES, WORDS } from './corpus';
 import type { Finger } from './fingers';
 import { fingerHand, fingerKind, isWeakFinger } from './fingers';
 import type { Layout, Stroke } from './layouts';
@@ -70,6 +70,41 @@ export function makeWords(
   for (let i = 0; i < count; i++) {
     const word = next();
     out.push(options.caps && random() < 0.4 && layout.canType(capitalize(word)) ? capitalize(word) : word);
+  }
+  return out.join(' ');
+}
+
+/**
+ * Whole sentences for the selected language, about `count` words of them: sentences
+ * are added until the count is reached, so the last one may run past it. They are
+ * weighted like the words, and none comes twice in a set while others are left.
+ * Without capitals the sentences are typed in lowercase; their punctuation stays.
+ */
+export function makeSentences(
+  layout: Layout,
+  lang: Lang,
+  count: number,
+  options: WordOptions,
+  weakness: Weakness,
+  random: () => number = Math.random,
+): string {
+  const sentences = pool(
+    SENTENCES[lang].map((sentence) => (options.caps ? sentence : sentence.toLowerCase())),
+    layout,
+  );
+  if (sentences.length === 0) return '';
+  const next = sampler(sentences, sentences.map((sentence) => weightOf(layout, sentence, weakness)), random);
+  const used = new Set<string>();
+  const out: string[] = [];
+  let words = 0;
+  while (words < count) {
+    let sentence = next();
+    for (let attempt = 0; used.has(sentence) && attempt < 8; attempt++) sentence = next();
+    // The draw kept landing on sentences already in the set: take the first one that is not.
+    if (used.has(sentence)) sentence = sentences.find((candidate) => !used.has(candidate)) ?? sentence;
+    used.add(sentence);
+    out.push(sentence);
+    words += sentence.split(' ').length;
   }
   return out.join(' ');
 }

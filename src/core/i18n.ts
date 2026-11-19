@@ -1,5 +1,6 @@
 import type { Finger, FingerKind } from './fingers';
 import { fingerHand, fingerKind } from './fingers';
+import type { Difficulty } from './hardcore';
 import type { LayoutId } from './layouts';
 import type { Row } from './physical';
 import type { DrillId, Lang } from './store';
@@ -51,6 +52,15 @@ const en = {
     untracked: 'tracking is off: nothing you type is saved',
   },
 
+  /** Right keys in a row: the counter over the keyboard and the line under the streak in the left rail. */
+  streak: {
+    title: 'right keys in a row, from one set to the next, over your longest on this layout and drill',
+    inRow: 'in a row',
+    newBest: 'new best',
+    best: (count: number): string => `best ${count}`,
+    passed: 'best',
+  },
+
   next: {
     region: 'finger to use',
     title: 'next key',
@@ -71,6 +81,17 @@ const en = {
     unsaved: 'not saved: tracking is off',
     enter: 'enter',
     nextSet: 'next set',
+    /** Marks beside a number of the result that beat what was saved before. */
+    newBest: 'new best',
+    clean: 'clean set',
+    /** The set against the pace of the last ten sets of the same kind. */
+    over: (wpm: number): string => `${wpm} wpm over your last ten`,
+    under: (wpm: number): string => `${wpm} wpm under your last ten`,
+    level: 'level with your last ten',
+    gain: 'biggest gain',
+    gainValue: (finger: Finger, wpm: number, gain: number): string =>
+      `${fingerHand(finger)} ${fingerKind(finger)}, ${wpm} wpm, ${gain} over its average`,
+    days: (count: number): string => `${count} days in a row`,
   },
 
   options: {
@@ -80,27 +101,58 @@ const en = {
     newText: 'new text',
     arrows: 'up / down',
     tempo: 'tempo',
-    noAccents: 'accented words are left out: this layout has no accent keys',
+    noAccents: 'text with accents is left out: this layout has no accent keys',
+    /** The sound of the keys. Its list names switches, so the label beside it only has to say what they are for. */
+    keys: 'keys',
+    keySound: 'key sound',
+    keySoundOff: 'silent',
+    keySoundTitle: 'what each key sounds like: recordings of real switches',
   },
 
   hardcore: {
     label: 'hardcore',
     floor: 'min wpm',
     noFloor: 'none',
-    floorTitle: (floor: number): string => `stay at ${floor} wpm or more, or the set fails`,
+    /** `step` is 0 at a difficulty whose floor stays put. */
+    floorTitle: (floor: number, step: number, seconds: number): string =>
+      `stay at ${floor} wpm or more, or the set fails${step > 0 ? `. it climbs ${step} wpm for every ${seconds} s you hold` : ''}`,
+    difficulty: 'difficulty',
+    /** What each difficulty asks, shown on its button. */
+    difficultyNotes: {
+      1: 'the fuse alone: it burns under min wpm and grows back whole',
+      2: 'typos burn the fuse, burns leave scars and min wpm climbs',
+      3: 'the rules of 2 at twice the strength, on a faster fuse',
+    } satisfies Record<Difficulty, string>,
+    /** The switch for hardcore's own sounds. The keys have theirs, picked apart. */
+    sound: 'heartbeat',
+    soundTitle: 'the heartbeat, the knock on a wrong key, the ticks when min wpm climbs and the drop on a failed set',
     erase: (count: number): string => (count === 1 ? 'erase the typo' : `erase ${count} typos`),
     ctrlBksp: 'ctrl bksp',
     eraseAll: 'erase all',
     failed: (floor: number): string => `set failed: under ${floor} wpm too long`,
+    failedTypos: 'set failed: the typos burnt the fuse out',
     lasted: 'lasted',
     notSaved: 'a failed set stays out of your history',
     held: (floor: number): string => `${floor} wpm, held`,
+    climbed: (floor: number): string => `min wpm is now ${floor}`,
+    /** The run: sets cleared in a row under one floor, and the time held across them. */
+    runHeld: 'held',
+    runSets: 'sets',
+    runTitle: 'time held and sets cleared in a row at this min wpm, each over your best',
+    best: 'best',
+    run: 'run',
+    runOver: 'run over',
+    bestRun: 'best run',
+    runValue: (sets: number, time: string): string => `${sets} ${sets === 1 ? 'set' : 'sets'}, ${time}`,
+    runEnded: (value: string): string => `run ended: ${value}`,
+    newBest: 'new best',
   },
 
   highway: {
     text: 'text',
     words: 'words',
     pairs: 'letter pairs',
+    sentences: 'sentences',
     tempo: 'tempo',
     follows: 'follows you',
     locked: (wpm: number): string => `locked ${wpm} wpm`,
@@ -115,6 +167,8 @@ const en = {
     focus: 'focus',
     weak: 'ring and pinky',
     all: 'all fingers',
+    text: 'text',
+    sentences: 'sentences',
     words: 'words',
     capitals: 'capitals',
     off: 'off',
@@ -244,6 +298,14 @@ const fr: Strings = {
     untracked: "suivi désactivé: rien de ce que tu tapes n'est enregistré",
   },
 
+  streak: {
+    title: "bonnes touches d'affilée, d'une série à l'autre, au-dessus de ton record sur cette disposition et cet exercice",
+    inRow: "d'affilée",
+    newBest: 'nouveau record',
+    best: (count) => `record ${count}`,
+    passed: 'record',
+  },
+
   next: {
     region: 'doigt à utiliser',
     title: 'prochaine touche',
@@ -264,6 +326,14 @@ const fr: Strings = {
     unsaved: 'non enregistrée: le suivi est désactivé',
     enter: 'entrée',
     nextSet: 'série suivante',
+    newBest: 'nouveau record',
+    clean: 'sans faute',
+    over: (wpm) => `${wpm} mpm de plus que tes dix dernières`,
+    under: (wpm) => `${wpm} mpm de moins que tes dix dernières`,
+    level: 'comme tes dix dernières',
+    gain: 'plus gros progrès',
+    gainValue: (finger, wpm, gain) => `${frFinger(finger)}, ${wpm} mpm, ${gain} de plus que sa moyenne`,
+    days: (count) => `${count} jours de suite`,
   },
 
   options: {
@@ -273,27 +343,54 @@ const fr: Strings = {
     newText: 'nouveau texte',
     arrows: 'haut / bas',
     tempo: 'tempo',
-    noAccents: "les mots accentués sont retirés: cette disposition n'a pas de touches d'accent",
+    noAccents: "le texte accentué est retiré: cette disposition n'a pas de touches d'accent",
+    keys: 'touches',
+    keySound: 'son des touches',
+    keySoundOff: 'muettes',
+    keySoundTitle: 'le son de chaque touche: des enregistrements de vrais interrupteurs',
   },
 
   hardcore: {
     label: 'hardcore',
     floor: 'mpm min',
     noFloor: 'aucun',
-    floorTitle: (floor) => `reste à ${floor} mpm ou plus, sinon la série est ratée`,
+    floorTitle: (floor, step, seconds) =>
+      `reste à ${floor} mpm ou plus, sinon la série est ratée${step > 0 ? `. il monte de ${step} mpm toutes les ${seconds} s tenues` : ''}`,
+    difficulty: 'difficulté',
+    difficultyNotes: {
+      1: 'la mèche seule: elle brûle sous le mpm min et repousse en entier',
+      2: 'les fautes brûlent la mèche, les brûlures laissent des cicatrices et le mpm min monte',
+      3: 'les règles du 2, deux fois plus fortes, sur une mèche plus rapide',
+    },
+    sound: 'battement',
+    soundTitle: 'le battement de cœur, le coup sur une fausse touche, les tics quand le mpm min monte et la chute quand la série est ratée',
     erase: (count) => (count === 1 ? 'efface la faute' : `efface ${count} fautes`),
     ctrlBksp: 'ctrl retour',
     eraseAll: 'efface tout',
     failed: (floor) => `série ratée: trop longtemps sous ${floor} mpm`,
+    failedTypos: 'série ratée: les fautes ont brûlé toute la mèche',
     lasted: 'tenu',
     notSaved: "une série ratée n'entre pas dans ton historique",
     held: (floor) => `${floor} mpm, tenu`,
+    climbed: (floor) => `le mpm min passe à ${floor}`,
+    runHeld: 'tenu',
+    runSets: 'séries',
+    runTitle: "temps tenu et séries réussies d'affilée à ce mpm min, chacun au-dessus de ton record",
+    best: 'record',
+    run: 'suite',
+    runOver: 'suite terminée',
+    bestRun: 'meilleure suite',
+    // French keeps the singular under two.
+    runValue: (sets, time) => `${sets} ${sets < 2 ? 'série' : 'séries'}, ${time}`,
+    runEnded: (value) => `suite terminée: ${value}`,
+    newBest: 'nouveau record',
   },
 
   highway: {
     text: 'texte',
     words: 'mots',
     pairs: 'paires de lettres',
+    sentences: 'phrases',
     tempo: 'tempo',
     follows: 'te suit',
     locked: (wpm) => `fixe à ${wpm} mpm`,
@@ -308,6 +405,8 @@ const fr: Strings = {
     focus: 'cible',
     weak: 'annulaire et petit doigt',
     all: 'tous les doigts',
+    text: 'texte',
+    sentences: 'phrases',
     words: 'mots',
     capitals: 'majuscules',
     off: 'non',

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { PAIRS, TRIPLES, WORDS } from '../src/core/corpus';
-import { makeAnchorSet, makePairs, makeWords, weakShare } from '../src/core/generator';
+import { PAIRS, SENTENCES, TRIPLES, WORDS } from '../src/core/corpus';
+import { makeAnchorSet, makePairs, makeSentences, makeWords, weakShare } from '../src/core/generator';
 import { getLayout, LAYOUTS } from '../src/core/layouts';
 import { RollingWpm, SetStats } from '../src/core/metrics';
 import { ROWS } from '../src/core/physical';
@@ -85,6 +85,42 @@ describe('corpus', () => {
       expect(TRIPLES[lang].every((triple) => triple.length === 3)).toBe(true);
     }
   });
+
+  it('has sentences every layout that speaks the language can type, with and without capitals', () => {
+    for (const layout of LAYOUTS) {
+      for (const sentence of SENTENCES.en) {
+        expect(layout.canType(sentence), `${layout.id}: ${sentence}`).toBe(true);
+        expect(layout.canType(sentence.toLowerCase()), `${layout.id}: ${sentence}`).toBe(true);
+      }
+    }
+    const french = getLayout('ca-fr');
+    for (const sentence of SENTENCES.fr) {
+      expect(french.canType(sentence), sentence).toBe(true);
+      expect(french.canType(sentence.toLowerCase()), sentence).toBe(true);
+    }
+  });
+
+  it('keeps French sentences for the layouts without accent keys', () => {
+    for (const id of ['us', 'colemak-dh'] as const) {
+      const layout = getLayout(id);
+      expect(SENTENCES.fr.filter((sentence) => layout.canType(sentence)).length).toBeGreaterThanOrEqual(30);
+    }
+  });
+
+  it('writes each sentence once, whole, in one line', () => {
+    for (const lang of ['en', 'fr'] as const) {
+      expect(new Set(SENTENCES[lang]).size).toBe(SENTENCES[lang].length);
+      expect(SENTENCES[lang].length).toBeGreaterThanOrEqual(60);
+      for (const sentence of SENTENCES[lang]) {
+        expect(sentence, sentence).toMatch(/^\S.*[.?]$/);
+        expect(sentence, sentence).not.toMatch(/\s{2,}/);
+        expect(sentence[0], sentence).toBe(sentence[0].toUpperCase());
+        const words = sentence.split(' ').length;
+        expect(words, sentence).toBeGreaterThanOrEqual(4);
+        expect(words, sentence).toBeLessThanOrEqual(12);
+      }
+    }
+  });
 });
 
 describe('generator', () => {
@@ -94,6 +130,33 @@ describe('generator', () => {
       expect(text.split(' ')).toHaveLength(30);
       expect(layout.canType(text)).toBe(true);
     }
+  });
+
+  it('strings whole sentences together until the word count is reached', () => {
+    for (const layout of LAYOUTS) {
+      for (const lang of ['en', 'fr'] as const) {
+        for (const count of [15, 30, 60]) {
+          const text = makeSentences(layout, lang, count, { caps: true }, noWeakness);
+          expect(layout.canType(text)).toBe(true);
+          const words = text.split(' ').length;
+          expect(words).toBeGreaterThanOrEqual(count);
+          // The last sentence may run past the count, by less than its own length.
+          expect(words).toBeLessThan(count + 12);
+          // Every sentence is there whole: the text ends on one, and none comes twice.
+          const parts = text.match(/[^.?]+[.?]/g)?.map((part) => part.trim()) ?? [];
+          expect(parts.join(' ')).toBe(text);
+          expect(parts.every((part) => SENTENCES[lang].includes(part))).toBe(true);
+          expect(new Set(parts).size).toBe(parts.length);
+        }
+      }
+    }
+  });
+
+  it('types sentences in lowercase when capitals are off, punctuation kept', () => {
+    const text = makeSentences(getLayout('ca-fr'), 'fr', 30, { caps: false }, noWeakness);
+    expect(text).toBe(text.toLowerCase());
+    expect(text).toMatch(/[.?]$/);
+    expect(makeSentences(getLayout('ca-fr'), 'fr', 30, { caps: true }, noWeakness)).toMatch(/^[A-ZÀ-Ü]/);
   });
 
   it('favours ring and pinky work', () => {

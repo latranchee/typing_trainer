@@ -51,8 +51,32 @@ export interface NextHint {
 export interface OptionGroup {
   label: string;
   value: string;
-  choices: { value: string; label: string }[];
+  /** `title` says what a choice does when its label is too short to: it shows on hover. */
+  choices: { value: string; label: string; title?: string }[];
   set(value: string): void;
+  /** True for an option that leaves the text and the rules alone: picking it restarts nothing. */
+  keeps?: boolean;
+  /** True when the choices say what they are without the label: it is then read out, not shown. */
+  bare?: boolean;
+  /** True for an off / on pair, in that order: it is drawn as one switch beside its label. */
+  toggle?: boolean;
+  /** What the option does, when its label is too short to say: it shows on hover. */
+  title?: string;
+}
+
+/** An off / on option, drawn as a switch. */
+export function toggleOption(label: string, on: boolean, set: (on: boolean) => void, extra: Pick<OptionGroup, 'keeps' | 'title'> = {}): OptionGroup {
+  return {
+    label,
+    value: on ? 'on' : 'off',
+    choices: [
+      { value: 'off', label: t.line.off },
+      { value: 'on', label: t.line.on },
+    ],
+    set: (value) => set(value === 'on'),
+    toggle: true,
+    ...extra,
+  };
 }
 
 /** The language of the practice text. It sits with the drills that type words; the interface has its own picker. */
@@ -62,6 +86,7 @@ export function languageOption(settings: Settings, apply: (patch: Partial<Settin
     value: settings.lang,
     choices: LANGS.map((lang) => ({ value: lang, label: t.languages[lang] })),
     set: (value) => apply({ lang: value as Lang }),
+    bare: true,
   };
 }
 

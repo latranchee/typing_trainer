@@ -1,10 +1,10 @@
 import { fingerKind } from '../core/fingers';
-import { makePairs, makeWords } from '../core/generator';
+import { makePairs, makeSentences, makeWords } from '../core/generator';
 import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import { el, flash } from '../ui/dom';
 import type { Drill, DrillHost, Note, OptionGroup } from './types';
-import { languageOption, matches, toNotes } from './types';
+import { languageOption, matches, toggleOption, toNotes } from './types';
 
 /** Line-height of the text block, in rem. Matches `.line-text` in the stylesheet. */
 const LINE_REM = 3.5;
@@ -28,6 +28,8 @@ export class LineDrill implements Drill {
   private done = false;
   /** Hardcore: the wrong keys typed past the cursor, drawn in coral where the next letter goes. */
   private run = el('span.typo-run');
+  private here: Element | null = null;
+  private near: Element | null = null;
 
   constructor(id: 'words' | 'pairs', host: DrillHost) {
     this.id = id;
@@ -49,11 +51,15 @@ export class LineDrill implements Drill {
     const source =
       this.id === 'pairs'
         ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, focus: settings.pairFocus }, weakness)
-        : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness);
+        : settings.wordsSource === 'sentences'
+          ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness)
+          : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness);
     this.notes = toNotes(layout, source);
     this.cells = [];
     this.cursor = 0;
     this.done = false;
+    this.here = null;
+    this.near = null;
     this.text.replaceChildren();
     this.text.classList.remove('has-typos');
     this.text.style.translate = '0 0';
@@ -110,10 +116,21 @@ export class LineDrill implements Drill {
             { value: 'all', label: t.line.all },
           ],
           set: (value) => refresh({ pairFocus: value as 'all' | 'weak' }),
+          bare: true,
         },
       ];
     }
     return [
+      {
+        label: t.line.text,
+        value: settings.wordsSource,
+        choices: [
+          { value: 'words', label: t.line.words },
+          { value: 'sentences', label: t.line.sentences },
+        ],
+        set: (value) => refresh({ wordsSource: value as typeof settings.wordsSource }),
+        bare: true,
+      },
       languageOption(settings, refresh),
       {
         label: t.line.words,
@@ -121,15 +138,7 @@ export class LineDrill implements Drill {
         choices: [15, 30, 60].map((count) => ({ value: String(count), label: String(count) })),
         set: (value) => refresh({ setWords: Number(value) as 15 | 30 | 60 }),
       },
-      {
-        label: t.line.capitals,
-        value: settings.caps ? 'on' : 'off',
-        choices: [
-          { value: 'off', label: t.line.off },
-          { value: 'on', label: t.line.on },
-        ],
-        set: (value) => refresh({ caps: value === 'on' }),
-      },
+      toggleOption(t.line.capitals, settings.caps, (caps) => refresh({ caps })),
     ];
   }
 
@@ -169,6 +178,16 @@ export class LineDrill implements Drill {
 
   private show(): void {
     const current = this.cells[this.cursor] ?? null;
+    // The word being typed and the one after it: hardcore keeps these two in sight as the screen narrows.
+    const here = current?.parentElement ?? null;
+    if (here !== this.here) {
+      this.here?.classList.remove('is-here');
+      this.near?.classList.remove('is-near');
+      this.here = here;
+      this.near = here?.nextElementSibling ?? null;
+      this.here?.classList.add('is-here');
+      this.near?.classList.add('is-near');
+    }
     let typed = 0;
     let seen: HTMLElement | null = null;
     this.cells.forEach((cell, i) => {

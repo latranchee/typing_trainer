@@ -7,6 +7,13 @@ export interface SelectOption {
 
 const CHEVRON = 'M1 3l4 4 4-4';
 
+export interface SelectExtras {
+  /** Opens the list above the button, for a dropdown that sits at the bottom of the screen. */
+  up?: boolean;
+  /** Called with the choice the pointer or the arrow keys land on while the list is open. */
+  onCursor?: (value: string) => void;
+}
+
 /** A small listbox dropdown. Arrow keys move, Enter picks, Escape closes. */
 export class Select {
   readonly root = el('div.select');
@@ -18,11 +25,14 @@ export class Select {
   private options: SelectOption[];
   private value: string;
   private onChange: (value: string) => void;
+  private onCursor: ((value: string) => void) | undefined;
 
-  constructor(name: string, options: SelectOption[], value: string, onChange: (value: string) => void) {
+  constructor(name: string, options: SelectOption[], value: string, onChange: (value: string) => void, extras: SelectExtras = {}) {
     this.options = options;
     this.value = value;
     this.onChange = onChange;
+    this.onCursor = extras.onCursor;
+    if (extras.up) this.root.classList.add('is-up');
     this.button.setAttribute('aria-label', name);
     this.menu.setAttribute('aria-label', name);
 
@@ -43,6 +53,9 @@ export class Select {
     for (const option of options) {
       const item = el('button.select-option.ctl', { type: 'button', role: 'option', tabindex: '-1' }, option.label);
       item.addEventListener('click', () => this.pick(option.value));
+      item.addEventListener('pointerenter', () => {
+        if (this.isOpen) this.onCursor?.(option.value);
+      });
       this.items.push(item);
       this.menu.append(el('li', { role: 'presentation' }, item));
     }
@@ -119,6 +132,7 @@ export class Select {
       this.cursor = (this.cursor + step + this.items.length) % this.items.length;
       this.render();
       this.items[this.cursor].focus();
+      this.onCursor?.(this.options[this.cursor].value);
     } else if (event.key === 'Escape' || event.key === 'Tab') {
       event.preventDefault();
       event.stopPropagation();

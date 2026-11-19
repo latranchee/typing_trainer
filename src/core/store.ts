@@ -1,13 +1,15 @@
 import type { Finger } from './fingers';
 import { FINGERS } from './fingers';
-import type { Floor } from './hardcore';
-import { FLOORS } from './hardcore';
+import type { Difficulty, Floor, RunBest } from './hardcore';
+import { DEFAULT_DIFFICULTY, DIFFICULTIES, FLOORS } from './hardcore';
 import type { HistoryEntry } from './history';
 import { compactHistory } from './history';
 import { preferredLang } from './i18n';
 import type { Layout, LayoutId } from './layouts';
 import { LAYOUT_IDS } from './layouts';
 import { MIN_SAMPLES } from './metrics';
+import type { KeySound } from './switches';
+import { isKeySound } from './switches';
 
 export type DrillId = 'highway' | 'words' | 'pairs' | 'anchors' | 'stats';
 export type Lang = 'en' | 'fr';
@@ -23,10 +25,12 @@ export interface Settings {
   drill: DrillId;
   /** Rolling WPM window, seconds. */
   window: 5 | 10 | 30;
-  highwaySource: 'words' | 'pairs';
+  highwaySource: 'words' | 'pairs' | 'sentences';
   /** When true the highway holds a fixed tempo and refuses early keys. */
   tempoLock: boolean;
   tempoWpm: number;
+  /** What the words drill types: words drawn one by one, or whole sentences. */
+  wordsSource: 'words' | 'sentences';
   setWords: 15 | 30 | 60;
   caps: boolean;
   pairSize: 2 | 3;
@@ -39,6 +43,12 @@ export interface Settings {
   hardcore: boolean;
   /** Hardcore only: the rolling WPM the set fails under. 0 means no floor. */
   floor: Floor;
+  /** Hardcore only, with a floor: how hard the fuse is, 1 to 3. */
+  difficulty: Difficulty;
+  /** Hardcore only: the heartbeat and the thuds. */
+  sound: boolean;
+  /** What the keys sound like: a recorded switch, or nothing. With a switch picked, a streak's marks are heard too. */
+  keySound: KeySound;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -50,6 +60,7 @@ export const DEFAULT_SETTINGS: Settings = {
   highwaySource: 'words',
   tempoLock: false,
   tempoWpm: 40,
+  wordsSource: 'words',
   setWords: 30,
   caps: false,
   pairSize: 2,
@@ -59,7 +70,13 @@ export const DEFAULT_SETTINGS: Settings = {
   track: true,
   hardcore: false,
   floor: 0,
+  difficulty: DEFAULT_DIFFICULTY,
+  sound: true,
+  // Silent until the typist picks a switch: a page does not start clicking on its own.
+  keySound: 'off',
 };
+
+const HIGHWAY_SOURCES: Settings['highwaySource'][] = ['words', 'pairs', 'sentences'];
 
 export interface KeyStat {
   n: number;
@@ -87,6 +104,10 @@ interface ProfileData {
   name: string;
   settings: Settings;
   layouts: Partial<Record<LayoutId, LayoutStats>>;
+  /** Hardcore: the best runs, by layout, drill, floor and difficulty. Absent until a run is saved. */
+  runs?: Record<string, RunBest>;
+  /** The longest streaks of right keys, by layout and drill. Absent until one is saved. */
+  streaks?: Record<string, number>;
 }
 
 interface Data {
@@ -149,6 +170,11 @@ function cleanSettings(saved: Partial<Settings> | undefined, preferred: Lang): S
   settings.track = settings.track !== false;
   settings.hardcore = settings.hardcore === true;
   if (!FLOORS.includes(settings.floor)) settings.floor = DEFAULT_SETTINGS.floor;
+  if (!DIFFICULTIES.includes(settings.difficulty)) settings.difficulty = DEFAULT_SETTINGS.difficulty;
+  settings.sound = settings.sound !== false;
+  if (!HIGHWAY_SOURCES.includes(settings.highwaySource)) settings.highwaySource = DEFAULT_SETTINGS.highwaySource;
+  if (settings.wordsSource !== 'sentences') settings.wordsSource = 'words';
+  if (!isKeySound(settings.keySound)) settings.keySound = DEFAULT_SETTINGS.keySound;
   return settings;
 }
 
@@ -335,6 +361,39 @@ export class Store {
     return true;
   }
 
+  /** Hardcore: the best run saved under `key`, zeros when there is none. */
+  bestRun(key: string): RunBest {
+    const best = this.current.runs?.[key];
+    return { ms: Number(best?.ms) || 0, sets: Number(best?.sets) || 0 };
+  }
+
+  /**
+   * Hardcore: holds a run against the best one saved under `key` and keeps whatever it beats.
+   * Returns what it beat. Nothing is beaten or saved while tracking is off.
+   */
+  recordRun(key: string, ms: number, sets: number): { ms: boolean; sets: boolean } {
+    const best = this.bestRun(key);
+    const beat = { ms: this.tracking && ms > best.ms, sets: this.tracking && sets > best.sets };
+    if (beat.ms || beat.sets) {
+      (this.current.runs ??= {})[key] = { ms: beat.ms ? Math.round(ms) : best.ms, sets: beat.sets ? sets : best.sets };
+      this.flush();
+    }
+    return beat;
+  }
+
+  /** The longest streak of right keys saved under `key`, 0 when there is none. */
+  bestStreak(key: string): number {
+    return Number(this.current.streaks?.[key]) || 0;
+  }
+
+  /** Keeps a streak that beats the longest one saved under `key`, and says whether it did. Nothing is saved while tracking is off. */
+  recordStreak(key: string, streak: number): boolean {
+    if (!this.tracking || streak <= this.bestStreak(key)) return false;
+    (this.current.streaks ??= {})[key] = streak;
+    this.queueSave();
+    return true;
+  }
+
   /** Per-finger totals for a layout, from the per-key numbers. */
   fingerSummary(layout: Layout): FingerSummary[] {
     const totals = new Map<Finger, { n: number; err: number; weighted: number }>();
@@ -389,6 +448,8 @@ export class Store {
   /** Erases the active profile's numbers and sets. Its options and the other profiles stay. */
   resetStats(): void {
     this.current.layouts = {};
+    delete this.current.runs;
+    delete this.current.streaks;
     this.sets = [];
     this.flush();
     this.writeSets();

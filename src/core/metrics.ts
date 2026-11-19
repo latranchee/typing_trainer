@@ -23,10 +23,11 @@ export class RollingWpm {
     this.trim(now);
   }
 
-  value(now: number): number {
+  /** `minSpanMs` is the shortest span the rate divides by. Hardcore shortens it to its warm-up, so the fuse is lit on a rate that already means something. */
+  value(now: number, minSpanMs = MIN_SPAN_MS): number {
     this.trim(now);
     if (this.stamps.length === 0 || this.startedAt === null) return 0;
-    const span = Math.min(this.windowMs, Math.max(now - this.startedAt, MIN_SPAN_MS));
+    const span = Math.min(this.windowMs, Math.max(now - this.startedAt, minSpanMs));
     return (this.stamps.length / CHARS_PER_WORD) * (60000 / span);
   }
 

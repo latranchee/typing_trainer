@@ -1,6 +1,6 @@
 import type { FingerKind } from '../core/fingers';
 import { fingerKind, fingerLane } from '../core/fingers';
-import { makePairs, makeWords } from '../core/generator';
+import { makePairs, makeSentences, makeWords } from '../core/generator';
 import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import type { Row } from '../core/physical';
@@ -89,7 +89,9 @@ export class HighwayDrill implements Drill {
     const text =
       settings.highwaySource === 'pairs'
         ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, focus: settings.pairFocus }, weakness)
-        : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness);
+        : settings.highwaySource === 'sentences'
+          ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness)
+          : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness);
     this.notes = toNotes(layout, text);
     this.cursor = 0;
     this.progress = -START_LEAD;
@@ -122,9 +124,11 @@ export class HighwayDrill implements Drill {
         value: settings.highwaySource,
         choices: [
           { value: 'words', label: t.highway.words },
+          { value: 'sentences', label: t.highway.sentences },
           { value: 'pairs', label: t.highway.pairs },
         ],
-        set: (value) => refresh({ highwaySource: value as 'words' | 'pairs' }),
+        set: (value) => refresh({ highwaySource: value as typeof settings.highwaySource }),
+        bare: true,
       },
       languageOption(settings, refresh),
       {
