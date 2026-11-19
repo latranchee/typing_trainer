@@ -21,6 +21,31 @@ export const RECORD_FROM = 25;
 /** Streak lengths that get a mark: 25, 50, then every hundred. */
 export const isMilestone = (streak: number): boolean => streak === 25 || streak === 50 || (streak > 0 && streak % 100 === 0);
 
+/** How warm a streak runs, 0 to 3: it steps up at 25, 50 and 100 keys. The counter glows by it and the keys throw sparks. */
+export const streakHeat = (streak: number): 0 | 1 | 2 | 3 => (streak >= 100 ? 3 : streak >= 50 ? 2 : streak >= 25 ? 1 : 0);
+
+/** A finger glows once it has this many clean strokes in the set... */
+export const HOT_STROKES = 8;
+/** ...at this share of its saved pace or less. */
+export const HOT_PACE = 0.92;
+/** A saved pace only counts as an average once it rests on this many strokes. */
+export const HOT_BASE = 30;
+
+/**
+ * True for a finger that is ahead of its own average: `strokes` clean strokes of the
+ * set took `ms` in all, against `base`, the finger's saved time per stroke. A finger
+ * with no saved average has nothing to be ahead of.
+ */
+export const isHot = (strokes: number, ms: number, base: number | undefined): boolean =>
+  base !== undefined && base > 0 && strokes >= HOT_STROKES && ms / strokes <= base * HOT_PACE;
+
+/**
+ * True while the rolling WPM runs over the pace of the last ten sets. It has to pass
+ * that pace by a margin to count, and then only stops counting once it falls back under it.
+ */
+export const isAhead = (wpm: number, usual: number | null, already: boolean): boolean =>
+  usual !== null && usual > 0 && wpm >= (already ? usual : usual * 1.04);
+
 /** Best streaks are kept per layout and drill. */
 export const streakKey = (layout: string, drill: string): string => `${layout}|${drill}`;
 

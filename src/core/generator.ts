@@ -1,27 +1,58 @@
 import { PAIRS, SENTENCES, TRIPLES, WORDS } from './corpus';
 import type { Finger } from './fingers';
-import { fingerHand, fingerKind, isWeakFinger } from './fingers';
+import { fingerHand, fingerKind, FINGERS } from './fingers';
 import type { Layout, Stroke } from './layouts';
-import { HOME_CODE, LETTER_ROW_CODES } from './physical';
+import { HOME_CODE, letterRowCodes } from './physical';
 import type { Lang } from './store';
 
 /** How hard a key needs work, 0 to 1. Supplied by the store. */
 export type Weakness = (code: string) => number;
 
-const pool = (items: string[], layout: Layout): string[] => [...new Set(items)].filter((item) => layout.canType(item));
+/** The eight fingers that type letters, left pinky to right pinky. The thumbs only have the space bar. */
+export type TypingFinger = Exclude<Finger, 'LT' | 'RT'>;
+export const TYPING_FINGERS: TypingFinger[] = FINGERS.filter((finger): finger is TypingFinger => fingerKind(finger) !== 'thumb');
 
-/** Share of a text's strokes that land on a ring or pinky finger. */
-export function weakShare(layout: Layout, text: string): number {
-  const strokes = layout.targets(text).flatMap((target) => target.strokes);
-  if (strokes.length === 0) return 0;
-  return strokes.filter((stroke) => isWeakFinger(layout.fingerOf(stroke.code))).length / strokes.length;
+/** The fingers this trainer was made for: where a profile's focus starts. */
+export const DEFAULT_FOCUS: TypingFinger[] = ['LP', 'LR', 'RR', 'RP'];
+
+/**
+ * What tilts the choice of text: the fingers the typist picked to train more,
+ * and the keys their own numbers show as slow.
+ */
+export interface Bias {
+  weakness: Weakness;
+  focus: ReadonlySet<Finger>;
 }
 
-function weightOf(layout: Layout, text: string, weakness: Weakness): number {
+const pool = (items: string[], layout: Layout): string[] => [...new Set(items)].filter((item) => layout.canType(item));
+
+/** Share of a text's strokes that land on one of the `fingers`. */
+export function fingerShare(layout: Layout, text: string, fingers: ReadonlySet<Finger>): number {
+  const strokes = layout.targets(text).flatMap((target) => target.strokes);
+  if (strokes.length === 0 || fingers.size === 0) return 0;
+  return strokes.filter((stroke) => fingers.has(layout.fingerOf(stroke.code))).length / strokes.length;
+}
+
+/** A focus on no finger, or on all eight, favors nothing. */
+const hasFocus = (focus: ReadonlySet<Finger>): boolean => focus.size > 0 && TYPING_FINGERS.some((finger) => !focus.has(finger));
+
+/** How hard the focus pulls on words and sentences. Measured on the word lists: with ring and pinky picked, two letters in three are theirs in English and more than half in French, against one in three unweighted. */
+const PULL = 5;
+/** Letter groups are few, and one made only of focus letters is common: a softer pull keeps a set from repeating the same handful. */
+const GROUP_PULL = 2.5;
+
+/**
+ * How much a text is wanted. Each tenth of its strokes that lands on a focus finger
+ * multiplies its chances by the same factor, so a word made of their letters comes up
+ * many times as often as one with none, and no word is ever left out. The typist's
+ * slow keys multiply it again, up to four times.
+ */
+function weightOf(layout: Layout, text: string, bias: Bias, pull = PULL): number {
   const strokes = layout.targets(text).flatMap((target) => target.strokes);
   if (strokes.length === 0) return 0;
-  const personal = strokes.reduce((sum, stroke) => sum + weakness(stroke.code), 0) / strokes.length;
-  return 1 + 4 * weakShare(layout, text) + 3 * personal;
+  const personal = strokes.reduce((sum, stroke) => sum + bias.weakness(stroke.code), 0) / strokes.length;
+  const share = hasFocus(bias.focus) ? fingerShare(layout, text, bias.focus) : 0;
+  return Math.exp(pull * share) * (1 + 3 * personal);
 }
 
 /** Weighted pick that never returns the same item twice in a row. */
@@ -54,18 +85,18 @@ export interface WordOptions {
   caps: boolean;
 }
 
-/** Words for the selected language, weighted toward ring and pinky work and the typist's slow keys. */
+/** Words for the selected language, weighted toward the focus fingers and the typist's slow keys. */
 export function makeWords(
   layout: Layout,
   lang: Lang,
   count: number,
   options: WordOptions,
-  weakness: Weakness,
+  bias: Bias,
   random: () => number = Math.random,
 ): string {
   const words = pool(WORDS[lang], layout).filter((word) => word.length > 1);
   if (words.length === 0) return '';
-  const next = sampler(words, words.map((word) => weightOf(layout, word, weakness)), random);
+  const next = sampler(words, words.map((word) => weightOf(layout, word, bias)), random);
   const out: string[] = [];
   for (let i = 0; i < count; i++) {
     const word = next();
@@ -85,7 +116,7 @@ export function makeSentences(
   lang: Lang,
   count: number,
   options: WordOptions,
-  weakness: Weakness,
+  bias: Bias,
   random: () => number = Math.random,
 ): string {
   const sentences = pool(
@@ -93,7 +124,7 @@ export function makeSentences(
     layout,
   );
   if (sentences.length === 0) return '';
-  const next = sampler(sentences, sentences.map((sentence) => weightOf(layout, sentence, weakness)), random);
+  const next = sampler(sentences, sentences.map((sentence) => weightOf(layout, sentence, bias)), random);
   const used = new Set<string>();
   const out: string[] = [];
   let words = 0;
@@ -111,26 +142,28 @@ export function makeSentences(
 
 export interface PairOptions {
   size: 2 | 3;
-  focus: 'all' | 'weak';
 }
 
-/** Letter associations with no words: each group is typed three times, then the next one. */
+/**
+ * Letter associations with no words: each group is typed three times, then the next one.
+ * With a focus, only the groups that give a focus finger a letter are drawn, while enough of them exist.
+ */
 export function makePairs(
   layout: Layout,
   lang: Lang,
   groups: number,
   options: PairOptions,
-  weakness: Weakness,
+  bias: Bias,
   random: () => number = Math.random,
 ): string {
   let items = pool(options.size === 2 ? PAIRS[lang] : TRIPLES[lang], layout);
-  if (options.focus === 'weak') {
-    const weak = items.filter((item) => weakShare(layout, item) > 0);
-    if (weak.length >= 6) items = weak;
+  if (hasFocus(bias.focus)) {
+    const focused = items.filter((item) => fingerShare(layout, item, bias.focus) > 0);
+    if (focused.length >= 6) items = focused;
   }
   if (items.length === 0) return '';
   // Earlier entries are more frequent in the language, so they come up more often.
-  const weights = items.map((item, i) => (1 + (items.length - i) / items.length) * weightOf(layout, item, weakness));
+  const weights = items.map((item, i) => (1 + (items.length - i) / items.length) * weightOf(layout, item, bias, GROUP_PULL));
   const next = sampler(items, weights, random);
   const out: string[] = [];
   for (let i = 0; i < groups; i++) {
@@ -140,15 +173,30 @@ export function makePairs(
   return out.join(' ');
 }
 
-export type AnchorFinger = 'LP' | 'LR' | 'RR' | 'RP';
-export const ANCHOR_FINGERS: AnchorFinger[] = ['LP', 'LR', 'RR', 'RP'];
+/** The fingers the anchor drill takes in turn: the focus fingers, or the default focus when none is picked. */
+export function anchorTurns(focus: ReadonlySet<Finger>): TypingFinger[] {
+  const picked = TYPING_FINGERS.filter((finger) => focus.has(finger));
+  return picked.length > 0 ? picked : DEFAULT_FOCUS;
+}
 
 export interface AnchorSet {
-  finger: AnchorFinger;
+  finger: TypingFinger;
   /** Home keys the other fingers of that hand must keep pressed. */
   anchors: string[];
   taps: Stroke[];
 }
+
+/** The other fingers of the hand, nearest neighbours first, so a lower count keeps the anchors that matter most. */
+const NEIGHBOURS: Record<TypingFinger, TypingFinger[]> = {
+  LP: ['LR', 'LM', 'LI'],
+  LR: ['LM', 'LP', 'LI'],
+  LM: ['LR', 'LI', 'LP'],
+  LI: ['LM', 'LR', 'LP'],
+  RI: ['RM', 'RR', 'RP'],
+  RM: ['RR', 'RI', 'RP'],
+  RR: ['RM', 'RP', 'RI'],
+  RP: ['RR', 'RM', 'RI'],
+};
 
 /**
  * An isolation set: the other fingers of the hand hold their home keys, so only
@@ -156,25 +204,18 @@ export interface AnchorSet {
  */
 export function makeAnchorSet(
   layout: Layout,
-  finger: AnchorFinger,
+  finger: TypingFinger,
   anchorCount: number,
   taps: number,
   random: () => number = Math.random,
 ): AnchorSet {
   const hand = fingerHand(finger);
   const home = HOME_CODE[finger];
-  const reach = LETTER_ROW_CODES.filter((code) => layout.fingerOf(code) === finger && layout.legend(code));
+  const reach = letterRowCodes(layout.board).filter((code) => layout.fingerOf(code) === finger && layout.legend(code));
   const others = reach.filter((code) => code !== home);
 
-  // Nearest neighbours first, so reducing the count keeps the anchors that matter most.
-  const order: Record<AnchorFinger, Finger[]> = {
-    LP: ['LR', 'LM', 'LI'],
-    LR: ['LM', 'LP', 'LI'],
-    RR: ['RM', 'RP', 'RI'],
-    RP: ['RR', 'RM', 'RI'],
-  };
-  const anchors = order[finger]
-    .filter((other) => fingerHand(other) === hand && fingerKind(other) !== 'thumb')
+  const anchors = NEIGHBOURS[finger]
+    .filter((other) => fingerHand(other) === hand)
     .slice(0, anchorCount)
     .map((other) => HOME_CODE[other]);
 

@@ -1,8 +1,9 @@
 import { fingerKind } from '../core/fingers';
 import { fingerName, t } from '../core/i18n';
 import type { Layout } from '../core/layouts';
-import { ROW_IDS, ROWS } from '../core/physical';
-import { el, flash } from './dom';
+import type { Board } from '../core/physical';
+import { ROW_IDS, rowsOf } from '../core/physical';
+import { css, el, flash } from './dom';
 
 /** `erase`: hardcore's Backspace, waiting for typos to be erased. */
 export type KeyRole = 'next' | 'shift' | 'anchor' | 'erase';
@@ -19,11 +20,12 @@ const DIM_STEPS = 3;
 /** Left edge of each lane, by home key: four fingers, the thumb gap over G and H, four fingers. */
 const LANE_START_CODES = ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon'];
 
-/** The on-screen board: the selected layout's legends on the physical key positions. */
+/** The on-screen board: the selected layout's legends on the keys of the board on the desk. */
 export class KeyboardView {
   readonly root = el('div.kb', { 'aria-hidden': 'true' });
   private keys = new Map<string, HTMLElement>();
   private marked: HTMLElement[] = [];
+  private board: Board | null = null;
   private layout: Layout | null = null;
   private picker: ((code: string) => void) | null = null;
   private picked: string | null = null;
@@ -39,29 +41,48 @@ export class KeyboardView {
       event.preventDefault();
       pick(event);
     });
+    this.setBoard('ansi');
+  }
 
-    ROWS.forEach((row, rowIndex) => {
-      // The row sets the shade of its keys and the legend mark beside it.
-      const rowEl = el('div.kb-row', { 'data-row': ROW_IDS[rowIndex] });
-      let left = 0;
-      for (const key of row) {
-        const keyEl = el('div.key', { 'data-code': key.code, 'data-row': ROW_IDS[rowIndex] });
-        keyEl.style.setProperty('--span', String(key.w * 4));
-        // Where the key's middle sits across the board, 0 at the left edge and 1 at the right: the wave travels by it.
-        keyEl.style.setProperty('--x', ((left + key.w / 2) / 15).toFixed(3));
-        left += key.w;
-        if (rowIndex === QUIET_ROW) keyEl.classList.add('is-quiet');
-        keyEl.append(el('div.cap'));
-        this.keys.set(key.code, keyEl);
-        rowEl.append(keyEl);
-      }
-      this.root.append(rowEl);
-    });
+  /** Draws the keys of a board. The legends, the targets and the heat are set again by the caller. */
+  setBoard(board: Board): void {
+    if (board === this.board) return;
+    this.board = board;
+    this.root.dataset.board = board;
+    this.keys.clear();
+    this.marked = [];
+    this.root.replaceChildren(
+      ...rowsOf(board).map((row, rowIndex) => {
+        // The row sets the shade of its keys and the legend mark beside it.
+        const rowEl = el('div.kb-row', { 'data-row': ROW_IDS[rowIndex] });
+        let left = 0;
+        for (const key of row) {
+          const keyEl = el('div.key', { 'data-code': key.code, 'data-row': ROW_IDS[rowIndex] });
+          keyEl.style.setProperty('--span', String(key.w * 4));
+          // Where the key's middle sits across the board, 0 at the left edge and 1 at the right: the wave travels by it.
+          keyEl.style.setProperty('--x', ((left + key.w / 2) / 15).toFixed(3));
+          left += key.w;
+          if (rowIndex === QUIET_ROW) keyEl.classList.add('is-quiet');
+          // A tall key reaches into the row below, where it is `--tail` of its own width.
+          if (key.tail) {
+            keyEl.classList.add('is-tall');
+            keyEl.style.setProperty('--tail', (key.tail / key.w).toFixed(4));
+          }
+          // A word on a key one unit wide is set smaller.
+          if (key.label && key.w <= 1) keyEl.classList.add('is-tight');
+          keyEl.append(el('div.cap'));
+          this.keys.set(key.code, keyEl);
+          rowEl.append(keyEl);
+        }
+        return rowEl;
+      }),
+    );
   }
 
   setLayout(layout: Layout): void {
     this.layout = layout;
-    for (const key of ROWS.flat()) {
+    this.setBoard(layout.board);
+    for (const key of rowsOf(layout.board).flat()) {
       const keyEl = this.keys.get(key.code)!;
       const cap = keyEl.firstElementChild as HTMLElement;
       const legend = layout.legend(key.code);
@@ -114,6 +135,14 @@ export class KeyboardView {
   /** A record fell: one wave runs across the board, left to right, each cap lifting as it passes. */
   cheer(): void {
     flash(this.root, 'is-cheering', 900);
+  }
+
+  /** Where a key's cap is on screen, and the color it carries: its finger's hue in its row's shade, grey for a key with no finger. */
+  capOf(code: string): { box: DOMRect; color: string } | null {
+    const keyEl = this.keys.get(code);
+    const cap = keyEl?.firstElementChild;
+    if (!keyEl || !cap) return null;
+    return { box: cap.getBoundingClientRect(), color: getComputedStyle(keyEl).getPropertyValue('--f').trim() || css('--text-2') };
   }
 
   /**

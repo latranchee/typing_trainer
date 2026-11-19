@@ -2,7 +2,7 @@ import type { Finger, FingerKind } from './fingers';
 import { fingerHand, fingerKind } from './fingers';
 import type { Difficulty } from './hardcore';
 import type { LayoutId } from './layouts';
-import type { Row } from './physical';
+import type { Board, Row } from './physical';
 import type { DrillId, Lang } from './store';
 
 /**
@@ -17,8 +17,11 @@ const en = {
   none: 'n/a',
   drills: { highway: 'highway', words: 'words', pairs: 'pairs', anchors: 'anchors', stats: 'stats' } satisfies Record<DrillId, string>,
   layouts: { 'ca-fr': 'canadian french', 'colemak-dh': 'colemak-dh', us: 'us qwerty' } satisfies Record<LayoutId, string>,
-  /** What a layout changes, said plainly under the options. */
-  layoutNotes: { 'colemak-dh': 'left bottom row uses the angle fingering' } as Partial<Record<LayoutId, string>>,
+  /** What a layout changes, said plainly in the settings. A note for one board (`layout|board`) comes before the layout's own. */
+  layoutNotes: {
+    'colemak-dh': 'left bottom row uses the angle fingering',
+    'colemak-dh|iso': 'z is on the key beside the left shift',
+  } as Partial<Record<LayoutId | `${LayoutId}|${Board}`, string>>,
   /** The practice-text languages. */
   languages: { fr: 'french', en: 'english' } satisfies Record<Lang, string>,
   kinds: { pinky: 'pinky', ring: 'ring', middle: 'middle', index: 'index', thumb: 'thumb' } satisfies Record<FingerKind, string>,
@@ -36,7 +39,31 @@ const en = {
     trackingOn: 'sets and key numbers are saved',
     trackingOff: 'nothing is saved while this is off',
     layout: 'keyboard layout',
-    interfaceLanguage: 'interface language',
+  },
+
+  /** The settings panel: one list for the drill's options, the fingers to train, the sound, the keyboard and the profile. */
+  menu: {
+    button: 'settings',
+    region: 'settings',
+    profile: 'profile',
+    layout: 'layout',
+    board: 'board',
+    boards: { ansi: 'ansi', iso: 'iso', jis: 'jis' } satisfies Record<Board, string>,
+    /** What tells one board from another: shown under the choice and on each button. */
+    boardNotes: {
+      ansi: 'wide left shift, flat enter',
+      iso: 'tall enter, one more key beside the left shift',
+      jis: 'tall enter, short backspace, keys around the space bar',
+    } satisfies Record<Board, string>,
+    boardFound: (board: string): string => `${board} keyboard detected: the board on screen now matches it`,
+    interface: 'interface',
+    focus: 'fingers',
+    focusGroup: 'fingers to train more',
+    focusNote: 'the lit fingers type more',
+    focusNone: 'none lit: every finger types alike',
+    focusAnchors: 'one set for each lit finger',
+    focusOn: (finger: string): string => `${finger}: trained more`,
+    focusOff: (finger: string): string => `${finger}: as usual`,
   },
 
   rail: {
@@ -49,6 +76,8 @@ const en = {
     streak: 'streak',
     fingers: 'fingers',
     bar: (kind: FingerKind, wpm: number | null): string => (wpm === null ? `${kind}: not measured yet` : `${kind}: ${wpm} wpm`),
+    /** Added to a bar's line while the bar glows. */
+    hot: 'ahead of its own average in this set',
     untracked: 'tracking is off: nothing you type is saved',
   },
 
@@ -151,11 +180,11 @@ const en = {
   highway: {
     text: 'text',
     words: 'words',
-    pairs: 'letter pairs',
+    pairs: 'pairs',
     sentences: 'sentences',
     tempo: 'tempo',
     follows: 'follows you',
-    locked: (wpm: number): string => `locked ${wpm} wpm`,
+    locked: (wpm: number): string => `at ${wpm} wpm`,
     tempoNow: (wpm: number): string => `tempo ${wpm} wpm`,
     early: 'early: wait for the line',
   },
@@ -164,9 +193,6 @@ const en = {
     groups: 'groups',
     pairs: 'pairs',
     triples: 'triples',
-    focus: 'focus',
-    weak: 'ring and pinky',
-    all: 'all fingers',
     text: 'text',
     sentences: 'sentences',
     words: 'words',
@@ -180,9 +206,7 @@ const en = {
     free: 'No anchors: tap the notes with this finger and keep the hand on the home row.',
     hold: 'hold',
     lifted: (keys: string): string =>
-      `anchor lifted: keep ${keys} down. If your keyboard cannot register this many keys at once, press esc and lower the "anchors" setting under the keyboard.`,
-    finger: 'finger',
-    allFour: 'all four',
+      `anchor lifted: keep ${keys} down. If your keyboard cannot register this many keys at once, press esc and lower "anchors" in the settings.`,
     anchors: 'anchors',
     off: 'off',
   },
@@ -219,7 +243,7 @@ const en = {
     range: 'range',
     recent: (sets: number): string => `${sets} sets`,
     all: 'all',
-    saved: 'saved numbers',
+    saved: 'saved',
     keep: 'keep',
     erase: 'erase',
     eraseAll: (profile: string): string => `erase all of ${profile}`,
@@ -267,7 +291,10 @@ const fr: Strings = {
   none: 'n/d',
   drills: { highway: 'autoroute', words: 'mots', pairs: 'paires', anchors: 'ancrages', stats: 'stats' },
   layouts: { 'ca-fr': 'français canadien', 'colemak-dh': 'colemak-dh', us: 'qwerty américain' },
-  layoutNotes: { 'colemak-dh': 'la rangée du bas de la main gauche suit le doigté en angle' },
+  layoutNotes: {
+    'colemak-dh': 'la rangée du bas de la main gauche suit le doigté en angle',
+    'colemak-dh|iso': 'le z est sur la touche à côté du maj gauche',
+  },
   languages: { fr: 'français', en: 'anglais' },
   kinds: FR_KINDS,
   finger: frFinger,
@@ -282,7 +309,29 @@ const fr: Strings = {
     trackingOn: 'les séries et les chiffres par touche sont enregistrés',
     trackingOff: "rien n'est enregistré tant que le suivi est désactivé",
     layout: 'disposition du clavier',
-    interfaceLanguage: "langue de l'interface",
+  },
+
+  menu: {
+    button: 'réglages',
+    region: 'réglages',
+    profile: 'profil',
+    layout: 'disposition',
+    board: 'format',
+    boards: { ansi: 'ansi', iso: 'iso', jis: 'jis' },
+    boardNotes: {
+      ansi: 'maj gauche large, entrée plate',
+      iso: 'entrée haute, une touche de plus à côté du maj gauche',
+      jis: "entrée haute, retour court, des touches autour de la barre d'espace",
+    },
+    boardFound: (board) => `clavier ${board} détecté: le clavier à l'écran le suit`,
+    interface: 'interface',
+    focus: 'doigts',
+    focusGroup: 'doigts à travailler',
+    focusNote: 'les doigts allumés tapent plus',
+    focusNone: 'aucun allumé: tous tapent autant',
+    focusAnchors: 'une série par doigt allumé',
+    focusOn: (finger) => `${finger}: travaillé davantage`,
+    focusOff: (finger) => `${finger}: comme d'habitude`,
   },
 
   rail: {
@@ -295,6 +344,7 @@ const fr: Strings = {
     streak: "d'affilée",
     fingers: 'doigts',
     bar: (kind, wpm) => (wpm === null ? `${FR_KINDS[kind]}: pas encore mesuré` : `${FR_KINDS[kind]}: ${wpm} mpm`),
+    hot: 'en avance sur sa propre moyenne dans cette série',
     untracked: "suivi désactivé: rien de ce que tu tapes n'est enregistré",
   },
 
@@ -389,11 +439,11 @@ const fr: Strings = {
   highway: {
     text: 'texte',
     words: 'mots',
-    pairs: 'paires de lettres',
+    pairs: 'paires',
     sentences: 'phrases',
     tempo: 'tempo',
     follows: 'te suit',
-    locked: (wpm) => `fixe à ${wpm} mpm`,
+    locked: (wpm) => `à ${wpm} mpm`,
     tempoNow: (wpm) => `tempo ${wpm} mpm`,
     early: 'trop tôt: attends la ligne',
   },
@@ -402,9 +452,6 @@ const fr: Strings = {
     groups: 'groupes',
     pairs: 'paires',
     triples: 'triplets',
-    focus: 'cible',
-    weak: 'annulaire et petit doigt',
-    all: 'tous les doigts',
     text: 'texte',
     sentences: 'phrases',
     words: 'mots',
@@ -418,9 +465,7 @@ const fr: Strings = {
     free: 'Sans ancrage: tape les notes avec ce doigt et garde la main sur la rangée de repos.',
     hold: 'tiens',
     lifted: (keys) =>
-      `ancrage relâché: garde ${keys} enfoncées. Si ton clavier ne peut pas enregistrer autant de touches à la fois, appuie sur échap et réduis le réglage « ancrages » sous le clavier.`,
-    finger: 'doigt',
-    allFour: 'les quatre',
+      `ancrage relâché: garde ${keys} enfoncées. Si ton clavier ne peut pas enregistrer autant de touches à la fois, appuie sur échap et réduis « ancrages » dans les réglages.`,
     anchors: 'ancrages',
     off: 'aucun',
   },

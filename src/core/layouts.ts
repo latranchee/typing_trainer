@@ -1,6 +1,7 @@
 import type { Finger } from './fingers';
 import { fingerHand } from './fingers';
-import { ALL_CODES, DEFAULT_FINGER } from './physical';
+import type { Board, Row } from './physical';
+import { CHARACTER_CODES, DEFAULT_FINGER, hasCode, rowOf } from './physical';
 
 /** One keypress the trainer expects: a physical key, with or without Shift. */
 export interface Stroke {
@@ -16,11 +17,18 @@ export interface Target {
 
 export type LayoutId = 'ca-fr' | 'colemak-dh' | 'us';
 
+type Keys = Record<string, [string, string]>;
+
 interface LayoutDef {
   id: LayoutId;
-  /** `code -> [base, shifted]`. A combining mark (see MARK) makes the key a dead key. */
-  keys: Record<string, [string, string]>;
+  /**
+   * `code -> [base, shifted]`. A combining mark (see MARK) makes the key a dead key.
+   * A key the board on the desk does not have is left out when the layout is built.
+   */
+  keys: Keys;
   fingers?: Record<string, Finger>;
+  /** Keys that change on a board of another shape. They are asked for before the keys above. */
+  boards?: Partial<Record<Board, Keys>>;
 }
 
 /** Dead keys are stored as combining marks so composition is plain Unicode normalization. */
@@ -41,8 +49,8 @@ const MARK_LEGEND: Record<string, string> = {
 };
 const BACKSLASH = cp(92);
 
-const row = (codes: string, base: string, shifted: string): Record<string, [string, string]> => {
-  const out: Record<string, [string, string]> = {};
+const row = (codes: string, base: string, shifted: string): Keys => {
+  const out: Keys = {};
   codes.split(' ').forEach((code, i) => {
     out[code] = [base[i], shifted[i]];
   });
@@ -69,6 +77,8 @@ const US: LayoutDef = {
     Comma: [',', '<'],
     Period: ['.', '>'],
     Slash: ['/', '?'],
+    // ISO boards: the key beside the left Shift is a second backslash.
+    IntlBackslash: [BACKSLASH, '|'],
   },
 };
 
@@ -88,12 +98,16 @@ const CA_FR: LayoutDef = {
     Comma: [',', "'"],
     Period: ['.', '.'],
     Slash: [cp(0xe9), cp(0xc9)],
+    // ISO boards: the guillemets, on the key beside the left Shift.
+    IntlBackslash: [cp(0xab), cp(0xbb)],
   },
 };
 
 /**
- * Colemak-DH for ANSI boards. The left bottom row is typed with the angle
- * fingering the layout is designed for: ring, middle, index, index, index.
+ * Colemak-DH. The left bottom row is typed with the angle fingering the layout is
+ * designed for: ring, middle, index, index, index from the key beside the left Shift.
+ * An ANSI board has no key left for Z there, so Z sits in the middle of the row. An ISO
+ * board has one more key: Z takes it, under the pinky, and the middle key gets the backslash.
  */
 const COLEMAK_DH: LayoutDef = {
   id: 'colemak-dh',
@@ -112,6 +126,7 @@ const COLEMAK_DH: LayoutDef = {
     Slash: ['/', '?'],
   },
   fingers: { KeyZ: 'LR', KeyX: 'LM', KeyC: 'LI', KeyV: 'LI', KeyB: 'LI' },
+  boards: { iso: { IntlBackslash: ['z', 'Z'], KeyB: [BACKSLASH, '|'] } },
 };
 
 const DEFS: LayoutDef[] = [CA_FR, COLEMAK_DH, US];
@@ -126,7 +141,11 @@ export interface KeyLegend {
 /** A layout's name and the note about its fingering are interface strings: see `i18n.ts`. */
 export interface Layout {
   id: LayoutId;
+  /** The board the layout was built for: it decides which keys exist and where two of them sit. */
+  board: Board;
   fingerOf(code: string): Finger;
+  /** The row a key sits on, on this board. */
+  rowOf(code: string): Row;
   legend(code: string): KeyLegend | null;
   /** Strokes for one character, or null when the layout cannot produce it. */
   strokesFor(char: string): Stroke[] | null;
@@ -140,13 +159,19 @@ export interface Layout {
 
 const isMark = (value: string): boolean => value in MARK_LEGEND;
 
-function buildLayout(def: LayoutDef): Layout {
+function buildLayout(def: LayoutDef, board: Board): Layout {
   const fingerOf = (code: string): Finger => def.fingers?.[code] ?? DEFAULT_FINGER[code] ?? 'RI';
   const direct = new Map<string, Stroke[]>();
   const dead = new Map<string, Stroke>();
 
+  // The board's own keys come first, so a character two keys can type is asked for on the key the board moved.
+  const moved = def.boards?.[board] ?? {};
+  const keys: Keys = Object.fromEntries(
+    [...Object.entries(moved), ...Object.entries(def.keys).filter(([code]) => !(code in moved))].filter(([code]) => hasCode(board, code)),
+  );
+
   direct.set(' ', [{ code: 'Space', shift: false }]);
-  for (const [code, [base, shifted]] of Object.entries(def.keys)) {
+  for (const [code, [base, shifted]] of Object.entries(keys)) {
     [base, shifted].forEach((value, level) => {
       const stroke: Stroke = { code, shift: level === 1 };
       if (isMark(value)) {
@@ -171,9 +196,11 @@ function buildLayout(def: LayoutDef): Layout {
 
   return {
     id: def.id,
+    board,
     fingerOf,
+    rowOf: (code) => rowOf(code, board),
     legend(code) {
-      const pair = def.keys[code];
+      const pair = keys[code];
       if (!pair) return null;
       const [base, shift] = pair;
       return {
@@ -192,18 +219,29 @@ function buildLayout(def: LayoutDef): Layout {
     properShift: (code) => (fingerHand(fingerOf(code)) === 'left' ? 'ShiftRight' : 'ShiftLeft'),
     strokeLabel(stroke) {
       if (stroke.code === 'Space') return ' ';
-      const pair = def.keys[stroke.code];
+      const pair = keys[stroke.code];
       return pair ? legendValue(pair[stroke.shift ? 1 : 0]) : '';
     },
   };
 }
 
-export const LAYOUTS: Layout[] = DEFS.map(buildLayout);
+/** Every layout on an ANSI board: the list the layout dropdown and the tests go through. */
+export const LAYOUTS: Layout[] = DEFS.map((def) => buildLayout(def, 'ansi'));
 export const LAYOUT_IDS: LayoutId[] = DEFS.map((def) => def.id);
 
-export function getLayout(id: string): Layout {
-  return LAYOUTS.find((layout) => layout.id === id) ?? LAYOUTS[0];
+const built = new Map<string, Layout>(LAYOUTS.map((layout) => [`${layout.id}|ansi`, layout]));
+
+/** A layout as it sits on a board. An unknown id gives the first layout. */
+export function getLayout(id: string, board: Board = 'ansi'): Layout {
+  const def = DEFS.find((candidate) => candidate.id === id) ?? DEFS[0];
+  const key = `${def.id}|${board}`;
+  let layout = built.get(key);
+  if (!layout) {
+    layout = buildLayout(def, board);
+    built.set(key, layout);
+  }
+  return layout;
 }
 
-/** Codes that produce a character on some layout, plus Space. */
-export const isTypingCode = (code: string): boolean => code === 'Space' || (ALL_CODES.has(code) && code in US.keys);
+/** Codes that carry a character on some board, plus Space: a press on one of them is typing. */
+export const isTypingCode = (code: string): boolean => code === 'Space' || CHARACTER_CODES.has(code);

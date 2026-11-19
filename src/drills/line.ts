@@ -47,13 +47,13 @@ export class LineDrill implements Drill {
   }
 
   restart(): void {
-    const { layout, settings, weakness } = this.host;
+    const { layout, settings, bias } = this.host;
     const source =
       this.id === 'pairs'
-        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, focus: settings.pairFocus }, weakness)
+        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize }, bias)
         : settings.wordsSource === 'sentences'
-          ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness)
-          : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness);
+          ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias)
+          : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias);
     this.notes = toNotes(layout, source);
     this.cells = [];
     this.cursor = 0;
@@ -108,16 +108,6 @@ export class LineDrill implements Drill {
           ],
           set: (value) => refresh({ pairSize: value === '3' ? 3 : 2 }),
         },
-        {
-          label: t.line.focus,
-          value: settings.pairFocus,
-          choices: [
-            { value: 'weak', label: t.line.weak },
-            { value: 'all', label: t.line.all },
-          ],
-          set: (value) => refresh({ pairFocus: value as 'all' | 'weak' }),
-          bare: true,
-        },
       ];
     }
     return [
@@ -129,7 +119,6 @@ export class LineDrill implements Drill {
           { value: 'sentences', label: t.line.sentences },
         ],
         set: (value) => refresh({ wordsSource: value as typeof settings.wordsSource }),
-        bare: true,
       },
       languageOption(settings, refresh),
       {

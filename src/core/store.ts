@@ -1,5 +1,7 @@
 import type { Finger } from './fingers';
 import { FINGERS } from './fingers';
+import type { TypingFinger } from './generator';
+import { DEFAULT_FOCUS, TYPING_FINGERS } from './generator';
 import type { Difficulty, Floor, RunBest } from './hardcore';
 import { DEFAULT_DIFFICULTY, DIFFICULTIES, FLOORS } from './hardcore';
 import type { HistoryEntry } from './history';
@@ -8,6 +10,8 @@ import { preferredLang } from './i18n';
 import type { Layout, LayoutId } from './layouts';
 import { LAYOUT_IDS } from './layouts';
 import { MIN_SAMPLES } from './metrics';
+import type { Board } from './physical';
+import { BOARDS } from './physical';
 import type { KeySound } from './switches';
 import { isKeySound } from './switches';
 
@@ -18,6 +22,12 @@ export const LANGS: Lang[] = ['fr', 'en'];
 
 export interface Settings {
   layout: LayoutId;
+  /** The shape of the keyboard on the desk: the on-screen board is drawn to match it. */
+  board: Board;
+  /** True once the board was picked by hand or told by one of its own keys: after that, no key changes it. */
+  boardSet: boolean;
+  /** The fingers to train more: the text leans toward their letters and the anchor drill takes them in turn. */
+  focus: TypingFinger[];
   /** Language of the practice text. */
   lang: Lang;
   /** Language of the interface. */
@@ -34,8 +44,6 @@ export interface Settings {
   setWords: 15 | 30 | 60;
   caps: boolean;
   pairSize: 2 | 3;
-  pairFocus: 'all' | 'weak';
-  anchorFinger: 'rotate' | 'LP' | 'LR' | 'RR' | 'RP';
   anchorCount: 0 | 1 | 2 | 3;
   /** When false nothing the typist does is saved: no key numbers, no sets. */
   track: boolean;
@@ -53,6 +61,9 @@ export interface Settings {
 
 export const DEFAULT_SETTINGS: Settings = {
   layout: 'ca-fr',
+  board: 'ansi',
+  boardSet: false,
+  focus: DEFAULT_FOCUS,
   lang: 'en',
   ui: 'en',
   drill: 'highway',
@@ -64,8 +75,6 @@ export const DEFAULT_SETTINGS: Settings = {
   setWords: 30,
   caps: false,
   pairSize: 2,
-  pairFocus: 'weak',
-  anchorFinger: 'rotate',
   anchorCount: 3,
   track: true,
   hardcore: false,
@@ -164,6 +173,15 @@ const cleanName = (name: string): string => name.replace(/\s+/g, ' ').trim().sli
 function cleanSettings(saved: Partial<Settings> | undefined, preferred: Lang): Settings {
   const settings = { ...DEFAULT_SETTINGS, ui: preferred, ...saved };
   if (!LAYOUT_IDS.includes(settings.layout)) settings.layout = DEFAULT_SETTINGS.layout;
+  if (!BOARDS.includes(settings.board)) settings.board = DEFAULT_SETTINGS.board;
+  settings.boardSet = settings.boardSet === true;
+  // Always a list of its own, in hand order: no two profiles share one, and an empty one is a choice (no finger favored).
+  const focus: unknown = settings.focus;
+  settings.focus = Array.isArray(focus) ? TYPING_FINGERS.filter((finger) => focus.includes(finger)) : [...DEFAULT_FOCUS];
+  // Options the finger focus replaced: the pairs drill's own focus and the anchor drill's finger.
+  const stale = settings as unknown as Record<string, unknown>;
+  delete stale.pairFocus;
+  delete stale.anchorFinger;
   if (!DRILL_IDS.includes(settings.drill)) settings.drill = DEFAULT_SETTINGS.drill;
   if (!LANGS.includes(settings.lang)) settings.lang = DEFAULT_SETTINGS.lang;
   if (!LANGS.includes(settings.ui)) settings.ui = preferred;
@@ -255,7 +273,8 @@ export class Store {
     let id: string;
     do id = Math.random().toString(36).slice(2, 8);
     while (!id || this.data.profiles.some((profile) => profile.id === id));
-    this.data.profiles.push({ id, name: cleanName(name), settings: { ...this.current.settings, track: true }, layouts: {} });
+    const settings = { ...this.current.settings, focus: [...this.current.settings.focus], track: true };
+    this.data.profiles.push({ id, name: cleanName(name), settings, layouts: {} });
     this.switchProfile(id);
     return null;
   }

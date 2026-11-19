@@ -41,6 +41,7 @@ const tipOf = (finger: Finger): { x: number; y: number } => TIPS[finger];
 export class HandsView {
   readonly root = el('div.hands', { 'aria-hidden': 'true' });
   private marks = new Map<Finger, HTMLElement[]>();
+  private halos = new Map<Finger, HTMLElement>();
 
   constructor() {
     const dots: HTMLElement[] = [];
@@ -49,15 +50,27 @@ export class HandsView {
       const matte = el('span.finger-matte', { 'data-f': kind });
       matte.style.setProperty('--matte', `url("${matteOf(finger)}")`);
       const tip = tipOf(finger);
+      const x = `${(tip.x / PLATE_W) * 100}%`;
+      const y = `${(tip.y / PLATE_H) * 100}%`;
       const dot = el('span.fingertip', { 'data-f': kind });
-      dot.style.setProperty('--x', `${(tip.x / PLATE_W) * 100}%`);
-      dot.style.setProperty('--y', `${(tip.y / PLATE_H) * 100}%`);
+      dot.style.setProperty('--x', x);
+      dot.style.setProperty('--y', y);
+      // A soft light around the fingertip, for a finger that is ahead of its own average.
+      const halo = el('span.finger-halo', { 'data-f': kind });
+      halo.style.setProperty('--x', x);
+      halo.style.setProperty('--y', y);
       this.marks.set(finger, [matte, dot]);
-      // Fills sit under the outline so the drawn line stays crisp over them.
-      this.root.append(matte);
+      this.halos.set(finger, halo);
+      // Fills and halos sit under the outline so the drawn line stays crisp over them.
+      this.root.append(halo, matte);
       dots.push(dot);
     }
     this.root.append(el('img.hands-plate', { src: handsPlate, alt: '', draggable: 'false' }), ...dots);
+  }
+
+  /** Lights the halo of each finger that is ahead of its own average in this set. */
+  setHot(fingers: ReadonlySet<Finger>): void {
+    for (const [finger, halo] of this.halos) halo.classList.toggle('is-hot', fingers.has(finger));
   }
 
   /** Light the fingers to use. Each fills in the shade of the row it is about to reach. */

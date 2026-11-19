@@ -1,6 +1,6 @@
 import type { Finger, FingerKind } from '../core/fingers';
 import { FINGER_KINDS, fingerKind } from '../core/fingers';
-import type { Weakness } from '../core/generator';
+import type { Bias, TypingFinger, Weakness } from '../core/generator';
 import type { Difficulty, Floor, Rules, RunBest } from '../core/hardcore';
 import {
   beatLevel,
@@ -26,9 +26,9 @@ import { attachInput } from '../core/input';
 import type { Layout } from '../core/layouts';
 import { getLayout, LAYOUTS } from '../core/layouts';
 import { intervalToWpm, MIN_SAMPLES, RollingWpm, SetStats } from '../core/metrics';
-import type { Row } from '../core/physical';
-import { rowOf } from '../core/physical';
-import { dayStreak, fingerGain, setVerdict, Streak, STREAK_SHOWN_FROM, streakKey } from '../core/rewards';
+import type { Board, Row } from '../core/physical';
+import { boardOf, BOARDS } from '../core/physical';
+import { dayStreak, fingerGain, HOT_BASE, isAhead, isHot, setVerdict, Streak, STREAK_SHOWN_FROM, streakHeat, streakKey } from '../core/rewards';
 import type { DrillId, Lang, Settings } from '../core/store';
 import { DRILL_IDS, LANGS, Store } from '../core/store';
 import type { KeySound } from '../core/switches';
@@ -41,13 +41,17 @@ import { StatsView } from '../drills/stats';
 import type { Drill, DrillHost, NextHint, Note, OptionGroup } from '../drills/types';
 import { toggleOption } from '../drills/types';
 import { css, el, fitCanvas, flash } from './dom';
+import { FingerPick } from './fingerpick';
+import { setInk } from './glyph';
 import { HandsView } from './hands';
 import type { KeyRole } from './keyboard';
 import { KeyboardView } from './keyboard';
 import { brandMark } from './mark';
+import { Panel } from './panel';
 import { ProfileMenu } from './profile';
 import { Select } from './select';
 import { Sound } from './sound';
+import { Sparks } from './sparks';
 
 /** A gap longer than this between strokes is a pause and is not measured. */
 const PAUSE_MS = 2000;
@@ -59,6 +63,10 @@ const WINDOWS: Settings['window'][] = [5, 10, 30];
 const EASE_OUT = 'cubic-bezier(0.16, 1, 0.3, 1)';
 /** A result's WPM counts up from zero for this long. */
 const COUNT_UP_MS = 520;
+/** The live WPM is only held against the usual pace this long into a set: before that the rolling rate is still filling. */
+const AHEAD_AFTER_MS = 4000;
+/** Sparks off a key at a milestone of the streak. On any other key of a warm streak, one per step of its heat. */
+const MILESTONE_SPARKS = 7;
 /** The key sounds on offer, in the order of the list. The first choice is silence, named in the interface language. */
 const keySoundNames = (): string[] => [t.options.keySoundOff, ...SWITCHES.map((item) => item.name)];
 
@@ -78,7 +86,7 @@ const isLetter = (char: string): boolean => char.toLowerCase() !== char.toUpperC
 export class App implements DrillHost {
   readonly store = new Store();
   layout: Layout;
-  readonly weakness: Weakness = (code) => this.store.weakness(this.layout.id, code);
+  private readonly weakness: Weakness = (code) => this.store.weakness(this.layout.id, code);
   private readonly heat = (code: string): number => this.store.heat(this.layout.id, code);
 
   private rolling: RollingWpm;
@@ -113,6 +121,19 @@ export class App implements DrillHost {
   private recordInSet = false;
   private shownStreak = '';
 
+  /**
+   * What glows: whatever is beating its own average. Each finger's saved time per stroke
+   * as the set began, its clean strokes in the set so far, and the fingers ahead of their average.
+   */
+  private fingerBase = new Map<Finger, number>();
+  private setFingers = new Map<Finger, { n: number; ms: number }>();
+  private hot = new Set<Finger>();
+  /** The pace of the last ten sets of this kind as the set began, null while there are too few. */
+  private usual: number | null = null;
+  private ahead = false;
+  /** The key that told which board is on the desk: its own press is not held against the new set. */
+  private skipCode: string | null = null;
+
   /** Hardcore: wrong keys typed past the cursor, oldest first, waiting for Backspace. */
   private typos: string[] = [];
   /** The hint the drill last gave. While typos wait, the rails show Backspace instead. */
@@ -144,7 +165,15 @@ export class App implements DrillHost {
 
   private root: HTMLElement;
   private tabs = new Map<DrillId, HTMLButtonElement>();
-  private uiButtons = new Map<Lang, HTMLButtonElement>();
+  /** Every option on one list, in the right rail's place. Its button sits at the end of the top strip. */
+  private panel = new Panel((open) => {
+    this.root.dataset.menu = String(open);
+  });
+  /** The fingers to train more: the text leans toward their letters. */
+  private fingerPick = new FingerPick((focus) => this.setFocus(focus));
+  /** The active profile's name beside the settings button, once there is more than one profile. */
+  private profileChip = el('span.top-profile');
+  private sparks = new Sparks();
   /** Every fixed string on screen: each entry writes one text or attribute in the current interface language. */
   private labels: (() => void)[] = [];
   private layoutSelect!: Select;
@@ -154,8 +183,6 @@ export class App implements DrillHost {
   private flipped: string | null = null;
   private profileMenu!: ProfileMenu;
   private mark = brandMark();
-  private trackLabel = el('span');
-  private trackSwitch = el('button.track.toggle.ctl', { type: 'button', role: 'switch' }, this.trackLabel, el('span.switch', { 'aria-hidden': 'true' }));
   private wpmEl = el('output.wpm', {}, '0');
   /** "/100" after the live WPM: the hardcore floor. */
   private floorEl = el('span.wpm-floor');
@@ -186,7 +213,8 @@ export class App implements DrillHost {
   private fingerFills = new Map<FingerKind, HTMLElement>();
   private stage = el('div.stage');
   private result = el('div.result', { role: 'status' });
-  private optionsEl = el('div.options');
+  /** Under the board: the keys that do something beside typing. Everything else is in the settings. */
+  private hintsEl = el('div.hints');
   private noteEl = el('p.stage-note', { role: 'status' });
   private nextEl = el('div.next.is-empty');
   private nextCap = el('div.next-cap');
@@ -195,7 +223,7 @@ export class App implements DrillHost {
 
   constructor(root: HTMLElement) {
     this.root = root;
-    this.layout = getLayout(this.store.settings.layout);
+    this.layout = getLayout(this.store.settings.layout, this.store.settings.board);
     this.rolling = new RollingWpm(this.store.settings.window * 1000);
     setUiLang(this.store.settings.ui);
     document.documentElement.lang = this.store.settings.ui;
@@ -214,6 +242,7 @@ export class App implements DrillHost {
         // While the list of switches is open the keys stay quiet: the list plays the switch under the cursor.
         if (!this.soundSelect.isOpen) this.sound.press(code);
         this.drill.held?.(this.held);
+        this.spotBoard(code);
       },
       up: (code) => {
         const wasDown = this.held.delete(code);
@@ -246,6 +275,10 @@ export class App implements DrillHost {
     return this.store.settings;
   }
 
+  get bias(): Bias {
+    return { weakness: this.weakness, focus: new Set(this.settings.focus) };
+  }
+
   // ---------- DrillHost ----------
 
   hit(note: Note, event: KeyEvt): void {
@@ -260,6 +293,7 @@ export class App implements DrillHost {
       const tally = (this.setKeys[code] ??= [0, 0, 0]);
       tally[0]++;
       tally[2] += gap;
+      this.warm(note.finger, gap);
     }
     if (note.last) {
       this.rolling.add(now);
@@ -285,6 +319,9 @@ export class App implements DrillHost {
     const step = this.streak.hit();
     if (step.record) this.celebrate();
     else if (step.milestone) this.markMilestone();
+    // A warm streak: the key just hit throws a spark or two, in its own color.
+    const heat = streakHeat(this.streak.count);
+    if (heat > 0) this.throwSparks(code, step.record || step.milestone ? MILESTONE_SPARKS : heat);
     this.touch(now);
     if (++this.hitsSinceBars >= 25) this.updateBars();
   }
@@ -295,6 +332,7 @@ export class App implements DrillHost {
     (this.setKeys[expected.stroke.code] ??= [0, 0, 0])[1]++;
     this.keyboard.wrong(event.code);
     this.missedSince = true;
+    this.cool(expected.finger);
     this.endStreak(true);
     this.touch(event.time);
     if (this.hardcore) this.wrongKey(event);
@@ -309,11 +347,12 @@ export class App implements DrillHost {
   private showHint(): void {
     if (this.frozen) return;
     if (this.typos.length > 0) {
+      const row = this.layout.rowOf('Backspace');
       this.keyboard.setTargets([{ code: 'Backspace', role: 'erase' }]);
-      this.hands.setActive([{ finger: 'RP', row: rowOf('Backspace') }]);
+      this.hands.setActive([{ finger: 'RP', row }]);
       this.nextEl.classList.remove('is-empty');
       this.nextEl.classList.add('is-erase');
-      this.showNext(t.keyCaps.bksp, 'RP', rowOf('Backspace'), t.hardcore.erase(this.typos.length), `${t.finger('RP')}, ${t.keyCaps.bksp}`);
+      this.showNext(t.keyCaps.bksp, 'RP', row, t.hardcore.erase(this.typos.length), `${t.finger('RP')}, ${t.keyCaps.bksp}`);
       return;
     }
     this.nextEl.classList.remove('is-erase');
@@ -330,7 +369,7 @@ export class App implements DrillHost {
       if (note.stroke.shift) {
         const proper = this.layout.properShift(note.stroke.code);
         targets.push({ code: proper, role: 'shift' });
-        reaches.push({ finger: proper === 'ShiftLeft' ? 'LP' : 'RP', row: rowOf(proper) });
+        reaches.push({ finger: proper === 'ShiftLeft' ? 'LP' : 'RP', row: this.layout.rowOf(proper) });
         extra = t.next.plusShift(proper === 'ShiftLeft' ? 'left' : 'right');
       }
       if (hint.anchors?.length) {
@@ -544,7 +583,7 @@ export class App implements DrillHost {
       if (kind !== 'thumb') this.fingerFills.get(kind)!.style.setProperty('--v', String(fixture.fingers[kind]));
     }
     if (this.drill instanceof HighwayDrill) this.drill.freeze(fixture.highway);
-    const row = rowOf(fixture.next.code);
+    const row = this.layout.rowOf(fixture.next.code);
     this.keyboard.setTargets([{ code: fixture.next.code, role: 'next' }]);
     this.hands.setActive([{ finger: fixture.next.finger, row }]);
     this.nextEl.classList.remove('is-empty');
@@ -554,6 +593,13 @@ export class App implements DrillHost {
   // ---------- input ----------
 
   private onKey(event: KeyEvt): void {
+    // Typing starts: the settings step aside and the hands come back.
+    this.panel.close();
+    if (this.skipCode !== null) {
+      const skipped = this.skipCode === event.code;
+      this.skipCode = null;
+      if (skipped) return;
+    }
     if (this.frozen || this.resultOpen) return;
     // Hardcore: past a typo every key lands as one more, right or wrong, until Backspace clears them.
     if (this.hardcore && this.typos.length > 0) {
@@ -612,6 +658,71 @@ export class App implements DrillHost {
     this.comboLabel.textContent = record ? t.streak.newBest : t.streak.inRow;
     this.comboEl.dataset.on = String(on);
     this.comboEl.dataset.record = String(record);
+    // The counter warms with the streak: a glow that steps up at 25, 50 and 100 keys.
+    this.comboEl.dataset.heat = String(streakHeat(count));
+  }
+
+  // ---------- glow ----------
+
+  /**
+   * Readies the glow for a new set: each finger's saved average, to be ahead of, and the
+   * pace of the last ten sets of this kind, for the numeral. Nothing glows until it is earned again.
+   */
+  private primeGlow(): void {
+    this.fingerBase.clear();
+    for (const summary of this.store.fingerSummary(this.layout)) {
+      if (summary.n >= HOT_BASE && fingerKind(summary.finger) !== 'thumb') this.fingerBase.set(summary.finger, summary.ms);
+    }
+    this.setFingers.clear();
+    this.usual = this.drill.id === 'stats' ? null : setVerdict(this.store.history, this.layout.id, this.drill.id, this.settings.lang, 0).usual;
+    this.setAhead(false);
+    if (this.hot.size > 0) {
+      this.hot.clear();
+      this.showHot();
+    }
+  }
+
+  /** A clean stroke of a finger: it joins the finger's pace for the set, and the finger glows once that pace is ahead of its average. */
+  private warm(finger: Finger, gap: number): void {
+    const base = this.fingerBase.get(finger);
+    if (base === undefined) return;
+    const tally = this.setFingers.get(finger) ?? { n: 0, ms: 0 };
+    tally.n++;
+    tally.ms += gap;
+    this.setFingers.set(finger, tally);
+    const hot = isHot(tally.n, tally.ms, base);
+    if (hot === this.hot.has(finger)) return;
+    if (hot) this.hot.add(finger);
+    else this.hot.delete(finger);
+    this.showHot();
+  }
+
+  /** A wrong key on a finger's letter: the finger starts over and has to earn its glow again. */
+  private cool(finger: Finger): void {
+    this.setFingers.delete(finger);
+    if (this.hot.delete(finger)) this.showHot();
+  }
+
+  /** The fingers ahead of their average: a halo on their fingertips and a light across their bars in the left rail. */
+  private showHot(): void {
+    this.hands.setHot(this.hot);
+    for (const kind of FINGER_KINDS) {
+      const hot = [...this.hot].some((finger) => fingerKind(finger) === kind);
+      this.fingerFills.get(kind)!.classList.toggle('is-hot', hot);
+    }
+    this.titleBars();
+  }
+
+  private setAhead(ahead: boolean): void {
+    if (ahead === this.ahead) return;
+    this.ahead = ahead;
+    this.root.dataset.ahead = String(ahead);
+  }
+
+  /** A spark or a few off the cap of a key, in the color that cap carries. */
+  private throwSparks(code: string, count: number): void {
+    const cap = this.keyboard.capOf(code);
+    if (cap) this.sparks.emit(cap.box.left + cap.box.width * (0.3 + Math.random() * 0.4), cap.box.top, cap.color, count);
   }
 
   /** A milestone of the streak: the counter swells once and a tick sounds over the keys. */
@@ -915,6 +1026,11 @@ export class App implements DrillHost {
       this.renderOptions();
       return;
     }
+    // Escape closes the settings before it does anything else.
+    if (command === 'restart' && this.panel.isOpen) {
+      this.panel.close(true);
+      return;
+    }
     if (command === 'next' && !this.resultOpen) return;
     // Leaving a set under way gives the run up: new text is no way out from under a burning fuse.
     if (!this.resultOpen && this.firstHitAt !== null) this.freshRun(true);
@@ -938,6 +1054,7 @@ export class App implements DrillHost {
     this.rolling.reset();
     this.drill.restart();
     this.resetHardcore();
+    this.primeGlow();
     this.setTyping(false);
     this.updateReadouts();
   }
@@ -997,6 +1114,7 @@ export class App implements DrillHost {
     // A run belongs to one drill: the one left behind ends here.
     this.freshRun();
     this.resetHardcore();
+    this.primeGlow();
     this.syncRest();
     this.renderOptions();
     this.updateReadouts();
@@ -1004,13 +1122,47 @@ export class App implements DrillHost {
   }
 
   private setLayout(id: string): void {
+    this.store.update({ layout: getLayout(id).id });
+    this.applyLayout();
+  }
+
+  /** The shape of the keyboard on the desk. Picked by hand or told by a key, it is not guessed again. */
+  private setBoard(board: Board): void {
+    this.store.update({ board, boardSet: true });
+    this.applyLayout();
+  }
+
+  /** The layout or the board changed: the keys on screen are drawn again and a fresh set starts on them. */
+  private applyLayout(): void {
     // The streak was typed on the layout being left.
     this.endStreak();
-    this.store.update({ layout: getLayout(id).id });
-    this.layout = getLayout(id);
+    this.layout = getLayout(this.settings.layout, this.settings.board);
     this.keyboard.setLayout(this.layout);
     this.loadStreak();
     this.updateBars();
+    this.freshRun();
+    this.newSet();
+    this.renderOptions();
+  }
+
+  /**
+   * A key only some boards have says which board is on the desk. Until the board was
+   * picked by hand, the first such key sets it, and the screen says so.
+   */
+  private spotBoard(code: string): void {
+    if (this.settings.boardSet || this.frozen) return;
+    const board = boardOf(code);
+    if (!board || board === this.settings.board) return;
+    this.skipCode = code;
+    this.setBoard(board);
+    this.say(t.menu.boardFound(t.menu.boards[board]));
+  }
+
+  /** The fingers to train more. The text is drawn again with their letters favored. */
+  private setFocus(focus: TypingFinger[]): void {
+    const leaving = this.underWay;
+    this.store.update({ focus });
+    if (leaving) this.endStreak();
     this.freshRun();
     this.newSet();
     this.renderOptions();
@@ -1039,16 +1191,13 @@ export class App implements DrillHost {
     );
     this.soundSelect.relabel(t.options.keySound, keySoundNames());
     this.profileMenu.refresh();
+    this.panel.relabel(t.menu.button, t.menu.region);
+    this.fingerPick.paint();
     // The streak's labels are written with its numbers: they are written again in the new language.
     this.shownStreak = '';
     this.showStreak();
     // The board's fixed legends (shift, enter, space) are interface strings too.
     this.keyboard.setLayout(this.layout);
-    for (const [id, button] of this.uiButtons) {
-      const active = id === ui;
-      button.classList.toggle('is-active', active);
-      button.setAttribute('aria-pressed', String(active));
-    }
     this.syncTrack();
   }
 
@@ -1061,14 +1210,11 @@ export class App implements DrillHost {
     this.syncTrack();
     // A set is saved whole or not at all, so the switch starts a fresh one.
     this.newSet();
-    this.renderOptions();
   }
 
+  /** The left rail and the result say when nothing is being saved. */
   private syncTrack(): void {
-    const on = this.store.tracking;
-    this.trackSwitch.setAttribute('aria-checked', String(on));
-    this.trackSwitch.title = on ? t.top.trackingOn : t.top.trackingOff;
-    this.root.dataset.track = String(on);
+    this.root.dataset.track = String(this.store.tracking);
   }
 
   /** Another profile became active: load its layout, languages and numbers. The open tab stays. */
@@ -1077,9 +1223,10 @@ export class App implements DrillHost {
     // The run under way belonged to the profile just left: it is dropped, not saved under this one. So is the streak.
     this.run = new Run(0);
     this.streak = new Streak();
-    this.layout = getLayout(settings.layout);
+    this.layout = getLayout(settings.layout, settings.board);
     this.applyUi();
     this.layoutSelect.set(this.layout.id);
+    this.fingerPick.set(settings.focus);
     this.soundSelect.set(settings.keySound);
     this.sound.use(settings.keySound);
     this.rolling.windowMs = settings.window * 1000;
@@ -1095,7 +1242,8 @@ export class App implements DrillHost {
   /** `named` replaces the finger-and-row line, for a key that is not a letter. */
   private showNext(label: string, finger: Finger, row: Row, extra: string, named?: string): void {
     const kind = fingerKind(finger);
-    this.nextCap.textContent = label === ' ' ? '' : label;
+    // The legend sits in the middle of the cap by its own ink, like a letter in a note.
+    this.nextCap.replaceChildren(...(label === ' ' ? [] : [setInk(el('span', {}, label), label)]));
     this.nextCap.dataset.f = kind;
     this.nextCap.dataset.row = row;
     // Finger and row are also spelled out, so neither color nor shape is ever the only cue.
@@ -1131,7 +1279,17 @@ export class App implements DrillHost {
       const fill = this.fingerFills.get(kind)!;
       const speed = speeds.get(kind)!;
       fill.style.setProperty('--v', String(speed / best));
-      fill.parentElement!.title = t.rail.bar(kind, speed > 0 ? Math.round(speed) : null);
+      fill.dataset.wpm = speed > 0 ? String(Math.round(speed)) : '';
+    }
+    this.titleBars();
+  }
+
+  /** What each bar says on hover: the finger's speed, and that it is ahead of its average while it glows. */
+  private titleBars(): void {
+    for (const kind of FINGER_KINDS) {
+      const fill = this.fingerFills.get(kind)!;
+      const speed = t.rail.bar(kind, fill.dataset.wpm ? Number(fill.dataset.wpm) : null);
+      fill.parentElement!.parentElement!.title = fill.classList.contains('is-hot') ? `${speed}, ${t.rail.hot}` : speed;
     }
   }
 
@@ -1139,44 +1297,90 @@ export class App implements DrillHost {
     // Runs on every drill, layout and option change, so the stats heat map always matches the saved numbers.
     this.keyboard.setHeat(this.drill.id === 'stats' ? this.heat : null);
     // A drill that charts single keys turns the board's keys into buttons.
-    const { drill } = this;
+    const { drill, settings, store, layout } = this;
     this.keyboard.setPicker(drill.pickKey ? (code) => drill.pickKey?.(code) : null, drill.pickedKey?.() ?? null);
-    // One line for what is typed, one for how hard it is, one for what is heard. The key hints close the last one.
-    const lines: (HTMLElement | null)[][] = [this.drill.options().map((group) => this.optionEl(group))];
-    if (this.drill.typos) lines.push(this.hardcoreOptions().map((group) => this.optionEl(group)));
-    // With hardcore on its line is full: the sounds and the hints take the next one.
-    if (lines.length === 1 || this.settings.hardcore) lines.push([]);
-    const last = lines[lines.length - 1];
-    // Hardcore's own sounds sit beside the sound of the keys. They change nothing about the text or the rules: the set and the run go on.
-    const heartbeat = this.hardcore
-      ? this.optionEl(toggleOption(t.hardcore.sound, this.settings.sound, (sound) => this.store.update({ sound }), { keeps: true, title: t.hardcore.soundTitle }))
-      : null;
-    this.flipped = null;
-    const hints = el('div.hints');
-    if (this.drill.id !== 'stats') hints.append(el('span', {}, el('kbd', {}, t.options.esc), t.options.newText));
-    if (this.drill.id === 'highway' && this.settings.tempoLock) hints.append(el('span', {}, el('kbd', {}, t.options.arrows), t.options.tempo));
-    if (this.hardcore) hints.append(el('span', {}, el('kbd', {}, t.hardcore.ctrlBksp), t.hardcore.eraseAll));
-    // Say plainly what the selected layout changes, so nothing is filtered behind the typist's back.
-    const notes: string[] = [];
-    const layoutNote = t.layoutNotes[this.layout.id];
-    if (layoutNote) notes.push(layoutNote);
-    if (this.settings.lang === 'fr' && !this.layout.canType(String.fromCharCode(0xe9))) notes.push(t.options.noAccents);
-    const note = notes.length > 0 ? el('p.opt-note', {}, notes.join(', ')) : null;
-    // The stats view types nothing: it has no key sound to pick and no key to hint at.
-    if (this.drill.id !== 'stats') {
-      last.push(el('div.opt', { title: t.options.keySoundTitle }, el('span', {}, t.options.keys), this.soundSelect.root), heartbeat);
-      if (hints.childElementCount > 0) last.push(hints);
+
+    // The settings, one list: the drill's own options and the fingers to train, how hard it is,
+    // what is heard, the keyboard, then who is typing. A rule parts each group from the next.
+    const typing = drill.id !== 'stats';
+    const groups: (HTMLElement | null)[][] = [drill.options().map((group) => this.optionEl(group))];
+    if (typing) {
+      const lit = settings.focus.length > 0;
+      const note = !lit ? t.menu.focusNone : drill.id === 'anchors' ? t.menu.focusAnchors : t.menu.focusNote;
+      groups[0].push(this.row(t.menu.focus, el('div.set-stack', {}, this.fingerPick.root, el('p.set-note', {}, note)), 'is-top'));
     }
-    // A note takes its own line under the options.
-    this.optionsEl.replaceChildren(
-      el('div.opt-groups', {}, ...lines.filter((line) => line.length > 0).map((line) => el('div.opt-line', {}, ...line)), note),
+    if (drill.typos) {
+      groups.push([
+        ...this.hardcoreOptions().map((group) => this.optionEl(group)),
+        // Hardcore's own sounds change nothing about the text or the rules: the set and the run go on.
+        this.hardcore
+          ? this.optionEl(toggleOption(t.hardcore.sound, settings.sound, (sound) => store.update({ sound }), { keeps: true, title: t.hardcore.soundTitle }))
+          : null,
+      ]);
+    }
+    groups.push([this.row(t.options.keys, this.soundSelect.root, '', t.options.keySoundTitle)]);
+
+    // Say plainly what the layout and the board change, so nothing is filtered behind the typist's back.
+    const notes = [t.menu.boardNotes[settings.board]];
+    const layoutNote = t.layoutNotes[`${layout.id}|${layout.board}`] ?? t.layoutNotes[layout.id];
+    if (layoutNote) notes.push(layoutNote);
+    if (settings.lang === 'fr' && !layout.canType(String.fromCharCode(0xe9))) notes.push(t.options.noAccents);
+    groups.push([
+      this.row(t.menu.layout, this.layoutSelect.root),
+      this.optionEl({
+        label: t.menu.board,
+        value: settings.board,
+        choices: BOARDS.map((board) => ({ value: board, label: t.menu.boards[board], title: t.menu.boardNotes[board] })),
+        set: (value) => this.setBoard(value as Board),
+        // The board starts its own fresh set.
+        keeps: true,
+      }),
+      el('p.set-note.is-under', {}, notes.join('. ')),
+    ]);
+    groups.push([
+      this.row(t.menu.profile, this.profileMenu.root),
+      this.optionEl(
+        toggleOption(t.top.tracking, store.tracking, (on) => this.setTrack(on), {
+          keeps: true,
+          title: store.tracking ? t.top.trackingOn : t.top.trackingOff,
+        }),
+      ),
+      // The interface language, each under its own name. The language of the practice text is a drill option.
+      this.optionEl({
+        label: t.menu.interface,
+        value: settings.ui,
+        choices: LANGS.map((lang) => ({ value: lang, label: LANG_NAMES[lang] })),
+        set: (value) => this.setUi(value as Lang),
+        keeps: true,
+      }),
+    ]);
+    this.flipped = null;
+    this.panel.body.replaceChildren(
+      ...groups.flatMap((rows, i) => [i > 0 ? el('div.set-rule', { 'aria-hidden': 'true' }) : null, ...rows]).filter((node) => node !== null),
     );
+
+    // Under the board, only the keys that do something beside typing.
+    const hints: HTMLElement[] = [];
+    if (typing) hints.push(el('span', {}, el('kbd', {}, t.options.esc), t.options.newText));
+    if (drill.id === 'highway' && settings.tempoLock) hints.push(el('span', {}, el('kbd', {}, t.options.arrows), t.options.tempo));
+    if (this.hardcore) hints.push(el('span', {}, el('kbd', {}, t.hardcore.ctrlBksp), t.hardcore.eraseAll));
+    this.hintsEl.replaceChildren(...hints);
+
+    // With a second profile, the top strip says who is typing.
+    this.profileChip.textContent = store.profiles.length > 1 ? store.profileName : '';
     this.wpmCap.textContent = this.captionText();
-    this.sound.cues = this.hardcore && this.settings.sound;
+    this.sound.cues = this.hardcore && settings.sound;
     this.showFloor();
   }
 
-  /** One option: a switch for an off / on pair, a row of segments for anything else. */
+  /** One line of the settings: its name, then its control. */
+  private row(label: string, control: HTMLElement, modifier = '', title = ''): HTMLElement {
+    const row = el('div.set-row', title ? { title } : {}, el('span.set-label', {}, label), control);
+    if (modifier) row.classList.add(modifier);
+    return row;
+  }
+
+  /** One option as a line of the settings: a switch for an off / on pair, a row of segments for anything else. */
   private optionEl(group: OptionGroup): HTMLElement {
     const pick = (value: string, button: HTMLElement): void => {
       const leaving = this.underWay;
@@ -1186,18 +1390,19 @@ export class App implements DrillHost {
         if (leaving) this.endStreak();
         this.freshRun();
         this.resetHardcore();
+        this.primeGlow();
       }
       button.blur();
       this.renderOptions();
     };
     if (group.toggle) {
       const on = group.value === 'on';
-      // The options are drawn anew on every click. The switch just clicked starts from its old side and slides across.
+      // The list is drawn anew on every click. The switch just clicked starts from its old side and slides across.
       const slides = this.flipped === group.label;
       const button = el(
-        'button.opt-toggle.toggle.ctl',
+        'button.set-row.set-toggle.toggle.ctl',
         { type: 'button', role: 'switch', 'aria-checked': String(slides ? !on : on) },
-        el('span', {}, group.label),
+        el('span.set-label', {}, group.label),
         el('span.switch', { 'aria-hidden': 'true' }),
       );
       if (slides) requestAnimationFrame(() => requestAnimationFrame(() => button.setAttribute('aria-checked', String(on))));
@@ -1208,11 +1413,8 @@ export class App implements DrillHost {
       });
       return button;
     }
-    return el(
-      'div.opt',
-      {},
-      // A group whose choices name themselves keeps its label for a screen reader only.
-      group.bare ? null : el('span', {}, group.label),
+    return this.row(
+      group.label,
       el(
         'div.seg',
         { role: 'group', 'aria-label': group.label },
@@ -1297,6 +1499,9 @@ export class App implements DrillHost {
       }
       this.burn(now, dt, value);
       this.paintStress(dt);
+      // Over the pace of the last ten sets, a few seconds in: the numeral takes a glow.
+      const running = this.firstHitAt !== null && !this.resultOpen && now - this.firstHitAt > AHEAD_AFTER_MS;
+      this.setAhead(running && this.root.dataset.under !== 'true' && isAhead(value, this.usual, this.ahead));
       if (now - this.sampledAt >= SPARK_EVERY_MS) {
         this.sampledAt = now;
         this.samples.push(value);
@@ -1337,40 +1542,18 @@ export class App implements DrillHost {
       this.layout.id,
       (value) => this.setLayout(value),
     );
-    // The list opens upward, over the keyboard: the options sit at the bottom of the screen.
-    // Moving through it plays the switch under the cursor.
+    // Moving through the list plays the switch under the cursor.
     const soundNames = keySoundNames();
     this.soundSelect = new Select(
       t.options.keySound,
       [{ value: 'off', label: soundNames[0] }, ...SWITCHES.map((item) => ({ value: item.id as string, label: item.name as string }))],
       this.settings.keySound,
       (value) => this.setKeySound(value as KeySound),
-      { up: true, onCursor: (value) => this.sound.audition(value as KeySound) },
+      { onCursor: (value) => this.sound.audition(value as KeySound) },
     );
     this.profileMenu = new ProfileMenu(this.store, () => this.applyProfile());
-    this.label(this.trackLabel, () => t.top.tracking);
-    this.trackSwitch.addEventListener('click', () => {
-      this.trackSwitch.blur();
-      this.setTrack(!this.store.tracking);
-    });
-
-    // The interface language. The language of the practice text is a drill option.
-    const lang = this.label(el('div.lang', { role: 'group' }), () => t.top.interfaceLanguage, 'aria-label');
-    LANGS.forEach((id, i) => {
-      const active = id === this.settings.ui;
-      const button = el(
-        active ? 'button.lang-btn.ctl.is-active' : 'button.lang-btn.ctl',
-        { type: 'button', lang: id, title: LANG_NAMES[id], 'aria-label': LANG_NAMES[id], 'aria-pressed': String(active) },
-        id,
-      );
-      button.addEventListener('click', () => {
-        button.blur();
-        this.setUi(id);
-      });
-      this.uiButtons.set(id, button);
-      if (i > 0) lang.append(el('span', { 'aria-hidden': 'true' }, '/'));
-      lang.append(button);
-    });
+    this.panel.relabel(t.menu.button, t.menu.region);
+    this.fingerPick.set(this.settings.focus);
 
     const fingers = el('section.fingers', {}, this.label(el('h2.fingers-title'), () => t.rail.fingers));
     for (const kind of FINGER_KINDS) {
@@ -1405,7 +1588,7 @@ export class App implements DrillHost {
     });
 
     this.root.append(
-      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.trackSwitch, el('div.top-selects', {}, this.profileMenu.root, this.layoutSelect.root), lang))),
+      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, this.panel.button))),
       el(
         'main.cockpit',
         {},
@@ -1430,8 +1613,13 @@ export class App implements DrillHost {
           () => t.rail.region,
           'aria-label',
         ),
-        this.label(el('section.centre', {}, this.stage, this.keyboard.root, el('div.foot', {}, this.optionsEl, this.noteEl), this.fuseEl, this.comboEl), () => t.options.region, 'aria-label'),
-        this.label(el('aside.rail-right', {}, this.hands.root, this.nextEl), () => t.next.region, 'aria-label'),
+        this.label(
+          el('section.centre', {}, this.stage, this.keyboard.root, el('div.foot', {}, this.hintsEl, this.noteEl), this.fuseEl, this.comboEl, this.sparks.canvas),
+          () => t.options.region,
+          'aria-label',
+        ),
+        // The settings open in the right rail's place: the hands step aside for them.
+        el('div.rail-right', {}, this.label(el('aside.rail-guide', {}, this.hands.root, this.nextEl), () => t.next.region, 'aria-label'), this.panel.root),
       ),
       this.dangerEl,
       this.stingEl,

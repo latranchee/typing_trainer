@@ -8,8 +8,6 @@ export interface SelectOption {
 const CHEVRON = 'M1 3l4 4 4-4';
 
 export interface SelectExtras {
-  /** Opens the list above the button, for a dropdown that sits at the bottom of the screen. */
-  up?: boolean;
   /** Called with the choice the pointer or the arrow keys land on while the list is open. */
   onCursor?: (value: string) => void;
 }
@@ -32,7 +30,6 @@ export class Select {
     this.value = value;
     this.onChange = onChange;
     this.onCursor = extras.onCursor;
-    if (extras.up) this.root.classList.add('is-up');
     this.button.setAttribute('aria-label', name);
     this.menu.setAttribute('aria-label', name);
 

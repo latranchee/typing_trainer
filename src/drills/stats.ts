@@ -4,7 +4,6 @@ import type { HistoryEntry, Metric, Point, Subject } from '../core/history';
 import { rolling, series, trend } from '../core/history';
 import { fingerName, fingerShort, t } from '../core/i18n';
 import { intervalToWpm, MIN_SAMPLES } from '../core/metrics';
-import { rowOf } from '../core/physical';
 import { css, el, fitCanvas } from '../ui/dom';
 import type { Drill, DrillHost, OptionGroup } from './types';
 
@@ -165,7 +164,7 @@ export class StatsView implements Drill {
     const { layout } = this.host;
     if (this.subject.kind === 'all') return null;
     if (this.subject.kind === 'finger') return el('span.tok', { 'data-f': fingerKind(this.subject.finger) });
-    return el('span.tok', { 'data-f': fingerKind(layout.fingerOf(this.subject.code)), 'data-row': rowOf(this.subject.code) });
+    return el('span.tok', { 'data-f': fingerKind(layout.fingerOf(this.subject.code)), 'data-row': layout.rowOf(this.subject.code) });
   }
 
   /** The line takes the subject's color: mustard for the layout, the finger's hue, the key's row shade of it. */
@@ -173,7 +172,7 @@ export class StatsView implements Drill {
     if (this.subject.kind === 'all') return css('--accent');
     const kind: FingerKind = fingerKind(this.subject.kind === 'finger' ? this.subject.finger : this.host.layout.fingerOf(this.subject.code));
     if (this.subject.kind === 'finger' || kind === 'thumb') return css(`--f-${kind}`);
-    const row = rowOf(this.subject.code);
+    const row = this.host.layout.rowOf(this.subject.code);
     return css(row === 'top' || row === 'number' ? `--f-${kind}-top` : row === 'bottom' ? `--f-${kind}-bottom` : `--f-${kind}`);
   }
 
@@ -298,7 +297,7 @@ export class StatsView implements Drill {
             {},
             this.pick(
               { kind: 'key', code },
-              el('span.tok', { 'data-f': fingerKind(layout.fingerOf(code)), 'data-row': rowOf(code) }),
+              el('span.tok', { 'data-f': fingerKind(layout.fingerOf(code)), 'data-row': layout.rowOf(code) }),
               layout.strokeLabel({ code, shift: false }),
             ),
           ),

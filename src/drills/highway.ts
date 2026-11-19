@@ -5,6 +5,7 @@ import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import type { Row } from '../core/physical';
 import { css, el, fitCanvas } from '../ui/dom';
+import { baselineDrop } from '../ui/glyph';
 import type { Drill, DrillHost, Note, OptionGroup } from './types';
 import { languageOption, matches, toNotes } from './types';
 
@@ -85,13 +86,13 @@ export class HighwayDrill implements Drill {
   }
 
   restart(): void {
-    const { layout, settings, weakness } = this.host;
+    const { layout, settings, bias } = this.host;
     const text =
       settings.highwaySource === 'pairs'
-        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, focus: settings.pairFocus }, weakness)
+        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize }, bias)
         : settings.highwaySource === 'sentences'
-          ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness)
-          : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, weakness);
+          ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias)
+          : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias);
     this.notes = toNotes(layout, text);
     this.cursor = 0;
     this.progress = -START_LEAD;
@@ -128,7 +129,6 @@ export class HighwayDrill implements Drill {
           { value: 'pairs', label: t.highway.pairs },
         ],
         set: (value) => refresh({ highwaySource: value as typeof settings.highwaySource }),
-        bare: true,
       },
       languageOption(settings, refresh),
       {
@@ -327,8 +327,8 @@ export class HighwayDrill implements Drill {
     const half = size / 2;
     const radius = size * 0.14;
     const fill = colors[kind][SHADE_OF[row]];
-    // Triangles carry their letter at the centroid, toward the flat side.
-    let labelShift = size * 0.03;
+    // Where the middle of the letter goes: the middle of a circle, the centroid of a triangle (a third of the way up from its flat side).
+    let labelShift = 0;
     ctx.save();
     ctx.fillStyle = fill;
     ctx.translate(x, y);
@@ -347,7 +347,7 @@ export class HighwayDrill implements Drill {
       ctx.arcTo(0, tip, -reach, base, radius);
       ctx.arcTo(-reach, base, 0, base, radius);
       ctx.closePath();
-      labelShift = size * (up === 1 ? 0.14 : -0.09);
+      labelShift = size * 0.12 * up;
     } else if (row === 'number') {
       ctx.rotate(Math.PI / 4);
       ctx.roundRect(-half * 0.78, -half * 0.78, size * 0.78, size * 0.78, radius);
@@ -360,10 +360,12 @@ export class HighwayDrill implements Drill {
     if (label.trim() !== '') {
       ctx.save();
       ctx.fillStyle = css('--ink');
-      ctx.font = `600 ${Math.round(size * 0.46)}px ${css('--font')}`;
+      const px = Math.round(size * 0.46);
+      ctx.font = `600 ${px}px ${css('--font')}`;
       ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(label, x, y + labelShift);
+      // The letter is set by its own ink: a baseline placed on the em box leaves a lowercase letter under the middle of its shape.
+      ctx.textBaseline = 'alphabetic';
+      ctx.fillText(label, x, y + labelShift + baselineDrop(label) * px);
       ctx.restore();
     }
 

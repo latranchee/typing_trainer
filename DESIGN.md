@@ -229,6 +229,27 @@ components:
     height: "2.25rem"
   option-switch-on:
     textColor: "{colors.cool-grey-text}"
+  settings-button:
+    textColor: "{colors.cool-grey-text}"
+    typography: "{typography.label}"
+    rounded: "{rounded.cap}"
+    padding: "0 0.875rem 0 0.75rem"
+    height: "2.1875rem"
+  settings-button-open:
+    backgroundColor: "{colors.key-slate}"
+    textColor: "{colors.warm-paper-text}"
+  settings-row:
+    textColor: "{colors.muted-label}"
+    typography: "{typography.label-sm}"
+    height: "2.25rem"
+  settings-note:
+    textColor: "{colors.muted-label}"
+    typography: "{typography.micro}"
+  finger-pick-bar:
+    backgroundColor: "{colors.finger-ring}"
+    rounded: "{rounded.inner}"
+    width: "1.125rem"
+    height: "2.25rem"
   streak-counter:
     textColor: "{colors.mustard}"
     typography: "{typography.counter}"
@@ -281,7 +302,7 @@ Motion is short and ease-out, with no bounce. The signature beat is a note landi
 A cool charcoal chrome with four soft finger hues in three row shades each, one mustard accent and one coral for misses.
 
 ### Primary
-- **Mustard** (`mustard`): the wordmark and the product's own numbers: the live WPM numeral, acc and streak values, the result WPM, the stats average and its trend line. On a result or stats view the live WPM steps back to Muted Label so the centre figure leads. The build also uses mustard for the focus ring, text selection and the active language; those are the existing exceptions and new surfaces should not add more.
+- **Mustard** (`mustard`): the wordmark and the product's own numbers: the live WPM numeral, acc and streak values, the result WPM, the stats average and its trend line. On a result or stats view the live WPM steps back to Muted Label so the centre figure leads. The build also uses mustard for the focus ring and text selection; those are the existing exceptions and new surfaces should not add more. A Mustard figure takes a soft light of its own color while it runs over the typist's own average (see Glow).
 
 ### Secondary (finger hues)
 The hue names the finger. Each hue comes in three shades, one per letter row; the named value is the home-row shade and is also the finger's own color wherever no row is involved (bars, fingertip dots, finger markers).
@@ -314,7 +335,7 @@ The hue names the finger. Each hue comes in three shades, one per letter row; th
 The highway fades notes in at the top through a mask (`linear-gradient(to bottom, transparent 0, var(--bg) 3rem)`). The opaque stop reuses the ground token; only its alpha matters.
 
 ### Named Rules
-**The Finger Means Finger Rule.** Pink, yellow, green, blue and the thumb grey mean a finger and nothing else. Never use them for status, category, decoration or charts that are not about fingers.
+**The Finger Means Finger Rule.** Pink, yellow, green, blue and the thumb grey mean a finger and nothing else. Never use them for status, category, decoration or charts that are not about fingers. A glow or a spark in a finger hue stays on that finger's own things: its bar, its fingertip, a key it types.
 
 **The Row Shape Rule.** Shape and shade mean the row and nothing else. A mark for a key takes its row's shape, which points the way the finger travels from the home row: a triangle pointing up in the brighter shade for the top row, a circle in the plain hue for the home row, a triangle pointing down in the darker shade for the bottom row. The number row, when it is a target, is a diamond in the top-row shade; the space bar is a horizontal bar. A mark for a finger with no key in play (a stats-table finger marker, a result line) is that finger's home circle.
 
@@ -343,13 +364,15 @@ The highway fades notes in at the top through a mask (`linear-gradient(to bottom
 - **Counter** (700, 1.4375rem, 1): the streak counter over the keyboard. On narrow screens it drops to Base.
 - **Wordmark** (600, 1.4375rem, 0.01em): "petitdoigt", lowercase, mustard. The mark leads it, 0.4em away: four finger bars standing on the baseline (index, middle, ring, pinky; the middle reaches the ascender line) in Muted Label, with the pinky bar in the pinky's plain hue. The favicon is the same mark on a Charcoal Ground tile.
 - **Body** (400, 1.0625rem, 1.3): tabs, stat labels, captions, finger names, result list.
-- **Base** (400, 1rem, 1.3): the body default, the fr / en toggle, anchor copy and status (1.5 line height on the anchor explanation), the result hint.
-- **Label** (400, 0.9375rem): dropdown, menu options, table cells, line meta, stage notes, stats headings.
-- **Label Small** (400, 0.875rem): option labels and segments, option notes, key hints, neutral and modifier key legends.
-- **Micro** (400, 0.8125rem): shifted legends on key caps, the stats chart's caption, values and dates, the unit line under the stats figure, profile menu messages.
+- **Base** (400, 1rem, 1.3): the body default, anchor copy and status (1.5 line height on the anchor explanation), the result hint.
+- **Label** (400, 0.9375rem): the settings button, dropdown, menu options, table cells, line meta, stage notes, stats headings.
+- **Label Small** (400, 0.875rem): the names and controls of the settings list, key hints, neutral and modifier key legends.
+- **Micro** (400, 0.8125rem): shifted legends on key caps, the notes of the settings list, the stats chart's caption, values and dates, the unit line under the stats figure, profile menu messages.
 - **Legend** (500, 1.0625rem, 1): finger key legends in Finger Ink.
 
 The root scale is itself part of the ramp: `root` (`clamp(11px, min(1.04167vw, 1.5625vh), 28px)`, 16px at the reference frame) sizes every rem step above.
+
+A word on a key one unit wide (the short Backspace of a JIS board) is set at 0.6875rem, the narrow layout's legend size.
 
 **Narrow layout only (below 900px):** the root locks to `root-narrow` (14px); the wordmark drops to 1.25rem, the next-key cap letter to 1.125rem, key legends to 0.6875rem (finger and neutral alike) and unassigned modifier legends to 0.5625rem; acc, streak and their labels drop to Label (0.9375rem), the WPM caption to Label Small, and the live WPM to Headline Small.
 
@@ -364,11 +387,13 @@ The root scale is itself part of the ramp: `root` (`clamp(11px, min(1.04167vw, 1
 
 The screen is built at a 1536 x 1024 reference frame where 1rem = 16px, and the root font size scales with the viewport (`clamp(11px, min(1.04167vw, 1.5625vh), 28px)`) so the whole cockpit fits without scrolling. Every measurement is in rem so it scales with that root.
 
-A 5.0625rem top strip (wordmark, five text tabs, tracking switch, profile and layout dropdowns, the fr / en interface-language picker) sits above a hairline. Below it a 96rem centred cockpit holds three fixed columns: a 17rem left rail, a 49.75rem centre and a 21rem right rail, separated by 2.375rem and 1.25rem gaps with a 2.875rem outer gutter. The centre is a grid of stage, keyboard and an options row of 7rem that grows with its lines. The options come in lines by subject: what is typed, how hard it is (hardcore), what is heard, with the key hints closing the last one; lines are 0.75rem apart and groups 1.25rem. The 2.25rem strip between the stage and the keyboard holds the streak counter at its right end. The highway lanes are measured from the keyboard, so every note falls straight onto its finger's home key.
+A 5.0625rem top strip (wordmark, five text tabs and, at its right end, the settings button) sits above a hairline. The button ends where the right rail ends, 1.75rem from the cockpit's edge. Below the strip a 96rem centred cockpit holds three fixed columns: a 17rem left rail, a 49.75rem centre and a 21rem right rail, separated by 2.375rem and 1.25rem gaps with a 2.875rem outer gutter. The centre is a grid of stage, keyboard and a 4.75rem foot that holds one line: the key hints, centred under the board, or what the stage has to say. The 2.25rem strip between the stage and the keyboard holds the streak counter at its right end. The highway lanes are measured from the keyboard, so every note falls straight onto its finger's home key.
+
+The right rail has two faces. At rest it shows the hands and the next key. The settings button swaps them for the settings list (see Settings), which takes the rail's width plus 0.75rem of the gap beside the board and starts 2.25rem under the strip. The stage and the board stay in view, so a change of text, layout or board shows as it is made.
 
 Spacing recurs at 0.375rem, 0.625rem, 1.25rem, 2.25rem and 2.875rem. The keyboard is a 60-column grid with 0.625rem row gaps and 3.125rem rows.
 
-Below 900px the root locks to 14px, the page scrolls, and the rails stack: next key and finger name first, then WPM with acc and streak inline, then the highway at 44vh and a compact 2rem-row keyboard. The sparkline, finger bars and hands plate are hidden on narrow screens.
+Below 900px the root locks to 14px, the page scrolls, and the rails stack: next key and finger name first, then WPM with acc and streak inline, then the highway at 44vh and a compact 2rem-row keyboard. The top strip takes two lines: the wordmark and the settings button, then the tabs. The settings open in the page, in place of the next-key line. The sparkline, finger bars and hands plate are hidden on narrow screens.
 
 ## Elevation & Depth
 
@@ -378,6 +403,7 @@ The system is flat and tonal. Depth comes from three slate steps over the charco
 - **Cap top light** (`box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07)`): neutral, quiet and dimmed key caps.
 - **Finger cap top light** (`box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26)`): key caps filled with a finger hue.
 - **Menu float** (`box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 0.35)`): the open layout dropdown and profile menu.
+- **Glow** (a blur with no offset, in the element's own color mixed toward transparent): a light the element gives off, drawn with the shadow properties. See Glow under Components for the places it may appear.
 
 ### Named Rules
 **The No Boxes Rule.** Zones are separated by space and Hairline rules, never by cards, panels or bordered containers. Filled shapes are reserved for controls, key caps and finger tokens.
@@ -389,9 +415,10 @@ Softly rounded rectangles for everything you press or read as a key (0.5rem caps
 ## Components
 
 ### Buttons and tabs
-Text-only and quiet: tabs and the fr / en picker are bare text with no fill. The picker sets the language of the interface, and the practice text switches with it. It sits last in the top strip, where a visitor looks for it; each of its two buttons is named in its own language.
+Text-only and quiet: the tabs are bare text with no fill.
 - **Shape:** none at rest.
-- **States:** Muted Label at rest, Cool Grey Text on hover, Warm Paper Text when active (the active language uses Mustard at 600).
+- **States:** Muted Label at rest, Cool Grey Text on hover, Warm Paper Text when active.
+- **Settings button:** the one bordered control of the top strip, the dropdown button's own look (1px Hairline Strong border, 0.5rem radius, Label, Cool Grey Text) with a 1rem icon of three sliders before its word. Hover or open: Muted Label border, Key Slate fill, Warm Paper Text. With more than one profile, the active profile's name sits before it in Label, Muted Label.
 - **Interaction:** every control carries the shared interaction system: color, background, border and scale transition over 240ms on release, 160ms on hover in, 80ms on press, with a 0.96 scale dip on press, all on `cubic-bezier(0.16, 1, 0.3, 1)`. Full-width menu options replace the scale dip with a darker fill.
 
 ### Dropdown (layout select)
@@ -401,19 +428,25 @@ Text-only and quiet: tabs and the fr / en picker are bare text with no fill. The
 ### Profile menu
 The dropdown's button and Key Slate popover, 15.5rem wide, as a dialog. The profiles come first, the active one in Warm Paper Text at weight 600. Under a Hairline Strong rule sit the tools: new profile, rename, delete. A tool opens in place: a name field on Charcoal Ground with a 1px Hairline Strong border (Muted Label on hover, Miss Coral when the name is refused, a Mustard caret) beside a Key Slate Lit button, or the delete question with keep and delete. Escape steps back, then closes.
 
-### Tracking switch
-A label and a 1.875 by 1.125rem pill in the top strip. The same pill is the switch of every off / on option under the keyboard (see Option switch): one set of states for both. On: Hairline Strong track, Warm Paper Text knob at the right. Off: Key Slate track with a Hairline Strong border, Muted Label knob at the left. The knob slides over 240ms. While it is off, the left rail and the set result say that nothing is saved.
+### Switch
+A 1.875 by 1.125rem pill: the control of every off / on line of the settings (capitals, hardcore, heartbeat, tracking). On: Hairline Strong track, Warm Paper Text knob at the right. Off: Key Slate track with a Hairline Strong border, Muted Label knob at the left. The knob slides over 240ms. While tracking is off, the left rail and the set result say that nothing is saved.
 
 ### Segmented control
 - **Track:** Key Slate, 0.5rem radius, 0.1875rem inset.
 - **Segments:** Cool Grey Text, 0.3125rem radius; hover to Key Slate Lit; the chosen segment sits on Hairline Strong with Warm Paper Text.
-- **Context:** drill options (text source, practice language, tempo, saved numbers) sit in the bottom row and fade out while typing. Groups that do not fit their line wrap; the key hints close the last line at its right end, and a note takes its own line under them. A group whose choices name themselves (words / sentences, french / english) shows no label: the label stays as the group's accessible name. A choice whose label is a bare number (the hardcore difficulty) carries a title that says what it does. On a phone a long row of segments wraps inside its track, and each key hint stays whole: the ones that do not fit move to a second line.
+- **Context:** every choice among a few named things in the settings list (text source, practice language, tempo, board, interface language, saved numbers). In the list a segment's side padding is 0.4375rem, a touch under its token, so six choices fit one line; a row that still does not fit wraps inside its track. A choice whose label is a bare number (the hardcore difficulty) or a bare code (ansi / iso / jis) carries a title that says what it does.
 
-### Option switch
-An off / on option (capitals, hardcore, heartbeat) is one button: its label in Label Small beside the tracking switch's pill, 2.25rem tall so it sits level with a row of segments. Off: Muted Label. On or hovered: Cool Grey Text; on and hovered: Warm Paper Text. The options are drawn anew on each click, so the switch just clicked is drawn in its old state and slides to the new one over 240ms.
+### Settings (signature)
+One list for everything that can be set, opened by the settings button in the right rail's place. It sits on the bare ground like the rail it replaces: no card, no border, no shadow. Each line is a name and one control on a two-column grid: the name in Label Small, Muted Label, in a 5.875rem column (eleven letters, the longest name in either language), then the control, 0.75rem away, left-aligned. Lines are 2.25rem tall and 0.5rem apart. A Hairline parts each group from the next, with 0.375rem more room on each side.
+- **Groups, top to bottom:** the open drill's own options and the fingers to train; hardcore (its switch, then `min wpm`, `difficulty` and `heartbeat` once it is on); the key sound; the layout and the board; the profile, tracking and the interface language. The stats view has no fingers and no hardcore group.
+- **Off / on line:** the whole line is one button, its name and a switch. Off: Muted Label name. On or hovered: Cool Grey Text; on and hovered: Warm Paper Text. A press shows on the switch alone (0.92). The list is drawn anew on each click, so the switch just clicked is drawn in its old state and slides to the new one over 240ms.
+- **Notes:** what a choice means, in Micro, Muted Label, under its control: which fingers get more letters, what tells the picked board from the others, what the layout changes.
+- **Dropdowns:** the layout, the key sound and the profile keep the dropdown of the top strip at the size of the segments (2.25rem tall, Label Small). Their lists open downward from the left edge of the button; the key sound's list holds `silent` and the thirteen switches and scrolls past 17rem. Moving through it with the pointer or the arrow keys plays the switch under the cursor (one key down and up); picking one plays it again.
+- **Open and close:** the list fades in and slides 0.5rem from the right over 160ms while the hands fade out; it leaves over 240ms. It closes on its button, on Escape, on a click outside it, and at the first key typed, so the hands and the next key are back before the second.
+- **Narrow layout:** the list opens in the page under the top strip, in place of the next-key line, and the page scrolls.
 
-### Key sound dropdown
-The layout dropdown at the size of the segments beside it (2.25rem tall, Label Small), under the label `keys`. Its list opens upward, over the keyboard, and holds `silent` and the thirteen switches by their own names, lowercase. Moving through the list with the pointer or the arrow keys plays the switch under the cursor (one key down and up); picking one plays it again.
+### Finger picker
+The fingers to train more, in the settings: two hands of four bars in the mark's own proportions (pinky 0.56 of the middle finger, ring 0.89, index 0.78), each bar 1.125rem wide on a 2.25rem line, 0.25rem apart, the hands 1rem apart. Each bar is a button named after its finger. Dim: a finger left as it is, its hue mixed 30% into the ground (52% on hover). Lit: the finger's plain hue (its top shade on hover): its letters come up more often and the anchor drill takes it in turn. The note under the bars says which of the two the open drill does.
 
 ### On-screen keyboard (signature)
 - **Neutral cap:** Key Slate, Cool Grey Text, cap top light.
@@ -424,9 +457,10 @@ The layout dropdown at the size of the segments beside it (2.25rem tall, Label S
 - **Anchor:** outline in the finger's hue.
 - **Pressed:** scales to 0.93 in 80ms.
 - **Wrong:** Miss Coral fill, Finger Ink legend.
+- **Board:** the keys are drawn for the keyboard on the desk, picked in the settings: `ansi` (wide left Shift, flat Enter), `iso` (a tall Enter, the key beside it down on the home row, one more key beside a short left Shift) or `jis` (the tall Enter, a short Backspace with a key beside it, a key beside a short right Shift, three keys around a short space bar, with the legends printed on them). Every row is 15 units wide on every board. A tall Enter is one cap in two parts of one color: a unit and a half on the top letter row, and a lower part a unit and a quarter wide that runs down the right edge to the foot of the home row. A key the layout gives no character stays a neutral cap with no legend.
 
 ### Finger token (signature)
-The row's shape filled with the finger's hue in the row's shade, letter in Finger Ink at 600 and 45% of the token size. Triangles have rounded corners and carry the letter at their centroid, toward the flat side. Sizes: 2.75rem in drills, 1.125rem as a stats-table marker, 1rem beside the next key. On the highway each note is drawn on canvas with the same geometry, plus a small caret above it when the letter needs Shift.
+The row's shape filled with the finger's hue in the row's shade, letter in Finger Ink at 600 and 45% of the token size. A letter or a digit is placed by its own ink: its inked height is centred on the middle of a circle, and on the centroid of a triangle (0.12 of the token's size toward the flat side). Centring the text box instead leaves a lowercase letter a few percent low. Punctuation keeps its place on the line of a lowercase letter, so a comma still sits low and an apostrophe high. The large next-key cap sets its legend the same way. Triangles have rounded corners. Sizes: 2.75rem in drills, 1.125rem as a stats-table marker, 1rem beside the next key. On the highway each note is drawn on canvas with the same geometry, plus a small caret above it when the letter needs Shift.
 
 ### Note highway (signature)
 Canvas stage: vertical Lane Rule edges taken from the keyboard, a 2px Strike Line, notes fading in through a 3rem top mask. A landed note pops (150ms) and lights its lane's stretch of the strike line in its hue (220ms). A miss shakes the front note (180ms) and rings it in Miss Coral; reduced motion keeps the notes falling and drops the shake and pop.
@@ -435,7 +469,7 @@ Canvas stage: vertical Lane Rule edges taken from the keyboard, a 2px Strike Lin
 An outline plate of both hands with a fingertip dot in each finger's hue. The finger to use fills through a matte cut from the plate, in the shade of the row it is about to reach, fading in over 80ms. Below it, the next key sits in a 4.625rem cap filled with the same shade. Under the cap a 1rem token in the row's shape sits beside the finger and the row spelled out ("right ring, top row"), so the words accompany color and shape in every drill, the text drills included.
 
 ### Stat rail
-The live WPM in Display Mustard, a caption that cycles the rolling window, a sparkline, acc and streak split by a vertical Hairline between top and bottom Hairline rules, then four finger bars (0.5rem tall, Bar Track, fill grows over 600ms ease-out). Under the streak sits the longest one for the layout and drill, at 0.9375rem in Cool Grey Text ("best 212"); once the streak has passed it, the number goes and the word "best" stays in Mustard, the same pattern as a hardcore run.
+The live WPM in Display Mustard, a caption that cycles the rolling window, a sparkline, acc and streak split by a vertical Hairline between top and bottom Hairline rules, then four finger bars (0.5rem tall, Bar Track, fill grows over 600ms ease-out), each on a 2.5rem line beside its finger's name: the bar runs through the middle of the lowercase name, 0.0625rem under the middle of the line. Under the streak sits the longest one for the layout and drill, at 0.9375rem in Cool Grey Text ("best 212"); once the streak has passed it, the number goes and the word "best" stays in Mustard, the same pattern as a hardcore run.
 
 ### Streak counter (signature)
 Right keys in a row, from one set to the next, shown a second time where the eyes are: in the strip between the stage and the keyboard, flush with the right edge of the last key cap. The number in Counter Mustard, then "in a row" in Label Small, Muted Label. It is `aria-hidden`; the left rail carries the same number for a screen reader.
@@ -444,6 +478,15 @@ Right keys in a row, from one set to the next, shown a second time where the eye
 - **Record** (the streak passes a longest streak of 25 or more): the label becomes "new best" in Mustard and stays so. Once, at that key: the number lands large, a wave crosses the keyboard left to right (each cap lifts 0.25rem and brightens 16% for 440ms, delayed by its place across the board, 360ms end to end), the four bars of the mark drum once from index to pinky (380ms each, 70ms apart), and three rising notes sound when a key sound is picked. The wave uses the caps' own colors, so no finger hue is spent on decoration.
 - **Lost:** a wrong key ends the streak. The counter shows the length just lost in Miss Coral and goes out over 520ms, dropping 0.375rem.
 - **Result or stats view:** hidden; the result lists the number.
+- **Warm:** from 25 keys the number takes a glow, stronger at 50 and at 100, and each right key throws a spark off its own cap (see Glow).
+
+### Glow (signature)
+One rule: what is beating its own average glows, in its own color, and nothing else does. Every glow eases in and out over 900ms and is gone at the first sign of the contrary.
+- **The numeral:** the live WPM takes a 2.25rem light of Mustard at 44% while the rolling rate runs over the pace of the last ten sets of the same drill, layout and language. It needs 4% over that pace to light, 4 seconds into the set, and goes out under the pace itself. Never under a hardcore floor.
+- **A finger:** a finger whose clean strokes in the set (eight at least) run 8% or more ahead of its saved time per stroke. Its bar in the left rail takes a 0.75rem light of its hue at 58%, and a band of its top shade crosses the fill every 2.8s; on the hands, a soft disc of its hue breathes around its fingertip (10% of the plate's width, 2.8s). A wrong key on one of its letters puts it out, and the finger starts over. The bar's hover line says "ahead of its own average in this set".
+- **The streak:** the counter's number takes a light of Mustard at 34%, 50% and 64% from 25, 50 and 100 keys.
+- **Sparks:** on a streak of 25 keys or more, each right key throws one speck of light off the top edge of its cap on the board, two from 50 keys, three from 100, and seven at a milestone or a record. A speck is 0.07 to 0.12rem across over a faint disc three times as wide, in the color its cap carries, so it still says which finger typed. It rises about a rem, braked, and fades within 420 to 740ms. Sparks are drawn on a canvas over the board that only runs while one is alive.
+- **Reduced motion:** the lights stay, still; the band across a bar, the breathing and the sparks stop.
 
 ### Result
 The set's WPM in Headline Mustard, counting up from zero over 520ms in a box already as wide as the final number. Under it one line in Body, Cool Grey Text: "new best" in Mustard at 600 when the set is the fastest of its kind, then the set against the last ten ("4 wpm over your last ten") and the days of practice in a row, separated by a middle dot. Then the list: accuracy (with "clean set" in Mustard when no key was wrong), best streak (with "new best" when the longest streak fell during the set), typing time, the finger that gained the most on its own average with its token, the slowest finger. A new best speed sends the same wave across the keyboard as a streak record. Nothing is called a record while tracking is off.
@@ -461,7 +504,7 @@ Off until the typist asks for it. The keys play recordings of real switches (kbs
 Words and pairs in the Drill style. Each letter carries a 0.125rem underline in its finger hue at 75% opacity; the current letter turns its finger hue over a 0.3125rem bar; typed letters turn Muted Label; a wrong letter turns Miss Coral.
 
 ### Hardcore mode
-An option of the highway, words and pairs drills (2026-11-18, the user's three picks: typos stick, a draining fuse, fuse plus closing edges; 2026-11-19, more stress, every option he was offered: typos burn the fuse, a tighter fuse, a climbing floor, scars, a heartbeat with sound, a jolt on each typo, tunnel vision, earlier and harder edges, a best run to beat). Its options take a line of their own: the `hardcore` switch and, when it is on, `min wpm` none / 40 / 60 / 80 / 100 / 120 and `difficulty` 1 / 2 / 3 once a floor is picked. The `heartbeat` switch, which turns the mode's sounds on and off, sits on the next line beside the key sound. Turning any of the first three starts a fresh set and a new run; the heartbeat switch restarts nothing. Coral is the mode's only color; it adds no token.
+An option of the highway, words and pairs drills (2026-11-18, the user's three picks: typos stick, a draining fuse, fuse plus closing edges; 2026-11-19, more stress, every option he was offered: typos burn the fuse, a tighter fuse, a climbing floor, scars, a heartbeat with sound, a jolt on each typo, tunnel vision, earlier and harder edges, a best run to beat). Its options are a group of their own in the settings: the `hardcore` switch and, when it is on, `min wpm` none / 40 / 60 / 80 / 100 / 120, `difficulty` 1 / 2 / 3 once a floor is picked, and the `heartbeat` switch, which turns the mode's sounds on and off. Turning any of the first three starts a fresh set and a new run; the heartbeat switch restarts nothing. Coral is the mode's only color; it adds no token.
 - **Difficulty:** three levels of the same fuse (2026-11-19, his request for a difficulty rating), 2 by default. 1 is the fuse alone: lit 3 s after the first right key, empty in 5 s just under the floor and in 2 s a quarter under, back from empty in about 8 s, with no typo burn, no scar and no climb. 2 runs every rule at half the strength of 3: lit after 2 s, empty in 4 s and 1.5 s, back in about 11 s, 4% of fuse for a wrong key, an eighth of a burn scarred, 1 WPM of climb per 15 s. 3 is every rule at full strength, and the numbers in the bullets below are its numbers. The stress cues follow the fuse and are the same at every level. Each of the three buttons carries a title that says what its level asks.
 - **Typo run:** a wrong key lands in the text and so does every key after it, up to ten, until Backspace erases them (Ctrl or Alt with Backspace erases the run). In the text drills the run sits inside the word, just before the letter it replaced: Miss Coral glyphs over full-opacity coral underlines, the last one carrying the 0.3125rem cursor bar, while the replaced letter drops back to its plain upcoming look. On the highway the front note keeps its coral ring and the run is drawn in coral above it, same bars. New typos enter with a 120ms drop.
 - **Backspace target:** while typos wait, the board's bksp cap fills Miss Coral with a Warm Paper Text outline, the right pinky lights on the hands plate, and the next-key cap becomes a coral cap as wide as its legend (min 4.625rem, 1rem side padding) with "right pinky, bksp" and "erase 3 typos" under it.
@@ -490,7 +533,9 @@ An option of the highway, words and pairs drills (2026-11-18, the user's three p
 - **Do** write every string in both languages in `src/core/i18n.ts`, and look at the French at desktop and phone width before calling a screen done.
 - **Do** keep a celebration for a record: a streak past the longest one, a set faster than every one before it. A milestone gets one swell of the counter and nothing else.
 - **Do** build a celebration from what is already on screen (the key caps, the mark, the counter) and leave the reading area clear.
-- **Do** draw an off / on option as a switch, and drop a group's label when its choices name themselves.
+- **Do** put a new option in the settings list, as a line with a name of eleven letters at most and one control: a switch for off / on, segments for a few named choices, a dropdown for a long list.
+- **Do** centre a letter in a shape by its ink, and check it on a lowercase letter with no ascender.
+- **Do** keep a glow for something that is beating its own average, in that thing's own color.
 
 ### Don't:
 - **Don't** use a finger hue for anything that is not a finger: no status, category or link color, and no chart color except that finger's own history.
@@ -501,4 +546,6 @@ An option of the highway, words and pairs drills (2026-11-18, the user's three p
 - **Don't** introduce a second typeface or uppercase labels.
 - **Don't** use bounce, overshoot or spring easing.
 - **Don't** play a sound the typist has not asked for: the keys start silent, and every sound has a switch.
-- **Don't** celebrate with confetti or particles in finger hues: the hues mean fingers.
+- **Don't** throw confetti or loose particles. The only specks on screen are the sparks off a key that was just hit, in that key's own color.
+- **Don't** put a control back in the top strip or under the board: the strip holds the tabs and the settings button, the foot holds the key hints.
+- **Don't** lay a glow on anything as decoration, or in a color that is not the glowing thing's own.

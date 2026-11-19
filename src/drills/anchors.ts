@@ -1,10 +1,10 @@
 import { fingerKind } from '../core/fingers';
-import type { AnchorFinger, AnchorSet } from '../core/generator';
-import { ANCHOR_FINGERS, makeAnchorSet } from '../core/generator';
-import { fingerName, fingerShort, t } from '../core/i18n';
+import type { AnchorSet } from '../core/generator';
+import { anchorTurns, makeAnchorSet } from '../core/generator';
+import { fingerName, t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
-import { rowOf } from '../core/physical';
 import { el, flash } from '../ui/dom';
+import { setInk } from '../ui/glyph';
 import type { Drill, DrillHost, Note, OptionGroup } from './types';
 
 const TAPS = 24;
@@ -46,16 +46,17 @@ export class AnchorsDrill implements Drill {
   }
 
   restart(): void {
-    const { layout, settings } = this.host;
-    const finger: AnchorFinger =
-      settings.anchorFinger === 'rotate' ? ANCHOR_FINGERS[this.rotation++ % ANCHOR_FINGERS.length] : settings.anchorFinger;
+    const { layout, settings, bias } = this.host;
+    // The fingers picked in the settings, one set each, in turn.
+    const turns = anchorTurns(bias.focus);
+    const finger = turns[this.rotation++ % turns.length];
     this.set = makeAnchorSet(layout, finger, settings.anchorCount, TAPS);
     const kind = fingerKind(finger);
     this.notes = this.set.taps.map((stroke) => ({
       stroke,
       label: layout.strokeLabel(stroke),
       finger,
-      row: rowOf(stroke.code),
+      row: layout.rowOf(stroke.code),
       char: layout.strokeLabel(stroke),
       last: true,
     }));
@@ -77,7 +78,7 @@ export class AnchorsDrill implements Drill {
     }
 
     // One finger, so one color: the shape and shade say which row each tap reaches.
-    this.tokens = this.notes.map((note) => el('span.tok', { 'data-f': kind, 'data-row': note.row }, el('span', {}, note.label)));
+    this.tokens = this.notes.map((note) => el('span.tok', { 'data-f': kind, 'data-row': note.row }, setInk(el('span', {}, note.label), note.label)));
     this.track.replaceChildren(...this.tokens);
     this.status.textContent = '';
     this.status.classList.remove('is-error');
@@ -92,15 +93,6 @@ export class AnchorsDrill implements Drill {
       this.restart();
     };
     return [
-      {
-        label: t.anchors.finger,
-        value: settings.anchorFinger,
-        choices: [
-          { value: 'rotate', label: t.anchors.allFour },
-          ...ANCHOR_FINGERS.map((finger) => ({ value: finger, label: fingerShort(finger) })),
-        ],
-        set: (value) => refresh({ anchorFinger: value as typeof settings.anchorFinger }),
-      },
       {
         label: t.anchors.anchors,
         value: String(settings.anchorCount),

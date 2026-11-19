@@ -1,10 +1,9 @@
 import type { Finger } from '../core/fingers';
-import type { Weakness } from '../core/generator';
+import type { Bias } from '../core/generator';
 import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import type { Layout, Stroke } from '../core/layouts';
 import type { Row } from '../core/physical';
-import { rowOf } from '../core/physical';
 import type { DrillId, Lang, Settings, Store } from '../core/store';
 import { LANGS } from '../core/store';
 
@@ -29,7 +28,7 @@ export function toNotes(layout: Layout, text: string): Note[] {
       stroke,
       label: layout.strokeLabel(stroke),
       finger: layout.fingerOf(stroke.code),
-      row: rowOf(stroke.code),
+      row: layout.rowOf(stroke.code),
       char: target.char,
       last: i === target.strokes.length - 1,
     })),
@@ -56,8 +55,6 @@ export interface OptionGroup {
   set(value: string): void;
   /** True for an option that leaves the text and the rules alone: picking it restarts nothing. */
   keeps?: boolean;
-  /** True when the choices say what they are without the label: it is then read out, not shown. */
-  bare?: boolean;
   /** True for an off / on pair, in that order: it is drawn as one switch beside its label. */
   toggle?: boolean;
   /** What the option does, when its label is too short to say: it shows on hover. */
@@ -86,7 +83,6 @@ export function languageOption(settings: Settings, apply: (patch: Partial<Settin
     value: settings.lang,
     choices: LANGS.map((lang) => ({ value: lang, label: t.languages[lang] })),
     set: (value) => apply({ lang: value as Lang }),
-    bare: true,
   };
 }
 
@@ -95,7 +91,8 @@ export interface DrillHost {
   readonly layout: Layout;
   readonly settings: Settings;
   readonly store: Store;
-  readonly weakness: Weakness;
+  /** What tilts the choice of text: the fingers picked in the settings and the typist's slow keys. */
+  readonly bias: Bias;
   hit(note: Note, event: KeyEvt): void;
   miss(expected: Note, event: KeyEvt): void;
   setNext(hint: NextHint): void;

@@ -14,6 +14,8 @@ Vite + TypeScript (user's choice, 2026-11-17). Runs from a localhost URL on the 
 
 One user: the owner. A fast self-taught typist who plateaus around 100 WPM because he almost never uses his ring and pinky fingers. He types French and English. His physical keyboard carries QWERTY legends. He types on the Canadian French layout today and wants to try Colemak-DH.
 
+Why he built it, in his words (2026-11-19): « les jeux vidéos ont fait en sorte que mes doigts sont toujours sur wasd au lieu de asdf et je dois remapper les touches dans ma tête et refaire ma mémoire musculaire ». The same day he wrote that he mostly uses his index and his "annulaire" and has to work his "3 autres plus petits doigts". Which three he means is not settled (it does not match the ring and pinky of the first brief), so the finger focus starts on ring and pinky and he picks the rest himself.
+
 Since 2026-11-18 he also means to share the trainer with the readers of his newsletter, who read French: the reason the interface speaks French as well as English.
 
 ## Product Purpose
@@ -48,6 +50,12 @@ Confirmed by the user:
 - Delight to balance the stress (2026-11-19, his words: "now that we've added stuff to make it harder, let's also add stuff to make it delightful"). He asked for a streak counter in the text drills and on the highway, rewards when a streak passes the best one, and whatever else helps motivation. Built: a counter of right keys in a row over the keyboard, running on from set to set, with marks at milestones and a celebration when the longest streak falls; a result that holds the set against the last ten, names a clean set, the finger that gained the most and the days of practice in a row.
 - Key sounds (2026-11-19): he asked for a library that reproduces common mechanical keyboard switches and a dropdown to pick one. No framework-free package on npm ships named switches, so the recordings of kbsim (MIT) were taken: thirteen switches, silent until one is picked.
 - A calmer screen (2026-11-19): he found the interface cluttered after the additions and asked for a polish pass "to make it feel better, more candid", read here as plainer and less crowded. The options under the keyboard were regrouped in lines by subject, on / off options became switches, and labels that only repeated their choices were dropped.
+
+- One settings list (2026-11-19): he asked for "a submenu" for the controls of the top strip (tracking, profile, layout, interface language) and for the options under the keyboard. Built as one list behind a `settings` button, opened in the right rail's place so the text and the board stay in view; the foot under the board keeps the key hints only.
+- The shape of the keyboard (2026-11-19, his words: "we need to be able to match the user's key layout", with a picture of ANSI, ISO and JIS boards). The on-screen board is drawn as any of the three, the layouts follow (Canadian French guillemets and the Colemak-DH Z on the extra ISO key), and a key only one board has sets the board the first time it is pressed.
+- Fingers to train (2026-11-19, his words: "a mode where we specify which finger to train more and adjust words selection based on that"). Eight fingers to light, each hand apart, so a whole hand can be retrained. The text leans toward the lit fingers' letters and the anchor drill takes them in turn. It replaces the pairs drill's own focus and the anchor drill's finger option.
+- Glow (2026-11-19, his words: "shimmer or glow, particles. Very subtle. When we're doing good. Maybe on the finger that's the fastest or whatever"). Built on one rule: what is beating its own average glows in its own color. The WPM number over the pace of the last ten sets, a finger ahead of its saved pace (its bar and its fingertip), the streak counter from 25 keys, with a spark or two off each key hit on a long streak.
+- Alignment fixes he pointed at (2026-11-19): the finger bars of the left rail now run level with their names, and a letter in a note sits in the middle of its shape.
 
 Hard constraint: a browser cannot see which finger pressed a key. The trainer may only claim what key events can prove (which key, which Shift, which keys are held, timing).
 
