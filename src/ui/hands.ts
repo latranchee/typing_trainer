@@ -16,22 +16,26 @@ const MATTES = import.meta.glob<string>('../../assets/plates/fingers/*.png', {
 });
 const matteOf = (finger: Finger): string => MATTES[`../../assets/plates/fingers/${finger}.png`];
 
-/** Fingertip centres, measured on the hands plate. The right hand mirrors the left. */
-const LEFT_TIPS: Partial<Record<Finger, { x: number; y: number }>> = {
+/**
+ * Fingertip centres, measured on the hands plate for each hand. The drawn right
+ * hand is not an exact mirror of the left (its fingers sit 17 to 25 plate pixels
+ * further right), so mirroring the left hand's tips put its dots off the fingers.
+ * Each tip sits 35 px under the top of its finger's matte, centred on the matte's top 30 px.
+ */
+const TIPS: Record<Finger, { x: number; y: number }> = {
   LP: { x: 111, y: 255 },
   LR: { x: 215, y: 149 },
   LM: { x: 320, y: 99 },
   LI: { x: 432, y: 149 },
   LT: { x: 583, y: 403 },
+  RT: { x: 821, y: 404 },
+  RI: { x: 969, y: 149 },
+  RM: { x: 1079, y: 100 },
+  RR: { x: 1192, y: 150 },
+  RP: { x: 1293, y: 256 },
 };
-const MIRROR: Partial<Record<Finger, Finger>> = { RT: 'LT', RI: 'LI', RM: 'LM', RR: 'LR', RP: 'LP' };
 
-const tipOf = (finger: Finger): { x: number; y: number } => {
-  const twin = MIRROR[finger];
-  if (!twin) return LEFT_TIPS[finger]!;
-  const left = LEFT_TIPS[twin]!;
-  return { x: PLATE_W - 1 - left.x, y: left.y };
-};
+const tipOf = (finger: Finger): { x: number; y: number } => TIPS[finger];
 
 /** Two hands. Each fingertip carries a dot in its finger color; the finger to use fills. */
 export class HandsView {

@@ -68,6 +68,11 @@ export class SetStats {
     this.clock(now);
   }
 
+  /** A keystroke that is neither right nor wrong, such as a Backspace: it only keeps the clock running. */
+  pace(now: number): void {
+    this.clock(now);
+  }
+
   get accuracy(): number {
     const total = this.correct + this.wrong;
     return total === 0 ? 1 : this.correct / total;

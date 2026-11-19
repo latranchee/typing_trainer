@@ -1,9 +1,11 @@
-import { fingerKind, fingerName } from '../core/fingers';
+import { fingerKind } from '../core/fingers';
+import { fingerName, t } from '../core/i18n';
 import type { Layout } from '../core/layouts';
 import { ROW_IDS, ROWS } from '../core/physical';
 import { el, flash } from './dom';
 
-export type KeyRole = 'next' | 'shift' | 'anchor';
+/** `erase`: hardcore's Backspace, waiting for typos to be erased. */
+export type KeyRole = 'next' | 'shift' | 'anchor' | 'erase';
 
 /** Number-row keys carry a finger but stay quiet so the letter rows lead. */
 const QUIET_ROW = 0;
@@ -62,7 +64,7 @@ export class KeyboardView {
       cap.replaceChildren();
       if (!legend) {
         keyEl.removeAttribute('data-f');
-        cap.textContent = key.label ?? '';
+        cap.textContent = key.label ? (t.keyCaps[key.label] ?? key.label) : '';
         // Shift keys take the pinky colour when they become a target.
         if (key.code.startsWith('Shift')) keyEl.dataset.fTarget = 'pinky';
         continue;
@@ -79,7 +81,7 @@ export class KeyboardView {
   /** Mark the keys the drill wants next. Replaces the previous marks. */
   setTargets(targets: { code: string; role: KeyRole }[]): void {
     for (const keyEl of this.marked) {
-      keyEl.classList.remove('is-next', 'is-shift', 'is-anchor');
+      keyEl.classList.remove('is-next', 'is-shift', 'is-anchor', 'is-erase');
       if (keyEl.dataset.fTarget) keyEl.removeAttribute('data-f');
     }
     this.marked = [];
@@ -143,7 +145,7 @@ export class KeyboardView {
         for (const name of ['role', 'tabindex', 'aria-label', 'aria-pressed']) keyEl.removeAttribute(name);
         continue;
       }
-      const label = code === 'Space' ? 'space bar' : `key ${this.layout?.legend(code)?.base ?? code}`;
+      const label = code === 'Space' ? t.keyboard.space : t.keyboard.key(this.layout?.legend(code)?.base ?? code);
       keyEl.setAttribute('role', 'button');
       keyEl.setAttribute('tabindex', '0');
       keyEl.setAttribute('aria-label', this.layout ? `${label}, ${fingerName(this.layout.fingerOf(code))}` : label);

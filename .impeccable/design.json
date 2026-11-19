@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T19:31:22.563Z",
+  "generatedAt": "2026-11-18T22:24:09.599Z",
   "title": "Design System: petitdoigt",
   "extensions": {
     "colorMeta": {
@@ -821,7 +821,8 @@
       "Do set text on a finger hue or on Miss Coral in Finger Ink.",
       "Do separate zones with space and Hairline rules.",
       "Do keep all copy lowercase and in Roboto Mono.",
-      "Do draw a history line in its subject's color: Mustard for the layout's own number, the finger's hue for a finger, the row's shade of it for a key."
+      "Do draw a history line in its subject's color: Mustard for the layout's own number, the finger's hue for a finger, the row's shade of it for a key.",
+      "Do write every string in both languages in src/core/i18n.ts, and look at the French at desktop and phone width before calling a screen done."
     ],
     "donts": [
       "Don't use a finger hue for anything that is not a finger: no status, category or link color, and no chart color except that finger's own history.",

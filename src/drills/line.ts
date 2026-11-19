@@ -1,9 +1,10 @@
 import { fingerKind } from '../core/fingers';
 import { makePairs, makeWords } from '../core/generator';
+import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import { el, flash } from '../ui/dom';
 import type { Drill, DrillHost, Note, OptionGroup } from './types';
-import { matches, toNotes } from './types';
+import { languageOption, matches, toNotes } from './types';
 
 /** Line-height of the text block, in rem. Matches `.line-text` in the stylesheet. */
 const LINE_REM = 3.5;
@@ -25,6 +26,8 @@ export class LineDrill implements Drill {
   private cursor = 0;
   private total = 0;
   private done = false;
+  /** Hardcore: the wrong keys typed past the cursor, drawn in coral where the next letter goes. */
+  private run = el('span.typo-run');
 
   constructor(id: 'words' | 'pairs', host: DrillHost) {
     this.id = id;
@@ -52,6 +55,7 @@ export class LineDrill implements Drill {
     this.cursor = 0;
     this.done = false;
     this.text.replaceChildren();
+    this.text.classList.remove('has-typos');
     this.text.style.translate = '0 0';
 
     let word = el('span.word');
@@ -88,39 +92,41 @@ export class LineDrill implements Drill {
     };
     if (this.id === 'pairs') {
       return [
+        languageOption(settings, refresh),
         {
-          label: 'groups',
+          label: t.line.groups,
           value: String(settings.pairSize),
           choices: [
-            { value: '2', label: 'pairs' },
-            { value: '3', label: 'triples' },
+            { value: '2', label: t.line.pairs },
+            { value: '3', label: t.line.triples },
           ],
           set: (value) => refresh({ pairSize: value === '3' ? 3 : 2 }),
         },
         {
-          label: 'focus',
+          label: t.line.focus,
           value: settings.pairFocus,
           choices: [
-            { value: 'weak', label: 'ring and pinky' },
-            { value: 'all', label: 'all fingers' },
+            { value: 'weak', label: t.line.weak },
+            { value: 'all', label: t.line.all },
           ],
           set: (value) => refresh({ pairFocus: value as 'all' | 'weak' }),
         },
       ];
     }
     return [
+      languageOption(settings, refresh),
       {
-        label: 'words',
+        label: t.line.words,
         value: String(settings.setWords),
         choices: [15, 30, 60].map((count) => ({ value: String(count), label: String(count) })),
         set: (value) => refresh({ setWords: Number(value) as 15 | 30 | 60 }),
       },
       {
-        label: 'capitals',
+        label: t.line.capitals,
         value: settings.caps ? 'on' : 'off',
         choices: [
-          { value: 'off', label: 'off' },
-          { value: 'on', label: 'on' },
+          { value: 'off', label: t.line.off },
+          { value: 'on', label: t.line.on },
         ],
         set: (value) => refresh({ caps: value === 'on' }),
       },
@@ -145,6 +151,19 @@ export class LineDrill implements Drill {
       this.host.finish();
       return;
     }
+    this.show();
+  }
+
+  typos(typed: readonly string[]): void {
+    const current = this.cells[this.cursor];
+    this.run.replaceChildren(
+      ...typed.map((label) => (label === ' ' ? el('span.ch.typo.sp', {}, String.fromCharCode(0xa0)) : el('span.ch.typo', {}, label))),
+    );
+    const on = typed.length > 0 && current !== undefined;
+    // The run sits inside the word, just before the letter it replaced, so it wraps with that word.
+    if (on) current.before(this.run);
+    else this.run.remove();
+    this.text.classList.toggle('has-typos', on);
     this.show();
   }
 

@@ -18,11 +18,9 @@ export type LayoutId = 'ca-fr' | 'colemak-dh' | 'us';
 
 interface LayoutDef {
   id: LayoutId;
-  name: string;
   /** `code -> [base, shifted]`. A combining mark (see MARK) makes the key a dead key. */
   keys: Record<string, [string, string]>;
   fingers?: Record<string, Finger>;
-  note?: string;
 }
 
 /** Dead keys are stored as combining marks so composition is plain Unicode normalization. */
@@ -58,7 +56,6 @@ const BOTTOM_CODES = 'KeyZ KeyX KeyC KeyV KeyB KeyN KeyM';
 
 const US: LayoutDef = {
   id: 'us',
-  name: 'us qwerty',
   keys: {
     ...row(NUMBER_CODES, '`1234567890-=', '~!@#$%^&*()_+'),
     ...row(TOP_CODES, 'qwertyuiop', 'QWERTYUIOP'),
@@ -78,7 +75,6 @@ const US: LayoutDef = {
 /** The classic Quebec layout (Windows "Canadian French"). */
 const CA_FR: LayoutDef = {
   id: 'ca-fr',
-  name: 'canadian french',
   keys: {
     ...row(NUMBER_CODES, '#1234567890-=', '|!"/$%?&*()_+'),
     ...row(TOP_CODES, 'qwertyuiop', 'QWERTYUIOP'),
@@ -101,7 +97,6 @@ const CA_FR: LayoutDef = {
  */
 const COLEMAK_DH: LayoutDef = {
   id: 'colemak-dh',
-  name: 'colemak-dh',
   keys: {
     ...row(NUMBER_CODES, '`1234567890-=', '~!@#$%^&*()_+'),
     ...row(TOP_CODES, 'qwfpbjluy;', 'QWFPBJLUY:'),
@@ -117,7 +112,6 @@ const COLEMAK_DH: LayoutDef = {
     Slash: ['/', '?'],
   },
   fingers: { KeyZ: 'LR', KeyX: 'LM', KeyC: 'LI', KeyV: 'LI', KeyB: 'LI' },
-  note: 'left bottom row uses the angle fingering',
 };
 
 const DEFS: LayoutDef[] = [CA_FR, COLEMAK_DH, US];
@@ -129,10 +123,9 @@ export interface KeyLegend {
   letter: boolean;
 }
 
+/** A layout's name and the note about its fingering are interface strings: see `i18n.ts`. */
 export interface Layout {
   id: LayoutId;
-  name: string;
-  note?: string;
   fingerOf(code: string): Finger;
   legend(code: string): KeyLegend | null;
   /** Strokes for one character, or null when the layout cannot produce it. */
@@ -178,8 +171,6 @@ function buildLayout(def: LayoutDef): Layout {
 
   return {
     id: def.id,
-    name: def.name,
-    note: def.note,
     fingerOf,
     legend(code) {
       const pair = def.keys[code];

@@ -14,6 +14,8 @@ Vite + TypeScript (user's choice, 2026-11-17). Runs from a localhost URL on the 
 
 One user: the owner. A fast self-taught typist who plateaus around 100 WPM because he almost never uses his ring and pinky fingers. He types French and English. His physical keyboard carries QWERTY legends. He types on the Canadian French layout today and wants to try Colemak-DH.
 
+Since 2026-11-18 he also means to share the trainer with the readers of his newsletter, who read French: the reason the interface speaks French as well as English.
+
 ## Product Purpose
 
 A typing trainer that retrains which finger hits each key, so the ring and pinky fingers take over their keys and his speed passes 100 WPM. Success: correct ten-finger technique becomes automatic, then speed climbs.
@@ -40,6 +42,8 @@ Confirmed by the user:
 - Score history (2026-11-18): for the layout, for each finger and for each letter.
 - A profile switcher (2026-11-18): each profile keeps its own options and numbers, so another typist or another experiment does not mix into his.
 - A toggle that stops performance tracking (2026-11-18). While it is off nothing is saved, and the screen says so.
+- A language picker for the interface, English and French (2026-11-18). The practice text keeps its own language, chosen in the drill options.
+- A hardcore mode (2026-11-18) in the highway, words and pairs drills: a typo sticks and every key after it lands too until Backspace erases them, and an optional minimum WPM fails the set when the rolling rate stays under it too long. He chose a draining fuse over an instant fail, and a fuse with coral closing in from the screen edges as the stress cue. A failed set stays out of the set history.
 
 Hard constraint: a browser cannot see which finger pressed a key. The trainer may only claim what key events can prove (which key, which Shift, which keys are held, timing).
 

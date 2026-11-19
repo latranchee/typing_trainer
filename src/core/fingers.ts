@@ -19,7 +19,6 @@ export const FINGER_KINDS: FingerKind[] = ['pinky', 'ring', 'middle', 'index'];
 export const fingerKind = (finger: Finger): FingerKind => KIND[finger];
 export const fingerHand = (finger: Finger): Hand => (finger[0] === 'L' ? 'left' : 'right');
 export const fingerLane = (finger: Finger): number => LANE[finger];
-export const fingerName = (finger: Finger): string => `${fingerHand(finger)} ${KIND[finger]}`;
 
 /** The fingers this trainer exists for. */
 export const isWeakFinger = (finger: Finger): boolean => KIND[finger] === 'pinky' || KIND[finger] === 'ring';

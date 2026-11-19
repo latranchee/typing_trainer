@@ -33,6 +33,12 @@ The trainer applies the layout itself from physical key positions (`KeyboardEven
 
 Layouts: Canadian French (with dead-key accents), Colemak-DH for ANSI boards (angle fingering on the left bottom row), US QWERTY.
 
+## Languages
+
+The interface speaks English and French. The `fr / en` picker at the right of the top strip switches it at once, and the choice is saved with the profile. A first visit starts in the browser's language: French when French comes before English in the browser's list, English otherwise.
+
+The practice text has its own language, French or English, set with the `language` option under the keyboard in the highway, words and pairs drills. So a French interface can drill English words, and the other way round. A first visit starts the practice text in the interface's language.
+
 ## Drills
 
 - **highway**: falling notes, one lane per finger, each note dropping onto that finger's home key on the keyboard below. The note's shape and shade say which row to reach for. By default the road follows your pace and waits when you are late. Lock the tempo to hold one speed: early keys are refused, which forces slow, deliberate fingering. Up and down arrows change the locked tempo.
@@ -43,9 +49,15 @@ Layouts: Canadian French (with dead-key accents), Colemak-DH for ANSI boards (an
 
 Keys: `esc` new text, `enter` next set after a result. Options hide while you type and return when you stop or move the mouse. Click the caption under the WPM number to change the rolling window (5, 10 or 30 seconds).
 
+## Hardcore
+
+`hardcore` is an option of the highway, words and pairs drills. A wrong key sticks: it lands in the text in coral, and every key after it lands too, until `backspace` has erased them all (`ctrl` + `backspace` erases the whole run). Only then does the right key count. The longer you type past a typo, the more you erase, as in real typing.
+
+With hardcore on, `min wpm` sets a floor of 40 to 120. A fuse across the top of the drill is lit three seconds after the first right key. While the rolling WPM is under the floor it burns in from both ends, in five seconds just under it and in two seconds a quarter under or worse; above the floor it grows back. Near the end the WPM beats in coral and the screen edges close in. An empty fuse fails the set, and a failed set stays out of your history (its keys still count, as they were typed).
+
 ## Profiles and tracking
 
-The profile menu in the top strip switches between typists. Each profile keeps its own layout, language, options, key numbers and sets; the menu also adds, renames and deletes profiles. A new profile starts from the current options with no numbers.
+The profile menu in the top strip switches between typists. Each profile keeps its own layout, interface language, practice language, options, key numbers and sets; the menu also adds, renames and deletes profiles. A new profile starts from the current options with no numbers.
 
 The tracking switch beside it stops the trainer from saving anything for the current profile: no key numbers, no sets. Use it for a warm-up or when someone else tries the keyboard. While it is off the left rail and the set result say so.
 
@@ -70,7 +82,7 @@ If the anchor drill reports a lifted anchor while your fingers are down, your ke
 
 ## Project files
 
-- `src/core/`: layouts, finger maps, text generation, metrics, storage (`store.ts`: profiles, options, numbers) and history math (`history.ts`). No DOM.
+- `src/core/`: layouts, finger maps, text generation, metrics, storage (`store.ts`: profiles, options, numbers), history math (`history.ts`) and every interface string in both languages (`i18n.ts`). No DOM.
 - `src/drills/`: one file per drill.
 - `src/ui/`: shell, keyboard, hands, dropdown, profile menu.
 - `PRODUCT.md`: product record. `DESIGN.md`: the design system. `.impeccable/`: design tokens, the surface brief and the approved mock.

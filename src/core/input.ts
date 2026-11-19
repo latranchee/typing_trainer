@@ -19,6 +19,8 @@ export interface InputHandlers {
   down(code: string): void;
   up(code: string): void;
   command(command: Command): void;
+  /** Backspace: erase one wrong key, or all of them with Ctrl or Alt held. Held down, it repeats. */
+  erase(all: boolean, time: number): void;
 }
 
 const COMMANDS: Record<string, Command> = {
@@ -47,12 +49,19 @@ export function attachInput(handlers: InputHandlers): () => void {
       held.add(code);
       handlers.down(code);
     }
-    if (event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.metaKey) return;
 
     if (focusIsOnControl()) {
       if (code === 'Escape') (document.activeElement as HTMLElement).blur();
       return;
     }
+
+    if (code === 'Backspace') {
+      event.preventDefault();
+      handlers.erase(event.ctrlKey || event.altKey, performance.now());
+      return;
+    }
+    if (event.ctrlKey || event.altKey) return;
 
     const command = COMMANDS[code];
     if (command) {

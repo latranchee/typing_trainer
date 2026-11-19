@@ -1,12 +1,9 @@
-import type { NameProblem, Store } from '../core/store';
+import { t } from '../core/i18n';
+import type { Store } from '../core/store';
 import { NAME_LIMIT } from '../core/store';
 import { el } from './dom';
 
 const CHEVRON = 'M1 3l4 4 4-4';
-const PROBLEMS: Record<NameProblem, string> = {
-  empty: 'type a name first',
-  taken: 'that name is taken: pick another',
-};
 
 type Mode = 'list' | 'new' | 'rename' | 'delete';
 
@@ -16,9 +13,9 @@ type Mode = 'list' | 'new' | 'rename' | 'delete';
  */
 export class ProfileMenu {
   readonly root = el('div.select.profile');
-  private button = el('button.select-btn.ctl', { type: 'button', 'aria-haspopup': 'dialog', 'aria-expanded': 'false', 'aria-label': 'profile' });
+  private button = el('button.select-btn.ctl', { type: 'button', 'aria-haspopup': 'dialog', 'aria-expanded': 'false' });
   private label = el('span');
-  private menu = el('div.select-menu.profile-menu', { role: 'dialog', 'aria-label': 'profiles' });
+  private menu = el('div.select-menu.profile-menu', { role: 'dialog' });
   private store: Store;
   private onChange: () => void;
   private mode: Mode = 'list';
@@ -60,10 +57,12 @@ export class ProfileMenu {
     return this.root.classList.contains('is-open');
   }
 
-  /** Show the active profile's name. Call after the store changed behind the menu's back. */
+  /** Show the active profile's name, in the interface language. Call after the store changed behind the menu's back. */
   refresh(): void {
     this.label.textContent = this.store.profileName;
-    this.button.title = `profile: ${this.store.profileName}`;
+    this.button.title = t.profile.title(this.store.profileName);
+    this.button.setAttribute('aria-label', t.profile.button);
+    this.menu.setAttribute('aria-label', t.profile.menu);
   }
 
   private open(): void {
@@ -91,7 +90,7 @@ export class ProfileMenu {
     const { store } = this;
     const name = store.profileName;
 
-    const list = el('div.profile-list', { role: 'group', 'aria-label': 'switch profile' });
+    const list = el('div.profile-list', { role: 'group', 'aria-label': t.profile.switch });
     for (const profile of store.profiles) {
       const current = profile.id === store.profileId;
       const item = el('button.select-option.ctl', { type: 'button', 'aria-current': String(current) }, profile.name);
@@ -108,14 +107,14 @@ export class ProfileMenu {
     const tools = el('div.profile-tools');
     if (mode === 'list') {
       tools.append(
-        this.action('new profile', () => this.show('new')),
-        this.action(`rename ${name}`, () => this.show('rename')),
+        this.action(t.profile.add, () => this.show('new')),
+        this.action(t.profile.rename(name), () => this.show('rename')),
       );
       // The last profile stays: there is always someone typing.
-      if (store.profiles.length > 1) tools.append(this.action(`delete ${name}`, () => this.show('delete')));
+      if (store.profiles.length > 1) tools.append(this.action(t.profile.remove(name), () => this.show('delete')));
     } else if (mode === 'delete') {
-      const keep = el('button.profile-go.ctl', { type: 'button' }, 'keep');
-      const gone = el('button.profile-go.ctl', { type: 'button' }, 'delete');
+      const keep = el('button.profile-go.ctl', { type: 'button' }, t.profile.keep);
+      const gone = el('button.profile-go.ctl', { type: 'button' }, t.profile.confirm);
       keep.addEventListener('click', () => this.back());
       gone.addEventListener('click', () => {
         store.deleteProfile();
@@ -123,7 +122,7 @@ export class ProfileMenu {
         this.refresh();
         this.onChange();
       });
-      tools.append(el('p.profile-ask', {}, `delete ${name} and every number saved for it?`), el('div.profile-confirm', {}, keep, gone));
+      tools.append(el('p.profile-ask', {}, t.profile.ask(name)), el('div.profile-confirm', {}, keep, gone));
     } else {
       const adding = mode === 'new';
       const input = el('input.profile-input', {
@@ -131,19 +130,19 @@ export class ProfileMenu {
         maxlength: NAME_LIMIT,
         autocomplete: 'off',
         spellcheck: 'false',
-        placeholder: 'name',
-        'aria-label': adding ? 'name of the new profile' : `new name for ${name}`,
+        placeholder: t.profile.placeholder,
+        'aria-label': adding ? t.profile.newName : t.profile.renameTo(name),
       });
       if (!adding) input.value = name;
-      const message = el('p.profile-msg', { role: 'status' }, adding ? 'starts with the current options and no numbers' : '');
-      const form = el('form.profile-form', {}, input, el('button.profile-go.ctl', { type: 'submit' }, adding ? 'add' : 'save'), message);
+      const message = el('p.profile-msg', { role: 'status' }, adding ? t.profile.starts : '');
+      const form = el('form.profile-form', {}, input, el('button.profile-go.ctl', { type: 'submit' }, adding ? t.profile.submitAdd : t.profile.submitRename), message);
       input.addEventListener('input', () => input.classList.remove('is-bad'));
       form.addEventListener('submit', (event) => {
         event.preventDefault();
         const problem = adding ? store.addProfile(input.value) : store.renameProfile(input.value);
         if (problem) {
           input.classList.add('is-bad');
-          message.textContent = PROBLEMS[problem];
+          message.textContent = t.profile.problems[problem];
           input.focus();
           return;
         }

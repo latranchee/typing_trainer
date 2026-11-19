@@ -59,6 +59,44 @@ describe('store', () => {
     expect(store.settings.track).toBe(true);
   });
 
+  it('starts a typist with nothing saved in the preferred language, interface and practice text', () => {
+    const french = new Store(memory(), 'fr');
+    expect(french.settings.ui).toBe('fr');
+    expect(french.settings.lang).toBe('fr');
+    expect(french.profiles).toEqual([{ id: 'main', name: 'principal' }]);
+
+    const english = new Store(memory(), 'en');
+    expect(english.settings.ui).toBe('en');
+    expect(english.settings.lang).toBe('en');
+    expect(english.profiles).toEqual([{ id: 'main', name: 'main' }]);
+  });
+
+  it('gives options saved before the interface had a language the preferred one, and keeps the practice language', () => {
+    const saved = { v: 2, active: 'main', profiles: [{ id: 'main', name: 'main', settings: { lang: 'en', layout: 'us' }, layouts: {} }] };
+    const storage = memory({ 'auriculaire:v2': saved });
+    const store = new Store(storage, 'fr');
+    expect(store.settings.ui).toBe('fr');
+    expect(store.settings.lang).toBe('en');
+    expect(store.profileName).toBe('main');
+
+    // A choice made with the picker outlives the browser's preference.
+    store.update({ ui: 'en' });
+    store.flush();
+    expect(new Store(storage, 'fr').settings.ui).toBe('en');
+
+    // Numbers carried from the single-profile version keep their practice language too.
+    const legacy = new Store(memory({ 'auriculaire:v1': { v: 1, settings: { lang: 'en' } } }), 'fr');
+    expect(legacy.settings.ui).toBe('fr');
+    expect(legacy.settings.lang).toBe('en');
+    expect(legacy.profileName).toBe('main');
+  });
+
+  it('gives a new profile the interface language of the one it was made from', () => {
+    const store = new Store(memory(), 'fr');
+    store.addProfile('invité');
+    expect(store.settings.ui).toBe('fr');
+  });
+
   it('keeps each profile its own options, numbers and sets', () => {
     const storage = memory();
     const store = new Store(storage);

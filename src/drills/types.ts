@@ -1,10 +1,12 @@
 import type { Finger } from '../core/fingers';
 import type { Weakness } from '../core/generator';
+import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import type { Layout, Stroke } from '../core/layouts';
 import type { Row } from '../core/physical';
 import { rowOf } from '../core/physical';
-import type { DrillId, Settings, Store } from '../core/store';
+import type { DrillId, Lang, Settings, Store } from '../core/store';
+import { LANGS } from '../core/store';
 
 /** One stroke of practice text, ready to draw. */
 export interface Note {
@@ -53,6 +55,16 @@ export interface OptionGroup {
   set(value: string): void;
 }
 
+/** The language of the practice text. It sits with the drills that type words; the interface has its own picker. */
+export function languageOption(settings: Settings, apply: (patch: Partial<Settings>) => void): OptionGroup {
+  return {
+    label: t.options.language,
+    value: settings.lang,
+    choices: LANGS.map((lang) => ({ value: lang, label: t.languages[lang] })),
+    set: (value) => apply({ lang: value as Lang }),
+  };
+}
+
 /** What a drill may ask of the app around it. */
 export interface DrillHost {
   readonly layout: Layout;
@@ -89,4 +101,10 @@ export interface Drill {
   pickKey?(code: string): void;
   /** The key the board shows as chosen. */
   pickedKey?(): string | null;
+  /**
+   * Hardcore: the wrong keys typed past the cursor, oldest first, each as the
+   * label of its key. The drill shows them where the next letter goes. Drills
+   * that define this take part in hardcore mode.
+   */
+  typos?(typed: readonly string[]): void;
 }

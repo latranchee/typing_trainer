@@ -279,7 +279,7 @@ The hue names the finger. Each hue comes in three shades, one per letter row; th
 **Row shades.** Top-row shades are brighter and softer (about +0.075 OKLCH lightness at 0.6 of the chroma; the yellow, already near white, steps up +0.05 so it stays yellow). Bottom-row shades are darker and richer (-0.09 lightness, chroma pushed to the gamut edge). The darkest shade, `finger-index-bottom`, still carries Finger Ink at 4.8:1 and reads on Charcoal Ground at 4.6:1; a new shade has to clear the same two checks.
 
 ### Tertiary
-- **Miss Coral** (`miss-coral`): a wrong key, a wrong letter, a missing anchor, the error ring around the front note, error notes. Nothing else.
+- **Miss Coral** (`miss-coral`): a wrong key, a wrong letter, a missing anchor, the error ring around the front note, error notes. In hardcore mode it also carries what a miss leads to: the typo run, the Backspace target, the burning fuse, the live WPM under the floor, the edges closing in and a failed set. Nothing else.
 
 ### Neutral
 - **Charcoal Ground** (`charcoal-ground`): the page, and the far end of every finger-hue mix (dimmed keys and tokens mix toward it in OKLab).
@@ -339,13 +339,15 @@ The root scale is itself part of the ramp: `root` (`clamp(11px, min(1.04167vw, 1
 ### Named Rules
 **The Lowercase Voice Rule.** Every visible string is lowercase, the wordmark included. No uppercase labels, no tracked small caps.
 
+**The Two Languages Rule.** Every string lives in `src/core/i18n.ts`, in English and in French, and the French follows the same voice: lowercase labels, the reader addressed as "tu", no space before a colon. French runs about a quarter longer, so a new string is checked in French at the width its English fits.
+
 **The One Family Rule.** Roboto Mono for everything, numerals included; no second face.
 
 ## Layout
 
 The screen is built at a 1536 x 1024 reference frame where 1rem = 16px, and the root font size scales with the viewport (`clamp(11px, min(1.04167vw, 1.5625vh), 28px)`) so the whole cockpit fits without scrolling. Every measurement is in rem so it scales with that root.
 
-A 5.0625rem top strip (wordmark, five text tabs, layout dropdown, fr / en) sits above a hairline. Below it a 96rem centred cockpit holds three fixed columns: a 17rem left rail, a 49.75rem centre and a 21rem right rail, separated by 2.375rem and 1.25rem gaps with a 2.875rem outer gutter. The centre is a grid of stage, keyboard and a 7rem options row. The highway lanes are measured from the keyboard, so every note falls straight onto its finger's home key.
+A 5.0625rem top strip (wordmark, five text tabs, tracking switch, profile and layout dropdowns, the fr / en interface-language picker) sits above a hairline. Below it a 96rem centred cockpit holds three fixed columns: a 17rem left rail, a 49.75rem centre and a 21rem right rail, separated by 2.375rem and 1.25rem gaps with a 2.875rem outer gutter. The centre is a grid of stage, keyboard and an options row of 7rem that grows when its groups and note need a third line. The highway lanes are measured from the keyboard, so every note falls straight onto its finger's home key.
 
 Spacing recurs at 0.375rem, 0.625rem, 1.25rem, 2.25rem and 2.875rem. The keyboard is a 60-column grid with 0.625rem row gaps and 3.125rem rows.
 
@@ -370,7 +372,7 @@ Softly rounded rectangles for everything you press or read as a key (0.5rem caps
 ## Components
 
 ### Buttons and tabs
-Text-only and quiet: tabs and language toggles are bare text with no fill.
+Text-only and quiet: tabs and the fr / en picker are bare text with no fill. The picker sets the language of the interface and sits last in the top strip, where a visitor looks for it; each of its two buttons is named in its own language.
 - **Shape:** none at rest.
 - **States:** Muted Label at rest, Cool Grey Text on hover, Warm Paper Text when active (the active language uses Mustard at 600).
 - **Interaction:** every control carries the shared interaction system: color, background, border and scale transition over 240ms on release, 160ms on hover in, 80ms on press, with a 0.96 scale dip on press, all on `cubic-bezier(0.16, 1, 0.3, 1)`. Full-width menu options replace the scale dip with a darker fill.
@@ -388,7 +390,7 @@ A label and a 1.875 by 1.125rem pill in the top strip. On: Hairline Strong track
 ### Segmented control
 - **Track:** Key Slate, 0.5rem radius, 0.1875rem inset.
 - **Segments:** Cool Grey Text, 0.3125rem radius; hover to Key Slate Lit; the chosen segment sits on Hairline Strong with Warm Paper Text.
-- **Context:** drill options (text source, tempo, saved numbers) sit in the bottom row and fade out while typing.
+- **Context:** drill options (text source, practice language, tempo, saved numbers) sit in the bottom row and fade out while typing. Groups that do not fit one line wrap to a second; the key hints close the last line at its right end, and a note takes its own line under them. On a phone a long row of segments wraps inside its track.
 
 ### On-screen keyboard (signature)
 - **Neutral cap:** Key Slate, Cool Grey Text, cap top light.
@@ -421,6 +423,16 @@ The live WPM in Display Mustard, a caption that cycles the rolling window, a spa
 ### Drill text
 Words and pairs in the Drill style. Each letter carries a 0.125rem underline in its finger hue at 75% opacity; the current letter turns its finger hue over a 0.3125rem bar; typed letters turn Muted Label; a wrong letter turns Miss Coral.
 
+### Hardcore mode
+An option of the highway, words and pairs drills (2026-11-18, the user's three picks: typos stick, a draining fuse, fuse plus closing edges). Two segmented groups join the drill options: `hardcore` off / on and, when on, `min wpm` none / 40 / 60 / 80 / 100 / 120. Turning either starts a fresh set. Coral is the mode's only color; it adds no token.
+- **Typo run:** a wrong key lands in the text and so does every key after it, up to ten, until Backspace erases them (Ctrl or Alt with Backspace erases the run). In the text drills the run sits inside the word, just before the letter it replaced: Miss Coral glyphs over full-opacity coral underlines, the last one carrying the 0.3125rem cursor bar, while the replaced letter drops back to its plain upcoming look. On the highway the front note keeps its coral ring and the run is drawn in coral above it, same bars. New typos enter with a 120ms drop.
+- **Backspace target:** while typos wait, the board's bksp cap fills Miss Coral with a Warm Paper Text outline, the right pinky lights on the hands plate, and the next-key cap becomes a coral cap as wide as its legend (min 4.625rem, 1rem side padding) with "right pinky, bksp" and "erase 3 typos" under it.
+- **Floor:** "/100" follows the live WPM in Title size, Muted Label, 400. The sparkline draws the floor as a 1px dashed rule (Hairline Strong, coral while under) and keeps it in range.
+- **Fuse:** a 0.1875rem cord across the top of the centre column, 1.25rem down, on a Hairline track. Unlit through a 3 s warm-up after the first right key (Hairline Strong). Lit, it is Cool Grey Text mixed toward Miss Coral as it shortens; it burns in from both ends toward the middle while the rolling WPM is under the floor (empty in 5 s just under, 2 s a quarter under or worse) and grows back at 0.12 a second above it. Under the floor each end carries a spark: a 0.875rem radial of Warm Paper Text core into coral, flickering in three steps at 220ms.
+- **Stress:** under the floor the live WPM numeral and its "/100" turn Miss Coral and the numeral beats (scale up to 1.045, lub-dub keyframes on a registered `--pulse`). Below 40% fuse, coral closes in from the screen edges: a fixed radial vignette, coral at 44% at the corners, opacity growing to full as the fuse empties and beating with the numeral. The beat quickens with the fuse: 1.2s, 0.82s, 0.52s.
+- **Fail:** an empty fuse ends the set. The edges flood once (900ms fade) and the stage jolts (320ms, four decaying steps). The result leads with "set failed: under 100 wpm too long" in Miss Coral, the WPM in Cool Grey Text instead of Mustard, then lasted, accuracy and best streak, and says the set stays out of the history. A held floor adds "min wpm: 100 wpm, held" to a normal result.
+- **Reduced motion:** the beat, the sparks, the drop and the jolt stop outright; the coral states and the vignette's strength stay.
+
 ## Do's and Don'ts
 
 ### Do:
@@ -433,6 +445,7 @@ Words and pairs in the Drill style. Each letter carries a 0.125rem underline in 
 - **Do** draw a history line in its subject's color: Mustard for the layout's own number, the finger's hue for a finger, the row's shade of it for a key.
 - **Do** separate zones with space and Hairline rules.
 - **Do** keep all copy lowercase and in Roboto Mono.
+- **Do** write every string in both languages in `src/core/i18n.ts`, and look at the French at desktop and phone width before calling a screen done.
 
 ### Don't:
 - **Don't** use a finger hue for anything that is not a finger: no status, category or link color, and no chart color except that finger's own history.

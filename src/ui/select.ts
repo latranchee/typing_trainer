@@ -65,6 +65,15 @@ export class Select {
     this.render();
   }
 
+  /** New wording for the same choices, in the same order: the interface language changed. */
+  relabel(name: string, labels: string[]): void {
+    this.button.setAttribute('aria-label', name);
+    this.menu.setAttribute('aria-label', name);
+    this.options = this.options.map((option, i) => ({ ...option, label: labels[i] ?? option.label }));
+    this.items.forEach((item, i) => (item.textContent = this.options[i].label));
+    this.render();
+  }
+
   private render(): void {
     const current = this.options.find((option) => option.value === this.value) ?? this.options[0];
     this.label.textContent = current.label;

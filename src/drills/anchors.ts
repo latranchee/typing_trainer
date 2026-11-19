@@ -1,6 +1,7 @@
-import { fingerKind, fingerName } from '../core/fingers';
+import { fingerKind } from '../core/fingers';
 import type { AnchorFinger, AnchorSet } from '../core/generator';
 import { ANCHOR_FINGERS, makeAnchorSet } from '../core/generator';
+import { fingerName, fingerShort, t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import { rowOf } from '../core/physical';
 import { el, flash } from '../ui/dom';
@@ -62,15 +63,12 @@ export class AnchorsDrill implements Drill {
     this.done = false;
 
     this.head.textContent = fingerName(finger);
-    this.sub.textContent =
-      this.set.anchors.length > 0
-        ? 'Keep the other fingers of this hand down on their home keys. Only this finger can reach the notes.'
-        : 'No anchors: tap the notes with this finger and keep the hand on the home row.';
+    this.sub.textContent = this.set.anchors.length > 0 ? t.anchors.held : t.anchors.free;
 
     this.hold.replaceChildren();
     this.holdKeys.clear();
     if (this.set.anchors.length > 0) {
-      this.hold.append('hold');
+      this.hold.append(t.anchors.hold);
       for (const code of this.set.anchors) {
         const key = el('span.hold-key', { 'data-f': fingerKind(layout.fingerOf(code)) }, layout.strokeLabel({ code, shift: false }));
         this.holdKeys.set(code, key);
@@ -95,18 +93,18 @@ export class AnchorsDrill implements Drill {
     };
     return [
       {
-        label: 'finger',
+        label: t.anchors.finger,
         value: settings.anchorFinger,
         choices: [
-          { value: 'rotate', label: 'all four' },
-          ...ANCHOR_FINGERS.map((finger) => ({ value: finger, label: fingerName(finger) })),
+          { value: 'rotate', label: t.anchors.allFour },
+          ...ANCHOR_FINGERS.map((finger) => ({ value: finger, label: fingerShort(finger) })),
         ],
         set: (value) => refresh({ anchorFinger: value as typeof settings.anchorFinger }),
       },
       {
-        label: 'anchors',
+        label: t.anchors.anchors,
         value: String(settings.anchorCount),
-        choices: [3, 2, 1, 0].map((count) => ({ value: String(count), label: count === 0 ? 'off' : String(count) })),
+        choices: [3, 2, 1, 0].map((count) => ({ value: String(count), label: count === 0 ? t.anchors.off : String(count) })),
         set: (value) => refresh({ anchorCount: Number(value) as 0 | 1 | 2 | 3 }),
       },
     ];
@@ -129,7 +127,7 @@ export class AnchorsDrill implements Drill {
     if (missing.length > 0) {
       for (const code of missing) flash(this.holdKeys.get(code)!, 'is-missing', 600);
       const names = missing.map((code) => this.host.layout.strokeLabel({ code, shift: false })).join(' ');
-      this.status.textContent = `anchor lifted: keep ${names} down. If your keyboard cannot register this many keys at once, press esc and lower the "anchors" setting under the keyboard.`;
+      this.status.textContent = t.anchors.lifted(names);
       this.status.classList.add('is-error');
       return;
     }

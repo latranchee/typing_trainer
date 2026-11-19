@@ -1,7 +1,8 @@
 import type { FingerKind } from '../core/fingers';
-import { fingerKind, fingerName } from '../core/fingers';
+import { fingerKind } from '../core/fingers';
 import type { HistoryEntry, Metric, Point, Subject } from '../core/history';
 import { rolling, series, trend } from '../core/history';
+import { fingerName, fingerShort, t } from '../core/i18n';
 import { intervalToWpm, MIN_SAMPLES } from '../core/metrics';
 import { rowOf } from '../core/physical';
 import { css, el, fitCanvas } from '../ui/dom';
@@ -13,7 +14,6 @@ const RECENT_SETS = 40;
 const LIST_ROWS = 8;
 const DOT = String.fromCharCode(0xb7);
 const MINUS = String.fromCharCode(0x2212);
-const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 /** Chart geometry in rem: the value labels' gutter, the date band, and the head room over the plot. */
 const GUTTER = 2.5;
 const DATE_BAND = 1.375;
@@ -26,9 +26,9 @@ const sameDay = (a: number, b: number): boolean => new Date(a).toDateString() ==
 const subjectId = (subject: Subject): string =>
   subject.kind === 'all' ? 'all' : subject.kind === 'finger' ? `finger:${subject.finger}` : `key:${subject.code}`;
 
-function dayLabel(t: number): string {
-  const date = new Date(t);
-  const label = `${MONTHS[date.getMonth()]} ${date.getDate()}`;
+function dayLabel(time: number): string {
+  const date = new Date(time);
+  const label = t.day(t.months[date.getMonth()], date.getDate());
   return date.getFullYear() === new Date().getFullYear() ? label : `${label} ${date.getFullYear()}`;
 }
 
@@ -94,11 +94,11 @@ export class StatsView implements Drill {
   options(): OptionGroup[] {
     return [
       {
-        label: 'chart',
+        label: t.stats.chart,
         value: this.metric,
         choices: [
-          { value: 'wpm', label: 'speed' },
-          { value: 'acc', label: 'accuracy' },
+          { value: 'wpm', label: t.stats.speed },
+          { value: 'acc', label: t.stats.accuracy },
         ],
         set: (value) => {
           this.metric = value as Metric;
@@ -107,11 +107,11 @@ export class StatsView implements Drill {
         },
       },
       {
-        label: 'range',
+        label: t.stats.range,
         value: this.range,
         choices: [
-          { value: 'recent', label: `${RECENT_SETS} sets` },
-          { value: 'all', label: 'all' },
+          { value: 'recent', label: t.stats.recent(RECENT_SETS) },
+          { value: 'all', label: t.stats.all },
         ],
         set: (value) => {
           this.range = value as 'recent' | 'all';
@@ -120,16 +120,16 @@ export class StatsView implements Drill {
         },
       },
       {
-        label: 'saved numbers',
+        label: t.stats.saved,
         value: this.armed ? 'armed' : 'keep',
         choices: this.armed
           ? [
-              { value: 'keep', label: 'keep' },
-              { value: 'erase', label: `erase all of ${this.host.store.profileName}` },
+              { value: 'keep', label: t.stats.keep },
+              { value: 'erase', label: t.stats.eraseAll(this.host.store.profileName) },
             ]
           : [
-              { value: 'keep', label: 'keep' },
-              { value: 'armed', label: 'erase' },
+              { value: 'keep', label: t.stats.keep },
+              { value: 'armed', label: t.stats.erase },
             ],
         set: (value) => {
           if (value === 'erase') {
@@ -155,10 +155,10 @@ export class StatsView implements Drill {
 
   private subjectName(subject: Subject): string {
     const { layout } = this.host;
-    if (subject.kind === 'all') return 'all keys';
+    if (subject.kind === 'all') return t.stats.allKeys;
     if (subject.kind === 'finger') return fingerName(subject.finger);
-    if (subject.code === 'Space') return 'space bar, thumb';
-    return `key ${layout.strokeLabel({ code: subject.code, shift: false })}, ${fingerName(layout.fingerOf(subject.code))}`;
+    if (subject.code === 'Space') return t.stats.spaceBar;
+    return t.stats.key(layout.strokeLabel({ code: subject.code, shift: false }), layout.fingerOf(subject.code));
   }
 
   private subjectToken(): HTMLElement | null {
@@ -178,7 +178,7 @@ export class StatsView implements Drill {
   }
 
   private format(value: number): string {
-    return this.metric === 'wpm' ? `${Math.round(value)} wpm` : percent(value);
+    return this.metric === 'wpm' ? t.stats.value(Math.round(value)) : percent(value);
   }
 
   /** A change in the chart's unit: words per minute, or points of accuracy. */
@@ -203,7 +203,7 @@ export class StatsView implements Drill {
     const stats = store.layoutStats(layout.id);
     const sets = store.history.filter((entry) => entry.layout === layout.id);
     const measured = Object.entries(stats.keys).filter(([code, stat]) => code !== 'Space' && stat.n >= MIN_SAMPLES);
-    const trackingOff = store.tracking ? '' : ' Tracking is off, so nothing is being saved.';
+    const trackingOff = store.tracking ? '' : t.stats.untracked;
 
     this.resizer.disconnect();
     this.chart = null;
@@ -213,7 +213,7 @@ export class StatsView implements Drill {
         el(
           'p.stats-empty',
           {},
-          `Nothing measured on ${layout.name} for ${store.profileName} yet. Finish a set in any drill and the per-finger numbers show up here.${trackingOff}`,
+          t.stats.empty(t.layouts[layout.id], store.profileName) + trackingOff,
         ),
       );
       return;
@@ -223,28 +223,28 @@ export class StatsView implements Drill {
     this.line = rolling(this.points, ROLLING_SETS, MIN_SAMPLES);
     const pooled = Math.min(ROLLING_SETS, this.points.filter((point) => point.value !== null).length);
     const current = this.line.length > 0 ? this.line[this.line.length - 1] : null;
-    const metricName = this.metric === 'wpm' ? 'wpm' : 'accuracy';
+    const metricName = this.metric === 'wpm' ? t.stats.wpm : t.stats.accuracy;
     const name = this.subjectName(this.subject);
 
     const figure = el(
       'div.stats-figure',
       {},
-      el(current === null ? 'div.stats-avg.is-none' : 'div.stats-avg', {}, current === null ? 'n/a' : this.metric === 'wpm' ? String(Math.round(current)) : percent(current)),
+      el(current === null ? 'div.stats-avg.is-none' : 'div.stats-avg', {}, current === null ? t.none : this.metric === 'wpm' ? String(Math.round(current)) : percent(current)),
       el('p.stats-subject', {}, this.subjectToken(), name),
-      el('p.stats-window', {}, current === null ? `${metricName}, too few sets yet` : `${metricName}, last ${pooled} ${pooled === 1 ? 'set' : 'sets'}`),
+      el('p.stats-window', {}, current === null ? t.stats.tooFew(metricName) : t.stats.window(metricName, pooled)),
     );
     // One slot under the figure: how to pick a subject, or the way back from one.
     if (this.subject.kind === 'all') {
-      figure.append(el('p.stats-hint', {}, 'pick a finger or key below'));
+      figure.append(el('p.stats-hint', {}, t.stats.hint));
     } else {
-      const clear = el('button.stats-clear.ctl', { type: 'button', 'data-pick': 'all' }, 'back to all keys');
+      const clear = el('button.stats-clear.ctl', { type: 'button', 'data-pick': 'all' }, t.stats.back);
       clear.addEventListener('click', () => this.select(this.subject));
       figure.append(clear);
     }
 
     const wrap = el('div.stats-chart-wrap');
     if (this.points.some((point) => point.value !== null)) {
-      const chart = el('canvas.stats-chart', { role: 'img', 'aria-label': `${metricName} of ${name} over the saved sets` });
+      const chart = el('canvas.stats-chart', { role: 'img', 'aria-label': t.stats.chartLabel(metricName, name) });
       this.chart = chart;
       this.cap = el('p.stats-chart-cap');
       chart.addEventListener('pointermove', (event) => this.setHover(event));
@@ -256,13 +256,12 @@ export class StatsView implements Drill {
         el(
           'p.stats-chart-none',
           {},
-          this.subject.kind === 'all'
-            ? 'No finished set on this layout yet. The chart starts with the first one.'
-            : `No history for ${name} yet. Finger and key history starts with the next set you finish.`,
+          this.subject.kind === 'all' ? t.stats.noSets : t.stats.noHistory(name),
         ),
       );
     }
 
+    const { heads } = t.stats;
     const fingerRows = store
       .fingerSummary(layout)
       .filter((summary) => fingerKind(summary.finger) !== 'thumb')
@@ -273,17 +272,17 @@ export class StatsView implements Drill {
         return el(
           'tr',
           {},
-          el('td', {}, this.pick(subject, el('span.tok', { 'data-f': fingerKind(summary.finger) }), fingerName(summary.finger))),
-          el(enough ? 'td' : 'td.stats-dim', {}, enough ? wpm(summary.ms) : 'n/a'),
-          el(enough ? 'td' : 'td.stats-dim', {}, enough ? percent(summary.n / (summary.n + summary.err)) : 'n/a'),
-          el(change === null ? 'td.stats-dim' : 'td', {}, change === null ? 'n/a' : this.signed(change)),
+          el('td', {}, this.pick(subject, el('span.tok', { 'data-f': fingerKind(summary.finger) }), fingerShort(summary.finger))),
+          el(enough ? 'td' : 'td.stats-dim', {}, enough ? wpm(summary.ms) : t.none),
+          el(enough ? 'td' : 'td.stats-dim', {}, enough ? percent(summary.n / (summary.n + summary.err)) : t.none),
+          el(change === null ? 'td.stats-dim' : 'td', {}, change === null ? t.none : this.signed(change)),
           el('td.stats-dim', {}, String(summary.n)),
         );
       });
     const fingerTable = el(
       'table.stats-table',
       {},
-      el('thead', {}, el('tr', {}, el('th', {}, 'finger'), el('th', {}, 'wpm'), el('th', {}, 'acc'), el('th', {}, 'trend'), el('th', {}, 'keys'))),
+      el('thead', {}, el('tr', {}, el('th', {}, heads.finger), el('th', {}, t.stats.wpm), el('th', {}, heads.acc), el('th', {}, heads.trend), el('th', {}, heads.keys))),
       el('tbody', {}, ...fingerRows),
     );
 
@@ -313,17 +312,17 @@ export class StatsView implements Drill {
       .slice(0, LIST_ROWS)
       .map(([pair, stat]) => el('tr', {}, el('td', {}, pair), el('td', {}, wpm(stat.ms)), el('td.stats-dim', {}, String(stat.n))));
 
-    const lists = [el('div', {}, el('h2', {}, 'by finger'), fingerTable)];
+    const lists = [el('div', {}, el('h2', {}, t.stats.byFinger), fingerTable)];
     if (slowKeys.length > 0) {
       lists.push(
         el(
           'div',
           {},
-          el('h2', {}, 'slowest keys'),
+          el('h2', {}, t.stats.slowKeys),
           el(
             'table.stats-table',
             {},
-            el('thead', {}, el('tr', {}, el('th', {}, 'key'), el('th', {}, 'wpm'), el('th', {}, 'acc'))),
+            el('thead', {}, el('tr', {}, el('th', {}, heads.key), el('th', {}, t.stats.wpm), el('th', {}, heads.acc))),
             el('tbody', {}, ...slowKeys),
           ),
         ),
@@ -334,11 +333,11 @@ export class StatsView implements Drill {
         el(
           'div',
           {},
-          el('h2', {}, 'slowest pairs'),
+          el('h2', {}, t.stats.slowPairs),
           el(
             'table.stats-table',
             {},
-            el('thead', {}, el('tr', {}, el('th', {}, 'pair'), el('th', {}, 'wpm'), el('th', {}, 'seen'))),
+            el('thead', {}, el('tr', {}, el('th', {}, heads.pair), el('th', {}, t.stats.wpm), el('th', {}, heads.seen))),
             el('tbody', {}, ...slowPairs),
           ),
         ),
@@ -349,10 +348,10 @@ export class StatsView implements Drill {
     const foot = el(
       'p.stats-foot',
       {},
-      'Pick a finger or a key, in these lists or on the keyboard, to chart its history. ',
-      `Trend is the last ten sets against the ten before, in ${this.metric === 'wpm' ? 'wpm' : 'points of accuracy'}. `,
-      'On the keyboard, a stronger color means the key needs more work.',
-      shifts > 0 ? ` Shift on the opposite hand: ${percent(stats.shiftOk / shifts)} of ${shifts} capitals.` : '',
+      t.stats.footPick,
+      t.stats.footTrend(this.metric === 'wpm'),
+      t.stats.footHeat,
+      shifts > 0 ? t.stats.footShift(percent(stats.shiftOk / shifts), shifts) : '',
       trackingOff,
     );
 
@@ -387,15 +386,16 @@ export class StatsView implements Drill {
       const average = line[this.hover];
       const parts = [
         when(entry),
-        entry.sets !== undefined ? `${entry.sets} ${entry.sets === 1 ? 'set' : 'sets'}` : entry.drill,
-        value === null ? 'nothing typed' : this.format(value),
+        entry.sets !== undefined ? t.stats.sets(entry.sets) : t.drills[entry.drill],
+        value === null ? t.stats.nothing : this.format(value),
       ];
-      if (average !== null) parts.push(`last ten: ${this.format(average)}`);
+      if (average !== null) parts.push(t.stats.lastTen(this.format(average)));
       return parts.join(` ${DOT} `);
     }
-    const marks = this.metric === 'wpm' ? 'bars' : 'dots';
-    const grouped = points.some((point) => point.entry.sets !== undefined) ? ', older ones per day' : '';
-    return `${marks}: each set${grouped}. line: last-ten average.`;
+    return t.stats.caption(
+      this.metric === 'wpm',
+      points.some((point) => point.entry.sets !== undefined),
+    );
   }
 
   /** Value range of the chart, and the values that get a labelled rule. */

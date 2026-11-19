@@ -1,11 +1,12 @@
 import type { FingerKind } from '../core/fingers';
 import { fingerKind, fingerLane } from '../core/fingers';
 import { makePairs, makeWords } from '../core/generator';
+import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import type { Row } from '../core/physical';
 import { css, el, fitCanvas } from '../ui/dom';
 import type { Drill, DrillHost, Note, OptionGroup } from './types';
-import { matches, toNotes } from './types';
+import { languageOption, matches, toNotes } from './types';
 
 /** Notes ahead of the strike line when a set is waiting to start. */
 const START_LEAD = 2.4;
@@ -60,6 +61,8 @@ export class HighwayDrill implements Drill {
   private pops: Pop[] = [];
   private flashes: { lane: number; kind: FingerKind; row: Row; at: number }[] = [];
   private shakeAt = -1e9;
+  /** Hardcore: the wrong keys typed past the front note, waiting for Backspace. */
+  private typed: readonly string[] = [];
   private fixture: HighwayFixture | null = null;
   private colors: Record<FingerKind, Shades> | null = null;
   private resizer = new ResizeObserver(() => this.draw(performance.now()));
@@ -96,6 +99,7 @@ export class HighwayDrill implements Drill {
     this.done = false;
     this.pops = [];
     this.flashes = [];
+    this.typed = [];
     this.fixture = null;
     this.announce();
     this.draw(performance.now());
@@ -114,20 +118,21 @@ export class HighwayDrill implements Drill {
     };
     return [
       {
-        label: 'text',
+        label: t.highway.text,
         value: settings.highwaySource,
         choices: [
-          { value: 'words', label: 'words' },
-          { value: 'pairs', label: 'letter pairs' },
+          { value: 'words', label: t.highway.words },
+          { value: 'pairs', label: t.highway.pairs },
         ],
         set: (value) => refresh({ highwaySource: value as 'words' | 'pairs' }),
       },
+      languageOption(settings, refresh),
       {
-        label: 'tempo',
+        label: t.highway.tempo,
         value: settings.tempoLock ? 'lock' : 'follow',
         choices: [
-          { value: 'follow', label: 'follows you' },
-          { value: 'lock', label: `locked ${settings.tempoWpm} wpm` },
+          { value: 'follow', label: t.highway.follows },
+          { value: 'lock', label: t.highway.locked(settings.tempoWpm) },
         ],
         set: (value) => refresh({ tempoLock: value === 'lock' }),
       },
@@ -140,7 +145,7 @@ export class HighwayDrill implements Drill {
     const tempoWpm = Math.max(MIN_WPM, Math.min(MAX_WPM, settings.tempoWpm + direction * 5));
     store.update({ tempoWpm });
     this.interval = 60000 / (tempoWpm * 5);
-    this.host.say(`tempo ${tempoWpm} wpm`);
+    this.host.say(t.highway.tempoNow(tempoWpm));
   }
 
   key(event: KeyEvt): void {
@@ -157,7 +162,7 @@ export class HighwayDrill implements Drill {
     const lead = this.cursor - this.progress;
     if (this.host.settings.tempoLock && this.started && lead > HIT_WINDOW) {
       this.shakeAt = event.time;
-      this.host.say('early: wait for the line', 'error');
+      this.host.say(t.highway.early, 'error');
       return;
     }
 
@@ -181,6 +186,11 @@ export class HighwayDrill implements Drill {
     } else {
       this.announce();
     }
+  }
+
+  typos(typed: readonly string[]): void {
+    this.typed = [...typed];
+    this.draw(performance.now());
   }
 
   tick(now: number, dt: number): void {
@@ -281,15 +291,16 @@ export class HighwayDrill implements Drill {
       const front = i === this.cursor;
       const x = laneX(fingerLane(note.finger)) + (front ? shake : 0);
       this.token(ctx, x, y, size, kind, note.row, note.label, colors, note.stroke.shift);
-      if (front && wrong) this.ring(ctx, x, y, size, css('--error'));
+      if (front && (wrong || this.typed.length > 0)) this.ring(ctx, x, y, size, css('--error'));
+      if (front && this.typed.length > 0) this.typoRun(ctx, x, y - size * 1.05, size, width);
     }
 
     this.pops = this.pops.filter((pop) => now - pop.at < POP_MS);
     for (const pop of this.pops) {
-      const t = (now - pop.at) / POP_MS;
+      const age = (now - pop.at) / POP_MS;
       const kind = fingerKind(pop.note.finger);
-      ctx.globalAlpha = 1 - t;
-      this.token(ctx, laneX(fingerLane(pop.note.finger)), pop.y - size * 0.62, size * (this.calm ? 1 : 1 + t * 0.35), kind, pop.note.row, '', colors);
+      ctx.globalAlpha = 1 - age;
+      this.token(ctx, laneX(fingerLane(pop.note.finger)), pop.y - size * 0.62, size * (this.calm ? 1 : 1 + age * 0.35), kind, pop.note.row, '', colors);
     }
     ctx.globalAlpha = 1;
   }
@@ -366,6 +377,35 @@ export class HighwayDrill implements Drill {
       ctx.stroke();
       ctx.restore();
     }
+  }
+
+  /**
+   * Hardcore: the wrong keys typed past the front note, in coral above it, each
+   * over a thin bar like a letter of the text drills. The last one carries the
+   * heavy cursor bar: that is where the next key lands until Backspace clears the run.
+   */
+  private typoRun(ctx: CanvasRenderingContext2D, x: number, y: number, size: number, width: number): void {
+    const step = size * 0.5;
+    const span = step * this.typed.length;
+    // Centred on the note, kept inside the stage.
+    let left = Math.min(Math.max(x - span / 2, step * 0.25), width - span - step * 0.25);
+    if (span > width) left = 0;
+    const color = css('--error');
+    ctx.save();
+    ctx.fillStyle = color;
+    ctx.font = `500 ${Math.round(size * 0.5)}px ${css('--font')}`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    this.typed.forEach((label, i) => {
+      const cx = left + step * (i + 0.5);
+      if (label !== ' ') ctx.fillText(label, cx, y);
+      const last = i === this.typed.length - 1;
+      const bar = last ? Math.max(3, size * 0.09) : Math.max(1.5, size * 0.04);
+      ctx.beginPath();
+      ctx.roundRect(cx - step * (last ? 0.46 : 0.34), y + size * 0.3, step * (last ? 0.92 : 0.68), bar, bar / 2);
+      ctx.fill();
+    });
+    ctx.restore();
   }
 
   private ring(ctx: CanvasRenderingContext2D, x: number, y: number, size: number, color: string): void {

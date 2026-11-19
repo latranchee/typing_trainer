@@ -1,7 +1,10 @@
 import type { Finger, FingerKind } from '../core/fingers';
-import { FINGER_KINDS, fingerKind, fingerName } from '../core/fingers';
+import { FINGER_KINDS, fingerKind } from '../core/fingers';
 import type { Weakness } from '../core/generator';
+import type { Floor } from '../core/hardcore';
+import { dangerAmount, dangerLevel, FLOORS, Fuse, MAX_TYPOS, WARMUP_MS } from '../core/hardcore';
 import type { KeyTally } from '../core/history';
+import { LANG_NAMES, setUiLang, t } from '../core/i18n';
 import type { Command, KeyEvt } from '../core/input';
 import { attachInput } from '../core/input';
 import type { Layout } from '../core/layouts';
@@ -10,14 +13,14 @@ import { intervalToWpm, MIN_SAMPLES, RollingWpm, SetStats } from '../core/metric
 import type { Row } from '../core/physical';
 import { rowOf } from '../core/physical';
 import type { DrillId, Lang, Settings } from '../core/store';
-import { DRILL_IDS, Store } from '../core/store';
+import { DRILL_IDS, LANGS, Store } from '../core/store';
 import { AnchorsDrill } from '../drills/anchors';
 import type { HighwayFixture } from '../drills/highway';
 import { HighwayDrill } from '../drills/highway';
 import { LineDrill } from '../drills/line';
 import { StatsView } from '../drills/stats';
 import type { Drill, DrillHost, NextHint, Note, OptionGroup } from '../drills/types';
-import { css, el, fitCanvas } from './dom';
+import { css, el, fitCanvas, flash } from './dom';
 import { HandsView } from './hands';
 import type { KeyRole } from './keyboard';
 import { KeyboardView } from './keyboard';
@@ -77,15 +80,34 @@ export class App implements DrillHost {
   /** Per-key numbers of the set in progress. They join the set's history entry when it finishes. */
   private setKeys: Record<string, KeyTally> = {};
 
+  /** Hardcore: wrong keys typed past the cursor, oldest first, waiting for Backspace. */
+  private typos: string[] = [];
+  /** The hint the drill last gave. While typos wait, the rails show Backspace instead. */
+  private drillHint: NextHint = { note: null };
+  private fuse = new Fuse();
+  /** When the set's first right key landed: the fuse is lit a warm-up after it. */
+  private firstHitAt: number | null = null;
+  private shownLife = -1;
+  private fuseState = '';
+
   private root: HTMLElement;
   private tabs = new Map<DrillId, HTMLButtonElement>();
-  private langButtons = new Map<Lang, HTMLButtonElement>();
+  private uiButtons = new Map<Lang, HTMLButtonElement>();
+  /** Every fixed string on screen: each entry writes one text or attribute in the current interface language. */
+  private labels: (() => void)[] = [];
   private layoutSelect!: Select;
   private profileMenu!: ProfileMenu;
-  private trackSwitch = el('button.track.ctl', { type: 'button', role: 'switch' }, el('span', {}, 'tracking'), el('span.switch', { 'aria-hidden': 'true' }));
-  private wpmEl = el('output.wpm', { 'aria-label': 'rolling words per minute' }, '0');
-  private wpmCap = el('button.wpm-cap.ctl', { type: 'button', title: 'change the rolling window' });
-  private spark = el('canvas.spark', { role: 'img', 'aria-label': 'rolling words per minute over the last minute' });
+  private trackLabel = el('span');
+  private trackSwitch = el('button.track.ctl', { type: 'button', role: 'switch' }, this.trackLabel, el('span.switch', { 'aria-hidden': 'true' }));
+  private wpmEl = el('output.wpm', {}, '0');
+  /** "/100" after the live WPM: the hardcore floor. */
+  private floorEl = el('span.wpm-floor');
+  /** Hardcore: the cord across the top of the centre column that burns while the rolling WPM is under the floor. */
+  private fuseEl = el('div.fuse', { 'aria-hidden': 'true' }, el('span.fuse-cord'));
+  /** Hardcore: the coral that closes in from the screen edges as the fuse runs out. */
+  private dangerEl = el('div.danger', { 'aria-hidden': 'true' });
+  private wpmCap = el('button.wpm-cap.ctl', { type: 'button' });
+  private spark = el('canvas.spark', { role: 'img' });
   private accEl = el('span.stat-value', {}, '100%');
   private streakEl = el('span.stat-value', {}, '0');
   private fingerFills = new Map<FingerKind, HTMLElement>();
@@ -102,6 +124,8 @@ export class App implements DrillHost {
     this.root = root;
     this.layout = getLayout(this.store.settings.layout);
     this.rolling = new RollingWpm(this.store.settings.window * 1000);
+    setUiLang(this.store.settings.ui);
+    document.documentElement.lang = this.store.settings.ui;
     this.build();
     this.keyboard.setLayout(this.layout);
     this.syncTrack();
@@ -119,6 +143,7 @@ export class App implements DrillHost {
         this.drill.held?.(this.held);
       },
       command: (command) => this.onCommand(command),
+      erase: (all, time) => this.onErase(all, time),
     });
     window.addEventListener('pointermove', () => {
       if (performance.now() - this.lastKeyAt > 400) this.setTyping(false);
@@ -166,11 +191,12 @@ export class App implements DrillHost {
       const proper = this.layout.properShift(code);
       const correct = proper === 'ShiftLeft' ? event.shiftLeft : event.shiftRight;
       this.store.recordShift(this.layout.id, correct);
-      if (!correct) this.say(`use the ${proper === 'ShiftLeft' ? 'left' : 'right'} shift for that key`, 'error');
+      if (!correct) this.say(t.next.useShift(proper === 'ShiftLeft' ? 'left' : 'right'), 'error');
     }
 
     this.lastHitAt = now;
     this.missedSince = false;
+    this.firstHitAt ??= now;
     this.touch(now);
     if (++this.hitsSinceBars >= 25) this.updateBars();
   }
@@ -181,11 +207,28 @@ export class App implements DrillHost {
     (this.setKeys[expected.stroke.code] ??= [0, 0, 0])[1]++;
     this.keyboard.wrong(event.code);
     this.missedSince = true;
+    if (this.hardcore) this.addTypo(event);
     this.touch(event.time);
   }
 
   setNext(hint: NextHint): void {
+    this.drillHint = hint;
+    this.showHint();
+  }
+
+  /** Puts the drill's next key on the board, the hands and the right rail, or Backspace while typos wait. */
+  private showHint(): void {
     if (this.frozen) return;
+    if (this.typos.length > 0) {
+      this.keyboard.setTargets([{ code: 'Backspace', role: 'erase' }]);
+      this.hands.setActive([{ finger: 'RP', row: rowOf('Backspace') }]);
+      this.nextEl.classList.remove('is-empty');
+      this.nextEl.classList.add('is-erase');
+      this.showNext(t.keyCaps.bksp, 'RP', rowOf('Backspace'), t.hardcore.erase(this.typos.length), `${t.finger('RP')}, ${t.keyCaps.bksp}`);
+      return;
+    }
+    this.nextEl.classList.remove('is-erase');
+    const hint = this.drillHint;
     const targets: { code: string; role: KeyRole }[] = [];
     const reaches: { finger: Finger; row: Row }[] = [];
     const { note } = hint;
@@ -199,10 +242,10 @@ export class App implements DrillHost {
         const proper = this.layout.properShift(note.stroke.code);
         targets.push({ code: proper, role: 'shift' });
         reaches.push({ finger: proper === 'ShiftLeft' ? 'LP' : 'RP', row: rowOf(proper) });
-        extra = `+ ${proper === 'ShiftLeft' ? 'left' : 'right'} shift`;
+        extra = t.next.plusShift(proper === 'ShiftLeft' ? 'left' : 'right');
       }
       if (hint.anchors?.length) {
-        extra = `hold ${hint.anchors.map((code) => this.layout.strokeLabel({ code, shift: false })).join(' ')}`;
+        extra = t.next.hold(hint.anchors.map((code) => this.layout.strokeLabel({ code, shift: false })).join(' '));
       }
     }
 
@@ -237,35 +280,69 @@ export class App implements DrillHost {
       .filter((summary) => fingerKind(summary.finger) !== 'thumb' && summary.n >= MIN_SAMPLES)
       .sort((a, b) => b.ms - a.ms)[0];
     const rows: (Node | string)[] = [
-      el('dt', {}, 'accuracy'),
+      el('dt', {}, t.result.accuracy),
       el('dd', {}, `${Math.round(stats.accuracy * 100)}%`),
-      el('dt', {}, 'best streak'),
+      el('dt', {}, t.result.bestStreak),
       el('dd', {}, String(stats.bestStreak)),
-      el('dt', {}, 'typing time'),
+      el('dt', {}, t.result.time),
       el('dd', {}, `${Math.round(stats.activeMs / 1000)} s`),
     ];
     if (slowest) {
       rows.push(
-        el('dt', {}, 'slowest finger'),
+        el('dt', {}, t.result.slowest),
         el(
           'dd',
           {},
           el('span.tok', { 'data-f': fingerKind(slowest.finger), style: '--size:1.125rem' }),
-          `${fingerName(slowest.finger)}, ${Math.round(intervalToWpm(slowest.ms))} wpm`,
+          t.result.slowestValue(slowest.finger, Math.round(intervalToWpm(slowest.ms))),
         ),
       );
     }
-    this.result.replaceChildren(
-      el('p.result-wpm', {}, String(Math.round(stats.wpm)), el('small', {}, 'wpm for this set')),
+    if (this.floor > 0) rows.push(el('dt', {}, t.hardcore.floor), el('dd', {}, t.hardcore.held(this.floor)));
+    this.openResult(
+      el('p.result-wpm', {}, String(Math.round(stats.wpm)), el('small', {}, t.result.forSet)),
       el('dl.result-list', {}, ...rows),
       // A set typed with tracking off: the page says it kept nothing.
-      ...(this.store.tracking ? [] : [el('p.result-unsaved', {}, 'not saved: tracking is off')]),
-      el('p.result-hint', {}, el('kbd', {}, 'enter'), 'next set'),
+      this.store.tracking ? null : el('p.result-unsaved', {}, t.result.unsaved),
     );
+  }
+
+  /**
+   * The fuse burnt out: the set ends here, failed. It stays out of the set history,
+   * which holds finished sets; its keys were already counted as they were typed.
+   */
+  private fail(): void {
+    const { stats } = this;
+    const floor = this.floor;
+    this.typos = [];
+    this.drillHint = { note: null };
+    this.showHint();
+    this.updateBars();
+    flash(this.root, 'is-failing', 900);
+    this.openResult(
+      el('p.result-failed', {}, t.hardcore.failed(floor)),
+      el('p.result-wpm.is-failed', {}, String(Math.round(stats.wpm)), el('small', {}, t.result.forSet)),
+      el(
+        'dl.result-list',
+        {},
+        el('dt', {}, t.hardcore.lasted),
+        el('dd', {}, `${Math.round(stats.activeMs / 1000)} s`),
+        el('dt', {}, t.result.accuracy),
+        el('dd', {}, `${Math.round(stats.accuracy * 100)}%`),
+        el('dt', {}, t.result.bestStreak),
+        el('dd', {}, String(stats.bestStreak)),
+      ),
+      el('p.result-unsaved', {}, t.hardcore.notSaved),
+    );
+  }
+
+  private openResult(...parts: (HTMLElement | null)[]): void {
+    this.result.replaceChildren(...parts.filter((part) => part !== null), el('p.result-hint', {}, el('kbd', {}, t.result.enter), t.result.nextSet));
     this.stage.append(this.result);
     this.resultOpen = true;
     this.syncRest();
     this.setTyping(false);
+    this.paintFuse(false, false);
   }
 
   lanes(): { edges: number[]; centres: number[] } {
@@ -310,7 +387,123 @@ export class App implements DrillHost {
 
   private onKey(event: KeyEvt): void {
     if (this.frozen || this.resultOpen) return;
+    // Hardcore: past a typo every key lands as one more, right or wrong, until Backspace clears them.
+    if (this.hardcore && this.typos.length > 0) {
+      this.stats.miss(event.time);
+      this.keyboard.wrong(event.code);
+      this.addTypo(event);
+      this.touch(event.time);
+      return;
+    }
     this.drill.key(event);
+  }
+
+  // ---------- hardcore ----------
+
+  /** Hardcore runs on the drills that can show a typo run: the highway, words and pairs. */
+  private get hardcore(): boolean {
+    return this.settings.hardcore && this.drill?.typos !== undefined;
+  }
+
+  /** The rolling WPM the set fails under, 0 when there is none. */
+  private get floor(): number {
+    return this.hardcore ? this.settings.floor : 0;
+  }
+
+  private addTypo(event: KeyEvt): void {
+    // A full run takes no more: the board still flashes the key.
+    if (this.typos.length >= MAX_TYPOS) return;
+    this.typos.push(this.layout.strokeLabel({ code: event.code, shift: event.shift }));
+    this.drill.typos?.(this.typos);
+    this.showHint();
+  }
+
+  private onErase(all: boolean, time: number): void {
+    if (this.frozen || this.resultOpen || this.typos.length === 0) return;
+    if (all) this.typos = [];
+    else this.typos.pop();
+    // Erasing is typing time: it counts toward the set's pace.
+    this.stats.pace(time);
+    this.drill.typos?.(this.typos);
+    this.showHint();
+    this.touch(time);
+  }
+
+  /** A fresh set: no typos, a full fuse, unlit until the first right key and the warm-up after it. */
+  private resetHardcore(): void {
+    this.typos = [];
+    this.fuse.reset();
+    this.firstHitAt = null;
+    this.drill?.typos?.(this.typos);
+    this.showHint();
+    this.paintFuse(false, false);
+  }
+
+  /** Burns or regrows the fuse for one frame of the rolling WPM, and fails the set once it is out. */
+  private burn(now: number, dt: number, wpm: number): void {
+    const { floor } = this;
+    const lit = floor > 0 && !this.resultOpen && this.firstHitAt !== null && now - this.firstHitAt >= WARMUP_MS;
+    if (lit && this.fuse.step(wpm, floor, dt)) {
+      this.fail();
+      return;
+    }
+    this.paintFuse(lit, lit && wpm < floor);
+  }
+
+  /**
+   * Hands the fuse to the stylesheet: `--life` (1 full, 0 out), `--danger` (0 to 1 as
+   * the end nears) and three attributes: whether there is a fuse and whether it is lit,
+   * whether the rolling WPM is under the floor, and how fast the heartbeat runs.
+   */
+  private paintFuse(lit: boolean, under: boolean): void {
+    const life = Math.round(this.fuse.life * 400) / 400;
+    if (life !== this.shownLife) {
+      this.shownLife = life;
+      this.root.style.setProperty('--life', String(life));
+      this.root.style.setProperty('--danger', dangerAmount(life).toFixed(3));
+    }
+    const fuse = this.floor > 0 ? (lit ? 'lit' : 'ready') : 'off';
+    const beat = under ? Math.max(1, dangerLevel(life)) : 0;
+    const state = `${fuse}|${under}|${beat}`;
+    if (state === this.fuseState) return;
+    this.fuseState = state;
+    const crossed = this.root.dataset.under !== String(under);
+    this.root.dataset.fuse = fuse;
+    this.root.dataset.under = String(under);
+    this.root.dataset.beat = String(beat);
+    // The floor rule on the sparkline turns coral the moment the rate crosses it.
+    if (crossed) this.drawSpark();
+  }
+
+  /** The hardcore switch and, when it is on, the floor. They join the options of every drill that takes part. */
+  private hardcoreOptions(): OptionGroup[] {
+    const { settings } = this;
+    const groups: OptionGroup[] = [
+      {
+        label: t.hardcore.label,
+        value: settings.hardcore ? 'on' : 'off',
+        choices: [
+          { value: 'off', label: t.line.off },
+          { value: 'on', label: t.line.on },
+        ],
+        set: (value) => {
+          this.store.update({ hardcore: value === 'on' });
+          this.newSet();
+        },
+      },
+    ];
+    if (settings.hardcore) {
+      groups.push({
+        label: t.hardcore.floor,
+        value: String(settings.floor),
+        choices: FLOORS.map((floor) => ({ value: String(floor), label: floor === 0 ? t.hardcore.noFloor : String(floor) })),
+        set: (value) => {
+          this.store.update({ floor: Number(value) as Floor });
+          this.newSet();
+        },
+      });
+    }
+    return groups;
   }
 
   private onCommand(command: Command): void {
@@ -333,7 +526,9 @@ export class App implements DrillHost {
     this.lastHitAt = null;
     this.missedSince = false;
     this.previousChar = '';
+    this.typos = [];
     this.drill.restart();
+    this.resetHardcore();
     this.setTyping(false);
     this.updateReadouts();
   }
@@ -384,7 +579,9 @@ export class App implements DrillHost {
     this.stats = new SetStats();
     this.setKeys = {};
     this.lastHitAt = null;
+    this.typos = [];
     this.drill.mount(this.stage);
+    this.resetHardcore();
     this.syncRest();
     this.renderOptions();
     this.updateReadouts();
@@ -400,19 +597,34 @@ export class App implements DrillHost {
     this.renderOptions();
   }
 
-  private setLang(lang: Lang): void {
-    this.store.update({ lang });
-    this.syncLang();
-    this.newSet();
-    this.renderOptions();
+  private setUi(lang: Lang): void {
+    if (lang === this.settings.ui) return;
+    this.store.update({ ui: lang });
+    this.applyUi();
+    // A drill writes its own text when it mounts, so the open one is mounted again. The set in progress restarts.
+    this.setDrill(this.drill.id, true);
+    this.updateBars();
   }
 
-  private syncLang(): void {
-    for (const [id, button] of this.langButtons) {
-      const active = id === this.settings.lang;
+  /** Rewrites every fixed string in the profile's interface language. Drill content follows when the drill mounts. */
+  private applyUi(): void {
+    const { ui } = this.settings;
+    setUiLang(ui);
+    document.documentElement.lang = ui;
+    for (const write of this.labels) write();
+    this.layoutSelect.relabel(
+      t.top.layout,
+      LAYOUTS.map((layout) => t.layouts[layout.id]),
+    );
+    this.profileMenu.refresh();
+    // The board's fixed legends (shift, enter, space) are interface strings too.
+    this.keyboard.setLayout(this.layout);
+    for (const [id, button] of this.uiButtons) {
+      const active = id === ui;
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     }
+    this.syncTrack();
   }
 
   private setTrack(on: boolean): void {
@@ -426,18 +638,16 @@ export class App implements DrillHost {
   private syncTrack(): void {
     const on = this.store.tracking;
     this.trackSwitch.setAttribute('aria-checked', String(on));
-    this.trackSwitch.title = on ? 'sets and key numbers are saved' : 'nothing is saved while this is off';
+    this.trackSwitch.title = on ? t.top.trackingOn : t.top.trackingOff;
     this.root.dataset.track = String(on);
   }
 
-  /** Another profile became active: load its layout, language and numbers. The open tab stays. */
+  /** Another profile became active: load its layout, languages and numbers. The open tab stays. */
   private applyProfile(): void {
     const { settings } = this;
     this.layout = getLayout(settings.layout);
-    this.keyboard.setLayout(this.layout);
+    this.applyUi();
     this.layoutSelect.set(this.layout.id);
-    this.syncLang();
-    this.syncTrack();
     this.rolling.windowMs = settings.window * 1000;
     this.rolling.reset();
     this.samples = [];
@@ -448,7 +658,8 @@ export class App implements DrillHost {
 
   // ---------- rendering ----------
 
-  private showNext(label: string, finger: Finger, row: Row, extra: string): void {
+  /** `named` replaces the finger-and-row line, for a key that is not a letter. */
+  private showNext(label: string, finger: Finger, row: Row, extra: string, named?: string): void {
     const kind = fingerKind(finger);
     this.nextCap.textContent = label === ' ' ? '' : label;
     this.nextCap.dataset.f = kind;
@@ -456,7 +667,7 @@ export class App implements DrillHost {
     // Finger and row are also spelled out, so neither color nor shape is ever the only cue.
     this.nextFinger.replaceChildren(
       el('span.tok', { 'data-f': kind, 'data-row': row }),
-      label === ' ' ? 'thumb, space' : `${fingerName(finger)}, ${row} row`,
+      named ?? (label === ' ' ? t.next.space : t.next.finger(finger, row)),
     );
     this.nextExtra.textContent = extra;
   }
@@ -486,7 +697,7 @@ export class App implements DrillHost {
       const fill = this.fingerFills.get(kind)!;
       const speed = speeds.get(kind)!;
       fill.style.setProperty('--v', String(speed / best));
-      fill.parentElement!.title = speed > 0 ? `${kind}: ${Math.round(speed)} wpm` : `${kind}: not measured yet`;
+      fill.parentElement!.title = t.rail.bar(kind, speed > 0 ? Math.round(speed) : null);
     }
   }
 
@@ -496,7 +707,7 @@ export class App implements DrillHost {
     // A drill that charts single keys turns the board's keys into buttons.
     const { drill } = this;
     this.keyboard.setPicker(drill.pickKey ? (code) => drill.pickKey?.(code) : null, drill.pickedKey?.() ?? null);
-    const groups: OptionGroup[] = this.drill.options();
+    const groups: OptionGroup[] = [...this.drill.options(), ...(this.drill.typos ? this.hardcoreOptions() : [])];
     const groupEls = groups.map((group) =>
       el(
         'div.opt',
@@ -510,6 +721,8 @@ export class App implements DrillHost {
             const button = el(on ? 'button.seg-btn.ctl.is-on' : 'button.seg-btn.ctl', { type: 'button', 'aria-pressed': String(on) }, choice.label);
             button.addEventListener('click', () => {
               group.set(choice.value);
+              // An option that brings new text leaves no typo behind and starts a full fuse.
+              this.resetHardcore();
               button.blur();
               this.renderOptions();
             });
@@ -519,27 +732,33 @@ export class App implements DrillHost {
       ),
     );
     const hints = el('div.hints');
-    if (this.drill.id !== 'stats') hints.append(el('span', {}, el('kbd', {}, 'esc'), 'new text'));
-    if (this.drill.id === 'highway' && this.settings.tempoLock) hints.append(el('span', {}, el('kbd', {}, 'up / down'), 'tempo'));
+    if (this.drill.id !== 'stats') hints.append(el('span', {}, el('kbd', {}, t.options.esc), t.options.newText));
+    if (this.drill.id === 'highway' && this.settings.tempoLock) hints.append(el('span', {}, el('kbd', {}, t.options.arrows), t.options.tempo));
+    if (this.hardcore) hints.append(el('span', {}, el('kbd', {}, t.hardcore.ctrlBksp), t.hardcore.eraseAll));
     // Say plainly what the selected layout changes, so nothing is filtered behind the typist's back.
     const notes: string[] = [];
-    if (this.layout.note) notes.push(this.layout.note);
-    if (this.settings.lang === 'fr' && !this.layout.canType(String.fromCharCode(0xe9))) {
-      notes.push('accented words are left out: this layout has no accent keys');
-    }
+    const layoutNote = t.layoutNotes[this.layout.id];
+    if (layoutNote) notes.push(layoutNote);
+    if (this.settings.lang === 'fr' && !this.layout.canType(String.fromCharCode(0xe9))) notes.push(t.options.noAccents);
     const note = notes.length > 0 ? el('p.opt-note', {}, notes.join(', ')) : null;
-    this.optionsEl.replaceChildren(el('div.opt-groups', {}, ...groupEls, note), hints);
+    // The key hints close the last line of options. A note takes its own line under them.
+    this.optionsEl.replaceChildren(el('div.opt-groups', {}, ...groupEls, hints.childElementCount > 0 ? hints : null, note));
     this.wpmCap.textContent = this.captionText();
+    const { floor } = this;
+    this.floorEl.textContent = floor > 0 ? `/${floor}` : '';
+    this.floorEl.title = floor > 0 ? t.hardcore.floorTitle(floor) : '';
   }
 
   private captionText(): string {
-    return `wpm ${String.fromCharCode(0xb7)} rolling ${this.settings.window} s`;
+    return t.rail.caption(this.settings.window);
   }
 
   private drawSpark(): void {
     const { ctx, width, height } = fitCanvas(this.spark);
     ctx.clearRect(0, 0, width, height);
     const points = this.samples;
+
+    const { floor } = this;
 
     // A few seconds of data are needed before a trace says anything. Until then
     // the slot shows an empty track, so it never holds an orphan stub.
@@ -553,9 +772,22 @@ export class App implements DrillHost {
       return;
     }
 
-    // Scale to the recent range so a steady pace still shows its small swings.
-    const low = Math.max(0, Math.min(...points) - 10);
-    const peak = Math.max(low + 20, ...points) + 4;
+    // Scale to the recent range so a steady pace still shows its small swings. A hardcore floor stays in view.
+    const low = Math.max(0, Math.min(...points, floor > 0 ? floor - 6 : Infinity) - 10);
+    const peak = Math.max(low + 20, ...points, floor) + 4;
+    if (floor > 0) {
+      // The floor: a dashed rule the trace must stay above, coral while it is under.
+      const y = Math.round(height - 1.5 - ((floor - low) / (peak - low)) * (height - 3)) + 0.5;
+      ctx.save();
+      ctx.strokeStyle = this.root.dataset.under === 'true' ? css('--error') : css('--line-strong');
+      ctx.lineWidth = 1;
+      ctx.setLineDash([3, 3]);
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(width, y);
+      ctx.stroke();
+      ctx.restore();
+    }
     ctx.strokeStyle = css('--muted');
     ctx.lineWidth = 1.25;
     ctx.lineJoin = 'round';
@@ -584,6 +816,7 @@ export class App implements DrillHost {
         this.shownText = text;
         this.wpmEl.textContent = text;
       }
+      this.burn(now, dt, value);
       if (now - this.sampledAt >= SPARK_EVERY_MS) {
         this.sampledAt = now;
         this.samples.push(value);
@@ -595,10 +828,21 @@ export class App implements DrillHost {
     requestAnimationFrame(this.frame);
   };
 
+  /** Sets a fixed string now, and again whenever the interface language changes. With `attr` it goes in that attribute. */
+  private label<T extends Element>(node: T, text: () => string, attr?: string): T {
+    const write = (): void => {
+      if (attr) node.setAttribute(attr, text());
+      else node.textContent = text();
+    };
+    this.labels.push(write);
+    write();
+    return node;
+  }
+
   private build(): void {
-    const tabs = el('nav.tabs', { 'aria-label': 'drills' });
+    const tabs = this.label(el('nav.tabs'), () => t.top.drills, 'aria-label');
     for (const id of DRILL_IDS) {
-      const tab = el('button.tab.ctl', { type: 'button' }, id);
+      const tab = this.label(el('button.tab.ctl', { type: 'button' }), () => t.drills[id]);
       tab.addEventListener('click', () => {
         tab.blur();
         this.setDrill(id);
@@ -608,38 +852,47 @@ export class App implements DrillHost {
     }
 
     this.layoutSelect = new Select(
-      'keyboard layout',
-      LAYOUTS.map((layout) => ({ value: layout.id, label: layout.name })),
+      t.top.layout,
+      LAYOUTS.map((layout) => ({ value: layout.id, label: t.layouts[layout.id] })),
       this.layout.id,
       (value) => this.setLayout(value),
     );
     this.profileMenu = new ProfileMenu(this.store, () => this.applyProfile());
+    this.label(this.trackLabel, () => t.top.tracking);
     this.trackSwitch.addEventListener('click', () => {
       this.trackSwitch.blur();
       this.setTrack(!this.store.tracking);
     });
 
-    const lang = el('div.lang', { role: 'group', 'aria-label': 'practice language' });
-    (['fr', 'en'] as Lang[]).forEach((id, i) => {
-      const active = id === this.settings.lang;
-      const button = el(active ? 'button.lang-btn.ctl.is-active' : 'button.lang-btn.ctl', { type: 'button', 'aria-pressed': String(active) }, id);
+    // The interface language. The language of the practice text is a drill option.
+    const lang = this.label(el('div.lang', { role: 'group' }), () => t.top.interfaceLanguage, 'aria-label');
+    LANGS.forEach((id, i) => {
+      const active = id === this.settings.ui;
+      const button = el(
+        active ? 'button.lang-btn.ctl.is-active' : 'button.lang-btn.ctl',
+        { type: 'button', lang: id, title: LANG_NAMES[id], 'aria-label': LANG_NAMES[id], 'aria-pressed': String(active) },
+        id,
+      );
       button.addEventListener('click', () => {
         button.blur();
-        this.setLang(id);
+        this.setUi(id);
       });
-      this.langButtons.set(id, button);
+      this.uiButtons.set(id, button);
       if (i > 0) lang.append(el('span', { 'aria-hidden': 'true' }, '/'));
       lang.append(button);
     });
 
-    const fingers = el('section.fingers', {}, el('h2.fingers-title', {}, 'fingers'));
+    const fingers = el('section.fingers', {}, this.label(el('h2.fingers-title'), () => t.rail.fingers));
     for (const kind of FINGER_KINDS) {
       const fill = el('div.finger-fill', { 'data-f': kind });
       this.fingerFills.set(kind, fill);
-      fingers.append(el('div.finger-row', {}, el('span', {}, kind), el('div.finger-track', {}, fill)));
+      fingers.append(el('div.finger-row', {}, this.label(el('span'), () => t.kinds[kind]), el('div.finger-track', {}, fill)));
     }
 
-    this.nextEl.append(el('p.next-label', {}, 'next key'), this.nextCap, this.nextFinger, this.nextExtra);
+    this.nextEl.append(this.label(el('p.next-label'), () => t.next.title), this.nextCap, this.nextFinger, this.nextExtra);
+    this.label(this.wpmEl, () => t.rail.wpm, 'aria-label');
+    this.label(this.wpmCap, () => t.rail.window, 'title');
+    this.label(this.spark, () => t.rail.spark, 'aria-label');
 
     // The caption doubles as the control for the rolling window: 5, 10 or 30 seconds.
     this.wpmCap.addEventListener('click', () => {
@@ -655,25 +908,30 @@ export class App implements DrillHost {
       el(
         'main.cockpit',
         {},
-        el(
-          'aside.rail-left',
-          { 'aria-label': 'speed and accuracy' },
-          this.wpmEl,
-          this.wpmCap,
-          this.spark,
+        this.label(
           el(
-            'div.pair',
+            'aside.rail-left',
             {},
-            el('div.stat', {}, el('span.stat-label', {}, 'acc'), this.accEl),
-            el('div.pair-rule'),
-            el('div.stat', {}, el('span.stat-label', {}, 'streak'), this.streakEl),
+            el('div.wpm-line', {}, this.wpmEl, this.floorEl),
+            this.wpmCap,
+            this.spark,
+            el(
+              'div.pair',
+              {},
+              el('div.stat', {}, this.label(el('span.stat-label'), () => t.rail.accuracy), this.accEl),
+              el('div.pair-rule'),
+              el('div.stat', {}, this.label(el('span.stat-label'), () => t.rail.streak), this.streakEl),
+            ),
+            fingers,
+            this.label(el('p.rail-note'), () => t.rail.untracked),
           ),
-          fingers,
-          el('p.rail-note', {}, 'tracking is off: nothing you type is saved'),
+          () => t.rail.region,
+          'aria-label',
         ),
-        el('section.centre', { 'aria-label': 'drill' }, this.stage, this.keyboard.root, el('div.foot', {}, this.optionsEl, this.noteEl)),
-        el('aside.rail-right', { 'aria-label': 'finger to use' }, this.hands.root, this.nextEl),
+        this.label(el('section.centre', {}, this.stage, this.keyboard.root, el('div.foot', {}, this.optionsEl, this.noteEl), this.fuseEl), () => t.options.region, 'aria-label'),
+        this.label(el('aside.rail-right', {}, this.hands.root, this.nextEl), () => t.next.region, 'aria-label'),
       ),
+      this.dangerEl,
     );
   }
 }

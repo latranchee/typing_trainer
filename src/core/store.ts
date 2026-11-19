@@ -1,7 +1,10 @@
 import type { Finger } from './fingers';
 import { FINGERS } from './fingers';
+import type { Floor } from './hardcore';
+import { FLOORS } from './hardcore';
 import type { HistoryEntry } from './history';
 import { compactHistory } from './history';
+import { preferredLang } from './i18n';
 import type { Layout, LayoutId } from './layouts';
 import { LAYOUT_IDS } from './layouts';
 import { MIN_SAMPLES } from './metrics';
@@ -9,10 +12,14 @@ import { MIN_SAMPLES } from './metrics';
 export type DrillId = 'highway' | 'words' | 'pairs' | 'anchors' | 'stats';
 export type Lang = 'en' | 'fr';
 export const DRILL_IDS: DrillId[] = ['highway', 'words', 'pairs', 'anchors', 'stats'];
+export const LANGS: Lang[] = ['fr', 'en'];
 
 export interface Settings {
   layout: LayoutId;
+  /** Language of the practice text. */
   lang: Lang;
+  /** Language of the interface. */
+  ui: Lang;
   drill: DrillId;
   /** Rolling WPM window, seconds. */
   window: 5 | 10 | 30;
@@ -28,11 +35,16 @@ export interface Settings {
   anchorCount: 0 | 1 | 2 | 3;
   /** When false nothing the typist does is saved: no key numbers, no sets. */
   track: boolean;
+  /** Hardcore: a wrong key sticks until Backspace erases it. */
+  hardcore: boolean;
+  /** Hardcore only: the rolling WPM the set fails under. 0 means no floor. */
+  floor: Floor;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
   layout: 'ca-fr',
   lang: 'en',
+  ui: 'en',
   drill: 'highway',
   window: 10,
   highwaySource: 'words',
@@ -45,6 +57,8 @@ export const DEFAULT_SETTINGS: Settings = {
   anchorFinger: 'rotate',
   anchorCount: 3,
   track: true,
+  hardcore: false,
+  floor: 0,
 };
 
 export interface KeyStat {
@@ -117,17 +131,24 @@ const setsKey = (id: string): string => `auriculaire:v2:sets:${id}`;
 const SMOOTHING = 0.2;
 export const NAME_LIMIT = 20;
 const FIRST_PROFILE = 'main';
+/** What a first profile is called when nothing was saved before, by interface language. */
+const FIRST_NAME: Record<Lang, string> = { en: FIRST_PROFILE, fr: 'principal' };
 
 const emptyStats = (): LayoutStats => ({ keys: {}, pairs: {}, shiftOk: 0, shiftBad: 0 });
 const smooth = (previous: number, sample: number, count: number): number =>
   count <= 1 ? sample : previous + (sample - previous) * SMOOTHING;
 const cleanName = (name: string): string => name.replace(/\s+/g, ' ').trim().slice(0, NAME_LIMIT);
 
-function cleanSettings(saved: Partial<Settings> | undefined): Settings {
-  const settings = { ...DEFAULT_SETTINGS, ...saved };
+/** Options saved before the interface had a language take `preferred`, the browser's. */
+function cleanSettings(saved: Partial<Settings> | undefined, preferred: Lang): Settings {
+  const settings = { ...DEFAULT_SETTINGS, ui: preferred, ...saved };
   if (!LAYOUT_IDS.includes(settings.layout)) settings.layout = DEFAULT_SETTINGS.layout;
   if (!DRILL_IDS.includes(settings.drill)) settings.drill = DEFAULT_SETTINGS.drill;
+  if (!LANGS.includes(settings.lang)) settings.lang = DEFAULT_SETTINGS.lang;
+  if (!LANGS.includes(settings.ui)) settings.ui = preferred;
   settings.track = settings.track !== false;
+  settings.hardcore = settings.hardcore === true;
+  if (!FLOORS.includes(settings.floor)) settings.floor = DEFAULT_SETTINGS.floor;
   return settings;
 }
 
@@ -148,13 +169,14 @@ export class Store {
   private sets: HistoryEntry[];
   private timer: ReturnType<typeof setTimeout> | null = null;
 
-  constructor(storage: KeyValueStore | null = browserStorage()) {
+  /** `preferred` is the language a typist with nothing saved starts in: the browser's, unless a test names one. */
+  constructor(storage: KeyValueStore | null = browserStorage(), preferred: Lang = preferredLang()) {
     this.storage = storage;
     const saved = this.read<Partial<Data>>(META_KEY);
     const profiles = saved?.v === 2 && Array.isArray(saved.profiles) ? saved.profiles.filter((profile) => profile?.id && profile.name) : [];
     if (profiles.length > 0) {
       for (const profile of profiles) {
-        profile.settings = cleanSettings(profile.settings);
+        profile.settings = cleanSettings(profile.settings, preferred);
         profile.layouts ??= {};
       }
       this.data = { v: 2, active: profiles.some((profile) => profile.id === saved!.active) ? saved!.active! : profiles[0].id, profiles };
@@ -167,7 +189,10 @@ export class Store {
     // Its own key is only read, never written, so the old numbers stay where they were.
     const legacy = this.read<LegacyData>(LEGACY_KEY);
     const carried = legacy?.v === 1 ? legacy : null;
-    this.current = { id: FIRST_PROFILE, name: FIRST_PROFILE, settings: cleanSettings(carried?.settings), layouts: carried?.profiles ?? {} };
+    // Nothing saved at all: the first profile starts in the browser's language, interface and practice text alike.
+    this.current = carried
+      ? { id: FIRST_PROFILE, name: FIRST_PROFILE, settings: cleanSettings(carried.settings, preferred), layouts: carried.profiles ?? {} }
+      : { id: FIRST_PROFILE, name: FIRST_NAME[preferred], settings: cleanSettings({ lang: preferred }, preferred), layouts: {} };
     this.data = { v: 2, active: this.current.id, profiles: [this.current] };
     this.sets = Array.isArray(carried?.history) ? carried.history : [];
     if (carried) {
