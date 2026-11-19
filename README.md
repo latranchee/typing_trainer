@@ -108,7 +108,7 @@ Hardcore has sounds of its own, synthesized in the page: `heartbeat` in the sett
 
 `hardcore` is a setting of the highway, words and pairs drills. A wrong key sticks: it lands in the text in coral, and every key after it lands too, until `backspace` has erased them all (`ctrl` + `backspace` erases the whole run). Only then does the right key count. The longer you type past a typo, the more you erase, as in real typing.
 
-With hardcore on, `min wpm` sets a floor of 40 to 120. A fuse across the top of the drill is lit shortly after the first right key. While the rolling WPM is under the floor it burns in from both ends, faster the further under; above the floor it grows back slowly.
+With hardcore on, `min wpm` sets a floor of 40 to 120. A fuse is lit shortly after the first right key. While the rolling WPM is under the floor it burns, faster the further under; above the floor it grows back slowly. On the highway the fuse is drawn as a cord across the top of the road, burning in from both ends. In the words and pairs drills it is not drawn: the WPM number turning coral, the heartbeat and the coral closing in from the screen edges tell how it stands.
 
 `difficulty` sets how hard the fuse is, from 1 to 3. It shows once a `min wpm` is picked and starts at 2. At 1 there is the fuse and nothing else. At 2 and 3 a wrong key burns a piece of it at once, part of whatever burns never grows back (the fuse is scarred shorter, down to about a third of its length), and the floor climbs while you hold it.
 

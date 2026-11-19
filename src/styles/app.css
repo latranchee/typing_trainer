@@ -680,8 +680,9 @@ p {
 .settings {
   position: absolute;
   top: 2.25rem;
-  /* It takes the gap between the board and the rail as well, and ends with the rail. */
-  left: -0.75rem;
+  /* The board sits in the middle of what flanks it: the list starts as far from the last key cap
+     as the first cap is from the left rail, 3.3125rem, and ends with the rail. */
+  left: 1.125rem;
   right: 0;
   opacity: 0;
   translate: 0.5rem 0;
@@ -771,12 +772,15 @@ p {
 .set-stack > .set-note {
   grid-column: auto;
 }
-/* The segments of the list are a touch tighter than their token, so six choices fit one line. */
+/* The segments of the list are tighter than their token, so six choices fit one line of it.
+   A choice of one character keeps the width of a small key. */
 .settings .seg {
   flex-wrap: wrap;
 }
 .settings .seg-btn {
-  padding-inline: 0.4375rem;
+  min-width: 1.5rem;
+  padding-inline: 0.3125rem;
+  text-align: center;
 }
 /* The dropdowns of the top strip at the size of the segments around them. A long list scrolls. */
 .settings .select {
@@ -792,6 +796,18 @@ p {
 .settings .select-menu {
   right: auto;
   left: 0;
+}
+/* The profile popover is wider than the room beside its button: it hangs from its line
+   instead, flush with the right edge of the list. */
+.set-row:has(> .profile) {
+  position: relative;
+}
+.settings .profile {
+  position: static;
+}
+.settings .profile-menu {
+  left: auto;
+  right: 0;
 }
 .settings ul.select-menu {
   max-height: 17rem;
@@ -1845,7 +1861,9 @@ p {
   opacity: 0;
   transition: opacity var(--hover-out) var(--ease-out);
 }
-.app:is([data-fuse='ready'], [data-fuse='lit']):not([data-rest='true']) .fuse {
+/* The cord is drawn on the highway alone, where it caps the lanes. Over a block of text it read as
+   a stray rule: there the numeral, the heartbeat and the screen edges tell how the fuse stands. */
+.app[data-drill='highway']:is([data-fuse='ready'], [data-fuse='lit']):not([data-rest='true']) .fuse {
   opacity: 1;
 }
 .fuse-track,
@@ -2447,6 +2465,10 @@ p {
   }
   .settings .select-btn {
     min-width: 0;
+  }
+  /* The list is as wide as the page here: its segments keep room for a thumb. */
+  .settings .seg-btn {
+    padding-inline: 0.4375rem;
   }
   .next {
     margin-top: 0;

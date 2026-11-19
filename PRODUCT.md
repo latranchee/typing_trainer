@@ -56,6 +56,7 @@ Confirmed by the user:
 - Fingers to train (2026-11-19, his words: "a mode where we specify which finger to train more and adjust words selection based on that"). Eight fingers to light, each hand apart, so a whole hand can be retrained. The text leans toward the lit fingers' letters and the anchor drill takes them in turn. It replaces the pairs drill's own focus and the anchor drill's finger option.
 - Glow (2026-11-19, his words: "shimmer or glow, particles. Very subtle. When we're doing good. Maybe on the finger that's the fastest or whatever"). Built on one rule: what is beating its own average glows in its own color. The WPM number over the pace of the last ten sets, a finger ahead of its saved pace (its bar and its fingertip), the streak counter from 25 keys, with a spark or two off each key hit on a long streak.
 - Alignment fixes he pointed at (2026-11-19): the finger bars of the left rail now run level with their names, and a letter in a note sits in the middle of its shape.
+- Two more after he tried the settings list (2026-11-19): the list sits as far from the keyboard as the left rail does, and the fuse's cord is drawn on the highway only (in the text drills he read it as a stray line at the top).
 
 Hard constraint: a browser cannot see which finger pressed a key. The trainer may only claim what key events can prove (which key, which Shift, which keys are held, timing).
 
