@@ -25,7 +25,7 @@ import type { Command, KeyEvt } from '../core/input';
 import { attachInput } from '../core/input';
 import type { Layout } from '../core/layouts';
 import { getLayout, LAYOUTS } from '../core/layouts';
-import { intervalToWpm, MIN_SAMPLES, RollingWpm, SetStats } from '../core/metrics';
+import { intervalToWpm, MIN_SAMPLES, PairWatch, RollingWpm, SetStats } from '../core/metrics';
 import type { Board, Row } from '../core/physical';
 import { boardOf, BOARDS } from '../core/physical';
 import { dayStreak, fingerGain, HOT_BASE, isAhead, isHot, setVerdict, Streak, STREAK_SHOWN_FROM, streakHeat, streakKey } from '../core/rewards';
@@ -81,8 +81,6 @@ export interface ReadoutFixture {
   next: { code: string; label: string; finger: Finger };
 }
 
-const isLetter = (char: string): boolean => char.toLowerCase() !== char.toUpperCase();
-
 export class App implements DrillHost {
   readonly store = new Store();
   layout: Layout;
@@ -99,8 +97,8 @@ export class App implements DrillHost {
   private lastHitAt: number | null = null;
   private lastKeyAt = 0;
   private missedSince = false;
-  private previousChar = '';
-  private previousCharAt = 0;
+  /** The transitions between letters: their times, and the ones a wrong key broke. */
+  private pairs = new PairWatch();
   private hitsSinceBars = 0;
 
   private shownWpm = 0;
@@ -275,8 +273,9 @@ export class App implements DrillHost {
     return this.store.settings;
   }
 
+  /** Read as each set is drawn: the transitions are the typist's as they stand then, and do not move under a set in progress. */
   get bias(): Bias {
-    return { weakness: this.weakness, focus: new Set(this.settings.focus) };
+    return { weakness: this.weakness, focus: new Set(this.settings.focus), transitions: this.store.transitions(this.layout.id) };
   }
 
   // ---------- DrillHost ----------
@@ -297,12 +296,9 @@ export class App implements DrillHost {
     }
     if (note.last) {
       this.rolling.add(now);
-      const pairGap = now - this.previousCharAt;
-      if (clean && this.previousChar && pairGap < PAUSE_MS && isLetter(note.char) && isLetter(this.previousChar)) {
-        this.store.recordPair(this.layout.id, (this.previousChar + note.char).toLowerCase(), pairGap);
-      }
-      this.previousChar = note.char;
-      this.previousCharAt = now;
+      // A transition is a success or a failure, never both: one with a wrong key in it was counted when the key was missed.
+      const sample = this.pairs.complete(note.char, now, clean);
+      if (sample && this.measuresPairs) this.store.recordPair(this.layout.id, sample.pair, sample.ms);
     }
 
     // The side of Shift is one of the few things about fingers a keyboard can report.
@@ -329,6 +325,9 @@ export class App implements DrillHost {
   miss(expected: Note, event: KeyEvt): void {
     this.stats.miss(event.time);
     this.store.recordError(this.layout.id, expected.stroke.code);
+    // The first letter was typed and the next one missed: the transition failed. However many wrong keys follow, it fails once.
+    const failed = this.pairs.miss(expected.char, event.time);
+    if (failed && this.measuresPairs) this.store.recordPairError(this.layout.id, failed);
     (this.setKeys[expected.stroke.code] ??= [0, 0, 0])[1]++;
     this.keyboard.wrong(event.code);
     this.missedSince = true;
@@ -336,6 +335,11 @@ export class App implements DrillHost {
     this.endStreak(true);
     this.touch(event.time);
     if (this.hardcore) this.wrongKey(event);
+  }
+
+  /** Transitions are measured on text. The anchor drill's taps are isolation work, not transitions of a language. */
+  private get measuresPairs(): boolean {
+    return this.drill.id !== 'anchors';
   }
 
   setNext(hint: NextHint): void {
@@ -445,6 +449,9 @@ export class App implements DrillHost {
         ),
       );
     }
+    // After a set of letter groups: the three transitions that need the most work now, which the next sets lean on.
+    const weakPairs = this.typedGroups ? store.weakestPairs(layout.id, 3) : [];
+    if (weakPairs.length > 0) rows.push(el('dt', {}, t.result.weakPairs), el('dd', {}, weakPairs.join(' · ')));
     const { floor, run } = this;
     if (floor > 0) {
       // A cleared set joins the run, and the run's numbers are banked at once.
@@ -473,6 +480,11 @@ export class App implements DrillHost {
     );
     this.countUp(figure, wpm);
     if (isBest) this.cheer();
+  }
+
+  /** True when the set's text was letter groups: the pairs drill, or the highway sending them down. */
+  private get typedGroups(): boolean {
+    return this.drill.id === 'pairs' || (this.drill.id === 'highway' && this.settings.highwaySource === 'pairs');
   }
 
   /** Runs a figure up from zero to its value. Under reduced motion it is simply there. */
@@ -1048,7 +1060,8 @@ export class App implements DrillHost {
     this.setKeys = {};
     this.lastHitAt = null;
     this.missedSince = false;
-    this.previousChar = '';
+    // No transition runs from one set into the next.
+    this.pairs.reset();
     this.typos = [];
     // The break between two sets is not typing: the rolling rate starts over with the new text.
     this.rolling.reset();
@@ -1107,6 +1120,7 @@ export class App implements DrillHost {
     this.stats = new SetStats();
     this.setKeys = {};
     this.lastHitAt = null;
+    this.pairs.reset();
     this.typos = [];
     this.rolling.reset();
     this.drill.mount(this.stage);

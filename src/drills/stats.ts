@@ -4,6 +4,7 @@ import type { HistoryEntry, Metric, Point, Subject } from '../core/history';
 import { rolling, series, trend } from '../core/history';
 import { fingerName, fingerShort, t } from '../core/i18n';
 import { intervalToWpm, MIN_SAMPLES } from '../core/metrics';
+import { pairAccuracy, pairErrors } from '../core/store';
 import { css, el, fitCanvas } from '../ui/dom';
 import type { Drill, DrillHost, OptionGroup } from './types';
 
@@ -305,11 +306,21 @@ export class StatsView implements Drill {
           el('td', {}, percent(stat.n / (stat.n + stat.err))),
         ),
       );
-    const slowPairs = Object.entries(stats.pairs)
-      .filter(([, stat]) => stat.n >= MIN_SAMPLES)
-      .sort(([, a], [, b]) => b.ms - a.ms)
+    // Ranked by how much each transition needs work, its time against the others and its misses together.
+    // Transitions measured too few times stay out of the list; the adaptive pairs still draw them to measure them.
+    const slowPairs = store
+      .rankedPairs(layout.id)
       .slice(0, LIST_ROWS)
-      .map(([pair, stat]) => el('tr', {}, el('td', {}, pair), el('td', {}, wpm(stat.ms)), el('td.stats-dim', {}, String(stat.n))));
+      .map(({ pair, stat }) =>
+        el(
+          'tr',
+          {},
+          el('td', {}, pair),
+          el('td', {}, String(Math.round(stat.ms))),
+          el('td', {}, percent(pairAccuracy(stat))),
+          el('td.stats-dim', {}, String(stat.n + pairErrors(stat))),
+        ),
+      );
 
     const lists = [el('div', {}, el('h2', {}, t.stats.byFinger), fingerTable)];
     if (slowKeys.length > 0) {
@@ -336,7 +347,7 @@ export class StatsView implements Drill {
           el(
             'table.stats-table',
             {},
-            el('thead', {}, el('tr', {}, el('th', {}, heads.pair), el('th', {}, t.stats.wpm), el('th', {}, heads.seen))),
+            el('thead', {}, el('tr', {}, el('th', {}, heads.pair), el('th', {}, heads.ms), el('th', {}, heads.acc), el('th', {}, heads.seen))),
             el('tbody', {}, ...slowPairs),
           ),
         ),

@@ -89,7 +89,7 @@ export class HighwayDrill implements Drill {
     const { layout, settings, bias } = this.host;
     const text =
       settings.highwaySource === 'pairs'
-        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize }, bias)
+        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, training: settings.pairTraining }, bias)
         : settings.highwaySource === 'sentences'
           ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias)
           : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias);

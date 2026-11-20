@@ -2,6 +2,7 @@ import { PAIRS, SENTENCES, TRIPLES, WORDS } from './corpus';
 import type { Finger } from './fingers';
 import { fingerHand, fingerKind, FINGERS } from './fingers';
 import type { Layout, Stroke } from './layouts';
+import { MIN_SAMPLES } from './metrics';
 import { HOME_CODE, letterRowCodes } from './physical';
 import type { Lang } from './store';
 
@@ -22,7 +23,20 @@ export const DEFAULT_FOCUS: TypingFinger[] = ['LP', 'LR', 'RR', 'RP'];
 export interface Bias {
   weakness: Weakness;
   focus: ReadonlySet<Finger>;
+  /** The typist's measured transitions, for the adaptive letter groups. Without them the groups are drawn by frequency alone. */
+  transitions?: Transitions;
 }
+
+/** What the store knows of the typist's transitions, each a pair of letters such as `st`. */
+export interface Transitions {
+  /** How much a transition needs work, 0 to 1. 0 as well for one measured too few times to tell. */
+  weakness(pair: string): number;
+  /** Clean transitions measured. */
+  samples(pair: string): number;
+}
+
+/** How the letter groups are drawn: around the typist's own weak transitions, or by frequency in the language alone. */
+export type PairTraining = 'adaptive' | 'classic';
 
 const pool = (items: string[], layout: Layout): string[] => [...new Set(items)].filter((item) => layout.canType(item));
 
@@ -142,11 +156,55 @@ export function makeSentences(
 
 export interface PairOptions {
   size: 2 | 3;
+  /** Classic when absent: by frequency in the language alone. */
+  training?: PairTraining;
 }
+
+/** The transitions inside a letter group: `the` holds `th` and `he`. */
+export const transitionsOf = (group: string): string[] =>
+  [...group.slice(1)].map((char, i) => (group[i] + char).toLowerCase());
+
+/**
+ * How much a letter group needs work, 0 to 1, from its transitions. A pair is its one
+ * transition. A triple is half the mean of its two and half the weaker one, so a group
+ * with one hard transition counts for more than a mean would give it.
+ */
+export function groupWeakness(group: string, transitions: Transitions): number {
+  const scores = transitionsOf(group).map((pair) => transitions.weakness(pair));
+  if (scores.length === 0) return 0;
+  const mean = scores.reduce((sum, score) => sum + score, 0) / scores.length;
+  return 0.5 * mean + 0.5 * Math.max(...scores);
+}
+
+/** True while one of a group's transitions has been measured too few times to say anything. */
+export const isUnderPracticed = (group: string, transitions: Transitions): boolean =>
+  transitionsOf(group).some((pair) => transitions.samples(pair) < MIN_SAMPLES);
+
+/** The adaptive draw, in shares of a set: the typist's weak transitions, common ones, and the ones measured too few times yet. */
+export const ADAPTIVE_SHARES = { weak: 0.6, common: 0.25, explore: 0.15 } as const;
+type Source = keyof typeof ADAPTIVE_SHARES;
+const SOURCES = Object.keys(ADAPTIVE_SHARES) as Source[];
+/** Each time a group is drawn its chances halve for the rest of the set, so the weakest one does not fill it. */
+const DRAWN_DAMP = 0.5;
+/**
+ * Weakness under this is the spread of a typist's ordinary pace, not a weak transition:
+ * about a fifth slower than the median, or a miss in twenty-five. Groups are drawn as weak
+ * by what they score above it, so a transition that turned fluent leaves the weak draw
+ * and a typist with no standout transition trains on frequency.
+ */
+export const WEAK_FLOOR = 0.1;
+/**
+ * A weak slot draws against this much weight of its own, which hands the slot to the
+ * common groups. Against many weak transitions it is a small share. Against a single
+ * one it decides: that transition takes the weak slots in proportion to how weak it is,
+ * and gives them back little by little as it improves.
+ */
+const WEAK_YIELD = 0.5;
 
 /**
  * Letter associations with no words: each group is typed three times, then the next one.
  * With a focus, only the groups that give a focus finger a letter are drawn, while enough of them exist.
+ * Adaptive training draws most groups from the typist's weak transitions; classic draws by frequency alone.
  */
 export function makePairs(
   layout: Layout,
@@ -164,13 +222,81 @@ export function makePairs(
   if (items.length === 0) return '';
   // Earlier entries are more frequent in the language, so they come up more often.
   const weights = items.map((item, i) => (1 + (items.length - i) / items.length) * weightOf(layout, item, bias, GROUP_PULL));
+  const picks =
+    options.training === 'adaptive' && bias.transitions
+      ? adaptivePicks(items, weights, bias.transitions, groups, random)
+      : classicPicks(items, weights, groups, random);
+  return picks.flatMap((item) => [item, item, item]).join(' ');
+}
+
+function classicPicks(items: string[], weights: number[], groups: number, random: () => number): string[] {
   const next = sampler(items, weights, random);
-  const out: string[] = [];
-  for (let i = 0; i < groups; i++) {
-    const item = next();
-    out.push(item, item, item);
+  return Array.from({ length: groups }, () => next());
+}
+
+/** Splits `groups` slots among the sources by their shares, the leftover slots to the largest remainders. */
+export function adaptiveQuotas(groups: number): Record<Source, number> {
+  const exact = SOURCES.map((source) => groups * ADAPTIVE_SHARES[source]);
+  const counts = exact.map(Math.floor);
+  const order = SOURCES.map((_, i) => i).sort((a, b) => exact[b] - counts[b] - (exact[a] - counts[a]));
+  let left = groups - counts.reduce((sum, count) => sum + count, 0);
+  for (let i = 0; left > 0; i++, left--) counts[order[i % order.length]]++;
+  return { weak: counts[0], common: counts[1], explore: counts[2] };
+}
+
+/**
+ * An index drawn in proportion to `weights`, never `skip`. -1 when nothing else has a
+ * chance, or when the roll lands on `spare`, a weight that belongs to no index.
+ */
+function draw(weights: number[], skip: number, random: () => number, spare = 0): number {
+  const total = weights.reduce((sum, weight, i) => (i === skip ? sum : sum + weight), 0);
+  if (total <= 0) return -1;
+  let roll = random() * (total + spare);
+  if (roll >= total) return -1;
+  let last = -1;
+  for (let i = 0; i < weights.length; i++) {
+    if (i === skip || weights[i] <= 0) continue;
+    last = i;
+    roll -= weights[i];
+    if (roll <= 0) return i;
   }
-  return out.join(' ');
+  return last;
+}
+
+/**
+ * The adaptive set. Its slots go to three sources, in shuffled order: the weak groups,
+ * drawn in proportion to how much they need work past the floor; the common ones, drawn as in classic
+ * training; and the groups with a transition measured too few times, drawn by frequency
+ * so they get measured. A source with nothing to give hands its slot to the common
+ * groups, so a profile with no numbers yet trains on frequency alone, and the weak
+ * slots fill up as weak transitions show up.
+ */
+function adaptivePicks(items: string[], frequency: number[], transitions: Transitions, groups: number, random: () => number): string[] {
+  const pools: Record<Source, number[]> = {
+    weak: items.map((item) => Math.max(0, groupWeakness(item, transitions) - WEAK_FLOOR)),
+    common: [...frequency],
+    explore: items.map((item, i) => (isUnderPracticed(item, transitions) ? frequency[i] : 0)),
+  };
+  const count = adaptiveQuotas(groups);
+  const slots = SOURCES.flatMap((source) => Array<Source>(count[source]).fill(source));
+  // Fisher-Yates, so the weak groups do not all come first.
+  for (let i = slots.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [slots[i], slots[j]] = [slots[j], slots[i]];
+  }
+
+  const out: string[] = [];
+  let previous = -1;
+  for (const source of slots) {
+    let pick = draw(pools[source], previous, random, source === 'weak' ? WEAK_YIELD : 0);
+    if (pick < 0) pick = draw(pools.common, previous, random);
+    // A single group to draw from: it repeats, as in classic training.
+    if (pick < 0) pick = Math.max(0, previous);
+    for (const weights of Object.values(pools)) weights[pick] *= DRAWN_DAMP;
+    out.push(items[pick]);
+    previous = pick;
+  }
+  return out;
 }
 
 /** The fingers the anchor drill takes in turn: the focus fingers, or the default focus when none is picked. */

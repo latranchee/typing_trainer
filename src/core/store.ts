@@ -1,6 +1,6 @@
 import type { Finger } from './fingers';
 import { FINGERS } from './fingers';
-import type { TypingFinger } from './generator';
+import type { PairTraining, Transitions, TypingFinger } from './generator';
 import { DEFAULT_FOCUS, TYPING_FINGERS } from './generator';
 import type { Difficulty, Floor, RunBest } from './hardcore';
 import { DEFAULT_DIFFICULTY, DIFFICULTIES, FLOORS } from './hardcore';
@@ -41,6 +41,8 @@ export interface Settings {
   tempoWpm: number;
   /** What the words drill types: words drawn one by one, or whole sentences. */
   wordsSource: 'words' | 'sentences';
+  /** How the letter groups are drawn: from the typist's own weak transitions, or by frequency in the language alone. */
+  pairTraining: PairTraining;
   setWords: 15 | 30 | 60;
   caps: boolean;
   pairSize: 2 | 3;
@@ -72,6 +74,7 @@ export const DEFAULT_SETTINGS: Settings = {
   tempoLock: false,
   tempoWpm: 40,
   wordsSource: 'words',
+  pairTraining: 'adaptive',
   setWords: 30,
   caps: false,
   pairSize: 2,
@@ -94,9 +97,21 @@ export interface KeyStat {
   ms: number;
 }
 
+/** Two letters typed one after the other: the time between them, and how often the second one was missed. */
 export interface PairStat {
+  /** Clean transitions measured. */
   n: number;
+  /** Smoothed time from the first letter to the second, ms. */
   ms: number;
+  /** Failed transitions: the first letter was typed, then the second was missed. Absent from numbers saved before it was counted, which means none. */
+  err?: number;
+}
+
+/** A transition with its numbers and how much it needs work. */
+export interface RankedPair {
+  pair: string;
+  stat: PairStat;
+  weakness: number;
 }
 
 /** What the keyboard has measured on one layout. */
@@ -192,8 +207,48 @@ function cleanSettings(saved: Partial<Settings> | undefined, preferred: Lang): S
   settings.sound = settings.sound !== false;
   if (!HIGHWAY_SOURCES.includes(settings.highwaySource)) settings.highwaySource = DEFAULT_SETTINGS.highwaySource;
   if (settings.wordsSource !== 'sentences') settings.wordsSource = 'words';
+  if (settings.pairTraining !== 'classic') settings.pairTraining = 'adaptive';
   if (!isKeySound(settings.keySound)) settings.keySound = DEFAULT_SETTINGS.keySound;
   return settings;
+}
+
+/** Failed attempts of a transition: zero for numbers saved before they were counted. */
+export const pairErrors = (stat: PairStat): number => Number(stat.err) || 0;
+
+/** Share of a transition's attempts that were clean, 1 when there were none. */
+export function pairAccuracy(stat: PairStat): number {
+  const attempts = stat.n + pairErrors(stat);
+  return attempts > 0 ? stat.n / attempts : 1;
+}
+
+/** Median time of the transitions measured often enough, ms. 0 when none is. */
+export function pairMedian(pairs: Record<string, PairStat>): number {
+  const paces = Object.values(pairs)
+    .filter((stat) => stat.n >= MIN_SAMPLES)
+    .map((stat) => stat.ms)
+    .sort((a, b) => a - b);
+  if (paces.length === 0) return 0;
+  const middle = paces.length >> 1;
+  return paces.length % 2 === 1 ? paces[middle] : (paces[middle - 1] + paces[middle]) / 2;
+}
+
+const clamp01 = (value: number): number => Math.max(0, Math.min(1, value));
+
+/**
+ * How much a transition needs work, 0 to 1. Three quarters is its time against the
+ * median transition (half again as slow, or more, counts in full), one quarter its
+ * error rate (one miss in five attempts, or more, counts in full). Both are scaled
+ * by confidence, which is full at ten attempts. A transition measured fewer than
+ * five times scores 0: too few numbers say nothing about the typist.
+ */
+export function pairWeakness(stat: PairStat | undefined, medianMs: number): number {
+  if (!stat || stat.n < MIN_SAMPLES || medianMs <= 0) return 0;
+  const err = pairErrors(stat);
+  const attempts = stat.n + err;
+  const slow = clamp01((stat.ms / medianMs - 1) / 1.5);
+  const error = clamp01(err / attempts / 0.2);
+  const confidence = clamp01(attempts / 10);
+  return confidence * (0.75 * slow + 0.25 * error);
 }
 
 function browserStorage(): KeyValueStore | null {
@@ -357,10 +412,58 @@ export class Store {
 
   recordPair(layout: LayoutId, pair: string, intervalMs: number): void {
     if (!this.tracking) return;
-    const stat = (this.layoutStats(layout).pairs[pair] ??= { n: 0, ms: 0 });
+    const stat = (this.layoutStats(layout).pairs[pair] ??= { n: 0, ms: 0, err: 0 });
     stat.n++;
     stat.ms = smooth(stat.ms, intervalMs, stat.n);
     this.queueSave();
+  }
+
+  /** A failed transition: the first letter of `pair` was typed, then the second one was missed. The caller counts one per attempt. */
+  recordPairError(layout: LayoutId, pair: string): void {
+    if (!this.tracking) return;
+    const stat = (this.layoutStats(layout).pairs[pair] ??= { n: 0, ms: 0, err: 0 });
+    stat.err = (stat.err ?? 0) + 1;
+    this.queueSave();
+  }
+
+  /** How much one transition needs work, 0 to 1, against the other transitions measured on the layout. */
+  pairWeakness(layout: LayoutId, pair: string): number {
+    const { pairs } = this.layoutStats(layout);
+    return pairWeakness(pairs[pair], pairMedian(pairs));
+  }
+
+  /**
+   * The transitions of a layout measured often enough to judge, the ones that need the most
+   * work first. Equal scores (fast, clean ones score 0) go slowest first.
+   */
+  rankedPairs(layout: LayoutId): RankedPair[] {
+    const { pairs } = this.layoutStats(layout);
+    const median = pairMedian(pairs);
+    return Object.entries(pairs)
+      .filter(([, stat]) => stat.n >= MIN_SAMPLES)
+      .map(([pair, stat]) => ({ pair, stat, weakness: pairWeakness(stat, median) }))
+      .sort((a, b) => b.weakness - a.weakness || b.stat.ms - a.stat.ms);
+  }
+
+  /** Up to `count` transitions that need work, weakest first. One that scores 0 needs none and is left out. */
+  weakestPairs(layout: LayoutId, count: number): string[] {
+    return this.rankedPairs(layout)
+      .filter((entry) => entry.weakness > 0)
+      .slice(0, count)
+      .map((entry) => entry.pair);
+  }
+
+  /**
+   * The transitions of a layout as they stand now, for drawing the next set. The median
+   * is taken once, so a set is drawn against one picture of the typist.
+   */
+  transitions(layout: LayoutId): Transitions {
+    const { pairs } = this.layoutStats(layout);
+    const median = pairMedian(pairs);
+    return {
+      weakness: (pair) => pairWeakness(pairs[pair], median),
+      samples: (pair) => pairs[pair]?.n ?? 0,
+    };
   }
 
   recordShift(layout: LayoutId, correctSide: boolean): void {

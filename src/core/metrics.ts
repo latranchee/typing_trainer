@@ -89,6 +89,53 @@ export class SetStats {
   }
 }
 
+const isLetter = (char: string): boolean => char.toLowerCase() !== char.toUpperCase();
+
+/**
+ * Watches the transitions of a set: two letters typed one after the other, such as `st`.
+ * Each attempt ends once, as a clean sample with its time, or as a failure when a wrong
+ * key fell between the two letters, however many wrong keys there were. Nothing runs
+ * across a space, a mark, a pause or from one set into the next.
+ */
+export class PairWatch {
+  private previous = '';
+  private previousAt = 0;
+  private missed = false;
+
+  /** A new set: no transition runs from the last one. */
+  reset(): void {
+    this.previous = '';
+    this.missed = false;
+  }
+
+  /**
+   * A character was completed. `clean` is false when its final stroke came after a miss
+   * or a pause. Returns the transition it closed and its time when that is a clean sample.
+   */
+  complete(char: string, now: number, clean: boolean): { pair: string; ms: number } | null {
+    const pair = this.pending(char, now);
+    const sample = pair !== null && clean && !this.missed ? { pair, ms: now - this.previousAt } : null;
+    this.previous = char;
+    this.previousAt = now;
+    this.missed = false;
+    return sample;
+  }
+
+  /** A wrong key where `char` was expected. Returns the transition that failed, the first time only. */
+  miss(char: string, now: number): string | null {
+    const pair = this.missed ? null : this.pending(char, now);
+    this.missed = true;
+    return pair;
+  }
+
+  /** The transition `char` would close, in lowercase, or null when there is none to measure. */
+  private pending(char: string, now: number): string | null {
+    if (!this.previous || now - this.previousAt >= PAUSE_MS) return null;
+    if (!isLetter(this.previous) || !isLetter(char)) return null;
+    return (this.previous + char).toLowerCase();
+  }
+}
+
 /** Speed a per-key interval corresponds to, in words per minute. */
 export const intervalToWpm = (ms: number): number => (ms > 0 ? 60000 / ms / CHARS_PER_WORD : 0);
 

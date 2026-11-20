@@ -50,7 +50,7 @@ export class LineDrill implements Drill {
     const { layout, settings, bias } = this.host;
     const source =
       this.id === 'pairs'
-        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize }, bias)
+        ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, training: settings.pairTraining }, bias)
         : settings.wordsSource === 'sentences'
           ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias)
           : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias);
@@ -107,6 +107,15 @@ export class LineDrill implements Drill {
             { value: '3', label: t.line.triples },
           ],
           set: (value) => refresh({ pairSize: value === '3' ? 3 : 2 }),
+        },
+        {
+          label: t.line.training,
+          value: settings.pairTraining,
+          choices: [
+            { value: 'adaptive', label: t.line.adaptive, title: t.line.adaptiveNote },
+            { value: 'classic', label: t.line.classic, title: t.line.classicNote },
+          ],
+          set: (value) => refresh({ pairTraining: value === 'classic' ? 'classic' : 'adaptive' }),
         },
       ];
     }
