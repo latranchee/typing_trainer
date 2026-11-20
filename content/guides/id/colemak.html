@@ -1,0 +1,147 @@
+<!--meta
+{
+  "id": "colemak",
+  "lang": "id",
+  "slug": "layout-colemak",
+  "title": "Layout Colemak: Apa yang Berubah, Colemak-DH, Cara Belajar",
+  "description": "Layout Colemak memindahkan 17 tombol QWERTY dan mempertahankan Ctrl+Z/X/C/V. Lihat semua perubahannya, Colemak vs Colemak-DH, lama belajar, dan coba di browser.",
+  "h1": "Layout Colemak: apa yang berubah dan bagaimana cara mempelajarinya",
+  "keyword": "layout Colemak",
+  "keywords_secondary": ["belajar Colemak", "Colemak-DH", "keyboard Colemak"],
+  "summary": "Layout Colemak adalah layout keyboard alternatif untuk bahasa Inggris yang dirilis Shai Coleman pada 1 Januari 2006. Layout ini memindahkan 17 tombol QWERTY sehingga sembilan huruf Inggris paling sering berada di baris dasar, dan membiarkan Z, X, C, V, Q, dan W di tempatnya agar shortcut umum tetap jalan. Colemak-DH, varian komunitas dari 2014, memindahkan D dan H dari kolom tengah. Panduan resminya menyarankan latihan 10 menit sehari selama sekitar dua bulan.",
+  "faq": [
+    {"q": "Apakah belajar Colemak membuat saya lupa QWERTY?", "a": "Biasanya tidak, setelah kedua layout mantap. FAQ Colemak menyebut kebanyakan orang yang menguasai keduanya bisa berpindah dengan mudah. Kecepatan QWERTY cenderung turun selama belajar, dan sebagian orang mengalami penurunan kecil yang permanen pada kecepatan dan akurasi QWERTY. Kalau Anda masih perlu QWERTY di komputer kantor atau komputer bersama, panduan belajar Colemak menyarankan mengetik QWERTY 5 sampai 10 menit setiap hari."},
+    {"q": "Apakah saya perlu keycap atau keyboard baru untuk Colemak?", "a": "Tidak. Colemak adalah pengaturan perangkat lunak, jadi keyboard apa pun bisa dipakai dan keycap boleh tetap bertuliskan QWERTY. Pengetik 10 jari memang melihat layar, dan keyboard di layar yang menampilkan huruf Colemak membantu di minggu-minggu pertama sampai posisi baru melekat."},
+    {"q": "Bisakah memakai Colemak di HP?", "a": "Aplikasi keyboard seperti Gboard dan SwiftKey menyediakan Colemak, tetapi FAQ Colemak tidak menyarankannya di ponsel, karena di sana Colemak menambah gerakan jari dan tingkat kesalahan dibanding QWERTY. FAQ itu menyarankan mengetik dengan gesture di layout QWERTY."},
+    {"q": "Apakah Colemak bagus untuk programming?", "a": "Sebagian besar ya. Colemak membiarkan hampir semua tombol tanda baca di tempat QWERTY, jadi kurung siku, kurung kurawal, garis miring, dan tanda kutip tidak bergeser; hanya titik koma yang pindah, ke baris atas. Editor yang memakai tombol huruf untuk navigasi, seperti Vim dengan H, J, K, dan L, perlu dipelajari ulang atau dipetakan ulang."},
+    {"q": "Apakah Colemak membantu mengatasi nyeri pergelangan tangan?", "a": "Colemak mengurangi gerakan jari menurut ukuran pembuatnya, dan pengguna lama seperti CEO produsen keyboard ZSA menyebutnya lebih nyaman. Keduanya bukan bukti medis. Nyeri yang tidak kunjung hilang sebaiknya diperiksakan ke dokter atau fisioterapis, sambil memeriksa tinggi meja dan postur duduk."},
+    {"q": "Berapa banyak orang yang memakai Colemak?", "a": "Angkanya tidak diketahui. colemak.com menyebut Colemak sebagai layout terpopuler ketiga untuk mengetik 10 jari dalam bahasa Inggris, setelah QWERTY dan Dvorak, tetapi tidak memberi jumlah pengguna di balik peringkat itu, dan artikel Wikipedia tentang layout ini juga tidak."}
+  ],
+  "sources": [
+    {"title": "Colemak: situs resmi", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak design", "url": "https://colemak.com/Design"},
+    {"title": "Learn Colemak", "url": "https://colemak.com/Learn"},
+    {"title": "Colemak on Mac", "url": "https://colemak.com/Mac"},
+    {"title": "Colemak: situs komunitas", "url": "https://colemak.org/"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "Colemak Mod-DH: perbandingan layout", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: tingkat kesulitan belajar dan tombol yang pindah", "url": "https://colemakmods.github.io/mod-dh/learn.html"},
+    {"title": "Repositori Colemak Mod-DH (installer dan keymap)", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "DreymaR: Tarmak, layout transisi", "url": "https://dreymar.colemak.org/tarmak-intro.html"},
+    {"title": "DreymaR: langkah-langkah Tarmak", "url": "https://dreymar.colemak.org/tarmak-steps.html"},
+    {"title": "Peter Norvig: English letter frequency counts", "url": "https://norvig.com/mayzner.html"},
+    {"title": "Workman layout: repositori resmi dan keymap", "url": "https://github.com/workman-layout/Workman"},
+    {"title": "Workman layout: situs resmi", "url": "https://workmanlayout.org/"},
+    {"title": "Microsoft: Windows keyboard layouts", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Microsoft: mengelola pengaturan bahasa dan tata letak keyboard di Windows", "url": "https://support.microsoft.com/id-id/help/4496404"},
+    {"title": "Apple: menulis dalam bahasa lain di Mac dengan sumber input", "url": "https://support.apple.com/id-id/guide/mac-help/mchlp1406/mac"},
+    {"title": "ZSA blog: ZSA loves Colemak", "url": "https://blog.zsa.io/zsa-loves-colemak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Coba Colemak-DH di browser Anda", "drill": "pairs", "layout": "colemak-dh"}
+}
+-->
+<h2>Apa itu layout Colemak?</h2>
+<p>Colemak adalah alternatif QWERTY yang dibuat untuk mengetik 10 jari dalam bahasa Inggris. Shai Coleman merilisnya pada 1 Januari 2006 dengan dua tujuan yang saling tarik: membuat jari Anda hampir selalu berada di baris dasar (home row), dan mengubah sesedikit mungkin agar pengetik QWERTY bisa pindah tanpa mulai dari nol. Layout resminya juga bisa mengetik huruf beraksen untuk lebih dari 40 bahasa, seperti â dalam pâté dan ñ dalam mañana, serta simbol seperti €.</p>
+<p>Baris dasarnya berisi A R S T D H N E I O. Menurut hitungan frekuensi huruf bahasa Inggris dari Peter Norvig, sepuluh tombol itu memuat sembilan huruf paling sering (E, T, A, O, I, N, S, R, dan H) dan mencakup sekitar 74% huruf yang Anda ketik. Baris dasar QWERTY hanya memuat tiga dari sembilan huruf itu dan sekitar 32% huruf yang diketik, sehingga jari Anda jauh lebih sering naik dan turun.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak dengan setiap tombol diwarnai sesuai jari yang menekannya. Setiap jari tetap di zona QWERTY-nya; yang berubah adalah huruf di dalam zona itu.</figcaption></figure>
+<p>Setiap jari beristirahat di tombol fisik yang sama seperti di QWERTY, jadi aturan di panduan <a href="guide:finger-placement">posisi jari di keyboard</a> tetap berlaku. Di tangan kiri, kelingking beristirahat di A, jari manis di R, jari tengah di S, dan telunjuk di T, dengan D satu tombol di kanannya. Di tangan kanan, telunjuk beristirahat di N dengan H satu tombol di kirinya, jari tengah di E, jari manis di I, dan kelingking di O.</p>
+
+<h2>Apa yang berubah dari QWERTY?</h2>
+<p>Colemak mengubah 17 tombol, semuanya di tiga baris huruf: delapan di baris atas, delapan di baris dasar, dan satu di baris bawah. Baris angka, Shift, Ctrl, Alt, dan hampir semua tanda baca tetap di tempat QWERTY.</p>
+<table>
+<caption>Baris huruf QWERTY dan Colemak (tombol fisik yang sama, dari kiri ke kanan)</caption>
+<thead><tr><th scope="col">Baris</th><th scope="col">QWERTY</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>Atas</td><td>Q W E R T Y U I O P</td><td>Q W F P G J L U Y ;</td></tr>
+<tr><td>Dasar</td><td>A S D F G H J K L ;</td><td>A R S T D H N E I O</td></tr>
+<tr><td>Bawah</td><td>Z X C V B N M</td><td>Z X C V B K M</td></tr>
+</tbody>
+</table>
+<p>Z, X, C, dan V sengaja tidak dipindah. <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd>, dan <kbd>V</kbd> tetap menjadi shortcut satu tangan untuk tangan kiri selagi tangan kanan memegang mouse. Q dan W juga tetap: catatan rancangan Colemak menunjukkan bahwa <kbd>Ctrl</kbd>+<kbd>Q</kbd> (keluar) dan <kbd>Ctrl</kbd>+<kbd>W</kbd> (tutup jendela) bisa membuang pekerjaan kalau letaknya mudah tertekan tanpa sengaja.</p>
+<p>Hanya dua huruf yang berpindah tangan, E dan P. E pindah dari jari tengah kiri ke jari tengah kanan, di tombol yang di QWERTY bertuliskan K. P pindah dari kelingking kanan ke tombol R di QWERTY, di bawah telunjuk kiri. Titik koma meninggalkan baris dasar ke tombol huruf paling kanan di baris atas, dan layout resminya mengubah <kbd>Caps Lock</kbd> menjadi <kbd>Backspace</kbd> kedua. Sedikitnya perpindahan tangan ini disengaja. FAQ Colemak menyebut Dvorak terlalu sulit dan membuat frustrasi untuk dipelajari pengetik QWERTY, dan colemak.com mencantumkan “hanya 2 tombol yang berpindah tangan” sebagai alasan Colemak mudah dipelajari.</p>
+
+<h2>Apakah Colemak lebih cepat atau lebih baik daripada QWERTY?</h2>
+<p>Colemak jauh mengungguli QWERTY pada ukuran yang dipakai perancang layout, seperti pemakaian baris dasar dan same-finger bigram. Pengaruhnya pada kecepatan mengetik belum terbukti, dan situs komunitas Colemak sendiri mengakui keuntungan kecepatan sulit dibuktikan. Same-finger bigram adalah dua huruf berurutan yang diketik oleh satu jari, yang harus menyelesaikan tombol pertama sebelum bisa mulai menekan tombol berikutnya. Di QWERTY, akhiran Inggris "ed" diketik dua kali oleh jari tengah kiri. Di Colemak, E ada di bawah jari tengah kanan dan D di bawah telunjuk kiri, jadi kedua huruf itu dibagi ke dua tangan.</p>
+<table>
+<caption>Porsi baris dasar dan same-finger bigram per layout</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Huruf yang diketik di baris dasar</th><th scope="col">Same-finger bigram</th></tr></thead>
+<tbody>
+<tr><td>QWERTY</td><td>32%</td><td>6,58%</td></tr>
+<tr><td>Dvorak</td><td>70%</td><td>2,63%</td></tr>
+<tr><td>Workman</td><td>67%</td><td>3,15%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>1,67%</td></tr>
+<tr><td>Colemak-DH</td><td>69%</td><td>1,67%</td></tr>
+</tbody>
+</table>
+<p>Kolom baris dasar menjumlahkan frekuensi huruf Norvig untuk huruf-huruf di baris dasar setiap layout; artikel Wikipedia tentang Colemak memberi angka yang sama, 74%, 70%, dan 32%, untuk Colemak, Dvorak, dan QWERTY. Kolom same-finger berasal dari halaman perbandingan proyek Colemak Mod-DH, yang menjalankan sejumlah buku Project Gutenberg melalui model usahanya sendiri. Situs Workman menyebut angka Workman 2,185%, jadi baca kolom itu sebagai perkiraan rancangan dari orang-orang yang condong ke Colemak. Situs Colemak sendiri mengklaim jari Anda menempuh jarak 2,2 kali lebih jauh di QWERTY.</p>
+<p>Situs komunitas yang sama berpesan kepada pendatang baru agar tidak mempelajari Colemak demi kecepatan saja, melainkan demi kenyamanan dan kesenangan. Erez Zukerman, CEO produsen keyboard ZSA, menulis bahwa Colemak tidak membuatnya mengetik lebih cepat. Ia mengetik 80 sampai 90 kata per menit dengan Colemak pada akurasi 97 sampai 98% dan menghargainya karena nyaman, dengan lebih sedikit meregang dan menjangkau. Kalau kecepatan tujuan utama Anda, teknik dan akurasi di layout yang sudah Anda pakai lebih cepat membuahkan hasil, seperti dijelaskan panduan <a href="guide:how-to-type-faster">cara mengetik cepat</a>. Untuk perbandingan dengan layout alternatif lain, lihat <a href="guide:colemak-vs-dvorak">Colemak vs Dvorak vs Workman</a>.</p>
+
+<h2>Apakah layout Colemak cocok untuk bahasa Indonesia?</h2>
+<p>Colemak bisa dipakai untuk bahasa Indonesia, tetapi angka-angka di atas dihitung dari teks bahasa Inggris. Sebagian kata Indonesia yang sering dipakai cocok dengan baris dasarnya: <em>dan</em>, <em>ini</em>, <em>anda</em>, dan <em>saat</em> bisa diketik tanpa meninggalkan baris itu. Huruf K, yang muncul di akhiran <em>-kan</em> dan di kata seperti <em>tidak</em> dan <em>untuk</em>, ada di baris bawah di bawah telunjuk kanan, sedangkan QWERTY menaruhnya di baris dasar. Colemak-DH menurunkan G ke baris dasar, sehingga kata seperti <em>orang</em> bisa diketik seluruhnya di baris itu. Kalau sebagian besar tulisan Anda berbahasa Indonesia, ketik beberapa paragraf Anda sendiri sebelum memutuskan, dan bandingkan pilihan lain di <a href="guide:keyboard-layouts">panduan jenis layout keyboard</a>.</p>
+
+<h2>Apa itu Colemak-DH, dan apakah sebaiknya dipilih?</h2>
+<p>Colemak-DH (nama lengkapnya Colemak Mod-DH) adalah varian komunitas yang memindahkan D dan H keluar dari dua kolom tengah, tempat Colemak biasa menaruhnya dan tempat telunjuk Anda harus bergeser ke samping. SteveP meluncurkannya pada Oktober 2014. D dan H turun ke baris bawah, tempat telunjuk cukup menekuk ke bawah, G dan M mengisi tempat keduanya di baris dasar, dan B naik ke baris atas. Menurut proyek itu, ketikan di tombol kolom tengah turun dari 14,78% pada Colemak menjadi 7,80% pada Colemak-DH.</p>
+<table>
+<caption>Colemak dan Colemak-DH pada papan ANSI</caption>
+<thead><tr><th scope="col">Baris</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>Atas</td><td>Q W F P G J L U Y ;</td><td>Q W F P B J L U Y ;</td></tr>
+<tr><td>Dasar</td><td>A R S T D H N E I O</td><td>A R S T G M N E I O</td></tr>
+<tr><td>Bawah</td><td>Z X C V B K M</td><td>X C D V Z K H</td></tr>
+</tbody>
+</table>
+<p>Separuh kiri baris bawah juga memakai angle mod: Z, X, dan C bergeser satu tombol ke kiri tanpa berganti jari, dan D masuk di bawah telunjuk kiri. Pada papan ISO, Z menempati tombol ekstra di samping Shift kiri. Papan ANSI tidak punya tombol itu, jadi Z pindah ke tengah baris, seperti di tabel. Kalau Anda belum tahu papan mana yang Anda pakai, panduan <a href="guide:iso-vs-ansi">ISO vs ANSI</a> menunjukkan cara mengenalinya.</p>
+<p>Dari Mei 2017 sampai Oktober 2020, proyek ini menyarankan versi kedua, DHk, dengan K di baris dasar untuk keyboard staggered biasa. Sekarang proyek itu kembali ke versi asli, kadang disebut DHm, dan menyarankannya untuk semua keyboard. Itulah versi dengan M di baris dasar seperti pada tabel.</p>
+<table>
+<caption>Colemak atau Colemak-DH: untung ruginya</caption>
+<thead><tr><th scope="col">Yang berbeda</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>Tombol yang pindah dari QWERTY</td><td>17</td><td>19, ditambah 3 untuk angle mod di papan staggered</td></tr>
+<tr><td>Ketikan di kolom tengah</td><td>14,78%</td><td>7,80%</td></tr>
+<tr><td>Usaha belajar (proyek Mod-DH)</td><td>Paling mudah di antara layout yang dioptimalkan penuh</td><td>Sedikit lebih sulit, terutama karena H pindah</td></tr>
+<tr><td>Sudah ada di sistem operasi</td><td>Windows 11 (24H2 dan sesudahnya), macOS, Linux</td><td>Hanya Linux; Windows dan macOS perlu installer dari proyeknya</td></tr>
+</tbody>
+</table>
+<p>Situs komunitas Colemak menilai keduanya bagus dan menyerahkan pilihan pada selera. Pilih Colemak-DH kalau bergeser ke samping untuk D dan H terasa canggung, atau kalau Anda memakai keyboard ortholinear (matrix), yang di perbandingan Mod-DH memberi Colemak-DH skor terbaiknya. Pilih Colemak biasa kalau Anda ingin perubahan paling sedikit dan layout yang sudah tersedia di sistem Anda. Kalau Anda sudah nyaman dengan Colemak biasa, pindah ke DH berarti mempelajari ulang tombol yang berubah, dan itu terutama sepadan kalau jangkauan ke kolom tengah mengganggu Anda.</p>
+
+<h2>Berapa lama belajar Colemak?</h2>
+<p>Siapkan sekitar dua bulan latihan harian singkat sebelum Colemak cukup cepat untuk dipakai penuh. Angka yang ada berasal dari panduan layout itu dan dari laporan pengguna. Panduan belajar resminya menyarankan 10 menit sehari selama sekitar dua bulan, beralih sepenuhnya setelah Anda mencapai dua pertiga kecepatan QWERTY lama, dan mengulang setiap pelajaran sampai akurasi minimal 97% tanpa ragu. Panduan itu juga memperingatkan bahwa 10 hari pertama berat, terutama kalau Anda langsung beralih total.</p>
+<table>
+<caption>Tiga cara beralih</caption>
+<thead><tr><th scope="col">Cara</th><th scope="col">Cara kerjanya</th><th scope="col">Yang bisa diharapkan</th></tr></thead>
+<tbody>
+<tr><td>Langsung total (cold turkey)</td><td>Ganti layout sistem di hari pertama dan ketik semuanya dengan Colemak</td><td>Peringatan soal 10 hari pertama berlaku penuh, dan ketikan kerja langsung melambat</td></tr>
+<tr><td>Latihan dulu, lalu beralih</td><td>Tetap pakai QWERTY untuk kerja, latih Colemak 10 menit sehari, beralih di dua pertiga kecepatan lama</td><td>Rekomendasi colemak.com; kecepatan kerja Anda tetap terjaga selama belajar</td></tr>
+<tr><td>Tarmak</td><td>Empat layout perantara memindahkan 3 atau 4 tombol sekaligus (total 4, 7, 10, dan 14 tombol), lalu Colemak penuh</td><td>Pengguna yang dikutip di halaman Tarmak butuh tiga hari sampai seminggu per tahap; FAQ-nya menyarankan akurasi sekitar 97% pada 40 WPM sebelum lanjut</td></tr>
+</tbody>
+</table>
+<p>Tarmak, buatan anggota komunitas Colemak bernama DreymaR, dimulai dari perpindahan paling penting: tahap pertama membereskan E dan N, tahap kedua menempatkan T, dan jalur Tarmak-DH terpisah berakhir di Colemak-DH. Erez Zukerman belajar dengan cara ini. Ia mulai dengan empat tombol yang diubah dan memakai layout yang nyaris QWERTY itu sekitar sebulan sebelum mengubah lebih banyak, dan cara itu mencegahnya membentur tembok, istilah yang ia pakai sendiri.</p>
+<p>Kecepatan belajar Anda bergantung pada jam latihan dan pada apakah QWERTY masih mengisi hari kerja Anda. FAQ Colemak menyebut sebagian besar waktu belajar terpakai untuk keterampilan motorik, dan orang yang sudah mengetik 10 jari dengan cepat dan benar di QWERTY tidak akan lama memulihkan kecepatannya. Hanya tombol yang pindah yang perlu dipelajari ulang: 17 di Colemak, 19 di Colemak-DH ditambah tiga dari angle mod. Kalau hari ini Anda masih melihat tombol, belajar <a href="guide:touch-typing">mengetik 10 jari</a> lebih dulu, dan Anda bisa mempelajarinya langsung di Colemak.</p>
+
+<h2>Cara belajar Colemak, langkah demi langkah</h2>
+<ol>
+<li><strong>Pilih Colemak atau Colemak-DH, dan periksa papan Anda.</strong> Untuk Colemak-DH, tombol kiri bawah berbeda antara papan ISO dan ANSI, jadi ketahui papan mana yang ada di meja Anda.</li>
+<li><strong>Coba di browser sebelum mengubah pengaturan apa pun.</strong> petitdoigt menerapkan layout sendiri dari posisi fisik tombol, jadi Anda bisa <a href="app:words?layout=colemak">mengetik Colemak di browser</a> tanpa menginstal apa pun di sistem operasi. Keyboard di layar menampilkan huruf Colemak, setiap tombol dengan warna jarinya, jadi keycap Anda boleh tetap bertuliskan QWERTY. Antarmukanya berbahasa Inggris, dan teks latihannya bisa diatur ke bahasa Inggris.</li>
+<li><strong>Pelajari baris dasar jari demi jari.</strong> Tangan kiri A R S T, tangan kanan N E I O, dengan D dan H sebagai jangkauan ke dalam untuk telunjuk (G dan M di Colemak-DH). Latihan <a href="app:anchors?layout=colemak-dh">anchors</a> mengirim jari pilihan ke tombolnya lalu kembali ke baris dasar di antara ketukan. Pelatih ini menyorot jari yang harus dipakai, tetapi tidak bisa melihat tangan Anda, jadi menjaga jari yang benar di setiap tombol adalah tugas Anda.</li>
+<li><strong>Tambahkan baris atas dan bawah lewat kata sungguhan.</strong> Kata utuh melatih posisi baru dalam urutan yang akan Anda pakai, termasuk E dan P, dua huruf yang berpindah tangan.</li>
+<li><strong>Latih perpindahan yang memperlambat Anda.</strong> Dalam mode adaptive, latihan <a href="app:pairs?layout=colemak-dh">pairs</a> mengukur setiap perpindahan dari tombol ke tombol saat Anda mengetik dan menyusun set berikutnya terutama dari yang paling lambat dan paling tidak akurat. Statistik disimpan per layout, jadi angka Colemak Anda terpisah dari riwayat QWERTY.</li>
+<li><strong>Jaga akurasi sebelum mengejar kecepatan.</strong> Targetkan 97% sebelum lanjut, angka yang diberikan panduan belajar Colemak maupun FAQ Tarmak. Panduan <a href="guide:typing-accuracy">akurasi mengetik</a> menjelaskan kenapa akurasi didahulukan.</li>
+<li><strong>Ganti layout sistem saat mencapai dua pertiga kecepatan lama.</strong> Kalau Anda masih berbagi komputer QWERTY, sisihkan 5 sampai 10 menit QWERTY sehari agar tetap bisa dipakai.</li>
+</ol>
+
+<h2>Bagaimana cara mengaktifkan Colemak di Windows, macOS, dan Linux?</h2>
+<p>Colemak sudah ada di Windows 11 mulai versi 24H2 dan terpasang bawaan di macOS dan Linux. Daftar layout keyboard Windows dari Microsoft mencantumkan Colemak sebagai tambahan Windows 11.</p>
+<ul>
+<li><strong>Windows 11:</strong> Mulai, Pengaturan, Waktu &amp; bahasa, Bahasa &amp; wilayah. Klik elipsis di samping bahasa Anda, pilih Opsi bahasa, lalu Tambahkan keyboard dan pilih Colemak. Kalau Colemak tidak muncul, tambahkan dulu bahasa Inggris (Amerika Serikat). <kbd>Windows</kbd>+<kbd>Spasi</kbd> berpindah di antara layout yang terpasang.</li>
+<li><strong>macOS:</strong> Pengaturan Sistem, Papan Ketik, lalu Edit di bagian Input Teks. Klik tombol Tambah, cari bahasa Inggris, dan tambahkan Colemak. <kbd>Control</kbd>+<kbd>Spasi</kbd> kembali ke sumber input terakhir. Untuk menjadikan <kbd>Caps Lock</kbd> sebagai Backspace seperti di layout resmi, colemak.com menyarankan Karabiner-Elements.</li>
+<li><strong>Colemak-DH:</strong> proyek Mod-DH menyediakan installer Windows, skrip AutoHotkey, dan paket macOS (juga <code>brew install --cask colemak-dh</code>). Di Linux, xkeyboard-config 2.34 ke atas sudah menyertakannya: <code>setxkbmap us -variant colemak_dh</code>, atau <code>setxkbmap uk -variant colemak_dh_iso</code> di papan ISO Inggris.</li>
+</ul>
+<p>Versi Windows yang lebih lama butuh installer dari colemak.com. Untuk layout nasional dan alternatif lain, ikhtisar <a href="guide:keyboard-layouts">jenis layout keyboard</a> menunjukkan perbandingannya.</p>
+
+<h2>Apa kekurangan Colemak?</h2>
+<p>Kekurangan pertama adalah waktu belajarnya. Panduan resminya memperingatkan bahwa 10 hari pertama berat dan memperkirakan sekitar dua bulan latihan. Setelah itu, hambatan datang dari komputer yang tidak Anda kendalikan dan dari software yang mengikat tombol berdasarkan huruf. Komputer bersama dan komputer kantor masih memakai QWERTY, jadi Anda harus menjaga QWERTY tetap terlatih atau memasang Colemak di setiap tempat Anda mengetik.</p>
+<p>Colemak mempertahankan shortcut yang paling sering dipakai dan memindahkan sisanya bersama hurufnya. <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd>, <kbd>V</kbd>, <kbd>Q</kbd>, dan <kbd>W</kbd> tetap di tempat. <kbd>Ctrl</kbd>+<kbd>S</kbd> (simpan) pindah ke tombol D di QWERTY, dan <kbd>Ctrl</kbd>+<kbd>F</kbd> (cari) ke tombol E di QWERTY.</p>
+<p>Game yang mengikat kontrol berdasarkan huruf, bukan posisi tombol, memecah kelompok WASD: W dan A tetap, sedangkan S dan D jatuh di tombol D dan G QWERTY. Atur ulang kontrol di game, atau pindah ke QWERTY dengan shortcut sistem selama bermain. Vim punya masalah yang sama dengan H, J, K, dan L. H tetap, tetapi J pindah ke tombol Y QWERTY, K ke N, dan L ke U, jadi pengguna Vim harus mempelajari ulang gerakan itu atau memetakannya ulang.</p>

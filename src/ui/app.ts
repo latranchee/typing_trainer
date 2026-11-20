@@ -20,9 +20,11 @@ import {
   tunnelAmount,
 } from '../core/hardcore';
 import type { KeyTally } from '../core/history';
-import { LANG_NAMES, setUiLang, t } from '../core/i18n';
+import { WORDS } from '../core/corpus';
+import { LANG_NAMES, preferredLang, preferredLayout, setUiLang, t } from '../core/i18n';
 import type { Command, KeyEvt } from '../core/input';
 import { attachInput } from '../core/input';
+import { readLaunch, withoutLaunch } from '../core/launch';
 import type { Layout } from '../core/layouts';
 import { getLayout, LAYOUTS } from '../core/layouts';
 import { intervalToWpm, MIN_SAMPLES, PairWatch, RollingWpm, SetStats } from '../core/metrics';
@@ -69,6 +71,21 @@ const AHEAD_AFTER_MS = 4000;
 const MILESTONE_SPARKS = 7;
 /** The key sounds on offer, in the order of the list. The first choice is silence, named in the interface language. */
 const keySoundNames = (): string[] => [t.options.keySoundOff, ...SWITCHES.map((item) => item.name)];
+/** Below this share of the practice words a layout can type, the settings say words are left out. */
+const WORDS_KEPT_NOTE = 0.97;
+
+/**
+ * The store, opened the way the address asks: `?lang=` stands in for the browser's language
+ * on a first visit, `?layout=` switches the layout. Both leave the address once read.
+ */
+function launchStore(): Store {
+  const launch = readLaunch(location.search);
+  const languages = [...(launch.lang ? [launch.lang] : []), ...(navigator.languages ?? [])];
+  const store = new Store(undefined, preferredLang(languages), preferredLayout(languages));
+  if (launch.layout) store.update({ layout: launch.layout });
+  if (launch.lang || launch.layout) history.replaceState(null, '', `${location.pathname}${withoutLaunch(location.search, location.hash)}`);
+  return store;
+}
 
 /** Values for a frozen frame, used only by the visual-check fixture. */
 export interface ReadoutFixture {
@@ -82,7 +99,7 @@ export interface ReadoutFixture {
 }
 
 export class App implements DrillHost {
-  readonly store = new Store();
+  readonly store = launchStore();
   layout: Layout;
   private readonly weakness: Weakness = (code) => this.store.weakness(this.layout.id, code);
   private readonly heat = (code: string): number => this.store.heat(this.layout.id, code);
@@ -1338,7 +1355,8 @@ export class App implements DrillHost {
     const notes = [t.menu.boardNotes[settings.board]];
     const layoutNote = t.layoutNotes[`${layout.id}|${layout.board}`] ?? t.layoutNotes[layout.id];
     if (layoutNote) notes.push(layoutNote);
-    if (settings.lang === 'fr' && !layout.canType(String.fromCharCode(0xe9))) notes.push(t.options.noAccents);
+    const words = WORDS[settings.lang];
+    if (words.filter((word) => layout.canType(word)).length < words.length * WORDS_KEPT_NOTE) notes.push(t.options.noAccents);
     groups.push([
       this.row(t.menu.layout, this.layoutSelect.root),
       this.optionEl({
@@ -1601,8 +1619,11 @@ export class App implements DrillHost {
       this.wpmCap.blur();
     });
 
+    // A plain link to the written guides in the interface language: crawlable, and it works without the app.
+    const guides = this.label(this.label(el('a.top-guides.ctl'), () => t.top.guides), () => `./${this.store.settings.ui}/`, 'href');
+
     this.root.append(
-      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, this.panel.button))),
+      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, guides, this.panel.button))),
       el(
         'main.cockpit',
         {},

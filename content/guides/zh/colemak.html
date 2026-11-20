@@ -1,0 +1,162 @@
+<!--meta
+{
+  "id": "colemak",
+  "lang": "zh",
+  "slug": "colemak",
+  "title": "Colemak布局：改了哪些键、Colemak-DH与学习方法",
+  "description": "Colemak 布局只改动 QWERTY 的 17 个键，保留 Ctrl+Z/X/C/V。逐键对照、Colemak 和 Colemak-DH 的区别、要学多久，以及在浏览器里直接试用的方法。",
+  "h1": "Colemak 布局：改了什么，怎么学",
+  "keyword": "Colemak布局",
+  "keywords_secondary": ["Colemak", "Colemak-DH", "学习Colemak", "Colemak键位", "阔码键盘"],
+  "summary": "Colemak 布局是为英文设计的替代键盘布局，由 Shai Coleman 在 2006 年 1 月 1 日发布，中文维基百科称它为“阔码键盘”。它改动 QWERTY 的 17 个键，把最常用的九个字母放到基准行，Z、X、C、V、Q、W 留在原位，常用快捷键不受影响。2014 年的社区变体 Colemak-DH 把 D 和 H 移出了中间两列。官方学习指南建议每天练 10 分钟，坚持两个月左右。",
+  "faq": [
+    {"q": "学 Colemak 会忘掉 QWERTY 吗？", "a": "两种都练熟之后，通常不会。Colemak FAQ 说，大多数两种都掌握的人能轻松切换。学习期间 QWERTY 速度往往会下降，也有人的 QWERTY 速度和准确率会永久小幅下降。如果你在共用电脑或工作电脑上还要用 QWERTY，Colemak 学习指南建议每天打 5 到 10 分钟 QWERTY。"},
+    {"q": "用 Colemak 需要换键帽或者买新键盘吗？", "a": "不需要。Colemak 是软件设置，任何键盘都能用，键帽可以继续印着 QWERTY。盲打时眼睛本来就看屏幕，头几周可以靠显示 Colemak 字母的屏幕键盘过渡。"},
+    {"q": "手机上能用 Colemak 吗？", "a": "Gboard、SwiftKey 等键盘应用提供 Colemak，但 Colemak FAQ 不建议在智能手机上用：和 QWERTY 相比，它会增加手指移动和出错率。FAQ 推荐在 QWERTY 布局上用滑行输入。"},
+    {"q": "Colemak 适合写代码吗？", "a": "大体适合。Colemak 几乎所有标点都留在 QWERTY 的位置，括号、花括号、斜杠和引号都不动，只有分号移到了上排。Vim 这类用 H、J、K、L 移动光标的编辑器，需要重新适应或者重新映射。"},
+    {"q": "Colemak 对手腕疼痛有帮助吗？", "a": "按作者的统计，Colemak 减少了手指移动，键盘厂商 ZSA 的 CEO 等长期用户也说它更舒服。这些都不是医学证据。疼痛持续不退，应该去看医生或理疗师，同时检查桌子高度和坐姿。"},
+    {"q": "有多少人用 Colemak？", "a": "没有确切数字。colemak.com 称 Colemak 是继 QWERTY 和 Dvorak 之后第三受欢迎的英文盲打布局，但没有给出支撑这个排名的用户数，维基百科的条目也没有。"}
+  ],
+  "sources": [
+    {"title": "Colemak: official site", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak design", "url": "https://colemak.com/Design"},
+    {"title": "Learn Colemak", "url": "https://colemak.com/Learn"},
+    {"title": "Colemak on Mac", "url": "https://colemak.com/Mac"},
+    {"title": "Colemak community site", "url": "https://colemak.org/"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "维基百科：阔码键盘（Colemak）", "url": "https://zh.wikipedia.org/zh-cn/%E9%98%94%E7%A0%81%E9%94%AE%E7%9B%98"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "Colemak Mod-DH: layout comparison", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: learning difficulty and keys moved", "url": "https://colemakmods.github.io/mod-dh/learn.html"},
+    {"title": "Colemak Mod-DH repository (installers and keymaps)", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "DreymaR: Tarmak, transitional layouts", "url": "https://dreymar.colemak.org/tarmak-intro.html"},
+    {"title": "DreymaR: Tarmak steps", "url": "https://dreymar.colemak.org/tarmak-steps.html"},
+    {"title": "Peter Norvig: English letter frequency counts", "url": "https://norvig.com/mayzner.html"},
+    {"title": "Workman layout: official repository and keymaps", "url": "https://github.com/workman-layout/Workman"},
+    {"title": "Workman layout: official site", "url": "https://workmanlayout.org/"},
+    {"title": "Microsoft: Windows keyboard layouts", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Microsoft 支持：管理 Windows 中的语言和键盘/输入布局设置", "url": "https://support.microsoft.com/zh-cn/help/4496404"},
+    {"title": "Apple: use input sources to type in other languages on Mac", "url": "https://support.apple.com/guide/mac-help/use-input-sources-to-type-in-other-languages-mchlp1406/mac"},
+    {"title": "ZSA blog: ZSA loves Colemak", "url": "https://blog.zsa.io/zsa-loves-colemak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "在浏览器里试打 Colemak-DH", "drill": "pairs", "layout": "colemak-dh"}
+}
+-->
+<h2>Colemak 布局是什么？</h2>
+<p>Colemak 是为英文盲打设计的 QWERTY 替代布局。Shai Coleman 在 2006 年 1 月 1 日发布了它，目标有两个，而且互相牵制：让手指尽量停在基准行，同时改动要少到 QWERTY 用户不必从零开始。官方布局还能打出 40 多种语言的重音字母，比如 pâté 里的 â、mañana 里的 ñ，以及 € 这样的符号。</p>
+<p>基准行是 A R S T D H N E I O。按 Peter Norvig 的英文字母统计，这十个键包含了最常用的九个字母（E、T、A、O、I、N、S、R、H），合计约占你所打字母的 74%。QWERTY 的基准行只有其中三个，约占 32%，手指要花多得多的时间上下伸展。</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>按手指着色的 Colemak 布局。每根手指的分区和 QWERTY 一样，变的是分区里的字母。</figcaption></figure>
+<p>每根手指停放的物理键和 QWERTY 相同，所以<a href="guide:finger-placement">键盘指法图</a>里的规则照样适用。左手小指停在 A，无名指在 R，中指在 S，食指在 T，D 在食指右边一格。右手食指停在 N，H 在它左边一格，中指在 E，无名指在 I，小指在 O。</p>
+
+<h2>Colemak 布局相对 QWERTY 改了哪些键？</h2>
+<p>Colemak 改动了 17 个键，全在三排字母区：上排八个，基准行八个，下排一个。数字行、Shift、Ctrl、Alt 和几乎所有标点都留在 QWERTY 的位置。</p>
+<table>
+<caption>QWERTY 和 Colemak 的字母行（同一组物理键，从左到右）</caption>
+<thead><tr><th scope="col">行</th><th scope="col">QWERTY</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>上排</td><td>Q W E R T Y U I O P</td><td>Q W F P G J L U Y ;</td></tr>
+<tr><td>基准行</td><td>A S D F G H J K L ;</td><td>A R S T D H N E I O</td></tr>
+<tr><td>下排</td><td>Z X C V B N M</td><td>Z X C V B K M</td></tr>
+</tbody>
+</table>
+<p>Z、X、C、V 是特意保留的。<kbd>Ctrl</kbd>+<kbd>Z</kbd>、<kbd>X</kbd>、<kbd>C</kbd>、<kbd>V</kbd> 仍是左手单手快捷键，右手可以一直握着鼠标。Q 和 W 也不动：Colemak 的设计说明指出，<kbd>Ctrl</kbd>+<kbd>Q</kbd>（退出）和 <kbd>Ctrl</kbd>+<kbd>W</kbd>（关闭窗口）如果落在容易误按的地方，可能让你丢掉没保存的工作。</p>
+<p>只有 E 和 P 两个字母换了手。E 从左手中指移到右手中指，也就是 QWERTY 的 K 键；P 从右手小指移到 QWERTY 的 R 键，由左手食指负责。分号离开基准行，去了上排最右边的字母键，官方布局还把 <kbd>Caps Lock</kbd> 变成第二个 <kbd>Backspace</kbd>。换手的键这么少是有意为之：Colemak FAQ 说 Dvorak 对现有 QWERTY 用户来说太难学、太让人沮丧，colemak.com 也把“只有 2 个键换手”列为 Colemak 容易上手的理由。</p>
+
+<h2>用拼音打中文，Colemak 布局有什么变化？</h2>
+<p>Colemak 按英文设计，下文的效率数字也都来自英文文本；拼音上的变化可以直接从键位推出来。最明显的改善是 <em>de</em>（的）：QWERTY 上 D 和 E 都归左手中指，Colemak 把 D 交给左手食指、E 交给右手中指。QWERTY 压在右手食指上的 yu、hu、ju，在 Colemak 上也分给了两根手指。同时有两组组合变成了同一根手指连按：<em>yi</em> 的 Y 和 I 都归右手无名指，<em>xue</em>、<em>yue</em>、<em>jue</em> 里的 U 和 E 都归右手中指。</p>
+<table>
+<caption>几组拼音组合在 QWERTY 和 Colemak 上由哪根手指打</caption>
+<thead><tr><th scope="col">组合</th><th scope="col">例字</th><th scope="col">QWERTY</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>de</td><td>的</td><td>左手中指连按两键</td><td>左手食指，再换右手中指</td></tr>
+<tr><td>ce</td><td>测</td><td>左手中指连按两键</td><td>左手中指，再换右手中指</td></tr>
+<tr><td>yu</td><td>鱼</td><td>右手食指连按两键</td><td>右手无名指，再换右手中指</td></tr>
+<tr><td>hu</td><td>湖</td><td>右手食指连按两键</td><td>右手食指，再换右手中指</td></tr>
+<tr><td>yi</td><td>一</td><td>右手食指，再换右手中指</td><td>右手无名指连按两键</td></tr>
+<tr><td>ue</td><td>学（xue）</td><td>右手食指，再换左手中指</td><td>右手中指连按两键</td></tr>
+</tbody>
+</table>
+<p>Colemak-DH 上这些字母的手指分工相同。如果你主要打拼音，用一段自己常打的文字试一试，比任何英文统计都更能说明问题。</p>
+
+<h2>Colemak 比 QWERTY 更快、更好吗？</h2>
+<p>在布局设计者常用的指标上，比如基准行使用率和同指连击，Colemak 大幅领先 QWERTY。它对打字速度的影响没有得到证明，连 Colemak 社区网站都说速度提升很难证明。同指连击（same-finger bigram）指连续两个字母由同一根手指打，这根手指必须按完第一个键才能去按第二个。在 QWERTY 上，常见词尾 “ed” 要左手中指连按两次；在 Colemak 上，E 归右手中指、D 归左手食指，两个字母分给了两只手。</p>
+<table>
+<caption>各布局的基准行占比和同指连击比例</caption>
+<thead><tr><th scope="col">布局</th><th scope="col">在基准行打出的字母</th><th scope="col">同指连击</th></tr></thead>
+<tbody>
+<tr><td>QWERTY</td><td>32%</td><td>6.58%</td></tr>
+<tr><td>Dvorak</td><td>70%</td><td>2.63%</td></tr>
+<tr><td>Workman</td><td>67%</td><td>3.15%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>1.67%</td></tr>
+<tr><td>Colemak-DH</td><td>69%</td><td>1.67%</td></tr>
+</tbody>
+</table>
+<p>基准行一栏把各布局基准行字母在 Norvig 统计里的频率相加得出；英文维基百科的 Colemak 条目给出的 Colemak、Dvorak、QWERTY 数字同样是 74%、70% 和 32%。同指连击一栏来自 Colemak Mod-DH 项目的对比页，它用自己的费力模型跑了一批古登堡计划的书。Workman 官网给 Workman 的数字是 2.185%，所以这一栏应看作偏爱 Colemak 的人做的设计估算。Colemak 官网还称，手指在 QWERTY 上移动的距离是 Colemak 的 2.2 倍。</p>
+<p>同一个社区网站这样告诉新手：“不要只为了速度学 Colemak。为了舒适而学，为了好玩而学。”键盘厂商 ZSA 的 CEO Erez Zukerman 写道，Colemak “没有让我打得更快”。他用 Colemak 打每分钟 80 到 90 词，准确率 97% 到 98%，看重的是更少的伸展和够键带来的舒适。如果你的主要目标是速度，在现有布局上改进技术和准确率见效更快，<a href="guide:how-to-type-faster">如何提高打字速度</a>讲了怎么做。和其他替代布局的并排对比见 <a href="guide:colemak-vs-dvorak">Colemak、Dvorak 和 Workman 对比</a>。</p>
+
+<h2>Colemak-DH 是什么，该选它吗？</h2>
+<p>Colemak-DH（全称 Colemak Mod-DH）是一个社区变体，把 D 和 H 移出了中间两列。普通 Colemak 把它们放在那里，食指得横向滑过去。SteveP 在 2014 年 10 月推出了它：D 和 H 降到下排，食指往下一弯就能按到，G 和 M 补上它们在基准行的位置，B 移到上排。据项目统计，落在中间两列的按键从 Colemak 的 14.78% 降到 Colemak-DH 的 7.80%。</p>
+<table>
+<caption>ANSI 键盘上的 Colemak 和 Colemak-DH</caption>
+<thead><tr><th scope="col">行</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>上排</td><td>Q W F P G J L U Y ;</td><td>Q W F P B J L U Y ;</td></tr>
+<tr><td>基准行</td><td>A R S T D H N E I O</td><td>A R S T G M N E I O</td></tr>
+<tr><td>下排</td><td>Z X C V B K M</td><td>X C D V Z K H</td></tr>
+</tbody>
+</table>
+<p>下排左半边还用了“angle mod”（斜角改动）：Z、X、C 各左移一格，负责的手指不变，D 插到左手食指下面。在 ISO 键盘上，Z 占用左 Shift 旁边多出的那个键；ANSI 键盘没有这个键，Z 就放到这一排中间，如上表所示。不确定自己的键盘是哪种，可以看 <a href="guide:iso-vs-ansi">ISO 和 ANSI 键盘的区别</a>。</p>
+<p>2017 年 5 月到 2020 年 10 月，项目曾为普通错列键盘推荐另一个版本 DHk（K 在基准行）。现在它回到了原版，有时叫 DHm，并在所有键盘上都推荐它，也就是上表中 M 在基准行的版本。</p>
+<table>
+<caption>选 Colemak 还是 Colemak-DH</caption>
+<thead><tr><th scope="col">区别</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>相对 QWERTY 移动的键</td><td>17 个</td><td>19 个，错列键盘上再加 angle mod 的 3 个</td></tr>
+<tr><td>落在中间两列的按键</td><td>14.78%</td><td>7.80%</td></tr>
+<tr><td>学习难度（Mod-DH 项目评估）</td><td>完全优化的布局里最容易学的</td><td>稍难一些，主要因为 H 换了位置</td></tr>
+<tr><td>系统自带</td><td>Windows 11（24H2 及以后）、macOS、Linux</td><td>只有 Linux；Windows 和 macOS 需要项目的安装包</td></tr>
+</tbody>
+</table>
+<p>Colemak 社区网站认为两者都不错，选哪个看个人喜好。如果横向滑到 D 和 H 让你觉得别扭，或者你用的是直列（矩阵）键盘，就选 Colemak-DH：Mod-DH 的对比里，它在这种键盘上得分最高。想要改动最少、系统自带的布局，就选普通 Colemak。如果你已经能熟练打普通 Colemak，改用 DH 要重学换了位置的键，只有中间两列的伸展确实困扰你时才值得。</p>
+
+<h2>学会 Colemak 布局要多久？</h2>
+<p>大约要每天短时间练两个月，Colemak 才快到能全职使用。现有的数字来自官方建议和用户的经验。官方学习指南建议每天练 10 分钟、坚持两个月左右，等速度达到原来 QWERTY 的三分之二再彻底切换，每课都要重复到准确率至少 97%、打字不再迟疑为止。它也提醒，头 10 天很难熬，一次性全部切换的人尤其如此。</p>
+<table>
+<caption>三种切换方式</caption>
+<thead><tr><th scope="col">方式</th><th scope="col">做法</th><th scope="col">预期</th></tr></thead>
+<tbody>
+<tr><td>一次性切换</td><td>第一天就改系统布局，所有文字都用 Colemak 打</td><td>指南关于头 10 天的提醒完全适用，工作中的打字马上变慢</td></tr>
+<tr><td>先练再切换</td><td>工作继续用 QWERTY，每天练 10 分钟 Colemak，达到原速度的三分之二再切换</td><td>colemak.com 推荐的方式；学习期间工作速度不受影响</td></tr>
+<tr><td>Tarmak</td><td>四个过渡布局，每次移动 3 到 4 个键（累计 4、7、10、14 个），最后到完整的 Colemak</td><td>Tarmak 页面引用的用户每一步花三天到一周；它的 FAQ 建议在 40 WPM 下达到约 97% 准确率再进入下一步</td></tr>
+</tbody>
+</table>
+<p>Tarmak 由 Colemak 社区成员 DreymaR 设计，先改最关键的键：第一步摆正 E 和 N，第二步把 T 放到位，另有一条 Tarmak-DH 路线通往 Colemak-DH。Erez Zukerman 就是这样学的。他先只改四个键，用这个接近 QWERTY 的布局打了大约一个月才继续改，所以没有撞上他说的“一堵墙”。</p>
+<p>你自己的进度取决于练习时长，以及 QWERTY 是否还占满你的工作日。Colemak FAQ 说，大部分学习时间花在运动技能上，在 QWERTY 上已经能又快又准地盲打的人，很快就能找回原来的速度。需要重学的只有换了位置的键：Colemak 是 17 个，Colemak-DH 是 19 个外加 angle mod 的 3 个。如果你现在打字还要看键盘，先学<a href="guide:touch-typing">盲打</a>，而且可以直接在 Colemak 上学。</p>
+
+<h2>怎样一步步学会 Colemak？</h2>
+<ol>
+<li><strong>选定 Colemak 或 Colemak-DH，并确认你的键盘类型。</strong>Colemak-DH 左下角的键在 ISO 和 ANSI 键盘上不一样，所以要知道桌上的是哪一种。</li>
+<li><strong>改设置之前先在浏览器里试一试。</strong>petitdoigt 根据物理键位自己套用布局，你不用在操作系统里装任何东西，就能<a href="app:words?layout=colemak">在浏览器里打 Colemak</a>。屏幕键盘显示 Colemak 字母，每个键按负责的手指着色，键帽可以继续印着 QWERTY。</li>
+<li><strong>逐根手指学会基准行。</strong>左手 A R S T，右手 N E I O，D 和 H 由两根食指向内够（Colemak-DH 上是 G 和 M）。<a href="app:anchors?layout=colemak-dh">anchors 练习</a>让你选的手指去按各自的键，每次按完都回到基准行。练习工具会高亮该用的手指，但它看不到你的手，用对手指要靠你自己。</li>
+<li><strong>通过真实单词加入上排和下排。</strong>整词练习按你实际使用的顺序训练新键位，包括换了手的 E 和 P。</li>
+<li><strong>专练拖慢你的键间转换。</strong>自适应模式下的 <a href="app:pairs?layout=colemak-dh">pairs 练习</a>会在你打字时测量每一次键间转换，下一组主要由你最慢、最不准的转换组成。统计按布局分开记录，你的 Colemak 数据不会和 QWERTY 的历史混在一起。</li>
+<li><strong>先稳住准确率，再追速度。</strong>准确率达到 97% 再往下走，Colemak 学习指南和 Tarmak FAQ 给的都是这个数字。<a href="guide:typing-accuracy">打字准确率指南</a>解释了为什么准确率要放在前面。</li>
+<li><strong>速度到原来的三分之二时，再改系统布局。</strong>如果还要用共用的 QWERTY 电脑，每天打 5 到 10 分钟 QWERTY，让它保持能用。</li>
+</ol>
+<p>petitdoigt 目前显示英文界面，练习文本有英文、法文、德文和西班牙文。</p>
+
+<h2>怎样在 Windows、macOS 和 Linux 上启用 Colemak？</h2>
+<p>Windows 11 从 24H2 版起内置 Colemak，macOS 和 Linux 也预装了它。微软的 Windows 键盘布局列表把 Colemak 标为 Windows 11 新增的布局。</p>
+<ul>
+<li><strong>Windows 11：</strong>开始 › 设置 › 时间 &amp; 语言 › 语言 &amp; 区域。点英语旁边的“…”，选“语言选项”，再点“添加键盘”，选 Colemak。按住 Windows 徽标键再按空格键，在已安装的布局之间切换。</li>
+<li><strong>macOS：</strong>系统设置 › 键盘，在“文字输入”下点“编辑”。点“添加”按钮，搜索英语，添加 Colemak。<kbd>Control</kbd>+<kbd>空格</kbd> 切回上一个输入法。想像官方布局那样把 <kbd>Caps Lock</kbd> 变成退格键，colemak.com 建议用 Karabiner-Elements。</li>
+<li><strong>Colemak-DH：</strong>Mod-DH 项目提供 Windows 安装包和 AutoHotkey 脚本，以及 macOS 安装包（也可以 <code>brew install --cask colemak-dh</code>）。Linux 上 xkeyboard-config 2.34 及以后的版本已经包含它：<code>setxkbmap us -variant colemak_dh</code>，英式 ISO 键盘用 <code>setxkbmap uk -variant colemak_dh_iso</code>。</li>
+</ul>
+<p>旧版 Windows 需要从 colemak.com 下载安装包。用拼音输入法的话，把 Colemak 设为默认之前，先确认输入法在 Colemak 下能正常打拼音。各国布局和其他替代布局的对比见<a href="guide:keyboard-layouts">键盘布局指南</a>。</p>
+
+<h2>Colemak 布局有哪些缺点？</h2>
+<p>第一项成本是时间：学习指南提醒头 10 天很难熬，并按两个月左右的练习来安排。之后的麻烦来自你管不了的电脑，以及按字母绑定按键的软件。共用电脑和工作电脑还是 QWERTY，你要么让 QWERTY 保持熟练，要么在每台要打字的电脑上装 Colemak。</p>
+<p>Colemak 保住了最常用的快捷键，其余的跟着字母一起移动。<kbd>Ctrl</kbd>+<kbd>Z</kbd>、<kbd>X</kbd>、<kbd>C</kbd>、<kbd>V</kbd>、<kbd>Q</kbd>、<kbd>W</kbd> 都在原位，<kbd>Ctrl</kbd>+<kbd>S</kbd>（保存）移到 QWERTY 的 D 键，<kbd>Ctrl</kbd>+<kbd>F</kbd>（查找）移到 QWERTY 的 E 键。</p>
+<p>按字母而不是按物理键位绑定操作的游戏，会把 WASD 拆散：W 和 A 不动，S 和 D 落到 QWERTY 的 D 键和 G 键上。可以在游戏里改键，或者玩游戏时用系统快捷键切回 QWERTY。Vim 的 H、J、K、L 也有同样的问题：H 不动，J 移到 QWERTY 的 Y 键，K 移到 N，L 移到 U，Vim 用户要么重新适应，要么重新映射。</p>

@@ -1,0 +1,120 @@
+<!--meta
+{
+  "id": "colemak-vs-dvorak",
+  "lang": "ja",
+  "slug": "colemak-vs-dvorak",
+  "title": "Colemak・Dvorak比較：どっちを覚えるべき？",
+  "description": "ColemakとDvorakをWorkman、QWERTYと比較。中段の使用率、同指連続、ショートカット、速度の研究、ローマ字入力との相性、インストールせずに試す方法まで。",
+  "h1": "ColemakとDvorakの比較：どちらの配列を覚えるべきか",
+  "keyword": "Colemak Dvorak 比較",
+  "keywords_secondary": ["Colemak Dvorak どっち", "Dvorak QWERTY 比較", "Colemak QWERTY 違い", "Workman配列"],
+  "summary": "ColemakとDvorakを比べると、QWERTYから移る多くの人にはColemakが向いています。動くのは17キーでCtrl+Z・X・C・Vはそのまま、中段の割合は74%対70%、同指連続は1.67%対2.63%とDvorakを上回ります。Dvorakはすでに打てる人や、スマホを含むほぼ全OSの標準配列がほしい人向けです。どちらもQWERTYより速いとは示されていません。",
+  "faq": [
+    {"q": "プログラミングにはColemakとDvorakのどっちがいい？", "a": "QWERTYから移るならColemakが楽です。記号のキーがほぼQWERTYの位置に残り、Dvorakは角かっこ、スラッシュ、マイナス、イコール、セミコロンを動かします。Colemak FAQは、最適な配列は使う言語や命名規則、エディターによるとも書いています。Dvorakで書く人向けには、角かっこを上段に置いたProgrammer Dvorakもあります。"},
+    {"q": "DvorakからColemakに乗り換えるべき？", "a": "たいていは必要ありません。Colemak FAQ自身が、長年のDvorak利用者には移行が楽ではないこと、Dvorakに対するColemakの利点はQWERTYに対するDvorakの利点より小さいことを認め、Dvorakにおおむね満足しているならそのままを勧めています。同指連続の差も1.67%対2.63%で、QWERTYの6.58%に比べれば小さなものです。"},
+    {"q": "ColemakやDvorakを覚えるとQWERTYを忘れる？", "a": "多くの人は両方を使い続けます。Colemak FAQは、両方を身につけた人は日常的に楽に切り替えられるとしつつ、QWERTYの速さや正確さが少し落ちたままの人もいると書いています。他人のパソコンでは、キーを見ながらQWERTYで打てば足ります。"},
+    {"q": "WindowsにColemakは標準で入っている？", "a": "Windows 11バージョン24H2から入っています。Microsoftは2024年1月のInsider Previewビルド26040で発表しました。英語などラテン文字の言語のオプションから追加します。それより古いWindowsではcolemak.comの無料インストーラーを使います。DvorakはWindows 95から標準で入っています。"},
+    {"q": "スマホでDvorakやColemakは使える？", "a": "DvorakはiOSでは2022年のiOS 16から、AndroidではAndroid 4.1から画面のキーボードで使えます。ColemakはGboardやSwiftKeyなどのキーボードアプリで使えます。ただしColemak FAQは、ガラスの上で打つと指の移動とミスが増えるとして、QWERTYでのジェスチャー入力を勧めています。"},
+    {"q": "Colemakを覚えるのにどれくらいかかる？", "a": "習得時間を測った対照研究は見つかりませんでした。Colemak FAQは人によると書き、動くのが17キーだけなので、時間の大半は指の運動技能と器用さを伸ばすことに使われるとしています。ミスがほとんど出ない速さで、毎日短く練習するのが現実的です。"}
+  ],
+  "sources": [
+    {"title": "Colemak Mod-DH: comparing layouts (same-finger bigrams and effort scores)", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: what it changes, origin, angle mod", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "ColemakMods/mod-dh on GitHub: installation, xkeyboard-config support, keymap files", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "Colemak keyboard layout (official site)", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "OJ Bucao, The Workman Keyboard Layout Philosophy (2010)", "url": "https://workmanlayout.org/"},
+    {"title": "US patent 2,040,248, Typewriter keyboard (Dvorak and Dealey, filed 1932, granted 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Dvorak配列（Wikipedia日本語版）：日本語入力とローマ字入力", "url": "https://ja.wikipedia.org/wiki/Dvorak配列"},
+    {"title": "Barbara Blackburn (typist), Wikipedia", "url": "https://en.wikipedia.org/wiki/Barbara_Blackburn_(typist)"},
+    {"title": "Colemak, Wikipedia", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Kinesis, QWERTY | Dvorak | Colemak et al", "url": "https://kinesis-ergo.com/switching-from-qwerty/"},
+    {"title": "xkeyboard-config(7): layouts shipped with Linux, including Dvorak, Colemak, Colemak-DH and Workman", "url": "https://man.archlinux.org/man/xkeyboard-config"},
+    {"title": "Microsoft, Announcing Windows 11 Insider Preview Build 26040 (January 26, 2024)", "url": "https://blogs.windows.com/windows-insider/2024/01/26/announcing-windows-11-insider-preview-build-26040-canary-channel/"},
+    {"title": "Macの日本語入力ソース設定を変更する（Apple サポート）：英字のレイアウト", "url": "https://support.apple.com/ja-jp/guide/japanese-input-method/jpim662a12b9/mac"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "ブラウザーでColemakを試す", "drill": "words", "layout": "colemak"}
+}
+-->
+<p>ColemakとDvorakは、どちらも英語でよく使う文字を中段（ホームポジションの段）に集めた代替配列です。中段で打つ割合も、1本の指が続けて別のキーを打つ回数も、QWERTYよりずっと良い数字が出ています。2つの配列は、QWERTYをどれだけ残すかで分かれます。1936年に特許を取ったDvorakでQWERTYと同じ位置に残る英字はAとMだけです。2006年に公開されたColemakは17キーを動かし、元に戻す、切り取り、コピー、貼り付けのショートカットを左手の位置に残します。2010年のWorkmanは21キーを動かします。AZERTYやQWERTZのような各国の配列は<a href="guide:keyboard-layouts">キーボード配列の種類</a>で扱っています。</p>
+
+<h2>ColemakとDvorakの比較：どっちがいい？</h2>
+<p>公開されている数字では、ColemakはどれもDvorakをわずかに上回り、どちらもQWERTYを大きく引き離します。同指連続とは、続く2文字を同じ指で打つことです。中段の割合、同指連続、負担スコアは英語の文章の打鍵を計算した値なので、配列を同じ条件で比べられます。自分で打つ文章では数字が変わります。</p>
+<table>
+<caption>QWERTY・Dvorak・Colemak・Workmanの比較</caption>
+<thead><tr><th scope="col">項目</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th><th scope="col">Colemak</th><th scope="col">Workman</th></tr></thead>
+<tbody>
+<tr><th scope="row">発表</th><td>1870年代</td><td>1932年出願、1936年特許</td><td>2006年</td><td>2010年</td></tr>
+<tr><th scope="row">中段で打つ割合</th><td>32%</td><td>70%</td><td>74%</td><td>公表値なし</td></tr>
+<tr><th scope="row">同指連続</th><td>6.58%</td><td>2.63%</td><td>1.67%</td><td>3.15%</td></tr>
+<tr><th scope="row">負担スコア（低いほど楽）</th><td>2.400</td><td>1.923</td><td>1.836</td><td>1.817</td></tr>
+<tr><th scope="row">QWERTYから動くキー</th><td>0</td><td>AとM以外の全英字と多くの記号</td><td>17</td><td>21</td></tr>
+<tr><th scope="row">Ctrl+Z・X・C・V</th><td>左手の下段</td><td>ばらばらで、C・V・Zは右手</td><td>そのまま</td><td>ZとXはそのまま、CとVは1つ右</td></tr>
+<tr><th scope="row">標準搭載</th><td>すべてのOS</td><td>Windows、macOS、Linux、ChromeOS、iOS 16以降、Android</td><td>Windows 11 24H2以降、macOS、Linux、ChromeOS</td><td>Linux（WindowsとmacOSは無料配布）</td></tr>
+</tbody>
+</table>
+<p>中段の割合は<a href="https://kinesis-ergo.com/switching-from-qwerty/">Kinesis</a>と<a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">英語版WikipediaのDvorakの記事</a>によるもので、70%と32%は1997年のジャレド・ダイアモンドの記事が出どころです。同指連続と負担スコアは<a href="https://colemakmods.github.io/mod-dh/compare.html">Colemak Mod-DHの比較ページ</a>の数字で、Project Gutenbergの本を各配列の設計者が勧める指使いで打った場合を計算しています。重みは作者自身の見積もりで、サイトはColemak-DHのプロジェクトのものなので、近い数字は引き分けと読んでください。動くキーの数は<a href="https://colemak.com/FAQ">Colemak FAQ</a>、Kinesis、<a href="https://workmanlayout.org/">workmanlayout.org</a>によります。</p>
+<p>ColemakとDvorakの差は、中段で74%対70%、同指連続で1.67%対2.63%です。Workmanは1キーあたりの基本の負担が低いので（Colemakの1.773に対して1.710）総合の負担スコアは4つで最も低くなりますが、同指連続はColemakのほぼ2倍です。</p>
+
+<h2>ColemakとDvorakは設計がどう違う？</h2>
+<p>Dvorakは左右の手を交互に使うことを、ColemakはQWERTYの癖を残すことを軸に作られています。オーガスト・ドヴォラックとウィリアム・ディーリーは1932年5月に特許を出願し、1936年5月に取得しました。母音はYも含めてすべて左手に、よく使う子音は右手に置いたので、英語の単語の多くは左右の手を行き来して打てます。中段は左がA O E U I、右がD H T N Sです。歴史と研究は<a href="guide:dvorak">Dvorak配列のガイド</a>にまとめています。</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>Dvorak配列。左手の中段に母音、右手の中段によく使う子音が並びます。キーの色は押す指を表します。</figcaption></figure>
+<p>交互打ちには代償もあります。Colemak FAQによると、Dvorakは同指連続が多く、負担が右手に偏り、QWERTYのPの位置にLがあるので右手の小指が忙しく、片手で数キーを滑らかに続けて打つ動きが少なくなります。よく使うIが、左手の人差し指を横に伸ばす位置にあることも挙げています。</p>
+<p>シャイ・コールマンは2006年1月1日にColemakを公開しました。QWERTYをできるだけ残し、効果のあるところだけ文字を動かす方針で、17キーのうち左右の手が変わるのはPとEだけです。中段はA R S T D H N E I Oになり、strandやseniorは中段から指が離れません。標準ではCaps Lockが2つめのBackspaceになります。覚え方は<a href="guide:colemak">Colemak配列のガイド</a>にあります。</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak配列。下段のほとんどと記号のほぼすべてがQWERTYと同じ位置に残ります。</figcaption></figure>
+<p>Colemakの弱点は中段の真ん中です。DとHが中央の2列にあるので人差し指を横に伸ばして打ち、よく出るHEでは右手を横にひねります。Colemak-DHとWorkmanは、この動きをなくすために作られました。</p>
+
+<h2>覚えやすいのはColemakとDvorakのどっち？</h2>
+<p>いまQWERTYで打っている人には、Colemakのほうが覚えやすい配列です。動くキーが少なく、手が変わるのは2つだけで、Ctrl+Z・X・C・Vが動かないので、文字を覚え直している間もショートカットはいつもどおり使えます。記号もほぼすべてQWERTYの位置に残ります。Dvorakはカンマとピリオドを上段に、セミコロンを左下に、角かっこを数字の段に移すので、プログラムや記号の多い文章を打つ人ほど覚え直すことが増えます。</p>
+<p>Colemak FAQはDvorakを「QWERTYに慣れた人には難しく、もどかしい」と書いていますが、これはColemak側の主張です。どちらの習得時間も、比べた対照研究は見つかりませんでした。<a href="https://en.wikipedia.org/wiki/Colemak">英語版WikipediaのColemakの記事</a>によると、Colemakには3〜5キーずつ5段階で移るTarmakという移行用の配列もあります。</p>
+<p>ショートカットは多くのアプリで文字についていきます。WorkmanはZとXを残してCとVを1つ右へずらし、DvorakはXを左手の人差し指に、C、V、Zを右手に移します。Dvorakでは元に戻す、コピー、貼り付けに、ふだんマウスを持つ手が要ります。macOSにはCommandを押している間だけQWERTYになる「Dvorak – QWERTY ⌘」があり、WindowsではAutoHotkeyのスクリプトで同じことができます。</p>
+
+<h2>ColemakやDvorakはQWERTYより速い？</h2>
+<p>どちらの配列も、QWERTYより速く打てるとは示されていません。記録が多いのはDvorakです。第二次世界大戦中、海軍にいたドヴォラックはタイピストを10日で自分の配列に移せたという実験を行いましたが、それ以前の少なくとも2つの研究は結果がわからないまま捨てていました。1956年には米国一般調達局（GSA）のEarle Strongが各グループ10人の対照研究を行い、打つ速さにも訓練の速さにもDvorakの利点は見られませんでした。Strongはドヴォラックに個人的な恨みを持っていたともいわれます。1990年には経済学者のLiebowitzとMargolisが記録を見直し、記録のしっかりした実験ではDvorakの利点はほとんどないか、まったくないとまとめました。</p>
+<p>Dvorakの有名な速度記録は1人のものです。1938年からDvorakで打っていたバーバラ・ブラックバーンは、毎分150語を50分続けた記録で1976年から1985年までギネスブックに載りましたが、公式の試験はなく、1人の記録では配列と本人の力を分けられません。Colemakの速さを測った対照研究は見つかりませんでした。表の数字は、指の移動や中段の割合といった快適さの指標です。配列を変えるとしばらくは遅くなるので、速さが目的なら、いまの配列のまま<a href="guide:how-to-type-faster">タイピングを速くする方法</a>を試し、<a href="guide:typing-speed">タイピングの平均速度</a>と比べてください。</p>
+
+<h2>ローマ字入力ならColemakとDvorakのどっち？</h2>
+<p>どちらも日本語のローマ字入力に使えます。ただしどちらも英語のための配列で、ここで挙げた比較に日本語の数字はありません。手がかりは母音と子音の位置です。</p>
+<table>
+<caption>ローマ字入力でよく使う文字の位置</caption>
+<thead><tr><th scope="col">文字</th><th scope="col">Dvorak</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>A I U E O</td><td>すべて左手（I以外は中段）</td><td>Aは左手、E I Oは右手の中段、Uは右手の上段</td></tr>
+<tr><td>K、Y</td><td>左手</td><td>右手</td></tr>
+<tr><td>S、T、R、D</td><td>右手</td><td>左手の中段</td></tr>
+<tr><td>N、H、M</td><td>右手</td><td>右手</td></tr>
+</tbody>
+</table>
+<p>Dvorakでは「た」「な」「ま」のように子音と母音を左右の手で打ち分けることが多くなります。例外はKとYで、「かきくけこ」は左手だけです。Colemakでは「に」「の」「ひ」が右手だけ、「さ」「た」が左手だけになり、「し」「て」「と」は左右に分かれます。日本語向けに手を加えたDvorakJP、ACT、JLODといった派生配列もあります。</p>
+<p>WindowsではDvorakもColemakも英語のキーボードとして入るので、選んでいる間は日本語のIMEが働きません。日本語もその配列で打つには、レジストリの書き換えやDvorakJのようなソフトを使う方法が知られています。Macでは日本語の入力ソースの「英字のレイアウト」で、ローマ字入力に使う配列を選べます。</p>
+
+<h2>WorkmanとColemak-DHはどこに入る？</h2>
+<p>WorkmanとColemak-DHはどちらもColemakのDとHへの横の動きをなくした配列で、代償の払い方が違います。OJ Bucaoは各キーを1（最も楽）から5（最もきつい）で採点し、2010年9月にWorkmanを公開しました。中央の2列で打つ割合は、彼の計算でQWERTYが22%、Dvorakが14%、Colemakが12%、Workmanが6%です。そのかわり同指連続はMod-DHの比較で3.15%と、Colemakの1.67%より多くなります。</p>
+<p>Colemak-DHはColemakを残し、横の動きの原因だけを動かします。StevePが2014年10月に公開し、Dを下段の左人差し指へ、GをQWERTYの位置へ戻し、Bを上段へ移し、HとMを入れ替えました。どのキーも押す指は変わりません。同指連続はColemakと同じ1.67%のままで、同じキーボード条件の負担スコアは1.802から1.735に下がり、格子配列のキーボードでは比較で最も低い1.726です。Linuxはxkeyboard-config 2.34以降に含み、macOSとWindows用のファイルはプロジェクトが配布しています。petitdoigtなら<a href="app:pairs?layout=colemak-dh">Colemak-DHの文字の組み合わせ</a>を何も入れずに練習できます。</p>
+
+<h2>結局どの配列を選べばいい？</h2>
+<p>いまQWERTYで打っていて、楽に移れて快適さの数字も良い配列がほしいならColemakです。すでにDvorakで打てるならそのままで構いません。Colemak FAQも、Dvorakにおおむね満足している人に同じことを勧めています。</p>
+<table>
+<caption>状況別の配列の選び方</caption>
+<thead><tr><th scope="col">あなたの状況</th><th scope="col">選ぶ配列</th><th scope="col">理由</th></tr></thead>
+<tbody>
+<tr><td>QWERTYから、いちばん楽に移りたい</td><td>Colemak</td><td>動くのは17キー、ショートカットはそのまま、同指連続は4つで最少</td></tr>
+<tr><td>人差し指を横に伸ばす動きがつらい、分割や格子配列のキーボードを使う</td><td>Colemak-DH</td><td>DとHの横の動きがなく、負担スコアは比較で最も低い</td></tr>
+<tr><td>すでにDvorakで楽に打てる</td><td>Dvorakのまま</td><td>Colemak FAQ自身が、Dvorakに対する利点は小さいとしている</td></tr>
+<tr><td>多くの機器で、追加の設定なしに同じ配列を使いたい</td><td>Dvorak、またはQWERTYのまま</td><td>DvorakはWindows、macOS、Linux、ChromeOS、iOS、Androidに標準搭載</td></tr>
+<tr><td>中央の列への動きを最も減らしたい</td><td>Workman</td><td>作者の計算で中央の列は6%（同指連続は増える）</td></tr>
+<tr><td>QWERTYですでに速く、さらに速さだけがほしい</td><td>QWERTYのまま</td><td>1956年の政府の研究はDvorakに速さの利点を見つけず、Colemakの速度研究は見つかっていない</td></tr>
+</tbody>
+</table>
+
+<h2>切り替える前にColemakやDvorakを試すには？</h2>
+<p>ブラウザーのタブで、OSの設定に触れずに3つとも試せます。無料の練習ツールpetitdoigtはキーの物理的な位置から配列を切り替えるので、手元のQWERTYのキーボード（JISでもUSでも）で<a href="app:words?layout=colemak">Colemak</a>、<a href="app:words?layout=dvorak">Dvorak</a>、<a href="app:words?layout=workman">Workman</a>を打てます。画面上のキーボードには新しい配列の文字が出て、各キーは押す指の色で塗られます。指の受け持ちは<a href="guide:finger-placement">キーボードの指の配置図</a>で説明しています。ブラウザーはどの指で押したかを見られないので、ツールは正しい指を示し、押したキーとタイミングを測ります。画面の表示と練習文は英語です。</p>
+<ol>
+<li>候補の配列ごとに、words（単語）ドリルを数分ずつ、示された指に従ってゆっくり打ちます。</li>
+<li>違和感のいちばん少なかった配列でpairs（文字の組み合わせ）ドリルを開きます。adaptive（適応）モードは、あなたが遅い、または間違えやすいキーからキーへの移りを中心にセットを作るので、その配列で自分の手に難しい組み合わせが見つかります。</li>
+<li>stats（統計）画面を開きます。配列ごとに数字を分けて記録するので、Colemakの練習がQWERTYの記録と混ざりません。</li>
+<li>続ける価値があると感じたらOSに追加します。Windows 11 24H2以降は「設定」→「時刻と言語」→「言語と地域」で英語の言語のオプションを開き、キーボードを追加します。macOSとLinuxはColemakもDvorakも標準で選べます。</li>
+</ol>

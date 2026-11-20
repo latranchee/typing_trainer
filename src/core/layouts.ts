@@ -15,7 +15,7 @@ export interface Target {
   strokes: Stroke[];
 }
 
-export type LayoutId = 'ca-fr' | 'us' | 'azerty' | 'qwertz' | 'dvorak' | 'colemak' | 'colemak-dh' | 'workman';
+export type LayoutId = 'ca-fr' | 'us' | 'azerty' | 'qwertz' | 'qwertz-ch' | 'es' | 'latam' | 'dvorak' | 'colemak' | 'colemak-dh' | 'workman';
 
 type Keys = Record<string, [string, string]>;
 
@@ -204,6 +204,77 @@ const QWERTZ: LayoutDef = {
   },
 };
 
+/**
+ * Swiss German QWERTZ (Windows "Swiss German"). The German letter rows without ß, with
+ * è é à on Shift of ü ö ä and ç on Shift of 4, so French types on it too. The circumflex,
+ * grave and diaeresis are dead keys, which is how Ä Ö Ü are typed with capitals on.
+ */
+const QWERTZ_CH: LayoutDef = {
+  id: 'qwertz-ch',
+  keys: {
+    Backquote: [cp(0xa7), cp(0xb0)],
+    ...row('Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Minus', "1234567890'", `+"*${cp(0xe7)}%&/()=?`),
+    Equal: [MARK.circumflex, MARK.grave],
+    ...row(TOP_CODES, 'qwertzuiop', 'QWERTZUIOP'),
+    ...row(HOME_CODES, 'asdfghjkl', 'ASDFGHJKL'),
+    ...row(BOTTOM_CODES, 'yxcvbnm', 'YXCVBNM'),
+    BracketLeft: [cp(0xfc), cp(0xe8)],
+    BracketRight: [MARK.diaeresis, '!'],
+    Semicolon: [cp(0xf6), cp(0xe9)],
+    Quote: [cp(0xe4), cp(0xe0)],
+    Backslash: ['$', cp(0xa3)],
+    Comma: [',', ';'],
+    Period: ['.', ':'],
+    Slash: ['-', '_'],
+    IntlBackslash: ['<', '>'],
+  },
+};
+
+/** The keys the two Spanish layouts share: the letter rows, ñ beside L, and the punctuation of the bottom row. */
+const SPANISH_LETTERS: Keys = {
+  ...row(TOP_CODES, 'qwertyuiop', 'QWERTYUIOP'),
+  ...row(HOME_CODES, 'asdfghjkl', 'ASDFGHJKL'),
+  ...row(BOTTOM_CODES, 'zxcvbnm', 'ZXCVBNM'),
+  Semicolon: [cp(0xf1), cp(0xd1)],
+  Minus: ["'", '?'],
+  BracketRight: ['+', '*'],
+  Comma: [',', ';'],
+  Period: ['.', ':'],
+  Slash: ['-', '_'],
+  IntlBackslash: ['<', '>'],
+};
+
+/**
+ * Spanish (Windows "Spanish", Spain). The acute and diaeresis share the key beside ñ,
+ * the grave and circumflex the key beside P, and ¡ ¿ sit at the end of the number row.
+ */
+const ES: LayoutDef = {
+  id: 'es',
+  keys: {
+    ...SPANISH_LETTERS,
+    Backquote: [cp(0xba), cp(0xaa)],
+    ...row('Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0', '1234567890', `!"${cp(0xb7)}$%&/()=`),
+    Equal: [cp(0xa1), cp(0xbf)],
+    BracketLeft: [MARK.grave, MARK.circumflex],
+    Quote: [MARK.acute, MARK.diaeresis],
+    Backslash: [cp(0xe7), cp(0xc7)],
+  },
+};
+
+/** Latin American (Windows "Latin American"). The acute and diaeresis sit beside P, ¿ ¡ at the end of the number row. */
+const LATAM: LayoutDef = {
+  id: 'latam',
+  keys: {
+    ...SPANISH_LETTERS,
+    Backquote: ['|', cp(0xb0)],
+    ...row('Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0', '1234567890', '!"#$%&/()='),
+    Equal: [cp(0xbf), cp(0xa1)],
+    BracketLeft: [MARK.acute, MARK.diaeresis],
+    Quote: ['{', '['],
+    Backslash: ['}', ']'],
+  },
+};
+
 /** Dvorak (US). Vowels under the left hand, the commonest consonants under the right. */
 const DVORAK: LayoutDef = {
   id: 'dvorak',
@@ -232,7 +303,7 @@ const WORKMAN: LayoutDef = {
 };
 
 /** The national layouts first, then the alternative ones. The first is where an unknown id lands. */
-const DEFS: LayoutDef[] = [CA_FR, US, AZERTY, QWERTZ, DVORAK, COLEMAK, COLEMAK_DH, WORKMAN];
+const DEFS: LayoutDef[] = [CA_FR, US, AZERTY, QWERTZ, QWERTZ_CH, ES, LATAM, DVORAK, COLEMAK, COLEMAK_DH, WORKMAN];
 
 export interface KeyLegend {
   base: string;

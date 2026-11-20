@@ -1,0 +1,141 @@
+<!--meta
+{
+  "id": "typing-accuracy",
+  "lang": "de",
+  "slug": "tippgenauigkeit",
+  "title": "Tippgenauigkeit: Was ist gut und wie verbesserst du sie?",
+  "description": "Tippgenauigkeit erklärt: wie sie berechnet wird, warum Tests verschieden zählen, welche Fehlerquote IHK und VHS erlauben und 7 Schritte zu weniger Tippfehlern.",
+  "h1": "Tippgenauigkeit: was als gut gilt und wie du sie verbesserst",
+  "keyword": "Tippgenauigkeit",
+  "keywords_secondary": ["Genauigkeit beim Tippen", "Tippgenauigkeit verbessern", "Fehlerquote beim Tippen", "Tippfehler vermeiden", "Genauigkeit oder Geschwindigkeit"],
+  "summary": "Die Tippgenauigkeit ist der Anteil deiner Anschläge, die die richtige Taste treffen: Bei 96 % gingen etwa 4 von 100 Anschlägen daneben. Peile beim Üben 96 % oder mehr an und 98 %, sobald du blind tippst. Tests werten dieselbe Abschrift unterschiedlich, weil manche korrigierte Fehler mitzählen und andere nur die stehen gebliebenen. Deutsche Prüfungen zählen die Fehler im fertigen Text und erlauben höchstens 0,36 bis 0,5 % der Anschläge.",
+  "faq": [
+    {"q": "Sind 95 % Genauigkeit beim Tippen gut?", "a": "Zum Üben ist das ein brauchbarer Wert, einen Punkt unter den 96 %, die dieser Ratgeber empfiehlt. Bei 95 % Anschlaggenauigkeit geht etwa jeder zehnte Anschlag für einen Fehler oder dessen Korrektur drauf. Typing.com rät Lehrkräften, zu Beginn des Schuljahrs 95 % als bestanden zu werten und die Latte dann Richtung 98 % zu heben."},
+    {"q": "Zählt die Rücktaste bei der Tippgenauigkeit?", "a": "Das hängt von der Wertung ab. Bei der Anschlaggenauigkeit zählt die falsche Taste gegen dich, auch nachdem du sie gelöscht hast. Prüfungen werten den fertigen Text, dort kostet ein korrigierter Fehler nur Zeit. Die IHK München zählt jeden Druck auf die Rücktaste sogar als Anschlag mit, Xpert Business an den Volkshochschulen zählt nur Schreibtasten, Leertaste und Umschalttaste."},
+    {"q": "Soll ich Tippfehler beim Üben korrigieren oder weitertippen?", "a": "Korrigiere sie, sobald du sie siehst. Echte Texte müssen stimmen, also lohnt es sich, genau das Korrigieren einzuüben. Außerdem kostet dich so jeder Fehler Zeit, und das drängt dich zu einem Tempo, das du beherrschst. Tippe ohne Korrektur weiter, wenn die Regeln eines Tests es ausdrücklich verlangen."},
+    {"q": "Sind 100 % Genauigkeit beim Tippen möglich?", "a": "Über einen kurzen Satz ja, über einen längeren Test schaffen es selbst schnelle Tipper selten: In der Aalto-Studie drückte das schnellste Zehntel bei 3,4 % seiner Tastendrücke die Rück- oder Entfernen-Taste. Für ein „sehr gut“ erlaubt die IHK München trotzdem höchstens 0,06 % Fehler im fertigen Text, bei 1.200 Anschlägen also keinen einzigen."},
+    {"q": "Wie werden Fehler in der 10-Minuten-Abschrift gezählt?", "a": "Bei Xpert Business zählen falsche, fehlende, zusätzliche und vertauschte Zeichen oder Wörter, übersprungene Zeilen und überflüssige oder fehlende Leerzeichen. Pro Wort wird höchstens ein Fehler berechnet. Wer ß und ss oder die Ziffer 1 und das kleine l wechselnd verwendet, bekommt ebenfalls einen Fehler. Korrekturen innerhalb der Prüfungszeit sind erlaubt, gewertet wird der Ausdruck."},
+    {"q": "Warum tippe ich auf einer neuen Tastatur ungenauer?", "a": "Deine Finger haben gelernt, wo die Tasten auf deiner gewohnten Tastatur liegen, also landet nach jedem Wechsel ein Teil der Anschläge daneben. Eine neue Belegung wie Dvorak oder Colemak verschiebt die Buchstaben selbst. Eine neue Tastatur verschiebt oft Enter, Umschalttaste oder die Abstände, etwa beim Wechsel von einer deutschen ISO-Tastatur auf eine US-Tastatur. Werde langsamer, bis du wieder 96 % hältst."}
+  ],
+  "sources": [
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes (CHI 2018), vollständiges Paper (PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Dhakal et al., Observations on Typing from 136 Million Keystrokes, Projektseite", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing (CHI 2016)", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Vanderbilt University, Today's self-taught typists almost as fast as touch typists (2016)", "url": "https://www.eurekalert.org/news-releases/520529"},
+    {"title": "IHK München und Oberbayern, Prüfung zum Nachweis der schreibtechnischen Fertigkeiten: Prüfungsanforderungen (PDF)", "url": "https://www.ihk-muenchen.de/ihk/documents/Berufliche-Bildung/Fortbildung/Fortbildungspr%C3%BCfungen/Anh%C3%A4nge/FSK_Schreibtechnische-Pr%C3%BCfung.pdf"},
+    {"title": "Volkshochschulverband Baden-Württemberg, Xpert Business Computerschreiben: Lernzielkatalog und Richtlinien zur Prüfung (Stand Oktober 2015, PDF)", "url": "https://berlin.de/vhs/themen/pruefungen-zertifikate/xpert/lzk_computerschreiben.pdf"},
+    {"title": "Typing.com, What is good accuracy when it comes to typing?", "url": "https://www.typing.com/blog/good-accuracy-comes-typing/"},
+    {"title": "Monkeytype, Quelltext der About-Seite (Definition von acc)", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Wikipedia, Zehnfingersystem", "url": "https://de.wikipedia.org/wiki/Zehnfingersystem"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Prüf deine Tippgenauigkeit", "drill": "words", "layout": "qwertz"}
+}
+-->
+<h2>Was ist Tippgenauigkeit?</h2>
+<p>Die Tippgenauigkeit ist der Anteil deines Tippens, der zum gewünschten Text passt, angegeben in Prozent. Bei 98 % gingen ungefähr 2 von 100 Anschlägen auf die falsche Taste. Tipptrainer zeigen sie neben deinem Tempo, weil die beiden Zahlen Verschiedenes messen: WPM oder Anschläge pro Minute zählen den Text, den du geschafft hast, und die Genauigkeit zeigt, wie viel deiner Mühe unterwegs in Fehler geflossen ist.</p>
+<p>Die Zeit fürs Korrigieren steckt schon in deinem Tempo. Jeder Tippfehler, den du verbesserst, kostet mindestens zwei zusätzliche Anschläge, die <kbd>Rücktaste</kbd> und die richtige Taste, dazu den Moment, bis du ihn bemerkst.</p>
+
+<h2>Wie wird die Tippgenauigkeit berechnet?</h2>
+<p>Die Tippgenauigkeit berechnest du als richtige Zeichen geteilt durch alle getippten Zeichen, mal 100. Was „alle getippten Zeichen“ heißt, legt jeder Test anders fest, deshalb kann derselbe Absatz in einem Test 95 % und in einem anderen 99 % ergeben.</p>
+<table>
+<caption>Übliche Arten, die Tippgenauigkeit zu werten</caption>
+<thead>
+<tr><th scope="col">Methode</th><th scope="col">Formel</th><th scope="col">Zählen korrigierte Fehler?</th><th scope="col">Wo sie dir begegnet</th></tr>
+</thead>
+<tbody>
+<tr><td>Anschlaggenauigkeit</td><td>richtige Tasten ÷ (richtige + falsche Tasten)</td><td>Ja, auch nachdem du sie gelöscht hast</td><td>Tipptrainer, die jede Taste beim Drücken werten</td></tr>
+<tr><td>Genauigkeit des fertigen Textes</td><td>übereinstimmende Zeichen im fertigen Text ÷ Länge des Textes</td><td>Nein, nur die stehen gebliebenen</td><td>Forschung, dort als „uncorrected error rate“</td></tr>
+<tr><td>Fehlerquote</td><td>Fehler im fertigen Text × 100 ÷ alle Anschläge</td><td>Nein</td><td>Prüfungen von IHK und Volkshochschulen</td></tr>
+</tbody>
+</table>
+<p>Monkeytype zum Beispiel wertet nach Anschlägen: <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Seine Definition</a> von Genauigkeit lautet „percentage of correctly pressed keys“, also der Anteil richtig gedrückter Tasten. Wie weit die Methoden auseinanderliegen, zeigt ein Beispiel. Du tippst einen Satz mit 100 Zeichen, triffst unterwegs 5 falsche Tasten, fängst 4 davon mit der <kbd>Rücktaste</kbd> ab und lässt 1 stehen. Insgesamt hast du 99 richtige Tasten gedrückt, 5 falsche und viermal die Rücktaste, zusammen 108 Anschläge.</p>
+<ul>
+<li>Anschlaggenauigkeit: 99 ÷ (99 + 5) = 95,2 %</li>
+<li>Genauigkeit des fertigen Textes: 99 von 100 Zeichen stimmen = 99 %</li>
+<li>Fehlerquote wie bei der IHK: 1 Fehler × 100 ÷ 108 Anschläge = 0,93 %</li>
+</ul>
+<p>Zum Üben ist die Anschlaggenauigkeit die nützlichere Zahl. Sie zeigt auch die Fehler, die du korrigiert hast, und genau dort versickert dein Tempo. Die Genauigkeit des fertigen Textes sieht die Person, die deine E-Mail liest. Deutsche Prüfungen rechnen mit der Fehlerquote: Sie zählen nur die Fehler im fertigen Text und teilen durch alle Anschläge, Umschalttaste eingeschlossen. Die IHK München zählt laut ihren <a href="https://www.ihk-muenchen.de/ihk/documents/Berufliche-Bildung/Fortbildung/Fortbildungspr%C3%BCfungen/Anh%C3%A4nge/FSK_Schreibtechnische-Pr%C3%BCfung.pdf">Prüfungsanforderungen</a> sogar die Rücktaste mit. Mit 0,93 % läge der Beispielsatz schon weit über dem, was eine Prüfung erlaubt. Wie du Anschläge und WPM umrechnest, steht im <a href="guide:words-per-minute">Ratgeber zu Anschlägen pro Minute und WPM</a>.</p>
+
+<h2>Welche Tippgenauigkeit ist gut?</h2>
+<p>Eine gute Tippgenauigkeit liegt bei 96 % oder mehr, gemessen pro Anschlag, und bei 98 % oder mehr, sobald du blind tippst. Bei 94 % geht schon etwa jeder neunte Anschlag für einen Fehler oder dessen Korrektur drauf. Nimm diese Stufen als Faustregel für die Anschlaggenauigkeit beim Üben:</p>
+<table>
+<caption>Stufen der Anschlaggenauigkeit beim Üben</caption>
+<thead>
+<tr><th scope="col">Genauigkeit</th><th scope="col">Was das heißt</th><th scope="col">Was du tun solltest</th></tr>
+</thead>
+<tbody>
+<tr><td>unter 90 %</td><td>Jede zehnte Taste oder mehr ist falsch. Rechnest du die Rücktaste mit, gehen fast ein Fünftel deiner Anschläge für Fehler drauf.</td><td>Werde deutlich langsamer und prüf deine Fingerhaltung.</td></tr>
+<tr><td>90–95 %</td><td>Ein Fehler alle 10 bis 20 Tasten. Normal, solange du das Zehnfingersystem oder eine neue Belegung lernst oder aufs Tempo drückst.</td><td>Werde langsamer, bis du 96 % hältst.</td></tr>
+<tr><td>96–97 %</td><td>Ein Fehler alle 25 bis 33 Tasten, grob alle fünf bis sieben Wörter. Solide.</td><td>Bleib bei diesem Tempo und arbeite an deinen schwächsten Tasten.</td></tr>
+<tr><td>98 % und mehr</td><td>Ein Fehler alle 50 Tasten oder seltener, grob alle zehn Wörter. Saubere Arbeit.</td><td>Steigere dein Tempo in kleinen Schritten.</td></tr>
+</tbody>
+</table>
+<p>Prüfungen setzen feste Grenzen, und die deutschen sind streng. Weil sie die Fehler im fertigen Text durch alle Anschläge teilen, lässt sich ihre Grenze direkt in eine Genauigkeit übersetzen:</p>
+<table>
+<caption>Fehlergrenzen deutscher Prüfungen im Tastschreiben</caption>
+<thead>
+<tr><th scope="col">Prüfung</th><th scope="col">Verlangtes Tempo</th><th scope="col">Höchste Fehlerquote</th><th scope="col">Entspricht mindestens</th></tr>
+</thead>
+<tbody>
+<tr><td>Nachweis der schreibtechnischen Fertigkeiten, IHK München und Oberbayern</td><td>1.200 Anschläge in 10 Minuten</td><td>0,36 % am PC, für „sehr gut“ 0,06 %</td><td>99,64 %</td></tr>
+<tr><td>Xpert Business Computerschreiben der Volkshochschulen (Stand 2015)</td><td>800 bis 1.500 Anschläge in 10 Minuten, je nach Stufe</td><td>0,5 %, für „sehr gut“ 0,08 %</td><td>99,5 %</td></tr>
+</tbody>
+</table>
+<p>Bei 1.200 Anschlägen erlaubt die IHK also 4 Fehler, und für ein „sehr gut“ keinen einzigen. Gezählt wird dabei nur, was im fertigen Text stehen bleibt: Die <a href="https://berlin.de/vhs/themen/pruefungen-zertifikate/xpert/lzk_computerschreiben.pdf">Richtlinien von Xpert Business</a> erlauben Korrekturen innerhalb der Prüfungszeit und werten am Ende den Ausdruck. Für Schulen rät <a href="https://www.typing.com/blog/good-accuracy-comes-typing/">Typing.com</a> Lehrkräften, ab der vierten Klasse 98 % oder mehr anzupeilen. Tempostufen für jedes Niveau findest du im Ratgeber zur <a href="guide:typing-speed">durchschnittlichen Tippgeschwindigkeit</a>.</p>
+
+<h3>Wie genau tippen andere?</h3>
+<p>In einer Studie mit 168.000 Online-Tippern waren die fertigen Sätze im Schnitt zu etwa 98,8 % richtig, und 6,3 % aller Tastendrücke gingen an die <kbd>Rücktaste</kbd> oder <kbd>Entf</kbd>. Forschende der Aalto-Universität und der University of Cambridge haben diese <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">136 Millionen Anschläge</a> von Freiwilligen aufgezeichnet, die in einem Online-Tipptest englische Sätze abschrieben. Die meisten korrigierten den Großteil ihrer Fehler: 90 % von ihnen ließen weniger als 2,66 % Fehler im fertigen Satz stehen.</p>
+<table>
+<caption>Fehler und Korrekturen bei 168.000 Online-Tippern (Dhakal et al., CHI 2018)</caption>
+<thead>
+<tr><th scope="col">Gruppe</th><th scope="col">Fehler im fertigen Text</th><th scope="col">Anteil von Rück- und Entfernen-Taste an allen Tastendrücken</th></tr>
+</thead>
+<tbody>
+<tr><td>Schnellste 10 % (über etwa 78 WPM)</td><td>0,71 %</td><td>3,4 %</td></tr>
+<tr><td>Alle Teilnehmenden (Schnitt 52 WPM)</td><td>1,17 %</td><td>6,3 %</td></tr>
+<tr><td>Langsamste 10 % (unter etwa 26 WPM)</td><td>1,78 %</td><td>9,05 %</td></tr>
+</tbody>
+</table>
+<p>Die langsamste Gruppe drückte mehr als zweieinhalbmal so oft die Rück- oder Entfernen-Taste wie die schnellste und ließ trotzdem etwa zweieinhalbmal so viele Fehler stehen. Die Autoren vermuten, dass langsame Tipper ihre Fehler schlechter bemerken. Zum Vergleich: Die IHK lässt 0,36 % zu, etwa die Hälfte dessen, was das schnellste Zehntel im Online-Test stehen ließ.</p>
+
+<h2>Tippgenauigkeit oder Geschwindigkeit: Was ist wichtiger?</h2>
+<p>Die Genauigkeit kommt zuerst, weil Fehler Tempo kosten. In den Aalto-Daten tippten Menschen, die weniger Fehler machten und korrigierten, schneller: Das Tempo korrelierte negativ mit dem Anteil von Rück- und Entfernen-Taste (r = −0,36) und mit den Anschlägen pro Zeichen (r = −0,40). Die Autoren folgern, dass schon etwas weniger Fehler einen großen Tempogewinn bringen können.</p>
+<p>Bei 95 % Anschlaggenauigkeit drückst du auf 95 richtige Tasten etwa 5 falsche, und jede braucht einen Druck auf die Rücktaste, also dient ungefähr jeder zehnte Anschlag einem Fehler oder seiner Korrektur. Bei 98 % ist es etwa jeder 25. Dazu kommt die Pause, in der du den Fehler entdeckst und die Stelle wiederfindest. Ein spät bemerkter Fehler kostet mehr, weil du richtige Buchstaben löschst, um zu ihm zurückzukommen.</p>
+<p>Innerhalb einer Übungseinheit ziehen Tempo und Genauigkeit gegeneinander: Wer schneller tippt, als die Finger es sauber schaffen, macht mehr Fehler. Vergleicht man verschiedene Tipper, sind die Schnellsten zugleich die Genauesten, wie die Tabelle oben zeigt. Beide Befunde führen zur selben Übungsweise. Tippe in einem Tempo, das du sauber halten kannst, und steigere es, sobald die Bewegungen automatisch laufen. Die Temposeite dieses Plans beschreibt der Ratgeber <a href="guide:how-to-type-faster">schneller tippen lernen</a>.</p>
+
+<h2>Warum mache ich so viele Tippfehler?</h2>
+<p>Der häufigste Tippfehler ist ein falscher Buchstabe an der Stelle des richtigen, und die Forschenden führen ihn auf ungleichmäßiges Tippen zurück. In einer Stichprobe von 783 Personen aus der Aalto-Studie fielen die Fehler in drei Arten:</p>
+<table>
+<caption>Fehlerarten und ihre Raten (Dhakal et al., CHI 2018, 783 Personen, englische Sätze; deutsche Beispiele zur Veranschaulichung)</caption>
+<thead>
+<tr><th scope="col">Fehlerart</th><th scope="col">Beispiel</th><th scope="col">Rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Ersetzung: ein falscher Buchstabe statt des richtigen</td><td><em>Hsus</em> statt <em>Haus</em></td><td>1,65 %</td></tr>
+<tr><td>Auslassung: ein Buchstabe fehlt</td><td><em>Kafee</em> statt <em>Kaffee</em></td><td>0,80 %</td></tr>
+<tr><td>Einfügung: ein Buchstabe zu viel</td><td><em>Wanderrung</em> statt <em>Wanderung</em></td><td>0,67 %</td></tr>
+</tbody>
+</table>
+<p>Ersetzungen kamen am häufigsten vor, und sie trennten langsame von schnellen Tippern stärker als jede andere Fehlerart. Die Forschenden vermuten, dass sie entstehen, wenn jemand ungleichmäßig tippt und nur eine vage Vorstellung davon hat, wo die Finger gerade liegen. Eine <a href="https://userinterfaces.aalto.fi/how-we-type">Motion-Capture-Studie mit 30 Tippern</a> an der Aalto-Universität weist in dieselbe Richtung: Einer ihrer drei Faktoren für hohe Leistung war die eindeutige Zuordnung, bei der jeder Buchstabe immer vom selben Finger kommt. Wenn du <kbd>C</kbd> an manchen Tagen mit dem Zeigefinger und an anderen mit dem Mittelfinger triffst, hat deine Hand zwei halb gelernte Wege zu dieser Taste.</p>
+<p>Achte auf diese Gewohnheiten:</p>
+<ul>
+<li><strong>Die Grundreihe verlassen.</strong> Wenn deine Finger zwischen den Wörtern nicht auf <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> und <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>Ö</kbd> zurückkehren, startet jeder Griff von einer anderen Stelle und landet eine Taste daneben. Die Fühlpunkte auf <kbd>F</kbd> und <kbd>J</kbd> führen dich in die Grundstellung, ohne dass du hinschaust. Die Richtlinien von Xpert Business führen die „verlorene Grundstellung der Hände“ sogar als eigenen Punkt in ihrer Fehlerliste.</li>
+<li><strong>Auf die Tasten schauen.</strong> Deine Tippfehler erscheinen auf dem Bildschirm, und Bildschirm und Tastatur kannst du nicht zugleich ansehen. In einer <a href="https://www.eurekalert.org/news-releases/520529">Studie der Vanderbilt University</a> mit 48 Tippern verließen sich die mit eigenwilliger Fingerhaltung auf den Blick zur Tastatur: Als sie verdeckt war, sanken ihr Tempo und ihre Genauigkeit, während Zehnfingerschreiber etwa gleich blieben. Die Forschenden vermuten, dass diese Tipper weniger Fehler bemerken, weil sie nur zwischendurch auf den Bildschirm schauen.</li>
+<li><strong>Großbuchstaben mit der falschen Umschalttaste.</strong> Im Deutschen beginnt jedes Substantiv mit einem Großbuchstaben, du drückst die <kbd>Umschalttaste</kbd> also viel öfter als in englischen Texten. Nimmst du für das große <kbd>A</kbd> in „Auto“ die linke Umschalttaste, erledigt eine Hand zwei Aufgaben und rutscht aus der Grundstellung. Im <a href="https://de.wikipedia.org/wiki/Zehnfingersystem">Zehnfingersystem</a> drückt die Hand die Umschalttaste, die gerade keine Zeichentaste anschlägt, bei „Auto“ also die rechte und bei „Haus“ die linke.</li>
+<li><strong>Buchstaben in falscher Reihenfolge.</strong> <em>udn</em> statt <em>und</em> passiert, wenn eine Hand losschlägt, bevor die andere fertig ist. Übe in gleichmäßigem Rhythmus, auch einem langsameren, bis die Reihenfolge sitzt.</li>
+<li><strong>Schwache Finger.</strong> Häufen sich deine Fehler auf <kbd>Q</kbd>, <kbd>Y</kbd>, <kbd>P</kbd>, <kbd>Ö</kbd>, <kbd>Ä</kbd> oder <kbd>Ü</kbd>, braucht der kleine Finger oder der Ringfinger dahinter eigenes Training. Im <a href="guide:typing-exercises">Ratgeber mit Tippübungen</a> findest du Drills für genau diese Finger.</li>
+</ul>
+
+<h2>Wie verbesserst du deine Tippgenauigkeit?</h2>
+<p>Um deine Tippgenauigkeit zu verbessern, übst du in einem Tempo, bei dem du 96 % oder mehr hältst, und trainierst gezielt die Finger und Buchstabenpaare hinter deinen Fehlern. Schritt für Schritt:</p>
+<ol>
+<li><strong>Finde dein sauberes Tempo.</strong> Tippe ein paar einminütige Runden mit gewöhnlichen Wörtern und beobachte die Genauigkeit. Das Tempo, bei dem sie bei 96 % oder höher bleibt, ist vorerst dein Übungstempo, auch wenn es sich langsam anfühlt.</li>
+<li><strong>Gib jeder Taste einen Finger.</strong> Schau nach, <a href="guide:finger-placement">welcher Finger welche Taste drückt</a>, und bleib dabei, auch bei den Tasten, die man leicht mit der falschen Hand nimmt: <kbd>B</kbd> gehört zum linken Zeigefinger, <kbd>Z</kbd> zum rechten. petitdoigt färbt jede Taste in der Farbe des Fingers, der sie drücken soll, und hebt diesen Finger beim Tippen hervor, so wird eine falsche Gewohnheit sichtbar. Deine Hände sieht ein Browser nicht, deshalb kann der Trainer nicht prüfen, welchen Finger du benutzt hast; das bleibt deine Aufgabe.</li>
+<li><strong>Lass den Blick auf dem Bildschirm.</strong> Dort erscheinen die Fehler. Wenn du noch auf die Tasten schaust, hilft dir der Ratgeber <a href="guide:type-without-looking">blind tippen, ohne auf die Tastatur zu schauen</a>, und eine Bildschirmtastatur ersetzt beim Lernen die Beschriftung der Tasten.</li>
+<li><strong>Finde heraus, wo deine Fehler stecken.</strong> Eine einzige Genauigkeit für eine ganze Runde verrät nicht, welche Tasten sie nach unten ziehen. Die <a href="app:stats">Statistik</a> des Trainers schlüsselt deine Ergebnisse für jede Belegung nach Finger und Buchstabe auf und listet deine schwächsten Übergänge von Taste zu Taste mit ihrer Genauigkeit. Manche Fehler passieren nur zwischen zwei bestimmten Tasten, etwa <kbd>Z</kbd> und <kbd>U</kbd> in <em>zu</em>, die auf QWERTZ beide der rechte Zeigefinger tippt. Im adaptiven Modus baut die Übung <a href="app:pairs?layout=qwertz">Paare</a> ihre Runden vor allem aus deinen eigenen langsamsten und fehleranfälligsten Übergängen.</li>
+<li><strong>Lass jeden Fehler eine Rücktaste kosten.</strong> Korrigiere jeden Fehler, sobald du ihn siehst, so wie in einer echten E-Mail. Der Hardcore-Modus macht das streng: Eine falsche Taste bleibt im Text stehen, bis du sie mit der <kbd>Rücktaste</kbd> löschst.</li>
+<li><strong>Halte die Einheiten kurz.</strong> Hör auf, wenn deine Genauigkeit zwei oder drei Runden hintereinander sinkt, denn müde übst du die schlampige Version jeder Bewegung ein.</li>
+<li><strong>Steigere das Tempo in kleinen Schritten.</strong> Wenn du über mehrere Einheiten 98 % bei deinem Übungstempo hältst, leg ein paar WPM zu. Fällt die Genauigkeit unter 96 %, geh zurück zum letzten Tempo, das du sauber halten konntest.</li>
+</ol>
+<p>Für eine Prüfung bei der IHK oder der Volkshochschule übst du zusätzlich unter Prüfungsbedingungen: zehn Minuten am Stück nach einer gedruckten Vorlage, danach zählst du die Fehler im fertigen Text und teilst sie durch alle Anschläge. Liegt die Quote über der Grenze deiner Prüfung, nimm Tempo heraus, bis sie darunter bleibt.</p>

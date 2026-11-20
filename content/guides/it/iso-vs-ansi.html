@@ -1,0 +1,124 @@
+<!--meta
+{
+  "id": "iso-vs-ansi",
+  "lang": "it",
+  "slug": "tastiera-iso-o-ansi",
+  "title": "Tastiera ISO o ANSI: differenze, JIS e quale scegliere",
+  "description": "Tastiera ISO o ANSI a confronto: Invio e Maiusc, il tasto in più della ISO, la tastiera italiana, la JIS giapponese, come riconoscere la tua e quale scegliere.",
+  "h1": "Tastiera ISO o ANSI: le differenze, la JIS e come riconoscere la tua",
+  "keyword": "tastiera ISO o ANSI",
+  "keywords_secondary": ["ISO vs ANSI", "tastiera ANSI", "tastiera ISO", "tastiera JIS", "tastiera italiana ISO"],
+  "summary": "La scelta tra tastiera ISO o ANSI si riduce al tasto Invio e al Maiusc sinistro. Le ANSI hanno un Invio largo su una sola riga e un Maiusc sinistro lungo; le ISO hanno un Invio alto su due righe e un Maiusc sinistro corto con un tasto in più accanto. Gli Stati Uniti usano ANSI, l'Italia e quasi tutta l'Europa ISO, il Giappone JIS. Le lettere stanno negli stessi punti su tutte e tre.",
+  "faq": [
+    {"q": "La tastiera italiana è ISO o ANSI?", "a": "ISO. Le tastiere italiane hanno l'Invio alto su due righe, un Maiusc sinistro corto e accanto un tasto in più che scrive < e >. Il tasto subito a sinistra dell'Invio scrive ù e §. Apple elenca la sua tastiera italiana tra i modelli ISO."},
+    {"q": "La tastiera del MacBook è ISO o ANSI?", "a": "Dipende dalla versione per paese. Nell'elenco di Apple le tastiere in inglese americano, cinese, coreano e thailandese sono ANSI e quella giapponese è JIS. Le altre versioni linguistiche, tra cui italiano, britannico, tedesco, francese e spagnolo, sono ISO. Guarda il tasto Invio: se occupa una sola riga, è ANSI."},
+    {"q": "Meglio ISO o ANSI per giocare?", "a": "La forma cambia solo dimensione e posizione dei tasti. Nei giochi che legano scatto, accovacciamento o un'altra azione al Maiusc sinistro, la ISO dà al mignolo sinistro un tasto da 1,25u con il tasto in più subito accanto, contro un tasto da 2,25u sulla ANSI. Chi è abituato a una forma sbaglierà il Maiusc sinistro per un po' dopo il passaggio all'altra."},
+    {"q": "Si possono montare keycap ANSI su una tastiera ISO?", "a": "Quasi tutti sì: lettere, numeri e i tasti intorno hanno la stessa misura nelle due forme. Le forme differiscono per l'Invio, il Maiusc sinistro, il tasto accanto all'Invio e il tasto in più della ISO, quindi un set ANSI lascia quei posti vuoti o con tasti della misura sbagliata. Cerca un set che includa un kit ISO."},
+    {"q": "Come si scrivono < e > con il layout italiano su una tastiera ANSI?", "a": "Il layout italiano di Windows li mette solo sul tasto in più della ISO, che una ANSI non ha. La strada più semplice è passare al layout americano, dove < e > sono Maiusc con la virgola e Maiusc con il punto. In alternativa serve un programma che rimappi un tasto."},
+    {"q": "Cos'è una tastiera con Invio big-ass?", "a": "Gli appassionati di tastiere chiamano così una tastiera il cui Invio occupa sia il posto dell'Invio ANSI sia quello dell'Invio ISO. Il tasto che la ANSI mette sopra l'Invio sale nella fila dei numeri, accanto a un Backspace più corto. Lo standard ISO/IEC 9995 elenca questa disposizione come variante di quella ANSI, usata in alcuni paesi asiatici."}
+  ],
+  "sources": [
+    {"title": "Apple Support: How to identify your Apple keyboard layout by country or region", "url": "https://support.apple.com/102743"},
+    {"title": "Apple Mac User Guide: Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/mac"},
+    {"title": "Manuale utente Mac (macOS Monterey 12): Specificare un tipo di tastiera sul Mac", "url": "https://support.apple.com/it-it/guide/mac-help/mchlp2886/12.0/mac"},
+    {"title": "Apple Community: How To Fix Keyboard Type Problems", "url": "https://discussions.apple.com/docs/DOC-250007848"},
+    {"title": "W3C: UI Events KeyboardEvent code Values", "url": "https://www.w3.org/TR/uievents-code/"},
+    {"title": "Wikipedia: ISO/IEC 9995", "url": "https://en.wikipedia.org/wiki/ISO/IEC_9995"},
+    {"title": "Wikipedia: Keyboard layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Wikipedia: Portuguese keyboard layout", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "Wikipedia: Language input keys", "url": "https://en.wikipedia.org/wiki/Language_input_keys"},
+    {"title": "Deskthority wiki: ANSI vs ISO", "url": "https://deskthority.net/wiki/ANSI_vs_ISO"},
+    {"title": "Deskthority wiki: ANSI vs JIS", "url": "https://deskthority.net/wiki/ANSI_vs_JIS"},
+    {"title": "Ultimate Hacking Keyboard: ANSI or ISO? Which keyboard layout is more ergonomic?", "url": "https://uhk.io/blog/2015/09/09/ansi-or-iso-which-keyboard-layout-is-more-ergonomic"},
+    {"title": "Corsair: ANSI vs ISO, what's the best keyboard layout?", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/ansi-vs-iso-whats-the-best-keyboard-layout/"},
+    {"title": "Keebsforall: ANSI vs ISO typing efficiency compared", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-vs-iso-typing-efficiency-compared"},
+    {"title": "Keebsforall: ANSI, ISO, JIS: which layout fits your needs?", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-iso-jis-which-layout-fits-your-needs"},
+    {"title": "KbdLayout: layout italiano (KBDIT)", "url": "https://kbdlayout.info/kbdit"},
+    {"title": "KbdLayout: layout americano (KBDUS)", "url": "https://kbdlayout.info/kbdus"},
+    {"title": "KbdLayout: layout britannico (KBDUK)", "url": "https://kbdlayout.info/kbduk"},
+    {"title": "KbdLayout: layout tedesco (KBDGR)", "url": "https://kbdlayout.info/kbdgr"},
+    {"title": "KbdLayout: layout francese (KBDFR)", "url": "https://kbdlayout.info/kbdfr"},
+    {"title": "KbdLayout: layout spagnolo (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "DreymaR's Big Bag of Keyboard Tricks: ergonomic mods", "url": "https://dreymar.colemak.org/ergo-mods.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Scrivi su una tastiera uguale alla tua", "drill": "words"}
+}
+-->
+<p>ISO, ANSI e JIS descrivono la tastiera fisica: la misura di ogni tasto e la sua posizione. Il layout con cui scrivi, come l'italiano o il QWERTY americano, è un'impostazione software che lavora sopra quella forma (la guida ai <a href="guide:keyboard-layouts">layout tastiera</a> parla di quelli). Quasi tutta la tastiera è identica nelle tre forme. Le differenze stanno ai bordi, intorno a Invio, Maiusc sinistro e barra spaziatrice, e cambiano il lavoro dei mignoli.</p>
+<figure data-figure="board-shapes"><figcaption>Tastiere ANSI, ISO e JIS a confronto. Guarda prima il tasto Invio e il Maiusc sinistro, poi i tasti intorno alla barra spaziatrice della JIS.</figcaption></figure>
+
+<h2>Qual è la differenza tra tastiera ISO e ANSI?</h2>
+<p>Una tastiera ISO ha un Invio alto che copre due righe, un Maiusc sinistro corto e un tasto di carattere in più rispetto a una ANSI, che ha un Invio su una sola riga e un Maiusc sinistro lungo fino alla <kbd>Z</kbd>. Il tasto in più della ISO sta tra il Maiusc sinistro e la <kbd>Z</kbd>; sulla tastiera italiana scrive <kbd>&lt;</kbd> e <kbd>&gt;</kbd>.</p>
+<p>L'Invio alto sposta un altro tasto. Sulla ANSI il tasto della barra rovesciata (<kbd>\</kbd> e <kbd>|</kbd> su una tastiera americana) chiude la riga di lettere in alto, proprio sopra l'Invio. La ISO lì non ha spazio, quindi quel tasto scende nella riga centrale, subito a sinistra dell'Invio. Sulla tastiera italiana diventa il tasto della <kbd>ù</kbd> e del <kbd>§</kbd>, e la barra rovesciata finisce in alto a sinistra, sotto <kbd>Esc</kbd>. Lo standard ISO/IEC 9995 conta 48 tasti di carattere nella disposizione ANSI e 49 in quella ISO. Una tastiera PC completa americana ha 104 tasti e quella europea più comune 105; senza tastierino numerico, una tenkeyless scende a 87 tasti in ANSI e 88 in ISO.</p>
+<p>I produttori misurano i tasti in unità: 1u è la larghezza di un tasto lettera. La tabella dà le unità dove una fonte le indica.</p>
+<table>
+<caption>Tastiere ANSI, ISO e JIS a confronto</caption>
+<thead><tr><th scope="col">Caratteristica</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">JIS</th></tr></thead>
+<tbody>
+<tr><th scope="row">Invio</th><td>Una riga, spesso largo 2,25u</td><td>Due righe, a forma di L</td><td>Due righe, a forma di L</td></tr>
+<tr><th scope="row">Maiusc sinistro</th><td>Lungo, 2,25u</td><td>Corto, circa 1,25u, con un tasto in più alla sua destra</td><td>Lungo</td></tr>
+<tr><th scope="row">Maiusc destro</th><td>Lungo</td><td>Lungo</td><td>Più corto, con un tasto in più (ろ) alla sua sinistra</td></tr>
+<tr><th scope="row">Il tasto \ americano</th><td>Riga in alto, sopra l'Invio</td><td>Riga centrale, a sinistra dell'Invio (ù sulla tastiera italiana)</td><td>Riga centrale, a sinistra dell'Invio</td></tr>
+<tr><th scope="row">Backspace</th><td>2u</td><td>2u</td><td>1u, con un tasto ¥ accanto</td></tr>
+<tr><th scope="row">Barra spaziatrice</th><td>Lunga</td><td>Lunga</td><td>Più corta, con tasti per la modalità di input ai lati</td></tr>
+<tr><th scope="row">Tasti di carattere</th><td>48</td><td>49</td><td>49</td></tr>
+<tr><th scope="row">Tasti su una tastiera PC completa</th><td>104</td><td>105</td><td>109</td></tr>
+<tr><th scope="row">Standard in</th><td>Stati Uniti</td><td>Italia e quasi tutta l'Europa</td><td>Giappone</td></tr>
+</tbody>
+</table>
+
+<h2>Quali paesi usano ISO, ANSI o JIS?</h2>
+<p>Gli Stati Uniti usano ANSI, l'Europa quasi ovunque ISO e il Giappone JIS. Il catalogo delle tastiere Apple dà un elenco preciso per lingua, perché Apple classifica ogni sua versione linguistica sotto una sola forma.</p>
+<table>
+<caption>Forma della tastiera per lingua, dal catalogo Apple (ABNT2 da ISO/IEC 9995)</caption>
+<thead><tr><th scope="col">Forma</th><th scope="col">Tastiere che la usano</th></tr></thead>
+<tbody>
+<tr><th scope="row">ANSI</th><td>Inglese americano, coreano, thailandese, cinese (Pinyin e Zhuyin)</td></tr>
+<tr><th scope="row">ISO</th><td>Italiano, svizzero, britannico e irlandese, tedesco e austriaco, francese e belga, spagnolo, portoghese, olandese, danese, norvegese, svedese e finlandese, russo, greco, turco, arabo, ebraico, francese canadese, spagnolo latinoamericano e altre</td></tr>
+<tr><th scope="row">JIS</th><td>Giapponese</td></tr>
+<tr><th scope="row">ABNT2 (ISO più un tasto)</th><td>Portoghese brasiliano</td></tr>
+</tbody>
+</table>
+<p>Chi scrive in Canton Ticino usa di solito la tastiera svizzera, che Apple classifica anch'essa come ISO. Le tastiere coreane vengono dalla famiglia ANSI e aggiungono due tasti accanto alla barra spaziatrice: 한/영 passa dall'hangul alle lettere latine e 한자 converte l'hangul in hanja. Alcuni mercati asiatici vendono anche una variante ANSI con un Invio extralarge che riempie sia il posto dell'Invio ANSI sia quello ISO. Sui Paesi Bassi le fonti non concordano: Apple vende una tastiera olandese ISO, mentre il wiki Deskthority mette i Paesi Bassi tra i paesi che usano ANSI.</p>
+<p>La forma segue il mercato per cui la tastiera è stata costruita. Un portatile comprato a Milano resta ISO anche se imposti Windows o macOS in inglese americano, e una tastiera ordinata da un negozio statunitense resta ANSI anche quando scegli il layout italiano.</p>
+
+<h2>Come capire se la tastiera è ANSI o ISO?</h2>
+<p>Guarda il tasto Invio: un Invio su una riga significa ANSI, un Invio alto su due righe significa ISO o JIS. Quattro controlli tolgono ogni dubbio:</p>
+<ol>
+<li>Trova l'Invio. Se sta su una riga e il tasto della barra rovesciata gli sta proprio sopra, hai una ANSI.</li>
+<li>Guarda il Maiusc sinistro. Se un solo tasto lo separa dalla <kbd>Z</kbd>, hai una ISO. Una tastiera italiana ci stampa <kbd>&lt;</kbd> <kbd>&gt;</kbd>; una britannica <kbd>\</kbd> <kbd>|</kbd>.</li>
+<li>Guarda accanto alla barra spaziatrice. Tasti con scritto 無変換 e 変換 ai lati di una barra corta, più un tasto ¥ accanto al Backspace, significano JIS.</li>
+<li>Conta i tasti della riga di lettere in basso, tra i due Maiusc. La ANSI ne ha 10, dalla <kbd>Z</kbd> alla <kbd>/</kbd>. ISO e JIS ne hanno 11 (sulla tastiera italiana, dal <kbd>&lt;</kbd> al <kbd>-</kbd>), e l'ABNT2 brasiliana 12.</li>
+</ol>
+<p>Su Mac, macOS riconosce tre tipi di tastiera, ANSI, ISO e JIS, e apre Impostazione Assistita Tastiera quando non riesce a identificare una tastiera che colleghi. Quando sbaglia tipo, due tasti si scambiano di posto, più spesso il tasto sotto <kbd>Esc</kbd> e quello a destra del Maiusc sinistro. La guida Apple per macOS Monterey ti fa scegliere menu Apple, Preferenze di Sistema, Tastiera, poi fare clic su Modifica tipo di tastiera e seguire le istruzioni: l'assistente ti chiede di premere il tasto a destra del Maiusc sinistro, poi ti fa scegliere ANSI, ISO o JIS.</p>
+
+<h2>ISO o ANSI: quale è meglio per scrivere?</h2>
+<p>Nessuna delle due forme si è dimostrata più veloce: non abbiamo trovato studi che confrontino la velocità di battitura su ISO e su ANSI, e gli articoli che ne dichiarano una più veloce non ne citano. Le due forme cambiano quanta strada fanno i mignoli per arrivare a tre tasti:</p>
+<ul>
+<li><strong>Maiusc sinistro, mignolo sinistro.</strong> Il Maiusc ISO misura 1,25u contro i 2,25u della ANSI, e il tasto in più riempie lo spazio. Un mignolo abituato alla ANSI che si allunga poco scrive <kbd>&lt;</kbd> invece di una maiuscola. Te ne accorgi soprattutto con le maiuscole battute dalla mano destra, come <kbd>H</kbd>, <kbd>J</kbd> o <kbd>M</kbd>, perché chi scrive a dieci dita usa per quelle il Maiusc sinistro.</li>
+<li><strong>Invio, mignolo destro.</strong> Sulla ANSI l'Invio segue subito l'ultimo tasto della riga centrale (<kbd>'</kbd> sulla tastiera americana). La ISO mette un tasto in più in mezzo, la <kbd>ù</kbd> sulla tastiera italiana, quindi il mignolo viaggia di più lungo la riga centrale o sale alla metà alta dell'Invio.</li>
+<li><strong>Barra rovesciata, mignolo destro.</strong> La ISO porta quel tasto nella riga centrale accanto all'Invio, più vicino della sua posizione ANSI in fondo alla riga in alto. Il layout italiano lo usa per la ù e sposta la barra rovesciata sotto <kbd>Esc</kbd>, nella zona del mignolo sinistro.</li>
+</ul>
+<p>László Monda di Ultimate Hacking Keyboard ha confrontato le due forme in unità di tasto e ha trovato Invio e Maiusc sinistro circa un'unità (lui la stima in 20 mm) più lontani dal centro della tastiera sulla ISO, e la barra rovesciata circa un'unità più vicina. Fa notare che Invio e Maiusc sinistro si premono centinaia di volte al giorno, la barra rovesciata molto meno.</p>
+<p>Gli scivoloni che si notano vengono dal cambio di forma. Chi arriva dalla ANSI cerca l'Invio con il mignolo destro nella riga centrale e preme il tasto a sinistra dell'Invio ISO: sulla tastiera italiana, una <kbd>ù</kbd> che non volevi. Chi arriva dalla ISO e sale verso la metà alta dell'Invio colpisce invece il tasto della barra rovesciata ANSI. Entrambe le abitudini spariscono con ripetizioni lente e precise sulla tastiera che vuoi tenere, con gli occhi sullo schermo.</p>
+<p>petitdoigt disegna tastiere ANSI, ISO e JIS, così la tastiera a schermo può corrispondere a quella sulla tua scrivania, con ogni tasto nel colore del dito che lo preme, tasto in più della ISO compreso. <a href="app:words">Scegli la forma della tua tastiera e scrivi qualche serie di parole</a> per vedere dove vanno i mignoli. Il trainer non ha un layout italiano: scegli US QWERTY, che tiene le lettere negli stessi tasti. La <a href="guide:finger-placement">mappa delle dita sulla tastiera</a> mostra la tastiera intera, e la guida su <a href="guide:type-without-looking">come scrivere senza guardare la tastiera</a> ti aiuta a smettere di abbassare lo sguardo.</p>
+
+<h2>I layout funzionano sia su tastiere ISO sia su ANSI?</h2>
+<p>Sì: qualsiasi layout funziona su qualsiasi forma, perché è il sistema operativo a decidere quale carattere scrive ogni tasto fisico. L'unico intoppo è il tasto in più della ISO, perché alcuni layout ci mettono caratteri che non stanno su nessun altro tasto.</p>
+<ul>
+<li><strong>Layout americano su una tastiera ISO.</strong> Il layout US di Windows dà al tasto in più una seconda <kbd>\</kbd> <kbd>|</kbd>, e il tasto della riga centrale a sinistra dell'Invio scrive la barra rovesciata di sempre. Non manca niente.</li>
+<li><strong>Layout italiano su una tastiera ANSI.</strong> Il layout italiano di Windows mette <kbd>&lt;</kbd> e <kbd>&gt;</kbd> solo sul tasto in più della ISO, come fanno il tedesco (che ci aggiunge <kbd>|</kbd>), il francese AZERTY e lo spagnolo. Una ANSI non ha quel tasto, quindi quei caratteri richiedono una rimappatura o un altro layout. Le guide <a href="guide:qwertz-vs-qwerty">QWERTZ o QWERTY</a> e <a href="guide:azerty-vs-qwerty">AZERTY o QWERTY</a> coprono il resto di quei layout.</li>
+</ul>
+<p>I layout europei usano anche il tasto Alt destro come AltGr, che raggiunge un terzo carattere su molti tasti: sul layout italiano <kbd>AltGr</kbd> con <kbd>E</kbd> scrive €, e <kbd>AltGr</kbd> con <kbd>ò</kbd> la chiocciola. Le tastiere ISO di solito stampano AltGr su quel tasto. Per chi programma la differenza pesa. Il layout italiano mette le parentesi quadre su <kbd>AltGr</kbd> con <kbd>è</kbd> e con <kbd>+</kbd>, le graffe sulle stesse combinazioni con in più il <kbd>Maiusc</kbd>, e non ha né la tilde (~) né l'accento grave isolato (`). Il layout americano dà alle parentesi tasti propri a destra della <kbd>P</kbd>. Visto che un layout americano non perde niente su una ISO, chi programma in Italia può tenere la tastiera ISO e cambiare layout nel software.</p>
+<p>Dvorak, Colemak e Workman riordinano le lettere nella parte di tastiera che le due forme hanno in comune, quindi si comportano allo stesso modo su ISO e su ANSI. Colemak-DH fa eccezione: usa l'angle mod, che sposta di un posto a sinistra i tasti in basso a sinistra. Su una ISO il tasto in più assorbe lo spostamento, e il Big Bag of Keyboard Tricks di DreymaR lo considera in pratica un tasto di riserva. Una ANSI non ha tasti di riserva, quindi la versione ANSI più diffusa sposta la <kbd>Z</kbd> al centro della riga in basso. petitdoigt applica il layout da solo a partire dalla posizione fisica dei tasti, così puoi <a href="app:words?layout=colemak-dh">provare Colemak-DH nel browser</a> senza installare niente. La <a href="guide:colemak">guida al layout Colemak</a> spiega il resto.</p>
+
+<h2>Cos'è una tastiera JIS?</h2>
+<p>JIS è la forma di tastiera usata in Giappone: un Invio alto come sulla ISO più alcuni tasti in più per scrivere in giapponese. Una JIS completa ha 109 tasti, quattro più della ISO e cinque più della ANSI.</p>
+<p>I tasti in più prendono spazio ai vicini, che si accorciano. La barra spaziatrice si restringe per far posto a 無変換 (muhenkan) alla sua sinistra e a 変換 (henkan) e a un tasto kana alla sua destra: henkan converte in kanji i kana digitati, muhenkan li lascia non convertiti e il tasto kana passa da hiragana a katakana. Il Backspace scende a un'unità per far posto a un tasto ¥, e il Maiusc destro si accorcia per un tasto ろ (ro) accanto al tasto <kbd>/</kbd>. Il Maiusc sinistro resta lungo, quindi la riga di lettere in basso ha 11 tasti come sulla ISO, con il tasto in più all'estremità opposta. Il tasto in alto a sinistra, che su una tastiera americana scrive <kbd>`</kbd>, diventa 半角/全角 (hankaku/zenkaku) e alterna caratteri a mezza larghezza e a larghezza piena.</p>
+<p>Le lettere stanno esattamente dove stanno su ANSI e ISO, quindi la riga di base di chi scrive a dieci dita funziona invariata su una tastiera giapponese. Gli allungamenti che cambiano stanno ai bordi, intorno al Backspace e al Maiusc destro, e i pollici lavorano su una barra spaziatrice più stretta.</p>
+
+<h2>Meglio comprare una tastiera ISO o ANSI?</h2>
+<p>Compra la forma che il tuo layout si aspetta. Se scrivi con il layout italiano, o con un altro layout europeo che mette caratteri sul tasto in più, prendi una ISO, altrimenti perdi <kbd>&lt;</kbd> e <kbd>&gt;</kbd>. Se scrivi con il layout americano o con un layout costruito su di esso, come Dvorak, Colemak o Workman, la ANSI ti dà tutti i tasti che servono. Chi usa Colemak-DH può comunque preferire la ISO, dove l'angle mod trova il suo tasto di riserva. Se programmi e passi al layout americano per avere parentesi, tilde e accento grave su tasti diretti, una ANSI va bene, e per le vocali accentate ti servirà un altro metodo, perché il layout americano non ha i loro tasti.</p>
+<p>Se scrivi già bene a dieci dita su una forma, restarci ti evita di riallenare Invio e Maiusc sinistro. Per chi personalizza la tastiera pesano i keycap: Corsair nota che i set di keycap esistono sempre in ANSI e non sempre in ISO, e Keebsforall giudica molto limitata la scelta di keycap JIS. Prima di ordinare una tastiera meccanica dall'estero, controlla nella scheda prodotto se è ANSI o ISO.</p>

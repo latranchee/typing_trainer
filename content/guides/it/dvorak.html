@@ -1,0 +1,157 @@
+<!--meta
+{
+  "id": "dvorak",
+  "lang": "it",
+  "slug": "tastiera-dvorak",
+  "title": "Tastiera Dvorak: è più veloce? Come impararla e provarla",
+  "description": "La tastiera Dvorak tasto per tasto, cosa hanno trovato davvero gli studi del 1944 e del 1956, a chi conviene passare e come provarla gratis nel browser.",
+  "h1": "La tastiera Dvorak: è più veloce e come si impara?",
+  "keyword": "tastiera Dvorak",
+  "keywords_secondary": ["layout Dvorak", "Dvorak vs QWERTY", "imparare Dvorak", "Dvorak Simplified Keyboard"],
+  "summary": "La tastiera Dvorak è un layout alternativo per l'inglese, brevettato nel 1936 da August Dvorak e William Dealey, che mette le vocali sulla riga centrale della mano sinistra e le consonanti più comuni a destra. Secondo il modello Carpalx, il 71% dei tasti premuti cade sulla riga centrale, contro il 34% del QWERTY. Se questo renda più veloci resta controverso, perché gli studi classici sulla velocità sono vecchi e di parte.",
+  "faq": [
+    {
+      "q": "Serve una tastiera speciale per scrivere in Dvorak?",
+      "a": "No. Il sistema operativo cambia il carattere di ogni tasto fisico, quindi va bene qualsiasi tastiera. Le lettere stampate non corrispondono più, un buon motivo per imparare senza guardare i tasti; una tastiera a schermo che mostri le lettere Dvorak ti dà il riferimento che i tasti non danno più. Matias ha venduto anche tastiere con Dvorak integrato nell'hardware, che passano al QWERTY con un tasto."
+    },
+    {
+      "q": "Si può scrivere in italiano con la tastiera Dvorak?",
+      "a": "Si può, con qualche compromesso. Dvorak è stato ottimizzato sulle frequenze delle lettere inglesi, e il Dvorak americano incluso in Windows non ha tasti per à, è, ì, ò e ù. Chi scrive molto in italiano può tenere installato anche il layout italiano e passarci con Windows + barra spaziatrice, o con Ctrl + barra spaziatrice sul Mac."
+    },
+    {
+      "q": "Dvorak aiuta contro il dolore ai polsi?",
+      "a": "Alcuni utenti riferiscono meno affaticamento, e il modello Carpalx stima per Dvorak uno sforzo di digitazione circa il 25% più basso del QWERTY. Lo stesso modello assegna ai mignoli il 18% dei tasti in Dvorak contro il 10% in QWERTY, e Dvorak carica di più la mano destra. Se ti fa già male un mignolo o la mano destra, Dvorak sposta lavoro proprio lì. Un dolore che dura va visto da un medico."
+    },
+    {
+      "q": "Dvorak va bene per programmare?",
+      "a": "Funziona, con qualche attrito. Il Dvorak americano mette le parentesi quadre e graffe in fondo alla fila dei numeri, e copia e incolla passano alla mano destra. Il Programmer Dvorak di Roland Kaufmann mette parentesi e simboli comuni del codice nella fila in alto e ordina le cifre come 7531902468. È incluso in alcune distribuzioni Linux, ma non in Windows né in macOS."
+    },
+    {
+      "q": "Dvorak va bene per i videogiochi?",
+      "a": "Crea problemi solo nei giochi che vogliono per forza le lettere W, A, S e D. In Dvorak quelle lettere finiscono su quattro tasti sparsi, tre dei quali sotto la mano destra che di solito tiene il mouse, e Wikipedia definisce praticamente ingiocabili i giochi con i comandi WASD fissi. I giochi che permettono di riassegnare i tasti, o che riconoscono Dvorak e adattano i comandi, funzionano bene."
+    },
+    {
+      "q": "Perché Dvorak non ha sostituito il QWERTY?",
+      "a": "L'argomento principale contro il cambio è stato il costo della riqualificazione. Quando negli anni Cinquanta le agenzie statunitensi valutarono il passaggio, lo studio GSA di Earle Strong concluse che riaddestrare i dattilografi non si sarebbe mai ripagato e consigliò più formazione sul QWERTY. Gli economisti Stan Liebowitz e Stephen Margolis sostengono che nessuna tastiera concorrente abbia offerto un vantaggio tale da giustificare il cambio. I sostenitori di Dvorak ribattono che lo studio di Strong era di parte."
+    }
+  ],
+  "sources": [
+    {"title": "US patent 2,040,248, Typewriter keyboard (Dvorak e Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Carpalx: analisi del layout Dvorak (Martin Krzywinski)", "url": "https://mk.bcgsc.ca/carpalx/?dvorak"},
+    {"title": "Typing Errors, Stan Liebowitz e Stephen Margolis, Reason, giugno 1996", "url": "https://reason.com/1996/06/01/typing-errors/"},
+    {"title": "The Fable of the Keys, Journal of Law and Economics 33(1), 1990 (scheda RePEc)", "url": "https://ideas.repec.org/a/ucp/jlawec/v33y1990i1p1-25.html"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Layout Stati Uniti-Dvorak di Windows (KBDDV), tasto per tasto (kbdlayout.info)", "url": "https://kbdlayout.info/kbddv"},
+    {"title": "Gestire le impostazioni di lingua e layout di tastiera in Windows, Supporto Microsoft", "url": "https://support.microsoft.com/it-it/help/4496404"},
+    {"title": "Windows keyboard layouts, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Usare un layout di tastiera Dvorak sul Mac, Supporto Apple", "url": "https://support.apple.com/it-it/guide/mac-help/mh27976/mac"},
+    {"title": "iOS 16 Features an All-New iPhone Keyboard Layout Option, MacRumors", "url": "https://www.macrumors.com/2022/10/14/ios-16-dvorak-keyboard"},
+    {"title": "Matias Dvorak Keyboard", "url": "https://matias.ca/dvorak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Prova Dvorak nel browser", "drill": "words", "layout": "dvorak"}
+}
+-->
+<p>La tastiera Dvorak porta sulla riga centrale le lettere che l'inglese usa di più. La mano sinistra riposa sulle vocali <kbd>A</kbd> <kbd>O</kbd> <kbd>E</kbd> <kbd>U</kbd>, la destra su <kbd>H</kbd> <kbd>T</kbd> <kbd>N</kbd> <kbd>S</kbd>, e ogni indice raggiunge verso l'interno un'altra lettera della stessa riga: <kbd>I</kbd> a sinistra, <kbd>D</kbd> a destra.</p>
+
+<h2>Cos'è la tastiera Dvorak?</h2>
+<p>La tastiera Dvorak, ufficialmente Dvorak Simplified Keyboard, è una disposizione alternativa dei tasti delle lettere pensata per scrivere in inglese. L'ha creata August Dvorak, psicologo dell'educazione all'Università di Washington, insieme al cognato William Dealey. I due depositarono la domanda di brevetto nel maggio 1932 e il 12 maggio 1936 ottennero il brevetto statunitense 2.040.248, intitolato semplicemente «Typewriter keyboard». Nel 1982 l'ANSI ha riconosciuto Dvorak come layout standard alternativo.</p>
+<p>Il progetto segue poche regole. Le lettere e le coppie di lettere più frequenti vanno sulla riga centrale, dove le dita riposano, e le più rare nella riga in basso. Le vocali stanno a sinistra e le consonanti comuni a destra, così la maggior parte delle sillabe rimbalza da una mano all'altra e la destra lavora un po' di più. Dvorak cercò anche di evitare le coppie di lettere battute da dita vicine, e di far scorrere i movimenti dai bordi della tastiera verso il centro.</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>Il layout Dvorak americano, con ogni tasto colorato secondo il dito che lo preme. Le dita riposano su A O E U e H T N S.</figcaption></figure>
+
+<h2>Dove si trovano le lettere sulla tastiera Dvorak?</h2>
+<p>Tutte le lettere tranne <kbd>A</kbd> e <kbd>M</kbd> cambiano tasto. La tabella mette a confronto, riga per riga, il Dvorak americano e quello che il QWERTY americano stampa sugli stessi tasti fisici.</p>
+<table>
+<caption>Le righe delle lettere in QWERTY e in Dvorak americano, sugli stessi tasti fisici</caption>
+<thead><tr><th scope="col">Riga</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>In alto</td><td>Q W E R T Y U I O P [ ]</td><td>' , . P Y F G C R L / =</td></tr>
+<tr><td>Centrale</td><td>A S D F G H J K L ; '</td><td>A O E U I D H T N S -</td></tr>
+<tr><td>In basso</td><td>Z X C V B N M , . /</td><td>; Q J K X B M W V Z</td></tr>
+<tr><td>Fila dei numeri, estremità destra</td><td>- =</td><td>[ ]</td></tr>
+</tbody>
+</table>
+<p>Su una tastiera italiana, i tasti che il QWERTY americano chiama <kbd>[</kbd> e <kbd>]</kbd> sono <kbd>è</kbd> e <kbd>+</kbd>, e quelli che chiama <kbd>;</kbd> e <kbd>'</kbd> sono <kbd>ò</kbd> e <kbd>à</kbd>. In Dvorak la <kbd>ò</kbd> diventa la S e la <kbd>à</kbd> il trattino.</p>
+<p>La sola riga centrale permette di scrivere molte delle parole inglesi più comuni: <em>the</em>, <em>and</em>, <em>that</em>, <em>this</em> e <em>into</em> non la lasciano mai. In QWERTY, già <em>the</em> manda due dita nella riga in alto. Anche diverse parole italiane stanno tutte sulla riga centrale, come <em>sono</em>, <em>anni</em>, <em>tutti</em> e <em>studenti</em>.</p>
+<p>Alcuni cambiamenti spiazzano chi arriva dal QWERTY:</p>
+<ul>
+<li><strong>Punteggiatura.</strong> Virgola e punto salgono nella riga in alto, sotto anulare e medio sinistri, l'apostrofo sta sopra la <kbd>A</kbd> e il trattino passa al tasto a destra della <kbd>S</kbd>.</li>
+<li><strong>Scorciatoie.</strong> La <kbd>C</kbd> finisce dove il QWERTY ha la <kbd>I</kbd>, la <kbd>V</kbd> dove ha il punto e la <kbd>Z</kbd> sul tasto della barra. Copia, incolla e annulla passano alla mano destra, scomodo quando quella mano tiene il mouse. Le FAQ di Colemak mettono questo punto tra le critiche a Dvorak.</li>
+<li><strong>Il mignolo destro.</strong> Copre <kbd>L</kbd>, <kbd>S</kbd>, <kbd>Z</kbd>, il trattino, la barra e il segno di uguale. Le stesse FAQ notano che <kbd>L</kbd> e <kbd>S</kbd>, due lettere frequenti, si seguono spesso su quell'unico dito.</li>
+<li><strong>Parentesi quadre.</strong> <kbd>[</kbd> e <kbd>]</kbd> vanno in fondo alla fila dei numeri, dove il QWERTY americano tiene meno e uguale.</li>
+</ul>
+
+<h2>Dvorak è più veloce del QWERTY?</h2>
+<p>Le prove sono troppo scarse per dirlo. I due studi che tutti citano risalgono al 1944 e al 1956, e ciascuno fu condotto da qualcuno che aveva già preso posizione.</p>
+<table>
+<caption>I due studi classici su Dvorak e QWERTY</caption>
+<thead><tr><th scope="col">Studio</th><th scope="col">Cosa ha trovato</th><th scope="col">Perché è contestato</th></tr></thead>
+<tbody>
+<tr><td>Marina degli Stati Uniti, 1944</td><td>14 dattilografi riaddestrati su Dvorak per 83 ore passarono da 32 a 56 parole nette al minuto, un aumento del 75%. 18 dattilografi QWERTY con formazione supplementare guadagnarono il 28%.</td><td>Earle Strong riferì che il test lo condusse Dvorak in persona, titolare del brevetto. Liebowitz e Margolis hanno trovato che il modo in cui furono calcolate le medie di partenza del gruppo QWERTY ne dimezzava quasi il miglioramento misurato.</td></tr>
+<tr><td>General Services Administration statunitense (Earle Strong), 1956</td><td>10 dattilografi del governo impiegarono ben più di 25 giorni di sessioni da quattro ore per tornare alla velocità che avevano in QWERTY. Con altra formazione, un gruppo QWERTY equivalente migliorò più in fretta del gruppo Dvorak. Strong consigliò più formazione sul QWERTY.</td><td>Strong si era già espresso in pubblico contro le nuove tastiere prima dello studio, e i critici sostengono che lo studio abbia favorito il gruppo QWERTY.</td></tr>
+</tbody>
+</table>
+<p>Gli economisti Stan Liebowitz e Stephen Margolis hanno riletto entrambi i rapporti per il loro articolo del 1990 «The Fable of the Keys». In un pezzo del 1996 per <em>Reason</em> hanno definito lo studio della Marina persino peggiore dei precedenti esperimenti di Dvorak, e hanno concluso che la storia della superiorità di Dvorak è «un mito o, forse più propriamente, una bufala».</p>
+<p>I modelli al computer misurano la geometria senza bisogno di dattilografi. Carpalx, un modello dello sforzo di digitazione costruito da Martin Krzywinski, valuta i layout su testi inglesi e stima per Dvorak uno sforzo circa il 25% più basso del QWERTY. Il dettaglio mostra da dove vengono i risparmi e quanto costano:</p>
+<table>
+<caption>QWERTY e Dvorak su testo inglese, secondo il modello Carpalx</caption>
+<thead><tr><th scope="col">Misura</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>Tasti premuti sulla riga centrale</td><td>34%</td><td>71%</td></tr>
+<tr><td>Tasti premuti sulla riga in basso</td><td>15%</td><td>9%</td></tr>
+<tr><td>Tasti consecutivi battuti da mani diverse</td><td>51%</td><td>62%</td></tr>
+<tr><td>Tasti premuti dai mignoli</td><td>10%</td><td>18%</td></tr>
+<tr><td>Equilibrio tra le mani</td><td>sbilanciato a sinistra del 15%</td><td>sbilanciato a destra del 14%</td></tr>
+</tbody>
+</table>
+<p>Dvorak tiene le dita sulla riga centrale circa il doppio delle volte e alterna di più le mani. In cambio quasi raddoppia il lavoro dei mignoli e sposta il carico verso la mano destra più o meno quanto il QWERTY lo sposta verso la sinistra. Gli studi storici sono troppo di parte per dire quante parole al minuto valga questo movimento più fluido per chi è già allenato. I dattilografi della GSA impiegarono più di 100 ore solo per tornare al punto di partenza: se il tuo unico obiettivo è la velocità, migliorare la tecnica sul layout che già conosci rende prima. La guida su <a href="guide:how-to-type-faster">come scrivere più velocemente</a> spiega come fare.</p>
+
+<h2>Conviene passare alla tastiera Dvorak?</h2>
+<p>Dvorak fa per te se scrivi soprattutto in inglese sui tuoi computer e puoi accettare qualche mese di scrittura più lenta mentre reimpari. Quattro situazioni spostano la scelta:</p>
+<ul>
+<li><strong>Non scrivi ancora a dieci dita.</strong> Imparerai comunque le posizioni delle dita da zero, quindi Dvorak non ti costa nessuna abitudine da disimparare. Il metodo della guida per <a href="guide:touch-typing">scrivere a dieci dita</a> funziona allo stesso modo con qualsiasi layout.</li>
+<li><strong>Scrivi soprattutto in italiano.</strong> Dvorak è stato ottimizzato sulle frequenze delle lettere inglesi, e il Dvorak americano di Windows non ha tasti per à, è, ì, ò e ù: ti servirebbe un secondo layout per gli accenti, o il ritorno all'italiano ogni volta che scrivi nella tua lingua. La guida ai <a href="guide:keyboard-layouts">layout di tastiera</a> mette a confronto le alternative.</li>
+<li><strong>Vivi di scorciatoie da tastiera.</strong> Sul Mac, il layout «Dvorak - QWERTY ⌘» passa al QWERTY finché tieni premuto Comando, così le scorciatoie restano dove la mano se le aspetta. Su Windows si ottiene lo stesso effetto con script AutoHotkey.</li>
+<li><strong>Scrivi spesso su computer altrui.</strong> Ogni macchina condivisa vuol dire cambiare un'impostazione o scrivere in QWERTY, quindi preparati a tenere in mano entrambi i layout.</li>
+</ul>
+<p>Se le tue preoccupazioni principali sono le scorciatoie e il mignolo destro, guarda Colemak, che lascia <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd> <kbd>V</kbd> dove le mette il QWERTY e scrive le vocali accentate con <kbd>AltGr</kbd>. Il <a href="guide:colemak-vs-dvorak">confronto tra Colemak e Dvorak</a> li mette fianco a fianco, e la guida al <a href="guide:colemak">layout Colemak</a> spiega come impararlo.</p>
+
+<h2>Come attivare Dvorak su computer e telefono?</h2>
+<p>Windows, macOS, ChromeOS, Android, iOS e la maggior parte delle distribuzioni Linux includono Dvorak, quindi basta sceglierlo nelle impostazioni. I tuoi tasti continueranno a mostrare le lettere del layout italiano.</p>
+<h3>Windows 11</h3>
+<ol>
+<li>Apri <strong>Start › Impostazioni › Ora &amp; lingua › Lingua &amp; area geografica</strong>.</li>
+<li>Se l'inglese (Stati Uniti) non è nell'elenco delle lingue, aggiungilo. Poi seleziona i tre puntini accanto all'inglese e scegli <strong>Opzioni lingua</strong>.</li>
+<li>Accanto a <strong>Tastiere installate</strong>, seleziona <strong>Aggiungi una tastiera</strong> e scegli il layout Dvorak degli Stati Uniti.</li>
+<li>Premi <kbd>Windows</kbd> + <kbd>barra spaziatrice</kbd> per passare da Dvorak al tuo layout abituale.</li>
+</ol>
+<h3>macOS</h3>
+<ol>
+<li>Scegli <strong>menu Apple › Impostazioni di Sistema › Tastiera</strong>.</li>
+<li>In <strong>Immetti testo</strong>, fai clic su <strong>Modifica</strong>, poi sul pulsante di aggiunta.</li>
+<li>Cerca «Dvorak», seleziona <strong>Dvorak</strong> o <strong>Dvorak - QWERTY ⌘</strong>, fai clic su <strong>Aggiungi</strong>, poi su <strong>Fine</strong>.</li>
+<li>Cambia layout dal menu Tastiera nella barra dei menu.</li>
+</ol>
+<h3>iPhone e Android</h3>
+<p>Da iOS 16 (2022) l'iPhone offre Dvorak per la tastiera inglese, in <strong>Impostazioni › Generali › Tastiera › Tastiere</strong>. La tastiera integrata di Android supporta Dvorak dalla versione 4.1.</p>
+<h3>Dvorak per una mano sola</h3>
+<p>Negli anni Sessanta August Dvorak progettò layout per la sola mano sinistra e per la sola mano destra, destinati a chi scrive con una mano. Windows li include tra i layout degli Stati Uniti (United States-Dvorak for left hand e for right hand), macOS come <strong>Dvorak - mano sinistra</strong> e <strong>Dvorak - mano destra</strong>, e si aggiungono come il layout standard.</p>
+
+<h2>Quanto tempo serve per imparare Dvorak?</h2>
+<p>Metti in conto circa 100 ore di pratica prima che chi scrive bene in QWERTY torni alla velocità di prima. Nello studio GSA del 1956, dieci dattilografi del governo impiegarono ben più di 25 giorni di sessioni da quattro ore, quindi più di 100 ore, per raggiungere la velocità che avevano in QWERTY. Nello studio della Marina del 1944, condotto da Dvorak stesso, i dattilografi arrivarono a 56 <a href="guide:words-per-minute">parole nette al minuto</a> dopo 83 ore di formazione. Con un'ora al giorno, entrambe le cifre fanno circa tre mesi.</p>
+<p>Il gruppo della Marina partiva da 32 parole al minuto, sotto lo standard di competenza della Marina stessa, quindi le sue 83 ore dicono poco sul tempo che serve a chi scrive già bene. Sessioni brevi e quotidiane mirate ai tasti e alle coppie di lettere più lente sfruttano meglio quelle ore, e i passi qui sotto sono costruiti su questo.</p>
+
+<h2>Come imparare Dvorak, passo per passo</h2>
+<p>Impara Dvorak come se non avessi mai scritto a macchina: parti dalla riga centrale e conquista la precisione prima di inseguire la velocità.</p>
+<ol>
+<li><strong>Provalo prima di cambiare qualsiasi impostazione.</strong> Apri <a href="app:words?layout=dvorak">Dvorak in petitdoigt</a>, un programma gratuito per esercitarsi che funziona nel browser. Applica il layout da solo a partire dalla posizione fisica dei tasti, quindi il computer resta sul tuo layout, e la tastiera a schermo mostra le lettere Dvorak con ogni tasto nel colore del suo dito. L'interfaccia è in inglese e i testi di esercizio possono essere in inglese, la lingua per cui Dvorak è stato pensato. Una sessione breve ti dice se la riga centrale ti è comoda prima di impegnarti.</li>
+<li><strong>Impara gli otto tasti di riposo.</strong> Mano sinistra su <kbd>A</kbd> <kbd>O</kbd> <kbd>E</kbd> <kbd>U</kbd>, mano destra su <kbd>H</kbd> <kbd>T</kbd> <kbd>N</kbd> <kbd>S</kbd>. Aggiungi <kbd>I</kbd> e <kbd>D</kbd> con gli indici, poi esercitati con parole fatte solo di queste dieci lettere: in inglese <em>hand</em>, <em>notes</em>, <em>idea</em>, in italiano <em>notte</em>, <em>tenda</em>, <em>studenti</em>.</li>
+<li><strong>Allena le dita a cui Dvorak chiede di più.</strong> Il mignolo destro porta <kbd>L</kbd> e <kbd>S</kbd>, il sinistro gestisce <kbd>A</kbd>, l'apostrofo e il punto e virgola. L'esercizio <a href="app:anchors?layout=dvorak">anchors</a> isola le dita che scegli e le riporta sulla riga centrale tra un tocco e l'altro. Con la funzione finger focus, il testo di esercizio pende verso le lettere di quelle dita.</li>
+<li><strong>Aggiungi le righe in alto e in basso con parole vere.</strong> Introduci <kbd>P</kbd> <kbd>Y</kbd> <kbd>F</kbd> <kbd>G</kbd> <kbd>C</kbd> <kbd>R</kbd> <kbd>L</kbd> sopra la riga centrale e le lettere rare sotto, prima in parole comuni, poi in frasi intere.</li>
+<li><strong>Allena le coppie di lettere più lente.</strong> In Dvorak ogni coppia di lettere diventa un movimento nuovo. In modalità adattiva, l'esercizio <a href="app:pairs?layout=dvorak">pairs</a> misura le tue transizioni da un tasto all'altro mentre scrivi e costruisce ogni serie soprattutto con le più lente e quelle con più errori.</li>
+<li><strong>Metti la precisione prima della velocità.</strong> Ogni errore ripetuto allena il movimento sbagliato. Rallenta finché gli errori diventano rari; la guida alla <a href="guide:typing-accuracy">precisione nella digitazione</a> spiega come misurarli.</li>
+<li><strong>Tieni gli occhi sullo schermo.</strong> I tuoi tasti mostrano ancora il layout italiano, quindi ogni occhiata ti inganna. Usa la tastiera a schermo, e leggi <a href="guide:type-without-looking">come scrivere senza guardare la tastiera</a> per altri modi di perdere l'abitudine.</li>
+<li><strong>Pianifica il passaggio.</strong> Se il tuo lavoro dipende dalla scrittura, tieni il layout abituale al lavoro e pratica Dvorak in brevi sessioni quotidiane finché la sua velocità non lo raggiunge, poi cambia l'impostazione di sistema per sempre. petitdoigt tiene statistiche separate per ogni layout, quindi i tuoi numeri in Dvorak partono da zero e la cronologia QWERTY resta intatta.</li>
+</ol>
+<p>Un browser non può vedere quale dito ha premuto un tasto: il programma ti mostra il dito giusto e misura tasti e tempi, e usare quel dito tocca a te. La <a href="guide:finger-placement">mappa delle dita sulla tastiera</a> spiega le zone di ogni dito, che restano le stesse quando cambi layout.</p>

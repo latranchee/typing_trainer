@@ -1,0 +1,135 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "en",
+  "slug": "words-per-minute",
+  "title": "Words per Minute (WPM): Meaning and How to Calculate It",
+  "description": "Words per minute explained: the five-character word, how to calculate WPM, gross vs net WPM, CPM, one test scored six ways, plus speaking and reading rates.",
+  "h1": "Words per minute (WPM): what it means and how to calculate it",
+  "keyword": "words per minute",
+  "keywords_secondary": ["how to calculate wpm", "what is wpm", "wpm meaning", "gross vs net wpm", "net wpm", "characters per minute"],
+  "summary": "Words per minute (WPM) is typing speed measured in five-character words: every five characters you type, spaces and punctuation included, count as one word. To calculate WPM, divide the characters typed by five, then by the minutes taken, so 250 characters in one minute is 50 WPM. Net WPM also subtracts the errors left in the text per minute, and sites that use different penalties report different scores for the same test.",
+  "faq": [
+    {"q": "Is 40 WPM good?", "a": "40 WPM is a little under the average measured online. In Aalto University's 2018 study of 168,000 volunteers who took a typing test, the average was 51.6 WPM; the slowest tenth typed under about 26 WPM and the fastest tenth over about 78. At 40 WPM you average 300 milliseconds per character."},
+    {"q": "How rare is 100 WPM?", "a": "100 WPM is rare. In the Aalto study only the fastest tenth of participants typed above about 78 WPM, and that group averaged 89.6 WPM; the fastest typists in the dataset reached 120 WPM or more. Holding 100 WPM means averaging 120 milliseconds per character for the whole test."},
+    {"q": "What is raw WPM?", "a": "Raw WPM is speed before any penalty for errors. Monkeytype computes it like its normal WPM but counts incorrect words too, while its normal WPM keeps only the characters in correctly typed words. The gap between your raw and normal WPM shows how much speed your typos cost."},
+    {"q": "Do spaces count in WPM?", "a": "Yes. The standard word is five characters with spaces included, a convention Wobbrock traces back to about 1905, and Typing.com counts spaces and punctuation the same way. Keys that leave no character in the text, such as Shift and Backspace, add nothing to WPM, though Backspace counts in keystrokes per minute."},
+    {"q": "How do I calculate WPM in Excel or Google Sheets?", "a": "Put the typed text in cell A1 and the time in seconds in B1, then enter =LEN(A1)/5/(B1/60) in another cell. LEN counts every character, spaces included, so the result is gross WPM. For net WPM, put the number of uncorrected errors in C1 and use =LEN(A1)/5/(B1/60)-C1/(B1/60)."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (eds.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (paper PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: about page source with the wpm, raw and accuracy definitions", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (paper PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Wikipedia: Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Measure your words per minute", "drill": "words"}
+}
+-->
+<h2>What does WPM mean in typing?</h2>
+<p>WPM stands for words per minute, and in typing a word means any five characters. Letters, digits, spaces and punctuation all count toward the five. Shift and Backspace don't, because they add no character to the text. A typist who produces 300 characters in one minute is typing at 60 WPM, whatever words those characters happened to spell.</p>
+<p>A fixed word length keeps scores comparable. Counted as real words, "I am on it" would be four words and "internationalization" one, though the second takes twice as many keystrokes. Under the five-character rule, "I am on it" (10 characters with its spaces) is 2 words and "internationalization" (20 characters) is 4. The same rule puts languages with long words on one scale: the German "Zehnfingersystem" has 16 characters and counts as 3.2 words.</p>
+<p>Jacob Wobbrock's <a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">chapter on text entry measures</a> says counting a word as five characters, spaces included, has been common practice since about 1905, and I. Scott MacKenzie dates it to the typing competitions of the early 1900s. Both cite Yamada's 1980 history of typewriters.</p>
+
+<h2>How do you calculate words per minute?</h2>
+<p>To calculate words per minute, divide the number of characters you typed by five, then divide by the minutes you spent typing.</p>
+<ol>
+<li>Count every character in the text you produced, spaces and punctuation included.</li>
+<li>Divide that count by 5 to get standard words.</li>
+<li>Convert the time to minutes (45 seconds is 0.75) and divide the words by it.</li>
+</ol>
+<p>As a formula: <code>WPM = characters ÷ 5 ÷ minutes</code>. Say you type 250 characters in 75 seconds. That is 50 words over 1.25 minutes, or 40 WPM.</p>
+<p>Research labs add one correction. The clock starts on the first keystroke, so the first character took no measured time and drops out of the count. MacKenzie's <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">note on calculating entry speed</a> works it through with "the quick brown fox jumps over the lazy dog": 43 characters in 20 seconds. Counting all 43 would give 25.8 WPM; counting the 42 typed after the clock started gives 25.2 WPM. On a longer test the correction fades. For 520 characters in two minutes it moves the result by 0.1 WPM.</p>
+
+<h2>What is the difference between gross and net WPM?</h2>
+<p>Gross WPM measures all the text you typed, mistakes included, and net WPM subtracts a penalty for the mistakes you left in. The common penalty is one word per minute for every uncorrected error per minute:</p>
+<p><code>net WPM = gross WPM − uncorrected errors ÷ minutes</code></p>
+<p><a href="https://www.speedtypingonline.com/typing-equations">Speed Typing Online's typing equations</a> give an example: 80 gross WPM over two minutes with 8 errors left in the text is 4 errors per minute, so the net speed is 76 WPM.</p>
+<p>Errors you fix as you go carry no extra penalty because you already paid for them in time. The wrong key, the Backspace and the right key all take time and leave a single character behind. Errors left in the text can flatter a score. Wobbrock notes that uncorrected errors increase speed, since typists go faster when they leave mistakes in, and a penalty such as net WPM takes that advantage back.</p>
+<p>You will meet two other adjustments. Researchers report adjusted WPM, which scales WPM down by the rate of uncorrected errors; in Wobbrock's example, 10% uncorrected errors leave adjusted WPM at 90% of WPM. Some tools multiplied WPM by accuracy instead. Typing.com once called that product "Net Words Per Minute", then removed it, saying it pushed typists to focus on their WPM and ignore their accuracy.</p>
+<p>Typing tests usually report accuracy next to WPM. Accuracy is the correct characters divided by all characters typed, times 100, and it counts the errors you fixed as well: 514 correct characters out of 534 typed is 96.3%, even if only a few mistakes survive in the final text. The <a href="guide:typing-accuracy">guide to typing accuracy</a> covers what to aim for.</p>
+
+<h2>Worked example: how to calculate WPM six ways from one test</h2>
+<p>Here is one two-minute test scored with each formula above. You finish with 520 characters of text, spaces included. Along the way you typed 14 wrong characters and erased them, and 6 wrong characters remain, each in a different five-letter word. That makes 534 characters typed, 514 of them correct.</p>
+<table>
+<caption>One two-minute test, six ways to score it</caption>
+<thead>
+<tr><th scope="col">Method</th><th scope="col">Calculation</th><th scope="col">WPM</th></tr>
+</thead>
+<tbody>
+<tr><td>Gross WPM</td><td>520 ÷ 5 ÷ 2</td><td>52.0</td></tr>
+<tr><td>Research WPM (clock starts on the first character)</td><td>519 ÷ 120 s × 60 ÷ 5</td><td>51.9</td></tr>
+<tr><td>Adjusted WPM (research)</td><td>51.9 × (1 − 6 ÷ 520)</td><td>51.3</td></tr>
+<tr><td>WPM × accuracy (older tools)</td><td>52.0 × 514 ÷ 534</td><td>50.1</td></tr>
+<tr><td>Net WPM</td><td>52.0 − 6 ÷ 2</td><td>49.0</td></tr>
+<tr><td>Correct words only (Monkeytype's rule)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48.4</td></tr>
+</tbody>
+</table>
+<p>The last row assumes each typo spoils a five-letter word plus its space, 6 characters each.</p>
+
+<h2>Why is my WPM different on every typing test?</h2>
+<p>Your WPM moves between tests because sites use different formulas, texts and test lengths, and because your own pace drifts within a test. The formula alone moved the example above by 3.6 WPM. <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a>, for instance, counts only the characters in correctly typed words, so one typo costs the whole word.</p>
+<p>Typing.com points out that WPM takes no account of how hard the content is, and that typing the same passage again inflates your speed because your fingers learn it. A paragraph of short common words usually scores higher than one packed with capitals, digits and symbols, even though both are counted in five-character words.</p>
+<p>Test length matters too. A 15-second sprint measures one burst. Typing.com treats its 3- and 5-minute tests as the most accurate gauge of overall speed, because they run long enough for a repeatable average without tiring your wrists and fingers.</p>
+<p>A live counter and a final score also cover different stretches of time. The final score averages the whole test, slow start and stumbles included, while a rolling counter covers only the last few seconds and dips with every hesitation. petitdoigt's <a href="app:words">words drill</a> shows both: a rolling WPM over a 5, 10 or 30 second window while you type, then each set's result against your last ten sets.</p>
+
+<h2>How do you measure your WPM accurately?</h2>
+<p>To get a WPM you can trust, run the same kind of test the same way each time, and check the formula before you compare numbers.</p>
+<ol>
+<li>Pick a test that lasts 3 to 5 minutes.</li>
+<li>Use text you haven't typed before, in the language you normally write.</li>
+<li>Type at the pace you would use for real work, and fix errors the way you normally do.</li>
+<li>Write down WPM and accuracy together. 60 WPM at 90% accuracy and 60 WPM at 98% call for different practice.</li>
+<li>Check whether the site reports gross WPM, net WPM or correct words only before you set its number beside another site's.</li>
+<li>Compare against your own earlier results on the same test, over several sessions.</li>
+</ol>
+
+<h2>What are CPM and keystrokes per minute?</h2>
+<p>CPM, characters per minute, is WPM times five: 52 WPM equals 260 CPM. Keystrokes per minute counts keys pressed instead of characters produced, so it includes Backspace and, in some measures, Shift. In the worked example you pressed 534 character keys and 14 Backspaces in two minutes: 274 keystrokes per minute for 260 characters per minute.</p>
+<p>Researchers call the ratio between the two keystrokes per character (KSPC). The <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">Aalto University study of 136 million keystrokes</a> (Dhakal and colleagues, CHI 2018) counted every key pressed and found an average of 1.17 keystrokes per character among its 168,000 volunteers. The fastest tenth averaged 1.10 and the slowest tenth 1.24, because slow typists make and correct more mistakes.</p>
+<p>Data-entry jobs often quote keystrokes per hour instead; Wikipedia notes that many jobs ask for 8,000 or 10,000. If every keystroke produced one character, 10,000 an hour would equal about 33 WPM. The table converts common speeds on that same assumption.</p>
+<table>
+<caption>WPM in other speed units, at one keystroke per character</caption>
+<thead>
+<tr><th scope="col">WPM</th><th scope="col">Characters per minute</th><th scope="col">Milliseconds per character</th><th scope="col">Keystrokes per hour</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6,000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9,000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12,000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18,000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24,000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30,000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36,000</td></tr>
+</tbody>
+</table>
+
+<h2>How many words per minute do people type, speak and read?</h2>
+<p>Reading aloud and narration run far faster than typing: the recommended pace for an audiobook is about three times the average typing speed measured online. The figures below come from different studies and count words in different ways. Typing studies count five-character words. Speech and reading rates count the words actually spoken or read, and Wobbrock's chapter notes that speech researchers define a word that way.</p>
+<table>
+<caption>Words per minute by activity</caption>
+<thead>
+<tr><th scope="col">Activity</th><th scope="col">Words per minute</th><th scope="col">Source</th></tr>
+</thead>
+<tbody>
+<tr><td>Stenotype keyboard, fastest trained users</td><td>up to 360</td><td>Guinness World Records, via Wikipedia</td></tr>
+<tr><td>Reading aloud, 17 languages</td><td>184 ± 29</td><td>Trauzettel-Klosinski and Dietz (2012), via Wikipedia</td></tr>
+<tr><td>Audiobook narration (recommended)</td><td>150 to 160</td><td>Williams (1998), via Wikipedia</td></tr>
+<tr><td>Typing on a computer keyboard, online test</td><td>51.6 (average)</td><td>Dhakal and colleagues (2018)</td></tr>
+<tr><td>Typing on a phone, online test</td><td>36.2 (average)</td><td>Palin and colleagues (2019)</td></tr>
+<tr><td>Copying by hand, adults aged 18 to 64</td><td>about 13 (68 letters a minute)</td><td>Wikipedia</td></tr>
+</tbody>
+</table>
+<p>The phone figure comes from <a href="https://userinterfaces.aalto.fi/typing37k/">a 2019 Aalto University study of 37,370 volunteers</a>, which used the same method and five-character word as the desktop study and found phone typing about 15 WPM slower. A spoken "a" counts as a whole word, so treat the speaking and reading rates as a rough comparison with typing WPM.</p>
+
+<h2>What does your WPM say about each keystroke?</h2>
+<p>Your WPM sets an average time per character: divide 12,000 by your WPM to get it in milliseconds. At 60 WPM you average 200 ms per character, and at 100 WPM, 120 ms. Going from 50 to 60 WPM means trimming 40 ms from every character, from 240 down to 200.</p>
+<p>The Aalto study timed those gaps directly. Across all participants the average gap between one key press and the next was 239 ms, at an average speed of 51.6 WPM. The fastest tenth, above about 78 WPM, averaged 122 ms between keys; the slowest tenth, below about 26 WPM, averaged 481 ms, so the gaps shrink about fourfold from the slowest tenth to the fastest. Key presses varied far less. A key stayed down for 116 ms on average, and for 80 to 150 ms even among slow typists, which the authors read as a sign that most gains in speed come from elsewhere.</p>
+<p>Earlier typewriter studies, summarized in the same paper, found letter pairs typed with fingers of different hands 30 to 60 ms faster than pairs typed on one hand, and about 80 ms faster than pairs typed with the same finger. On modern keyboards the Aalto data showed a smaller gain from alternating hands, about 5 to 20 ms, and slow typists were 20 to 28 ms slower when they alternated. On QWERTY, <kbd>T</kbd> then <kbd>H</kbd> alternates hands, while <kbd>C</kbd> then <kbd>E</kbd> sends the left middle finger from the bottom row to the top. Your WPM averages hundreds of transitions like these, so a few slow ones pull the whole number down.</p>
+<p>petitdoigt's <a href="app:pairs">pairs drill</a> times each key-to-key transition as you type and, in adaptive mode, builds its sets mostly from your slowest and most error-prone ones; the stats view lists latency and accuracy for each finger, letter and weak transition. The <a href="guide:how-to-type-faster">guide to typing faster</a> turns this into a practice plan, and the <a href="guide:typing-speed">guide to average typing speed</a> shows where your number stands.</p>

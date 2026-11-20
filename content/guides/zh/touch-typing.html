@@ -1,0 +1,108 @@
+<!--meta
+{
+  "id": "touch-typing",
+  "lang": "zh",
+  "slug": "touch-typing",
+  "title": "盲打是什么、怎么练：十指打字的9个步骤",
+  "description": "盲打就是打字不看键盘，每根手指负责固定的几个键。附基准键和指法分区表、9 步练习法，以及研究里学会盲打要花多少小时。",
+  "h1": "盲打是什么，怎么一步步学会",
+  "keyword": "盲打",
+  "keywords_secondary": ["盲打怎么练", "如何学会盲打", "十指打字", "盲打指法", "基准键"],
+  "summary": "盲打就是打字时不看键盘：每根手指负责一组固定的键，每按完一个键就回到基准键（左手 A S D F，右手 J K L ;）。学盲打的办法是眼睛一直看着屏幕，一根手指一根手指地加键。在一项经典研究里，成年人每天练 1 小时，大约 35 个小时就学会了整个键盘。",
+  "faq": [
+    {"q": "盲打难学吗？", "a": "难在头几周。那时你比用老办法打得还慢，很多人就在这段时间又开始低头找键。每天短时间练，眼睛始终看屏幕，等手指位置变成本能，新方法就会追上来。"},
+    {"q": "成年人还能学会盲打吗？", "a": "能。1978 年英国邮政局的一项研究训练的就是成年邮递员，每天练 1 小时的一组，平均约 35 小时学会了整个键盘。已经习惯“二指禅”的成年人只多一项任务：戒掉低头看键的习惯。"},
+    {"q": "十指打字和盲打是一回事吗？", "a": "基本是。十指打字指标准指法：八根手指放在基准键上，两个拇指管空格。盲打严格说只是不看键盘，一个自学出来、只用六根手指却从不低头的人也算会盲打。在一项动作捕捉研究里，自学者平均用 6.2 根手指。"},
+    {"q": "已经打得很快了，还有必要学盲打吗？", "a": "如果你还常低头看键，或者同一个字母时而用这根手指、时而用那根，就值得学。动作捕捉研究里，自学者（包括快手）和盲打者速度相当，看键盘的时间却多了约一倍。如果你很少低头、手指也固定，换来的提升会小一些，还要先经历一段变慢的时期。"},
+    {"q": "学盲打该用 QWERTY，还是直接换 Dvorak 或 Colemak？", "a": "用你每天都会用的布局学。如果你从“二指禅”起步，反正要从零建立手指习惯，这时候换布局成本最低。不过公司和公用电脑都是 QWERTY，经常用别人的电脑就要掂量。petitdoigt 能在浏览器里直接试 Dvorak、Colemak 或 Workman，不用安装任何东西。"},
+    {"q": "打拼音和五笔也能盲打吗？", "a": "能。全拼、双拼和五笔都只用 26 个字母键，指法完全一样。区别在于打中文还要看候选框选词，候选框就在屏幕上，眼睛本来就该在那里；用空格选第一个词，用数字键选其他词，数字行摸熟了，选词也不用低头。"}
+  ],
+  "sources": [
+    {"title": "Touch typing, Wikipedia", "url": "https://en.wikipedia.org/wiki/Touch_typing"},
+    {"title": "维基百科：盲打", "url": "https://zh.wikipedia.org/zh-cn/%E7%9B%B2%E6%89%93"},
+    {"title": "《计算机文化基础实训教程（Windows 7+Office 2010）》第 7 章 实验 3：英文指法练习", "url": "https://m.fwdebook.qq.com/read/1000773437/7"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes, CHI 2018 (project page)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Dhakal et al., Observations on Typing from 136 Million Keystrokes, CHI 2018 (paper)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing, CHI 2016 (paper)", "url": "https://userinterfaces.aalto.fi/how-we-type/resources/HowWeType_CHI16.pdf"},
+    {"title": "Baddeley & Longman, The Influence of Length and Frequency of Training Session on the Rate of Learning to Type, Ergonomics 21(8), 1978", "url": "https://gwern.net/doc/psychology/spaced-repetition/1978-baddeley.pdf"},
+    {"title": "Yechiam, Erev, Yehene & Gopher, Melioration and the Transition from Touch-Typing Training to Everyday Use, Human Factors 45(4), 2003", "url": "https://cris.haifa.ac.il/en/publications/melioration-and-the-transition-from-touch-typing-training-to-ever/"},
+    {"title": "Read & Spell, How long does it take to learn to touch type?", "url": "https://www.readandspell.com/how-long-does-it-take-to-learn-to-touch-type"},
+    {"title": "Peter Norvig, English Letter Frequency Counts: Mayzner Revisited", "url": "https://norvig.com/mayzner.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "练每根手指回到基准键", "drill": "anchors"}
+}
+-->
+<h2>盲打是什么？</h2>
+<p>盲打就是凭手感打字。眼睛看着屏幕，手指凭记忆找到键，每根手指只负责一小组固定的键。两次按键之间，每根手指都回到中间那排字母上的固定位置，这些键叫基准键。十根手指一起分担，所以盲打也叫十指打字，英文叫 touch typing。很多人自学出来的打法正好相反：低头找到键，再用一两根手指按下去，俗称“二指禅”。</p>
+<p>这套方法诞生在打字机时代。据记载，美国盐湖城的法庭速记员 Frank McGurrin 在 1888 年发明了以基准键为中心的盲打，1889 年 Bates Torrey 提出了“writing by touch”（靠触觉书写）的说法。全拼、双拼和五笔用的都是同样的 26 个字母键，这套指法打中文一样适用。</p>
+
+<h2>盲打时手指放在哪里？</h2>
+<p>手指平时放在基准键上。在 QWERTY 键盘上，左手放 <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd>，右手放 <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>;</kbd>，两个拇指悬在空格键上方。用食指在键面上滑一下，能在 <kbd>F</kbd> 和 <kbd>J</kbd> 上摸到一个小凸起或小横杠，计算机教材把这两个键叫作定位键。摸到它们，不用看就知道手回到了原位。</p>
+<p>从基准键出发，每根手指沿着自己那一列斜排的键上下移动。食指负责的键最多，因为每根食指还要多管靠键盘中间的一列。</p>
+<table>
+<caption>QWERTY 键盘上的盲打指法分区（字母和主要功能键）</caption>
+<thead><tr><th scope="col">手指</th><th scope="col">基准键</th><th scope="col">还负责</th></tr></thead>
+<tbody>
+<tr><td>左手小指</td><td><kbd>A</kbd></td><td><kbd>Q</kbd> <kbd>Z</kbd>、Tab、大写锁定键、左 Shift</td></tr>
+<tr><td>左手无名指</td><td><kbd>S</kbd></td><td><kbd>W</kbd> <kbd>X</kbd></td></tr>
+<tr><td>左手中指</td><td><kbd>D</kbd></td><td><kbd>E</kbd> <kbd>C</kbd></td></tr>
+<tr><td>左手食指</td><td><kbd>F</kbd></td><td><kbd>R</kbd> <kbd>T</kbd> <kbd>G</kbd> <kbd>V</kbd> <kbd>B</kbd></td></tr>
+<tr><td>右手食指</td><td><kbd>J</kbd></td><td><kbd>Y</kbd> <kbd>U</kbd> <kbd>H</kbd> <kbd>N</kbd> <kbd>M</kbd></td></tr>
+<tr><td>右手中指</td><td><kbd>K</kbd></td><td><kbd>I</kbd> <kbd>,</kbd></td></tr>
+<tr><td>右手无名指</td><td><kbd>L</kbd></td><td><kbd>O</kbd> <kbd>.</kbd></td></tr>
+<tr><td>右手小指</td><td><kbd>;</kbd></td><td><kbd>P</kbd> <kbd>/</kbd> <kbd>'</kbd>、回车键、退格键、右 Shift</td></tr>
+<tr><td>拇指</td><td>空格键</td><td>空格</td></tr>
+</tbody>
+</table>
+<figure data-figure="finger-chart" data-layout="qwerty"><figcaption>QWERTY 键盘上的盲打指法分区：每种颜色代表一根手指。</figcaption></figure>
+<p>大写字母用另一只手的 Shift：打大写 <kbd>A</kbd> 时右手小指按右 Shift，打大写 <kbd>J</kbd> 时左手小指按左 Shift。打中文时大写字母不多，这条规则主要用在符号上。中文状态下 Shift 加 <kbd>1</kbd> 打出“！”，<kbd>1</kbd> 归左手小指，所以 Shift 交给右手小指。换成 Dvorak 等其他布局，手指分区不变，变的只是键上的字母。<a href="guide:finger-placement">键盘指法图</a>逐键讲了数字、符号和其他布局。</p>
+
+<h2>盲打怎么练：9 个步骤</h2>
+<p>把键盘分层来学：先练基准键，再一根手指一根手指地加上它够得到的键，最后打真实的词。每一步都觉得轻松了，再进入下一步。</p>
+<ol>
+<li><strong>摆好手。</strong>坐正，前臂大致和键盘齐平。手指自然弯曲，轻轻搭在基准键上，食指放在凸起上。打字时手腕悬在桌面上方，不要压在键盘上。</li>
+<li><strong>只打基准键。</strong>先打 <code>asdf jkl;</code> 这样的字母组，再打只由基准键字母组成的拼音音节：<em>da fa ga ha ka la sa</em>。英文单词可以打 <em>add</em>、<em>ask</em>、<em>fall</em>、<em>glass</em>。<kbd>G</kbd> 和 <kbd>H</kbd> 归食指，在定位键往中间一格。练拼音时把输入法切到英文状态，只看字母打得对不对。</li>
+<li><strong>加上食指够的键。</strong>左手加 <kbd>R</kbd> <kbd>T</kbd> <kbd>V</kbd> <kbd>B</kbd>，右手加 <kbd>Y</kbd> <kbd>U</kbd> <kbd>N</kbd> <kbd>M</kbd>。每次伸出去，食指都直接回到凸起上，下一次就从已知的位置出发。<em>fu bu tu gu</em> 这几个音节由左右两根食指轮流按，很适合这一步。<a href="app:anchors">anchors 练习</a>专门练这个回位动作：你选几根手指，每敲一下都回到基准键，再敲下一下。</li>
+<li><strong>依次加上中指、无名指和小指。</strong>中指管 <kbd>E</kbd> <kbd>C</kbd> 和 <kbd>I</kbd> <kbd>,</kbd>，无名指管 <kbd>W</kbd> <kbd>X</kbd> 和 <kbd>O</kbd> <kbd>.</kbd>，小指管 <kbd>Q</kbd> <kbd>Z</kbd> 和 <kbd>P</kbd> <kbd>/</kbd>，外加 Shift 和回车键。拼音里 <em>de</em> 练左手中指，<em>wo</em> 练两根无名指，<em>pa</em> 练两根小指。最弱的手指放到最后，也最需要多练；它们跟不上时，可以做这些<a href="guide:typing-exercises">针对无名指和小指的打字练习</a>。</li>
+<li><strong>眼睛看屏幕。</strong>低头看一眼当时觉得更快，手指的记忆却因此建立不起来。实在忍不住，就拿块布盖住手。更好的拐杖是屏幕键盘：petitdoigt 按负责的手指给每个键上色，并高亮该用的手指，“<kbd>P</kbd> 在哪？”的答案就在屏幕上。浏览器看不到你实际用了哪根手指，这一点只能靠自觉。<a href="guide:type-without-looking">打字不看键盘的方法</a>里有更多改掉低头习惯的办法。</li>
+<li><strong>放慢到打得准。</strong>选一个几乎每个键都能一次按对的节奏。错误的动作重复多了，也会变成习惯；在下文那份 1.36 亿次按键的数据里，打得快的人错误也更少。<a href="guide:typing-accuracy">打字准确率指南</a>讲了准确率该定在多少。</li>
+<li><strong>开始打词和句子。</strong>每个字母都有了固定的手指，就用<a href="app:words">常用词和整句</a>练习，让手熟悉真实文本里反复出现的字母组合。英文里最常见的四个字母对是 <em>th</em>、<em>he</em>、<em>in</em>、<em>er</em>；打中文，就是 <em>shi</em>、<em>de</em>、<em>zai</em>、<em>wo</em> 这些常用音节，以及 <em>women</em>、<em>zhongguo</em> 这样的整词。petitdoigt 的练习文本有英文、法文、德文和西班牙文，没有拼音，拼音可以在任何文本框里练。</li>
+<li><strong>加上数字行。</strong>每根手指沿着自己那一列往上伸两排：左手小指按 <kbd>1</kbd>，左手中指按 <kbd>3</kbd>，右手中指按 <kbd>8</kbd>，右手小指按 <kbd>0</kbd>。距离远，所以先单独练数字，比如 <code>1990</code>、<code>2048</code>，再混进文字里。用拼音输入法时，第二、第三个候选词要按 <kbd>2</kbd>、<kbd>3</kbd> 来选，数字行摸熟了，选词也不用低头。</li>
+<li><strong>每天练一点，平时打字也用新指法。</strong>下一节会讲到，每天短时间练，学会键盘用的总时数比集中长时间练更少。平常的聊天、邮件和文档都算练习，它们让新习惯在两次练习之间也不断线。</li>
+</ol>
+
+<h2>学会盲打要多久？</h2>
+<p>记住所有键的位置，大约需要 35 小时的练习，分散在几周里完成；要超过原来的速度，还得再练一段时间。卖打字课程的 Read &amp; Spell 说，最理想的情况是两周达到 40 WPM。</p>
+<p>35 小时这个数字来自英国邮政局 1978 年的一项研究，作者是 A. D. Baddeley 和 D. J. A. Longman。邮递员在标准打字机键盘上学习录入字母和数字混合的邮政编码，每次练 1 或 2 小时，每天 1 次或 2 次。每天练 1 小时的一组，平均约 35 小时学会了整个键盘。每天练两次、每次 2 小时的一组需要约 50 小时，这一组学得最快的人，也比 1 小时组学得最慢的人慢。分散练习的代价是日历上的时间：1 小时组里有人抱怨，同事三周学会的东西自己花了十二周。可是练到 60 小时，他们打得比练了 80 小时的两次组更快、更准，作者因此建议键盘训练尽量分散进行。隔一、三或九个月再测，邮递员的速度都掉了约 30%，所以学会之后要天天用新方法打字。</p>
+<p>中间还会有一段速度下滑。刚开始你会比原来“二指禅”时还慢，这很正常；坚持练的话，这段下滑通常不超过几个月。什么时候进入下一步，看阶段目标有没有达成：</p>
+<table>
+<caption>盲打的阶段目标：练什么，什么时候进入下一步</caption>
+<thead><tr><th scope="col">阶段</th><th scope="col">练什么</th><th scope="col">达到这一点再往下走</th></tr></thead>
+<tbody>
+<tr><td>1. 基准键</td><td><code>asdf jkl;</code>，以及 <em>da fa la sa</em> 这类音节</td><td>不看键盘也能打，几乎不出错</td></tr>
+<tr><td>2. 食指</td><td><kbd>R</kbd> <kbd>T</kbd> <kbd>G</kbd> <kbd>V</kbd> <kbd>B</kbd>，<kbd>Y</kbd> <kbd>U</kbd> <kbd>H</kbd> <kbd>N</kbd> <kbd>M</kbd></td><td>食指每次伸出去都不用看</td></tr>
+<tr><td>3. 中指和无名指</td><td><kbd>E</kbd> <kbd>C</kbd> <kbd>I</kbd> <kbd>,</kbd> 和 <kbd>W</kbd> <kbd>X</kbd> <kbd>O</kbd> <kbd>.</kbd></td><td>手指会自己回到基准键</td></tr>
+<tr><td>4. 小指和 Shift</td><td><kbd>Q</kbd> <kbd>Z</kbd> <kbd>P</kbd> <kbd>/</kbd>，以及用另一边 Shift 打大写和符号</td><td>无名指不再抢着按 <kbd>A</kbd> 和 <kbd>P</kbd></td></tr>
+<tr><td>5. 词和句子</td><td>常用词、拼音整词，再到普通文章</td><td>眼睛看着屏幕，打一段话能达到原来的速度（按<a href="guide:words-per-minute">每分钟单词数</a>计）</td></tr>
+<tr><td>6. 数字行</td><td>先单独打数字，再打句子里的日期和金额</td><td>不低头就能打出年份或手机号</td></tr>
+<tr><td>7. 速度</td><td>你最慢的字母对，计时练习</td><td>节奏加快时准确率守得住；见<a href="guide:how-to-type-faster">如何提高打字速度</a></td></tr>
+</tbody>
+</table>
+
+<h2>盲打比“二指禅”快吗？</h2>
+<p>平均来看，盲打在速度上只有不大的优势，更大的好处在眼睛的去向。阿尔托大学研究者主导的两项研究把这两点都测了。</p>
+<p>规模大的一项记录了 168,960 人在一个在线打字测试里的 1.36 亿次按键（Dhakal、Feit、Kristensson 和 Oulasvirta，CHI 2018）。平均速度是 51.56 WPM，这个数字处在什么水平，见<a href="guide:typing-speed">打字速度多少算快</a>。自称上过打字课的人比没上过的快约 5 WPM，而每组内部的差距（标准差）约有 20 WPM，相比之下这 5 WPM 很小。手指数和速度的关系更明显：最快的一成人（约 78 WPM 以上）自报平均用 8.4 根手指，最慢的一成（约 26 WPM 以下）用 5.3 根。</p>
+<p>一项动作捕捉研究解释了原因。Anna Feit、Daryl Weir 和 Antti Oulasvirta 记录了 30 名普通打字者的手和眼睛，他们的速度在 34 到 79 WPM 之间（CHI 2016）。自学者平均用 6.2 根手指，盲打者用 8.5 根，两组的速度和准确率相近。不论哪种打法，有三个习惯能预测速度：每个字母每次都用同一根手指；当前的键还没按完，手指就向下一个键移动；手在键盘上方保持稳定。两组的差别在眼睛上：自学者约 41% 的时间在看键盘，盲打者约 20%。作者指出，在需要盯着屏幕的任务里，自学的打法可能更吃亏。</p>
+<p>盲打把这些习惯变成了有意识的练习：一键一指带来固定的对应关系，基准键让手稳定在原位。研究里打得快的自学者，是在打游戏、聊天和写代码时自己养成这些习惯的，他们都说没有专门练过打字。作者还补充，盲打者想达到并保持 70 WPM 以上，需要某种形式的刻意练习。</p>
+
+<h2>为什么很多人学盲打半途而废，怎样坚持下来？</h2>
+<p>大多数人在速度下滑期放弃，那时旧方法还更快。Yechiam、Erev、Yehene 和 Gopher 2003 年发表在《Human Factors》上的研究就从这个现象出发：在打字课上学成了，日常工作中也未必继续盲打。作者把原因归为 melioration，即人总被眼下回报最高的做法吸引，对打字的人来说，就是低头看键。实验中，22 名学生上完盲打课后，用电脑打自己的作业。加上一个要求对屏幕上的信号作出反应的附加任务后，退回看键盘的情况减少了，技能也保持得更久。</p>
+<p>你也可以在自己的日常里加上同样的压力：</p>
+<ul>
+<li><strong>定一个切换日，之后所有打字都用盲打，</strong>微信聊天也算。每一条用老办法打出的消息，都在给旧习惯续命。</li>
+<li><strong>让低头变得没用。</strong>盖住手，或者在屏幕上显示键盘的环境里练，让你需要的信息出现在眼睛本来就在的地方。</li>
+<li><strong>检查手的位置。</strong>如果 <em>da</em> 打成了 <em>fs</em>，说明左手往右偏了一格。打游戏的人常把左手放在 <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> 上，比基准位置偏左一格，所以开打前先摸一下 <kbd>F</kbd> 上的凸起。</li>
+<li><strong>把小指的键还给小指。</strong>用无名指去够 <kbd>A</kbd> 或 <kbd>P</kbd> 感觉更顺手，却打破了研究中和速度相关的一键一指。</li>
+<li><strong>两个 Shift 都要用。</strong>所有大写和符号都用左 Shift，左手就得做别扭的伸展，整只手也会扭离基准键。</li>
+</ul>

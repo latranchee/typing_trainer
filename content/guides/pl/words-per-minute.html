@@ -1,0 +1,140 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "pl",
+  "slug": "slowa-na-minute",
+  "title": "Słowa na minutę (WPM): co oznaczają i jak je obliczyć",
+  "description": "Słowa na minutę (WPM) od podstaw: słowo z pięciu znaków, wzór na WPM, WPM brutto i netto, znaki na minutę oraz jeden test policzony na sześć sposobów.",
+  "h1": "Słowa na minutę (WPM): co to znaczy i jak je obliczyć",
+  "keyword": "słowa na minutę",
+  "keywords_secondary": ["WPM", "co to jest WPM", "jak obliczyć WPM", "WPM brutto i netto", "znaki na minutę", "CPM"],
+  "summary": "Słowa na minutę (WPM) to szybkość pisania mierzona w słowach po pięć znaków: każde pięć wpisanych znaków, łącznie ze spacjami i interpunkcją, liczy się jako jedno słowo. Żeby obliczyć WPM, podziel liczbę znaków przez pięć, a potem przez liczbę minut: 250 znaków w minutę to 50 WPM. WPM netto odejmuje jeszcze błędy pozostawione w tekście, a serwisy stosujące różne kary podają różne wyniki dla tego samego testu.",
+  "faq": [
+    {"q": "Czy 40 słów na minutę to dobry wynik?", "a": "40 WPM, czyli 200 znaków na minutę, to trochę mniej niż średnia zmierzona w internecie. W badaniu Uniwersytetu Aalto z 2018 roku, obejmującym 168 tysięcy ochotników, średnia wyniosła 51,6 WPM; najwolniejsza dziesiąta część pisała poniżej około 26 WPM, a najszybsza powyżej około 78. Tyle właśnie, 200 znaków na minutę, wymaga od kandydatów na protokolanta Sąd Okręgowy Warszawa-Praga."},
+    {"q": "Jak rzadkie jest 100 słów na minutę?", "a": "100 WPM to rzadkość. W badaniu Aalto tylko najszybsza dziesiąta część uczestników pisała powyżej około 78 WPM, a ta grupa osiągała średnio 89,6 WPM; najszybsze osoby w zbiorze przekraczały 120 WPM. Utrzymanie 100 WPM oznacza średnio 120 milisekund na znak przez cały test."},
+    {"q": "Co to jest raw WPM?", "a": "Raw WPM to szybkość przed jakąkolwiek karą za błędy. Monkeytype liczy je tak jak zwykłe WPM, ale uwzględnia też słowa wpisane z błędem, a jego zwykłe WPM bierze pod uwagę tylko znaki w słowach wpisanych poprawnie. Różnica między raw a zwykłym WPM pokazuje, ile szybkości kosztują cię literówki."},
+    {"q": "Czy spacje liczą się do WPM?", "a": "Tak. Standardowe słowo ma pięć znaków razem ze spacjami; Wobbrock datuje tę konwencję mniej więcej na 1905 rok, a Typing.com tak samo liczy spacje i interpunkcję. Klawisze, które nie zostawiają znaku w tekście, jak Shift, prawy Alt czy Backspace, nic nie dodają do WPM, choć Backspace liczy się w uderzeniach na minutę."},
+    {"q": "Jak obliczyć WPM w Excelu lub Arkuszach Google?", "a": "Wpisz tekst do komórki A1, a czas w sekundach do B1, i w innej komórce wpisz =DŁ(A1)/5/(B1/60). W polskiej wersji Excela i Arkuszy Google funkcja DŁ (po angielsku LEN) liczy wszystkie znaki, także spacje, więc wynik to WPM brutto. Dla WPM netto wpisz liczbę niepoprawionych błędów do C1 i użyj =DŁ(A1)/5/(B1/60)-C1/(B1/60)."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (eds.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (paper PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: about page source with the wpm, raw and accuracy definitions", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (paper PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Sąd Okręgowy Warszawa-Praga w Warszawie, konkurs na stanowisko protokolant sądowy-stażysta, ogłoszenie K.1101.80.2026", "url": "https://warszawapraga.so.gov.pl/artykul/173/1937/konkurs-na-staz-urzedniczy-na-stanowisko-protokolant-sadowy-stazysta-ogloszenie-k-1101-80-2026"},
+    {"title": "Microsoft, Funkcje DŁ, DŁ.B (Excel)", "url": "https://support.microsoft.com/pl-pl/office/funkcje-d%C5%81-d%C5%81-b-29236f94-cedc-429d-affd-b5e33d2c67cb"},
+    {"title": "Google, Edytory Dokumentów: funkcja DŁ (Arkusze Google)", "url": "https://support.google.com/docs/answer/3094081?hl=pl"},
+    {"title": "Wikipedia: AltGr key (klawiatura polska programisty)", "url": "https://en.wikipedia.org/wiki/AltGr_key"},
+    {"title": "Wikipedia: Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Zmierz swoje słowa na minutę", "drill": "words", "layout": "us"}
+}
+-->
+<h2>Co oznacza WPM w pisaniu na klawiaturze?</h2>
+<p>WPM to skrót od angielskiego words per minute, czyli słowa na minutę, a słowo oznacza w pisaniu dowolne pięć znaków. Do tej piątki liczą się litery, cyfry, spacje i interpunkcja. Shift i Backspace się nie liczą, bo nie dodają do tekstu żadnego znaku. Kto w minutę wpisze 300 znaków, pisze z prędkością 60 WPM, bez względu na to, jakie słowa z nich powstały.</p>
+<p>Stała długość słowa pozwala porównywać wyniki. Gdyby liczyć prawdziwe słowa, „jak się masz” miałoby trzy słowa, a „dziesięciopalcowy” jedno, choć drugie jest o pięć znaków dłuższe. Według reguły pięciu znaków „jak się masz” (12 znaków ze spacjami) to 2,4 słowa, a „dziesięciopalcowy” (17 znaków) to 3,4 słowa. Polska litera też jest jednym znakiem: ę w „się” liczy się tak samo jak e, choć w <a href="https://en.wikipedia.org/wiki/AltGr_key">układzie polskim programisty</a> wymaga dwóch klawiszy, prawego Alt i <kbd>E</kbd>.</p>
+<p>Rozdział Jacoba Wobbrocka o <a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">miarach wprowadzania tekstu</a> podaje, że liczenie słowa jako pięciu znaków ze spacjami jest powszechne mniej więcej od 1905 roku, a I. Scott MacKenzie wywodzi tę zasadę z zawodów w pisaniu na maszynie z początku XX wieku. Obaj powołują się na historię maszyn do pisania, którą Yamada opublikował w 1980 roku.</p>
+
+<h2>Jak obliczyć słowa na minutę?</h2>
+<p>Żeby obliczyć słowa na minutę, podziel liczbę wpisanych znaków przez pięć, a potem przez liczbę minut pisania.</p>
+<ol>
+<li>Policz wszystkie znaki w tekście, który powstał, łącznie ze spacjami i interpunkcją.</li>
+<li>Podziel tę liczbę przez 5: wyjdą standardowe słowa.</li>
+<li>Zamień czas na minuty (45 sekund to 0,75 minuty) i podziel przez niego liczbę słów.</li>
+</ol>
+<p>Jako wzór: <code>WPM = znaki ÷ 5 ÷ minuty</code>. Załóżmy, że w 75 sekund wpisujesz 250 znaków. To 50 słów w 1,25 minuty, czyli 40 WPM.</p>
+<p>Laboratoria dodają jedną poprawkę. Zegar rusza z pierwszym naciśnięciem, więc pierwszy znak nie zajął żadnego zmierzonego czasu i wypada z liczenia. W <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">notatce o obliczaniu szybkości wprowadzania tekstu</a> MacKenzie przelicza to na angielskim pangramie „the quick brown fox jumps over the lazy dog”: 43 znaki w 20 sekund. Wszystkie 43 znaki dają 25,8 WPM, a 42 znaki wpisane po starcie zegara dają 25,2 WPM. W dłuższym teście poprawka traci znaczenie: przy 520 znakach w dwie minuty zmienia wynik o 0,1 WPM.</p>
+
+<h2>Czym się różni WPM brutto od WPM netto?</h2>
+<p>WPM brutto mierzy cały wpisany tekst razem z pomyłkami, a WPM netto odejmuje karę za błędy, które w nim zostały. Najczęstsza kara to jedno słowo na minutę za każdy niepoprawiony błąd na minutę:</p>
+<p><code>WPM netto = WPM brutto − niepoprawione błędy ÷ minuty</code></p>
+<p><a href="https://www.speedtypingonline.com/typing-equations">Wzory serwisu Speed Typing Online</a> podają przykład: 80 WPM brutto w dwie minuty z 8 błędami w tekście to 4 błędy na minutę, więc szybkość netto wynosi 76 WPM.</p>
+<p>Błędy poprawione w trakcie nie dostają dodatkowej kary, bo płacisz za nie czasem. Zły klawisz, Backspace i dobry klawisz zajmują czas, a w tekście zostaje jeden znak. Błędy zostawione w tekście potrafią z kolei zawyżyć wynik. Wobbrock zauważa, że niepoprawione błędy zwiększają szybkość, bo kto zostawia pomyłki, pisze szybciej, a kara w rodzaju WPM netto odbiera tę przewagę.</p>
+<p>Spotkasz jeszcze dwie inne korekty. Badacze podają skorygowane WPM (adjusted WPM), które obniża WPM proporcjonalnie do odsetka niepoprawionych błędów; w przykładzie Wobbrocka 10% niepoprawionych błędów zostawia 90% WPM. Niektóre narzędzia mnożyły natomiast WPM przez dokładność. Typing.com nazywał kiedyś ten iloczyn „Net Words Per Minute”, a potem go usunął, bo skłaniał piszących do pilnowania WPM z pominięciem dokładności.</p>
+<p>Testy zwykle podają dokładność obok WPM. Dokładność to poprawne znaki podzielone przez wszystkie wpisane znaki, razy 100, i obejmuje także błędy poprawione w trakcie: 514 poprawnych znaków z 534 wpisanych daje 96,3%, nawet jeśli w gotowym tekście przetrwało tylko kilka pomyłek. Na jaką dokładność celować, opisuje <a href="guide:typing-accuracy">poradnik o dokładności pisania</a>.</p>
+
+<h2>Przykład: jak obliczyć WPM na sześć sposobów z jednego testu</h2>
+<p>Oto jeden dwuminutowy test policzony każdym z powyższych wzorów. Kończysz z 520 znakami tekstu, łącznie ze spacjami. Po drodze wpisujesz 14 złych znaków i je kasujesz, a 6 złych znaków zostaje, każdy w innym pięcioliterowym słowie. Razem to 534 wpisane znaki, z czego 514 poprawnych.</p>
+<table>
+<caption>Jeden dwuminutowy test, sześć sposobów liczenia</caption>
+<thead>
+<tr><th scope="col">Metoda</th><th scope="col">Obliczenie</th><th scope="col">WPM</th></tr>
+</thead>
+<tbody>
+<tr><td>WPM brutto</td><td>520 ÷ 5 ÷ 2</td><td>52,0</td></tr>
+<tr><td>WPM badawcze (zegar rusza z pierwszym znakiem)</td><td>519 ÷ 120 s × 60 ÷ 5</td><td>51,9</td></tr>
+<tr><td>Skorygowane WPM (badania)</td><td>51,9 × (1 − 6 ÷ 520)</td><td>51,3</td></tr>
+<tr><td>WPM × dokładność (starsze narzędzia)</td><td>52,0 × 514 ÷ 534</td><td>50,1</td></tr>
+<tr><td>WPM netto</td><td>52,0 − 6 ÷ 2</td><td>49,0</td></tr>
+<tr><td>Tylko poprawne słowa (zasada Monkeytype)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48,4</td></tr>
+</tbody>
+</table>
+<p>Ostatni wiersz zakłada, że każda literówka psuje pięcioliterowe słowo razem ze spacją, czyli 6 znaków.</p>
+
+<h2>Dlaczego mam inny wynik WPM w każdym teście?</h2>
+<p>Twoje WPM zmienia się między testami, bo serwisy używają różnych wzorów, tekstów i długości testu, a twoje własne tempo waha się w trakcie pisania. Sam wzór przesunął wynik w przykładzie powyżej o 3,6 WPM. <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a> liczy na przykład tylko znaki w poprawnie wpisanych słowach, więc jedna literówka kosztuje całe słowo.</p>
+<p>Typing.com zwraca uwagę, że WPM nie uwzględnia trudności tekstu, a ponowne przepisywanie tego samego fragmentu zawyża wynik, bo palce go zapamiętują. Akapit z krótkich, częstych słów zwykle daje wyższy wynik niż akapit pełen wielkich liter, cyfr i symboli, choć oba liczy się w słowach po pięć znaków. Po polsku dochodzą litery z ogonkami i kreskami: każda wymaga prawego Alt, więc tekst pełen liter ą, ę, ł czy ż wymaga więcej ruchów niż tekst bez nich.</p>
+<p>Liczy się też długość testu. 15-sekundowy sprint mierzy jeden zryw. Typing.com uważa swoje testy 3- i 5-minutowe za najdokładniejszą miarę ogólnej szybkości, bo trwają dość długo, żeby dać powtarzalną średnią, i nie męczą przy tym nadgarstków ani palców.</p>
+<p>Licznik na żywo i wynik końcowy obejmują poza tym różne odcinki czasu. Wynik końcowy uśrednia cały test, razem z powolnym startem i potknięciami, a licznik bieżący obejmuje tylko ostatnie sekundy i spada przy każdym zawahaniu. <a href="app:words?layout=us">Ćwiczenie words</a> w petitdoigt pokazuje oba: bieżące WPM z okna 5, 10 lub 30 sekund podczas pisania, a potem wynik każdej serii na tle dziesięciu poprzednich. Interfejs trenera jest po angielsku, a teksty do ćwiczeń po angielsku, francusku, niemiecku lub hiszpańsku.</p>
+
+<h2>Jak rzetelnie zmierzyć swoje WPM?</h2>
+<p>Żeby dostać WPM, któremu możesz ufać, rób za każdym razem ten sam rodzaj testu w ten sam sposób i sprawdź wzór, zanim porównasz liczby.</p>
+<ol>
+<li>Wybierz test, który trwa od 3 do 5 minut.</li>
+<li>Przepisuj tekst, którego jeszcze nie znasz, w języku, w którym zwykle piszesz; po polsku razem z polskimi znakami.</li>
+<li>Pisz w tempie, jakiego używasz w prawdziwej pracy, i poprawiaj błędy tak jak zwykle.</li>
+<li>Zapisuj WPM i dokładność razem. 60 WPM przy 90% dokładności i 60 WPM przy 98% wymagają innego treningu.</li>
+<li>Zanim zestawisz wynik z wynikiem z innego serwisu, sprawdź, czy strona podaje WPM brutto, WPM netto, czy tylko poprawne słowa.</li>
+<li>Porównuj się z własnymi wcześniejszymi wynikami w tym samym teście, z kilku sesji.</li>
+</ol>
+
+<h2>Co to są znaki na minutę i uderzenia na minutę?</h2>
+<p>Znaki na minutę (zn/min, po angielsku CPM) to WPM razy pięć: 52 WPM to 260 znaków na minutę. Tej jednostki używa na przykład Sąd Okręgowy Warszawa-Praga, który od kandydatów na protokolanta sądowego wymaga <a href="https://warszawapraga.so.gov.pl/artykul/173/1937/konkurs-na-staz-urzedniczy-na-stanowisko-protokolant-sadowy-stazysta-ogloszenie-k-1101-80-2026">co najmniej 200 znaków na minutę</a>, czyli 40 WPM.</p>
+<p>Uderzenia, czyli naciśnięcia na minutę, liczą wciśnięte klawisze zamiast powstałych znaków, więc obejmują Backspace, a w niektórych miarach także Shift. W przykładowym teście w dwie minuty wciskasz 534 klawisze ze znakami i 14 razy Backspace: to 274 uderzenia na minutę przy 260 znakach na minutę. Polskie litery podnoszą tę liczbę nawet bez błędów, jeśli miara liczy klawisze modyfikujące: ą to prawy Alt i <kbd>A</kbd>, czyli dwa klawisze na jeden znak.</p>
+<p>Badacze nazywają stosunek tych dwóch liczb liczbą naciśnięć na znak (KSPC, keystrokes per character). <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">Badanie Uniwersytetu Aalto obejmujące 136 milionów naciśnięć</a> (Dhakal i współpracownicy, CHI 2018) policzyło każdy wciśnięty klawisz i wykazało średnio 1,17 naciśnięcia na znak wśród 168 tysięcy ochotników. Najszybsza dziesiąta część miała średnio 1,10, a najwolniejsza 1,24, bo wolniejsze osoby robią i poprawiają więcej błędów.</p>
+<p>Przy wprowadzaniu danych szybkość podaje się czasem w naciśnięciach na godzinę; według Wikipedii wiele takich ofert pracy wymaga 8000 lub 10 000. Gdyby każde naciśnięcie dawało jeden znak, 10 000 na godzinę odpowiadałoby około 33 WPM. Tabela przelicza popularne prędkości przy tym samym założeniu.</p>
+<table>
+<caption>WPM w innych jednostkach, przy jednym naciśnięciu na znak</caption>
+<thead>
+<tr><th scope="col">WPM</th><th scope="col">Znaki na minutę</th><th scope="col">Milisekundy na znak</th><th scope="col">Naciśnięcia na godzinę</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12 000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18 000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24 000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30 000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36 000</td></tr>
+</tbody>
+</table>
+
+<h2>Ile słów na minutę piszemy, mówimy i czytamy?</h2>
+<p>Czytanie na głos i nagrywanie audiobooków idzie dużo szybciej niż pisanie: zalecane tempo lektora audiobooka to mniej więcej trzykrotność średniej szybkości pisania zmierzonej w internecie. Liczby poniżej pochodzą z różnych badań i liczą słowa na różne sposoby. Badania pisania liczą słowa pięcioznakowe. Tempo mowy i czytania liczy słowa rzeczywiście wypowiedziane lub przeczytane, a rozdział Wobbrocka zaznacza, że tak definiują słowo badacze mowy.</p>
+<table>
+<caption>Słowa na minutę według czynności</caption>
+<thead>
+<tr><th scope="col">Czynność</th><th scope="col">Słowa na minutę</th><th scope="col">Źródło</th></tr>
+</thead>
+<tbody>
+<tr><td>Stenotyp, najszybsi wyszkoleni użytkownicy</td><td>do 360</td><td>Księga rekordów Guinnessa, za Wikipedią</td></tr>
+<tr><td>Czytanie na głos, 17 języków</td><td>184 ± 29</td><td>Trauzettel-Klosinski i Dietz (2012), za Wikipedią</td></tr>
+<tr><td>Lektor audiobooka (zalecane tempo)</td><td>150–160</td><td>Williams (1998), za Wikipedią</td></tr>
+<tr><td>Pisanie na klawiaturze komputera, test online</td><td>51,6 (średnio)</td><td>Dhakal i współpracownicy (2018)</td></tr>
+<tr><td>Pisanie na telefonie, test online</td><td>36,2 (średnio)</td><td>Palin i współpracownicy (2019)</td></tr>
+<tr><td>Przepisywanie odręczne, dorośli w wieku 18–64 lat</td><td>około 13 (68 liter na minutę)</td><td>Wikipedia</td></tr>
+</tbody>
+</table>
+<p>Wynik dla telefonu pochodzi z <a href="https://userinterfaces.aalto.fi/typing37k/">badania Uniwersytetu Aalto z 2019 roku, w którym wzięło udział 37 370 ochotników</a>. Użyto w nim tej samej metody i tego samego pięcioznakowego słowa co w badaniu na komputerach, a pisanie na telefonie okazało się o około 15 WPM wolniejsze. Wypowiedziane „i” liczy się jako całe słowo, więc tempo mowy i czytania traktuj jako przybliżone porównanie z WPM w pisaniu.</p>
+
+<h2>Co twoje WPM mówi o każdym naciśnięciu klawisza?</h2>
+<p>Twoje WPM wyznacza średni czas na jeden znak: podziel 12 000 przez WPM, a dostaniesz go w milisekundach. Przy 60 WPM wychodzi średnio 200 ms na znak, a przy 100 WPM 120 ms. Przejście z 50 na 60 WPM oznacza ścięcie 40 ms z każdego znaku, z 240 do 200.</p>
+<p>Badanie Aalto zmierzyło te odstępy bezpośrednio. U wszystkich uczestników średni odstęp między jednym naciśnięciem a następnym wynosił 239 ms przy średniej szybkości 51,6 WPM. Najszybsza dziesiąta część, powyżej około 78 WPM, miała średnio 122 ms między klawiszami, a najwolniejsza, poniżej około 26 WPM, 481 ms, więc od najwolniejszych do najszybszych odstępy kurczą się mniej więcej czterokrotnie. Czas wciśnięcia klawisza różnił się znacznie mniej. Klawisz pozostawał wciśnięty średnio 116 ms, a nawet u wolnych osób od 80 do 150 ms, co autorzy odczytują jako znak, że większość zysku szybkości bierze się skądinąd.</p>
+<p>Wcześniejsze badania na maszynach do pisania, podsumowane w tej samej pracy, wykazały, że pary liter pisane palcami różnych rąk wychodzą o 30–60 ms szybciej niż pary pisane jedną ręką i o około 80 ms szybciej niż pary pisane tym samym palcem. Na współczesnych klawiaturach dane z Aalto pokazały mniejszy zysk ze zmiany rąk, około 5–20 ms, a wolne osoby przy zmianie rąk były nawet o 20–28 ms wolniejsze. W układzie QWERTY, a więc i w polskim programisty, <kbd>T</kbd> i potem <kbd>H</kbd> to zmiana rąk, a <kbd>C</kbd> i potem <kbd>E</kbd> każe lewemu palcowi środkowemu skoczyć z dolnego rzędu do górnego, jak w słowach „chce” i „miejsce”. Twoje WPM uśrednia setki takich przejść, więc kilka powolnych ściąga w dół całą liczbę.</p>
+<p>Adaptacyjne <a href="app:pairs">ćwiczenie pairs</a> w petitdoigt mierzy każde przejście z klawisza na klawisz i buduje serie głównie z twoich najwolniejszych i najczęściej mylonych przejść; widok stats podaje opóźnienie i dokładność dla każdego palca, litery i słabego przejścia. <a href="guide:how-to-type-faster">Poradnik, jak szybciej pisać na klawiaturze</a>, zamienia to w plan ćwiczeń, a <a href="guide:typing-speed">poradnik o szybkości pisania na klawiaturze</a> pokazuje, gdzie wypada twój wynik.</p>

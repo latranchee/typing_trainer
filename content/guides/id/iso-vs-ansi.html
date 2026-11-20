@@ -1,0 +1,125 @@
+<!--meta
+{
+  "id": "iso-vs-ansi",
+  "lang": "id",
+  "slug": "perbedaan-keyboard-ansi-dan-iso",
+  "title": "Perbedaan Keyboard ANSI dan ISO (dan JIS): Mana yang Cocok?",
+  "description": "Perbedaan keyboard ANSI dan ISO tombol demi tombol: ukuran Enter dan Shift, tombol ekstra ISO, keyboard JIS, siapa memakai apa, dan cara mengecek keyboard Anda.",
+  "h1": "Perbedaan keyboard ANSI dan ISO, keyboard JIS, dan cara mengenali milik Anda",
+  "keyword": "perbedaan keyboard ANSI dan ISO",
+  "keywords_secondary": ["keyboard ANSI vs ISO", "layout ANSI", "keyboard ISO", "keyboard JIS", "ANSI atau ISO"],
+  "summary": "Perbedaan keyboard ANSI dan ISO ada pada tombol Enter dan Shift kiri. Keyboard ANSI punya Enter lebar setinggi satu baris dan Shift kiri yang panjang; keyboard ISO punya Enter tinggi yang menutupi dua baris dan Shift kiri pendek dengan satu tombol tambahan di sebelahnya. Amerika Serikat memakai ANSI, sebagian besar Eropa memakai ISO, dan Jepang memakai JIS, yang menambah tombol di sekitar spasi yang lebih pendek. Letak huruf sama di ketiganya.",
+  "faq": [
+    {"q": "Keyboard di Indonesia ANSI atau ISO?", "a": "Bentuknya mengikuti pasar tempat keyboard itu dibuat, jadi cek Enter-nya: Enter satu baris berarti ANSI, Enter setinggi dua baris berarti ISO. Layout yang dipakai untuk bahasa Indonesia adalah layout AS: Windows memasang US keyboard sebagai bawaan untuk bahasa Indonesia, dan Apple menjual layout itu sebagai keyboard US English berbentuk ANSI. Layout AS berjalan lengkap di kedua bentuk."},
+    {"q": "Apakah keyboard MacBook ANSI atau ISO?", "a": "Tergantung versi negaranya. Dalam daftar Apple, keyboard US English, Tionghoa, Korea dan Thai berbentuk ANSI, dan keyboard Jepang berbentuk JIS. Versi bahasa lain, termasuk Inggris (UK), Jerman, Prancis, Spanyol dan Prancis Kanada, berbentuk ISO. Cek tombol Return: Return satu baris berarti ANSI."},
+    {"q": "ISO atau ANSI, mana yang lebih baik untuk gaming?", "a": "Bentuk keyboard hanya mengubah ukuran dan letak tombol. Dalam game yang memasang sprint, jongkok atau aksi lain di Shift kiri, ISO memberi kelingking kiri tombol 1,25u dengan tombol tambahan tepat di sebelahnya, dibanding tombol 2,25u di ANSI. Pemain yang terbiasa dengan satu bentuk akan sering meleset di Shift kiri untuk sementara setelah pindah ke bentuk lain."},
+    {"q": "Bisakah memasang keycap ANSI di keyboard ISO?", "a": "Sebagian besar bisa: huruf, angka dan tombol di sekitarnya berukuran sama di kedua bentuk. Bedanya ada di Enter, Shift kiri, tombol di sebelah Enter dan tombol tambahan ISO, jadi set ANSI meninggalkan posisi-posisi itu kosong atau tidak pas. Cari set yang menyertakan kit ISO."},
+    {"q": "Apakah keyboard UK ISO atau ANSI?", "a": "ISO. Keyboard Inggris punya Enter tinggi setinggi dua baris, Shift kiri yang pendek, dan tombol tambahan di sebelahnya yang mengetik backslash dan garis tegak. Tombol tepat di kiri Enter mengetik # dan ~. Apple memasukkan keyboard British dan Irlandia ke dalam model ISO-nya."},
+    {"q": "Apa itu keyboard big-ass Enter?", "a": "Penggemar keyboard memakai nama itu untuk keyboard yang Enter-nya mengisi posisi Enter ANSI sekaligus ISO. Tombol yang di ANSI berada di atas Enter naik ke baris angka, di sebelah Backspace yang lebih pendek. ISO/IEC 9995 mencatat susunan ini sebagai varian dari susunan ANSI yang dipakai di beberapa negara Asia."}
+  ],
+  "sources": [
+    {"title": "Apple Support: How to identify your Apple keyboard layout by country or region", "url": "https://support.apple.com/102743"},
+    {"title": "Apple Mac User Guide: Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/mac"},
+    {"title": "Apple Mac User Guide (macOS Monterey 12): Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/12.0/mac"},
+    {"title": "Apple Community: How To Fix Keyboard Type Problems", "url": "https://discussions.apple.com/docs/DOC-250007848"},
+    {"title": "Default input profiles (input locales) in Windows, Microsoft Learn (Indonesian id-ID: US keyboard)", "url": "https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs"},
+    {"title": "W3C: UI Events KeyboardEvent code Values", "url": "https://www.w3.org/TR/uievents-code/"},
+    {"title": "Wikipedia: ISO/IEC 9995", "url": "https://en.wikipedia.org/wiki/ISO/IEC_9995"},
+    {"title": "Wikipedia: Keyboard layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Wikipedia: Portuguese keyboard layout", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "Wikipedia: Language input keys", "url": "https://en.wikipedia.org/wiki/Language_input_keys"},
+    {"title": "Deskthority wiki: ANSI vs ISO", "url": "https://deskthority.net/wiki/ANSI_vs_ISO"},
+    {"title": "Deskthority wiki: ANSI vs JIS", "url": "https://deskthority.net/wiki/ANSI_vs_JIS"},
+    {"title": "Ultimate Hacking Keyboard: ANSI or ISO? Which keyboard layout is more ergonomic?", "url": "https://uhk.io/blog/2015/09/09/ansi-or-iso-which-keyboard-layout-is-more-ergonomic"},
+    {"title": "Corsair: ANSI vs ISO, what's the best keyboard layout?", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/ansi-vs-iso-whats-the-best-keyboard-layout/"},
+    {"title": "Keebsforall: ANSI vs ISO typing efficiency compared", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-vs-iso-typing-efficiency-compared"},
+    {"title": "Keebsforall: ANSI, ISO, JIS: which layout fits your needs?", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-iso-jis-which-layout-fits-your-needs"},
+    {"title": "KbdLayout: US keyboard layout (KBDUS)", "url": "https://kbdlayout.info/kbdus"},
+    {"title": "KbdLayout: United Kingdom keyboard layout (KBDUK)", "url": "https://kbdlayout.info/kbduk"},
+    {"title": "KbdLayout: German keyboard layout (KBDGR)", "url": "https://kbdlayout.info/kbdgr"},
+    {"title": "KbdLayout: French keyboard layout (KBDFR)", "url": "https://kbdlayout.info/kbdfr"},
+    {"title": "KbdLayout: Spanish keyboard layout (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "DreymaR's Big Bag of Keyboard Tricks: ergonomic mods", "url": "https://dreymar.colemak.org/ergo-mods.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Ketik di keyboard seperti milik Anda", "drill": "words", "layout": "us"}
+}
+-->
+<p>ISO, ANSI dan JIS menggambarkan bentuk fisik keyboard: ukuran setiap tombol dan letaknya. Layout yang Anda pakai untuk mengetik, seperti QWERTY AS atau QWERTZ Jerman, adalah pengaturan perangkat lunak yang berjalan di atas bentuk itu (<a href="guide:keyboard-layouts">panduan jenis layout keyboard</a> membahasnya). Sebagian besar keyboard sama persis di ketiga bentuk. Perbedaannya ada di tepi, di sekitar Enter, Shift kiri dan spasi, dan perbedaan itu mengubah kerja kelingking Anda.</p>
+<figure data-figure="board-shapes"><figcaption>Keyboard ANSI, ISO dan JIS berdampingan. Bandingkan tombol Enter dan Shift kiri lebih dulu, lalu tombol di sekitar spasi JIS.</figcaption></figure>
+
+<h2>Apa perbedaan keyboard ANSI dan ISO?</h2>
+<p>Keyboard ISO punya Enter tinggi yang menutupi dua baris, Shift kiri yang pendek, dan satu tombol karakter lebih banyak daripada keyboard ANSI, yang Enter-nya hanya setinggi satu baris dan Shift kirinya memanjang sampai <kbd>Z</kbd>. Tombol tambahan ISO berada di antara Shift kiri dan <kbd>Z</kbd>.</p>
+<p>Enter yang tinggi menggeser satu tombol lagi. Pada ANSI, tombol backslash (<kbd>\</kbd> dan <kbd>|</kbd> di keyboard AS) menutup baris huruf atas, tepat di atas Enter. ISO tidak punya ruang untuknya di sana, jadi tombol itu turun ke baris dasar, persis di kiri Enter; keyboard Inggris (UK) mencetak <kbd>#</kbd> dan <kbd>~</kbd> di atasnya. Standar keyboard ISO/IEC 9995 menghitung 48 tombol karakter pada susunan ANSI dan 49 pada susunan ISO. Keyboard PC AS ukuran penuh punya 104 tombol dan keyboard Eropa yang umum punya 105; tanpa keypad angka, keyboard tenkeyless turun menjadi 87 tombol di ANSI dan 88 di ISO.</p>
+<p>Produsen keyboard mengukur tombol dalam satuan u: 1u adalah lebar satu tombol huruf. Tabel di bawah memberi ukuran dalam u bila ada sumber yang menyebutkannya.</p>
+<table>
+<caption>Keyboard ANSI, ISO dan JIS dibandingkan</caption>
+<thead><tr><th scope="col">Bagian</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">JIS</th></tr></thead>
+<tbody>
+<tr><th scope="row">Enter</th><td>Satu baris, sering selebar 2,25u</td><td>Setinggi dua baris, berbentuk L</td><td>Setinggi dua baris, berbentuk L</td></tr>
+<tr><th scope="row">Shift kiri</th><td>Panjang, 2,25u</td><td>Pendek, sekitar 1,25u, dengan tombol tambahan di kanannya</td><td>Panjang</td></tr>
+<tr><th scope="row">Shift kanan</th><td>Panjang</td><td>Panjang</td><td>Lebih pendek, dengan tombol tambahan (ろ) di kirinya</td></tr>
+<tr><th scope="row">Tombol backslash versi AS</th><td>Baris huruf atas, di atas Enter</td><td>Baris dasar, di kiri Enter</td><td>Baris dasar, di kiri Enter</td></tr>
+<tr><th scope="row">Backspace</th><td>2u</td><td>2u</td><td>1u, dengan tombol ¥ di sebelahnya</td></tr>
+<tr><th scope="row">Spasi</th><td>Panjang</td><td>Panjang</td><td>Lebih pendek, dengan tombol mode input di kedua sisinya</td></tr>
+<tr><th scope="row">Tombol karakter</th><td>48</td><td>49</td><td>49</td></tr>
+<tr><th scope="row">Tombol pada keyboard PC ukuran penuh</th><td>104</td><td>105</td><td>109</td></tr>
+<tr><th scope="row">Standar di</th><td>Amerika Serikat</td><td>Sebagian besar Eropa</td><td>Jepang</td></tr>
+</tbody>
+</table>
+
+<h2>Negara mana yang memakai ANSI, ISO atau JIS?</h2>
+<p>Amerika Serikat memakai ANSI, Eropa hampir seluruhnya memakai ISO, dan Jepang memakai JIS. Katalog keyboard Apple memberi daftar yang rinci per bahasa, karena Apple memasukkan setiap versi bahasanya ke dalam satu bentuk.</p>
+<table>
+<caption>Bentuk keyboard per bahasa, menurut katalog Apple (ABNT2 menurut ISO/IEC 9995)</caption>
+<thead><tr><th scope="col">Bentuk</th><th scope="col">Keyboard yang memakainya</th></tr></thead>
+<tbody>
+<tr><th scope="row">ANSI</th><td>US English, Korea, Thai, Tionghoa (Pinyin dan Zhuyin)</td></tr>
+<tr><th scope="row">ISO</th><td>Inggris dan Irlandia, Jerman dan Austria, Prancis dan Belgia, Spanyol, Italia, Portugis, Swiss, Belanda, Denmark, Norwegia, Swedia dan Finlandia, Rusia, Yunani, Turki, Arab, Ibrani, Prancis Kanada, Spanyol Amerika Latin, dan lainnya</td></tr>
+<tr><th scope="row">JIS</th><td>Jepang</td></tr>
+<tr><th scope="row">ABNT2 (ISO plus satu tombol)</th><td>Portugis Brasil</td></tr>
+</tbody>
+</table>
+<p>Daftar Apple tidak memuat keyboard berbahasa Indonesia. Pengetik di Indonesia memakai layout AS: Windows memasang <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs">US keyboard sebagai layout bawaan untuk bahasa Indonesia</a>, dan Apple mencetak layout yang sama pada keyboard US English berbentuk ANSI. Layout AS memuat semua karakter yang Anda perlukan di keyboard ANSI, dan juga berjalan lengkap di keyboard ISO, seperti dijelaskan di bagian layout di bawah.</p>
+<p>Keyboard Korea berasal dari keluarga ANSI dan menambah dua tombol di sebelah spasi: 한/영 berpindah antara huruf Hangul dan Latin, dan 한자 mengubah Hangul menjadi hanja. Beberapa pasar Asia juga menjual varian ANSI dengan Enter ekstra besar yang mengisi posisi Enter ANSI sekaligus ISO. Sumber-sumber berbeda pendapat soal Belanda: Apple menjual keyboard ISO berbahasa Belanda, sedangkan wiki Deskthority memasukkan Belanda ke dalam negara pemakai ANSI.</p>
+<p>Bentuk keyboard mengikuti pasar tempat keyboard itu dibuat. Laptop yang dibeli di London tetap ber-keyboard ISO setelah Anda mengubah Windows atau macOS ke US English.</p>
+
+<h2>Bagaimana cara mengetahui keyboard saya ANSI atau ISO?</h2>
+<p>Lihat tombol Enter: Enter setinggi satu baris berarti ANSI, dan Enter tinggi yang menutupi dua baris berarti ISO atau JIS. Empat pemeriksaan ini menjawab keraguan apa pun:</p>
+<ol>
+<li>Cari Enter. Kalau Enter muat dalam satu baris dan tombol backslash berada tepat di atasnya, keyboard Anda ANSI.</li>
+<li>Lihat Shift kiri. Kalau ada satu tombol di antara Shift kiri dan <kbd>Z</kbd>, keyboard Anda ISO. Keyboard Inggris memberi tombol itu label <kbd>\</kbd> <kbd>|</kbd>; keyboard Jerman menampilkan <kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>|</kbd>.</li>
+<li>Lihat di sebelah spasi. Tombol bertuliskan 無変換 dan 変換 di kedua sisi spasi yang pendek, ditambah tombol ¥ di sebelah Backspace, berarti JIS.</li>
+<li>Hitung tombol di baris huruf bawah di antara kedua Shift. ANSI punya 10, dari <kbd>Z</kbd> sampai <kbd>/</kbd>. ISO dan JIS sama-sama punya 11, dan ABNT2 Brasil punya 12.</li>
+</ol>
+<p>Di Mac, macOS mengenali tiga tipe keyboard, yaitu ANSI, ISO dan JIS, dan membuka Keyboard Setup Assistant saat tidak bisa mengenali keyboard yang Anda colokkan. Kalau tipenya salah, dua tombol bertukar tempat, paling sering tombol di bawah <kbd>Esc</kbd> dan tombol di kanan Shift kiri. Panduan Apple untuk macOS Monterey meminta Anda membuka System Preferences, mengklik Keyboard, lalu mengklik Change Keyboard Type dan mengikuti langkahnya: asisten itu meminta Anda menekan tombol di kanan Shift kiri, lalu membiarkan Anda memilih ANSI, ISO atau JIS.</p>
+
+<h2>ANSI atau ISO: mana yang lebih baik untuk mengetik?</h2>
+<p>Belum ada bukti bahwa salah satu bentuk membuat Anda mengetik lebih cepat: kami tidak menemukan studi yang membandingkan kecepatan mengetik di ISO dan ANSI, dan artikel yang menyebut satu bentuk lebih cepat tidak mengutip studi apa pun. Kedua bentuk berbeda dalam jarak tempuh kelingking ke tiga tombol:</p>
+<ul>
+<li><strong>Shift kiri, kelingking kiri.</strong> Shift ISO berukuran 1,25u, dibanding 2,25u di ANSI, dan tombol tambahan mengisi celahnya. Kelingking yang terlatih di ANSI dan menjangkau terlalu pendek akan mengetik <kbd>\</kbd> atau <kbd>&lt;</kbd> sebagai ganti huruf kapital. Anda paling merasakannya pada huruf kapital yang diketik tangan kanan, seperti J di <em>Jakarta</em> atau M di <em>Medan</em>, karena pengetik 10 jari menahan Shift kiri untuk huruf-huruf itu.</li>
+<li><strong>Enter, kelingking kanan.</strong> Di ANSI, Enter langsung berada setelah <kbd>'</kbd> di baris dasar. ISO menaruh satu tombol lagi di antaranya, jadi kelingking menempuh jarak lebih jauh di baris dasar atau menjangkau ke bagian atas Enter.</li>
+<li><strong>Backslash, kelingking kanan.</strong> ISO menurunkannya ke baris dasar di sebelah Enter, lebih dekat daripada posisinya di ANSI, di ujung baris atas.</li>
+</ul>
+<p>László Monda dari Ultimate Hacking Keyboard membandingkan kedua bentuk dalam satuan tombol dan menemukan Enter dan Shift kiri sekitar satu satuan (menurutnya 20 mm) lebih jauh dari tengah keyboard di ISO, sedangkan backslash sekitar satu satuan lebih dekat. Ia menunjukkan bahwa orang menekan Enter dan Shift kiri ratusan kali sehari, dan backslash jauh lebih jarang.</p>
+<p>Kesalahan yang terasa datang dari perpindahan bentuk. Dari ANSI, kelingking kanan mencari Enter di baris dasar dan mendarat di tombol kiri Enter ISO (<kbd>#</kbd> di keyboard Inggris). Dari ISO, kelingking yang menjangkau ke bagian atas Enter malah mengenai tombol backslash ANSI. Kedua kebiasaan itu memudar dengan pengulangan yang pelan dan akurat di keyboard yang ingin Anda pertahankan, dengan mata tetap di layar.</p>
+<p>petitdoigt menggambar keyboard ANSI, ISO dan JIS, sehingga keyboard di layar bisa menyamai keyboard di meja Anda, dengan setiap tombol berwarna sesuai jari yang menekannya, termasuk tombol tambahan ISO. <a href="app:words?layout=us">Pilih bentuk keyboard Anda dan ketik beberapa set kata</a> untuk melihat ke mana kelingking Anda bergerak. Peta <a href="guide:finger-placement">posisi jari di keyboard</a> memperlihatkan seluruh keyboard, dan panduan <a href="guide:type-without-looking">cara mengetik tanpa melihat keyboard</a> membantu Anda berhenti melirik ke bawah.</p>
+
+<h2>Apakah layout keyboard bisa dipakai di ANSI dan ISO?</h2>
+<p>Bisa: layout apa pun berjalan di bentuk apa pun, karena sistem operasi yang menentukan karakter yang diketik setiap tombol fisik. Tombol tambahan ISO satu-satunya pengecualian, karena sebagian layout menaruh karakter di sana yang tidak ada di tombol lain.</p>
+<ul>
+<li><strong>Layout AS di keyboard ISO.</strong> Ini kasus Anda kalau memakai layout AS di laptop atau keyboard buatan pasar Eropa. Layout US di Windows memberi tombol tambahan itu <kbd>\</kbd> <kbd>|</kbd> kedua, dan tombol baris dasar di kiri Enter mengetik backslash seperti biasa. Tidak ada yang hilang.</li>
+<li><strong>Layout Eropa di keyboard ANSI.</strong> Layout Jerman di Windows menaruh <kbd>&lt;</kbd>, <kbd>&gt;</kbd> dan <kbd>|</kbd> hanya di tombol tambahan ISO, dan layout AZERTY Prancis serta Spanyol juga menaruh <kbd>&lt;</kbd> dan <kbd>&gt;</kbd> di sana. Keyboard ANSI tidak punya tombol itu, jadi karakter-karakter tersebut butuh remap atau layout lain. Panduan <a href="guide:qwertz-vs-qwerty">QWERTZ vs QWERTY</a> dan <a href="guide:azerty-vs-qwerty">AZERTY vs QWERTY</a> membahas sisa layout itu.</li>
+</ul>
+<p>Layout Eropa juga memakai tombol Alt kanan sebagai AltGr, yang memberi karakter ketiga pada banyak tombol: di layout Inggris, <kbd>AltGr</kbd> dengan <kbd>4</kbd> mengetik €. Keyboard ISO biasanya mencetak AltGr di tombol itu. Hal ini penting untuk menulis kode. Layout Jerman menaruh <kbd>{</kbd> <kbd>[</kbd> <kbd>]</kbd> <kbd>}</kbd> di AltGr dengan <kbd>7</kbd> sampai <kbd>0</kbd>, sedangkan layout AS memberi kurung tombolnya sendiri di kanan <kbd>P</kbd>. Karena layout AS tidak kehilangan apa pun di keyboard ISO, programmer di Jerman bisa tetap memakai keyboard ISO dan mengganti layout lewat perangkat lunak.</p>
+<p>Dvorak, Colemak dan Workman menata ulang huruf di bagian keyboard yang sama di kedua bentuk, jadi ketiganya berperilaku sama di ISO dan ANSI. Colemak-DH pengecualian: layout ini memakai angle mod, yang menggeser tombol-tombol di kiri bawah satu posisi ke kiri. Di keyboard ISO, tombol tambahan menampung pergeseran itu; DreymaR's Big Bag of Keyboard Tricks menyebutnya "practically a spare key" (praktis tombol cadangan). Keyboard ANSI tidak punya cadangan, jadi versi ANSI yang umum memindahkan <kbd>Z</kbd> ke tengah baris bawah. petitdoigt menerapkan layout sendiri dari posisi tombol fisik, jadi Anda bisa <a href="app:words?layout=colemak-dh">mencoba Colemak-DH di browser</a> tanpa memasang apa pun. <a href="guide:colemak">Panduan layout Colemak</a> menjelaskan sisa layout itu.</p>
+
+<h2>Apa itu keyboard JIS?</h2>
+<p>JIS adalah bentuk keyboard yang dipakai di Jepang: Enter tinggi gaya ISO ditambah tombol-tombol ekstra untuk mengetik bahasa Jepang. Keyboard JIS ukuran penuh punya 109 tombol, empat lebih banyak daripada ISO dan lima lebih banyak daripada ANSI.</p>
+<p>Tombol ekstra itu mengambil ruang dari tombol tetangga yang dibuat lebih pendek. Spasi menyusut agar muat 無変換 (muhenkan) di kirinya serta 変換 (henkan) dan tombol kana di kanannya: henkan mengubah kana yang diketik menjadi kanji, muhenkan membiarkannya tanpa diubah, dan tombol kana berpindah antara hiragana dan katakana. Backspace menyusut menjadi satu satuan untuk memberi tempat tombol ¥, dan Shift kanan menyusut agar muat tombol ろ (ro) di sebelah garis miring. Shift kiri tetap panjang, jadi baris huruf bawah berisi 11 tombol, seperti di ISO, dengan tombol tambahan di ujung yang berlawanan. Tombol kiri atas, yang mengetik <kbd>`</kbd> di keyboard AS, menjadi 半角/全角 (hankaku/zenkaku), yang berpindah antara karakter setengah lebar dan lebar penuh.</p>
+<p>Huruf-hurufnya sendiri berada persis di tempat yang sama seperti di ANSI dan ISO, jadi baris dasar pengetik 10 jari berfungsi tanpa perubahan di keyboard Jepang. Jangkauan yang berubah ada di tepi, di sekitar Backspace dan Shift kanan, dan ibu jari bekerja di spasi yang lebih sempit.</p>
+
+<h2>Sebaiknya beli keyboard ANSI atau ISO?</h2>
+<p>Belilah bentuk yang diharapkan layout Anda. Untuk layout AS, yang dipakai untuk bahasa Indonesia, ANSI memberi setiap tombol yang Anda perlukan, begitu juga untuk layout berbasis AS seperti Dvorak, Colemak atau Workman. Kalau Anda mengetik dengan layout Jerman, Prancis, Spanyol, Inggris (UK) atau layout Eropa lain yang menaruh karakter di tombol tambahan, pilih ISO. Pengetik Colemak-DH mungkin tetap lebih suka ISO, karena di sana angle mod mendapat tombol cadangannya.</p>
+<p>Kalau Anda sudah lancar mengetik 10 jari di satu bentuk, tetap di bentuk itu menghemat Anda dari melatih ulang Enter dan Shift kiri. Bagi yang suka memodifikasi keyboard, keycap bisa menentukan pilihan: Corsair mencatat bahwa set keycap selalu tersedia dalam ANSI tetapi tidak selalu dalam ISO, dan Keebsforall menilai pilihan keycap JIS sangat terbatas.</p>

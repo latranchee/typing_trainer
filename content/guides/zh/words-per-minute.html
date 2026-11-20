@@ -1,0 +1,142 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "zh",
+  "slug": "words-per-minute",
+  "title": "WPM是什么意思？打字速度的计算公式详解",
+  "description": "WPM是什么意思？就是每分钟单词数，每5个字符算一个单词。本文讲清WPM怎么计算、总WPM和净WPM的区别、CPM，并用一次测试演示六种算法。",
+  "h1": "WPM 是什么意思：打字速度的含义和计算方法",
+  "keyword": "WPM是什么意思",
+  "keywords_secondary": ["WPM怎么计算", "WPM", "每分钟单词数", "净WPM", "CPM", "打字速度计算"],
+  "summary": "打字里的 WPM 意思是每分钟单词数（words per minute）：每打 5 个字符算一个单词，空格和标点也算。计算 WPM 时，把打出的字符数除以 5，再除以所用的分钟数，所以一分钟打 250 个字符就是 50 WPM。净 WPM 还要减去每分钟留在文本里的错误数；各网站扣分规则不同，同一次测试会得到不同的成绩。",
+  "faq": [
+    {"q": "40 WPM 算快吗？", "a": "40 WPM 略低于网上测得的平均水平。2018 年阿尔托大学对 16.8 万名参加打字测试的志愿者的研究中，平均为 51.6 WPM；最慢的一成低于约 26 WPM，最快的一成高于约 78 WPM。40 WPM 相当于平均每个字符用 300 毫秒。"},
+    {"q": "100 WPM 有多少人能做到？", "a": "很少。阿尔托研究中只有最快的一成参与者超过约 78 WPM，这组人平均 89.6 WPM；数据里最快的打字者达到 120 WPM 以上。保持 100 WPM，意味着整场测试平均每个字符只用 120 毫秒。"},
+    {"q": "原始 WPM（raw WPM）是什么？", "a": "原始 WPM 是不扣错误时的速度。Monkeytype 计算它的方法和普通 WPM 一样，只是把打错的单词也算进去；它的普通 WPM 只计算打对的单词里的字符。两者之间的差距，就是错字让你损失的速度。"},
+    {"q": "WPM 里空格算不算字符？", "a": "算。标准单词是 5 个字符，空格包含在内，Wobbrock 把这个惯例追溯到 1905 年前后，Typing.com 也同样计算空格和标点。Shift、退格这类不在文本里留下字符的键不计入 WPM，不过退格会计入每分钟击键数。"},
+    {"q": "怎样用 Excel 或 WPS 表格计算 WPM？", "a": "把打出的文本放在 A1，用时（秒）放在 B1，在另一个单元格输入 =LEN(A1)/5/(B1/60)。LEN 会数所有字符，空格也算，结果是总 WPM。要算净 WPM，把未改正的错误数放在 C1，改用 =LEN(A1)/5/(B1/60)-C1/(B1/60)。LEN 把一个汉字也算作一个字符。"}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (eds.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (paper PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: about page source with the wpm, raw and accuracy definitions", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (paper PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Wikipedia: Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"},
+    {"title": "维基百科：單詞每分鐘", "url": "https://zh.wikipedia.org/wiki/%E5%96%AE%E8%A9%9E%E6%AF%8F%E5%88%86%E9%90%98"},
+    {"title": "维基百科：双拼", "url": "https://zh.wikipedia.org/zh-cn/%E5%8F%8C%E6%8B%BC"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "测测你的 WPM", "drill": "words"}
+}
+-->
+<h2>打字里的 WPM 是什么意思？</h2>
+<p>WPM 是 words per minute 的缩写，意思是每分钟单词数，在打字里一个“单词”指任意 5 个字符。字母、数字、空格和标点都计入这 5 个字符。Shift 和退格键不算，因为它们不在文本里留下字符。一分钟打出 300 个字符就是 60 WPM，不管这些字符拼成了哪些单词。</p>
+<p>固定单词长度，成绩才能互相比较。按真实单词数，“I am on it”是四个词，“internationalization”只有一个，可后者要按的键是前者的两倍。按 5 字符规则，“I am on it”（连空格 10 个字符）算 2 个单词，“internationalization”（20 个字符）算 4 个。拼音也一样：“zhongguo”有 8 个字母，算 1.6 个单词。<a href="https://zh.wikipedia.org/wiki/%E5%96%AE%E8%A9%9E%E6%AF%8F%E5%88%86%E9%90%98">中文维基百科的“單詞每分鐘”条目</a>给出的也是这个定义。</p>
+<p>Jacob Wobbrock 关于<a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">文本输入测量方法的论文章节</a>指出，把 5 个字符（含空格）算作一个单词，大约从 1905 年起就是通行做法；I. Scott MacKenzie 则把它追溯到 20 世纪初的打字比赛。两人都引用了 Yamada 1980 年写的打字机史。</p>
+
+<h2>WPM 怎么计算？</h2>
+<p>计算 WPM，就是把你打出的字符数除以 5，再除以打字所用的分钟数。</p>
+<ol>
+<li>数出你打出的文本里的所有字符，空格和标点都算。</li>
+<li>把这个数除以 5，得到标准单词数。</li>
+<li>把时间换算成分钟（45 秒是 0.75 分钟），用单词数除以它。</li>
+</ol>
+<p>写成公式：<code>WPM = 字符数 ÷ 5 ÷ 分钟数</code>。比如你 75 秒打了 250 个字符，就是 1.25 分钟打了 50 个单词，即 40 WPM。</p>
+<p>研究实验室会多做一步修正。计时从第一次按键开始，第一个字符没有占用计时，所以要从字符数里去掉。MacKenzie 的<a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">输入速度计算说明</a>用“the quick brown fox jumps over the lazy dog”演示：20 秒打了 43 个字符。按 43 个算是 25.8 WPM；按计时开始后打的 42 个算是 25.2 WPM。测试越长，这个修正的影响越小：两分钟打 520 个字符时，结果只差 0.1 WPM。</p>
+
+<h2>总 WPM 和净 WPM 有什么区别？</h2>
+<p>总 WPM（gross WPM）计算你打出的全部文本，错字也算在内；净 WPM（net WPM）要扣掉你留在文本里的错误。常见的扣法是每分钟每留下一个错误，扣 1 WPM：</p>
+<p><code>净 WPM = 总 WPM − 未改正错误数 ÷ 分钟数</code></p>
+<p><a href="https://www.speedtypingonline.com/typing-equations">Speed Typing Online 的打字公式页面</a>举了一个例子：两分钟总速度 80 WPM，文本里留下 8 个错误，相当于每分钟 4 个错误，净速度就是 76 WPM。</p>
+<p>边打边改掉的错误不再额外扣分，因为你已经用时间付过代价：打错的键、退格键和正确的键都花了时间，最后只留下一个字符。留在文本里的错误会让成绩虚高。Wobbrock 指出，未改正的错误会提高速度，因为留着错不改的人打得更快，净 WPM 这类扣分正是把这份便宜收回来。</p>
+<p>你还会见到另外两种调整。研究者报告调整后的 WPM（adjusted WPM），按未改正错误率把 WPM 打折；在 Wobbrock 的例子里，10% 的未改正错误会让调整后的 WPM 只剩原来的 90%。有些工具曾经用 WPM 乘以准确率。Typing.com 一度把这个乘积叫作“Net Words Per Minute”，后来取消了，理由是它让打字者只盯着 WPM、忽视准确率。</p>
+<p>打字测试通常把准确率和 WPM 放在一起显示。准确率是正确字符数除以打出的全部字符数再乘以 100，边打边改的错误也算进去：打了 534 个字符、其中 514 个正确，准确率就是 96.3%，即使最终文本里只剩几个错。<a href="guide:typing-accuracy">打字准确率指南</a>讲了准确率该定什么目标。</p>
+
+<h2>WPM 计算示例：一次测试，六种算法</h2>
+<p>下面用同一次两分钟测试套用上面的每个公式。你最后得到 520 个字符的文本（含空格）。过程中你打错了 14 个字符并删掉重打，还有 6 个错字留在文本里，各在一个不同的五字母单词中。这样一共打了 534 个字符，其中 514 个正确。</p>
+<table>
+<caption>同一次两分钟测试的六种算法</caption>
+<thead>
+<tr><th scope="col">方法</th><th scope="col">算式</th><th scope="col">WPM</th></tr>
+</thead>
+<tbody>
+<tr><td>总 WPM</td><td>520 ÷ 5 ÷ 2</td><td>52.0</td></tr>
+<tr><td>研究用 WPM（从第一个字符开始计时）</td><td>519 ÷ 120 秒 × 60 ÷ 5</td><td>51.9</td></tr>
+<tr><td>调整后的 WPM（研究用）</td><td>51.9 × (1 − 6 ÷ 520)</td><td>51.3</td></tr>
+<tr><td>WPM × 准确率（旧工具）</td><td>52.0 × 514 ÷ 534</td><td>50.1</td></tr>
+<tr><td>净 WPM</td><td>52.0 − 6 ÷ 2</td><td>49.0</td></tr>
+<tr><td>只算打对的单词（Monkeytype 的规则）</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48.4</td></tr>
+</tbody>
+</table>
+<p>最后一行假设每个错字毁掉一个五字母单词加上它后面的空格，每次损失 6 个字符。</p>
+
+<h2>为什么每个打字测试的 WPM 都不一样？</h2>
+<p>你的 WPM 在不同测试之间浮动，是因为网站用的公式、文本和测试时长各不相同，你自己的节奏在一次测试里也会起伏。光是公式就让上面的例子差了 3.6 WPM。比如 <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a> 只计算打对的单词里的字符，所以一个错字会赔掉整个单词。</p>
+<p>Typing.com 指出，WPM 不考虑内容难易，而且反复打同一段文字会让速度虚高，因为手指记住了它。一段全是简短常用词的文字，通常比满是大写字母、数字和符号的文字得分高，尽管两者都按 5 字符的单词计算。</p>
+<p>测试时长也有影响。15 秒的冲刺只测到一次爆发。Typing.com 认为 3 分钟和 5 分钟的测试最能反映整体速度，因为时间够长，能得出可重复的平均值，又不至于让手腕和手指疲劳。</p>
+<p>实时计数器和最终成绩覆盖的时间段也不同。最终成绩平均了整场测试，慢热的开头和中途卡壳都算在内；滚动计数器只看最近几秒，每次犹豫都会让它往下掉。petitdoigt 的 <a href="app:words">words 练习</a>两者都显示：打字时是 5、10 或 30 秒窗口的滚动 WPM，每组结束后是这一组和最近十组的对比。</p>
+
+<h2>怎样准确测出你的 WPM？</h2>
+<p>想得到可信的 WPM，每次都用同一种测试、同样的方式，并且在比较数字之前先确认网站用的公式。</p>
+<ol>
+<li>选一个 3 到 5 分钟的测试。</li>
+<li>用没打过的文本。测英文 WPM 就打英文，测中文速度就固定用同一种输入法。</li>
+<li>按实际工作时的节奏打，错了就按你平时的习惯改。</li>
+<li>把 WPM 和准确率一起记下来。60 WPM、准确率 90% 和 60 WPM、准确率 98%，需要的练习完全不同。</li>
+<li>拿两个网站的成绩比较之前，先看清它报告的是总 WPM、净 WPM 还是只算打对的单词。</li>
+<li>和自己以前在同一个测试上的成绩比，看多次练习的趋势。</li>
+</ol>
+
+<h2>CPM 和每分钟击键数是什么？</h2>
+<p>CPM 即每分钟字符数（characters per minute），等于 WPM 乘以 5：52 WPM 就是 260 CPM。每分钟击键数统计按下的键，所以包括退格键，有的统计还包括 Shift。在上面的例子里，你两分钟按了 534 次字符键和 14 次退格：每分钟 274 次击键，对应每分钟 260 个字符。</p>
+<p>研究者把两者的比值叫作每字符击键数（KSPC）。<a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">阿尔托大学对 1.36 亿次击键的研究</a>（Dhakal 等人，CHI 2018）记录了每一次按键，发现 16.8 万名志愿者平均每个字符按 1.17 次键。最快的一成平均 1.10，最慢的一成 1.24，因为慢手犯错和改错都更多。</p>
+<p>数据录入岗位常用每小时击键数提要求；英文维基百科提到，很多岗位要求每小时 8,000 或 10,000 次。如果每次击键都产出一个字符，每小时 10,000 次约等于 33 WPM。下表按同样的假设换算常见速度。</p>
+<table>
+<caption>WPM 换算成其他速度单位（按每次击键产出一个字符计算）</caption>
+<thead>
+<tr><th scope="col">WPM</th><th scope="col">每分钟字符数</th><th scope="col">每个字符的毫秒数</th><th scope="col">每小时击键数</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6,000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9,000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12,000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18,000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24,000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30,000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36,000</td></tr>
+</tbody>
+</table>
+
+<h2>中文的“字/分钟”和 WPM 怎么换算？</h2>
+<p>中文字/分钟换成 WPM 的比例因人而异，取决于输入法和打字习惯。中文打字速度按“字/分钟”计，一个汉字算一个字。用拼音输入时，一个汉字要按一个或好几个字母键，还要选词：“的”只要 de 两个字母，“中”是 zhong 五个，“双”是 shuang 六个。</p>
+<p>同一句话，每个人按的键数也不一样。打“中国”时，有人连打 zhongguo 只选一次词，有人逐字打、分两次选。<a href="https://zh.wikipedia.org/zh-cn/%E5%8F%8C%E6%8B%BC">双拼</a>把每个音节固定成两个键，一个代表声母，一个代表韵母，shuang 也只要按两下。拿中文字/分钟去换算 WPM，得出的数字主要反映输入法和选词习惯。</p>
+<p>拼音用的就是键盘上的 26 个字母键，所以在英文文本上测出的 WPM 和每个键的延迟，可以直接反映你打拼音时手指有多快。各档 WPM 处在什么水平，可以对照<a href="guide:typing-speed">打字速度指南</a>里的分级表。</p>
+
+<h2>人每分钟打字、说话和阅读多少词？</h2>
+<p>朗读和有声书配音比打字快得多：有声书推荐的语速大约是网上测得的平均打字速度的三倍。下表的数字来自不同研究，数词的方法也不同。打字研究按 5 个字符算一个单词；语速和阅读速度按实际说出或读到的词计算，Wobbrock 的论文章节也提到，语音研究者就是这样定义单词的。</p>
+<table>
+<caption>不同活动每分钟的词数</caption>
+<thead>
+<tr><th scope="col">活动</th><th scope="col">每分钟词数</th><th scope="col">来源</th></tr>
+</thead>
+<tbody>
+<tr><td>速记机键盘，最快的熟练使用者</td><td>最高 360</td><td>吉尼斯世界纪录，见英文维基百科</td></tr>
+<tr><td>朗读，17 种语言</td><td>184 ± 29</td><td>Trauzettel-Klosinski 和 Dietz（2012），见英文维基百科</td></tr>
+<tr><td>有声书配音（推荐语速）</td><td>150 到 160</td><td>Williams（1998），见英文维基百科</td></tr>
+<tr><td>电脑键盘打字，在线测试</td><td>51.6（平均）</td><td>Dhakal 等人（2018）</td></tr>
+<tr><td>手机打字，在线测试</td><td>36.2（平均）</td><td>Palin 等人（2019）</td></tr>
+<tr><td>手抄，18 到 64 岁的成年人</td><td>约 13（每分钟 68 个字母）</td><td>英文维基百科</td></tr>
+</tbody>
+</table>
+<p>手机的数字来自<a href="https://userinterfaces.aalto.fi/typing37k/">阿尔托大学 2019 年对 37,370 名志愿者的研究</a>，它和桌面研究用的是同样的方法和 5 字符单词，发现手机打字比电脑慢约 15 WPM。说话时一个“a”就算一整个词，所以语速和阅读速度只能和打字 WPM 粗略对比。上表的词都是英文词，中文的语速按字计算，不在这张表里。</p>
+
+<h2>你的 WPM 说明每次按键用了多久？</h2>
+<p>WPM 决定了每个字符的平均用时：用 12,000 除以你的 WPM，得到的就是毫秒数。60 WPM 平均每个字符 200 毫秒，100 WPM 是 120 毫秒。从 50 WPM 提到 60 WPM，意味着每个字符要省下 40 毫秒，从 240 降到 200。</p>
+<p>阿尔托研究直接测了这些间隔。所有参与者从按下一个键到按下下一个键，平均间隔 239 毫秒，平均速度 51.6 WPM。最快的一成（约 78 WPM 以上）平均间隔 122 毫秒；最慢的一成（约 26 WPM 以下）平均 481 毫秒，从最慢一成到最快一成，间隔缩短到约四分之一。按键本身的时长差别小得多：一个键平均按下 116 毫秒，慢手也在 80 到 150 毫秒之间，作者据此认为，大部分速度提升来自别处。</p>
+<p>同一篇论文总结的早期打字机研究发现，左右手交替打的字母对比同一只手打的快 30 到 60 毫秒，比同一根手指打的快约 80 毫秒。在现代键盘上，阿尔托数据显示交替双手的好处小一些，约 5 到 20 毫秒，慢手交替双手时还会慢 20 到 28 毫秒。在 QWERTY 上，拼音的 zh、ch、sh 都是左手按第一个字母、右手按 <kbd>H</kbd>，属于左右手交替；yu 和 hu 则全落在右手食指上，<kbd>Y</kbd>、<kbd>U</kbd>、<kbd>H</kbd> 都归它管。你的 WPM 是成百上千次这样的衔接的平均值，少数几个慢的就会拉低整个数字。</p>
+<p>petitdoigt 的 <a href="app:pairs">pairs 练习</a>会在你打字时为每一次键间转换计时，在自适应模式下，每组练习主要由你最慢、最容易出错的转换组成；stats 页面按手指、字母和薄弱转换列出延迟和准确率。petitdoigt 目前显示英文界面，练习文本有英文、法文、德文和西班牙文。<a href="guide:how-to-type-faster">如何提高打字速度</a>把这些数据变成练习计划，<a href="guide:finger-placement">键盘指法图</a>标出了每个键归哪根手指。</p>

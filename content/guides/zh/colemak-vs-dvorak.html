@@ -1,0 +1,128 @@
+<!--meta
+{
+  "id": "colemak-vs-dvorak",
+  "lang": "zh",
+  "slug": "colemak-vs-dvorak",
+  "title": "Colemak和Dvorak哪个好？四种键盘布局对比",
+  "description": "Colemak 和 Dvorak 哪个好？从基准行占比、同指连击、快捷键和学习难度对比 Colemak、Dvorak、Workman 与 QWERTY，附拼音打字分析和免费试用方法。",
+  "h1": "Colemak 和 Dvorak 哪个好？换布局前先看这份对比",
+  "keyword": "Colemak和Dvorak哪个好",
+  "keywords_secondary": ["Colemak和Dvorak对比", "Dvorak和QWERTY哪个快", "Colemak和QWERTY", "Workman布局", "阔码键盘", "德沃夏克键盘"],
+  "summary": "Colemak 和 Dvorak 哪个好？对大多数从 QWERTY 转过来的人来说是 Colemak：它只改动 17 个键，Ctrl+Z、X、C、V 留在原位，基准行占比（74% 对 70%）和同指连击（1.67% 对 2.63%）也都略胜 Dvorak。已经会打 Dvorak，或者需要一个几乎所有系统（包括 iOS 和 Android）都内置的布局，Dvorak 更合适。两者都没有被证明比 QWERTY 更快。",
+  "faq": [
+    {"q": "Colemak 和 Dvorak 哪个更适合写代码？", "a": "对从 QWERTY 转过来的程序员，Colemak 更容易：几乎所有标点都在原位，Dvorak 则移动了括号、斜杠、减号、等号和分号。Colemak FAQ 也说，最佳选择取决于编程语言、命名习惯和编辑器。写代码的 Dvorak 用户可以用 Roland Kaufmann 的程序员 Dvorak，它把括号放到上排；部分 Linux 发行版自带，Windows 和 macOS 没有。"},
+    {"q": "已经会 Dvorak，要不要改学 Colemak？", "a": "通常不用。Colemak FAQ 自己说，老 Dvorak 用户改学 Colemak 不会那么容易，Colemak 比 Dvorak 的提升小于 Dvorak 比 QWERTY 的提升，如果你大体满意 Dvorak，最好继续用。Mod-DH 对比中两者的同指连击是 1.67% 对 2.63%，和 QWERTY 的 6.58% 相比，这点差距很小。"},
+    {"q": "学了 Colemak 或 Dvorak 会忘掉 QWERTY 吗？", "a": "多数人两种都能保留。Colemak FAQ 说，两种布局都掌握的人可以经常轻松切换，也有人的 QWERTY 速度或准确率会永久下降一点。在别人的电脑上，可以花一分钟给 Windows 加上 Colemak，或者看着键帽打 QWERTY。"},
+    {"q": "Windows 自带 Colemak 吗？", "a": "自带，从 Windows 11 24H2 版开始。微软在 2024 年 1 月的 Insider Preview 26040 版中宣布了它。在“设置 › 时间和语言 › 语言和区域”里，从英语或其他拉丁字母语言的语言选项中添加。更早的 Windows 需要从 colemak.com 下载免费安装包。Dvorak 从 Windows 95 起就是 Windows 的内置布局。"},
+    {"q": "手机上能用 Dvorak 或 Colemak 吗？", "a": "两大手机系统都内置 Dvorak：iOS 从 2022 年的 iOS 16 开始，Android 的触屏键盘从 Android 4.1 开始。Colemak 要通过 Gboard、SwiftKey 等键盘应用使用。在触屏上打字，Colemak FAQ 推荐 QWERTY 加滑行输入，因为 Colemak 在触屏上会增加手指移动和出错。"}
+  ],
+  "sources": [
+    {"title": "Colemak Mod-DH: comparing layouts (same-finger bigrams and effort scores)", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: what it changes, origin, angle mod", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "ColemakMods/mod-dh on GitHub: installation, xkeyboard-config support, keymap files", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "Colemak keyboard layout (official site)", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "OJ Bucao, The Workman Keyboard Layout Philosophy (2010)", "url": "https://workmanlayout.org/"},
+    {"title": "US patent 2,040,248, Typewriter keyboard (Dvorak and Dealey, filed 1932, granted 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "维基百科：德沃夏克键盘", "url": "https://zh.wikipedia.org/zh-cn/%E5%BE%B7%E6%B2%83%E5%A4%8F%E5%85%8B%E9%94%AE%E7%9B%98"},
+    {"title": "Barbara Blackburn (typist), Wikipedia", "url": "https://en.wikipedia.org/wiki/Barbara_Blackburn_(typist)"},
+    {"title": "Colemak, Wikipedia", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "维基百科：阔码键盘（Colemak）", "url": "https://zh.wikipedia.org/zh-cn/%E9%98%94%E7%A0%81%E9%94%AE%E7%9B%98"},
+    {"title": "Keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Kinesis, QWERTY | Dvorak | Colemak et al", "url": "https://kinesis-ergo.com/switching-from-qwerty/"},
+    {"title": "xkeyboard-config(7): layouts shipped with Linux, including Dvorak, Colemak, Colemak-DH and Workman", "url": "https://man.archlinux.org/man/xkeyboard-config"},
+    {"title": "Microsoft, Announcing Windows 11 Insider Preview Build 26040 (January 26, 2024)", "url": "https://blogs.windows.com/windows-insider/2024/01/26/announcing-windows-11-insider-preview-build-26040-canary-channel/"},
+    {"title": "Microsoft 支持：管理 Windows 中的语言和键盘/输入布局设置", "url": "https://support.microsoft.com/zh-cn/help/4496404"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "在浏览器里试打 Colemak", "drill": "words", "layout": "colemak"}
+}
+-->
+<p>Colemak 和 Dvorak 都把英文最常用的字母搬到了手指停放的基准行上，在两项常用的舒适度指标上都远好过 QWERTY：在基准行上完成的按键比例，以及同一根手指连续按两个不同键的频率。两者的分歧在于保留了多少 QWERTY。1936 年取得专利的 Dvorak（中文也叫德沃夏克键盘）只把 A 和 M 留在原位；2006 年发布的 Colemak（中文维基百科称“阔码键盘”）改动 17 个键，撤销、剪切、复制、粘贴的快捷键都不动；2010 年的 Workman 改动 21 个。三者都是为英文设计的，用拼音打中文时的差别单独放在下面一节。AZERTY、QWERTZ 这类国家布局见<a href="guide:keyboard-layouts">键盘布局总览</a>。</p>
+
+<h2>Colemak 和 Dvorak 哪个好？</h2>
+<p>在两者都有公开数据的每一项舒适度指标上，Colemak 都略胜 Dvorak，两者又都把 QWERTY 远远甩在后面。基准行、同指连击和费力分数都来自对英文文本的模拟打字，各布局条件相同；你自己的数字会随打的内容变化。</p>
+<table>
+<caption>QWERTY、Dvorak、Colemak 和 Workman 对比</caption>
+<thead><tr><th scope="col">指标</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th><th scope="col">Colemak</th><th scope="col">Workman</th></tr></thead>
+<tbody>
+<tr><th scope="row">诞生</th><td>1870 年代</td><td>1932 年申请，1936 年获专利</td><td>2006 年</td><td>2010 年</td></tr>
+<tr><th scope="row">基准行按键占比</th><td>32%</td><td>70%</td><td>74%</td><td>无公开数字</td></tr>
+<tr><th scope="row">同指连击</th><td>6.58%</td><td>2.63%</td><td>1.67%</td><td>3.15%</td></tr>
+<tr><th scope="row">费力分数（越低越轻松）</th><td>2.400</td><td>1.923</td><td>1.836</td><td>1.817</td></tr>
+<tr><th scope="row">相对 QWERTY 移动的键</th><td>0</td><td>除 A、M 外的全部字母和大部分标点</td><td>17 个</td><td>21 个</td></tr>
+<tr><th scope="row">Ctrl+Z、X、C、V</th><td>左手下排</td><td>打散；C、V、Z 到了右手</td><td>不变</td><td>Z、X 不变；C、V 右移一格</td></tr>
+<tr><th scope="row">系统内置</th><td>所有系统</td><td>Windows、macOS、Linux、ChromeOS、iOS 16+、Android</td><td>Windows 11 24H2+、macOS、Linux、ChromeOS</td><td>Linux；Windows 和 macOS 可免费下载</td></tr>
+</tbody>
+</table>
+<p>基准行占比来自 <a href="https://kinesis-ergo.com/switching-from-qwerty/">Kinesis</a> 和<a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">英文维基百科的 Dvorak 条目</a>，后者把 70% 和 32% 追溯到 Jared Diamond 1997 年在 Discover 杂志上的文章。同指连击和费力分数来自 <a href="https://colemakmods.github.io/mod-dh/compare.html">Colemak Mod-DH 对比页</a>，它用古登堡计划的一批书模拟打字，每种布局都用设计者推荐的指法。作者说费力权重是他自己的估计，网站又属于 Colemak-DH 项目，所以分数接近时应当看作打平。移动键数来自 <a href="https://colemak.com/FAQ">Colemak FAQ</a>、Kinesis 和 <a href="https://workmanlayout.org/">workmanlayout.org</a>。</p>
+<p>Colemak 和 Dvorak 的差距不大：基准行 74% 对 70%，同指连击 1.67% 对 2.63%。Workman 的总费力分数四者最低，1.817 对 Colemak 的 1.836，因为它每个键的基础费力更低（1.710 对 1.773）；它的同指连击却几乎是 Colemak 的两倍。</p>
+
+<h2>Colemak 和 Dvorak 的设计思路有什么不同？</h2>
+<p>Dvorak 围绕左右手交替设计，Colemak 围绕保留 QWERTY 习惯设计。August Dvorak 和 William Dealey 在 1932 年 5 月申请专利，1936 年 5 月获批。他们把所有元音（包括 Y）放在左手，最常用的辅音放在右手，于是大多数英文单词在两只手之间来回跳。左手基准行是 A O E U I，右手是 D H T N S。它的历史和至今仍有争议的研究见 <a href="guide:dvorak">Dvorak 键盘指南</a>。</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>Dvorak：元音在左手基准行，常用辅音在右手。每个键的颜色表示负责它的手指。</figcaption></figure>
+<p>这么多交替是有代价的。Colemak FAQ 说，Dvorak 的同指连击更多，负担偏向右手，右手小指更累（L 放在 QWERTY 的 P 键上），一只手连贯打出几个键的滚动组合也更少。Workman 的作者估计，大多数布局的同手使用率在 30% 区间，Dvorak 在 20% 区间。Colemak FAQ 还指出，最常用的字母之一 I 在 Dvorak 上不在手指停放位，要左手食指横向去够。</p>
+<p>Shai Coleman 在 2006 年 1 月 1 日发布 Colemak，原则是尽量保留 QWERTY，只在值得的地方移动字母。17 个键换了位置，只有 P 和 E 换了手。基准行变成 A R S T D H N E I O，“strand”“senior” 这样的词完全不用离开基准行。Colemak 默认还把 Caps Lock 变成第二个 Backspace。学习方法见 <a href="guide:colemak">Colemak 布局指南</a>。</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak：下排大部分键和几乎所有标点都留在 QWERTY 的位置。</figcaption></figure>
+<p>Colemak 的弱点在基准行中间。D 和 H 位于中间两列，食指要横向去够，HE 这样的常见组合会让右手横着扭一下。Colemak-DH 和 Workman 都是为去掉这个动作而设计的。</p>
+
+<h2>用拼音打中文，Colemak 和 Dvorak 哪个更顺手？</h2>
+<p>上面的数字全部来自英文文本，拼音没有公开的同类统计，但手指分工可以直接从键位推出来。同指组合最费时间：这根手指必须按完第一个键，才能去按第二个。下表列出几组常见拼音组合在三种布局上由哪根手指打。</p>
+<table>
+<caption>常见拼音组合的手指分工</caption>
+<thead><tr><th scope="col">组合</th><th scope="col">例字</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>de</td><td>的</td><td>同指（左手中指）</td><td>两手交替</td><td>两手交替</td></tr>
+<tr><td>un</td><td>云、军、婚</td><td>同指（右手食指）</td><td>两手交替</td><td>同手不同指</td></tr>
+<tr><td>yu</td><td>鱼、语</td><td>同指（右手食指）</td><td>同指（左手食指）</td><td>同手不同指</td></tr>
+<tr><td>yi</td><td>一、以</td><td>同手不同指</td><td>同指（左手食指）</td><td>同指（右手无名指）</td></tr>
+<tr><td>ui、iu</td><td>对、六</td><td>同手不同指</td><td>同指（左手食指）</td><td>同手不同指</td></tr>
+<tr><td>xi</td><td>西、喜</td><td>两手交替</td><td>同指（左手食指）</td><td>两手交替</td></tr>
+<tr><td>ue</td><td>学、月</td><td>两手交替</td><td>同手不同指</td><td>同指（右手中指）</td></tr>
+<tr><td>zh、ch、sh</td><td>这、出、是</td><td>两手交替</td><td>都在右手</td><td>两手交替</td></tr>
+<tr><td>ng</td><td>上、行、中</td><td>两手交替</td><td>同手不同指</td><td>两手交替</td></tr>
+</tbody>
+</table>
+<p>Dvorak 的麻烦集中在左手食指：U、I、P、Y、K、X 六个字母都归它，所以表外的 pu、ku、xu、pi 也是同指。元音在左、多数辅音在右，让 da、ta、ni 这类音节两手交替得很顺，可声母 j、q、x、y、p 也在左手，后面又总跟着 i 或 u，交替就断了。表里的组合中，Colemak 只有 yi 和 ue 是同指。QWERTY 的问题在右手食指：Y、U、H、J、N、M 全归它，yun、jun、hun 三个字母都由这一根手指打。如果你主要打拼音，拿一段自己常打的文字在两种布局上各试几分钟，比任何英文统计都可靠。</p>
+
+<h2>Colemak 和 Dvorak 哪个更好学？</h2>
+<p>对现在打 QWERTY 的人来说，Colemak 更好学。移动的键更少，只有两个换了手，Ctrl+Z、X、C、V 原地不动，重学字母期间快捷键照常能用，几乎所有标点也留在原位。Dvorak 把逗号和句号移到上排，分号移到左下角，方括号移到数字行，写代码或标点多的文字时要重学的更多。</p>
+<p>Colemak 正是以此立论的：它的 FAQ 说 Dvorak 对现有 QWERTY 用户“太难学、太让人沮丧”，这是布局官网在为自己说话。我们没有找到比较两者学习时长的对照研究。Colemak FAQ 说，所需时间因人而异，主要花在提高打字的运动技能和手指灵活性上。Colemak 还有更平缓的路线：据<a href="https://en.wikipedia.org/wiki/Colemak">英文维基百科的 Colemak 条目</a>，Tarmak 过渡布局分五步走，每步只改三到五个键。</p>
+
+<h2>Dvorak 和 QWERTY 哪个快？Colemak 呢？</h2>
+<p>两种布局都没有被证明能让你比 QWERTY 打得更快。Dvorak 和 QWERTY 之争留下的记录最多。二战期间 Dvorak 在海军做实验，称能在十天内把打字员转训到他的布局；此前他至少放弃过两项结果不明的研究。1956 年，美国总务管理局的 Earle Strong 做了每组十名打字员的对照研究，用维基百科的话说，它“未能显示 Dvorak 布局在打字速度或培训速度上有任何好处”。Strong 把 Dvorak 早先的结果归因于实验设计差和偏见，不过他本人和 Dvorak 有私怨。1990 年，S. J. Liebowitz 和 Stephen Margolis 在《键盘的寓言》（The Fable of the Keys）中回顾了这些记录，认为记录最完整的实验显示 Dvorak 键盘几乎没有优势。</p>
+<p>Dvorak 最有名的速度纪录只来自一个人。从 1938 年起打 Dvorak 的 Barbara Blackburn，1976 到 1985 年间以每分钟 150 词、持续 50 分钟的成绩列入《吉尼斯世界纪录》。吉尼斯没有做正式测试，是一位 Dvorak 支持者写信给编辑后列入的，而且一个人的纪录分不清是布局的功劳还是打字员本人的。</p>
+<p>Colemak 对 QWERTY 的记录更少，我们没有找到 Colemak 的速度对照研究。它的依据是上表那样的模拟，衡量的是舒适度：手指伸多远、多少按键留在基准行、同一根手指多常连按。这些数字关系到疲劳和手感。换布局还会先让你慢上一段时间，之后才可能有回报。如果目标是速度，先在现有布局上按<a href="guide:how-to-type-faster">如何提高打字速度</a>练，再对照<a href="guide:typing-speed">平均打字速度</a>看看自己在什么水平。</p>
+
+<h2>Workman 和 Colemak-DH 又是怎么回事？</h2>
+<p>两者都针对 Colemak 横向够 D 和 H 的问题，代价各不相同。OJ Bucao 在 2010 年 9 月发布 Workman，先给每个键打分，从 1（最轻松）到 5（最费力）。他让常用字母避开中间两列：按他的统计，中间两列在 QWERTY 上占 22% 的按键，Dvorak 14%，Colemak 12%，Workman 6%。代价是同指连击，Mod-DH 对比中 Workman 是 3.15%，Colemak 是 1.67%。Bucao 自己的数字也一样：Workman 每 46 次按键出现一次同指连击，Colemak 每 58 次，QWERTY 每 20 次。</p>
+<p>Colemak-DH 保留 Colemak，只移动造成横向伸展的键。SteveP 在 2014 年 10 月发布它：D 降到下排左手食指下，G 回到 QWERTY 的位置，B 移到上排，H 和 M 对调，每个键归哪根手指都不变。错列键盘可以加 angle mod，把 X 和 C（ISO 键盘上还有 Z）左移一格，不过项目现在在所有键盘上都推荐原版的矩阵版本。Colemak-DH 保持 1.67% 的同指连击，同一键盘配置下费力分数从 1.802 降到 1.735，在矩阵键盘上是 1.726，对比中最低。Linux 从 xkeyboard-config 2.34 起内置它，项目为 macOS 和 Windows 提供安装文件。在 petitdoigt 里不用安装任何东西就能<a href="app:pairs?layout=colemak-dh">练 Colemak-DH 的字母组合</a>。</p>
+
+<h2>换了布局，Ctrl+C 和 Ctrl+V 在哪里？</h2>
+<p>大多数程序里快捷键跟着字母走，布局移动了 C 和 V，复制和粘贴也跟着移动。Colemak 的 Z、X、C、V 完全留在 QWERTY 的位置。Workman 保留 Z 和 X，C 和 V 右移一格，左手单手仍够得到。Colemak-DH 看版本：矩阵版保留 Z、X、C，V 右移一格；angle mod 版把 X 和 C 左移一格，V 不动。Dvorak 把它们打散了：X 在左手食指下，C、V、Z 到了右手，撤销、复制、粘贴都要用平时握鼠标的那只手。macOS 自带“Dvorak – QWERTY ⌘”布局，按住 Command 时变回 QWERTY，Windows 用户可以用 AutoHotkey 脚本做到同样的效果。</p>
+
+<h2>该选哪种键盘布局？</h2>
+<p>现在打 QWERTY、想要最容易的切换和模拟数据上最好的舒适度，就选 Colemak。已经会打 Dvorak 就继续用，Colemak FAQ 对大体满意 Dvorak 的人也是这样建议的。其他情况见下表。</p>
+<table>
+<caption>哪种布局适合哪种人</caption>
+<thead><tr><th scope="col">如果你是</th><th scope="col">选</th><th scope="col">理由</th></tr></thead>
+<tbody>
+<tr><td>打 QWERTY，想最平顺地切换</td><td>Colemak</td><td>只动 17 个键，快捷键不变，四者中同指连击最低</td></tr>
+<tr><td>不喜欢食指横向伸展，或者用分体、直列键盘</td><td>Colemak-DH</td><td>去掉 D 和 H 的横向伸展；对比中费力分数最低</td></tr>
+<tr><td>已经能熟练打 Dvorak</td><td>继续用 Dvorak</td><td>Colemak FAQ 说，它比 Dvorak 的提升小于 Dvorak 比 QWERTY 的提升</td></tr>
+<tr><td>在很多设备上打字，希望布局到处都有</td><td>Dvorak，或留在 QWERTY</td><td>Dvorak 内置于 Windows、macOS、Linux、ChromeOS、iOS 和 Android</td></tr>
+<tr><td>想要最少的中间列伸展，能接受更多同指连击</td><td>Workman</td><td>按作者统计，中间列只占 6%</td></tr>
+<tr><td>主要打拼音</td><td>Colemak</td><td>上文的拼音组合里同指最少</td></tr>
+<tr><td>QWERTY 已经打得很快，只想更快</td><td>留在 QWERTY</td><td>1956 年的政府研究没发现 Dvorak 在打字或培训速度上有好处，Colemak 也没有速度研究</td></tr>
+</tbody>
+</table>
+
+<h2>换之前怎样先试用 Colemak 或 Dvorak？</h2>
+<p>三种布局都能在浏览器标签页里试，不用碰系统设置。petitdoigt 是在浏览器里运行的免费练习工具，它根据每个键的物理位置自己套用布局，所以 <a href="app:words?layout=colemak">Colemak</a>、<a href="app:words?layout=dvorak">Dvorak</a> 和 <a href="app:words?layout=workman">Workman</a> 在你桌上的 QWERTY 键盘上直接能用。屏幕键盘显示新布局的字母，每个键按负责的手指着色，<a href="guide:finger-placement">键盘指法图</a>解释了这些分区。浏览器看不到你用的是哪根手指，它高亮正确的手指，测量你的按键和节奏。界面目前是英文，练习文本有英、法、德、西四种语言。</p>
+<ol>
+<li>在每个候选布局上慢慢打几分钟 words 练习，跟着高亮的手指走。</li>
+<li>把感觉最顺的那个拿去练 pairs。自适应模式下，每一组主要由你自己最慢、最容易出错的键间转换组成，能找出这个布局对你来说最难的组合。</li>
+<li>打开 stats 页面。它按布局分开记录，Colemak 的练习不会和 QWERTY 的历史混在一起。</li>
+<li>觉得值得投入，再加到系统里。Windows 11 24H2 及以后：设置 › 时间 &amp; 语言 › 语言 &amp; 区域，打开英语的语言选项，添加键盘。macOS 和 Linux 都内置 Colemak 和 Dvorak。用拼音输入法的话，设为默认前先确认它在新布局下打出的字母正确。</li>
+</ol>

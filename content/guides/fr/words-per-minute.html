@@ -1,0 +1,138 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "fr",
+  "slug": "mots-par-minute",
+  "title": "Mots par minute (MPM) : définition et méthode de calcul",
+  "description": "Les mots par minute expliqués : le mot de 5 caractères, le calcul des MPM, MPM bruts et nets, frappes par minute et un exemple noté de six façons.",
+  "h1": "Mots par minute (MPM) : ce que cela veut dire et comment les calculer",
+  "keyword": "mots par minute",
+  "keywords_secondary": ["MPM", "calculer les mots par minute", "MPM bruts et nets", "frappes par minute", "caractères par minute", "WPM"],
+  "summary": "Les mots par minute (MPM, ou WPM en anglais) mesurent la vitesse de frappe en mots de cinq caractères : tous les cinq caractères tapés, espaces et ponctuation compris, comptent pour un mot. Pour calculer vos MPM, divisez le nombre de caractères par cinq, puis par le nombre de minutes : 250 caractères en une minute font 50 MPM. Les MPM nets retirent en plus les erreurs laissées dans le texte, et chaque site applique sa propre pénalité.",
+  "faq": [
+    {"q": "40 mots par minute, est-ce bien ?", "a": "40 MPM, c’est un peu sous la moyenne mesurée en ligne. Dans l’étude de l’université Aalto (2018) portant sur 168 000 volontaires qui ont passé un test de frappe, la moyenne était de 51,6 MPM ; le dixième le plus lent tapait sous les 26 MPM environ et le dixième le plus rapide au-dessus de 78. À 40 MPM, vous mettez en moyenne 300 millisecondes par caractère."},
+    {"q": "Taper à 100 MPM, est-ce rare ?", "a": "Oui, 100 MPM, c’est rare. Dans l’étude Aalto, seul le dixième le plus rapide des participants dépassait environ 78 MPM, et ce groupe tapait en moyenne 89,6 MPM ; les plus rapides du jeu de données atteignaient 120 MPM ou plus. Tenir 100 MPM revient à mettre 120 millisecondes par caractère en moyenne pendant tout le test."},
+    {"q": "Qu’est-ce que le « raw » de Monkeytype ?", "a": "Le raw, c’est la vitesse avant toute pénalité pour les erreurs. Monkeytype le calcule comme ses MPM habituels en comptant aussi les mots faux ; ses MPM habituels ne gardent que les caractères des mots tapés correctement. L’écart entre les deux chiffres montre combien vos fautes de frappe vous coûtent."},
+    {"q": "Les espaces comptent-ils dans les mots par minute ?", "a": "Oui. Le mot standard compte cinq caractères espaces compris, une convention que Wobbrock fait remonter à 1905 environ, et Typing.com compte les espaces et la ponctuation de la même façon. Les touches qui ne laissent aucun caractère dans le texte, comme Maj et Retour arrière, n’ajoutent rien aux MPM ; Retour arrière compte toutefois dans les frappes par minute au sens strict."},
+    {"q": "Comment calculer les MPM dans Excel ou Google Sheets ?", "a": "Collez le texte tapé dans la cellule A1 et la durée en secondes dans B1, puis saisissez =NBCAR(A1)/5/(B1/60) dans une autre cellule ; dans Google Sheets ou un Excel en anglais, remplacez NBCAR par LEN. La fonction compte tous les caractères, espaces compris : vous obtenez des MPM bruts. Pour des MPM nets, mettez le nombre d’erreurs non corrigées en C1 et utilisez =NBCAR(A1)/5/(B1/60)-C1/(B1/60)."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (eds.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (article, PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype : code source de la page À propos, avec les définitions de wpm, raw et accuracy", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (article, PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "travail-industrie.com, Test de vitesse de frappe au clavier AZERTY", "url": "https://travail-industrie.com/outils/test-vitesse-de-frappe"},
+    {"title": "Wikipédia, AZERTY", "url": "https://fr.wikipedia.org/wiki/AZERTY"},
+    {"title": "Wikipedia (en anglais) : Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Mesurez vos mots par minute", "drill": "words"}
+}
+-->
+<h2>Que veut dire MPM en dactylographie ?</h2>
+<p>MPM signifie mots par minute (WPM, pour words per minute, en anglais), et en dactylographie, un mot désigne n’importe quel groupe de cinq caractères. Lettres, chiffres, espaces et ponctuation comptent tous dans les cinq. Maj et Retour arrière restent hors du compte, puisqu’ils n’ajoutent aucun caractère au texte. Un dactylo qui produit 300 caractères en une minute tape à 60 MPM, quels que soient les mots que forment ces caractères.</p>
+<p>Une longueur de mot fixe rend les scores comparables. En vrais mots, « tu es là » ferait trois mots et « anticonstitutionnellement » un seul, alors que le second compte trois fois plus de caractères. Avec la règle des cinq caractères, « tu es là » (8 caractères avec ses espaces) vaut 1,6 mot et « anticonstitutionnellement » (25 caractères) en vaut 5. La même règle place sur une seule échelle les langues aux mots longs : l’allemand « Zehnfingersystem », 16 caractères, compte pour 3,2 mots.</p>
+<p>Le <a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">chapitre de Jacob Wobbrock sur les mesures de saisie de texte</a> indique que compter un mot pour cinq caractères, espaces compris, est l’usage depuis 1905 environ, et I. Scott MacKenzie le fait remonter aux concours de dactylographie du début du XXe siècle. Tous deux citent l’histoire des machines à écrire publiée par Yamada en 1980.</p>
+
+<h2>Comment calculer les mots par minute ?</h2>
+<p>Pour calculer vos mots par minute, divisez le nombre de caractères tapés par cinq, puis par le nombre de minutes passées à taper.</p>
+<ol>
+<li>Comptez tous les caractères du texte produit, espaces et ponctuation compris.</li>
+<li>Divisez ce total par 5 pour obtenir des mots standard.</li>
+<li>Convertissez la durée en minutes (45 secondes font 0,75) et divisez les mots par cette durée.</li>
+</ol>
+<p>En formule : <code>MPM = caractères ÷ 5 ÷ minutes</code>. Si vous tapez 250 caractères en 75 secondes, cela fait 50 mots en 1,25 minute, soit 40 MPM.</p>
+<p>Les laboratoires de recherche ajoutent une correction. Le chronomètre démarre à la première frappe : le premier caractère n’a donc pris aucun temps mesuré et sort du calcul. La <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">note de MacKenzie sur le calcul de la vitesse de saisie</a> prend l’exemple de la phrase anglaise « the quick brown fox jumps over the lazy dog » : 43 caractères en 20 secondes. Compter les 43 donnerait 25,8 MPM ; compter les 42 tapés après le départ du chronomètre donne 25,2 MPM. Sur un test plus long, la correction s’efface : pour 520 caractères en deux minutes, elle déplace le résultat de 0,1 MPM.</p>
+
+<h2>Quelle différence entre MPM bruts et MPM nets ?</h2>
+<p>Les MPM bruts mesurent tout le texte tapé, fautes comprises, et les MPM nets retirent une pénalité pour les fautes laissées dans le texte. La pénalité courante est d’un mot par minute pour chaque erreur non corrigée par minute :</p>
+<p><code>MPM nets = MPM bruts − erreurs non corrigées ÷ minutes</code></p>
+<p>Les <a href="https://www.speedtypingonline.com/typing-equations">formules de Speed Typing Online</a> donnent un exemple : 80 MPM bruts sur deux minutes avec 8 erreurs laissées dans le texte font 4 erreurs par minute, donc une vitesse nette de 76 MPM.</p>
+<p>Les erreurs corrigées au fil de la frappe ne reçoivent aucune pénalité supplémentaire, car vous les avez déjà payées en temps : la mauvaise touche, le Retour arrière et la bonne touche prennent chacun du temps et ne laissent qu’un seul caractère. Les erreurs laissées dans le texte peuvent flatter un score. Wobbrock note que les erreurs non corrigées augmentent la vitesse, puisqu’on tape plus vite en laissant passer les fautes, et une pénalité comme celle des MPM nets reprend cet avantage.</p>
+<p>Vous croiserez deux autres ajustements. Les chercheurs publient des MPM ajustés, qui réduisent les MPM selon le taux d’erreurs non corrigées ; dans l’exemple de Wobbrock, 10 % d’erreurs non corrigées ramènent les MPM ajustés à 90 % des MPM. Certains outils multipliaient plutôt les MPM par la précision. Typing.com appelait autrefois ce produit « Net Words Per Minute », puis l’a retiré en expliquant qu’il poussait les dactylos à surveiller leurs MPM en oubliant leur précision.</p>
+<p>Les tests de frappe affichent en général la précision à côté des MPM. La précision, c’est le nombre de caractères corrects divisé par le nombre total de caractères tapés, multiplié par 100, et elle compte aussi les erreurs corrigées : 514 caractères corrects sur 534 tapés donnent 96,3 %, même si quelques fautes seulement restent dans le texte final. Le <a href="guide:typing-accuracy">guide de la précision de frappe</a> indique quoi viser.</p>
+
+<h2>Exemple : calculer les MPM de six façons à partir d’un seul test</h2>
+<p>Voici un test de deux minutes noté avec chacune des formules ci-dessus. Vous terminez avec 520 caractères de texte, espaces compris. En route, vous avez tapé 14 caractères faux puis effacés, et 6 caractères faux restent, chacun dans un mot différent de cinq lettres. Cela fait 534 caractères tapés, dont 514 corrects.</p>
+<table>
+<caption>Un test de deux minutes, six façons de le noter</caption>
+<thead>
+<tr><th scope="col">Méthode</th><th scope="col">Calcul</th><th scope="col">MPM</th></tr>
+</thead>
+<tbody>
+<tr><td>MPM bruts</td><td>520 ÷ 5 ÷ 2</td><td>52,0</td></tr>
+<tr><td>MPM de recherche (chronomètre lancé au premier caractère)</td><td>519 ÷ 120 s × 60 ÷ 5</td><td>51,9</td></tr>
+<tr><td>MPM ajustés (recherche)</td><td>51,9 × (1 − 6 ÷ 520)</td><td>51,3</td></tr>
+<tr><td>MPM × précision (anciens outils)</td><td>52,0 × 514 ÷ 534</td><td>50,1</td></tr>
+<tr><td>MPM nets</td><td>52,0 − 6 ÷ 2</td><td>49,0</td></tr>
+<tr><td>Mots corrects seulement (règle de Monkeytype)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48,4</td></tr>
+</tbody>
+</table>
+<p>La dernière ligne suppose que chaque faute gâche un mot de cinq lettres et son espace, soit 6 caractères par faute.</p>
+
+<h2>Pourquoi mes MPM changent-ils d’un test à l’autre ?</h2>
+<p>Vos MPM varient d’un test à l’autre parce que les sites utilisent des formules, des textes et des durées différents, et parce que votre propre rythme dérive au cours d’un test. La formule seule a fait bouger l’exemple ci-dessus de 3,6 MPM. <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a>, par exemple, ne compte que les caractères des mots tapés correctement : une seule faute coûte le mot entier.</p>
+<p>Typing.com fait remarquer que les MPM ignorent la difficulté du texte, et que retaper le même passage gonfle votre vitesse, car vos doigts l’apprennent. Un paragraphe de petits mots courants donne en général un meilleur score qu’un paragraphe rempli de majuscules, de chiffres et de symboles, même si les deux se comptent en mots de cinq caractères.</p>
+<p>La langue et le clavier jouent aussi. Sur l’AZERTY français, â, ê, î, ô et û demandent la touche morte de l’accent circonflexe puis la voyelle, soit deux frappes pour un caractère, et les chiffres passent par la touche Maj, selon l'<a href="https://fr.wikipedia.org/wiki/AZERTY">article de Wikipédia sur l’AZERTY</a>. Un même dactylo peut donc obtenir des scores différents sur un texte anglais et sur un texte français : comparez des tests faits dans la même langue, sur le même clavier.</p>
+<p>La durée du test pèse elle aussi. Un sprint de 15 secondes mesure une seule pointe de vitesse. Typing.com considère ses tests de 3 et 5 minutes comme la mesure la plus juste de la vitesse globale, car ils durent assez longtemps pour donner une moyenne reproductible sans fatiguer les poignets ni les doigts.</p>
+<p>Un compteur en direct et un score final couvrent par ailleurs des durées différentes. Le score final fait la moyenne de tout le test, départ lent et hésitations compris ; un compteur glissant couvre seulement les dernières secondes et baisse à chaque hésitation. L'<a href="app:words">exercice mots</a> de petitdoigt montre les deux : des MPM glissants sur 5, 10 ou 30 secondes pendant que vous tapez, puis le résultat de chaque série face à vos dix dernières.</p>
+
+<h2>Comment mesurer vos MPM de façon fiable ?</h2>
+<p>Pour obtenir des MPM fiables, passez le même type de test de la même façon à chaque fois, et vérifiez la formule avant de comparer des chiffres.</p>
+<ol>
+<li>Choisissez un test de 3 à 5 minutes.</li>
+<li>Prenez un texte que vous n’avez encore jamais tapé, dans la langue où vous écrivez d’habitude.</li>
+<li>Tapez au rythme que vous auriez pour un vrai travail, et corrigez vos fautes comme d’habitude.</li>
+<li>Notez ensemble les MPM et la précision. 60 MPM à 90 % de précision et 60 MPM à 98 % appellent des entraînements différents.</li>
+<li>Vérifiez si le site affiche des MPM bruts, des MPM nets ou les mots corrects seulement avant de comparer son chiffre à celui d’un autre site.</li>
+<li>Comparez-vous à vos propres résultats sur le même test, sur plusieurs séances.</li>
+</ol>
+
+<h2>Que sont les frappes par minute et les caractères par minute ?</h2>
+<p>Les caractères par minute valent cinq fois les MPM : 52 MPM font 260 caractères par minute. En français, on parle souvent de frappes pour ce même chiffre : le <a href="https://travail-industrie.com/outils/test-vitesse-de-frappe">test AZERTY de travail-industrie.com</a> compte ainsi un mot pour cinq frappes. Au sens strict, les frappes par minute comptent les touches enfoncées plutôt que les caractères produits, si bien qu’elles incluent le Retour arrière et, selon la mesure, la touche Maj. Dans l’exemple ci-dessus, vous avez enfoncé 534 touches de caractère et 14 fois Retour arrière en deux minutes : 274 frappes par minute pour 260 caractères par minute. Avant de comparer deux scores exprimés en frappes, vérifiez ce que chaque site compte.</p>
+<p>Les chercheurs appellent le rapport entre les deux le nombre de frappes par caractère (KSPC, pour keystrokes per character). L'<a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">étude de l’université Aalto portant sur 136 millions de frappes</a> (Dhakal et ses collègues, CHI 2018) a compté chaque touche enfoncée et a trouvé en moyenne 1,17 frappe par caractère chez ses 168 000 volontaires. Le dixième le plus rapide tournait à 1,10 et le dixième le plus lent à 1,24, car les lents font et corrigent plus de fautes. En français sur AZERTY, ce rapport grimpe même sans aucune faute, puisque chaque ê ou chaque ô demande deux frappes.</p>
+<p>Les emplois de saisie s’expriment souvent en frappes à l’heure ; Wikipédia note que beaucoup de postes en demandent 8 000 ou 10 000. Si chaque frappe produisait un caractère, 10 000 frappes à l’heure équivaudraient à environ 33 MPM. Le tableau convertit les vitesses courantes avec la même hypothèse.</p>
+<table>
+<caption>Les MPM dans d’autres unités, à une frappe par caractère</caption>
+<thead>
+<tr><th scope="col">MPM</th><th scope="col">Caractères par minute</th><th scope="col">Millisecondes par caractère</th><th scope="col">Frappes à l’heure</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6 000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9 000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12 000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18 000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24 000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30 000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36 000</td></tr>
+</tbody>
+</table>
+
+<h2>Combien de mots par minute tape-t-on, parle-t-on et lit-on ?</h2>
+<p>La lecture à voix haute et la narration vont bien plus vite que la frappe : le rythme recommandé pour un livre audio vaut environ trois fois la vitesse de frappe moyenne mesurée en ligne. Les chiffres ci-dessous viennent d’études différentes, qui comptent les mots chacune à leur manière. Les études sur la frappe comptent des mots de cinq caractères. Les vitesses de parole et de lecture comptent les mots réellement prononcés ou lus, et le chapitre de Wobbrock note que les chercheurs qui étudient la parole définissent le mot ainsi.</p>
+<table>
+<caption>Mots par minute selon l’activité</caption>
+<thead>
+<tr><th scope="col">Activité</th><th scope="col">Mots par minute</th><th scope="col">Source</th></tr>
+</thead>
+<tbody>
+<tr><td>Sténotypie, utilisateurs entraînés les plus rapides</td><td>jusqu’à 360</td><td>Guinness World Records, via Wikipédia</td></tr>
+<tr><td>Lecture à voix haute, 17 langues</td><td>184 ± 29</td><td>Trauzettel-Klosinski et Dietz (2012), via Wikipédia</td></tr>
+<tr><td>Narration de livre audio (rythme recommandé)</td><td>150 à 160</td><td>Williams (1998), via Wikipédia</td></tr>
+<tr><td>Frappe sur clavier d’ordinateur, test en ligne</td><td>51,6 (moyenne)</td><td>Dhakal et ses collègues (2018)</td></tr>
+<tr><td>Frappe sur téléphone, test en ligne</td><td>36,2 (moyenne)</td><td>Palin et ses collègues (2019)</td></tr>
+<tr><td>Copie à la main, adultes de 18 à 64 ans</td><td>environ 13 (68 lettres par minute)</td><td>Wikipédia</td></tr>
+</tbody>
+</table>
+<p>Le chiffre du téléphone vient d'<a href="https://userinterfaces.aalto.fi/typing37k/">une étude de l’université Aalto de 2019 portant sur 37 370 volontaires</a>, qui a repris la méthode et le mot de cinq caractères de l’étude sur ordinateur et a trouvé la frappe sur téléphone plus lente d’environ 15 MPM. Un « a » prononcé compte pour un mot entier : prenez les vitesses de parole et de lecture comme une comparaison approximative avec les MPM de frappe.</p>
+
+<h2>Que disent vos MPM de chaque frappe ?</h2>
+<p>Vos MPM fixent un temps moyen par caractère : divisez 12 000 par vos MPM pour l’obtenir en millisecondes. À 60 MPM, vous mettez en moyenne 200 ms par caractère, et à 100 MPM, 120 ms. Passer de 50 à 60 MPM revient à gagner 40 ms sur chaque caractère, de 240 à 200.</p>
+<p>L’étude Aalto a chronométré ces intervalles directement. Sur l’ensemble des participants, l’intervalle moyen entre deux appuis de touche était de 239 ms, pour une vitesse moyenne de 51,6 MPM. Le dixième le plus rapide, au-dessus de 78 MPM environ, tournait à 122 ms entre deux touches ; le dixième le plus lent, sous les 26 MPM environ, à 481 ms. Les intervalles rétrécissent donc d’environ quatre fois entre le dixième le plus lent et le plus rapide. La durée d’appui variait bien moins : une touche restait enfoncée 116 ms en moyenne, et de 80 à 150 ms même chez les dactylos lents, ce que les auteurs lisent comme le signe que l’essentiel des gains de vitesse vient d’ailleurs.</p>
+<p>Des études plus anciennes sur machine à écrire, résumées dans le même article, ont trouvé que les paires de lettres tapées avec des doigts des deux mains allaient 30 à 60 ms plus vite que les paires tapées d’une seule main, et environ 80 ms plus vite que les paires tapées avec le même doigt. Sur les claviers modernes, les données Aalto montrent un gain plus faible à alterner les mains, de 5 à 20 ms environ, et les dactylos lents perdaient même 20 à 28 ms quand ils alternaient. Sur AZERTY comme sur le clavier canadien français, « le » alterne les mains (<kbd>L</kbd> à droite, <kbd>E</kbd> à gauche), tandis que « de » fait monter le majeur gauche de la rangée de repos (<kbd>D</kbd>) à la rangée du haut (<kbd>E</kbd>). Vos MPM font la moyenne de centaines d’enchaînements de ce genre, et quelques enchaînements lents suffisent à tirer tout le chiffre vers le bas.</p>
+<p>L’exercice <a href="app:pairs">paires</a> de petitdoigt chronomètre chaque enchaînement de touches pendant que vous tapez et, en mode adaptatif, construit ses séries surtout à partir des plus lents et des plus fautifs ; la page stats donne la latence et la précision de chaque doigt, de chaque lettre et de chaque enchaînement faible. Le <a href="guide:how-to-type-faster">guide pour taper plus vite au clavier</a> en tire un plan d’entraînement, et le <a href="guide:typing-speed">guide de la vitesse de frappe moyenne</a> vous montre où se situe votre score.</p>

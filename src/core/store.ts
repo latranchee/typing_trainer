@@ -16,9 +16,9 @@ import type { KeySound } from './switches';
 import { isKeySound } from './switches';
 
 export type DrillId = 'highway' | 'words' | 'pairs' | 'anchors' | 'stats';
-export type Lang = 'en' | 'fr';
+export type Lang = 'en' | 'fr' | 'de' | 'es';
 export const DRILL_IDS: DrillId[] = ['highway', 'words', 'pairs', 'anchors', 'stats'];
-export const LANGS: Lang[] = ['fr', 'en'];
+export const LANGS: Lang[] = ['fr', 'en', 'de', 'es'];
 
 export interface Settings {
   layout: LayoutId;
@@ -177,7 +177,7 @@ const SMOOTHING = 0.2;
 export const NAME_LIMIT = 20;
 const FIRST_PROFILE = 'main';
 /** What a first profile is called when nothing was saved before, by interface language. */
-const FIRST_NAME: Record<Lang, string> = { en: FIRST_PROFILE, fr: 'principal' };
+const FIRST_NAME: Record<Lang, string> = { en: FIRST_PROFILE, fr: 'principal', de: 'haupt', es: 'principal' };
 
 const emptyStats = (): LayoutStats => ({ keys: {}, pairs: {}, shiftOk: 0, shiftBad: 0 });
 const smooth = (previous: number, sample: number, count: number): number =>
@@ -268,8 +268,11 @@ export class Store {
   private sets: HistoryEntry[];
   private timer: ReturnType<typeof setTimeout> | null = null;
 
-  /** `preferred` is the language a typist with nothing saved starts in: the browser's, unless a test names one. */
-  constructor(storage: KeyValueStore | null = browserStorage(), preferred: Lang = preferredLang()) {
+  /**
+   * `preferred` is the language a typist with nothing saved starts in: the browser's, unless a test names one.
+   * `firstLayout` is the layout of that first profile; the app passes the one the browser's region suggests.
+   */
+  constructor(storage: KeyValueStore | null = browserStorage(), preferred: Lang = preferredLang(), firstLayout: LayoutId = DEFAULT_SETTINGS.layout) {
     this.storage = storage;
     const saved = this.read<Partial<Data>>(META_KEY);
     const profiles = saved?.v === 2 && Array.isArray(saved.profiles) ? saved.profiles.filter((profile) => profile?.id && profile.name) : [];
@@ -291,7 +294,7 @@ export class Store {
     // Nothing saved at all: the first profile starts in the browser's language, interface and practice text alike.
     this.current = carried
       ? { id: FIRST_PROFILE, name: FIRST_PROFILE, settings: cleanSettings(carried.settings, preferred), layouts: carried.profiles ?? {} }
-      : { id: FIRST_PROFILE, name: FIRST_NAME[preferred], settings: cleanSettings({ lang: preferred }, preferred), layouts: {} };
+      : { id: FIRST_PROFILE, name: FIRST_NAME[preferred], settings: cleanSettings({ lang: preferred, layout: firstLayout }, preferred), layouts: {} };
     this.data = { v: 2, active: this.current.id, profiles: [this.current] };
     this.sets = Array.isArray(carried?.history) ? carried.history : [];
     if (carried) {

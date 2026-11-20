@@ -1,0 +1,127 @@
+<!--meta
+{
+  "id": "iso-vs-ansi",
+  "lang": "ja",
+  "slug": "iso-vs-ansi",
+  "title": "ANSI配列とISO配列の違い：JISとの比較と見分け方",
+  "description": "ANSI配列とISO配列の違いを、EnterとShiftの形、1つ多いキー、JIS配列との比較、国ごとの採用、自分のキーボードの見分け方、選び方まで表で解説します。",
+  "h1": "ANSI配列とISO配列の違い：JIS配列も含めて比べる",
+  "keyword": "ANSI配列とISO配列の違い",
+  "keywords_secondary": ["ISO配列とは", "ANSI配列とは", "JIS配列", "物理配列", "US配列 JIS配列 違い", "キーボード 見分け方"],
+  "summary": "ANSI配列とISO配列の違いは、Enterキーと左Shiftの形です。ANSI配列はEnterが横長の1段で左Shiftが長く、ISO配列はEnterが2段にまたがる逆L字で、左Shiftが短くその右にキーが1つ増えます。米国はANSI、ヨーロッパの大半はISO、日本はJISです。JISはISOと同じ縦長のEnterに日本語用のキーを加えた形で、英字の位置は3つとも同じです。",
+  "faq": [
+    {"q": "US配列とANSI配列は同じものですか？", "a": "指しているものが違います。ANSIはキーの形と数を決める物理配列で、US配列はキーに文字を割り当てる文字配列です。米国で主流の101キーボードはANSIの形で、US配列のキーボードはふつうこの形をしています。US配列の設定そのものは、ISOやJISのキーボードでも動きます。"},
+    {"q": "MacBookのキーボードはANSI、ISO、JISのどれですか？", "a": "国と言語の版によります。Appleの一覧では、US英語、中国語、韓国語、タイ語のキーボードがANSI、日本語キーボードがJISで、イギリス英語、ドイツ語、フランス語、スペイン語など多くの言語版がISOです。returnキーが横長の1段ならANSIです。"},
+    {"q": "ISO配列とJIS配列の違いは？", "a": "どちらもEnterは2段にまたがる縦長です。キーが増える場所が違い、ISOは左Shiftを短くしてその右に1つ、JISは右Shiftを短くしてその左に1つ足します。JISはさらにスペースキーを短くして無変換、変換、かなのキーを並べ、Backspaceも1uに縮みます。全部で109キーと、ISOより4つ多くなります。"},
+    {"q": "ゲームにはANSI、ISO、JISのどれが向いていますか？", "a": "形で変わるのはキーの大きさと位置だけです。ダッシュやしゃがみを左Shiftに割り当てるゲームでは、ISOの左Shiftは1.25uと短く、すぐ右に増えたキーがあります。ANSIの左Shiftは2.25uで、JISの左Shiftも長いキーです。慣れた形から別の形に替えると、しばらくは左Shiftを打ち損じます。"},
+    {"q": "ANSI用のキーキャップはISOやJISのキーボードに付けられますか？", "a": "英字や数字のキーは同じ大きさなので、多くは付きます。合わないのはEnter、左Shift、Enterの横のキー、ISOで増えるキーで、JISではスペースキー、右Shift、Backspaceも変わります。Corsairによれば、キーキャップのセットはANSI向けなら必ずありますがISO向けは限られ、KeebsforallはJIS向けをごく少ないとしています。"},
+    {"q": "外付けキーボードをつなぐと記号がずれるのはなぜですか？", "a": "OSがキーボードの種類を取り違えているためです。Macではキーボード設定アシスタントか「キーボードの種類を変更」で、JIS（日本語）など手元のキーボードの種類を選び直します。Windowsでは言語のオプションでキーボードのレイアウトを変更し、日本語のキーボードなら「日本語キーボード（106/109キー）」を選んで再起動します。"}
+  ],
+  "sources": [
+    {"title": "国／地域別の Apple 製キーボードの見分け方（Apple サポート）", "url": "https://support.apple.com/ja-jp/102743"},
+    {"title": "Macでキーボードの種類を指定する（Mac ユーザガイド）", "url": "https://support.apple.com/ja-jp/guide/mac-help/mchlp2886/mac"},
+    {"title": "Macでキーボードの種類を指定する（Mac ユーザガイド、macOS Monterey 12）", "url": "https://support.apple.com/ja-jp/guide/mac-help/mchlp2886/12.0/mac"},
+    {"title": "Apple Community: How To Fix Keyboard Type Problems", "url": "https://discussions.apple.com/docs/DOC-250007848"},
+    {"title": "JISキーボード（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/JISキーボード"},
+    {"title": "キー配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/キー配列"},
+    {"title": "バックスラッシュ（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/バックスラッシュ"},
+    {"title": "ライフハッカー・ジャパン編集部「キーボード配列の種類と変更方法」", "url": "https://www.lifehacker.jp/article/keyboard-layout/"},
+    {"title": "Wikipedia: ISO/IEC 9995", "url": "https://en.wikipedia.org/wiki/ISO/IEC_9995"},
+    {"title": "Wikipedia: Keyboard layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Wikipedia: Language input keys", "url": "https://en.wikipedia.org/wiki/Language_input_keys"},
+    {"title": "Wikipedia: Portuguese keyboard layout", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "Deskthority wiki: ANSI vs ISO", "url": "https://deskthority.net/wiki/ANSI_vs_ISO"},
+    {"title": "Deskthority wiki: ANSI vs JIS", "url": "https://deskthority.net/wiki/ANSI_vs_JIS"},
+    {"title": "Ultimate Hacking Keyboard: ANSI or ISO? Which keyboard layout is more ergonomic?", "url": "https://uhk.io/blog/2015/09/09/ansi-or-iso-which-keyboard-layout-is-more-ergonomic"},
+    {"title": "Corsair: ANSI vs ISO, what's the best keyboard layout?", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/ansi-vs-iso-whats-the-best-keyboard-layout/"},
+    {"title": "Keebsforall: ANSI vs ISO typing efficiency compared", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-vs-iso-typing-efficiency-compared"},
+    {"title": "Keebsforall: ANSI, ISO, JIS: which layout fits your needs?", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-iso-jis-which-layout-fits-your-needs"},
+    {"title": "KbdLayout: US keyboard layout (KBDUS)", "url": "https://kbdlayout.info/kbdus"},
+    {"title": "KbdLayout: United Kingdom keyboard layout (KBDUK)", "url": "https://kbdlayout.info/kbduk"},
+    {"title": "KbdLayout: German keyboard layout (KBDGR)", "url": "https://kbdlayout.info/kbdgr"},
+    {"title": "KbdLayout: French keyboard layout (KBDFR)", "url": "https://kbdlayout.info/kbdfr"},
+    {"title": "KbdLayout: Spanish keyboard layout (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "DreymaR's Big Bag of Keyboard Tricks: ergonomic mods", "url": "https://dreymar.colemak.org/ergo-mods.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "手元と同じ形のキーボードで打つ", "drill": "words"}
+}
+-->
+<p>ANSI、ISO、JISは、キーボードの物理配列、つまり各キーの大きさと位置を表す名前です。キーにどの文字を割り当てるかという文字配列は、その形の上で動くソフトウェアの設定です（文字配列の種類は<a href="guide:keyboard-layouts">キーボード配列の種類</a>で扱っています）。キーボードの大部分は3つの形で同じで、違いは端に集まっています。Enter、左Shift、スペースキーのまわりで、そこで小指と親指の仕事が変わります。</p>
+<figure data-figure="board-shapes"><figcaption>ANSI、ISO、JISのキーボードを並べた図。まずEnterと左Shiftを比べ、次にJISのスペースキーのまわりを見てください。</figcaption></figure>
+
+<h2>ANSI配列とISO配列の違いは？</h2>
+<p>ISO配列のキーボードは、Enterが2段にまたがる縦長で、左Shiftが短く、ANSI配列より文字キーが1つ多くなっています。ANSI配列はEnterが1段に収まり、左Shiftは<kbd>Z</kbd>の手前まで続きます。ISOで増えるキーは、左Shiftと<kbd>Z</kbd>の間にあります。</p>
+<p>縦長のEnterは、もう1つのキーを押し出します。ANSIでは、バックスラッシュのキー（USキーボードでは<kbd>\</kbd>と<kbd>|</kbd>）が上の文字の段の右端、Enterの真上にあります。ISOにはそこに場所がないので、このキーはホームポジションの段のEnterのすぐ左に下がり、イギリスのキーボードでは<kbd>#</kbd>と<kbd>~</kbd>が刻印されています。キーボードの国際規格ISO/IEC 9995は、ANSIの配置の文字キーを48、ISOの配置を49と数えています。フルサイズのUS向けPCキーボードは104キー、ヨーロッパの一般的なものは105キーで、テンキーのないテンキーレスでは、ANSIが87キー、ISOが88キーになります。</p>
+<p>キーボードの作り手はキーの幅を「u」という単位で測り、1uは英字キー1つ分の幅です。表では、出典が単位を示している場合にだけ記しました。</p>
+<table>
+<caption>ANSI、ISO、JISのキーボードの比較</caption>
+<thead><tr><th scope="col">項目</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">JIS</th></tr></thead>
+<tbody>
+<tr><th scope="row">Enter</th><td>1段、多くは2.25u幅</td><td>2段の縦長、逆L字</td><td>2段の縦長、逆L字</td></tr>
+<tr><th scope="row">左Shift</th><td>長い、2.25u</td><td>短い、約1.25u、右に増えたキー</td><td>長い</td></tr>
+<tr><th scope="row">右Shift</th><td>長い</td><td>長い</td><td>短い、左に増えたキー（ろ）</td></tr>
+<tr><th scope="row">USのバックスラッシュのキー</th><td>上の文字の段、Enterの上</td><td>ホームポジションの段、Enterの左</td><td>ホームポジションの段、Enterの左</td></tr>
+<tr><th scope="row">Backspace</th><td>2u</td><td>2u</td><td>1u、横に¥のキー</td></tr>
+<tr><th scope="row">スペースキー</th><td>長い</td><td>長い</td><td>短い、左右に日本語入力用のキー</td></tr>
+<tr><th scope="row">文字キーの数</th><td>48</td><td>49</td><td>49</td></tr>
+<tr><th scope="row">フルサイズのPCキーボードのキー数</th><td>104</td><td>105</td><td>109</td></tr>
+<tr><th scope="row">標準の地域</th><td>米国</td><td>ヨーロッパの大半</td><td>日本</td></tr>
+</tbody>
+</table>
+
+<h2>JIS配列とは？ANSI・ISOとどう違う？</h2>
+<p>JIS配列は日本で使われるキーボードの形で、ISOと同じ縦長のEnterに、日本語を入力するためのキーを加えたものです。もとになった規格はJIS X 6002-1980「情報処理系けん盤配列」で、Windowsパソコンで主流のOADG 109キーボード（日本語109キーボード）もJISキーボードです。フルサイズのJISキーボードは109キーで、ISOより4つ、ANSIより5つ多くなります。</p>
+<p>増えたキーの場所は、まわりのキーを短くして作られています。スペースキーが短くなり、左に無変換、右に変換とかなのキー（カタカナ/ひらがな）が並びます。変換はかなを漢字に変え、無変換はかなを変換せずに残し、かなのキーはひらがなとカタカナを切り替えます。Backspaceは1uに縮んで横に¥のキーが入り、右Shiftも短くなって<kbd>/</kbd>の横にろのキーが入ります。OADG 109では、円記号とバックスラッシュが別々のキーに刻印されています。左Shiftは長いままなので、下の文字の段はISOと同じ11キーですが、増えたキーは反対の端にあります。USキーボードで<kbd>`</kbd>を打つ左上のキーは半角/全角になり、半角と全角の文字を切り替えます。</p>
+<p>MacのJISキーボードは少し違い、スペースキーの左右に英数とかなのキーがあって、英字と日本語の入力をこの2つで切り替えます。Windows用のJISキーボードでは、英数はCaps Lockの位置にあります。</p>
+<p>英字そのものはANSIやISOとまったく同じ位置にあるので、タッチタイピングのホームポジションは日本のキーボードでもそのまま使えます。変わるのは端の指の移動で、Backspaceと右Shiftのまわり、そして親指が使う狭いスペースキーです。日本では、106キーの日本語キーボードと101キーの英語（US配列）キーボードのどちらもよく見かけます。</p>
+
+<h2>ANSI・ISO・JISはどの国で使われている？</h2>
+<p>米国はANSI、ヨーロッパはほぼどこでもISO、日本はJISです。言語ごとの詳しい一覧は、Appleのキーボードの見分け方のページにあります。Appleは各言語版を、ANSI、ISO、日本語キーボードのどれか1つに分けています。</p>
+<table>
+<caption>言語別のキーボードの形（Appleの一覧より。ABNT2はISO/IEC 9995より）</caption>
+<thead><tr><th scope="col">形</th><th scope="col">その形を使うキーボード</th></tr></thead>
+<tbody>
+<tr><th scope="row">ANSI</th><td>US英語、韓国語、タイ語、中国語（拼音、注音）</td></tr>
+<tr><th scope="row">ISO</th><td>イギリス英語・アイルランド語、ドイツ語・オーストリア語、フランス語・ベルギー語、スペイン語、イタリア語、ポルトガル語、スイス語、オランダ語、デンマーク語、ノルウェー語、スウェーデン語・フィンランド語、ロシア語、ギリシャ語、トルコ語、アラビア語、ヘブライ語、フランス語（カナダ）、スペイン語（中南米）など</td></tr>
+<tr><th scope="row">JIS（Appleの呼び方は日本語キーボード）</th><td>日本語</td></tr>
+<tr><th scope="row">ABNT2（ISOにキーを1つ追加）</th><td>ブラジルのポルトガル語</td></tr>
+</tbody>
+</table>
+<p>韓国のキーボードはANSI系で、スペースキーの横に2つのキーを足しています。한/영はハングルとラテン文字を切り替え、한자はハングルを漢字に変換します。アジアの一部の市場では、ANSIとISOのEnterの両方の場所を埋める大きなEnterを持つANSIの変種も売られています。オランダについては情報が分かれていて、AppleはオランダのISOキーボードを売っている一方、Deskthorityのwikiはオランダを米国と並んでANSIを使う国に挙げています。</p>
+<p>形は、そのキーボードが作られた市場で決まります。東京で買ったノートパソコンは、WindowsやmacOSの表示を英語に切り替えてもJISの形のままです。</p>
+
+<h2>自分のキーボードがANSIかISOかJISか見分けるには？</h2>
+<p>まずEnterキーを見てください。1段に収まる横長のEnterならANSI、2段にまたがる縦長のEnterならISOかJISです。迷ったら次の4つで確かめます。</p>
+<ol>
+<li>Enterを探します。1段に収まり、そのすぐ上にバックスラッシュのキーがあればANSIです。</li>
+<li>左Shiftを見ます。<kbd>Z</kbd>との間にキーが1つあればISOです。イギリスのキーボードではそのキーに<kbd>\</kbd> <kbd>|</kbd>、ドイツのキーボードでは<kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>|</kbd>と刻印されています。</li>
+<li>スペースキーの横を見ます。短いスペースキーの両側に無変換と変換があり、Backspaceの横に¥のキーがあればJISです。Macなら、スペースキーの左右の英数とかなが目印です。</li>
+<li>2つのShiftの間にある下の文字の段のキーを数えます。ANSIは<kbd>Z</kbd>から<kbd>/</kbd>までの10キー、ISOとJISはどちらも11キー、ブラジルのABNT2は12キーです。</li>
+</ol>
+<p>Macでは、macOSがANSI、JIS（日本語）、ISO（欧州）の3種類を認識していて、すぐに認識できないキーボードをつなぐと「キーボード設定アシスタント」が開きます。種類を取り違えると2つのキーが入れ替わり、多いのは<kbd>Esc</kbd>の下のキーと左Shiftの右のキーです。macOS Montereyでは、アップルメニューから「システム環境設定」を選んで「キーボード」をクリックし、「キーボードの種類を変更」をクリックして画面の指示に従います。アシスタントは左Shiftの右のキーを押すよう求め、そのあとANSI、ISO、JISから選ばせます。</p>
+<p>Windowsでも、キーボードの種類が合っていないと刻印と違う記号が出ます。言語のオプションでキーボードのレイアウトを手元のキーボードに合わせ、日本語のキーボードなら「日本語キーボード（106/109キー）」を選んでから再起動します。</p>
+
+<h2>タイピングにはANSIとISOのどちらが向いている？</h2>
+<p>どちらの形のほうが速く打てるかは、示されていません。私たちはISOとANSIでタイピングの速さを比べた研究を見つけられず、片方が速いとする記事も研究を挙げていません。2つの形で違うのは、小指が3つのキーへ動く距離です。</p>
+<ul>
+<li><strong>左Shift、左手の小指。</strong>ISOのShiftは1.25uでANSIの2.25uより短く、増えたキーがその隙間を埋めます。ANSIで覚えた小指が手前で止まると、大文字の代わりに<kbd>\</kbd>や<kbd>&lt;</kbd>を打ちます。いちばん気づきやすいのは右手で打つ大文字、たとえば<kbd>H</kbd>、<kbd>J</kbd>、<kbd>M</kbd>で、タッチタイピストはこれらに左Shiftを使います。JISの左ShiftはANSIと同じく長いキーです。</li>
+<li><strong>Enter、右手の小指。</strong>ANSIでは、ホームポジションの段で<kbd>'</kbd>のすぐ次がEnterです。ISOではその間にもう1つキーがあるので、小指はホームポジションの段を遠くまで動くか、Enterの上半分へ伸ばします。</li>
+<li><strong>バックスラッシュ、右手の小指。</strong>ISOでは、このキーがEnterの横のホームポジションの段に下りてきて、ANSIで上の段の端にあるより近くなります。</li>
+</ul>
+<p>Ultimate Hacking KeyboardのLászló Mondaは、2つの形をキーの単位で比べ、ISOではEnterと左Shiftがキーボードの中心から約1単位（彼は20mmとしています）遠く、バックスラッシュは約1単位近いと計算しました。Enterと左Shiftは1日に何百回も押すのに対し、バックスラッシュを押す回数はずっと少ない、と彼は指摘しています。</p>
+<p>実際に気づくミスは、形を替えたときに起こります。日本なら、JISとUS配列のANSIの間で替えたときがこれにあたります。ANSIから来ると、右手の小指はホームポジションの段でEnterを探し、ISOやJISのEnterの左のキーに着きます。ISOやJISから来ると、Enterの上半分へ伸びた小指がANSIのバックスラッシュのキーを打ちます。どちらの癖も、使い続けるキーボードで、目を画面に置いたまま、ゆっくり正確に繰り返せば消えていきます。</p>
+<p>petitdoigtはANSI、ISO、JISのキーボードを描けるので、画面のキーボードを机の上のものに合わせられます。ISOで増えるキーも含めて、どのキーも押す指の色で表示されます。<a href="app:words">キーボードの形を選んで単語を数セット打てば</a>、小指がどこへ行くかがわかります。11の文字配列に日本語（JIS）の配列は含まれていないので、練習は英字が中心になり、画面も英語表示です。キーボード全体の指の割り当ては<a href="guide:finger-placement">タイピングの指の位置</a>に、手元を見る癖を外す方法は<a href="guide:type-without-looking">キーボードを見ないで打つ方法</a>にあります。</p>
+
+<h2>キーボード配列はANSIでもISOでも使える？</h2>
+<p>使えます。どの物理キーがどの文字を打つかはOSが決めるので、どの文字配列もどの形の上で動きます。注意したいのはISOで増えるキーで、ほかのどのキーにもない文字をそこに置く配列があります。</p>
+<ul>
+<li><strong>ISOのキーボードでUS配列。</strong>WindowsのUS配列は、増えたキーに2つ目の<kbd>\</kbd> <kbd>|</kbd>を割り当て、Enterの左のホームポジションの段のキーがいつものバックスラッシュを打ちます。打てなくなる文字はありません。</li>
+<li><strong>ANSIのキーボードでヨーロッパの配列。</strong>Windowsのドイツ語配列は<kbd>&lt;</kbd>、<kbd>&gt;</kbd>、<kbd>|</kbd>をISOで増えるキーにだけ置き、フランス語のAZERTYとスペイン語の配列も<kbd>&lt;</kbd>と<kbd>&gt;</kbd>をそこに置きます。ANSIのキーボードにはそのキーがないので、これらの文字にはキーの割り当て直しか別の配列が要ります。ドイツ語とフランス語の配列は<a href="guide:qwertz-vs-qwerty">QWERTZとQWERTYの比較</a>と<a href="guide:azerty-vs-qwerty">AZERTYとQWERTYの比較</a>で扱っています。</li>
+</ul>
+<p>Dvorak、Colemak、Workmanは、ISOとANSIに共通する部分で英字を並べ替えるので、どちらの形でも同じように動きます。例外はColemak-DHで、左下のキーを1つずつ左へずらすangle modを使います。ISOのキーボードでは増えたキーがこのずれを吸収し、DreymaRのBig Bag of Keyboard Tricksはこのキーを「practically a spare key（ほとんど予備のキー）」と呼んでいます。ANSIには予備のキーがないので、ANSI向けの一般的な版は<kbd>Z</kbd>を下の段の中ほどへ動かします。左Shiftが長いJISも、この点ではANSIと同じです。petitdoigtは物理的なキーの位置から自分で配列を当てはめるので、<a href="app:words?layout=colemak-dh">Colemak-DHをブラウザーで試す</a>のに何もインストールする必要はありません。配列の残りの部分は<a href="guide:colemak">Colemakのガイド</a>で説明しています。</p>
+
+<h2>ANSI、ISO、JISのどれを買えばいい？</h2>
+<p>使う文字配列が前提にしている形を買います。日本語の配列で打ち、変換や無変換のキーも使うならJIS、英語やUS配列で打つならANSIで必要なキーがすべてそろいます。ドイツ語、フランス語、スペイン語、イギリス英語など、増えたキーに文字を置くヨーロッパの配列で打つならISOです。Dvorak、Colemak、WorkmanのようなUS配列をもとにした配列にはANSIで足ります。Colemak-DHを使う人は、angle modに予備のキーがあるISOを選ぶこともあります。</p>
+<p>すでにどれかの形でタッチタイピングができているなら、同じ形を使い続ければEnterと左Shiftを覚え直さずに済みます。キーボードを自分好みに組み替える人には、キーキャップも判断材料になります。CorsairはキーキャップのセットがANSI向けなら必ずあるがISO向けはそうとは限らないと書き、KeebsforallはJIS向けのキーキャップの選択肢をごく少ないと評価しています。</p>

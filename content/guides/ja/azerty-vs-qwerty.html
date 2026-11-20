@@ -1,0 +1,155 @@
+<!--meta
+{
+  "id": "azerty-vs-qwerty",
+  "lang": "ja",
+  "slug": "azerty-vs-qwerty",
+  "title": "AZERTY配列とは？QWERTYとの違いをキーごとに解説",
+  "description": "フランス語キーボードのAZERTY配列をQWERTYとキーごとに比較。A/Q・Z/W・Mの入れ替え、数字にShiftが要る理由、アクセントと@の打ち方、切り替え方まで。",
+  "h1": "AZERTY配列とQWERTYの違い：キーごと、指ごとに比較",
+  "keyword": "AZERTY配列",
+  "keywords_secondary": ["フランス語キーボード", "AZERTY QWERTY 違い", "フランス語 アクセント 入力", "ZQSD"],
+  "summary": "AZERTY配列とQWERTYの違いは、5つの英字と数字の段です。AとQ、ZとWが入れ替わり、MはLの右へ移り、QWERTYで数字のキーにé、è、ç、àが入るので、数字にはShiftが要ります。フランスとベルギーで使われるAZERTYはフランス語のアクセントを少ない打鍵で打て、QWERTYは英語、数字、プログラムを少ない打鍵で打てます。",
+  "faq": [
+    {"q": "AZERTY配列を使っている国は？", "a": "フランスとベルギーがそれぞれの版のAZERTYを使い、アフリカの一部の国も使っています。アルジェリア、モロッコ、チュニジア、チャドなどではアラビア語版のAZERTYも使われます。スイスのフランス語圏はQWERTZのスイス・フランス語配列を使い、カナダのフランス語配列は英字がQWERTYのままです。"},
+    {"q": "なぜAZERTYという名前なの？", "a": "上段の英字キーの最初の6つがA Z E R T Yと並ぶからです。QWERTYも同じように、自分の上段の最初の6文字から名前を取っています。"},
+    {"q": "急にAとQが入れ替わったのはなぜ？", "a": "フランス語の配列がオンになったためで、原因はたいていショートカットです。WindowsはWindowsキー+Spaceで配列を順に切り替え、Alt+ShiftやCtrl+Shiftでも切り替わるので、誤って押しがちです。Windowsキー+Spaceで戻し、不要なら設定でフランス語のキーボードを削除します。Macはメニューバーの入力メニューで選び直します。"},
+    {"q": "AZERTYで@を打つには？", "a": "WindowsのフランスAZERTYでは、AltGr（右のAlt）を押しながら、0も刻印されたàのキーを押します。ベルギーのAZERTYでは、2も刻印されたéのキーとAltGrで@になります。"},
+    {"q": "日本語キーボードでフランス語のアクセントを打つには？", "a": "WindowsならフランスのAZERTYかカナダ・フランス語のキーボードを追加し、Windowsキー+Spaceで切り替えます。英字の位置を変えたくなければカナダ・フランス語が向いています。Macでは文字キーを長押しするとアクセントメニューが開き、é、è、çなどを選べます。"},
+    {"q": "AZERTYのキーボードでQWERTYを使える？", "a": "使えます。各キーが打つ文字はOSが決めるので、US配列などを選べば刻印に関係なくQWERTYの文字が出ます。AZERTYで山かっこを打つ左Shiftの右のキーは、US配列ではバックスラッシュになります。"}
+  ],
+  "sources": [
+    {"title": "French (Legacy, AZERTY) keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdfr"},
+    {"title": "France's new AZERTY keyboard layout, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/azerty_english"},
+    {"title": "French keyboard: a voluntary standard to make it easier to enter all characters, AFNOR", "url": "https://www.afnor.org/en/news/keyboard-english-voluntary-standard-for-easier-writing/"},
+    {"title": "Dell AZERTY laptop keyboards do not match certain Microsoft French keyboard layouts, Dell", "url": "https://www.dell.com/support/kbdoc/en-in/000424091/dell-azerty-laptop-keyboards-do-not-match-certain-microsoft-french-keyboard-layouts?lang=en"},
+    {"title": "Belgian French keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdbe_2"},
+    {"title": "Canadian French keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdca"},
+    {"title": "Swiss French keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdsf_2"},
+    {"title": "US keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdus_7"},
+    {"title": "AZERTY, Wikipedia", "url": "https://en.wikipedia.org/wiki/AZERTY"},
+    {"title": "AZERTY配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/AZERTY配列"},
+    {"title": "行正和義「フランス語キーボードでフランス語を綴ることは不可能」ASCII.jp（2016年1月22日）", "url": "https://weekly.ascii.jp/elem/000/001/108/1108640/"},
+    {"title": "Keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Letter frequency, Wikipedia", "url": "https://en.wikipedia.org/wiki/Letter_frequency"},
+    {"title": "Manage the language and keyboard/input layout settings in Windows, Microsoft Support", "url": "https://support.microsoft.com/windows/12a10cb4-8626-9b77-0ccb-5013e0c7c7a2"},
+    {"title": "Keyboard shortcuts in Windows, Microsoft Support", "url": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec"},
+    {"title": "Write in another language on Mac, Apple Support", "url": "https://support.apple.com/guide/mac-help/mchlp1406"},
+    {"title": "Macでアクセント記号付きの文字を入力する（Apple サポート）", "url": "https://support.apple.com/ja-jp/guide/mac-help/mh27474/mac"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "ブラウザーでAZERTYを試す", "drill": "words", "layout": "azerty"}
+}
+-->
+<p>AZERTY配列とQWERTYは、ほとんどのキーが共通です。E、R、T、Y、U、I、O、Pは同じ指で打ち、中段のS、D、F、G、H、J、K、Lも同じ位置にあります。動くのは5つの英字と、数字の段の役割、右下の記号です。それだけでも、QWERTYに慣れた手はフランスのキーボードでつまずきます。英字の位置は日本のJIS配列もUS配列と同じなので、英字の比較はJISキーボードにもそのまま当てはまります。記号の位置は一部違います。</p>
+
+<h2>AZERTY配列とQWERTYの違いは？（キーごとの比較）</h2>
+<p>フランスのAZERTYは、AとQ、ZとWを入れ替え、Mを中段のLの右へ移し、Mが空けた場所へ右下の記号をずらします。表は、WindowsのUS配列と、Microsoftがフランスで広く使われていると説明する従来の配列「French (Legacy, AZERTY)」で、違うキーをすべて並べたものです。指の列は標準的なタッチタイピングの受け持ちです。</p>
+<table>
+<caption>US配列とフランスのAZERTYで違うキー</caption>
+<thead><tr><th scope="col">物理的なキー</th><th scope="col">US配列</th><th scope="col">AZERTY</th><th scope="col">指</th></tr></thead>
+<tbody>
+<tr><td>1の左</td><td><kbd>`</kbd></td><td><kbd>²</kbd></td><td>左小指</td></tr>
+<tr><td>数字の段（1から0の右まで）</td><td>数字、<kbd>-</kbd></td><td>アクセント付き文字と記号。数字はShift</td><td>変わらない</td></tr>
+<tr><td>上段の1つめ</td><td><kbd>Q</kbd></td><td><kbd>A</kbd></td><td>左小指</td></tr>
+<tr><td>上段の2つめ</td><td><kbd>W</kbd></td><td><kbd>Z</kbd></td><td>左薬指</td></tr>
+<tr><td>Pの右</td><td><kbd>[</kbd></td><td><kbd>^</kbd>（デッドキー）</td><td>右小指</td></tr>
+<tr><td>その右</td><td><kbd>]</kbd></td><td><kbd>$</kbd></td><td>右小指</td></tr>
+<tr><td>中段の1つめ</td><td><kbd>A</kbd></td><td><kbd>Q</kbd></td><td>左小指（ホーム）</td></tr>
+<tr><td>Lの右</td><td><kbd>;</kbd></td><td><kbd>M</kbd></td><td>右小指（ホーム）</td></tr>
+<tr><td>その右</td><td><kbd>'</kbd></td><td><kbd>ù</kbd></td><td>右小指</td></tr>
+<tr><td>Enterの上（ANSI）か左（ISO）</td><td><kbd>\</kbd></td><td><kbd>*</kbd></td><td>右小指</td></tr>
+<tr><td>左Shiftの右（ISOのみ）</td><td><kbd>\</kbd></td><td><kbd>&lt;</kbd>と<kbd>&gt;</kbd></td><td>左小指</td></tr>
+<tr><td>下段の1つめ</td><td><kbd>Z</kbd></td><td><kbd>W</kbd></td><td>左小指</td></tr>
+<tr><td>Nの右</td><td><kbd>M</kbd></td><td><kbd>,</kbd></td><td>右人差し指</td></tr>
+<tr><td>その右</td><td><kbd>,</kbd></td><td><kbd>;</kbd>（Shiftでピリオド）</td><td>右中指</td></tr>
+<tr><td>その右</td><td><kbd>.</kbd></td><td><kbd>:</kbd>（Shiftでスラッシュ）</td><td>右薬指</td></tr>
+<tr><td>その右</td><td><kbd>/</kbd></td><td><kbd>!</kbd></td><td>右小指</td></tr>
+</tbody>
+</table>
+<p>英字で受け持ちが変わる指は4本です。左手の小指は相変わらず3つの文字を打ち、並びが上段のA、中段のQ、左下のWに変わります。左手の薬指はQWERTYのWの位置でZを打ちます。右手の小指はセミコロンではなくMの上で休み、右手の人差し指はMだったキーでカンマを打ちます。ほかの英字は同じ指のままなので、AZERTYとQWERTYの行き来で変わるキーは、<a href="guide:colemak-vs-dvorak">ColemakやDvorak</a>への移行よりずっと少なく済みます。</p>
+<p>左Shiftの右の追加キーは、ヨーロッパで使われるISOキーボードにしかなく、US配列（ANSI）にもJIS配列にもありません。見分け方は<a href="guide:iso-vs-ansi">ISOとANSIの違い</a>で説明しています。</p>
+<figure data-figure="finger-chart" data-layout="azerty"><figcaption>フランスのAZERTY配列。キーの色は押す指を表します。左右の小指のホームポジションはQとMです。</figcaption></figure>
+
+<h2>AZERTYで数字を打つのにShiftが要るのはなぜ？</h2>
+<p>AZERTYは数字の段のShiftなしの位置をアクセント付きの文字と記号に譲ったので、数字はShiftの位置にあります。<kbd>2</kbd>のキーだけを押すとé、Shiftと一緒なら2です。WindowsのフランスAZERTYでは、数字の段は次のとおりです。</p>
+<table>
+<caption>WindowsのフランスAZERTYの数字の段</caption>
+<thead><tr><th scope="col">キー</th><th scope="col">そのまま</th><th scope="col">Shift</th><th scope="col">AltGr</th></tr></thead>
+<tbody>
+<tr><td>1の左</td><td>²</td><td>なし</td><td>なし</td></tr>
+<tr><td>1</td><td>&amp;</td><td>1</td><td>なし</td></tr>
+<tr><td>2</td><td>é</td><td>2</td><td>~（デッドキー）</td></tr>
+<tr><td>3</td><td>"</td><td>3</td><td>#</td></tr>
+<tr><td>4</td><td>'</td><td>4</td><td>{</td></tr>
+<tr><td>5</td><td>(</td><td>5</td><td>[</td></tr>
+<tr><td>6</td><td>-</td><td>6</td><td>|</td></tr>
+<tr><td>7</td><td>è</td><td>7</td><td>`（デッドキー）</td></tr>
+<tr><td>8</td><td>_</td><td>8</td><td>\</td></tr>
+<tr><td>9</td><td>ç</td><td>9</td><td>^</td></tr>
+<tr><td>0</td><td>à</td><td>0</td><td>@</td></tr>
+<tr><td>0の右</td><td>)</td><td>°</td><td>]</td></tr>
+<tr><td>その右</td><td>=</td><td>+</td><td>}</td></tr>
+</tbody>
+</table>
+<p>次の習慣で、数字の段が楽になります。</p>
+<ul>
+<li>Shiftは反対の手で押します。1〜5は右Shift、6〜0は左Shiftです。どちらの手がどのキーを受け持つかは<a href="guide:finger-placement">キーボードの指の配置図</a>にあります。</li>
+<li>長い数字はテンキーで打てば、Shiftは要りません。</li>
+<li>WindowsのフランスAZERTYでは、Caps Lockがほぼキーボード全体のShiftロックとして働き、数字の段で数字が出ます。そのあいだ英字は大文字になります。</li>
+<li>ピリオドは<kbd>;</kbd>のキーとShiftで打つので、文の終わりには毎回Shiftを押します。逆に<kbd>;</kbd>、<kbd>:</kbd>、<kbd>!</kbd>、<kbd>ù</kbd>はShiftなしです。</li>
+</ul>
+
+<h2>AZERTYでアクセント記号や@はどう打つ？</h2>
+<p>5つのアクセント付き文字には専用のキーがあり、修飾キーは要りません。数字の段のé、è、ç、àと、Mの右のùです。ほかのアクセントはデッドキーで打ちます。デッドキーは押しただけでは何も表示されず、次に打った文字にアクセントが付きます。Pの右の<kbd>^</kbd>のあとに<kbd>e</kbd>でê、<kbd>Shift</kbd>+<kbd>^</kbd>のあとに<kbd>i</kbd>でïです。プログラムで使う記号はAltGr（右のAlt）の位置にあり、<kbd>AltGr</kbd>+<kbd>à</kbd>で@、<kbd>AltGr</kbd>+<kbd>E</kbd>で€、数字の段には上の表のとおり# { [ | \ ] }が並びます。</p>
+<p>ùのキーを使う単語はoùだけなのに、ùのほぼ4倍よく使われるêには2打かかります。従来の配列ではフランス語に必要な文字をすべては打てず、Microsoftは合字のæとœ、フランス語の引用符« »、一部のアクセント付き大文字が欠けていると書いています。À、È、Ùは抑音符のデッドキー（<kbd>AltGr</kbd>+<kbd>7</kbd>のあとにShiftと文字）で打てますが、ÉとÇの大文字にはキーの組み合わせがありません。</p>
+<h3>2019年の規格と新しいAZERTY</h3>
+<p>フランス文化省の言語担当部局は2015年に規格団体AFNORに改善を求め、2016年1月には、フランスで売られているキーボードではフランス語を正しく書けないという見解も示しました（<a href="https://weekly.ascii.jp/elem/000/001/108/1108640/">ASCII.jpの記事</a>）。AFNORは2019年に任意規格NF Z71-300を発行し、BÉPO配列と並べて新しいAZERTYを定めました。26文字と数字の位置はそのままに、アクセントや記号の一部を動かして、É、Ç、æ、œ、« »を打ちやすくしています。Windows 11 24H2はこれを「French (Standard, AZERTY)」として収録し、<kbd>AltGr</kbd>+<kbd>Shift</kbd>+<kbd>é</kbd>でÉを打てます。従来の配列は「French (Legacy, AZERTY)」になりました。</p>
+<p>新しい配列を選ぶ前に、キーの刻印を確かめてください。Dellは、同社のノートパソコンのAZERTYキーボードに合うのは従来の配列だけで、新しい配列では一部のキーが刻印と違う文字を打つと説明しています。</p>
+
+<h2>なぜフランスとベルギーはAZERTY配列なの？</h2>
+<p>AZERTYは早く広まり、QWERTYに近かったことで、ほかのフランス語の配列に勝ちました。19世紀の最後の10年に、アメリカのタイプライターのQWERTYを変えた形でフランスに現れ、正確な起源はわかっていません。20世紀初めにAlbert Navarreが作ったZHJAYS配列は、AZERTYがQWERTYに似ていてすでに普及していたことが大きく響き、広まりませんでした。</p>
+<p>入れ替えはフランス語に合っています。Wikipediaが載せる文字の頻度では、フランス語のqはque、qui、quandのおかげで1.36%と英語の0.095%よりずっと多く、wは0.049%（英語は2.36%）とほとんど使われません。AZERTYはQをホームポジションに置き、Wを左下の隅へ送りました。フランス語で0.33%（英語は0.074%）のZは隅から上段へ上がり、1.50%を占めるéには専用のキーがあります。</p>
+<p>ベルギーには独自のAZERTYがあります。英字の位置は同じで数字にもShiftが要りますが、数字の段にはフランス版の-と_の代わりに§と!があり、右下のキーは!ではなく=です。AppleのキーボードはフランスとベルギーでAZERTYが共通なので、Macでは同じ国のWindowsと記号の位置が違うことがあります。アフリカの一部の国もAZERTYを使います。スイスのフランス語圏はQWERTZのスイス・フランス語配列（<a href="guide:qwertz-vs-qwerty">QWERTZとQWERTYの比較</a>）、カナダは独自のフランス語配列です。</p>
+
+<h2>文章、プログラミング、ゲームにはどちらが向いている？</h2>
+<p>AZERTYはフランス語の文章に、QWERTYは英語、数字、プログラムに向いています。2つの配列で打つ速さを比べた研究は見つからなかったので、どちらかが速いという話は疑ってください。比べられるのは、よく打つ文字に必要な打鍵の数です。</p>
+<table>
+<caption>よく使う文字の打ち方：フランスのAZERTYとUS配列</caption>
+<thead><tr><th scope="col">文字</th><th scope="col">AZERTY（フランス）</th><th scope="col">US配列</th></tr></thead>
+<tbody>
+<tr><td>é è à ç ù</td><td>1キー</td><td>配列にない</td></tr>
+<tr><td>ê î ô û</td><td>デッドキーのあとに文字</td><td>配列にない</td></tr>
+<tr><td>数字0〜9</td><td>Shift＋キー</td><td>1キー</td></tr>
+<tr><td>ピリオド</td><td>Shift＋キー</td><td>1キー</td></tr>
+<tr><td>コロン、感嘆符</td><td>1キー</td><td>Shift＋キー</td></tr>
+<tr><td>@ # [ ] { } \ |</td><td>AltGr＋キー</td><td>1キーかShift＋キー</td></tr>
+<tr><td>É Ç œ « »</td><td>従来の配列にない</td><td>配列にない</td></tr>
+<tr><td>ゲームのWASD</td><td>Z Q S D（同じ物理キー）</td><td>W A S D</td></tr>
+</tbody>
+</table>
+<p>英語やプログラムが中心ならQWERTYが有利です。かっこ、波かっこ、バックスラッシュが、AZERTYではAltGrの奥にあるからです。フランス語が中心ならAZERTYが有利です。ショートカットは文字についていくので、AZERTYでは元に戻す（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）が上段の左手の薬指、すべて選択（<kbd>Ctrl</kbd>+<kbd>A</kbd>）が左上の隅になります。ゲームの移動はどちらも同じ4つの物理キーで、AZERTYの刻印ではZ Q S Dです。キーの位置を読むゲームはそのまま動き、文字を読むゲームでは操作を割り当て直すか、遊ぶ間だけQWERTYに切り替えます。</p>
+
+<h2>QWERTYのままフランス語を打つには？</h2>
+<p>英字を動かしたくないなら、カナダ・フランス語配列が中間の選択肢になります。Windowsで「Canadian French」と呼ばれる配列は、QWERTYの英字も数字もそのままにして、まわりにフランス語の文字を入れています。éは右下（US配列のスラッシュの位置）に専用キーがあり、Shiftと一緒なら大文字のÉになります。フランスのAZERTYにはできないことです。Pの右は曲折アクセントのデッドキー、その右はçのためのセディーユのデッドキーで、à、è、ùはUS配列のアポストロフィの位置にある抑音符のデッドキーで打ちます。</p>
+<p>代わりにアポストロフィはShiftとカンマで打つので、l'étéやc'estのたびにShiftが要ります。英字が動かないので、QWERTYで打てる人はアクセントのキーを覚えるだけでほぼ使えます。petitdoigtにもこの配列があり、<a href="app:words?layout=ca-fr">wordsドリルでカナダ・フランス語を練習</a>できます。Macでは配列を変えずに、文字キーを長押しして開くアクセントメニューからé、è、çを選ぶこともできます。</p>
+
+<h2>AZERTYとQWERTYを切り替えるには？</h2>
+<p>各キーが打つ文字はOSが決めるので、切り替えは設定の問題です。Windows 11では次のように進めます。</p>
+<ol>
+<li>「スタート」→「設定」→「時刻と言語」→「言語と地域」を開きます。</li>
+<li>フランス語の配列はフランス語の言語の中にあるので、一覧にフランス語がなければ先に追加します。</li>
+<li>フランス語の横の「…」から言語のオプションを開き、「キーボードの追加」でFrench (Legacy, AZERTY)やCanadian Frenchを選びます。</li>
+<li><kbd>Windows</kbd>キーを押しながら<kbd>Space</kbd>を押すと、入れた配列が順に切り替わります。</li>
+</ol>
+<p>Macでは「システム設定」→「キーボード」→「テキスト入力」の「編集」で追加ボタンを押し、配列を追加します。<kbd>Control</kbd>+<kbd>Space</kbd>で直前の入力ソースに戻ります。</p>
+<p>Windowsは<kbd>Alt</kbd>+<kbd>Shift</kbd>や<kbd>Ctrl</kbd>+<kbd>Shift</kbd>でも配列を切り替えます。どちらも打っている途中でうっかり押しやすく、Aを押したのにQが出るようになったら、たいていこれが原因です。<kbd>Windows</kbd>+<kbd>Space</kbd>で戻すか、使わない配列を削除してください。刻印はどの配列を選んでも変わらないので、新しい位置はキーを見ずに覚えるのが近道です。やり方は<a href="guide:type-without-looking">キーボードを見ないで打つ方法</a>にあります。</p>
+
+<h2>AZERTYを覚える、またはQWERTYに戻るには？</h2>
+<p>動いたキーだけを練習し直し、ほかはそのままにします。ほとんどのキーは同じ指のままなので、練習は左手の小指と薬指、右手の下段の記号に集中します。</p>
+<ol>
+<li>新しいホームポジションに慣れます。AZERTYではQ S D FとJ K L Mで、両方の小指が文字の上に乗ります。FとJの突起の位置は変わりません。</li>
+<li>動いた文字を実際の単語で練習します。AZERTYならque、quand、aussi、mais、comme、zéro、QWERTYに戻るならwas、what、always、maybe、zoneです。</li>
+<li>文の終わりを作り直します。カンマは右手の人差し指、ピリオドはその隣のキーとShiftです。</li>
+<li>数字の段は最後に、反対の手のShiftと一緒に練習します。</li>
+</ol>
+<p>petitdoigtなら、OSの設定を変えずにどちらの配列でもこの練習ができます。キーの物理的な位置からAZERTYを再現するので、JISやUSのキーボードのままで打て、画面上のキーボードにはAZERTYの文字が指の色付きで出て、使う指が強調されます。練習文をフランス語にし、Finger focus（指の強化）で左手の小指を選ぶとA、Q、Wが増えます。<a href="app:pairs?layout=azerty">AZERTYのpairsドリル</a>のadaptiveモードは、あなたの遅い、または間違えやすいキーの移りを中心にセットを作ります。ブラウザーには指が見えないので、正しい指で打つのはあなたの役目です。画面の表示は英語です。基本の打ち方は<a href="guide:touch-typing">タッチタイピングのガイド</a>にまとめています。</p>

@@ -1,13 +1,16 @@
 import type { Finger, FingerKind } from './fingers';
 import { fingerHand, fingerKind } from './fingers';
 import type { Difficulty } from './hardcore';
+import { de } from './i18n-de';
+import { es } from './i18n-es';
 import type { LayoutId } from './layouts';
 import type { Board, Row } from './physical';
 import type { DrillId, Lang } from './store';
 
 /**
- * Every string the interface shows, in English and in French. The interface
- * language is one setting; the language of the practice text is another.
+ * Every string the interface shows: English and French here, German and Spanish in
+ * `i18n-de.ts` and `i18n-es.ts`. The interface language is one setting; the language
+ * of the practice text is another.
  * Short labels are lowercase; full sentences keep their capital.
  */
 
@@ -21,6 +24,9 @@ const en = {
     us: 'us qwerty',
     azerty: 'french azerty',
     qwertz: 'german qwertz',
+    'qwertz-ch': 'swiss german',
+    es: 'spanish',
+    latam: 'latin american',
     dvorak: 'dvorak',
     colemak: 'colemak',
     'colemak-dh': 'colemak-dh',
@@ -33,7 +39,7 @@ const en = {
     'colemak-dh|iso': 'z is on the key beside the left shift',
   } as Partial<Record<LayoutId | `${LayoutId}|${Board}`, string>>,
   /** The practice-text languages. */
-  languages: { fr: 'french', en: 'english' } satisfies Record<Lang, string>,
+  languages: { fr: 'french', en: 'english', de: 'german', es: 'spanish' } satisfies Record<Lang, string>,
   kinds: { pinky: 'pinky', ring: 'ring', middle: 'middle', index: 'index', thumb: 'thumb' } satisfies Record<FingerKind, string>,
   finger: (finger: Finger): string => `${fingerHand(finger)} ${fingerKind(finger)}`,
   /** A finger's name where room is short: segmented choices and table rows. */
@@ -49,6 +55,8 @@ const en = {
     trackingOn: 'sets and key numbers are saved',
     trackingOff: 'nothing is saved while this is off',
     layout: 'keyboard layout',
+    /** The link to the written guides, in the top strip. */
+    guides: 'guides',
   },
 
   /** The settings panel: one list for the drill's options, the fingers to train, the sound, the keyboard and the profile. */
@@ -142,7 +150,7 @@ const en = {
     newText: 'new text',
     arrows: 'up / down',
     tempo: 'tempo',
-    noAccents: 'text with accents is left out: this layout has no accent keys',
+    noAccents: 'words with letters this layout has no key for are left out',
     /** The sound of the keys. Its list names switches, so the label beside it only has to say what they are for. */
     keys: 'keys',
     keySound: 'key sound',
@@ -313,6 +321,9 @@ const fr: Strings = {
     us: 'qwerty américain',
     azerty: 'azerty français',
     qwertz: 'qwertz allemand',
+    'qwertz-ch': 'suisse allemand',
+    es: 'espagnol',
+    latam: 'latino-américain',
     dvorak: 'dvorak',
     colemak: 'colemak',
     'colemak-dh': 'colemak-dh',
@@ -323,7 +334,7 @@ const fr: Strings = {
     'colemak-dh': 'la rangée du bas de la main gauche suit le doigté en angle',
     'colemak-dh|iso': 'le z est sur la touche à côté du maj gauche',
   },
-  languages: { fr: 'français', en: 'anglais' },
+  languages: { fr: 'français', en: 'anglais', de: 'allemand', es: 'espagnol' },
   kinds: FR_KINDS,
   finger: frFinger,
   fingerShort: frShort,
@@ -337,6 +348,7 @@ const fr: Strings = {
     trackingOn: 'les séries et les chiffres par touche sont enregistrés',
     trackingOff: "rien n'est enregistré tant que le suivi est désactivé",
     layout: 'disposition du clavier',
+    guides: 'guides',
   },
 
   menu: {
@@ -422,7 +434,7 @@ const fr: Strings = {
     newText: 'nouveau texte',
     arrows: 'haut / bas',
     tempo: 'tempo',
-    noAccents: "le texte accentué est retiré: cette disposition n'a pas de touches d'accent",
+    noAccents: 'les mots aux lettres absentes de cette disposition sont retirés',
     keys: 'touches',
     keySound: 'son des touches',
     keySoundOff: 'muettes',
@@ -572,10 +584,10 @@ const fr: Strings = {
   },
 };
 
-const STRINGS: Record<Lang, Strings> = { en, fr };
+const STRINGS: Record<Lang, Strings> = { en, fr, de, es };
 
 /** Each interface language under its own name, for the picker. */
-export const LANG_NAMES: Record<Lang, string> = { fr: 'français', en: 'english' };
+export const LANG_NAMES: Record<Lang, string> = { fr: 'français', en: 'english', de: 'deutsch', es: 'español' };
 
 /** The strings of the current interface language. Reassigned by `setUiLang`, so read it at the moment of use. */
 export let t: Strings = en;
@@ -590,11 +602,29 @@ export const stringsOf = (lang: Lang): Strings => STRINGS[lang];
 export const fingerName = (finger: Finger): string => t.finger(finger);
 export const fingerShort = (finger: Finger): string => t.fingerShort(finger);
 
-/** The first of the browser's languages the interface speaks; English when it names neither. */
+const isLang = (value: string): value is Lang => value in STRINGS;
+
+/** The first of the browser's languages the interface speaks; English when it names none. */
 export function preferredLang(languages: readonly string[] = globalThis.navigator?.languages ?? []): Lang {
   for (const tag of languages) {
     const base = tag.toLowerCase().split('-')[0];
-    if (base === 'fr' || base === 'en') return base;
+    if (isLang(base)) return base;
   }
   return 'en';
+}
+
+/**
+ * The layout a typist with nothing saved starts on, from the first of the browser's
+ * languages that names one: its region picks between the layouts of one language.
+ * French with no region is taken as Canadian French, the trainer's first audience.
+ */
+export function preferredLayout(languages: readonly string[] = globalThis.navigator?.languages ?? []): LayoutId {
+  for (const tag of languages) {
+    const [base, region = ''] = tag.toLowerCase().split('-');
+    if (base === 'en') return 'us';
+    if (base === 'fr') return region === '' || region === 'ca' ? 'ca-fr' : region === 'ch' ? 'qwertz-ch' : 'azerty';
+    if (base === 'de') return region === 'ch' ? 'qwertz-ch' : 'qwertz';
+    if (base === 'es') return region === 'es' ? 'es' : 'latam';
+  }
+  return 'us';
 }

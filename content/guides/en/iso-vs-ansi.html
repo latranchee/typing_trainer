@@ -1,0 +1,123 @@
+<!--meta
+{
+  "id": "iso-vs-ansi",
+  "lang": "en",
+  "slug": "iso-vs-ansi",
+  "title": "ISO vs ANSI Keyboard: Differences, JIS and Which to Choose",
+  "description": "ISO vs ANSI keyboards compared key by key: Enter and Shift sizes, the extra ISO key, JIS boards, who uses which, how to tell yours and which to choose.",
+  "h1": "ISO vs ANSI keyboards: the differences, JIS, and how to tell yours",
+  "keyword": "iso vs ansi",
+  "keywords_secondary": ["ansi vs iso keyboard", "jis keyboard", "iso keyboard", "ansi keyboard"],
+  "summary": "ISO vs ANSI comes down to the Enter key and the left Shift. ANSI keyboards have a wide one-row Enter and a long left Shift; ISO keyboards have a tall two-row Enter and a short left Shift with one extra key beside it. The United States uses ANSI, most of Europe uses ISO, and Japan uses JIS, which adds keys around a shorter space bar. The letters sit in the same place on all three.",
+  "faq": [
+    {"q": "Is a UK keyboard ISO or ANSI?", "a": "ISO. British keyboards have the tall two-row Enter, a short left Shift and an extra key beside it that types \\ and |. The key just left of Enter types # and ~. Apple lists its British and Irish keyboard among its ISO models."},
+    {"q": "Is a MacBook keyboard ISO or ANSI?", "a": "It depends on the country version. On Apple's list, the US English, Chinese, Korean and Thai keyboards are ANSI and the Japanese keyboard is JIS. The other language versions, British, German, French, Spanish and Canadian French among them, are ISO. Check the Return key: a one-row Return means ANSI."},
+    {"q": "Is ISO or ANSI better for gaming?", "a": "The shape only changes key sizes and positions. In games that bind sprint, crouch or another action to the left Shift, ISO gives the left pinky a 1.25u key with the extra key right beside it, against a 2.25u key on ANSI. A player used to one shape will mis-hit the left Shift for a while after switching to the other."},
+    {"q": "Can I put ANSI keycaps on an ISO keyboard?", "a": "Most of them, yes: letters, numbers and the keys around them are the same size on both shapes. The shapes differ at the Enter, the left Shift, the key next to Enter and the extra ISO key, so an ANSI set leaves those spots unfilled or mismatched. Look for a set that includes an ISO kit."},
+    {"q": "What is a big-ass Enter keyboard?", "a": "Keyboard enthusiasts use the name for a board whose Enter fills both the ANSI and the ISO Enter spots. The key that ANSI puts above Enter moves up to the number row, beside a shorter Backspace. ISO/IEC 9995 lists this arrangement as a variant of the ANSI one, used in some Asian countries."},
+    {"q": "What keyboard does Brazil use?", "a": "Brazil uses ABNT2, variant 2 of the standard ABNT NBR 10346. It keeps the ISO Enter and the extra key beside the left Shift, then adds a key for / and ? beside a shorter right Shift, so 12 keys sit between the two Shifts. ISO/IEC 9995 counts 50 character keys on it, against 49 on ISO and 48 on ANSI."}
+  ],
+  "sources": [
+    {"title": "Apple Support: How to identify your Apple keyboard layout by country or region", "url": "https://support.apple.com/102743"},
+    {"title": "Apple Mac User Guide: Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/mac"},
+    {"title": "Apple Mac User Guide (macOS Monterey 12): Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/12.0/mac"},
+    {"title": "Apple Community: How To Fix Keyboard Type Problems", "url": "https://discussions.apple.com/docs/DOC-250007848"},
+    {"title": "W3C: UI Events KeyboardEvent code Values", "url": "https://www.w3.org/TR/uievents-code/"},
+    {"title": "Wikipedia: ISO/IEC 9995", "url": "https://en.wikipedia.org/wiki/ISO/IEC_9995"},
+    {"title": "Wikipedia: Keyboard layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Wikipedia: Portuguese keyboard layout", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "Wikipedia: Language input keys", "url": "https://en.wikipedia.org/wiki/Language_input_keys"},
+    {"title": "Deskthority wiki: ANSI vs ISO", "url": "https://deskthority.net/wiki/ANSI_vs_ISO"},
+    {"title": "Deskthority wiki: ANSI vs JIS", "url": "https://deskthority.net/wiki/ANSI_vs_JIS"},
+    {"title": "Ultimate Hacking Keyboard: ANSI or ISO? Which keyboard layout is more ergonomic?", "url": "https://uhk.io/blog/2015/09/09/ansi-or-iso-which-keyboard-layout-is-more-ergonomic"},
+    {"title": "Corsair: ANSI vs ISO, what's the best keyboard layout?", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/ansi-vs-iso-whats-the-best-keyboard-layout/"},
+    {"title": "Keebsforall: ANSI vs ISO typing efficiency compared", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-vs-iso-typing-efficiency-compared"},
+    {"title": "Keebsforall: ANSI, ISO, JIS: which layout fits your needs?", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-iso-jis-which-layout-fits-your-needs"},
+    {"title": "KbdLayout: US keyboard layout (KBDUS)", "url": "https://kbdlayout.info/kbdus"},
+    {"title": "KbdLayout: United Kingdom keyboard layout (KBDUK)", "url": "https://kbdlayout.info/kbduk"},
+    {"title": "KbdLayout: German keyboard layout (KBDGR)", "url": "https://kbdlayout.info/kbdgr"},
+    {"title": "KbdLayout: French keyboard layout (KBDFR)", "url": "https://kbdlayout.info/kbdfr"},
+    {"title": "KbdLayout: Spanish keyboard layout (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "DreymaR's Big Bag of Keyboard Tricks: ergonomic mods", "url": "https://dreymar.colemak.org/ergo-mods.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Type on a board that matches yours", "drill": "words"}
+}
+-->
+<p>ISO, ANSI and JIS describe the physical keyboard: the size of each key and where it sits. The layout you type with, such as US QWERTY or German QWERTZ, is a software setting that runs on top of that shape (the guide to <a href="guide:keyboard-layouts">keyboard layouts</a> covers those). Most of the board is identical on all three shapes. The differences sit at the edges, around Enter, the left Shift and the space bar, and they change what your pinkies do.</p>
+<figure data-figure="board-shapes"><figcaption>ANSI, ISO and JIS boards side by side. Compare the Enter key and the left Shift first, then the keys around the JIS space bar.</figcaption></figure>
+
+<h2>What is the difference between ISO and ANSI keyboards?</h2>
+<p>An ISO keyboard has a tall Enter that covers two rows, a short left Shift and one more character key than an ANSI keyboard, whose Enter fills a single row and whose left Shift runs all the way to <kbd>Z</kbd>. The extra ISO key sits between the left Shift and <kbd>Z</kbd>.</p>
+<p>The tall Enter pushes one more key out of place. On ANSI, the backslash key (<kbd>\</kbd> and <kbd>|</kbd> on a US board) ends the top letter row, right above Enter. ISO has no room for it there, so that key drops to the home row, just left of Enter; a British board prints <kbd>#</kbd> and <kbd>~</kbd> on it. The ISO/IEC 9995 keyboard standard counts 48 character keys on the ANSI arrangement and 49 on the ISO one. A full-size US PC keyboard has 104 keys and the usual European one has 105; without the number pad, a tenkeyless board drops to 87 keys on ANSI and 88 on ISO.</p>
+<p>Keyboard makers measure keys in units: 1u is the width of one letter key. The table gives units where a source states them.</p>
+<table>
+<caption>ANSI, ISO and JIS keyboards compared</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">JIS</th></tr></thead>
+<tbody>
+<tr><th scope="row">Enter</th><td>One row, often 2.25u wide</td><td>Two rows tall, L-shaped</td><td>Two rows tall, L-shaped</td></tr>
+<tr><th scope="row">Left Shift</th><td>Long, 2.25u</td><td>Short, about 1.25u, with an extra key to its right</td><td>Long</td></tr>
+<tr><th scope="row">Right Shift</th><td>Long</td><td>Long</td><td>Shorter, with an extra key (ろ) to its left</td></tr>
+<tr><th scope="row">The US backslash key</th><td>Top letter row, above Enter</td><td>Home row, left of Enter</td><td>Home row, left of Enter</td></tr>
+<tr><th scope="row">Backspace</th><td>2u</td><td>2u</td><td>1u, with a ¥ key beside it</td></tr>
+<tr><th scope="row">Space bar</th><td>Long</td><td>Long</td><td>Shorter, with input-mode keys on both sides</td></tr>
+<tr><th scope="row">Character keys</th><td>48</td><td>49</td><td>49</td></tr>
+<tr><th scope="row">Keys on a full-size PC board</th><td>104</td><td>105</td><td>109</td></tr>
+<tr><th scope="row">Standard in</th><td>United States</td><td>Most of Europe</td><td>Japan</td></tr>
+</tbody>
+</table>
+
+<h2>Which countries use ISO, ANSI or JIS?</h2>
+<p>The United States uses ANSI, Europe uses ISO almost everywhere, and Japan uses JIS. Apple's keyboard catalogue gives a precise list by language, since Apple files each of its language versions under one shape.</p>
+<table>
+<caption>Keyboard shape by language, from Apple's catalogue (ABNT2 from ISO/IEC 9995)</caption>
+<thead><tr><th scope="col">Shape</th><th scope="col">Keyboards that use it</th></tr></thead>
+<tbody>
+<tr><th scope="row">ANSI</th><td>US English, Korean, Thai, Chinese (Pinyin and Zhuyin)</td></tr>
+<tr><th scope="row">ISO</th><td>British and Irish, German and Austrian, French and Belgian, Spanish, Italian, Portuguese, Swiss, Dutch, Danish, Norwegian, Swedish and Finnish, Russian, Greek, Turkish, Arabic, Hebrew, Canadian French, Latin American Spanish, and more</td></tr>
+<tr><th scope="row">JIS</th><td>Japanese</td></tr>
+<tr><th scope="row">ABNT2 (ISO plus one key)</th><td>Brazilian Portuguese</td></tr>
+</tbody>
+</table>
+<p>Korean boards come from the ANSI family and add two keys beside the space bar: 한/영 switches between Hangul and Latin letters, and 한자 converts Hangul to hanja. Some Asian markets also sell an ANSI variant with an extra-large Enter that fills both the ANSI and the ISO Enter spots. Sources split on the Netherlands. Apple sells a Dutch ISO keyboard, while the Deskthority wiki lists the Netherlands among the countries that use ANSI.</p>
+<p>The shape follows the market a keyboard was built for. A laptop bought in London keeps its ISO board after you switch Windows or macOS to US English.</p>
+
+<h2>How do I tell if my keyboard is ANSI or ISO?</h2>
+<p>Look at the Enter key: a one-row Enter means ANSI, and a tall Enter that covers two rows means ISO or JIS. Four checks settle any doubt:</p>
+<ol>
+<li>Find Enter. If it fits in one row and the backslash key sits directly above it, you have ANSI.</li>
+<li>Look at the left Shift. If a single key separates it from <kbd>Z</kbd>, you have ISO. A British board labels that key <kbd>\</kbd> <kbd>|</kbd>; a German one shows <kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>|</kbd>.</li>
+<li>Look beside the space bar. Keys marked 無変換 and 変換 on either side of a short space bar, plus a ¥ key next to Backspace, mean JIS.</li>
+<li>Count the keys in the bottom letter row between the two Shifts. ANSI has 10, from <kbd>Z</kbd> to <kbd>/</kbd>. ISO and JIS both have 11, and Brazil's ABNT2 has 12.</li>
+</ol>
+<p>On a Mac, macOS recognizes three keyboard types, ANSI, ISO and JIS, and opens Keyboard Setup Assistant when it can't identify a keyboard you plug in. When it gets the type wrong, two keys trade places, most often the key below <kbd>Esc</kbd> and the key to the right of the left Shift. Apple's guide for macOS Monterey has you open System Preferences, click Keyboard, then click Change Keyboard Type and follow the steps: the assistant asks you to press the key to the right of the left Shift, then lets you pick ANSI, ISO or JIS.</p>
+
+<h2>ISO vs ANSI: which is better for typing?</h2>
+<p>Neither shape has been shown to make you type faster: we found no study that compared typing speed on ISO and ANSI, and the articles that call one shape faster cite none. The two shapes differ in how far your pinkies travel to three keys:</p>
+<ul>
+<li><strong>Left Shift, left pinky.</strong> The ISO Shift is 1.25u against 2.25u on ANSI, and the extra key fills the gap. A pinky trained on ANSI that reaches short types <kbd>\</kbd> or <kbd>&lt;</kbd> instead of a capital letter. You notice it most on capitals typed with the right hand, such as <kbd>H</kbd>, <kbd>J</kbd> or <kbd>M</kbd>, because touch typists hold the left Shift for those.</li>
+<li><strong>Enter, right pinky.</strong> On ANSI, Enter comes straight after <kbd>'</kbd> on the home row. ISO puts one more key between them, so the pinky travels farther along the home row or reaches up to the top half of the Enter.</li>
+<li><strong>Backslash, right pinky.</strong> ISO brings it down to the home row next to Enter, closer than its ANSI spot at the far end of the top row.</li>
+</ul>
+<p>László Monda of Ultimate Hacking Keyboard compared the two shapes in key units and found Enter and the left Shift about one unit (he puts it at 20 mm) farther from the center of the board on ISO, with the backslash about one unit closer. He points out that people press Enter and the left Shift hundreds of times a day and the backslash far less often.</p>
+<p>The slips people notice come from switching shapes. Coming from ANSI, the right pinky reaches for Enter on the home row and lands on the key left of the ISO Enter (<kbd>#</kbd> on a British board). Coming from ISO, a pinky that reaches up for the top half of Enter hits the ANSI backslash key instead. Both habits fade with slow, accurate repetitions on the board you mean to keep, eyes on the screen.</p>
+<p>petitdoigt draws ANSI, ISO and JIS boards, so the keyboard on screen can match the one on your desk, with every key in the color of the finger that presses it, the extra ISO key included. <a href="app:words">Choose your board shape and type a few sets of words</a> to see where your pinkies go. The chart of <a href="guide:finger-placement">which finger presses which key</a> shows the full board, and the guide to <a href="guide:type-without-looking">typing without looking at the keyboard</a> helps you stop glancing down.</p>
+
+<h2>Do keyboard layouts work on both ISO and ANSI boards?</h2>
+<p>Yes: any layout runs on any shape, because the operating system decides which character each physical key types. The extra ISO key is the one catch, since some layouts put characters there that exist on no other key.</p>
+<ul>
+<li><strong>US layout on an ISO board.</strong> The Windows US layout gives the extra key a second <kbd>\</kbd> <kbd>|</kbd>, and the home-row key left of Enter types the usual backslash. Nothing goes missing.</li>
+<li><strong>European layout on an ANSI board.</strong> The Windows German layout puts <kbd>&lt;</kbd>, <kbd>&gt;</kbd> and <kbd>|</kbd> only on the extra ISO key, and the French AZERTY and Spanish layouts put <kbd>&lt;</kbd> and <kbd>&gt;</kbd> there as well. An ANSI board has no such key, so those characters need a remap or another layout. The guides to <a href="guide:qwertz-vs-qwerty">QWERTZ vs QWERTY</a> and <a href="guide:azerty-vs-qwerty">AZERTY vs QWERTY</a> cover the rest of those layouts.</li>
+</ul>
+<p>European layouts also use the right Alt key as AltGr, which reaches a third character on many keys: on the British layout, <kbd>AltGr</kbd> with <kbd>4</kbd> types €. ISO boards usually print AltGr on that key. That matters for code. The German layout puts <kbd>{</kbd> <kbd>[</kbd> <kbd>]</kbd> <kbd>}</kbd> on AltGr with <kbd>7</kbd> to <kbd>0</kbd>, while the US layout gives brackets their own keys right of <kbd>P</kbd>. Since a US layout loses nothing on an ISO board, a German coder can keep the ISO keyboard and switch layouts in software.</p>
+<p>Dvorak, Colemak and Workman rearrange letters in the part of the board both shapes share, so they behave the same on ISO and ANSI. Colemak-DH is the exception: it uses the angle mod, which moves the keys along the bottom left one place to the left. On an ISO board the extra key absorbs the move; DreymaR's Big Bag of Keyboard Tricks calls it "practically a spare key". An ANSI board has no spare, so the common ANSI version moves <kbd>Z</kbd> to the middle of the bottom row. petitdoigt applies the layout itself from physical key positions, so you can <a href="app:words?layout=colemak-dh">try Colemak-DH in your browser</a> without installing anything. The <a href="guide:colemak">Colemak guide</a> explains the rest of the layout.</p>
+
+<h2>What is a JIS keyboard?</h2>
+<p>JIS is the keyboard shape used in Japan: a tall ISO-style Enter plus extra keys for typing Japanese. A full-size JIS board has 109 keys, four more than ISO and five more than ANSI.</p>
+<p>The extra keys take their room from shorter neighbors. The space bar shrinks to fit 無変換 (muhenkan) on its left and 変換 (henkan) and a kana key on its right: henkan converts typed kana to kanji, muhenkan leaves them unconverted, and the kana key switches between hiragana and katakana. Backspace shrinks to one unit to make room for a ¥ key, and the right Shift shrinks to fit a ろ (ro) key beside the slash. The left Shift stays long, so the bottom letter row holds 11 keys, as on ISO, with the extra key at the opposite end. The top-left key, which types <kbd>`</kbd> on a US board, becomes 半角/全角 (hankaku/zenkaku), which toggles between half-width and full-width characters.</p>
+<p>The letters themselves sit exactly where they do on ANSI and ISO, so a touch typist's home row works unchanged on a Japanese board. The reaches that change sit at the edges, around Backspace and the right Shift, and the thumbs work a narrower space bar.</p>
+
+<h2>Should you buy an ISO or ANSI keyboard?</h2>
+<p>Buy the shape your layout expects. If you type German, French, Spanish, British English or another European layout that puts characters on the extra key, get ISO. If you type US English or a US-based layout such as Dvorak, Colemak or Workman, ANSI gives you every key you need. Colemak-DH typists may still prefer ISO, where the angle mod gets its spare key.</p>
+<p>If you already touch-type well on one shape, staying on it saves you from retraining Enter and the left Shift. Keycaps tip the balance for people who customize their keyboards: Corsair notes that keycap sets always come in ANSI but not always in ISO, and Keebsforall rates JIS keycap options as very limited.</p>

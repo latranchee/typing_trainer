@@ -1,0 +1,188 @@
+<!--meta
+{
+  "id": "keyboard-layouts",
+  "lang": "pt",
+  "slug": "layouts-de-teclado",
+  "title": "Layouts de teclado: ABNT2, QWERTY, Dvorak e qual escolher",
+  "description": "Layouts de teclado comparados: ABNT2, Portugal, americano internacional, Dvorak, Colemak e Workman. O que muda em cada um e como testar sem instalar.",
+  "h1": "Layouts de teclado: os tipos mais comuns e qual escolher",
+  "keyword": "layouts de teclado",
+  "keywords_secondary": ["layout de teclado", "tipos de layout de teclado", "melhor layout de teclado", "teclado ABNT2", "teclado americano internacional"],
+  "summary": "Layouts de teclado definem o caractere que cada tecla física digita e se dividem em duas famílias. Os nacionais, como o ABNT2 brasileiro, o layout de Portugal e o QWERTY americano, adaptam o teclado às letras e aos acentos de um idioma. Os alternativos, como Dvorak, Colemak e Workman, reorganizam as letras do inglês para reduzir o movimento dos dedos. Para escrever em português, fique no layout nacional: nenhum alternativo tem vantagem de velocidade comprovada.",
+  "faq": [
+    {
+      "q": "Como saber se o meu teclado é ABNT2 ou americano?",
+      "a": "Olhe as teclas. O ABNT2 tem uma tecla de Ç à direita do L e uma tecla extra para / e ? no canto inferior direito, ao lado do Shift. O teclado americano não tem nenhuma das duas e costuma ter um Enter largo, de uma fileira só. No sistema, o layout ativo aparece no ícone de idioma da barra de tarefas do Windows ou no menu Layouts de Teclado do Mac."
+    },
+    {
+      "q": "Como fazer o ç num teclado americano?",
+      "a": "Ative o layout americano internacional nas configurações do sistema. No Windows, aperte o apóstrofo e depois C para obter ç. O mesmo apóstrofo seguido de uma vogal dá o acento agudo, e o til seguido de A ou O dá ã ou õ. Para digitar um apóstrofo sozinho, aperte a tecla e depois a barra de espaço."
+    },
+    {
+      "q": "Por que o meu teclado digita símbolos trocados?",
+      "a": "O layout configurado no sistema não combina com o teclado físico. Um teclado ABNT2 no layout americano digita ponto e vírgula na tecla do Ç. Um teclado americano no layout ABNT2 digita Ç na tecla do ponto e vírgula, e a barra passa para AltGr+Q. Escolha nas configurações o layout que corresponde às letras impressas nas teclas."
+    },
+    {
+      "q": "Qual é o layout de teclado mais comum do mundo?",
+      "a": "O QWERTY, contando suas variantes nacionais, e o ABNT2 é uma delas. Ele vem da máquina de escrever Sholes and Glidden, vendida pela Remington a partir de 1874, e virou padrão de fato nos computadores. O AZERTY da França e da Bélgica e o QWERTZ dos países de língua alemã são parentes próximos que trocam algumas letras e acrescentam os caracteres do idioma."
+    },
+    {
+      "q": "Por que as letras do teclado não estão em ordem alfabética?",
+      "a": "Os teclados de computador herdaram o QWERTY da máquina de escrever Sholes and Glidden, que a Remington vendia desde 1874. Fabricantes e cursos de datilografia mantiveram o layout que todo mundo já conhecia, e as alternativas nunca pegaram. A história popular de que a ordem foi escolhida para evitar que as hastes da máquina enroscassem é contestada."
+    },
+    {
+      "q": "Posso usar um layout diferente das letras impressas nas teclas?",
+      "a": "Pode. O layout mora no software, então qualquer teclado digita Dvorak, Colemak ou AZERTY. As letras impressas ficam erradas, o que importa pouco quando você digita sem olhar. Até lá, use um teclado na tela que mostre o layout de verdade, ou compre teclas ou adesivos para ele."
+    }
+  ],
+  "sources": [
+    {"title": "ABNT2 (Wikipédia)", "url": "https://pt.wikipedia.org/wiki/ABNT2"},
+    {"title": "List of QWERTY keyboard language variants: Portuguese (Wikipedia)", "url": "https://en.wikipedia.org/wiki/List_of_QWERTY_keyboard_language_variants"},
+    {"title": "QWERTY, incluindo o layout US-International (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTY"},
+    {"title": "Keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "AZERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/AZERTY"},
+    {"title": "QWERTZ (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTZ"},
+    {"title": "German keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/German_keyboard_layout"},
+    {"title": "Patente americana 2.040.248: Typewriter keyboard (Dvorak e Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Teclado Dvorak, com o layout BR-Nativo (Wikipédia)", "url": "https://pt.wikipedia.org/wiki/Teclado_Dvorak"},
+    {"title": "Liebowitz e Margolis, The Fable of the Keys, Journal of Law and Economics 33(1), 1990", "url": "https://chicagounbound.uchicago.edu/jle/vol33/iss1/2/"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak: site oficial", "url": "https://colemak.com/"},
+    {"title": "Colemak: letras acentuadas por idioma, incluindo o português", "url": "https://colemak.com/Multilingual"},
+    {"title": "Colemak Mod-DH: site oficial", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "The Workman keyboard layout philosophy (OJ Bucao)", "url": "https://workmanlayout.org/"},
+    {"title": "Frequência de letras: tabela do português, dados da UFRJ (Wikipédia)", "url": "https://pt.wikipedia.org/wiki/Frequ%C3%AAncia_de_letras"},
+    {"title": "Microsoft: Windows keyboard layouts", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Microsoft Suporte: gerenciar as configurações de idioma e layout de teclado no Windows", "url": "https://support.microsoft.com/pt-br/help/4496404"},
+    {"title": "Suporte da Apple: escreva em outro idioma no Mac", "url": "https://support.apple.com/pt-br/guide/mac-help/mchlp1406/mac"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Teste um novo layout no navegador", "drill": "words"}
+}
+-->
+<p>Um layout de teclado é o mapa que liga cada tecla ao caractere que ela digita. A mesma tecla física, à direita do <kbd>L</kbd>, digita Ç no layout ABNT2 e ponto e vírgula no layout americano. Quem guarda o layout é o sistema operacional: você troca de layout em um minuto, e as letras impressas nas teclas continuam as mesmas.</p>
+<p>As lojas também chamam de layout o formato físico do teclado (ANSI, ISO, JIS) e tamanhos como TKL ou 60%. No Brasil, ABNT2 nomeia as duas coisas: o mapa de caracteres e um formato com teclas a mais. Os formatos ganham uma seção perto do fim. Quase todo este guia trata do mapa de caracteres: o que cada layout põe onde e qual combina com você.</p>
+
+<h2>Quais são os tipos de layout de teclado?</h2>
+<p>Os layouts de teclado se dividem em duas famílias. Os nacionais adaptam o QWERTY a um idioma: acrescentam as letras dele (ç, ñ, ü), mudam a pontuação de lugar para abrir espaço e às vezes trocam algumas letras. Os alternativos reorganizam as próprias letras do inglês para que as mais frequentes caiam sob os dedos mais fortes. A tabela reúne os que você tem mais chance de encontrar.</p>
+<table>
+<caption>Layouts de teclado comuns e o que mudam em relação ao QWERTY americano</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Família</th><th scope="col">Onde se usa</th><th scope="col">O que muda em relação ao QWERTY americano</th></tr></thead>
+<tbody>
+<tr><td>ABNT2</td><td>Nacional</td><td>Brasil</td><td>Tecla própria para Ç à direita do L, acentos como teclas mortas, uma tecla a mais para / e ?</td></tr>
+<tr><td>Português (Portugal)</td><td>Nacional</td><td>Portugal</td><td>Tecla própria para Ç, uma tecla para º e ª, outra para « e », € em AltGr+E</td></tr>
+<tr><td>QWERTY americano</td><td>Nacional</td><td>Estados Unidos</td><td>O layout de referência, sem Ç e sem acentos</td></tr>
+<tr><td>Americano internacional</td><td>Nacional</td><td>Quem escreve línguas europeias num teclado americano</td><td>Mesmas teclas; ', `, ", ^ e ~ viram teclas mortas</td></tr>
+<tr><td>AZERTY francês</td><td>Nacional</td><td>França, Bélgica</td><td>A e Q trocam de lugar, Z e W também, o M vai para a direita do L, os números pedem Shift</td></tr>
+<tr><td>QWERTZ alemão</td><td>Nacional</td><td>Alemanha, Áustria, boa parte da Europa Central</td><td>Y e Z trocam de lugar; ä, ö, ü e ß ganham teclas</td></tr>
+<tr><td>Espanhol e latino-americano</td><td>Nacional</td><td>Espanha; México, América Central e do Sul</td><td>ñ à direita do L; @ em AltGr+2 na Espanha e em AltGr+Q na América Latina</td></tr>
+<tr><td>Dvorak</td><td>Alternativo</td><td>Quem escolhe</td><td>Todas as letras menos A e M mudam; vogais na fileira central esquerda</td></tr>
+<tr><td>Colemak</td><td>Alternativo</td><td>Quem escolhe</td><td>17 teclas mudam; Z, X, C e V ficam</td></tr>
+<tr><td>Colemak-DH</td><td>Alternativo</td><td>Quem escolhe</td><td>Colemak com D e H fora das colunas centrais</td></tr>
+<tr><td>Workman</td><td>Alternativo</td><td>Quem escolhe</td><td>21 caracteres diferentes; menos movimento lateral dos indicadores</td></tr>
+<tr><td>BR-Nativo</td><td>Alternativo</td><td>Quem quer um Dvorak para o português do Brasil</td><td>Baseado no Dvorak, com tecla de Ç; não é padronizado</td></tr>
+</tbody>
+</table>
+
+<h2>Qual a diferença entre o teclado ABNT2 e o americano?</h2>
+<p>O ABNT2 tem tecla própria para o Ç e teclas mortas para os acentos, duas coisas que o americano não tem. O layout brasileiro segue a variante 2 da norma ABNT NBR 10346, publicada em 1991; a norma descrevia duas variantes e indicava a segunda como preferencial. O Ç fica à direita do <kbd>L</kbd>. Agudo, grave, circunflexo, til e trema são teclas mortas: você aperta o acento e depois a letra, e para ter o acento sozinho aperta o acento e depois <kbd>Espaço</kbd>.</p>
+<p>O formato físico também muda. O ABNT2 encaixa 12 teclas entre os dois Shifts, contra 10 no teclado americano, e uma das teclas extras, no canto inferior direito, digita / e ?. Num teclado sem ela, <kbd>AltGr</kbd>+<kbd>Q</kbd> e <kbd>AltGr</kbd>+<kbd>W</kbd> repetem a barra e a interrogação. O <kbd>AltGr</kbd>, à direita da barra de espaço, dá acesso a símbolos como ¹, ², ³, £, ¢, §, ª e º. O € ficou de fora da norma de 1991, porque a moeda só surgiu em 1999.</p>
+<p>Se o seu notebook veio com teclado americano, ative o layout americano internacional para escrever em português. Ele transforma o apóstrofo, as aspas, o acento grave, o circunflexo e o til em teclas mortas. Em Portugal, o layout nacional também tem Ç e acentos, com teclas próprias para º e ª e para « e ».</p>
+<table>
+<caption>Três layouts para escrever em português</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Ç</th><th scope="col">Acentos</th><th scope="col">Detalhes</th></tr></thead>
+<tbody>
+<tr><td>ABNT2 (Brasil)</td><td>Tecla própria, à direita do L</td><td>Teclas mortas para agudo, grave, circunflexo, til e trema</td><td>Tecla extra para / e ?; € fora da norma original</td></tr>
+<tr><td>Português (Portugal)</td><td>Tecla própria</td><td>Teclas mortas</td><td>Teclas para º e ª e para « e »; € em AltGr+E</td></tr>
+<tr><td>Americano internacional</td><td><kbd>'</kbd> e depois <kbd>C</kbd>, no Windows</td><td>', `, ", ^ e ~ como teclas mortas</td><td>Apóstrofo e aspas sozinhos pedem a tecla e depois Espaço</td></tr>
+</tbody>
+</table>
+
+<h2>Quais são os layouts de teclado alternativos?</h2>
+<p>Os layouts alternativos mudam as letras do inglês de lugar para que as frequentes fiquem na fileira central, a fileira onde os dedos descansam, e as mãos se estiquem menos.</p>
+<h3>Dvorak</h3>
+<p>August Dvorak e William Dealey pediram a patente em 1932 e receberam a patente americana 2.040.248 em maio de 1936. A fileira central da mão esquerda tem as vogais A O E U I, e a da direita as consoantes D H T N S. A ANSI fez do Dvorak um padrão alternativo no início dos anos 1980, e Windows, macOS e Linux o incluem. Dos atalhos Z, X, C e V, só o X continua na mão esquerda. O <a href="guide:dvorak">guia do teclado Dvorak</a> conta a história e o debate sobre a velocidade.</p>
+<h3>Colemak</h3>
+<p>Shai Coleman lançou o Colemak em 1º de janeiro de 2006. Ele muda 17 teclas e deixa quase toda a pontuação onde o QWERTY a põe. Z, X, C e V ficam no lugar, então desfazer, recortar, copiar e colar mantêm suas teclas, e só duas teclas trocam de mão. Na versão padrão, o Caps Lock vira um segundo Backspace. macOS e Linux trazem o Colemak, e o Windows passou a incluí-lo no Windows 11 versão 24H2. O <a href="guide:colemak">guia do layout Colemak</a> explica como aprendê-lo.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>O Colemak, cada tecla na cor do seu dedo. As letras comuns R, S, T, N e E ficam na fileira central, e Z, X, C e V continuam nas teclas do QWERTY.</figcaption></figure>
+<h3>Colemak-DH</h3>
+<p>O Colemak põe D e H nas duas colunas centrais, que os indicadores alcançam deslizando para o lado. O Colemak-DH, lançado por SteveP em outubro de 2014, leva as duas letras para a fileira de baixo, onde o indicador as alcança dobrando o dedo. O G volta à tecla do QWERTY, o B sobe para a fileira de cima e o H troca de lugar com o M. Nenhuma tecla muda de dedo. O projeto oferece versões para teclados ANSI, ISO e matriciais, cujas fileiras de baixo diferem à esquerda.</p>
+<h3>Workman</h3>
+<p>OJ Bucao publicou o Workman em 2010. Ele considerava os movimentos laterais mais pesados para o punho que os verticais, então o Workman tira a digitação das colunas centrais: pelas contas dele, cerca de 6% dos toques caem ali, contra 12% no Colemak, 14% no Dvorak e 22% no QWERTY. Ele difere do QWERTY em 21 caracteres. Z e X mantêm suas teclas, enquanto C e V andam uma tecla para a direita. O Linux inclui o Workman; Windows e macOS pedem os arquivos de instalação indicados no site do layout.</p>
+<table>
+<caption>Layouts de teclado alternativos comparados</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Criado em</th><th scope="col">O que sai do lugar do QWERTY</th><th scope="col">Z X C V</th><th scope="col">Vem com</th></tr></thead>
+<tbody>
+<tr><td>Dvorak</td><td>1932, patenteado em 1936</td><td>Todas as letras menos A e M, além da pontuação</td><td>Espalhados, três na mão direita</td><td>Windows, macOS, Linux</td></tr>
+<tr><td>Colemak</td><td>2006</td><td>17 teclas</td><td>No lugar</td><td>macOS, Linux, Windows 11 24H2 em diante</td></tr>
+<tr><td>Colemak-DH</td><td>2014</td><td>As mudanças do Colemak, com D, G, B, H e M movidos de novo</td><td>Mão esquerda, alguns deslocados na fileira de baixo</td><td>Instaladores do projeto</td></tr>
+<tr><td>Workman</td><td>2010</td><td>21 caracteres</td><td>Z e X no lugar, C e V deslocados</td><td>Linux; arquivos de instalação para Windows e macOS</td></tr>
+</tbody>
+</table>
+<h3>E para quem escreve em português?</h3>
+<p>Esses layouts foram calculados para o inglês, e mesmo assim a fileira central deles rende em português, porque as letras mais comuns dos dois idiomas se parecem. Somamos as frequências da tabela de letras do português publicada na Wikipédia, com dados da UFRJ, para as letras da fileira central de cada layout. A tabela traz só as 26 letras, sem separar acentos nem o ç.</p>
+<table>
+<caption>Parte das letras de um texto em português que cai na fileira central (nossa conta)</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Em português</th><th scope="col">Em inglês (contagens citadas)</th></tr></thead>
+<tbody>
+<tr><td>QWERTY</td><td>34%</td><td>32%</td></tr>
+<tr><td>Dvorak</td><td>72%</td><td>70%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>74%</td></tr>
+</tbody>
+</table>
+<p>Na mesma conta, o Colemak-DH fica em 74% e o Workman em 64%. Os acentos são o ponto fraco. O Dvorak americano não tem tecla de Ç, e o BR-Nativo, um layout não padronizado baseado no Dvorak e feito para o português do Brasil, acrescenta uma. A versão oficial do Colemak digita os acentos com <kbd>AltGr</kbd>: ç com <kbd>AltGr</kbd>+<kbd>C</kbd>, ã com <kbd>AltGr</kbd>+<kbd>F</kbd>, á com <kbd>AltGr</kbd>+<kbd>A</kbd>. O próprio colemak.com diz que essa camada multilíngue serve para escrever em outros idiomas de vez em quando.</p>
+
+<h2>Qual é o melhor layout de teclado?</h2>
+<p>O melhor layout de teclado para quem escreve em português é o nacional: o ABNT2 no Brasil, o layout português em Portugal. Ele põe o ç e os acentos a uma ou duas teclas de distância, e todos os computadores ao seu redor já o usam. Os alternativos encurtam o caminho dos dedos, e os estudos que os compararam encontraram pouca velocidade a ganhar. Em 1956, Earle Strong conduziu para a General Services Administration americana um estudo com dez datilógrafos por grupo e concluiu que o Dvorak não era mais eficiente que o QWERTY; críticos dizem que o estudo favoreceu o grupo QWERTY. Em 1990, os economistas Stan Liebowitz e Stephen Margolis revisaram os experimentos no Journal of Law and Economics e concluíram que os mais bem documentados mostram pouca ou nenhuma vantagem para o Dvorak.</p>
+<table>
+<caption>Qual layout de teclado escolher</caption>
+<thead><tr><th scope="col">Sua situação</th><th scope="col">Boa escolha</th><th scope="col">Por quê</th></tr></thead>
+<tbody>
+<tr><td>Você escreve sobretudo em português num teclado brasileiro</td><td>ABNT2</td><td>Ç numa tecla, acentos em duas</td></tr>
+<tr><td>Você mora em Portugal</td><td>Layout português</td><td>É o que todo teclado à sua volta usa</td></tr>
+<tr><td>Seu notebook veio com teclado americano</td><td>Americano internacional</td><td>Ç e acentos sem trocar de teclado</td></tr>
+<tr><td>Você quer menos movimento dos dedos e quer manter os atalhos</td><td>Colemak ou Colemak-DH</td><td>Z, X, C e V ficam na mão esquerda</td></tr>
+<tr><td>O alcance lateral dos indicadores cansa suas mãos</td><td>Colemak-DH ou Workman</td><td>Os dois tiram as letras frequentes das colunas centrais</td></tr>
+<tr><td>Você usa computadores onde não pode instalar nada</td><td>Dvorak, ou Colemak nos sistemas atuais</td><td>Os dois já vêm com o sistema</td></tr>
+<tr><td>Você vai aprender a digitar do zero</td><td>Qualquer um deles</td><td>Sem hábitos do QWERTY para desaprender, um alternativo custa menos agora</td></tr>
+</tbody>
+</table>
+<p>Em qualquer layout, a velocidade cresce quando você sabe qual dedo cuida de cada tecla e a encontra sem olhar. Se você ainda olha para as teclas, comece pelo <a href="guide:touch-typing">guia de digitação às cegas</a> e pelo <a href="guide:finger-placement">mapa dos dedos no teclado</a>.</p>
+
+<h2>Como mudar o layout do teclado no Windows ou no Mac?</h2>
+<p>Você muda o layout nas configurações do sistema e pode deixar vários instalados para alternar entre eles. As teclas continuam com as letras impressas, então depois de mudar para o Colemak o teclado segue mostrando QWERTY. Mudar o layout do teclado deixa o idioma de exibição do Windows como estava.</p>
+<h3>Windows 11</h3>
+<ol>
+<li>Abra Iniciar e depois Configurações › Hora &amp; idioma › Idioma &amp; região.</li>
+<li>Clique nas reticências ao lado do idioma de exibição e escolha Opções de idioma.</li>
+<li>Ao lado de Teclados instalados, clique em Adicionar um teclado e escolha o layout. Se ele não aparecer, adicione antes o idioma a que pertence: o Dvorak e o americano internacional ficam no inglês (Estados Unidos).</li>
+<li>Alterne entre layouts segurando a tecla do Windows e apertando <kbd>Espaço</kbd>, ou pelo ícone de idioma na barra de tarefas.</li>
+</ol>
+<h3>macOS</h3>
+<ol>
+<li>Escolha o menu Apple › Ajustes do Sistema e clique em Teclado na barra lateral.</li>
+<li>Em Entrada de Texto, clique em Editar e depois no botão Adicionar.</li>
+<li>Busque o idioma, selecione o layout que quer, como o Dvorak, e clique em Adicionar.</li>
+<li>Alterne pelo menu Layouts de Teclado na barra de menus, aperte <kbd>Control</kbd>+<kbd>Espaço</kbd> para voltar ao último layout usado, ou configure a tecla fn ou Globo Terrestre para Alterar Layout de Teclado.</li>
+</ol>
+
+<h2>ANSI, ISO, TKL e 60% também são layouts de teclado?</h2>
+<p>Esses nomes descrevem o hardware, e um teclado de qualquer formato ou tamanho roda qualquer um dos layouts acima. ANSI, ISO e JIS são layouts físicos: o formato e o número de teclas. O ANSI é o padrão americano, com um Enter largo de uma fileira. O ISO, usado no Reino Unido e em toda a Europa, tem um Enter alto e um Shift esquerdo mais curto, com uma tecla extra ao lado. O JIS, padrão japonês, encurta a barra de espaço e o Backspace para caber quatro teclas a mais. O ABNT2 combina traços do ISO e do JIS e é conhecido como teclado de 107 teclas. O guia <a href="guide:iso-vs-ansi">ISO ou ANSI</a> mostra como descobrir qual é o seu.</p>
+<figure data-figure="board-shapes"><figcaption>Teclados ANSI, ISO e JIS lado a lado: o Enter, o Shift esquerdo e as teclas extras mudam.</figcaption></figure>
+<p>Tamanhos como TKL e 60% dizem quantas teclas o teclado mantém. As fileiras de letras são as mesmas em todos os tamanhos, então um teclado 60% digita QWERTY ou Colemak como um de tamanho completo.</p>
+<table>
+<caption>Tamanhos de teclado e o que cada um deixa de fora</caption>
+<thead><tr><th scope="col">Tamanho</th><th scope="col">O que fica de fora</th></tr></thead>
+<tbody>
+<tr><td>Completo (100%)</td><td>Nada: tem teclado numérico, em geral 104 teclas nos EUA, 105 na maioria dos outros países e 107 no ABNT2</td></tr>
+<tr><td>TKL (tenkeyless, 80%)</td><td>O teclado numérico</td></tr>
+<tr><td>75%</td><td>O teclado numérico e as teclas de navegação e de sistema menos usadas</td></tr>
+<tr><td>60%</td><td>O teclado numérico, a fileira de funções e as teclas de navegação</td></tr>
+<tr><td>40%</td><td>Tudo isso e mais a fileira dos números</td></tr>
+</tbody>
+</table>
+
+<h2>Dá para testar um layout de teclado sem instalar?</h2>
+<p>Dá. O petitdoigt, um treinador de digitação gratuito que roda no navegador, aplica o layout ele mesmo a partir da posição física de cada tecla, então você digita em Colemak, Dvorak, Workman ou AZERTY com o sistema no layout de sempre. O teclado na tela mostra as letras do layout escolhido, cada uma na cor do dedo que deve apertá-la, o que ajuda enquanto as suas teclas ainda dizem QWERTY. São 11 layouts (francês canadense, QWERTY americano, AZERTY, QWERTZ alemão e suíço, espanhol, latino-americano, Dvorak, Colemak, Colemak-DH e Workman), e o desenho do teclado acompanha o seu formato: ANSI, ISO ou JIS.</p>
+<p>O petitdoigt não tem o ABNT2 nem o layout de Portugal. Os textos de treino existem em inglês, francês, alemão e espanhol, e a interface aparece em inglês. Para um teste justo, faça o exercício words em <a href="app:words?layout=colemak">Colemak</a> ou em <a href="app:words?layout=dvorak">Dvorak</a> por dez minutos por dia durante uma semana antes de decidir. As primeiras séries vão ser lentas. A página stats guarda números separados para cada layout, por dedo e por letra, e mostra quais teclas ainda custam tempo. O navegador não vê qual dedo apertou a tecla, então o treinador mostra o dedo certo e mede as teclas e o tempo de cada uma.</p>

@@ -1,3 +1,5 @@
+import { DE_PAIRS, DE_SENTENCES, DE_TRIPLES, DE_WORDS } from './corpus-de';
+import { ES_PAIRS, ES_SENTENCES, ES_TRIPLES, ES_WORDS } from './corpus-es';
 import type { Lang } from './store';
 
 const split = (text: string): string[] => text.trim().split(/\s+/);
@@ -259,7 +261,7 @@ Nous avons mangé du maïs sucré au bord de l'eau.
 Pourquoi le zèbre a-t-il des rayures?
 `);
 
-export const WORDS: Record<Lang, string[]> = { en: EN_WORDS, fr: FR_WORDS };
-export const SENTENCES: Record<Lang, string[]> = { en: EN_SENTENCES, fr: FR_SENTENCES };
-export const PAIRS: Record<Lang, string[]> = { en: EN_PAIRS, fr: FR_PAIRS };
-export const TRIPLES: Record<Lang, string[]> = { en: EN_TRIPLES, fr: FR_TRIPLES };
+export const WORDS: Record<Lang, string[]> = { en: EN_WORDS, fr: FR_WORDS, de: DE_WORDS, es: ES_WORDS };
+export const SENTENCES: Record<Lang, string[]> = { en: EN_SENTENCES, fr: FR_SENTENCES, de: DE_SENTENCES, es: ES_SENTENCES };
+export const PAIRS: Record<Lang, string[]> = { en: EN_PAIRS, fr: FR_PAIRS, de: DE_PAIRS, es: ES_PAIRS };
+export const TRIPLES: Record<Lang, string[]> = { en: EN_TRIPLES, fr: FR_TRIPLES, de: DE_TRIPLES, es: ES_TRIPLES };

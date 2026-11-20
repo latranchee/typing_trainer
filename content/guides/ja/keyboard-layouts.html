@@ -1,0 +1,177 @@
+<!--meta
+{
+  "id": "keyboard-layouts",
+  "lang": "ja",
+  "slug": "keyboard-layouts",
+  "title": "キーボード配列の種類と選び方：JIS・US・Dvorak",
+  "description": "キーボード配列の種類を解説。JIS配列とUS配列の違い、ローマ字入力とかな入力、Dvorak・Colemakなどの代替配列、選び方と切り替え方、インストールせずに試す方法まで。",
+  "h1": "キーボード配列の種類：JIS配列とUS配列の違いと選び方",
+  "keyword": "キーボード配列",
+  "keywords_secondary": ["キーボード配列 種類", "JIS配列 US配列 違い", "キーボード配列 おすすめ", "英字配列", "代替配列"],
+  "summary": "キーボード配列には、キーの形と数を決める物理配列と、キーに文字を割り当てる文字配列があります。日本のキーボードの多くはJIS配列（日本語配列）で、海外製はUS配列（英語配列）が一般的です。英字はどちらもQWERTYの並びで、記号の位置とEnterの形、日本語入力用のキーが異なります。DvorakやColemakは指の移動を減らす代替配列で、速さの利点は証明されていません。",
+  "faq": [
+    {
+      "q": "自分のキーボードがJIS配列かUS配列か見分けるには？",
+      "a": "Enterキーの形を見るのが早道です。2段にまたがる逆L字ならJIS配列、横長の1段ならUS配列です。JIS配列には変換、無変換、カタカナ/ひらがなのキーがあり、キーにかなが刻印されています。いま使っている配列の設定は、Windowsならタスクバーの入力表示、Macならメニューバーの入力メニューで確かめられます。"
+    },
+    {
+      "q": "キーの刻印と違う記号が入力されるのはなぜ？",
+      "a": "OSの配列の設定がキーボードと合っていないためです。JIS配列のキーボードをUS配列として設定していると、@のキーを押しても別の記号が出ます。Windowsは言語のオプションの「レイアウトを変更する」、Macはキーボード設定の「キーボードの種類を変更」で、手元のキーボードに合わせてください。"
+    },
+    {
+      "q": "プログラミングにはUS配列のほうがいいですか？",
+      "a": "記号を多く打つ人にはUS配列が合いやすいです。1つのキーに載る記号は2つまでで、角かっこが左右に並び、欧文記号の配置が合理的だと評価されています。日本語との切り替えには専用キーがないため、WindowsのAlt+`、MacのControl+Spaceを使うか、Caps Lockなどに割り当てます。"
+    },
+    {
+      "q": "キーボードの文字がABC順に並んでいないのはなぜ？",
+      "a": "パソコンのキーボードは、Remingtonが1874年から販売したSholes and Gliddenタイプライターの配列QWERTYを受け継いでいます。メーカーもタイピングの教室も、すでにみんなが知っている配列を使い続け、ほかの配列は広まりませんでした。タイプバーの絡まりを防ぐために決めたという有名な説には異論があります。"
+    },
+    {
+      "q": "キーの刻印と違う配列を使えますか？",
+      "a": "使えます。配列はソフトウェアの設定なので、どのキーボードでもDvorak、Colemak、AZERTYで打てます。刻印は合わなくなりますが、タッチタイピングができれば困ることはあまりありません。慣れるまでは配列を表示する画面上のキーボードを使うか、その配列のキーキャップやシールを用意します。"
+    }
+  ],
+  "sources": [
+    {"title": "キー配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/キー配列"},
+    {"title": "JISキーボード（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/JISキーボード"},
+    {"title": "ライフハッカー・ジャパン編集部「キーボード配列の種類と変更方法」（2024年5月7日更新）", "url": "https://www.lifehacker.jp/article/keyboard-layout/"},
+    {"title": "ギズモード・ジャパン「US配列キーボード」（2025年9月）", "url": "https://www.gizmodo.jp/2025/09/us_keyboard.html"},
+    {"title": "Mac Fan Portal「第93回 キーボード（2／2）」（2015年9月22日）", "url": "https://macfan.book.mynavi.jp/article/m41777"},
+    {"title": "Keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Japanese input method (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Japanese_input_method"},
+    {"title": "QWERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTY"},
+    {"title": "British and American keyboards (Wikipedia)", "url": "https://en.wikipedia.org/wiki/British_and_American_keyboards"},
+    {"title": "List of QWERTY keyboard language variants (Wikipedia)", "url": "https://en.wikipedia.org/wiki/List_of_QWERTY_keyboard_language_variants"},
+    {"title": "AZERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/AZERTY"},
+    {"title": "QWERTZ (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTZ"},
+    {"title": "US patent 2,040,248: Typewriter keyboard (Dvorak and Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/Dvorak配列"},
+    {"title": "Dvorak keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Liebowitz and Margolis, The Fable of the Keys, Journal of Law and Economics 33(1), 1990", "url": "https://chicagounbound.uchicago.edu/jle/vol33/iss1/2/"},
+    {"title": "Colemak配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/Colemak配列"},
+    {"title": "Colemak keyboard layout (official site)", "url": "https://colemak.com/"},
+    {"title": "Colemak Mod-DH (official site)", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "The Workman keyboard layout philosophy (OJ Bucao)", "url": "https://workmanlayout.org/"},
+    {"title": "Windows で言語と入力レイアウトの設定を管理する（Microsoft サポート）", "url": "https://support.microsoft.com/ja-jp/help/4496404"},
+    {"title": "Write in another language on Mac (Apple Support)", "url": "https://support.apple.com/guide/mac-help/mchlp1406"},
+    {"title": "「日本語」設定を変更する（Mac 日本語入力ユーザガイド）", "url": "https://support.apple.com/ja-jp/guide/japanese-input-method/jpim662a12b9/mac"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "新しい配列をブラウザーで試す", "drill": "words"}
+}
+-->
+<p>キーボード配列とは、どのキーを押すとどの文字が入力されるかの決まりです。<kbd>Tab</kbd>の右のキーは、JIS配列でもUS配列でもQを打ち、フランスのAZERTY配列ではAを打ちます。中身のハードウェアは同じで、配列はOSが持つ設定なので、数分で変えられます。キーの刻印はそのまま残ります。</p>
+<p>日本で「キーボード配列」というと、JIS配列とUS配列のどちらを選ぶかという話になりがちです。英字の並びそのものを変えるDvorakやColemakも、同じ設定画面から選べます。</p>
+
+<h2>キーボード配列にはどんな種類がある？</h2>
+<p>キーボード配列は、キーの形と数を決める物理配列と、各キーに文字を割り当てる文字配列に分かれます。日本語ではそこに、かなを打つための配列と入力方式が加わります。</p>
+<table>
+<caption>キーボード配列の種類と、それぞれが決めること</caption>
+<thead><tr><th scope="col">種類</th><th scope="col">主な例</th><th scope="col">決めること</th></tr></thead>
+<tbody>
+<tr><td>物理配列</td><td>JIS配列、US配列（ANSI）、ISO配列</td><td>キーの数と形、Enterやスペースキーの大きさ</td></tr>
+<tr><td>英字の文字配列</td><td>QWERTY、AZERTY、QWERTZ、Dvorak、Colemak、Workman</td><td>英字キーにどの文字を置くか</td></tr>
+<tr><td>かなの配列</td><td>JISかな、親指シフト（NICOLA）</td><td>かな入力で各キーにどのかなを置くか</td></tr>
+<tr><td>入力方式</td><td>ローマ字入力、かな入力</td><td>かなを英字の組み合わせで打つか、かなのキーで直接打つか</td></tr>
+</tbody>
+</table>
+<p>物理配列はキーボードを買い替えない限り変わりません。英字の配列と入力方式は、OSとIMEの設定でいつでも選び直せます。</p>
+
+<h2>JIS配列とUS配列の違いは？</h2>
+<p>JIS配列とUS配列は、英字がどちらもQWERTYの並びで、記号の位置、Enterとスペースキーの形、日本語入力用のキーが異なります。日本で売られているキーボードの多くはJIS配列（日本語配列）で、海外製のキーボードは一般にUS配列（英語配列）です。</p>
+<table>
+<caption>JIS配列とUS配列の主な違い</caption>
+<thead><tr><th scope="col">項目</th><th scope="col">JIS配列（日本語配列）</th><th scope="col">US配列（英語配列）</th></tr></thead>
+<tbody>
+<tr><td>Windows用フルサイズのキーの数</td><td>109キーが主流</td><td>104キー</td></tr>
+<tr><td>Enterキー</td><td>2段にまたがる逆L字</td><td>横長の1段</td></tr>
+<tr><td>日本語入力用のキー</td><td>半角/全角、無変換、変換、カタカナ/ひらがな</td><td>なし</td></tr>
+<tr><td><kbd>Shift</kbd>+<kbd>2</kbd>で出る記号</td><td>"</td><td>@</td></tr>
+<tr><td>角かっこ [ ]</td><td>斜めに並ぶ</td><td>左右に並ぶ</td></tr>
+<tr><td>スペースキー、Backspace、右Shift</td><td>短い（追加の4キーに場所を譲る）</td><td>長い</td></tr>
+<tr><td>かなの刻印</td><td>あり</td><td>なし</td></tr>
+<tr><td>日本語と英字の切り替え</td><td>Windowsは半角/全角キー、Macは英数キーとかなキー</td><td>Windowsは<kbd>Alt</kbd>+<kbd>`</kbd>、Macは<kbd>Control</kbd>+<kbd>Space</kbd></td></tr>
+</tbody>
+</table>
+<p>選び方は、何を多く打つかで決まります。かな入力を使う人や、日本語と英字を専用のキーで切り替えたい人にはJIS配列が向きます。英文やプログラムを多く打つ人は、1つのキーの記号が2つまでで、かっこが左右に並ぶUS配列を選ぶことがよくあります。US配列の横長のEnterは、右手の小指をホームポジションに置いたまま押しやすいという評価もあります。MacBookのキーボードは買ったあとで変えられないので、Appleのオンラインストアで注文するときにUSキーボードにするかどうかを決めておきます。</p>
+
+<h2>ローマ字入力とかな入力の違いは？</h2>
+<p>ローマ字入力は「ka」と打って「か」を出すように英字の組み合わせでかなを打つ方式で、かな入力はかなの刻印があるキーを押して1打で1つのかなを打つ方式です。ローマ字入力はQWERTYなどの英字配列の上で動くので、かなの刻印がないUS配列のキーボードでもそのまま使えます。かな入力は打鍵の数が減るかわりに、数字の段まで使うかなの位置を覚える必要があります。</p>
+<p>JISかな配列は、覚えやすさを重視して50音順に並べたのが始まりです。4段を使うことがタッチタイピングで速く打つ妨げになるとされ、3段に収めて速さを狙った新JIS配列（JIS X 6004）が1986年に規格になりましたが、広まらずに1999年に廃止されました。かなの配列には、親指のキーと文字のキーを同時に押す親指シフト（NICOLA）もあります。</p>
+<p>ローマ字入力では、英字の配列がそのまま日本語の打ちやすさを左右します。Dvorak配列には日本語のローマ字入力向けに手を加えた派生配列もあり、詳しくは<a href="guide:dvorak">Dvorak配列のガイド</a>と<a href="guide:colemak">Colemak配列のガイド</a>で扱っています。</p>
+
+<h2>海外ではどんなキーボード配列が使われている？</h2>
+<p>各国の配列は、QWERTYをその国の言語に合わせたものです。ñ、ü、éのような文字を足し、記号を動かして場所を作り、ときにはいくつかの英字を入れ替えます。</p>
+<table>
+<caption>海外の主なキーボード配列と、US QWERTYからの違い</caption>
+<thead><tr><th scope="col">配列</th><th scope="col">使われている地域</th><th scope="col">US QWERTYからの違い</th></tr></thead>
+<tbody>
+<tr><td>UK QWERTY</td><td>イギリス</td><td>@と"が入れ替わり、3のキーに£、Enterの横に#と~の追加キー</td></tr>
+<tr><td>カナダ・フランス語</td><td>カナダのフランス語圏</td><td>英字は同じ。éに専用キーがあり、アクセントはデッドキー</td></tr>
+<tr><td>フランス語AZERTY</td><td>フランス、ベルギー、アフリカの一部</td><td>AとQ、ZとWが入れ替わり、MはLの右へ。数字はShiftが必要</td></tr>
+<tr><td>ドイツ語QWERTZ</td><td>ドイツ、オーストリア、中欧の多く</td><td>YとZが入れ替わり、ä、ö、ü、ßにキーがある。多くの記号はAltGr</td></tr>
+<tr><td>スイスQWERTZ</td><td>スイス</td><td>ßのないドイツ語の文字に、フランス語のアクセントをShiftで</td></tr>
+<tr><td>スペイン語（スペイン）</td><td>スペイン</td><td>Lの右にñ、Çのキー、@はAltGr+2</td></tr>
+<tr><td>ラテンアメリカ</td><td>メキシコ、中南米</td><td>Lの右にñ、Çのキーはなく、@はAltGr+Q</td></tr>
+</tbody>
+</table>
+<p>キーごとの細かな違いは<a href="guide:azerty-vs-qwerty">AZERTYとQWERTYの比較</a>と<a href="guide:qwertz-vs-qwerty">QWERTZとQWERTYの比較</a>にまとめています。</p>
+
+<h2>Dvorak・Colemak・Workmanなどの代替配列とは？</h2>
+<p>代替配列は、英語でよく使う文字を中段（ホームポジションの段）に集め、指の移動が減るように英字を並べ替えた配列です。よく知られた4つを比べます。</p>
+<table>
+<caption>主な代替配列の比較</caption>
+<thead><tr><th scope="col">配列</th><th scope="col">発表</th><th scope="col">QWERTYから動く文字</th><th scope="col">Z X C V</th><th scope="col">OSへの搭載</th></tr></thead>
+<tbody>
+<tr><td>Dvorak</td><td>1932年に出願、1936年に特許</td><td>AとM以外のすべての英字と一部の記号</td><td>ばらばらで、3つが右手</td><td>Windows、macOS、Linux</td></tr>
+<tr><td>Colemak</td><td>2006年</td><td>17キー</td><td>そのまま</td><td>macOS、Linux、Windows 11 24H2以降</td></tr>
+<tr><td>Colemak-DH</td><td>2014年</td><td>Colemakの変更に加え、D、G、B、H、Mを再配置</td><td>左手のまま、一部は下段で横にずれる</td><td>Linux。WindowsとmacOSは配布元のファイル</td></tr>
+<tr><td>Workman</td><td>2010年</td><td>21文字</td><td>ZとXはそのまま、CとVは1つずれる</td><td>Linux。WindowsとmacOSは配布元のファイル</td></tr>
+</tbody>
+</table>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak配列。キーの色は押す指を表します。よく使うR、S、T、N、Eが中段にあり、Z、X、C、VはQWERTYと同じキーに残ります。</figcaption></figure>
+<p>よく引用される数字では、中段で打つ割合はQWERTYが32%、Dvorakが約70%、Colemakが約74%です。Workmanの作者OJ Bucaoは横方向の指の動きを手首の負担と考え、中央の2列で打つ打鍵を自身の計算で約6%に抑えました。同じ計算でColemakは12%、Dvorakは14%、QWERTYは22%です。詳しい比較は<a href="guide:colemak-vs-dvorak">Colemak・Dvorak・Workmanの比較</a>にあります。</p>
+<p>どれも英語の文字の頻度をもとに作られています。たとえばDvorakでローマ字入力をすると、母音に加えて日本語でよく使うKとYも左手側にあるので、左手の打鍵が多くなります。</p>
+
+<h2>どのキーボード配列を選べばいい？</h2>
+<p>多くの人にとっては、手元のキーボードに合った物理配列のまま、英字はQWERTYでローマ字入力をするのがいちばん手間のかからない選択です。どのパソコンも最初からこの設定なので、学校や職場で借りた機械でもそのまま打てます。代替配列は指の移動を減らしますが、速さを比べた研究から大きな差は見つかっていません。1956年にEarle Strongが米国一般調達局（GSA）のために各グループ10人で行った研究は、DvorakがQWERTYより効率的ではないと結論づけました。この研究にはQWERTY側に偏っていたという批判もあります。1990年には経済学者のStan LiebowitzとStephen Margolisが過去の実験を見直し、記録のしっかりした実験ではDvorakの利点はほとんどないか、まったくないとまとめています。</p>
+<table>
+<caption>状況別のキーボード配列の選び方</caption>
+<thead><tr><th scope="col">あなたの状況</th><th scope="col">合う配列</th><th scope="col">理由</th></tr></thead>
+<tbody>
+<tr><td>かな入力で日本語を打つ</td><td>JIS配列</td><td>かなの刻印と、日本語の切り替えキーがある</td></tr>
+<tr><td>ローマ字入力で、いまの配列に不満はない</td><td>手元のキーボードのままQWERTY</td><td>どのパソコンでも同じ配列で打てる</td></tr>
+<tr><td>英文やプログラムを多く打つ</td><td>US配列のQWERTY</td><td>1キーの記号は2つまでで、かっこが左右に並ぶ</td></tr>
+<tr><td>指の移動を減らし、ショートカットは残したい</td><td>ColemakかColemak-DH</td><td>Z、X、C、Vが左手に残る</td></tr>
+<tr><td>人差し指を横に伸ばす動きがつらい</td><td>Colemak-DHかWorkman</td><td>よく使う文字を中央の列から外している</td></tr>
+<tr><td>これからタッチタイピングを覚える</td><td>どれでも</td><td>QWERTYの癖がないので、代替配列に移る負担がいちばん小さい</td></tr>
+</tbody>
+</table>
+<p>どの配列でも、速さはどの指がどのキーを受け持つかを覚え、キーを見ずに打てるようになるところから伸びます。まだキーを見て打っているなら、<a href="guide:touch-typing">タッチタイピングのガイド</a>と<a href="guide:finger-placement">キーボードの指の配置図</a>から始めてください。</p>
+
+<h2>キーボード配列を変更するには？（Windows・Mac）</h2>
+<p>配列はOSの設定で変えられ、いくつも入れておいて切り替えることもできます。キーの刻印は変わらないので、Colemakに切り替えてもキーボードにはQWERTYの文字が残ります。</p>
+<h3>Windows 11</h3>
+<ol>
+<li>「スタート」→「設定」→「時刻と言語」→「言語と地域」を開きます。</li>
+<li>キーボードの種類を合わせるには、日本語の横の「…」から言語のオプションを開き、キーボード レイアウトの「レイアウトを変更する」で手元のキーボードに合うもの（JIS配列なら日本語キーボード（106/109キー））を選んで再起動します。</li>
+<li>DvorakやColemakを足すには、英語の言語オプションで「インストールされたキーボード」の横の「キーボードの追加」を選びます。英語がなければ先に言語を追加します。</li>
+<li><kbd>Windows</kbd>キーを押しながら<kbd>Space</kbd>を押すと、入れてある配列が順に切り替わります。</li>
+</ol>
+<p>Windowsでは配列が言語ごとに登録されるので、DvorakやColemakを選んでいる間は日本語のIMEが働きません。日本語もDvorakで打つには、レジストリでキーボードの設定を書き換える方法や、DvorakJのような専用ソフトを使う方法が知られています。</p>
+<h3>macOS</h3>
+<ol>
+<li>キーボードの種類を合わせるには、システム設定の「キーボード」で「キーボードの種類を変更」を選び、キーボード設定アシスタントでJIS（日本語）など手元の種類を選びます。</li>
+<li>DvorakやColemakを足すには、「テキスト入力」の「編集」をクリックし、追加ボタンから英語の入力ソースを選びます。</li>
+<li>日本語入力でもその配列を使うには、日本語の入力ソースの設定にある「英字のレイアウト」で、ローマ字入力に使う配列を指定します。</li>
+<li>入力ソースはメニューバーの入力メニューから切り替えます。</li>
+</ol>
+
+<h2>ANSI・ISO・JISやテンキーレス、60%も配列？</h2>
+<p>これらはハードウェアの形と大きさを表す言葉で、どの形やサイズのキーボードでもここまでの文字配列を使えます。ANSIはUS配列の物理規格で、Enterが横長の1段です。イギリスやヨーロッパで使われるISOは、Enterが縦長で、左Shiftが短くなってその右に1つキーが増えます。JISは右Shift、スペースキー、Backspaceを短くして4つのキーを足しています。見分け方は<a href="guide:iso-vs-ansi">ISOとANSIの違い</a>で説明しています。</p>
+<figure data-figure="board-shapes"><figcaption>ANSI、ISO、JISの比較。Enterキー、左右のShift、追加のキーが異なります。</figcaption></figure>
+<p>テンキーレスや60%は、キーをいくつ残すかを表します。テンキーレス（TKL）はテンキーを省き、60%はさらにファンクションキーの段と矢印などの移動キーも省きます。英字の段はどのサイズでも同じなので、60%のキーボードでもJIS配列やColemakをフルサイズと同じように打てます。</p>
+
+<h2>インストールせずにキーボード配列を試せる？</h2>
+<p>試せます。petitdoigtはブラウザーで動く無料のタイピング練習ツールで、キーの物理的な位置をもとにツールの中で配列を切り替えるので、OSやIMEの設定はそのままでColemak、Dvorak、Workman、AZERTYを打てます。画面のキーボードには選んだ配列の文字が、押す指の色付きで表示されるので、刻印がQWERTYのままでも迷いません。配列は11種類（カナダ・フランス語、US QWERTY、フランス語AZERTY、ドイツ語とスイスのQWERTZ、スペイン語、ラテンアメリカ、Dvorak、Colemak、Colemak-DH、Workman）で、ANSI、ISO、JISの形を手元のキーボードに合わせて描きます。画面の表示は英語で、練習文は英語、フランス語、ドイツ語、スペイン語です。日本語の文章とJISかな配列はありません。</p>
+<p>公平に比べるなら、<a href="app:words?layout=colemak">Colemak</a>か<a href="app:words?layout=dvorak">Dvorak</a>でよく使う英単語を1日10分、1週間打ってから決めてください。最初の数セットは遅くて当然です。stats（統計）画面は配列ごとに指別、文字別の数字を分けて記録するので、まだ時間のかかるキーがわかります。ブラウザーはどの指でキーを押したかを見られないため、ツールは正しい指を示し、押したキーとそのタイミングを測ります。</p>

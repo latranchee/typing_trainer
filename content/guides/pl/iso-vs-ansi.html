@@ -1,0 +1,132 @@
+<!--meta
+{
+  "id": "iso-vs-ansi",
+  "lang": "pl",
+  "slug": "klawiatura-iso-czy-ansi",
+  "title": "Klawiatura ISO czy ANSI: różnice, JIS i którą wybrać",
+  "description": "Klawiatura ISO czy ANSI: Enter i Shift klawisz po klawiszu, dodatkowy klawisz ISO, klawiatury JIS, jak rozpoznać swoją i co wybrać do polskiego układu.",
+  "h1": "Klawiatura ISO czy ANSI: różnice, JIS i jak rozpoznać swoją",
+  "keyword": "klawiatura ISO czy ANSI",
+  "keywords_secondary": ["ANSI vs ISO", "klawiatura US czy ISO", "klawiatura ISO", "klawiatura ANSI", "klawiatura JIS", "układ ISO"],
+  "summary": "Klawiatura ISO czy ANSI to przede wszystkim różnica w Enterze i lewym Shifcie. ANSI ma szeroki, jednorzędowy Enter i długi lewy Shift; ISO ma wysoki Enter na dwa rzędy i krótki lewy Shift z dodatkowym klawiszem obok. Stany Zjednoczone używają ANSI, większość Europy ISO, a Japonia JIS, który dokłada klawisze przy krótszej spacji. Litery leżą na wszystkich trzech w tym samym miejscu, więc układ polski programisty działa na każdej.",
+  "faq": [
+    {"q": "Czy polska klawiatura to ISO czy ANSI?", "a": "Układ polski programisty to ustawienie systemu i działa na obu kształtach. Według Wikipedii prawie wszystkie komputery w Polsce mają standardowe klawiatury amerykańskie, a polskie litery wpisuje się z prawym Altem (AltGr). Kształt własnej klawiatury rozpoznasz po Enterze: jednorzędowy oznacza ANSI, wysoki na dwa rzędy oznacza ISO."},
+    {"q": "Czy MacBook ma klawiaturę ISO czy ANSI?", "a": "To zależy od wersji językowej. Na liście Apple klawiatury angielska (USA), chińska, koreańska i tajska to ANSI, a japońska to JIS. Pozostałe wersje, w tym brytyjska, angielska (międzynarodowa), niemiecka, francuska, hiszpańska, czeska i kanadyjska francuska, to ISO. Sprawdź klawisz Return: jednorzędowy oznacza ANSI."},
+    {"q": "ISO czy ANSI do gier?", "a": "Kształt zmienia tylko wielkość i położenie klawiszy. W grach, które przypisują sprint, kucanie czy inną akcję do lewego Shifta, ISO daje lewemu małemu palcowi klawisz 1,25u z dodatkowym klawiszem tuż obok, a ANSI klawisz 2,25u. Gracz przyzwyczajony do jednego kształtu przez jakiś czas po zmianie będzie pudłował w lewy Shift."},
+    {"q": "Czy keycapy ANSI pasują do klawiatury ISO?", "a": "Większość tak: litery, cyfry i klawisze wokół nich mają na obu kształtach ten sam rozmiar. Kształty różnią się przy Enterze, lewym Shifcie, klawiszu obok Entera i dodatkowym klawiszu ISO, więc zestaw ANSI zostawi te miejsca puste albo niedopasowane. Szukaj zestawu z dodatkiem ISO (ISO kit)."},
+    {"q": "Co to jest klawiatura z dużym Enterem (big-ass Enter)?", "a": "Entuzjaści klawiatur tak nazywają płytę, której Enter wypełnia naraz miejsce Entera ANSI i Entera ISO. Klawisz, który ANSI kładzie nad Enterem, przenosi się do rzędu cyfr, obok krótszego Backspace. Norma ISO/IEC 9995 wymienia ten układ jako wariant ANSI używany w niektórych krajach azjatyckich."},
+    {"q": "Czy na klawiaturze ANSI da się pisać polskie znaki?", "a": "Tak. Układ polski programisty zamienia prawy Alt, obecny na standardowych klawiaturach obu kształtów, w AltGr, a polskie litery leżą pod AltGr z literą bazową: ą to AltGr+A, ł to AltGr+L, ż to AltGr+Z, ź to AltGr+X. Dodatkowy klawisz ISO daje w tym układzie tylko drugi backslash, więc na ANSI niczego nie brakuje."}
+  ],
+  "sources": [
+    {"title": "Apple Support: How to identify your Apple keyboard layout by country or region", "url": "https://support.apple.com/102743"},
+    {"title": "Apple Support (pl): Identyfikowanie układu klawiatury Apple według kraju lub regionu", "url": "https://support.apple.com/pl-pl/102743"},
+    {"title": "Apple Mac User Guide: Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/mac"},
+    {"title": "Apple Mac User Guide (macOS Monterey 12): Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/12.0/mac"},
+    {"title": "Podręcznik użytkownika Maca (macOS Monterey 12, pl): Określanie rodzaju klawiatury", "url": "https://support.apple.com/pl-pl/guide/mac-help/mchlp2886/12.0/mac"},
+    {"title": "Apple Community: How To Fix Keyboard Type Problems", "url": "https://discussions.apple.com/docs/DOC-250007848"},
+    {"title": "W3C: UI Events KeyboardEvent code Values", "url": "https://www.w3.org/TR/uievents-code/"},
+    {"title": "Wikipedia: ISO/IEC 9995", "url": "https://en.wikipedia.org/wiki/ISO/IEC_9995"},
+    {"title": "Wikipedia: Keyboard layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Wikipedia: AltGr key (Polska: układ polski programisty, klawiatury amerykańskie)", "url": "https://en.wikipedia.org/wiki/AltGr_key"},
+    {"title": "Wikipedia: Portuguese keyboard layout", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "Wikipedia: Language input keys", "url": "https://en.wikipedia.org/wiki/Language_input_keys"},
+    {"title": "Antyweb: Klawiatura bez tajemnic: dlaczego twój Enter wygląda inaczej? (2025)", "url": "https://antyweb.pl/klawiatura-us-i-iso-czym-sie-roznia"},
+    {"title": "Deskthority wiki: ANSI vs ISO", "url": "https://deskthority.net/wiki/ANSI_vs_ISO"},
+    {"title": "Deskthority wiki: ANSI vs JIS", "url": "https://deskthority.net/wiki/ANSI_vs_JIS"},
+    {"title": "Ultimate Hacking Keyboard: ANSI or ISO? Which keyboard layout is more ergonomic?", "url": "https://uhk.io/blog/2015/09/09/ansi-or-iso-which-keyboard-layout-is-more-ergonomic"},
+    {"title": "Corsair: ANSI vs ISO, what's the best keyboard layout?", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/ansi-vs-iso-whats-the-best-keyboard-layout/"},
+    {"title": "Keebsforall: ANSI vs ISO typing efficiency compared", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-vs-iso-typing-efficiency-compared"},
+    {"title": "Keebsforall: ANSI, ISO, JIS: which layout fits your needs?", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-iso-jis-which-layout-fits-your-needs"},
+    {"title": "KbdLayout: US keyboard layout (KBDUS)", "url": "https://kbdlayout.info/kbdus"},
+    {"title": "KbdLayout: Polish (Programmers) keyboard layout (KBDPL1)", "url": "https://kbdlayout.info/kbdpl1"},
+    {"title": "KbdLayout: United Kingdom keyboard layout (KBDUK)", "url": "https://kbdlayout.info/kbduk"},
+    {"title": "KbdLayout: German keyboard layout (KBDGR)", "url": "https://kbdlayout.info/kbdgr"},
+    {"title": "KbdLayout: French keyboard layout (KBDFR)", "url": "https://kbdlayout.info/kbdfr"},
+    {"title": "KbdLayout: Spanish keyboard layout (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "DreymaR's Big Bag of Keyboard Tricks: ergonomic mods", "url": "https://dreymar.colemak.org/ergo-mods.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Pisz na klawiaturze takiej jak twoja", "drill": "words", "layout": "us"}
+}
+-->
+<p>ISO, ANSI i JIS opisują fizyczną klawiaturę: wielkość każdego klawisza i jego miejsce. Układ, którym piszesz, na przykład polski programisty albo niemiecki QWERTZ, to ustawienie systemu, które działa na tym kształcie (opisuje je poradnik o <a href="guide:keyboard-layouts">układach klawiatury</a>). Większa część klawiatury wygląda we wszystkich trzech kształtach identycznie. Różnice leżą na brzegach, przy Enterze, lewym Shifcie i spacji, i zmieniają pracę małych palców.</p>
+<figure data-figure="board-shapes"><figcaption>Klawiatury ANSI, ISO i JIS obok siebie. Porównaj najpierw Enter i lewy Shift, potem klawisze wokół spacji JIS.</figcaption></figure>
+
+<h2>Czym różni się klawiatura ISO od ANSI?</h2>
+<p>Klawiatura ISO ma wysoki Enter na dwa rzędy, krótki lewy Shift i jeden klawisz znakowy więcej niż klawiatura ANSI, której Enter mieści się w jednym rzędzie, a lewy Shift sięga aż do <kbd>Z</kbd>. Dodatkowy klawisz ISO leży między lewym Shiftem a <kbd>Z</kbd>.</p>
+<p>Wysoki Enter wypycha z miejsca jeszcze jeden klawisz. Na ANSI klawisz backslasha (<kbd>\</kbd> i <kbd>|</kbd> na klawiaturze amerykańskiej) kończy górny rząd liter, tuż nad Enterem. ISO nie ma tam na niego miejsca, więc ten klawisz schodzi do rzędu podstawowego, tuż na lewo od Entera; klawiatura brytyjska ma na nim nadruk <kbd>#</kbd> i <kbd>~</kbd>. Norma ISO/IEC 9995 liczy 48 klawiszy znakowych w układzie ANSI i 49 w układzie ISO. Pełnowymiarowa amerykańska klawiatura PC ma 104 klawisze, a typowa europejska 105; bez bloku numerycznego klawiatura TKL (tenkeyless) ma 87 klawiszy w wersji ANSI i 88 w wersji ISO.</p>
+<p>Producenci mierzą klawisze w jednostkach: 1u to szerokość jednego klawisza z literą. Tabela podaje jednostki tam, gdzie podaje je źródło.</p>
+<table>
+<caption>Klawiatury ANSI, ISO i JIS w porównaniu</caption>
+<thead><tr><th scope="col">Cecha</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">JIS</th></tr></thead>
+<tbody>
+<tr><th scope="row">Enter</th><td>Jeden rząd, często 2,25u szerokości</td><td>Dwa rzędy wysokości, w kształcie odwróconego L</td><td>Dwa rzędy wysokości, w kształcie odwróconego L</td></tr>
+<tr><th scope="row">Lewy Shift</th><td>Długi, 2,25u</td><td>Krótki, około 1,25u, z dodatkowym klawiszem po prawej</td><td>Długi</td></tr>
+<tr><th scope="row">Prawy Shift</th><td>Długi</td><td>Długi</td><td>Krótszy, z dodatkowym klawiszem (ろ) po lewej</td></tr>
+<tr><th scope="row">Amerykański klawisz backslasha</th><td>Górny rząd liter, nad Enterem</td><td>Rząd podstawowy, na lewo od Entera</td><td>Rząd podstawowy, na lewo od Entera</td></tr>
+<tr><th scope="row">Backspace</th><td>2u</td><td>2u</td><td>1u, obok klawisz ¥</td></tr>
+<tr><th scope="row">Spacja</th><td>Długa</td><td>Długa</td><td>Krótsza, z klawiszami trybu wprowadzania po obu stronach</td></tr>
+<tr><th scope="row">Klawisze znakowe</th><td>48</td><td>49</td><td>49</td></tr>
+<tr><th scope="row">Klawisze na pełnowymiarowej klawiaturze PC</th><td>104</td><td>105</td><td>109</td></tr>
+<tr><th scope="row">Standard w</th><td>Stanach Zjednoczonych</td><td>większości Europy</td><td>Japonii</td></tr>
+</tbody>
+</table>
+
+<h2>Które kraje używają ISO, ANSI i JIS?</h2>
+<p>Stany Zjednoczone używają ANSI, Europa prawie wszędzie ISO, a Japonia JIS. Dokładną listę według języków daje katalog klawiatur Apple, bo Apple przypisuje każdą swoją wersję językową do jednego kształtu.</p>
+<table>
+<caption>Kształt klawiatury według języka, z katalogu Apple (ABNT2 według ISO/IEC 9995)</caption>
+<thead><tr><th scope="col">Kształt</th><th scope="col">Klawiatury, które go używają</th></tr></thead>
+<tbody>
+<tr><th scope="row">ANSI</th><td>angielska (USA), koreańska, tajska, chińska (pinyin i zhuyin)</td></tr>
+<tr><th scope="row">ISO</th><td>brytyjska i irlandzka, angielska (międzynarodowa), niemiecka i austriacka, francuska i belgijska, hiszpańska, włoska, portugalska, szwajcarska, niderlandzka, czeska, słowacka, węgierska, rumuńska, chorwacka i słoweńska, duńska, norweska, szwedzka i fińska, rosyjska, bułgarska, grecka, turecka, arabska, hebrajska, kanadyjska francuska, hiszpańska (Ameryka Łacińska) i inne</td></tr>
+<tr><th scope="row">JIS</th><td>japońska</td></tr>
+<tr><th scope="row">ABNT2 (ISO plus jeden klawisz)</th><td>brazylijska portugalska</td></tr>
+</tbody>
+</table>
+<p>Klawiatury koreańskie wywodzą się z rodziny ANSI i dodają dwa klawisze przy spacji: 한/영 przełącza między hangulem a literami łacińskimi, a 한자 zamienia hangul na znaki hanja. Na niektórych rynkach azjatyckich sprzedaje się też wariant ANSI z bardzo dużym Enterem, który zajmuje naraz miejsce Entera ANSI i Entera ISO. Co do Holandii źródła się różnią: Apple sprzedaje niderlandzką klawiaturę ISO, a wiki Deskthority wymienia Holandię wśród krajów używających ANSI.</p>
+<p>Kształt zależy od rynku, dla którego klawiaturę zbudowano. Laptop kupiony w Londynie zachowa płytę ISO także po przełączeniu Windows albo macOS na angielski amerykański.</p>
+
+<h2>Jaką klawiaturę mają komputery w Polsce?</h2>
+<p>W Polsce standardem jest klawiatura amerykańska z układem polskim programisty. Według angielskiej Wikipedii <a href="https://en.wikipedia.org/wiki/AltGr_key">prawie wszystkie komputery w Polsce</a> mają dziś standardowe klawiatury amerykańskie, a polskie litery wpisuje się metodą AltGr, czyli prawym Altem i literą bazową. Kształt ANSI bywa też nazywany po prostu <a href="https://antyweb.pl/klawiatura-us-i-iso-czym-sie-roznia">klawiaturą US</a> albo układem US, od kraju, w którym jest standardem.</p>
+<p>Układ polski programisty nie potrzebuje żadnego klawisza, którego brakuje na ANSI. Polskie litery leżą pod tymi samymi klawiszami co litery bazowe: <kbd>AltGr</kbd>+<kbd>A</kbd> daje ą, <kbd>AltGr</kbd>+<kbd>L</kbd> daje ł, <kbd>AltGr</kbd>+<kbd>Z</kbd> daje ż, a <kbd>AltGr</kbd>+<kbd>X</kbd> daje ź. Prawy Alt, który ten układ zamienia w AltGr, ma standardowa klawiatura w obu kształtach. Na płycie ISO dodatkowy klawisz przy lewym Shifcie daje w tym układzie drugi <kbd>\</kbd> i <kbd>|</kbd>, tak jak w układzie amerykańskim. Kształt wybierasz więc pod kątem wygody i przyzwyczajeń, bo polskie litery masz na obu.</p>
+
+<h2>Jak sprawdzić, czy masz klawiaturę ISO czy ANSI?</h2>
+<p>Spójrz na Enter: jednorzędowy Enter oznacza ANSI, a wysoki, zajmujący dwa rzędy, oznacza ISO albo JIS. Cztery sprawdzenia rozwieją każdą wątpliwość:</p>
+<ol>
+<li>Znajdź Enter. Jeśli mieści się w jednym rzędzie, a klawisz backslasha leży tuż nad nim, masz ANSI.</li>
+<li>Spójrz na lewy Shift. Jeśli od <kbd>Z</kbd> dzieli go jeden klawisz, masz ISO. Na klawiaturze brytyjskiej ten klawisz ma nadruk <kbd>\</kbd> <kbd>|</kbd>, na niemieckiej <kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>|</kbd>.</li>
+<li>Spójrz obok spacji. Klawisze 無変換 i 変換 po obu stronach krótkiej spacji oraz klawisz ¥ obok Backspace oznaczają JIS.</li>
+<li>Policz klawisze w dolnym rzędzie liter między dwoma Shiftami. ANSI ma ich 10, od <kbd>Z</kbd> do <kbd>/</kbd>. ISO i JIS mają po 11, a brazylijska ABNT2 ma 12.</li>
+</ol>
+<p>Na Macu system macOS rozpoznaje trzy rodzaje klawiatur, ANSI, ISO i JIS, i otwiera Asystenta konfiguracji klawiatury, gdy nie potrafi rozpoznać podłączonej klawiatury. Gdy pomyli rodzaj, dwa klawisze zamieniają się miejscami, najczęściej klawisz pod <kbd>Esc</kbd> i klawisz na prawo od lewego Shifta. Według instrukcji Apple dla macOS Monterey otwierasz menu Apple, wybierasz Preferencje systemowe, klikasz Klawiatura, potem Zmień rodzaj klawiatury i postępujesz zgodnie z instrukcjami: asystent prosi o naciśnięcie klawisza na prawo od lewego Shifta, a potem pozwala wybrać ANSI, ISO lub JIS.</p>
+
+<h2>ISO czy ANSI: która klawiatura jest lepsza do pisania?</h2>
+<p>Żaden z kształtów nie przyspiesza pisania w udowodniony sposób: nie znaleźliśmy badania, które porównałoby szybkość pisania na ISO i ANSI, a artykuły nazywające jeden kształt szybszym żadnego nie cytują. Kształty różnią się tym, jak daleko małe palce sięgają do trzech klawiszy:</p>
+<ul>
+<li><strong>Lewy Shift, lewy mały palec.</strong> Shift ISO ma 1,25u wobec 2,25u na ANSI, a lukę wypełnia dodatkowy klawisz. Mały palec przyzwyczajony do ANSI, który sięgnie za krótko, wpisze <kbd>\</kbd> albo <kbd>&lt;</kbd> zamiast wielkiej litery. Najbardziej odczujesz to przy wielkich literach pisanych prawą ręką, takich jak <kbd>H</kbd>, <kbd>J</kbd> czy <kbd>M</kbd>, bo przy nich osoby piszące bezwzrokowo trzymają lewy Shift. W polskim tekście dochodzą do tego wielkie Ł i Ó, przy których lewy mały palec trzyma Shift, a prawy kciuk AltGr.</li>
+<li><strong>Enter, prawy mały palec.</strong> Na ANSI Enter leży w rzędzie podstawowym zaraz za <kbd>'</kbd>. ISO wstawia między nie jeszcze jeden klawisz, więc mały palec wędruje dalej wzdłuż rzędu podstawowego albo sięga w górę, do górnej części Entera.</li>
+<li><strong>Backslash, prawy mały palec.</strong> ISO sprowadza go do rzędu podstawowego obok Entera, bliżej niż na ANSI, gdzie leży na końcu górnego rzędu.</li>
+</ul>
+<p>László Monda z Ultimate Hacking Keyboard porównał oba kształty w jednostkach klawiszy. Wyszło mu, że na ISO Enter i lewy Shift leżą mniej więcej o jedną jednostkę (według niego 20 mm) dalej od środka klawiatury, a backslash mniej więcej o jedną jednostkę bliżej. Zwraca uwagę, że Enter i lewy Shift naciska się setki razy dziennie, a backslash o wiele rzadziej.</p>
+<p>Pomyłki, które ludzie zauważają, biorą się ze zmiany kształtu. Prawy mały palec przyzwyczajony do ANSI sięga po Enter w rzędzie podstawowym i trafia w klawisz na lewo od Entera ISO (<kbd>#</kbd> na klawiaturze brytyjskiej). Palec przyzwyczajony do ISO, który sięga w górę po górną część Entera, trafia na ANSI w klawisz backslasha. Oba nawyki mijają po powolnych, dokładnych powtórzeniach na klawiaturze, przy której chcesz zostać, z oczami na ekranie.</p>
+<p>petitdoigt rysuje klawiatury ANSI, ISO i JIS, więc klawiatura na ekranie może odpowiadać tej na twoim biurku, a każdy klawisz, łącznie z dodatkowym klawiszem ISO, ma kolor palca, który go naciska. <a href="app:words?layout=us">Wybierz kształt swojej klawiatury i przepisz kilka serii słów</a>, żeby zobaczyć, dokąd idą twoje małe palce. <a href="guide:finger-placement">Mapa palców na klawiaturze</a> pokazuje całą klawiaturę, a poradnik <a href="guide:type-without-looking">jak pisać bez patrzenia na klawiaturę</a> pomaga przestać zerkać w dół.</p>
+
+<h2>Czy układy klawiatury działają na ISO i ANSI?</h2>
+<p>Tak: każdy układ działa na każdym kształcie, bo to system operacyjny decyduje, jaki znak wpisuje dany fizyczny klawisz. Jedynym haczykiem jest dodatkowy klawisz ISO, bo niektóre układy kładą na nim znaki, których nie ma na żadnym innym klawiszu.</p>
+<ul>
+<li><strong>Układ amerykański albo polski programisty na płycie ISO.</strong> Układ US w Windows daje dodatkowemu klawiszowi drugi <kbd>\</kbd> <kbd>|</kbd>, a klawisz rzędu podstawowego na lewo od Entera wpisuje zwykły backslash. Nic nie ginie.</li>
+<li><strong>Układ europejski na płycie ANSI.</strong> Niemiecki układ Windows kładzie <kbd>&lt;</kbd>, <kbd>&gt;</kbd> i <kbd>|</kbd> wyłącznie na dodatkowym klawiszu ISO, a francuski AZERTY i hiszpański kładą tam <kbd>&lt;</kbd> i <kbd>&gt;</kbd>. Płyta ANSI nie ma takiego klawisza, więc te znaki wymagają przemapowania albo innego układu. Resztę tych układów omawiają poradniki <a href="guide:qwertz-vs-qwerty">QWERTZ a QWERTY</a> i <a href="guide:azerty-vs-qwerty">AZERTY a QWERTY</a>.</li>
+</ul>
+<p>Układy europejskie używają też prawego Alta jako AltGr, który daje trzeci znak na wielu klawiszach: w układzie brytyjskim <kbd>AltGr</kbd> z <kbd>4</kbd> wpisuje €. Klawiatury ISO zwykle mają na tym klawiszu nadruk AltGr. Niemiecki układ kładzie <kbd>{</kbd> <kbd>[</kbd> <kbd>]</kbd> <kbd>}</kbd> pod AltGr z <kbd>7</kbd> do <kbd>0</kbd>, a układ amerykański, i za nim polski programisty, daje nawiasom własne klawisze na prawo od <kbd>P</kbd>. Programista z Niemiec może więc zatrzymać klawiaturę ISO i przełączyć układ w systemie, bo układ amerykański na płycie ISO niczego nie traci.</p>
+<p>Dvorak, Colemak i Workman przestawiają litery w części klawiatury wspólnej dla obu kształtów, więc zachowują się tak samo na ISO i ANSI. Wyjątkiem jest Colemak-DH: używa modyfikacji kątowej (angle mod), która przesuwa klawisze dolnego rzędu po lewej stronie o jedno miejsce w lewo. Na płycie ISO ten ruch wchłania dodatkowy klawisz; DreymaR's Big Bag of Keyboard Tricks nazywa go „praktycznie zapasowym klawiszem” (practically a spare key). Płyta ANSI nie ma zapasu, więc popularna wersja ANSI przenosi <kbd>Z</kbd> na środek dolnego rzędu. petitdoigt sam nakłada układ na fizyczne położenie klawiszy, więc <a href="app:words?layout=colemak-dh">wypróbujesz Colemak-DH w przeglądarce</a> bez instalowania czegokolwiek. Resztę wyjaśnia poradnik o <a href="guide:colemak">układzie Colemak</a>.</p>
+
+<h2>Czym jest klawiatura JIS?</h2>
+<p>JIS to kształt klawiatury używany w Japonii: wysoki Enter w stylu ISO plus dodatkowe klawisze do pisania po japońsku. Pełnowymiarowa klawiatura JIS ma 109 klawiszy, cztery więcej niż ISO i pięć więcej niż ANSI.</p>
+<p>Dodatkowe klawisze zabierają miejsce skróconym sąsiadom. Spacja kurczy się, żeby zmieścić 無変換 (muhenkan) po lewej oraz 変換 (henkan) i klawisz kana po prawej: henkan zamienia wpisane kana na kanji, muhenkan zostawia je bez zamiany, a klawisz kana przełącza między hiraganą a katakaną. Backspace kurczy się do jednej jednostki, żeby zrobić miejsce na klawisz ¥, a prawy Shift kurczy się, żeby zmieścić klawisz ろ (ro) obok ukośnika. Lewy Shift zostaje długi, więc dolny rząd liter ma 11 klawiszy, jak na ISO, tyle że dodatkowy klawisz leży na przeciwnym końcu. Lewy górny klawisz, który na klawiaturze amerykańskiej wpisuje <kbd>`</kbd>, staje się klawiszem 半角/全角 (hankaku/zenkaku), przełączającym między znakami o połowie i o pełnej szerokości.</p>
+<p>Same litery leżą dokładnie tam, gdzie na ANSI i ISO, więc rząd podstawowy osoby piszącej bezwzrokowo działa na japońskiej klawiaturze bez zmian. Zmieniają się sięgnięcia na brzegach, przy Backspace i prawym Shifcie, a kciuki pracują na węższej spacji.</p>
+
+<h2>Klawiatura ISO czy ANSI: którą kupić?</h2>
+<p>Kup kształt, którego oczekuje twój układ. Jeśli piszesz w układzie niemieckim, francuskim, hiszpańskim, brytyjskim albo innym europejskim, który kładzie znaki na dodatkowym klawiszu, weź ISO. Jeśli piszesz w układzie polskim programisty, amerykańskim albo opartym na amerykańskim, jak Dvorak, Colemak czy Workman, ANSI daje ci wszystkie potrzebne klawisze. Osoby piszące w Colemak-DH mogą mimo to woleć ISO, gdzie modyfikacja kątowa dostaje swój zapasowy klawisz.</p>
+<p>Jeśli dobrze piszesz bezwzrokowo na jednym kształcie, zostając przy nim, oszczędzasz sobie ponownej nauki Entera i lewego Shifta. Osobom, które personalizują klawiatury, szalę przechylają keycapy: Corsair zauważa, że zestawy keycapów zawsze wychodzą w wersji ANSI, a w ISO nie zawsze, a Keebsforall ocenia wybór keycapów JIS jako bardzo ograniczony.</p>

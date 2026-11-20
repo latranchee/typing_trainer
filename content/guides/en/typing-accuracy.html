@@ -1,0 +1,127 @@
+<!--meta
+{
+  "id": "typing-accuracy",
+  "lang": "en",
+  "slug": "typing-accuracy",
+  "title": "Typing Accuracy: What's Good and How to Improve It",
+  "description": "Typing accuracy explained: how it's calculated, why sites disagree, what percentage to aim for and 7 steps to improve it, with data from 168,000 typists.",
+  "h1": "Typing accuracy: what counts as good and how to improve it",
+  "keyword": "typing accuracy",
+  "keywords_secondary": ["how to improve typing accuracy", "typing accuracy vs speed", "good typing accuracy", "average typing accuracy", "how is typing accuracy calculated"],
+  "summary": "Typing accuracy is the percentage of your keystrokes that hit the right key: at 96%, about 4 keys in every 100 were wrong. Aim for 96% or better while you practice, and 98% once you type without looking. Sites score the same typing differently, because some count the typos you fixed and others only the ones left in the text. Accuracy also drives speed, since every fixed typo costs at least two extra keystrokes.",
+  "faq": [
+    {"q": "Is 95% typing accuracy good?", "a": "It is a fair working level, one point short of the 96% this guide recommends for practice. At 95% keystroke accuracy, about one keystroke in ten goes to making or erasing a mistake. Typing.com suggests teachers treat 95% as a pass at the start of the school year and raise the bar toward 98%, and New York State's civil-service typing test asks for 96%."},
+    {"q": "Is 90% typing accuracy good?", "a": "For a beginner it is a normal starting point. For everyone else it is low: at 90%, one key in ten is wrong, and once you count the Backspaces, close to a fifth of your keystrokes go to mistakes. Slow down until you hold 96%, then build speed from there."},
+    {"q": "Does pressing Backspace lower your typing accuracy?", "a": "It depends on how the site scores. With keystroke accuracy, the wrong key you pressed counts against you even after you erase it. Tests that grade only the finished text ignore the typos you fixed, but the time spent fixing them still lowers your words per minute."},
+    {"q": "Should I fix typos while practicing or keep going?", "a": "Fix them as soon as you see them. Real writing needs correct text, so correcting is the habit worth rehearsing. It also makes every error cost you time, which nudges you toward a pace you can control. Keep going without fixing only when a test's rules ask you to."},
+    {"q": "Is 100% typing accuracy possible?", "a": "Over a short sentence, yes. Over a longer test even fast typists rarely manage it: in the Aalto study of 168,000 typists, the fastest 10% still pressed Backspace or Delete on 3.4% of their keypresses. Aim for a steady 98% and treat a perfect set as a bonus."},
+    {"q": "Why is my typing accuracy worse on a new keyboard or layout?", "a": "Your fingers have learned where keys sit on your usual board, so any change sends some presses to the wrong key. A new layout such as Dvorak or Colemak moves the letters themselves; a new keyboard can move Enter, Shift or the spacing between keys. Expect a dip, slow down to 96%, and let accuracy climb back."}
+  ],
+  "sources": [
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes (CHI 2018)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing (CHI 2016)", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Vanderbilt University, Today's self-taught typists almost as fast as touch typists (2016)", "url": "https://www.eurekalert.org/news-releases/520529"},
+    {"title": "New York State Department of Civil Service, Keyboard Test Administration and PTM User Guide", "url": "https://www.cs.ny.gov/extdocs/pdf/PTMUserGuide.pdf"},
+    {"title": "Typing.com, What is good accuracy when it comes to typing?", "url": "https://www.typing.com/blog/good-accuracy-comes-typing/"},
+    {"title": "Monkeytype, About page source (definition of acc)", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "USPS Handbook EL-312, 517 Qualifying Tests", "url": "https://about.usps.com/handbooks/el312/el312c5_007.htm"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Check your typing accuracy", "drill": "words"}
+}
+-->
+<h2>What is typing accuracy?</h2>
+<p>Typing accuracy is the share of your typing that matches the text you meant to type, shown as a percentage. At 98%, roughly 2 keystrokes in every 100 went to the wrong key. Trainers show it beside your words per minute because the two numbers measure different things: WPM counts the text you produced, and accuracy shows how much of your effort went into mistakes along the way.</p>
+<p>The time you spend fixing errors is already inside your WPM. Every typo you correct costs at least two extra keystrokes, the <kbd>Backspace</kbd> and the right key, plus the moment it takes to notice.</p>
+
+<h2>How is typing accuracy calculated?</h2>
+<p>Typing accuracy is calculated as correct characters divided by all characters typed, times 100. Sites disagree on what "all characters typed" means, so the same paragraph can score 95% on one test and 99% on another.</p>
+<table>
+<caption>Common ways to score typing accuracy</caption>
+<thead>
+<tr><th scope="col">Method</th><th scope="col">Formula</th><th scope="col">Do fixed typos count?</th><th scope="col">Where you meet it</th></tr>
+</thead>
+<tbody>
+<tr><td>Keystroke accuracy</td><td>right keys ÷ (right keys + wrong keys)</td><td>Yes, even after you erase them</td><td>Trainers that score each key as you press it</td></tr>
+<tr><td>Final-text accuracy</td><td>matching characters in the finished text ÷ length of the text</td><td>No, only the errors left behind</td><td>Research, where it appears as the "uncorrected error rate"</td></tr>
+<tr><td>Error count</td><td>errors in the finished text, checked against a limit</td><td>No</td><td>Job and civil-service typing tests</td></tr>
+</tbody>
+</table>
+<p>Monkeytype, for example, scores by keystroke: <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">its definition</a> of accuracy is the "percentage of correctly pressed keys." To see how far apart the methods land, say you type a 100-character sentence. Along the way you hit 5 wrong keys, catch 4 of them with <kbd>Backspace</kbd> and leave 1 in the text. In total you pressed 99 right keys, 5 wrong ones and 4 Backspaces.</p>
+<ul>
+<li>Keystroke accuracy: 99 ÷ (99 + 5) = 95.2%</li>
+<li>Final-text accuracy: 99 matching characters out of 100 = 99%</li>
+<li>Error count: 1</li>
+</ul>
+<p>For practice, keystroke accuracy is the more useful number. It shows the typos you fixed, and those fixes are where your speed leaks away. Final-text accuracy is what the reader of your email sees. Some tests fold errors into the speed score and report net words per minute instead: the US Postal Service sets the bar for its typing tests in <a href="https://about.usps.com/handbooks/el312/el312c5_007.htm">net WPM</a>, for example. The <a href="guide:words-per-minute">guide to words per minute</a> shows how gross and net WPM are worked out.</p>
+
+<h2>What is a good typing accuracy?</h2>
+<p>A good typing accuracy is 96% or higher by keystroke, and 98% or higher once you type without looking at the keyboard. At 94%, about one keystroke in nine already goes to making or erasing a mistake. Use these bands as a coaching rule of thumb for keystroke accuracy:</p>
+<table>
+<caption>Keystroke accuracy bands for practice</caption>
+<thead>
+<tr><th scope="col">Accuracy</th><th scope="col">What it means</th><th scope="col">What to do</th></tr>
+</thead>
+<tbody>
+<tr><td>Below 90%</td><td>One key in ten or more is wrong. Count the Backspaces too and close to a fifth of your keystrokes go to mistakes.</td><td>Slow down a lot and check your finger placement.</td></tr>
+<tr><td>90–95%</td><td>An error every 10 to 20 keys. Normal while you learn touch typing or a new layout, or when you push for speed.</td><td>Slow down until you hold 96%.</td></tr>
+<tr><td>96–97%</td><td>An error every 25 to 33 keys, roughly one every five to seven words. Solid.</td><td>Stay at this speed and work on your weakest keys.</td></tr>
+<tr><td>98% and up</td><td>An error every 50 keys or more, roughly one every ten words. Clean typing.</td><td>Raise your speed in small steps.</td></tr>
+</tbody>
+</table>
+<p>Hiring tests set fixed bars. New York State's civil-service keyboard test asks for 30 WPM with at least 96% accuracy over five minutes, which at 30 WPM allows 6 errors. For schools, <a href="https://www.typing.com/blog/good-accuracy-comes-typing/">Typing.com tells teachers</a> that students from 4th grade up should aim for 98% or better. Speed benchmarks by level are in the <a href="guide:typing-speed">average typing speed guide</a>.</p>
+
+<h3>What is the average typing accuracy?</h3>
+<p>In a study of 168,000 online typists, the average participant's finished sentences were about 98.8% correct, and 6.3% of their keypresses went to fixing errors with <kbd>Backspace</kbd> or <kbd>Delete</kbd>. Researchers at Aalto University and the University of Cambridge logged those <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">136 million keystrokes</a> from volunteers who copied sentences in an online typing test. Most participants corrected most of their mistakes: 90% of them left fewer than 2.66% errors in their finished sentences.</p>
+<table>
+<caption>Errors and corrections among 168,000 online typists (Dhakal et al., CHI 2018)</caption>
+<thead>
+<tr><th scope="col">Group</th><th scope="col">Errors left in the finished text</th><th scope="col">Keypresses that were Backspace or Delete</th></tr>
+</thead>
+<tbody>
+<tr><td>Fastest 10% (above about 78 WPM)</td><td>0.71%</td><td>3.4%</td></tr>
+<tr><td>All participants (average 52 WPM)</td><td>1.17%</td><td>6.3%</td></tr>
+<tr><td>Slowest 10% (below about 26 WPM)</td><td>1.78%</td><td>9.05%</td></tr>
+</tbody>
+</table>
+<p>The slowest group pressed Backspace or Delete more than two and a half times as often as the fastest, and still left about two and a half times as many errors in the text. The authors suggest this could mean slow typists are less able to spot their mistakes.</p>
+
+<h2>Typing accuracy vs speed: which matters more?</h2>
+<p>Accuracy comes first, because errors cost speed. In the Aalto data, people who made and corrected fewer mistakes typed faster: speed correlated negatively with the share of Backspace and Delete presses (r = −0.36) and with keystrokes per character (r = −0.40). The authors conclude that "reducing errors by a small margin can contribute to a large gain in speed."</p>
+<p>At 95% keystroke accuracy you press about 5 wrong keys for every 95 right ones, and each of them needs a Backspace, so roughly one keystroke in ten makes or erases a mistake. At 98% that drops to about one in 25. The pause while you spot the typo and find your place comes on top, and a typo you notice late costs more, because you erase correct letters to reach it.</p>
+<p>Within one practice session, speed and accuracy pull against each other: push past the pace your fingers can hold and the errors climb. Across typists, the fastest are also the most accurate, as the table above shows. Both findings point to one way of practicing: type at a speed you can keep clean, and raise it as the motions become automatic. The <a href="guide:how-to-type-faster">guide to typing faster</a> covers the speed side of that plan.</p>
+
+<h2>Why do I keep making typing mistakes?</h2>
+<p>The most common typing mistake is pressing a wrong letter in place of the right one, and researchers suspect it comes from inconsistent typing. In a sample of 783 participants from the Aalto study, errors fell into three kinds:</p>
+<table>
+<caption>Typing error types and their rates (Dhakal et al., CHI 2018, sample of 783 participants)</caption>
+<thead>
+<tr><th scope="col">Error type</th><th scope="col">Example from the study</th><th scope="col">Rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Substitution: a wrong letter in place of the right one</td><td><em>riad</em> for <em>road</em></td><td>1.65%</td></tr>
+<tr><td>Omission: a letter left out</td><td><em>commitee</em> for <em>committee</em></td><td>0.80%</td></tr>
+<tr><td>Insertion: an extra letter</td><td><em>string</em> for <em>sting</em></td><td>0.67%</td></tr>
+</tbody>
+</table>
+<p>Substitutions were the most frequent, and they separated slow typists from fast ones more than any other kind. The researchers' hypothesis is that substitution errors happen when typists are "less consistent in typing and have a poor mental representation of the fingers' position." A separate <a href="https://userinterfaces.aalto.fi/how-we-type">motion-capture study of 30 typists</a> at Aalto points the same way: one of its three predictors of high performance was "unambiguous mapping", meaning a letter is consistently pressed by the same finger. If you hit <kbd>C</kbd> with your index finger on some days and your middle finger on others, your hand has two half-learned paths to that key.</p>
+<p>Watch for these habits:</p>
+<ul>
+<li><strong>Drifting off the home row.</strong> When your fingers don't return to <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> and <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>;</kbd> between words, each reach starts from a different spot and lands one key off. The bumps on <kbd>F</kbd> and <kbd>J</kbd> let you find home without looking.</li>
+<li><strong>Watching the keys.</strong> Your typos appear on the screen, and you can't watch the screen and the keyboard at once. In a <a href="https://www.eurekalert.org/news-releases/520529">Vanderbilt University study</a> of 48 typists, those with nonstandard finger habits relied on seeing the keyboard: when it was hidden, their speed and accuracy dropped, while touch typists stayed about the same. The researchers suggest that, because those typists watch the screen only in snatches, they may catch fewer of their errors.</li>
+<li><strong>Capitals with the wrong Shift.</strong> Pressing left <kbd>Shift</kbd> for a capital <kbd>A</kbd> makes one hand do two jobs and pulls it out of position. Hold the Shift on the hand opposite the letter.</li>
+<li><strong>Letters in the wrong order.</strong> <em>teh</em> for <em>the</em> happens when one hand fires before the other. Practice at an even rhythm, even a slower one, until the order holds.</li>
+<li><strong>Weak fingers.</strong> If your errors pile up on <kbd>Q</kbd>, <kbd>P</kbd>, <kbd>Z</kbd> or <kbd>X</kbd>, the pinky or ring finger behind them needs its own practice. The <a href="guide:typing-exercises">typing exercises guide</a> has drills for those fingers.</li>
+</ul>
+
+<h2>How to improve typing accuracy</h2>
+<p>To improve typing accuracy, practice at a speed where you stay at 96% or better and train the specific fingers and letter pairs behind your errors. Step by step:</p>
+<ol>
+<li><strong>Find your clean speed.</strong> Type a few one-minute sets of ordinary words and watch your accuracy. The speed where it stays at 96% or higher is your practice speed for now, even if it feels slow.</li>
+<li><strong>Give every key one finger.</strong> Check <a href="guide:finger-placement">which finger presses which key</a> and stick to it, including the keys that are easy to take with the wrong hand: <kbd>B</kbd> belongs to the left index finger, <kbd>Y</kbd> to the right index. petitdoigt colors each key by the finger that should press it and highlights that finger as you type, so a wrong-finger habit becomes visible. A browser can't see your hands, so the trainer can't check which finger you used; that part is up to you.</li>
+<li><strong>Keep your eyes on the screen.</strong> That is where errors show up. If you still glance down, the <a href="guide:type-without-looking">guide to typing without looking</a> walks you off the habit, and an on-screen keyboard can stand in for the keycaps while you learn.</li>
+<li><strong>Find out where your errors are.</strong> One accuracy figure for a whole set hides which keys cause it. The trainer's <a href="app:stats">stats</a> page breaks your results down by finger and by letter on each layout, and lists your weakest key-to-key transitions with their accuracy. Some errors only happen between two particular keys, such as <kbd>U</kbd> then <kbd>N</kbd> in <em>under</em>, which the right index finger types alone. In adaptive mode, the <a href="app:pairs">pairs</a> drill builds its sets mostly from your own slowest and most error-prone transitions.</li>
+<li><strong>Make every typo cost a Backspace.</strong> Fix each mistake as soon as you see it, the way you would in a real email. Hardcore mode makes this strict: a wrong key sticks in the text until you erase it with <kbd>Backspace</kbd>.</li>
+<li><strong>Keep sessions short.</strong> Stop when your accuracy drops for two or three sets in a row, since practicing tired rehearses the sloppy version of each motion.</li>
+<li><strong>Raise speed in small steps.</strong> Once you hold 98% at your practice speed across several sessions, push a few words per minute faster. If accuracy falls below 96%, step back to the last speed you could keep clean.</li>
+</ol>

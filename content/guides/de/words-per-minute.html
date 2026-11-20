@@ -1,0 +1,144 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "de",
+  "slug": "anschlaege-pro-minute",
+  "title": "Anschläge pro Minute und WPM: Bedeutung und Berechnung",
+  "description": "Anschläge pro Minute und Wörter pro Minute (WPM) erklärt: das Normwort aus fünf Zeichen, Umrechnung, Brutto- und Netto-WPM, Fehlerquote und ein Rechenbeispiel.",
+  "h1": "Anschläge pro Minute und WPM: was sie bedeuten und wie du sie berechnest",
+  "keyword": "Anschläge pro Minute",
+  "keywords_secondary": ["Wörter pro Minute", "WPM berechnen", "WPM Bedeutung", "Anschläge pro Minute umrechnen", "Netto-WPM", "Zeichen pro Minute"],
+  "summary": "Anschläge pro Minute zählen jeden Tastendruck, WPM (Wörter pro Minute) rechnen mit einem Normwort aus fünf Zeichen, Leerzeichen und Satzzeichen eingeschlossen. Für WPM teilst du die getippten Zeichen durch fünf und dann durch die Minuten: 250 Zeichen in einer Minute sind 50 WPM. Netto-WPM ziehen stehen gebliebene Fehler ab, und deutsche Prüfungen zählen auch die Umschalttaste als Anschlag.",
+  "faq": [
+    {"q": "Sind 200 Anschläge pro Minute gut?", "a": "200 Anschläge pro Minute entsprechen rund 40 WPM und liegen etwas unter dem online gemessenen Schnitt: In der Aalto-Studie von 2018 mit 168.000 Freiwilligen waren es 51,6 WPM, also rund 260 Anschläge. Für den IHK-Nachweis der schreibtechnischen Fertigkeiten reichen 120 Anschläge pro Minute, wenn die Fehlerquote stimmt. Bei 200 Anschlägen hast du im Schnitt 300 Millisekunden pro Zeichen."},
+    {"q": "Wie selten sind 100 WPM?", "a": "100 WPM, also 500 Anschläge pro Minute, sind selten. In der Aalto-Studie tippte nur das schnellste Zehntel über etwa 78 WPM, und diese Gruppe kam im Schnitt auf 89,6 WPM; die Schnellsten im Datensatz erreichten 120 WPM und mehr. Wer 100 WPM hält, braucht über den ganzen Test im Schnitt 120 Millisekunden pro Zeichen."},
+    {"q": "Was ist Raw-WPM?", "a": "Raw-WPM ist das Tempo vor jedem Abzug für Fehler. Monkeytype berechnet es wie seine normalen WPM, zählt aber auch falsch getippte Wörter mit, während die normalen WPM nur die Zeichen richtig getippter Wörter behalten. Der Abstand zwischen Raw- und normalen WPM zeigt dir, wie viel Tempo dich deine Tippfehler kosten."},
+    {"q": "Zählen Leerzeichen bei WPM mit?", "a": "Ja. Das Normwort hat fünf Zeichen mit Leerzeichen, eine Konvention, die Wobbrock bis etwa 1905 zurückverfolgt, und Typing.com zählt Leerzeichen und Satzzeichen genauso. Tasten, die kein Zeichen hinterlassen, etwa Umschalt- und Rücktaste, bringen keine WPM. In deutschen Prüfungen zählt die Umschalttaste dagegen als Anschlag, bei der IHK München auch die Rücktaste."},
+    {"q": "Wie berechne ich WPM in Excel oder Google Tabellen?", "a": "Schreib den getippten Text in Zelle A1 und die Zeit in Sekunden in B1, dann trag in eine andere Zelle =LÄNGE(A1)/5/(B1/60) ein; in englischen Programmversionen heißt die Funktion LEN. LÄNGE zählt jedes Zeichen mit Leerzeichen, das Ergebnis sind also Brutto-WPM. Für Netto-WPM kommt die Zahl der stehen gebliebenen Fehler in C1, und die Formel lautet =LÄNGE(A1)/5/(B1/60)-C1/(B1/60)."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (Hg.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (Paper, PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "IHK München und Oberbayern, Prüfung zum Nachweis der schreibtechnischen Fertigkeiten (PDF)", "url": "https://www.ihk-muenchen.de/ihk/documents/Berufliche-Bildung/Fortbildung/Fortbildungspr%C3%BCfungen/Anh%C3%A4nge/FSK_Schreibtechnische-Pr%C3%BCfung.pdf"},
+    {"title": "Volkshochschulverband Baden-Württemberg, Xpert Business Computerschreiben: Lernzielkatalog und Richtlinien zur Prüfung (Stand Oktober 2015, PDF)", "url": "https://berlin.de/vhs/themen/pruefungen-zertifikate/xpert/lzk_computerschreiben.pdf"},
+    {"title": "Wikipedia, Zehnfingersystem", "url": "https://de.wikipedia.org/wiki/Zehnfingersystem"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: Quelltext der About-Seite mit den Definitionen von wpm, raw und accuracy", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (Paper, PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Wikipedia (englisch): Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Miss deine Wörter pro Minute", "drill": "words"}
+}
+-->
+<h2>Was bedeutet WPM beim Tippen?</h2>
+<p>WPM steht für „words per minute“, Wörter pro Minute, und ein Wort sind beim Tippen beliebige fünf Zeichen. Buchstaben, Ziffern, Leerzeichen und Satzzeichen zählen alle mit. Umschalt- und Rücktaste zählen nicht, weil sie kein Zeichen in den Text setzen. Wer in einer Minute 300 Zeichen schreibt, tippt 60 WPM, ganz gleich, welche Wörter diese Zeichen ergeben.</p>
+<p>Die feste Wortlänge macht Werte vergleichbar, und im Deutschen braucht man sie besonders. Nach echten Wörtern gezählt, wäre „Ich bin da“ drei Wörter und „Kraftfahrzeughaftpflichtversicherung“ eines, obwohl das zweite mehr als dreimal so viele Anschläge braucht. Nach der Fünf-Zeichen-Regel sind „Ich bin da“ (10 Zeichen mit Leerzeichen) 2 Wörter und „Kraftfahrzeughaftpflichtversicherung“ (36 Zeichen) 7,2 Wörter. So landen Sprachen mit langen Wörtern auf derselben Skala wie das Englische.</p>
+<p>Jacob Wobbrocks <a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">Kapitel über Messgrößen der Texteingabe</a> schreibt, dass ein Wort seit etwa 1905 üblicherweise als fünf Zeichen inklusive Leerzeichen gilt, und I. Scott MacKenzie führt die Regel auf die Schreibwettbewerbe des frühen 20. Jahrhunderts zurück. Beide stützen sich auf Yamadas Geschichte der Schreibmaschine von 1980.</p>
+
+<h2>Was sind Anschläge pro Minute?</h2>
+<p>Anschläge pro Minute zählen, wie oft du in einer Minute eine Taste drückst. Im deutschsprachigen Raum ist das die klassische Einheit für das Schreibtempo, in Volkshochschulkursen ebenso wie in Kammerprüfungen. Ein Anschlag ist dort wörtlich gemeint. Die IHK München zählt laut ihren <a href="https://www.ihk-muenchen.de/ihk/documents/Berufliche-Bildung/Fortbildung/Fortbildungspr%C3%BCfungen/Anh%C3%A4nge/FSK_Schreibtechnische-Pr%C3%BCfung.pdf">Prüfungsanforderungen</a> jede Schreibtaste, die Leertaste, die Umschalttaste und sogar die Rücktaste. Die <a href="https://berlin.de/vhs/themen/pruefungen-zertifikate/xpert/lzk_computerschreiben.pdf">Prüfungsrichtlinien von Xpert Business</a>, dem Zertifikat der Volkshochschulen, zählen Schreibtaste, Zwischenraumtaste und Umschalttaste. Auch die <a href="https://de.wikipedia.org/wiki/Zehnfingersystem">deutsche Wikipedia</a> hält fest, dass die Umschalttaste und jede andere Taste mitzählt.</p>
+<p>Weil die Umschalttaste mitzählt, hat ein deutscher Text mehr Anschläge als Zeichen, denn jedes großgeschriebene Substantiv kostet einen Anschlag extra. Der Satz „Der Zug fährt um acht Uhr ab.“ hat 29 Zeichen, mit seinen drei Großbuchstaben aber 32 Anschläge. Umlaute kosten auf einer deutschen QWERTZ-Tastatur nur einen Anschlag, weil <kbd>Ä</kbd>, <kbd>Ö</kbd> und <kbd>Ü</kbd> eigene Tasten haben.</p>
+<p>Online-Tests rechnen meist in Zeichen. Monkeytype etwa teilt die Zeichen richtig getippter Wörter durch fünf, und bei den Weltmeisterschaften im Tastschreiben werden die Texte laut Wikipedia inzwischen ebenfalls in Zeichen pro Minute ausgezählt. Für den Alltag reicht eine Faustregel: Anschläge pro Minute geteilt durch 5 ergeben ungefähr WPM, WPM mal 5 ergeben Anschläge. Prüfungswerte liegen etwas darüber, weil die Umschalttaste mitzählt. Die petitdoigt-Ratgeber rechnen mit 1 WPM = 5 Anschlägen pro Minute.</p>
+
+<h2>Wie berechnest du Wörter pro Minute?</h2>
+<p>Um Wörter pro Minute zu berechnen, teilst du die Zahl der getippten Zeichen durch fünf und dann durch die Minuten, die du getippt hast.</p>
+<ol>
+<li>Zähle jedes Zeichen im Text, den du geschrieben hast, Leerzeichen und Satzzeichen eingeschlossen.</li>
+<li>Teile die Zahl durch 5, das ergibt Normwörter.</li>
+<li>Rechne die Zeit in Minuten um (45 Sekunden sind 0,75) und teile die Wörter dadurch.</li>
+</ol>
+<p>Als Formel: <code>WPM = Zeichen ÷ 5 ÷ Minuten</code>. Angenommen, du tippst 250 Zeichen in 75 Sekunden. Das sind 50 Wörter in 1,25 Minuten, also 40 WPM oder 200 Zeichen pro Minute.</p>
+<p>Forschungslabore korrigieren noch eine Kleinigkeit. Die Uhr startet mit dem ersten Anschlag, das erste Zeichen kostet also keine gemessene Zeit und fällt aus der Zählung. MacKenzies <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">Notiz zur Berechnung der Eingabegeschwindigkeit</a> rechnet das mit „the quick brown fox jumps over the lazy dog“ vor: 43 Zeichen in 20 Sekunden. Mit allen 43 Zeichen kämen 25,8 WPM heraus, mit den 42 Zeichen nach dem Start der Uhr 25,2 WPM. Bei längeren Tests verschwindet der Effekt fast: Bei 520 Zeichen in zwei Minuten macht er 0,1 WPM aus.</p>
+
+<h2>Was ist der Unterschied zwischen Brutto- und Netto-WPM?</h2>
+<p>Brutto-WPM messen den gesamten getippten Text samt Fehlern, Netto-WPM ziehen eine Strafe für die Fehler ab, die stehen geblieben sind. Üblich ist ein Wort pro Minute Abzug für jeden stehen gebliebenen Fehler pro Minute:</p>
+<p><code>Netto-WPM = Brutto-WPM − stehen gebliebene Fehler ÷ Minuten</code></p>
+<p>Die <a href="https://www.speedtypingonline.com/typing-equations">Formelsammlung von Speed Typing Online</a> gibt ein Beispiel: 80 Brutto-WPM über zwei Minuten mit 8 stehen gebliebenen Fehlern ergeben 4 Fehler pro Minute, das Netto-Tempo liegt also bei 76 WPM.</p>
+<p>Fehler, die du sofort korrigierst, kosten keinen zusätzlichen Abzug, denn du hast sie schon mit Zeit bezahlt. Die falsche Taste, die Rücktaste und die richtige Taste brauchen alle Zeit und hinterlassen ein einziges Zeichen. Stehen gebliebene Fehler können einen Wert schönen. Wobbrock merkt an, dass unkorrigierte Fehler das Tempo erhöhen, weil man schneller tippt, wenn man Fehler stehen lässt, und eine Strafe wie bei Netto-WPM nimmt diesen Vorteil wieder weg.</p>
+<p>Zwei weitere Anpassungen begegnen dir. Forschende berichten „adjusted WPM“, das WPM um die Rate stehen gebliebener Fehler verkleinert; in Wobbrocks Beispiel bleiben bei 10 % stehen gebliebenen Fehlern 90 % der WPM übrig. Manche Programme multiplizierten WPM mit der Genauigkeit. Typing.com nannte dieses Produkt einmal „Net Words Per Minute“ und schaffte es dann ab, weil es Tippende dazu brachte, auf ihre WPM zu schauen und die Genauigkeit zu vernachlässigen.</p>
+<p>Tipptests zeigen neben WPM meist die Genauigkeit. Sie ist die Zahl der richtigen Zeichen geteilt durch alle getippten Zeichen, mal 100, und sie zählt auch korrigierte Fehler mit: 514 richtige von 534 getippten Zeichen sind 96,3 %, selbst wenn im fertigen Text nur wenige Fehler übrig sind. Deutsche Prüfungen rechnen mit der Fehlerquote, also Fehler mal 100 geteilt durch alle Anschläge, und werten den ausgedruckten Text. Die IHK München lässt am PC höchstens 0,36 % zu. Xpert Business erlaubt höchstens 0,5 % und berechnet in jedem Wort nur einen Fehler. Was du anpeilen solltest, steht im <a href="guide:typing-accuracy">Ratgeber zur Genauigkeit beim Tippen</a>.</p>
+
+<h2>Rechenbeispiel: wie du WPM sechsfach aus einem Test berechnest</h2>
+<p>Hier wird ein zweiminütiger Test mit jeder Formel von oben gewertet. Am Ende stehen 520 Zeichen Text da, Leerzeichen eingeschlossen. Unterwegs hast du 14 falsche Zeichen getippt und gelöscht, und 6 falsche Zeichen sind stehen geblieben, jedes in einem anderen Wort aus fünf Buchstaben. Das macht 534 getippte Zeichen, davon 514 richtig.</p>
+<table>
+<caption>Ein zweiminütiger Test, sechs Arten, ihn zu werten</caption>
+<thead>
+<tr><th scope="col">Methode</th><th scope="col">Rechnung</th><th scope="col">WPM</th></tr>
+</thead>
+<tbody>
+<tr><td>Brutto-WPM</td><td>520 ÷ 5 ÷ 2</td><td>52,0</td></tr>
+<tr><td>WPM wie in der Forschung (Uhr startet mit dem ersten Zeichen)</td><td>519 ÷ 120 s × 60 ÷ 5</td><td>51,9</td></tr>
+<tr><td>Adjusted WPM (Forschung)</td><td>51,9 × (1 − 6 ÷ 520)</td><td>51,3</td></tr>
+<tr><td>WPM × Genauigkeit (ältere Programme)</td><td>52,0 × 514 ÷ 534</td><td>50,1</td></tr>
+<tr><td>Netto-WPM</td><td>52,0 − 6 ÷ 2</td><td>49,0</td></tr>
+<tr><td>Nur richtige Wörter (Regel von Monkeytype)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48,4</td></tr>
+</tbody>
+</table>
+<p>Die letzte Zeile nimmt an, dass jeder Tippfehler ein Wort aus fünf Buchstaben samt Leerzeichen kostet, also je 6 Zeichen. Nach Art einer deutschen Prüfung gewertet, kommen 6 Fehler auf mindestens 520 Anschläge, eine Fehlerquote von höchstens 1,15 %. Für das Zertifikat der Volkshochschulen wären bei 520 Anschlägen nur 2 Fehler erlaubt.</p>
+
+<h2>Warum zeigt jeder Tipptest einen anderen Wert?</h2>
+<p>Dein Wert schwankt zwischen Tests, weil Seiten verschiedene Formeln, Texte und Testlängen nutzen und weil dein eigenes Tempo innerhalb eines Tests schwankt. Allein die Formel hat das Beispiel oben um 3,6 WPM verschoben. <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a> zählt nur die Zeichen richtig getippter Wörter, ein Tippfehler kostet dort also das ganze Wort. Ein Test in Anschlägen mit Umschalttaste liefert für denselben Text einen höheren Wert als einer in Zeichen.</p>
+<p><a href="https://www.typing.com/blog/what-is-words-per-minute/">Typing.com</a> weist darauf hin, dass WPM nicht berücksichtigt, wie schwer der Inhalt ist, und dass wiederholtes Abtippen derselben Passage dein Tempo aufbläht, weil deine Finger den Text lernen. Ein Absatz aus kurzen, häufigen Wörtern bringt meist mehr als einer voller Großbuchstaben, Ziffern und Sonderzeichen, obwohl beide in Fünf-Zeichen-Wörtern gezählt werden.</p>
+<p>Auch die Testlänge zählt. Ein 15-Sekunden-Sprint misst einen einzigen Schub. Typing.com hält seine 3- und 5-Minuten-Tests für das genaueste Maß des Gesamttempos, weil sie lang genug für einen wiederholbaren Schnitt sind, ohne Handgelenke und Finger zu ermüden. Deutsche Prüfungen laufen zehn Minuten.</p>
+<p>Ein Live-Zähler und ein Endergebnis decken außerdem verschiedene Zeiträume ab. Das Endergebnis mittelt den ganzen Test, langsamen Start und Stolperer eingeschlossen. Ein gleitender Zähler zeigt nur die letzten Sekunden und sackt bei jedem Zögern ab. Die Übung <a href="app:words">Wörter</a> in petitdoigt zeigt beides: beim Tippen einen gleitenden WPM-Wert über 5, 10 oder 30 Sekunden, danach das Ergebnis jeder Runde im Vergleich zu deinen letzten zehn.</p>
+
+<h2>Wie misst du deine WPM zuverlässig?</h2>
+<p>Für einen WPM-Wert, dem du trauen kannst, machst du jedes Mal dieselbe Art von Test auf dieselbe Weise und prüfst die Formel, bevor du Zahlen vergleichst.</p>
+<ol>
+<li>Wähle einen Test von 3 bis 5 Minuten, für den Vergleich mit einer Prüfung 10 Minuten.</li>
+<li>Nimm Text, den du noch nicht getippt hast, in der Sprache, in der du sonst schreibst.</li>
+<li>Tippe in deinem Arbeitstempo und korrigiere Fehler so, wie du es sonst tust.</li>
+<li>Notiere WPM und Genauigkeit zusammen. 60 WPM bei 90 % Genauigkeit und 60 WPM bei 98 % verlangen verschiedenes Training.</li>
+<li>Prüfe, ob die Seite Brutto-WPM, Netto-WPM, nur richtige Wörter oder Anschläge mit Umschalttaste meldet, bevor du ihren Wert neben den einer anderen Seite stellst.</li>
+<li>Vergleiche mit deinen eigenen früheren Ergebnissen im selben Test, über mehrere Sitzungen.</li>
+</ol>
+
+<h2>Wie rechnest du Anschläge pro Minute in WPM um?</h2>
+<p>Du teilst Anschläge pro Minute durch fünf und erhältst WPM; umgekehrt sind Zeichen pro Minute (englisch CPM) WPM mal fünf, 52 WPM also 260 Zeichen pro Minute. Tastenanschläge im engen Sinn zählen gedrückte Tasten statt erzeugter Zeichen und schließen deshalb die Rücktaste ein, je nach Messung auch die Umschalttaste. Im Rechenbeispiel hast du in zwei Minuten 534 Zeichentasten und 14-mal die Rücktaste gedrückt: 274 Anschläge pro Minute für 260 Zeichen pro Minute.</p>
+<p>Forschende nennen das Verhältnis Anschläge pro Zeichen (KSPC). Die <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">Aalto-Studie mit 136 Millionen Anschlägen</a> (Dhakal und Kollegen, CHI 2018) zählte jede gedrückte Taste und fand bei ihren 168.000 Freiwilligen im Schnitt 1,17 Anschläge pro Zeichen. Das schnellste Zehntel kam auf 1,10, das langsamste auf 1,24, weil langsame Tipper mehr Fehler machen und korrigieren.</p>
+<p>Für die Datenerfassung nennen Stellen oft Anschläge pro Stunde; laut der englischen Wikipedia verlangen viele Jobs 8.000 oder 10.000. Wenn jeder Anschlag ein Zeichen erzeugt, entsprechen 10.000 pro Stunde etwa 33 WPM. Die Tabelle rechnet gängige Werte unter derselben Annahme um, mit einer Spalte für die 10-Minuten-Abschrift deutscher Prüfungen.</p>
+<table>
+<caption>WPM in anderen Einheiten, bei einem Anschlag pro Zeichen (ohne Umschalttaste)</caption>
+<thead>
+<tr><th scope="col">WPM</th><th scope="col">Anschläge pro Minute</th><th scope="col">Anschläge in 10 Minuten</th><th scope="col">Millisekunden pro Zeichen</th><th scope="col">Anschläge pro Stunde</th></tr>
+</thead>
+<tbody>
+<tr><td>16</td><td>80</td><td>800</td><td>750</td><td>4.800</td></tr>
+<tr><td>24</td><td>120</td><td>1.200</td><td>500</td><td>7.200</td></tr>
+<tr><td>30</td><td>150</td><td>1.500</td><td>400</td><td>9.000</td></tr>
+<tr><td>40</td><td>200</td><td>2.000</td><td>300</td><td>12.000</td></tr>
+<tr><td>60</td><td>300</td><td>3.000</td><td>200</td><td>18.000</td></tr>
+<tr><td>80</td><td>400</td><td>4.000</td><td>150</td><td>24.000</td></tr>
+<tr><td>100</td><td>500</td><td>5.000</td><td>120</td><td>30.000</td></tr>
+</tbody>
+</table>
+<p>800, 1.200 und 1.500 Anschläge in 10 Minuten sind Stufen des Volkshochschul-Zertifikats Xpert Business Computerschreiben, und 1.200 verlangt auch die IHK München. Weil dort die Umschalttaste mitzählt, erreichst du diese Werte schon mit etwas weniger WPM, als die Tabelle zeigt.</p>
+
+<h2>Wie viele Wörter pro Minute schaffen Menschen beim Tippen, Sprechen und Lesen?</h2>
+<p>Vorlesen und Hörbuchsprechen laufen viel schneller als Tippen: Das empfohlene Tempo für ein Hörbuch ist etwa dreimal so hoch wie das online gemessene Durchschnittstempo beim Tippen. Die Werte unten stammen aus verschiedenen Studien und zählen Wörter auf verschiedene Weise. Tippstudien zählen Wörter aus fünf Zeichen. Sprech- und Leseraten zählen die tatsächlich gesprochenen oder gelesenen Wörter, und Wobbrocks Kapitel merkt an, dass die Sprachforschung ein Wort so definiert.</p>
+<table>
+<caption>Wörter pro Minute nach Tätigkeit</caption>
+<thead>
+<tr><th scope="col">Tätigkeit</th><th scope="col">Wörter pro Minute</th><th scope="col">Quelle</th></tr>
+</thead>
+<tbody>
+<tr><td>Stenotype-Tastatur, schnellste geübte Nutzer</td><td>bis 360</td><td>Guinness World Records, über Wikipedia</td></tr>
+<tr><td>Vorlesen, 17 Sprachen</td><td>184 ± 29</td><td>Trauzettel-Klosinski und Dietz (2012), über Wikipedia</td></tr>
+<tr><td>Hörbuch sprechen (Empfehlung)</td><td>150 bis 160</td><td>Williams (1998), über Wikipedia</td></tr>
+<tr><td>Tippen auf einer Computertastatur, Online-Test</td><td>51,6 (Schnitt)</td><td>Dhakal und Kollegen (2018)</td></tr>
+<tr><td>Tippen auf dem Smartphone, Online-Test</td><td>36,2 (Schnitt)</td><td>Palin und Kollegen (2019)</td></tr>
+<tr><td>Abschreiben von Hand, Erwachsene von 18 bis 64</td><td>etwa 13 (68 Buchstaben pro Minute)</td><td>Wikipedia</td></tr>
+</tbody>
+</table>
+<p>Der Wert fürs Smartphone stammt aus <a href="https://userinterfaces.aalto.fi/typing37k/">einer Studie der Aalto-Universität von 2019 mit 37.370 Freiwilligen</a>, die dieselbe Methode und dasselbe Fünf-Zeichen-Wort nutzte wie die Studie am Computer und am Handy ein um etwa 15 WPM langsameres Tempo fand. Ein gesprochenes „ja“ zählt als ganzes Wort, deshalb taugen die Sprech- und Leseraten nur als grober Vergleich mit WPM beim Tippen.</p>
+
+<h2>Was verrät deine WPM über jeden Anschlag?</h2>
+<p>Deine WPM legen eine durchschnittliche Zeit pro Zeichen fest: Teile 12.000 durch deine WPM, dann hast du sie in Millisekunden. Bei 60 WPM sind es im Schnitt 200 ms pro Zeichen, bei 100 WPM 120 ms. Wer von 50 auf 60 WPM will, muss bei jedem Zeichen 40 ms einsparen, von 240 auf 200.</p>
+<p>Die Aalto-Studie hat diese Abstände direkt gemessen. Über alle Teilnehmenden lagen im Schnitt 239 ms zwischen einem Tastendruck und dem nächsten, bei einem Durchschnittstempo von 51,6 WPM. Das schnellste Zehntel, über etwa 78 WPM, kam auf 122 ms zwischen den Tasten, das langsamste Zehntel, unter etwa 26 WPM, auf 481 ms. Die Abstände schrumpfen vom langsamsten zum schnellsten Zehntel also etwa auf ein Viertel. Wie lange eine Taste unten blieb, schwankte viel weniger: im Schnitt 116 ms und selbst bei langsamen Tippern 80 bis 150 ms. Die Autoren lesen das als Zeichen, dass der meiste Tempogewinn anderswo herkommt.</p>
+<p>Frühere Studien an der Schreibmaschine, im selben Paper zusammengefasst, fanden Buchstabenpaare mit Fingern beider Hände 30 bis 60 ms schneller als Paare mit einer Hand und etwa 80 ms schneller als Paare mit demselben Finger. Auf heutigen Tastaturen zeigten die Aalto-Daten einen kleineren Gewinn durch Handwechsel, etwa 5 bis 20 ms, und langsame Tipper waren beim Handwechsel sogar 20 bis 28 ms langsamer. Auf QWERTZ wechselt <kbd>T</kbd> dann <kbd>Z</kbd> die Hand, wie in „jetzt“, während <kbd>Z</kbd> dann <kbd>U</kbd> in „zu“ zweimal den rechten Zeigefinger braucht. Deine WPM mitteln Hunderte solcher Übergänge, und ein paar langsame ziehen die ganze Zahl nach unten.</p>
+<p>Die Übung <a href="app:pairs">Paare</a> in petitdoigt misst jeden Übergang von Taste zu Taste, während du tippst, und baut ihre Runden im adaptiven Modus vor allem aus deinen langsamsten und fehleranfälligsten; die Statistik listet Latenz und Genauigkeit für jeden Finger, jeden Buchstaben und jeden schwachen Übergang. Der Ratgeber <a href="guide:how-to-type-faster">schneller tippen lernen</a> macht daraus einen Übungsplan, und der Ratgeber zur <a href="guide:typing-speed">durchschnittlichen Tippgeschwindigkeit</a> zeigt, wo dein Wert steht.</p>

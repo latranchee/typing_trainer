@@ -1,0 +1,125 @@
+<!--meta
+{
+  "id": "iso-vs-ansi",
+  "lang": "zh",
+  "slug": "iso-vs-ansi",
+  "title": "ANSI和ISO键盘的区别：回车、Shift与JIS配列",
+  "description": "ANSI和ISO键盘的区别逐键对比：回车和左 Shift 的大小、ISO 多出的那个键、日本的 JIS 配列、各国用哪种、怎么分辨你的键盘，以及该买哪种。",
+  "h1": "ANSI和ISO键盘的区别，JIS配列，以及怎样分辨你的键盘",
+  "keyword": "ANSI和ISO键盘的区别",
+  "keywords_secondary": ["ISO配列", "ANSI配列", "JIS配列", "ISO键盘", "ANSI和ISO哪个好", "大回车"],
+  "summary": "ANSI和ISO键盘的区别在回车键和左 Shift。ANSI 键盘的回车宽而扁，只占一行，左 Shift 很长；ISO 键盘的回车竖着占两行，左 Shift 短，旁边多一个键。美式英文和中文（拼音）键盘是 ANSI，欧洲大多用 ISO，日本用 JIS，它在缩短的空格键两边加了几个键。三种键盘上字母的位置完全一样。",
+  "faq": [
+    {"q": "MacBook 的键盘是 ANSI 还是 ISO？", "a": "看是哪个国家或地区的版本。在 Apple 的列表里，美式英文、中文（拼音）、中文（注音）、韩文和泰文键盘是 ANSI，日文键盘是 JIS，英式、德文、法文、西班牙文、加拿大法文等其他语言版本是 ISO。看回车键最快：只占一行就是 ANSI。"},
+    {"q": "打游戏用 ISO 还是 ANSI 好？", "a": "形状只改变键的大小和位置。在把冲刺、蹲下等动作绑在左 Shift 上的游戏里，ISO 给左手小指的是一个 1.25u 的键，旁边紧挨着多出的那个键；ANSI 的左 Shift 是 2.25u。习惯了一种形状的玩家，换到另一种后会有一阵子按不准左 Shift。"},
+    {"q": "ANSI 键帽能装在 ISO 键盘上吗？", "a": "大部分可以：字母、数字和周围的键在两种键盘上大小相同。不同的地方是回车、左 Shift、回车旁边的键和 ISO 多出的那个键，所以一套 ANSI 键帽在这几个位置会缺键或尺寸不对。选键帽时找带 ISO 补充套件的。"},
+    {"q": "“大回车”键盘是什么？", "a": "这个叫法多指回车键同时占满 ANSI 和 ISO 两个回车位置的键盘，原来在回车上方的键挪到数字行，和缩短的退格键并排。ISO/IEC 9995 把这种排列列为 ANSI 的一个变体，用于部分亚洲国家。也有人把 ISO 的两行回车叫作大回车，买之前最好看清实物图。"},
+    {"q": "日版笔记本的 JIS 键盘能打拼音吗？", "a": "能。JIS 键盘上字母键的位置和 ANSI、ISO 完全一样，拼音照样打。不同的是边上的键：空格键变短，两边多了無変換、変換和假名键，退格键缩成一个单位宽，旁边多一个 ¥ 键，右 Shift 也变短了。"},
+    {"q": "英国键盘是 ISO 还是 ANSI？", "a": "ISO。英式键盘的回车竖着占两行，左 Shift 短，旁边多一个打 \\ 和 | 的键，回车左边那个键打 # 和 ~。Apple 也把它的英式英文和爱尔兰键盘归为 ISO。"}
+  ],
+  "sources": [
+    {"title": "Apple 支持：如何识别不同国家或地区的 Apple 键盘布局", "url": "https://support.apple.com/zh-cn/102743"},
+    {"title": "Apple Support: How to identify your Apple keyboard layout by country or region", "url": "https://support.apple.com/102743"},
+    {"title": "Apple 支持：在 Mac 上指定键盘类型", "url": "https://support.apple.com/zh-cn/guide/mac-help/mchlp2886/mac"},
+    {"title": "Apple 支持：在 Mac 上指定键盘类型（macOS Monterey 12）", "url": "https://support.apple.com/zh-cn/guide/mac-help/mchlp2886/12.0/mac"},
+    {"title": "Apple Community: How To Fix Keyboard Type Problems", "url": "https://discussions.apple.com/docs/DOC-250007848"},
+    {"title": "维基百科：键盘布局", "url": "https://zh.wikipedia.org/zh-cn/%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80"},
+    {"title": "Wikipedia: ISO/IEC 9995", "url": "https://en.wikipedia.org/wiki/ISO/IEC_9995"},
+    {"title": "Wikipedia: Keyboard layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Wikipedia: Portuguese keyboard layout", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "Wikipedia: Language input keys", "url": "https://en.wikipedia.org/wiki/Language_input_keys"},
+    {"title": "Deskthority wiki: ANSI vs ISO", "url": "https://deskthority.net/wiki/ANSI_vs_ISO"},
+    {"title": "Deskthority wiki: ANSI vs JIS", "url": "https://deskthority.net/wiki/ANSI_vs_JIS"},
+    {"title": "Ultimate Hacking Keyboard: ANSI or ISO? Which keyboard layout is more ergonomic?", "url": "https://uhk.io/blog/2015/09/09/ansi-or-iso-which-keyboard-layout-is-more-ergonomic"},
+    {"title": "Corsair: ANSI vs ISO, what's the best keyboard layout?", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/ansi-vs-iso-whats-the-best-keyboard-layout/"},
+    {"title": "Keebsforall: ANSI vs ISO typing efficiency compared", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-vs-iso-typing-efficiency-compared"},
+    {"title": "Keebsforall: ANSI, ISO, JIS: which layout fits your needs?", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-iso-jis-which-layout-fits-your-needs"},
+    {"title": "KbdLayout: US keyboard layout (KBDUS)", "url": "https://kbdlayout.info/kbdus"},
+    {"title": "KbdLayout: United Kingdom keyboard layout (KBDUK)", "url": "https://kbdlayout.info/kbduk"},
+    {"title": "KbdLayout: German keyboard layout (KBDGR)", "url": "https://kbdlayout.info/kbdgr"},
+    {"title": "KbdLayout: French keyboard layout (KBDFR)", "url": "https://kbdlayout.info/kbdfr"},
+    {"title": "KbdLayout: Spanish keyboard layout (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "DreymaR's Big Bag of Keyboard Tricks: ergonomic mods", "url": "https://dreymar.colemak.org/ergo-mods.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "在和你一样的键盘上打字", "drill": "words"}
+}
+-->
+<p>ISO、ANSI 和 JIS 说的是键盘的物理形状，也就是每个键的大小和位置，中文键盘圈常叫它“配列”。你打字用的布局，比如美式 QWERTY 或德语 QWERTZ，是运行在这个形状上的软件设置（<a href="guide:keyboard-layouts">键盘布局</a>一文专门讲这些）。三种形状的大部分键完全相同，差别都在边缘，集中在回车、左 Shift 和空格键附近，它们改变的是小指要做的事。</p>
+<figure data-figure="board-shapes"><figcaption>ANSI、ISO 和 JIS 键盘并排对比。先看回车键和左 Shift，再看 JIS 空格键两边的键。</figcaption></figure>
+
+<h2>ANSI和ISO键盘的区别是什么？</h2>
+<p>ISO 键盘的回车键竖着占两行，左 Shift 短，字符键比 ANSI 多一个；ANSI 键盘的回车只占一行，左 Shift 一直延伸到 <kbd>Z</kbd>。ISO 多出的那个键就夹在左 Shift 和 <kbd>Z</kbd> 之间。</p>
+<p>竖长的回车还挤走了另一个键。在 ANSI 上，反斜杠键（美式键盘上是 <kbd>\</kbd> 和 <kbd>|</kbd>）排在最上面一排字母的末尾，正好在回车上方。ISO 那里没有位置，这个键就降到中间一排，紧挨在回车左边；英式键盘在它上面印的是 <kbd>#</kbd> 和 <kbd>~</kbd>。ISO/IEC 9995 键盘标准统计，ANSI 排列有 48 个字符键，ISO 排列有 49 个。全尺寸的美式 PC 键盘有 104 个键，常见的欧洲键盘有 105 个；去掉数字小键盘的 TKL 键盘，ANSI 是 87 键，ISO 是 88 键。</p>
+<p>键盘厂商用“u”作单位量键的大小：1u 就是一个字母键的宽度。下表在有资料说明时给出了单位。</p>
+<table>
+<caption>ANSI、ISO 和 JIS 键盘对比</caption>
+<thead><tr><th scope="col">项目</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">JIS</th></tr></thead>
+<tbody>
+<tr><th scope="row">回车键</th><td>只占一行，通常 2.25u 宽</td><td>竖占两行，倒 L 形</td><td>竖占两行，倒 L 形</td></tr>
+<tr><th scope="row">左 Shift</th><td>长，2.25u</td><td>短，约 1.25u，右边多一个键</td><td>长</td></tr>
+<tr><th scope="row">右 Shift</th><td>长</td><td>长</td><td>较短，左边多一个键（ろ）</td></tr>
+<tr><th scope="row">美式键盘的反斜杠键</th><td>最上面一排字母末尾，回车上方</td><td>中间一排，回车左边</td><td>中间一排，回车左边</td></tr>
+<tr><th scope="row">退格键</th><td>2u</td><td>2u</td><td>1u，旁边多一个 ¥ 键</td></tr>
+<tr><th scope="row">空格键</th><td>长</td><td>长</td><td>较短，两边是切换输入的键</td></tr>
+<tr><th scope="row">字符键</th><td>48</td><td>49</td><td>49</td></tr>
+<tr><th scope="row">全尺寸 PC 键盘的键数</th><td>104</td><td>105</td><td>109</td></tr>
+<tr><th scope="row">通行地区</th><td>美国</td><td>欧洲大部分地区</td><td>日本</td></tr>
+</tbody>
+</table>
+
+<h2>哪些国家和地区用 ISO、ANSI 或 JIS？</h2>
+<p>美国用 ANSI，欧洲几乎都用 ISO，日本用 JIS。Apple 把它的每种语言版本键盘都归入一种形状，所以它的键盘列表能给出一份按语言划分的清单。</p>
+<table>
+<caption>按语言划分的键盘形状，来自 Apple 的键盘列表（ABNT2 来自 ISO/IEC 9995）</caption>
+<thead><tr><th scope="col">形状</th><th scope="col">使用它的键盘</th></tr></thead>
+<tbody>
+<tr><th scope="row">ANSI</th><td>美式英文、中文（拼音）、中文（注音）、韩文、泰文</td></tr>
+<tr><th scope="row">ISO</th><td>英式英文和爱尔兰、德文和奥地利、法文和比利时、西班牙文、意大利文、葡萄牙文、瑞士、荷兰文、丹麦文、挪威文、瑞典文和芬兰文、俄文、希腊文、土耳其文、阿拉伯文、希伯来文、加拿大法文、拉丁美洲西班牙文等</td></tr>
+<tr><th scope="row">JIS</th><td>日文</td></tr>
+<tr><th scope="row">ABNT2（ISO 再加一个键）</th><td>巴西葡萄牙文</td></tr>
+</tbody>
+</table>
+<p>中国大陆打中文用拼音输入法，配的是美国标准键盘布局，没有专用的中文键盘，中文维基百科的<a href="https://zh.wikipedia.org/zh-cn/%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80">“键盘布局”词条</a>也这样写。Apple 的中文（拼音）键盘和美式英文键盘形状相同，区别在 <kbd>Tab</kbd> 正下方：美式键盘那里是大写锁定键，中文（拼音）键盘那里是“中/英”键。</p>
+<p>韩文键盘属于 ANSI 一族，在空格键两边多了两个键：한/영 在韩文和拉丁字母之间切换，한자 把韩文转换成汉字。有些亚洲市场还卖一种 ANSI 变体，回车特别大，同时占满 ANSI 和 ISO 两个回车位置。</p>
+<p>形状跟着键盘的目标市场走。在伦敦买的笔记本，把 Windows 或 macOS 换成美式英文以后，键盘照样是 ISO。</p>
+
+<h2>怎么分辨自己的键盘是 ANSI 还是 ISO？</h2>
+<p>看回车键：只占一行的是 ANSI，竖着占两行的是 ISO 或 JIS。还拿不准，就做下面四项检查：</p>
+<ol>
+<li>找到回车键。如果它只占一行，反斜杠键就在它正上方，那就是 ANSI。</li>
+<li>看左 Shift。如果它和 <kbd>Z</kbd> 之间隔着一个键，那就是 ISO。英式键盘在这个键上印 <kbd>\</kbd> <kbd>|</kbd>，德式键盘印 <kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>|</kbd>。</li>
+<li>看空格键两边。短空格键左右印着 無変換 和 変換，退格键旁边还有一个 ¥ 键，那就是 JIS。</li>
+<li>数一数最下面一排字母在两个 Shift 之间有几个键。ANSI 有 10 个，从 <kbd>Z</kbd> 到 <kbd>/</kbd>；ISO 和 JIS 都是 11 个，巴西的 ABNT2 是 12 个。</li>
+</ol>
+<p>macOS 能识别三种键盘类型：ANSI、ISO 和 JIS。插上一个它认不出的键盘时，会自动打开“键盘设置助理”。类型认错了，就会有两个键互换位置，最常见的是 <kbd>Esc</kbd> 下面那个键和左 Shift 右边那个键。按 Apple 为 macOS Monterey 写的说明，选取苹果菜单 &gt;“系统偏好设置”，点按“键盘”，再点按“更改键盘类型”，然后按屏幕上的提示操作：助理会请你按下左 Shift 右边的那个键，再让你在 ANSI、ISO 和 JIS 之间选择。</p>
+
+<h2>ISO 和 ANSI，哪个打字更好？</h2>
+<p>没有证据表明哪种形状能让你打得更快：我们没有找到比较 ISO 和 ANSI 打字速度的研究，说某种形状更快的文章也都没有引用研究。两种形状的差别在于小指去按三个键时要走多远：</p>
+<ul>
+<li><strong>左 Shift，左手小指。</strong>ISO 的左 Shift 是 1.25u，ANSI 是 2.25u，中间的空位由多出的那个键补上。在 ANSI 上练出来的小指如果伸得不够远，本想打大写字母，打出来的却是 <kbd>\</kbd> 或 <kbd>&lt;</kbd>。这在右手打的大写字母上最明显，比如 <kbd>H</kbd>、<kbd>J</kbd>、<kbd>M</kbd>，因为盲打的人打这些字母时按住的是左 Shift。</li>
+<li><strong>回车，右手小指。</strong>在 ANSI 上，回车紧跟在中间一排的 <kbd>'</kbd> 后面。ISO 在两者之间多放了一个键，小指要么沿着中间一排走得更远，要么往上去按回车的上半部分。</li>
+<li><strong>反斜杠，右手小指。</strong>ISO 把它降到中间一排、回车旁边，比 ANSI 上它在最上面一排末端的位置更近。</li>
+</ul>
+<p>Ultimate Hacking Keyboard 的 László Monda 以键的单位比较了两种形状，发现 ISO 上回车和左 Shift 离键盘中心大约远一个单位（他算出来是 20 毫米），反斜杠则近一个单位。他指出，人们每天要按回车和左 Shift 几百次，反斜杠却少得多。</p>
+<p>人们会察觉到的失误，多半出在换形状的时候。从 ANSI 换过来，右手小指在中间一排找回车，结果按到 ISO 回车左边那个键（英式键盘上是 <kbd>#</kbd>）。从 ISO 换过来，小指往上去够回车的上半部分，按到的却是 ANSI 的反斜杠键。在打算长期使用的键盘上慢而准地重复练习，眼睛看屏幕，这两种习惯都会慢慢消失。</p>
+<p>petitdoigt 能画出 ANSI、ISO 和 JIS 三种键盘，屏幕上的键盘可以和你桌上的一致，每个键都涂成负责它的手指的颜色，ISO 多出的那个键也不例外。<a href="app:words">选好你的键盘形状，打几组单词</a>，看看小指都去了哪里。<a href="guide:finger-placement">键盘指法图</a>画出了整块键盘上每个键归哪根手指，<a href="guide:type-without-looking">打字不看键盘的方法</a>帮你改掉低头的习惯。petitdoigt 目前没有中文界面，会显示英文界面。</p>
+
+<h2>键盘布局在 ISO 和 ANSI 键盘上都能用吗？</h2>
+<p>能：任何布局都能在任何形状上运行，因为每个物理键打出什么字符是由操作系统决定的。唯一要注意的是 ISO 多出的那个键，有些布局把别处没有的字符放在了它上面。</p>
+<ul>
+<li><strong>ISO 键盘上用美式布局。</strong>Windows 的美式布局让多出的那个键也打 <kbd>\</kbd> <kbd>|</kbd>，回车左边那个键照常打反斜杠，什么都不缺。</li>
+<li><strong>ANSI 键盘上用欧洲布局。</strong>Windows 的德语布局只在 ISO 多出的那个键上放了 <kbd>&lt;</kbd>、<kbd>&gt;</kbd> 和 <kbd>|</kbd>，法语 AZERTY 和西班牙语布局也把 <kbd>&lt;</kbd> 和 <kbd>&gt;</kbd> 放在那里。ANSI 键盘没有这个键，这些字符就得靠改键或换布局才能打出来。<a href="guide:qwertz-vs-qwerty">QWERTZ 和 QWERTY 对比</a>与 <a href="guide:azerty-vs-qwerty">AZERTY 和 QWERTY 对比</a>讲了这些布局的其他细节。</li>
+</ul>
+<p>欧洲布局还把右 Alt 键当作 AltGr，用来打很多键上的第三个字符：在英式布局里，<kbd>AltGr</kbd> 加 <kbd>4</kbd> 打出 €。德语布局把 <kbd>{</kbd> <kbd>[</kbd> <kbd>]</kbd> <kbd>}</kbd> 放在 AltGr 加 <kbd>7</kbd> 到 <kbd>0</kbd> 上，美式布局则让括号在 <kbd>P</kbd> 右边各占一个键，写代码时差别很明显。美式布局在 ISO 键盘上什么都不缺，所以拿到一块 ISO 键盘的程序员，可以保留键盘，只在软件里换成美式布局。</p>
+<p>Dvorak、Colemak 和 Workman 只在两种形状共有的区域里重排字母，所以在 ISO 和 ANSI 上表现一样。Colemak-DH 是例外：它用到 angle mod，把左下角那一排键整体左移一位。在 ISO 键盘上，多出的那个键正好接住这次移动，DreymaR's Big Bag of Keyboard Tricks 称它“几乎就是一个备用键”。ANSI 键盘没有这个备用键，所以常见的 ANSI 版本把 <kbd>Z</kbd> 挪到最下面一排的中间。petitdoigt 根据物理键位自己套用布局，你不用安装任何东西就能<a href="app:words?layout=colemak-dh">在浏览器里试打 Colemak-DH</a>。<a href="guide:colemak">Colemak 布局指南</a>讲了这个布局的其余部分。</p>
+
+<h2>JIS 键盘是什么？</h2>
+<p>JIS 是日本使用的键盘形状：一个和 ISO 一样的竖长回车，外加几个打日文用的键。全尺寸 JIS 键盘有 109 个键，比 ISO 多 4 个，比 ANSI 多 5 个。买日版笔记本时就会遇到它：Apple 的日文键盘就是这种形状。</p>
+<p>多出的键是从变短的邻居那里挤出空间的。空格键缩短，左边放下 無変換（muhenkan），右边放下 変換（henkan）和假名键：変換 把打出的假名转换成汉字，無変換 保持不转换，假名键在平假名和片假名之间切换。退格键缩成一个单位宽，给 ¥ 键腾出位置；右 Shift 也变短，在斜杠旁边放下一个 ろ（ro）键。左 Shift 保持原长，所以最下面一排字母和 ISO 一样有 11 个键，只是多出的那个键在另一端。左上角那个在美式键盘上打 <kbd>`</kbd> 的键，变成了 半角/全角（hankaku/zenkaku），用来在半角和全角字符之间切换。</p>
+<p>字母的位置和 ANSI、ISO 完全一样，所以盲打者的基准键在日文键盘上照样能用，拼音也照常打。变化的伸手动作都在边缘，集中在退格键和右 Shift 附近，拇指要适应一个更窄的空格键。</p>
+
+<h2>该买 ISO 还是 ANSI 键盘？</h2>
+<p>买你的布局需要的形状。如果你主要打拼音，或者用美式英文以及 Dvorak、Colemak、Workman 这类基于美式布局的布局，ANSI 已经提供了你需要的每一个键。如果你要打德文、法文、西班牙文、英式英文或其他把字符放在多出的那个键上的欧洲布局，就选 ISO。用 Colemak-DH 的人可能还是更喜欢 ISO，因为 angle mod 在那里有现成的备用键。</p>
+<p>如果你已经能在一种形状上熟练盲打，继续用它，就不必重新练回车和左 Shift。喜欢改装键盘的人还要考虑键帽：Corsair 指出，键帽套装总有 ANSI 版本，却不一定有 ISO 版本，Keebsforall 则把 JIS 键帽的选择评为非常有限。</p>

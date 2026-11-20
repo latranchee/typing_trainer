@@ -1,0 +1,202 @@
+<!--meta
+{
+  "id": "keyboard-layouts",
+  "lang": "pl",
+  "slug": "uklady-klawiatury",
+  "title": "Układy klawiatury: rodzaje, porównanie i który wybrać",
+  "description": "Układy klawiatury w jednym miejscu: polski programisty, 214, QWERTZ, AZERTY, Dvorak i Colemak. Co zmieniają, który wybrać i jak wypróbować bez instalacji.",
+  "h1": "Układy klawiatury: wszystkie popularne rodzaje i jak wybrać swój",
+  "keyword": "układy klawiatury",
+  "keywords_secondary": ["układ klawiatury", "rodzaje układów klawiatury", "najlepszy układ klawiatury", "polski programisty", "jak zmienić układ klawiatury"],
+  "summary": "Układy klawiatury przypisują każdemu fizycznemu klawiszowi znak, który wpisuje, i dzielą się na dwie rodziny. Układy narodowe, takie jak Polski (programisty), niemiecki QWERTZ czy francuski AZERTY, dopasowują klawiaturę do liter danego języka. Układy alternatywne, takie jak Dvorak, Colemak i Workman, przestawiają litery angielskie, żeby skrócić drogę palców. W Polsce standardem jest układ programisty i dla większości osób to najlepszy wybór: żaden układ alternatywny nie ma udowodnionej przewagi szybkości.",
+  "faq": [
+    {
+      "q": "Dlaczego klawiatura pisze Y zamiast Z?",
+      "a": "System najpewniej przełączył się na układ Polski (214), czyli klawiaturę maszynistki QWERTZ, w której Y i Z są zamienione, a polskie litery mają własne klawisze. Wróć na Polski (programisty) skrótem Windows+Spacja albo przez ikonę języka na pasku zadań. Jeśli nie używasz układu 214, usuń go: Ustawienia › Czas i język › Język i region, trzy kropki przy polskim, Opcje języka, trzy kropki przy układzie, Usuń."
+    },
+    {
+      "q": "Jak sprawdzić, jaki mam układ klawiatury?",
+      "a": "Sprawdź dwie rzeczy. Aktywny układ pokazuje ikona języka na pasku zadań Windows albo menu wprowadzania na pasku menu Maca. O samej klawiaturze mówią nadruki: pierwsze litery górnego rzędu nazywają rodzinę (QWERTY, QWERTZ, AZERTY), a wysoki Enter oznacza klawiaturę ISO. Jeśli klawisz wpisuje coś innego niż jego nadruk, układ ustawiony w systemie różni się od nadruków."
+    },
+    {
+      "q": "Jakie są trzy rodzaje klawiatur?",
+      "a": "To pytanie zwykle dotyczy trzech standardów fizycznych. ANSI to klawiatura amerykańska z szerokim, jednorzędowym Enterem. ISO, używana w Wielkiej Brytanii i większości innych krajów, ma wysoki Enter i dodatkowy klawisz obok lewego Shifta. JIS to klawiatura japońska. Jeśli chodzi o mapę znaków, trzy wielkie łacińskie rodziny to QWERTY, AZERTY i QWERTZ."
+    },
+    {
+      "q": "Dlaczego litery na klawiaturze nie są ułożone alfabetycznie?",
+      "a": "Klawiatury komputerowe odziedziczyły QWERTY po maszynie do pisania Sholesa i Glidden, którą Remington sprzedawał od 1874 roku. Producenci klawiatur i kursy pisania trzymali się układu, który wszyscy już znali, a alternatywy się nie przyjęły. Popularna opowieść, że kolejność liter miała zapobiegać zakleszczaniu się czcionek, jest sporna."
+    },
+    {
+      "q": "Czy mogę używać układu innego niż nadruki na klawiszach?",
+      "a": "Tak. Układ siedzi w oprogramowaniu, więc każda klawiatura może pisać Dvorakiem, Colemakiem czy AZERTY. Nadruki będą się wtedy nie zgadzać, co przestaje przeszkadzać, gdy piszesz bezwzrokowo. Do tego czasu korzystaj z klawiatury ekranowej, która pokazuje prawdziwy układ, albo kup nakładki lub naklejki."
+    }
+  ],
+  "sources": [
+    {"title": "Układ klawiatury (Wikipedia, wolna encyklopedia)", "url": "https://pl.wikipedia.org/wiki/Uk%C5%82ad_klawiatury"},
+    {"title": "List of QWERTY keyboard language variants (Wikipedia): Polish", "url": "https://en.wikipedia.org/wiki/List_of_QWERTY_keyboard_language_variants"},
+    {"title": "Windows keyboard layouts: Polish (Programmers), Polish (214), Colemak (Microsoft Learn)", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Alfabet polski: częstość występowania liter według NKJP (Wikipedia)", "url": "https://pl.wikipedia.org/wiki/Alfabet_polski"},
+    {"title": "Klawiatura Dvoraka (Wikipedia, wolna encyklopedia)", "url": "https://pl.wikipedia.org/wiki/Klawiatura_Dvoraka"},
+    {"title": "Colemak Multilingual: polskie znaki w oficjalnym układzie", "url": "https://colemak.com/Multilingual"},
+    {"title": "Keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "QWERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTY"},
+    {"title": "British and American keyboards (Wikipedia)", "url": "https://en.wikipedia.org/wiki/British_and_American_keyboards"},
+    {"title": "AZERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/AZERTY"},
+    {"title": "QWERTZ (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTZ"},
+    {"title": "German keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/German_keyboard_layout"},
+    {"title": "US patent 2,040,248: Typewriter keyboard (Dvorak i Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Liebowitz i Margolis, The Fable of the Keys, Journal of Law and Economics 33(1), 1990", "url": "https://chicagounbound.uchicago.edu/jle/vol33/iss1/2/"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak: oficjalna strona układu", "url": "https://colemak.com/"},
+    {"title": "Colemak Mod-DH: oficjalna strona", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "The Workman keyboard layout philosophy (OJ Bucao)", "url": "https://workmanlayout.org/"},
+    {"title": "Manage the language and keyboard/input layout settings in Windows (Microsoft Support)", "url": "https://support.microsoft.com/en-us/help/4496404"},
+    {"title": "Write in another language on Mac (Apple Support)", "url": "https://support.apple.com/guide/mac-help/mchlp1406"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Wypróbuj nowy układ w przeglądarce", "drill": "words"}
+}
+-->
+<p>Układ klawiatury to mapa, która każdemu fizycznemu klawiszowi przypisuje znak. Klawisz na prawo od <kbd>Tab</kbd> wpisuje Q na polskiej klawiaturze i A na francuskiej, choć sprzęt pod spodem jest ten sam. Układ trzyma system operacyjny, więc zmienisz go w minutę, a nadruki na klawiszach zostaną takie, jakie były. W Polsce widać to na co dzień: klawisz na prawo od <kbd>T</kbd> wpisuje Y w układzie Polski (programisty) i Z w układzie Polski (214).</p>
+<p>Sklepy nazywają układem także fizyczny kształt klawiatury (ANSI, ISO, JIS) i rozmiary takie jak TKL czy 60%. Tym zajmuje się osobna sekcja pod koniec. Większość tego przewodnika dotyczy mapy znaków: co który układ gdzie umieszcza i który z nich pasuje do ciebie.</p>
+
+<h2>Jakie są rodzaje układów klawiatury?</h2>
+<p>Układy klawiatury dzielą się na dwie rodziny. Układy narodowe dopasowują QWERTY do języka: dodają jego litery (ą, ü, é, ñ), przesuwają interpunkcję i czasem zamieniają miejscami kilka liter. Układy alternatywne przestawiają same litery angielskie tak, żeby najczęstsze trafiały pod najsilniejsze palce. Tabela zbiera układy, na które najłatwiej trafić.</p>
+<table>
+<caption>Popularne układy klawiatury i to, co zmieniają względem amerykańskiego QWERTY</caption>
+<thead><tr><th scope="col">Układ</th><th scope="col">Rodzina</th><th scope="col">Gdzie się go używa</th><th scope="col">Co zmienia względem US QWERTY</th></tr></thead>
+<tbody>
+<tr><td>Polski (programisty)</td><td>Narodowy</td><td>Polska, praktycznie każdy komputer</td><td>Litery bez zmian; ą, ę, ł, ż i reszta przez prawy Alt (AltGr)</td></tr>
+<tr><td>Polski (214)</td><td>Narodowy</td><td>Polska, rzadko</td><td>Klawiatura maszynistki QWERTZ: Y i Z zamienione, polskie litery na osobnych klawiszach</td></tr>
+<tr><td>US QWERTY</td><td>Narodowy</td><td>Stany Zjednoczone</td><td>Układ odniesienia</td></tr>
+<tr><td>UK QWERTY</td><td>Narodowy</td><td>Wielka Brytania</td><td>@ i " zamienione, £ na klawiszu 3, dodatkowy klawisz na # i ~</td></tr>
+<tr><td>Niemiecki QWERTZ</td><td>Narodowy</td><td>Niemcy, Austria, duża część Europy Środkowej</td><td>Y i Z zamienione; ä, ö, ü i ß na własnych klawiszach; wiele symboli przez AltGr</td></tr>
+<tr><td>Szwajcarski QWERTZ</td><td>Narodowy</td><td>Szwajcaria</td><td>Niemieckie litery bez ß; francuskie akcenty z Shiftem</td></tr>
+<tr><td>Francuski AZERTY</td><td>Narodowy</td><td>Francja, Belgia, część krajów Afryki</td><td>A i Q zamienione, Z i W zamienione, M obok L, cyfry z Shiftem</td></tr>
+<tr><td>Kanadyjski francuski</td><td>Narodowy</td><td>Francuskojęzyczna Kanada</td><td>Te same litery; é ma własny klawisz, akcenty to klawisze martwe</td></tr>
+<tr><td>Hiszpański (Hiszpania)</td><td>Narodowy</td><td>Hiszpania</td><td>ñ obok L, klawisz Ç, @ pod AltGr+2</td></tr>
+<tr><td>Latynoamerykański</td><td>Narodowy</td><td>Meksyk, Ameryka Środkowa i Południowa</td><td>ñ obok L, bez klawisza Ç, @ pod AltGr+Q</td></tr>
+<tr><td>Dvorak</td><td>Alternatywny</td><td>Osoby piszące po angielsku, które go wybrały</td><td>Wszystkie litery poza A i M zmieniają miejsce; samogłoski pod lewą ręką</td></tr>
+<tr><td>Colemak</td><td>Alternatywny</td><td>Jak wyżej</td><td>17 klawiszy przesuniętych; Z, X, C i V zostają</td></tr>
+<tr><td>Colemak-DH</td><td>Alternatywny</td><td>Jak wyżej</td><td>Colemak z D i H wyjętymi ze środkowych kolumn</td></tr>
+<tr><td>Workman</td><td>Alternatywny</td><td>Jak wyżej</td><td>21 znaków inaczej; mniej sięgania palcem wskazującym w bok</td></tr>
+</tbody>
+</table>
+<p>Języki z innym alfabetem mają własne układy, na przykład rodzina ЙЦУКЕН dla rosyjskiego.</p>
+
+<h2>Jak wygląda polski układ klawiatury?</h2>
+<p>Polski układ klawiatury to w praktyce Polski (programisty): amerykański QWERTY, w którym polskie litery wpisujesz prawym Altem. Polska Wikipedia nazywa tak zwaną klawiaturę programisty najpopularniejszym układem w Polsce, a angielska dodaje, że korzysta z niej praktycznie każdy komputer sprzedawany na polskim rynku. Każda polska litera leży pod literą, którą przypomina, z jednym wyjątkiem.</p>
+<table>
+<caption>Polskie znaki w układzie Polski (programisty) w Windows</caption>
+<thead><tr><th scope="col">Znak</th><th scope="col">Kombinacja klawiszy</th></tr></thead>
+<tbody>
+<tr><td>ą, ę, ó</td><td><kbd>AltGr</kbd>+<kbd>A</kbd>, <kbd>AltGr</kbd>+<kbd>E</kbd>, <kbd>AltGr</kbd>+<kbd>O</kbd></td></tr>
+<tr><td>ć, ń, ś</td><td><kbd>AltGr</kbd>+<kbd>C</kbd>, <kbd>AltGr</kbd>+<kbd>N</kbd>, <kbd>AltGr</kbd>+<kbd>S</kbd></td></tr>
+<tr><td>ł</td><td><kbd>AltGr</kbd>+<kbd>L</kbd></td></tr>
+<tr><td>ż</td><td><kbd>AltGr</kbd>+<kbd>Z</kbd></td></tr>
+<tr><td>ź</td><td><kbd>AltGr</kbd>+<kbd>X</kbd>, czyli klawisz obok Z: to jest ten wyjątek</td></tr>
+</tbody>
+</table>
+<p>Wielkie litery dostajesz z <kbd>Shift</kbd>+<kbd>AltGr</kbd> albo z włączonym Caps Lockiem. Na wielu klawiaturach prawy klawisz ma nadruk Alt, choć działa jak AltGr, dlatego mówi się po prostu „prawy Alt”. W Windows tylda jest dodatkowo klawiszem martwym: <kbd>Shift</kbd>+<kbd>`</kbd>, a potem <kbd>L</kbd>, daje Ł, a samą tyldę wpiszesz, naciskając po niej spację. Dla osób piszących kod ten układ jest wygodny, bo nawiasy kwadratowe i klamrowe, ukośnik odwrotny i @ leżą tam, gdzie na klawiaturze amerykańskiej, na pojedynczych klawiszach albo z Shiftem.</p>
+<p>Drugi polski układ w Windows, Polski (214), to klawiatura maszynistki: QWERTZ według normy PN-87, z polskimi literami na osobnych klawiszach i z Y oraz Z zamienionymi miejscami, jak na klawiaturze niemieckiej. Angielska Wikipedia opisuje go jako w Polsce w większości pomijany, bo niepraktyczny.</p>
+
+<h2>Czym różnią się narodowe układy klawiatury?</h2>
+<p>Układy narodowe różnią się głównie interpunkcją i literami diakrytycznymi, a ich rzędy liter trzymają się blisko QWERTY.</p>
+<h3>QWERTY amerykański i brytyjski</h3>
+<p>QWERTY pochodzi z maszyny do pisania Sholesa i Glidden, którą firma E. Remington and Sons sprzedawała od 1874 roku. Popularna historia, że Christopher Latham Sholes ułożył klawisze tak, żeby czcionki się nie zakleszczały, jest sporna. Układ został na komputerach jako standard de facto, a konkurencyjne układy się nie przyjęły, po części dlatego, że klawiatury QWERTY i kursy pisania były wszędzie.</p>
+<p>Układ brytyjski zostawia litery i przesuwa symbole. @ i " zamieniają się miejscami, £ zajmuje klawisz 3, # i ~ dostają dodatkowy klawisz obok Entera, a ukośnik odwrotny ląduje na lewo od <kbd>Z</kbd>. Enter zajmuje dwa rzędy, a klawiatura ma 105 klawiszy wobec 104 na amerykańskiej klawiaturze dla Windows.</p>
+<h3>Niemiecki i szwajcarski QWERTZ</h3>
+<p>QWERTZ to standard w Niemczech, Austrii i Szwajcarii, popularny w całej Europie Środkowej. Y i Z są zamienione, bo w niemieckim Z występuje dużo częściej niż Y, a T i Z często stoją obok siebie: na maszynie do pisania rozdzielenie ich między dwie ręce zmniejszało zakleszczanie. Umlauty ä, ö i ü mają własne klawisze, tak samo ß na klawiaturach niemieckich i austriackich. Nawiasy klamrowe i kwadratowe, ukośnik odwrotny, @ i pionowa kreska wymagają <kbd>AltGr</kbd>, co ma znaczenie, jeśli piszesz kod. Układ szwajcarski rezygnuje z ß, którego szwajcarska odmiana niemieckiego nie używa, i stawia é, à oraz è pod Shiftem, żeby dało się pisać też po francusku. Więcej w porównaniu <a href="guide:qwertz-vs-qwerty">QWERTZ i QWERTY</a>.</p>
+<h3>Francuski AZERTY i kanadyjski francuski</h3>
+<p>AZERTY działa we Francji, Belgii i części krajów Afryki. W porównaniu z QWERTY A i Q zamieniają się miejscami, Z i W również, a M przechodzi na prawo od L. Rząd cyfr bez Shifta wpisuje symbole i litery z akcentami (&amp;, é, è, ç, à), więc każda cyfra wymaga <kbd>Shift</kbd>. Kanadyjski francuski zostawia litery QWERTY, daje é osobny klawisz i wpisuje pozostałe akcenty klawiszami martwymi. Różnice klawisz po klawiszu opisuje porównanie <a href="guide:azerty-vs-qwerty">AZERTY i QWERTY</a>.</p>
+<h3>Hiszpański i latynoamerykański</h3>
+<p>Oba hiszpańskie układy zachowują litery QWERTY i stawiają ñ na prawo od L. Układ hiszpański (Hiszpania) dodaje klawisz Ç, umieszcza akcent ostry obok ñ i wpisuje @ przez <kbd>AltGr</kbd>+<kbd>2</kbd>. Układ latynoamerykański, używany w Meksyku oraz w Ameryce Środkowej i Południowej, nie ma klawisza Ç ani znaku €, umieszcza akcent ostry obok P i wpisuje @ przez <kbd>AltGr</kbd>+<kbd>Q</kbd>.</p>
+
+<h2>Jakie są alternatywne układy klawiatury?</h2>
+<p>Alternatywne układy klawiatury przestawiają litery angielskie tak, żeby najczęstsze leżały w rzędzie podstawowym, czyli w środkowym rzędzie liter, na którym spoczywają palce, a dłonie mniej sięgały.</p>
+<h3>Dvorak</h3>
+<p>August Dvorak i William Dealey zgłosili swój układ w 1932 roku, a amerykański patent nr 2 040 248 otrzymali w maju 1936 roku. Lewa ręka spoczywa na samogłoskach A O E U I, prawa na spółgłoskach D H T N S. ANSI uznał Dvoraka za alternatywny standard na początku lat 80., a Windows, macOS i Linux mają go w zestawie. Z klawiszy skrótów Z, X, C i V tylko X zostaje pod lewą ręką. Historię i spór o szybkość opisuje przewodnik po <a href="guide:dvorak">klawiaturze Dvoraka</a>.</p>
+<h3>Colemak</h3>
+<p>Shai Coleman wydał Colemak 1 stycznia 2006 roku. Układ przesuwa 17 klawiszy i zostawia większość interpunkcji tam, gdzie ma ją QWERTY. Z, X, C i V nie zmieniają miejsca, więc cofanie, wycinanie, kopiowanie i wklejanie zostają na swoich klawiszach, a rękę zmieniają tylko dwa klawisze. W wersji domyślnej Caps Lock staje się drugim Backspace'em. macOS i Linux mają Colemak wbudowany, a Windows dodał go w Windows 11 w wersji 24H2. Jak się go nauczyć, wyjaśnia przewodnik po <a href="guide:colemak">układzie Colemak</a>.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak z klawiszami pokolorowanymi według palców. Częste litery R, S, T, N i E leżą w rzędzie podstawowym, a Z, X, C i V zostają na klawiszach z QWERTY.</figcaption></figure>
+<h3>Colemak-DH</h3>
+<p>Colemak umieszcza D i H w dwóch środkowych kolumnach, do których palce wskazujące muszą sięgać w bok. Colemak-DH, który SteveP opublikował w październiku 2014 roku, przenosi obie litery do dolnego rzędu, gdzie palec wskazujący po prostu zgina się w dół. G wraca na swój klawisz z QWERTY, B przechodzi do górnego rzędu, a H zamienia się miejscami z M. Żaden klawisz nie zmienia palca. Projekt ma wersje dla klawiatur ANSI, ISO i matrycowych, bo ich lewa część dolnego rzędu wygląda inaczej.</p>
+<h3>Workman</h3>
+<p>OJ Bucao opublikował Workmana w 2010 roku. Uznał, że ruchy w bok obciążają nadgarstki bardziej niż ruchy w górę i w dół, więc Workman trzyma pisanie z dala od środkowych kolumn: według jego obliczeń trafia tam około 6% uderzeń, wobec 12% na Colemaku, 14% na Dvoraku i 22% na QWERTY. Od QWERTY różni się 21 znakami. Z i X zostają na miejscu, a C i V przesuwają się o jeden klawisz w prawo. Linux ma Workmana wbudowanego, a do Windows i macOS potrzebne są pliki instalacyjne ze strony projektu.</p>
+<table>
+<caption>Alternatywne układy klawiatury w porównaniu</caption>
+<thead><tr><th scope="col">Układ</th><th scope="col">Powstał</th><th scope="col">Co zmienia względem QWERTY</th><th scope="col">Z X C V</th><th scope="col">Wbudowany w</th></tr></thead>
+<tbody>
+<tr><td>Dvorak</td><td>1932, patent 1936</td><td>Wszystkie litery poza A i M oraz interpunkcja</td><td>Rozrzucone, trzy pod prawą ręką</td><td>Windows, macOS, Linux</td></tr>
+<tr><td>Colemak</td><td>2006</td><td>17 klawiszy</td><td>Bez zmian</td><td>macOS, Linux, Windows 11 od 24H2</td></tr>
+<tr><td>Colemak-DH</td><td>2014</td><td>Zmiany Colemaka, a do tego D, G, B, H i M przesunięte jeszcze raz</td><td>Pod lewą ręką, część przesunięta w dolnym rzędzie</td><td>Pliki instalacyjne projektu</td></tr>
+<tr><td>Workman</td><td>2010</td><td>21 znaków</td><td>Z i X bez zmian, C i V przesunięte</td><td>Linux; pliki instalacyjne dla Windows i macOS</td></tr>
+</tbody>
+</table>
+<h3>Jak alternatywne układy radzą sobie z polskim tekstem?</h3>
+<p>Wszystkie cztery układy zaprojektowano pod angielski, więc po polsku dają mniejszy zysk. Często cytowane wyliczenia mówią, że w rzędzie podstawowym ląduje 32% liter angielskiego tekstu na QWERTY, około 70% na Dvoraku i 74% na Colemaku. Policzyliśmy to samo dla polszczyzny, sumując częstości liter z próbki Narodowego Korpusu Języka Polskiego, które podaje Wikipedia. Litery z ogonkami i kreskami (razem około 7% tekstu) pominęliśmy, bo ich miejsce zależy od sposobu wpisywania.</p>
+<table>
+<caption>Udział liter wpisywanych w rzędzie podstawowym: tekst angielski i polski</caption>
+<thead><tr><th scope="col">Układ</th><th scope="col">Tekst angielski</th><th scope="col">Tekst polski (obliczenia z NKJP)</th></tr></thead>
+<tbody>
+<tr><td>QWERTY, czyli też Polski (programisty)</td><td>32%</td><td>27%</td></tr>
+<tr><td>Dvorak</td><td>70%</td><td>53%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>56%</td></tr>
+</tbody>
+</table>
+<p>Alternatywny układ mniej więcej podwaja więc pracę w rzędzie podstawowym także po polsku. Częste w polszczyźnie Z (5,6% liter), W i K lądują we wszystkich czterech układach alternatywnych poza tym rzędem. Liczą się też polskie znaki: wbudowany w Windows Dvorak według polskiej Wikipedii w ogóle ich nie obsługuje, a oficjalny Colemak ze strony colemak.com wpisuje je klawiszami martwymi pod AltGr.</p>
+
+<h2>Który układ klawiatury jest najlepszy?</h2>
+<p>Dla większości osób najlepszy układ klawiatury to układ narodowy języka, w którym piszą, a w Polsce oznacza to Polski (programisty): polskie litery masz pod jednym skrótem, a ten sam układ czeka na każdym komputerze, przy którym usiądziesz. Układy alternatywne skracają drogę palców, a badania, które je porównywały, znalazły niewielki zysk szybkości. W 1956 roku Earle Strong przeprowadził dla amerykańskiej General Services Administration badanie z dziesięcioma osobami w każdej grupie i uznał, że Dvorak nie jest wydajniejszy od QWERTY, choć krytycy zarzucają badaniu stronniczość na korzyść grupy QWERTY. W 1990 roku ekonomiści Stan Liebowitz i Stephen Margolis przejrzeli eksperymenty na łamach Journal of Law and Economics i stwierdzili, że najlepiej udokumentowane z nich pokazują niewielką albo żadną przewagę Dvoraka. Późniejsze eksperymenty wykazały, że wiele układów, w tym niektóre alfabetyczne, pozwala po treningu pisać w podobnym tempie.</p>
+<table>
+<caption>Jaki układ klawiatury wybrać</caption>
+<thead><tr><th scope="col">Twoja sytuacja</th><th scope="col">Dobry wybór</th><th scope="col">Dlaczego</th></tr></thead>
+<tbody>
+<tr><td>Piszesz głównie po polsku</td><td>Polski (programisty)</td><td>ą, ł, ż i reszta to jeden skrót z AltGr</td></tr>
+<tr><td>Piszesz kod</td><td>Polski (programisty)</td><td>Nawiasy, @ i ukośnik odwrotny leżą na pojedynczych klawiszach albo z Shiftem</td></tr>
+<tr><td>Chcesz mniej ruchu palców i zachować skróty</td><td>Colemak lub Colemak-DH</td><td>Z, X, C i V zostają pod lewą ręką, a wersja z colemak.com wpisuje polskie znaki</td></tr>
+<tr><td>Męczą cię sięgnięcia palcem wskazującym w bok</td><td>Colemak-DH lub Workman</td><td>Oba wyjmują częste litery ze środkowych kolumn</td></tr>
+<tr><td>Pracujesz na komputerach, na których nic nie zainstalujesz</td><td>Polski (programisty)</td><td>Jest wszędzie, a wbudowany Dvorak w Windows nie ma polskich znaków</td></tr>
+<tr><td>Uczysz się pisać bezwzrokowo od zera</td><td>Dowolny z powyższych</td><td>Bez nawyków z QWERTY alternatywa kosztuje teraz najmniej</td></tr>
+</tbody>
+</table>
+<p>Na każdym układzie szybkość rośnie z wiedzy, który palec obsługuje dany klawisz, i z trafiania w klawisze bez patrzenia. Jeśli wciąż patrzysz na klawiaturę, zacznij od <a href="guide:touch-typing">pisania bezwzrokowego</a> i <a href="guide:finger-placement">mapy palców na klawiaturze</a>.</p>
+
+<h2>Jak zmienić układ klawiatury w Windows i na Macu?</h2>
+<p>Układ klawiatury zmieniasz w ustawieniach systemu i możesz mieć kilka zainstalowanych naraz. Nadruki na klawiszach się nie zmieniają, więc po przełączeniu na Colemak klawiatura dalej pokazuje QWERTY. Zmiana układu nie rusza języka wyświetlania Windows.</p>
+<h3>Windows 11</h3>
+<ol>
+<li>Otwórz Start, potem Ustawienia › Czas i język › Język i region.</li>
+<li>Kliknij trzy kropki obok języka i wybierz Opcje języka.</li>
+<li>Przy Zainstalowane klawiatury kliknij Dodaj klawiaturę i wybierz układ. Jeśli go brakuje, najpierw dodaj język, do którego należy: Dvorak i Colemak są przy angielskim (Stany Zjednoczone).</li>
+<li>Przełączaj układy, trzymając klawisz Windows i naciskając <kbd>Spacja</kbd>, albo przez ikonę języka na pasku zadań.</li>
+</ol>
+<p>Układ, którego nie używasz, na przykład Polski (214), usuniesz w tym samym miejscu: trzy kropki obok układu, potem Usuń.</p>
+<h3>macOS</h3>
+<ol>
+<li>Otwórz Ustawienia systemowe i kliknij Klawiatura na pasku bocznym.</li>
+<li>W sekcji wprowadzania tekstu kliknij Edytuj, a potem przycisk dodawania (+).</li>
+<li>Wyszukaj język, zaznacz źródło wprowadzania, na przykład Dvorak, i kliknij Dodaj.</li>
+<li>Przełączaj z menu wprowadzania na pasku menu, naciśnij <kbd>Control</kbd>+<kbd>Spacja</kbd>, żeby wrócić do ostatnio używanego źródła, albo ustaw klawisz Globe tak, żeby zmieniał źródło wprowadzania.</li>
+</ol>
+
+<h2>Czy ANSI, ISO, TKL i 60% to też układy klawiatury?</h2>
+<p>Te nazwy opisują sprzęt, a klawiatura o dowolnym kształcie i rozmiarze może działać w każdym z opisanych wyżej układów. ANSI, ISO i JIS to układy fizyczne: kształt i liczba klawiszy. ANSI to standard amerykański z szerokim, jednorzędowym Enterem. ISO, używany w Wielkiej Brytanii i w całej Europie, ma wysoki Enter i krótszy lewy Shift z dodatkowym klawiszem obok. JIS, standard japoński, skraca spację i Backspace, żeby zmieścić cztery dodatkowe klawisze. Porównanie <a href="guide:iso-vs-ansi">klawiatur ISO i ANSI</a> pokazuje, jak rozpoznać swoją.</p>
+<figure data-figure="board-shapes"><figcaption>Klawiatury ANSI, ISO i JIS obok siebie: różnią się Enter, lewy Shift i dodatkowe klawisze.</figcaption></figure>
+<p>Rozmiary takie jak TKL czy 60% mówią, ile klawiszy zostaje na klawiaturze. Rzędy liter są takie same w każdym rozmiarze, więc klawiatura 60% pisze QWERTY, AZERTY czy Colemakiem tak samo jak pełnowymiarowa.</p>
+<table>
+<caption>Rozmiary klawiatur i to, czego w nich brakuje</caption>
+<thead><tr><th scope="col">Rozmiar</th><th scope="col">Czego brakuje</th></tr></thead>
+<tbody>
+<tr><td>Pełnowymiarowa (100%)</td><td>Niczego: blok numeryczny w komplecie, zwykle 104 klawisze w USA i 105 w większości innych krajów</td></tr>
+<tr><td>TKL (tenkeyless, 80%)</td><td>Bloku numerycznego</td></tr>
+<tr><td>75%</td><td>Bloku numerycznego i rzadziej używanych klawiszy nawigacji i systemowych</td></tr>
+<tr><td>60%</td><td>Bloku numerycznego, rzędu klawiszy funkcyjnych i klawiszy nawigacji</td></tr>
+<tr><td>40%</td><td>Wszystkiego powyżej, a do tego rzędu cyfr</td></tr>
+</tbody>
+</table>
+
+<h2>Czy można wypróbować układ klawiatury bez instalowania?</h2>
+<p>Tak. petitdoigt, darmowy trener pisania działający w przeglądarce, sam nakłada układ na fizyczne położenie klawiszy, więc możesz pisać Colemakiem, Dvorakiem, Workmanem czy na AZERTY, a system zostaje przy swoim zwykłym układzie. Klawiatura ekranowa pokazuje litery wybranego układu, każdą w kolorze palca, który powinien ją nacisnąć, co pomaga, dopóki nadruki na klawiszach mówią QWERTY. Trener ma 11 układów (kanadyjski francuski, US QWERTY, francuski AZERTY, niemiecki i szwajcarski QWERTZ, hiszpański, latynoamerykański, Dvorak, Colemak, Colemak-DH i Workman) i rysuje klawiaturę ANSI, ISO lub JIS, zależnie od tej na twoim biurku.</p>
+<p>Polskiego układu w trenerze nie ma, a litery układu Polski (programisty) stoją tam, gdzie w US QWERTY: na nim przećwiczysz wszystko poza znakami z AltGr. Interfejs jest po angielsku, a teksty do ćwiczeń są po angielsku, francusku, niemiecku i hiszpańsku. Uczciwy test układu alternatywnego to dziesięć minut dziennie przez tydzień ze zwykłymi słowami na <a href="app:words?layout=colemak">Colemaku</a> albo <a href="app:words?layout=dvorak">Dvoraku</a>. Pierwsze serie będą wolne. Strona statystyk (stats) prowadzi osobne liczby dla każdego układu, palca i litery, więc widzisz, które klawisze wciąż kosztują cię czas. Przeglądarka nie widzi, którym palcem naciskasz klawisz, dlatego trener pokazuje właściwy palec i mierzy klawisze oraz czas.</p>

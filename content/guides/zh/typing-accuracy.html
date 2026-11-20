@@ -1,0 +1,134 @@
+<!--meta
+{
+  "id": "typing-accuracy",
+  "lang": "zh",
+  "slug": "typing-accuracy",
+  "title": "打字准确率多少算好？提高正确率的7个方法",
+  "description": "打字准确率怎么算，为什么各网站分数不同，练习时该定多少目标，以及提高打字正确率的7个步骤，数据来自16.8万名打字者的研究。",
+  "h1": "打字准确率：多少算好，怎样提高",
+  "keyword": "打字准确率",
+  "keywords_secondary": ["打字正确率", "怎么提高打字准确率", "打字准确率和速度哪个重要", "打字准确率多少算好", "打字准确率怎么算"],
+  "summary": "打字准确率是按对的键占全部按键的百分比：96% 意味着每 100 次按键约有 4 次按错。练习时把目标定在 96% 以上，能不看键盘打字之后提到 98%。同一段文字在不同网站上得分不同，因为有的把改掉的错误也算进去，有的只算留在文本里的错误。准确率也决定速度：每改一个错字，至少要多按两个键。",
+  "faq": [
+    {"q": "打字准确率 95% 算好吗？", "a": "算是能用的水平，比本文建议的练习目标 96% 低一点。按击键计算，95% 意味着大约每十次按键就有一次花在打错或删错上。Typing.com 建议老师在学年初把 95% 当作及格线，再逐步提高到 98%；纽约州公务员打字考试要求 96%。"},
+    {"q": "打字准确率 90% 算低吗？", "a": "对初学者来说，这是正常的起点。对其他人来说偏低：90% 意味着每十个键错一个，算上退格键，将近五分之一的按键花在了错误上。先放慢到能稳在 96%，再从这个速度往上提。"},
+    {"q": "按退格键会降低打字准确率吗？", "a": "看网站怎么计分。按击键计算时，你按错的键即使删掉了也照样扣分。只评最终文本的测试不管你改掉的错字，但改错花的时间仍然会拉低你的 WPM。"},
+    {"q": "练习时打错了，要改还是接着打？", "a": "一发现就改。真实的写作需要正确的文字，所以改错正是值得反复练的习惯。每个错误都要花时间，你也会自然地放慢到控制得住的节奏。只有考试规则要求不改时，才接着往下打。"},
+    {"q": "打字准确率能达到 100% 吗？", "a": "一句短句可以。长一点的测试，快手也很少做到：在阿尔托大学 16.8 万名打字者的研究中，最快的 10% 仍有 3.4% 的按键是退格键或删除键。把稳定的 98% 当目标，打出满分的一组算是额外收获。"},
+    {"q": "换了新键盘或新布局，准确率为什么变差？", "a": "手指记住的是旧键盘上各个键的位置，一有变化，部分按键就会落到错的键上。Dvorak、Colemak 这类新布局挪动的是字母本身；新键盘可能挪动回车、Shift 或键距，比如从 ANSI 换成 ISO 键盘。预计会下降一阵，放慢到 96%，让准确率慢慢回升。"}
+  ],
+  "sources": [
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes (CHI 2018), project page", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes (CHI 2018), paper (PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing (CHI 2016)", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Vanderbilt University, Today's self-taught typists almost as fast as touch typists (2016)", "url": "https://www.eurekalert.org/news-releases/520529"},
+    {"title": "New York State Department of Civil Service, Keyboard Test Administration and PTM User Guide", "url": "https://www.cs.ny.gov/extdocs/pdf/PTMUserGuide.pdf"},
+    {"title": "Typing.com, What is good accuracy when it comes to typing?", "url": "https://www.typing.com/blog/good-accuracy-comes-typing/"},
+    {"title": "Monkeytype, About page source (definition of acc)", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "USPS Handbook EL-312, 517 Qualifying Tests", "url": "https://about.usps.com/handbooks/el312/el312c5_007.htm"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "测测你的打字准确率", "drill": "words"}
+}
+-->
+<h2>什么是打字准确率？</h2>
+<p>打字准确率是你打出的内容和原文吻合的比例，用百分比表示，有的打字软件叫它“正确率”。98% 的意思是，每 100 次按键大约有 2 次按错了键。练习工具把它和每分钟单词数（WPM）并排显示，因为两个数字测的东西不同：WPM 算的是你打出了多少文字，准确率说明你的力气有多少花在了错误上。</p>
+<p>改错花掉的时间已经算在 WPM 里了。每改一个错字，至少要多按两个键，一次 <kbd>Backspace</kbd> 加一次正确的键，还要加上发现错误时的那一下停顿。</p>
+
+<h2>打字准确率怎么计算？</h2>
+<p>打字准确率的算法是：打对的字符数除以打出的全部字符数，再乘以 100。各网站对“打出的全部字符”理解不同，所以同一段文字可能在一个测试里得 95%，在另一个测试里得 99%。</p>
+<table>
+<caption>打字准确率的三种常见算法</caption>
+<thead>
+<tr><th scope="col">算法</th><th scope="col">公式</th><th scope="col">改掉的错误算不算？</th><th scope="col">常见场合</th></tr>
+</thead>
+<tbody>
+<tr><td>按击键计算</td><td>按对的键 ÷（按对的键 + 按错的键）</td><td>算，删掉了也算</td><td>每按一个键就打分的练习工具</td></tr>
+<tr><td>按最终文本计算</td><td>最终文本里正确的字符 ÷ 文本长度</td><td>不算，只算留下的错误</td><td>研究论文，叫作“未纠正错误率”</td></tr>
+<tr><td>数错误</td><td>最终文本里的错误个数，对照允许的上限</td><td>不算</td><td>求职和公务员打字考试</td></tr>
+</tbody>
+</table>
+<p>比如 Monkeytype 按击键计分，<a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">它对准确率的定义</a>是“按对的键所占的百分比”。几种算法能差多远，可以算一个例子：你打一句 100 个字符的话，途中按错 5 个键，用 <kbd>Backspace</kbd> 改掉其中 4 个，留下 1 个。你一共按了 99 次对的键、5 次错的键和 4 次退格。</p>
+<ul>
+<li>按击键计算：99 ÷（99 + 5）= 95.2%</li>
+<li>按最终文本计算：100 个字符里 99 个正确 = 99%</li>
+<li>数错误：1 个</li>
+</ul>
+<p>练习时，按击键计算的准确率更有用。它把你改掉的错误也显示出来，速度正是从这些修改里漏掉的。按最终文本计算的准确率，是收到你邮件的人看到的结果。有的考试把错误折算进速度，报的是净 WPM：美国邮政署的打字考试就用<a href="https://about.usps.com/handbooks/el312/el312c5_007.htm">净 WPM</a> 设定合格线。总 WPM 和净 WPM 的算法，见 <a href="guide:words-per-minute">WPM 是怎么计算的</a>。</p>
+
+<h2>打字准确率多少算好？</h2>
+<p>按击键计算，96% 以上算好；能不看键盘打字之后，应该达到 98% 以上。准确率 94% 时，大约每九次按键就有一次花在打错或删错上。下面的分档是一条练习用的经验标准，针对按击键计算的准确率：</p>
+<table>
+<caption>练习时的按击键准确率分档</caption>
+<thead>
+<tr><th scope="col">准确率</th><th scope="col">意味着什么</th><th scope="col">该怎么做</th></tr>
+</thead>
+<tbody>
+<tr><td>低于 90%</td><td>每十个键至少错一个。算上退格键，将近五分之一的按键花在错误上。</td><td>大幅放慢，检查指法。</td></tr>
+<tr><td>90%–95%</td><td>每 10 到 20 个键错一个。刚学盲打、换新布局或硬冲速度时很常见。</td><td>放慢到能稳在 96%。</td></tr>
+<tr><td>96%–97%</td><td>每 25 到 33 个键错一个，大约每五到七个英文单词一次。扎实。</td><td>保持这个速度，专练最弱的键。</td></tr>
+<tr><td>98% 以上</td><td>每 50 个键或更多才错一个，大约每十个英文单词一次。干净。</td><td>一小步一小步地提速。</td></tr>
+</tbody>
+</table>
+<p>招聘考试有固定门槛。纽约州公务员键盘考试要求五分钟内达到 30 WPM、准确率不低于 96%，按 30 WPM 算，允许 6 个错误。学校方面，<a href="https://www.typing.com/blog/good-accuracy-comes-typing/">Typing.com 建议老师</a>让四年级以上的学生把目标定在 98% 或更高。各水平的速度参考见<a href="guide:typing-speed">打字速度多少算快</a>。</p>
+
+<h3>平均打字准确率是多少？</h3>
+<p>在一项 16.8 万名在线打字者的研究中，参与者最终打出的句子平均约 98.8% 正确，另有 6.3% 的按键用来按 <kbd>Backspace</kbd> 或 <kbd>Delete</kbd> 改错。芬兰阿尔托大学和英国剑桥大学的研究者记录了这 <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">1.36 亿次按键</a>，志愿者在一个在线打字测试里照着句子打。大多数人改掉了大部分错误：90% 的参与者最终留下的错误不到 2.66%。</p>
+<table>
+<caption>16.8 万名在线打字者的错误与修改（Dhakal 等人，CHI 2018）</caption>
+<thead>
+<tr><th scope="col">组别</th><th scope="col">最终文本中留下的错误</th><th scope="col">退格键或删除键占按键的比例</th></tr>
+</thead>
+<tbody>
+<tr><td>最快的 10%（约 78 WPM 以上）</td><td>0.71%</td><td>3.4%</td></tr>
+<tr><td>全体参与者（平均 52 WPM）</td><td>1.17%</td><td>6.3%</td></tr>
+<tr><td>最慢的 10%（约 26 WPM 以下）</td><td>1.78%</td><td>9.05%</td></tr>
+</tbody>
+</table>
+<p>最慢的一组按退格键和删除键的次数是最快一组的两倍半以上，留在文本里的错误也差不多是最快一组的两倍半。作者认为，这可能说明慢手更难发现自己的错误。</p>
+
+<h2>打字准确率和速度，哪个更重要？</h2>
+<p>准确率优先，因为错误会吃掉速度。在阿尔托的数据里，犯错和改错更少的人打得更快：速度与退格键和删除键的占比负相关（r = −0.36），与每个字符的按键次数也负相关（r = −0.40）。作者的结论是，把错误减少一点点，就可能换来速度的大幅提升。</p>
+<p>准确率 95% 时，你每按 95 个对的键就要按 5 个错的键，每个错键还要配一次退格，所以大约每十次按键就有一次在打错或删错。准确率 98% 时，这个比例降到大约 25 次中的一次。发现错字、找回位置的停顿还要另算。发现得晚的错字代价更大，因为你得把它后面打对的字母一起删掉。</p>
+<p>在一次练习之内，速度和准确率互相拉扯：超过手指稳得住的节奏，错误就会增加。放到不同的人之间比较，最快的人也最准，上面的表格就是例子。两个发现指向同一种练法：用能保持干净的速度打字，等动作变成本能再提速。<a href="guide:how-to-type-faster">如何提高打字速度</a>讲了这套计划的速度部分。</p>
+
+<h2>为什么打字总是打错？</h2>
+<p>最常见的打字错误是把一个字母错按成另一个，研究者推测，这来自打法不固定。在阿尔托研究的 783 名参与者样本中，错误分为三类：</p>
+<table>
+<caption>打字错误的类型和比例（Dhakal 等人，CHI 2018，783 名参与者样本）</caption>
+<thead>
+<tr><th scope="col">错误类型</th><th scope="col">研究中的例子</th><th scope="col">比例</th></tr>
+</thead>
+<tbody>
+<tr><td>替换：按成了另一个字母</td><td>把 <em>road</em> 打成 <em>riad</em></td><td>1.65%</td></tr>
+<tr><td>遗漏：漏掉一个字母</td><td>把 <em>committee</em> 打成 <em>commitee</em></td><td>0.80%</td></tr>
+<tr><td>多打：多出一个字母</td><td>把 <em>sting</em> 打成 <em>string</em></td><td>0.67%</td></tr>
+</tbody>
+</table>
+<p>替换错误最常见，也最能区分慢手和快手。研究者的假设是，替换错误发生在打字者“打法不够一致、对手指位置的心理表征不清楚”的时候。阿尔托另一项<a href="https://userinterfaces.aalto.fi/how-we-type">对 30 名打字者的动作捕捉研究</a>也指向同一个方向：它找出的三个高水平预测因素之一是“映射明确”，即同一个字母总由同一根手指按。如果你今天用食指按 <kbd>C</kbd>，明天换成中指，手就有两条都没练熟的路线通向这个键。</p>
+<p>留意下面这些习惯：</p>
+<ul>
+<li><strong>手指离开基准键。</strong>打完一个词，手指如果没有回到 <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> 和 <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>;</kbd>，每次伸出就从不同的位置出发，落点容易偏一个键。<kbd>F</kbd> 和 <kbd>J</kbd> 上的凸起让你不用看就能找回原位。</li>
+<li><strong>眼睛盯着键盘。</strong>错字出现在屏幕上，你没法同时看屏幕和键盘。在<a href="https://www.eurekalert.org/news-releases/520529">范德堡大学一项 48 名打字者的研究</a>里，指法不标准的人依赖看键盘：键盘被遮住后，他们的速度和准确率都下降了，盲打者则基本不受影响。研究者推测，这些人只能断断续续地看屏幕，可能漏掉更多错误。</li>
+<li><strong>用错了 Shift。</strong>用左 <kbd>Shift</kbd> 打大写 <kbd>A</kbd>，一只手要干两份活，还会被拉离原位。打中文时 Shift 多半用来打符号，道理一样：“！”在 <kbd>1</kbd> 上，<kbd>1</kbd> 归左手小指，就用右手小指按 <kbd>Shift</kbd>。总是按住和字母相反那一侧的 Shift。</li>
+<li><strong>字母顺序颠倒。</strong>把 <em>xing</em> 打成 <em>xign</em>，把 <em>the</em> 打成 <em>teh</em>，都是一只手抢在另一只手前面按了键。用均匀的节奏练，慢一点也没关系，练到顺序稳定为止。</li>
+<li><strong>弱手指。</strong>如果错误集中在 <kbd>Q</kbd>、<kbd>P</kbd>、<kbd>Z</kbd> 或 <kbd>X</kbd> 上，负责它们的小指或无名指需要单独练习。<a href="guide:typing-exercises">打字练习指南</a>里有专门针对这些手指的练习。</li>
+</ul>
+
+<h2>打中文时，准确率要注意什么？</h2>
+<p>用拼音打中文，错误会出在两个地方：手指按错字母，或者从候选词里选错字。练习工具测的是第一种。拼音打错一个字母，候选词往往整个变掉，你得删了重打，有时还得先认出屏幕上冒出来的是错字。</p>
+<p>选错同音字发生在你看候选框的时候，和手指无关：想打“在”，选成了“再”。按击键计算的准确率看不到这种错误；中文文章测试比对的是最后打出的汉字，选错的字照样算一个错误。多打词组、少逐字挑选，能减少这类错误：打 <em>zaijian</em> 一次就出“再见”，比先打 <em>zai</em> 再挑字更不容易选错。</p>
+<p>还有一类错误来自读音。分不清前后鼻音（<em>in</em> 和 <em>ing</em>）或平翘舌（<em>z</em> 和 <em>zh</em>）的人，打出的拼音本身就不对，练指法解决不了这个问题。练指法时，可以把输入法切到英文状态，直接打拼音字母串，比如 <em>xing ming zhong guo</em>，这样屏幕上的每个错误都只来自手指。</p>
+
+<h2>怎样提高打字准确率？</h2>
+<p>想提高打字准确率，就用能保持在 96% 以上的速度练习，并专门训练造成错误的那几根手指和那几个字母对。具体步骤如下：</p>
+<ol>
+<li><strong>找到你的“干净速度”。</strong>用常用词打几组一分钟的练习，盯着准确率看。能稳在 96% 以上的速度，就是你眼下的练习速度，哪怕感觉很慢。</li>
+<li><strong>每个键只用一根手指。</strong>对照<a href="guide:finger-placement">键盘指法图</a>，认定每个键归哪根手指，容易被另一只手抢走的键也要照规矩来：<kbd>B</kbd> 归左手食指，<kbd>Y</kbd> 归右手食指。拼音里 <em>bu</em>、<em>ba</em>、<em>bei</em> 很常见，<kbd>B</kbd> 用错手的习惯会反复出现。petitdoigt 按负责的手指给每个键上色，打字时高亮该用的手指，用错手指的习惯一眼就能看出来。浏览器看不到你的手，所以练习器没法检查你用了哪根手指，这一点要靠你自己。</li>
+<li><strong>眼睛看屏幕。</strong>错误都出现在屏幕上。如果你还会低头看，<a href="guide:type-without-looking">打字不看键盘的方法</a>会一步步帮你改掉这个习惯；学习期间，可以用屏幕键盘代替键帽。</li>
+<li><strong>找出错误集中在哪里。</strong>一整组的准确率看不出是哪些键在出错。练习器的 <a href="app:stats">stats 页面</a>按布局把成绩拆到每根手指和每个字母，还列出你最弱的键间转换和它们的准确率。有些错误只出现在两个特定的键之间，比如拼音 <em>jun</em>、<em>yun</em> 里的 <kbd>U</kbd> 接 <kbd>N</kbd>，两个键都要右手食指连按。在自适应模式下，<a href="app:pairs">pairs 练习</a>每组主要由你自己最慢、最容易出错的转换组成。</li>
+<li><strong>每个错字都按一次退格。</strong>一发现错误就改，就像写一封真正的邮件那样。hardcore 模式把这条规则定死：按错的键会一直留在文本里，直到你用 <kbd>Backspace</kbd> 删掉它。</li>
+<li><strong>每次练短一点。</strong>准确率连续两三组下降，就停下来。累的时候还练，等于在重复每个动作的潦草版本。</li>
+<li><strong>小步提速。</strong>在练习速度下连续几次都能保持 98%，再加快几个 WPM。如果准确率掉到 96% 以下，就退回到上一个能打干净的速度。</li>
+</ol>
+<p>petitdoigt 目前没有中文界面，会显示英文界面，练习文本有英文、法文、德文和西班牙文。拼音用的是同样的字母键，在这里练出的指法和节奏，打中文时一样用得上。</p>

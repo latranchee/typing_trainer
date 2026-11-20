@@ -1,0 +1,185 @@
+<!--meta
+{
+  "id": "keyboard-layouts",
+  "lang": "it",
+  "slug": "layout-tastiera",
+  "title": "Layout tastiera: tutti i tipi a confronto e quale scegliere",
+  "description": "Layout tastiera a confronto: italiano, QWERTY, AZERTY, QWERTZ, Dvorak, Colemak e Workman. Cosa cambia, quale scegliere e come provarne uno senza installarlo.",
+  "h1": "Layout tastiera: i tipi più diffusi e quale scegliere",
+  "keyword": "layout tastiera",
+  "keywords_secondary": ["tipi di tastiera", "layout tastiera italiana", "miglior layout tastiera", "cambiare layout tastiera"],
+  "summary": "Il layout tastiera è la mappa che associa a ogni tasto fisico il carattere che scrive, e i layout si dividono in due famiglie. Quelli nazionali, come l'italiano, il QWERTY americano, l'AZERTY francese e il QWERTZ tedesco, seguono le lettere e gli accenti di una lingua. Quelli alternativi, come Dvorak, Colemak e Workman, riordinano le lettere dell'inglese per ridurre gli spostamenti delle dita. Per scrivere in italiano conviene il layout italiano: nessun layout alternativo ha un vantaggio di velocità dimostrato.",
+  "faq": [
+    {
+      "q": "Qual è il layout di tastiera più diffuso?",
+      "a": "Il QWERTY, contando le sue varianti nazionali. Deriva dalla macchina per scrivere Sholes and Glidden, venduta da Remington dal 1874, ed è rimasto lo standard di fatto sui computer. Anche le tastiere dei PC italiani sono QWERTY. L'AZERTY di Francia e Belgio e il QWERTZ dei paesi di lingua tedesca sono parenti stretti che scambiano poche lettere e aggiungono i caratteri della propria lingua."
+    },
+    {
+      "q": "Quali sono i tre tipi di tastiera?",
+      "a": "Di solito la domanda riguarda i tre standard fisici. ANSI è la tastiera americana, con un Invio largo su una sola riga. ISO è usata in Italia e nella maggior parte degli altri paesi, con un Invio alto e un tasto in più (quello di < e >) accanto al Maiusc sinistro. JIS è la tastiera giapponese. Per la mappa dei caratteri, le tre grandi famiglie latine sono QWERTY, AZERTY e QWERTZ."
+    },
+    {
+      "q": "Come faccio a sapere quale layout di tastiera ho?",
+      "a": "Controlla due cose. Il layout attivo compare nell'icona della lingua sulla barra delle applicazioni di Windows o nel menu Tastiera della barra dei menu del Mac. I tasti ti dicono il resto: le prime lettere della riga in alto indicano la famiglia, i tasti ò, à e ù indicano il layout italiano e un Invio alto indica una tastiera ISO. Se un tasto scrive un simbolo diverso da quello stampato, il layout impostato non corrisponde ai tasti."
+    },
+    {
+      "q": "Come si scrivono le maiuscole accentate come È sulla tastiera italiana?",
+      "a": "Il layout italiano di Windows non ha tasti per le maiuscole accentate. Puoi tenere premuto Alt e digitare 0200 sul tastierino numerico per ottenere È, oppure usare la Mappa caratteri. Su Linux basta attivare il Bloc Maiusc e premere è. La scorciatoia E' con l'apostrofo è diffusa, ma i puristi della lingua la disapprovano."
+    },
+    {
+      "q": "Perché le lettere della tastiera non sono in ordine alfabetico?",
+      "a": "Le tastiere dei computer hanno ereditato il QWERTY dalla macchina per scrivere Sholes and Glidden, che Remington vendeva dal 1874. Costruttori e corsi di dattilografia hanno tenuto lo schema che tutti conoscevano già. La storia secondo cui l'ordine serviva a evitare che le leve dei caratteri si incastrassero è contestata. Le macchine per scrivere italiane usavano una variante, il QZERTY."
+    },
+    {
+      "q": "Posso usare un layout diverso dalle lettere stampate sui tasti?",
+      "a": "Sì. Il layout vive nel software, quindi qualsiasi tastiera può scrivere in Dvorak, Colemak o AZERTY. Le lettere stampate saranno sbagliate, cosa che conta poco quando scrivi senza guardare. Fino ad allora usa una tastiera a schermo che mostri il layout vero, oppure compra copritasti o adesivi."
+    }
+  ],
+  "sources": [
+    {"title": "Keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Italian keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Italian_keyboard_layout"},
+    {"title": "QWERTY (Wikipedia in italiano)", "url": "https://it.wikipedia.org/wiki/QWERTY"},
+    {"title": "Layout italiano di Windows (KBDIT), tasto per tasto (kbdlayout.info)", "url": "https://kbdlayout.info/kbdit"},
+    {"title": "Alt code (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Alt_code"},
+    {"title": "QWERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTY"},
+    {"title": "British and American keyboards (Wikipedia)", "url": "https://en.wikipedia.org/wiki/British_and_American_keyboards"},
+    {"title": "List of QWERTY keyboard language variants (Wikipedia)", "url": "https://en.wikipedia.org/wiki/List_of_QWERTY_keyboard_language_variants"},
+    {"title": "AZERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/AZERTY"},
+    {"title": "QWERTZ (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTZ"},
+    {"title": "German keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/German_keyboard_layout"},
+    {"title": "US patent 2,040,248: Typewriter keyboard (Dvorak e Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Layout Stati Uniti-Dvorak di Windows (KBDDV), tasto per tasto (kbdlayout.info)", "url": "https://kbdlayout.info/kbddv"},
+    {"title": "Liebowitz e Margolis, The Fable of the Keys, Journal of Law and Economics 33(1), 1990", "url": "https://chicagounbound.uchicago.edu/jle/vol33/iss1/2/"},
+    {"title": "Colemak (Wikipedia in italiano)", "url": "https://it.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak keyboard layout (sito ufficiale)", "url": "https://colemak.com/"},
+    {"title": "Colemak: lingue supportate e lettere accentate", "url": "https://colemak.com/Multilingual"},
+    {"title": "Colemak Mod-DH (sito ufficiale)", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "The Workman keyboard layout philosophy (OJ Bucao)", "url": "https://workmanlayout.org/"},
+    {"title": "Gestire le impostazioni di lingua e layout di tastiera in Windows (Supporto Microsoft)", "url": "https://support.microsoft.com/it-it/help/4496404"},
+    {"title": "Scrivere in un'altra lingua sul Mac (Supporto Apple)", "url": "https://support.apple.com/it-it/guide/mac-help/mchlp1406/mac"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Prova un nuovo layout nel browser", "drill": "words"}
+}
+-->
+<p>Un layout di tastiera è la mappa che collega ogni tasto al carattere che scrive. Il tasto a destra di <kbd>Tab</kbd> scrive Q su una tastiera italiana e A su una francese, con lo stesso hardware sotto le dita. Il layout lo gestisce il sistema operativo: lo cambi in un minuto, e le lettere stampate sui tasti restano quelle di prima.</p>
+<p>Nei negozi la stessa parola indica anche la forma fisica della tastiera (ANSI, ISO, JIS) e il formato, come tenkeyless o 60%: ne parla una sezione verso la fine. Il resto della guida riguarda la mappa dei caratteri e la scelta del layout giusto per te.</p>
+
+<h2>Quali sono i tipi di layout tastiera?</h2>
+<p>I layout di tastiera si dividono in due famiglie. I layout nazionali adattano il QWERTY a una lingua: aggiungono le sue lettere (à, ñ, ü), spostano la punteggiatura per fare spazio e a volte scambiano qualche lettera. I layout alternativi riordinano le lettere dell'inglese perché quelle più frequenti finiscano sotto le dita più forti. La tabella elenca quelli che incontrerai più spesso.</p>
+<table>
+<caption>I layout di tastiera più comuni e cosa cambiano rispetto al QWERTY americano</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Famiglia</th><th scope="col">Dove si usa</th><th scope="col">Cosa cambia rispetto al QWERTY americano</th></tr></thead>
+<tbody>
+<tr><td>Italiano</td><td>Nazionale</td><td>Italia</td><td>Stesse lettere; à, è, ì, ò e ù hanno un tasto proprio, @ e # passano per AltGr</td></tr>
+<tr><td>QWERTY americano</td><td>Nazionale</td><td>Stati Uniti</td><td>Il layout di riferimento</td></tr>
+<tr><td>QWERTY britannico</td><td>Nazionale</td><td>Regno Unito</td><td>@ e " si scambiano, £ sul tasto 3, un tasto in più per # e ~</td></tr>
+<tr><td>Francese canadese</td><td>Nazionale</td><td>Canada francofono</td><td>Stesse lettere; é ha un tasto suo e gli accenti diventano tasti morti</td></tr>
+<tr><td>AZERTY francese</td><td>Nazionale</td><td>Francia, Belgio, alcuni paesi africani</td><td>A e Q si scambiano, Z e W pure, la M va accanto alla L, le cifre richiedono il Maiusc</td></tr>
+<tr><td>QWERTZ tedesco</td><td>Nazionale</td><td>Germania, Austria, gran parte dell'Europa centrale</td><td>Y e Z si scambiano; ä, ö, ü e ß hanno un tasto; molti simboli richiedono AltGr</td></tr>
+<tr><td>QWERTZ svizzero</td><td>Nazionale</td><td>Svizzera</td><td>Lettere tedesche senza ß; accenti del francese e dell'italiano a portata di mano</td></tr>
+<tr><td>Spagnolo (Spagna)</td><td>Nazionale</td><td>Spagna</td><td>ñ accanto alla L, un tasto Ç, @ con AltGr+2</td></tr>
+<tr><td>Latinoamericano</td><td>Nazionale</td><td>Messico, America centrale e meridionale</td><td>ñ accanto alla L, niente Ç, @ con AltGr+Q</td></tr>
+<tr><td>Dvorak</td><td>Alternativo</td><td>Chi scrive in inglese e lo sceglie</td><td>Si spostano tutte le lettere tranne A e M; vocali sulla riga centrale sinistra</td></tr>
+<tr><td>Colemak</td><td>Alternativo</td><td>Chi scrive in inglese e lo sceglie</td><td>17 tasti spostati; Z, X, C e V restano al loro posto</td></tr>
+<tr><td>Colemak-DH</td><td>Alternativo</td><td>Chi scrive in inglese e lo sceglie</td><td>Colemak con D e H tolte dalle colonne centrali</td></tr>
+<tr><td>Workman</td><td>Alternativo</td><td>Chi scrive in inglese e lo sceglie</td><td>21 caratteri diversi; meno allungamenti laterali degli indici</td></tr>
+</tbody>
+</table>
+<p>Le lingue con altri alfabeti hanno layout propri, come la famiglia ЙЦУКЕН (JCUKEN) per il russo.</p>
+
+<h2>In cosa differiscono i layout nazionali?</h2>
+<p>I layout nazionali cambiano soprattutto la punteggiatura e le lettere accentate, e le file delle lettere restano vicine al QWERTY.</p>
+<h3>La tastiera italiana</h3>
+<p>Le tastiere dei computer italiani usano il QWERTY, con le lettere negli stessi tasti della tastiera americana. Le macchine per scrivere italiane seguivano il QZERTY, che scambia Z e W e porta la M a destra della L, e lo hanno conservato anche i primi personal computer venduti in Italia. La tastiera italiana è di tipo ISO: Invio alto e un tasto per <kbd>&lt;</kbd> e <kbd>&gt;</kbd> accanto al Maiusc sinistro.</p>
+<p>Le vocali accentate hanno tasti propri. <kbd>ò</kbd>, <kbd>à</kbd> e <kbd>ù</kbd> seguono la <kbd>L</kbd> sulla riga centrale, <kbd>è</kbd> sta a destra della <kbd>P</kbd> e <kbd>ì</kbd> in fondo alla fila dei numeri, prima del tasto Backspace. La é si scrive con <kbd>Maiusc</kbd>+<kbd>è</kbd>. Il layout di Windows non ha tasti morti, e molti simboli passano per <kbd>AltGr</kbd>: la chiocciola è <kbd>AltGr</kbd>+<kbd>ò</kbd>, il cancelletto <kbd>AltGr</kbd>+<kbd>à</kbd>, le parentesi quadre <kbd>AltGr</kbd>+<kbd>è</kbd> e <kbd>AltGr</kbd>+<kbd>+</kbd>, le graffe le stesse combinazioni con in più <kbd>Maiusc</kbd>. La tilde (~) e l'accento grave isolato (`) mancano del tutto, come le maiuscole accentate: per È servono un codice Alt o la Mappa caratteri.</p>
+<h3>QWERTY americano e britannico</h3>
+<p>Il QWERTY viene dalla macchina per scrivere Sholes and Glidden, che E. Remington and Sons vendeva dal 1874, ed è rimasto lo standard di fatto sui computer anche perché tastiere e corsi di dattilografia QWERTY erano ovunque.</p>
+<p>Il layout britannico tiene le lettere e sposta i simboli: @ e " si scambiano, £ prende il tasto 3 e # e ~ hanno un tasto in più accanto all'Invio. La tastiera è ISO, con 105 tasti contro i 104 di una tastiera Windows americana.</p>
+<h3>AZERTY francese e francese canadese</h3>
+<p>L'AZERTY si usa in Francia, in Belgio e in alcuni paesi africani. Rispetto al QWERTY, A e Q si scambiano, Z e W pure, e la M passa a destra della L. La fila dei numeri scrive senza Maiusc simboli e lettere accentate (&amp;, é, è, ç, à), quindi ogni cifra richiede il <kbd>Maiusc</kbd>. L'ente francese di normazione ha pubblicato una versione rivista dello standard AZERTY nell'aprile 2019, e il Belgio ha una variante propria. Le differenze tasto per tasto sono nella guida <a href="guide:azerty-vs-qwerty">AZERTY o QWERTY</a>.</p>
+<p>In Canada i francofoni scrivono di solito sul francese canadese, un layout QWERTY in cui la é ha un tasto suo a destra del punto e gli accenti sono tasti morti: premi <kbd>^</kbd>, poi <kbd>E</kbd>, e ottieni ê.</p>
+<h3>QWERTZ tedesco e svizzero</h3>
+<p>Il QWERTZ è lo standard in Germania, Austria e Svizzera ed è comune in tutta l'Europa centrale. Y e Z si scambiano perché in tedesco la Z è molto più frequente della Y, e T e Z si seguono spesso: sulle macchine per scrivere, metterle su mani diverse riduceva gli inceppamenti. Le dieresi ä, ö e ü hanno tasti propri, e la ß ce l'ha sulle tastiere tedesche e austriache. Il layout svizzero toglie la ß ed è pensato per dare accesso rapido agli accenti di francese, tedesco e italiano, il che conta per chi scrive dal Canton Ticino. I dettagli sono nella guida <a href="guide:qwertz-vs-qwerty">QWERTZ o QWERTY</a>.</p>
+<h3>Spagnolo e latinoamericano</h3>
+<p>Entrambi i layout spagnoli tengono le lettere del QWERTY e mettono la ñ a destra della L. Quello di Spagna aggiunge un tasto Ç e scrive @ con <kbd>AltGr</kbd>+<kbd>2</kbd>. Il latinoamericano, usato in Messico e in America centrale e meridionale, non ha il tasto Ç e scrive @ con <kbd>AltGr</kbd>+<kbd>Q</kbd>.</p>
+
+<h2>Quali sono i layout di tastiera alternativi?</h2>
+<p>I layout alternativi spostano le lettere dell'inglese perché quelle frequenti stiano sulla riga centrale, dove le dita riposano, e le mani si allunghino meno. Sono tutti pensati per l'inglese, quindi chi scrive in italiano deve anche sapere come ci arrivano le vocali accentate.</p>
+<h3>Dvorak</h3>
+<p>August Dvorak e William Dealey depositarono il loro layout nel 1932 e ottennero il brevetto statunitense 2.040.248 nel maggio 1936. La riga centrale della mano sinistra tiene le vocali A O E U I, quella della destra le consonanti D H T N S. L'ANSI l'ha riconosciuto come standard alternativo nei primi anni Ottanta, e Windows, macOS e Linux lo includono. Il Dvorak americano di Windows non ha tasti per le vocali accentate. La <a href="guide:dvorak">guida alla tastiera Dvorak</a> racconta la sua storia e il dibattito sulla velocità.</p>
+<h3>Colemak</h3>
+<p>Shai Coleman ha pubblicato Colemak il 1° gennaio 2006. Sposta 17 tasti e lascia quasi tutta la punteggiatura dove la mette il QWERTY. Z, X, C e V restano al loro posto, quindi annulla, taglia, copia e incolla non cambiano tasto, e solo due tasti passano all'altra mano. Nella versione ufficiale il Bloc Maiusc diventa un secondo Backspace, e le vocali accentate italiane si scrivono con <kbd>AltGr</kbd>+<kbd>R</kbd> seguito dalla vocale (la é con <kbd>AltGr</kbd>+<kbd>E</kbd>). macOS e Linux includono Colemak, e Windows l'ha aggiunto con Windows 11 versione 24H2. La <a href="guide:colemak">guida al layout Colemak</a> spiega come impararlo.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak, colorato per dito. Le lettere frequenti R, S, T, N ed E stanno sulla riga centrale, e Z, X, C e V tengono i tasti del QWERTY.</figcaption></figure>
+<h3>Colemak-DH</h3>
+<p>Colemak mette D e H nelle due colonne centrali, che gli indici raggiungono scivolando di lato. Colemak-DH, lanciato da SteveP nell'ottobre 2014, le sposta entrambe nella riga in basso, dove l'indice le raggiunge piegandosi. La G torna al suo tasto QWERTY, la B sale nella riga in alto e la H si scambia con la M. Il progetto offre versioni per tastiere ANSI, ISO e a matrice.</p>
+<h3>Workman</h3>
+<p>OJ Bucao ha pubblicato Workman nel 2010. Riteneva gli allungamenti laterali più faticosi per i polsi dei movimenti in alto e in basso, quindi Workman tiene la digitazione fuori dalle colonne centrali: secondo i suoi conti ci cade circa il 6% dei tasti premuti, contro il 12% di Colemak, il 14% di Dvorak e il 22% del QWERTY. Rispetto al QWERTY differisce in 21 caratteri. Z e X restano al loro posto, mentre C e V scalano di un tasto a destra.</p>
+<table>
+<caption>I layout di tastiera alternativi a confronto</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Creato</th><th scope="col">Cosa sposta dal QWERTY</th><th scope="col">Z X C V</th><th scope="col">Incluso in</th></tr></thead>
+<tbody>
+<tr><td>Dvorak</td><td>1932, brevettato nel 1936</td><td>Tutte le lettere tranne A e M, più la punteggiatura</td><td>Sparse, tre alla mano destra</td><td>Windows, macOS, Linux</td></tr>
+<tr><td>Colemak</td><td>2006</td><td>17 tasti</td><td>Invariate</td><td>macOS, Linux, Windows 11 dalla 24H2</td></tr>
+<tr><td>Colemak-DH</td><td>2014</td><td>Le modifiche di Colemak, con D, G, B, H e M spostate di nuovo</td><td>Mano sinistra, alcune scalate lungo la riga in basso</td><td>File di installazione del progetto</td></tr>
+<tr><td>Workman</td><td>2010</td><td>21 caratteri</td><td>Z e X invariate, C e V scalate</td><td>Linux; file di installazione per Windows e macOS</td></tr>
+</tbody>
+</table>
+<p>I conteggi più citati mettono sulla riga centrale il 32% dei tasti premuti in QWERTY, circa il 70% in Dvorak e il 74% in Colemak, sempre su testi inglesi. Il confronto completo, con un consiglio per ogni tipo di utente, è nella guida <a href="guide:colemak-vs-dvorak">Colemak, Dvorak o Workman</a>.</p>
+
+<h2>Qual è il miglior layout tastiera?</h2>
+<p>Il miglior layout tastiera per la maggior parte delle persone è quello nazionale della lingua in cui scrivono, perché mette lettere e accenti di quella lingua su tasti singoli e ogni computer intorno a loro lo usa già. I layout alternativi accorciano i percorsi delle dita, e gli studi che li hanno confrontati hanno trovato poca velocità da guadagnare. Nel 1956 uno studio di Earle Strong per la General Services Administration statunitense concluse che Dvorak non era più efficiente del QWERTY, e i critici lo accusano di aver favorito il gruppo QWERTY. Nel 1990 gli economisti Stan Liebowitz e Stephen Margolis riesaminarono gli esperimenti e conclusero che quelli meglio documentati mostrano un vantaggio minimo o nullo per Dvorak.</p>
+<table>
+<caption>Quale layout di tastiera scegliere</caption>
+<thead><tr><th scope="col">La tua situazione</th><th scope="col">Scelta consigliata</th><th scope="col">Perché</th></tr></thead>
+<tbody>
+<tr><td>Scrivi soprattutto in italiano</td><td>Il layout italiano</td><td>à, è, ì, ò e ù con un tasto solo</td></tr>
+<tr><td>Scrivi soprattutto in francese, tedesco o spagnolo</td><td>Il layout nazionale di quella lingua</td><td>é, ü, ñ e le altre lettere con un tasto solo</td></tr>
+<tr><td>Scrivi in inglese e il QWERTY non ti dà fastidio</td><td>Resta sul QWERTY</td><td>Ogni tastiera che prendi in prestito lo usa già</td></tr>
+<tr><td>Vuoi meno spostamenti e le scorciatoie al loro posto</td><td>Colemak o Colemak-DH</td><td>Z, X, C e V restano alla mano sinistra</td></tr>
+<tr><td>Gli allungamenti laterali degli indici ti stancano</td><td>Colemak-DH o Workman</td><td>Entrambi tolgono le lettere frequenti dalle colonne centrali</td></tr>
+<tr><td>Lavori su computer dove non puoi installare nulla</td><td>Dvorak, o Colemak sui sistemi recenti</td><td>Entrambi sono inclusi nel sistema operativo</td></tr>
+<tr><td>Programmi su una tastiera italiana</td><td>QWERTY americano o un alternativo basato su di esso</td><td>Parentesi, graffe, ~ e ` stanno su tasti singoli o con il Maiusc</td></tr>
+<tr><td>Impari a scrivere a dieci dita da zero</td><td>Uno qualsiasi di questi</td><td>Senza abitudini QWERTY da disimparare, un alternativo oggi costa meno</td></tr>
+</tbody>
+</table>
+<p>Con qualsiasi layout, la velocità nasce dal sapere quale dito possiede ogni tasto e dal trovarlo senza guardare. Se guardi ancora i tasti, comincia dalla guida per <a href="guide:touch-typing">scrivere a dieci dita</a> e dalla <a href="guide:finger-placement">mappa delle dita sulla tastiera</a>.</p>
+
+<h2>Come cambiare layout tastiera su Windows o Mac?</h2>
+<p>Il layout si cambia nelle impostazioni di sistema, e puoi tenerne installati diversi e passare dall'uno all'altro. I tasti conservano le lettere stampate, quindi dopo il passaggio a Colemak la tua tastiera mostra ancora il layout italiano.</p>
+<h3>Windows 11</h3>
+<ol>
+<li>Apri Start, poi Impostazioni › Ora &amp; lingua › Lingua &amp; area geografica.</li>
+<li>Seleziona i tre puntini accanto alla lingua di visualizzazione e scegli Opzioni lingua.</li>
+<li>Accanto a Tastiere installate, seleziona Aggiungi una tastiera e scegli il layout. Se non compare, aggiungi prima la lingua a cui appartiene, per esempio l'inglese (Stati Uniti) per Dvorak.</li>
+<li>Passa da un layout all'altro tenendo premuto il tasto Windows e premendo la <kbd>barra spaziatrice</kbd>, oppure dall'icona della lingua nella barra delle applicazioni.</li>
+</ol>
+<h3>macOS</h3>
+<ol>
+<li>Scegli menu Apple › Impostazioni di Sistema e fai clic su Tastiera nella barra laterale.</li>
+<li>In Immetti testo, fai clic su Modifica, poi sul pulsante di aggiunta.</li>
+<li>Cerca la lingua, seleziona la sorgente di input che vuoi, per esempio Dvorak, e fai clic su Aggiungi.</li>
+<li>Cambia sorgente dal menu Tastiera nella barra dei menu, premi <kbd>Ctrl</kbd>+<kbd>barra spaziatrice</kbd> per tornare all'ultima usata, oppure imposta il tasto Fn o Globo per cambiare sorgente.</li>
+</ol>
+
+<h2>ANSI, ISO, TKL e 60% sono layout di tastiera?</h2>
+<p>Questi nomi descrivono l'hardware, e una tastiera di qualsiasi forma o formato può usare qualsiasi layout visto sopra. ANSI, ISO e JIS sono layout fisici: forma e numero dei tasti. ANSI è lo standard americano, con un Invio largo su una riga. ISO, usato in Italia e in quasi tutta Europa, ha un Invio alto e un Maiusc sinistro più corto con un tasto in più accanto. JIS, lo standard giapponese, accorcia barra spaziatrice e Backspace per far posto a quattro tasti in più. La guida <a href="guide:iso-vs-ansi">ISO o ANSI</a> spiega come capire quale hai.</p>
+<figure data-figure="board-shapes"><figcaption>Tastiere ANSI, ISO e JIS a confronto: cambiano il tasto Invio, il Maiusc sinistro e i tasti in più.</figcaption></figure>
+<p>Formati come tenkeyless e 60% dicono quanti tasti tiene la tastiera. Le file delle lettere sono uguali in ogni formato, quindi una 60% scrive in italiano, AZERTY o Colemak come una tastiera completa.</p>
+<table>
+<caption>I formati di tastiera e cosa tolgono</caption>
+<thead><tr><th scope="col">Formato</th><th scope="col">Cosa toglie</th></tr></thead>
+<tbody>
+<tr><td>Completa (100%)</td><td>Niente: tastierino numerico incluso, di solito 104 tasti negli Stati Uniti e 105 nella maggior parte degli altri paesi</td></tr>
+<tr><td>Tenkeyless (TKL, 80%)</td><td>Il tastierino numerico</td></tr>
+<tr><td>75%</td><td>Il tastierino numerico e i tasti di navigazione e di sistema meno usati</td></tr>
+<tr><td>60%</td><td>Il tastierino numerico, la fila dei tasti funzione e i tasti di navigazione</td></tr>
+<tr><td>40%</td><td>Tutto quanto sopra, più la fila dei numeri</td></tr>
+</tbody>
+</table>
+
+<h2>Posso provare un layout di tastiera senza installarlo?</h2>
+<p>Sì. petitdoigt, un programma gratuito per esercitarsi a scrivere che funziona nel browser, applica il layout da solo a partire dalla posizione fisica di ogni tasto: puoi scrivere in Colemak, Dvorak, Workman o AZERTY mentre il sistema resta sul layout di sempre. La tastiera a schermo mostra le lettere del layout scelto, ognuna nel colore del dito che deve premerla, e ti aiuta finché i tuoi tasti dicono ancora QWERTY. Ha 11 layout, dal QWERTY americano all'AZERTY e al QWERTZ, più Dvorak, Colemak, Colemak-DH e Workman, e disegna una tastiera ANSI, ISO o JIS come la tua. Il layout italiano non c'è: per esercitare le lettere va bene il QWERTY americano, che le tiene negli stessi tasti. Chi arriva da questa guida trova l'interfaccia in inglese e testi di esercizio in inglese, francese, tedesco o spagnolo.</p>
+<p>Per una prova onesta, scrivi parole comuni in <a href="app:words?layout=colemak">Colemak</a> o in <a href="app:words?layout=dvorak">Dvorak</a> dieci minuti al giorno per una settimana prima di decidere. Le prime serie saranno lente. La pagina stats tiene numeri separati per ogni layout, per dito e per lettera, così vedi quali tasti ti costano ancora tempo. Un browser non può vedere quale dito ha premuto un tasto, quindi petitdoigt ti mostra il dito giusto e misura i tasti e i loro tempi.</p>

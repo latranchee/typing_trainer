@@ -1,0 +1,162 @@
+<!--meta
+{
+  "id": "azerty-vs-qwerty",
+  "lang": "zh",
+  "slug": "azerty-vs-qwerty",
+  "title": "AZERTY和QWERTY的区别：法语键盘逐键对照",
+  "description": "AZERTY 和 QWERTY 的区别逐键对照：A/Q、Z/W、M 怎么换，为什么数字要按 Shift，法语重音怎么打，打拼音和玩游戏有什么影响，以及怎么切换和练习。",
+  "h1": "AZERTY 和 QWERTY 的区别：法语键盘改了哪些键",
+  "keyword": "AZERTY和QWERTY的区别",
+  "keywords_secondary": ["AZERTY键盘", "法语键盘布局", "法语键盘怎么打重音", "键盘A和Q反了", "ZQSD"],
+  "summary": "AZERTY 和 QWERTY 的区别在于五个字母和数字行：AZERTY 把 A 和 Q、Z 和 W 对调，把 M 移到 L 右边，并在 QWERTY 放数字的位置放上 é、è、ç、à，所以打数字要按 Shift。AZERTY 用于法国和比利时，打法语重音更省键；QWERTY 打英文、数字和代码更省键。",
+  "faq": [
+    {"q": "哪些国家用 AZERTY 键盘？", "a": "法国和比利时用 AZERTY，两国各有自己的版本，一些非洲国家也用。阿尔及利亚、摩洛哥、突尼斯、乍得等非洲国家还用一种阿拉伯语 AZERTY 变体。瑞士法语区用瑞士法语布局，它属于 QWERTZ；加拿大法语布局保留 QWERTY 的字母位置。"},
+    {"q": "为什么叫 AZERTY？", "a": "名字取自字母区第一排开头的六个键 A Z E R T Y，和 QWERTY 得名于它自己的前六个字母是同一个道理。"},
+    {"q": "键盘按 A 出来 Q，是怎么回事？", "a": "多半是不小心切换到了法语布局。Windows 用 Windows 徽标键 + 空格循环切换布局，Alt + Shift 和 Ctrl + Shift 也能切换，打字时很容易误按。按 Windows 徽标键 + 空格直到回到常用布局；如果从来不用法语键盘，就在设置里把它删掉。Mac 上从菜单栏的输入法菜单里选回原来的布局。"},
+    {"q": "AZERTY 键盘上 @ 怎么打？", "a": "Windows 的法语布局上，按住 AltGr（右 Alt 键）再按 à 键，也就是印着 0 的那个键。比利时 AZERTY 布局则把 @ 放在 AltGr + é，也就是印着 2 的键。"},
+    {"q": "AZERTY 键盘怎么打大写 É？", "a": "传统法语布局没有组合键能打出它。Windows 11 24H2 及以后的“法语（标准，AZERTY）”用 AltGr + Shift + é 打 É，但它有些符号和传统 AZERTY 键帽上印的对不上。比利时布局用尖音符死键：AltGr + ù，再按 Shift + E。加拿大法语布局按 Shift 加 é 键即可。"},
+    {"q": "AZERTY 键盘能当 QWERTY 用吗？", "a": "能。每个键打出什么由操作系统决定，把布局设成美式或其他 QWERTY 布局，按键就打出 QWERTY 的字符，不管键帽上印的是什么。AZERTY 用来打尖括号的那个左 Shift 旁边的多余键，在美式布局下打出反斜杠。"}
+  ],
+  "sources": [
+    {"title": "French (Legacy, AZERTY) keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdfr"},
+    {"title": "France's new AZERTY keyboard layout, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/azerty_english"},
+    {"title": "French keyboard: a voluntary standard to make it easier to enter all characters, AFNOR", "url": "https://www.afnor.org/en/news/keyboard-english-voluntary-standard-for-easier-writing/"},
+    {"title": "Dell AZERTY laptop keyboards do not match certain Microsoft French keyboard layouts, Dell", "url": "https://www.dell.com/support/kbdoc/en-in/000424091/dell-azerty-laptop-keyboards-do-not-match-certain-microsoft-french-keyboard-layouts?lang=en"},
+    {"title": "Belgian French keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdbe_2"},
+    {"title": "Canadian French keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdca"},
+    {"title": "Swiss French keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdsf_2"},
+    {"title": "US keyboard, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/keyboards/kbdus_7"},
+    {"title": "AZERTY, Wikipedia", "url": "https://en.wikipedia.org/wiki/AZERTY"},
+    {"title": "Keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Letter frequency, Wikipedia", "url": "https://en.wikipedia.org/wiki/Letter_frequency"},
+    {"title": "Microsoft 支持：管理 Windows 中的语言和键盘/输入布局设置", "url": "https://support.microsoft.com/zh-cn/help/4496404"},
+    {"title": "Keyboard shortcuts in Windows, Microsoft Support", "url": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec"},
+    {"title": "Apple 支持：在 Mac 上使用其他语言书写", "url": "https://support.apple.com/zh-cn/guide/mac-help/mchlp1406/mac"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "在浏览器里试打 AZERTY", "drill": "words", "layout": "azerty"}
+}
+-->
+<p>AZERTY 和 QWERTY 的大部分键是一样的。法国人和美国人用同样的手指按 E、R、T、Y、U、I、O、P，基准行上的 S、D、F、G、H、J、K、L 也在同样的位置。变的是五个字母、数字行的用途，以及右下角挪了位的标点。就这么几个键，已经足以让习惯 QWERTY 的人在法语键盘上频频按错，反过来也一样。在法国或比利时留学、工作，或者正在学法语的话，下面这些差别迟早会碰到。</p>
+
+<h2>AZERTY 和 QWERTY 的区别有哪些？逐键对照</h2>
+<p>法语 AZERTY 把 A 和 Q、Z 和 W 对调，把 M 移到基准行 L 的右边，右下角的标点依次挪过去填 M 留下的空位。下表列出 Windows 里“美式”布局和“法语（旧版，AZERTY）”之间所有不同的键；后者是微软称在法国无处不在的传统布局。手指一栏按标准盲打指法。</p>
+<table>
+<caption>美式 QWERTY 和法语 AZERTY 不同的键</caption>
+<thead><tr><th scope="col">物理位置</th><th scope="col">QWERTY</th><th scope="col">AZERTY</th><th scope="col">手指</th></tr></thead>
+<tbody>
+<tr><td>1 左边</td><td><kbd>`</kbd></td><td><kbd>²</kbd></td><td>左手小指</td></tr>
+<tr><td>数字行，1 到 0 右边一键</td><td>数字、<kbd>-</kbd></td><td>重音字母和符号；按 Shift 才是数字</td><td>不变</td></tr>
+<tr><td>上排第 1 个字母键</td><td><kbd>Q</kbd></td><td><kbd>A</kbd></td><td>左手小指</td></tr>
+<tr><td>上排第 2 个字母键</td><td><kbd>W</kbd></td><td><kbd>Z</kbd></td><td>左手无名指</td></tr>
+<tr><td>P 右边</td><td><kbd>[</kbd></td><td><kbd>^</kbd>（死键）</td><td>右手小指</td></tr>
+<tr><td>再右一键</td><td><kbd>]</kbd></td><td><kbd>$</kbd></td><td>右手小指</td></tr>
+<tr><td>基准行第 1 个键</td><td><kbd>A</kbd></td><td><kbd>Q</kbd></td><td>左手小指（停放键）</td></tr>
+<tr><td>L 右边</td><td><kbd>;</kbd></td><td><kbd>M</kbd></td><td>右手小指（停放键）</td></tr>
+<tr><td>再右一键</td><td><kbd>'</kbd></td><td><kbd>ù</kbd></td><td>右手小指</td></tr>
+<tr><td>Enter 上方（ANSI）或左边（ISO）</td><td><kbd>\</kbd></td><td><kbd>*</kbd></td><td>右手小指</td></tr>
+<tr><td>左 Shift 旁边的多余键（ISO）</td><td><kbd>\</kbd></td><td><kbd>&lt;</kbd> 和 <kbd>&gt;</kbd></td><td>左手小指</td></tr>
+<tr><td>下排第 1 个字母键</td><td><kbd>Z</kbd></td><td><kbd>W</kbd></td><td>左手小指</td></tr>
+<tr><td>N 右边</td><td><kbd>M</kbd></td><td><kbd>,</kbd></td><td>右手食指</td></tr>
+<tr><td>再右一键</td><td><kbd>,</kbd></td><td><kbd>;</kbd>（Shift：句号）</td><td>右手中指</td></tr>
+<tr><td>再右一键</td><td><kbd>.</kbd></td><td><kbd>:</kbd>（Shift：斜杠）</td><td>右手无名指</td></tr>
+<tr><td>再右一键</td><td><kbd>/</kbd></td><td><kbd>!</kbd></td><td>右手小指</td></tr>
+</tbody>
+</table>
+<p>字母方面只有四根手指换了活儿。左手小指仍然管三个字母，只是顺序变了：上排是 A，停放键是 Q，左下角是 W。左手无名指往上够 Z，那里在 QWERTY 上是 W。右手小指停在字母 M 上，不再是分号；右手食指在原来按 M 的地方按逗号。其余字母都归原来的手指，所以在 AZERTY 和 QWERTY 之间切换，要动的键比换成 <a href="guide:colemak-vs-dvorak">Colemak 或 Dvorak</a> 少得多。左 Shift 旁边的多余键只有 ISO 键盘才有，欧洲普遍用这种形状，<a href="guide:iso-vs-ansi">ISO 和 ANSI 键盘的区别</a>讲了怎么分辨。</p>
+<figure data-figure="finger-chart" data-layout="azerty"><figcaption>法语 AZERTY，每个键按负责它的手指着色。Q 和 M 是两根小指的停放键。</figcaption></figure>
+
+<h2>为什么 AZERTY 打数字要按 Shift？</h2>
+<p>AZERTY 把数字行的默认层让给了重音字母和标点，数字放在 Shift 层。单按 <kbd>2</kbd> 键打出 é，加 Shift 才是 2。Windows 法语布局的整行如下：</p>
+<table>
+<caption>Windows 法语 AZERTY 的数字行</caption>
+<thead><tr><th scope="col">键</th><th scope="col">单按</th><th scope="col">Shift</th><th scope="col">AltGr</th></tr></thead>
+<tbody>
+<tr><td>1 左边</td><td>²</td><td>（无）</td><td>（无）</td></tr>
+<tr><td>1</td><td>&amp;</td><td>1</td><td>（无）</td></tr>
+<tr><td>2</td><td>é</td><td>2</td><td>~（死键）</td></tr>
+<tr><td>3</td><td>"</td><td>3</td><td>#</td></tr>
+<tr><td>4</td><td>'</td><td>4</td><td>{</td></tr>
+<tr><td>5</td><td>(</td><td>5</td><td>[</td></tr>
+<tr><td>6</td><td>-</td><td>6</td><td>|</td></tr>
+<tr><td>7</td><td>è</td><td>7</td><td>`（死键）</td></tr>
+<tr><td>8</td><td>_</td><td>8</td><td>\</td></tr>
+<tr><td>9</td><td>ç</td><td>9</td><td>^</td></tr>
+<tr><td>0</td><td>à</td><td>0</td><td>@</td></tr>
+<tr><td>0 右边</td><td>)</td><td>°</td><td>]</td></tr>
+<tr><td>再右一键</td><td>=</td><td>+</td><td>}</td></tr>
+</tbody>
+</table>
+<ul>
+<li>用另一只手按 Shift：打 1 到 5 用右 Shift，打 6 到 0 用左 Shift。<a href="guide:finger-placement">键盘指法图</a>标出了每个键归哪只手。</li>
+<li>长串数字用小键盘打，不用按 Shift。</li>
+<li>Windows 法语布局下，Caps Lock 几乎对整个键盘都起 Shift 锁定的作用，数字行会打出数字，字母则全是大写。</li>
+<li>留意句号：它是 Shift 加 <kbd>;</kbd> 键，每句话结尾都要按一次 Shift，而 <kbd>;</kbd>、<kbd>:</kbd>、<kbd>!</kbd> 和 <kbd>ù</kbd> 都不用。</li>
+</ul>
+
+<h2>AZERTY 键盘怎么打法语重音和符号？</h2>
+<p>五个重音字母有自己的键，不用任何修饰键：数字行上的 é、è、ç、à，以及 M 旁边的 ù。其他重音靠死键，死键按下后不出字，等你按下一个字母才合成。先按 <kbd>^</kbd>（P 右边）再按 <kbd>e</kbd> 得到 ê；先按 <kbd>Shift</kbd>+<kbd>^</kbd> 再按 <kbd>i</kbd> 得到 ï。编程符号在 AltGr（右 Alt 键）上：<kbd>AltGr</kbd>+<kbd>à</kbd> 打 @，<kbd>AltGr</kbd>+<kbd>E</kbd> 打 €，数字行还有 # { [ | \ ] }，见上表。</p>
+<p>ù 键只服务一个法语词 où，而 ê 在法语文本里的出现次数约为 ù 的四倍，却要按两下。传统布局也打不全法语需要的字符：微软列出连字 æ 和 œ、法语引号 « » 以及部分大写重音字母都没有。À、È、Ù 可以用重音符死键（<kbd>AltGr</kbd>+<kbd>7</kbd>，再按 Shift 加字母）打出来，大写 É 和 Ç 在这个布局上则没有任何组合键。</p>
+<h3>2019 年的新标准和“法语（标准，AZERTY）”</h3>
+<p>2015 年，法国文化部主管语言事务的部门请标准化机构 AFNOR 解决这个问题。AFNOR 在 2019 年发布了自愿性标准 NF Z71-300，包含一个改进版 AZERTY 和 BÉPO 布局。新版 AZERTY 保留 26 个字母和数字的位置，挪动部分重音、标点和符号，让 É、Ç、æ、œ 和 « » 都好打。Windows 11 24H2 把它作为“法语（标准，AZERTY）”提供，<kbd>AltGr</kbd>+<kbd>Shift</kbd>+<kbd>é</kbd> 打出 É，旧布局改名为“法语（旧版，AZERTY）”。选新布局前先看看键帽：戴尔说只有旧版布局和它笔记本上的实体 AZERTY 键盘一致，选了标准版，有些键打出的字符和印的不一样。</p>
+
+<h2>在 AZERTY 键盘上打拼音会怎样？</h2>
+<p>拼音只用 26 个拉丁字母，在 AZERTY 上照样能打，但几个常用字母换了手指。最明显的是“我”：W 从上排左手无名指的位置，移到了左下角，由左手小指去够。下表按键位推出几组常见拼音的变化。</p>
+<table>
+<caption>常见拼音在 QWERTY 和 AZERTY 上的手指分工</caption>
+<thead><tr><th scope="col">字母</th><th scope="col">例字</th><th scope="col">QWERTY</th><th scope="col">AZERTY</th></tr></thead>
+<tbody>
+<tr><td>w（wo、wei、wang）</td><td>我、为、王</td><td>上排，左手无名指</td><td>左下角，左手小指</td></tr>
+<tr><td>a（an、ang、ai、ao）</td><td>安、上、爱、好</td><td>基准行，左手小指不用动</td><td>上排，左手小指向上伸</td></tr>
+<tr><td>q（qi、qu、qian）</td><td>起、去、前</td><td>上排，左手小指</td><td>基准行，左手小指不用动</td></tr>
+<tr><td>z、zh</td><td>在、这、中</td><td>左下角，左手小指</td><td>上排，左手无名指</td></tr>
+<tr><td>m（men、mei、me）</td><td>们、没、么</td><td>下排，右手食指</td><td>基准行，右手小指</td></tr>
+</tbody>
+</table>
+<p>左手小指在 AZERTY 上要管 A、Q、W 三个字母，而 a 出现在大量韵母里，w 又是“我”“为”“问”的声母，这根最弱的手指比在 QWERTY 上更忙。在法国或比利时用 AZERTY 键盘打拼音，先打几个字检查一下：拼音输入法打出的字母可能按 QWERTY 而不是按键帽排列。如果是这样，最省事的办法是学会<a href="guide:type-without-looking">不看键盘打字</a>，键帽印的是什么就无所谓了。</p>
+
+<h2>法国和比利时为什么用 AZERTY？</h2>
+<p>因为 AZERTY 普及得早，又和 QWERTY 足够接近，压过了其他法语布局。它在 19 世纪最后十年出现在法国，是美国打字机 QWERTY 布局的变体，确切来历不明。Albert Navarre 在 20 世纪初设计的 ZHJAYS 布局没能取代它，很大程度上是因为 AZERTY 和 QWERTY 相似，又已经流行开了。</p>
+<p>不管是谁设计的，这些对调都更适合法语。按维基百科给出的字母频率，q 占法语字母的 1.36%，英语只有 0.095%，因为法语有 que、qui、quand；w 在法语里几乎不用，0.049% 对英语的 2.36%。AZERTY 把 Q 放到停放键上，把 W 送到左下角。Z 在法语里占 0.33%，英语是 0.074%，于是从左下角升到上排。é 占法语字母的 1.50%，有了自己的单按键。</p>
+<p>比利时有自己的 AZERTY：字母位置相同，数字也要按 Shift，但几个符号不同，数字行上法国放 - 和 _ 的地方换成了 § 和 !，= 移到右下角法国放 ! 的键上。苹果键盘在法国和比利时用同一种 AZERTY，所以同一个国家里，Mac 和 Windows 电脑上的一些符号位置可能不同。一些非洲国家也用 AZERTY。瑞士法语区用瑞士法语布局，它是在 QWERTZ 上给 é、è、à 配了单独的键（见 <a href="guide:qwertz-vs-qwerty">QWERTZ 和 QWERTY 的区别</a>）。更多布局见<a href="guide:keyboard-layouts">键盘布局总览</a>。</p>
+
+<h2>AZERTY 和 QWERTY 哪个好？打字、代码和游戏</h2>
+<p>两种布局各擅一类文字：AZERTY 适合法语，QWERTY 适合英文、数字和代码。我们没有找到比较两者打字速度的研究，说哪个更快的说法都要存疑。能比较的是常用字符各要按几下。</p>
+<table>
+<caption>常用字符的按键次数：法语 AZERTY 对美式 QWERTY</caption>
+<thead><tr><th scope="col">字符</th><th scope="col">AZERTY（法国）</th><th scope="col">QWERTY（美式）</th></tr></thead>
+<tbody>
+<tr><td>é è à ç ù</td><td>一个键</td><td>布局上没有</td></tr>
+<tr><td>ê î ô û</td><td>死键加字母</td><td>布局上没有</td></tr>
+<tr><td>数字 0 到 9</td><td>Shift 加键</td><td>一个键</td></tr>
+<tr><td>句号</td><td>Shift 加键</td><td>一个键</td></tr>
+<tr><td>冒号、感叹号</td><td>一个键</td><td>Shift 加键</td></tr>
+<tr><td>@ # [ ] { } \ |</td><td>AltGr 加键</td><td>一个键或 Shift 加键</td></tr>
+<tr><td>É Ç œ « »</td><td>旧版布局上没有</td><td>布局上没有</td></tr>
+<tr><td>游戏的 WASD</td><td>Z Q S D（同样的物理键）</td><td>W A S D</td></tr>
+</tbody>
+</table>
+<p>不会盲打的话，你总会瞄键帽，所以手边键盘上印的布局占先机。除此之外就看你打什么：以英文、数字或代码为主选 QWERTY，因为括号、花括号和反斜杠在 AZERTY 上都要按 AltGr；以法语为主选 AZERTY。快捷键跟着字母走，在 AZERTY 上撤销（<kbd>Ctrl</kbd>+<kbd>Z</kbd>）在上排左手无名指下，全选（<kbd>Ctrl</kbd>+<kbd>A</kbd>）在左上角。游戏在两种布局上都用同样四个物理键移动，AZERTY 把它们印成 Z Q S D。按键位识别的游戏不受影响；按字母识别的游戏认 W、A、S、D，要么在游戏里改键，要么玩的时候切换到 QWERTY。</p>
+
+<h2>加拿大法语布局算不算折中方案？</h2>
+<p>对用 QWERTY 写法语的人来说算。Windows 里叫“加拿大法语”的布局保留 QWERTY 的全部字母和单按数字，再把法语字符塞进周边：é 有自己的键，在美式键盘放斜杠的右下角，按 Shift 就是大写 É，这一点法语 AZERTY 做不到；P 右边是长音符死键，再右是打 ç 的软音符死键，à、è、ù 用美式键盘放撇号的重音符死键打。它的代价是撇号要按 Shift（Shift 加逗号键），而法语的 l'été、c'est 里到处是撇号。petitdoigt 带这个布局，可以<a href="app:words?layout=ca-fr">在 words 练习里打加拿大法语</a>。</p>
+
+<h2>怎么在 AZERTY 和 QWERTY 之间切换？</h2>
+<p>每个键打出什么由操作系统决定，所以切换只是改一个设置。Windows 11 上：</p>
+<ol>
+<li>打开“设置”，进入“时间 &amp; 语言”，再进入“语言 &amp; 区域”。</li>
+<li>点语言旁边的“…”，选“语言选项”。</li>
+<li>在“键盘”下点“添加键盘”，选“法语（旧版，AZERTY）”、美式或加拿大法语。列表里没有的话，先添加它所属的语言。</li>
+<li>按住 Windows 徽标键再按空格键，在已安装的布局之间循环切换。</li>
+</ol>
+<p>Mac 上，打开“系统设置”，点“键盘”，在“文字输入”下点“编辑”，用添加按钮加入布局。Control-空格键切回上次用的输入法，Control-Option-空格键切到下一个。不管选哪种布局，键帽都不会变。设成 AZERTY 的美式键盘，按印着 Q 的键打出 A，所以新键位最好靠手感记住。</p>
+
+<h2>怎样学会 AZERTY，或者切回 QWERTY？</h2>
+<p>只重练换了位置的键，其余不用管。大部分键还在原来的手指下，要练的集中在左手小指、左手无名指和右手下面的标点。</p>
+<ol>
+<li>熟悉新的基准行。AZERTY 上是 Q S D F 和 J K L M，两根小指都停在字母上，F 和 J 上的凸点位置不变。</li>
+<li>在真实单词里练换了位置的字母。学 AZERTY 用 que、quand、aussi、mais、comme、zéro；切回 QWERTY 用 was、what、always、maybe、zone。</li>
+<li>重建句尾动作：逗号在右手食指下，句号是 Shift 加旁边那个键。</li>
+<li>最后再练数字行，用另一只手按 Shift。</li>
+</ol>
+<p>petitdoigt 在两种布局上都能做这些练习，不用改系统设置。它根据物理键位自己套用 AZERTY，设成美式的键盘直接能用；屏幕键盘显示 AZERTY 字母，每个键按手指着色，并高亮该用的手指。把练习文本设为法语，在 Finger focus 里选左手小指，练习里的 A、Q、W 会更多；再打开 <a href="app:pairs?layout=azerty">AZERTY 的 pairs 练习</a>，自适应模式下每一组主要由你自己最慢、最容易出错的键间转换组成。浏览器看不到你用哪根手指按键，练习工具只能显示正确的手指并测量节奏，把对的手指放到键上要靠你自己。界面目前是英文。底层的指法技巧见<a href="guide:touch-typing">盲打指南</a>。</p>

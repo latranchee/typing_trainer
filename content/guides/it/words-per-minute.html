@@ -1,0 +1,139 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "it",
+  "slug": "parole-al-minuto",
+  "title": "Parole al minuto (WPM): cosa sono e come si calcolano",
+  "description": "Parole al minuto spiegate: la parola da cinque caratteri, come calcolare i WPM, lordi e netti, le battute al minuto e un test calcolato in sei modi diversi.",
+  "h1": "Parole al minuto (WPM): cosa significano e come si calcolano",
+  "keyword": "parole al minuto",
+  "keywords_secondary": ["come calcolare le parole al minuto", "WPM significato", "cosa vuol dire WPM", "WPM lordi e netti", "battute al minuto", "PPM"],
+  "summary": "Le parole al minuto (WPM) misurano la velocità di battitura in parole da cinque caratteri: ogni cinque caratteri scritti, spazi e punteggiatura compresi, contano come una parola. Per calcolarle dividi i caratteri per cinque e poi per i minuti impiegati: 250 caratteri in un minuto fanno 50 WPM. I WPM netti tolgono anche gli errori rimasti nel testo, e siti con penalità diverse danno punteggi diversi allo stesso test.",
+  "faq": [
+    {"q": "40 parole al minuto sono una buona velocità?", "a": "40 WPM stanno tra le due medie più citate. Sono un po' sotto i 51,6 WPM dei 168.000 volontari dello studio Aalto del 2018 e sopra la mediana dei test Ratatype di aprile 2026, circa 35 WPM: a 40 WPM superi circa due terzi di quei test. A questa velocità impieghi in media 300 millisecondi per carattere."},
+    {"q": "Quanto è raro scrivere a 100 parole al minuto?", "a": "Molto raro. Nello studio Aalto solo il decimo più veloce dei partecipanti superava i 78 WPM circa, e quel gruppo faceva in media 89,6 WPM; i più rapidi dell'intera raccolta arrivavano a 120 WPM e oltre. Tenere 100 WPM significa impiegare in media 120 millisecondi per carattere per tutto il test."},
+    {"q": "Cosa sono i WPM raw?", "a": "I WPM raw, cioè grezzi, sono la velocità prima di qualsiasi penalità per gli errori. Monkeytype li calcola come i WPM normali ma conta anche le parole sbagliate, mentre i WPM normali tengono solo i caratteri delle parole scritte correttamente. La distanza tra i due numeri mostra quanta velocità ti costano i refusi."},
+    {"q": "Gli spazi contano nelle parole al minuto?", "a": "Sì. La parola standard è di cinque caratteri spazi compresi, una convenzione che Wobbrock fa risalire al 1905 circa, e Typing.com conta allo stesso modo spazi e punteggiatura. I tasti che non lasciano caratteri nel testo, come Maiusc e Backspace, non aggiungono nulla ai WPM, anche se il Backspace conta tra i tasti premuti al minuto."},
+    {"q": "Come si calcolano le parole al minuto in Excel?", "a": "Metti il testo scritto nella cella A1 e il tempo in secondi in B1, poi scrivi in un'altra cella =LUNGHEZZA(A1)/5/(B1/60). LUNGHEZZA conta ogni carattere, spazi compresi, quindi il risultato sono i WPM lordi; nelle versioni inglesi di Excel e Fogli Google la funzione si chiama LEN. Per i WPM netti metti gli errori non corretti in C1 e usa =LUNGHEZZA(A1)/5/(B1/60)-C1/(B1/60)."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (a cura di), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (articolo, PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: sorgente della pagina About con le definizioni di wpm, raw e accuracy", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (articolo, PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Wikipedia: Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"},
+    {"title": "Wikipedia: Cartella (editoria)", "url": "https://it.wikipedia.org/wiki/Cartella_(editoria)"},
+    {"title": "Wikipedia: Italian keyboard layout", "url": "https://en.wikipedia.org/wiki/Italian_keyboard_layout"},
+    {"title": "Ratatype, Quale velocità di digitazione è considerata buona? Dati reali da 506.000 test (aprile 2026)", "url": "https://www.ratatype.it/typing-tips/3004-what-typing-speed-is-considered-good-real-data-from-506000-tests/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Misura le tue parole al minuto", "drill": "words"}
+}
+-->
+<h2>Cosa significa WPM nella battitura?</h2>
+<p>WPM sta per words per minute, parole al minuto, e nella battitura una parola vale cinque caratteri qualsiasi. Lettere, cifre, spazi e punteggiatura contano tutti nei cinque. Maiusc e Backspace restano fuori, perché non aggiungono caratteri al testo. Chi produce 300 caratteri in un minuto scrive a 60 WPM, qualunque parola formino quei caratteri. Sui siti italiani trovi la stessa misura anche come PPM o PAM.</p>
+<p>Una lunghezza fissa rende i punteggi confrontabili. Contate come parole vere, «io ci sono» farebbe tre parole e «internazionalizzazione» una sola, anche se la seconda richiede più del doppio dei tasti. Con la regola dei cinque caratteri, «io ci sono» (10 caratteri con gli spazi) vale 2 parole e «internazionalizzazione» (22 caratteri) ne vale 4,4. Anche una parola lunghissima come «precipitevolissimevolmente», con i suoi 26 caratteri, rientra nel conto: vale 5,2 parole.</p>
+<p>Il <a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">capitolo di Jacob Wobbrock sulle misure dell'inserimento di testo</a> dice che contare una parola come cinque caratteri, spazi compresi, è prassi comune dal 1905 circa, e I. Scott MacKenzie la fa risalire alle gare di dattilografia dei primi del Novecento. Entrambi citano la storia delle macchine per scrivere pubblicata da Yamada nel 1980.</p>
+
+<h2>Come si calcolano le parole al minuto?</h2>
+<p>Per calcolare le parole al minuto dividi il numero di caratteri scritti per cinque, poi dividi il risultato per i minuti impiegati.</p>
+<ol>
+<li>Conta ogni carattere del testo prodotto, spazi e punteggiatura compresi.</li>
+<li>Dividi il totale per 5: ottieni le parole standard.</li>
+<li>Converti il tempo in minuti (45 secondi sono 0,75) e dividi le parole per quel valore.</li>
+</ol>
+<p>Come formula: <code>WPM = caratteri ÷ 5 ÷ minuti</code>. Se scrivi 250 caratteri in 75 secondi, ottieni 50 parole in 1,25 minuti, cioè 40 WPM.</p>
+<p>I laboratori di ricerca aggiungono una correzione. Il cronometro parte con il primo tasto, quindi il primo carattere non ha richiesto tempo misurato ed esce dal conteggio. La <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">nota di MacKenzie sul calcolo della velocità</a> usa come esempio la frase inglese «the quick brown fox jumps over the lazy dog»: 43 caratteri in 20 secondi. Contandoli tutti si ottengono 25,8 WPM; contando i 42 battuti dopo l'avvio del cronometro, 25,2 WPM. In un test più lungo la correzione quasi scompare: per 520 caratteri in due minuti sposta il risultato di 0,1 WPM.</p>
+
+<h2>Che differenza c'è tra WPM lordi e netti?</h2>
+<p>I WPM lordi misurano tutto il testo scritto, errori compresi, e i WPM netti sottraggono una penalità per gli errori lasciati nel testo. La penalità più comune è di una parola al minuto per ogni errore non corretto al minuto:</p>
+<p><code>WPM netti = WPM lordi − errori non corretti ÷ minuti</code></p>
+<p>Le <a href="https://www.speedtypingonline.com/typing-equations">formule di Speed Typing Online</a> fanno un esempio: 80 WPM lordi in due minuti con 8 errori rimasti nel testo fanno 4 errori al minuto, quindi la velocità netta è di 76 WPM.</p>
+<p>Gli errori che correggi mentre scrivi non hanno altre penalità, perché li hai già pagati in tempo: il tasto sbagliato, il Backspace e il tasto giusto richiedono tempo e lasciano un solo carattere. Gli errori lasciati nel testo possono invece gonfiare il punteggio. Wobbrock osserva che gli errori non corretti aumentano la velocità, perché chi lascia gli sbagli nel testo va più spedito, e una penalità come quella dei WPM netti si riprende quel vantaggio.</p>
+<p>Incontrerai altre due correzioni. I ricercatori riportano i WPM corretti (adjusted WPM), che riducono i WPM in proporzione agli errori non corretti: nell'esempio di Wobbrock, il 10% di errori non corretti porta i WPM corretti al 90% dei WPM. Alcuni strumenti moltiplicavano invece i WPM per la precisione. Typing.com chiamava quel prodotto «Net Words Per Minute», poi l'ha eliminato, spiegando che spingeva a guardare i WPM e a trascurare la precisione.</p>
+<p>I test di battitura di solito mostrano la precisione accanto ai WPM. La precisione è il rapporto tra caratteri corretti e caratteri battuti, moltiplicato per 100, e conta anche gli errori corretti: 514 caratteri giusti su 534 battuti fanno il 96,3%, anche se nel testo finale restano pochi errori. La <a href="guide:typing-accuracy">guida alla precisione di battitura</a> spiega a cosa puntare.</p>
+
+<h2>Esempio pratico: come calcolare i WPM in sei modi dallo stesso test</h2>
+<p>Ecco un test di due minuti calcolato con ciascuna delle formule viste sopra. Alla fine hai 520 caratteri di testo, spazi compresi. Lungo il percorso hai battuto 14 caratteri sbagliati e li hai cancellati, e 6 caratteri sbagliati sono rimasti, ognuno in una parola diversa di cinque lettere. In tutto hai battuto 534 caratteri, 514 dei quali corretti.</p>
+<table>
+<caption>Un test di due minuti, sei modi di calcolarlo</caption>
+<thead>
+<tr><th scope="col">Metodo</th><th scope="col">Calcolo</th><th scope="col">WPM</th></tr>
+</thead>
+<tbody>
+<tr><td>WPM lordi</td><td>520 ÷ 5 ÷ 2</td><td>52,0</td></tr>
+<tr><td>WPM da ricerca (cronometro dal primo carattere)</td><td>519 ÷ 120 s × 60 ÷ 5</td><td>51,9</td></tr>
+<tr><td>WPM corretti (ricerca)</td><td>51,9 × (1 − 6 ÷ 520)</td><td>51,3</td></tr>
+<tr><td>WPM × precisione (vecchi strumenti)</td><td>52,0 × 514 ÷ 534</td><td>50,1</td></tr>
+<tr><td>WPM netti</td><td>52,0 − 6 ÷ 2</td><td>49,0</td></tr>
+<tr><td>Solo parole corrette (regola di Monkeytype)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48,4</td></tr>
+</tbody>
+</table>
+<p>L'ultima riga presume che ogni refuso rovini una parola di cinque lettere più il suo spazio, cioè 6 caratteri.</p>
+
+<h2>Perché i miei WPM cambiano da un test all'altro?</h2>
+<p>I WPM cambiano da un test all'altro perché i siti usano formule, testi e durate diverse, e perché il tuo ritmo oscilla anche dentro lo stesso test. Nell'esempio sopra la sola formula ha spostato il risultato di 3,6 WPM. <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a>, per esempio, conta solo i caratteri delle parole scritte correttamente, quindi un refuso costa l'intera parola.</p>
+<p>Typing.com fa notare che i WPM non tengono conto della difficoltà del testo, e che riscrivere lo stesso brano gonfia la velocità perché le dita lo imparano. Un paragrafo di parole brevi e comuni di solito dà un punteggio più alto di uno pieno di maiuscole, cifre e simboli, anche se entrambi si contano in parole da cinque caratteri. In italiano pesano anche gli accenti. Sulla tastiera italiana <kbd>à</kbd>, <kbd>è</kbd>, <kbd>ì</kbd>, <kbd>ò</kbd> e <kbd>ù</kbd> hanno un tasto proprio all'estrema destra delle lettere, nella zona del mignolo destro, e secondo <a href="https://en.wikipedia.org/wiki/Italian_keyboard_layout">Wikipedia</a> il layout italiano di Windows non ha le vocali maiuscole accentate: per scrivere È di solito si ripiega su E seguita dall'apostrofo.</p>
+<p>Anche la durata conta. Uno sprint di 15 secondi misura un solo scatto. Typing.com considera i suoi test da 3 e 5 minuti la misura più precisa della velocità complessiva, perché durano abbastanza da dare una media ripetibile senza affaticare polsi e dita.</p>
+<p>Un contatore in tempo reale e un punteggio finale coprono anche intervalli diversi. Il punteggio finale fa la media dell'intero test, partenza lenta e inciampi compresi, mentre un contatore mobile copre solo gli ultimi secondi e cala a ogni esitazione. L'<a href="app:words">esercizio words</a> di petitdoigt mostra entrambi: i WPM su una finestra mobile di 5, 10 o 30 secondi mentre scrivi, poi il risultato di ogni serie confrontato con le tue ultime dieci. Per chi arriva dall'Italia l'interfaccia è in inglese, e le frasi di pratica sono in inglese, francese, tedesco o spagnolo.</p>
+
+<h2>Come misurare i tuoi WPM in modo affidabile?</h2>
+<p>Per avere WPM affidabili fai sempre lo stesso tipo di test nello stesso modo, e controlla la formula prima di confrontare i numeri.</p>
+<ol>
+<li>Scegli un test che duri da 3 a 5 minuti.</li>
+<li>Usa un testo che non hai mai scritto, nella lingua in cui scrivi di solito.</li>
+<li>Scrivi al ritmo che terresti per lavoro e correggi gli errori come fai di solito.</li>
+<li>Annota insieme WPM e precisione. 60 WPM al 90% di precisione e 60 WPM al 98% richiedono allenamenti diversi.</li>
+<li>Prima di confrontare due siti, controlla se riportano WPM lordi, WPM netti o solo parole corrette.</li>
+<li>Confrontati con i tuoi risultati precedenti sullo stesso test, su più sessioni.</li>
+</ol>
+
+<h2>Cosa sono le battute al minuto?</h2>
+<p>Le battute al minuto sono i caratteri scritti in un minuto, spazi compresi, e valgono i WPM moltiplicati per cinque: 52 WPM corrispondono a 260 battute al minuto. In inglese la stessa misura si chiama CPM, characters per minute. In italiano la battuta è anche l'unità con cui si misurano i testi: nell'editoria è un qualsiasi carattere digitato, spazio compreso, e una <a href="https://it.wikipedia.org/wiki/Cartella_(editoria)">cartella editoriale</a> contiene 1.800 battute, cioè 30 righe da 60.</p>
+<p>I tasti premuti al minuto contano un'altra cosa: i tasti abbassati, al posto dei caratteri prodotti, quindi includono il Backspace e, in alcune misure, il Maiusc. Nell'esempio pratico hai premuto 534 tasti carattere e 14 Backspace in due minuti, cioè 274 tasti al minuto per 260 battute al minuto. Quando un test o un bando parla di battute, controlla quale delle due misure intende.</p>
+<p>I ricercatori chiamano il rapporto tra le due misure tasti per carattere (KSPC, keystrokes per character). Lo <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">studio dell'Università Aalto su 136 milioni di tasti premuti</a> (Dhakal e colleghi, CHI 2018) ha contato ogni tasto e ha trovato una media di 1,17 tasti per carattere tra i suoi 168.000 volontari. Il decimo più veloce si fermava a 1,10 e il decimo più lento arrivava a 1,24, perché chi scrive lentamente fa e corregge più errori.</p>
+<p>Per l'inserimento dati si parla spesso di tasti all'ora: Wikipedia nota che molti lavori ne chiedono 8.000 o 10.000. Se ogni tasto producesse un carattere, 10.000 all'ora corrisponderebbero a circa 33 WPM. La tabella converte le velocità più comuni con la stessa ipotesi e aggiunge il tempo per copiare una cartella.</p>
+<table>
+<caption>Le parole al minuto in altre unità, con un tasto per carattere</caption>
+<thead>
+<tr><th scope="col">WPM</th><th scope="col">Battute al minuto</th><th scope="col">Millisecondi per carattere</th><th scope="col">Tasti all'ora</th><th scope="col">Minuti per una cartella (1.800 battute)</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6.000</td><td>18</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9.000</td><td>12</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12.000</td><td>9</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18.000</td><td>6</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24.000</td><td>4,5</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30.000</td><td>3,6</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36.000</td><td>3</td></tr>
+</tbody>
+</table>
+
+<h2>Quante parole al minuto si scrivono, si dicono e si leggono?</h2>
+<p>Leggere ad alta voce e narrare sono molto più rapidi che scrivere: il ritmo consigliato per un audiolibro è circa il triplo della velocità di battitura media misurata online. I valori qui sotto vengono da studi diversi e contano le parole in modi diversi. Gli studi sulla battitura contano parole da cinque caratteri. Le velocità di lettura e di parola contano le parole effettivamente dette o lette, e il capitolo di Wobbrock nota che chi studia il parlato definisce la parola in questo modo.</p>
+<table>
+<caption>Parole al minuto per attività</caption>
+<thead>
+<tr><th scope="col">Attività</th><th scope="col">Parole al minuto</th><th scope="col">Fonte</th></tr>
+</thead>
+<tbody>
+<tr><td>Stenotipia, utenti esperti più veloci</td><td>fino a 360</td><td>Guinness dei primati, via Wikipedia</td></tr>
+<tr><td>Lettura ad alta voce, 17 lingue</td><td>184 ± 29</td><td>Trauzettel-Klosinski e Dietz (2012), via Wikipedia</td></tr>
+<tr><td>Narrazione di audiolibri (consigliata)</td><td>da 150 a 160</td><td>Williams (1998), via Wikipedia</td></tr>
+<tr><td>Battitura su tastiera del computer, test online</td><td>51,6 (media)</td><td>Dhakal e colleghi (2018)</td></tr>
+<tr><td>Battitura sul telefono, test online</td><td>36,2 (media)</td><td>Palin e colleghi (2019)</td></tr>
+<tr><td>Copiatura a mano, adulti tra 18 e 64 anni</td><td>circa 13 (68 lettere al minuto)</td><td>Wikipedia</td></tr>
+</tbody>
+</table>
+<p>Il dato sul telefono viene da <a href="https://userinterfaces.aalto.fi/typing37k/">uno studio del 2019 dell'Università Aalto su 37.370 volontari</a>, che ha usato lo stesso metodo e la stessa parola da cinque caratteri dello studio su tastiera: al telefono si scriveva circa 15 WPM più piano. Una «e» detta ad alta voce conta come una parola intera, quindi prendi le velocità di parola e di lettura come un confronto approssimativo con i WPM di battitura.</p>
+
+<h2>Cosa dicono i tuoi WPM su ogni singolo tasto?</h2>
+<p>I tuoi WPM fissano un tempo medio per carattere: dividi 12.000 per i tuoi WPM e lo ottieni in millisecondi. A 60 WPM impieghi in media 200 ms per carattere, a 100 WPM 120 ms. Passare da 50 a 60 WPM significa limare 40 ms da ogni carattere, da 240 a 200.</p>
+<p>Lo studio Aalto ha misurato direttamente quegli intervalli. Su tutti i partecipanti l'intervallo medio tra la pressione di un tasto e quella del successivo era di 239 ms, a una velocità media di 51,6 WPM. Il decimo più veloce, sopra i 78 WPM circa, stava in media a 122 ms tra un tasto e l'altro; il decimo più lento, sotto i 26 WPM circa, a 481 ms. Dal decimo più lento al più veloce gli intervalli si accorciano quindi di circa quattro volte. La durata della pressione variava molto meno: un tasto restava giù in media 116 ms, e tra 80 e 150 ms anche per chi scriveva lento. Gli autori ne deducono che quasi tutto il guadagno di velocità viene da altro.</p>
+<p>Studi precedenti sulle macchine per scrivere, riassunti nello stesso articolo, avevano trovato le coppie di lettere battute con dita di mani diverse 30–60 ms più rapide di quelle battute con una sola mano, e circa 80 ms più rapide di quelle battute con lo stesso dito. Sulle tastiere moderne i dati Aalto hanno mostrato un guadagno minore dall'alternanza delle mani, circa 5–20 ms, e chi scriveva lento era 20–28 ms più lento quando alternava. Sulla tastiera italiana <kbd>C</kbd> seguita da <kbd>H</kbd>, come in «che», alterna le mani, mentre <kbd>C</kbd> seguita da <kbd>E</kbd>, come in «dice», manda il medio sinistro dalla riga in basso a quella in alto. I tuoi WPM fanno la media di centinaia di passaggi come questi, e bastano pochi passaggi lenti per abbassare tutto il numero.</p>
+<p>L'<a href="app:pairs">esercizio pairs</a> di petitdoigt cronometra ogni passaggio da un tasto all'altro mentre scrivi e, in modalità adattiva, costruisce le serie soprattutto con i tuoi passaggi più lenti e più sbagliati; la pagina stats elenca latenza e precisione per ogni dito, lettera e passaggio debole. La <a href="guide:how-to-type-faster">guida per scrivere veloce al computer</a> trasforma questi dati in un piano di allenamento, e la <a href="guide:typing-speed">guida alla velocità di battitura media</a> ti dice dove si colloca il tuo numero.</p>

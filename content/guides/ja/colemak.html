@@ -1,0 +1,139 @@
+<!--meta
+{
+  "id": "colemak",
+  "lang": "ja",
+  "slug": "colemak",
+  "title": "Colemak配列とは？変わるキー、Colemak-DH、覚え方",
+  "description": "Colemak配列はQWERTYの17キーだけを動かし、Ctrl+Z・X・C・Vを残す英語用の配列です。変わるキー、Colemak-DHとの違い、習得期間、日本語入力での使い方を解説。",
+  "h1": "Colemak配列とは：QWERTYから変わるキーと覚え方",
+  "keyword": "Colemak配列",
+  "keywords_secondary": ["Colemak-DH", "Colemak 覚え方", "Colemak 日本語入力", "Colemak QWERTY 違い"],
+  "summary": "Colemak配列は、シャイ・コールマンが2006年1月1日に公開した英語用のキー配列です。QWERTYの17キーを動かして英語で最もよく使う9文字を中段に集め、Z、X、C、V、Q、Wを残すので、主なショートカットはそのまま使えます。2014年の派生版Colemak-DHは、DとHを中央の列から外しています。公式の学習ガイドは1日10分の練習を2か月ほど勧めています。",
+  "faq": [
+    {"q": "Colemakを覚えるとQWERTYを忘れますか？", "a": "両方がしっかり身につけば、たいていは忘れません。Colemak FAQは、両方を習得した人の多くは楽に切り替えられると書いています。覚えている間はQWERTYの速さが落ちやすく、QWERTYの速さと正確さが少し落ちたままになる人もいます。職場などでQWERTYが必要なら、学習ガイドは毎日5〜10分QWERTYを打つことを勧めています。"},
+    {"q": "Colemak用のキーボードやキーキャップは必要ですか？", "a": "必要ありません。Colemakはソフトウェアの設定なので、どのキーボードでも使え、刻印はQWERTYのままでかまいません。タッチタイピングでは画面を見て打つので、新しい位置が身につくまでの数週間は、Colemakの文字を表示する画面上のキーボードを見れば足ります。"},
+    {"q": "スマホでもColemakを使えますか？", "a": "GboardやSwiftKeyなどのキーボードアプリにColemakがありますが、Colemak FAQはスマートフォンでの使用を勧めていません。QWERTYより指の移動とミスが増えるためで、代わりにQWERTYでのジェスチャー入力を勧めています。"},
+    {"q": "Colemakはプログラミングに向いていますか？", "a": "おおむね向いています。記号のキーはほぼすべてQWERTYと同じ位置に残るので、かっこ、波かっこ、スラッシュ、引用符は動きません。動く記号は上段に移るセミコロンだけです。VimのようにH、J、K、Lで移動するエディターは、覚え直すか割り当てを変える必要があります。"},
+    {"q": "Colemakで手首の痛みは減りますか？", "a": "作者の計算では指の動きが減り、キーボードメーカーZSAのCEOのような長年の利用者は快適だと書いていますが、どちらも医学的な根拠ではありません。痛みが続くなら医師や理学療法士に相談し、机の高さや姿勢も見直してください。"},
+    {"q": "Colemakの利用者はどのくらいいますか？", "a": "わかっていません。colemak.comはColemakを、英語のタッチタイピングでQWERTY、Dvorakに次ぐ3番目に人気の配列だとしていますが、根拠となる人数は示しておらず、Wikipediaの記事にも数字はありません。"}
+  ],
+  "sources": [
+    {"title": "Colemak: official site", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak design", "url": "https://colemak.com/Design"},
+    {"title": "Learn Colemak", "url": "https://colemak.com/Learn"},
+    {"title": "Colemak on Mac", "url": "https://colemak.com/Mac"},
+    {"title": "Colemak community site", "url": "https://colemak.org/"},
+    {"title": "Colemak配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/Colemak配列"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "Colemak Mod-DH: keyboards (ANSI, ISO, matrix)", "url": "https://colemakmods.github.io/mod-dh/keyboards.html"},
+    {"title": "Colemak Mod-DH: layout comparison", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: learning difficulty and keys moved", "url": "https://colemakmods.github.io/mod-dh/learn.html"},
+    {"title": "Colemak Mod-DH repository (installers and keymaps)", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "DreymaR: Tarmak, transitional layouts", "url": "https://dreymar.colemak.org/tarmak-intro.html"},
+    {"title": "DreymaR: Tarmak steps", "url": "https://dreymar.colemak.org/tarmak-steps.html"},
+    {"title": "Peter Norvig: English letter frequency counts", "url": "https://norvig.com/mayzner.html"},
+    {"title": "Workman layout: official site", "url": "https://workmanlayout.org/"},
+    {"title": "Keyboard layout (Wikipedia): JIS physical layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Microsoft: Windows keyboard layouts", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Windows で言語と入力レイアウトの設定を管理する（Microsoft サポート）", "url": "https://support.microsoft.com/ja-jp/help/4496404"},
+    {"title": "Apple: use input sources to type in other languages on Mac", "url": "https://support.apple.com/guide/mac-help/use-input-sources-to-type-in-other-languages-mchlp1406/mac"},
+    {"title": "「日本語」設定を変更する（Mac 日本語入力ユーザガイド）", "url": "https://support.apple.com/ja-jp/guide/japanese-input-method/jpim662a12b9/mac"},
+    {"title": "Dvorak配列（Wikipedia日本語版）：Windowsでの日本語入力", "url": "https://ja.wikipedia.org/wiki/Dvorak配列"},
+    {"title": "ZSA blog: ZSA loves Colemak", "url": "https://blog.zsa.io/zsa-loves-colemak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Colemak-DHをブラウザーで試す", "drill": "pairs", "layout": "colemak-dh"}
+}
+-->
+<h2>Colemak配列とは？</h2>
+<p>Colemak配列は、英語のタッチタイピングのためにQWERTYを作り替えた代替配列です。シャイ・コールマンが2006年1月1日に公開し、名前は彼の名前から取られています。狙いは、指をできるだけ中段（ホームポジションの段）に置いたままにすることと、QWERTYで打てる人が一からやり直さずに移れるほど変更を少なくすることでした。公式の配列は40以上の言語のアクセント付き文字（pâtéのâ、mañanaのñ）と€も打てます。</p>
+<p>中段にはA R S T D H N E I Oが並びます。Peter Norvigによる英語の文字の頻度では、この10キーに最も多い9文字（E、T、A、O、I、N、S、R、H）が入り、打つ文字の約74%を占めます。QWERTYの中段にはそのうち3文字しかなく約32%なので、指は上下の段へ何度も動きます。</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak配列。キーの色は押す指を表します。指の担当範囲はQWERTYと同じで、その中の文字が変わります。</figcaption></figure>
+<p>どの指もQWERTYと同じ物理キーに置くので、<a href="guide:finger-placement">キーボードの指の配置図</a>の決まりはそのまま使えます。左手は小指がA、薬指がR、中指がS、人差し指がTで、Dはその右隣です。右手は人差し指がNでHはその左隣、中指がE、薬指がI、小指がOです。</p>
+
+<h2>QWERTYから何が変わる？</h2>
+<p>Colemakで変わるのは17キーで、すべて英字の3段にあります。上段で8つ、中段で8つ、下段で1つです。数字の段、Shift、Ctrl、Alt、ほとんどの記号はQWERTYのままです。</p>
+<table>
+<caption>QWERTYとColemakの英字の段（同じ物理キー、左から右）</caption>
+<thead><tr><th scope="col">段</th><th scope="col">QWERTY</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>上段</td><td>Q W E R T Y U I O P</td><td>Q W F P G J L U Y ;</td></tr>
+<tr><td>中段</td><td>A S D F G H J K L ;</td><td>A R S T D H N E I O</td></tr>
+<tr><td>下段</td><td>Z X C V B N M</td><td>Z X C V B K M</td></tr>
+</tbody>
+</table>
+<p>Z、X、C、Vはわざと動かしていません。<kbd>Ctrl</kbd>+<kbd>Z</kbd>、<kbd>X</kbd>、<kbd>C</kbd>、<kbd>V</kbd>を、右手でマウスを持ったまま左手だけで押せるようにするためです。QとWも残ります。Colemakの設計ノートは、<kbd>Ctrl</kbd>+<kbd>Q</kbd>（終了）と<kbd>Ctrl</kbd>+<kbd>W</kbd>（ウインドウを閉じる）がうっかり押す位置に来ると、作業が消えかねないと指摘しています。</p>
+<p>左右の手をまたいで移るのはEとPの2文字だけです。Eは左手の中指から、QWERTYでKがある右手の中指のキーへ移り、PはQWERTYでRがある左手の人差し指のキーへ移ります。セミコロンは上段の右端へ行き、公式の配列では<kbd>Caps Lock</kbd>が2つ目の<kbd>Backspace</kbd>になります。手をまたぐキーを減らしたのは意図的で、Colemak FAQはDvorakをQWERTYに慣れた人には難しく挫折しやすい配列だとし、colemak.comは「手をまたぐキーは2つだけ」を覚えやすさの理由に挙げています。</p>
+
+<h2>Colemak配列はQWERTYより速い？</h2>
+<p>配列の設計者が使う中段の使用率や同指連続ではQWERTYを大きく上回り、打つ速さへの効果は証明されていません。Colemakのコミュニティサイトも、速さの向上は証明しにくいと書いています。同指連続とは続く2文字を同じ指で打つことで、その指は1つ目のキーを打ち終えるまで次に動けません。QWERTYでは英語の語尾「ed」が2回とも左手の中指です。ColemakではEが右手の中指、Dが左手の人差し指なので、左右の手に分かれます。</p>
+<table>
+<caption>配列ごとの中段の使用率と同指連続</caption>
+<thead><tr><th scope="col">配列</th><th scope="col">中段で打つ文字</th><th scope="col">同指連続</th></tr></thead>
+<tbody>
+<tr><td>QWERTY</td><td>32%</td><td>6.58%</td></tr>
+<tr><td>Dvorak</td><td>70%</td><td>2.63%</td></tr>
+<tr><td>Workman</td><td>67%</td><td>3.15%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>1.67%</td></tr>
+<tr><td>Colemak-DH</td><td>69%</td><td>1.67%</td></tr>
+</tbody>
+</table>
+<p>中段の列は、各配列の中段にある文字のNorvigの頻度を足したもので、Wikipedia日本語版のColemakの記事もColemak、Dvorak、QWERTYに同じ74%、70%、32%を載せています。同指連続の列は、Colemak Mod-DHプロジェクトがProject Gutenbergの本を自前の負担モデルで計算した比較ページの数字です。Workmanの公式サイトはWorkmanを2.185%としているので、Colemak寄りの人たちによる設計上の見積もりとして読んでください。</p>
+<p>そのコミュニティサイトは初心者に「速さのためだけにColemakを覚えないでください。快適さと楽しさのために覚えてください」と呼びかけています。キーボードメーカーZSAのCEO、Erez Zukermanも、Colemakで「速くはならなかった」と書いています。彼はColemakで毎分80〜90語、正確さ97〜98%で打ち、手を伸ばす動きが減った快適さを評価しています。速さが目的なら、いまの配列で打ち方と正確さを直すほうが早く効きます。その方法は<a href="guide:how-to-type-faster">タイピングを速くする方法</a>に、ほかの代替配列との比較は<a href="guide:colemak-vs-dvorak">Colemak・Dvorak・Workmanの比較</a>にあります。</p>
+
+<h2>Colemak-DHとは？どちらを選ぶ？</h2>
+<p>Colemak-DH（正式名Colemak Mod-DH）は、通常のColemakが中央の2列に置いたDとHを外したコミュニティの派生配列で、StevePが2014年10月に公開しました。中央の列は、人差し指を横に滑らせて打つ位置です。DとHは人差し指を曲げて打つ下段に下がり、空いた中段にGとMが入り、Bは上段へ移ります。プロジェクトによると、中央の列で打つ打鍵はColemakの14.78%からColemak-DHでは7.80%に減ります。</p>
+<table>
+<caption>ANSIキーボードでのColemakとColemak-DH</caption>
+<thead><tr><th scope="col">段</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>上段</td><td>Q W F P G J L U Y ;</td><td>Q W F P B J L U Y ;</td></tr>
+<tr><td>中段</td><td>A R S T D H N E I O</td><td>A R S T G M N E I O</td></tr>
+<tr><td>下段</td><td>Z X C V B K M</td><td>X C D V Z K H</td></tr>
+</tbody>
+</table>
+<p>下段の左側には「アングルモッド」も入ります。Z、X、Cがそれぞれの指のまま1つ左にずれ、Dが左手の人差し指の下に入ります。ISOのキーボードではZが左Shiftの横の追加キーに移り、そのキーがないANSIでは表のように段の中ほどに入ります。日本のJISキーボードは短いのが右Shiftで、左Shiftの横に追加キーがないので、ANSI版が合います。種類がわからなければ<a href="guide:iso-vs-ansi">ISOとANSIの違い</a>で確かめられます。</p>
+<p>動くキーはColemakの17に対し、Colemak-DHは19とアングルモッドの3つで、プロジェクトは主にHが動く分だけ少し覚えにくいとしています。OSに最初から入っているのはColemakで、Colemak-DHはLinuxのみ、WindowsとmacOSは配布元のインストーラーが必要です。コミュニティサイトはどちらも良い配列だとして選択を好みに任せています。DとHへの横の動きがつらい人や、格子状にキーが並ぶオーソリニアのキーボードを使う人はColemak-DHを、変更を最小限にしたい人は通常のColemakを選んでください。</p>
+
+<h2>ローマ字入力でColemak配列は使える？</h2>
+<p>使えます。IMEは英字の配列で打った文字をそのままローマ字として受け取るので、Colemakの位置で「ka」や「su」を打つことになります。母音はAが左手の小指、E、I、Oが右手の中段、Uが右手の上段（QWERTYのIの位置）にあり、5つのうち4つが右手です。子音はS、T、R、Dが左手の中段、NとHが右手の中段、Kが右手の下段（QWERTYのNの位置）にあります。</p>
+<p>Colemakは英語の文字の頻度をもとに作られています。「き」「く」「け」「こ」はKも母音も右手で打つなど、日本語では英語とは違う指の動きになります。日本語を中心に打つなら、次の節の設定を済ませ、いつもの文章を数日打って自分の手で確かめてから決めてください。</p>
+
+<h2>Windows・MacでColemakを使うには？</h2>
+<p>ColemakはWindows 11のバージョン24H2から標準で入り、macOSとLinuxには以前から入っています。</p>
+<ul>
+<li><strong>Windows 11</strong>：「設定」→「時刻と言語」→「言語と地域」で英語の「…」から「言語のオプション」を開き、「キーボードの追加」でColemakを選びます。<kbd>Windows</kbd>+<kbd>Space</kbd>で切り替えます。Colemakは英語のキーボードとして入るので、選んでいる間は日本語のIMEが働きません。</li>
+<li><strong>macOS</strong>：「システム設定」→「キーボード」→「テキスト入力」の「編集」で追加ボタンを押し、英語からColemakを追加します。日本語の入力ソースの設定にある「英字のレイアウト」が、ローマ字入力に使う配列を決める項目です。<kbd>Caps Lock</kbd>を公式配列のようにBackspaceにするには、colemak.comはKarabiner-Elementsを勧めています。</li>
+<li><strong>Colemak-DH</strong>：Mod-DHプロジェクトがWindows用のインストーラーとAutoHotkeyのスクリプト、macOS用のバンドル（<code>brew install --cask colemak-dh</code>）を配っています。Linuxではxkeyboard-config 2.34以降で<code>setxkbmap us -variant colemak_dh</code>が使えます。</li>
+</ul>
+<p>古いWindowsにはcolemak.comのインストーラーが必要です。各国の配列やJIS配列との関係は<a href="guide:keyboard-layouts">キーボード配列のガイド</a>にまとめています。</p>
+
+<h2>Colemak配列の習得にはどのくらいかかる？</h2>
+<p>常用できる速さになるまで、毎日の短い練習でおよそ2か月を見込んでください。公式の学習ガイドは、1日10分を2か月ほど続け、QWERTYの3分の2の速さに届いたら完全に切り替えること、各レッスンは迷わず97%以上の正確さで打てるまで繰り返すことを勧めています。最初の10日間は、とくに一度に切り替えた場合につらいとも書いています。</p>
+<table>
+<caption>切り替えの3つの進め方</caption>
+<thead><tr><th scope="col">進め方</th><th scope="col">やり方</th><th scope="col">見込み</th></tr></thead>
+<tbody>
+<tr><td>一気に切り替える</td><td>初日にOSの配列を変え、すべてColemakで打つ</td><td>最初の10日間の警告がそのまま当てはまり、仕事の入力もすぐ遅くなる</td></tr>
+<tr><td>練習してから切り替える</td><td>仕事はQWERTYのまま、Colemakを1日10分練習し、元の3分の2の速さで切り替える</td><td>colemak.comの推奨。覚える間も仕事の速さは落ちない</td></tr>
+<tr><td>Tarmak</td><td>3〜4キーずつ動かす4つの中間配列（計4、7、10、14キー）を経てColemakへ</td><td>Tarmakのページの利用者は1段階に3日から1週間。FAQは40WPMで約97%を次へ進む目安にしている</td></tr>
+</tbody>
+</table>
+<p>Tarmakはコミュニティの DreymaR が作った方法で、最初にEとNを、次にTを正しい位置に移します。Colemak-DHに行き着くTarmak-DHもあります。Erez Zukermanはこの方法で覚え、4キーだけ変えた配列を約1か月使ってから次へ進んだので、本人の言う「壁」にぶつからずに済みました。Colemak FAQによると、習得の時間の大半は指の動きを体に覚えさせることに使われ、QWERTYですでに速く正確にタッチタイピングできる人は、その速さをそれほど時間をかけずに取り戻せます。まだキーを見て打っているなら、まず<a href="guide:touch-typing">タッチタイピング</a>を覚えます。最初からColemakで覚えてもかまいません。</p>
+
+<h2>Colemak配列の覚え方</h2>
+<ol>
+<li><strong>ColemakかColemak-DHを選び、キーボードの種類を確かめる。</strong>Colemak-DHは下段左側のキーがISOとANSIで違い、JISキーボードはANSI版を使います。</li>
+<li><strong>設定を変える前にブラウザーで試す。</strong>petitdoigtはキーの物理的な位置から配列を切り替えるので、OSやIMEに何も入れずに<a href="app:words?layout=colemak">ブラウザーでColemakを打てます</a>。画面のキーボードにColemakの文字が指の色付きで出るので、刻印はQWERTYのままでかまいません。画面の表示と練習文は英語です。</li>
+<li><strong>中段を指ごとに覚える。</strong>左手はA R S T、右手はN E I O、人差し指の内側にDとH（Colemak-DHではGとM）。<a href="app:anchors?layout=colemak-dh">anchors（アンカー）ドリル</a>は選んだ指をキーまで動かし、打つたびに中段へ戻します。ツールは使う指を光らせますが、手は見えないので、正しい指で打つのはあなたの役目です。</li>
+<li><strong>上段と下段は実際の単語で足す。</strong>手をまたいだEとPも含め、使う順序のまま新しい位置を覚えられます。</li>
+<li><strong>遅い移動を練習する。</strong><a href="app:pairs?layout=colemak-dh">pairs（ペア）ドリル</a>のadaptive（適応）モードは、キーからキーへの移動を打ちながら測り、遅いものと正確さの低いものを中心に次のセットを組みます。統計は配列ごとに分かれるので、QWERTYの記録と混ざりません。</li>
+<li><strong>速さより先に正確さを保つ。</strong>次へ進む目安は97%で、Colemakの学習ガイドとTarmakのFAQが同じ数字を挙げています。理由は<a href="guide:typing-accuracy">タイピングの正確さのガイド</a>で説明しています。</li>
+<li><strong>元の速さの3分の2でOSの配列を切り替える。</strong>共用のQWERTYのパソコンを使い続けるなら、QWERTYも1日5〜10分打って使える状態を保ちます。</li>
+</ol>
+
+<h2>Colemak配列のデメリットは？</h2>
+<p>最初の負担は時間で、学習ガイドは最初の10日間がつらいと警告し、2か月ほどの練習を見込んでいます。慣れたあとは、自分で管理できないパソコンと、文字でキーを割り当てるソフトで手間がかかります。共用や職場のパソコンはQWERTYのままなので、QWERTYの腕を保つか、打つ場所すべてにColemakを入れることになります。</p>
+<p>よく使うショートカットは残り、それ以外は文字と一緒に動きます。<kbd>Ctrl</kbd>+<kbd>Z</kbd>、<kbd>X</kbd>、<kbd>C</kbd>、<kbd>V</kbd>、<kbd>Q</kbd>、<kbd>W</kbd>はそのままで、<kbd>Ctrl</kbd>+<kbd>S</kbd>（保存）はQWERTYのDの位置へ、<kbd>Ctrl</kbd>+<kbd>F</kbd>（検索）はQWERTYのEの位置へ移ります。文字で操作を割り当てるゲームではWASDがばらけ、WとAは残り、SとDはQWERTYのDとGの位置に移ります。ゲーム側で割り当てを変えるか、遊ぶ間だけQWERTYに切り替えてください。VimのH、J、K、Lも同じで、Hは残り、JはQWERTYのY、KはN、LはUの位置に移ります。</p>

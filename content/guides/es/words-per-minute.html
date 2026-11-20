@@ -1,0 +1,146 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "es",
+  "slug": "palabras-por-minuto",
+  "title": "Palabras por minuto (ppm): qué son y cómo calcularlas",
+  "description": "Qué son las palabras por minuto y cómo calcularlas: la palabra de cinco caracteres, ppm brutas y netas, pulsaciones por minuto y un ejemplo resuelto.",
+  "h1": "Palabras por minuto (ppm): qué significan y cómo se calculan",
+  "keyword": "palabras por minuto",
+  "keywords_secondary": ["qué es ppm", "cómo calcular las palabras por minuto", "ppm brutas y netas", "ppm netas", "pulsaciones por minuto", "caracteres por minuto"],
+  "summary": "Las palabras por minuto (ppm) miden la velocidad de escritura en palabras de cinco caracteres: cada cinco caracteres que escribes, espacios y signos incluidos, cuentan como una palabra. Para calcularlas, divide los caracteres entre cinco y luego entre los minutos, así que 250 caracteres en un minuto son 50 ppm. Las ppm netas restan además los errores que quedan en el texto, y cada sitio los penaliza a su manera.",
+  "faq": [
+    {"q": "¿40 ppm es una buena velocidad?", "a": "40 ppm queda algo por debajo del promedio medido en internet. En el estudio de la Universidad Aalto de 2018, con 168 000 voluntarios que hicieron una prueba de mecanografía, el promedio fue de 51,6 ppm; el 10 % más lento escribía por debajo de unas 26 ppm y el 10 % más rápido por encima de unas 78. A 40 ppm tardas de media 300 milisegundos por carácter."},
+    {"q": "¿Qué tan raro es escribir a 100 ppm?", "a": "Escribir a 100 ppm es raro. En el estudio de Aalto, solo el 10 % más rápido superaba las 78 ppm, y ese grupo promediaba 89,6 ppm; los más rápidos del conjunto llegaban a 120 ppm o más. Mantener 100 ppm exige una media de 120 milisegundos por carácter durante toda la prueba."},
+    {"q": "¿Qué son las ppm «raw»?", "a": "Las ppm raw, o en bruto, son la velocidad antes de cualquier penalización por errores. Monkeytype las calcula igual que sus ppm normales pero cuenta también las palabras incorrectas, mientras que sus ppm normales solo cuentan los caracteres de las palabras bien escritas. La diferencia entre las dos cifras muestra cuánta velocidad te cuestan los errores."},
+    {"q": "¿Los espacios cuentan en las ppm?", "a": "Sí. La palabra estándar mide cinco caracteres con los espacios incluidos, una convención que, según Wobbrock, se usa desde hacia 1905, y Typing.com cuenta espacios y signos de puntuación de la misma manera. Las teclas que no dejan ningún carácter en el texto, como Mayús o retroceso, no suman ppm, aunque el retroceso sí cuenta en las pulsaciones."},
+    {"q": "¿Cómo calculo las ppm en Excel o Google Sheets?", "a": "Pon el texto escrito en la celda A1 y el tiempo en segundos en B1, y escribe =LARGO(A1)/5/(B1/60) en otra celda. LARGO cuenta todos los caracteres, espacios incluidos, así que el resultado son ppm brutas. Para las ppm netas, pon los errores sin corregir en C1 y usa =LARGO(A1)/5/(B1/60)-C1/(B1/60). Con la hoja en inglés, la función se llama LEN."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. En MacKenzie y Tanaka-Ishii (eds.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson y Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (artículo en PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Ministerio de Justicia, Tribunal Calificador Único de Tramitación Procesal y Administrativa (Orden JUS/1166/2017), baremo de corrección del ejercicio de Word (PDF)", "url": "https://www.mjusticia.gob.es/es/Ciudadano/EmpleoPublico/Documents/1292428835163-Anexo_II._Baremo.PDF"},
+    {"title": "McGraw-Hill Education España, Operatoria de teclados, capítulo 14 (PDF)", "url": "https://www.mheducation.es/bcv/guide/capitulo/8448143035.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: código de la página «about» con las definiciones de wpm, raw y accuracy", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson y Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (artículo en PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Wikipedia (inglés): Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Mide tus palabras por minuto", "drill": "words"}
+}
+-->
+<h2>¿Qué significa ppm en mecanografía?</h2>
+<p>En mecanografía, ppm significa palabras por minuto, y una palabra es cualquier grupo de cinco caracteres. Letras, cifras, espacios y signos de puntuación cuentan para esos cinco. Mayús y retroceso no cuentan, porque no añaden ningún carácter al texto. Quien produce 300 caracteres en un minuto escribe a 60 ppm, formen esos caracteres las palabras que formen.</p>
+<p>Una longitud fija hace comparables los resultados. Contadas como palabras reales, «voy a ir» serían tres palabras y «anticonstitucionalmente» una sola, aunque la segunda lleva casi el triple de teclas. Con la regla de los cinco caracteres, «voy a ir» (8 caracteres con sus espacios) vale 1,6 palabras y «anticonstitucionalmente» (23 caracteres) vale 4,6. La misma regla pone en una sola escala idiomas de palabras cortas y largas: el alemán «Zehnfingersystem», el método de los diez dedos, tiene 16 caracteres y cuenta como 3,2 palabras.</p>
+<p>El <a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">capítulo de Jacob Wobbrock sobre las medidas de entrada de texto</a> dice que contar una palabra como cinco caracteres, espacios incluidos, es práctica común desde hacia 1905, e I. Scott MacKenzie lo sitúa en los concursos de mecanografía de principios del siglo XX. Los dos citan la historia de las máquinas de escribir que Yamada publicó en 1980.</p>
+<p>Antes de comparar una cifra, comprueba qué unidad usa. En España, manuales de mecanografía como el de McGraw-Hill y oposiciones como la de Tramitación Procesal miden en pulsaciones por minuto, y 300 pulsaciones por minuto son unas 60 palabras por minuto. En esta guía, ppm siempre significa palabras; las pulsaciones se escriben con todas sus letras.</p>
+
+<h2>¿Cómo se calculan las palabras por minuto?</h2>
+<p>Para calcular las palabras por minuto, divide el número de caracteres que escribiste entre cinco y luego entre los minutos que tardaste.</p>
+<ol>
+<li>Cuenta todos los caracteres del texto que produjiste, espacios y signos incluidos.</li>
+<li>Divide esa cifra entre 5 para obtener palabras estándar.</li>
+<li>Pasa el tiempo a minutos (45 segundos son 0,75) y divide las palabras entre él.</li>
+</ol>
+<p>Como fórmula: <code>ppm = caracteres ÷ 5 ÷ minutos</code>. Si escribes 250 caracteres en 75 segundos, son 50 palabras en 1,25 minutos: 40 ppm.</p>
+<p>Los laboratorios añaden una corrección. Como el reloj arranca con la primera pulsación, el primer carácter no consumió tiempo medido y sale de la cuenta. La <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">nota de MacKenzie sobre el cálculo de la velocidad</a> lo resuelve con el pangrama inglés «the quick brown fox jumps over the lazy dog»: 43 caracteres en 20 segundos. Contar los 43 daría 25,8 ppm; contar los 42 escritos después de arrancar el reloj da 25,2 ppm. En una prueba más larga la corrección se diluye: con 520 caracteres en dos minutos, mueve el resultado 0,1 ppm.</p>
+
+<h2>¿Qué diferencia hay entre ppm brutas y netas?</h2>
+<p>Las ppm brutas miden todo el texto que escribiste, errores incluidos, y las ppm netas restan una penalización por los errores que dejaste. La penalización habitual es una palabra por minuto por cada error sin corregir por minuto:</p>
+<p><code>ppm netas = ppm brutas − errores sin corregir ÷ minutos</code></p>
+<p>Las <a href="https://www.speedtypingonline.com/typing-equations">ecuaciones de Speed Typing Online</a> dan un ejemplo: 80 ppm brutas durante dos minutos con 8 errores en el texto son 4 errores por minuto, y la velocidad neta queda en 76 ppm.</p>
+<p>Los errores que corriges sobre la marcha no llevan penalización extra porque ya los pagaste en tiempo. La tecla equivocada, el retroceso y la tecla correcta consumen tiempo y dejan un único carácter. Los errores que se quedan en el texto pueden inflar el resultado. Wobbrock señala que los errores sin corregir aumentan la velocidad, porque se escribe más rápido cuando se dejan pasar, y una penalización como la de las ppm netas anula esa ventaja.</p>
+<p>Te encontrarás con otros dos ajustes. Los investigadores usan las ppm ajustadas, que reducen las ppm según la tasa de errores sin corregir; en el ejemplo de Wobbrock, un 10 % de errores sin corregir deja las ppm ajustadas en el 90 % de las ppm. Algunas herramientas multiplicaban las ppm por la precisión. Typing.com llamó a ese producto «Net Words Per Minute» y luego lo retiró, porque empujaba a mirar las ppm y olvidar la precisión.</p>
+<p>Las pruebas suelen mostrar la precisión junto a las ppm. La precisión es el número de caracteres correctos dividido entre todos los caracteres escritos, por 100, y cuenta también los errores que corregiste: 514 caracteres correctos de 534 escritos dan un 96,3 %, aunque solo unos pocos errores sobrevivan en el texto final. La <a href="guide:typing-accuracy">guía sobre la precisión al escribir</a> explica a qué cifra apuntar.</p>
+
+<h2>Ejemplo resuelto: cómo calcular las ppm de seis maneras con una sola prueba</h2>
+<p>Esta es una prueba de dos minutos puntuada con cada fórmula anterior. Terminas con 520 caracteres de texto, espacios incluidos. Por el camino escribiste 14 caracteres erróneos y los borraste, y quedan 6 caracteres erróneos, cada uno en una palabra distinta de cinco letras. Eso suma 534 caracteres escritos, 514 de ellos correctos.</p>
+<table>
+<caption>Una prueba de dos minutos, seis maneras de puntuarla</caption>
+<thead>
+<tr><th scope="col">Método</th><th scope="col">Cálculo</th><th scope="col">ppm</th></tr>
+</thead>
+<tbody>
+<tr><td>ppm brutas</td><td>520 ÷ 5 ÷ 2</td><td>52,0</td></tr>
+<tr><td>ppm de laboratorio (el reloj arranca con el primer carácter)</td><td>519 ÷ 120 s × 60 ÷ 5</td><td>51,9</td></tr>
+<tr><td>ppm ajustadas (investigación)</td><td>51,9 × (1 − 6 ÷ 520)</td><td>51,3</td></tr>
+<tr><td>ppm × precisión (herramientas antiguas)</td><td>52,0 × 514 ÷ 534</td><td>50,1</td></tr>
+<tr><td>ppm netas</td><td>52,0 − 6 ÷ 2</td><td>49,0</td></tr>
+<tr><td>Solo palabras correctas (regla de Monkeytype)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48,4</td></tr>
+</tbody>
+</table>
+<p>La última fila supone que cada error estropea una palabra de cinco letras más su espacio, 6 caracteres cada vez.</p>
+
+<h2>¿Qué son las pulsaciones por minuto?</h2>
+<p>Las pulsaciones por minuto cuentan teclas pulsadas en lugar de palabras, y son la unidad con la que trabajan en España manuales y oposiciones. El <a href="https://www.mheducation.es/bcv/guide/capitulo/8448143035.pdf">capítulo de operatoria de teclados de McGraw-Hill</a>, por ejemplo, organiza sus prácticas de velocidad de 70 a 250 pulsaciones por minuto. Si cada tecla produjera un carácter, las pulsaciones por minuto serían las ppm por cinco: 52 ppm equivalen a 260 pulsaciones por minuto.</p>
+<p>En un teclado español no todos los caracteres salen de una sola tecla. La mayúscula pide Mayús, igual que el punto y coma y los dos puntos, y la tilde pide pulsar la tecla del acento antes de la vocal. Por eso la oposición a Tramitación Procesal contaba algunos caracteres doble. El <a href="https://www.mjusticia.gob.es/es/Ciudadano/EmpleoPublico/Documents/1292428835163-Anexo_II._Baremo.PDF">baremo de su convocatoria de 2017</a> lo detallaba así:</p>
+<ul>
+<li>Cada letra, cifra, signo o espacio escrito vale una pulsación, y varios espacios seguidos cuentan como uno.</li>
+<li>Las mayúsculas, el punto y coma, los dos puntos y las letras con tilde valen dos. En una palabra entera en mayúsculas, solo la primera letra vale dos.</li>
+<li>Un carácter suelto equivocado, omitido o sobrante resta una pulsación; si son varios dentro de una palabra, resta tantas como caracteres afectados, y dos letras invertidas restan solo una.</li>
+<li>Una palabra entera omitida o añadida resta 2 pulsaciones si tiene de 2 a 4 caracteres, 3 si tiene de 5 a 8 y 4 si tiene más. Dos o más palabras seguidas omitidas restan 10, y un párrafo completo, 20.</li>
+</ul>
+<p>Lo que queda tras restar las penalizaciones son las pulsaciones netas. Con estas reglas, «Está aquí.» suma 13 pulsaciones con 10 caracteres: la E mayúscula y las dos tildes valen dos cada una. Un texto en español con muchas tildes da, por tanto, más pulsaciones por minuto que ppm multiplicadas por cinco.</p>
+<p>Los investigadores cuentan las pulsaciones de otra forma: todas las teclas pulsadas, retroceso incluido. La relación entre teclas y caracteres se llama pulsaciones por carácter (KSPC, por sus siglas en inglés). El <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">estudio de la Universidad Aalto sobre 136 millones de pulsaciones</a> (Dhakal y sus colegas, CHI 2018) registró cada tecla y encontró una media de 1,17 pulsaciones por carácter entre sus 168 000 voluntarios. El 10 % más rápido promediaba 1,10 y el 10 % más lento 1,24, porque los lentos cometen y corrigen más errores. En el ejemplo resuelto pulsaste 534 teclas de carácter y 14 retrocesos en dos minutos: 274 pulsaciones por minuto para 260 caracteres por minuto.</p>
+<p>Los empleos de introducción de datos suelen pedir pulsaciones por hora; Wikipedia señala que muchos piden 8000 o 10 000. Si cada pulsación produjera un carácter, 10 000 por hora equivaldrían a unas 33 ppm. La tabla convierte velocidades habituales con ese mismo supuesto.</p>
+<table>
+<caption>Las ppm en otras unidades, a una pulsación por carácter</caption>
+<thead>
+<tr><th scope="col">ppm</th><th scope="col">Pulsaciones o caracteres por minuto</th><th scope="col">Milisegundos por carácter</th><th scope="col">Pulsaciones por hora</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12 000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18 000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24 000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30 000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36 000</td></tr>
+</tbody>
+</table>
+
+<h2>¿Por qué mis ppm cambian en cada prueba?</h2>
+<p>Tus ppm se mueven entre pruebas porque cada sitio usa su fórmula, su texto y su duración, y porque tu propio ritmo varía dentro de una misma prueba. Solo la fórmula movió el ejemplo anterior 3,6 ppm. <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a>, por ejemplo, cuenta solo los caracteres de las palabras bien escritas, y con un solo error pierdes la palabra entera.</p>
+<p><a href="https://www.typing.com/blog/what-is-words-per-minute/">Typing.com</a> señala que las ppm no tienen en cuenta la dificultad del texto, y que repetir el mismo pasaje infla la velocidad porque los dedos se lo aprenden. Un párrafo de palabras cortas y frecuentes suele puntuar más que uno lleno de mayúsculas, cifras y símbolos, aunque los dos se cuenten en palabras de cinco caracteres. En español, las tildes añaden su parte: cada una cuesta una pulsación extra que las ppm no cuentan.</p>
+<p>La duración también cuenta. Un sprint de 15 segundos mide una sola racha. Typing.com considera sus pruebas de 3 y 5 minutos la medida más fiable de la velocidad general, porque duran lo bastante para dar una media repetible sin cansar las muñecas y los dedos.</p>
+<p>Un contador en vivo y un resultado final cubren tramos de tiempo distintos. El resultado final promedia toda la prueba, con el arranque lento y los tropiezos, mientras que un contador en media móvil cubre solo los últimos segundos y baja con cada duda. El ejercicio <a href="app:words">palabras</a> de petitdoigt muestra las dos cosas: unas ppm en media móvil sobre 5, 10 o 30 segundos mientras escribes, y luego el resultado de cada serie frente a tus diez series anteriores.</p>
+
+<h2>¿Cómo medir tus ppm con precisión?</h2>
+<p>Para tener unas ppm fiables, haz siempre el mismo tipo de prueba de la misma manera, y revisa la fórmula antes de comparar cifras.</p>
+<ol>
+<li>Elige una prueba de 3 a 5 minutos.</li>
+<li>Usa un texto que no hayas escrito antes, en el idioma en que sueles escribir.</li>
+<li>Escribe al ritmo que usarías en un trabajo real, y corrige los errores como lo haces normalmente.</li>
+<li>Anota las ppm y la precisión juntas. 60 ppm con un 90 % de precisión y 60 ppm con un 98 % piden prácticas distintas.</li>
+<li>Comprueba si el sitio da ppm brutas, ppm netas, solo palabras correctas o pulsaciones antes de poner su cifra al lado de la de otro sitio.</li>
+<li>Compárate con tus propios resultados anteriores en la misma prueba, a lo largo de varias sesiones.</li>
+</ol>
+
+<h2>¿Cuántas palabras por minuto se escriben, se hablan y se leen?</h2>
+<p>Leer en voz alta y narrar van mucho más rápido que escribir: el ritmo recomendado para un audiolibro triplica la velocidad media de escritura medida en internet. Las cifras de la tabla vienen de estudios distintos y cuentan las palabras de formas distintas. Los estudios de mecanografía cuentan palabras de cinco caracteres. Las velocidades de habla y de lectura cuentan las palabras realmente dichas o leídas, y el capítulo de Wobbrock señala que los investigadores del habla definen así la palabra.</p>
+<table>
+<caption>Palabras por minuto según la actividad</caption>
+<thead>
+<tr><th scope="col">Actividad</th><th scope="col">Palabras por minuto</th><th scope="col">Fuente</th></tr>
+</thead>
+<tbody>
+<tr><td>Estenotipia, los usuarios entrenados más rápidos</td><td>hasta 360</td><td>Guinness World Records, vía Wikipedia</td></tr>
+<tr><td>Lectura en voz alta, 17 idiomas</td><td>184 ± 29</td><td>Trauzettel-Klosinski y Dietz (2012), vía Wikipedia</td></tr>
+<tr><td>Narración de audiolibros (recomendada)</td><td>150 a 160</td><td>Williams (1998), vía Wikipedia</td></tr>
+<tr><td>Escritura en teclado de computadora, prueba en línea</td><td>51,6 (promedio)</td><td>Dhakal y colegas (2018)</td></tr>
+<tr><td>Escritura en el móvil, prueba en línea</td><td>36,2 (promedio)</td><td>Palin y colegas (2019)</td></tr>
+<tr><td>Copia a mano, adultos de 18 a 64 años</td><td>unas 13 (68 letras por minuto)</td><td>Wikipedia</td></tr>
+</tbody>
+</table>
+<p>La cifra del móvil sale de <a href="https://userinterfaces.aalto.fi/typing37k/">un estudio de la Universidad Aalto de 2019 con 37 370 voluntarios</a>, que usó el mismo método y la misma palabra de cinco caracteres que el estudio de escritorio y encontró la escritura en el teléfono unas 15 ppm más lenta. Un «y» dicho en voz alta cuenta como una palabra entera; toma las velocidades de habla y lectura como una comparación aproximada con las ppm de escritura.</p>
+
+<h2>¿Qué dicen tus ppm de cada pulsación?</h2>
+<p>Tus ppm fijan un tiempo medio por carácter: divide 12 000 entre tus ppm y lo tienes en milisegundos. A 60 ppm, son 200 ms por carácter, y a 100 ppm, 120 ms. Pasar de 50 a 60 ppm obliga a recortar 40 ms en cada carácter, de 240 a 200.</p>
+<p>El estudio de Aalto midió esos intervalos directamente. Entre todos los participantes, el intervalo medio entre una pulsación y la siguiente fue de 239 ms, a una velocidad media de 51,6 ppm. El 10 % más rápido, por encima de unas 78 ppm, promediaba 122 ms entre teclas; el 10 % más lento, por debajo de unas 26 ppm, 481 ms. Del grupo más lento al más rápido, los intervalos se encogen unas cuatro veces. El tiempo de pulsación variaba mucho menos. Una tecla quedaba pulsada 116 ms de media, y entre 80 y 150 ms incluso en los lentos, lo que los autores leen como señal de que casi toda la ganancia de velocidad viene de otra parte.</p>
+<p>Los estudios con máquinas de escribir que resume el mismo artículo encontraron que los pares de letras escritos con dedos de manos distintas salían entre 30 y 60 ms más rápido que los escritos con una sola mano, y unos 80 ms más rápido que los escritos con el mismo dedo. En teclados modernos, los datos de Aalto mostraron una ganancia menor al alternar manos, de unos 5 a 20 ms, y los lentos eran entre 20 y 28 ms más lentos cuando alternaban. Los teclados español y latinoamericano son QWERTY: <kbd>T</kbd> seguida de <kbd>H</kbd> alterna manos, mientras que <kbd>C</kbd> seguida de <kbd>E</kbd>, como en «hace» o «dice», lleva el dedo medio izquierdo de la fila inferior a la superior. Tus ppm promedian cientos de transiciones como estas, así que unas pocas lentas arrastran toda la cifra.</p>
+<p>El ejercicio <a href="app:pairs">pares</a> de petitdoigt cronometra cada transición entre teclas mientras escribes y, en modo adaptativo, arma sus series sobre todo con las más lentas y con más errores; la página stats muestra la latencia y la precisión de cada dedo, cada letra y cada transición débil. La guía para <a href="guide:how-to-type-faster">escribir más rápido en el teclado</a> convierte todo esto en un plan de práctica, y la guía de <a href="guide:typing-speed">velocidad de escritura promedio</a> te dice dónde queda tu cifra.</p>

@@ -1,0 +1,130 @@
+<!--meta
+{
+  "id": "typing-accuracy",
+  "lang": "it",
+  "slug": "precisione-di-battitura",
+  "title": "Precisione di battitura: quale percentuale e come migliorarla",
+  "description": "Precisione di battitura: come si calcola, perché i test danno numeri diversi, a che percentuale puntare e 7 passi per migliorarla, con dati su 168.000 persone.",
+  "h1": "Precisione di battitura: quanto deve essere alta e come migliorarla",
+  "keyword": "precisione di battitura",
+  "keywords_secondary": ["come migliorare la precisione di battitura", "precisione o velocità", "accuratezza di battitura", "buona precisione di battitura", "come si calcola la precisione"],
+  "summary": "La precisione di battitura è la percentuale di tasti che premi giusti: al 96%, circa 4 tasti su 100 erano sbagliati. Mentre ti eserciti punta al 96% o più, e al 98% quando scrivi senza guardare. I siti calcolano la stessa prova in modi diversi, perché alcuni contano i refusi che hai corretto e altri solo quelli rimasti nel testo. La precisione decide anche la velocità: ogni refuso corretto costa almeno due tasti in più.",
+  "faq": [
+    {"q": "Il 95% di precisione è buono?", "a": "È un discreto livello di lavoro, un punto sotto il 96% che questa guida consiglia per allenarti. Al 95% di precisione per tasto, circa un tasto su dieci serve a fare o a cancellare un errore. Typing.com suggerisce agli insegnanti di accettare il 95% a inizio anno scolastico e di alzare l'asticella verso il 98%, e il test di dattilografia dei concorsi pubblici dello Stato di New York chiede il 96%."},
+    {"q": "Il 90% di precisione è buono?", "a": "Per chi comincia è un punto di partenza normale. Per tutti gli altri è basso: al 90% un tasto su dieci è sbagliato, e contando i Backspace quasi un quinto dei tasti va in errori. Rallenta finché tieni il 96%, poi costruisci la velocità da lì."},
+    {"q": "Il Backspace abbassa la precisione?", "a": "Dipende da come calcola il sito. Con la precisione per tasto, il tasto sbagliato che hai premuto conta contro di te anche dopo che l'hai cancellato. I test che valutano solo il testo finito ignorano i refusi corretti, ma il tempo speso a correggerli abbassa comunque le tue parole al minuto."},
+    {"q": "Mentre mi alleno devo correggere gli errori o andare avanti?", "a": "Correggili appena li vedi. Nella scrittura vera il testo deve essere giusto, quindi correggere è l'abitudine da ripetere. In più ogni errore ti costa tempo, e questo ti spinge verso un ritmo che controlli. Vai avanti senza correggere solo quando le regole di un test lo chiedono."},
+    {"q": "Si può arrivare al 100% di precisione?", "a": "Su una frase breve sì. Su un test più lungo ci riescono di rado anche i più veloci: nello studio dell'Università Aalto su 168.000 persone, il 10% più veloce premeva comunque Backspace o Canc nel 3,4% dei tasti. Punta a un 98% stabile e considera una serie perfetta un regalo."},
+    {"q": "Perché sbaglio di più su una tastiera o un layout nuovi?", "a": "Le tue dita hanno imparato dove stanno i tasti sulla tastiera di sempre, quindi ogni cambiamento manda qualche pressione sul tasto sbagliato. Un layout nuovo come Dvorak o Colemak sposta le lettere stesse; una tastiera nuova può spostare Invio, Maiusc o la distanza tra i tasti, come succede passando da una tastiera italiana a una americana. Metti in conto un calo, rallenta fino al 96% e lascia risalire la precisione."}
+  ],
+  "sources": [
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes, CHI 2018 (articolo, PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Dhakal e colleghi, Observations on Typing from 136 Million Keystrokes, CHI 2018 (pagina del progetto)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing, CHI 2016", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Vanderbilt University, Today's self-taught typists almost as fast as touch typists (2016)", "url": "https://www.eurekalert.org/news-releases/520529"},
+    {"title": "New York State Department of Civil Service, Keyboard Test Administration and PTM User Guide", "url": "https://www.cs.ny.gov/extdocs/pdf/PTMUserGuide.pdf"},
+    {"title": "Typing.com, What is good accuracy when it comes to typing?", "url": "https://www.typing.com/blog/good-accuracy-comes-typing/"},
+    {"title": "Monkeytype, sorgente della pagina About (definizione di acc)", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "USPS Handbook EL-312, 517 Qualifying Tests", "url": "https://about.usps.com/handbooks/el312/el312c5_007.htm"},
+    {"title": "Layout italiano di Windows (KBDIT), tasto per tasto (kbdlayout.info)", "url": "https://kbdlayout.info/kbdit"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Misura la tua precisione di battitura", "drill": "words"}
+}
+-->
+<h2>Cos'è la precisione di battitura?</h2>
+<p>La precisione di battitura è la quota di ciò che scrivi che corrisponde al testo che volevi scrivere, espressa in percentuale. Al 98%, circa 2 tasti su 100 sono finiti sul tasto sbagliato. I programmi di dattilografia la mostrano accanto alle parole al minuto perché i due numeri misurano cose diverse: le WPM contano il testo che hai prodotto, la precisione dice quanta parte della tua fatica è andata in errori lungo la strada.</p>
+<p>Il tempo che spendi a correggere è già dentro le tue WPM. Ogni refuso corretto costa almeno due tasti in più, il <kbd>Backspace</kbd> e il tasto giusto, più l'attimo che serve ad accorgersene.</p>
+
+<h2>Come si calcola la precisione di battitura?</h2>
+<p>La precisione di battitura si calcola dividendo i caratteri giusti per tutti i caratteri battuti e moltiplicando per 100. I siti però non concordano su cosa siano «tutti i caratteri battuti», così lo stesso paragrafo può valere il 95% in un test e il 99% in un altro.</p>
+<table>
+<caption>I modi più comuni di calcolare la precisione di battitura</caption>
+<thead>
+<tr><th scope="col">Metodo</th><th scope="col">Formula</th><th scope="col">I refusi corretti contano?</th><th scope="col">Dove lo trovi</th></tr>
+</thead>
+<tbody>
+<tr><td>Precisione per tasto</td><td>tasti giusti ÷ (tasti giusti + tasti sbagliati)</td><td>Sì, anche dopo che li hai cancellati</td><td>Programmi che valutano ogni tasto mentre lo premi</td></tr>
+<tr><td>Precisione sul testo finale</td><td>caratteri corretti nel testo finito ÷ lunghezza del testo</td><td>No, solo gli errori rimasti</td><td>Ricerca, dove si chiama tasso di errori non corretti (uncorrected error rate)</td></tr>
+<tr><td>Conteggio degli errori</td><td>errori nel testo finito, confrontati con un limite</td><td>No</td><td>Prove di dattilografia per lavori e concorsi</td></tr>
+</tbody>
+</table>
+<p>Monkeytype, per esempio, valuta tasto per tasto: <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">la sua definizione</a> di precisione è la percentuale di tasti premuti correttamente. Per vedere quanto distano i metodi, immagina di scrivere una frase di 100 caratteri. Lungo la strada premi 5 tasti sbagliati, ne correggi 4 con <kbd>Backspace</kbd> e ne lasci 1 nel testo. In tutto hai premuto 99 tasti giusti, 5 sbagliati e 4 Backspace.</p>
+<ul>
+<li>Precisione per tasto: 99 ÷ (99 + 5) = 95,2%</li>
+<li>Precisione sul testo finale: 99 caratteri corretti su 100 = 99%</li>
+<li>Conteggio degli errori: 1</li>
+</ul>
+<p>Per allenarti è più utile la precisione per tasto. Mostra i refusi che hai corretto, ed è proprio nelle correzioni che perdi velocità. La precisione sul testo finale è quella che vede chi legge la tua email. Alcuni test inglobano gli errori nel punteggio di velocità e danno le parole al minuto nette: il servizio postale statunitense, per esempio, fissa la soglia dei suoi test di dattilografia in <a href="https://about.usps.com/handbooks/el312/el312c5_007.htm">WPM netti</a>. La guida alle <a href="guide:words-per-minute">parole al minuto</a> spiega come si calcolano i WPM lordi e netti.</p>
+
+<h2>Qual è una buona precisione di battitura?</h2>
+<p>Una buona precisione di battitura è il 96% o più per tasto, e il 98% o più quando scrivi senza guardare la tastiera. Al 94%, circa un tasto su nove serve già a fare o a cancellare un errore. Usa queste fasce come regola pratica per la precisione per tasto:</p>
+<table>
+<caption>Fasce di precisione per tasto durante l'allenamento</caption>
+<thead>
+<tr><th scope="col">Precisione</th><th scope="col">Cosa significa</th><th scope="col">Cosa fare</th></tr>
+</thead>
+<tbody>
+<tr><td>Sotto il 90%</td><td>Un tasto su dieci o più è sbagliato. Contando anche i Backspace, quasi un quinto dei tasti va in errori.</td><td>Rallenta molto e controlla la posizione delle dita.</td></tr>
+<tr><td>90–95%</td><td>Un errore ogni 10–20 tasti. Normale mentre impari a scrivere a dieci dita o un layout nuovo, o quando spingi sulla velocità.</td><td>Rallenta finché tieni il 96%.</td></tr>
+<tr><td>96–97%</td><td>Un errore ogni 25–33 tasti, più o meno uno ogni cinque-sette parole. Un livello solido.</td><td>Resta a questa velocità e lavora sui tasti più deboli.</td></tr>
+<tr><td>98% e oltre</td><td>Un errore ogni 50 tasti o più, circa uno ogni dieci parole. Battitura pulita.</td><td>Alza la velocità a piccoli passi.</td></tr>
+</tbody>
+</table>
+<p>Le prove di selezione fissano soglie precise. Il test di dattilografia dei concorsi pubblici dello Stato di New York chiede 30 WPM con almeno il 96% di precisione in cinque minuti, il che a 30 WPM concede 6 errori. Per la scuola, <a href="https://www.typing.com/blog/good-accuracy-comes-typing/">Typing.com consiglia agli insegnanti</a> di chiedere agli studenti il 98% o più dalla quarta elementare in su. I riferimenti di velocità per livello sono nella guida alla <a href="guide:typing-speed">velocità di battitura media</a>.</p>
+
+<h3>Qual è la precisione media?</h3>
+<p>In uno studio su 168.000 persone che scrivevano online, le frasi finite del partecipante medio erano corrette al 98,8% circa, e il 6,3% dei tasti premuti serviva a correggere errori con <kbd>Backspace</kbd> o <kbd>Canc</kbd>. Ricercatori dell'Università Aalto e dell'Università di Cambridge hanno registrato quei <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">136 milioni di battute</a> da volontari che copiavano frasi in un test di dattilografia online. Quasi tutti correggevano la maggior parte degli errori: il 90% dei partecipanti lasciava meno del 2,66% di errori nelle frasi finite.</p>
+<table>
+<caption>Errori e correzioni tra 168.000 persone che scrivevano online (Dhakal e colleghi, CHI 2018)</caption>
+<thead>
+<tr><th scope="col">Gruppo</th><th scope="col">Errori rimasti nel testo finito</th><th scope="col">Tasti spesi in Backspace o Canc</th></tr>
+</thead>
+<tbody>
+<tr><td>10% più veloce (sopra i 78 WPM circa)</td><td>0,71%</td><td>3,4%</td></tr>
+<tr><td>Tutti i partecipanti (media 52 WPM)</td><td>1,17%</td><td>6,3%</td></tr>
+<tr><td>10% più lento (sotto i 26 WPM circa)</td><td>1,78%</td><td>9,05%</td></tr>
+</tbody>
+</table>
+<p>Il gruppo più lento premeva Backspace o Canc più di due volte e mezzo più spesso del più veloce, e lasciava comunque circa due volte e mezzo più errori nel testo. Gli autori ipotizzano che chi scrive lento faccia più fatica ad accorgersi dei propri errori.</p>
+
+<h2>Precisione o velocità: cosa conta di più?</h2>
+<p>Prima viene la precisione, perché gli errori costano velocità. Nei dati dell'Università Aalto chi faceva e correggeva meno errori scriveva più veloce: la velocità era correlata negativamente con la quota di Backspace e Canc (r = −0,36) e con i tasti premuti per carattere (r = −0,40). Gli autori concludono che ridurre di poco gli errori può portare un grande guadagno di velocità.</p>
+<p>Al 95% di precisione per tasto premi circa 5 tasti sbagliati ogni 95 giusti, e ognuno richiede un Backspace, quindi più o meno un tasto su dieci fa o cancella un errore. Al 98% si scende a circa uno su 25. A questo si aggiunge la pausa per notare il refuso e ritrovare il punto, e un refuso notato tardi costa di più, perché per raggiungerlo cancelli anche lettere giuste.</p>
+<p>Dentro una singola sessione velocità e precisione sono in conflitto: se spingi oltre il ritmo che le dita reggono, gli errori salgono. Tra persone diverse, invece, chi scrive più veloce è anche il più preciso, come mostra la tabella qui sopra. Le due osservazioni portano allo stesso modo di allenarsi: scrivi a una velocità che riesci a tenere pulita e alzala man mano che i movimenti diventano automatici. La guida per <a href="guide:how-to-type-faster">scrivere veloce al computer</a> copre il lato velocità di questo piano.</p>
+
+<h2>Perché faccio tanti errori di battitura?</h2>
+<p>L'errore di battitura più comune è premere una lettera sbagliata al posto di quella giusta, e i ricercatori sospettano che nasca da una battitura incostante. In un campione di 783 partecipanti dello studio Aalto, gli errori si dividevano in tre tipi:</p>
+<table>
+<caption>Tipi di errore e loro frequenza (Dhakal e colleghi, CHI 2018, campione di 783 partecipanti; esempi in italiano)</caption>
+<thead>
+<tr><th scope="col">Tipo di errore</th><th scope="col">Esempio</th><th scope="col">Frequenza</th></tr>
+</thead>
+<tbody>
+<tr><td>Sostituzione: una lettera sbagliata al posto di quella giusta</td><td><em>cada</em> per <em>casa</em></td><td>1,65%</td></tr>
+<tr><td>Omissione: una lettera saltata</td><td><em>coretto</em> per <em>corretto</em></td><td>0,80%</td></tr>
+<tr><td>Inserimento: una lettera in più</td><td><em>cassa</em> per <em>casa</em></td><td>0,67%</td></tr>
+</tbody>
+</table>
+<p>Le sostituzioni erano le più frequenti, e separavano i lenti dai veloci più di ogni altro tipo. Secondo l'ipotesi dei ricercatori nascono quando chi scrive è poco costante e ha una rappresentazione mentale debole della posizione delle dita. Uno <a href="https://userinterfaces.aalto.fi/how-we-type">studio con motion capture su 30 persone</a>, sempre all'Università Aalto, va nella stessa direzione: uno dei suoi tre predittori di prestazioni elevate era l'assegnazione univoca, cioè premere una lettera sempre con lo stesso dito. Se batti la <kbd>C</kbd> con l'indice certi giorni e con il medio altri, la tua mano ha due percorsi imparati a metà verso quel tasto.</p>
+<p>Fai attenzione a queste abitudini:</p>
+<ul>
+<li><strong>Uscire dalla riga di base.</strong> Se le dita non tornano su <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> e <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>Ò</kbd> tra una parola e l'altra, ogni allungamento parte da un punto diverso e atterra un tasto più in là. I rilievi su <kbd>F</kbd> e <kbd>J</kbd> ti fanno ritrovare la posizione senza guardare.</li>
+<li><strong>Guardare i tasti.</strong> I refusi compaiono sullo schermo, e non puoi guardare schermo e tastiera insieme. In uno <a href="https://www.eurekalert.org/news-releases/520529">studio della Vanderbilt University</a> su 48 persone, chi aveva abitudini delle dita non standard si affidava alla vista della tastiera: quando era coperta, velocità e precisione calavano, mentre chi scriveva a dieci dita restava più o meno uguale. I ricercatori ipotizzano che chi guarda lo schermo solo a tratti si accorga di meno errori.</li>
+<li><strong>Maiuscole con il Maiusc sbagliato.</strong> Premere il <kbd>Maiusc</kbd> sinistro per una <kbd>A</kbd> maiuscola fa fare due lavori alla stessa mano e la sposta dalla sua posizione. Tieni il Maiusc con la mano opposta alla lettera.</li>
+<li><strong>Lettere in ordine sbagliato.</strong> <em>hce</em> al posto di <em>che</em> capita quando una mano parte prima dell'altra. Esercitati a un ritmo regolare, anche più lento, finché l'ordine regge.</li>
+<li><strong>Accenti sbagliati.</strong> Sulla tastiera italiana la é chiusa si scrive con <kbd>Maiusc</kbd>+<kbd>è</kbd>, e chi va di fretta lascia la è aperta: <em>perchè</em> al posto di <em>perché</em>. Anche questo è un errore di battitura, e qualche riga di <em>perché</em>, <em>poiché</em>, <em>affinché</em> e <em>né</em> lo corregge.</li>
+<li><strong>Dita deboli.</strong> Se gli errori si accumulano su <kbd>Q</kbd> e <kbd>Z</kbd>, che spettano al mignolo sinistro, o su <kbd>P</kbd>, <kbd>ò</kbd>, <kbd>à</kbd>, <kbd>ù</kbd> ed <kbd>è</kbd>, che sulla tastiera italiana sono tutte del mignolo destro, quel dito ha bisogno di un allenamento suo. La guida agli <a href="guide:typing-exercises">esercizi di dattilografia</a> propone esercizi per anulare e mignolo.</li>
+</ul>
+
+<h2>Come migliorare la precisione di battitura</h2>
+<p>Per migliorare la precisione di battitura esercitati a una velocità a cui resti al 96% o più e allena proprio le dita e le coppie di lettere che causano i tuoi errori. Passo per passo:</p>
+<ol>
+<li><strong>Trova la tua velocità pulita.</strong> Fai qualche serie da un minuto di parole comuni e guarda la precisione. La velocità a cui resta al 96% o più è per ora la tua velocità di allenamento, anche se ti sembra lenta.</li>
+<li><strong>Dai a ogni tasto un dito.</strong> Controlla la <a href="guide:finger-placement">mappa delle dita sulla tastiera</a> e rispettala, anche sui tasti facili da prendere con la mano sbagliata: la <kbd>B</kbd> spetta all'indice sinistro, la <kbd>Y</kbd> all'indice destro. petitdoigt colora ogni tasto con il colore del dito che deve premerlo ed evidenzia quel dito mentre scrivi, così un'abitudine sbagliata diventa visibile. Il trainer non ha un layout italiano né testi in italiano: scegli US QWERTY, che tiene le lettere negli stessi tasti, e testi in inglese, francese, tedesco o spagnolo. Un browser poi non vede le tue mani, quindi non può controllare quale dito hai usato; quella parte tocca a te.</li>
+<li><strong>Tieni gli occhi sullo schermo.</strong> È lì che compaiono gli errori. Se abbassi ancora lo sguardo, la guida su <a href="guide:type-without-looking">come scrivere senza guardare la tastiera</a> ti aiuta a perdere l'abitudine, e una tastiera a schermo può sostituire i tasti mentre impari.</li>
+<li><strong>Scopri dove sono i tuoi errori.</strong> Una sola percentuale per tutta la serie nasconde quali tasti la abbassano. La pagina <a href="app:stats">stats</a> del trainer divide i risultati per dito e per lettera su ogni layout, ed elenca i passaggi da un tasto all'altro più deboli con la loro precisione. Certi errori capitano solo tra due tasti precisi, come la <kbd>U</kbd> seguita dalla <kbd>N</kbd> in <em>una</em>, che l'indice destro batte da solo. In modalità adattiva l'esercizio <a href="app:pairs">pairs</a> costruisce le serie soprattutto con i tuoi passaggi più lenti e più sbagliati.</li>
+<li><strong>Fai pagare ogni refuso con un Backspace.</strong> Correggi ogni errore appena lo vedi, come faresti in una email vera. La modalità hardcore lo rende obbligatorio: un tasto sbagliato resta nel testo finché non lo cancelli con <kbd>Backspace</kbd>.</li>
+<li><strong>Tieni le sessioni brevi.</strong> Fermati quando la precisione cala per due o tre serie di fila, perché allenarti stanco ripete la versione sciatta di ogni movimento.</li>
+<li><strong>Alza la velocità a piccoli passi.</strong> Quando tieni il 98% alla tua velocità di allenamento per diverse sessioni, spingi di qualche parola al minuto. Se la precisione scende sotto il 96%, torna all'ultima velocità che riuscivi a tenere pulita.</li>
+</ol>

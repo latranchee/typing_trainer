@@ -1,0 +1,175 @@
+<!--meta
+{
+  "id": "dvorak",
+  "lang": "de",
+  "slug": "dvorak-tastatur",
+  "title": "Dvorak-Tastatur: Schneller als QWERTZ? Lernen und testen",
+  "description": "Die Dvorak-Tastatur Taste für Taste, was die Studien von 1944 und 1956 zeigen, ob sie für Deutsch taugt und wie du Dvorak gratis im Browser testest.",
+  "h1": "Die Dvorak-Tastatur: Ist sie schneller, und wie lernst du sie?",
+  "keyword": "Dvorak-Tastatur",
+  "keywords_secondary": ["Dvorak-Tastaturbelegung", "Dvorak Layout", "Dvorak lernen", "Dvorak vs. QWERTZ", "Dvorak deutsch"],
+  "summary": "Die Dvorak-Tastatur ist ein alternatives Tastaturlayout für Englisch, 1936 von August Dvorak und William Dealey patentiert. Sie legt die Vokale in die Grundreihe der linken Hand und die häufigsten Konsonanten in die der rechten. Das Tippmodell Carpalx zählt bei englischem Text 71 % der Anschläge in der Grundreihe, bei QWERTY 34 %. Ob du damit schneller tippst, ist umstritten, denn die klassischen Studien sind alt und parteiisch.",
+  "faq": [
+    {
+      "q": "Brauche ich eine spezielle Tastatur für Dvorak?",
+      "a": "Nein. Dein Betriebssystem legt fest, was jede physische Taste tippt, also funktioniert jede Tastatur. Die aufgedruckten Buchstaben passen dann nicht mehr, ein guter Grund, ohne Blick auf die Tasten zu lernen; eine Bildschirmtastatur mit den Dvorak-Buchstaben ersetzt dir die Beschriftung. Matias hat außerdem Tastaturen verkauft, die Dvorak in der Hardware tragen und sich per Taste auf QWERTY umschalten lassen."
+    },
+    {
+      "q": "Was ist der schnellste Tipprekord auf Dvorak?",
+      "a": "Den bekanntesten Anspruch hält Barbara Blackburn, die auf Dvorak tippte. Das Guinness-Buch der Rekorde von 1985 schrieb, sie halte 150 Wörter pro Minute über 50 Minuten durch und erreiche 170, und die Seattle Times meldete 1985 kurzzeitig 212 Wörter pro Minute. Guinness strich solche Rekorde danach: Die Ausgabe von 1986 hielt Rekorde auf elektrischen und Computer-Schreibmaschinen für nicht genau vergleichbar."
+    },
+    {
+      "q": "Hilft Dvorak gegen Handgelenkschmerzen oder einen Mausarm?",
+      "a": "Manche Nutzer berichten von weniger Belastung, und das Modell Carpalx bewertet den Tippaufwand von Dvorak etwa 25 % niedriger als den von QWERTY. Dasselbe Modell lässt die kleinen Finger auf Dvorak 18 % der Anschläge tippen statt 10 % auf QWERTY, und Dvorak belastet die rechte Hand stärker. Tut dir dort schon etwas weh, verlagert Dvorak Arbeit genau dorthin. Anhaltende Schmerzen gehören zum Arzt."
+    },
+    {
+      "q": "Eignet sich Dvorak zum Programmieren?",
+      "a": "Ja, mit etwas Reibung. US-Dvorak legt eckige und geschweifte Klammern ans rechte Ende der Zahlenreihe, und Kopieren und Einfügen wandern zur rechten Hand. Programmer Dvorak von Roland Kaufmann legt Klammern und häufige Code-Zeichen in die oberste Reihe und ordnet die Ziffern als 7531902468. Es liegt einigen Linux-Distributionen bei, Windows und macOS enthalten es nicht."
+    },
+    {
+      "q": "Taugt Dvorak zum Zocken?",
+      "a": "Schwierig wird es nur in Spielen, die auf den Buchstaben W, A, S und D bestehen. Auf Dvorak liegen diese Buchstaben auf vier verstreuten Tasten, drei davon unter der rechten Hand, die meist die Maus führt, und Wikipedia nennt Spiele mit fest verdrahteter WASD-Steuerung praktisch unspielbar. Spiele, in denen du die Tasten neu belegen kannst oder die Dvorak erkennen, laufen problemlos."
+    },
+    {
+      "q": "Warum hat Dvorak QWERTY nicht verdrängt?",
+      "a": "Das Hauptargument waren die Kosten der Umschulung. Als US-Behörden in den 1950er-Jahren einen Wechsel prüften, kam Earle Strongs Studie für die General Services Administration zu dem Schluss, dass sich das Umlernen der Schreibkräfte nie auszahlen würde, und empfahl mehr QWERTY-Training. Die Ökonomen Stan Liebowitz und Stephen Margolis argumentieren, dass keine Konkurrenztastatur genug Vorteil für einen Wechsel bot. Dvorak-Anhänger halten Strongs Studie für voreingenommen."
+    }
+  ],
+  "sources": [
+    {"title": "US-Patent 2.040.248, Typewriter keyboard (Dvorak und Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak-Tastaturbelegung (Wikipedia)", "url": "https://de.wikipedia.org/wiki/Dvorak-Tastaturbelegung"},
+    {"title": "Dvorak keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Tastaturbelegung (Wikipedia)", "url": "https://de.wikipedia.org/wiki/Tastaturbelegung"},
+    {"title": "Neo (Tastaturbelegung) (Wikipedia)", "url": "https://de.wikipedia.org/wiki/Neo_(Tastaturbelegung)"},
+    {"title": "Buchstabenhäufigkeit (Wikipedia)", "url": "https://de.wikipedia.org/wiki/Buchstabenh%C3%A4ufigkeit"},
+    {"title": "Carpalx: Analyse des Dvorak-Layouts (Martin Krzywinski)", "url": "https://mk.bcgsc.ca/carpalx/?dvorak"},
+    {"title": "Typing Errors, Stan Liebowitz und Stephen Margolis, Reason, Juni 1996", "url": "https://reason.com/1996/06/01/typing-errors/"},
+    {"title": "The Fable of the Keys, Journal of Law and Economics 33(1), 1990 (RePEc)", "url": "https://ideas.repec.org/a/ucp/jlawec/v33y1990i1p1-25.html"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Verwalten der Einstellungen für Sprache und Tastatur/Eingabelayout in Windows (Microsoft Support)", "url": "https://support.microsoft.com/de-de/help/4496404"},
+    {"title": "Windows keyboard layouts (Microsoft Learn)", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Verwenden der Dvorak-Tastaturlayouts auf dem Mac (Apple Support)", "url": "https://support.apple.com/de-de/guide/mac-help/mh27976/mac"},
+    {"title": "iOS 16 Features an All-New iPhone Keyboard Layout Option (MacRumors)", "url": "https://www.macrumors.com/2022/10/14/ios-16-dvorak-keyboard"},
+    {"title": "Barbara Blackburn (typist) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Barbara_Blackburn_(typist)"},
+    {"title": "Matias Dvorak Keyboard", "url": "https://matias.ca/dvorak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Teste Dvorak im Browser", "drill": "words", "layout": "dvorak"}
+}
+-->
+<p>Die Dvorak-Tastatur holt die Buchstaben, die im Englischen am häufigsten vorkommen, in die Grundreihe. Deine linke Hand ruht auf den Vokalen <kbd>A</kbd> <kbd>O</kbd> <kbd>E</kbd> <kbd>U</kbd>, die rechte auf <kbd>H</kbd> <kbd>T</kbd> <kbd>N</kbd> <kbd>S</kbd>, und jeder Zeigefinger greift nach innen zu einem weiteren Grundreihenbuchstaben: <kbd>I</kbd> links, <kbd>D</kbd> rechts.</p>
+
+<h2>Was ist die Dvorak-Tastaturbelegung?</h2>
+<p>Die Dvorak-Tastaturbelegung, offiziell Dvorak Simplified Keyboard, ist eine alternative Anordnung der Buchstabentasten für englische Texte. August Dvorak, Bildungspsychologe an der University of Washington, entwickelte sie mit seinem Schwager William Dealey. Die beiden meldeten im Mai 1932 ein Patent an und erhielten am 12. Mai 1936 das US-Patent 2.040.248 mit dem schlichten Titel „Typewriter keyboard“. Das US-Normungsinstitut ANSI erkannte Dvorak 1982 als alternatives Standardlayout an.</p>
+<p>Der Entwurf folgt einigen Regeln. Die häufigsten Buchstaben und Buchstabenpaare kommen in die Grundreihe, wo die Finger ruhen, die seltensten in die untere Reihe. Vokale liegen links, die häufigen Konsonanten rechts, sodass die meisten Silben zwischen den Händen hin und her springen und die rechte Hand etwas mehr Arbeit übernimmt. Dvorak wollte außerdem Buchstabenpaare vermeiden, die benachbarte Finger tippen, und die Anschläge vom Rand der Tastatur zur Mitte fließen lassen.</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>Die US-Dvorak-Belegung, jede Taste in der Farbe des Fingers, der sie drückt. Die Finger ruhen auf A O E U und H T N S.</figcaption></figure>
+
+<h2>Wo liegt welcher Buchstabe auf der Dvorak-Tastatur?</h2>
+<p>Bis auf <kbd>A</kbd> und <kbd>M</kbd> wandert jeder Buchstabe auf eine neue Taste, egal ob du von QWERTZ oder von US-QWERTY kommst. Die Tabelle zeigt die Reihen von US-Dvorak Taste für Taste, daneben das, was QWERTZ und US-QWERTY auf dieselben Tasten drucken.</p>
+<table>
+<caption>Buchstabenreihen auf QWERTZ, US-QWERTY und US-Dvorak, gleiche physische Tasten</caption>
+<thead><tr><th scope="col">Reihe</th><th scope="col">QWERTZ</th><th scope="col">US-QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>Oben</td><td>Q W E R T Z U I O P Ü +</td><td>Q W E R T Y U I O P [ ]</td><td>' , . P Y F G C R L / =</td></tr>
+<tr><td>Grundreihe</td><td>A S D F G H J K L Ö Ä</td><td>A S D F G H J K L ; '</td><td>A O E U I D H T N S -</td></tr>
+<tr><td>Unten</td><td>Y X C V B N M , . -</td><td>Z X C V B N M , . /</td><td>; Q J K X B M W V Z</td></tr>
+<tr><td>Zahlenreihe, rechtes Ende</td><td>ß ´</td><td>- =</td><td>[ ]</td></tr>
+</tbody>
+</table>
+<p>Allein mit der Grundreihe tippst du viele häufige englische Wörter wie <em>the</em>, <em>and</em>, <em>that</em> und <em>this</em>. Auch deutsche Wörter wie <em>Stunde</em>, <em>Seite</em>, <em>Hand</em> oder <em>Datei</em> bestehen nur aus Grundreihenbuchstaben. Auf QWERTZ schickt allein <em>Stunde</em> drei Finger in die obere Reihe und einen in die untere.</p>
+<p>Ein paar Änderungen überraschen QWERTZ-Gewohnte:</p>
+<ul>
+<li><strong>Satzzeichen.</strong> Komma und Punkt wandern in die obere Reihe unter den linken Ring- und Mittelfinger, der Apostroph liegt über <kbd>A</kbd>, und der Bindestrich sitzt rechts neben <kbd>S</kbd>, wo QWERTZ das Ä hat.</li>
+<li><strong>Tastenkürzel.</strong> <kbd>C</kbd> landet dort, wo QWERTZ das <kbd>I</kbd> hat, <kbd>V</kbd> auf der Punkttaste und <kbd>Z</kbd> auf der Bindestrichtaste. Kopieren, Einfügen und Rückgängig wandern zur rechten Hand, was unpraktisch wird, wenn diese Hand die Maus hält. Die Colemak-FAQ zählt das zu ihren Kritikpunkten an Dvorak.</li>
+<li><strong>Der rechte kleine Finger.</strong> Er bedient <kbd>L</kbd>, <kbd>S</kbd>, <kbd>Z</kbd>, Bindestrich, Schrägstrich und Gleichheitszeichen. Die Colemak-FAQ weist außerdem darauf hin, dass <kbd>L</kbd> und <kbd>S</kbd>, zwei häufige Buchstaben, oft direkt nacheinander auf diesem einen Finger landen.</li>
+<li><strong>Klammern.</strong> <kbd>[</kbd> und <kbd>]</kbd> wandern ans rechte Ende der Zahlenreihe, wo QWERTZ ß und den Akut hat.</li>
+<li><strong>Umlaute und ß.</strong> US-Dvorak hat keine Tasten dafür. Was das für deutsche Texte heißt, steht im nächsten Abschnitt.</li>
+</ul>
+
+<h2>Taugt die Dvorak-Tastatur für Deutsch?</h2>
+<p>Für deutsche Texte taugt US-Dvorak nur mit Umwegen, weil ihr Ä, Ö, Ü und ß fehlen. Die Belegung wurde für die Buchstabenhäufigkeiten des Englischen gebaut, und die deutschsprachige Wikipedia hält es deshalb für unwahrscheinlich, dass sie für Deutsch optimal ist. Deutsche Abwandlungen ergänzen die fehlenden Zeichen und verschieben dafür einige Tasten; eine davon, „Dvorak Typ II deutsch“, wurde von 2010 bis 2018 als fertige Tastatur verkauft. Wikipedia fragt bei solchen Umbauten, ob man sie überhaupt noch Dvorak nennen kann.</p>
+<p>Die Grundreihe passt trotzdem gut zu deutschen Texten. Die deutschsprachige Wikipedia gibt eine Häufigkeitstabelle an, die ä, ö und ü als ae, oe und ue zählt. Nach dieser Tabelle liegen neun der zehn häufigsten deutschen Buchstaben (E, N, I, S, A, T, D, H und U) bei Dvorak in der Grundreihe; nur das R auf Platz fünf sitzt oben.</p>
+<table>
+<caption>Anteil der Grundreihe an den Buchstaben deutscher Texte, berechnet aus der Häufigkeitstabelle der deutschsprachigen Wikipedia</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Buchstaben der Grundreihe</th><th scope="col">Anteil an allen Buchstaben</th></tr></thead>
+<tbody>
+<tr><td>QWERTZ</td><td>A S D F G H J K L (ohne Ö und Ä)</td><td>rund 33 %</td></tr>
+<tr><td>Dvorak</td><td>A O E U I D H T N S</td><td>rund 71 %</td></tr>
+<tr><td>Colemak</td><td>A R S T D H N E I O</td><td>rund 74 %</td></tr>
+</tbody>
+</table>
+<p>Wer ein ergonomisches Layout eigens für Deutsch sucht, landet meist bei Neo: 2004 von Hanno Behrens begonnen, seit 2010 in der endgültigen Fassung Neo 2, mit Ablegern wie Bone und KOY. Laut der deutschsprachigen Wikipedia tippst du auf Neo über 3.600 Wörter allein mit der Grundreihe, auf Dvorak etwa 1.400 und auf QWERTZ 75. Der Überblick über <a href="guide:keyboard-layouts">Tastaturlayouts</a> stellt Neo, Bone und KOY vor.</p>
+
+<h2>Ist Dvorak schneller als QWERTY oder QWERTZ?</h2>
+<p>Die Datenlage reicht für eine Antwort nicht aus. Die beiden Studien, die alle zitieren, stammen von 1944 und 1956, beide verglichen Dvorak mit US-QWERTY, und jede leitete jemand, der schon Partei ergriffen hatte.</p>
+<table>
+<caption>Die beiden klassischen Studien zu Dvorak und QWERTY</caption>
+<thead><tr><th scope="col">Studie</th><th scope="col">Ergebnis</th><th scope="col">Warum sie umstritten ist</th></tr></thead>
+<tbody>
+<tr><td>US Navy, 1944</td><td>14 Schreibkräfte, 83 Stunden auf Dvorak umgeschult, steigerten sich von 32 auf 56 Wörter pro Minute netto, ein Plus von 75 %. 18 QWERTY-Schreibkräfte mit zusätzlichem Training legten 28 % zu.</td><td>Earle Strong berichtete, dass Dvorak, der das Patent hielt, den Test selbst leitete. Liebowitz und Margolis fanden heraus, dass die Art, wie die Ausgangswerte der QWERTY-Gruppe gemittelt wurden, deren gemessenen Zuwachs fast halbierte.</td></tr>
+<tr><td>US General Services Administration (Earle Strong), 1956</td><td>10 Schreibkräfte der Behörde brauchten deutlich mehr als 25 Tage mit je vier Stunden Training, um ihr altes QWERTY-Tempo wieder zu erreichen. Beim weiteren Training verbesserte sich eine vergleichbare QWERTY-Gruppe schneller. Strong empfahl mehr QWERTY-Training.</td><td>Strong hatte sich vor der Studie öffentlich gegen neue Tastaturentwürfe ausgesprochen, und Kritiker halten die Studie für parteiisch zugunsten der QWERTY-Gruppe.</td></tr>
+</tbody>
+</table>
+<p>32 und 56 Wörter pro Minute entsprechen bei der üblichen Rechnung mit fünf Zeichen pro Wort etwa 160 und 280 Anschlägen pro Minute; mehr dazu unter <a href="guide:words-per-minute">Wörter pro Minute</a>. Die Ökonomen Stan Liebowitz und Stephen Margolis lasen beide Berichte für ihren Aufsatz „The Fable of the Keys“ von 1990 neu. In einem Artikel für die Zeitschrift <em>Reason</em> nannten sie die Navy-Studie 1996 noch schlechter als Dvoraks frühere Experimente und die Geschichte von Dvoraks Überlegenheit „a myth or, perhaps more properly, a hoax“, also einen Mythos oder eher einen Schwindel.</p>
+<p>Computermodelle messen die Geometrie ohne menschliche Testpersonen. Carpalx, ein Modell für den Tippaufwand von Martin Krzywinski, bewertet Layouts anhand englischer Texte und setzt den Aufwand von Dvorak etwa 25 % niedriger an als den von QWERTY. Die Aufschlüsselung zeigt, woher die Ersparnis kommt und was sie kostet:</p>
+<table>
+<caption>QWERTY und Dvorak bei englischem Text, nach dem Modell Carpalx</caption>
+<thead><tr><th scope="col">Messgröße</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>Anschläge in der Grundreihe</td><td>34 %</td><td>71 %</td></tr>
+<tr><td>Anschläge in der unteren Reihe</td><td>15 %</td><td>9 %</td></tr>
+<tr><td>Aufeinanderfolgende Tasten mit wechselnder Hand</td><td>51 %</td><td>62 %</td></tr>
+<tr><td>Anschläge der kleinen Finger</td><td>10 %</td><td>18 %</td></tr>
+<tr><td>Verteilung auf die Hände</td><td>15 % mehr links</td><td>14 % mehr rechts</td></tr>
+</tbody>
+</table>
+<p>Dvorak hält deine Finger etwa doppelt so oft in der Grundreihe und wechselt öfter die Hand. Dafür zahlst du mit fast doppelt so viel Arbeit für die kleinen Finger, und die Last kippt ungefähr so stark zur rechten Hand wie bei QWERTY zur linken. Wie viele Wörter pro Minute diese ruhigere Bewegung einer geübten Schreibkraft bringt, verraten die alten Studien nicht, dafür sind sie zu parteiisch. Die Schreibkräfte der GSA brauchten über 100 Stunden, nur um ihr Ausgangstempo zurückzuholen. Wenn es dir allein ums Tempo geht, zahlt sich eine bessere Technik auf deiner gewohnten Belegung früher aus; wie das geht, erklärt der Ratgeber <a href="guide:how-to-type-faster">schneller tippen</a>.</p>
+
+<h2>Solltest du auf Dvorak umsteigen?</h2>
+<p>Dvorak passt zu dir, wenn du vor allem Englisch an deinen eigenen Rechnern schreibst und ein paar Monate langsameres Tippen in Kauf nimmst. Vier Situationen geben den Ausschlag:</p>
+<ul>
+<li><strong>Du tippst noch nicht blind.</strong> Die Fingerpositionen lernst du so oder so von vorn, Dvorak kostet dich also kein Umlernen. Die Methode im Ratgeber zum <a href="guide:touch-typing">Zehnfingersystem</a> funktioniert auf jedem Layout gleich.</li>
+<li><strong>Du schreibst vor allem Deutsch.</strong> Auf US-Dvorak brauchst du für jedes ä und ß einen Umweg, und die deutschen Varianten verschieben dafür weitere Tasten. Neo, Bone und KOY sind von Grund auf für deutsche Texte gebaut.</li>
+<li><strong>Du arbeitest viel mit Tastenkürzeln.</strong> Auf dem Mac schaltet das Layout „Dvorak - QWERTY ⌘“ auf QWERTY um, solange du die Command-Taste hältst, sodass die Kürzel bleiben, wo deine Hand sie erwartet. Unter Windows erreichen viele das Gleiche mit AutoHotkey-Skripten.</li>
+<li><strong>Du tippst oft an fremden Rechnern.</strong> Jeder geteilte Rechner heißt: Einstellung ändern oder QWERTZ tippen. Plane also, beide Belegungen in den Fingern zu behalten.</li>
+</ul>
+<p>Wenn dich vor allem Kürzel und der rechte kleine Finger stören, sieh dir Colemak an, das <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd> <kbd>V</kbd> auf ihren US-Plätzen lässt. Der <a href="guide:colemak-vs-dvorak">Vergleich Colemak vs. Dvorak</a> stellt beide nebeneinander, und der <a href="guide:colemak">Colemak-Ratgeber</a> erklärt, wie du es lernst.</p>
+
+<h2>Wie stellst du Computer und Smartphone auf Dvorak um?</h2>
+<p>Windows, macOS, ChromeOS, Android, iOS und die meisten Linux-Distributionen bringen Dvorak mit, du wählst es also nur in den Einstellungen aus. Auf deinen Tasten stehen danach weiter die QWERTZ-Buchstaben.</p>
+<h3>Windows 11</h3>
+<ol>
+<li>Öffne <strong>Start › Einstellungen › Zeit &amp; Sprache › Sprache &amp; Region</strong>.</li>
+<li>Füge Englisch (USA) hinzu, falls es in deiner Sprachliste fehlt. Klick dann auf die drei Punkte daneben und auf <strong>Sprachoptionen</strong>.</li>
+<li>Wähle neben <strong>Installierte Tastaturen</strong> den Eintrag <strong>Tastatur hinzufügen</strong> und such die Dvorak-Belegung für die USA aus.</li>
+<li>Mit <kbd>Windows</kbd>+<kbd>Leertaste</kbd> wechselst du zwischen Dvorak und deiner gewohnten Belegung.</li>
+</ol>
+<h3>macOS</h3>
+<ol>
+<li>Öffne <strong>Apple-Menü › Systemeinstellungen › Tastatur</strong>.</li>
+<li>Klick unter <strong>Texteingabe</strong> auf <strong>Bearbeiten</strong> und dann auf die Taste „Hinzufügen“ (+).</li>
+<li>Such nach „Dvorak“, wähl <strong>Dvorak</strong> oder <strong>Dvorak - QWERTY ⌘</strong>, klick auf <strong>Hinzufügen</strong> und dann auf <strong>Fertig</strong>.</li>
+<li>Zwischen den Layouts wechselst du über das Menü <strong>Eingabe</strong> in der Menüleiste.</li>
+</ol>
+<h3>iPhone und Android</h3>
+<p>Seit iOS 16 (2022) bieten iPhones Dvorak für Englisch an, unter <strong>Einstellungen › Allgemein › Tastatur › Tastaturen › Englisch</strong>. Die eingebaute Android-Tastatur kann Dvorak seit Version 4.1.</p>
+<h3>Dvorak für eine Hand</h3>
+<p>August Dvorak entwarf in den 1960er-Jahren Layouts für Menschen, die mit nur einer Hand tippen. Windows enthält sie als US-Dvorak für die linke und für die rechte Hand, macOS als <strong>Dvorak - Linkshänder</strong> und <strong>Dvorak - Rechtshänder</strong>. Du fügst sie genauso hinzu wie das Standardlayout.</p>
+
+<h2>Wie lange dauert es, Dvorak zu lernen?</h2>
+<p>Rechne mit rund 100 Stunden Übung, bis du dein altes Tempo wieder erreichst, wenn du heute schon flüssig auf QWERTZ tippst. In der GSA-Studie von 1956 brauchten zehn Schreibkräfte der Behörde deutlich mehr als 25 Tage mit je vier Stunden, also über 100 Stunden, um ihr altes QWERTY-Tempo einzuholen. In Dvoraks eigener Navy-Studie von 1944 erreichten die Teilnehmer nach 83 Stunden Training 56 Wörter pro Minute netto. Bei einer Stunde am Tag heißt beides: etwa drei Monate.</p>
+<p>Die Navy-Gruppe startete mit 32 Wörtern pro Minute, unter dem Leistungsstandard der Navy selbst, ihre 83 Stunden sagen also wenig darüber, wie lange jemand braucht, der schon flüssig tippt. Kurze tägliche Einheiten, die auf deine langsamsten Tasten und Buchstabenpaare zielen, holen das meiste aus diesen Stunden heraus, und darauf bauen die Schritte unten auf.</p>
+
+<h2>Dvorak lernen: Schritt für Schritt</h2>
+<p>Lern Dvorak so, als hättest du nie getippt: Fang in der Grundreihe an und sichere die Genauigkeit, bevor du Tempo machst.</p>
+<ol>
+<li><strong>Probier es aus, bevor du eine Einstellung änderst.</strong> Öffne <a href="app:words?layout=dvorak">Dvorak in petitdoigt</a>, einem kostenlosen Trainer im Browser. Er wendet das Layout selbst an, ausgehend von den physischen Tastenpositionen, dein Rechner bleibt also auf QWERTZ, und die Bildschirmtastatur zeigt die Dvorak-Buchstaben, jede Taste in der Farbe ihres Fingers. Eine kurze Runde zeigt dir, ob sich die Grundreihe richtig anfühlt, bevor du dich festlegst.</li>
+<li><strong>Lern die acht Ruhetasten.</strong> Linke Hand auf <kbd>A</kbd> <kbd>O</kbd> <kbd>E</kbd> <kbd>U</kbd>, rechte Hand auf <kbd>H</kbd> <kbd>T</kbd> <kbd>N</kbd> <kbd>S</kbd>. Nimm mit den Zeigefingern <kbd>I</kbd> und <kbd>D</kbd> dazu und übe Wörter, die nur aus diesen zehn Buchstaben bestehen: <em>Hand</em>, <em>Seite</em>, <em>Stunde</em>, <em>Datei</em>.</li>
+<li><strong>Trainier die Finger, die Dvorak stärker fordert.</strong> Dein rechter kleiner Finger trägt <kbd>L</kbd> und <kbd>S</kbd>, dein linker <kbd>A</kbd>, Apostroph und Semikolon. Die Übung <a href="app:anchors?layout=dvorak">„Anker“</a> isoliert die Finger, die du wählst, und holt sie zwischen den Anschlägen in die Grundreihe zurück. Mit dem Fingerfokus neigt sich der Übungstext zu den Buchstaben dieser Finger.</li>
+<li><strong>Nimm obere und untere Reihe über echte Wörter dazu.</strong> Bring <kbd>P</kbd> <kbd>Y</kbd> <kbd>F</kbd> <kbd>G</kbd> <kbd>C</kbd> <kbd>R</kbd> <kbd>L</kbd> oberhalb der Grundreihe und die seltenen Buchstaben darunter ins Spiel, erst in häufigen Wörtern, dann in ganzen Sätzen.</li>
+<li><strong>Übe deine langsamsten Buchstabenpaare.</strong> Auf Dvorak wird jedes Buchstabenpaar zu einer neuen Bewegung. Im adaptiven Modus misst die Übung <a href="app:pairs?layout=dvorak">„Paare“</a> deine Übergänge von Taste zu Taste beim Tippen und baut jede Runde vor allem aus den langsamsten und fehleranfälligsten.</li>
+<li><strong>Stell Genauigkeit vor Tempo.</strong> Jeder wiederholte Fehler trainiert die falsche Bewegung. Werde langsamer, bis Fehler selten sind; wie du sie misst, erklärt der Ratgeber zur <a href="guide:typing-accuracy">Tippgenauigkeit</a>.</li>
+<li><strong>Lass den Blick auf dem Bildschirm.</strong> Deine Tasten zeigen weiter QWERTZ, jeder Blick darauf führt dich also in die Irre. Nutz stattdessen die Bildschirmtastatur, und im Ratgeber <a href="guide:type-without-looking">blind tippen, ohne auf die Tastatur zu schauen</a> findest du weitere Wege, die Gewohnheit loszuwerden.</li>
+<li><strong>Plan den Umstieg.</strong> Wenn dein Job vom Tippen abhängt, bleib bei der Arbeit auf QWERTZ und übe Dvorak in kurzen täglichen Einheiten, bis das Tempo aufgeholt hat; dann stellst du das System endgültig um. petitdoigt führt für jedes Layout eine eigene Statistik, deine Dvorak-Werte beginnen also bei null, und dein QWERTZ-Verlauf bleibt erhalten.</li>
+</ol>
+<p>Ein Browser kann nicht sehen, welcher Finger eine Taste gedrückt hat. Der Trainer zeigt dir den richtigen Finger und misst Tasten und Timing, den passenden Finger zu nehmen bleibt deine Sache. Die <a href="guide:finger-placement">Fingerverteilung auf der Tastatur</a> erklärt die Fingerzonen, die beim Layoutwechsel gleich bleiben.</p>

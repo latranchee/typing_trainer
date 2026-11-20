@@ -1,0 +1,144 @@
+<!--meta
+{
+  "id": "iso-vs-ansi",
+  "lang": "pt",
+  "slug": "teclado-iso-ou-ansi",
+  "title": "Teclado ISO ou ANSI: diferenças, ABNT2, JIS e qual escolher",
+  "description": "Teclado ISO ou ANSI comparado tecla por tecla: Enter, Shift, a tecla extra, o ABNT2 brasileiro, o JIS, como saber qual é o seu e qual comprar.",
+  "h1": "Teclado ISO ou ANSI: as diferenças, o ABNT2 e como saber qual é o seu",
+  "keyword": "teclado ISO ou ANSI",
+  "keywords_secondary": ["ANSI ou ABNT2", "diferença entre teclado ANSI e ISO", "teclado ABNT2 é ISO ou ANSI", "teclado JIS", "teclado ANSI"],
+  "summary": "Teclado ISO ou ANSI: a diferença está no Enter e no Shift esquerdo. O ANSI tem um Enter de uma fileira e um Shift esquerdo comprido; o ISO tem um Enter alto, de duas fileiras, e um Shift esquerdo curto com uma tecla extra ao lado. O ABNT2 brasileiro segue o ISO e acrescenta uma tecla de / e ? junto ao Shift direito. Os Estados Unidos usam ANSI, Portugal e quase toda a Europa usam ISO, e o Japão, JIS.",
+  "faq": [
+    {"q": "Qual a diferença entre ABNT e ABNT2?", "a": "São as duas variantes da norma brasileira ABNT NBR 10346, de 1991. A própria norma indicava a segunda como preferencial, e ela foi a única que se popularizou: é o ABNT2, com a tecla de / e ? ao lado do Shift direito. No Windows, os dois aparecem na lista de layouts como Português (Brasil ABNT) e Português (Brasil ABNT2) e usam o mesmo arquivo de layout."},
+    {"q": "O teclado de Portugal é ISO ou ANSI?", "a": "ISO. A Apple lista o teclado português entre os seus modelos ISO, com Enter alto e a tecla extra ao lado do Shift esquerdo. No layout português do Windows, essa tecla extra é a única que digita < e >, então num teclado ANSI configurado em português de Portugal esses dois sinais ficam sem tecla."},
+    {"q": "Teclado de MacBook é ISO ou ANSI?", "a": "Depende da versão do país. Na lista da Apple, os teclados em inglês americano, chinês, coreano e tailandês são ANSI, e o japonês é JIS. As outras versões, entre elas a portuguesa, a espanhola, a latino-americana, a britânica e a alemã, são ISO. Confira a tecla Return: um Return de uma fileira só indica ANSI."},
+    {"q": "ISO ou ANSI é melhor para jogos?", "a": "O formato só muda o tamanho e a posição de algumas teclas. Em jogos que ligam correr, agachar ou outra ação ao Shift esquerdo, o ISO dá ao mínimo esquerdo uma tecla de 1,25u com a tecla extra logo ao lado, contra uma de 2,25u no ANSI. Quem está acostumado com um formato erra o Shift esquerdo por um tempo depois de trocar."},
+    {"q": "Posso usar keycaps ANSI num teclado ISO ou ABNT2?", "a": "Na maior parte, sim: letras, números e as teclas em volta têm o mesmo tamanho nos formatos. A diferença está no Enter, no Shift esquerdo, na tecla ao lado do Enter e na tecla extra do ISO; o ABNT2 ainda pede a tecla de / e ? e um Shift direito mais curto. Um jogo só ANSI deixa esses lugares vazios ou desencontrados, então confira a lista de teclas antes de comprar."},
+    {"q": "O que é um teclado com Enter grande (big-ass Enter)?", "a": "É o apelido que os entusiastas de teclados dão a um formato cujo Enter ocupa ao mesmo tempo o lugar do Enter ANSI e o do ISO. A tecla que o ANSI põe acima do Enter sobe para a fileira dos números, ao lado de um Backspace mais curto. A norma ISO/IEC 9995 descreve esse arranjo como uma variante do ANSI, usada em alguns países asiáticos."}
+  ],
+  "sources": [
+    {"title": "Wikipédia: ABNT2", "url": "https://pt.wikipedia.org/wiki/ABNT2"},
+    {"title": "Wikipedia: Portuguese keyboard layout (ABNT2)", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "Wikipedia: ISO/IEC 9995", "url": "https://en.wikipedia.org/wiki/ISO/IEC_9995"},
+    {"title": "Wikipedia: Keyboard layout", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Wikipedia: QWERTY (layout US-International)", "url": "https://en.wikipedia.org/wiki/QWERTY"},
+    {"title": "Wikipedia: Language input keys", "url": "https://en.wikipedia.org/wiki/Language_input_keys"},
+    {"title": "Suporte da Apple: How to identify your Apple keyboard layout by country or region", "url": "https://support.apple.com/102743"},
+    {"title": "Manual do Usuário do Mac (macOS Monterey 12): especificar um tipo de teclado", "url": "https://support.apple.com/pt-br/guide/mac-help/mchlp2886/12.0/mac"},
+    {"title": "Apple Mac User Guide: Specify a keyboard type on Mac", "url": "https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/mac"},
+    {"title": "Apple Community: How To Fix Keyboard Type Problems", "url": "https://discussions.apple.com/docs/DOC-250007848"},
+    {"title": "W3C: UI Events KeyboardEvent code Values", "url": "https://www.w3.org/TR/uievents-code/"},
+    {"title": "KbdLayout: Portuguese (Brazil ABNT2), layout do Windows (KBDBR)", "url": "https://kbdlayout.info/kbdbr"},
+    {"title": "KbdLayout: Portuguese, layout de Portugal no Windows (KBDPO)", "url": "https://kbdlayout.info/kbdpo"},
+    {"title": "KbdLayout: US keyboard layout (KBDUS)", "url": "https://kbdlayout.info/kbdus"},
+    {"title": "KbdLayout: United Kingdom keyboard layout (KBDUK)", "url": "https://kbdlayout.info/kbduk"},
+    {"title": "KbdLayout: German keyboard layout (KBDGR)", "url": "https://kbdlayout.info/kbdgr"},
+    {"title": "KbdLayout: French keyboard layout (KBDFR)", "url": "https://kbdlayout.info/kbdfr"},
+    {"title": "KbdLayout: Spanish keyboard layout (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "Deskthority wiki: ANSI vs ISO", "url": "https://deskthority.net/wiki/ANSI_vs_ISO"},
+    {"title": "Deskthority wiki: ANSI vs JIS", "url": "https://deskthority.net/wiki/ANSI_vs_JIS"},
+    {"title": "Ultimate Hacking Keyboard: ANSI or ISO? Which keyboard layout is more ergonomic?", "url": "https://uhk.io/blog/2015/09/09/ansi-or-iso-which-keyboard-layout-is-more-ergonomic"},
+    {"title": "Corsair: ANSI vs ISO, what's the best keyboard layout?", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/ansi-vs-iso-whats-the-best-keyboard-layout/"},
+    {"title": "Keebsforall: ANSI vs ISO typing efficiency compared", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-vs-iso-typing-efficiency-compared"},
+    {"title": "Keebsforall: ANSI, ISO, JIS: which layout fits your needs?", "url": "https://keebsforall.com/blogs/mechanical-keyboards-101/ansi-iso-jis-which-layout-fits-your-needs"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "DreymaR's Big Bag of Keyboard Tricks: ergonomic mods", "url": "https://dreymar.colemak.org/ergo-mods.html"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Digite num teclado igual ao seu", "drill": "words"}
+}
+-->
+<p>ISO, ANSI e JIS descrevem o teclado físico: o tamanho de cada tecla e onde ela fica. O layout com que você digita, como o ABNT2 ou o QWERTY americano, é uma configuração do sistema que roda por cima desse formato (o guia de <a href="guide:keyboard-layouts">layouts de teclado</a> trata deles). A maior parte do teclado é idêntica nos três formatos. As diferenças ficam nas bordas, em volta do Enter, do Shift esquerdo e da barra de espaço, e mudam o trabalho dos seus dedos mínimos.</p>
+<figure data-figure="board-shapes"><figcaption>Teclados ANSI, ISO e JIS lado a lado. Compare primeiro o Enter e o Shift esquerdo, depois as teclas em volta da barra de espaço do JIS.</figcaption></figure>
+
+<h2>Teclado ISO ou ANSI: qual a diferença?</h2>
+<p>Um teclado ISO tem um Enter alto, que cobre duas fileiras, um Shift esquerdo curto e uma tecla de caractere a mais que o ANSI, cujo Enter ocupa uma fileira só e cujo Shift esquerdo vai até o <kbd>Z</kbd>. A tecla extra do ISO fica entre o Shift esquerdo e o <kbd>Z</kbd>.</p>
+<p>O Enter alto tira mais uma tecla do lugar. No ANSI, a tecla da barra invertida (<kbd>\</kbd> e <kbd>|</kbd> num teclado americano) fecha a fileira de cima, logo acima do Enter. O ISO não tem espaço para ela ali, então essa tecla desce para a linha base, à esquerda do Enter; no ABNT2, ela digita <kbd>]</kbd> e <kbd>}</kbd>. A norma de teclados ISO/IEC 9995 conta 48 teclas de caracteres no arranjo ANSI e 49 no ISO. Um teclado completo americano tem 104 teclas, e o europeu comum tem 105; sem o teclado numérico, um TKL cai para 87 teclas no ANSI e 88 no ISO.</p>
+<p>Os fabricantes medem as teclas em unidades: 1u é a largura de uma tecla de letra. A tabela dá as unidades quando uma fonte as informa.</p>
+<table>
+<caption>Teclados ANSI, ISO e JIS comparados</caption>
+<thead><tr><th scope="col">Característica</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">JIS</th></tr></thead>
+<tbody>
+<tr><th scope="row">Enter</th><td>Uma fileira, em geral 2,25u de largura</td><td>Duas fileiras de altura, em forma de L</td><td>Duas fileiras de altura, em forma de L</td></tr>
+<tr><th scope="row">Shift esquerdo</th><td>Comprido, 2,25u</td><td>Curto, cerca de 1,25u, com uma tecla extra à direita</td><td>Comprido</td></tr>
+<tr><th scope="row">Shift direito</th><td>Comprido</td><td>Comprido</td><td>Mais curto, com uma tecla extra (ろ) à esquerda</td></tr>
+<tr><th scope="row">Tecla da barra invertida americana</th><td>Fileira de cima, acima do Enter</td><td>Linha base, à esquerda do Enter</td><td>Linha base, à esquerda do Enter</td></tr>
+<tr><th scope="row">Backspace</th><td>2u</td><td>2u</td><td>1u, com uma tecla ¥ ao lado</td></tr>
+<tr><th scope="row">Barra de espaço</th><td>Comprida</td><td>Comprida</td><td>Mais curta, com teclas de modo de entrada dos dois lados</td></tr>
+<tr><th scope="row">Teclas de caracteres</th><td>48</td><td>49</td><td>49</td></tr>
+<tr><th scope="row">Teclas num teclado completo</th><td>104</td><td>105</td><td>109</td></tr>
+<tr><th scope="row">Padrão em</th><td>Estados Unidos</td><td>Quase toda a Europa, Portugal incluído</td><td>Japão</td></tr>
+</tbody>
+</table>
+
+<h2>O teclado ABNT2 é ISO ou ANSI?</h2>
+<p>O ABNT2 é um teclado ISO com uma tecla a mais. Ele segue a variante 2 da norma brasileira ABNT NBR 10346, de 1991, que a própria norma indicava como preferencial e que foi a única a se popularizar. O ABNT2 mantém o Enter alto do ISO e a tecla extra ao lado do Shift esquerdo, que no layout brasileiro do Windows digita <kbd>\</kbd> e <kbd>|</kbd>. Depois, pega emprestado um truque do JIS: encurta o Shift direito para caber uma tecla de <kbd>/</kbd> e <kbd>?</kbd>. Assim, 12 teclas cabem entre os dois Shifts, e a norma ISO/IEC 9995 conta 50 teclas de caracteres nesse arranjo.</p>
+<table>
+<caption>ANSI, ISO e ABNT2 na fileira de baixo e no Enter</caption>
+<thead><tr><th scope="col">Característica</th><th scope="col">ANSI</th><th scope="col">ISO</th><th scope="col">ABNT2</th></tr></thead>
+<tbody>
+<tr><th scope="row">Enter</th><td>Uma fileira</td><td>Duas fileiras</td><td>Duas fileiras</td></tr>
+<tr><th scope="row">Tecla ao lado do Shift esquerdo</th><td>Nenhuma</td><td>Uma</td><td>Uma, com \ e |</td></tr>
+<tr><th scope="row">Tecla ao lado do Shift direito</th><td>Nenhuma</td><td>Nenhuma</td><td>Uma, com / e ?</td></tr>
+<tr><th scope="row">Teclas entre os dois Shifts</th><td>10</td><td>11</td><td>12</td></tr>
+<tr><th scope="row">Teclas de caracteres (ISO/IEC 9995)</th><td>48</td><td>49</td><td>50</td></tr>
+</tbody>
+</table>
+<p>A tecla do Ç, à direita do <kbd>L</kbd>, existe nos três formatos: é a mesma tecla física que digita ponto e vírgula no layout americano. Por isso o nome ABNT2 serve para duas coisas, o formato com 12 teclas na fileira de baixo e o layout que põe Ç e acentos nas teclas. Num teclado com só 11 teclas nessa fileira, o layout ABNT2 repete a barra e a interrogação em <kbd>AltGr</kbd>+<kbd>Q</kbd> e <kbd>AltGr</kbd>+<kbd>W</kbd>.</p>
+
+<h2>Quais países usam ISO, ANSI ou JIS?</h2>
+<p>Os Estados Unidos usam ANSI, a Europa usa ISO quase em toda parte, o Japão usa JIS e o Brasil usa o ABNT2. O catálogo de teclados da Apple dá uma lista precisa por idioma, porque a Apple classifica cada versão em um formato.</p>
+<table>
+<caption>Formato do teclado por idioma, segundo o catálogo da Apple (ABNT2 segundo a ISO/IEC 9995)</caption>
+<thead><tr><th scope="col">Formato</th><th scope="col">Teclados que o usam</th></tr></thead>
+<tbody>
+<tr><th scope="row">ANSI</th><td>Inglês americano, coreano, tailandês, chinês (Pinyin e Zhuyin)</td></tr>
+<tr><th scope="row">ISO</th><td>Português, espanhol, espanhol da América Latina, britânico e irlandês, alemão e austríaco, francês e belga, italiano, suíço, holandês, dinamarquês, norueguês, sueco e finlandês, russo, grego, turco, árabe, hebraico, francês canadense, entre outros</td></tr>
+<tr><th scope="row">JIS</th><td>Japonês</td></tr>
+<tr><th scope="row">ABNT2 (ISO mais uma tecla)</th><td>Português do Brasil</td></tr>
+</tbody>
+</table>
+<p>Os teclados coreanos vêm da família ANSI e acrescentam duas teclas ao lado da barra de espaço: 한/영 alterna entre o alfabeto coreano e o latino, e 한자 converte hangul em hanja. Alguns mercados asiáticos também vendem uma variante do ANSI com um Enter extragrande, que ocupa o lugar do Enter ANSI e o do ISO.</p>
+<p>O formato acompanha o mercado para o qual o teclado foi fabricado. Um notebook comprado nos Estados Unidos continua com o teclado ANSI depois que você muda o Windows ou o macOS para o layout ABNT2, e as teclas que faltam continuam faltando.</p>
+
+<h2>Como saber se o meu teclado é ANSI, ISO ou ABNT2?</h2>
+<p>Olhe o Enter: um Enter de uma fileira indica ANSI, e um Enter alto, de duas fileiras, indica ISO, ABNT2 ou JIS. Estas verificações tiram qualquer dúvida:</p>
+<ol>
+<li>Ache o Enter. Se ele cabe numa fileira e a tecla da barra invertida fica logo acima, o teclado é ANSI.</li>
+<li>Olhe o Shift esquerdo. Se uma tecla o separa do <kbd>Z</kbd>, o teclado é ISO ou ABNT2. No ABNT2 e no britânico, essa tecla traz <kbd>\</kbd> e <kbd>|</kbd>; no alemão, <kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>|</kbd>.</li>
+<li>Olhe a ponta direita da fileira de baixo. Uma tecla de <kbd>/</kbd> e <kbd>?</kbd> entre o ponto e vírgula e um Shift direito mais curto indica ABNT2.</li>
+<li>Olhe ao lado da barra de espaço. Teclas marcadas 無変換 e 変換 dos dois lados de uma barra curta, mais uma tecla ¥ perto do Backspace, indicam JIS.</li>
+<li>Conte as teclas da fileira de baixo entre os dois Shifts. O ANSI tem 10, do <kbd>Z</kbd> à tecla da barra. O ISO e o JIS têm 11, e o ABNT2 tem 12.</li>
+</ol>
+<p>No Mac, o macOS reconhece três tipos de teclado, ANSI, ISO e JIS, e abre o Assistente de Configuração de Teclado quando não identifica um teclado que você conecta. Quando ele erra o tipo, duas teclas trocam de lugar, quase sempre a que fica abaixo do <kbd>Esc</kbd> e a que fica à direita do Shift esquerdo. No macOS Monterey, o <a href="https://support.apple.com/pt-br/guide/mac-help/mchlp2886/12.0/mac">manual da Apple</a> manda abrir Preferências do Sistema, clicar em Teclado e depois em Alterar Tipo de Teclado: o assistente pede que você aperte a tecla à direita do Shift esquerdo e deixa você escolher ANSI, ISO ou JIS.</p>
+
+<h2>ISO ou ANSI: qual é melhor para digitar?</h2>
+<p>Nenhum dos dois formatos se mostrou mais rápido: não encontramos estudo que comparasse a velocidade de digitação no ISO e no ANSI, e os artigos que dizem o contrário não citam nenhum. Os formatos mudam a distância que os mínimos percorrem até três teclas:</p>
+<ul>
+<li><strong>Shift esquerdo, mínimo esquerdo.</strong> O Shift do ISO tem 1,25u, contra 2,25u no ANSI, e a tecla extra preenche o espaço. Um mínimo treinado no ANSI que alcança curto digita <kbd>\</kbd> no lugar de uma maiúscula. Você nota isso sobretudo nas maiúsculas digitadas com a mão direita, como <kbd>H</kbd>, <kbd>J</kbd> ou <kbd>M</kbd>, porque quem digita às cegas segura o Shift esquerdo para elas.</li>
+<li><strong>Enter, mínimo direito.</strong> No ANSI, o Enter vem logo depois da última tecla da linha base. O ISO põe mais uma tecla no meio, então o mínimo anda mais pela linha base ou sobe até a metade de cima do Enter.</li>
+<li><strong>Barra invertida, mínimo direito.</strong> O ISO a traz para a linha base, ao lado do Enter, mais perto que a posição ANSI, no fim da fileira de cima.</li>
+</ul>
+<p>László Monda, da Ultimate Hacking Keyboard, comparou os dois formatos em unidades de tecla e achou o Enter e o Shift esquerdo cerca de uma unidade (ele fala em 20 mm) mais longe do centro do teclado no ISO, e a barra invertida cerca de uma unidade mais perto. Ele lembra que as pessoas apertam o Enter e o Shift esquerdo centenas de vezes por dia, e a barra invertida muito menos.</p>
+<p>Os deslizes que as pessoas notam vêm da troca de formato. Vindo do ANSI, o mínimo direito procura o Enter na linha base e cai na tecla à esquerda do Enter do ISO, que no ABNT2 digita <kbd>]</kbd>. Quem chega ao ABNT2 vindo de outro formato também pode cair na tecla de <kbd>/</kbd> e <kbd>?</kbd> quando busca o Shift direito. Vindo do ISO, um mínimo que sobe para a metade de cima do Enter acerta a barra invertida do ANSI. Esses hábitos somem com repetições lentas e precisas no teclado que você pretende manter, olhos na tela.</p>
+<p>O petitdoigt desenha teclados ANSI, ISO e JIS, então o teclado na tela pode combinar com o da sua mesa, com cada tecla na cor do dedo que a aperta, a tecla extra do ISO incluída. <a href="app:words">Escolha o formato do seu teclado e digite algumas séries de palavras</a> para ver aonde os seus mínimos vão. O <a href="guide:finger-placement">mapa de qual dedo aperta cada tecla</a> mostra o teclado inteiro, e o guia de <a href="guide:type-without-looking">como digitar sem olhar para o teclado</a> ajuda a parar de espiar as teclas.</p>
+
+<h2>Os layouts funcionam em teclados ISO e ANSI?</h2>
+<p>Funcionam: qualquer layout roda em qualquer formato, porque o sistema operacional decide qual caractere cada tecla física digita. O porém é a tecla extra do ISO, onde alguns layouts põem caracteres que não existem em nenhuma outra tecla.</p>
+<ul>
+<li><strong>Layout americano num teclado ISO ou ABNT2.</strong> O layout americano do Windows dá à tecla extra uma segunda <kbd>\</kbd> <kbd>|</kbd>, e a tecla da linha base à esquerda do Enter digita a barra invertida de sempre. Nada se perde.</li>
+<li><strong>Layout ABNT2 num teclado ANSI.</strong> Sem a tecla extra, <kbd>\</kbd> e <kbd>|</kbd> ficam sem tecla nenhuma, porque o layout brasileiro do Windows só os põe ali. A barra e a interrogação voltam por <kbd>AltGr</kbd>+<kbd>Q</kbd> e <kbd>AltGr</kbd>+<kbd>W</kbd>, e a tecla acima do Enter digita <kbd>]</kbd> e <kbd>}</kbd>.</li>
+<li><strong>Layout português num teclado ANSI.</strong> O layout de Portugal só põe <kbd>&lt;</kbd> e <kbd>&gt;</kbd> na tecla extra, e o alemão, o francês e o espanhol fazem o mesmo. Num ANSI, esses sinais pedem um remapeamento ou outro layout. Os guias de <a href="guide:qwertz-vs-qwerty">QWERTZ ou QWERTY</a> e de <a href="guide:azerty-vs-qwerty">AZERTY ou QWERTY</a> tratam do resto desses layouts.</li>
+</ul>
+<p>Quem tem um teclado ANSI e escreve em português costuma usar o layout americano internacional. Nele, <kbd>'</kbd>, <kbd>`</kbd>, <kbd>"</kbd>, <kbd>^</kbd> e <kbd>~</kbd> viram teclas mortas: no Windows, o apóstrofo seguido de <kbd>C</kbd> dá ç, e o til seguido de <kbd>A</kbd> dá ã. Para ter o apóstrofo sozinho, aperte a tecla e depois a barra de espaço. Para programar, o ABNT2 também se sai bem: os colchetes e as chaves têm teclas próprias, enquanto o layout alemão põe <kbd>{</kbd> <kbd>[</kbd> <kbd>]</kbd> <kbd>}</kbd> em <kbd>AltGr</kbd> com <kbd>7</kbd> a <kbd>0</kbd>.</p>
+<p>Dvorak, Colemak e Workman reorganizam letras na parte do teclado que os formatos compartilham, então se comportam igual no ISO e no ANSI. O Colemak-DH é a exceção: ele usa o angle mod, que desloca as teclas de baixo à esquerda uma posição para a esquerda. Num teclado ISO ou ABNT2, a tecla extra absorve o deslocamento; o DreymaR's Big Bag of Keyboard Tricks a chama de “praticamente uma tecla sobressalente”. O ANSI não tem essa sobra, então a versão ANSI mais comum leva o <kbd>Z</kbd> para o meio da fileira de baixo. O petitdoigt aplica o layout ele mesmo a partir da posição física das teclas, então você pode <a href="app:words?layout=colemak-dh">testar o Colemak-DH no navegador</a> sem instalar nada. O <a href="guide:colemak">guia do layout Colemak</a> explica o resto.</p>
+
+<h2>O que é um teclado JIS?</h2>
+<p>JIS é o formato de teclado usado no Japão: um Enter alto, no estilo ISO, mais teclas extras para escrever em japonês. Um teclado JIS completo tem 109 teclas, quatro a mais que o ISO e cinco a mais que o ANSI.</p>
+<p>As teclas extras ganham espaço encurtando as vizinhas. A barra de espaço diminui para caber 無変換 (muhenkan) à esquerda e 変換 (henkan) e uma tecla de kana à direita: henkan converte o kana digitado em kanji, muhenkan o deixa sem conversão, e a tecla de kana alterna entre hiragana e katakana. O Backspace encolhe para uma unidade e abre lugar para uma tecla ¥, e o Shift direito encolhe para caber uma tecla ろ (ro) ao lado da barra. O Shift esquerdo continua comprido, então a fileira de baixo tem 11 teclas, como no ISO, com a tecla extra na ponta oposta. A tecla do canto superior esquerdo vira 半角/全角 (hankaku/zenkaku), que alterna entre caracteres de meia largura e de largura inteira.</p>
+<p>As letras ficam exatamente onde estão no ANSI e no ISO, então a linha base de quem digita às cegas funciona igual num teclado japonês. Os alcances que mudam ficam nas bordas, perto do Backspace e do Shift direito, e os polegares trabalham numa barra de espaço mais estreita.</p>
+
+<h2>Teclado ANSI ou ABNT2: qual comprar?</h2>
+<p>Compre o formato que o seu layout espera. Se você escreve em português todos os dias no layout ABNT2, fique com um teclado ABNT2: o Ç e os acentos têm teclas próprias, e a barra invertida e a interrogação não somem. Em Portugal, um teclado ISO no layout português dá o mesmo conforto. Se você prefere o layout americano internacional, por exemplo para programar, ou digita em Dvorak, Colemak ou Workman, um ANSI tem todas as teclas de que você precisa. Quem usa Colemak-DH pode preferir o ISO ou o ABNT2, onde o angle mod ganha a sua tecla sobressalente.</p>
+<p>Se você já digita bem às cegas num formato, ficar nele poupa você de retreinar o Enter e os Shifts. As keycaps pesam para quem personaliza teclados mecânicos: a Corsair observa que os jogos de keycaps sempre saem em ANSI, mas nem sempre em ISO, e a Keebsforall considera as opções para JIS muito limitadas. Para um ABNT2, o jogo precisa das peças do ISO, da tecla de / e ? e de um Shift direito mais curto.</p>

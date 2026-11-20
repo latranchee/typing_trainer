@@ -1,0 +1,131 @@
+<!--meta
+{
+  "id": "typing-accuracy",
+  "lang": "es",
+  "slug": "precision-al-escribir",
+  "title": "Precisión al escribir: cuánto es bueno y cómo mejorarla",
+  "description": "Precisión al escribir: cómo se calcula, por qué cada web da otra cifra, qué porcentaje buscar y 7 pasos para mejorarla, con datos de 168 000 personas.",
+  "h1": "Precisión al escribir: qué porcentaje es bueno y cómo mejorarla",
+  "keyword": "precisión al escribir",
+  "keywords_secondary": ["precisión de escritura", "cómo mejorar la precisión al escribir", "precisión en mecanografía", "velocidad o precisión", "porcentaje de precisión"],
+  "summary": "La precisión al escribir es el porcentaje de tus pulsaciones que caen en la tecla correcta: con un 96 %, unas 4 de cada 100 teclas fueron erróneas. Apunta al 96 % o más mientras practicas y al 98 % cuando ya escribas sin mirar. Cada web la calcula a su manera, porque unas cuentan los errores que corregiste y otras solo los que quedan en el texto. La precisión también decide tu velocidad: cada error corregido cuesta al menos dos pulsaciones más.",
+  "faq": [
+    {"q": "¿Un 95 % de precisión es bueno?", "a": "Es un nivel de trabajo aceptable, un punto por debajo del 96 % que recomienda esta guía para practicar. Con un 95 % de precisión por pulsación, más o menos una pulsación de cada diez se va en cometer o borrar un error. Typing.com propone a los docentes aceptar el 95 % al empezar el curso y subir el listón hacia el 98 %, y la prueba de mecanografía del servicio civil de Nueva York pide un 96 %."},
+    {"q": "¿Un 90 % de precisión es bueno?", "a": "Para quien empieza, es un punto de partida normal. Para los demás es bajo: con un 90 %, una tecla de cada diez es errónea, y si sumas los retrocesos, casi una quinta parte de tus pulsaciones se va en errores. Baja el ritmo hasta mantener el 96 % y construye la velocidad a partir de ahí."},
+    {"q": "¿Borrar con la tecla de retroceso baja la precisión?", "a": "Depende de cómo puntúe la web. Con la precisión por pulsación, la tecla equivocada cuenta en tu contra aunque después la borres. Las pruebas que solo califican el texto final ignoran los errores corregidos, pero el tiempo que gastaste en corregirlos sigue bajando tus palabras por minuto."},
+    {"q": "¿Conviene corregir los errores mientras practico o seguir escribiendo?", "a": "Corrígelos en cuanto los veas. Un texto real tiene que quedar bien escrito, así que corregir es el hábito que vale la pena ensayar. Además, así cada error te cuesta tiempo, y eso te empuja hacia un ritmo que controlas. Sigue sin corregir solo cuando las reglas de una prueba lo pidan."},
+    {"q": "¿Se puede escribir con un 100 % de precisión?", "a": "En una frase corta, sí. En una prueba más larga, ni los más rápidos suelen lograrlo: en el estudio de Aalto con 168 000 personas, el 10 % más rápido seguía usando retroceso o suprimir en el 3,4 % de sus pulsaciones. Apunta a un 98 % estable y toma una serie perfecta como un regalo."},
+    {"q": "¿Por qué baja mi precisión con un teclado o una distribución nueva?", "a": "Tus dedos han aprendido dónde están las teclas en tu teclado de siempre, y cualquier cambio manda algunas pulsaciones a la tecla equivocada. Pasar de un teclado de España a uno latinoamericano basta: la tecla del acento salta de junto a la Ñ a junto a la P. Cuenta con un bajón, baja al ritmo que te da un 96 % y deja que la precisión se recupere."}
+  ],
+  "sources": [
+    {"title": "Dhakal, Feit, Kristensson y Oulasvirta, Observations on Typing from 136 Million Keystrokes, CHI 2018 (página del proyecto)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Dhakal, Feit, Kristensson y Oulasvirta, Observations on Typing from 136 Million Keystrokes, CHI 2018 (artículo en PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Feit, Weir y Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing, CHI 2016", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Universidad Vanderbilt, Today's self-taught typists almost as fast as touch typists (2016)", "url": "https://www.eurekalert.org/news-releases/520529"},
+    {"title": "Departamento de Servicio Civil del estado de Nueva York, Keyboard Test Administration and PTM User Guide", "url": "https://www.cs.ny.gov/extdocs/pdf/PTMUserGuide.pdf"},
+    {"title": "Typing.com, What is good accuracy when it comes to typing?", "url": "https://www.typing.com/blog/good-accuracy-comes-typing/"},
+    {"title": "Monkeytype, código de la página «about» (definición de acc)", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Ministerio de Justicia, Tribunal Calificador Único de Tramitación Procesal y Administrativa (Orden JUS/1166/2017), baremo de corrección del ejercicio de Word (PDF)", "url": "https://www.mjusticia.gob.es/es/Ciudadano/EmpleoPublico/Documents/1292428835163-Anexo_II._Baremo.PDF"},
+    {"title": "KbdLayout: distribución española de Windows (KBDSP)", "url": "https://kbdlayout.info/kbdsp"},
+    {"title": "KbdLayout: distribución latinoamericana de Windows (KBDLA)", "url": "https://kbdlayout.info/kbdla"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Mide tu precisión al escribir", "drill": "words"}
+}
+-->
+<h2>¿Qué es la precisión al escribir?</h2>
+<p>La precisión al escribir es la parte de lo que tecleas que coincide con el texto que querías escribir, expresada en porcentaje. Con un 98 %, unas 2 pulsaciones de cada 100 fueron a la tecla equivocada. Los entrenadores la muestran junto a tus palabras por minuto porque cada cifra mide algo distinto: las ppm cuentan el texto que produjiste, y la precisión dice cuánto de tu esfuerzo se fue en errores por el camino.</p>
+<p>El tiempo que pasas corrigiendo ya está dentro de tus ppm. Cada error corregido cuesta al menos dos pulsaciones más, la de <kbd>Retroceso</kbd> y la de la tecla correcta, además del instante que tardas en darte cuenta.</p>
+
+<h2>¿Cómo se calcula la precisión al escribir?</h2>
+<p>La precisión se calcula dividiendo los caracteres correctos entre todos los caracteres tecleados y multiplicando por 100. Las webs no se ponen de acuerdo sobre qué significa «todos los caracteres tecleados», así que el mismo párrafo puede dar un 95 % en una prueba y un 99 % en otra.</p>
+<table>
+<caption>Formas habituales de puntuar la precisión</caption>
+<thead>
+<tr><th scope="col">Método</th><th scope="col">Fórmula</th><th scope="col">¿Cuentan los errores corregidos?</th><th scope="col">Dónde lo encuentras</th></tr>
+</thead>
+<tbody>
+<tr><td>Precisión por pulsación</td><td>teclas correctas ÷ (teclas correctas + teclas erróneas)</td><td>Sí, aunque los borres</td><td>Entrenadores que puntúan cada tecla al pulsarla</td></tr>
+<tr><td>Precisión del texto final</td><td>caracteres que coinciden en el texto terminado ÷ longitud del texto</td><td>No, solo los que quedan</td><td>Investigación, donde aparece como «tasa de errores no corregidos»</td></tr>
+<tr><td>Penalización por errores</td><td>errores del texto final, restados de la velocidad o comparados con un límite</td><td>No</td><td>Oposiciones y pruebas de empleo</td></tr>
+</tbody>
+</table>
+<p>Monkeytype, por ejemplo, puntúa por pulsación: <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">su definición</a> de precisión es el porcentaje de teclas pulsadas correctamente. Para ver lo lejos que quedan los métodos, imagina que escribes una frase de 100 caracteres. Por el camino pulsas 5 teclas equivocadas, detectas 4 y las borras con <kbd>Retroceso</kbd>, y una se queda en el texto. En total has pulsado 99 teclas correctas, 5 erróneas y 4 retrocesos.</p>
+<ul>
+<li>Precisión por pulsación: 99 ÷ (99 + 5) = 95,2 %</li>
+<li>Precisión del texto final: 99 caracteres correctos de 100 = 99 %</li>
+<li>Errores: 1</li>
+</ul>
+<p>Para practicar, la precisión por pulsación es la cifra más útil. Muestra los errores que corregiste, y en esas correcciones se te escapa la velocidad. La precisión del texto final es la que ve quien lee tu correo. Algunas pruebas meten los errores dentro de la velocidad. En la oposición a Tramitación Procesal y Administrativa convocada en 2017, el <a href="https://www.mjusticia.gob.es/es/Ciudadano/EmpleoPublico/Documents/1292428835163-Anexo_II._Baremo.PDF">baremo del Ministerio de Justicia</a> restaba una pulsación por cada carácter erróneo, omitido o sobrante, y entre 2 y 4 por cada palabra entera omitida o añadida; lo que quedaba eran las pulsaciones netas, y 180 netas por minuto daban el mínimo de puntos de velocidad. El error de la frase de ejemplo costaría allí una pulsación. La <a href="guide:words-per-minute">guía de las palabras por minuto</a> explica cómo se calculan las ppm brutas y netas.</p>
+
+<h2>¿Qué porcentaje de precisión es bueno?</h2>
+<p>Una buena precisión al escribir es un 96 % o más por pulsación, y un 98 % o más cuando ya escribes sin mirar el teclado. Con un 94 %, más o menos una pulsación de cada nueve ya se va en cometer o borrar un error. Usa estas franjas como regla práctica para la precisión por pulsación:</p>
+<table>
+<caption>Franjas de precisión por pulsación para practicar</caption>
+<thead>
+<tr><th scope="col">Precisión</th><th scope="col">Qué significa</th><th scope="col">Qué hacer</th></tr>
+</thead>
+<tbody>
+<tr><td>Menos del 90 %</td><td>Una tecla de cada diez o más es errónea. Si cuentas también los retrocesos, casi una quinta parte de tus pulsaciones se va en errores.</td><td>Baja mucho el ritmo y revisa la posición de los dedos.</td></tr>
+<tr><td>90–95 %</td><td>Un error cada 10 a 20 teclas. Normal mientras aprendes mecanografía o una distribución nueva, o cuando fuerzas la velocidad.</td><td>Baja el ritmo hasta mantener el 96 %.</td></tr>
+<tr><td>96–97 %</td><td>Un error cada 25 a 33 teclas, más o menos uno cada cinco a siete palabras. Sólido.</td><td>Quédate a esa velocidad y trabaja tus teclas más débiles.</td></tr>
+<tr><td>98 % o más</td><td>Un error cada 50 teclas o más, más o menos uno cada diez palabras. Escritura limpia.</td><td>Sube la velocidad poco a poco.</td></tr>
+</tbody>
+</table>
+<p>Las pruebas de selección fijan sus propios listones. La prueba de teclado del servicio civil del estado de Nueva York pide 30 ppm con al menos un 96 % de precisión durante cinco minutos, lo que a 30 ppm permite 6 errores. Para la escuela, <a href="https://www.typing.com/blog/good-accuracy-comes-typing/">Typing.com recomienda a los docentes</a> que los alumnos de cuarto grado en adelante apunten al 98 % o más. Las velocidades de referencia por nivel están en la guía de la <a href="guide:typing-speed">velocidad de escritura promedio</a>.</p>
+
+<h3>¿Cuál es la precisión media al escribir?</h3>
+<p>En un estudio con 168 000 personas que hicieron una prueba de mecanografía en internet, las frases terminadas del participante medio eran correctas en un 98,8 %, y el 6,3 % de sus pulsaciones fueron a corregir errores con <kbd>Retroceso</kbd> o <kbd>Supr</kbd>. Investigadores de la Universidad Aalto y de la Universidad de Cambridge registraron esos <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">136 millones de pulsaciones</a> de voluntarios que copiaban frases en una prueba en línea. La mayoría corregía casi todos sus errores: el 90 % dejaba menos de un 2,66 % de errores en sus frases terminadas.</p>
+<table>
+<caption>Errores y correcciones de 168 000 personas en una prueba en línea (Dhakal y colegas, CHI 2018)</caption>
+<thead>
+<tr><th scope="col">Grupo</th><th scope="col">Errores que quedan en el texto final</th><th scope="col">Pulsaciones de retroceso o suprimir</th></tr>
+</thead>
+<tbody>
+<tr><td>El 10 % más rápido (por encima de unas 78 ppm)</td><td>0,71 %</td><td>3,4 %</td></tr>
+<tr><td>Todos los participantes (media de 52 ppm)</td><td>1,17 %</td><td>6,3 %</td></tr>
+<tr><td>El 10 % más lento (por debajo de unas 26 ppm)</td><td>1,78 %</td><td>9,05 %</td></tr>
+</tbody>
+</table>
+<p>El grupo más lento pulsaba retroceso o suprimir más de dos veces y media más que el más rápido, y aun así dejaba en el texto unas dos veces y media más errores. Los autores apuntan que quizá quienes escriben despacio detectan peor sus errores.</p>
+
+<h2>¿Qué importa más, la velocidad o la precisión?</h2>
+<p>La precisión va primero, porque los errores cuestan velocidad. En los datos de Aalto, quienes cometían y corregían menos errores escribían más rápido: la velocidad tenía una correlación negativa con la proporción de pulsaciones de retroceso y suprimir (r = −0,36) y con las pulsaciones por carácter (r = −0,40). Los autores concluyen que reducir un poco los errores puede traer una gran ganancia de velocidad.</p>
+<p>Con un 95 % de precisión por pulsación, pulsas unas 5 teclas equivocadas por cada 95 correctas, y cada una necesita un retroceso, así que más o menos una pulsación de cada diez comete o borra un error. Con un 98 %, la proporción baja a una de cada 25. A eso se suma la pausa mientras ves el error y recuperas el sitio, y un error que notas tarde cuesta más, porque borras letras correctas para llegar a él.</p>
+<p>Dentro de una misma sesión, velocidad y precisión tiran en direcciones opuestas: si superas el ritmo que tus dedos aguantan, los errores suben. Entre personas distintas, las más rápidas son también las más precisas, como muestra la tabla anterior. Por eso conviene escribir a una velocidad que puedas mantener limpia y subirla a medida que los movimientos se vuelven automáticos. La guía para <a href="guide:how-to-type-faster">escribir más rápido en el teclado</a> se ocupa de la parte de la velocidad.</p>
+
+<h2>¿Por qué cometo tantos errores al escribir?</h2>
+<p>El error más común al teclear es pulsar una letra equivocada en lugar de la correcta, y los investigadores sospechan que nace de una escritura poco constante. En una muestra de 783 participantes del estudio de Aalto, que escribían en inglés, los errores se repartían en tres tipos:</p>
+<table>
+<caption>Tipos de error y su frecuencia (Dhakal y colegas, CHI 2018, muestra de 783 participantes)</caption>
+<thead>
+<tr><th scope="col">Tipo de error</th><th scope="col">Ejemplo del estudio</th><th scope="col">Frecuencia</th></tr>
+</thead>
+<tbody>
+<tr><td>Sustitución: una letra equivocada en lugar de la correcta</td><td><em>riad</em> por <em>road</em></td><td>1,65 %</td></tr>
+<tr><td>Omisión: falta una letra</td><td><em>commitee</em> por <em>committee</em></td><td>0,80 %</td></tr>
+<tr><td>Inserción: sobra una letra</td><td><em>string</em> por <em>sting</em></td><td>0,67 %</td></tr>
+</tbody>
+</table>
+<p>Las sustituciones eran las más frecuentes, y separaban a los lentos de los rápidos más que cualquier otro tipo. La hipótesis de los investigadores es que aparecen cuando la persona es menos constante al escribir y tiene una representación mental pobre de dónde están sus dedos. Un <a href="https://userinterfaces.aalto.fi/how-we-type">estudio con captura de movimiento de 30 personas</a>, también de Aalto, apunta en la misma dirección: uno de sus tres predictores del alto rendimiento era la asignación inequívoca, es decir, pulsar cada letra siempre con el mismo dedo. Si un día pulsas la <kbd>C</kbd> con el índice y otro con el medio, tu mano tiene dos caminos a medio aprender hacia esa tecla.</p>
+<p>Vigila estos hábitos:</p>
+<ul>
+<li><strong>Salirte de la fila de reposo.</strong> Si tus dedos no vuelven a <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> y <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>Ñ</kbd> entre palabra y palabra, cada alcance sale de un sitio distinto y cae una tecla al lado. Los relieves de la <kbd>F</kbd> y la <kbd>J</kbd> te permiten encontrar la posición sin mirar.</li>
+<li><strong>Mirar las teclas.</strong> Los errores aparecen en la pantalla, y no puedes mirar la pantalla y el teclado a la vez. En un <a href="https://www.eurekalert.org/news-releases/520529">estudio de la Universidad Vanderbilt</a> con 48 personas, las que usaban los dedos a su manera dependían de ver el teclado: al taparlo, su velocidad y su precisión caían, mientras que quienes escribían al tacto se mantenían más o menos igual. Los investigadores sugieren que, como esas personas solo miran la pantalla a ratos, quizá detectan menos errores.</li>
+<li><strong>Mayúsculas con la Mayús equivocada.</strong> Pulsar la <kbd>Mayús</kbd> izquierda para una <kbd>A</kbd> mayúscula obliga a una mano a hacer dos cosas y la saca de su sitio. Usa la Mayús de la mano contraria a la letra.</li>
+<li><strong>Letras en el orden equivocado.</strong> <em>qeu</em> por <em>que</em> sale cuando una mano se adelanta a la otra. Practica a un ritmo regular, aunque sea más lento, hasta que el orden se mantenga.</li>
+<li><strong>Tildes olvidadas o mal puestas.</strong> Cada vocal con tilde pide dos pulsaciones: primero la tecla del acento, con el meñique derecho, y después la vocal. Esa tecla está junto a la <kbd>Ñ</kbd> en el teclado de España y junto a la <kbd>P</kbd> en el latinoamericano. Si escribes <em>esta</em> por <em>está</em> a menudo, practica palabras con tilde aparte: <em>está, también, canción, aquí, más</em>.</li>
+<li><strong>Dedos débiles.</strong> Si tus errores se acumulan en la <kbd>Q</kbd>, la <kbd>P</kbd>, la <kbd>Z</kbd>, la <kbd>Ñ</kbd> o la <kbd>X</kbd>, el meñique o el anular que las pulsa necesita práctica propia. La guía de <a href="guide:typing-exercises">ejercicios de mecanografía</a> trae series para esos dedos.</li>
+</ul>
+
+<h2>¿Cómo mejorar la precisión al escribir?</h2>
+<p>Para mejorar la precisión al escribir, practica a una velocidad a la que te mantengas en el 96 % o más y entrena los dedos y los pares de letras concretos que causan tus errores. Paso a paso:</p>
+<ol>
+<li><strong>Encuentra tu velocidad limpia.</strong> Escribe unas cuantas series de un minuto con palabras corrientes y mira tu precisión. La velocidad a la que se queda en el 96 % o más es tu velocidad de práctica por ahora, aunque te parezca lenta.</li>
+<li><strong>Da a cada tecla un solo dedo.</strong> Consulta <a href="guide:finger-placement">qué dedo pulsa cada tecla</a> y respétalo, también en las teclas que es fácil tomar con la mano equivocada: la <kbd>B</kbd> es del índice izquierdo y la <kbd>Y</kbd> del índice derecho. petitdoigt colorea cada tecla según el dedo que debe pulsarla y resalta ese dedo mientras escribes, así que un vicio de dedo se vuelve visible. Un navegador no puede ver tus manos, así que el entrenador no comprueba qué dedo usaste; esa parte depende de ti.</li>
+<li><strong>Mantén la vista en la pantalla.</strong> Es donde aparecen los errores. Si todavía miras hacia abajo, la guía para <a href="guide:type-without-looking">escribir sin mirar el teclado</a> te ayuda a dejar el hábito, y un teclado en pantalla puede sustituir a las teclas mientras aprendes.</li>
+<li><strong>Averigua dónde están tus errores.</strong> Una sola cifra de precisión para toda la serie esconde qué teclas la causan. La página <a href="app:stats">stats</a> del entrenador desglosa tus resultados por dedo y por letra en cada distribución, y lista tus transiciones más débiles entre teclas con su precisión. Algunos errores solo aparecen entre dos teclas concretas, como la <kbd>N</kbd> y la <kbd>U</kbd> de <em>nunca</em>, que el índice derecho escribe él solo. En modo adaptativo, el ejercicio <a href="app:pairs">pares</a> arma sus series sobre todo con tus transiciones más lentas y con más errores.</li>
+<li><strong>Haz que cada error cueste un retroceso.</strong> Corrige cada error en cuanto lo veas, como harías en un correo de verdad. El modo hardcore lo vuelve estricto: una tecla equivocada se queda en el texto hasta que la borras con <kbd>Retroceso</kbd>.</li>
+<li><strong>Haz sesiones cortas.</strong> Para cuando tu precisión baje dos o tres series seguidas, porque practicar cansado ensaya la versión descuidada de cada movimiento.</li>
+<li><strong>Sube la velocidad poco a poco.</strong> Cuando mantengas el 98 % a tu velocidad de práctica durante varias sesiones, escribe unas pocas ppm más rápido. Si la precisión baja del 96 %, vuelve a la última velocidad que podías mantener limpia.</li>
+</ol>

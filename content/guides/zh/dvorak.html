@@ -1,0 +1,173 @@
+<!--meta
+{
+  "id": "dvorak",
+  "lang": "zh",
+  "slug": "dvorak",
+  "title": "Dvorak键盘真的更快吗？布局详解、学习方法与免费试用",
+  "description": "Dvorak 键盘逐键对照 QWERTY，1944 和 1956 年的速度研究到底发现了什么，用拼音打中文时手指分工怎么变，以及在浏览器里免费试用 Dvorak 的方法。",
+  "h1": "Dvorak 键盘：真的更快吗，怎么学？",
+  "keyword": "Dvorak键盘",
+  "keywords_secondary": ["Dvorak布局", "德沃夏克键盘", "Dvorak和QWERTY哪个快", "Dvorak键盘怎么学", "Dvorak打拼音"],
+  "summary": "Dvorak 键盘（德沃夏克键盘）是为英文设计的替代键盘布局，由 August Dvorak 和 William Dealey 在 1936 年取得美国专利：元音放在左手基准行，最常用的辅音放在右手基准行。按 Carpalx 打字模型统计，Dvorak 有 71% 的按键落在基准行，QWERTY 只有 34%。它能不能让你打得更快仍有争议，因为经典的速度研究年代久远，主持者的立场也很鲜明。",
+  "faq": [
+    {
+      "q": "打 Dvorak 需要特殊的键盘吗？",
+      "a": "不需要。操作系统会改变每个物理键打出的字符，任何键盘都行。键帽上的字母会对不上，正好逼你学会不看键盘；显示 Dvorak 字母的屏幕键盘可以代替键帽给你提示。Matias 也卖过把 Dvorak 做进硬件、按一个键就能切回 QWERTY 的键盘。"
+    },
+    {
+      "q": "Dvorak 键盘的最快打字纪录是多少？",
+      "a": "最有名的是 Dvorak 打字员 Barbara Blackburn。1985 年版《吉尼斯世界纪录》说她能以每分钟 150 词持续打 50 分钟，最高达到 170 词；1985 年《西雅图时报》报道她短时间内达到每分钟 212 词。吉尼斯随后取消了这类纪录，1986 年版写道，电动打字机和电脑打字机上的纪录无法准确比较。"
+    },
+    {
+      "q": "Dvorak 对手腕疼痛有帮助吗？",
+      "a": "有些用户说更轻松，Carpalx 模型也算出 Dvorak 的打字费力程度比 QWERTY 低约 25%。同一个模型显示，Dvorak 上小指承担 18% 的按键，QWERTY 是 10%，右手的负担也更重。如果小指或右手已经疼，Dvorak 会把更多活儿压过去。疼痛持续不退，请去看医生。"
+    },
+    {
+      "q": "Dvorak 适合写代码吗？",
+      "a": "能用，只是有些别扭。美式 Dvorak 把方括号和花括号放在数字行右端，复制和粘贴也挪到了右手。Roland Kaufmann 设计的程序员 Dvorak 把括号和常用代码符号放在上排，数字顺序是 7531902468。部分 Linux 发行版自带它，Windows 和 macOS 没有。"
+    },
+    {
+      "q": "用 Dvorak 能打游戏吗？",
+      "a": "只有强制使用 W、A、S、D 字母的游戏会出问题。在 Dvorak 上这四个字母分散在四个键上，其中三个在通常握鼠标的右手下，英文维基百科说硬编码 WASD 的游戏几乎没法玩。能改键位、或者能识别 Dvorak 并自动调整的游戏都没问题。"
+    },
+    {
+      "q": "Dvorak 为什么没有取代 QWERTY？",
+      "a": "反对者的主要理由是重新培训的成本。1950 年代美国政府考虑更换时，Earle Strong 的 GSA 研究认为重新培训打字员永远收不回成本，建议加强 QWERTY 培训。经济学家 Liebowitz 和 Margolis 认为，没有哪种竞争布局的优势大到值得更换。Dvorak 的支持者则说 Strong 的研究对 Dvorak 有偏见。"
+    }
+  ],
+  "sources": [
+    {"title": "US patent 2,040,248, Typewriter keyboard (Dvorak and Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "维基百科：德沃夏克键盘", "url": "https://zh.wikipedia.org/zh-cn/%E5%BE%B7%E6%B2%83%E5%A4%8F%E5%85%8B%E9%94%AE%E7%9B%98"},
+    {"title": "Carpalx: Dvorak layout analysis (Martin Krzywinski)", "url": "https://mk.bcgsc.ca/carpalx/?dvorak"},
+    {"title": "Typing Errors, Stan Liebowitz and Stephen Margolis, Reason, June 1996", "url": "https://reason.com/1996/06/01/typing-errors/"},
+    {"title": "The Fable of the Keys, Journal of Law and Economics 33(1), 1990 (RePEc record)", "url": "https://ideas.repec.org/a/ucp/jlawec/v33y1990i1p1-25.html"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Microsoft 支持：管理 Windows 中的语言和键盘/输入布局设置", "url": "https://support.microsoft.com/zh-cn/help/4496404"},
+    {"title": "Windows keyboard layouts, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Apple 支持：在 Mac 上使用德沃夏克键盘布局", "url": "https://support.apple.com/zh-cn/guide/mac-help/mh27976/mac"},
+    {"title": "iOS 16 Features an All-New iPhone Keyboard Layout Option, MacRumors", "url": "https://www.macrumors.com/2022/10/14/ios-16-dvorak-keyboard"},
+    {"title": "Barbara Blackburn (typist), Wikipedia", "url": "https://en.wikipedia.org/wiki/Barbara_Blackburn_(typist)"},
+    {"title": "Matias Dvorak Keyboard", "url": "https://matias.ca/dvorak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "在浏览器里试打 Dvorak", "drill": "words", "layout": "dvorak"}
+}
+-->
+<p>Dvorak 键盘把英文最常用的字母搬到了基准行。左手停在元音 <kbd>A</kbd> <kbd>O</kbd> <kbd>E</kbd> <kbd>U</kbd> 上，右手停在 <kbd>H</kbd> <kbd>T</kbd> <kbd>N</kbd> <kbd>S</kbd> 上，两根食指再各向内多管一个基准行字母：左边是 <kbd>I</kbd>，右边是 <kbd>D</kbd>。</p>
+
+<h2>Dvorak 键盘布局是什么？</h2>
+<p>Dvorak 布局的正式名称是 Dvorak 简化键盘（Dvorak Simplified Keyboard），中文也叫德沃夏克键盘，是一种为英文设计的替代字母键排列。华盛顿大学的教育心理学家 August Dvorak 和 William Dealey 一起设计了它。两人在 1932 年 5 月申请专利，1936 年 5 月 12 日获得美国专利 2,040,248，标题就叫“Typewriter keyboard”（打字机键盘）。1982 年，ANSI 把 Dvorak 认定为替代标准布局。</p>
+<p>设计遵循几条规则。最常用的字母和字母组合放在手指停放的基准行，最少用的放到下排。元音在左、常用辅音在右，大多数音节就会在两只手之间来回交替，右手的工作量稍多一些。Dvorak 还尽量避开由相邻手指连打的字母组合，并让击键从键盘两侧往中间走。</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>美式 Dvorak 布局，每个键按负责它的手指着色。手指停在 A O E U 和 H T N S 上。</figcaption></figure>
+
+<h2>Dvorak 键盘上每个字母在哪里？</h2>
+<p>除了 <kbd>A</kbd> 和 <kbd>M</kbd>，每个字母都换了键。下表逐行列出美式 Dvorak，并对照同一个物理键在 QWERTY 上印的字符。</p>
+<table>
+<caption>QWERTY 和美式 Dvorak 的字母行（同一组物理键）</caption>
+<thead><tr><th scope="col">行</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>上排</td><td>Q W E R T Y U I O P [ ]</td><td>' , . P Y F G C R L / =</td></tr>
+<tr><td>基准行</td><td>A S D F G H J K L ; '</td><td>A O E U I D H T N S -</td></tr>
+<tr><td>下排</td><td>Z X C V B N M , . /</td><td>; Q J K X B M W V Z</td></tr>
+<tr><td>数字行右端</td><td>- =</td><td>[ ]</td></tr>
+</tbody>
+</table>
+<p>只用基准行就能打出很多最常见的英文单词：<em>the</em>、<em>and</em>、<em>that</em>、<em>this</em>、<em>into</em> 都不用离开它。在 QWERTY 上，光是 <em>the</em> 就要两根手指伸到上排。</p>
+<p>有几处改动最容易让 QWERTY 用户措手不及：</p>
+<ul>
+<li><strong>标点。</strong>逗号和句号移到上排，由左手无名指和中指负责；撇号在 <kbd>A</kbd> 上方；连字符移到 <kbd>S</kbd> 右边。</li>
+<li><strong>快捷键。</strong><kbd>C</kbd> 在 QWERTY 的 <kbd>I</kbd> 位置，<kbd>V</kbd> 在句号位置，<kbd>Z</kbd> 在斜杠位置。复制、粘贴和撤销都挪到了右手，右手握着鼠标时就很别扭。Colemak FAQ 也把这一点列为它对 Dvorak 的不满之一。</li>
+<li><strong>右手小指。</strong>它要负责 <kbd>L</kbd>、<kbd>S</kbd>、<kbd>Z</kbd>、连字符、斜杠和等号。Colemak FAQ 还指出，<kbd>L</kbd> 和 <kbd>S</kbd> 这两个常用字母经常前后相连，都落在这一根手指上。</li>
+<li><strong>方括号。</strong><kbd>[</kbd> 和 <kbd>]</kbd> 移到数字行最右端，也就是 QWERTY 放减号和等号的地方。</li>
+</ul>
+
+<h2>用拼音打中文，Dvorak 好用吗？</h2>
+<p>Dvorak 按英文的字母频率设计，下文 Carpalx 的数字也都用英文文本算出，我们没找到针对拼音的同类测量。手指分工的变化可以直接从键位推出来。元音全在左手，辅音大多在右手，所以 <em>de</em>（的）、<em>le</em>（了）、<em>men</em>（们）这类音节会左右手交替；zh、ch、sh 和 -ng 都留在右手。麻烦在左手食指：它负责 P、Y、U、I、K、X 六个字母，下表里好几组常见组合都要它连按。</p>
+<table>
+<caption>几组拼音组合在 QWERTY 和 Dvorak 上由哪根手指打</caption>
+<thead><tr><th scope="col">组合</th><th scope="col">例字</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>de</td><td>的</td><td>左手中指连按两键</td><td>右手食指，再换左手中指</td></tr>
+<tr><td>yu</td><td>鱼</td><td>右手食指连按两键</td><td>左手食指连按两键</td></tr>
+<tr><td>yi</td><td>一</td><td>右手食指，再换右手中指</td><td>左手食指连按两键</td></tr>
+<tr><td>xi</td><td>西</td><td>左手无名指，再换右手中指</td><td>左手食指连按两键</td></tr>
+<tr><td>ui、iu</td><td>对（dui）、就（jiu）</td><td>右手食指和右手中指</td><td>左手食指连按两键</td></tr>
+<tr><td>ng</td><td>中（zhong）</td><td>右手食指，再换左手食指</td><td>右手无名指，再换右手食指</td></tr>
+</tbody>
+</table>
+<p>QWERTY 的 yu、hu、ju 都压在右手食指上。Dvorak 解决了 de 这样的组合，又把一批新的连按交给了左手食指，xiu、kui 甚至三个键都归它。拼音打得多的人，最好先用一段自己常打的文字试一试，再决定换不换。</p>
+
+<h2>Dvorak 比 QWERTY 快吗？</h2>
+<p>现有证据不足以下结论。人人引用的两项研究分别来自 1944 年和 1956 年，主持者事先都已经选好了立场。</p>
+<table>
+<caption>两项经典的 Dvorak 与 QWERTY 对比研究</caption>
+<thead><tr><th scope="col">研究</th><th scope="col">发现</th><th scope="col">争议在哪里</th></tr></thead>
+<tbody>
+<tr><td>美国海军，1944 年</td><td>14 名打字员改学 Dvorak，训练 83 小时后从每分钟 32 个净单词提高到 56 个，增长 75%。18 名接受额外训练的 QWERTY 打字员提高了 28%。</td><td>Earle Strong 称，持有专利的 Dvorak 本人主持了测试。Liebowitz 和 Margolis 发现，QWERTY 组起始成绩的平均方法让这一组测得的进步几乎少了一半。</td></tr>
+<tr><td>美国联邦总务署（GSA，Earle Strong），1956 年</td><td>10 名政府打字员每天练四小时，用了远超 25 天才回到原来的 QWERTY 速度。继续训练后，对照的 QWERTY 组进步得比 Dvorak 组快。Strong 建议加强 QWERTY 培训。</td><td>Strong 在研究之前就公开反对新的键盘设计，批评者认为研究偏向 QWERTY 组。</td></tr>
+</tbody>
+</table>
+<p>经济学家 Stan Liebowitz 和 Stephen Margolis 在 1990 年的论文《键盘的寓言》（The Fable of the Keys）里重读了这两份报告。1996 年，他们在《Reason》杂志的文章里说海军研究比 Dvorak 早年的实验还糟，结论是 Dvorak 更优越的说法是“一个神话，或者更准确地说，一场骗局”。</p>
+<p>计算机模型可以不靠真人打字员来衡量键位几何。Martin Krzywinski 开发的打字费力模型 Carpalx 用英文文本给布局打分，算出 Dvorak 的打字费力程度比 QWERTY 低约 25%。它的明细说明了省力来自哪里，又付出了什么：</p>
+<table>
+<caption>Carpalx 模型下 QWERTY 和 Dvorak 打英文的对比</caption>
+<thead><tr><th scope="col">指标</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>落在基准行的按键</td><td>34%</td><td>71%</td></tr>
+<tr><td>落在下排的按键</td><td>15%</td><td>9%</td></tr>
+<tr><td>相邻两键由不同的手打</td><td>51%</td><td>62%</td></tr>
+<tr><td>小指承担的按键</td><td>10%</td><td>18%</td></tr>
+<tr><td>左右手负担</td><td>偏左 15%</td><td>偏右 14%</td></tr>
+</tbody>
+</table>
+<p>Dvorak 让手指停在基准行的时间多了一倍左右，左右手交替也更多。代价是小指的工作量接近翻倍，负担向右手倾斜的程度，和 QWERTY 向左手倾斜差不多。旧研究立场太鲜明，说不清这种更顺的动作能给熟练打字者带来多少 WPM。GSA 的打字员光是回到起点就花了 100 多小时，如果你只在乎速度，在现有布局上改进技术见效更快，<a href="guide:how-to-type-faster">如何提高打字速度</a>给出了具体计划。</p>
+
+<h2>你该换成 Dvorak 吗？</h2>
+<p>如果你主要在自己的电脑上打英文，又能接受几个月打字变慢，Dvorak 值得考虑。下面四种情况会左右你的决定：</p>
+<ul>
+<li><strong>你还不会盲打。</strong>反正都要从头学指法，学 Dvorak 不用先改掉旧习惯。<a href="guide:touch-typing">盲打指南</a>里的方法在任何布局上都适用。</li>
+<li><strong>你主要打中文或其他语言。</strong>Dvorak 按英文字母频率优化，拼音换过去有得有失（见上文）。其他语言的布局见<a href="guide:keyboard-layouts">键盘布局指南</a>。</li>
+<li><strong>你离不开快捷键。</strong>Mac 上的“德沃夏克（QWERTY ⌘）”布局在按住 Command 时切回 QWERTY，快捷键留在手习惯的位置。Windows 用户常用 AutoHotkey 脚本达到同样效果。</li>
+<li><strong>你经常用别人的电脑。</strong>每台共用电脑都得改设置或者改打 QWERTY，所以要准备让两种布局都保持熟练。</li>
+</ul>
+<p>如果你最担心快捷键和右手小指，可以看看 Colemak，它把 <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd> <kbd>V</kbd> 留在了 QWERTY 的位置。<a href="guide:colemak-vs-dvorak">Colemak 和 Dvorak 对比</a>把两者放在一起比较，<a href="guide:colemak">Colemak 布局指南</a>讲怎么学。</p>
+
+<h2>怎样把电脑或手机切换成 Dvorak？</h2>
+<p>Windows、macOS、ChromeOS、Android、iOS 和大多数 Linux 发行版都自带 Dvorak，在设置里选上就行。键帽上仍然是 QWERTY 字母。</p>
+<h3>Windows 11</h3>
+<ol>
+<li>打开“开始 › 设置 › 时间 &amp; 语言 › 语言 &amp; 区域”。</li>
+<li>在语言列表里找到英语，点旁边的“…”，再点“语言选项”。列表里没有英语就先添加“英语(美国)”。</li>
+<li>在“已安装的键盘”旁边点“添加键盘”，选择 Dvorak（微软的布局列表里叫 United States-Dvorak）。</li>
+<li>按 <kbd>Windows</kbd>+<kbd>空格</kbd> 在 Dvorak 和平时的布局之间切换。</li>
+</ol>
+<h3>macOS</h3>
+<ol>
+<li>打开“苹果菜单 › 系统设置 › 键盘”。</li>
+<li>在“文字输入”下点“编辑”，再点“添加”按钮。</li>
+<li>搜索“德沃夏克”，选择“德沃夏克”或“德沃夏克（QWERTY ⌘）”，点“添加”，再点“完成”。</li>
+<li>从菜单栏的输入法菜单切换布局。</li>
+</ol>
+<h3>iPhone 和 Android</h3>
+<p>从 iOS 16（2022 年）起，iPhone 在“设置 › 通用 › 键盘 › 键盘 › 英语”里提供 Dvorak。Android 自带的键盘从 4.1 版起支持 Dvorak。</p>
+<h3>单手 Dvorak</h3>
+<p>August Dvorak 在 1960 年代为单手打字的人设计了左手版和右手版。Windows 里叫 United States-Dvorak for left hand 和 for right hand，macOS 里叫“德沃夏克（左手）”和“德沃夏克（右手）”，添加方法和标准版一样。用拼音输入法的话，把 Dvorak 设为默认之前，先确认输入法在 Dvorak 下能正常打拼音。</p>
+
+<h2>学会 Dvorak 要多久？</h2>
+<p>熟练的 QWERTY 打字者大约要练 100 小时，才能回到原来的速度。1956 年的 GSA 研究里，十名政府打字员每天练四小时，用了远超 25 天，也就是 100 多小时，才追上自己原来的 QWERTY 速度。Dvorak 自己主持的 1944 年海军研究中，打字员训练 83 小时后达到每分钟 56 个净单词（<a href="guide:words-per-minute">净 WPM</a>）。每天练一小时，两个数字都意味着大约三个月。</p>
+<p>海军那组人的起点是 32 WPM，低于海军自己的合格标准，所以这 83 小时说明不了熟练打字者要多久。每天短时间练习、专攻最慢的键和字母组合，最能用好这些时间，下面的步骤就是围绕这一点安排的。</p>
+
+<h2>怎样一步步学会 Dvorak？</h2>
+<p>把自己当成从没打过字的人：从基准行开始，先求准确，再求速度。</p>
+<ol>
+<li><strong>改设置之前先试一试。</strong>在 petitdoigt 里打开 <a href="app:words?layout=dvorak">Dvorak 练习</a>。这个免费练习工具在浏览器里运行，根据物理键位自己套用布局，你的电脑可以继续用 QWERTY；屏幕键盘显示 Dvorak 字母，每个键按负责的手指着色。练一小会儿，就知道基准行顺不顺手。</li>
+<li><strong>记住八个基准键。</strong>左手 <kbd>A</kbd> <kbd>O</kbd> <kbd>E</kbd> <kbd>U</kbd>，右手 <kbd>H</kbd> <kbd>T</kbd> <kbd>N</kbd> <kbd>S</kbd>。再用两根食指加上 <kbd>I</kbd> 和 <kbd>D</kbd>，然后只用这十个字母练单词：<em>hand</em>、<em>notes</em>、<em>idea</em>、<em>student</em>。</li>
+<li><strong>专练 Dvorak 加重负担的手指。</strong>右手小指负责 <kbd>L</kbd> 和 <kbd>S</kbd>，左手小指负责 <kbd>A</kbd>、撇号和分号，左手食指要管六个字母。<a href="app:anchors?layout=dvorak">anchors 练习</a>单独训练你选的手指，每敲一下就回到基准行；finger focus（重点手指）会让练习文本偏向这些手指负责的字母。</li>
+<li><strong>通过真实单词加入上排和下排。</strong>把基准行上方的 <kbd>P</kbd> <kbd>Y</kbd> <kbd>F</kbd> <kbd>G</kbd> <kbd>C</kbd> <kbd>R</kbd> <kbd>L</kbd> 和下排的少用字母加进来，先练常用词，再练完整句子。</li>
+<li><strong>练最慢的字母组合。</strong>在 Dvorak 上，每一对字母都是新动作。自适应模式下的 <a href="app:pairs?layout=dvorak">pairs 练习</a>会在你打字时测量每一次键间转换，每组练习主要由你最慢、最容易出错的组合构成。</li>
+<li><strong>准确率优先于速度。</strong>每个重复的错误都在练错误的动作。放慢到很少出错为止；<a href="guide:typing-accuracy">打字准确率指南</a>讲了怎么衡量。</li>
+<li><strong>眼睛盯着屏幕。</strong>键帽上还是 QWERTY，每看一眼都会误导你。改看屏幕键盘，更多方法见<a href="guide:type-without-looking">打字不看键盘的方法</a>。</li>
+<li><strong>规划切换。</strong>如果工作离不开打字，上班继续用 QWERTY，每天短时间练 Dvorak，等它的速度追上来，再正式改系统设置。petitdoigt 为每种布局分别记录统计，你的 Dvorak 数据从零开始，QWERTY 的历史记录保持不变。</li>
+</ol>
+<p>浏览器看不到你用哪根手指按键，所以练习工具只显示该用的手指，并测量按键和节奏，用对手指要靠你自己。petitdoigt 目前显示英文界面，练习文本有英文、法文、德文和西班牙文。<a href="guide:finger-placement">键盘指法图</a>讲了各手指的分区，换布局时这些分区不变。</p>

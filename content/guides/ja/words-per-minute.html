@@ -1,0 +1,112 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "ja",
+  "slug": "words-per-minute",
+  "title": "WPMとは？意味と計算方法、e-typingとの違い",
+  "description": "WPMとはタイピング速度の単位で、5文字を1語と数えます。計算方法、グロスとネットの違い、CPMや打鍵数、e-typingのWPMとの違いを例題つきで解説。",
+  "h1": "WPMとは：タイピング速度の意味と計算方法",
+  "keyword": "WPMとは",
+  "keywords_secondary": ["WPM 計算方法", "WPM 意味", "ネットWPM", "CPM タイピング", "e-typing WPM", "打鍵数"],
+  "summary": "WPM（Words Per Minute）とは、1分間に打てる語数で表したタイピング速度です。スペースや記号を含む5文字を1語と数えるので、1分間に250文字打てば50WPMになります。計算式は「文字数÷5÷分」です。ミスを引くネットWPMは罰則の決め方がサイトごとに違い、同じテストでも数字が変わります。e-typingのWPMは1分間の打鍵数で、5で割る前の数字です。",
+  "faq": [
+    {"q": "40WPMは速いですか？", "a": "オンラインで測られた平均より少し下です。アールト大学が2018年にタイピングテストを受けた16万8千人を調べた研究では、平均は51.6WPMで、下位10%は約26WPM未満、上位10%は約78WPM超でした。40WPMは1文字あたり平均300ミリ秒です。"},
+    {"q": "100WPMはどれくらい珍しいですか？", "a": "かなり珍しい速さです。アールト大学の研究で約78WPMを超えたのは上位10%だけで、その平均は89.6WPMでした。最速の人は120WPM以上に達しています。100WPMを保つには、テストの間ずっと1文字あたり平均120ミリ秒で打ち続けることになります。"},
+    {"q": "raw WPMとは何ですか？", "a": "ミスの罰則をかける前の速さです。Monkeytypeは、通常のWPMでは正しく打てた単語の文字だけを数え、raw WPMでは間違えた単語の文字も数えます。rawと通常のWPMの差を見れば、打ち間違いでどれだけ速さを失っているかがわかります。"},
+    {"q": "スペースもWPMに数えますか？", "a": "数えます。スペースを含めた5文字を1語とする決まりは、Wobbrockによると1905年ごろまでさかのぼり、Typing.comもスペースと記号を同じように数えています。ShiftやBackspaceのように文字を残さないキーはWPMには入りませんが、Backspaceは1分間の打鍵数には数えられます。"},
+    {"q": "ExcelやGoogleスプレッドシートでWPMを計算するには？", "a": "セルA1に打った文章、B1にかかった秒数を入れ、別のセルに =LEN(A1)/5/(B1/60) と入力します。LENはスペースを含む全文字を数えるので、結果はグロスWPMです。日本語の文章では変換後の文字数を数えるため、ローマ字の打鍵数とは一致しません。"}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (eds.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (paper PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: about page source with the wpm, raw and accuracy definitions", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "e-typing ヘルプ「WPMってなに？」", "url": "https://www.e-typing.ne.jp/help/013.asp"},
+    {"title": "日本情報処理検定協会「文章入力スピード認定試験」認定基準", "url": "https://www.goukaku.ne.jp/test_pcspeed.html"},
+    {"title": "Wikipedia: Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "自分のWPMを測る", "drill": "words"}
+}
+-->
+<h2>WPMとはどういう意味？</h2>
+<p>WPMはwords per minute（1分間の語数）の略で、タイピングでは5文字を1語と数えます。文字、数字、スペース、記号がすべて5文字に入り、ShiftやBackspaceは文章に文字を残さないので入りません。1分間に300文字を打てば、それがどんな単語であっても60WPMです。</p>
+<p>語の長さを固定すると、点数を比べられるようになります。実際の単語で数えると「I am on it」は4語、「internationalization」は1語ですが、打鍵は後者のほうが2倍多くかかります。5文字の決まりなら、スペース込み10文字の「I am on it」は2語、20文字の「internationalization」は4語です。ローマ字の「arigatou」は8文字なので1.6語になります。</p>
+<p>Jacob Wobbrockの<a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">文字入力の指標に関する章</a>によると、スペースを含めた5文字を1語と数える方法は1905年ごろから広く使われてきました。I. Scott MacKenzieは、この決まりを1900年代初めのタイピング競技会にさかのぼるものとしています。どちらもYamadaが1980年に書いたタイプライターの歴史を引いています。</p>
+<h2>e-typingのWPMは何が違う？</h2>
+<p>e-typingのWPMは1分間の打鍵数そのものです。e-typingはWPMを「一分あたりの入力文字（英数字キー）数」と<a href="https://www.e-typing.ne.jp/help/013.asp">説明しています</a>。1文字を1打鍵で打つ英文なら、e-typingのWPMを5で割ると標準のWPMになり、e-typingの250は約50WPMにあたります。</p>
+<p>日本語では、打鍵数と画面に残る文字数が大きくずれます。「ありがとう」はarigatouの8打鍵と確定の<kbd>Enter</kbd>で9打鍵、5文字です。「東京」はtoukyouの7打鍵に、変換の<kbd>Space</kbd>と確定の<kbd>Enter</kbd>を足して、候補の1番目に出れば9打鍵で2文字です。打鍵数が同じでも残る文字数がこれだけ違うので、日本語の文字数はひとつの比率では打鍵数やWPMに換算できません。</p>
+<p>日本語の文字数で測る代表的な例が、日本情報処理検定協会の<a href="https://www.goukaku.ne.jp/test_pcspeed.html">文章入力スピード認定試験</a>です。10分間に打った字数からミス1つにつき1字を引いた「純字数」で判定し、1級は1,000字以上、つまり1分間に100字です。平均や目安の数字は<a href="guide:typing-speed">タイピング速度の平均のガイド</a>にまとめています。</p>
+<h2>WPMの計算方法は？</h2>
+<p>WPMは、打った文字数を5で割り、さらにかかった分数で割って求めます。</p>
+<ol>
+<li>打ち終えた文章の文字数を、スペースと記号も含めて数えます。</li>
+<li>その数を5で割り、標準の語数にします。</li>
+<li>時間を分に直し（45秒なら0.75分）、語数をその数で割ります。</li>
+</ol>
+<p>式にすると <code>WPM = 文字数 ÷ 5 ÷ 分</code> です。75秒で250文字を打ったなら、1.25分で50語なので40WPMです。</p>
+<p>研究ではもう1つ補正を加えます。時計は最初の打鍵で動き出すので、最初の1文字には測った時間がなく、数から外します。MacKenzieの<a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">入力速度の計算に関するノート</a>は「the quick brown fox jumps over the lazy dog」の43文字を20秒で打つ例を挙げています。43文字すべてを数えると25.8WPM、時計が動いてからの42文字なら25.2WPMです。長いテストではこの補正はほとんど効かず、2分で520文字なら0.1WPMしか動きません。</p>
+<h2>グロスWPMとネットWPMの違いは？</h2>
+<p>グロスWPMはミスも含めて打ったすべての文字で計算し、ネットWPMは残ったミスの分を差し引きます。よく使われる罰則は、1分あたりの残ったミス1つにつき1WPMです。</p>
+<p><code>ネットWPM = グロスWPM − 残ったミスの数 ÷ 分</code></p>
+<p><a href="https://www.speedtypingonline.com/typing-equations">Speed Typing Onlineの計算式</a>の例では、2分間でグロス80WPM、残ったミスが8つなら1分あたり4つで、ネットは76WPMです。</p>
+<p>打ちながら直したミスには、追加の罰則がありません。打ち間違い、Backspace、正しいキーの3打鍵ぶんの時間をすでに払っていて、文章には1文字しか残らないからです。残したミスは点を良く見せることがあります。Wobbrockは、ミスを残すと速く打てるので速度が上がると指摘していて、ネットWPMのような罰則はその得を取り戻します。</p>
+<p>研究では、残ったミスの割合でWPMを割り引く調整済みWPMも使われます。Wobbrockの例では、残ったミスが10%なら調整済みWPMはWPMの90%です。WPMに正確率を掛けるツールもあり、Typing.comはかつてこの積を「Net Words Per Minute」と呼んでいました。WPMばかり気にして正確さを見なくなるとして、のちに取りやめています。</p>
+<p>タイピングテストの多くはWPMの横に正確率を出します。正確率は正しい文字数を打ったすべての文字数で割って100を掛けたもので、直したミスも数えます。534文字打って514文字が正しければ96.3%で、最後の文章に残ったミスが少なくてもこの値になります。目標の立て方は<a href="guide:typing-accuracy">タイピングの正確さのガイド</a>で扱っています。</p>
+<h2>例題：1つのテストのWPMを6通りで計算する</h2>
+<p>2分間のテストを、ここまでの式で1つずつ計算します。打ち終えた文章はスペース込みで520文字です。途中で14文字を打ち間違えて消し、6文字の誤りが残りました。誤りはそれぞれ別の5文字の単語に入っています。打った文字は全部で534文字、そのうち514文字が正しい文字です。</p>
+<table>
+<caption>1つの2分間テストを6通りで計算した結果</caption>
+<thead>
+<tr><th scope="col">方法</th><th scope="col">計算</th><th scope="col">WPM</th></tr>
+</thead>
+<tbody>
+<tr><td>グロスWPM</td><td>520 ÷ 5 ÷ 2</td><td>52.0</td></tr>
+<tr><td>研究のWPM（最初の文字で時計が動く）</td><td>519 ÷ 120秒 × 60 ÷ 5</td><td>51.9</td></tr>
+<tr><td>調整済みWPM（研究）</td><td>51.9 × (1 − 6 ÷ 520)</td><td>51.3</td></tr>
+<tr><td>WPM × 正確率（古いツール）</td><td>52.0 × 514 ÷ 534</td><td>50.1</td></tr>
+<tr><td>ネットWPM</td><td>52.0 − 6 ÷ 2</td><td>49.0</td></tr>
+<tr><td>正しい単語だけ（Monkeytypeの方式）</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48.4</td></tr>
+</tbody>
+</table>
+<p>最後の行は、誤り1つが5文字の単語とそのスペース、計6文字をだめにすると考えています。</p>
+<h2>テストごとにWPMが違うのはなぜ？</h2>
+<p>サイトごとに式、文章、テストの長さが違い、自分のペースもテストの中で揺れるからです。上の例では、式の違いだけで3.6WPM動きました。たとえば<a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a>は正しく打てた単語の文字だけを数えるので、打ち間違い1つで単語ごと失います。</p>
+<p><a href="https://www.typing.com/blog/what-is-words-per-minute/">Typing.com</a>は、WPMは文章の難しさを考えに入れないこと、同じ文章を繰り返すと指が覚えて速さが水増しされることを指摘しています。短いよく使う単語の段落は、大文字、数字、記号の多い段落より高い点が出やすくなります。どちらも5文字で1語と数えるにもかかわらずです。テストの長さも効きます。15秒の短距離走が測るのは一瞬の勢いで、Typing.comは3分と5分のテストを、手首や指を疲れさせずに安定した平均が出る、全体の速さのいちばん正確な目安としています。</p>
+<p>打ちながら動くカウンターと最終の点も、測っている時間の幅が違います。最終の点は出だしの遅れやつまずきを含めたテスト全体の平均で、動くカウンターは直近の数秒だけを映し、ためらうたびに下がります。petitdoigtの<a href="app:words">words（単語）ドリル</a>は両方を表示します。打っている間は5秒、10秒、30秒の区間で動くWPMを、終わればセットの結果を直近10セットと並べて見せます。練習文は英語、フランス語、ドイツ語、スペイン語で、画面の表示は英語です。</p>
+<h2>WPMを正しく測るには？</h2>
+<p>信頼できるWPMを得るには、毎回同じ種類のテストを同じやり方で受け、ほかと比べる前に式を確かめます。</p>
+<ol>
+<li>3〜5分続くテストを選びます。</li>
+<li>打ったことのない文章を、ふだん書く言語で打ちます。</li>
+<li>実際の仕事と同じペースで打ち、ミスもふだんどおりに直します。</li>
+<li>WPMと正確率を一緒に記録します。正確率90%の60WPMと98%の60WPMでは、必要な練習が違います。</li>
+<li>サイトがグロス、ネット、正しい単語だけのどれで出しているかを確かめ、比べるのは同じテストの自分の過去の記録とにします。</li>
+</ol>
+<h2>CPMや打鍵数とは？</h2>
+<p>CPM（1分間の文字数）はWPMの5倍で、52WPMは260CPMです。1分間の打鍵数は、残った文字ではなく押したキーを数えるので、Backspaceや、測り方によってはShiftも入ります。先の例題では2分間に文字キーを534回、Backspaceを14回押したので、1分あたり274打鍵で260文字です。日本語の文章で1分間の文字数を数えると、先に見たとおり打鍵数とのずれが大きいので、英文のCPMと同じ尺度にはなりません。</p>
+<p>研究者はこの2つの比を1文字あたりの打鍵数（KSPC）と呼びます。<a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">アールト大学の1億3,600万打鍵の研究</a>（Dhakalら、CHI 2018）はすべての打鍵を数え、16万8千人の参加者で平均1.17打鍵/文字という値を得ました。上位10%は1.10、下位10%は1.24で、遅い人ほどミスをして直すことが多いためです。</p>
+<p>データ入力の仕事では1時間の打鍵数で基準を示すことがあり、英語版Wikipediaは8,000か10,000を求める仕事が多いとしています。1打鍵が1文字なら、1時間に10,000打鍵は約33WPMです。下の表は同じ前提でよく見る速さを換算したものです。1分間の文字数の列は、e-typingのWPMにほぼ相当します。</p>
+<table>
+<caption>WPMをほかの単位に換算（1打鍵＝1文字として計算）</caption>
+<thead>
+<tr><th scope="col">WPM</th><th scope="col">1分間の文字数</th><th scope="col">1文字あたりのミリ秒</th><th scope="col">1時間の打鍵数</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6,000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9,000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12,000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18,000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24,000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30,000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36,000</td></tr>
+</tbody>
+</table>
+<h2>WPMから1打鍵あたりの時間はわかる？</h2>
+<p>わかります。12,000をWPMで割ると、1文字あたりの平均時間がミリ秒で出ます。60WPMなら200ミリ秒、100WPMなら120ミリ秒です。50WPMから60WPMに上げるには、1文字ごとに240ミリ秒から200ミリ秒へ、40ミリ秒ずつ縮めることになります。</p>
+<p>アールト大学の研究は、この間隔を直接計りました。参加者全体では、キーを押してから次のキーを押すまでが平均239ミリ秒で、平均の速さは51.6WPMでした。上位10%（約78WPM超）は平均122ミリ秒、下位10%（約26WPM未満）は481ミリ秒で、間隔は約4倍違います。キーを押している時間のほうは差が小さく、平均116ミリ秒、遅い人でも80〜150ミリ秒でした。著者らはこれを、速さの伸びの大半がほかから来るしるしと読んでいます。</p>
+<p>同じ論文がまとめたタイプライター時代の研究では、左右の手で打つ2文字は片手で打つ組み合わせより30〜60ミリ秒、同じ指で打つ組み合わせより約80ミリ秒速く打たれていました。いまのキーボードでのアールト大学のデータでは、手を交互にする得は約5〜20ミリ秒と小さく、遅い人は交互にすると20〜28ミリ秒遅くなっていました。ローマ字入力でいえば、<em>ka</em>は右手の中指の<kbd>K</kbd>から左手の小指の<kbd>A</kbd>へ手が交互になり、<em>ki</em>は<kbd>K</kbd>と<kbd>I</kbd>をどちらも右手の中指で打ちます。WPMはこうした移動数百回の平均なので、遅い移動がいくつかあるだけで全体の数字が下がります。</p>
+<p>petitdoigtの<a href="app:pairs">pairs（ペア）ドリル</a>は、打ちながらキーからキーへの移動を1つずつ計り、adaptive（適応）モードでは遅い移動とミスの多い移動を中心にセットを組みます。stats画面では、指、文字、弱い移動ごとに時間と正確さを一覧できます。これを練習の計画にしたのが<a href="guide:how-to-type-faster">タイピングを速くする方法</a>です。</p>

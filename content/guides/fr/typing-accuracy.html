@@ -1,0 +1,131 @@
+<!--meta
+{
+  "id": "typing-accuracy",
+  "lang": "fr",
+  "slug": "precision-de-frappe",
+  "title": "Précision de frappe : quel taux viser et comment l’améliorer",
+  "description": "Précision de frappe au clavier : comment elle se calcule, pourquoi les tests ne donnent pas le même score, quel pourcentage viser et 7 étapes pour l’améliorer.",
+  "h1": "Précision de frappe : quel taux est bon et comment l’améliorer",
+  "keyword": "précision de frappe",
+  "keywords_secondary": ["améliorer sa précision de frappe", "taux de précision au clavier", "précision ou vitesse de frappe", "calcul de la précision de frappe", "faire moins de fautes de frappe"],
+  "summary": "La précision de frappe est le pourcentage de vos frappes qui tombent sur la bonne touche : à 96 %, environ 4 touches sur 100 étaient fausses. Visez 96 % ou mieux à l’entraînement, puis 98 % quand vous tapez sans regarder. Les tests notent le même texte différemment, car certains comptent les fautes corrigées et d’autres seulement celles qui restent. La précision fait aussi la vitesse : chaque faute corrigée coûte au moins deux frappes.",
+  "faq": [
+    {"q": "Est-ce que 95 % de précision de frappe, c’est bien ?", "a": "C’est un niveau de travail correct, un point sous les 96 % que ce guide recommande pour l’entraînement. À 95 % de précision par frappe, environ une frappe sur dix sert à faire ou à effacer une faute. Typing.com conseille aux enseignants d’accepter 95 % en début d’année scolaire puis de monter vers 98 %, et le test de frappe de la fonction publique de l’État de New York exige 96 %."},
+    {"q": "Est-ce que 90 % de précision, c’est suffisant ?", "a": "Pour un débutant, c’est un point de départ normal. Au-delà, c’est faible : à 90 %, une touche sur dix est fausse, et en comptant les Retour arrière, près d’une frappe sur cinq part dans les fautes. Ralentissez jusqu’à tenir 96 %, puis reprenez de la vitesse à partir de là."},
+    {"q": "La touche Retour arrière fait-elle baisser la précision ?", "a": "Tout dépend de la façon dont le test calcule. En précision par frappe, la mauvaise touche compte contre vous même une fois effacée. Les tests qui notent seulement le texte final ignorent les fautes corrigées, mais le temps passé à les corriger fait quand même baisser vos mots par minute."},
+    {"q": "Faut-il corriger ses fautes pendant l’entraînement ou continuer ?", "a": "Corrigez-les dès que vous les voyez. Un vrai texte doit être juste, donc la correction est l’habitude à répéter. Chaque faute vous coûte alors du temps, ce qui vous pousse vers une cadence que vous contrôlez. Continuez sans corriger seulement quand les règles d’un test le demandent."},
+    {"q": "Peut-on atteindre 100 % de précision de frappe ?", "a": "Sur une phrase courte, oui. Sur un test plus long, même les dactylos rapides y arrivent rarement : dans l’étude d’Aalto portant sur 168 000 dactylos, les 10 % les plus rapides appuyaient encore sur Retour arrière ou Suppr pour 3,4 % de leurs frappes. Visez un 98 % régulier et prenez une série parfaite comme un bonus."},
+    {"q": "Pourquoi ma précision baisse-t-elle sur un autre clavier ou une autre disposition ?", "a": "Vos doigts ont appris où se trouvent les touches sur votre clavier habituel, donc tout changement envoie des frappes à côté. Passer d’AZERTY au canadien français déplace des lettres comme A, Z, Q, W et M ; un autre clavier peut déplacer Entrée, la Maj gauche ou l’écart entre les touches. Attendez-vous à une baisse, ralentissez jusqu’à 96 % et laissez la précision remonter."}
+  ],
+  "sources": [
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes, CHI 2018 (page du projet)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Dhakal et al., Observations on Typing from 136 Million Keystrokes, CHI 2018 (article, PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing, CHI 2016", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Université Vanderbilt, Today’s self-taught typists almost as fast as touch typists (2016)", "url": "https://www.eurekalert.org/news-releases/520529"},
+    {"title": "New York State Department of Civil Service, Keyboard Test Administration and PTM User Guide", "url": "https://www.cs.ny.gov/extdocs/pdf/PTMUserGuide.pdf"},
+    {"title": "Typing.com, What is good accuracy when it comes to typing?", "url": "https://www.typing.com/blog/good-accuracy-comes-typing/"},
+    {"title": "Monkeytype : code source de la page À propos (définition de acc)", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "USPS Handbook EL-312, 517 Qualifying Tests", "url": "https://about.usps.com/handbooks/el312/el312c5_007.htm"},
+    {"title": "travail-industrie.com, Test de vitesse de frappe au clavier AZERTY", "url": "https://travail-industrie.com/outils/test-vitesse-de-frappe"},
+    {"title": "kbdlayout.info, disposition Windows Français AZERTY (KBDFR)", "url": "https://kbdlayout.info/kbdfr"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Mesurez votre précision de frappe", "drill": "words"}
+}
+-->
+<h2>Qu’est-ce que la précision de frappe ?</h2>
+<p>La précision de frappe est la part de ce que vous tapez qui correspond au texte voulu, exprimée en pourcentage. À 98 %, environ 2 frappes sur 100 sont tombées sur la mauvaise touche. Les logiciels d’entraînement l’affichent à côté de vos mots par minute parce que les deux chiffres mesurent des choses différentes : les MPM comptent le texte produit, la précision montre quelle part de votre effort est partie dans les fautes en chemin.</p>
+<p>Le temps passé à corriger est déjà compris dans vos MPM. Chaque faute corrigée coûte au moins deux frappes de plus, le <kbd>Retour arrière</kbd> et la bonne touche, sans compter l’instant qu’il faut pour la remarquer.</p>
+
+<h2>Comment calcule-t-on la précision de frappe ?</h2>
+<p>La précision de frappe se calcule en divisant les caractères justes par l’ensemble des caractères tapés, puis en multipliant par 100. Les sites ne s’entendent pas sur ce que veut dire « l’ensemble des caractères tapés », si bien que le même paragraphe peut obtenir 95 % sur un test et 99 % sur un autre.</p>
+<table>
+<caption>Les façons courantes de calculer la précision de frappe</caption>
+<thead>
+<tr><th scope="col">Méthode</th><th scope="col">Formule</th><th scope="col">Les fautes corrigées comptent-elles ?</th><th scope="col">Où on la rencontre</th></tr>
+</thead>
+<tbody>
+<tr><td>Précision par frappe</td><td>bonnes touches ÷ (bonnes touches + mauvaises touches)</td><td>Oui, même après effacement</td><td>Logiciels qui notent chaque touche au moment où vous l’enfoncez</td></tr>
+<tr><td>Précision du texte final</td><td>caractères justes dans le texte rendu ÷ longueur du texte</td><td>Non, seulement les fautes qui restent</td><td>Recherche, où elle s’appelle « taux d’erreurs non corrigées »</td></tr>
+<tr><td>Nombre de fautes</td><td>fautes dans le texte rendu, comparées à un plafond</td><td>Non</td><td>Tests de frappe à l’embauche et dans la fonction publique</td></tr>
+</tbody>
+</table>
+<p>Monkeytype, par exemple, note par frappe : <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">sa définition</a> de la précision est le pourcentage de touches enfoncées correctement. Le <a href="https://travail-industrie.com/outils/test-vitesse-de-frappe">test AZERTY de travail-industrie.com</a> affiche les deux : une précision en cours de frappe, fautes corrigées comprises, et une précision finale calculée sur le texte rendu. Pour voir l’écart entre les méthodes, imaginez une phrase de 100 caractères. En chemin, vous frappez 5 mauvaises touches, en rattrapez 4 avec <kbd>Retour arrière</kbd> et en laissez 1 dans le texte. Au total, vous avez enfoncé 99 bonnes touches, 5 mauvaises et 4 Retour arrière.</p>
+<ul>
+<li>Précision par frappe : 99 ÷ (99 + 5) = 95,2 %</li>
+<li>Précision du texte final : 99 caractères justes sur 100 = 99 %</li>
+<li>Nombre de fautes : 1</li>
+</ul>
+<p>Pour s’entraîner, la précision par frappe est le chiffre le plus utile. Elle montre les fautes que vous avez corrigées, et c’est dans ces corrections que votre vitesse fuit. La précision du texte final est ce que voit la personne qui lit votre courriel. Certains tests intègrent les fautes au score de vitesse et donnent des mots par minute nets : aux États-Unis, le service postal fixe le seuil de ses tests de frappe en <a href="https://about.usps.com/handbooks/el312/el312c5_007.htm">MPM nets</a>. Le <a href="guide:words-per-minute">guide des mots par minute</a> explique comment se calculent les MPM bruts et nets.</p>
+
+<h2>Quelle précision de frappe viser ?</h2>
+<p>Une bonne précision de frappe se situe à 96 % ou plus par frappe, et à 98 % ou plus une fois que vous tapez sans regarder le clavier. À 94 %, environ une frappe sur neuf sert déjà à faire ou à effacer une faute. Prenez ces paliers comme repères d’entraînement pour la précision par frappe :</p>
+<table>
+<caption>Paliers de précision par frappe pour l’entraînement</caption>
+<thead>
+<tr><th scope="col">Précision</th><th scope="col">Ce que cela veut dire</th><th scope="col">Que faire</th></tr>
+</thead>
+<tbody>
+<tr><td>Moins de 90 %</td><td>Une touche sur dix ou plus est fausse. En comptant les Retour arrière, près d’une frappe sur cinq part dans les fautes.</td><td>Ralentissez nettement et vérifiez la position de vos doigts.</td></tr>
+<tr><td>90 à 95 %</td><td>Une faute toutes les 10 à 20 touches. Normal pendant l’apprentissage de la dactylographie ou d’une nouvelle disposition, ou quand vous forcez la vitesse.</td><td>Ralentissez jusqu’à tenir 96 %.</td></tr>
+<tr><td>96 à 97 %</td><td>Une faute toutes les 25 à 33 touches, soit à peu près une tous les cinq à sept mots. Solide.</td><td>Gardez cette vitesse et travaillez vos touches les plus faibles.</td></tr>
+<tr><td>98 % et plus</td><td>Une faute toutes les 50 touches ou plus, soit à peu près une tous les dix mots. Frappe propre.</td><td>Augmentez la vitesse par petits paliers.</td></tr>
+</tbody>
+</table>
+<p>Les tests d’embauche fixent des seuils précis. Aux États-Unis, le test de clavier de la fonction publique de l’État de New York exige 30 MPM avec au moins 96 % de précision sur cinq minutes, ce qui autorise 6 fautes à 30 MPM. Pour l’école, <a href="https://www.typing.com/blog/good-accuracy-comes-typing/">Typing.com recommande aux enseignants</a> de viser 98 % ou mieux dès la 4e année (l’équivalent du CM1). Les repères de vitesse par niveau se trouvent dans le guide de la <a href="guide:typing-speed">vitesse de frappe moyenne</a>.</p>
+
+<h3>Quelle est la précision de frappe moyenne ?</h3>
+<p>Dans une étude portant sur 168 000 dactylos en ligne, les phrases finales du participant moyen étaient justes à environ 98,8 %, et 6,3 % de ses frappes servaient à corriger avec <kbd>Retour arrière</kbd> ou <kbd>Suppr</kbd>. Des chercheurs de l’université Aalto et de l’université de Cambridge ont enregistré ces <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">136 millions de frappes</a> auprès de volontaires qui recopiaient des phrases en anglais dans un test en ligne. La plupart corrigeaient l’essentiel de leurs fautes : 90 % des participants laissaient moins de 2,66 % d’erreurs dans leurs phrases finales.</p>
+<table>
+<caption>Fautes et corrections chez 168 000 dactylos en ligne (Dhakal et al., CHI 2018)</caption>
+<thead>
+<tr><th scope="col">Groupe</th><th scope="col">Fautes restées dans le texte final</th><th scope="col">Frappes sur Retour arrière ou Suppr</th></tr>
+</thead>
+<tbody>
+<tr><td>Les 10 % les plus rapides (au-dessus d’environ 78 MPM)</td><td>0,71 %</td><td>3,4 %</td></tr>
+<tr><td>Tous les participants (moyenne de 52 MPM)</td><td>1,17 %</td><td>6,3 %</td></tr>
+<tr><td>Les 10 % les plus lents (sous environ 26 MPM)</td><td>1,78 %</td><td>9,05 %</td></tr>
+</tbody>
+</table>
+<p>Le groupe le plus lent appuyait sur Retour arrière ou Suppr plus de deux fois et demie plus souvent que le plus rapide, et laissait pourtant environ deux fois et demie plus de fautes dans le texte. Les auteurs y voient la possibilité que les dactylos lents repèrent moins bien leurs erreurs.</p>
+
+<h2>Précision ou vitesse de frappe : laquelle compte le plus ?</h2>
+<p>La précision passe en premier, parce que les fautes coûtent de la vitesse. Dans les données d’Aalto, les personnes qui faisaient et corrigeaient moins de fautes tapaient plus vite : la vitesse était corrélée négativement à la part de frappes sur Retour arrière et Suppr (r = −0,36) et au nombre de frappes par caractère (r = −0,40). Les auteurs concluent qu’une petite baisse des erreurs peut se traduire par un gros gain de vitesse.</p>
+<p>À 95 % de précision par frappe, vous enfoncez environ 5 mauvaises touches pour 95 bonnes, et chacune demande un Retour arrière : à peu près une frappe sur dix sert donc à faire ou à effacer une faute. À 98 %, on tombe à environ une sur 25. La pause pendant laquelle vous repérez la faute et retrouvez votre place s’ajoute à cela, et une faute vue tard coûte plus cher, parce que vous effacez des lettres justes pour l’atteindre.</p>
+<p>Au cours d’une même séance, vitesse et précision tirent en sens contraire : dépassez la cadence que vos doigts peuvent tenir et les fautes grimpent. D’un dactylo à l’autre, les plus rapides sont aussi les plus précis, comme le montre le tableau ci-dessus. Les deux constats mènent à la même façon de s’entraîner : tapez à une vitesse que vous gardez propre, et augmentez-la à mesure que les gestes deviennent automatiques. Le guide pour <a href="guide:how-to-type-faster">taper plus vite au clavier</a> couvre le versant vitesse de ce plan.</p>
+
+<h2>Pourquoi fait-on autant de fautes de frappe ?</h2>
+<p>La faute de frappe la plus courante consiste à taper une mauvaise lettre à la place de la bonne, et les chercheurs pensent qu’elle vient d’une frappe irrégulière. Sur un échantillon de 783 participants de l’étude d’Aalto, les fautes se répartissaient en trois types. Les taux viennent de phrases en anglais ; les exemples sont des équivalents français.</p>
+<table>
+<caption>Types de fautes de frappe et leurs taux (Dhakal et al., CHI 2018, échantillon de 783 participants)</caption>
+<thead>
+<tr><th scope="col">Type de faute</th><th scope="col">Exemple</th><th scope="col">Taux</th></tr>
+</thead>
+<tbody>
+<tr><td>Substitution : une mauvaise lettre à la place de la bonne</td><td><em>rpute</em> pour <em>route</em></td><td>1,65 %</td></tr>
+<tr><td>Omission : une lettre oubliée</td><td><em>apeler</em> pour <em>appeler</em></td><td>0,80 %</td></tr>
+<tr><td>Insertion : une lettre en trop</td><td><em>commme</em> pour <em>comme</em></td><td>0,67 %</td></tr>
+</tbody>
+</table>
+<p>Les substitutions étaient les plus fréquentes, et ce sont elles qui séparaient le plus les dactylos lents des rapides. Selon l’hypothèse des chercheurs, elles surviennent quand on tape de façon moins régulière et qu’on se représente mal la position de ses doigts. Une <a href="https://userinterfaces.aalto.fi/how-we-type">étude par capture de mouvement de 30 dactylos</a>, menée elle aussi à Aalto, va dans le même sens : l’un de ses trois prédicteurs de haute performance était une correspondance sans ambiguïté, chaque lettre tapée toujours par le même doigt. Si vous frappez <kbd>C</kbd> avec l’index certains jours et avec le majeur d’autres jours, votre main a deux chemins à moitié appris vers cette touche.</p>
+<p>Surveillez ces habitudes :</p>
+<ul>
+<li><strong>Quitter la rangée de repos.</strong> Quand vos doigts ne reviennent pas sur <kbd>Q</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> et <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>M</kbd> en AZERTY (<kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> et <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>;</kbd> sur un clavier canadien français) entre deux mots, chaque mouvement part d’un autre point et atterrit une touche à côté. Les reliefs de <kbd>F</kbd> et <kbd>J</kbd> vous ramènent en place sans regarder.</li>
+<li><strong>Regarder les touches.</strong> Vos fautes apparaissent à l’écran, et vous ne pouvez pas regarder l’écran et le clavier en même temps. Dans une <a href="https://www.eurekalert.org/news-releases/520529">étude de l’université Vanderbilt</a> sur 48 dactylos, ceux qui avaient un doigté non standard dépendaient de la vue du clavier : clavier caché, leur vitesse et leur précision chutaient, alors que les dactylos à dix doigts restaient à peu près au même niveau. Les chercheurs suggèrent que ces dactylos, qui ne regardent l’écran que par moments, repèrent peut-être moins de fautes.</li>
+<li><strong>La mauvaise touche Maj.</strong> Prendre la <kbd>Maj</kbd> gauche pour un <kbd>A</kbd> majuscule fait faire deux tâches à la même main et la sort de sa position. Tenez la Maj de la main opposée à la lettre.</li>
+<li><strong>Les lettres inversées.</strong> <em>qeu</em> pour <em>que</em> arrive quand une main part avant l’autre : le majeur gauche tape le <kbd>E</kbd> avant que l’index droit ait tapé le <kbd>U</kbd>. Entraînez-vous à un rythme régulier, même plus lent, jusqu’à ce que l’ordre tienne.</li>
+<li><strong>Les chiffres et les accents en AZERTY.</strong> Sans <kbd>Maj</kbd>, la rangée des chiffres de la <a href="https://kbdlayout.info/kbdfr">disposition AZERTY française</a> tape <kbd>&amp;</kbd> <kbd>é</kbd> <kbd>"</kbd> <kbd>'</kbd> <kbd>(</kbd> et ainsi de suite : un 2 tapé sans la Maj devient un é. Les voyelles à accent circonflexe passent par la touche morte <kbd>^</kbd>, et une touche morte oubliée donne <em>fete</em> au lieu de <em>fête</em>.</li>
+<li><strong>Les doigts faibles.</strong> Si vos fautes s’accumulent sur <kbd>A</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>P</kbd> ou <kbd>M</kbd>, l’auriculaire ou l’annulaire qui les tape a besoin d’un entraînement à part. Le guide des <a href="guide:typing-exercises">exercices de dactylographie</a> propose des exercices pour ces doigts.</li>
+</ul>
+
+<h2>Comment améliorer sa précision de frappe</h2>
+<p>Pour améliorer votre précision de frappe, entraînez-vous à une vitesse où vous restez à 96 % ou plus, et travaillez les doigts et les paires de lettres précis qui causent vos fautes. Étape par étape :</p>
+<ol>
+<li><strong>Trouvez votre vitesse propre.</strong> Tapez quelques séries d’une minute avec des mots courants et surveillez votre précision. La vitesse à laquelle elle reste à 96 % ou plus est votre vitesse d’entraînement pour l’instant, même si elle vous paraît lente.</li>
+<li><strong>Donnez un seul doigt à chaque touche.</strong> Vérifiez <a href="guide:finger-placement">quel doigt tape quelle touche</a> et tenez-vous-y, y compris pour les touches qu’on prend facilement avec la mauvaise main : <kbd>B</kbd> revient à l’index gauche, <kbd>Y</kbd> à l’index droit. petitdoigt colore chaque touche selon le doigt qui doit la taper et allume ce doigt pendant que vous tapez, si bien qu’une mauvaise habitude de doigt devient visible. Un navigateur ne voit pas vos mains, donc le logiciel ne peut pas vérifier quel doigt vous avez utilisé ; cette partie vous revient.</li>
+<li><strong>Gardez les yeux sur l’écran.</strong> C’est là que les fautes apparaissent. Si vous jetez encore des coups d’œil vers le bas, le guide pour <a href="guide:type-without-looking">taper sans regarder le clavier</a> vous aide à perdre l’habitude, et un clavier à l’écran peut remplacer les touches le temps de l’apprentissage.</li>
+<li><strong>Repérez où se trouvent vos fautes.</strong> Un seul chiffre de précision pour toute une série cache les touches responsables. La page <a href="app:stats">stats</a> du logiciel détaille vos résultats par doigt et par lettre pour chaque disposition, et liste vos transitions d’une touche à l’autre les plus faibles avec leur précision. Certaines fautes n’arrivent qu’entre deux touches précises, comme <kbd>U</kbd> puis <kbd>N</kbd> dans <em>un</em> ou <em>une</em>, que l’index droit tape seul. En mode adaptatif, l’exercice <a href="app:pairs">paires</a> construit ses séries surtout à partir de vos propres transitions les plus lentes et les plus fautives.</li>
+<li><strong>Faites payer chaque faute d’un Retour arrière.</strong> Corrigez chaque faute dès que vous la voyez, comme dans un vrai courriel. Le mode hardcore rend la règle stricte : une mauvaise touche reste dans le texte tant que vous ne l’avez pas effacée avec <kbd>Retour arrière</kbd>.</li>
+<li><strong>Gardez des séances courtes.</strong> Arrêtez quand votre précision baisse deux ou trois séries de suite, car s’entraîner fatigué fait répéter la version brouillonne de chaque geste.</li>
+<li><strong>Montez la vitesse par petits paliers.</strong> Quand vous tenez 98 % à votre vitesse d’entraînement sur plusieurs séances, accélérez de quelques mots par minute. Si la précision passe sous 96 %, revenez à la dernière vitesse que vous gardiez propre.</li>
+</ol>

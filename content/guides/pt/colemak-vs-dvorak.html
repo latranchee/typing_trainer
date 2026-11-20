@@ -1,0 +1,127 @@
+<!--meta
+{
+  "id": "colemak-vs-dvorak",
+  "lang": "pt",
+  "slug": "colemak-vs-dvorak",
+  "title": "Colemak vs Dvorak vs Workman: qual layout aprender?",
+  "description": "Colemak vs Dvorak, com Workman e QWERTY: fileira central, bigramas com o mesmo dedo, atalhos, acentos do português e como testar cada um grátis.",
+  "h1": "Colemak vs Dvorak: qual layout de teclado aprender?",
+  "keyword": "Colemak vs Dvorak",
+  "keywords_secondary": ["Colemak ou Dvorak", "Dvorak vs QWERTY", "Colemak vs QWERTY", "layout Workman"],
+  "summary": "Na comparação Colemak vs Dvorak, o Colemak é a melhor escolha para quem vem do QWERTY: muda 17 teclas em vez de quase todas as letras, mantém Ctrl+Z, X, C e V no lugar e supera o Dvorak na fileira central (74% contra 70%) e nos bigramas com o mesmo dedo (1,67% contra 2,63%). O Dvorak serve a quem já digita nele ou quer um layout presente em quase todo sistema. Nenhum dos dois tem ganho de velocidade comprovado.",
+  "faq": [
+    {"q": "O Colemak ou o Dvorak é melhor para programar?", "a": "O Colemak é a troca mais fácil para quem programa e vem do QWERTY, porque mantém quase todas as teclas de pontuação onde o QWERTY as põe, enquanto o Dvorak muda colchetes, barra, hífen, sinal de igual e ponto e vírgula. O FAQ do Colemak acrescenta que a melhor escolha depende das suas linguagens, das convenções de nomes e do editor. Quem programa em Dvorak pode usar o Programmer Dvorak, de Roland Kaufmann, que põe os colchetes na fileira de cima; algumas distribuições Linux o incluem, Windows e macOS não."},
+    {"q": "Vale a pena trocar o Dvorak pelo Colemak?", "a": "Em geral, não. O FAQ do Colemak diz que a troca não vai ser tão fácil para quem já usa Dvorak há muito tempo, que o ganho do Colemak sobre o Dvorak é menor que o do Dvorak sobre o QWERTY e que, se você está satisfeito com o Dvorak, provavelmente deve ficar com ele. Na comparação do Colemak Mod-DH, a diferença é de 1,67% contra 2,63% de bigramas com o mesmo dedo, pouco perto dos 6,58% do QWERTY."},
+    {"q": "Aprender Colemak ou Dvorak faz esquecer o QWERTY?", "a": "A maioria das pessoas mantém os dois. O FAQ do Colemak diz que quem domina os dois layouts troca de um para o outro com facilidade no dia a dia, embora algumas pessoas percam para sempre um pouco de velocidade ou precisão no QWERTY. No computador de outra pessoa, você adiciona o Colemak ao Windows em cerca de um minuto, ou digita em QWERTY olhando para as teclas."},
+    {"q": "O Windows já vem com o Colemak?", "a": "Sim, desde o Windows 11 versão 24H2. A Microsoft anunciou a novidade no build 26040 do Insider Preview, em janeiro de 2024. Adicione-o em Configurações, Hora & idioma, Idioma & região, nas opções do inglês ou de outro idioma de escrita latina. Versões anteriores do Windows precisam do instalador gratuito do colemak.com. O Dvorak vem com o Windows desde o Windows 95."},
+    {"q": "Dá para usar Dvorak ou Colemak no celular?", "a": "O Dvorak vem nos dois grandes sistemas de celular: o iOS o inclui desde o iOS 16, de 2022, e o teclado de tela do Android o aceita desde o Android 4.1. O Colemak chega por aplicativos de teclado como o Gboard ou o SwiftKey. Para digitar no vidro, o próprio FAQ do Colemak recomenda o QWERTY com digitação por gestos, porque o Colemak aumenta o caminho dos dedos e os erros numa tela sensível ao toque."},
+    {"q": "Quanto tempo leva para aprender Colemak?", "a": "Não encontramos nenhum estudo controlado que meça isso. O FAQ do Colemak diz que depende da pessoa e que a maior parte do tempo vai para a coordenação motora e a destreza dos dedos, já que só 17 teclas mudam. Sessões curtas e diárias, num ritmo em que você quase não erra, são o jeito prático de desenvolvê-las."}
+  ],
+  "sources": [
+    {"title": "Colemak Mod-DH: comparação de layouts (bigramas com o mesmo dedo e notas de esforço)", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: o que muda, origem, angle mod", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "ColemakMods/mod-dh no GitHub: instalação, suporte no xkeyboard-config, arquivos de mapa de teclas", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "Colemak: site oficial", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak: letras acentuadas por idioma, incluindo o português", "url": "https://colemak.com/Multilingual"},
+    {"title": "OJ Bucao, The Workman Keyboard Layout Philosophy (2010)", "url": "https://workmanlayout.org/"},
+    {"title": "Patente americana 2.040.248, Typewriter keyboard (Dvorak e Dealey, pedida em 1932, concedida em 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Teclado Dvorak, com o layout BR-Nativo, Wikipédia", "url": "https://pt.wikipedia.org/wiki/Teclado_Dvorak"},
+    {"title": "Barbara Blackburn (typist), Wikipedia", "url": "https://en.wikipedia.org/wiki/Barbara_Blackburn_(typist)"},
+    {"title": "Colemak, Wikipedia", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "Frequência de letras: tabela do português, dados da UFRJ, Wikipédia", "url": "https://pt.wikipedia.org/wiki/Frequ%C3%AAncia_de_letras"},
+    {"title": "Kinesis, QWERTY | Dvorak | Colemak et al", "url": "https://kinesis-ergo.com/switching-from-qwerty/"},
+    {"title": "xkeyboard-config(7): layouts incluídos no Linux, entre eles Dvorak, Colemak, Colemak-DH e Workman", "url": "https://man.archlinux.org/man/xkeyboard-config"},
+    {"title": "Microsoft, Announcing Windows 11 Insider Preview Build 26040 (26 de janeiro de 2024)", "url": "https://blogs.windows.com/windows-insider/2024/01/26/announcing-windows-11-insider-preview-build-26040-canary-channel/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Teste o Colemak no navegador", "drill": "words", "layout": "colemak"}
+}
+-->
+<p>O Colemak e o Dvorak levam as letras mais comuns do inglês para debaixo dos dedos em repouso e ganham do QWERTY com folga nas medidas de conforto. Eles se separam em quanto do QWERTY sobrevive. O Dvorak, patenteado em 1936, deixa só o A e o M onde o QWERTY os põe. O Colemak, lançado em 2006, muda 17 teclas e mantém os atalhos de desfazer, recortar, copiar e colar onde a mão esquerda os espera. O Workman, de 2010, muda 21. Os layouts nacionais, como o ABNT2 e o de Portugal, estão no <a href="guide:keyboard-layouts">guia de layouts de teclado</a>.</p>
+
+<h2>Colemak vs Dvorak: qual é melhor?</h2>
+<p>O Colemak supera o Dvorak em todos os números de conforto publicados para os dois, e ambos deixam o QWERTY muito para trás. A tabela põe QWERTY, Dvorak, Colemak e Workman lado a lado. Um bigrama com o mesmo dedo são duas letras seguidas digitadas pelo mesmo dedo, que precisa terminar uma tecla antes de ir para a outra. Esses números vêm de simulações com textos em inglês, que comparam os layouts em condições iguais; os seus vão variar com o que você digita.</p>
+<table>
+<caption>QWERTY, Dvorak, Colemak e Workman comparados</caption>
+<thead><tr><th scope="col">Medida</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th><th scope="col">Colemak</th><th scope="col">Workman</th></tr></thead>
+<tbody>
+<tr><th scope="row">Criado em</th><td>Década de 1870</td><td>Pedido em 1932, patenteado em 1936</td><td>2006</td><td>2010</td></tr>
+<tr><th scope="row">Toques na fileira central</th><td>32%</td><td>70%</td><td>74%</td><td>Sem número publicado</td></tr>
+<tr><th scope="row">Bigramas com o mesmo dedo</th><td>6,58%</td><td>2,63%</td><td>1,67%</td><td>3,15%</td></tr>
+<tr><th scope="row">Nota de esforço (menor é mais fácil)</th><td>2,400</td><td>1,923</td><td>1,836</td><td>1,817</td></tr>
+<tr><th scope="row">Teclas que saem do lugar do QWERTY</th><td>0</td><td>Todas as letras menos A e M, e quase toda a pontuação</td><td>17</td><td>21</td></tr>
+<tr><th scope="row">Ctrl+Z, X, C, V</th><td>Mão esquerda, fileira de baixo</td><td>Espalhados; C, V e Z na mão direita</td><td>Sem mudança</td><td>Z e X no lugar; C e V uma tecla à direita</td></tr>
+<tr><th scope="row">Vem com</th><td>Todos os sistemas</td><td>Windows, macOS, Linux, ChromeOS, iOS 16+, Android</td><td>Windows 11 24H2+, macOS, Linux, ChromeOS</td><td>Linux; download grátis para Windows e macOS</td></tr>
+</tbody>
+</table>
+<p>As porcentagens da fileira central vêm da <a href="https://kinesis-ergo.com/switching-from-qwerty/">Kinesis</a> e do <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">artigo da Wikipédia em inglês sobre o Dvorak</a>, que atribui os 70% e os 32% a um artigo de Jared Diamond na revista Discover, de 1997. Os bigramas e o esforço vêm da <a href="https://colemakmods.github.io/mod-dh/compare.html">comparação do projeto Colemak Mod-DH</a>, que simula a digitação de livros do Projeto Gutenberg com o dedilhado recomendado para cada layout. O autor chama os pesos de esforço de estimativas próprias, e o site é do projeto Colemak-DH, então trate notas próximas como empate. As contagens de teclas vêm do <a href="https://colemak.com/FAQ">FAQ do Colemak</a> e do <a href="https://workmanlayout.org/">workmanlayout.org</a>.</p>
+<p>As margens entre Colemak e Dvorak são modestas: 74% contra 70% na fileira central, 1,67% contra 2,63% de bigramas com o mesmo dedo. O Workman tem a menor nota de esforço dos quatro, 1,817 contra 1,836 do Colemak, porque o esforço básico por tecla é menor (1,710 contra 1,773).</p>
+
+<h2>Como o Colemak e o Dvorak diferem no desenho?</h2>
+<p>O Dvorak gira em torno da alternância entre as mãos, e o Colemak em torno dos hábitos do QWERTY. August Dvorak e William Dealey pediram a patente em maio de 1932 e a receberam em maio de 1936. O layout deles põe todas as vogais, o Y incluído, sob a mão esquerda e as consoantes mais usadas sob a direita, então a maioria das palavras em inglês pula de uma mão para a outra. A fileira central esquerda diz A O E U I, e a direita D H T N S. O <a href="guide:dvorak">guia do teclado Dvorak</a> conta a história e os estudos que ainda geram discussão.</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>O Dvorak: vogais na fileira central esquerda, consoantes comuns na direita. A cor de cada tecla mostra o dedo que a aperta.</figcaption></figure>
+<p>O FAQ do Colemak diz que o Dvorak paga essa alternância com mais bigramas com o mesmo dedo, uma carga que pende para a mão direita, esforço extra para o mínimo direito (o L fica onde o QWERTY tem o P) e menos rolamentos, os movimentos em que uma mão digita várias teclas num gesto contínuo. O FAQ também lembra que o I, uma das letras mais frequentes, fica fora da posição de repouso no Dvorak, num alcance lateral do indicador esquerdo.</p>
+<p>Shai Coleman lançou o Colemak em 1º de janeiro de 2006 para manter o máximo possível do QWERTY e mudar uma letra só quando valesse a pena. Dezessete teclas mudam, e só duas delas, P e E, trocam de mão. A fileira central passa a ser A R S T D H N E I O, então palavras como <em>dentro</em>, <em>tarde</em> e <em>ainda</em> nunca saem dela. Na versão padrão, o Caps Lock vira um segundo Backspace. O <a href="guide:colemak">guia do layout Colemak</a> explica como aprendê-lo.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>O Colemak: quase toda a fileira de baixo e quase toda a pontuação ficam onde o QWERTY as põe.</figcaption></figure>
+<p>O ponto fraco do Colemak é o meio da fileira central. D e H ficam nas duas colunas centrais, então os indicadores deslizam para o lado para alcançá-los, e um par comum como HE obriga a mão direita a uma torção lateral. O Colemak-DH e o Workman foram feitos para eliminar esse alcance.</p>
+
+<h2>Qual é mais fácil de aprender, Colemak ou Dvorak?</h2>
+<p>O Colemak é mais fácil de aprender para quem digita em QWERTY hoje. Menos teclas mudam, só duas trocam de mão, e Ctrl+Z, X, C e V ficam no lugar, então os atalhos continuam funcionando enquanto você reaprende as letras. O Dvorak leva a vírgula e o ponto para a fileira de cima, o ponto e vírgula para a esquerda da fileira de baixo e os colchetes para a fileira dos números, o que dá mais a reaprender para quem escreve código ou texto cheio de pontuação.</p>
+<p>O Colemak nasceu desse argumento: o FAQ dele chama o Dvorak de “difícil e frustrante demais de aprender para quem já digita em QWERTY”, em tradução livre. Leia isso como o site do layout defendendo a própria causa. Não encontramos nenhum estudo controlado sobre quanto tempo cada layout leva para ser aprendido. O FAQ do Colemak diz que o tempo depende da pessoa e vai sobretudo para melhorar a coordenação motora e a destreza dos dedos.</p>
+<p>Para quem prefere ir aos poucos, os layouts de transição Tarmak mudam, segundo a <a href="https://en.wikipedia.org/wiki/Colemak">Wikipédia em inglês</a>, de três a cinco teclas por vez, em cinco etapas até o Colemak.</p>
+
+<h2>Colemak ou Dvorak: qual serve melhor para escrever em português?</h2>
+<p>Os dois rendem bem em português, porque as letras mais comuns dos dois idiomas se parecem, e o Colemak sai um pouco na frente. Somamos as frequências da <a href="https://pt.wikipedia.org/wiki/Frequ%C3%AAncia_de_letras">tabela de letras do português publicada na Wikipédia</a>, com dados da UFRJ, para as teclas de cada layout. Ela traz só as 26 letras, sem acentos nem ç, então o resultado é aproximado.</p>
+<table>
+<caption>Onde caem as letras de um texto em português em cada layout (nossa conta)</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Letras na fileira central</th><th scope="col">Letras digitadas pelos dedos mínimos</th></tr></thead>
+<tbody>
+<tr><td>QWERTY e ABNT2</td><td>34%</td><td>19%</td></tr>
+<tr><td>Dvorak</td><td>72%</td><td>26%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>27%</td></tr>
+<tr><td>Colemak-DH</td><td>74%</td><td>27%</td></tr>
+</tbody>
+</table>
+<p>Em português, o Colemak e o Colemak-DH põem cerca de três quartos das letras na fileira central, e o Dvorak fica logo atrás. O custo dos três está nos mínimos. O A, a letra mais comum do português, com 14,6% das letras, fica sob o mínimo esquerdo em todos eles. No Colemak, o O, com 10,7%, vai para o mínimo direito; no Dvorak, esse dedo fica com o L e com o S, que fecha quase todo plural.</p>
+<p>Os acentos pesam mais na escolha. O Dvorak americano não tem tecla de Ç. O BR-Nativo, uma adaptação do Dvorak para o português do Brasil, acrescenta uma e, segundo a <a href="https://pt.wikipedia.org/wiki/Teclado_Dvorak">Wikipédia</a>, não é padronizado. O Colemak oficial digita os acentos com <kbd>AltGr</kbd>: ç com <kbd>AltGr</kbd>+<kbd>C</kbd>, ã com <kbd>AltGr</kbd>+<kbd>F</kbd>, á com <kbd>AltGr</kbd>+<kbd>A</kbd>, e â, ê e ô com <kbd>AltGr</kbd>+<kbd>X</kbd> seguido da vogal. O <a href="https://colemak.com/Multilingual">próprio colemak.com</a> diz que essa camada serve para escrever em outros idiomas de vez em quando. Quem escreve em português o dia inteiro num teclado ABNT2, com o Ç na própria tecla, ganha menos com a troca do que as porcentagens sugerem.</p>
+
+<h2>O Colemak ou o Dvorak é mais rápido que o QWERTY?</h2>
+<p>Nenhum estudo mostrou que o Colemak ou o Dvorak deixa você mais rápido que o QWERTY. A pergunta Dvorak vs QWERTY tem o histórico mais longo. Durante a Segunda Guerra Mundial, na Marinha americana, Dvorak conduziu experimentos que, segundo ele, retreinaram datilógrafos no seu layout em dez dias. Em 1956, Earle Strong, da General Services Administration americana, conduziu um estudo controlado com dez datilógrafos por grupo que, segundo a Wikipédia, não mostrou nenhum benefício do Dvorak na velocidade de digitação nem na de treinamento. Strong, que tinha uma rixa pessoal com Dvorak, atribuiu os resultados anteriores dele a viés e a um desenho experimental ruim. Em 1990, S. J. Liebowitz e Stephen Margolis revisaram o histórico em “The Fable of the Keys” e concluíram que os experimentos mais bem documentados sugerem pouca ou nenhuma vantagem para o teclado Dvorak.</p>
+<p>O recorde mais famoso do Dvorak vem de uma única datilógrafa. Barbara Blackburn apareceu no Guinness Book de 1976 a 1985 com 150 palavras por minuto mantidas durante 50 minutos, incluída sem teste oficial depois que um defensor do Dvorak escreveu aos editores. O recorde de uma só pessoa não separa o layout de quem digita.</p>
+<p>O histórico do Colemak vs QWERTY é ainda mais curto: não encontramos nenhum estudo controlado de velocidade com o Colemak. A defesa dele se apoia em simulações como as da tabela, que medem conforto: quanto os dedos se esticam, quanto da digitação fica na fileira central, com que frequência um dedo trabalha duas vezes seguidas. Uma troca de layout também custa velocidade por um tempo antes de devolver qualquer coisa, então, se velocidade é a sua meta, comece por <a href="guide:how-to-type-faster">como digitar mais rápido</a> no layout que você já tem e compare-se com a <a href="guide:typing-speed">velocidade média de digitação</a>.</p>
+
+<h2>Onde entram o Workman e o Colemak-DH?</h2>
+<p>O Workman e o Colemak-DH atacam o alcance lateral do Colemak até o D e o H, e cada um paga por isso de um jeito. OJ Bucao publicou o Workman em setembro de 2010, depois de dar a cada tecla uma nota de 1 (a mais fácil) a 5 (a mais cansativa). O objetivo dele era tirar as letras comuns das duas colunas centrais, que pelas contas dele recebem 22% dos toques no QWERTY, 14% no Dvorak, 12% no Colemak e 6% no Workman. O custo são os bigramas com o mesmo dedo: 3,15% na comparação do Mod-DH, contra 1,67% do Colemak.</p>
+<p>O Colemak-DH mantém o Colemak e mexe só no que causa o alcance. SteveP o lançou em outubro de 2014. O D desce para a fileira de baixo, sob o indicador esquerdo, o G volta à sua tecla do QWERTY, o B sobe para a fileira de cima e o H troca de lugar com o M, sem mudar o dedo de nenhuma tecla. As versões para teclados escalonados podem acrescentar um angle mod, que desloca X e C (e Z, em teclados ISO) uma tecla para a esquerda. O Colemak-DH mantém os 1,67% de bigramas com o mesmo dedo do Colemak e baixa a nota de esforço de 1,802 para 1,735 na mesma configuração de teclado; em teclados matriciais, marca 1,726, a menor da comparação. O Linux o inclui a partir do xkeyboard-config 2.34, e o projeto oferece arquivos para macOS e Windows. No petitdoigt, você pode <a href="app:pairs?layout=colemak-dh">treinar pares de letras no Colemak-DH</a> sem instalar nada.</p>
+
+<h2>O que acontece com Ctrl+C e Ctrl+V em cada layout?</h2>
+<p>Na maioria dos programas, os atalhos seguem as letras, então um layout que muda o C e o V de lugar leva copiar e colar junto. O Colemak mantém Z, X, C e V exatamente onde o QWERTY os põe. O Workman mantém Z e X e desloca C e V uma tecla para a direita, ainda ao alcance só da mão esquerda. No Colemak-DH, a posição exata muda conforme a versão, sempre na mão esquerda. O Dvorak os espalha: o X cai sob o indicador esquerdo, enquanto C, V e Z vão para a mão direita, então desfazer, copiar e colar pedem a mão que costuma segurar o mouse.</p>
+<p>Quem usa Dvorak tem saídas. O macOS inclui o layout “Dvorak - QWERTY ⌘”, que vira QWERTY enquanto você segura Command, e no Windows scripts do AutoHotkey fazem o mesmo.</p>
+
+<h2>Qual layout escolher?</h2>
+<p>Escolha o Colemak se você digita em QWERTY ou ABNT2 hoje e quer a troca mais fácil com o melhor conforto medido. Fique no Dvorak se já digita nele. A tabela cobre os outros casos.</p>
+<table>
+<caption>Qual layout de teclado combina com cada pessoa</caption>
+<thead><tr><th scope="col">Se este é o seu caso</th><th scope="col">Escolha</th><th scope="col">Por quê</th></tr></thead>
+<tbody>
+<tr><td>Você digita em QWERTY ou ABNT2 e quer a troca mais suave</td><td>Colemak</td><td>17 teclas mudam, os atalhos ficam, a menor taxa de bigramas com o mesmo dedo dos quatro</td></tr>
+<tr><td>O alcance lateral dos indicadores incomoda, ou você usa um teclado split ou ortolinear</td><td>Colemak-DH</td><td>Tira o alcance até o D e o H; menor nota de esforço da comparação</td></tr>
+<tr><td>Você já digita bem em Dvorak</td><td>Fique no Dvorak</td><td>O próprio FAQ do Colemak diz que o ganho dele sobre o Dvorak é menor que o do Dvorak sobre o QWERTY</td></tr>
+<tr><td>Você digita em muitos aparelhos diferentes e quer o layout já instalado</td><td>Dvorak, ou fique no QWERTY</td><td>O Dvorak vem no Windows, no macOS, no Linux, no ChromeOS, no iOS e no Android</td></tr>
+<tr><td>Você quer o mínimo de alcance nas colunas centrais e aceita mais bigramas com o mesmo dedo</td><td>Workman</td><td>6% de uso das colunas centrais, pela conta do autor</td></tr>
+<tr><td>Você escreve sobretudo em português num teclado brasileiro</td><td>Fique no ABNT2</td><td>Ç numa tecla e acentos em duas; nos alternativos, os acentos pedem AltGr ou um layout não padronizado</td></tr>
+<tr><td>Você já digita rápido e só quer mais velocidade</td><td>Fique no seu layout</td><td>Nenhum estudo mostrou ganho de velocidade com os alternativos</td></tr>
+</tbody>
+</table>
+
+<h2>Como testar o Colemak ou o Dvorak antes de mudar?</h2>
+<p>Você pode testar os três numa aba do navegador sem mexer nas configurações do sistema. O petitdoigt, um treinador de digitação gratuito que roda no navegador, aplica o layout ele mesmo a partir da posição física de cada tecla, então o <a href="app:words?layout=colemak">Colemak</a>, o <a href="app:words?layout=dvorak">Dvorak</a> e o <a href="app:words?layout=workman">Workman</a> funcionam no teclado que já está na sua mesa, ABNT2 incluído. O teclado na tela mostra as letras do novo layout e pinta cada tecla com a cor do dedo que deve apertá-la; o <a href="guide:finger-placement">mapa dos dedos no teclado</a> explica essas zonas. O navegador não vê qual dedo você usou: o treinador destaca o dedo certo e mede as teclas e o tempo. A interface aparece em inglês, e os textos de treino existem em inglês, francês, alemão e espanhol.</p>
+<ol>
+<li>Digite alguns minutos do exercício words em cada layout que você está considerando, devagar, seguindo o dedo destacado.</li>
+<li>Leve o que pareceu menos estranho para o exercício pairs. No modo adaptive, ele monta cada série sobretudo com as suas transições de tecla para tecla mais lentas e com mais erros.</li>
+<li>Abra a página stats. Ela guarda números separados para cada layout, então o treino no Colemak nunca se mistura com o seu histórico no QWERTY.</li>
+<li>Quando o novo layout parecer valer o esforço, adicione-o ao sistema. No Windows 11 versão 24H2 ou posterior, vá em Configurações, Hora &amp; idioma, Idioma &amp; região, abra as opções do inglês e adicione um teclado. O macOS e o Linux já trazem o Colemak e o Dvorak.</li>
+</ol>

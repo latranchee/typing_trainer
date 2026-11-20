@@ -1,0 +1,152 @@
+<!--meta
+{
+  "id": "typing-exercises",
+  "lang": "ja",
+  "slug": "typing-exercises",
+  "title": "タイピング練習：小指と薬指を鍛える指別メニュー",
+  "description": "小指と薬指を鍛えるタイピング練習。1本ずつ動かすドリル、ローマ字でそのまま打てる練習文、つまずきやすい文字の組み合わせ、1日15分の週間メニューを紹介します。",
+  "h1": "小指と薬指のためのタイピング練習メニュー",
+  "keyword": "タイピング練習",
+  "keywords_secondary": ["タイピング 小指 練習", "タイピング 薬指", "小指 鍛える タイピング", "タイピング 練習方法", "タイピング練習メニュー"],
+  "summary": "効果の大きいタイピング練習は、弱い指を1本ずつ鍛えるものです。ほかの指をホームポジションに置いたままその指だけを動かすドリルから始め、その指の文字が多い練習文、その指がつまずく文字の組み合わせへ進みます。鍛えたいのはたいてい薬指と小指で、ローマ字入力では母音のAを左手の小指、Oを右手の薬指が打ちます。1日15分ほど、ゆっくり練習してください。",
+  "faq": [
+    {"q": "タイピングで小指を鍛えるには？", "a": "キーボードの上で鍛えます。右手の小指なら;から上のPと下の/へ、左手の小指ならAから上のQと下のZへ、ほかの指をホームポジションに置いたままゆっくり往復します。次に反対側の小指でShift、右手の小指でEnterと長音の-を練習します。キーを押す力はごくわずかで足りるので、狙ったキーへ正確に届くことを優先してください。"},
+    {"q": "ShiftやEnterは小指で押しますか？", "a": "はい。タッチタイピングでは左右のShiftを両手の小指が受け持ち、Enterは右手の小指が押します。Shiftは文字と反対側を使い、大文字のAなら右Shift、Pなら左Shiftです。petitdoigtは大文字ごとにどちらのShiftを使ったかを記録するので、この癖を確かめやすくなります。"},
+    {"q": "小指を使わずに打つのはよくないですか？", "a": "普段の速さにはそれほど響きません。アールト大学のHow We Typeの研究では、少ない指で打つ自己流のタイピストがタッチタイピストと同じくらいの速さで打てていて、文字ごとにいつも同じ指を使うことが高い成績を予測する3つの要因の1つでした。それでも著者らは、非常に速い速度に届く道として知られている中では、タッチタイピングが最良だとしています。"},
+    {"q": "文字の順番が入れ替わるのはなぜですか？", "a": "たいていは、ある指が次のキーを打つ指より遅れているためです。「sore（それ）」では左手の薬指がS、右手の薬指がO、左手の人差し指がR、中指がEを打ちます。右手の薬指が遅れるとRが先に入り、「sroe」になります。入れ替わる組み合わせをゆっくり練習して順番を固め、それから速さを戻してください。"},
+    {"q": "US配列のキーボードでも同じ練習でいいですか？", "a": "英字の位置はJIS配列とUS配列で同じなので、薬指と小指の英字の練習はそのまま使えます。違うのは右手の小指が受け持つ記号の位置とEnterの形です。JIS配列のEnterは2段にまたがる逆L字、US配列のEnterは横長の1段で、小指が届く距離が変わります。"},
+    {"q": "弱い指を直すのにどのくらいかかりますか？", "a": "確かな数字は誰にも出せません。練習の頻度と、古い癖の根深さで変わるからです。代わりに自分で測ってください。その指の正確率と遅い文字の組み合わせを書き留め、1日15分を2週間続けてから、同じ数字を比べます。"}
+  ],
+  "sources": [
+    {"title": "Häger-Ross & Schieber, Quantifying the Independence of Human Finger Movements, Journal of Neuroscience (2000)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6773164/"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing, CHI 2016", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Baddeley & Longman, The Influence of Length and Frequency of Training Session on the Rate of Learning to Type, Ergonomics (1978)", "url": "https://www.gwern.net/doc/psychology/spaced-repetition/1978-baddeley.pdf"},
+    {"title": "Letter frequency (English, texts column), Wikipedia", "url": "https://en.wikipedia.org/wiki/Letter_frequency"},
+    {"title": "CHERRY MX Red switch specifications (actuation force)", "url": "https://www.cherry.de/en-us/product/mx2a-red"},
+    {"title": "Google日本語入力（Mozc）のローマ字・ひらがな変換表 romanji-hiragana.tsv", "url": "https://raw.githubusercontent.com/google/mozc/master/src/data/preedit/romanji-hiragana.tsv"},
+    {"title": "Japanese input method (Wikipedia): the JIS layout keeps the QWERTY letters", "url": "https://en.wikipedia.org/wiki/Japanese_input_method"},
+    {"title": "キー配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/キー配列"},
+    {"title": "ライフハッカー・ジャパン編集部「キーボード配列の種類と変更方法」", "url": "https://www.lifehacker.jp/article/keyboard-layout/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "薬指と小指を鍛える", "drill": "anchors"}
+}
+-->
+<p>キーボードの上で遅れがちなのは、薬指と小指です。キーを外して速さを落とし、力のある隣の指が代わりに伸びてかばうことも多く、それが後で直さなければならない癖になります。ここで紹介する練習は、その指を1本ずつ、いますぐ打てる文字列で鍛えます。</p>
+
+<h2>どのタイピング練習から始めればいい？</h2>
+<p>自分の段階に合った練習から始めます。初心者はホームポジションの段から練習し、1段ずつ増やしていきます。その手順は<a href="guide:touch-typing">タッチタイピングのガイド</a>で説明しています。すでに10本の指で打てる人には、いちばん遅い指を狙ったドリルが効きます。このページの残りはそのためのものです。</p>
+<table>
+<caption>段階別のタイピング練習と、それぞれで打つ1行</caption>
+<thead><tr><th scope="col">いまの段階</th><th scope="col">練習</th><th scope="col">打つ文字列</th></tr></thead>
+<tbody>
+<tr><td>タッチタイピングを始めたばかり</td><td>ホームポジションの段だけで打てる言葉、そこから1段ずつ</td><td><code>asa saka haka hada kaga saga</code></td></tr>
+<tr><td>どのキーがどこにあるかは覚えた</td><td>26文字をすべて使う英語の文（パングラム）</td><td><code>the quick brown fox jumps over the lazy dog</code></td></tr>
+<tr><td>薬指と小指が遅れる</td><td>1本ずつのドリル、その指の文字が多い練習文、文字の組み合わせ</td><td><code>a q a z a q a z a 1 a</code></td></tr>
+<tr><td>速くするとミスが出る</td><td>ゆっくり打つ練習文、ミスをしたら最初から</td><td><code>asa sasa sawa zawazawa sowasowa</code></td></tr>
+</tbody>
+</table>
+
+<h2>タイピングで薬指と小指が弱いのはなぜ？</h2>
+<p>薬指は、手の中でいちばん独立して動かしにくい指です。2000年の研究で、研究者は10人に指を1本ずつ動かしてもらい、ビデオと計測用の手袋で記録しました。薬指はほかのどの指よりも隣の指を一緒に引きずり、10人中9人の右手で独立性の値がいちばん低い指でした（<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6773164/">Häger-RossとSchieber</a>）。著者らはその一部を体のしくみによるものと考えています。指同士はつながっていて、前腕の筋肉のいくつかは1本で複数の指を引くからです。残りは、神経系が手をどう制御するかによるとしています。利き手の指が、もう一方の手の指より独立していたわけでもありませんでした。</p>
+<p>その研究で小指の成績は悪くなく、親指と人差し指に次ぐ3番目でした。キーボードで小指が苦労するのは、受け持つキーが多いためです。JISキーボードの右手の小指は、<kbd>P</kbd>、<kbd>;</kbd>、<kbd>/</kbd>に加えて、<kbd>-</kbd>、<kbd>^</kbd>、<kbd>¥</kbd>、<kbd>@</kbd>、<kbd>[</kbd>、<kbd>:</kbd>、<kbd>]</kbd>、<kbd>\</kbd>の記号キーを受け持ち、<kbd>Enter</kbd>、右<kbd>Shift</kbd>、<kbd>Backspace</kbd>も押します。そのいくつかは小指の置き場所から遠く、数字の段の右端にある<kbd>Backspace</kbd>がいちばん遠いキーです。</p>
+<figure data-figure="finger-chart" data-layout="qwerty"><figcaption>QWERTY配列を打つ指ごとに色分けした図。薬指と小指の範囲はキーボードの外側の端にあり、指を伸ばす距離がいちばん長くなります。英字の位置はJISキーボードでも同じです。</figcaption></figure>
+<p>ローマ字入力では、5つの母音のうちAとOをこの2本の指が打ちます。あ段の音は、か（ka）、さ（sa）、わ（wa）のようにすべて<kbd>A</kbd>で終わり、<kbd>A</kbd>は左手の小指の担当です。お段の音はすべて<kbd>O</kbd>で終わり、こちらは右手の薬指が打ちます。<a href="https://raw.githubusercontent.com/google/mozc/master/src/data/preedit/romanji-hiragana.tsv">Google日本語入力の変換表</a>では、右手の小指が打つ<kbd>-</kbd>がカタカナ語に欠かせない長音の「ー」に、右手の薬指が打つ<kbd>.</kbd>が句点の「。」になります。</p>
+<table>
+<caption>ローマ字入力で薬指と小指が打つもの（JISキーボード）</caption>
+<thead><tr><th scope="col">指</th><th scope="col">英字と記号</th><th scope="col">ローマ字で打つ音</th></tr></thead>
+<tbody>
+<tr><td>左手の小指</td><td><kbd>Q</kbd> <kbd>A</kbd> <kbd>Z</kbd></td><td>あ段のすべての音（a、ka、sa、ta…）、ざ行（za、zu…）</td></tr>
+<tr><td>左手の薬指</td><td><kbd>W</kbd> <kbd>S</kbd> <kbd>X</kbd></td><td>さ行（sa、su…）、わ（wa）、小さい文字（xaでぁ）</td></tr>
+<tr><td>右手の薬指</td><td><kbd>O</kbd> <kbd>L</kbd> <kbd>.</kbd></td><td>お段のすべての音（o、ko、so…）、小さい文字（laでぁ）、句点「。」</td></tr>
+<tr><td>右手の小指</td><td><kbd>P</kbd> <kbd>;</kbd> <kbd>-</kbd> <kbd>@</kbd> ほか</td><td>ぱ行（pa、po…）、長音「ー」、記号</td></tr>
+</tbody>
+</table>
+<p>英語の文章でも事情は同じです。QWERTYでこの4本の指が打つ文字の頻度を<a href="https://en.wikipedia.org/wiki/Letter_frequency">英語の文字頻度表</a>で足し合わせると、英語の文字の約31%になります。</p>
+<p>自己流のタイピストは使う指が少なく、中指や人差し指が代わりに伸びることがよくあります。アールト大学の<a href="https://userinterfaces.aalto.fi/how-we-type">How We Type</a>の研究は、30人のタイピストの動きをモーションキャプチャーで記録し、高い成績を予測する3つの要因を挙げました。その1つが、あいまいさのない割り当て、つまり同じ文字をいつも同じ指で打つことです。<kbd>O</kbd>をある日は薬指で、別の日は中指で打っているうちは、その一貫性は育ちません。</p>
+
+<h2>指の筋トレはタイピングに効く？</h2>
+<p>ハンドグリップや握るボールで鍛えられるのは力で、タイピングに要る力はごくわずかです。よく使われるメカニカルスイッチの<a href="https://www.cherry.de/en-us/product/mx2a-red">Cherry MX Red</a>は45センチニュートンで反応し、これはキーの上に約46グラムの物を載せたときの重さにあたります。どの指でも押せる力です。弱い指に足りないのは制御、つまり隣の指を動かさずに1つのキーを正しいタイミングできれいに押す力です。</p>
+<p>制御はキーボードの上で鍛え、そのときペースが大切です。同じ指の研究では、人は1秒に約2回の自分のペースで動かしたときのほうが、1秒に3回のメトロノームに合わせたときより、1本の指を独立して動かせました。著者らは、その差の多くはメトロノームより動きの速さで説明できると考えています。ゆっくりのドリルなら、指が最も独立して動く範囲にとどまれます。そのきれいな動きを、後で速くしていきます。</p>
+
+<h2>弱い指に効くタイピング練習は？</h2>
+<p>効果が大きいのは、指を1本ずつ鍛え、前の段階の上に次を積んでいく練習です。まず1本だけを動かすドリル、次にその指の文字が多い言葉、最後に実際の文章でその指がつまずく文字の組み合わせです。ミスがほとんど出ない速さで進めます。</p>
+
+<h3>1. 1本ずつ動かすドリル</h3>
+<p>このドリルでは、同じ手のほかの指をホームポジションに置いたまま、1本の指だけを置き場所のキーと伸ばす先のキーの間で往復させます。隣の指を固定しておけば、そのキーに届くのは弱い指だけです。</p>
+<ol>
+<li>指をホームポジションに置きます。左手は<kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd>、右手は<kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>;</kbd>です。</li>
+<li>日本語入力をオフにして、半角英数で打てるようにします。</li>
+<li>指を1本選びます。同じ手の残りの3本は置き場所のキーに乗せたまま動かしません。</li>
+<li>置き場所、伸ばす先、置き場所、伸ばす先と、ゆっくり一定の拍で打ちます。リズムを保つために文字を声に出してもかまいません。</li>
+<li>20〜30回打ったら、次の指に移ります。</li>
+</ol>
+<table>
+<caption>JISキーボードで外側の指を1本ずつ動かす文字列</caption>
+<thead><tr><th scope="col">指</th><th scope="col">置き場所のキー</th><th scope="col">打つ文字列</th></tr></thead>
+<tbody>
+<tr><td>左手の小指</td><td><kbd>A</kbd></td><td><code>a q a z a q a z a 1 a</code></td></tr>
+<tr><td>左手の薬指</td><td><kbd>S</kbd></td><td><code>s w s x s w s x s 2 s</code></td></tr>
+<tr><td>右手の薬指</td><td><kbd>L</kbd></td><td><code>l o l . l o l . l 9 l</code></td></tr>
+<tr><td>右手の小指</td><td><kbd>;</kbd></td><td><code>; p ; / ; p ; : ; - ;</code></td></tr>
+</tbody>
+</table>
+<p>petitdoigtの<a href="app:anchors">anchorsドリル</a>は、選んだ指でこの練習を組み、1回打つたびにホームポジションへ戻します。画面上のキーボードではどのキーも受け持つ指の色で表示され、使う指が光ります。ブラウザーにはどの指でキーを押したかが見えないので、隣の指を動かさずにおくのはあなたの役目です。画面は英語表示で、練習文は英語、フランス語、ドイツ語、スペイン語から選びます。</p>
+
+<h3>2. 薬指と小指の文字が多い練習文</h3>
+<p>1本ずつの往復が均一になったら、実際の言葉に移ります。次の行はどれも外側の指をよく使うローマ字で、日本語入力をオンにしたまま打てます。各行を3回、1回目はゆっくり打ち、ミスをしたらその行の最初からやり直します。</p>
+<p><code>asa sasa sawa zawazawa sowasowa aza</code></p>
+<p><code>ao sao aosa oosawa sawasawa</code></p>
+<p><code>pasupo-to posuta- su-pa- sapo-ta- poppu</code></p>
+<p><code>so-su sa-ba- ka-do bo-ru ko-ra</code></p>
+<p><code>Osaka Sapporo Aso Zao Wakasa Paris</code></p>
+<p><code>asa, sawa no soba de aosa wo hosu.</code></p>
+<p>地名の行はShiftの練習で、英字の大文字を打つので日本語入力をオフにします。Shiftは文字と反対の手の小指で押さえ、<kbd>P</kbd>と<kbd>O</kbd>は左Shift、<kbd>S</kbd>、<kbd>A</kbd>、<kbd>Z</kbd>、<kbd>W</kbd>は右Shiftを使います。片方のShiftしか使わない人は、アルファベットのほぼ半分でShiftと文字を同じ手で押すことになり、その手がホームポジションから離れます。</p>
+
+<h3>3. つまずきやすい文字の組み合わせのドリル</h3>
+<p>弱い指は、2つのキーの間の移動でよくつまずきます。同じ指が2回続く組み合わせでは、2回目の前に指が移動しなければなりません。同じ手の薬指と小指で素早く続けて打つ組み合わせもあり、薬指を動かすと隣の指もつられて動きがちです。組み合わせだけを5回ずつ打ってから、言葉を打ちます。</p>
+<table>
+<caption>ローマ字入力で薬指と小指がつまずきやすい組み合わせ</caption>
+<thead><tr><th scope="col">組み合わせ</th><th scope="col">使う指</th><th scope="col">練習する言葉</th></tr></thead>
+<tbody>
+<tr><td><code>za</code>、<code>az</code></td><td>左手の小指が2回</td><td>zaseki（座席）、zasshi（雑誌）、aza（あざ）</td></tr>
+<tr><td><code>o.</code></td><td>右手の薬指が2回</td><td>sou dayo.（そうだよ。）、iiyo.（いいよ。）</td></tr>
+<tr><td><code>sa</code>、<code>as</code></td><td>左手の薬指と左手の小指</td><td>asa（朝）、kasa（傘）、sakana（魚）</td></tr>
+<tr><td><code>wa</code>、<code>aw</code></td><td>左手の薬指と左手の小指</td><td>watashi（私）、kawa（川）、sawa（沢）</td></tr>
+<tr><td><code>po</code>、<code>op</code></td><td>右手の小指と右手の薬指</td><td>tanpopo（たんぽぽ）、sanpo（散歩）、poppu（ポップ）</td></tr>
+<tr><td><code>o-</code></td><td>右手の薬指と右手の小指</td><td>ko-hi-（コーヒー）、bo-ru（ボール）、so-su（ソース）</td></tr>
+</tbody>
+</table>
+<p>あなたが苦手な組み合わせは、この表とは違うはずです。petitdoigtの<a href="app:pairs">pairs（ペア）ドリル</a>がそれを見つけます。標準のadaptive（適応）モードでは、打ちながら測ったあなた自身の遅い移動とミスの多い移動を中心に、毎回のセットを組みます。</p>
+
+<h2>タイピング練習は1日どのくらいする？</h2>
+<p>短い練習を毎日続けるほうが、長い練習より練習時間あたりの上達が大きくなります。1978年に英国郵便局のために行われた研究で、<a href="https://www.gwern.net/doc/psychology/spaced-repetition/1978-baddeley.pdf">BaddeleyとLongman</a>は郵便局員の4つのグループに、違う日程でタイピングを教えました。1日1時間練習したグループは、平均約35時間の練習でキーボード全体を覚えました。1日2時間を2回練習したグループは約50時間かかり、60時間の訓練の後も打つのが最も遅く、直さずに残したミスも最も多いグループでした。</p>
+<p>この研究は1時間より短い練習を試していないので、練習を日に分けることは裏づけていても、1回の理想の長さまでは示していません。弱い指の練習なら、1日15分で3つの練習をすべてこなせて、疲れで往復が雑になる前に終わります。いつもの練習やタイピングテストの前、手が疲れていないうちに入れてください。</p>
+
+<h2>1週間のタイピング練習メニューは？</h2>
+<p>1週間のメニューでは、弱い指それぞれに集中する日を2日ずつ取り、毎回の最後に数分の普通の入力を入れて、ドリルの効果が実際の文章に出ているかを確かめます。15分の練習はいつも同じ順番で、1本ずつのドリルを約3分、練習文を5分、文字の組み合わせを5分、自由な入力を2分です。</p>
+<table>
+<caption>薬指と小指のための1週間のタイピング練習メニュー</caption>
+<thead><tr><th scope="col">曜日</th><th scope="col">重点</th></tr></thead>
+<tbody>
+<tr><td>月曜</td><td>左手の小指と左手の薬指</td></tr>
+<tr><td>火曜</td><td>右手の薬指と右手の小指</td></tr>
+<tr><td>水曜</td><td>反対側の小指でShift、Enter、長音の-、数字の段へ伸ばす練習</td></tr>
+<tr><td>木曜</td><td>左手の小指と左手の薬指</td></tr>
+<tr><td>金曜</td><td>右手の薬指と右手の小指</td></tr>
+<tr><td>土曜</td><td>外側の4本の指を文章で使い、そのあと数字を見直す</td></tr>
+<tr><td>日曜</td><td>休み</td></tr>
+</tbody>
+</table>
+<p>メニューの効果は数字で追います。petitdoigtではfinger focus（指の重点練習）でその日の指を選ぶと、練習文がその指の文字に寄ります。<a href="app:stats">statsページ</a>は配列ごとに、指別と文字別の数字、いちばん弱い移動を記録します。1週目に外側の指の正確率と遅い組み合わせを書き留め、3週目に比べてください。速さより先に正確率を見ます。この指が追いついた後の全体の計画は<a href="guide:how-to-type-faster">タイピングを速くする方法</a>にあります。</p>
+
+<h2>弱い指を弱いままにする癖は？</h2>
+<p>弱い指の上達を止める癖の多くは、弱い指の仕事を別の指や目に任せるものです。</p>
+<ul>
+<li><strong>隣の指にかばわせる。</strong>薬指で<kbd>P</kbd>を打ったり、中指で<kbd>L</kbd>を取ったりすると、その日は速く感じても弱い指は鍛えられません。長音の<kbd>-</kbd>を薬指で打つのも同じ癖です。どの指がどのキーを受け持つかは<a href="guide:finger-placement">タイピングの指の位置の図</a>で確かめられます。</li>
+<li><strong>早くから速さを追う。</strong>速く打って出るミスは、どれも間違った動きの反復です。正確さを優先する理由と上げ方は<a href="guide:typing-accuracy">タイピングの正確率のガイド</a>で説明しています。</li>
+<li><strong>手元のキーを見る。</strong>目が手をホームポジションから引き離し、どの指が動いたかも見えなくなります。<a href="guide:type-without-looking">キーボードを見ないで打つ方法</a>を参考にしてください。</li>
+<li><strong>WASDの癖。</strong>WASDに手を置くゲーマーは、薬指を<kbd>A</kbd>に乗せます。タッチタイピングでは<kbd>A</kbd>は小指の担当で、この癖をそのままタイピングに持ち込むと、左手の小指には自分のキーがなくなります。ローマ字入力では、あ段の音を打つたびにこの癖が出ます。</li>
+<li><strong>気持ちのいい練習ばかりする。</strong>スピードテストで点が伸びるのは、強い指が得意な文字です。ドリルの時間は、数字がいちばん悪い文字と組み合わせに使ってください。</li>
+</ul>
+<p>練習中に指が痛んだりしびれたりしたら、その日はやめてください。痛みが繰り返すなら医師に相談してください。</p>

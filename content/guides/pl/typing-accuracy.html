@@ -1,0 +1,131 @@
+<!--meta
+{
+  "id": "typing-accuracy",
+  "lang": "pl",
+  "slug": "dokladnosc-pisania",
+  "title": "Dokładność pisania: jaki wynik jest dobry i jak go poprawić",
+  "description": "Dokładność pisania na klawiaturze: jak się ją liczy, czemu testy podają różne wyniki, do ilu procent dążyć i 7 kroków do mniejszej liczby literówek.",
+  "h1": "Dokładność pisania na klawiaturze: dobry wynik i jak go poprawić",
+  "keyword": "dokładność pisania",
+  "keywords_secondary": ["dokładność pisania na klawiaturze", "jak poprawić dokładność pisania", "dokładność czy szybkość pisania", "literówki przy pisaniu", "dobra dokładność pisania"],
+  "summary": "Dokładność pisania to odsetek naciśnięć, które trafiły we właściwy klawisz: przy 96% mniej więcej 4 klawisze na 100 były błędne. Podczas ćwiczeń trzymaj co najmniej 96%, a gdy piszesz już bez patrzenia, 98%. Testy liczą tę samą próbkę różnie, bo jedne wliczają poprawione literówki, inne tylko te, które zostały w tekście. Dokładność napędza też szybkość, bo każda poprawiona literówka kosztuje co najmniej dwa dodatkowe naciśnięcia.",
+  "faq": [
+    {"q": "Czy 95% dokładności pisania to dobry wynik?", "a": "To przyzwoity poziom roboczy, o punkt poniżej 96%, które ten poradnik zaleca do ćwiczeń. Przy 95% dokładności liczonej po naciśnięciach mniej więcej co dziesiąte naciśnięcie idzie na zrobienie albo skasowanie błędu. Amerykański serwis Typing.com radzi nauczycielom zaliczać 95% na początku roku szkolnego i podnosić poprzeczkę w stronę 98%, a test urzędniczy stanu Nowy Jork wymaga 96%."},
+    {"q": "Czy 90% dokładności pisania to dobry wynik?", "a": "Dla początkującego to normalny punkt wyjścia. Dla pozostałych to mało: przy 90% co dziesiąty klawisz jest błędny, a po doliczeniu Backspace'ów blisko jedna piąta naciśnięć idzie na błędy. Zwolnij, aż utrzymasz 96%, i dopiero od tego poziomu przyspieszaj."},
+    {"q": "Czy Backspace obniża dokładność pisania?", "a": "To zależy od sposobu liczenia. Przy dokładności liczonej po naciśnięciach błędny klawisz obciąża wynik nawet po skasowaniu. Testy, które oceniają tylko gotowy tekst, pomijają poprawione literówki, ale czas poprawiania i tak obniża twoją liczbę słów na minutę."},
+    {"q": "Poprawiać literówki w trakcie ćwiczeń czy pisać dalej?", "a": "Poprawiaj je od razu, gdy je zauważysz. Prawdziwy tekst musi być poprawny, więc właśnie poprawianie jest nawykiem wartym ćwiczenia. Każdy błąd kosztuje wtedy czas, co popycha cię w stronę tempa, nad którym panujesz. Pisz dalej bez poprawiania tylko wtedy, gdy wymaga tego regulamin testu."},
+    {"q": "Czy da się pisać ze 100% dokładnością?", "a": "W krótkim zdaniu tak. W dłuższym teście nawet szybkim osobom rzadko się to udaje: w badaniu Uniwersytetu Aalto obejmującym 168 000 osób najszybsza dziesiąta część i tak naciskała Backspace lub Delete przy 3,4% naciśnięć. Celuj w stałe 98%, a bezbłędną serię traktuj jako premię."},
+    {"q": "Czy polskie znaki obniżają dokładność pisania?", "a": "Często tak, bo w układzie polskim programisty każda polska litera wymaga dwóch klawiszy naraz: prawego Alta i litery bazowej. Alt puszczony za wcześnie daje „sie” zamiast „się”, przytrzymany za długo zmienia następną literę, na przykład a w ą. Takie pomyłki liczą się jak każda zamiana litery, więc chwyt z prawym Altem ćwicz osobno."}
+  ],
+  "sources": [
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta, Observations on Typing from 136 Million Keystrokes (CHI 2018), artykuł", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Observations on Typing from 136 Million Keystrokes, strona projektu", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Feit, Weir & Oulasvirta, How We Type: Movement Strategies and Performance in Everyday Typing (CHI 2016)", "url": "https://userinterfaces.aalto.fi/how-we-type"},
+    {"title": "Vanderbilt University, Today's self-taught typists almost as fast as touch typists (2016)", "url": "https://www.eurekalert.org/news-releases/520529"},
+    {"title": "New York State Department of Civil Service, Keyboard Test Administration and PTM User Guide", "url": "https://www.cs.ny.gov/extdocs/pdf/PTMUserGuide.pdf"},
+    {"title": "Typing.com, What is good accuracy when it comes to typing?", "url": "https://www.typing.com/blog/good-accuracy-comes-typing/"},
+    {"title": "Monkeytype, kod strony About (definicja acc)", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "USPS Handbook EL-312, 517 Qualifying Tests", "url": "https://about.usps.com/handbooks/el312/el312c5_007.htm"},
+    {"title": "Letter frequency, Wikipedia (kolumny English i Polish)", "url": "https://en.wikipedia.org/wiki/Letter_frequency"},
+    {"title": "AltGr key, Wikipedia (Polska: układ polski programisty)", "url": "https://en.wikipedia.org/wiki/AltGr_key"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Sprawdź swoją dokładność pisania", "drill": "words", "layout": "us"}
+}
+-->
+<h2>Czym jest dokładność pisania?</h2>
+<p>Dokładność pisania to procent tekstu, który zgadza się z tym, co masz napisać. Przy 98% mniej więcej 2 naciśnięcia na 100 trafiły w zły klawisz. Programy do nauki pisania pokazują ją obok liczby słów na minutę, bo te dwie liczby mierzą co innego: WPM liczy tekst, który powstał, a dokładność pokazuje, ile wysiłku poszło po drodze na błędy.</p>
+<p>Czas poprawiania błędów jest już wliczony w twój wynik WPM. Każda poprawiona literówka kosztuje co najmniej dwa dodatkowe naciśnięcia, <kbd>Backspace</kbd> i właściwy klawisz, plus chwilę na jej zauważenie.</p>
+
+<h2>Jak oblicza się dokładność pisania?</h2>
+<p>Dokładność pisania oblicza się jako liczbę poprawnych znaków podzieloną przez wszystkie wpisane znaki, razy 100. Strony różnie rozumieją „wszystkie wpisane znaki”, więc ten sam akapit może dostać 95% w jednym teście i 99% w innym.</p>
+<table>
+<caption>Popularne sposoby liczenia dokładności pisania</caption>
+<thead>
+<tr><th scope="col">Metoda</th><th scope="col">Wzór</th><th scope="col">Czy poprawione literówki się liczą?</th><th scope="col">Gdzie ją spotkasz</th></tr>
+</thead>
+<tbody>
+<tr><td>Dokładność naciśnięć</td><td>właściwe klawisze ÷ (właściwe + błędne klawisze)</td><td>Tak, nawet po skasowaniu</td><td>Programy, które oceniają każdy klawisz w chwili naciśnięcia</td></tr>
+<tr><td>Dokładność gotowego tekstu</td><td>zgodne znaki w gotowym tekście ÷ długość tekstu</td><td>Nie, liczą się tylko błędy, które zostały</td><td>Badania naukowe, gdzie występuje jako wskaźnik niepoprawionych błędów (uncorrected error rate)</td></tr>
+<tr><td>Liczba błędów</td><td>błędy w gotowym tekście, porównane z limitem</td><td>Nie</td><td>Testy przy rekrutacji i egzaminy urzędnicze</td></tr>
+</tbody>
+</table>
+<p>Monkeytype liczy na przykład po naciśnięciach: <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">jego definicja</a> dokładności to „odsetek poprawnie naciśniętych klawiszy” (percentage of correctly pressed keys). Żeby zobaczyć, jak bardzo rozjeżdżają się te metody, weź zdanie ze 100 znaków. Po drodze trafiasz 5 razy w zły klawisz, 4 z tych błędów łapiesz <kbd>Backspace</kbd>, a 1 zostaje w tekście. W sumie naciskasz 99 właściwych klawiszy, 5 błędnych i 4 razy Backspace.</p>
+<ul>
+<li>Dokładność naciśnięć: 99 ÷ (99 + 5) = 95,2%</li>
+<li>Dokładność gotowego tekstu: 99 zgodnych znaków na 100 = 99%</li>
+<li>Liczba błędów: 1</li>
+</ul>
+<p>Do ćwiczeń bardziej przydaje się dokładność naciśnięć. Pokazuje także literówki poprawione po drodze, a właśnie na tych poprawkach ucieka szybkość. Dokładność gotowego tekstu to z kolei to, co widzi odbiorca twojego maila. Niektóre testy wliczają błędy w wynik szybkości i podają słowa na minutę netto: amerykańska poczta USPS wyznacza próg swoich testów pisania właśnie w <a href="https://about.usps.com/handbooks/el312/el312c5_007.htm">WPM netto</a>. Jak liczy się WPM brutto i netto, pokazuje <a href="guide:words-per-minute">poradnik o słowach na minutę</a>.</p>
+
+<h2>Jaka dokładność pisania jest dobra?</h2>
+<p>Dobra dokładność pisania to co najmniej 96% liczone po naciśnięciach i co najmniej 98%, gdy piszesz już bez patrzenia na klawiaturę. Przy 94% mniej więcej co dziewiąte naciśnięcie idzie na zrobienie albo skasowanie błędu. Traktuj poniższe przedziały jako trenerską regułę kciuka dla dokładności naciśnięć:</p>
+<table>
+<caption>Przedziały dokładności naciśnięć podczas ćwiczeń</caption>
+<thead>
+<tr><th scope="col">Dokładność</th><th scope="col">Co to znaczy</th><th scope="col">Co robić</th></tr>
+</thead>
+<tbody>
+<tr><td>Poniżej 90%</td><td>Co najmniej co dziesiąty klawisz jest błędny. Po doliczeniu Backspace'ów blisko jedna piąta naciśnięć idzie na błędy.</td><td>Mocno zwolnij i sprawdź ułożenie palców.</td></tr>
+<tr><td>90–95%</td><td>Błąd co 10 do 20 klawiszy. Normalne podczas nauki pisania bezwzrokowego lub nowego układu albo przy pogoni za szybkością.</td><td>Zwolnij, aż utrzymasz 96%.</td></tr>
+<tr><td>96–97%</td><td>Błąd co 25 do 33 klawiszy. Solidny poziom.</td><td>Zostań przy tym tempie i pracuj nad najsłabszymi klawiszami.</td></tr>
+<tr><td>98% i więcej</td><td>Błąd co 50 klawiszy lub rzadziej. Czyste pisanie.</td><td>Podnoś tempo małymi krokami.</td></tr>
+</tbody>
+</table>
+<p>Testy rekrutacyjne mają sztywne progi. Test pisania na klawiaturze w służbie cywilnej stanu Nowy Jork wymaga 30 słów na minutę (około 150 znaków na minutę) przy dokładności co najmniej 96% przez pięć minut, co przy 30 WPM pozwala na 6 błędów. Dla szkół <a href="https://www.typing.com/blog/good-accuracy-comes-typing/">Typing.com radzi nauczycielom</a>, żeby uczniowie od 4. klasy wzwyż dążyli do 98% lub więcej. Progi szybkości dla różnych poziomów zebrał <a href="guide:typing-speed">poradnik o szybkości pisania na klawiaturze</a>.</p>
+
+<h3>Jaka jest średnia dokładność pisania?</h3>
+<p>W badaniu 168 000 osób piszących online gotowe zdania przeciętnego uczestnika były poprawne mniej więcej w 98,8%, a 6,3% naciśnięć szło na poprawianie błędów klawiszem <kbd>Backspace</kbd> lub <kbd>Delete</kbd>. Naukowcy z Uniwersytetu Aalto i Uniwersytetu Cambridge zebrali te <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">136 milionów naciśnięć klawiszy</a> od ochotników, którzy przepisywali zdania w teście pisania online. Większość uczestników poprawiała większość swoich błędów: 90% z nich zostawiało w gotowych zdaniach mniej niż 2,66% błędów.</p>
+<table>
+<caption>Błędy i poprawki wśród 168 000 osób piszących online (Dhakal i in., CHI 2018)</caption>
+<thead>
+<tr><th scope="col">Grupa</th><th scope="col">Błędy w gotowym tekście</th><th scope="col">Naciśnięcia Backspace lub Delete</th></tr>
+</thead>
+<tbody>
+<tr><td>Najszybsze 10% (powyżej około 78 WPM, czyli 390 znaków na minutę)</td><td>0,71%</td><td>3,4%</td></tr>
+<tr><td>Wszyscy uczestnicy (średnio 52 WPM, około 260 znaków na minutę)</td><td>1,17%</td><td>6,3%</td></tr>
+<tr><td>Najwolniejsze 10% (poniżej około 26 WPM, czyli 130 znaków na minutę)</td><td>1,78%</td><td>9,05%</td></tr>
+</tbody>
+</table>
+<p>Najwolniejsza grupa naciskała Backspace lub Delete ponad dwa i pół raza częściej niż najszybsza, a mimo to zostawiała w tekście mniej więcej dwa i pół raza więcej błędów. Autorzy sugerują, że wolniej piszące osoby mogą gorzej wyłapywać własne pomyłki.</p>
+
+<h2>Dokładność czy szybkość pisania: co jest ważniejsze?</h2>
+<p>Najpierw dokładność, bo błędy zabierają szybkość. W danych z Aalto osoby, które robiły i poprawiały mniej błędów, pisały szybciej: szybkość korelowała ujemnie z udziałem naciśnięć Backspace i Delete (r = −0,36) oraz z liczbą naciśnięć na znak (r = −0,40). Autorzy wnioskują, że zmniejszenie liczby błędów o niewielki margines może dać duży zysk szybkości.</p>
+<p>Przy 95% dokładności naciśnięć na każde 95 właściwych klawiszy przypada około 5 błędnych, a każdy z nich wymaga Backspace'a, więc mniej więcej co dziesiąte naciśnięcie robi albo kasuje błąd. Przy 98% spada to do około jednego na 25. Do tego dochodzi przerwa, w której zauważasz literówkę i odnajdujesz miejsce w tekście. Literówka zauważona późno kosztuje więcej, bo po drodze kasujesz poprawne litery.</p>
+<p>W obrębie jednej sesji szybkość i dokładność ciągną w przeciwne strony: przekrocz tempo, które palce potrafią utrzymać, a błędów przybywa. Gdy porównać różne osoby, najszybsze są zarazem najdokładniejsze, co pokazuje tabela powyżej. Oba wnioski prowadzą do jednego sposobu ćwiczenia. Pisz w tempie, w którym tekst wychodzi czysty, i podnoś je, gdy ruchy staną się automatyczne. Stronę szybkości tego planu omawia poradnik <a href="guide:how-to-type-faster">jak szybciej pisać na klawiaturze</a>.</p>
+
+<h2>Dlaczego ciągle robię literówki?</h2>
+<p>Najczęstsza literówka to wciśnięcie złej litery w miejsce właściwej, a badacze podejrzewają, że bierze się z niekonsekwentnego pisania. W próbie 783 uczestników badania z Aalto błędy dzieliły się na trzy rodzaje:</p>
+<table>
+<caption>Rodzaje błędów przy pisaniu i ich częstość (Dhakal i in., CHI 2018, próba 783 uczestników)</caption>
+<thead>
+<tr><th scope="col">Rodzaj błędu</th><th scope="col">Przykład z badania (po angielsku)</th><th scope="col">Częstość</th></tr>
+</thead>
+<tbody>
+<tr><td>Zamiana: zła litera w miejsce właściwej</td><td><em>riad</em> zamiast <em>road</em></td><td>1,65%</td></tr>
+<tr><td>Pominięcie: brakująca litera</td><td><em>commitee</em> zamiast <em>committee</em></td><td>0,80%</td></tr>
+<tr><td>Wstawienie: dodatkowa litera</td><td><em>string</em> zamiast <em>sting</em></td><td>0,67%</td></tr>
+</tbody>
+</table>
+<p>Zamiany zdarzały się najczęściej i mocniej niż jakikolwiek inny rodzaj błędu odróżniały wolne osoby od szybkich. W polskim tekście zamianą jest też litera bez ogonka czy kreski, jak <em>sie</em> zamiast <em>się</em>. Badacze stawiają hipotezę, że błędy zamiany pojawiają się u osób, które piszą mniej konsekwentnie i mają słabe wyobrażenie o położeniu swoich palców. Osobne <a href="https://userinterfaces.aalto.fi/how-we-type">badanie 30 osób z rejestracją ruchu dłoni</a> na Uniwersytecie Aalto wskazuje w tę samą stronę: jednym z trzech czynników przewidujących wysoką sprawność było jednoznaczne przypisanie, czyli naciskanie danej litery zawsze tym samym palcem. Jeśli <kbd>C</kbd> naciskasz jednego dnia palcem wskazującym, a innego środkowym, twoja dłoń zna do tego klawisza dwie na wpół wyuczone drogi.</p>
+<p>Zwróć uwagę na te nawyki:</p>
+<ul>
+<li><strong>Zjeżdżanie z rzędu podstawowego.</strong> Gdy palce nie wracają między słowami na <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> i <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>;</kbd>, każde sięgnięcie zaczyna się z innego miejsca i ląduje o klawisz obok. Wypustki na <kbd>F</kbd> i <kbd>J</kbd> pozwalają wrócić na miejsce bez patrzenia.</li>
+<li><strong>Patrzenie na klawisze.</strong> Literówki pojawiają się na ekranie, a wzrok nie obejmie naraz ekranu i klawiatury. W <a href="https://www.eurekalert.org/news-releases/520529">badaniu Uniwersytetu Vanderbilta</a> z udziałem 48 osób te z niestandardowym układem palców polegały na widoku klawiatury: gdy ją zasłonięto, ich szybkość i dokładność spadły, a osoby piszące bezwzrokowo pisały mniej więcej tak samo. Badacze sugerują, że takie osoby zerkają na ekran tylko co jakiś czas i przez to mogą wyłapywać mniej swoich błędów.</li>
+<li><strong>Wielkie litery ze złym Shiftem.</strong> Lewy <kbd>Shift</kbd> przy wielkim <kbd>A</kbd> każe jednej ręce robić dwie rzeczy naraz i wyciąga ją z pozycji. Trzymaj Shift ręką przeciwną do litery.</li>
+<li><strong>Za krótko trzymany prawy Alt.</strong> W układzie polskim programisty ą, ę, ł czy ż wymagają prawego Alta (AltGr) i litery bazowej jednocześnie. Alt puszczony o ułamek sekundy za wcześnie zostawia <em>sie</em> zamiast <em>się</em> albo <em>zolw</em> zamiast <em>żółw</em>. Trzymaj prawy Alt prawym kciukiem, który i tak leży przy spacji.</li>
+<li><strong>Litery w złej kolejności.</strong> <em>nei</em> zamiast <em>nie</em> albo <em>jets</em> zamiast <em>jest</em> pojawia się, gdy jedna ręka wyprzedza drugą albo jeden palec spóźnia się za sąsiadem. Ćwicz w równym rytmie, nawet wolniejszym, aż kolejność się utrwali.</li>
+<li><strong>Słabe palce.</strong> Jeśli błędy zbierają się na <kbd>Q</kbd>, <kbd>P</kbd>, <kbd>Z</kbd> czy <kbd>X</kbd>, palec mały lub serdeczny, który je obsługuje, potrzebuje osobnych ćwiczeń. Według <a href="https://en.wikipedia.org/wiki/Letter_frequency">tabeli częstości liter</a> z to około 5,6% liter polskiego tekstu, a angielskiego 0,07%, i lewy mały palec pisze z nim jeszcze ż. Ćwiczenia dla tych palców zebrał poradnik <a href="guide:typing-exercises">ćwiczenia pisania na klawiaturze</a>.</li>
+</ul>
+
+<h2>Jak poprawić dokładność pisania</h2>
+<p>Żeby poprawić dokładność pisania, ćwicz w tempie, w którym utrzymujesz co najmniej 96%, i trenuj konkretne palce oraz pary liter, które stoją za twoimi błędami. Krok po kroku:</p>
+<ol>
+<li><strong>Znajdź swoje czyste tempo.</strong> Napisz kilka jednominutowych serii zwykłych słów i obserwuj dokładność. Tempo, w którym zostaje na poziomie 96% lub wyżej, jest na razie twoim tempem ćwiczeń, nawet jeśli wydaje się wolne.</li>
+<li><strong>Daj każdemu klawiszowi jeden palec.</strong> Sprawdź na <a href="guide:finger-placement">mapie palców na klawiaturze</a>, który palec naciska który klawisz, i trzymaj się tego, także przy klawiszach łatwych do wzięcia złą ręką: <kbd>B</kbd> należy do lewego palca wskazującego, <kbd>Y</kbd> do prawego. petitdoigt koloruje każdy klawisz kolorem palca, który powinien go naciskać, i podświetla ten palec podczas pisania, więc nawyk złego palca staje się widoczny. Przeglądarka nie widzi twoich dłoni, więc program nie sprawdzi, którym palcem naciskasz; to pozostaje twoim zadaniem.</li>
+<li><strong>Trzymaj wzrok na ekranie.</strong> Tam pojawiają się błędy. Jeśli wciąż zerkasz w dół, poradnik <a href="guide:type-without-looking">jak pisać bez patrzenia na klawiaturę</a> pomoże ci zerwać z tym nawykiem, a klawiatura ekranowa może na czas nauki zastąpić nadruki na klawiszach.</li>
+<li><strong>Sprawdź, gdzie są twoje błędy.</strong> Jedna liczba dla całej serii ukrywa, które klawisze ją zaniżają. Strona <a href="app:stats">stats</a> w petitdoigt rozbija wyniki na palce i litery w każdym układzie i wypisuje najsłabsze przejścia między klawiszami z ich dokładnością. Niektóre błędy zdarzają się tylko między dwoma konkretnymi klawiszami, na przykład <kbd>M</kbd> i <kbd>Y</kbd> w słowie <em>tym</em>, które prawy palec wskazujący pisze sam, przeskakując z dolnego rzędu na górny. W trybie adaptive ćwiczenie <a href="app:pairs">pairs</a> buduje serie głównie z twoich najwolniejszych i najczęściej mylonych przejść. Interfejs programu jest po angielsku, a teksty do ćwiczeń są po angielsku, francusku, niemiecku i hiszpańsku. Układ US QWERTY ma w nim litery tam, gdzie układ polski programisty, a polskie litery ćwicz na własnych tekstach.</li>
+<li><strong>Niech każda literówka kosztuje Backspace.</strong> Poprawiaj każdy błąd, gdy tylko go zobaczysz, tak jak w prawdziwym mailu. Tryb hardcore robi z tego ścisłą regułę: zły klawisz zostaje w tekście, dopóki nie skasujesz go klawiszem <kbd>Backspace</kbd>.</li>
+<li><strong>Ćwicz krótko.</strong> Przerwij, gdy dokładność spada przez dwie lub trzy serie z rzędu, bo ćwiczenie w zmęczeniu utrwala niechlujną wersję każdego ruchu.</li>
+<li><strong>Podnoś tempo małymi krokami.</strong> Gdy przez kilka sesji utrzymujesz 98% w tempie ćwiczeń, przyspiesz o kilka słów na minutę. Jeśli dokładność spadnie poniżej 96%, wróć do ostatniego tempa, które dawało czysty tekst.</li>
+</ol>

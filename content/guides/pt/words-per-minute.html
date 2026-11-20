@@ -1,0 +1,142 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "pt",
+  "slug": "palavras-por-minuto",
+  "title": "Palavras por minuto (PPM): o que é e como calcular",
+  "description": "Palavras por minuto explicadas: como calcular o PPM, PPM bruto e líquido, toques por minuto nos concursos e um mesmo teste calculado de seis jeitos.",
+  "h1": "Palavras por minuto (PPM): o que significa e como calcular",
+  "keyword": "palavras por minuto",
+  "keywords_secondary": ["como calcular PPM", "o que é PPM", "PPM digitação", "PPM bruto e líquido", "toques por minuto", "caracteres por minuto"],
+  "summary": "Palavras por minuto (PPM) é a velocidade de digitação medida em palavras de cinco caracteres: cada cinco caracteres digitados, com espaços e pontuação, contam como uma palavra. Para calcular o PPM, divida os caracteres digitados por cinco e depois pelos minutos, e 250 caracteres em um minuto dão 50 PPM. O PPM líquido ainda desconta os erros deixados no texto, e sites com penalidades diferentes dão resultados diferentes para o mesmo teste.",
+  "faq": [
+    {"q": "40 PPM é bom?", "a": "40 PPM fica um pouco abaixo da média medida on-line. No estudo de 2018 da Universidade Aalto com 168 mil voluntários que fizeram um teste de digitação, a média foi de 51,6 PPM; o décimo mais lento digitou abaixo de uns 26 PPM e o décimo mais rápido acima de uns 78. A 40 PPM, você leva em média 300 milissegundos por caractere."},
+    {"q": "100 PPM é raro?", "a": "É raro. No estudo da Aalto, só o décimo mais rápido dos participantes passou de uns 78 PPM, e esse grupo teve média de 89,6 PPM; os mais rápidos do conjunto de dados chegaram a 120 PPM ou mais. Manter 100 PPM significa gastar em média 120 milissegundos por caractere durante o teste inteiro."},
+    {"q": "O que é PPM raw?", "a": "Raw (bruto, em inglês) é a velocidade antes de qualquer penalidade por erros. O Monkeytype calcula o raw como o PPM normal, só que contando também as palavras erradas, enquanto o PPM normal fica apenas com os caracteres das palavras digitadas corretamente. A distância entre os dois mostra quanta velocidade os seus erros custam."},
+    {"q": "Os espaços contam no PPM?", "a": "Sim. A palavra-padrão tem cinco caracteres com os espaços incluídos, uma convenção que Wobbrock situa por volta de 1905, e o Typing.com conta espaços e pontuação do mesmo jeito. Teclas que não deixam caractere no texto, como Shift e Backspace, não somam no PPM, embora o Backspace conte nos toques por minuto."},
+    {"q": "Como calcular o PPM no Excel?", "a": "Ponha o texto digitado na célula A1 e o tempo em segundos na B1, e digite =NÚM.CARACT(A1)/5/(B1/60) em outra célula. NÚM.CARACT conta todos os caracteres, inclusive espaços, então o resultado é o PPM bruto. Para o PPM líquido, ponha o número de erros não corrigidos na C1 e use =NÚM.CARACT(A1)/5/(B1/60)-C1/(B1/60). No Excel em inglês, a função se chama LEN."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. Em MacKenzie & Tanaka-Ishii (orgs.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (artigo em PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: código da página About com as definições de wpm, raw e accuracy", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (artigo em PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Wikipedia: Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"},
+    {"title": "Wikipedia: Portuguese keyboard layout (ABNT2 e layout de Portugal)", "url": "https://en.wikipedia.org/wiki/Portuguese_keyboard_layout"},
+    {"title": "TJMG, Fórum de Unaí, Anexo II: Prova prática de digitação (2025, PDF)", "url": "https://www.tjmg.jus.br/data/files/4C/F5/22/5D/3C526910BA7D2169DE08CCA8/PROVA%20PRATICA%20DE%20DIGITACAO%20Unai.pdf"},
+    {"title": "Direção Concursos, Concurso PC MG: prova de digitação (14/10/2021)", "url": "https://www.direcaoconcursos.com.br/noticias/concurso-pc-mg-prova-de-digitacao/"},
+    {"title": "Suporte da Microsoft, Função NÚM.CARACT", "url": "https://support.microsoft.com/pt-br/office/len-lenb-functions-29236f94-cedc-429d-affd-b5e33d2c67cb"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Meça suas palavras por minuto", "drill": "words"}
+}
+-->
+<h2>O que significa PPM na digitação?</h2>
+<p>PPM quer dizer palavras por minuto (WPM, em inglês), e na digitação uma palavra é qualquer sequência de cinco caracteres. Letras, algarismos, espaços e pontuação contam para os cinco. Shift e Backspace ficam fora da conta, porque não acrescentam caractere nenhum ao texto. Quem produz 300 caracteres em um minuto digita a 60 PPM, sejam quais forem as palavras que esses caracteres formam.</p>
+<p>Um tamanho fixo de palavra deixa os resultados comparáveis. Contadas como palavras de verdade, "Ela foi lá" dariam três palavras e "internacionalização" uma só, embora a segunda peça quase o dobro de toques. Pela regra dos cinco caracteres, "Ela foi lá" (10 caracteres com os espaços) vale 2 palavras e "internacionalização" (19 caracteres) vale 3,8. A mesma regra põe palavras longas e curtas na mesma escala: "anticonstitucionalmente", com 23 caracteres, conta como 4,6 palavras.</p>
+<p>O <a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">capítulo de Jacob Wobbrock sobre medidas de entrada de texto</a> diz que contar uma palavra como cinco caracteres, espaços incluídos, é prática comum desde cerca de 1905, e I. Scott MacKenzie situa a regra nas competições de datilografia do começo do século XX. Os dois citam a história das máquinas de escrever publicada por Yamada em 1980.</p>
+
+<h2>Como calcular as palavras por minuto?</h2>
+<p>Para calcular as palavras por minuto, divida o número de caracteres digitados por cinco e depois pelos minutos que você levou.</p>
+<ol>
+<li>Conte todos os caracteres do texto que você produziu, com espaços e pontuação.</li>
+<li>Divida esse total por 5 para obter palavras-padrão.</li>
+<li>Converta o tempo em minutos (45 segundos são 0,75) e divida as palavras por ele.</li>
+</ol>
+<p>Em forma de fórmula: <code>PPM = caracteres ÷ 5 ÷ minutos</code>. Digamos que você digite 250 caracteres em 75 segundos. São 50 palavras em 1,25 minuto, ou 40 PPM.</p>
+<p>Os laboratórios de pesquisa fazem mais uma correção. O cronômetro começa no primeiro toque, então o primeiro caractere não teve tempo medido e sai da conta. A <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">nota de MacKenzie sobre o cálculo da velocidade</a> mostra o exemplo com a frase em inglês "the quick brown fox jumps over the lazy dog": 43 caracteres em 20 segundos. Contar os 43 daria 25,8 PPM; contar os 42 digitados depois de o cronômetro disparar dá 25,2 PPM. Num teste mais longo, a correção perde peso: com 520 caracteres em dois minutos, ela muda o resultado em 0,1 PPM.</p>
+
+<h2>Qual a diferença entre PPM bruto e PPM líquido?</h2>
+<p>O PPM bruto mede todo o texto digitado, com os erros, e o PPM líquido desconta uma penalidade pelos erros que ficaram no texto. A penalidade mais comum é de uma palavra por minuto para cada erro não corrigido por minuto:</p>
+<p><code>PPM líquido = PPM bruto − erros não corrigidos ÷ minutos</code></p>
+<p>As <a href="https://www.speedtypingonline.com/typing-equations">equações de digitação do Speed Typing Online</a> dão um exemplo: 80 PPM brutos em dois minutos, com 8 erros deixados no texto, são 4 erros por minuto, então a velocidade líquida é de 76 PPM.</p>
+<p>Os erros que você corrige na hora não levam penalidade extra, porque você já pagou por eles em tempo. A tecla errada, o Backspace e a tecla certa consomem tempo e deixam um único caractere. Erros deixados no texto podem inflar o resultado: Wobbrock observa que erros não corrigidos aumentam a velocidade, já que quem deixa erros para trás vai mais depressa, e uma penalidade como a do PPM líquido anula essa vantagem.</p>
+<p>Você ainda vai encontrar outros dois ajustes. Pesquisadores usam o PPM ajustado, que reduz o PPM pela taxa de erros não corrigidos; no exemplo de Wobbrock, 10% de erros não corrigidos deixam o PPM ajustado em 90% do PPM. Algumas ferramentas multiplicavam o PPM pela precisão. O Typing.com chegou a chamar esse produto de "Net Words Per Minute" e depois o tirou do ar, dizendo que ele levava os alunos a olhar só o PPM e a ignorar a precisão.</p>
+<p>Os testes de digitação costumam mostrar a precisão ao lado do PPM. A precisão é o número de caracteres corretos dividido pelo total de caracteres digitados, vezes 100, e conta também os erros que você corrigiu: 514 caracteres corretos em 534 digitados dão 96,3%, mesmo que só alguns erros sobrevivam no texto final. O <a href="guide:typing-accuracy">guia sobre precisão na digitação</a> explica que meta buscar.</p>
+
+<h2>Exemplo: como calcular o PPM de seis jeitos com um só teste</h2>
+<p>Este é um teste de dois minutos calculado com cada fórmula acima. Você termina com 520 caracteres de texto, contando os espaços. No caminho, digitou 14 caracteres errados e os apagou, e 6 caracteres errados ficaram, cada um numa palavra diferente de cinco letras. São 534 caracteres digitados, 514 deles corretos.</p>
+<table>
+<caption>Um teste de dois minutos, seis jeitos de calcular</caption>
+<thead>
+<tr><th scope="col">Método</th><th scope="col">Cálculo</th><th scope="col">PPM</th></tr>
+</thead>
+<tbody>
+<tr><td>PPM bruto</td><td>520 ÷ 5 ÷ 2</td><td>52,0</td></tr>
+<tr><td>PPM de pesquisa (cronômetro a partir do primeiro caractere)</td><td>519 ÷ 120 s × 60 ÷ 5</td><td>51,9</td></tr>
+<tr><td>PPM ajustado (pesquisa)</td><td>51,9 × (1 − 6 ÷ 520)</td><td>51,3</td></tr>
+<tr><td>PPM × precisão (ferramentas antigas)</td><td>52,0 × 514 ÷ 534</td><td>50,1</td></tr>
+<tr><td>PPM líquido</td><td>52,0 − 6 ÷ 2</td><td>49,0</td></tr>
+<tr><td>Só palavras corretas (regra do Monkeytype)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48,4</td></tr>
+</tbody>
+</table>
+<p>A última linha supõe que cada erro estraga uma palavra de cinco letras mais o espaço, 6 caracteres cada.</p>
+
+<h2>Por que meu PPM muda em cada teste?</h2>
+<p>O seu PPM varia de um teste para outro porque os sites usam fórmulas, textos e durações diferentes, e porque o seu próprio ritmo oscila durante o teste. Só a fórmula mudou o exemplo acima em 3,6 PPM. O <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a>, por exemplo, conta só os caracteres das palavras digitadas corretamente, então um erro custa a palavra inteira.</p>
+<p>O Typing.com lembra que o PPM não leva em conta a dificuldade do conteúdo e que digitar a mesma passagem de novo infla a velocidade, porque os dedos a decoram. Um parágrafo de palavras curtas e comuns costuma dar mais PPM que um cheio de maiúsculas, números e símbolos, embora os dois sejam contados em palavras de cinco caracteres. Em português, os acentos também pesam: no teclado ABNT2 e no de Portugal, os acentos ficam em <a href="https://en.wikipedia.org/wiki/Portuguese_keyboard_layout">teclas mortas</a>, então <em>ã</em>, <em>é</em> ou <em>ê</em> pedem dois toques, o acento e depois a letra, para gerar um único caractere.</p>
+<p>A duração também conta. Um teste de 15 segundos mede uma arrancada. O Typing.com considera os testes de 3 e 5 minutos a medida mais precisa da velocidade geral, porque duram o bastante para dar uma média repetível sem cansar pulsos e dedos.</p>
+<p>Um contador ao vivo e um resultado final cobrem trechos diferentes de tempo. O resultado final tira a média do teste inteiro, com o começo lento e os tropeços, enquanto um contador contínuo cobre só os últimos segundos e cai a cada hesitação. O <a href="app:words">exercício words</a> do petitdoigt mostra os dois: um PPM contínuo numa janela de 5, 10 ou 30 segundos enquanto você digita, e depois o resultado de cada série comparado com as dez anteriores.</p>
+
+<h2>Como medir seu PPM com precisão?</h2>
+<p>Para ter um PPM confiável, faça sempre o mesmo tipo de teste do mesmo jeito e confira a fórmula antes de comparar números.</p>
+<ol>
+<li>Escolha um teste de 3 a 5 minutos.</li>
+<li>Use um texto que você nunca digitou, no idioma em que costuma escrever.</li>
+<li>Digite no ritmo do trabalho de verdade e corrija os erros como corrige normalmente.</li>
+<li>Anote o PPM e a precisão juntos. 60 PPM com 90% de precisão e 60 PPM com 98% pedem treinos diferentes.</li>
+<li>Veja se o site mostra PPM bruto, PPM líquido ou só palavras corretas antes de pôr o número dele ao lado do de outro site.</li>
+<li>Compare com os seus próprios resultados anteriores no mesmo teste, ao longo de várias sessões.</li>
+</ol>
+
+<h2>O que são caracteres por minuto e toques por minuto?</h2>
+<p>CPM, ou caracteres por minuto, é o PPM vezes cinco: 52 PPM equivalem a 260 CPM. Toques por minuto contam as teclas apertadas em vez dos caracteres produzidos, então incluem o Backspace e, em algumas medidas, o Shift. No exemplo acima, você apertou 534 teclas de caractere e 14 vezes o Backspace em dois minutos: 274 toques por minuto para 260 caracteres por minuto.</p>
+<p>Os pesquisadores chamam a razão entre os dois de toques por caractere (KSPC, na sigla em inglês). O <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">estudo da Universidade Aalto com 136 milhões de toques</a> (Dhakal e colegas, CHI 2018) contou cada tecla apertada e encontrou uma média de 1,17 toque por caractere entre os 168 mil voluntários. O décimo mais rápido ficou em 1,10 e o décimo mais lento em 1,24, porque quem digita devagar comete e corrige mais erros.</p>
+<p>Vagas de digitação de dados às vezes pedem toques por hora; a Wikipédia observa que muitas pedem 8.000 ou 10.000. Se cada toque produzisse um caractere, 10.000 por hora dariam cerca de 33 PPM. A tabela converte velocidades comuns com essa mesma suposição.</p>
+<table>
+<caption>O PPM em outras unidades de velocidade, com um toque por caractere</caption>
+<thead>
+<tr><th scope="col">PPM</th><th scope="col">Caracteres por minuto</th><th scope="col">Milissegundos por caractere</th><th scope="col">Toques por hora</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6.000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9.000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12.000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18.000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24.000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30.000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36.000</td></tr>
+</tbody>
+</table>
+<h3>Toques por minuto nos concursos públicos</h3>
+<p>Nas provas práticas de digitação de concursos brasileiros, a unidade costuma ser o toque, e cada edital define o que conta. Na <a href="https://www.tjmg.jus.br/data/files/4C/F5/22/5D/3C526910BA7D2169DE08CCA8/PROVA%20PRATICA%20DE%20DIGITACAO%20Unai.pdf">seleção do Fórum de Unaí (TJMG) de 2025</a>, os toques brutos incluem vírgulas, espaços, pontos e mudanças de parágrafo e deixam de fora acentos e tis, e Backspace, Delete e Insert não contam como toque. Nessa conta, um toque equivale a um caractere do texto, e os toques por minuto divididos por 5 dão o PPM.</p>
+<p>A penalidade por erro também muda de um edital para outro. Na prova de escrivão da Polícia Civil de Minas Gerais de 2021, segundo a <a href="https://www.direcaoconcursos.com.br/noticias/concurso-pc-mg-prova-de-digitacao/">Direção Concursos</a>, os toques líquidos eram os toques brutos menos os erros cometidos, e era preciso chegar a 700 em 5 minutos: 140 por minuto, ou cerca de 28 PPM. Nesse cálculo, cada erro custa um toque. No PPM líquido, cada erro custa uma palavra inteira, ou cinco caracteres. Antes de treinar para um concurso, veja no edital como ele conta toques e erros e converta a meta em PPM. O <a href="guide:typing-speed">guia da velocidade de digitação</a> compara as exigências de algumas provas.</p>
+
+<h2>Quantas palavras por minuto as pessoas digitam, falam e leem?</h2>
+<p>Ler em voz alta e narrar é bem mais rápido que digitar: o ritmo recomendado para um audiolivro é cerca de três vezes a velocidade média de digitação medida on-line. Os números abaixo vêm de estudos diferentes e contam palavras de jeitos diferentes. Estudos de digitação contam palavras de cinco caracteres. As taxas de fala e leitura contam as palavras de fato faladas ou lidas, e o capítulo de Wobbrock nota que os pesquisadores da fala definem a palavra assim.</p>
+<table>
+<caption>Palavras por minuto por atividade</caption>
+<thead>
+<tr><th scope="col">Atividade</th><th scope="col">Palavras por minuto</th><th scope="col">Fonte</th></tr>
+</thead>
+<tbody>
+<tr><td>Estenotipia, usuários treinados mais rápidos</td><td>até 360</td><td>Guinness World Records, via Wikipédia</td></tr>
+<tr><td>Leitura em voz alta, 17 idiomas</td><td>184 ± 29</td><td>Trauzettel-Klosinski e Dietz (2012), via Wikipédia</td></tr>
+<tr><td>Narração de audiolivro (recomendada)</td><td>150 a 160</td><td>Williams (1998), via Wikipédia</td></tr>
+<tr><td>Digitação em teclado de computador, teste on-line</td><td>51,6 (média)</td><td>Dhakal e colegas (2018)</td></tr>
+<tr><td>Digitação no celular, teste on-line</td><td>36,2 (média)</td><td>Palin e colegas (2019)</td></tr>
+<tr><td>Cópia à mão, adultos de 18 a 64 anos</td><td>cerca de 13 (68 letras por minuto)</td><td>Wikipédia</td></tr>
+</tbody>
+</table>
+<p>O número do celular vem de <a href="https://userinterfaces.aalto.fi/typing37k/">um estudo da Universidade Aalto de 2019 com 37.370 voluntários</a>, que usou o mesmo método e a mesma palavra de cinco caracteres do estudo no computador e encontrou a digitação no celular cerca de 15 PPM mais lenta. Um "a" falado conta como uma palavra inteira, então trate as taxas de fala e leitura como uma comparação aproximada com o PPM da digitação.</p>
+
+<h2>O que o seu PPM diz sobre cada toque?</h2>
+<p>O seu PPM define um tempo médio por caractere: divida 12.000 pelo seu PPM para ter o valor em milissegundos. A 60 PPM, você leva em média 200 ms por caractere, e a 100 PPM, 120 ms. Ir de 50 para 60 PPM significa tirar 40 ms de cada caractere, de 240 para 200.</p>
+<p>O estudo da Aalto mediu esses intervalos diretamente. Entre todos os participantes, o intervalo médio entre o aperto de uma tecla e o da seguinte foi de 239 ms, a uma velocidade média de 51,6 PPM. O décimo mais rápido, acima de uns 78 PPM, ficou em 122 ms entre teclas, e o décimo mais lento, abaixo de uns 26 PPM, em 481 ms: os intervalos encolhem cerca de quatro vezes do décimo mais lento para o mais rápido. O tempo de cada tecla pressionada variou bem menos. Uma tecla ficava apertada 116 ms em média, e de 80 a 150 ms mesmo entre os lentos, o que os autores leem como sinal de que a maior parte do ganho de velocidade vem de outro lugar.</p>
+<p>Estudos mais antigos com máquinas de escrever, resumidos no mesmo artigo, encontraram pares de letras digitados com dedos de mãos diferentes 30 a 60 ms mais rápidos que pares digitados com uma mão só, e cerca de 80 ms mais rápidos que pares digitados com o mesmo dedo. Nos teclados modernos, os dados da Aalto mostraram um ganho menor ao alternar as mãos, de uns 5 a 20 ms, e os lentos ficavam 20 a 28 ms mais lentos quando alternavam. No ABNT2, <kbd>E</kbd> seguido de <kbd>M</kbd>, como em <em>em</em>, alterna as mãos, enquanto <kbd>C</kbd> seguido de <kbd>E</kbd>, como em <em>cedo</em>, manda o dedo médio esquerdo da fileira de baixo para a de cima. O seu PPM é a média de centenas de transições como essas, e algumas poucas lentas puxam o número inteiro para baixo.</p>
+<p>O <a href="app:pairs">exercício pairs</a> do petitdoigt mede cada transição entre teclas enquanto você digita e, no modo adaptativo, monta as séries principalmente com as suas transições mais lentas e com mais erros; a página stats lista a latência e a precisão de cada dedo, letra e transição fraca. O <a href="guide:how-to-type-faster">guia para digitar mais rápido</a> transforma isso num plano de treino.</p>

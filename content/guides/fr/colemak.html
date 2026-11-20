@@ -1,0 +1,149 @@
+<!--meta
+{
+  "id": "colemak",
+  "lang": "fr",
+  "slug": "clavier-colemak",
+  "title": "Clavier Colemak : ce qui change et comment l'apprendre",
+  "description": "Le clavier Colemak déplace 17 touches du QWERTY et garde Ctrl+Z/X/C/V : ses changements, Colemak-DH, les accents, l'apprentissage et un essai en ligne.",
+  "h1": "Le clavier Colemak : ce qui change, Colemak-DH et comment l'apprendre",
+  "keyword": "clavier Colemak",
+  "keywords_secondary": ["Colemak", "Colemak-DH", "apprendre le Colemak", "disposition Colemak"],
+  "summary": "Le clavier Colemak est une disposition alternative pour l'anglais, publiée par Shai Coleman le 1er janvier 2006. Il déplace 17 touches du QWERTY pour mettre les neuf lettres anglaises les plus fréquentes sur la rangée de repos, et laisse Z, X, C, V, Q et W en place pour garder les raccourcis courants. Colemak-DH, une variante de 2014, sort D et H des colonnes centrales. Le guide officiel conseille 10 minutes de pratique par jour pendant environ deux mois.",
+  "faq": [
+    {"q": "Apprendre le Colemak fait-il oublier le QWERTY ou l'AZERTY ?", "a": "En général non, une fois les deux dispositions solides. La FAQ du Colemak dit que la plupart des gens qui maîtrisent les deux passent facilement de l'une à l'autre. La vitesse dans l'ancienne disposition baisse souvent pendant l'apprentissage, et certains gardent une petite baisse durable. Si vous avez encore besoin de l'ancienne disposition sur des postes partagés, le guide d'apprentissage conseille de la pratiquer 5 à 10 minutes par jour."},
+    {"q": "Faut-il de nouvelles touches ou un nouveau clavier pour le Colemak ?", "a": "Non. Le Colemak est un réglage logiciel : n'importe quel clavier fonctionne, AZERTY compris, et les touches peuvent garder leurs lettres. Un dactylo regarde l'écran de toute façon, et un clavier à l'écran qui affiche les lettres Colemak couvre les premières semaines, le temps que les nouvelles positions s'installent."},
+    {"q": "Peut-on utiliser le Colemak sur un téléphone ?", "a": "Des applications de clavier comme Gboard et SwiftKey le proposent, mais la FAQ du Colemak le déconseille sur smartphone, où il allonge le trajet des doigts et augmente le taux d'erreur par rapport au QWERTY. Elle recommande plutôt la saisie par glissement sur un clavier QWERTY."},
+    {"q": "Le Colemak convient-il pour programmer ?", "a": "Plutôt oui. Le Colemak garde presque toute la ponctuation du QWERTY américain : crochets, accolades, barres obliques et guillemets restent en place, et seul le point-virgule monte sur la rangée du haut. Pour un habitué de l'AZERTY, crochets et accolades quittent même AltGr : les crochets se tapent sans modificateur, les accolades avec Maj. Les éditeurs qui se déplacent avec des lettres, comme Vim avec H, J, K et L, demandent un réapprentissage ou un remappage."},
+    {"q": "Le Colemak aide-t-il contre les douleurs au poignet ?", "a": "Le Colemak réduit les mouvements des doigts selon les mesures de son auteur, et des utilisateurs de longue date comme le PDG du fabricant de claviers ZSA le trouvent plus confortable. Aucun des deux ne constitue une preuve médicale. Une douleur qui dure mérite un médecin ou un kinésithérapeute, et un regard sur la hauteur du bureau et la posture."},
+    {"q": "Combien de personnes utilisent le Colemak ?", "a": "On ne le sait pas. colemak.com présente le Colemak comme la troisième disposition la plus utilisée pour taper l'anglais sans regarder, après le QWERTY et le Dvorak, mais ne donne aucun nombre d'utilisateurs derrière ce classement, et l'article de Wikipédia sur la disposition non plus."}
+  ],
+  "sources": [
+    {"title": "Colemak, site officiel", "url": "https://colemak.com/"},
+    {"title": "FAQ du Colemak", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak : conception", "url": "https://colemak.com/Design"},
+    {"title": "Apprendre le Colemak (guide officiel)", "url": "https://colemak.com/Learn"},
+    {"title": "Colemak multilingue : accents et caractères spéciaux", "url": "https://colemak.com/Multilingual"},
+    {"title": "Colemak sur Mac", "url": "https://colemak.com/Mac"},
+    {"title": "Site communautaire du Colemak", "url": "https://colemak.org/"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "Colemak Mod-DH : comparaison des dispositions", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH : difficulté d'apprentissage et touches déplacées", "url": "https://colemakmods.github.io/mod-dh/learn.html"},
+    {"title": "Colemak Mod-DH : dépôt (installateurs et keymaps)", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "DreymaR : Tarmak, dispositions de transition", "url": "https://dreymar.colemak.org/tarmak-intro.html"},
+    {"title": "DreymaR : étapes de Tarmak", "url": "https://dreymar.colemak.org/tarmak-steps.html"},
+    {"title": "Peter Norvig : fréquences des lettres en anglais", "url": "https://norvig.com/mayzner.html"},
+    {"title": "Workman : dépôt officiel et keymaps", "url": "https://github.com/workman-layout/Workman"},
+    {"title": "Workman : site officiel", "url": "https://workmanlayout.org/"},
+    {"title": "Ergo-L, site officiel", "url": "https://ergol.org/"},
+    {"title": "BÉPO (Wikipédia)", "url": "https://fr.wikipedia.org/wiki/B%C3%89PO"},
+    {"title": "Microsoft : Windows keyboard layouts", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Microsoft : gérer les paramètres de langue d'entrée et d'affichage dans Windows", "url": "https://support.microsoft.com/fr-fr/windows/g%C3%A9rer-les-param%C3%A8tres-de-langue-d-entr%C3%A9e-et-d-affichage-dans-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2"},
+    {"title": "Apple : écrire dans une autre langue sur Mac", "url": "https://support.apple.com/fr-fr/guide/mac-help/mchlp1406/mac"},
+    {"title": "Blog ZSA : ZSA loves Colemak", "url": "https://blog.zsa.io/zsa-loves-colemak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Essayer le Colemak-DH dans le navigateur", "drill": "pairs", "layout": "colemak-dh"}
+}
+-->
+<h2>Qu'est-ce que le clavier Colemak ?</h2>
+<p>Le Colemak est une alternative au QWERTY conçue pour taper l'anglais sans regarder. Shai Coleman l'a publié le 1er janvier 2006 avec deux objectifs qui tirent en sens contraire : garder les doigts sur la rangée de repos la plupart du temps, et changer assez peu de choses pour qu'un habitué du QWERTY s'y mette sans repartir de zéro.</p>
+<p>La rangée de repos porte A R S T D H N E I O. Selon les comptages de lettres anglaises de Peter Norvig, ces dix touches portent les neuf lettres les plus fréquentes (E, T, A, O, I, N, S, R et H) et totalisent environ 74 % des lettres tapées. La rangée de repos du QWERTY en porte trois et environ 32 % des lettres, si bien que les doigts y montent et descendent bien plus souvent.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Le Colemak, chaque touche colorée selon le doigt qui la frappe. Chaque doigt garde sa zone du QWERTY ; seules les lettres changent à l'intérieur.</figcaption></figure>
+<p>Chaque doigt repose sur la même touche physique qu'en QWERTY ou en AZERTY, donc les règles du <a href="guide:finger-placement">placement des doigts sur le clavier</a> s'appliquent toujours. À gauche, l'auriculaire repose sur A, l'annulaire sur R, le majeur sur S et l'index sur T, avec D juste à sa droite. À droite, l'index repose sur N avec H juste à sa gauche, le majeur sur E, l'annulaire sur I et l'auriculaire sur O.</p>
+
+<h2>Qu'est-ce qui change par rapport au QWERTY et à l'AZERTY ?</h2>
+<p>Le Colemak change 17 touches du QWERTY, toutes sur les trois rangées de lettres : huit en haut, huit sur la rangée de repos et une en bas. La rangée des chiffres, Maj, Ctrl, Alt et presque toute la ponctuation restent à leur place QWERTY.</p>
+<table>
+<caption>Rangées de lettres en QWERTY, en AZERTY et en Colemak (mêmes touches physiques, de gauche à droite)</caption>
+<thead><tr><th scope="col">Rangée</th><th scope="col">QWERTY</th><th scope="col">AZERTY</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>Haut</td><td>Q W E R T Y U I O P</td><td>A Z E R T Y U I O P</td><td>Q W F P G J L U Y ;</td></tr>
+<tr><td>Repos</td><td>A S D F G H J K L ;</td><td>Q S D F G H J K L M</td><td>A R S T D H N E I O</td></tr>
+<tr><td>Bas</td><td>Z X C V B N M</td><td>W X C V B N ,</td><td>Z X C V B K M</td></tr>
+</tbody>
+</table>
+<p>Z, X, C et V restent exprès à leur place QWERTY : <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd> et <kbd>V</kbd> se font toujours de la main gauche pendant que la droite tient la souris. Q et W ne bougent pas non plus, car les notes de conception du Colemak rappellent que <kbd>Ctrl</kbd>+<kbd>Q</kbd> (quitter) et <kbd>Ctrl</kbd>+<kbd>W</kbd> (fermer la fenêtre) peuvent faire perdre du travail s'ils tombent sur une touche qu'on frappe par erreur.</p>
+<p>Seules deux lettres changent de main, E et P. E passe du majeur gauche au majeur droit, sur la touche que le QWERTY nomme K. P quitte l'auriculaire droit pour la touche du R QWERTY, sous l'index gauche. Le point-virgule quitte la rangée de repos pour la touche de lettre en haut à droite, et la disposition officielle transforme <kbd>Verr. Maj</kbd> en second <kbd>Retour arrière</kbd>. colemak.com compte ces deux seuls changements de main parmi les raisons qui rendent le Colemak facile à prendre.</p>
+<p>Depuis l'AZERTY, l'écart est plus grand. Sur les 27 touches du tableau, 22 changent de lettre, et seules H, X, C, V et B restent en place. Z quitte la rangée du haut pour la touche marquée W, donc votre <kbd>Ctrl</kbd>+<kbd>Z</kbd> change de place. E et P restent les deux seules lettres qui changent de main.</p>
+
+<h2>Le Colemak est-il plus rapide que le QWERTY ?</h2>
+<p>Le Colemak bat largement le QWERTY sur les mesures qu'emploient les concepteurs de dispositions, comme l'usage de la rangée de repos et les bigrammes d'un même doigt. Son effet sur la vitesse de frappe n'est pas prouvé, et même le site communautaire du Colemak reconnaît que les gains de vitesse sont difficiles à démontrer. Un bigramme d'un même doigt, ce sont deux lettres consécutives tapées par un seul doigt, qui doit finir la première touche avant de commencer la suivante. En QWERTY comme en AZERTY, la paire « de » (dans <em>de</em>, <em>des</em> ou l'anglais <em>made</em>) revient deux fois au majeur gauche. En Colemak, D est sous l'index gauche et E sous le majeur droit : les deux lettres vont à des mains différentes.</p>
+<table>
+<caption>Part de la rangée de repos et bigrammes d'un même doigt selon la disposition (texte anglais)</caption>
+<thead><tr><th scope="col">Disposition</th><th scope="col">Lettres tapées sur la rangée de repos</th><th scope="col">Bigrammes d'un même doigt</th></tr></thead>
+<tbody>
+<tr><td>QWERTY</td><td>32 %</td><td>6,58 %</td></tr>
+<tr><td>Dvorak</td><td>70 %</td><td>2,63 %</td></tr>
+<tr><td>Workman</td><td>67 %</td><td>3,15 %</td></tr>
+<tr><td>Colemak</td><td>74 %</td><td>1,67 %</td></tr>
+<tr><td>Colemak-DH</td><td>69 %</td><td>1,67 %</td></tr>
+</tbody>
+</table>
+<p>La colonne de la rangée de repos additionne les fréquences de Norvig pour les lettres de chaque rangée de repos ; l'article de Wikipédia sur le Colemak donne les mêmes 74 %, 70 % et 32 % pour le Colemak, le Dvorak et le QWERTY. La colonne des bigrammes vient de la page de comparaison du projet Colemak Mod-DH, calculée sur des livres du projet Gutenberg. Le site de Workman donne 2,185 % pour Workman : lisez cette colonne comme une estimation de partisans du Colemak.</p>
+<p>Le site communautaire conseille aux débutants d'apprendre le Colemak pour le confort et pour le plaisir plutôt que pour la seule vitesse. Erez Zukerman, PDG du fabricant de claviers ZSA, écrit que le Colemak ne l'a pas rendu plus rapide. Il y tape de 80 à 90 mots par minute et l'apprécie pour son confort, avec moins d'étirements. Si la vitesse est votre but principal, la technique et la précision sur votre disposition actuelle paient plus tôt, comme l'explique le guide pour <a href="guide:how-to-type-faster">taper plus vite au clavier</a>. Pour comparer avec les autres alternatives, voyez <a href="guide:colemak-vs-dvorak">Colemak, Dvorak ou Workman</a>.</p>
+
+<h2>Qu'est-ce que le Colemak-DH, et faut-il le choisir ?</h2>
+<p>Le Colemak-DH (nom complet Colemak Mod-DH) est une variante communautaire qui sort D et H des deux colonnes centrales, où le Colemak de base les place et où les index doivent glisser de côté. SteveP l'a lancé en octobre 2014. D et H descendent sur la rangée du bas, où l'index se replie pour les atteindre ; G et M prennent leur place sur la rangée de repos, et B monte sur la rangée du haut. Selon le projet, la part des frappes dans les colonnes centrales passe de 14,78 % en Colemak à 7,80 % en Colemak-DH.</p>
+<table>
+<caption>Colemak et Colemak-DH sur un clavier ANSI</caption>
+<thead><tr><th scope="col">Rangée</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>Haut</td><td>Q W F P G J L U Y ;</td><td>Q W F P B J L U Y ;</td></tr>
+<tr><td>Repos</td><td>A R S T D H N E I O</td><td>A R S T G M N E I O</td></tr>
+<tr><td>Bas</td><td>Z X C V B K M</td><td>X C D V Z K H</td></tr>
+</tbody>
+</table>
+<p>La moitié gauche de la rangée du bas reçoit aussi l'« angle mod » : Z, X et C glissent d'une touche vers la gauche en gardant leurs doigts, et D se glisse sous l'index gauche. Sur un clavier ISO, comme les claviers AZERTY de France et de Belgique, Z prend la touche en plus à côté de la Maj gauche, celle des signes &lt; et &gt;. Un clavier ANSI n'a pas cette touche, et Z va au milieu de la rangée, comme dans le tableau. Le guide <a href="guide:iso-vs-ansi">ISO ou ANSI</a> explique comment reconnaître le vôtre. Le projet recommande aujourd'hui cette version, avec M sur la rangée de repos, sur tous les claviers.</p>
+<table>
+<caption>Colemak ou Colemak-DH : ce qui les distingue</caption>
+<thead><tr><th scope="col">Critère</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>Touches déplacées depuis le QWERTY</td><td>17</td><td>19, plus 3 pour l'angle mod sur un clavier décalé</td></tr>
+<tr><td>Frappes dans les colonnes centrales</td><td>14,78 %</td><td>7,80 %</td></tr>
+<tr><td>Effort d'apprentissage (projet Mod-DH)</td><td>La plus facile des dispositions entièrement optimisées</td><td>Un peu plus difficile, surtout parce que H bouge</td></tr>
+<tr><td>Intégré au système</td><td>Windows 11 (24H2 et suivants), macOS, Linux</td><td>Linux seulement ; installateurs du projet pour Windows et macOS</td></tr>
+</tbody>
+</table>
+<p>Le site communautaire du Colemak juge les deux bons et laisse le choix au goût de chacun. Prenez le Colemak-DH si glisser de côté vers D et H vous gêne, ou si vous tapez sur un clavier ortholinéaire (en matrice), là où la comparaison Mod-DH lui donne son meilleur score. Prenez le Colemak de base si vous voulez le moins de changements et une disposition déjà fournie par votre système.</p>
+
+<h2>Peut-on écrire en français avec le Colemak ?</h2>
+<p>Oui : la disposition officielle de colemak.com tape plus de 40 langues, et les accents français passent par la touche <kbd>AltGr</kbd>. <kbd>AltGr</kbd>+<kbd>E</kbd> donne é, <kbd>AltGr</kbd>+<kbd>C</kbd> donne ç et <kbd>AltGr</kbd>+<kbd>V</kbd> donne œ. Pour à, è et ù, tapez <kbd>AltGr</kbd>+<kbd>R</kbd> puis la voyelle ; pour â, ê, î, ô et û, <kbd>AltGr</kbd>+<kbd>X</kbd> puis la voyelle. L'AZERTY tape é, è, à et ç d'une seule frappe, et l'ordre des lettres du Colemak reste optimisé pour l'anglais.</p>
+<p>Si vous tapez surtout du français, deux dispositions partent de ses fréquences. Ergo-L, sorti en version 1.0 en mai 2024, s'inspire notamment du Colemak : il vise le français, l'anglais et le code, garde les principaux raccourcis et donne accès aux lettres accentuées sans <kbd>AltGr</kbd>. Le BÉPO, normalisé par l'AFNOR en 2019 et inclus dans Windows 11, suit plutôt la méthode du Dvorak. Le guide des <a href="guide:keyboard-layouts">dispositions de clavier</a> les compare à l'AZERTY. petitdoigt ne propose ni l'un ni l'autre ; pour vous entraîner au Colemak, choisissez le texte en anglais.</p>
+
+<h2>Combien de temps faut-il pour apprendre le Colemak ?</h2>
+<p>Comptez environ deux mois de courte pratique quotidienne avant que le Colemak soit assez rapide pour s'en servir à plein temps. Le guide d'apprentissage officiel recommande 10 minutes par jour pendant environ deux mois, de basculer pour de bon aux deux tiers de votre ancienne vitesse, et de répéter chaque leçon jusqu'à au moins 97 % de précision, sans hésiter. Il prévient aussi que les 10 premiers jours sont durs, surtout si vous changez d'un coup.</p>
+<table>
+<caption>Trois façons de faire le changement</caption>
+<thead><tr><th scope="col">Approche</th><th scope="col">Comment ça marche</th><th scope="col">À quoi s'attendre</th></tr></thead>
+<tbody>
+<tr><td>D'un coup</td><td>Changer la disposition du système dès le premier jour et tout taper en Colemak</td><td>L'avertissement sur les 10 premiers jours s'applique en plein, et la frappe au travail ralentit tout de suite</td></tr>
+<tr><td>Pratiquer, puis basculer</td><td>Garder l'ancienne disposition au travail, pratiquer le Colemak 10 minutes par jour, basculer aux deux tiers de l'ancienne vitesse</td><td>La recommandation de colemak.com ; votre vitesse au travail reste intacte</td></tr>
+<tr><td>Tarmak</td><td>Quatre dispositions intermédiaires déplacent 3 ou 4 touches à la fois (4, 7, 10 puis 14 au total), avant le Colemak complet</td><td>Les utilisateurs cités sur la page Tarmak ont mis de trois jours à une semaine par étape ; sa FAQ conseille environ 97 % de précision à 40 mots par minute avant de passer à la suivante</td></tr>
+</tbody>
+</table>
+<p>Tarmak, créé par DreymaR, membre de la communauté Colemak, commence par les déplacements essentiels : la première étape place E et N, la deuxième T, et une voie Tarmak-DH mène au Colemak-DH. Erez Zukerman a appris ainsi, avec quatre touches changées pendant environ un mois avant d'aller plus loin. Tarmak part du QWERTY : depuis l'AZERTY, sa première étape vous fait déjà changer bien plus de touches.</p>
+<p>La FAQ du Colemak dit que l'essentiel du temps sert à la motricité, et que quelqu'un qui tape déjà vite et juste retrouvera vite sa vitesse. Si vous regardez encore vos touches, <a href="guide:touch-typing">apprendre la dactylographie</a> passe en premier, et vous pouvez l'apprendre directement en Colemak.</p>
+
+<h2>Apprendre le Colemak, étape par étape</h2>
+<ol>
+<li><strong>Choisissez entre Colemak et Colemak-DH, et vérifiez votre clavier.</strong> Pour le Colemak-DH, les touches en bas à gauche diffèrent entre claviers ISO et ANSI.</li>
+<li><strong>Essayez-le dans le navigateur avant de toucher aux réglages.</strong> petitdoigt applique la disposition lui-même à partir de la position physique des touches, ce qui permet de <a href="app:words?layout=colemak">taper en Colemak dans le navigateur</a> sans rien installer. Le clavier à l'écran affiche les lettres Colemak, chaque touche dans la couleur de son doigt, et vos touches peuvent garder leurs inscriptions AZERTY.</li>
+<li><strong>Apprenez la rangée de repos doigt par doigt.</strong> Main gauche sur A R S T, main droite sur N E I O, avec D et H pour les index (G et M en Colemak-DH). L'exercice <a href="app:anchors?layout=colemak-dh">ancrages</a> envoie les doigts choisis vers leurs touches et les ramène sur la rangée de repos entre deux frappes. L'outil montre le doigt à utiliser mais ne voit pas vos mains : garder le bon doigt sur chaque touche dépend de vous.</li>
+<li><strong>Ajoutez les rangées du haut et du bas avec de vrais mots.</strong> Les mots entiers entraînent les nouvelles positions dans l'ordre où vous les utiliserez, E et P compris.</li>
+<li><strong>Travaillez les enchaînements qui vous ralentissent.</strong> En mode adaptatif, l'exercice <a href="app:pairs?layout=colemak-dh">paires</a> mesure chaque enchaînement d'une touche à l'autre pendant que vous tapez, et construit la série suivante surtout à partir des plus lents et des moins précis. Les stats sont tenues par disposition, à part de votre historique AZERTY.</li>
+<li><strong>Tenez la précision avant la vitesse.</strong> Visez 97 % avant de passer à la suite, le chiffre que donnent le guide d'apprentissage du Colemak et la FAQ de Tarmak ; le guide sur la <a href="guide:typing-accuracy">précision de frappe</a> explique pourquoi.</li>
+<li><strong>Basculez votre système aux deux tiers de votre ancienne vitesse.</strong> Si vous partagez encore des postes en AZERTY, gardez-en 5 à 10 minutes par jour pour qu'il reste utilisable.</li>
+</ol>
+
+<h2>Comment activer le Colemak sous Windows, macOS et Linux ?</h2>
+<p>Le Colemak est intégré à Windows 11 depuis la version 24H2 et préinstallé sur macOS et Linux ; les versions plus anciennes de Windows demandent l'installateur de colemak.com.</p>
+<ul>
+<li><strong>Windows 11 :</strong> Démarrer, Paramètres, Heure &amp; langue, Langue &amp; région. Ajoutez l'anglais (États-Unis) s'il manque, cliquez sur les trois points à côté, choisissez Options linguistiques, puis Ajouter un clavier et Colemak. <kbd>Windows</kbd>+<kbd>Espace</kbd> passe d'une disposition installée à l'autre.</li>
+<li><strong>macOS :</strong> Réglages Système, Clavier, puis Modifier sous Entrée de texte. Cliquez sur le bouton Ajouter, cherchez l'anglais et ajoutez Colemak. <kbd>Contrôle</kbd>+<kbd>Espace</kbd> revient à la dernière source utilisée. Pour faire de <kbd>Verr. Maj</kbd> un retour arrière comme dans la disposition officielle, colemak.com suggère Karabiner-Elements.</li>
+<li><strong>Colemak-DH :</strong> le projet Mod-DH fournit des installateurs et un script AutoHotkey pour Windows, et un paquet macOS (aussi <code>brew install --cask colemak-dh</code>). Sous Linux, xkeyboard-config l'inclut depuis la version 2.34 : <code>setxkbmap us -variant colemak_dh</code>, et le projet donne une variante <code>colemak_dh_iso</code> pour les claviers ISO.</li>
+</ul>
+
+<h2>Quels sont les inconvénients du Colemak ?</h2>
+<p>Passé les deux mois d'apprentissage, les frictions viennent des ordinateurs que vous ne contrôlez pas et des logiciels qui lient des commandes à des lettres. Les postes partagés restent en AZERTY ou en QWERTY, donc il faut garder l'ancienne disposition en forme ou installer le Colemak partout où vous tapez.</p>
+<p>Le Colemak garde les raccourcis les plus utilisés et déplace les autres avec leurs lettres. <kbd>Ctrl</kbd>+<kbd>S</kbd> (enregistrer) passe sur la touche que le QWERTY nomme D, et <kbd>Ctrl</kbd>+<kbd>F</kbd> (rechercher) sur celle qu'il nomme E. Les jeux qui lient les commandes à des lettres plutôt qu'à des positions dispersent le groupe WASD : W et A restent, S et D passent sur les touches D et G du QWERTY. Réassignez les touches dans le jeu, ou repassez à votre disposition habituelle le temps de jouer. Vim a le même souci avec H, J, K et L : H reste, mais J passe sur la touche Y du QWERTY, K sur N et L sur U.</p>

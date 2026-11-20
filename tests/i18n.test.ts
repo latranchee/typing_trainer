@@ -1,7 +1,9 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { FINGERS } from '../src/core/fingers';
-import { fingerName, fingerShort, preferredLang, setUiLang, stringsOf, t } from '../src/core/i18n';
+import { fingerName, fingerShort, preferredLang, preferredLayout, setUiLang, stringsOf, t } from '../src/core/i18n';
+import { readLaunch, withoutLaunch } from '../src/core/launch';
 import { ROW_IDS } from '../src/core/physical';
+import { LANGS } from '../src/core/store';
 
 /** Every leaf of a dictionary, as `path -> kind`, so two languages can be compared. */
 function shape(value: unknown, path = ''): Record<string, string> {
@@ -16,11 +18,11 @@ describe('interface strings', () => {
   afterEach(() => setUiLang('en'));
 
   it('has the same entries in French as in English', () => {
-    expect(shape(stringsOf('fr'))).toEqual(shape(stringsOf('en')));
+    for (const lang of LANGS) expect(shape(stringsOf(lang)), lang).toEqual(shape(stringsOf('en')));
   });
 
   it('leaves no entry empty', () => {
-    for (const lang of ['en', 'fr'] as const) {
+    for (const lang of LANGS) {
       const strings = stringsOf(lang);
       const walk = (value: unknown, path: string): void => {
         if (typeof value === 'string') expect(value.trim(), `${lang} ${path}`).not.toBe('');
@@ -43,7 +45,7 @@ describe('interface strings', () => {
   });
 
   it('names every finger and every row in both languages', () => {
-    for (const lang of ['en', 'fr'] as const) {
+    for (const lang of LANGS) {
       const strings = stringsOf(lang);
       const names = FINGERS.map((finger) => strings.finger(finger));
       // The two thumbs share a lane but not a name.
@@ -68,7 +70,7 @@ describe('interface strings', () => {
   });
 
   it('mentions the climb of the floor only at a difficulty that has one', () => {
-    for (const lang of ['en', 'fr'] as const) {
+    for (const lang of LANGS) {
       const { floorTitle } = stringsOf(lang).hardcore;
       expect(floorTitle(60, 2, 15)).toContain('60');
       expect(floorTitle(60, 2, 15)).toContain('15 s');
@@ -80,8 +82,42 @@ describe('interface strings', () => {
   it('takes the first language of the browser that the interface speaks', () => {
     expect(preferredLang(['fr-CA', 'en-CA'])).toBe('fr');
     expect(preferredLang(['en-US', 'fr'])).toBe('en');
-    expect(preferredLang(['de-DE', 'FR-fr', 'en'])).toBe('fr');
-    expect(preferredLang(['es'])).toBe('en');
+    expect(preferredLang(['de-DE', 'FR-fr', 'en'])).toBe('de');
+    expect(preferredLang(['es'])).toBe('es');
+    expect(preferredLang(['pt-BR', 'it', 'es-MX'])).toBe('es');
+    expect(preferredLang(['pt-BR', 'ja'])).toBe('en');
     expect(preferredLang([])).toBe('en');
+  });
+
+  it('starts a first visit on the layout of the browser language and region', () => {
+    expect(preferredLayout(['fr-CA'])).toBe('ca-fr');
+    expect(preferredLayout(['fr'])).toBe('ca-fr');
+    expect(preferredLayout(['fr-FR'])).toBe('azerty');
+    expect(preferredLayout(['fr-BE'])).toBe('azerty');
+    expect(preferredLayout(['fr-CH'])).toBe('qwertz-ch');
+    expect(preferredLayout(['de-DE'])).toBe('qwertz');
+    expect(preferredLayout(['de-AT'])).toBe('qwertz');
+    expect(preferredLayout(['de-CH'])).toBe('qwertz-ch');
+    expect(preferredLayout(['es-ES'])).toBe('es');
+    expect(preferredLayout(['es-MX'])).toBe('latam');
+    expect(preferredLayout(['es-419'])).toBe('latam');
+    expect(preferredLayout(['en-GB', 'fr-FR'])).toBe('us');
+    expect(preferredLayout(['pt-BR', 'de'])).toBe('qwertz');
+    expect(preferredLayout([])).toBe('us');
+  });
+});
+
+describe('links into the trainer', () => {
+  it('reads a known language and layout from the address and ignores the rest', () => {
+    expect(readLaunch('?lang=de&layout=dvorak')).toEqual({ lang: 'de', layout: 'dvorak' });
+    expect(readLaunch('?layout=colemak-dh')).toEqual({ layout: 'colemak-dh' });
+    expect(readLaunch('?lang=ja&layout=neo')).toEqual({});
+    expect(readLaunch('')).toEqual({});
+  });
+
+  it('drops the language and layout from the address, keeping the other parameters and the drill', () => {
+    expect(withoutLaunch('?lang=de&layout=dvorak', '#words')).toBe('#words');
+    expect(withoutLaunch('?demo=comp&layout=dvorak', '#pairs')).toBe('?demo=comp#pairs');
+    expect(withoutLaunch('', '')).toBe('');
   });
 });

@@ -1,0 +1,136 @@
+<!--meta
+{
+  "id": "words-per-minute",
+  "lang": "id",
+  "slug": "cara-menghitung-wpm",
+  "title": "Cara Menghitung WPM: Arti Words per Minute dan Rumusnya",
+  "description": "Cara menghitung WPM: arti kata lima karakter, rumus WPM, WPM kotor dan bersih, CPM, satu tes dinilai enam cara, plus kecepatan bicara dan membaca.",
+  "h1": "WPM adalah kata per menit: arti dan cara menghitung WPM",
+  "keyword": "cara menghitung WPM",
+  "keywords_secondary": ["WPM adalah", "arti WPM", "rumus WPM", "words per minute", "WPM kotor dan bersih", "net WPM", "CPM"],
+  "summary": "WPM adalah singkatan dari words per minute (kata per menit), kecepatan mengetik yang diukur dalam kata lima karakter: setiap lima karakter yang Anda ketik, termasuk spasi dan tanda baca, dihitung satu kata. Cara menghitung WPM adalah membagi jumlah karakter dengan lima, lalu dengan jumlah menit, jadi 250 karakter dalam satu menit sama dengan 50 WPM. WPM bersih juga mengurangi kesalahan yang tersisa per menit, sehingga situs dengan aturan penalti berbeda memberi skor berbeda untuk tes yang sama.",
+  "faq": [
+    {"q": "Apakah 40 WPM termasuk bagus?", "a": "40 WPM sedikit di bawah rata-rata yang terukur secara daring. Dalam studi Aalto University tahun 2018 terhadap 168.000 relawan yang mengikuti tes mengetik, rata-ratanya 51,6 WPM; sepersepuluh paling lambat mengetik di bawah sekitar 26 WPM dan sepersepuluh tercepat di atas sekitar 78 WPM. Pada 40 WPM, Anda rata-rata butuh 300 milidetik per karakter."},
+    {"q": "Seberapa langka 100 WPM?", "a": "100 WPM tergolong langka. Dalam studi Aalto, hanya sepersepuluh peserta tercepat yang mengetik di atas sekitar 78 WPM, dan kelompok itu rata-rata mencapai 89,6 WPM; pengetik tercepat dalam datanya mencapai 120 WPM atau lebih. Bertahan di 100 WPM berarti rata-rata 120 milidetik per karakter sepanjang tes."},
+    {"q": "Apa itu raw WPM?", "a": "Raw WPM adalah kecepatan sebelum dikurangi penalti kesalahan. Monkeytype menghitungnya seperti WPM biasanya tetapi ikut memasukkan kata yang salah, sedangkan WPM biasanya hanya memakai karakter dalam kata yang diketik benar. Selisih antara raw WPM dan WPM biasa menunjukkan berapa banyak kecepatan yang hilang karena typo."},
+    {"q": "Apakah spasi dihitung dalam WPM?", "a": "Ya. Kata standar terdiri dari lima karakter termasuk spasi, konvensi yang menurut Wobbrock berasal dari sekitar tahun 1905, dan Typing.com juga menghitung spasi serta tanda baca. Tombol yang tidak meninggalkan karakter di teks, seperti Shift dan Backspace, tidak menambah WPM, meski Backspace dihitung dalam ketukan per menit."},
+    {"q": "Bagaimana cara menghitung WPM di Excel atau Google Sheets?", "a": "Taruh teks yang diketik di sel A1 dan waktunya dalam detik di B1, lalu ketik =LEN(A1)/5/(B1/60) di sel lain. LEN menghitung semua karakter termasuk spasi, jadi hasilnya WPM kotor. Untuk WPM bersih, isi jumlah kesalahan yang tidak dikoreksi di C1 dan pakai =LEN(A1)/5/(B1/60)-C1/(B1/60)."},
+    {"q": "Apakah KPM sama dengan WPM?", "a": "Ya, bila KPM berarti kata per menit, terjemahan langsung dari WPM. Periksa definisinya di situs tes yang Anda pakai. Kalau angkanya sekitar lima kali skor WPM Anda, situs itu menghitung karakter atau ketukan per menit, dan Anda bisa membaginya dengan lima untuk mendapatkan WPM."}
+  ],
+  "sources": [
+    {"title": "Wobbrock, J. O. (2007). Measures of Text Entry Performance. In MacKenzie & Tanaka-Ishii (eds.), Text Entry Systems, Morgan Kaufmann", "url": "https://faculty.washington.edu/wobbrock/pubs/text-07.pdf"},
+    {"title": "MacKenzie, I. S. A Note on Calculating Text Entry Speed (York University)", "url": "https://www.yorku.ca/mack/RN-TextEntrySpeed.html"},
+    {"title": "Dhakal, Feit, Kristensson & Oulasvirta (2018). Observations on Typing from 136 Million Keystrokes. CHI 2018", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/"},
+    {"title": "Observations on Typing from 136 Million Keystrokes (paper PDF)", "url": "https://userinterfaces.aalto.fi/136Mkeystrokes/resources/chi-18-analysis.pdf"},
+    {"title": "Speed Typing Online: Typing Equations", "url": "https://www.speedtypingonline.com/typing-equations"},
+    {"title": "Typing.com: What is words per minute?", "url": "https://www.typing.com/blog/what-is-words-per-minute/"},
+    {"title": "Monkeytype: about page source with the wpm, raw and accuracy definitions", "url": "https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx"},
+    {"title": "Palin, Feit, Kim, Kristensson & Oulasvirta (2019). How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers. MobileHCI 2019", "url": "https://userinterfaces.aalto.fi/typing37k/"},
+    {"title": "How do People Type on Mobile Devices? (paper PDF)", "url": "https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf"},
+    {"title": "Wikipedia: Words per minute", "url": "https://en.wikipedia.org/wiki/Words_per_minute"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Ukur WPM Anda", "drill": "words", "layout": "us"}
+}
+-->
+<h2>Apa arti WPM dalam mengetik?</h2>
+<p>WPM adalah singkatan dari words per minute atau kata per menit, dan dalam mengetik satu kata berarti lima karakter apa saja. Huruf, angka, spasi dan tanda baca semuanya dihitung. Shift dan Backspace tidak ikut dihitung karena tidak menambah karakter ke teks. Pengetik yang menghasilkan 300 karakter dalam satu menit mengetik dengan kecepatan 60 WPM, apa pun kata yang dibentuk karakter-karakter itu.</p>
+<p>Panjang kata yang tetap membuat skor bisa dibandingkan. Jika dihitung sebagai kata sungguhan, "ia di sini" berisi tiga kata dan "ketidakbertanggungjawaban" satu kata, padahal yang kedua butuh ketukan dua setengah kali lebih banyak. Dengan aturan lima karakter, "ia di sini" (10 karakter termasuk spasinya) bernilai 2 kata dan "ketidakbertanggungjawaban" (25 karakter) bernilai 5. Aturan yang sama menaruh bahasa berkata panjang dan berkata pendek pada satu skala: kata <em>menggunakan</em> punya 11 karakter dan bernilai 2,2 kata, sedangkan padanan Inggrisnya, <em>use</em>, bernilai 0,6.</p>
+<p><a href="https://faculty.washington.edu/wobbrock/pubs/text-07.pdf">Bab Jacob Wobbrock tentang ukuran kinerja input teks</a> menyebut bahwa menghitung satu kata sebagai lima karakter, termasuk spasi, sudah lazim sejak sekitar tahun 1905, dan I. Scott MacKenzie menelusurinya ke lomba mengetik awal 1900-an. Keduanya mengutip sejarah mesin tik karya Yamada tahun 1980.</p>
+
+<h2>Bagaimana cara menghitung WPM?</h2>
+<p>Untuk menghitung WPM, bagi jumlah karakter yang Anda ketik dengan lima, lalu bagi dengan jumlah menit yang Anda habiskan.</p>
+<ol>
+<li>Hitung semua karakter dalam teks yang Anda hasilkan, termasuk spasi dan tanda baca.</li>
+<li>Bagi jumlah itu dengan 5 untuk mendapatkan kata standar.</li>
+<li>Ubah waktunya ke menit (45 detik sama dengan 0,75 menit), lalu bagi jumlah kata dengan angka itu.</li>
+</ol>
+<p>Rumus WPM-nya: <code>WPM = karakter ÷ 5 ÷ menit</code>. Misalnya Anda mengetik 250 karakter dalam 75 detik. Itu 50 kata dalam 1,25 menit, atau 40 WPM.</p>
+<p>Laboratorium riset menambahkan satu koreksi. Jam mulai berjalan pada ketukan pertama, jadi karakter pertama tidak memakan waktu yang terukur dan dikeluarkan dari hitungan. <a href="https://www.yorku.ca/mack/RN-TextEntrySpeed.html">Catatan MacKenzie tentang cara menghitung kecepatan input teks</a> memberi contoh dengan kalimat "the quick brown fox jumps over the lazy dog": 43 karakter dalam 20 detik. Menghitung ke-43 karakter memberi 25,8 WPM; menghitung 42 karakter yang diketik setelah jam berjalan memberi 25,2 WPM. Pada tes yang lebih panjang, koreksi ini makin kecil. Untuk 520 karakter dalam dua menit, hasilnya hanya bergeser 0,1 WPM.</p>
+
+<h2>Apa beda WPM kotor dan WPM bersih?</h2>
+<p>WPM kotor (gross) mengukur semua teks yang Anda ketik, termasuk kesalahannya, sedangkan WPM bersih (net) mengurangi penalti untuk kesalahan yang tertinggal. Penalti yang umum adalah satu kata per menit untuk setiap kesalahan yang tidak dikoreksi per menit:</p>
+<p><code>WPM bersih = WPM kotor − kesalahan tak dikoreksi ÷ menit</code></p>
+<p><a href="https://www.speedtypingonline.com/typing-equations">Rumus mengetik dari Speed Typing Online</a> memberi contoh: 80 WPM kotor selama dua menit dengan 8 kesalahan tertinggal berarti 4 kesalahan per menit, jadi kecepatan bersihnya 76 WPM.</p>
+<p>Kesalahan yang Anda perbaiki sambil jalan tidak kena penalti tambahan karena Anda sudah membayarnya dengan waktu. Tombol yang salah, Backspace dan tombol yang benar semuanya makan waktu dan hanya meninggalkan satu karakter. Kesalahan yang dibiarkan bisa mempercantik skor. Wobbrock mencatat bahwa kesalahan yang tidak dikoreksi menaikkan kecepatan, karena pengetik bergerak lebih cepat ketika membiarkan salah ketik, dan penalti seperti WPM bersih mengambil kembali keuntungan itu.</p>
+<p>Anda juga akan menemui dua penyesuaian lain. Peneliti melaporkan adjusted WPM, yang menurunkan WPM sebanding dengan tingkat kesalahan yang tidak dikoreksi; dalam contoh Wobbrock, 10% kesalahan tak dikoreksi membuat adjusted WPM tinggal 90% dari WPM. Beberapa aplikasi dulu mengalikan WPM dengan akurasi. Typing.com pernah menyebut hasil kali itu "Net Words Per Minute", lalu menghapusnya karena angka itu membuat pengetik terpaku pada WPM dan mengabaikan akurasi.</p>
+<p>Tes mengetik biasanya menampilkan akurasi di samping WPM. Akurasi adalah jumlah karakter benar dibagi semua karakter yang diketik, dikali 100, dan ikut menghitung kesalahan yang sudah Anda perbaiki: 514 karakter benar dari 534 yang diketik berarti 96,3%, walaupun hanya sedikit kesalahan yang tersisa di teks akhir. <a href="guide:typing-accuracy">Panduan akurasi mengetik</a> membahas target yang perlu dikejar.</p>
+
+<h2>Contoh: cara menghitung WPM dengan enam cara dari satu tes</h2>
+<p>Berikut satu tes dua menit yang dinilai dengan setiap rumus di atas. Anda menyelesaikan 520 karakter teks, termasuk spasi. Selama mengetik, Anda salah tekan 14 karakter lalu menghapusnya, dan 6 karakter salah tetap tertinggal, masing-masing di kata lima huruf yang berbeda. Totalnya 534 karakter diketik, 514 di antaranya benar.</p>
+<table>
+<caption>Satu tes dua menit, enam cara menilainya</caption>
+<thead>
+<tr><th scope="col">Metode</th><th scope="col">Perhitungan</th><th scope="col">WPM</th></tr>
+</thead>
+<tbody>
+<tr><td>WPM kotor</td><td>520 ÷ 5 ÷ 2</td><td>52,0</td></tr>
+<tr><td>WPM riset (jam mulai pada karakter pertama)</td><td>519 ÷ 120 detik × 60 ÷ 5</td><td>51,9</td></tr>
+<tr><td>Adjusted WPM (riset)</td><td>51,9 × (1 − 6 ÷ 520)</td><td>51,3</td></tr>
+<tr><td>WPM × akurasi (aplikasi lama)</td><td>52,0 × 514 ÷ 534</td><td>50,1</td></tr>
+<tr><td>WPM bersih</td><td>52,0 − 6 ÷ 2</td><td>49,0</td></tr>
+<tr><td>Hanya kata yang benar (aturan Monkeytype)</td><td>(520 − 6 × 6) ÷ 5 ÷ 2</td><td>48,4</td></tr>
+</tbody>
+</table>
+<p>Baris terakhir mengasumsikan setiap typo merusak satu kata lima huruf beserta spasinya, masing-masing 6 karakter.</p>
+
+<h2>Mengapa WPM saya berbeda di setiap tes mengetik?</h2>
+<p>WPM Anda berubah antartes karena setiap situs memakai rumus, teks dan durasi tes yang berbeda, dan karena tempo Anda sendiri naik-turun dalam satu tes. Rumusnya saja sudah menggeser contoh di atas sebesar 3,6 WPM. <a href="https://github.com/monkeytypegame/monkeytype/blob/master/frontend/src/ts/components/pages/AboutPage.tsx">Monkeytype</a>, misalnya, hanya menghitung karakter dalam kata yang diketik benar, jadi satu typo menghapus nilai seluruh kata.</p>
+<p><a href="https://www.typing.com/blog/what-is-words-per-minute/">Typing.com</a> mencatat bahwa WPM tidak memperhitungkan tingkat kesulitan konten, dan mengetik ulang bacaan yang sama menggelembungkan kecepatan karena jari Anda sudah hafal. Paragraf berisi kata pendek yang umum biasanya menghasilkan skor lebih tinggi daripada paragraf yang penuh huruf kapital, angka dan simbol, padahal keduanya dihitung dalam kata lima karakter. Bahasa teks juga berpengaruh. Tes berbahasa Inggris dan berbahasa Indonesia memakai satuan yang sama, tetapi kata, ejaan dan pasangan hurufnya berbeda, jadi bandingkan skor dari tes dengan bahasa yang sama.</p>
+<p>Durasi tes ikut menentukan. Sprint 15 detik hanya mengukur satu ledakan kecepatan. Typing.com menganggap tes 3 dan 5 menitnya sebagai ukuran paling akurat untuk kecepatan keseluruhan, karena cukup panjang untuk rata-rata yang konsisten tanpa membuat pergelangan tangan dan jari lelah.</p>
+<p>Penghitung langsung dan skor akhir juga mencakup rentang waktu yang berbeda. Skor akhir merata-ratakan seluruh tes, termasuk awal yang lambat dan saat tersandung, sedangkan penghitung bergulir hanya mencakup beberapa detik terakhir dan turun setiap kali Anda ragu. <a href="app:words?layout=us">Latihan words</a> di petitdoigt menampilkan keduanya: WPM bergulir dengan jendela 5, 10 atau 30 detik saat Anda mengetik, lalu hasil setiap set dibandingkan dengan sepuluh set terakhir Anda.</p>
+
+<h2>Bagaimana cara mengukur WPM dengan akurat?</h2>
+<p>Untuk mendapatkan WPM yang bisa dipercaya, jalankan jenis tes yang sama dengan cara yang sama setiap kali, dan periksa rumusnya sebelum membandingkan angka.</p>
+<ol>
+<li>Pilih tes berdurasi 3 sampai 5 menit.</li>
+<li>Pakai teks yang belum pernah Anda ketik, dalam bahasa yang biasa Anda tulis.</li>
+<li>Mengetiklah dengan tempo kerja sungguhan, dan perbaiki kesalahan seperti biasanya.</li>
+<li>Catat WPM dan akurasi bersamaan. 60 WPM dengan akurasi 90% dan 60 WPM dengan akurasi 98% butuh latihan yang berbeda.</li>
+<li>Periksa apakah situsnya melaporkan WPM kotor, WPM bersih atau hanya kata yang benar sebelum menyandingkan angkanya dengan situs lain.</li>
+<li>Bandingkan dengan hasil Anda sendiri sebelumnya di tes yang sama, selama beberapa sesi.</li>
+</ol>
+
+<h2>Apa itu CPM dan ketukan per menit?</h2>
+<p>CPM (characters per minute, karakter per menit) adalah WPM dikali lima: 52 WPM sama dengan 260 CPM. Ketukan per menit menghitung setiap tombol yang ditekan, termasuk Backspace dan, pada beberapa ukuran, Shift. Dalam contoh tadi Anda menekan 534 tombol karakter dan 14 kali Backspace dalam dua menit: 274 ketukan per menit untuk 260 karakter per menit.</p>
+<p>Peneliti menyebut rasio keduanya keystrokes per character (KSPC). <a href="https://userinterfaces.aalto.fi/136Mkeystrokes/">Studi Aalto University terhadap 136 juta ketukan</a> (Dhakal dan rekan, CHI 2018) menghitung setiap tombol yang ditekan dan menemukan rata-rata 1,17 ketukan per karakter di antara 168.000 relawannya. Sepersepuluh tercepat rata-rata 1,10 dan sepersepuluh paling lambat 1,24, karena pengetik lambat lebih sering salah lalu mengoreksi.</p>
+<p>Pekerjaan entri data sering memakai ketukan per jam; Wikipedia mencatat banyak pekerjaan meminta 8.000 atau 10.000. Jika setiap ketukan menghasilkan satu karakter, 10.000 ketukan per jam setara sekitar 33 WPM. Tabel berikut mengonversi kecepatan yang umum dengan asumsi yang sama.</p>
+<table>
+<caption>WPM dalam satuan kecepatan lain, dengan asumsi satu ketukan per karakter</caption>
+<thead>
+<tr><th scope="col">WPM</th><th scope="col">Karakter per menit</th><th scope="col">Milidetik per karakter</th><th scope="col">Ketukan per jam</th></tr>
+</thead>
+<tbody>
+<tr><td>20</td><td>100</td><td>600</td><td>6.000</td></tr>
+<tr><td>30</td><td>150</td><td>400</td><td>9.000</td></tr>
+<tr><td>40</td><td>200</td><td>300</td><td>12.000</td></tr>
+<tr><td>60</td><td>300</td><td>200</td><td>18.000</td></tr>
+<tr><td>80</td><td>400</td><td>150</td><td>24.000</td></tr>
+<tr><td>100</td><td>500</td><td>120</td><td>30.000</td></tr>
+<tr><td>120</td><td>600</td><td>100</td><td>36.000</td></tr>
+</tbody>
+</table>
+
+<h2>Berapa kata per menit orang mengetik, berbicara dan membaca?</h2>
+<p>Membaca nyaring dan narasi jauh lebih cepat daripada mengetik: tempo yang dianjurkan untuk buku audio sekitar tiga kali rata-rata kecepatan mengetik yang terukur secara daring. Angka di bawah berasal dari studi yang berbeda dan menghitung kata dengan cara berbeda. Studi mengetik menghitung kata lima karakter. Kecepatan bicara dan membaca menghitung kata yang benar-benar diucapkan atau dibaca, dan bab Wobbrock mencatat bahwa peneliti ucapan mendefinisikan kata dengan cara itu.</p>
+<table>
+<caption>Kata per menit menurut aktivitas</caption>
+<thead>
+<tr><th scope="col">Aktivitas</th><th scope="col">Kata per menit</th><th scope="col">Sumber</th></tr>
+</thead>
+<tbody>
+<tr><td>Keyboard stenotype, pengguna terlatih tercepat</td><td>hingga 360</td><td>Guinness World Records, via Wikipedia</td></tr>
+<tr><td>Membaca nyaring, 17 bahasa</td><td>184 ± 29</td><td>Trauzettel-Klosinski dan Dietz (2012), via Wikipedia</td></tr>
+<tr><td>Narasi buku audio (dianjurkan)</td><td>150 sampai 160</td><td>Williams (1998), via Wikipedia</td></tr>
+<tr><td>Mengetik di keyboard komputer, tes daring</td><td>51,6 (rata-rata)</td><td>Dhakal dan rekan (2018)</td></tr>
+<tr><td>Mengetik di ponsel, tes daring</td><td>36,2 (rata-rata)</td><td>Palin dan rekan (2019)</td></tr>
+<tr><td>Menyalin dengan tulisan tangan, dewasa 18 sampai 64 tahun</td><td>sekitar 13 (68 huruf per menit)</td><td>Wikipedia</td></tr>
+</tbody>
+</table>
+<p>Angka ponsel berasal dari <a href="https://userinterfaces.aalto.fi/typing37k/">studi Aalto University tahun 2019 terhadap 37.370 relawan</a>, yang memakai metode dan kata lima karakter yang sama dengan studi desktop dan menemukan mengetik di ponsel sekitar 15 WPM lebih lambat. Kata pendek yang diucapkan, seperti "di", dihitung satu kata penuh, jadi anggap kecepatan bicara dan membaca sebagai perbandingan kasar dengan WPM mengetik.</p>
+
+<h2>Apa arti WPM Anda untuk setiap ketukan?</h2>
+<p>WPM Anda menentukan waktu rata-rata per karakter: bagi 12.000 dengan WPM Anda untuk mendapatkannya dalam milidetik. Pada 60 WPM Anda rata-rata butuh 200 ms per karakter, dan pada 100 WPM, 120 ms. Naik dari 50 ke 60 WPM berarti memangkas 40 ms dari setiap karakter, dari 240 menjadi 200.</p>
+<p>Studi Aalto mengukur jeda itu secara langsung. Di antara semua peserta, jeda rata-rata dari satu tekanan tombol ke tekanan berikutnya adalah 239 ms, pada kecepatan rata-rata 51,6 WPM. Sepersepuluh tercepat, di atas sekitar 78 WPM, rata-rata butuh 122 ms di antara tombol; sepersepuluh paling lambat, di bawah sekitar 26 WPM, rata-rata 481 ms, jadi jedanya menyusut sekitar empat kali dari kelompok paling lambat ke yang tercepat. Lama tombol ditekan jauh lebih seragam. Satu tombol rata-rata tertahan 116 ms, dan 80 sampai 150 ms bahkan pada pengetik lambat, yang dibaca para peneliti sebagai tanda bahwa sebagian besar peningkatan kecepatan datang dari tempat lain.</p>
+<p>Studi mesin tik terdahulu, yang dirangkum dalam makalah yang sama, menemukan pasangan huruf yang diketik dengan jari dari tangan berbeda 30 sampai 60 ms lebih cepat daripada pasangan yang diketik dengan satu tangan, dan sekitar 80 ms lebih cepat daripada pasangan yang diketik dengan jari yang sama. Pada keyboard modern, data Aalto menunjukkan keuntungan bergantian tangan yang lebih kecil, sekitar 5 sampai 20 ms, dan pengetik lambat malah 20 sampai 28 ms lebih lambat saat bergantian tangan. Pada QWERTY, <kbd>N</kbd> lalu <kbd>G</kbd> dalam <em>yang</em> berpindah tangan, sedangkan <kbd>C</kbd> lalu <kbd>E</kbd> dalam <em>cepat</em> membuat jari tengah kiri naik dari baris bawah ke baris atas. WPM Anda merata-ratakan ratusan transisi seperti ini, jadi beberapa yang lambat menarik seluruh angka ke bawah.</p>
+<p><a href="app:pairs?layout=us">Latihan pairs</a> di petitdoigt mengukur waktu setiap transisi antartombol saat Anda mengetik dan, dalam mode adaptif, menyusun setnya sebagian besar dari transisi Anda yang paling lambat dan paling sering salah; tampilan stats mencantumkan latensi dan akurasi untuk setiap jari, huruf dan transisi lemah. <a href="guide:how-to-type-faster">Panduan cara mengetik cepat</a> mengubah angka-angka ini menjadi rencana latihan, dan <a href="guide:typing-speed">panduan rata-rata kecepatan mengetik</a> menunjukkan posisi angka Anda.</p>

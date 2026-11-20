@@ -5,6 +5,7 @@ import type { Bias } from '../src/core/generator';
 import { anchorTurns, DEFAULT_FOCUS, fingerShare, makeAnchorSet, makePairs, makeSentences, makeWords, TYPING_FINGERS } from '../src/core/generator';
 import { getLayout, isTypingCode, LAYOUTS } from '../src/core/layouts';
 import { RollingWpm, SetStats } from '../src/core/metrics';
+import { LANGS } from '../src/core/store';
 import { boardOf, BOARDS, hasCode, letterRowCodes, rowOf, rowsOf } from '../src/core/physical';
 
 /** No slow keys of the typist's own, and the focus a profile starts with: ring and pinky. */
@@ -174,6 +175,49 @@ describe('layouts', () => {
     expect(layout.canType(C_CEDILLA)).toBe(false);
   });
 
+  it('types Swiss German QWERTZ: no ß, French accents on Shift of the umlauts, capital umlauts from the dead diaeresis', () => {
+    const layout = getLayout('qwertz-ch');
+    const key = (code: string, shift = false) => [{ code, shift }];
+    expect(layout.strokesFor('z')).toEqual(key('KeyY'));
+    expect(layout.strokesFor(String.fromCharCode(0xfc))).toEqual(key('BracketLeft'));
+    expect(layout.strokesFor(E_GRAVE)).toEqual(key('BracketLeft', true));
+    expect(layout.strokesFor(E_ACUTE)).toEqual(key('Semicolon', true));
+    expect(layout.strokesFor(String.fromCharCode(0xe0))).toEqual(key('Quote', true));
+    expect(layout.strokesFor(C_CEDILLA)).toEqual(key('Digit4', true));
+    expect(layout.strokesFor(String.fromCharCode(0xdc))).toEqual([...key('BracketRight'), ...key('KeyU', true)]);
+    expect(layout.strokesFor(E_CIRC)).toEqual([...key('Equal'), ...key('KeyE')]);
+    expect(layout.strokesFor("'")).toEqual(key('Minus'));
+    expect(layout.strokesFor('?')).toEqual(key('Minus', true));
+    expect(layout.canType(String.fromCharCode(0xdf))).toBe(false);
+  });
+
+  it('types Spanish: ñ beside L, acute and diaeresis from the dead key beside it, ¿ and ¡ on the number row', () => {
+    const layout = getLayout('es');
+    const key = (code: string, shift = false) => [{ code, shift }];
+    expect(layout.strokesFor(String.fromCharCode(0xf1))).toEqual(key('Semicolon'));
+    expect(layout.strokesFor(String.fromCharCode(0xd1))).toEqual(key('Semicolon', true));
+    expect(layout.strokesFor(String.fromCharCode(0xe1))).toEqual([...key('Quote'), ...key('KeyA')]);
+    expect(layout.strokesFor(String.fromCharCode(0xc1))).toEqual([...key('Quote'), ...key('KeyA', true)]);
+    expect(layout.strokesFor(String.fromCharCode(0xfc))).toEqual([...key('Quote', true), ...key('KeyU')]);
+    expect(layout.strokesFor(String.fromCharCode(0xa1))).toEqual(key('Equal'));
+    expect(layout.strokesFor(String.fromCharCode(0xbf))).toEqual(key('Equal', true));
+    expect(layout.strokesFor(C_CEDILLA)).toEqual(key('Backslash'));
+    expect(layout.strokesFor(E_GRAVE)).toEqual([...key('BracketLeft'), ...key('KeyE')]);
+    expect(layout.strokesFor("'")).toEqual(key('Minus'));
+  });
+
+  it('types Latin American: the acute beside P, ¿ before ¡, no grave or circumflex', () => {
+    const layout = getLayout('latam');
+    const key = (code: string, shift = false) => [{ code, shift }];
+    expect(layout.strokesFor(String.fromCharCode(0xf1))).toEqual(key('Semicolon'));
+    expect(layout.strokesFor(E_ACUTE)).toEqual([...key('BracketLeft'), ...key('KeyE')]);
+    expect(layout.strokesFor(String.fromCharCode(0xbf))).toEqual(key('Equal'));
+    expect(layout.strokesFor(String.fromCharCode(0xa1))).toEqual(key('Equal', true));
+    expect(layout.strokesFor('{')).toEqual(key('Quote'));
+    expect(layout.canType(E_GRAVE)).toBe(false);
+    expect(layout.canType(E_CIRC)).toBe(false);
+  });
+
   it('maps Dvorak, Colemak and Workman letters to their physical keys', () => {
     const homeRow = (id: string) => ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon'].map((code) => getLayout(id).legend(code)?.base).join('');
     expect(homeRow('dvorak')).toBe('aoeuidhtns');
@@ -258,7 +302,7 @@ describe('corpus', () => {
   });
 
   it('has letter groups of the right size', () => {
-    for (const lang of ['en', 'fr'] as const) {
+    for (const lang of LANGS) {
       expect(PAIRS[lang].every((pair) => pair.length === 2)).toBe(true);
       expect(TRIPLES[lang].every((triple) => triple.length === 3)).toBe(true);
     }
@@ -290,15 +334,46 @@ describe('corpus', () => {
     expect(layout.canType('fen' + E_CIRC + 'tre')).toBe(true);
   });
 
-  it('keeps French sentences for the layouts without accent keys', () => {
+  it('keeps French, German and Spanish sentences for the layouts without accent keys', () => {
     for (const id of ['us', 'dvorak', 'colemak', 'colemak-dh', 'workman'] as const) {
       const layout = getLayout(id);
-      expect(SENTENCES.fr.filter((sentence) => layout.canType(sentence)).length).toBeGreaterThanOrEqual(30);
+      for (const lang of ['fr', 'de', 'es'] as const) {
+        expect(SENTENCES[lang].filter((sentence) => layout.canType(sentence)).length, `${id} ${lang}`).toBeGreaterThanOrEqual(30);
+      }
     }
   });
 
+  it('types every German word and sentence on German QWERTZ, and all but the ß on Swiss QWERTZ', () => {
+    const german = getLayout('qwertz');
+    for (const word of WORDS.de) expect(german.canType(word), word).toBe(true);
+    for (const sentence of SENTENCES.de) {
+      expect(german.canType(sentence), sentence).toBe(true);
+      expect(german.canType(sentence.toLowerCase()), sentence).toBe(true);
+    }
+    const swiss = getLayout('qwertz-ch');
+    const SHARP_S = String.fromCharCode(0xdf);
+    for (const sentence of SENTENCES.de.filter((s) => !s.includes(SHARP_S))) expect(swiss.canType(sentence), sentence).toBe(true);
+  });
+
+  it('types every Spanish word and sentence on both Spanish layouts', () => {
+    for (const id of ['es', 'latam'] as const) {
+      const layout = getLayout(id);
+      for (const word of WORDS.es) expect(layout.canType(word), `${id}: ${word}`).toBe(true);
+      for (const sentence of SENTENCES.es) {
+        expect(layout.canType(sentence), `${id}: ${sentence}`).toBe(true);
+        expect(layout.canType(sentence.toLowerCase()), `${id}: ${sentence}`).toBe(true);
+      }
+    }
+  });
+
+  it('keeps most German and Spanish words on the layouts without their letters', () => {
+    const us = getLayout('us');
+    expect(WORDS.de.filter((word) => us.canType(word)).length / WORDS.de.length).toBeGreaterThan(0.75);
+    expect(WORDS.es.filter((word) => us.canType(word)).length / WORDS.es.length).toBeGreaterThan(0.7);
+  });
+
   it('writes each sentence once, whole, in one line', () => {
-    for (const lang of ['en', 'fr'] as const) {
+    for (const lang of LANGS) {
       expect(new Set(SENTENCES[lang]).size).toBe(SENTENCES[lang].length);
       expect(SENTENCES[lang].length).toBeGreaterThanOrEqual(60);
       for (const sentence of SENTENCES[lang]) {
@@ -324,7 +399,7 @@ describe('generator', () => {
 
   it('strings whole sentences together until the word count is reached', () => {
     for (const layout of LAYOUTS) {
-      for (const lang of ['en', 'fr'] as const) {
+      for (const lang of LANGS) {
         for (const count of [15, 30, 60]) {
           const text = makeSentences(layout, lang, count, { caps: true }, plain);
           expect(layout.canType(text)).toBe(true);

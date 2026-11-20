@@ -1,0 +1,148 @@
+<!--meta
+{
+  "id": "colemak",
+  "lang": "it",
+  "slug": "layout-colemak",
+  "title": "Layout Colemak: cosa cambia, Colemak-DH e come impararlo",
+  "description": "Colemak sposta 17 tasti del QWERTY e lascia Ctrl+Z/X/C/V dove sono. Tutte le modifiche, Colemak o Colemak-DH, quanto serve per impararlo e prova nel browser.",
+  "h1": "Layout Colemak: cosa cambia e come impararlo",
+  "keyword": "layout Colemak",
+  "keywords_secondary": ["Colemak", "Colemak-DH", "imparare Colemak", "tastiera Colemak"],
+  "summary": "Il layout Colemak è un'alternativa al QWERTY per l'inglese che Shai Coleman ha pubblicato il 1° gennaio 2006. Sposta 17 tasti perché le nove lettere più comuni stiano sulla riga centrale, e lascia Z, X, C, V, Q e W al loro posto per salvare le scorciatoie più usate. Colemak-DH, una variante del 2014 nata dalla comunità, toglie D e H dalle colonne centrali. La guida ufficiale consiglia 10 minuti di pratica al giorno per un paio di mesi.",
+  "faq": [
+    {"q": "Come si scrivono le lettere accentate italiane con Colemak?", "a": "Con il tasto AltGr. Sul layout ufficiale di colemak.com, à, è, ì, ò e ù si ottengono premendo AltGr+R e poi la vocale, perché AltGr+R è il tasto morto dell'accento grave. La é si scrive con AltGr+E. Le versioni di Colemak incluse nei sistemi operativi possono gestire gli accenti in modo diverso, quindi provale prima di contarci."},
+    {"q": "Imparare Colemak mi farà dimenticare il QWERTY?", "a": "Di solito no, quando entrambi i layout sono solidi. Le FAQ di Colemak dicono che la maggior parte di chi li padroneggia tutti e due passa dall'uno all'altro senza fatica. La velocità in QWERTY tende a calare mentre impari, e alcune persone conservano un piccolo calo permanente di velocità e precisione. Se ti serve ancora il QWERTY su computer condivisi o di lavoro, la guida di Colemak suggerisce di scriverci 5-10 minuti al giorno."},
+    {"q": "Servono copritasti nuovi o una tastiera nuova per Colemak?", "a": "No. Colemak è un'impostazione software, quindi va bene qualsiasi tastiera e i tasti possono tenere le loro lettere. Chi scrive a dieci dita guarda comunque lo schermo, e una tastiera a schermo che mostri le lettere Colemak copre le prime settimane, finché le nuove posizioni non si fissano."},
+    {"q": "Si può usare Colemak sul telefono?", "a": "App di tastiera come Gboard e SwiftKey offrono Colemak, ma le FAQ di Colemak lo sconsigliano sugli smartphone, dove aumenta gli spostamenti delle dita e il tasso di errore rispetto al QWERTY. Le FAQ consigliano invece la scrittura a gesti su un layout QWERTY."},
+    {"q": "Colemak va bene per programmare?", "a": "Per lo più sì. Colemak tiene quasi tutta la punteggiatura dove la mette il QWERTY americano, quindi parentesi quadre, graffe, barre e virgolette stanno su tasti diretti o con il Maiusc, senza l'AltGr che il layout italiano richiede; si sposta solo il punto e virgola, nella riga in alto. Gli editor che usano le lettere per muoversi, come Vim con H, J, K e L, richiedono di reimparare quei comandi o di rimapparli."},
+    {"q": "Colemak aiuta contro il dolore ai polsi?", "a": "Colemak riduce i movimenti delle dita secondo le misure del suo autore, e utenti di lunga data come il CEO del produttore di tastiere ZSA lo descrivono come più comodo. Nessuna delle due cose è una prova medica. Un dolore che dura va visto da un medico o da un fisioterapista, insieme all'altezza della scrivania e alla postura."}
+  ],
+  "sources": [
+    {"title": "Colemak: sito ufficiale", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak design", "url": "https://colemak.com/Design"},
+    {"title": "Learn Colemak", "url": "https://colemak.com/Learn"},
+    {"title": "Colemak: lingue supportate e lettere accentate (sezione Italian)", "url": "https://colemak.com/Multilingual"},
+    {"title": "Colemak on Mac", "url": "https://colemak.com/Mac"},
+    {"title": "Colemak: sito della comunità", "url": "https://colemak.org/"},
+    {"title": "Colemak (Wikipedia in italiano)", "url": "https://it.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "Colemak Mod-DH: confronto tra layout", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: difficoltà di apprendimento e tasti spostati", "url": "https://colemakmods.github.io/mod-dh/learn.html"},
+    {"title": "Colemak Mod-DH: repository (installer e keymap)", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "DreymaR: Tarmak, layout di transizione", "url": "https://dreymar.colemak.org/tarmak-intro.html"},
+    {"title": "DreymaR: i passi di Tarmak", "url": "https://dreymar.colemak.org/tarmak-steps.html"},
+    {"title": "Peter Norvig: frequenze delle lettere inglesi", "url": "https://norvig.com/mayzner.html"},
+    {"title": "Workman layout: repository ufficiale e keymap", "url": "https://github.com/workman-layout/Workman"},
+    {"title": "Workman layout: sito ufficiale", "url": "https://workmanlayout.org/"},
+    {"title": "Microsoft: Windows keyboard layouts", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Microsoft: gestire le impostazioni di lingua e layout di tastiera in Windows", "url": "https://support.microsoft.com/it-it/help/4496404"},
+    {"title": "Apple: scrivere in un'altra lingua sul Mac", "url": "https://support.apple.com/it-it/guide/mac-help/mchlp1406/mac"},
+    {"title": "Layout italiano di Windows (KBDIT), tasto per tasto (kbdlayout.info)", "url": "https://kbdlayout.info/kbdit"},
+    {"title": "ZSA blog: ZSA loves Colemak", "url": "https://blog.zsa.io/zsa-loves-colemak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Prova Colemak-DH nel browser", "drill": "pairs", "layout": "colemak-dh"}
+}
+-->
+<h2>Cos'è il layout Colemak?</h2>
+<p>Colemak è un'alternativa al QWERTY pensata per scrivere a dieci dita in inglese. Shai Coleman l'ha pubblicato il 1° gennaio 2006 con due obiettivi in tensione tra loro: tenere le dita sulla riga centrale il più a lungo possibile, e cambiare abbastanza poco da permettere a chi usa il QWERTY di passare senza ripartire da zero. Il layout ufficiale scrive anche le lettere accentate di oltre 40 lingue, italiano compreso, più simboli come €.</p>
+<p>La riga centrale porta A R S T D H N E I O. Secondo i conteggi di Peter Norvig sull'inglese, questi dieci tasti contengono le nove lettere più frequenti (E, T, A, O, I, N, S, R e H) e valgono circa il 74% delle lettere scritte. La riga centrale del QWERTY contiene tre di quelle nove lettere e circa il 32% delle lettere scritte, quindi le dita passano molto più tempo a salire e scendere.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak con ogni tasto colorato secondo il dito che lo preme. Ogni dito tiene la sua zona del QWERTY; cambiano le lettere al suo interno.</figcaption></figure>
+<p>Ogni dito riposa sullo stesso tasto fisico del QWERTY, quindi le regole della <a href="guide:finger-placement">mappa delle dita sulla tastiera</a> restano valide. La mano sinistra riposa su A R S T, con la D un tasto a destra dell'indice; la destra su N E I O, con la H un tasto a sinistra dell'indice. Su una tastiera italiana, la O di Colemak cade sul tasto che porta stampata la ò.</p>
+
+<h2>Cosa cambia rispetto al QWERTY?</h2>
+<p>Colemak cambia 17 tasti, tutti sulle tre righe delle lettere: otto nella riga in alto, otto in quella centrale e uno in quella in basso. La fila dei numeri, Maiusc, Ctrl, Alt e quasi tutta la punteggiatura restano dove le mette il QWERTY americano.</p>
+<table>
+<caption>Le righe delle lettere in QWERTY e in Colemak (stessi tasti fisici, da sinistra a destra)</caption>
+<thead><tr><th scope="col">Riga</th><th scope="col">QWERTY</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>In alto</td><td>Q W E R T Y U I O P</td><td>Q W F P G J L U Y ;</td></tr>
+<tr><td>Centrale</td><td>A S D F G H J K L ;</td><td>A R S T D H N E I O</td></tr>
+<tr><td>In basso</td><td>Z X C V B N M</td><td>Z X C V B K M</td></tr>
+</tbody>
+</table>
+<p>Z, X, C e V restano dove sono di proposito. <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd> e <kbd>V</kbd> restano scorciatoie per la sola mano sinistra mentre la destra tiene il mouse. Anche Q e W restano: le note di progetto di Colemak ricordano che <kbd>Ctrl</kbd>+<kbd>Q</kbd> (esci) e <kbd>Ctrl</kbd>+<kbd>W</kbd> (chiudi finestra) possono far perdere lavoro se finiscono su un tasto che premi per sbaglio.</p>
+<p>Solo due lettere cambiano mano, la E e la P. La E passa dal medio sinistro al medio destro, sul tasto che il QWERTY chiama K. La P passa dal mignolo destro al tasto della R in QWERTY, sotto l'indice sinistro. Il punto e virgola lascia la riga centrale per l'ultimo tasto lettera in alto a destra, e il layout ufficiale trasforma il <kbd>Bloc Maiusc</kbd> in un secondo <kbd>Backspace</kbd>. Il basso numero di cambi di mano è voluto: le FAQ di Colemak giudicano Dvorak troppo difficile e frustrante da imparare per chi già usa il QWERTY, e colemak.com indica «solo 2 tasti cambiano mano» tra i motivi per cui Colemak si impara facilmente.</p>
+<h3>Le vocali accentate dell'italiano</h3>
+<p>Colemak si basa sul layout americano, quindi à, è, ì, ò e ù non hanno tasti propri. Il layout ufficiale le scrive con <kbd>AltGr</kbd>: premi <kbd>AltGr</kbd>+<kbd>R</kbd>, il tasto morto dell'accento grave, e poi la vocale. La é si scrive con <kbd>AltGr</kbd>+<kbd>E</kbd>. In cambio parentesi quadre, graffe, tilde e accento grave tornano su tasti diretti o con il Maiusc, dove il layout italiano chiede l'<kbd>AltGr</kbd> o non li ha affatto.</p>
+
+<h2>Colemak è più veloce o migliore del QWERTY?</h2>
+<p>Colemak batte nettamente il QWERTY sulle misure che usano i progettisti di layout, come l'uso della riga centrale e i bigrammi con lo stesso dito. L'effetto sulla velocità di scrittura non è dimostrato, e lo ammette anche il sito della comunità di Colemak. Un bigramma con lo stesso dito è una coppia di lettere consecutive battute dallo stesso dito, che deve finire il primo tasto prima di cominciare il secondo. In QWERTY la terminazione inglese «ed» va due volte al medio sinistro; in Colemak la E sta sotto il medio destro e la D sotto l'indice sinistro, quindi le due lettere vanno a mani diverse.</p>
+<table>
+<caption>Quota sulla riga centrale e bigrammi con lo stesso dito, per layout (testi inglesi)</caption>
+<thead><tr><th scope="col">Layout</th><th scope="col">Lettere scritte sulla riga centrale</th><th scope="col">Bigrammi con lo stesso dito</th></tr></thead>
+<tbody>
+<tr><td>QWERTY</td><td>32%</td><td>6,58%</td></tr>
+<tr><td>Dvorak</td><td>70%</td><td>2,63%</td></tr>
+<tr><td>Workman</td><td>67%</td><td>3,15%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>1,67%</td></tr>
+<tr><td>Colemak-DH</td><td>69%</td><td>1,67%</td></tr>
+</tbody>
+</table>
+<p>La colonna della riga centrale somma le frequenze di Norvig per le lettere che ogni layout mette su quella riga; Wikipedia, anche in italiano, riporta gli stessi 74%, 70% e 32% per Colemak, Dvorak e QWERTY. La colonna dei bigrammi viene dalla pagina di confronto del progetto Colemak Mod-DH, che ha fatto passare una serie di libri del Progetto Gutenberg nel proprio modello di sforzo. Il sito di Workman attribuisce a Workman il 2,185%, quindi leggi quella colonna come una stima di progetto fatta da chi preferisce Colemak. Il sito di Colemak sostiene che in QWERTY le dita percorrano 2,2 volte la distanza.</p>
+<p>Lo stesso sito della comunità dice ai nuovi arrivati: «Non imparare Colemak solo per la velocità. Imparalo per la comodità, e per divertimento.» Erez Zukerman, CEO del produttore di tastiere ZSA, ha scritto che Colemak non l'ha reso più veloce: ci scrive a 80-90 parole al minuto con una precisione del 97-98% e lo apprezza per la comodità, con meno allungamenti. Se il tuo obiettivo principale è la velocità, tecnica e precisione sul layout che usi già rendono prima, come spiega la guida su <a href="guide:how-to-type-faster">come scrivere più velocemente</a>. Per un confronto con le altre alternative, vedi <a href="guide:colemak-vs-dvorak">Colemak, Dvorak o Workman</a>.</p>
+
+<h2>Cos'è Colemak-DH e conviene sceglierlo?</h2>
+<p>Colemak-DH (nome completo Colemak Mod-DH) è una variante nata dalla comunità che toglie D e H dalle due colonne centrali, dove le mette il Colemak classico e dove gli indici devono scivolare di lato. L'ha lanciata SteveP nell'ottobre 2014. D e H scendono nella riga in basso, dove gli indici le raggiungono piegandosi, G e M prendono il loro posto sulla riga centrale e la B sale nella riga in alto. Secondo il progetto, i tasti premuti nelle colonne centrali scendono dal 14,78% di Colemak al 7,80% di Colemak-DH.</p>
+<table>
+<caption>Colemak e Colemak-DH su una tastiera ANSI</caption>
+<thead><tr><th scope="col">Riga</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>In alto</td><td>Q W F P G J L U Y ;</td><td>Q W F P B J L U Y ;</td></tr>
+<tr><td>Centrale</td><td>A R S T D H N E I O</td><td>A R S T G M N E I O</td></tr>
+<tr><td>In basso</td><td>Z X C V B K M</td><td>X C D V Z K H</td></tr>
+</tbody>
+</table>
+<p>La metà sinistra della riga in basso usa anche la «angle mod»: Z, X e C scalano di un tasto a sinistra tenendo lo stesso dito, e la D entra sotto l'indice sinistro. Le tastiere italiane sono ISO, e su una tastiera ISO la Z prende il tasto in più accanto al Maiusc sinistro, quello che sul layout italiano scrive <kbd>&lt;</kbd> e <kbd>&gt;</kbd>. Una tastiera ANSI non ha quel tasto, quindi la Z va al centro della riga, come nella tabella. Se non sai quale tastiera hai, la guida <a href="guide:iso-vs-ansi">ISO o ANSI</a> spiega come capirlo. Il progetto raccomanda oggi su ogni tastiera la versione originale, a volte chiamata DHm, quella con la M sulla riga centrale mostrata sopra.</p>
+<table>
+<caption>Colemak o Colemak-DH: i compromessi</caption>
+<thead><tr><th scope="col">Cosa cambia</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>Tasti spostati rispetto al QWERTY</td><td>17</td><td>19, più 3 per la angle mod su una tastiera sfalsata</td></tr>
+<tr><td>Tasti premuti nelle colonne centrali</td><td>14,78%</td><td>7,80%</td></tr>
+<tr><td>Fatica di apprendimento (progetto Mod-DH)</td><td>Il più facile tra i layout completamente ottimizzati</td><td>Un po' più difficile, soprattutto perché la H si sposta</td></tr>
+<tr><td>Incluso nel sistema operativo</td><td>Windows 11 (dalla 24H2), macOS, Linux</td><td>Solo Linux; Windows e macOS richiedono gli installer del progetto</td></tr>
+</tbody>
+</table>
+<p>Il sito della comunità di Colemak giudica buoni entrambi e lascia la scelta ai gusti. Scegli Colemak-DH se scivolare di lato verso D e H ti è scomodo, o se scrivi su una tastiera ortolineare (a matrice), la configurazione in cui il confronto Mod-DH dà a Colemak-DH il punteggio migliore. Scegli il Colemak classico se vuoi il minor numero di cambiamenti e un layout già incluso nel sistema. Se scrivi già bene in Colemak classico, passare a DH vuol dire reimparare i tasti cambiati, e conviene soprattutto se l'allungamento verso le colonne centrali ti dà fastidio.</p>
+
+<h2>Quanto tempo serve per imparare Colemak?</h2>
+<p>Metti in conto circa due mesi di pratica breve e quotidiana prima che Colemak sia abbastanza veloce da usarlo sempre. Le cifre disponibili vengono dalle indicazioni del layout e dai racconti degli utenti. La guida ufficiale all'apprendimento consiglia 10 minuti al giorno per un paio di mesi, il passaggio definitivo quando arrivi a due terzi della tua vecchia velocità in QWERTY, e la ripetizione di ogni lezione finché non raggiungi almeno il 97% di precisione senza esitazioni. Avverte anche che i primi 10 giorni sono duri, soprattutto se cambi tutto in una volta.</p>
+<table>
+<caption>Tre modi di fare il passaggio</caption>
+<thead><tr><th scope="col">Approccio</th><th scope="col">Come funziona</th><th scope="col">Cosa aspettarsi</th></tr></thead>
+<tbody>
+<tr><td>Tutto in una volta</td><td>Cambi il layout di sistema il primo giorno e scrivi tutto in Colemak</td><td>L'avvertimento sui primi 10 giorni vale per intero, e la scrittura al lavoro rallenta subito</td></tr>
+<tr><td>Pratica, poi passaggio</td><td>Tieni il layout abituale al lavoro, pratichi Colemak 10 minuti al giorno e passi a due terzi della vecchia velocità</td><td>La raccomandazione di colemak.com; la velocità al lavoro resta intatta mentre impari</td></tr>
+<tr><td>Tarmak</td><td>Quattro layout intermedi spostano 3 o 4 tasti alla volta (4, 7, 10 e 14 tasti in totale), poi Colemak completo</td><td>Gli utenti citati sulla pagina di Tarmak hanno impiegato da tre giorni a una settimana per passo; le sue FAQ suggeriscono circa il 97% di precisione a 40 parole al minuto prima di andare avanti</td></tr>
+</tbody>
+</table>
+<p>Tarmak, creato da DreymaR della comunità Colemak, parte dagli spostamenti essenziali: il primo passo sistema E e N, il secondo porta la T al suo posto, e un percorso Tarmak-DH separato arriva a Colemak-DH. Erez Zukerman ha imparato così: è partito con quattro tasti cambiati e ha usato quel layout quasi QWERTY per circa un mese prima di cambiarne altri.</p>
+<p>Il tuo ritmo dipende dalle ore di pratica e da quanto il QWERTY occupa ancora le tue giornate di lavoro. Le FAQ di Colemak dicono che la maggior parte del tempo va in abilità motorie, e che chi scrive già a dieci dita in QWERTY in modo veloce e corretto recupera presto quella velocità. Se oggi guardi i tasti, imparare a <a href="guide:touch-typing">scrivere a dieci dita</a> viene prima, e puoi impararlo direttamente in Colemak.</p>
+
+<h2>Come imparare Colemak, passo per passo</h2>
+<ol>
+<li><strong>Scegli Colemak o Colemak-DH, e controlla la tua tastiera.</strong> Per Colemak-DH i tasti in basso a sinistra cambiano tra tastiere ISO e ANSI, quindi sappi quale hai sulla scrivania.</li>
+<li><strong>Provalo nel browser prima di cambiare qualsiasi impostazione.</strong> petitdoigt applica il layout da solo a partire dalla posizione fisica dei tasti, quindi puoi <a href="app:words?layout=colemak">scrivere in Colemak nel browser</a> senza installare nulla nel sistema operativo. La tastiera a schermo mostra le lettere Colemak, ogni tasto nel colore del suo dito, e i tuoi tasti possono tenere le lettere stampate. L'interfaccia è in inglese e i testi di esercizio possono essere in inglese, la lingua per cui Colemak è ottimizzato.</li>
+<li><strong>Impara la riga centrale dito per dito.</strong> Mano sinistra su A R S T, destra su N E I O, con D e H come allungamento interno degli indici (G e M su Colemak-DH). L'esercizio <a href="app:anchors?layout=colemak-dh">anchors</a> manda le dita che scegli sui loro tasti e le riporta sulla riga centrale tra un tocco e l'altro. Il programma evidenzia il dito da usare, ma non può vedere le tue mani: tenere il dito giusto su ogni tasto tocca a te.</li>
+<li><strong>Aggiungi le righe in alto e in basso con parole vere.</strong> Le parole intere allenano le nuove posizioni nell'ordine in cui le userai, comprese E e P, le due lettere che hanno cambiato mano.</li>
+<li><strong>Allena le transizioni che ti rallentano.</strong> In modalità adattiva, l'esercizio <a href="app:pairs?layout=colemak-dh">pairs</a> misura ogni passaggio da un tasto all'altro mentre scrivi e costruisce la serie successiva soprattutto con quelli più lenti e meno precisi. Le statistiche sono separate per layout, quindi i numeri di Colemak non si mescolano con la tua cronologia QWERTY.</li>
+<li><strong>Tieni la precisione prima di inseguire la velocità.</strong> Punta al 97% prima di andare avanti, la cifra che danno sia la guida di Colemak sia le FAQ di Tarmak. La guida alla <a href="guide:typing-accuracy">precisione nella digitazione</a> spiega perché la precisione viene prima.</li>
+<li><strong>Cambia il layout di sistema a due terzi della vecchia velocità.</strong> Se usi ancora computer condivisi in QWERTY o con il layout italiano, tieni 5-10 minuti al giorno sul vecchio layout perché resti utilizzabile.</li>
+</ol>
+
+<h2>Come attivare Colemak su Windows, macOS e Linux?</h2>
+<p>Colemak è incluso in Windows 11 dalla versione 24H2 ed è preinstallato su macOS e Linux. L'elenco Microsoft dei layout di tastiera di Windows indica Colemak come un'aggiunta di Windows 11.</p>
+<ul>
+<li><strong>Windows 11:</strong> Start, Impostazioni, Ora &amp; lingua, Lingua &amp; area geografica. Seleziona i tre puntini accanto alla lingua, scegli Opzioni lingua, poi Aggiungi una tastiera accanto a Tastiere installate e scegli Colemak. Se non compare, aggiungi prima l'inglese (Stati Uniti). <kbd>Windows</kbd>+<kbd>barra spaziatrice</kbd> passa da un layout installato all'altro.</li>
+<li><strong>macOS:</strong> Impostazioni di Sistema, Tastiera, poi Modifica in Immetti testo. Fai clic sul pulsante di aggiunta, cerca l'inglese e aggiungi Colemak. <kbd>Ctrl</kbd>+<kbd>barra spaziatrice</kbd> torna all'ultima sorgente di input usata. Per trasformare il <kbd>Bloc Maiusc</kbd> in Backspace come nel layout ufficiale, colemak.com suggerisce Karabiner-Elements.</li>
+<li><strong>Colemak-DH:</strong> il progetto Mod-DH fornisce installer per Windows, uno script AutoHotkey e un pacchetto per macOS (anche <code>brew install --cask colemak-dh</code>). Su Linux, xkeyboard-config dalla versione 2.34 lo include: <code>setxkbmap us -variant colemak_dh</code>, oppure <code>setxkbmap uk -variant colemak_dh_iso</code> su una tastiera ISO britannica.</li>
+</ul>
+<p>Le versioni più vecchie di Windows richiedono l'installer di colemak.com. Per confrontare Colemak con i layout nazionali e le altre alternative, vedi la panoramica sui <a href="guide:keyboard-layouts">layout di tastiera</a>.</p>
+
+<h2>Quali sono gli svantaggi di Colemak?</h2>
+<p>Il primo costo è il tempo: la guida avverte che i primi 10 giorni sono duri e prevede un paio di mesi di pratica. Dopo, l'attrito viene dai computer che non controlli e dai programmi che associano i comandi alle lettere. Le macchine condivise e di lavoro restano sul QWERTY o sul layout italiano, quindi o tieni in forma il vecchio layout o installi Colemak ovunque scrivi.</p>
+<p>Colemak tiene al loro posto le scorciatoie più usate e sposta le altre insieme alle loro lettere. <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd>, <kbd>V</kbd>, <kbd>Q</kbd> e <kbd>W</kbd> restano dove sono. <kbd>Ctrl</kbd>+<kbd>S</kbd> (salva) passa al tasto che il QWERTY chiama D, e <kbd>Ctrl</kbd>+<kbd>F</kbd> (trova) a quello che chiama E.</p>
+<p>I giochi che associano i comandi alle lettere invece che alla posizione dei tasti spargono il gruppo WASD: W e A restano, mentre S e D finiscono sui tasti D e G del QWERTY. Riassegna i comandi nel gioco, o torna al QWERTY con la scorciatoia di sistema mentre giochi. Vim ha lo stesso problema con H, J, K e L: la H resta, ma la J va sul tasto Y del QWERTY, la K sulla N e la L sulla U, quindi chi usa Vim reimpara quei movimenti o li rimappa.</p>

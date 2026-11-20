@@ -1,0 +1,140 @@
+<!--meta
+{
+  "id": "colemak-vs-dvorak",
+  "lang": "pl",
+  "slug": "colemak-czy-dvorak",
+  "title": "Colemak czy Dvorak? Porównanie z Workmanem i QWERTY",
+  "description": "Colemak czy Dvorak, a może Workman? Rząd podstawowy, bigramy jednopalcowe, skróty, polskie znaki, badania szybkości i darmowy test każdego układu.",
+  "h1": "Colemak czy Dvorak: który układ klawiatury wybrać?",
+  "keyword": "Colemak czy Dvorak",
+  "keywords_secondary": ["Colemak vs Dvorak", "Dvorak czy QWERTY", "Colemak czy QWERTY", "układ Workman", "czy Colemak jest lepszy od Dvoraka"],
+  "summary": "Colemak czy Dvorak: dla większości osób piszących dziś na QWERTY lepszy jest Colemak, bo przesuwa 17 klawiszy zamiast prawie wszystkich liter, zostawia Ctrl+Z, X, C i V na miejscu i nieco wyprzedza Dvoraka w udziale rzędu podstawowego (74% wobec 70%) i w bigramach jednopalcowych (1,67% wobec 2,63%). Jego oficjalna wersja ma też polskie znaki. Dvorak ma sens, jeśli już na nim piszesz. Żaden z nich nie okazał się szybszy od QWERTY.",
+  "faq": [
+    {"q": "Colemak czy Dvorak: który lepiej sprawdza się w programowaniu?", "a": "Colemak jest łatwiejszą zmianą dla programistów piszących na QWERTY, bo zostawia prawie wszystkie klawisze interpunkcji tam, gdzie ma je QWERTY, a Dvorak przesuwa nawiasy, ukośnik, minus, znak równości i średnik. FAQ Colemaka dodaje, że najlepszy wybór zależy od języków programowania, konwencji nazewnictwa i edytora. Osoby piszące kod na Dvoraku mogą sięgnąć po Programmer Dvorak Rolanda Kaufmanna z nawiasami w górnym rzędzie; mają go niektóre dystrybucje Linuksa, Windows i macOS go nie mają."},
+    {"q": "Czy warto przejść z Dvoraka na Colemaka?", "a": "Zwykle nie. FAQ Colemaka przyznaje, że zmiana „nie będzie tak łatwa dla weteranów Dvoraka”, że zysk Colemaka nad Dvorakiem jest mniejszy niż zysk Dvoraka nad QWERTY i że osoba ogólnie zadowolona z Dvoraka powinna raczej przy nim zostać. W porównaniu Colemak Mod-DH różnica to 1,67% wobec 2,63% bigramów jednopalcowych, niewiele przy 6,58% na QWERTY. Wyjątkiem jest dużo pisania po polsku, bo oficjalny Colemak ma polskie znaki."},
+    {"q": "Czy po nauce Colemaka albo Dvoraka zapomnę QWERTY?", "a": "Większość osób zachowuje oba układy. FAQ Colemaka podaje, że kto opanował oba, może regularnie i bez trudu się między nimi przełączać, choć niektórzy tracą na stałe trochę szybkości albo dokładności na QWERTY. Na cudzym komputerze dodasz Colemaka do Windows w około minutę albo napiszesz na QWERTY, zerkając na klawisze."},
+    {"q": "Czy Windows ma wbudowany Colemak?", "a": "Tak, od Windows 11 w wersji 24H2. Microsoft zapowiedział go w kompilacji Insider Preview 26040 w styczniu 2024 roku. Dodasz go w Ustawienia › Czas i język › Język i region, w opcjach angielskiego albo innego języka zapisywanego alfabetem łacińskim. Starsze wersje Windows potrzebują darmowego instalatora z colemak.com. Dvorak jest w Windows od Windows 95, w wersji amerykańskiej, bez polskich liter."},
+    {"q": "Czy mogę używać Dvoraka albo Colemaka w telefonie?", "a": "Dvorak jest wbudowany w oba główne systemy telefonów: iOS ma go od iOS 16 z 2022 roku, a klawiatura ekranowa Androida obsługuje go od Androida 4.1. Colemaka dostaniesz w aplikacjach klawiatury, takich jak Gboard czy SwiftKey. Do pisania na samym ekranie FAQ Colemaka poleca QWERTY z pisaniem gestami, bo na ekranie dotykowym Colemak wydłuża drogę palca i zwiększa liczbę błędów."},
+    {"q": "Ile trwa nauka Colemaka?", "a": "Nie znaleźliśmy kontrolowanego badania, które by to mierzyło. FAQ Colemaka podaje, że zależy to od osoby i że większość czasu idzie na umiejętności ruchowe i sprawność palców, bo przesuwa się tylko 17 klawiszy. W praktyce sprawdzają się krótkie codzienne sesje w tempie, w którym rzadko się mylisz."}
+  ],
+  "sources": [
+    {"title": "Colemak Mod-DH: porównanie układów (bigramy jednopalcowe i wskaźniki wysiłku)", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: co zmienia, historia, modyfikacja kątowa", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "ColemakMods/mod-dh na GitHubie: instalacja, xkeyboard-config, mapy klawiszy", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "Colemak: oficjalna strona układu", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak Multilingual: polskie znaki w oficjalnym układzie", "url": "https://colemak.com/Multilingual"},
+    {"title": "OJ Bucao, The Workman Keyboard Layout Philosophy (2010)", "url": "https://workmanlayout.org/"},
+    {"title": "US patent 2,040,248, Typewriter keyboard (Dvorak i Dealey, zgłoszony 1932, udzielony 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Klawiatura Dvoraka (Wikipedia, wolna encyklopedia)", "url": "https://pl.wikipedia.org/wiki/Klawiatura_Dvoraka"},
+    {"title": "Barbara Blackburn (typist) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Barbara_Blackburn_(typist)"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "List of QWERTY keyboard language variants (Wikipedia): układ polski programisty", "url": "https://en.wikipedia.org/wiki/List_of_QWERTY_keyboard_language_variants"},
+    {"title": "Alfabet polski: częstość występowania liter według NKJP (Wikipedia)", "url": "https://pl.wikipedia.org/wiki/Alfabet_polski"},
+    {"title": "Kinesis, QWERTY | Dvorak | Colemak et al", "url": "https://kinesis-ergo.com/switching-from-qwerty/"},
+    {"title": "xkeyboard-config(7): układy dostępne w Linuksie, w tym Dvorak, Colemak, Colemak-DH i Workman", "url": "https://man.archlinux.org/man/xkeyboard-config"},
+    {"title": "Microsoft, Announcing Windows 11 Insider Preview Build 26040 (26 stycznia 2024)", "url": "https://blogs.windows.com/windows-insider/2024/01/26/announcing-windows-11-insider-preview-build-26040-canary-channel/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Wypróbuj Colemaka w przeglądarce", "drill": "words", "layout": "colemak"}
+}
+-->
+<p>Colemak i Dvorak przenoszą najczęstsze angielskie litery pod palce, które spoczywają na klawiaturze, i w dwóch popularnych miarach wygody wyraźnie wygrywają z QWERTY: w udziale pisania w rzędzie podstawowym i w tym, jak często jeden palec musi nacisnąć dwa różne klawisze z rzędu. Różni je to, ile zostaje z QWERTY. Dvorak, opatentowany w 1936 roku, zostawia na swoich miejscach tylko dwie litery, A i M. Colemak z 2006 roku przesuwa 17 klawiszy i trzyma skróty cofania, wycinania, kopiowania i wklejania tam, gdzie szuka ich lewa ręka. Workman z 2010 roku przesuwa 21. W Polsce QWERTY to w praktyce układ Polski (programisty), który według angielskiej Wikipedii ma niemal każdy komputer sprzedawany na polskim rynku i którego litery leżą tak jak w amerykańskim QWERTY, więc wszystkie porównania poniżej dotyczą także ciebie. Układy narodowe, takie jak AZERTY czy QWERTZ, opisuje <a href="guide:keyboard-layouts">przegląd układów klawiatury</a>.</p>
+
+<h2>Colemak czy Dvorak: który jest lepszy?</h2>
+<p>Colemak wyprzedza Dvoraka w każdej mierze wygody opublikowanej dla obu układów, a oba zostawiają QWERTY daleko w tyle. Tabela zestawia QWERTY, Dvoraka, Colemaka i Workmana. Liczby dla rzędu podstawowego, bigramów jednopalcowych i wysiłku pochodzą z symulacji pisania angielskiego tekstu, więc porównują układy na równych warunkach; twoje własne wyniki zależą od tego, co piszesz. Bigram jednopalcowy to dwie kolejne litery pisane tym samym palcem, który musi skończyć pierwsze uderzenie, zanim zacznie drugie.</p>
+<table>
+<caption>QWERTY, Dvorak, Colemak i Workman w porównaniu</caption>
+<thead><tr><th scope="col">Miara</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th><th scope="col">Colemak</th><th scope="col">Workman</th></tr></thead>
+<tbody>
+<tr><th scope="row">Powstał</th><td>Lata 70. XIX wieku</td><td>Zgłoszony 1932, patent 1936</td><td>2006</td><td>2010</td></tr>
+<tr><th scope="row">Uderzenia w rzędzie podstawowym</th><td>32%</td><td>70%</td><td>74%</td><td>Brak opublikowanej liczby</td></tr>
+<tr><th scope="row">Bigramy jednopalcowe</th><td>6,58%</td><td>2,63%</td><td>1,67%</td><td>3,15%</td></tr>
+<tr><th scope="row">Wskaźnik wysiłku (niższy = łatwiej)</th><td>2,400</td><td>1,923</td><td>1,836</td><td>1,817</td></tr>
+<tr><th scope="row">Klawisze przesunięte względem QWERTY</th><td>0</td><td>Wszystkie litery poza A i M oraz większość interpunkcji</td><td>17</td><td>21</td></tr>
+<tr><th scope="row">Ctrl+Z, X, C, V</th><td>Lewa ręka, dolny rząd</td><td>Rozrzucone; C, V i Z pod prawą ręką</td><td>Bez zmian</td><td>Z i X bez zmian; C i V o klawisz w prawo</td></tr>
+<tr><th scope="row">Wbudowany w</th><td>Każdy system</td><td>Windows, macOS, Linux, ChromeOS, iOS 16+, Android</td><td>Windows 11 24H2+, macOS, Linux, ChromeOS</td><td>Linux; darmowe pliki dla Windows i macOS</td></tr>
+</tbody>
+</table>
+<p>Udziały rzędu podstawowego podają <a href="https://kinesis-ergo.com/switching-from-qwerty/">Kinesis</a> i <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">angielska Wikipedia w haśle o Dvoraku</a>, która wywodzi liczby 70% i 32% z artykułu Jareda Diamonda w magazynie Discover z 1997 roku. Bigramy jednopalcowe i wskaźnik wysiłku pochodzą z <a href="https://colemakmods.github.io/mod-dh/compare.html">porównania projektu Colemak Mod-DH</a>, które symuluje pisanie zbioru książek z Projektu Gutenberg, każdym układem z palcowaniem zalecanym przez jego twórców. Autor nazywa wagi wysiłku własnymi szacunkami, a strona należy do projektu Colemak-DH, więc bliskie wyniki traktuj jak remis. Liczby przesuniętych klawiszy pochodzą z <a href="https://colemak.com/FAQ">FAQ Colemaka</a>, od Kinesis i z <a href="https://workmanlayout.org/">workmanlayout.org</a>.</p>
+<p>Przewaga Colemaka nad Dvorakiem jest umiarkowana: 74% wobec 70% w rzędzie podstawowym, 1,67% wobec 2,63% bigramów jednopalcowych. Workman ma najniższy łączny wskaźnik wysiłku z całej czwórki, 1,817 wobec 1,836 Colemaka, bo jego bazowy wysiłek na klawisz jest niższy (1,710 wobec 1,773). Robi za to prawie dwa razy więcej bigramów jednopalcowych niż Colemak.</p>
+
+<h2>Czym Colemak i Dvorak różnią się w budowie?</h2>
+<p>Dvorak opiera się na przemienności rąk, a Colemak na zachowaniu nawyków z QWERTY. August Dvorak i William Dealey zgłosili patent w maju 1932 roku i otrzymali go w maju 1936 roku. Ich układ umieszcza wszystkie samogłoski, łącznie z Y, pod lewą ręką, a najczęstsze spółgłoski pod prawą, więc większość angielskich słów przeskakuje z ręki na rękę. Lewa połowa rzędu podstawowego to A O E U I, prawa D H T N S. Historię układu i badania, o które wciąż toczą się spory, opisuje przewodnik po <a href="guide:dvorak">klawiaturze Dvoraka</a>.</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>Dvorak: samogłoski w lewej połowie rzędu podstawowego, częste spółgłoski w prawej. Kolor klawisza pokazuje palec, który go naciska.</figcaption></figure>
+<p>FAQ Colemaka wylicza koszty tej przemienności: wyższy odsetek bigramów jednopalcowych, obciążenie przechylone na prawą rękę, dodatkową pracę prawego małego palca (L leży tam, gdzie QWERTY ma P) i mniej „rolek”, czyli sekwencji kilku klawiszy pisanych jedną ręką w jednym płynnym ruchu. Autor Workmana szacuje udział pisania jedną ręką na trzydzieści kilka procent w większości układów i na dwadzieścia kilka na Dvoraku. FAQ Colemaka zwraca też uwagę, że na Dvoraku I, jedna z najczęstszych liter, leży poza pozycją spoczynkową: lewy palec wskazujący sięga do niej w bok.</p>
+<p>Shai Coleman wydał Colemaka 1 stycznia 2006 roku z myślą o zachowaniu jak największej części QWERTY, więc litera zmienia miejsce tylko tam, gdzie to się opłaca. Przesuwa się 17 klawiszy, a rękę zmieniają tylko dwa z nich, P i E. Rząd podstawowy to A R S T D H N E I O, dlatego angielskie „strand” albo polskie „strona” i „starania” w ogóle go nie opuszczają. Domyślnie Colemak zamienia też Caps Lock w drugi Backspace. Naukę krok po kroku opisuje przewodnik po <a href="guide:colemak">układzie Colemak</a>.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak: większość dolnego rzędu i prawie cała interpunkcja zostają tam, gdzie ma je QWERTY.</figcaption></figure>
+<p>Słabym punktem Colemaka jest środek rzędu podstawowego. D i H leżą w dwóch środkowych kolumnach, więc palce wskazujące sięgają do nich w bok, a częsta para HE wymusza boczne skręcenie prawej dłoni. Colemak-DH i Workman powstały po to, żeby to sięgnięcie usunąć.</p>
+
+<h2>Colemak czy Dvorak do pisania po polsku?</h2>
+<p>Do pisania po polsku lepiej nadaje się Colemak, bo jego oficjalna wersja ma polskie znaki. Według <a href="https://pl.wikipedia.org/wiki/Klawiatura_Dvoraka">polskiej Wikipedii</a> Dvorak w Windows występuje tylko w wersji amerykańskiej, bez polskich liter diakrytycznych, co czyni go dla piszących po polsku praktycznie bezużytecznym. Oficjalny Colemak ze strony <a href="https://colemak.com/Multilingual">colemak.com</a> wpisuje je klawiszami martwymi pod prawym Altem (AltGr): najpierw naciskasz kombinację oznaczającą znak diakrytyczny, potem literę.</p>
+<table>
+<caption>Polskie znaki w oficjalnym Colemaku, w Dvoraku z Windows i w układzie Polski (programisty)</caption>
+<thead><tr><th scope="col">Znak</th><th scope="col">Colemak (colemak.com)</th><th scope="col">Dvorak (Windows)</th><th scope="col">Polski (programisty)</th></tr></thead>
+<tbody>
+<tr><td>ą, ę</td><td><kbd>AltGr</kbd>+<kbd>G</kbd>, potem A lub E</td><td>Brak</td><td><kbd>AltGr</kbd>+<kbd>A</kbd>, <kbd>AltGr</kbd>+<kbd>E</kbd></td></tr>
+<tr><td>ć, ń, ó, ś, ź</td><td><kbd>AltGr</kbd>+<kbd>T</kbd>, potem litera</td><td>Brak</td><td><kbd>AltGr</kbd> z C, N, O, S; ź to <kbd>AltGr</kbd>+<kbd>X</kbd></td></tr>
+<tr><td>ż</td><td><kbd>AltGr</kbd>+<kbd>.</kbd>, potem Z</td><td>Brak</td><td><kbd>AltGr</kbd>+<kbd>Z</kbd></td></tr>
+<tr><td>ł</td><td><kbd>AltGr</kbd>+<kbd>L</kbd></td><td>Brak</td><td><kbd>AltGr</kbd>+<kbd>L</kbd></td></tr>
+</tbody>
+</table>
+<p>Poza ł każda polska litera kosztuje na Colemaku dwa kroki zamiast jednego. Według częstości z Narodowego Korpusu Języka Polskiego, które podaje <a href="https://pl.wikipedia.org/wiki/Alfabet_polski">Wikipedia</a>, litery z ogonkami i kreskami to razem około 7% polskiego tekstu, mniej więcej co czternasta litera.</p>
+<p>Z tych samych częstości policzyliśmy, jaka część polskiego tekstu trafia do rzędu podstawowego każdego układu. Polskie znaki pominęliśmy, bo ich położenie zależy od sposobu wpisywania.</p>
+<table>
+<caption>Udział liter w rzędzie podstawowym: tekst angielski i polski</caption>
+<thead><tr><th scope="col">Układ</th><th scope="col">Tekst angielski</th><th scope="col">Tekst polski (nasze obliczenia z NKJP)</th></tr></thead>
+<tbody>
+<tr><td>QWERTY, czyli Polski (programisty)</td><td>32%</td><td>27%</td></tr>
+<tr><td>Dvorak</td><td>70%</td><td>53%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>56%</td></tr>
+<tr><td>Colemak-DH</td><td>Brak opublikowanej liczby</td><td>55%</td></tr>
+<tr><td>Workman</td><td>Brak opublikowanej liczby</td><td>53%</td></tr>
+</tbody>
+</table>
+<p>Po polsku każdy z czterech alternatywnych układów mniej więcej podwaja pracę w rzędzie podstawowym, choć do angielskich wyników mu daleko. Powód widać w częstościach: Z (5,6% polskich liter), W (4,5%), C (4,0%) i K (3,4%) leżą poza rzędem podstawowym we wszystkich czterech. Colemaka i Dvoraka dzielą tu niecałe 3 punkty procentowe, więc dla osoby piszącej po polsku o wyborze rozstrzygają raczej polskie znaki i skróty.</p>
+
+<h2>Którego układu łatwiej się nauczyć, Colemaka czy Dvoraka?</h2>
+<p>Colemaka łatwiej się nauczyć każdemu, kto dziś pisze na QWERTY. Przesuwa się mniej klawiszy, tylko dwa zmieniają rękę, a Ctrl+Z, X, C i V zostają na miejscu, więc skróty działają, kiedy uczysz się liter od nowa. Prawie cała interpunkcja też zostaje tam, gdzie była. Dvorak przenosi przecinek i kropkę do górnego rzędu, średnik na lewy skraj dolnego rzędu, a nawiasy kwadratowe do rzędu cyfr, co daje więcej do przeuczenia, jeśli piszesz kod albo tekst pełen interpunkcji.</p>
+<p>Na tym argumencie zbudowano Colemaka: jego FAQ nazywa Dvoraka „zbyt trudnym i frustrującym do nauki dla osób piszących już na QWERTY”. Traktuj to jako stanowisko strony samego układu. Nie znaleźliśmy kontrolowanego badania, które mierzyłoby czas nauki któregokolwiek z nich. FAQ Colemaka podaje, że czas ten zależy od osoby i idzie głównie na doskonalenie umiejętności ruchowych i sprawności palców.</p>
+<p>Colemak daje też łagodniejszą drogę. Według <a href="https://en.wikipedia.org/wiki/Colemak">angielskiej Wikipedii</a> przejściowe układy Tarmak zmieniają po trzy do pięciu klawiszy naraz w pięciu krokach, więc na każdym etapie większość klawiatury zostaje znajoma.</p>
+
+<h2>Czy Colemak albo Dvorak jest szybszy od QWERTY?</h2>
+<p>Żaden z tych układów nie okazał się szybszy od QWERTY. Najdłuższą historię badań ma porównanie Dvoraka z QWERTY. W czasie II wojny światowej, służąc w marynarce wojennej, Dvorak przeprowadził eksperymenty, w których według niego przeuczył osoby piszące na maszynie na swój układ w dziesięć dni; wcześniej odrzucił co najmniej dwa badania o nieznanych wynikach. W 1956 roku Earle Strong z amerykańskiej General Services Administration przeprowadził kontrolowane badanie z dziesięcioma osobami w każdej grupie, które według angielskiej Wikipedii nie wykazało żadnej przewagi Dvoraka ani w szybkości pisania, ani w tempie szkolenia. Strong przypisał wcześniejsze wyniki Dvoraka złej metodologii i stronniczości, choć sam miał do Dvoraka osobistą urazę, a polska Wikipedia dodaje, że krytycy zarzucali badaniu pominięcie osób początkujących. W 1990 roku S. J. Liebowitz i Stephen Margolis przejrzeli te materiały w artykule „The Fable of the Keys” i uznali, że najlepiej udokumentowane eksperymenty wskazują na niewielką albo żadną przewagę klawiatury Dvoraka.</p>
+<p>Najsłynniejszy rekord szybkości na Dvoraku należy do jednej osoby. Barbara Blackburn, która pisała Dvorakiem od 1938 roku, figurowała w Księdze rekordów Guinnessa w latach 1976–1985 z wynikiem 150 słów na minutę utrzymanym przez 50 minut. Guinness wpisał ją bez oficjalnego testu, po liście zwolennika Dvoraka do redakcji, a rekord jednej osoby nie pozwala oddzielić zasługi układu od zasługi piszącej.</p>
+<p>Porównanie Colemaka z QWERTY ma jeszcze mniej danych: nie znaleźliśmy żadnego kontrolowanego badania szybkości na Colemaku. Jego argumenty opierają się na symulacjach takich jak te z tabeli, które mierzą wygodę: jak daleko sięgają palce, ile pisania zostaje w rzędzie podstawowym, jak często jeden palec pracuje dwa razy z rzędu. Te liczby mają znaczenie dla zmęczenia dłoni i dla tego, jak pisanie się czuje. Zmiana układu najpierw kosztuje cię szybkość, zanim cokolwiek zwróci, więc jeśli zależy ci na tempie, zacznij od przewodnika <a href="guide:how-to-type-faster">jak szybciej pisać na klawiaturze</a> na układzie, który już masz, i porównaj się ze <a href="guide:typing-speed">średnią szybkością pisania</a>.</p>
+
+<h2>Gdzie w tym porównaniu są Workman i Colemak-DH?</h2>
+<p>Workman i Colemak-DH usuwają boczne sięgnięcie Colemaka do D i H, każdy za inną cenę. OJ Bucao opublikował układ Workman we wrześniu 2010 roku, po ocenieniu każdego klawisza w skali od 1 (najłatwiejszy) do 5 (najbardziej męczący). Chciał trzymać częste litery z dala od dwóch środkowych kolumn, na które według jego obliczeń przypada 22% uderzeń na QWERTY, 14% na Dvoraku, 12% na Colemaku i 6% na Workmanie. Płaci się za to bigramami jednopalcowymi: 3,15% w porównaniu Mod-DH wobec 1,67% na Colemaku. Własne liczby Bucao wskazują w tę samą stronę, z bigramem jednopalcowym co 46 uderzeń na Workmanie, co 58 na Colemaku i co 20 na QWERTY.</p>
+<p>Colemak-DH zachowuje Colemaka i przesuwa tylko to, co powoduje sięganie. SteveP opublikował go w październiku 2014 roku. D schodzi do dolnego rzędu pod lewy palec wskazujący, G wraca na swój klawisz z QWERTY, B przechodzi do górnego rzędu, a H zamienia się miejscami z M, przy czym żaden klawisz nie zmienia palca. Wersje dla klawiatur z przesuniętymi rzędami mogą dodać modyfikację kątową (angle mod), która przesuwa X i C (a na klawiaturach ISO także Z) o jeden klawisz w lewo dla bardziej symetrycznej pozycji dłoni, choć projekt poleca dziś na każdej klawiaturze swoją pierwotną wersję matrycową. Colemak-DH zachowuje 1,67% bigramów jednopalcowych Colemaka i obniża wskaźnik wysiłku z 1,802 do 1,735 w tej samej konfiguracji klawiatury; na klawiaturach matrycowych osiąga 1,726, najmniej w całym porównaniu. Linux ma go w xkeyboard-config od wersji 2.34, a projekt udostępnia pliki dla macOS i Windows. W petitdoigt możesz <a href="app:pairs?layout=colemak-dh">ćwiczyć pary liter na Colemaku-DH</a> bez instalowania czegokolwiek.</p>
+
+<h2>Co dzieje się ze skrótami Ctrl+C i Ctrl+V na każdym układzie?</h2>
+<p>W większości programów skróty idą za literami, więc układ, który przesuwa C i V, przesuwa razem z nimi kopiowanie i wklejanie. Colemak zostawia Z, X, C i V dokładnie tam, gdzie ma je QWERTY. Workman zostawia Z i X, a C i V przesuwa o jeden klawisz w prawo, wciąż w zasięgu samej lewej ręki. Colemak-DH zależy od wersji: wersja matrycowa zostawia Z, X i C na miejscu i przesuwa V o klawisz w prawo, a wersje z modyfikacją kątową przesuwają X i C o klawisz w lewo i zostawiają V. Dvorak je rozrzuca. X ląduje pod lewym palcem wskazującym, a C, V i Z przechodzą do prawej ręki, więc cofanie, kopiowanie i wklejanie wymagają ręki, która zwykle trzyma mysz.</p>
+<p>Użytkownicy Dvoraka mają obejście w obu głównych systemach. macOS zawiera układ „Dvorak – QWERTY ⌘”, który zamienia się w QWERTY, dopóki trzymasz Command, a w Windows ten sam efekt dają skrypty AutoHotkey.</p>
+
+<h2>Który układ wybrać?</h2>
+<p>Wybierz Colemaka, jeśli piszesz dziś na QWERTY i chcesz najłatwiejszej zmiany z najlepszą zmierzoną wygodą. Zostań przy Dvoraku, jeśli już na nim piszesz; FAQ Colemaka daje tę samą radę każdemu, kto jest z Dvoraka ogólnie zadowolony. Pozostałe sytuacje zbiera tabela.</p>
+<table>
+<caption>Który układ klawiatury pasuje do jakiej osoby</caption>
+<thead><tr><th scope="col">Twoja sytuacja</th><th scope="col">Wybierz</th><th scope="col">Dlaczego</th></tr></thead>
+<tbody>
+<tr><td>Piszesz na QWERTY i chcesz najłagodniejszej zmiany</td><td>Colemak</td><td>17 przesuniętych klawiszy, skróty zostają, najmniej bigramów jednopalcowych z czwórki</td></tr>
+<tr><td>Dużo piszesz po polsku</td><td>Colemak w wersji z colemak.com</td><td>Polskie znaki pod AltGr; Dvorak z Windows ich nie ma</td></tr>
+<tr><td>Męczą cię sięgnięcia palcem wskazującym w bok albo masz klawiaturę dzieloną lub ortolinearną</td><td>Colemak-DH</td><td>Usuwa sięgnięcie do D i H; najniższy wskaźnik wysiłku w porównaniu</td></tr>
+<tr><td>Wygodnie piszesz już na Dvoraku</td><td>Zostań przy Dvoraku</td><td>FAQ Colemaka przyznaje, że zysk Colemaka nad Dvorakiem jest mniejszy niż zysk Dvoraka nad QWERTY</td></tr>
+<tr><td>Piszesz po angielsku na wielu urządzeniach i chcesz, żeby układ już tam był</td><td>Dvorak albo QWERTY</td><td>Dvorak jest wbudowany w Windows, macOS, Linuksa, ChromeOS, iOS i Androida</td></tr>
+<tr><td>Chcesz jak najmniej sięgania do środkowych kolumn i godzisz się na więcej bigramów jednopalcowych</td><td>Workman</td><td>Według autora 6% uderzeń w środkowych kolumnach</td></tr>
+<tr><td>Piszesz już szybko na QWERTY i chcesz tylko większej szybkości</td><td>Zostań przy QWERTY</td><td>Rządowe badanie z 1956 roku nie wykazało przewagi Dvoraka w szybkości pisania ani szkolenia, a badania szybkości Colemaka nie znaleźliśmy</td></tr>
+</tbody>
+</table>
+
+<h2>Jak wypróbować Colemaka albo Dvoraka przed zmianą?</h2>
+<p>Wszystkie trzy układy wypróbujesz w karcie przeglądarki, bez ruszania ustawień systemu. petitdoigt, darmowy trener pisania działający w przeglądarce, sam nakłada układ na fizyczne położenie klawiszy, więc <a href="app:words?layout=colemak">Colemak</a>, <a href="app:words?layout=dvorak">Dvorak</a> i <a href="app:words?layout=workman">Workman</a> działają na klawiaturze QWERTY, która już stoi na twoim biurku. Klawiatura ekranowa pokazuje litery nowego układu i koloruje każdy klawisz według palca, który powinien go nacisnąć; strefy palców wyjaśnia <a href="guide:finger-placement">mapa palców na klawiaturze</a>. Przeglądarka nie widzi, którym palcem naciskasz klawisz, więc trener podświetla właściwy palec i mierzy klawisze oraz czas. Interfejs jest po angielsku, a teksty do ćwiczeń są po angielsku, francusku, niemiecku i hiszpańsku; polskiego tekstu w trenerze nie ma.</p>
+<ol>
+<li>Na każdym rozważanym układzie przepisuj przez kilka minut słowa w ćwiczeniu words, powoli, za podświetlonym palcem.</li>
+<li>Układ, który wydał ci się najmniej niezręczny, przenieś do ćwiczenia pairs. W trybie adaptive buduje ono każdą serię głównie z twoich najwolniejszych i najczęściej mylonych przejść między klawiszami, więc samo znajduje trudne pary tego układu dla twoich dłoni.</li>
+<li>Otwórz stronę statystyk (stats). Liczby są prowadzone osobno dla każdego układu, więc ćwiczenia na Colemaku nie mieszają się z historią QWERTY.</li>
+<li>Kiedy nowy układ wyda ci się wart wysiłku, dodaj go do systemu. W Windows 11 w wersji 24H2 lub nowszej wejdź w Ustawienia › Czas i język › Język i region, otwórz opcje języka angielskiego i dodaj klawiaturę. Do pisania po polsku na Colemaku zainstaluj wersję z colemak.com, bo to jej polskie kombinacje opisuje strona Multilingual. macOS i Linux mają Colemaka i Dvoraka wśród wbudowanych układów.</li>
+</ol>

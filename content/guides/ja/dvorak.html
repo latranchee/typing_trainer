@@ -1,0 +1,160 @@
+<!--meta
+{
+  "id": "dvorak",
+  "lang": "ja",
+  "slug": "dvorak",
+  "title": "Dvorak配列とは？QWERTYより速いのか、覚え方と試し方",
+  "description": "Dvorak配列のキーの並び、1944年と1956年の速度研究がわかったこと、ローマ字入力で使うときの注意点、覚え方、ブラウザーで無料で試す方法を解説します。",
+  "h1": "Dvorak配列とは：本当に速いのか、どう覚えるのか",
+  "keyword": "Dvorak配列",
+  "keywords_secondary": ["ドヴォラック配列", "Dvorak QWERTY 比較", "Dvorak 日本語入力", "Dvorak 覚え方"],
+  "summary": "Dvorak配列は、オーガスト・ドヴォラックとウィリアム・ディーリーが1936年に米国特許を取った英語用のキー配列で、左手の中段に母音、右手の中段によく使う子音を置きます。打鍵の負担を計算するCarpalxのモデルでは、中段で打つ割合はQWERTYの34%に対して71%です。速く打てるかどうかは、古く立場の偏った研究しかなく、はっきりしていません。",
+  "faq": [
+    {
+      "q": "Dvorakを使うのに専用のキーボードは必要ですか？",
+      "a": "必要ありません。OSが各キーで出る文字を変えるので、どのキーボードでも使えます。刻印は合わなくなるので、キーを見ずに打つ練習にちょうどよい理由になり、Dvorakの文字を表示する画面上のキーボードが刻印の代わりになります。MatiasはDvorakを本体に組み込み、1つのキーでQWERTYに切り替えられるキーボードも販売してきました。"
+    },
+    {
+      "q": "Dvorakで記録された最速のタイピング速度は？",
+      "a": "よく知られているのはDvorakで打つBarbara Blackburnの記録です。1985年版のギネスブックは、50分間毎分150語を保ち最高170語に達したとし、同年のSeattle Timesは短時間で毎分212語と報じました。ギネスは1986年版で、電動タイプライターやコンピューターの記録は正確に比べられないとしてこの種の記録をやめています。"
+    },
+    {
+      "q": "Dvorakは手首の痛みや腱鞘炎に効きますか？",
+      "a": "負担が減ったと感じる人はいて、Carpalxのモデルでは打鍵の負担がQWERTYより約25%低くなります。同じモデルで小指の打鍵の割合はQWERTYの10%から18%に増え、負担は右手に寄ります。小指や右手がすでに痛むなら、そこに仕事が増えます。痛みが続くなら医師に相談してください。"
+    },
+    {
+      "q": "Dvorakはプログラミングに向いていますか？",
+      "a": "使えますが、少し不便があります。US Dvorakは角かっこと波かっこを数字の段の右端に置き、コピーと貼り付けは右手に移ります。Roland KaufmannのProgrammer Dvorakは、かっこやよく使う記号を数字の段に置き、数字を7531902468の順に並べます。一部のLinuxに入っていますが、WindowsとmacOSにはありません。"
+    },
+    {
+      "q": "Dvorakでゲームはできますか？",
+      "a": "W、A、S、Dの文字に操作を固定したゲームでは困ります。Dvorakではこの4文字がばらばらのキーにあり、そのうち3つはふつうマウスを持つ右手側です。Wikipediaは、WASDが固定されたゲームは事実上遊べないとしています。キーの割り当てを変えられるゲームや、Dvorakを検出して操作を合わせるゲームなら問題ありません。"
+    },
+    {
+      "q": "DvorakがQWERTYに取って代わらなかったのはなぜ？",
+      "a": "覚え直しの費用が最大の反対理由でした。1950年代に米政府が切り替えを検討した際、Earle StrongのGSAの研究は訓練し直しても元が取れないと結論づけ、QWERTYの訓練を増やすよう勧めました。経済学者のLiebowitzとMargolisも、切り替えに見合うほど優れた配列はないと論じています。支持者はStrongの研究が偏っていたと反論しています。"
+    }
+  ],
+  "sources": [
+    {"title": "US patent 2,040,248, Typewriter keyboard (Dvorak and Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak配列（Wikipedia日本語版）", "url": "https://ja.wikipedia.org/wiki/Dvorak配列"},
+    {"title": "Dvorak keyboard layout, Wikipedia", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Carpalx: Dvorak layout analysis (Martin Krzywinski)", "url": "https://mk.bcgsc.ca/carpalx/?dvorak"},
+    {"title": "Typing Errors, Stan Liebowitz and Stephen Margolis, Reason, June 1996", "url": "https://reason.com/1996/06/01/typing-errors/"},
+    {"title": "The Fable of the Keys, Journal of Law and Economics 33(1), 1990 (RePEc record)", "url": "https://ideas.repec.org/a/ucp/jlawec/v33y1990i1p1-25.html"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Google日本語入力（Mozc）のローマ字・ひらがな変換表 romanji-hiragana.tsv", "url": "https://raw.githubusercontent.com/google/mozc/master/src/data/preedit/romanji-hiragana.tsv"},
+    {"title": "Windows で言語と入力レイアウトの設定を管理する（Microsoft サポート）", "url": "https://support.microsoft.com/ja-jp/help/4496404"},
+    {"title": "Windows keyboard layouts, Microsoft Learn", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Use a Dvorak keyboard layout on Mac, Apple Support", "url": "https://support.apple.com/guide/mac-help/mh27976/mac"},
+    {"title": "「日本語」設定を変更する（Mac 日本語入力ユーザガイド）", "url": "https://support.apple.com/ja-jp/guide/japanese-input-method/jpim662a12b9/mac"},
+    {"title": "iOS 16 Features an All-New iPhone Keyboard Layout Option, MacRumors", "url": "https://www.macrumors.com/2022/10/14/ios-16-dvorak-keyboard"},
+    {"title": "Barbara Blackburn (typist), Wikipedia", "url": "https://en.wikipedia.org/wiki/Barbara_Blackburn_(typist)"},
+    {"title": "Matias Dvorak Keyboard", "url": "https://matias.ca/dvorak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Dvorakをブラウザーで試す", "drill": "words", "layout": "dvorak"}
+}
+-->
+<p>Dvorak配列は、英語でよく使う文字を中段（ホームポジションの段）に集めた配列です。左手は母音の<kbd>A</kbd> <kbd>O</kbd> <kbd>E</kbd> <kbd>U</kbd>に、右手は<kbd>H</kbd> <kbd>T</kbd> <kbd>N</kbd> <kbd>S</kbd>に置き、左右の人差し指を内側に1つ伸ばして、左で<kbd>I</kbd>、右で<kbd>D</kbd>を打ちます。</p>
+
+<h2>Dvorak配列とは？</h2>
+<p>Dvorak配列（正式名はDvorak Simplified Keyboard）は、英語を打つために英字キーを並べ替えた代替配列です。ワシントン大学の教育心理学者オーガスト・ドヴォラックが、義理の兄弟ウィリアム・ディーリーと作りました。2人は1932年5月に特許を出願し、1936年5月12日に「Typewriter keyboard」という名前で米国特許2,040,248号を取得しています。1980年代前半にはANSI（米国規格協会）が代替の標準配列として認めました。</p>
+<p>設計にはいくつかの決まりがあります。最もよく使う文字と文字の組み合わせを中段に、最も使わないものを下段に置きます。母音を左手、よく使う子音を右手に分けたので、英語の音節の多くは左右の手を交互に使って打て、右手がやや多く働きます。隣り合う指で続けて打つ組み合わせを避け、打鍵がキーボードの端から中央へ流れるようにすることも狙いでした。</p>
+<figure data-figure="finger-chart" data-layout="dvorak"><figcaption>US Dvorak配列。キーの色は押す指を表します。指はA O E UとH T N Sに置きます。</figcaption></figure>
+
+<h2>Dvorak配列ではどのキーに何がある？</h2>
+<p>AとMを除くすべての英字が別のキーに移ります。下の表は、同じ物理キーにQWERTYとUS Dvorakでどの文字が来るかを段ごとに並べたものです。</p>
+<table>
+<caption>QWERTYとUS Dvorakの英字の段（同じ物理キー）</caption>
+<thead><tr><th scope="col">段</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>上段</td><td>Q W E R T Y U I O P [ ]</td><td>' , . P Y F G C R L / =</td></tr>
+<tr><td>中段</td><td>A S D F G H J K L ; '</td><td>A O E U I D H T N S -</td></tr>
+<tr><td>下段</td><td>Z X C V B N M , . /</td><td>; Q J K X B M W V Z</td></tr>
+<tr><td>数字の段の右端</td><td>- =</td><td>[ ]</td></tr>
+</tbody>
+</table>
+<p>英語のよく使う単語の多くは中段だけで打てます。<em>the</em>、<em>and</em>、<em>that</em>、<em>this</em>、<em>into</em>は中段から指が離れません。QWERTYでは<em>the</em>だけでも2本の指が上段へ動きます。QWERTYに慣れた人は、次の変更でつまずきがちです。</p>
+<ul>
+<li><strong>句読点</strong>：コンマとピリオドは上段の左手の薬指と中指に、アポストロフィは<kbd>A</kbd>の上に、ハイフンは<kbd>S</kbd>の右に移ります。</li>
+<li><strong>ショートカット</strong>：<kbd>C</kbd>はQWERTYの<kbd>I</kbd>の位置、<kbd>V</kbd>はピリオドの位置、<kbd>Z</kbd>はスラッシュの位置に来ます。コピー、貼り付け、元に戻すが右手に移るので、右手でマウスを持っていると押しにくくなります。Colemak FAQもこの点をDvorakの欠点に挙げています。</li>
+<li><strong>右手の小指</strong>：<kbd>L</kbd>、<kbd>S</kbd>、<kbd>Z</kbd>、ハイフン、スラッシュ、イコールを受け持ちます。よく使うLとSが続くと、同じ小指で連続して打つことになります。</li>
+<li><strong>角かっこ</strong>：<kbd>[</kbd>と<kbd>]</kbd>は数字の段の右端、QWERTYでマイナスとイコールがある位置に移ります。</li>
+</ul>
+
+<h2>Dvorak配列はQWERTYより速い？</h2>
+<p>はっきりしたことは言えません。よく引用される研究は1944年と1956年の2つで、どちらも実施者がすでにどちらかの立場に立っていました。</p>
+<table>
+<caption>DvorakとQWERTYを比べた古典的な2つの研究</caption>
+<thead><tr><th scope="col">研究</th><th scope="col">結果</th><th scope="col">異論</th></tr></thead>
+<tbody>
+<tr><td>米海軍、1944年</td><td>Dvorakで83時間訓練し直した14人は、ネットで毎分32語から56語へ75%伸びた。追加訓練を受けたQWERTYの18人は28%伸びた。</td><td>Earle Strongによると、特許を持つドヴォラック本人が試験を行った。LiebowitzとMargolisは、QWERTY組の開始時の速さの平均の取り方のせいで、その組の伸びがほぼ半分に小さく測られたと指摘した。</td></tr>
+<tr><td>米国一般調達局（GSA、Earle Strong）、1956年</td><td>政府のタイピスト10人は、元のQWERTYの速さに戻るまで1日4時間の練習を25日よりかなり多く必要とした。その後の訓練では、QWERTYの対照群のほうが速く伸びた。StrongはQWERTYの訓練を増やすよう勧めた。</td><td>Strongは研究の前から新しい配列に公然と反対しており、QWERTY組に有利に偏っていたと批判されている。</td></tr>
+</tbody>
+</table>
+<p>経済学者のStan LiebowitzとStephen Margolisは、1990年の論文「The Fable of the Keys」で両方の報告を読み直しました。1996年の<em>Reason</em>誌の記事では、海軍の研究はドヴォラック自身の以前の実験よりさらに問題が多いとし、Dvorakが優れているという話を「神話、より正確にはでっち上げ」と結論づけています。</p>
+<p>人間を使わずに、配列の形だけを計算で比べる方法もあります。Martin Krzywinskiの打鍵負担モデルCarpalxは英文で配列を採点し、Dvorakの負担をQWERTYより約25%低く見積もっています。内訳は次のとおりです。</p>
+<table>
+<caption>英文でのQWERTYとDvorak（Carpalxのモデル）</caption>
+<thead><tr><th scope="col">指標</th><th scope="col">QWERTY</th><th scope="col">Dvorak</th></tr></thead>
+<tbody>
+<tr><td>中段で打つ打鍵</td><td>34%</td><td>71%</td></tr>
+<tr><td>下段で打つ打鍵</td><td>15%</td><td>9%</td></tr>
+<tr><td>続く2打を左右別の手で打つ割合</td><td>51%</td><td>62%</td></tr>
+<tr><td>小指で打つ打鍵</td><td>10%</td><td>18%</td></tr>
+<tr><td>左右の手の偏り</td><td>左に15%</td><td>右に14%</td></tr>
+</tbody>
+</table>
+<p>Dvorakでは中段で打つ割合がおよそ2倍になり、左右の交互打ちも増えます。その分、小指の仕事はほぼ2倍になり、負担はQWERTYが左手に傾くのと同じくらい右手に傾きます。GSAのタイピストは元の速さに戻るだけで100時間以上かかったので、速さだけが目的なら、いまの配列で打ち方を直すほうが早く結果が出ます。その手順は<a href="guide:how-to-type-faster">タイピングを速くする方法</a>にまとめています。</p>
+
+<h2>ローマ字入力でDvorak配列は使える？</h2>
+<p>使えます。ただしDvorakは英語のために作られた配列で、日本語のローマ字入力では左手に打鍵が偏ります。母音のA、O、E、U、Iはすべて左手側にあり、Iを除く4つはホームポジションなので、母音を打つ指の移動は短く済みます。一方、日本語でよく使う子音のKとYも左手側にあります。「かきくけこ」は5文字とも左手だけで打つことになります。</p>
+<p>カ行の一部はKの代わりにCで打てます。Google日本語入力の変換表では「ca」が「か」、「cu」が「く」、「co」が「こ」になり、DvorakのCは右手の上段にあるので、左右の交互打ちに変わります。「ci」は「し」、「ce」は「せ」になるので、「き」と「け」はKで打ちます。日本語のローマ字入力向けに手を加えたDvorakJP、ACT、JLODといった派生配列もあります。</p>
+
+<h2>Dvorak配列に変えるべき？</h2>
+<p>Dvorakが向くのは、英語を多く自分のパソコンで打ち、覚え直す数か月のあいだ遅くなっても困らない人です。次の状況が判断の分かれ目になります。</p>
+<ul>
+<li><strong>まだタッチタイピングができない</strong>：どちらにしても指の位置を一から覚えるので、覚え直しの損はありません。<a href="guide:touch-typing">タッチタイピングのガイド</a>の方法はどの配列でも同じです。</li>
+<li><strong>主に日本語を打つ</strong>：Dvorakは英語の文字の頻度に合わせて作られています。前の節の偏りを踏まえ、ほかの選択肢を<a href="guide:keyboard-layouts">キーボード配列のガイド</a>で比べてください。</li>
+<li><strong>ショートカットをよく使う</strong>：Macの「Dvorak – QWERTY ⌘」は、Commandキーを押している間だけQWERTYになるので、ショートカットは手が覚えた位置のまま使えます。WindowsではAutoHotkeyのスクリプトで同じ動きを作る人がいます。</li>
+<li><strong>人のパソコンで打つことが多い</strong>：共用のパソコンでは毎回設定を変えるかQWERTYで打つことになるので、両方の配列を使える状態に保つ必要があります。</li>
+</ul>
+<p>ショートカットと右手の小指が気になるなら、Z、X、C、VをQWERTYと同じ位置に残すColemakも候補です。<a href="guide:colemak-vs-dvorak">ColemakとDvorakの比較</a>で2つを並べ、<a href="guide:colemak">Colemak配列のガイド</a>で覚え方を説明しています。</p>
+
+<h2>パソコンやスマホをDvorak配列にするには？</h2>
+<p>Windows、macOS、ChromeOS、Android、iOS、多くのLinuxにDvorakが入っているので、設定で選ぶだけで切り替わります。キーの刻印はQWERTYのままです。</p>
+<h3>Windows 11</h3>
+<ol>
+<li>「スタート」→「設定」→「時刻と言語」→「言語と地域」を開きます。</li>
+<li>英語の横の「…」から「言語のオプション」を開きます。英語がなければ先に追加します。</li>
+<li>「インストールされたキーボード」の横の「キーボードの追加」で、米国のDvorakを選びます。</li>
+<li><kbd>Windows</kbd>キー＋<kbd>Space</kbd>で、Dvorakといつもの配列を切り替えます。</li>
+</ol>
+<p>Dvorakは英語のキーボードとして入るので、選んでいる間は日本語のIMEが使えません。日本語もDvorakで打つには、レジストリでキーボードの設定を書き換える方法や、DvorakJのようにDvorakを再現するソフトを使う方法が知られています。</p>
+<h3>macOS</h3>
+<ol>
+<li>アップルメニュー →「システム設定」→「キーボード」を開きます。</li>
+<li>「テキスト入力」の「編集」をクリックし、追加ボタンを押します。</li>
+<li>「Dvorak」を検索し、「Dvorak」か「Dvorak – QWERTY ⌘」を選んで追加します。</li>
+<li>日本語もDvorakで打つには、日本語の入力ソースの設定で「英字のレイアウト」をDvorakにします。</li>
+</ol>
+<h3>iPhoneとAndroid</h3>
+<p>iPhoneはiOS 16（2022年）から、「設定」→「一般」→「キーボード」→「キーボード」→「英語」で英語用のDvorakを選べます。Androidの標準キーボードはバージョン4.1からDvorakに対応しています。</p>
+
+<h2>Dvorak配列の習得にはどのくらいかかる？</h2>
+<p>QWERTYで速く打てる人が元の速さに戻るまで、およそ100時間の練習を見込んでください。1956年のGSAの研究では、政府のタイピスト10人がQWERTYの速さに追いつくまでに、1日4時間の練習を25日よりかなり多く、つまり100時間以上必要としました。1944年の海軍の研究では、83時間の訓練で<a href="guide:words-per-minute">ネットのWPM</a>が56に届いています。1日1時間なら、どちらも約3か月です。</p>
+<p>海軍のグループは毎分32語という、海軍自身の合格基準より低い速さから始めているので、83時間という数字は、すでに速い人に必要な時間をあまり教えてくれません。限られた時間を生かすには、毎日短く、遅いキーと文字の組み合わせに絞って練習します。</p>
+
+<h2>Dvorak配列の覚え方</h2>
+<ol>
+<li><strong>設定を変える前に試す。</strong>ブラウザーで動く無料の練習ツールpetitdoigtで<a href="app:words?layout=dvorak">Dvorakを開きます</a>。ツールがキーの物理的な位置から配列を切り替えるので、パソコンはQWERTYのまま、IMEにも触れません。画面のキーボードにはDvorakの文字が押す指の色付きで出ます。画面の表示と練習文は英語です。</li>
+<li><strong>8つのホームキーを覚える。</strong>左手はA O E U、右手はH T N S。人差し指でIとDを足し、この10文字だけでできる英単語（<em>hand</em>、<em>notes</em>、<em>idea</em>、<em>student</em>）を練習します。</li>
+<li><strong>仕事が増える指を鍛える。</strong>右手の小指はLとS、左手の小指はA、アポストロフィ、セミコロンを受け持ちます。<a href="app:anchors?layout=dvorak">anchors（アンカー）ドリル</a>は選んだ指だけを動かし、打つたびにホームポジションに戻します。Finger focusを使えば、練習文がその指の文字に寄ります。</li>
+<li><strong>上段と下段は実際の単語で足す。</strong>P Y F G C R Lと下段の文字を、よく使う単語から文章へと広げます。</li>
+<li><strong>遅い文字の組み合わせを練習する。</strong>Dvorakではすべての組み合わせが新しい動きです。<a href="app:pairs?layout=dvorak">pairs（ペア）ドリル</a>のadaptive（適応）モードは、打ちながらキーからキーへの移動を測り、遅いものとミスの多いものを中心に次のセットを組みます。</li>
+<li><strong>速さより正確さを優先する。</strong>同じミスを繰り返すと、間違った動きを練習することになります。ミスがまれになるまで速さを落としてください。測り方は<a href="guide:typing-accuracy">タイピングの正確さのガイド</a>にあります。</li>
+<li><strong>画面から目を離さない。</strong>刻印はQWERTYのままなので、キーを見るたびに迷います。画面のキーボードを見て、癖の直し方は<a href="guide:type-without-looking">キーボードを見ないで打つ方法</a>を参考にしてください。</li>
+<li><strong>切り替えの時期を決める。</strong>仕事でタイピングが欠かせないなら、職場ではQWERTYを使い、Dvorakは毎日短く練習して、速さが追いついてからOSの設定を変えます。統計は配列ごとに分かれるので、QWERTYの記録はそのまま残ります。</li>
+</ol>
+<p>ブラウザーはどの指でキーを押したかを見られないので、ツールは正しい指を示してキーとタイミングを測り、その指で打つのはあなたの役目です。指の担当範囲は配列を変えても同じで、<a href="guide:finger-placement">キーボードの指の配置図</a>で説明しています。</p>

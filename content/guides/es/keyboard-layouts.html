@@ -1,0 +1,182 @@
+<!--meta
+{
+  "id": "keyboard-layouts",
+  "lang": "es",
+  "slug": "distribuciones-de-teclado",
+  "title": "Distribuciones de teclado: tipos, diferencias y cuál elegir",
+  "description": "Distribuciones de teclado comparadas: español, latinoamericano, QWERTY, AZERTY, QWERTZ, Dvorak y Colemak. Cuál elegir y cómo probar una sin instalar nada.",
+  "h1": "Distribuciones de teclado: todos los tipos y cuál elegir",
+  "keyword": "distribuciones de teclado",
+  "keywords_secondary": ["tipos de teclado", "distribución de teclado", "teclado español o latinoamericano", "mejor distribución de teclado"],
+  "summary": "Las distribuciones de teclado asignan a cada tecla física el carácter que escribe y forman dos familias. Las nacionales, como la española, la latinoamericana, el QWERTY estadounidense o el AZERTY francés, se adaptan a las letras y tildes de un idioma. Las alternativas, como Dvorak, Colemak y Workman, reordenan las letras del inglés para que los dedos se muevan menos. Si escribes en español, quédate con la española o la latinoamericana: ninguna alternativa ha demostrado ser más rápida.",
+  "faq": [
+    {
+      "q": "¿Cuál es la distribución de teclado más común?",
+      "a": "QWERTY, contando sus variantes nacionales, entre ellas la española y la latinoamericana. Procede de la máquina de escribir Sholes y Glidden, que Remington vendió desde 1874, y sigue siendo el estándar de hecho en las computadoras. El AZERTY de Francia y Bélgica y el QWERTZ de los países de habla alemana son parientes cercanos que intercambian unas pocas letras y añaden los caracteres de su idioma."
+    },
+    {
+      "q": "¿Cómo sé qué distribución de teclado tengo activada?",
+      "a": "En Windows, el icono de idioma de la barra de tareas muestra la distribución activa; en Mac, el menú de entrada de la barra de menús. Si una tecla escribe algo distinto de lo que tiene impreso, por ejemplo una comilla donde esperabas la arroba, el sistema usa otra distribución que la de tus teclas: cámbiala en la configuración de idioma hasta que coincidan."
+    },
+    {
+      "q": "¿Cuáles son los tipos de teclado según su forma física?",
+      "a": "Hay tres estándares físicos. ANSI es el teclado estadounidense, con una tecla Intro ancha de una sola fila. ISO se usa en España y en casi toda Europa, con un Intro alto y una tecla más junto a la Mayús izquierda. JIS es el teclado japonés. Cualquiera de ellos puede funcionar con cualquier distribución de caracteres."
+    },
+    {
+      "q": "¿Qué es la distribución Estados Unidos-Internacional?",
+      "a": "Es una variante del QWERTY estadounidense que convierte el apóstrofo, las comillas dobles, el acento grave, el circunflejo y la tilde ~ en teclas muertas: pulsas el apóstrofo y luego la E y obtienes é; pulsas ~ y luego la N y obtienes ñ. Sirve para escribir español en un teclado comprado en Estados Unidos. Para un apóstrofo suelto, pulsa la tecla y después Espacio."
+    },
+    {
+      "q": "¿Por qué las letras del teclado no están en orden alfabético?",
+      "a": "Los teclados de computadora heredaron QWERTY de la máquina de escribir Sholes y Glidden, que Remington vendió desde 1874. Fabricantes y cursos de mecanografía mantuvieron la distribución que todo el mundo ya conocía, y las alternativas nunca se impusieron. La historia popular de que ese orden se eligió para que las varillas de la máquina no se trabaran está discutida."
+    },
+    {
+      "q": "¿Puedo usar una distribución distinta de las letras impresas en mis teclas?",
+      "a": "Sí. La distribución vive en el software, así que cualquier teclado puede escribir Dvorak, Colemak o AZERTY. Las letras impresas dejarán de coincidir, algo que importa poco cuando escribes sin mirar. Mientras tanto, usa un teclado en pantalla que muestre la distribución real, o compra teclas o pegatinas para ella."
+    }
+  ],
+  "sources": [
+    {"title": "Keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Keyboard_layout"},
+    {"title": "QWERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTY"},
+    {"title": "British and American keyboards (Wikipedia)", "url": "https://en.wikipedia.org/wiki/British_and_American_keyboards"},
+    {"title": "List of QWERTY keyboard language variants: Spanish and Latin American (Wikipedia)", "url": "https://en.wikipedia.org/wiki/List_of_QWERTY_keyboard_language_variants"},
+    {"title": "Frecuencia de aparición de letras (Wikipedia en español)", "url": "https://es.wikipedia.org/wiki/Frecuencia_de_aparici%C3%B3n_de_letras"},
+    {"title": "AZERTY (Wikipedia)", "url": "https://en.wikipedia.org/wiki/AZERTY"},
+    {"title": "QWERTZ (Wikipedia)", "url": "https://en.wikipedia.org/wiki/QWERTZ"},
+    {"title": "German keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/German_keyboard_layout"},
+    {"title": "US patent 2,040,248: Typewriter keyboard (Dvorak y Dealey, 1936)", "url": "https://patents.google.com/patent/US2040248A/en"},
+    {"title": "Dvorak keyboard layout (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout"},
+    {"title": "Liebowitz y Margolis, The Fable of the Keys, Journal of Law and Economics 33(1), 1990", "url": "https://chicagounbound.uchicago.edu/jle/vol33/iss1/2/"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Colemak keyboard layout (sitio oficial)", "url": "https://colemak.com/"},
+    {"title": "Colemak: escribir en otros idiomas (sitio oficial)", "url": "https://colemak.com/Multilingual"},
+    {"title": "Colemak Mod-DH (sitio oficial)", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "The Workman keyboard layout philosophy (OJ Bucao)", "url": "https://workmanlayout.org/"},
+    {"title": "Windows keyboard layouts (Microsoft Learn)", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Administrar la configuración de idioma y distribución del teclado en Windows (Soporte técnico de Microsoft)", "url": "https://support.microsoft.com/es-es/help/4496404"},
+    {"title": "Escribir en otro idioma en el Mac (Soporte de Apple)", "url": "https://support.apple.com/es-es/guide/mac-help/mchlp1406/mac"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Prueba otra distribución en tu navegador", "drill": "words"}
+}
+-->
+<p>Una distribución de teclado es el mapa que dice qué carácter escribe cada tecla. La tecla a la derecha de la <kbd>L</kbd> escribe ñ en un teclado español y punto y coma en uno estadounidense, con el mismo hardware debajo. El sistema operativo guarda la distribución, así que puedes cambiarla en un minuto, y las letras impresas en las teclas seguirán siendo las mismas.</p>
+<p>En las tiendas, «tipos de teclado» también se refiere a la forma física (ANSI, ISO, JIS), al tamaño (TKL, 60 %) o al mecanismo (mecánico, de membrana). La forma y el tamaño tienen su apartado al final. Casi toda esta guía trata del mapa de caracteres: qué pone cada distribución en cada tecla y cuál te conviene.</p>
+
+<h2>¿Qué tipos de distribuciones de teclado existen?</h2>
+<p>Las distribuciones de teclado se reparten en dos familias. Las nacionales adaptan QWERTY a un idioma: añaden sus letras (ñ, ü, é), mueven la puntuación para hacerles sitio y a veces intercambian algunas letras. Las alternativas reordenan las propias letras del inglés para que las más frecuentes caigan bajo los dedos más fuertes. La tabla reúne las que tienes más probabilidades de encontrar.</p>
+<table>
+<caption>Distribuciones de teclado comunes y lo que cambian respecto al QWERTY estadounidense</caption>
+<thead><tr><th scope="col">Distribución</th><th scope="col">Familia</th><th scope="col">Dónde se usa</th><th scope="col">Qué cambia respecto al QWERTY de EE. UU.</th></tr></thead>
+<tbody>
+<tr><td>QWERTY estadounidense</td><td>Nacional</td><td>Estados Unidos</td><td>Es la referencia</td></tr>
+<tr><td>Español (España)</td><td>Nacional</td><td>España</td><td>Ñ junto a la L, tecla Ç, @ con AltGr+2</td></tr>
+<tr><td>Latinoamericano</td><td>Nacional</td><td>México, Centroamérica y Sudamérica</td><td>Ñ junto a la L, sin tecla Ç, @ con AltGr+Q</td></tr>
+<tr><td>QWERTY británico</td><td>Nacional</td><td>Reino Unido</td><td>@ y " intercambian su sitio, £ en el 3, una tecla más para # y ~</td></tr>
+<tr><td>AZERTY francés</td><td>Nacional</td><td>Francia, Bélgica, algunos países africanos</td><td>A y Q se cambian, Z y W también, M pasa junto a la L, los números piden Mayús</td></tr>
+<tr><td>QWERTZ alemán</td><td>Nacional</td><td>Alemania, Austria y buena parte de Europa central</td><td>Y y Z se cambian; ä, ö, ü y ß tienen tecla; muchos símbolos piden AltGr</td></tr>
+<tr><td>QWERTZ suizo</td><td>Nacional</td><td>Suiza</td><td>Las letras alemanas sin ß; los acentos franceses con Mayús</td></tr>
+<tr><td>Francés canadiense</td><td>Nacional</td><td>Canadá francófono</td><td>Mismas letras; é tiene tecla propia y los acentos son teclas muertas</td></tr>
+<tr><td>Dvorak</td><td>Alternativa</td><td>Quien la elige, sobre todo para inglés</td><td>Se mueven todas las letras salvo A y M; vocales en la fila central izquierda</td></tr>
+<tr><td>Colemak</td><td>Alternativa</td><td>Quien la elige, sobre todo para inglés</td><td>Se mueven 17 teclas; Z, X, C y V se quedan</td></tr>
+<tr><td>Colemak-DH</td><td>Alternativa</td><td>Quien la elige, sobre todo para inglés</td><td>Colemak con la D y la H fuera de las columnas centrales</td></tr>
+<tr><td>Workman</td><td>Alternativa</td><td>Quien la elige, sobre todo para inglés</td><td>Cambian 21 caracteres; menos estiramientos laterales del índice</td></tr>
+</tbody>
+</table>
+<p>Los idiomas con otros alfabetos tienen sus propias distribuciones, como la familia ЙЦУКЕН (JCUKEN) del ruso, y el chino se escribe sobre todo en pinyin sobre un teclado QWERTY.</p>
+
+<h2>¿En qué se diferencian el teclado español y el latinoamericano?</h2>
+<p>El teclado español y el latinoamericano comparten las letras de QWERTY y la ñ a la derecha de la L, y se diferencian en los símbolos y en la tecla del acento. Confundirlas es fácil, porque los vendedores latinoamericanos llevan años vendiendo equipos con teclado de España, y según Wikipedia todavía lo hacen.</p>
+<table>
+<caption>Teclado español (España) y latinoamericano, diferencia por diferencia</caption>
+<thead><tr><th scope="col">Qué miras</th><th scope="col">Español (España)</th><th scope="col">Latinoamericano</th></tr></thead>
+<tbody>
+<tr><td>Arroba @</td><td><kbd>AltGr</kbd>+<kbd>2</kbd></td><td><kbd>AltGr</kbd>+<kbd>Q</kbd></td></tr>
+<tr><td>Acento agudo ´ (tecla muerta)</td><td>A la derecha de la ñ</td><td>A la derecha de la P</td></tr>
+<tr><td>Tecla Ç</td><td>Sí, para el catalán y el occitano</td><td>No existe</td></tr>
+<tr><td>Euro €</td><td>En la mayoría de teclados, <kbd>AltGr</kbd>+<kbd>E</kbd></td><td>No existe; hay que escribirlo con un código Alt en el teclado numérico</td></tr>
+</tbody>
+</table>
+<p>El latinoamericano tiene además la tilde ~ impresa en una tecla, aunque en Windows no funciona como tecla muerta, y deja el circunflejo y el acento grave en <kbd>AltGr</kbd> sobre las teclas de las llaves.</p>
+<p>Para saber cuál tienes delante, sigue estos pasos:</p>
+<ol>
+<li>Mira la tecla <kbd>Q</kbd>. Si lleva una @ impresa, tu teclado físico es latinoamericano.</li>
+<li>Mira la tecla <kbd>2</kbd> y busca una tecla Ç cerca del Intro. Si la @ está en el 2 y hay Ç, es de España.</li>
+<li>Abre un documento y pulsa <kbd>AltGr</kbd>+<kbd>Q</kbd>. Si sale @, el sistema usa la distribución latinoamericana; si sale con <kbd>AltGr</kbd>+<kbd>2</kbd>, usa la de España.</li>
+<li>Si el resultado del paso 3 no coincide con lo impreso, cambia la distribución del sistema para que coincida con tus teclas, como se explica más abajo.</li>
+</ol>
+<p>Para escribir en español, las dos rinden igual: las vocales con tilde salen con dos pulsaciones (acento y vocal) y la ñ con una. La elección importa sobre todo si usas mucho la @ o el euro, o si alternas entre equipos de España y de América.</p>
+
+<h2>¿En qué se diferencian las demás distribuciones nacionales?</h2>
+<p>Las distribuciones nacionales difieren sobre todo en la puntuación y las letras acentuadas, y sus filas de letras se parecen mucho a QWERTY.</p>
+<h3>QWERTY estadounidense y británico</h3>
+<p>QWERTY viene de la máquina de escribir Sholes y Glidden, que E. Remington and Sons vendió desde 1874. La historia popular según la cual Christopher Latham Sholes ordenó las teclas para que las varillas no se trabaran está discutida. La distribución se quedó como estándar de hecho en las computadoras, y las rivales nunca prosperaron, en parte porque los teclados QWERTY y los cursos de mecanografía estaban por todas partes. La británica conserva las letras y mueve símbolos: la @ y las comillas se intercambian, la £ ocupa el 3 y la barra invertida pasa a la izquierda de la <kbd>Z</kbd>.</p>
+<h3>AZERTY francés</h3>
+<p>AZERTY se usa en Francia, Bélgica y algunos países africanos. La A y la Q se intercambian, la Z y la W también, y la M pasa a la derecha de la L. La fila de números escribe símbolos y letras acentuadas (&amp;, é, è, ç, à) sin Mayús, así que cada cifra necesita <kbd>Mayús</kbd>. El organismo francés de normalización publicó una norma AZERTY revisada en abril de 2019. Las diferencias tecla por tecla están en <a href="guide:azerty-vs-qwerty">AZERTY frente a QWERTY</a>.</p>
+<h3>QWERTZ alemán y suizo</h3>
+<p>QWERTZ es el estándar en Alemania, Austria y Suiza. La Y y la Z se intercambian porque la Z es mucho más frecuente que la Y en alemán. Las diéresis ä, ö y ü tienen tecla propia, igual que la ß en los teclados de Alemania y Austria, mientras que llaves, corchetes, barra invertida, @ y barra vertical piden <kbd>AltGr</kbd>. La variante suiza alemana prescinde de la ß y pone é, à y è con Mayús para poder escribir francés. Más detalles en <a href="guide:qwertz-vs-qwerty">QWERTZ frente a QWERTY</a>.</p>
+
+<h2>¿Qué son las distribuciones de teclado alternativas?</h2>
+<p>Las distribuciones alternativas mueven las letras del inglés para que las frecuentes queden en la fila central y las manos se estiren menos.</p>
+<h3>Dvorak</h3>
+<p>August Dvorak y William Dealey solicitaron la patente de su distribución en 1932 y obtuvieron la patente estadounidense 2 040 248 en mayo de 1936. La fila central de la mano izquierda lleva las vocales A O E U I, y la de la derecha, las consonantes D H T N S. ANSI la aceptó como estándar alternativo a principios de los años ochenta, y Windows, macOS y Linux la incluyen, aunque Windows solo trae la versión estadounidense, sin ñ. La <a href="guide:dvorak">guía del teclado Dvorak</a> cuenta su historia y el debate sobre su velocidad.</p>
+<h3>Colemak</h3>
+<p>Shai Coleman publicó Colemak el 1 de enero de 2006. Mueve 17 teclas y deja casi toda la puntuación donde la tiene QWERTY. Z, X, C y V no se mueven, así que deshacer, cortar, copiar y pegar conservan sus teclas, y solo dos teclas cambian de mano. La versión oficial escribe la ñ con <kbd>AltGr</kbd>+<kbd>N</kbd> y las vocales con tilde con <kbd>AltGr</kbd> y la vocal. macOS y Linux incluyen Colemak, y Windows lo añadió en Windows 11 versión 24H2. La <a href="guide:colemak">guía de Colemak</a> explica cómo aprenderlo.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak, con cada tecla del color de su dedo. Las letras frecuentes R, S, T, N y E están en la fila central, y Z, X, C y V conservan sus teclas de QWERTY.</figcaption></figure>
+<h3>Colemak-DH</h3>
+<p>Colemak pone la D y la H en las dos columnas centrales, adonde los índices llegan deslizándose de lado. Colemak-DH, lanzado por SteveP en octubre de 2014, baja ambas a la fila inferior, donde el índice las alcanza doblándose. La G vuelve a su tecla de QWERTY, la B sube a la fila superior y la H se cambia con la M. Ninguna tecla cambia de dedo, y el proyecto ofrece versiones para teclados ANSI, ISO y matriciales.</p>
+<h3>Workman</h3>
+<p>OJ Bucao publicó Workman en 2010. Consideraba los estiramientos laterales más duros para la muñeca que los movimientos hacia arriba y hacia abajo, así que Workman aparta el tecleo de las columnas centrales: según sus cuentas, allí cae un 6 % de las pulsaciones, frente al 12 % de Colemak, el 14 % de Dvorak y el 22 % de QWERTY. Difiere de QWERTY en 21 caracteres. Linux incluye Workman; Windows y macOS necesitan los archivos que enlaza su sitio.</p>
+<table>
+<caption>Distribuciones alternativas comparadas</caption>
+<thead><tr><th scope="col">Distribución</th><th scope="col">Creada</th><th scope="col">Qué mueve de QWERTY</th><th scope="col">Z X C V</th><th scope="col">Incluida en</th></tr></thead>
+<tbody>
+<tr><td>Dvorak</td><td>1932, patentada en 1936</td><td>Todas las letras salvo A y M, y la puntuación</td><td>Dispersas, tres en la mano derecha</td><td>Windows, macOS, Linux</td></tr>
+<tr><td>Colemak</td><td>2006</td><td>17 teclas</td><td>Sin cambios</td><td>macOS, Linux, Windows 11 24H2 y posteriores</td></tr>
+<tr><td>Colemak-DH</td><td>2014</td><td>Los cambios de Colemak, con D, G, B, H y M movidas otra vez</td><td>Mano izquierda, algunas desplazadas en la fila inferior</td><td>Archivos de instalación del proyecto</td></tr>
+<tr><td>Workman</td><td>2010</td><td>21 caracteres</td><td>Z y X sin cambios, C y V desplazadas</td><td>Linux; archivos para Windows y macOS</td></tr>
+</tbody>
+</table>
+<p>Con texto en inglés, las cifras más citadas ponen en la fila central el 32 % de las pulsaciones de QWERTY, alrededor del 70 % en Dvorak y el 74 % en Colemak. Si sumas las frecuencias de las letras del español que recoge Wikipedia (solo letras, y la tabla no separa las vocales con tilde), el reparto se parece mucho: cerca del 34 % en QWERTY con la ñ, el 71 % en Dvorak y el 74 % en Colemak. La comparación completa, con una recomendación para cada perfil, está en <a href="guide:colemak-vs-dvorak">Colemak frente a Dvorak frente a Workman</a>.</p>
+
+<h2>¿Cuál es la mejor distribución de teclado?</h2>
+<p>La mejor distribución de teclado para casi todo el mundo es la nacional del idioma en que escribe, porque pone sus letras y tildes a una o dos pulsaciones y es la que ya usan todos los equipos a su alrededor. Las alternativas acortan el recorrido de los dedos, y los estudios que las compararon encontraron poca velocidad que ganar. En 1956, Earle Strong dirigió un estudio para la Administración de Servicios Generales de Estados Unidos con diez mecanógrafos por grupo y concluyó que Dvorak no era más eficiente que QWERTY, aunque se le ha criticado por favorecer al grupo de QWERTY. En 1990, los economistas Stan Liebowitz y Stephen Margolis revisaron los experimentos en el Journal of Law and Economics y concluyeron que los mejor documentados muestran poca o ninguna ventaja para Dvorak.</p>
+<table>
+<caption>Qué distribución de teclado elegir</caption>
+<thead><tr><th scope="col">Tu situación</th><th scope="col">Buena opción</th><th scope="col">Por qué</th></tr></thead>
+<tbody>
+<tr><td>Escribes sobre todo en español</td><td>Español (España) o latinoamericano, según tus teclas</td><td>La ñ, las tildes, ¿ y ¡ tienen su tecla</td></tr>
+<tr><td>Escribes mucho en inglés y QWERTY no te causa molestias</td><td>Sigue con QWERTY</td><td>Cualquier teclado que te presten ya lo usa</td></tr>
+<tr><td>Quieres mover menos los dedos sin perder los atajos</td><td>Colemak o Colemak-DH</td><td>Z, X, C y V siguen en la mano izquierda</td></tr>
+<tr><td>Los estiramientos laterales del índice te cansan</td><td>Colemak-DH o Workman</td><td>Ambas sacan las letras frecuentes de las columnas centrales</td></tr>
+<tr><td>Usas equipos donde no puedes instalar nada</td><td>Tu distribución nacional, o Colemak en sistemas recientes</td><td>Vienen con el sistema operativo</td></tr>
+<tr><td>Aprendes mecanografía desde cero</td><td>Cualquiera de las anteriores</td><td>Sin hábitos de QWERTY que olvidar, una alternativa cuesta menos ahora</td></tr>
+</tbody>
+</table>
+<p>En cualquier distribución, la velocidad crece cuando sabes qué dedo corresponde a cada tecla y la encuentras sin mirar. Si todavía miras el teclado, empieza por la <a href="guide:touch-typing">mecanografía</a> y el <a href="guide:finger-placement">mapa de dedos del teclado</a>.</p>
+
+<h2>¿Cómo cambio la distribución del teclado en Windows o Mac?</h2>
+<p>La distribución se cambia en la configuración del sistema, y puedes tener varias instaladas y pasar de una a otra. Las teclas conservan sus letras impresas, y cambiar la distribución del teclado deja el idioma de los menús de Windows como estaba.</p>
+<h3>Windows 11</h3>
+<ol>
+<li>Abre Inicio y luego Configuración › Hora e idioma › Idioma y región.</li>
+<li>Selecciona los tres puntos junto a tu idioma de visualización y elige Opciones de idioma.</li>
+<li>Junto a Teclados instalados, selecciona Agregar un teclado y elige la distribución. Si no aparece, agrega antes el idioma al que pertenece.</li>
+<li>Para cambiar, mantén pulsada la tecla Windows y pulsa <kbd>Espacio</kbd>, o usa el icono de idioma de la barra de tareas.</li>
+</ol>
+<h3>macOS</h3>
+<ol>
+<li>Abre Ajustes del Sistema y haz clic en Teclado en la barra lateral.</li>
+<li>En Introducción de texto, haz clic en Editar y luego en el botón Añadir.</li>
+<li>Busca el idioma, selecciona la fuente de entrada que quieras, por ejemplo Latinoamericano o Dvorak, y haz clic en Añadir.</li>
+<li>Cambia desde el menú de entrada de la barra de menús, pulsa <kbd>Control</kbd>+<kbd>Espacio</kbd> para volver a la última fuente usada o configura la tecla Globo o fn para cambiar de fuente de entrada.</li>
+</ol>
+
+<h2>¿ANSI, ISO, TKL y 60 % también son distribuciones de teclado?</h2>
+<p>Esos nombres describen el hardware, y un teclado de cualquier forma o tamaño puede funcionar con cualquiera de las distribuciones anteriores. ANSI, ISO y JIS son formatos físicos: la forma y el número de teclas. ANSI es el estándar estadounidense, con un Intro ancho de una fila. ISO, el de España y casi toda Europa, tiene un Intro alto y una Mayús izquierda más corta con una tecla extra al lado. JIS, el japonés, acorta la barra espaciadora y la tecla de borrar para añadir cuatro teclas. <a href="guide:iso-vs-ansi">Teclados ISO y ANSI</a> explica cómo saber cuál tienes.</p>
+<figure data-figure="board-shapes"><figcaption>Teclados ANSI, ISO y JIS uno al lado del otro: cambian el Intro, la Mayús izquierda y las teclas extra.</figcaption></figure>
+<p>Los tamaños como TKL (sin teclado numérico) o 60 % (sin teclado numérico, fila de funciones ni teclas de navegación) dicen cuántas teclas conserva el teclado. Las filas de letras son iguales en todos los tamaños, así que un teclado 60 % escribe en español, AZERTY o Colemak igual que uno completo.</p>
+
+<h2>¿Puedo probar una distribución de teclado sin instalarla?</h2>
+<p>Sí. petitdoigt, un entrenador de mecanografía gratuito que funciona en el navegador, aplica la distribución por su cuenta a partir de la posición física de cada tecla, así que puedes escribir en Colemak, Dvorak, Workman o AZERTY mientras tu sistema sigue con la distribución de siempre. El teclado en pantalla muestra las letras de la distribución elegida, cada tecla del color del dedo que debe pulsarla, algo útil mientras tus teclas siguen diciendo QWERTY. Tiene 11 distribuciones, entre ellas el <a href="app:words?layout=es">español de España</a> y el <a href="app:words?layout=latam">latinoamericano</a>, dibuja teclados ANSI, ISO o JIS para que coincidan con el tuyo, y su interfaz y sus textos de práctica están en español.</p>
+<p>Para una prueba justa, escribe palabras comunes en <a href="app:words?layout=colemak">Colemak</a> o <a href="app:words?layout=dvorak">Dvorak</a> diez minutos al día durante una semana antes de decidir. Las primeras series serán lentas. La pantalla de stats guarda cifras separadas para cada distribución, por dedo y por letra, así que ves qué teclas todavía te cuestan tiempo. Un navegador no puede ver qué dedo pulsó una tecla: el entrenador te muestra el dedo correcto y mide las teclas y sus tiempos.</p>

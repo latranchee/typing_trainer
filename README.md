@@ -17,7 +17,7 @@ Then open http://127.0.0.1:5183/. Progress is saved in the browser's local stora
 
 petitdoigt.ca is a Cloudflare Worker that serves the built files as static assets (`wrangler.jsonc`). Every push to `main` runs the tests, builds, and deploys there through Cloudflare's Git integration (Workers Builds). The same push publishes a copy to GitHub Pages (`.github/workflows/deploy.yml`). To deploy by hand: `npm run build`, then `npx wrangler deploy`.
 
-Other commands: `npm test` (engine tests), `npm run typecheck`, `npm run build`.
+Other commands: `npm test` (engine tests), `npm run typecheck`, `npm run build` (the trainer, then the guides), `npm run guides:check` (checks every guide file).
 
 ## How it works
 
@@ -31,7 +31,7 @@ The space bar is a grey bar. The same coding runs through the falling notes, the
 
 The trainer applies the layout itself from physical key positions (`KeyboardEvent.code`), so the layout chosen in the dropdown works whatever layout Windows is set to. The on-screen keyboard always shows the selected layout's legends.
 
-Layouts: Canadian French (with dead-key accents), US QWERTY, French AZERTY (accents on the number row, digits with Shift), German QWERTZ (umlauts, dead-key accents), Dvorak, Colemak, Colemak-DH (angle fingering on the left bottom row), Workman.
+Layouts: Canadian French (with dead-key accents), US QWERTY, French AZERTY (accents on the number row, digits with Shift), German QWERTZ (umlauts, dead-key accents), Swiss German QWERTZ (ü ö ä with the French è é à on Shift), Spanish (ñ, dead-key accents, ¡ and ¿), Latin American (ñ, dead-key accents, braces beside the home row), Dvorak, Colemak, Colemak-DH (angle fingering on the left bottom row), Workman.
 
 ## Settings
 
@@ -57,14 +57,16 @@ The trainer cannot see your keyboard. It starts on `ansi`, and the first time yo
 
 ## Languages
 
-The interface speaks English and French. `interface` in the settings switches it at once, and the practice text follows: pick `français` and the words and sentences you type are French too. The choice is saved with the profile. A first visit starts in the browser's language: French when French comes before English in the browser's list, English otherwise.
+The interface speaks English, French, German and Spanish. `interface` in the settings switches it at once, and the practice text follows: pick `deutsch` and the words and sentences you type are German too. The choice is saved with the profile. A first visit starts in the first of the four languages found in the browser's list, English when there is none, and on the layout of that language and region: Canadian French for `fr` and `fr-CA`, AZERTY for French elsewhere, Swiss German for `de-CH` and `fr-CH`, German QWERTZ for other German, Spanish for `es-ES`, Latin American for other Spanish, US QWERTY otherwise.
+
+A link can choose for a first visit: `?lang=de` stands in for the browser's language, and `?layout=dvorak` switches the layout on any visit. Both are removed from the address once applied. The guides link into the trainer this way.
 
 The practice text keeps a language of its own, set with `language` in the settings of the highway, words and pairs drills. Change it there after picking the interface language, and a French interface drills English text, or an English one French text.
 
 ## Drills
 
 - **highway**: falling notes, one lane per finger, each note dropping onto that finger's home key on the keyboard below. The note's shape and shade say which row to reach for. By default the road follows your pace and waits when you are late. Lock the tempo to hold one speed: early keys are refused, which forces slow, deliberate fingering. Up and down arrows change the locked tempo. Its `text` option sends down words, sentences or letter pairs.
-- **words**: English or French words, weighted toward the fingers you picked to train and toward your own slow keys. The cursor is the next letter in its finger's color. Set `text` to `sentences` to type whole sentences instead, with their commas, apostrophes and periods: enough of them to reach the word count, in lowercase unless `capitals` is on. On a layout without accent keys, French keeps the sentences that carry no accent.
+- **words**: words of the practice language, weighted toward the fingers you picked to train and toward your own slow keys. The cursor is the next letter in its finger's color. Set `text` to `sentences` to type whole sentences instead, with their commas, apostrophes and periods: enough of them to reach the word count, in lowercase unless `capitals` is on. On a layout without accent keys, French, German and Spanish keep the sentences that carry no accent.
 - **pairs**: letter pairs or triples of the language, three times each, no words. With `training` on `adaptive` (the default) each set is built around your own weak transitions, the moves from one letter to the next that you type slowest or miss most: about three fifths of a set goes to them, a quarter to common groups and the rest to groups not measured enough yet. A transition scores against the median of your measured transitions, three quarters on time and one quarter on misses, and it needs five clean samples before it counts. As it gets quicker and cleaner it comes up less, and others take its place. `classic` draws by frequency in the language alone. The highway follows the same choice when its text is letter pairs. After a set of pairs the result names the three transitions that need the most work.
 - **anchors**: isolation sets, one for each finger you picked to train. The other fingers of the hand hold their home keys while one finger taps its keys. Held keys are something the keyboard can report, so this drill can check that the right finger did the work.
 - **stats**: per-finger and per-key speed and accuracy for the selected layout, the slowest keys, the weakest letter pairs (time in milliseconds, accuracy and attempts, ranked by how much each needs work), and a history chart: one mark per finished set with the average of the last ten drawn over them. The chart follows the whole layout until you pick a finger or a key, in the lists or on the keyboard; then it shows that finger's or that key's history, in speed or in accuracy. The keyboard lights the keys that trail the others.
@@ -150,19 +152,31 @@ If the anchor drill reports a lifted anchor while your fingers are down, your ke
 
 - French words with accents are left out on layouts that have no accent keys (US QWERTY, Dvorak, Colemak, Colemak-DH, Workman).
 - French AZERTY types every lowercase French word; capital accented letters (É, À, Ç) need Caps Lock or AltGr there, which the trainer does not ask for, so sentences that start with one are left out when `capitals` is on. Its `<` `>` key exists on ISO boards only.
-- German QWERTZ types French accents through its dead keys (`^`, `´`, `` ` ``); words with ç or a diaeresis are left out.
+- German QWERTZ types French accents through its dead keys (`^`, `´`, `` ` ``); words with ç or a diaeresis are left out. It types every German word, and the Spanish words without ñ.
+- Swiss German QWERTZ has no ß: German words with it are left out. It types every French word, è é à on their own keys and the other accents through dead keys.
+- Spanish types every Spanish and French word. Latin American types every Spanish word but has no grave or circumflex accent, so French loses the words that need one. Both leave out German words with ß.
+- On US QWERTY and the alternative layouts, German keeps the words without ä ö ü ß and Spanish the words without accents or ñ. The settings say when a layout leaves words out.
 - Dvorak, Colemak and Workman use the standard finger map: only Colemak-DH changes the fingering.
 - The Colemak-DH finger map follows the layout's angle fingering: the physical Z, X, C, V, B keys are typed with ring, middle, index, index, index. On an ISO board the key beside the left Shift carries Z, under the pinky.
 - The JIS board is drawn for the layouts above: the keys only it has stay blank, and pressing one counts as a wrong key.
 
 ## Project files
 
-- `src/core/`: the boards (`physical.ts`), layouts, finger maps, text generation and the finger focus (`generator.ts`), metrics, storage (`store.ts`: profiles, options, numbers), history math (`history.ts`), streaks, records and the glow rules (`rewards.ts`), the list of key sounds (`switches.ts`) and every interface string in both languages (`i18n.ts`). No DOM.
+- `src/core/`: the boards (`physical.ts`), layouts, finger maps, text generation and the finger focus (`generator.ts`), metrics, storage (`store.ts`: profiles, options, numbers), history math (`history.ts`), streaks, records and the glow rules (`rewards.ts`), the list of key sounds (`switches.ts`), the practice text (`corpus.ts`, with German and Spanish in `corpus-de.ts` and `corpus-es.ts`), launch links (`launch.ts`) and every interface string (`i18n.ts` for English and French, `i18n-de.ts`, `i18n-es.ts`). No DOM.
 - `src/drills/`: one file per drill.
 - `src/ui/`: shell, keyboard, hands, settings panel (`panel.ts`), finger picker, dropdown, profile menu, sound, sparks, and the ink centring of letters in shapes (`glyph.ts`).
 - `public/switches/`: the switch recordings, one folder per switch.
 - `PRODUCT.md`: product record. `DESIGN.md`: the design system. `.impeccable/`: design tokens, the surface brief and the approved mock.
+- `content/guides/<lang>/<id>.html`: the guides, one file per guide and language. `scripts/guides/`: the checker, the page builder, the stylesheet, the keyboard figures and the page strings.
 - `?demo=comp` freezes the screen on fixed values for visual checks.
+
+## Guides
+
+Fifteen written guides answer common typing questions (typing speed, words per minute, touch typing, finger placement, keyboard layouts and how they compare). Each one exists in English, Spanish, French, German, Portuguese, Italian, Polish, Indonesian, Japanese and Simplified Chinese, at `/<lang>/<slug>/`, with an index per language at `/<lang>/`. The top strip of the trainer links to the guides in the interface language.
+
+A guide is one HTML file: a JSON head (title, description, H1, summary, FAQ, sources, the drill it links to) and a body of plain tags. `npm run guides:check` holds every file to the same rules: lengths of the title and description, at least four sections, links to three other guides, allowed tags only. `npm run build` stops on a file that fails. The builder adds the rest: the header and language switcher, a table of contents, the keyboard figures, the link into the trainer with the guide's layout, the FAQ, sources and related guides, canonical and `hreflang` links, Open Graph tags, JSON-LD (Article, FAQPage, BreadcrumbList), `sitemap.xml` and `robots.txt`.
+
+The guides state only what their sources say; each one lists them. They make no claim about the trainer beyond what it does.
 
 ## License
 

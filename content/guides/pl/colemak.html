@@ -1,0 +1,172 @@
+<!--meta
+{
+  "id": "colemak",
+  "lang": "pl",
+  "slug": "uklad-colemak",
+  "title": "Układ Colemak: co zmienia, Colemak-DH i jak się go nauczyć",
+  "description": "Układ Colemak przesuwa 17 klawiszy QWERTY i zostawia Ctrl+Z/X/C/V. Wszystkie zmiany, Colemak-DH, polskie znaki, czas nauki i test w przeglądarce.",
+  "h1": "Układ Colemak: co zmienia i jak się go nauczyć",
+  "keyword": "układ Colemak",
+  "keywords_secondary": ["Colemak", "Colemak-DH", "nauka Colemaka", "Colemak polskie znaki"],
+  "summary": "Układ Colemak to alternatywna klawiatura dla języka angielskiego, którą Shai Coleman wydał 1 stycznia 2006 roku. Przesuwa 17 klawiszy QWERTY tak, że dziewięć najczęstszych angielskich liter leży w rzędzie podstawowym, a Z, X, C, V, Q i W zostają na miejscu, więc popularne skróty działają jak dawniej. Colemak-DH, wariant z 2014 roku, wyjmuje D i H ze środkowych kolumn. Oficjalny poradnik zaleca 10 minut ćwiczeń dziennie przez około dwa miesiące.",
+  "faq": [
+    {"q": "Czy nauka Colemaka sprawi, że zapomnę QWERTY?", "a": "Zwykle nie, gdy oba układy są już opanowane. FAQ Colemaka podaje, że większość osób, które opanowały oba, przełącza się między nimi bez trudu. W czasie nauki szybkość na QWERTY zwykle spada, a u części osób zostaje niewielki, trwały spadek szybkości i dokładności. Jeśli wciąż potrzebujesz QWERTY na wspólnych lub służbowych komputerach, poradnik nauki Colemaka zaleca codziennie 5 do 10 minut pisania na QWERTY."},
+    {"q": "Czy do Colemaka potrzebuję nowych nakładek albo nowej klawiatury?", "a": "Nie. Colemak to ustawienie w oprogramowaniu, więc działa na każdej klawiaturze, a nakładki mogą zachować litery QWERTY. Osoba pisząca bezwzrokowo i tak patrzy na ekran, a klawiatura ekranowa z literami Colemaka wystarczy na pierwsze tygodnie, zanim nowe pozycje się utrwalą."},
+    {"q": "Czy mogę używać Colemaka w telefonie?", "a": "Aplikacje klawiatury takie jak Gboard i SwiftKey oferują Colemaka, ale FAQ Colemaka odradza go na smartfonach, gdzie wydłuża drogę palca i zwiększa liczbę błędów w porównaniu z QWERTY. Zamiast tego FAQ poleca pisanie gestami na układzie QWERTY."},
+    {"q": "Czy Colemak nadaje się do programowania?", "a": "W większości tak. Colemak zostawia prawie wszystkie klawisze interpunkcji tam, gdzie ma je QWERTY, więc nawiasy, klamry, ukośniki i cudzysłowy zostają na miejscu; przenosi się tylko średnik, do górnego rzędu. Edytory, które używają liter do poruszania się, takie jak Vim z H, J, K i L, wymagają nauki od nowa albo przemapowania."},
+    {"q": "Czy Colemak pomaga na ból nadgarstków?", "a": "Według pomiarów autora Colemak ogranicza ruch palców, a wieloletni użytkownicy, tacy jak prezes producenta klawiatur ZSA, opisują go jako wygodniejszy. Żadne z tych źródeł nie jest dowodem medycznym. Ból, który nie mija, to sprawa dla lekarza albo fizjoterapeuty, a przy okazji warto sprawdzić wysokość biurka i postawę."},
+    {"q": "Ile osób używa Colemaka?", "a": "Tego nie wiadomo. colemak.com nazywa Colemaka trzecim najpopularniejszym układem do pisania bezwzrokowego po angielsku, po QWERTY i Dvoraku, ale nie podaje liczby użytkowników, a artykuł o tym układzie w Wikipedii też jej nie zawiera."}
+  ],
+  "sources": [
+    {"title": "Colemak: oficjalna strona", "url": "https://colemak.com/"},
+    {"title": "Colemak FAQ", "url": "https://colemak.com/FAQ"},
+    {"title": "Colemak: założenia projektu", "url": "https://colemak.com/Design"},
+    {"title": "Colemak: nauka układu", "url": "https://colemak.com/Learn"},
+    {"title": "Colemak Multilingual: polskie znaki w oficjalnym układzie", "url": "https://colemak.com/Multilingual"},
+    {"title": "Colemak na Macu", "url": "https://colemak.com/Mac"},
+    {"title": "Colemak: strona społeczności", "url": "https://colemak.org/"},
+    {"title": "Colemak (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Colemak"},
+    {"title": "Alfabet polski: częstość występowania liter według NKJP (Wikipedia)", "url": "https://pl.wikipedia.org/wiki/Alfabet_polski"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "Colemak Mod-DH: porównanie układów", "url": "https://colemakmods.github.io/mod-dh/compare.html"},
+    {"title": "Colemak Mod-DH: trudność nauki i przesunięte klawisze", "url": "https://colemakmods.github.io/mod-dh/learn.html"},
+    {"title": "Colemak Mod-DH: repozytorium (instalatory i mapy klawiszy)", "url": "https://github.com/ColemakMods/mod-dh"},
+    {"title": "DreymaR: Tarmak, układy przejściowe", "url": "https://dreymar.colemak.org/tarmak-intro.html"},
+    {"title": "DreymaR: kroki Tarmaka", "url": "https://dreymar.colemak.org/tarmak-steps.html"},
+    {"title": "Peter Norvig: częstość liter w angielskim", "url": "https://norvig.com/mayzner.html"},
+    {"title": "Workman: oficjalne repozytorium i mapy klawiszy", "url": "https://github.com/workman-layout/Workman"},
+    {"title": "Workman: oficjalna strona", "url": "https://workmanlayout.org/"},
+    {"title": "Microsoft: Windows keyboard layouts", "url": "https://learn.microsoft.com/en-us/globalization/windows-keyboard-layouts"},
+    {"title": "Microsoft: manage input and display language settings in Windows", "url": "https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2"},
+    {"title": "Apple: use input sources to type in other languages on Mac", "url": "https://support.apple.com/guide/mac-help/use-input-sources-to-type-in-other-languages-mchlp1406/mac"},
+    {"title": "Blog ZSA: ZSA loves Colemak", "url": "https://blog.zsa.io/zsa-loves-colemak/"}
+  ],
+  "updated": "2026-11-20",
+  "try": {"label": "Wypróbuj Colemak-DH w przeglądarce", "drill": "pairs", "layout": "colemak-dh"}
+}
+-->
+<h2>Czym jest układ Colemak?</h2>
+<p>Układ Colemak to alternatywa dla QWERTY stworzona do pisania bezwzrokowego po angielsku. Shai Coleman wydał go 1 stycznia 2006 roku z dwoma celami, które się ze sobą ścierają: trzymać palce jak najczęściej w rzędzie podstawowym i zmienić na tyle mało, żeby osoba pisząca na QWERTY mogła się przestawić bez zaczynania od zera. Oficjalny układ wpisuje też litery diakrytyczne ponad 40 języków, polskiego również, oraz symbole takie jak €.</p>
+<p>Rząd podstawowy, czyli środkowy rząd liter, na którym spoczywają palce, to A R S T D H N E I O. Według angielskich zliczeń liter Petera Norviga te dziesięć klawiszy obejmuje dziewięć najczęstszych liter (E, T, A, O, I, N, S, R i H) i łącznie około 74% wpisywanych liter. Rząd podstawowy QWERTY ma trzy z tych dziewięciu liter i około 32% wpisywanych liter, więc palce dużo częściej sięgają w górę i w dół.</p>
+<figure data-figure="finger-chart" data-layout="colemak"><figcaption>Colemak z klawiszami pokolorowanymi według palców. Każdy palec zachowuje swoją strefę z QWERTY; zmieniają się litery w strefach.</figcaption></figure>
+<p>Każdy palec spoczywa na tym samym fizycznym klawiszu co na QWERTY, więc zasady z <a href="guide:finger-placement">mapy palców na klawiaturze</a> nadal obowiązują. Po lewej mały palec spoczywa na A, serdeczny na R, środkowy na S, a wskazujący na T, z D o jeden klawisz na prawo. Po prawej wskazujący spoczywa na N, z H o jeden klawisz na lewo, środkowy na E, serdeczny na I, a mały na O.</p>
+
+<h2>Co zmienia się względem QWERTY?</h2>
+<p>Colemak zmienia 17 klawiszy, wszystkie w trzech rzędach liter: osiem w górnym, osiem w podstawowym i jeden w dolnym. Rząd cyfr, Shift, Ctrl, Alt i prawie cała interpunkcja zostają tam, gdzie umieszcza je QWERTY.</p>
+<table>
+<caption>Rzędy liter na QWERTY i Colemaku (te same fizyczne klawisze, od lewej do prawej)</caption>
+<thead><tr><th scope="col">Rząd</th><th scope="col">QWERTY</th><th scope="col">Colemak</th></tr></thead>
+<tbody>
+<tr><td>Górny</td><td>Q W E R T Y U I O P</td><td>Q W F P G J L U Y ;</td></tr>
+<tr><td>Podstawowy</td><td>A S D F G H J K L ;</td><td>A R S T D H N E I O</td></tr>
+<tr><td>Dolny</td><td>Z X C V B N M</td><td>Z X C V B K M</td></tr>
+</tbody>
+</table>
+<p>Z, X, C i V zostają celowo. <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd> i <kbd>V</kbd> pozostają skrótami dla lewej ręki, gdy prawa trzyma mysz. Q i W też zostają: notatki projektowe Colemaka zwracają uwagę, że <kbd>Ctrl</kbd>+<kbd>Q</kbd> (zamknij program) i <kbd>Ctrl</kbd>+<kbd>W</kbd> (zamknij okno) mogą skasować pracę, jeśli trafią na klawisz, który łatwo nacisnąć przypadkiem.</p>
+<p>Rękę zmieniają tylko dwie litery, E i P. E przechodzi z lewego palca środkowego na prawy środkowy, na klawisz, który QWERTY opisuje jako K. P przechodzi z prawego małego palca na klawisz, gdzie QWERTY ma R, pod lewy palec wskazujący. Średnik opuszcza rząd podstawowy i trafia na prawy górny klawisz literowy, a oficjalny układ zamienia <kbd>Caps Lock</kbd> w drugi <kbd>Backspace</kbd>. Mała liczba zmian ręki jest zamierzona. FAQ Colemaka nazywa Dvoraka zbyt trudnym i frustrującym do nauki dla osób piszących już na QWERTY, a colemak.com wymienia to, że „tylko 2 klawisze zmieniają rękę”, jako powód, dla którego Colemaka łatwo się nauczyć.</p>
+
+<h2>Czy Colemak jest szybszy lub lepszy od QWERTY?</h2>
+<p>Colemak wyraźnie wygrywa z QWERTY w miarach, których używają projektanci układów, takich jak udział rzędu podstawowego i bigramy jednopalcowe. Jego wpływ na szybkość pisania nie jest udowodniony i nawet strona społeczności Colemaka przyznaje, że zysk szybkości trudno wykazać. Bigram jednopalcowy to dwie kolejne litery pisane tym samym palcem, który musi skończyć pierwsze uderzenie, zanim zacznie drugie. Na QWERTY częste angielskie zakończenie „ed” trafia dwa razy na lewy palec środkowy, a po polsku to samo dzieje się w „ce” (miejsce) i „ki” (polski). Na Colemaku każdą z tych par piszą dwa różne palce.</p>
+<table>
+<caption>Udział rzędu podstawowego i bigramy jednopalcowe według układu (tekst angielski)</caption>
+<thead><tr><th scope="col">Układ</th><th scope="col">Litery w rzędzie podstawowym</th><th scope="col">Bigramy jednopalcowe</th></tr></thead>
+<tbody>
+<tr><td>QWERTY</td><td>32%</td><td>6,58%</td></tr>
+<tr><td>Dvorak</td><td>70%</td><td>2,63%</td></tr>
+<tr><td>Workman</td><td>67%</td><td>3,15%</td></tr>
+<tr><td>Colemak</td><td>74%</td><td>1,67%</td></tr>
+<tr><td>Colemak-DH</td><td>69%</td><td>1,67%</td></tr>
+</tbody>
+</table>
+<p>Kolumna rzędu podstawowego sumuje częstości liter Norviga dla liter z rzędu podstawowego każdego układu; angielska Wikipedia podaje te same 74%, 70% i 32% dla Colemaka, Dvoraka i QWERTY. Kolumna bigramów pochodzi ze strony porównawczej projektu Colemak Mod-DH, który przepuścił zestaw książek z Projektu Gutenberg przez własny model wysiłku. Strona Workmana podaje dla niego 2,185%, więc traktuj tę kolumnę jako szacunek projektowy autorów sympatyzujących z Colemakiem. Oficjalna strona Colemaka twierdzi, że na QWERTY palce pokonują 2,2 raza dłuższą drogę.</p>
+<p>Strona społeczności colemak.org radzi nowicjuszom: „Nie ucz się Colemaka tylko dla szybkości. Ucz się go dla wygody i dla zabawy”. Erez Zukerman, prezes producenta klawiatur ZSA, napisał, że Colemak nie uczynił go szybszym. Pisze na nim 80 do 90 słów na minutę z dokładnością 97–98% i ceni go za wygodę: mniej rozciągania i sięgania. Jeśli zależy ci głównie na szybkości, technika i dokładność na układzie, którego już używasz, zwrócą się szybciej, jak wyjaśnia przewodnik <a href="guide:how-to-type-faster">jak pisać szybciej na klawiaturze</a>. Zestawienie z innymi alternatywami znajdziesz w porównaniu <a href="guide:colemak-vs-dvorak">Colemak, Dvorak i Workman</a>.</p>
+
+<h2>Jak pisać po polsku na układzie Colemak?</h2>
+<p>Po polsku na układzie Colemak napiszesz wszystko, a polskie znaki wpisujesz innymi ruchami niż w układzie programisty. Oficjalny układ z colemak.com korzysta z klawiszy martwych pod <kbd>AltGr</kbd>: najpierw naciskasz kombinację odpowiadającą znakowi diakrytycznemu, potem literę.</p>
+<table>
+<caption>Polskie znaki w oficjalnym Colemaku i w układzie Polski (programisty)</caption>
+<thead><tr><th scope="col">Znak</th><th scope="col">Colemak (colemak.com)</th><th scope="col">Polski (programisty)</th></tr></thead>
+<tbody>
+<tr><td>ą, ę</td><td><kbd>AltGr</kbd>+<kbd>G</kbd>, potem A lub E</td><td><kbd>AltGr</kbd>+<kbd>A</kbd>, <kbd>AltGr</kbd>+<kbd>E</kbd></td></tr>
+<tr><td>ć, ń, ó, ś, ź</td><td><kbd>AltGr</kbd>+<kbd>T</kbd>, potem litera</td><td><kbd>AltGr</kbd> z C, N, O, S lub X</td></tr>
+<tr><td>ż</td><td><kbd>AltGr</kbd>+<kbd>.</kbd>, potem Z</td><td><kbd>AltGr</kbd>+<kbd>Z</kbd></td></tr>
+<tr><td>ł</td><td><kbd>AltGr</kbd>+<kbd>L</kbd></td><td><kbd>AltGr</kbd>+<kbd>L</kbd></td></tr>
+</tbody>
+</table>
+<p>Poza ł każda polska litera to więc dwa kroki zamiast jednego. Według częstości z Narodowego Korpusu Języka Polskiego, które podaje Wikipedia, takie litery stanowią około 5% polskiego tekstu, czyli mniej więcej jedną literę na dwadzieścia. Kombinacje opisuje strona Multilingual na colemak.com dla oficjalnego układu; jeśli korzystasz z wersji wbudowanej w system, sprawdź je na swoim komputerze.</p>
+<p>Z tych samych częstości policzyliśmy, ile polskiego tekstu ląduje w rzędzie podstawowym i pod małymi palcami. Litery z ogonkami i kreskami, razem około 7% tekstu, pominęliśmy, bo ich położenie zależy od sposobu wpisywania.</p>
+<table>
+<caption>Polski tekst na różnych układach (obliczenia z częstości liter NKJP)</caption>
+<thead><tr><th scope="col">Układ</th><th scope="col">Litery w rzędzie podstawowym</th><th scope="col">Litery pisane małymi palcami</th></tr></thead>
+<tbody>
+<tr><td>QWERTY, czyli Polski (programisty)</td><td>27%</td><td>18%</td></tr>
+<tr><td>Colemak</td><td>56%</td><td>22%</td></tr>
+<tr><td>Colemak-DH (ANSI)</td><td>55%</td><td>17%</td></tr>
+<tr><td>Dvorak</td><td>53%</td><td>21%</td></tr>
+</tbody>
+</table>
+<p>Colemak podwaja udział rzędu podstawowego także po polsku, choć do angielskich 74% mu daleko, bo częste w polszczyźnie Z (5,6% liter), W, Y, C i K leżą poza tym rzędem. Małe palce pracują więcej, bo O, które stanowi 7,6% polskich liter, trafia pod prawy mały palec. Colemak-DH na klawiaturze ANSI przenosi Z pod lewy palec wskazujący i obniża ten udział do 17%.</p>
+
+<h2>Czym jest Colemak-DH i czy warto go wybrać?</h2>
+<p>Colemak-DH (pełna nazwa Colemak Mod-DH) to wariant społeczności, który wyjmuje D i H z dwóch środkowych kolumn, gdzie umieszcza je zwykły Colemak i gdzie palce wskazujące muszą przesuwać się w bok. SteveP opublikował go w październiku 2014 roku. D i H schodzą do dolnego rzędu, do którego palce wskazujące sięgają, zginając się w dół, G i M zajmują ich miejsca w rzędzie podstawowym, a B przechodzi do górnego rzędu. Według projektu udział uderzeń w klawisze środkowych kolumn spada z 14,78% na Colemaku do 7,80% na Colemaku-DH.</p>
+<table>
+<caption>Colemak i Colemak-DH na klawiaturze ANSI</caption>
+<thead><tr><th scope="col">Rząd</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>Górny</td><td>Q W F P G J L U Y ;</td><td>Q W F P B J L U Y ;</td></tr>
+<tr><td>Podstawowy</td><td>A R S T D H N E I O</td><td>A R S T G M N E I O</td></tr>
+<tr><td>Dolny</td><td>Z X C V B K M</td><td>X C D V Z K H</td></tr>
+</tbody>
+</table>
+<p>Lewa połowa dolnego rzędu korzysta też z modyfikacji kątowej (angle mod): Z, X i C przesuwają się o jeden klawisz w lewo, zachowując swoje palce, a pod lewy palec wskazujący wsuwa się D. Na klawiaturze ISO Z zajmuje dodatkowy klawisz obok lewego Shifta. Klawiatura ANSI takiego klawisza nie ma, więc Z trafia na środek rzędu, jak w tabeli. Jeśli nie wiesz, jaką masz klawiaturę, przewodnik po <a href="guide:iso-vs-ansi">klawiaturach ISO i ANSI</a> pokazuje, jak to sprawdzić.</p>
+<p>Od maja 2017 do października 2020 roku projekt polecał drugą wersję, DHk, z K w rzędzie podstawowym dla standardowych klawiatur z przesuniętymi rzędami. Potem wrócił do oryginału, nazywanego czasem DHm, i poleca go na każdej klawiaturze. To właśnie wersja z M w rzędzie podstawowym z tabeli powyżej.</p>
+<table>
+<caption>Colemak czy Colemak-DH: co zyskujesz, co tracisz</caption>
+<thead><tr><th scope="col">Różnica</th><th scope="col">Colemak</th><th scope="col">Colemak-DH</th></tr></thead>
+<tbody>
+<tr><td>Klawisze przesunięte względem QWERTY</td><td>17</td><td>19, plus 3 z modyfikacji kątowej na klawiaturze z przesuniętymi rzędami</td></tr>
+<tr><td>Uderzenia w środkowych kolumnach</td><td>14,78%</td><td>7,80%</td></tr>
+<tr><td>Trudność nauki (projekt Mod-DH)</td><td>Najłatwiejszy z w pełni zoptymalizowanych układów</td><td>Trochę trudniejszy, głównie przez przesunięcie H</td></tr>
+<tr><td>Wbudowany w system</td><td>Windows 11 (od 24H2), macOS, Linux</td><td>Tylko Linux; Windows i macOS potrzebują instalatorów projektu</td></tr>
+</tbody>
+</table>
+<p>Strona społeczności Colemaka ocenia oba warianty jako dobre i zostawia wybór upodobaniom. Wybierz Colemak-DH, jeśli przesuwanie palca w bok do D i H wydaje ci się niewygodne albo jeśli piszesz na klawiaturze ortolinearnej (matrycowej), na której porównanie Mod-DH daje Colemakowi-DH najlepszy wynik. Wybierz zwykły Colemak, jeśli chcesz jak najmniej zmian i układu, który twój system już ma. Jeśli już wygodnie piszesz zwykłym Colemakiem, przejście na DH oznacza ponowną naukę zmienionych klawiszy, co opłaca się głównie wtedy, gdy przeszkadza ci sięganie do środkowych kolumn.</p>
+
+<h2>Ile trwa nauka Colemaka?</h2>
+<p>Nastaw się na około dwa miesiące krótkich codziennych ćwiczeń, zanim Colemak będzie na tyle szybki, żeby używać go na co dzień. Dostępne liczby pochodzą z zaleceń twórców układu i z relacji użytkowników. Oficjalny poradnik zaleca 10 minut dziennie przez mniej więcej dwa miesiące, przejście na stałe po osiągnięciu dwóch trzecich dawnej szybkości z QWERTY i powtarzanie każdej lekcji do co najmniej 97% dokładności bez wahania. Ostrzega też, że pierwsze 10 dni jest trudne, zwłaszcza przy przejściu od razu w całości.</p>
+<table>
+<caption>Trzy sposoby na przejście</caption>
+<thead><tr><th scope="col">Sposób</th><th scope="col">Jak to działa</th><th scope="col">Czego się spodziewać</th></tr></thead>
+<tbody>
+<tr><td>Wszystko naraz</td><td>Zmieniasz układ w systemie pierwszego dnia i piszesz wszystko Colemakiem</td><td>Ostrzeżenie poradnika o pierwszych 10 dniach dotyczy cię w pełni, a pisanie w pracy od razu zwalnia</td></tr>
+<tr><td>Najpierw ćwiczenia, potem zmiana</td><td>QWERTY zostaje w pracy, Colemak ćwiczysz 10 minut dziennie i przechodzisz przy dwóch trzecich dawnej szybkości</td><td>Zalecenie colemak.com; szybkość w pracy nie cierpi w czasie nauki</td></tr>
+<tr><td>Tarmak</td><td>Cztery układy przejściowe przesuwają po 3 lub 4 klawisze (łącznie 4, 7, 10 i 14), potem pełny Colemak</td><td>Użytkownicy cytowani na stronie Tarmaka potrzebowali od trzech dni do tygodnia na krok; FAQ sugeruje około 97% dokładności przy 40 WPM przed kolejnym krokiem</td></tr>
+</tbody>
+</table>
+<p>Tarmak, stworzony przez członka społeczności Colemaka o pseudonimie DreymaR, zaczyna od najważniejszych zmian: pierwszy krok ustawia E i N, drugi przenosi T na miejsce, a osobna ścieżka Tarmak-DH kończy się na Colemaku-DH. Tak uczył się Erez Zukerman. Zaczął od czterech zmienionych klawiszy i przez około miesiąc używał tego układu bliskiego QWERTY, zanim zmienił kolejne, co uchroniło go przed tym, co nazwał „ścianą”.</p>
+<p>Twoje tempo zależy od liczby godzin ćwiczeń i od tego, czy QWERTY wciąż wypełnia ci dzień pracy. FAQ Colemaka podaje, że większość czasu nauki idzie na umiejętności ruchowe i że ktoś, kto już pisze bezwzrokowo szybko i poprawnie na QWERTY, szybko odzyska tę szybkość. Od nowa trzeba się nauczyć tylko przesuniętych klawiszy: 17 na Colemaku, 19 na Colemaku-DH plus trzech z modyfikacji kątowej. Jeśli dziś patrzysz na klawisze, najpierw naucz się <a href="guide:touch-typing">pisania bezwzrokowego</a>, i to możesz zrobić od razu na Colemaku.</p>
+
+<h2>Jak nauczyć się Colemaka krok po kroku</h2>
+<ol>
+<li><strong>Wybierz Colemak albo Colemak-DH i sprawdź swoją klawiaturę.</strong> W Colemaku-DH lewe klawisze dolnego rzędu różnią się na klawiaturach ISO i ANSI, więc musisz wiedzieć, która stoi na twoim biurku.</li>
+<li><strong>Wypróbuj układ w przeglądarce, zanim zmienisz ustawienia.</strong> petitdoigt sam nakłada układ na fizyczne położenie klawiszy, więc możesz <a href="app:words?layout=colemak">pisać Colemakiem w przeglądarce</a>, niczego nie instalując w systemie. Klawiatura ekranowa pokazuje litery Colemaka, każdy klawisz w kolorze swojego palca, więc nakładki mogą zachować litery QWERTY. Interfejs jest po angielsku, a teksty do ćwiczeń są po angielsku, francusku, niemiecku i hiszpańsku.</li>
+<li><strong>Poznaj rząd podstawowy palec po palcu.</strong> Lewa ręka A R S T, prawa N E I O, a D i H jako sięgnięcia palców wskazujących do środka (G i M na Colemaku-DH). Ćwiczenie <a href="app:anchors?layout=colemak-dh">anchors</a> wysyła wybrane palce do ich klawiszy i między uderzeniami sprowadza je do rzędu podstawowego. Trener podświetla palec, którego masz użyć, ale nie widzi twoich dłoni, więc trzymanie właściwego palca na każdym klawiszu zależy od ciebie.</li>
+<li><strong>Dodawaj górny i dolny rząd w prawdziwych słowach.</strong> Całe słowa ćwiczą nowe pozycje w kolejności, w jakiej będziesz ich używać, łącznie z E i P, dwiema literami, które zmieniły rękę.</li>
+<li><strong>Ćwicz przejścia, które cię spowalniają.</strong> Ćwiczenie <a href="app:pairs?layout=colemak-dh">pairs</a> w trybie adaptive mierzy każde przejście między klawiszami w trakcie pisania i buduje kolejną serię głównie z najwolniejszych i najmniej dokładnych. Statystyki są prowadzone osobno dla każdego układu, więc liczby z Colemaka nie mieszają się z historią QWERTY.</li>
+<li><strong>Utrzymaj dokładność, zanim zaczniesz gonić szybkość.</strong> Celuj w 97%, zanim pójdziesz dalej: tę liczbę podają zarówno poradnik nauki Colemaka, jak i FAQ Tarmaka. Przewodnik o <a href="guide:typing-accuracy">dokładności pisania</a> wyjaśnia, dlaczego dokładność idzie pierwsza.</li>
+<li><strong>Zmień układ w systemie przy dwóch trzecich dawnej szybkości.</strong> Jeśli wciąż korzystasz ze wspólnych komputerów z QWERTY, pisz na nim 5 do 10 minut dziennie, żeby pozostał używalny.</li>
+</ol>
+
+<h2>Jak włączyć Colemak w Windows, macOS i Linuksie?</h2>
+<p>Colemak jest wbudowany w Windows 11 od wersji 24H2 i fabrycznie dostępny w macOS i Linuksie. Microsoftowa lista układów klawiatury Windows pokazuje Colemaka jako nowość w Windows 11.</p>
+<ul>
+<li><strong>Windows 11:</strong> Start, Ustawienia, Czas i język, Język i region. Kliknij trzy kropki obok języka angielskiego (Stany Zjednoczone), wybierz Opcje języka, potem Dodaj klawiaturę i wybierz Colemak. <kbd>Windows</kbd>+<kbd>Spacja</kbd> przełącza zainstalowane układy.</li>
+<li><strong>macOS:</strong> Ustawienia systemowe, Klawiatura, potem Edytuj w sekcji wprowadzania tekstu. Kliknij przycisk dodawania, wyszukaj angielski i dodaj Colemak. <kbd>Control</kbd>+<kbd>Spacja</kbd> wraca do ostatniego źródła wprowadzania. Żeby <kbd>Caps Lock</kbd> działał jak Backspace, tak jak w oficjalnym układzie, colemak.com proponuje Karabiner-Elements.</li>
+<li><strong>Colemak-DH:</strong> projekt Mod-DH udostępnia instalatory dla Windows, skrypt AutoHotkey i pakiet dla macOS (także <code>brew install --cask colemak-dh</code>). W Linuksie xkeyboard-config zawiera go od wersji 2.34: <code>setxkbmap us -variant colemak_dh</code> albo <code>setxkbmap uk -variant colemak_dh_iso</code> na brytyjskiej klawiaturze ISO.</li>
+</ul>
+<p>Starsze wersje Windows potrzebują instalatora z colemak.com. Układy narodowe i pozostałe alternatywy porównuje przegląd <a href="guide:keyboard-layouts">układów klawiatury</a>.</p>
+
+<h2>Jakie są wady Colemaka?</h2>
+<p>Pierwszym kosztem jest czas: poradnik nauki ostrzega, że pierwsze 10 dni jest trudne, i zakłada około dwóch miesięcy ćwiczeń. Potem tarcia biorą się z komputerów, nad którymi nie masz kontroli, i z programów, które przypisują funkcje do liter. Wspólne i służbowe komputery nadal działają na QWERTY, więc albo utrzymujesz QWERTY w formie, albo instalujesz Colemaka wszędzie, gdzie piszesz. Po polsku dochodzą dwuetapowe polskie znaki opisane wyżej.</p>
+<p>Colemak zachowuje najczęściej używane skróty, a pozostałe przesuwa razem z ich literami. <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd>, <kbd>V</kbd>, <kbd>Q</kbd> i <kbd>W</kbd> zostają na miejscu. <kbd>Ctrl</kbd>+<kbd>S</kbd> (zapisz) przechodzi na klawisz, który QWERTY nazywa D, a <kbd>Ctrl</kbd>+<kbd>F</kbd> (znajdź) na klawisz, który QWERTY nazywa E.</p>
+<p>Gry, które przypisują sterowanie do liter zamiast do położenia klawiszy, rozrzucają WASD: W i A zostają, a S i D lądują na klawiszach D i G z QWERTY. Zmień przypisanie w grze albo na czas gry przełącz się skrótem systemowym na QWERTY. Vim ma ten sam problem z H, J, K i L. H zostaje, ale J przechodzi na klawisz Y z QWERTY, K na N, a L na U, więc użytkownicy Vima albo uczą się tych ruchów od nowa, albo je przemapowują.</p>
