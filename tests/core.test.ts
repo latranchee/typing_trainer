@@ -115,6 +115,80 @@ describe('layouts', () => {
     expect(layout.fingerOf('Semicolon')).toBe('RP');
   });
 
+  it('puts every letter on a key of its own, and the punctuation of the sentences within reach, on every layout and board', () => {
+    for (const board of BOARDS) {
+      for (const { id } of LAYOUTS) {
+        const layout = getLayout(id, board);
+        const codes = [...'abcdefghijklmnopqrstuvwxyz'].map((letter) => {
+          const strokes = layout.strokesFor(letter);
+          expect(strokes, `${id} ${board} ${letter}`).toHaveLength(1);
+          expect(strokes![0].shift, `${id} ${board} ${letter}`).toBe(false);
+          expect(layout.strokesFor(letter.toUpperCase()), `${id} ${board} ${letter}`).toEqual([{ code: strokes![0].code, shift: true }]);
+          return strokes![0].code;
+        });
+        expect(new Set(codes).size, `${id} ${board}`).toBe(26);
+        expect(layout.canType(".,'?"), `${id} ${board}`).toBe(true);
+      }
+    }
+  });
+
+  it('types French AZERTY: letters moved, accents on the number row, digits with Shift', () => {
+    const layout = getLayout('azerty');
+    const key = (code: string, shift = false) => [{ code, shift }];
+    expect(layout.strokesFor('a')).toEqual(key('KeyQ'));
+    expect(layout.strokesFor('q')).toEqual(key('KeyA'));
+    expect(layout.strokesFor('z')).toEqual(key('KeyW'));
+    expect(layout.strokesFor('w')).toEqual(key('KeyZ'));
+    expect(layout.strokesFor('m')).toEqual(key('Semicolon'));
+    expect(layout.strokesFor(E_ACUTE)).toEqual(key('Digit2'));
+    expect(layout.strokesFor(E_GRAVE)).toEqual(key('Digit7'));
+    expect(layout.strokesFor(C_CEDILLA)).toEqual(key('Digit9'));
+    expect(layout.strokesFor(String.fromCharCode(0xe0))).toEqual(key('Digit0'));
+    expect(layout.strokesFor(String.fromCharCode(0xf9))).toEqual(key('Quote'));
+    expect(layout.strokesFor(E_CIRC)).toEqual([...key('BracketLeft'), ...key('KeyE')]);
+    expect(layout.strokesFor(String.fromCharCode(0xeb))).toEqual([...key('BracketLeft', true), ...key('KeyE')]);
+    expect(layout.strokesFor('1')).toEqual(key('Digit1', true));
+    expect(layout.strokesFor("'")).toEqual(key('Digit4'));
+    expect(layout.strokesFor(',')).toEqual(key('KeyM'));
+    expect(layout.strokesFor('.')).toEqual(key('Comma', true));
+    expect(layout.strokesFor('?')).toEqual(key('KeyM', true));
+    // Capital accented letters need Caps Lock or AltGr, which the trainer does not ask for.
+    expect(layout.canType(String.fromCharCode(0xc9))).toBe(false);
+    expect(layout.legend('Digit2')).toEqual({ base: E_ACUTE, shift: '2', letter: false });
+    expect(layout.canType('<')).toBe(false);
+    expect(getLayout('azerty', 'iso').strokesFor('<')).toEqual(key('IntlBackslash'));
+  });
+
+  it('types German QWERTZ: Z and Y swapped, umlauts on their keys, French accents from dead keys', () => {
+    const layout = getLayout('qwertz');
+    const key = (code: string, shift = false) => [{ code, shift }];
+    expect(layout.strokesFor('z')).toEqual(key('KeyY'));
+    expect(layout.strokesFor('y')).toEqual(key('KeyZ'));
+    expect(layout.strokesFor(String.fromCharCode(0xfc))).toEqual(key('BracketLeft'));
+    expect(layout.strokesFor(String.fromCharCode(0xdf))).toEqual(key('Minus'));
+    expect(layout.strokesFor(E_ACUTE)).toEqual([...key('Equal'), ...key('KeyE')]);
+    expect(layout.strokesFor(E_GRAVE)).toEqual([...key('Equal', true), ...key('KeyE')]);
+    expect(layout.strokesFor(E_CIRC)).toEqual([...key('Backquote'), ...key('KeyE')]);
+    expect(layout.strokesFor("'")).toEqual(key('Backslash', true));
+    expect(layout.strokesFor('-')).toEqual(key('Slash'));
+    expect(layout.canType(C_CEDILLA)).toBe(false);
+  });
+
+  it('maps Dvorak, Colemak and Workman letters to their physical keys', () => {
+    const homeRow = (id: string) => ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon'].map((code) => getLayout(id).legend(code)?.base).join('');
+    expect(homeRow('dvorak')).toBe('aoeuidhtns');
+    expect(homeRow('colemak')).toBe('arstdhneio');
+    expect(homeRow('workman')).toBe('ashtgyneoi');
+    expect(getLayout('dvorak').strokesFor("'")).toEqual([{ code: 'KeyQ', shift: false }]);
+    expect(getLayout('dvorak').strokesFor('z')).toEqual([{ code: 'Slash', shift: false }]);
+    expect(getLayout('dvorak').strokesFor('-')).toEqual([{ code: 'Quote', shift: false }]);
+    expect(getLayout('colemak').strokesFor(';')).toEqual([{ code: 'KeyP', shift: false }]);
+    expect(getLayout('colemak').strokesFor('k')).toEqual([{ code: 'KeyN', shift: false }]);
+    expect(getLayout('workman').strokesFor('m')).toEqual([{ code: 'KeyC', shift: false }]);
+    // Plain finger maps: only Colemak-DH changes the fingering.
+    for (const id of ['dvorak', 'colemak', 'workman']) expect(getLayout(id).fingerOf('KeyZ'), id).toBe('LP');
+  });
+
   it('asks for the Shift key on the opposite hand', () => {
     const layout = getLayout('us');
     expect(layout.properShift('KeyA')).toBe('ShiftRight');
@@ -204,8 +278,20 @@ describe('corpus', () => {
     }
   });
 
+  it('types French on AZERTY as on Canadian French, capital accents aside', () => {
+    const layout = getLayout('azerty');
+    expect(WORDS.fr.filter((word) => layout.canType(word)).length / WORDS.fr.length).toBeGreaterThan(0.97);
+    for (const sentence of SENTENCES.fr) expect(layout.canType(sentence.toLowerCase()), sentence).toBe(true);
+  });
+
+  it('keeps most French words on QWERTZ, through its dead keys', () => {
+    const layout = getLayout('qwertz');
+    expect(WORDS.fr.filter((word) => layout.canType(word)).length / WORDS.fr.length).toBeGreaterThan(0.9);
+    expect(layout.canType('fen' + E_CIRC + 'tre')).toBe(true);
+  });
+
   it('keeps French sentences for the layouts without accent keys', () => {
-    for (const id of ['us', 'colemak-dh'] as const) {
+    for (const id of ['us', 'dvorak', 'colemak', 'colemak-dh', 'workman'] as const) {
       const layout = getLayout(id);
       expect(SENTENCES.fr.filter((sentence) => layout.canType(sentence)).length).toBeGreaterThanOrEqual(30);
     }

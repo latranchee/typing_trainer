@@ -15,7 +15,7 @@ export interface Target {
   strokes: Stroke[];
 }
 
-export type LayoutId = 'ca-fr' | 'colemak-dh' | 'us';
+export type LayoutId = 'ca-fr' | 'us' | 'azerty' | 'qwertz' | 'dvorak' | 'colemak' | 'colemak-dh' | 'workman';
 
 type Keys = Record<string, [string, string]>;
 
@@ -129,7 +129,110 @@ const COLEMAK_DH: LayoutDef = {
   boards: { iso: { IntlBackslash: ['z', 'Z'], KeyB: [BACKSLASH, '|'] } },
 };
 
-const DEFS: LayoutDef[] = [CA_FR, COLEMAK_DH, US];
+/** The keys every US-based layout shares, which the alternative layouts below only rearrange letters on. */
+const US_SYMBOLS: Keys = {
+  ...row(NUMBER_CODES, '`1234567890-=', '~!@#$%^&*()_+'),
+  BracketLeft: ['[', '{'],
+  BracketRight: [']', '}'],
+  Backslash: [BACKSLASH, '|'],
+  Quote: ["'", '"'],
+  Comma: [',', '<'],
+  Period: ['.', '>'],
+  Slash: ['/', '?'],
+  IntlBackslash: [BACKSLASH, '|'],
+};
+
+/**
+ * Letters rearranged over the US symbols, as Colemak and Workman do: nine letters on the
+ * top row with the semicolon after them, ten on the home row, seven on the bottom row.
+ */
+const letterRows = (top: string, home: string, bottom: string): Keys => ({
+  ...US_SYMBOLS,
+  ...row(TOP_CODES, `${top};`, `${top.toUpperCase()}:`),
+  ...row(`${HOME_CODES} Semicolon`, home, home.toUpperCase()),
+  ...row(BOTTOM_CODES, bottom, bottom.toUpperCase()),
+});
+
+/**
+ * French AZERTY (Windows "French", France). The number row types its symbols and
+ * accented letters as is and its digits with Shift. The circumflex and diaeresis are
+ * dead keys; capital accented letters need Caps Lock or AltGr, so they are left out.
+ */
+const AZERTY: LayoutDef = {
+  id: 'azerty',
+  keys: {
+    Backquote: [cp(0xb2), cp(0xb2)],
+    ...row('Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Minus Equal', `&${cp(0xe9)}"'(-${cp(0xe8)}_${cp(0xe7)}${cp(0xe0)})=`, `1234567890${cp(0xb0)}+`),
+    ...row(TOP_CODES, 'azertyuiop', 'AZERTYUIOP'),
+    ...row(HOME_CODES, 'qsdfghjkl', 'QSDFGHJKL'),
+    ...row(BOTTOM_CODES, 'wxcvbn,', 'WXCVBN?'),
+    BracketLeft: [MARK.circumflex, MARK.diaeresis],
+    BracketRight: ['$', cp(0xa3)],
+    Semicolon: ['m', 'M'],
+    Quote: [cp(0xf9), '%'],
+    Backslash: ['*', cp(0xb5)],
+    Comma: [';', '.'],
+    Period: [':', '/'],
+    Slash: ['!', cp(0xa7)],
+    IntlBackslash: ['<', '>'],
+  },
+};
+
+/**
+ * German QWERTZ (Windows "German"). Z and Y trade places, the umlauts and ß have their
+ * own keys, and the circumflex, acute and grave are dead keys, so French accents other
+ * than the cedilla and the diaeresis can be typed.
+ */
+const QWERTZ: LayoutDef = {
+  id: 'qwertz',
+  keys: {
+    Backquote: [MARK.circumflex, cp(0xb0)],
+    ...row('Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Minus', `1234567890${cp(0xdf)}`, `!"${cp(0xa7)}$%&/()=?`),
+    Equal: [MARK.acute, MARK.grave],
+    ...row(TOP_CODES, 'qwertzuiop', 'QWERTZUIOP'),
+    ...row(HOME_CODES, 'asdfghjkl', 'ASDFGHJKL'),
+    ...row(BOTTOM_CODES, 'yxcvbnm', 'YXCVBNM'),
+    BracketLeft: [cp(0xfc), cp(0xdc)],
+    BracketRight: ['+', '*'],
+    Semicolon: [cp(0xf6), cp(0xd6)],
+    Quote: [cp(0xe4), cp(0xc4)],
+    Backslash: ['#', "'"],
+    Comma: [',', ';'],
+    Period: ['.', ':'],
+    Slash: ['-', '_'],
+    IntlBackslash: ['<', '>'],
+  },
+};
+
+/** Dvorak (US). Vowels under the left hand, the commonest consonants under the right. */
+const DVORAK: LayoutDef = {
+  id: 'dvorak',
+  keys: {
+    ...US_SYMBOLS,
+    Minus: ['[', '{'],
+    Equal: [']', '}'],
+    ...row(TOP_CODES, `',.pyfgcrl`, `"<>PYFGCRL`),
+    BracketLeft: ['/', '?'],
+    BracketRight: ['=', '+'],
+    ...row(`${HOME_CODES} Semicolon Quote`, 'aoeuidhtns-', 'AOEUIDHTNS_'),
+    ...row(`${BOTTOM_CODES} Comma Period Slash`, ';qjkxbmwvz', ':QJKXBMWVZ'),
+  },
+};
+
+/** Colemak, the original: Colemak-DH without the moved bottom-left and middle keys. */
+const COLEMAK: LayoutDef = {
+  id: 'colemak',
+  keys: letterRows('qwfpgjluy', 'arstdhneio', 'zxcvbkm'),
+};
+
+/** Workman: letters placed to spare the index fingers' sideways reach to the middle columns. */
+const WORKMAN: LayoutDef = {
+  id: 'workman',
+  keys: letterRows('qdrwbjfup', 'ashtgyneoi', 'zxmcvkl'),
+};
+
+/** The national layouts first, then the alternative ones. The first is where an unknown id lands. */
+const DEFS: LayoutDef[] = [CA_FR, US, AZERTY, QWERTZ, DVORAK, COLEMAK, COLEMAK_DH, WORKMAN];
 
 export interface KeyLegend {
   base: string;

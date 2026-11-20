@@ -16,9 +16,19 @@ type Side = 'left' | 'right';
 const en = {
   none: 'n/a',
   drills: { highway: 'highway', words: 'words', pairs: 'pairs', anchors: 'anchors', stats: 'stats' } satisfies Record<DrillId, string>,
-  layouts: { 'ca-fr': 'canadian french', 'colemak-dh': 'colemak-dh', us: 'us qwerty' } satisfies Record<LayoutId, string>,
+  layouts: {
+    'ca-fr': 'canadian french',
+    us: 'us qwerty',
+    azerty: 'french azerty',
+    qwertz: 'german qwertz',
+    dvorak: 'dvorak',
+    colemak: 'colemak',
+    'colemak-dh': 'colemak-dh',
+    workman: 'workman',
+  } satisfies Record<LayoutId, string>,
   /** What a layout changes, said plainly in the settings. A note for one board (`layout|board`) comes before the layout's own. */
   layoutNotes: {
+    azerty: 'digits are typed with shift',
     'colemak-dh': 'left bottom row uses the angle fingering',
     'colemak-dh|iso': 'z is on the key beside the left shift',
   } as Partial<Record<LayoutId | `${LayoutId}|${Board}`, string>>,
@@ -298,8 +308,18 @@ const frSide = (side: Side): string => (side === 'left' ? 'gauche' : 'droite');
 const fr: Strings = {
   none: 'n/d',
   drills: { highway: 'autoroute', words: 'mots', pairs: 'paires', anchors: 'ancrages', stats: 'stats' },
-  layouts: { 'ca-fr': 'français canadien', 'colemak-dh': 'colemak-dh', us: 'qwerty américain' },
+  layouts: {
+    'ca-fr': 'français canadien',
+    us: 'qwerty américain',
+    azerty: 'azerty français',
+    qwertz: 'qwertz allemand',
+    dvorak: 'dvorak',
+    colemak: 'colemak',
+    'colemak-dh': 'colemak-dh',
+    workman: 'workman',
+  },
   layoutNotes: {
+    azerty: 'les chiffres se tapent avec maj',
     'colemak-dh': 'la rangée du bas de la main gauche suit le doigté en angle',
     'colemak-dh|iso': 'le z est sur la touche à côté du maj gauche',
   },

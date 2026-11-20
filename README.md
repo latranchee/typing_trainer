@@ -31,7 +31,7 @@ The space bar is a grey bar. The same coding runs through the falling notes, the
 
 The trainer applies the layout itself from physical key positions (`KeyboardEvent.code`), so the layout chosen in the dropdown works whatever layout Windows is set to. The on-screen keyboard always shows the selected layout's legends.
 
-Layouts: Canadian French (with dead-key accents), Colemak-DH (angle fingering on the left bottom row), US QWERTY.
+Layouts: Canadian French (with dead-key accents), US QWERTY, French AZERTY (accents on the number row, digits with Shift), German QWERTZ (umlauts, dead-key accents), Dvorak, Colemak, Colemak-DH (angle fingering on the left bottom row), Workman.
 
 ## Settings
 
@@ -148,7 +148,10 @@ If the anchor drill reports a lifted anchor while your fingers are down, your ke
 
 ## Layout notes
 
-- French words with accents are left out on layouts that have no accent keys (Colemak-DH, US QWERTY).
+- French words with accents are left out on layouts that have no accent keys (US QWERTY, Dvorak, Colemak, Colemak-DH, Workman).
+- French AZERTY types every lowercase French word; capital accented letters (É, À, Ç) need Caps Lock or AltGr there, which the trainer does not ask for, so sentences that start with one are left out when `capitals` is on. Its `<` `>` key exists on ISO boards only.
+- German QWERTZ types French accents through its dead keys (`^`, `´`, `` ` ``); words with ç or a diaeresis are left out.
+- Dvorak, Colemak and Workman use the standard finger map: only Colemak-DH changes the fingering.
 - The Colemak-DH finger map follows the layout's angle fingering: the physical Z, X, C, V, B keys are typed with ring, middle, index, index, index. On an ISO board the key beside the left Shift carries Z, under the pinky.
 - The JIS board is drawn for the layouts above: the keys only it has stay blank, and pressing one counts as a wrong key.
 
