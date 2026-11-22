@@ -64,6 +64,7 @@ const en = {
     type: 'tap to type',
     field: 'type here',
     close: 'close',
+    hide: 'put the keyboard away',
   },
 
   /** The settings panel: one list for the drill's options, the fingers to train, the sound, the keyboard and the profile. */
@@ -362,6 +363,7 @@ const fr: Strings = {
     type: 'touche pour taper',
     field: 'tape ici',
     close: 'fermer',
+    hide: 'ranger le clavier',
   },
 
   menu: {

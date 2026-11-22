@@ -58,6 +58,7 @@ export const es: Strings = {
     type: 'toca para escribir',
     field: 'escribe aquí',
     close: 'cerrar',
+    hide: 'ocultar el teclado',
   },
 
   menu: {

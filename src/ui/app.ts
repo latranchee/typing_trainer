@@ -283,6 +283,8 @@ export class App implements DrillHost {
   private typeBtn = el('button.type-btn.ctl', { type: 'button' }, keyboardIcon());
   /** On a phone, at the end of the numbers: new text, the Escape of a physical keyboard. */
   private restartBtn = el('button.restart-btn.ctl', { type: 'button' }, restartIcon());
+  /** On a phone while typing, at the top right: puts the keyboard away and brings the rest of the screen back. */
+  private kbdClose = el('button.kbd-close.ctl', { type: 'button' }, strokeIcon('M3.5 3.5l9 9M12.5 3.5l-9 9'));
   /** On a phone, the dark behind the settings sheet. A tap on it closes the sheet. */
   private scrim = el('div.scrim', { 'aria-hidden': 'true' });
 
@@ -750,8 +752,9 @@ export class App implements DrillHost {
     this.panel.close();
     const field = this.softField;
     // A keyboard put away by the system's back button leaves the field focused, and focusing it again would not bring it back.
-    if (document.activeElement === field && !this.viewport.keyboardOpen) field.blur();
+    if (document.activeElement === field) field.blur();
     field.focus({ preventScroll: true });
+    this.viewport.refresh();
   }
 
   /** Touch or not: a touch screen has no use for the anchor drill, which needs keys held down. */
@@ -1749,6 +1752,11 @@ export class App implements DrillHost {
 
     this.label(this.softField, () => t.touch.field, 'aria-label');
     this.label(this.restartBtn, () => t.options.newText, 'aria-label');
+    this.label(this.kbdClose, () => t.touch.hide, 'aria-label');
+    this.kbdClose.addEventListener('click', () => {
+      this.softField.blur();
+      this.viewport.refresh();
+    });
     const typeLabel = this.label(el('span'), () => t.touch.type);
     this.typeBtn.append(typeLabel);
     this.typeBtn.addEventListener('click', () => this.focusSoft());
@@ -1787,6 +1795,7 @@ export class App implements DrillHost {
             ),
             runPair,
             this.restartBtn,
+            this.kbdClose,
             fingers,
             this.label(el('p.rail-note'), () => t.rail.untracked),
           ),

@@ -69,6 +69,7 @@ export const de: Strings = {
     type: 'tippen zum schreiben',
     field: 'hier tippen',
     close: 'schließen',
+    hide: 'tastatur ausblenden',
   },
 
   menu: {

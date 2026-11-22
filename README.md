@@ -35,7 +35,7 @@ Layouts: Canadian French (with dead-key accents), US QWERTY, French AZERTY (acce
 
 ## On a phone
 
-On a phone the trainer types with the phone's own keyboard: tap the text or `tap to type` and type. Each character counts as the keys the selected layout uses for it, so French accents work with any layout that has them. The numbers sit on one line over the text, the settings rise from the bottom, and the on-screen keyboard folds away (it comes back in the stats view). The anchor drill needs keys held down, so it is left out on touch screens, and a result there names no finger: a phone cannot tell which finger typed.
+On a phone the trainer types with the phone's own keyboard: tap the text or `tap to type` and type. Each character counts as the keys the selected layout uses for it, so French accents work with any layout that has them. While you type, only the numbers and the text stay on screen; the cross at the top right puts the keyboard away and brings the rest back. The settings rise from the bottom, and the on-screen keyboard folds away (it comes back in the stats view). The anchor drill needs keys held down, so it is left out on touch screens, and a result there names no finger: a phone cannot tell which finger typed.
 
 ## Settings
 
