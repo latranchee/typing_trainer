@@ -9,6 +9,8 @@ export interface KeyEvt {
   time: number;
   /** Every key physically down right now, this one included. */
   held: ReadonlySet<string>;
+  /** The character typed, when it came from a phone's keyboard rather than a physical key. */
+  char?: string;
 }
 
 export type Command = 'restart' | 'next' | 'tempo-up' | 'tempo-down';
@@ -30,11 +32,27 @@ const COMMANDS: Record<string, Command> = {
   ArrowDown: 'tempo-down',
 };
 
+/** The hidden field that takes a phone keyboard's characters (see `soft.ts`). */
+export const SOFT_FIELD = 'soft-field';
+
+const isSoftField = (node: EventTarget | null): boolean => node instanceof HTMLElement && node.classList.contains(SOFT_FIELD);
+
 /** True while focus sits on a control, where keys belong to that control. */
 const focusIsOnControl = (): boolean => {
   const active = document.activeElement;
-  return active instanceof HTMLElement && active !== document.body && active.matches('button, a, input, select, [role="option"], [role="button"]');
+  return (
+    active instanceof HTMLElement &&
+    active !== document.body &&
+    !isSoftField(active) &&
+    active.matches('button, a, input, select, [role="option"], [role="button"]')
+  );
 };
+
+/**
+ * The commands in a key, read from `key` as well as `code`: a phone keyboard's Enter
+ * has no `code`. Physical arrows and Escape always carry one.
+ */
+const commandOf = (event: KeyboardEvent): Command | undefined => COMMANDS[event.code] ?? (event.key === 'Enter' ? 'next' : undefined);
 
 /**
  * Listens to physical keys. The trainer applies its own layout to `event.code`,
@@ -45,6 +63,18 @@ export function attachInput(handlers: InputHandlers): () => void {
 
   const onDown = (event: KeyboardEvent): void => {
     const { code } = event;
+    // Keys typed into the phone field are read from the text they leave there, so a phone
+    // keyboard and a physical one plugged into the phone both type characters. Only the
+    // commands are taken here, before they reach the field.
+    if (isSoftField(event.target)) {
+      const command = event.ctrlKey || event.altKey || event.metaKey ? undefined : commandOf(event);
+      if (command) {
+        event.preventDefault();
+        if (!event.repeat) handlers.command(command);
+      }
+      return;
+    }
+
     if (!event.repeat) {
       held.add(code);
       handlers.down(code);
@@ -87,6 +117,7 @@ export function attachInput(handlers: InputHandlers): () => void {
   };
 
   const onUp = (event: KeyboardEvent): void => {
+    if (!event.code || isSoftField(event.target)) return;
     held.delete(event.code);
     handlers.up(event.code);
   };

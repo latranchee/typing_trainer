@@ -54,6 +54,12 @@ export const es: Strings = {
     guides: 'guías',
   },
 
+  touch: {
+    type: 'toca para escribir',
+    field: 'escribe aquí',
+    close: 'cerrar',
+  },
+
   menu: {
     button: 'ajustes',
     region: 'ajustes',

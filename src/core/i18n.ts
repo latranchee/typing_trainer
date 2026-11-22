@@ -59,6 +59,13 @@ const en = {
     guides: 'guides',
   },
 
+  /** On a phone: the on-screen keyboard types, and these say how to bring it up. */
+  touch: {
+    type: 'tap to type',
+    field: 'type here',
+    close: 'close',
+  },
+
   /** The settings panel: one list for the drill's options, the fingers to train, the sound, the keyboard and the profile. */
   menu: {
     button: 'settings',
@@ -349,6 +356,12 @@ const fr: Strings = {
     trackingOff: "rien n'est enregistré tant que le suivi est désactivé",
     layout: 'disposition du clavier',
     guides: 'guides',
+  },
+
+  touch: {
+    type: 'touche pour taper',
+    field: 'tape ici',
+    close: 'fermer',
   },
 
   menu: {

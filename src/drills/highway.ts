@@ -247,7 +247,8 @@ export class HighwayDrill implements Drill {
     const edges = lanes.edges.map((x) => x - left);
     const centres = lanes.centres.map((x) => x - left);
     // Sized from an inner lane: one key wide. The pinky lanes are wider but hold the same notes.
-    const size = Math.min((edges[2] - edges[1]) * 0.8, 2.875 * rem);
+    // On a phone a lane is narrower than a readable note: the note then runs past its lane's edges, never under 2rem.
+    const size = Math.min(Math.max((edges[2] - edges[1]) * 0.8, 2 * rem), 2.875 * rem);
     this.lineY = height - 2;
     this.gap = Math.max(size * 1.35, height / 7.5);
     const laneX = (lane: number): number => centres[lane];

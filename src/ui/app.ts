@@ -23,9 +23,9 @@ import type { KeyTally } from '../core/history';
 import { WORDS } from '../core/corpus';
 import { LANG_NAMES, preferredLang, preferredLayout, setUiLang, t } from '../core/i18n';
 import type { Command, KeyEvt } from '../core/input';
-import { attachInput } from '../core/input';
+import { attachInput, SOFT_FIELD } from '../core/input';
 import { readLaunch, withoutLaunch } from '../core/launch';
-import type { Layout } from '../core/layouts';
+import type { Layout, Stroke } from '../core/layouts';
 import { getLayout, LAYOUTS } from '../core/layouts';
 import { intervalToWpm, MIN_SAMPLES, PairWatch, RollingWpm, SetStats } from '../core/metrics';
 import type { Board, Row } from '../core/physical';
@@ -33,6 +33,7 @@ import { boardOf, BOARDS } from '../core/physical';
 import { dayStreak, fingerGain, HOT_BASE, isAhead, isHot, setVerdict, Streak, STREAK_SHOWN_FROM, streakHeat, streakKey } from '../core/rewards';
 import type { DrillId, Lang, Settings } from '../core/store';
 import { DRILL_IDS, LANGS, Store } from '../core/store';
+import { attachSoft, foldTyped } from '../core/soft';
 import type { KeySound } from '../core/switches';
 import { SWITCHES } from '../core/switches';
 import { AnchorsDrill } from '../drills/anchors';
@@ -54,6 +55,7 @@ import { ProfileMenu } from './profile';
 import { Select } from './select';
 import { Sound } from './sound';
 import { Sparks } from './sparks';
+import { Viewport } from './viewport';
 
 /** A gap longer than this between strokes is a pause and is not measured. */
 const PAUSE_MS = 2000;
@@ -86,6 +88,32 @@ function launchStore(): Store {
   if (launch.lang || launch.layout) history.replaceState(null, '', `${location.pathname}${withoutLaunch(location.search, location.hash)}`);
   return store;
 }
+
+const SVG = 'http://www.w3.org/2000/svg';
+
+/** A small icon in the stroke the settings button's sliders use. */
+function strokeIcon(d: string): SVGSVGElement {
+  const svg = document.createElementNS(SVG, 'svg');
+  svg.setAttribute('viewBox', '0 0 16 16');
+  svg.setAttribute('class', 'menu-icon');
+  svg.setAttribute('aria-hidden', 'true');
+  const path = document.createElementNS(SVG, 'path');
+  path.setAttribute('d', d);
+  path.setAttribute('fill', 'none');
+  path.setAttribute('stroke', 'currentColor');
+  path.setAttribute('stroke-width', '1.4');
+  path.setAttribute('stroke-linecap', 'round');
+  path.setAttribute('stroke-linejoin', 'round');
+  svg.append(path);
+  return svg;
+}
+
+/** A keyboard: a rounded case, two rows of keys and a space bar. */
+const keyboardIcon = (): SVGSVGElement =>
+  strokeIcon('M2.5 4h11a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM4.5 6.5h0M7 6.5h0M9.5 6.5h0M12 6.5h0M5.5 9.5h5');
+
+/** New text: an arrow running round to where it started. */
+const restartIcon = (): SVGSVGElement => strokeIcon('M13 8a5 5 0 1 1-1.6-3.7M13 2.5v2.8h-2.8');
 
 /** Values for a frozen frame, used only by the visual-check fixture. */
 export interface ReadoutFixture {
@@ -236,6 +264,28 @@ export class App implements DrillHost {
   private nextFinger = el('p.next-finger');
   private nextExtra = el('p.next-extra');
 
+  /**
+   * A screen driven by touch, with no mouse: a phone, or a tablet without a trackpad.
+   * Its on-screen keyboard types into a hidden field, read character by character (`soft.ts`).
+   */
+  private touchScreen = window.matchMedia('(pointer: coarse) and (hover: none)');
+  private softField = el(`input.${SOFT_FIELD}`, {
+    type: 'text',
+    autocomplete: 'off',
+    autocorrect: 'off',
+    autocapitalize: 'none',
+    spellcheck: 'false',
+    enterkeyhint: 'go',
+    'data-gramm': 'false',
+  });
+  private viewport!: Viewport;
+  /** On a phone, at the foot of the screen while its keyboard is down: the button that brings it up. */
+  private typeBtn = el('button.type-btn.ctl', { type: 'button' }, keyboardIcon());
+  /** On a phone, at the end of the numbers: new text, the Escape of a physical keyboard. */
+  private restartBtn = el('button.restart-btn.ctl', { type: 'button' }, restartIcon());
+  /** On a phone, the dark behind the settings sheet. A tap on it closes the sheet. */
+  private scrim = el('div.scrim', { 'aria-hidden': 'true' });
+
   constructor(root: HTMLElement) {
     this.root = root;
     this.layout = getLayout(this.store.settings.layout, this.store.settings.board);
@@ -268,6 +318,19 @@ export class App implements DrillHost {
       command: (command) => this.onCommand(command),
       erase: (all, time) => this.onErase(all, time),
     });
+    attachSoft(this.softField, {
+      char: (char, time) => this.onSoftChar(char, time),
+      erase: (time) => this.onErase(false, time),
+    });
+    this.viewport = new Viewport(this.softField);
+    this.viewport.onKeyboard = (open) => {
+      this.root.dataset.kbd = open ? 'open' : 'closed';
+    };
+    this.root.dataset.kbd = 'closed';
+    this.syncTouch();
+    this.touchScreen.addEventListener('change', () => this.syncTouch());
+    // Safari gives a tapped control its :active press only on a page that listens to touches.
+    document.addEventListener('touchstart', () => {}, { passive: true });
     window.addEventListener('pointermove', () => {
       if (performance.now() - this.lastKeyAt > 400) this.setTyping(false);
     });
@@ -444,7 +507,9 @@ export class App implements DrillHost {
       el('dt', {}, t.result.time),
       el('dd', {}, `${Math.round(stats.activeMs / 1000)} s`),
     ];
-    if (gain) {
+    // On a touch screen the thumbs type: a line about a finger would claim what the screen cannot know.
+    const fingersKnown = !this.touchScreen.matches;
+    if (gain && fingersKnown) {
       rows.push(
         el('dt', {}, t.result.gain),
         el(
@@ -455,7 +520,7 @@ export class App implements DrillHost {
         ),
       );
     }
-    if (slowest) {
+    if (slowest && fingersKnown) {
       rows.push(
         el('dt', {}, t.result.slowest),
         el(
@@ -569,7 +634,14 @@ export class App implements DrillHost {
   }
 
   private openResult(...parts: (HTMLElement | null)[]): void {
-    this.result.replaceChildren(...parts.filter((part) => part !== null), el('p.result-hint', {}, el('kbd', {}, t.result.enter), t.result.nextSet));
+    // On a phone the hint is a button: it starts the next set and brings the keyboard back up.
+    const next = el('button.result-next.ctl', { type: 'button' }, t.result.nextSet);
+    next.addEventListener('mousedown', (event) => event.preventDefault());
+    next.addEventListener('click', () => {
+      this.onCommand('next');
+      this.focusSoft();
+    });
+    this.result.replaceChildren(...parts.filter((part) => part !== null), el('p.result-hint', {}, el('kbd', {}, t.result.enter), t.result.nextSet), next);
     this.stage.append(this.result);
     this.resultOpen = true;
     this.lit = false;
@@ -639,6 +711,54 @@ export class App implements DrillHost {
       return;
     }
     this.drill.key(event);
+  }
+
+  /**
+   * A character from a phone's keyboard, typed as the strokes the layout gives it, so
+   * every drill reads it as it reads a physical key. A character the text did not ask
+   * for counts as one wrong key, even when the layout takes two strokes to type it.
+   */
+  private onSoftChar(typed: string, time: number): void {
+    const char = foldTyped(typed, (candidate) => this.layout.strokesFor(candidate) !== null);
+    const strokes = this.layout.strokesFor(char);
+    if (!strokes) {
+      // No key of the layout types it: a wrong key, labelled with what was typed.
+      this.softStroke({ code: '', shift: false }, char, time);
+      return;
+    }
+    for (const stroke of strokes) {
+      const expected = this.drillHint.note?.stroke;
+      const right = !this.resultOpen && this.typos.length === 0 && expected?.code === stroke.code && expected.shift === stroke.shift;
+      this.softStroke(stroke, char, time);
+      if (!right) break;
+    }
+  }
+
+  private softStroke(stroke: Stroke, char: string, time: number): void {
+    const { code } = stroke;
+    this.sound.wake();
+    if (code && !this.soundSelect.isOpen) {
+      this.sound.press(code);
+      setTimeout(() => this.sound.release(code), 70);
+    }
+    this.onKey({ code, shift: stroke.shift, shiftLeft: false, shiftRight: false, time, held: new Set(code ? [code] : []), char });
+  }
+
+  /** Brings the phone's keyboard up. Only a tap may do it: a browser opens it for a user's gesture alone. */
+  private focusSoft(): void {
+    if (this.drill.id === 'stats') return;
+    this.panel.close();
+    const field = this.softField;
+    // A keyboard put away by the system's back button leaves the field focused, and focusing it again would not bring it back.
+    if (document.activeElement === field && !this.viewport.keyboardOpen) field.blur();
+    field.focus({ preventScroll: true });
+  }
+
+  /** Touch or not: a touch screen has no use for the anchor drill, which needs keys held down. */
+  private syncTouch(): void {
+    const touch = this.touchScreen.matches;
+    this.root.dataset.touch = String(touch);
+    if (touch && this.drill?.id === 'anchors') this.setDrill('words');
   }
 
   // ---------- streak ----------
@@ -751,7 +871,13 @@ export class App implements DrillHost {
   /** A spark or a few off the cap of a key, in the color that cap carries. */
   private throwSparks(code: string, count: number): void {
     const cap = this.keyboard.capOf(code);
-    if (cap) this.sparks.emit(cap.box.left + cap.box.width * (0.3 + Math.random() * 0.4), cap.box.top, cap.color, count);
+    if (!cap) return;
+    // On a phone the board is folded away: the sparks fly off the letter just typed instead.
+    const folded = this.keyboard.root.getBoundingClientRect().height === 0;
+    const now = folded ? this.stage.querySelector('.ch.is-now') : null;
+    const done = now ? (now.previousElementSibling ?? now) : null;
+    const box = done?.getBoundingClientRect() ?? cap.box;
+    this.sparks.emit(box.left + box.width * (0.3 + Math.random() * 0.4), box.top, cap.color, count);
   }
 
   /** A milestone of the streak: the counter swells once and a tick sounds over the keys. */
@@ -828,7 +954,7 @@ export class App implements DrillHost {
   private addTypo(event: KeyEvt): void {
     // A full run takes no more: the board still flashes the key.
     if (this.typos.length >= MAX_TYPOS) return;
-    this.typos.push(this.layout.strokeLabel({ code: event.code, shift: event.shift }));
+    this.typos.push(event.char ?? this.layout.strokeLabel({ code: event.code, shift: event.shift }));
     this.drill.typos?.(this.typos);
     this.showHint();
   }
@@ -1112,6 +1238,8 @@ export class App implements DrillHost {
   }
 
   private setDrill(id: DrillId, force = false): void {
+    // Holding anchor keys down takes a physical keyboard.
+    if (id === 'anchors' && this.touchScreen.matches) id = 'words';
     if (!force && this.drill?.id === id) return;
     // A streak belongs to one drill: the one left behind ends here.
     this.endStreak();
@@ -1222,7 +1350,7 @@ export class App implements DrillHost {
     );
     this.soundSelect.relabel(t.options.keySound, keySoundNames());
     this.profileMenu.refresh();
-    this.panel.relabel(t.menu.button, t.menu.region);
+    this.panel.relabel(t.menu.button, t.menu.region, t.touch.close);
     this.fingerPick.paint();
     // The streak's labels are written with its numbers: they are written again in the new language.
     this.shownStreak = '';
@@ -1559,7 +1687,7 @@ export class App implements DrillHost {
   private build(): void {
     const tabs = this.label(el('nav.tabs'), () => t.top.drills, 'aria-label');
     for (const id of DRILL_IDS) {
-      const tab = this.label(el('button.tab.ctl', { type: 'button' }), () => t.drills[id]);
+      const tab = this.label(el('button.tab.ctl', { type: 'button', 'data-id': id }), () => t.drills[id]);
       tab.addEventListener('click', () => {
         tab.blur();
         this.setDrill(id);
@@ -1584,7 +1712,7 @@ export class App implements DrillHost {
       { onCursor: (value) => this.sound.audition(value as KeySound) },
     );
     this.profileMenu = new ProfileMenu(this.store, () => this.applyProfile());
-    this.panel.relabel(t.menu.button, t.menu.region);
+    this.panel.relabel(t.menu.button, t.menu.region, t.touch.close);
     this.fingerPick.set(this.settings.focus);
 
     const fingers = el('section.fingers', {}, this.label(el('h2.fingers-title'), () => t.rail.fingers));
@@ -1619,10 +1747,26 @@ export class App implements DrillHost {
       this.wpmCap.blur();
     });
 
+    this.label(this.softField, () => t.touch.field, 'aria-label');
+    this.label(this.restartBtn, () => t.options.newText, 'aria-label');
+    const typeLabel = this.label(el('span'), () => t.touch.type);
+    this.typeBtn.append(typeLabel);
+    this.typeBtn.addEventListener('click', () => this.focusSoft());
+    // Pressing the button for new text must not take the focus from the field: the keyboard stays up.
+    this.restartBtn.addEventListener('mousedown', (event) => event.preventDefault());
+    this.restartBtn.addEventListener('click', () => this.onCommand('restart'));
+    this.scrim.addEventListener('click', () => this.panel.close(true));
+    // On a phone a tap on the text brings the keyboard up, as a tap on a text field does.
+    this.stage.addEventListener('click', (event) => {
+      if (!this.touchScreen.matches || (event.target as Element).closest('button, a, input, [role="button"], [role="option"]')) return;
+      this.focusSoft();
+    });
+
     // A plain link to the written guides in the interface language: crawlable, and it works without the app.
     const guides = this.label(this.label(el('a.top-guides.ctl'), () => t.top.guides), () => `./${this.store.settings.ui}/`, 'href');
 
     this.root.append(
+      this.softField,
       el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, guides, this.panel.button))),
       el(
         'main.cockpit',
@@ -1642,6 +1786,7 @@ export class App implements DrillHost {
               this.label(el('div.stat', {}, this.label(el('span.stat-label'), () => t.rail.streak), this.streakEl, this.streakBestEl), () => t.streak.title, 'title'),
             ),
             runPair,
+            this.restartBtn,
             fingers,
             this.label(el('p.rail-note'), () => t.rail.untracked),
           ),
@@ -1649,13 +1794,24 @@ export class App implements DrillHost {
           'aria-label',
         ),
         this.label(
-          el('section.centre', {}, this.stage, this.keyboard.root, el('div.foot', {}, this.hintsEl, this.noteEl), this.fuseEl, this.comboEl, this.sparks.canvas),
+          el(
+            'section.centre',
+            {},
+            this.stage,
+            this.keyboard.root,
+            el('div.foot', {}, this.hintsEl, this.noteEl),
+            el('div.dock', {}, this.typeBtn),
+            this.fuseEl,
+            this.comboEl,
+            this.sparks.canvas,
+          ),
           () => t.options.region,
           'aria-label',
         ),
         // The settings open in the right rail's place: the hands step aside for them.
         el('div.rail-right', {}, this.label(el('aside.rail-guide', {}, this.hands.root, this.nextEl), () => t.next.region, 'aria-label'), this.panel.root),
       ),
+      this.scrim,
       this.dangerEl,
       this.stingEl,
     );

@@ -65,6 +65,12 @@ export const de: Strings = {
     guides: 'ratgeber',
   },
 
+  touch: {
+    type: 'tippen zum schreiben',
+    field: 'hier tippen',
+    close: 'schließen',
+  },
+
   menu: {
     button: 'einstellungen',
     region: 'einstellungen',

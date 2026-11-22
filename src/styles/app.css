@@ -59,6 +59,11 @@
 html {
   font-size: clamp(11px, min(1.04167vw, 1.5625vh), 28px);
   background: var(--bg);
+  /* A tap paints no grey flash: every control has its own press. */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  /* The trainer is one screen: no pull-to-refresh, no rubber band behind it. */
+  overscroll-behavior: none;
 }
 
 body {
@@ -72,6 +77,48 @@ body {
   font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  overscroll-behavior: none;
+}
+
+/* A tap fires at once (no wait for a double tap), and a long press on a control selects nothing. */
+button,
+a,
+[role='button'] {
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+}
+
+/* The field a phone's keyboard types into (soft.ts). It sits at the top of what the screen shows,
+   so a browser lets it take the focus and has no reason to scroll to it, and nothing of it shows.
+   Its text is 16px: under that, Safari zooms the page in when it takes the focus. */
+.soft-field {
+  position: fixed;
+  top: var(--vv-top, 0px);
+  left: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  font-size: 16px;
+  color: transparent;
+  caret-color: transparent;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* The phone's own controls. Shown by the phone layout at the end of this file. */
+.dock,
+.restart-btn,
+.result-next,
+.sheet-head,
+.scrim {
+  display: none;
+}
+/* Holding anchor keys down takes a physical keyboard: the drill leaves touch screens. */
+.app[data-touch='true'] .tab[data-id='anchors'] {
+  display: none;
 }
 
 ::selection {
@@ -121,8 +168,10 @@ p {
     border-color var(--hover-out) var(--ease-out),
     scale var(--hover-out) var(--ease-out);
 }
-.ctl:hover {
-  transition-duration: var(--hover-in);
+@media (hover: hover) and (pointer: fine) {
+  .ctl:hover {
+    transition-duration: var(--hover-in);
+  }
 }
 .ctl:active {
   transition-duration: var(--press);
@@ -193,8 +242,10 @@ p {
   color: var(--muted);
   padding: 0.5rem 0;
 }
-.tab:hover {
-  color: var(--text-2);
+@media (hover: hover) and (pointer: fine) {
+  .tab:hover {
+    color: var(--text-2);
+  }
 }
 .tab.is-active {
   color: var(--text);
@@ -227,8 +278,10 @@ p {
   white-space: nowrap;
   border-radius: var(--radius);
 }
-.top-guides:hover {
-  color: var(--text);
+@media (hover: hover) and (pointer: fine) {
+  .top-guides:hover {
+    color: var(--text);
+  }
 }
 /* The one button of the top strip: it opens the settings in the right rail's place. */
 .menu-btn {
@@ -243,11 +296,17 @@ p {
   font-size: 0.9375rem;
   color: var(--text-2);
 }
-.menu-btn:hover,
 .menu-btn[aria-expanded='true'] {
   border-color: var(--muted);
   color: var(--text);
   background: var(--key);
+}
+@media (hover: hover) and (pointer: fine) {
+  .menu-btn:hover {
+    border-color: var(--muted);
+    color: var(--text);
+    background: var(--key);
+  }
 }
 .menu-icon {
   flex: none;
@@ -274,11 +333,17 @@ p {
   font-size: 0.9375rem;
   color: var(--text-2);
 }
-.select-btn:hover,
 .select.is-open .select-btn {
   border-color: var(--muted);
   color: var(--text);
   background: var(--key);
+}
+@media (hover: hover) and (pointer: fine) {
+  .select-btn:hover {
+    border-color: var(--muted);
+    color: var(--text);
+    background: var(--key);
+  }
 }
 .select-chevron {
   width: 0.625rem;
@@ -326,10 +391,15 @@ p {
   font-size: 0.9375rem;
   color: var(--text-2);
 }
-.select-option:hover,
 .select-option.is-cursor {
   background: var(--key-hover);
   color: var(--text);
+}
+@media (hover: hover) and (pointer: fine) {
+  .select-option:hover {
+    background: var(--key-hover);
+    color: var(--text);
+  }
 }
 .select-option:active {
   scale: 1;
@@ -403,9 +473,11 @@ p {
   color: var(--muted);
   opacity: 1;
 }
-.profile-input:hover {
-  border-color: var(--muted);
-  transition-duration: var(--hover-in);
+@media (hover: hover) and (pointer: fine) {
+  .profile-input:hover {
+    border-color: var(--muted);
+    transition-duration: var(--hover-in);
+  }
 }
 .profile-input:focus-visible {
   outline-offset: 0.0625rem;
@@ -421,8 +493,10 @@ p {
   color: var(--text);
   font-size: 0.875rem;
 }
-.profile-go:hover {
-  background: var(--line-strong);
+@media (hover: hover) and (pointer: fine) {
+  .profile-go:hover {
+    background: var(--line-strong);
+  }
 }
 .profile-msg {
   grid-column: 1 / -1;
@@ -476,9 +550,11 @@ p {
     background-color var(--hover-out) var(--ease-out);
 }
 /* Every off / on line of the settings shares these states. */
-.toggle:hover .switch {
-  border-color: var(--muted);
-  transition-duration: var(--hover-in);
+@media (hover: hover) and (pointer: fine) {
+  .toggle:hover .switch {
+    border-color: var(--muted);
+    transition-duration: var(--hover-in);
+  }
 }
 .toggle[aria-checked='true'] .switch {
   background: var(--line-strong);
@@ -530,8 +606,10 @@ p {
   color: var(--muted);
   transform-origin: left center;
 }
-.wpm-cap:hover {
-  color: var(--text);
+@media (hover: hover) and (pointer: fine) {
+  .wpm-cap:hover {
+    color: var(--text);
+  }
 }
 .spark {
   display: block;
@@ -745,13 +823,20 @@ p {
   transition: color var(--hover-out) var(--ease-out);
 }
 /* An off / on line is one button: its name and a switch. */
-.set-toggle:hover .set-label,
 .set-toggle[aria-checked='true'] .set-label {
   color: var(--text-2);
   transition-duration: var(--hover-in);
 }
-.set-toggle[aria-checked='true']:hover .set-label {
-  color: var(--text);
+@media (hover: hover) and (pointer: fine) {
+  .set-toggle:hover .set-label {
+    color: var(--text-2);
+    transition-duration: var(--hover-in);
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .set-toggle[aria-checked='true']:hover .set-label {
+    color: var(--text);
+  }
 }
 .set-toggle:active {
   scale: 1;
@@ -858,15 +943,19 @@ p {
   background: color-mix(in oklab, var(--f) 30%, var(--bg));
   transition: background-color var(--hover-out) var(--ease-out);
 }
-.fpick-bar:hover > span {
-  background: color-mix(in oklab, var(--f) 52%, var(--bg));
-  transition-duration: var(--hover-in);
+@media (hover: hover) and (pointer: fine) {
+  .fpick-bar:hover > span {
+    background: color-mix(in oklab, var(--f) 52%, var(--bg));
+    transition-duration: var(--hover-in);
+  }
 }
 .fpick-bar[aria-pressed='true'] > span {
   background: var(--f);
 }
-.fpick-bar[aria-pressed='true']:hover > span {
-  background: var(--f-up);
+@media (hover: hover) and (pointer: fine) {
+  .fpick-bar[aria-pressed='true']:hover > span {
+    background: var(--f-up);
+  }
 }
 
 /* ---------- highway ---------- */
@@ -1076,9 +1165,11 @@ p {
 .kb.is-pick .key[data-f] {
   cursor: pointer;
 }
-.kb.is-pick .key[data-f]:hover .cap {
-  outline-color: var(--muted);
-  transition-duration: var(--hover-in);
+@media (hover: hover) and (pointer: fine) {
+  .kb.is-pick .key[data-f]:hover .cap {
+    outline-color: var(--muted);
+    transition-duration: var(--hover-in);
+  }
 }
 .kb.is-pick .key[data-f]:active .cap {
   scale: 0.93;
@@ -1109,9 +1200,11 @@ p {
   color: var(--text-2);
   white-space: nowrap;
 }
-.seg-btn:hover {
-  color: var(--text);
-  background: var(--key-hover);
+@media (hover: hover) and (pointer: fine) {
+  .seg-btn:hover {
+    color: var(--text);
+    background: var(--key-hover);
+  }
 }
 .seg-btn.is-on {
   background: var(--line-strong);
@@ -1987,8 +2080,13 @@ p {
   opacity: calc(1 - var(--tunnel, 0) * 0.78);
 }
 /* A hand that leaves the keys for the controls finds them at full strength. */
-.app[data-fuse='lit'] .top:is(:hover, :focus-within) {
+.app[data-fuse='lit'] .top:focus-within {
   opacity: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+  .app[data-fuse='lit'] .top:hover {
+    opacity: 1;
+  }
 }
 /* On the board only the keys in play keep their color. */
 .app[data-fuse='lit'] .kb .key:not(.is-next, .is-shift, .is-erase, .is-anchor, .is-wrong, .is-down) .cap {
@@ -2129,9 +2227,11 @@ p {
   font-size: 0.8125rem;
   color: var(--text-2);
 }
-.stats-clear:hover {
-  color: var(--text);
-  background: var(--key);
+@media (hover: hover) and (pointer: fine) {
+  .stats-clear:hover {
+    color: var(--text);
+    background: var(--key);
+  }
 }
 .stats-chart-wrap {
   min-width: 0;
@@ -2217,8 +2317,10 @@ p {
 .stats-pick .tok {
   --size: 1.125rem;
 }
-.stats-pick:hover {
-  background: var(--key);
+@media (hover: hover) and (pointer: fine) {
+  .stats-pick:hover {
+    background: var(--key);
+  }
 }
 .stats-pick[aria-pressed='true'] {
   background: var(--line-strong);
@@ -2257,7 +2359,7 @@ p {
 
 /* ---------- narrow screens ---------- */
 
-/* A phone cannot drive a keyboard trainer; the guides link gives its room to the settings button. */
+/* On a phone's width the guides link gives its room to the settings button. */
 @media (max-width: 30rem) {
   .top-guides {
     display: none;
@@ -2533,6 +2635,459 @@ p {
   .anchor-drill {
     position: static;
     padding: 0 0 0.5rem;
+  }
+}
+
+/* ---------- phone ----------
+   A phone types on its own on-screen keyboard, which takes the lower half of the screen.
+   The shell is sized to what stays visible (--vv-h, written by viewport.ts), and keeps
+   three things in it: the numbers on one line, the text, and at the foot either the
+   keyboard (once it is up) or the button that brings it up. The board folds away: on a
+   phone the thumbs type, so no key cap needs showing, and the highway still reads its
+   lanes from the folded board's width. Landscape phones and touch tablets take it too. */
+
+@media (max-width: 700px), (pointer: coarse) and (hover: none) and (max-width: 1100px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    overflow: hidden;
+  }
+  .app {
+    position: fixed;
+    top: var(--vv-top, 0px);
+    left: 0;
+    right: 0;
+    height: var(--vv-h, 100dvh);
+    min-height: 0;
+    grid-template-rows: auto minmax(0, 1fr);
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  }
+
+  /* Line one: the wordmark and the settings button. Line two: the drills, a thumb's height each. */
+  .top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .top-in {
+    padding: 0.375rem 0.625rem 0 1rem;
+    gap: 0 0.5rem;
+  }
+  .menu-btn {
+    min-height: 44px;
+    padding: 0 0.875rem 0 0.75rem;
+    border-color: transparent;
+  }
+  .menu-btn[aria-expanded='true'] {
+    border-color: transparent;
+  }
+  .tabs {
+    gap: 0;
+    margin: 0 -0.625rem 0 -1rem;
+    width: calc(100% + 1.625rem);
+    padding: 0 0.5rem;
+  }
+  :lang(fr) .tabs,
+  :lang(de) .tabs,
+  :lang(es) .tabs {
+    gap: 0;
+  }
+  .tab {
+    position: relative;
+    flex: none;
+    min-height: 44px;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+  /* The drill in use is underlined in the warm text color, flush with the strip's hairline. */
+  .tab.is-active::after {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: -1px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--text);
+  }
+  .tab:active {
+    scale: 1;
+    color: var(--text-2);
+  }
+
+  /* A grid item with auto margins shrinks to its content: the cockpit takes the full width instead. */
+  .top-in,
+  .cockpit {
+    width: 100%;
+    margin: 0;
+  }
+  /* The rows are named, so the cockpit keeps the tall one when the top strip steps out. */
+  .top {
+    grid-row: 1;
+  }
+  .cockpit {
+    grid-row: 2;
+    min-height: 0;
+    padding: 0 1rem;
+  }
+
+  /* The numbers: the rolling WPM over its window on the left; accuracy and streak, each name over
+     its value, then new text on the right. A grid, so no figure or longer language moves the rest. */
+  .rail-left {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding-top: 0.75rem;
+  }
+  .wpm-line {
+    grid-area: 1 / 1;
+    display: flex;
+    align-items: baseline;
+  }
+  .wpm {
+    font-size: 2.75rem;
+  }
+  .wpm-floor {
+    font-size: 1.125rem;
+  }
+  .wpm-cap {
+    grid-area: 2 / 1;
+    justify-self: start;
+    margin: 0.125rem 0 0;
+    text-align: left;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+  .pair {
+    grid-area: 1 / 2 / 3 / 3;
+    margin: 0;
+    display: flex;
+    gap: 1.25rem;
+  }
+  .stat,
+  .stat + .pair-rule + .stat {
+    display: grid;
+    gap: 0.125rem;
+    padding-left: 0;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .stat-value {
+    font-size: 1.125rem;
+    line-height: 1.1;
+  }
+  .restart-btn {
+    grid-area: 1 / 3 / 3 / 4;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-right: -0.75rem;
+    border-radius: var(--radius);
+    color: var(--text-2);
+  }
+  .restart-btn .menu-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+  .restart-btn:active {
+    background: var(--key);
+    color: var(--text);
+  }
+  .app[data-drill='stats'] .restart-btn {
+    visibility: hidden;
+  }
+  /* Hardcore's run and the note that tracking is off each take a line of their own. */
+  .pair.run {
+    grid-area: 3 / 1 / 4 / -1;
+    margin: 0.5rem 0 0;
+    gap: 1.5rem;
+  }
+  .pair.run .stat {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .rail-note {
+    grid-area: 4 / 1 / 5 / -1;
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+  }
+
+  /* The text over the board's folded row, the line for what the stage has to say, then the dock. */
+  .centre {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding-top: 0.25rem;
+    grid-template-rows: minmax(0, 1fr) 0 auto auto;
+  }
+  .kb {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  .foot {
+    min-height: 1.75rem;
+    padding: 0;
+  }
+  .hints,
+  .rail-guide {
+    display: none;
+  }
+  .stage-note {
+    font-size: 0.875rem;
+  }
+  /* The text hangs from the top: when the keyboard comes up under it, it stays where it was. */
+  .line-drill {
+    justify-content: flex-start;
+    padding: 1.25rem 0 0.5rem;
+  }
+  .line-meta {
+    margin-bottom: 0.25rem;
+    font-size: 0.8125rem;
+  }
+  .combo {
+    grid-row: 1;
+    top: auto;
+    bottom: 0.25rem;
+    right: 0;
+  }
+  .sparks {
+    grid-row: 1 / 3;
+  }
+
+  /* The button that brings the keyboard up: a long key cap, like a space bar, in the thumb's reach. */
+  .app[data-touch='true'] .dock {
+    display: block;
+    padding: 0.5rem 0 calc(0.75rem + env(safe-area-inset-bottom));
+  }
+  .type-btn {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    border-radius: 0.75rem;
+    background: var(--key);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07);
+    color: var(--text);
+    font-size: 1rem;
+  }
+  .type-btn .menu-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--text-2);
+  }
+  .type-btn:active {
+    scale: 0.975;
+    background: var(--key-hover);
+  }
+  /* With the keyboard up, the screen is the text: the top strip and the dock step out. */
+  .app[data-kbd='open'] .top,
+  .app[data-kbd='open'] .dock,
+  .app[data-rest='true'] .dock {
+    display: none;
+  }
+  .app[data-kbd='open'] .rail-left {
+    padding-top: max(0.5rem, env(safe-area-inset-top));
+  }
+
+  /* The result reads from the top and scrolls when the keyboard leaves it little room. */
+  .result {
+    justify-content: flex-start;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.75rem 0 1rem;
+  }
+  .result-wpm {
+    font-size: 3.5rem;
+  }
+  .result-list {
+    margin-top: 1.25rem;
+    gap: 0.5rem 1.25rem;
+    font-size: 1rem;
+  }
+  .app[data-touch='true'] .result-hint {
+    display: none;
+  }
+  .app[data-touch='true'] .result-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    align-self: stretch;
+    height: 3.25rem;
+    margin-top: 1.5rem;
+    border-radius: 0.75rem;
+    background: var(--key);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07);
+    color: var(--text);
+    font-size: 1rem;
+  }
+  .result-next:active {
+    scale: 0.975;
+    background: var(--key-hover);
+  }
+
+  /* The stats view is a page: it scrolls in the shell, and its board comes back as the heat map to pick keys on. */
+  .app[data-drill='stats'] .centre {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    grid-template-rows: auto auto auto 0;
+  }
+  .app[data-drill='stats'] .kb {
+    height: auto;
+    margin: 1rem 0 0;
+    overflow: visible;
+    visibility: visible;
+  }
+
+  /* The settings: a sheet that rises over a dimmed screen. Its name and a close button stay at its top. */
+  .rail-right {
+    order: 0;
+  }
+  .settings,
+  .app[data-menu='true'] .settings {
+    position: fixed;
+    z-index: 30;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    max-height: calc(var(--vv-h, 100dvh) - 2.5rem - env(safe-area-inset-top));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0 max(1.25rem, env(safe-area-inset-right)) calc(1.5rem + env(safe-area-inset-bottom)) max(1.25rem, env(safe-area-inset-left));
+    background: var(--bg);
+    border-top: 1px solid var(--line-strong);
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 -0.75rem 2.5rem rgb(0 0 0 / 0.4);
+    opacity: 1;
+  }
+  .settings {
+    translate: 0 100%;
+    visibility: hidden;
+    transition:
+      translate 280ms var(--ease-out),
+      visibility 0s linear 280ms;
+  }
+  .app[data-menu='true'] .settings {
+    translate: 0 0;
+    visibility: visible;
+    transition:
+      translate 360ms var(--ease-out),
+      visibility 0s;
+  }
+  .sheet-head {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    margin: 0 -0.75rem 0.75rem 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  .sheet-title {
+    font-size: 1rem;
+    color: var(--text);
+  }
+  .sheet-close {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius);
+    color: var(--text-2);
+  }
+  .sheet-close:active {
+    background: var(--key);
+    color: var(--text);
+  }
+  .scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 29;
+    background: rgb(12 13 16 / 0.62);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 280ms var(--ease-out);
+  }
+  .app[data-menu='true'] .scrim {
+    opacity: 1;
+    pointer-events: auto;
+    transition-duration: 360ms;
+  }
+  /* Every line of the sheet is a thumb's height, and its names get the room French and German need. */
+  .set-list {
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    row-gap: 0.375rem;
+    font-size: 0.9375rem;
+  }
+  .set-row {
+    min-height: 44px;
+  }
+  .set-row.is-top > .set-label {
+    line-height: 44px;
+  }
+  .set-label {
+    white-space: normal;
+  }
+  .settings .seg-btn {
+    min-height: 2.25rem;
+    min-width: 2.25rem;
+    padding-inline: 0.5rem;
+  }
+  .settings .select-btn {
+    height: 44px;
+    font-size: 0.9375rem;
+  }
+  .settings .select-option {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9375rem;
+  }
+  .fpick {
+    height: 2.75rem;
+  }
+  .fpick-bar {
+    width: 1.5rem;
+  }
+}
+
+/* A phone on its side: the keyboard leaves a strip. The text shows two lines, the numbers stay on one. */
+@media (pointer: coarse) and (hover: none) and (max-height: 500px) {
+  .app[data-kbd='open'] .rail-left {
+    padding-top: 0.25rem;
+  }
+  .app[data-kbd='open'] .wpm {
+    font-size: 2rem;
+  }
+  .app[data-kbd='open'] .line-view {
+    height: 7rem;
+  }
+  .app[data-kbd='open'] .line-meta,
+  .app[data-kbd='open'] .combo,
+  .app[data-kbd='open'] .foot {
+    display: none;
+  }
+  .app[data-kbd='open'] .line-drill {
+    padding-top: 0;
   }
 }
 

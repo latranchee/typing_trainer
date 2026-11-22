@@ -33,6 +33,10 @@ The trainer applies the layout itself from physical key positions (`KeyboardEven
 
 Layouts: Canadian French (with dead-key accents), US QWERTY, French AZERTY (accents on the number row, digits with Shift), German QWERTZ (umlauts, dead-key accents), Swiss German QWERTZ (ü ö ä with the French è é à on Shift), Spanish (ñ, dead-key accents, ¡ and ¿), Latin American (ñ, dead-key accents, braces beside the home row), Dvorak, Colemak, Colemak-DH (angle fingering on the left bottom row), Workman.
 
+## On a phone
+
+On a phone the trainer types with the phone's own keyboard: tap the text or `tap to type` and type. Each character counts as the keys the selected layout uses for it, so French accents work with any layout that has them. The numbers sit on one line over the text, the settings rise from the bottom, and the on-screen keyboard folds away (it comes back in the stats view). The anchor drill needs keys held down, so it is left out on touch screens, and a result there names no finger: a phone cannot tell which finger typed.
+
 ## Settings
 
 `settings` at the right of the top strip opens one list in place of the hands: the open drill's options, the fingers to train, hardcore, the key sound, the layout and the shape of your keyboard, the profile, tracking and the interface language. The text and the board stay in view beside it, so you see a change as you make it. It closes on its button, on `esc`, on a click outside it, and at the first key you type.

@@ -29,6 +29,22 @@ function slidersIcon(): SVGSVGElement {
   return svg;
 }
 
+/** A cross, drawn with the same stroke as the sliders. */
+function closeIcon(): SVGSVGElement {
+  const svg = document.createElementNS(SVG, 'svg');
+  svg.setAttribute('viewBox', '0 0 16 16');
+  svg.setAttribute('class', 'menu-icon');
+  svg.setAttribute('aria-hidden', 'true');
+  const path = document.createElementNS(SVG, 'path');
+  path.setAttribute('d', 'M3.5 3.5l9 9M12.5 3.5l-9 9');
+  path.setAttribute('fill', 'none');
+  path.setAttribute('stroke', 'currentColor');
+  path.setAttribute('stroke-width', '1.4');
+  path.setAttribute('stroke-linecap', 'round');
+  svg.append(path);
+  return svg;
+}
+
 /**
  * The settings panel and the button that opens it. The panel takes the place of
  * the right rail: the stage and the board stay in view, so a change shows at once.
@@ -40,13 +56,17 @@ export class Panel {
   /** The rows of the list. The app writes them. */
   readonly body = el('div.set-list');
   private label = el('span');
+  /** On a phone the list is a sheet over the screen: its name and a button that closes it head it. */
+  private title = el('h2.sheet-title');
+  private closer = el('button.sheet-close.ctl', { type: 'button' }, closeIcon());
   private onToggle: (open: boolean) => void;
 
   /** `onToggle` runs after the panel opened or closed. */
   constructor(onToggle: (open: boolean) => void) {
     this.onToggle = onToggle;
     this.button.append(slidersIcon(), this.label);
-    this.root.append(this.body);
+    this.root.append(el('div.sheet-head', {}, this.title, this.closer), this.body);
+    this.closer.addEventListener('click', () => this.close(true));
 
     this.button.addEventListener('click', (event) => {
       // A click from the keyboard has no pointer behind it: the focus then moves into the list.
@@ -67,10 +87,12 @@ export class Panel {
     return this.button.getAttribute('aria-expanded') === 'true';
   }
 
-  /** The button's word and the panel's name, in the interface language. */
-  relabel(button: string, region: string): void {
+  /** The button's word, the panel's name and the word of its close button, in the interface language. */
+  relabel(button: string, region: string, close: string): void {
     this.label.textContent = button;
+    this.title.textContent = region;
     this.root.setAttribute('aria-label', region);
+    this.closer.setAttribute('aria-label', close);
   }
 
   open(focus = false): void {
