@@ -1058,17 +1058,29 @@ p {
   margin: 2.25rem 0.625rem 0;
   display: grid;
   row-gap: var(--kb-gap);
+  /* Its height eases to and from nothing when the board is hidden. Coming back, it clips its rows until
+     it has its height again, so they do not spill over the foot on the way. */
+  interpolate-size: allow-keywords;
   transition:
     opacity var(--hover-in) var(--ease-out),
+    height var(--hover-out) var(--ease-out),
+    margin-top var(--hover-out) var(--ease-out),
+    overflow 0s linear var(--hover-out) allow-discrete,
     visibility 0s;
 }
-/* Typing from memory: the board fades out but keeps its room, so the stage and the highway's lanes stay
-   where they are. The stats keep their board: it is their heat map. */
+/* Typing from memory: the board fades out and folds to nothing, and the stage takes its room, so the
+   highway's lanes run down to the foot and the text sits in the middle of the column. The keys keep
+   their width and place across, which the lanes are read from. The stats keep their board: it is their heat map. */
 .app[data-keys='hidden']:not([data-drill='stats']) .kb {
+  height: 0;
+  margin-top: 0;
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   transition:
     opacity var(--hover-out) var(--ease-out),
+    height var(--hover-out) var(--ease-out),
+    margin-top var(--hover-out) var(--ease-out),
     visibility 0s linear var(--hover-out);
 }
 .kb-row {
