@@ -1,5 +1,6 @@
 import type { Finger, FingerKind } from './fingers';
 import { fingerHand, fingerKind } from './fingers';
+import type { FontFeature } from './font';
 import type { Difficulty } from './hardcore';
 import { de } from './i18n-de';
 import { es } from './i18n-es';
@@ -90,7 +91,25 @@ const en = {
     fontOptical: 'optical size',
     fontAuto: 'auto',
     fontAutoTitle: 'let each size pick its optical size',
-    fontNote: 'Allo, by Josh Puckett. The highway draws its notes at the default roundness.',
+    fontNote: 'Allo, by Josh Puckett. The highway draws its notes at the default roundness and letterforms.',
+    fontMore: 'more options',
+    fontMoreTitle: 'alternate letters and figures, fractions, ligatures',
+    /** Allo's features: each one's name, and what it does on hover. */
+    fontFeatures: {
+      ss01: { name: 'single-story a', title: 'an a with one round bowl, as handwriting draws it' },
+      ss02: { name: 'disambiguation', title: 'the next four at once: I, l, 1 and 0 told apart at a glance' },
+      cv04: { name: 'serifed I', title: 'a capital I with serifs, so it reads apart from l' },
+      cv03: { name: 'tailed l', title: 'an l with a tail, so it reads apart from I and 1' },
+      cv01: { name: 'footed 1', title: 'a 1 standing on a foot' },
+      zero: { name: 'slashed zero', title: 'a zero with a slash, so it reads apart from O' },
+      cv05: { name: 'dotted zero', title: 'a zero with a dot in its middle' },
+      ss03: { name: 'open figures', title: '4, 6 and 9 drawn open' },
+      tnum: { name: 'tabular figures', title: 'every figure as wide as the next, so numbers hold still as they change' },
+      frac: { name: 'fractions', title: '1/2 set as one fraction' },
+      case: { name: 'capital forms', title: 'brackets, dashes and signs raised to the height of capitals, everywhere' },
+      liga: { name: 'ligatures', title: 'tt, ff, tf and ft share their crossbar' },
+      calt: { name: 'contextual forms', title: '-> turns into an arrow; brackets and signs rise beside capitals and figures' },
+    } satisfies Record<FontFeature, { name: string; title: string }>,
     hideKeyboard: 'hide keyboard',
     hideKeyboardTitle: 'type from memory: the on-screen keyboard steps aside',
     focus: 'fingers',
@@ -395,7 +414,24 @@ const fr: Strings = {
     fontOptical: 'taille optique',
     fontAuto: 'auto',
     fontAutoTitle: 'chaque taille choisit sa taille optique',
-    fontNote: 'Allo, de Josh Puckett. L’autoroute dessine ses notes avec l’arrondi par défaut.',
+    fontNote: 'Allo, de Josh Puckett. L’autoroute dessine ses notes avec l’arrondi et les formes par défaut.',
+    fontMore: 'plus d’options',
+    fontMoreTitle: 'lettres et chiffres alternatifs, fractions, ligatures',
+    fontFeatures: {
+      ss01: { name: 'a à une boucle', title: 'un a à une seule panse ronde, comme à la main' },
+      ss02: { name: 'désambiguïsation', title: 'les quatre suivants d’un coup: I, l, 1 et 0 se distinguent d’un coup d’œil' },
+      cv04: { name: 'I à empattements', title: 'un I majuscule à empattements, qui se distingue du l' },
+      cv03: { name: 'l à queue', title: 'un l avec une queue, qui se distingue du I et du 1' },
+      cv01: { name: '1 avec pied', title: 'un 1 posé sur un pied' },
+      zero: { name: 'zéro barré', title: 'un zéro barré, qui se distingue du O' },
+      cv05: { name: 'zéro pointé', title: 'un zéro avec un point au centre' },
+      ss03: { name: 'chiffres ouverts', title: '4, 6 et 9 dessinés ouverts' },
+      tnum: { name: 'chiffres tabulaires', title: 'chaque chiffre aussi large que les autres: les nombres restent en place quand ils changent' },
+      frac: { name: 'fractions', title: '1/2 composé en une seule fraction' },
+      case: { name: 'formes capitales', title: 'parenthèses, tirets et signes levés à la hauteur des capitales, partout' },
+      liga: { name: 'ligatures', title: 'tt, ff, tf et ft partagent leur barre' },
+      calt: { name: 'formes en contexte', title: '-> devient une flèche; parenthèses et signes se lèvent à côté des capitales et des chiffres' },
+    },
     hideKeyboard: 'cacher le clavier',
     hideKeyboardTitle: 'tape de mémoire: le clavier à l’écran s’efface',
     focus: 'doigts',

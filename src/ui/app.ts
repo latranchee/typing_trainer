@@ -21,7 +21,8 @@ import {
 } from '../core/hardcore';
 import type { KeyTally } from '../core/history';
 import { WORDS } from '../core/corpus';
-import { AXES } from '../core/font';
+import type { FontFeature } from '../core/font';
+import { AXES, FONT_FEATURES, featureOn, setFeature } from '../core/font';
 import { LANG_NAMES, o, preferredLang, preferredLayout, setUiLang, t } from '../core/i18n';
 import type { Command, KeyEvt } from '../core/input';
 import { attachInput, SOFT_FIELD } from '../core/input';
@@ -104,6 +105,34 @@ function launchStore(): Store {
 }
 
 const SVG = 'http://www.w3.org/2000/svg';
+
+type FontSettings = Pick<Settings, 'fontWeight' | 'fontRound' | 'fontOptical' | 'fontFeatures'>;
+
+/** What each feature changes, as a few letters. Between two `*` the letters it changes, lit. */
+const FEATURE_SAMPLES: Record<FontFeature, string> = {
+  ss01: 'd*a*t*a*',
+  ss02: '*Il10*',
+  cv04: '*I*ris',
+  cv03: 'a*ll*',
+  cv01: '*1*984',
+  zero: '4*0*4',
+  cv05: '*00*7',
+  ss03: '*469*',
+  tnum: '*1111*',
+  frac: '*3/4*',
+  case: '*(*x*-*y*)*',
+  liga: '*ff tt*',
+  calt: 'a *->* b',
+};
+
+/** A feature's sample, set with that feature alone so it shows what the switch gives. Read by its line's name, not aloud. */
+function featureSample(feature: FontFeature): HTMLElement {
+  const sample = el('span.feat-sample', { 'aria-hidden': 'true', style: `font-feature-settings: "${feature}" 1` });
+  FEATURE_SAMPLES[feature].split('*').forEach((part, i) => {
+    if (part) sample.append(i % 2 === 1 ? el('b', {}, part) : part);
+  });
+  return sample;
+}
 
 /** A small icon in the stroke the settings button's sliders use. */
 function strokeIcon(d: string): SVGSVGElement {
@@ -256,6 +285,12 @@ export class App implements DrillHost {
   private opticalAuto = el('button.slider-auto.ctl', { type: 'button' });
   /** The label of the switch just clicked: it is drawn again in its old state and slides to the new one. */
   private flipped: string | null = null;
+  /** The font's features, listed under `more options` while this is on. Not saved: the list starts folded. */
+  private fontMore = false;
+  /** The features list was just unfolded: it fades in on this drawing only, not on every click inside it. */
+  private fontMoreOpening = false;
+  /** The feature switches the last click flipped (a group flips several): each slides from its old side. */
+  private flippedFeatures = new Set<FontFeature>();
   private profileMenu!: ProfileMenu;
   private mark = brandMark();
   private wpmEl = el('output.wpm', {}, '0');
@@ -1514,27 +1549,83 @@ export class App implements DrillHost {
   // ---------- font ----------
 
   /** The page in the font being dragged, nothing saved: the other axes keep their saved values. */
-  private showFont(patch: Partial<Pick<Settings, 'fontWeight' | 'fontRound' | 'fontOptical'>>): void {
+  private showFont(patch: Partial<FontSettings>): void {
     const font = { ...this.fontSettings(), ...patch };
-    applyFont(font.fontWeight, font.fontRound, font.fontOptical);
+    applyFont(font.fontWeight, font.fontRound, font.fontOptical, font.fontFeatures);
     if ('fontOptical' in patch) this.showOptical(font.fontOptical);
   }
 
-  private saveFont(patch: Partial<Pick<Settings, 'fontWeight' | 'fontRound' | 'fontOptical'>>): void {
+  private saveFont(patch: Partial<FontSettings>): void {
     this.store.update(patch);
     this.syncFont();
   }
 
-  private fontSettings(): Pick<Settings, 'fontWeight' | 'fontRound' | 'fontOptical'> {
-    const { fontWeight, fontRound, fontOptical } = this.settings;
-    return { fontWeight, fontRound, fontOptical };
+  private fontSettings(): FontSettings {
+    const { fontWeight, fontRound, fontOptical, fontFeatures } = this.settings;
+    return { fontWeight, fontRound, fontOptical, fontFeatures };
   }
 
   /** The page and the optical size's readout, as saved. */
   private syncFont(): void {
-    const { fontWeight, fontRound, fontOptical } = this.settings;
-    applyFont(fontWeight, fontRound, fontOptical);
+    const { fontWeight, fontRound, fontOptical, fontFeatures } = this.settings;
+    applyFont(fontWeight, fontRound, fontOptical, fontFeatures);
     this.showOptical(fontOptical);
+  }
+
+  /** Flips one feature (a group flips its parts), saves it and draws the list again with the flipped switches sliding. */
+  private flipFeature(feature: FontFeature): void {
+    const before = this.settings.fontFeatures;
+    const after = setFeature(before, feature, !featureOn(before, feature));
+    this.flippedFeatures = new Set(FONT_FEATURES.filter((item) => featureOn(before, item) !== featureOn(after, item)));
+    this.saveFont({ fontFeatures: after });
+    this.renderOptions();
+  }
+
+  /** The button that folds the features in and out of the list. */
+  private fontMoreEl(): HTMLElement {
+    const button = el(
+      'button.set-more.ctl',
+      { type: 'button', 'aria-expanded': String(this.fontMore), 'aria-controls': 'font-features', title: t.menu.fontMoreTitle },
+      el('span', {}, t.menu.fontMore),
+      strokeIcon('M4.5 6.5 8 10l3.5-3.5'),
+    );
+    button.addEventListener('click', () => {
+      this.fontMore = !this.fontMore;
+      this.fontMoreOpening = this.fontMore;
+      button.blur();
+      this.renderOptions();
+    });
+    return button;
+  }
+
+  /**
+   * The features, one switch each: on the left a sample set with the feature on, its changed letters
+   * lit, then the switch, the feature's name and its OpenType tag.
+   */
+  private fontFeaturesEl(): HTMLElement {
+    const on = this.settings.fontFeatures;
+    const list = el('div.set-feats', { id: 'font-features', role: 'group', 'aria-label': t.menu.fontMore });
+    if (this.fontMoreOpening) list.classList.add('is-opening');
+    this.fontMoreOpening = false;
+    for (const feature of FONT_FEATURES) {
+      const lit = featureOn(on, feature);
+      const slides = this.flippedFeatures.has(feature);
+      const { name, title } = t.menu.fontFeatures[feature];
+      const button = el(
+        'button.set-row.set-toggle.set-feat.toggle.ctl',
+        { type: 'button', role: 'switch', 'aria-checked': String(slides ? !lit : lit), title: `${feature} · ${title}` },
+        featureSample(feature),
+        el('span.feat-line', {}, el('span.switch', { 'aria-hidden': 'true' }), el('span.set-label.feat-name', {}, name), el('span.feat-tag', { 'aria-hidden': 'true' }, feature)),
+      );
+      if (slides) requestAnimationFrame(() => requestAnimationFrame(() => button.setAttribute('aria-checked', String(lit))));
+      button.addEventListener('click', () => {
+        button.blur();
+        this.flipFeature(feature);
+      });
+      list.append(button);
+    }
+    this.flippedFeatures = new Set();
+    return list;
   }
 
   /** On auto the readout says so and the thumb rests on the font's default; fixed, a button offers auto again. */
@@ -2046,6 +2137,8 @@ export class App implements DrillHost {
       this.row(t.menu.fontWeight, this.weightSlider.root, 'is-slider'),
       this.row(t.menu.fontRound, this.roundSlider.root, 'is-slider'),
       this.row(t.menu.fontOptical, this.opticalSlider.root, 'is-slider'),
+      this.fontMoreEl(),
+      this.fontMore ? this.fontFeaturesEl() : null,
       el('p.set-note.is-under', {}, t.menu.fontNote),
     ]);
 

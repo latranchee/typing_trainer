@@ -5,7 +5,8 @@ import { DEFAULT_FOCUS, TYPING_FINGERS } from './generator';
 import type { Difficulty, Floor, RunBest } from './hardcore';
 import { DEFAULT_DIFFICULTY, DIFFICULTIES, FLOORS } from './hardcore';
 import type { HistoryEntry } from './history';
-import { AXES, onAxis } from './font';
+import type { FontFeature } from './font';
+import { AXES, DEFAULT_FEATURES, onAxis, savedFeatures } from './font';
 import { compactHistory } from './history';
 import { preferredLang } from './i18n';
 import type { Layout, LayoutId } from './layouts';
@@ -68,6 +69,8 @@ export interface Settings {
   fontRound: number;
   /** Allo's optical size for every size, or null to let the browser match it to each size. */
   fontOptical: number | null;
+  /** Allo's OpenType features that are on: alternate letters and figures, fractions, ligatures. */
+  fontFeatures: FontFeature[];
   /** The on-screen keyboard stays out of sight in the typing drills, to type from memory. */
   hideKeyboard: boolean;
 }
@@ -100,6 +103,7 @@ export const DEFAULT_SETTINGS: Settings = {
   fontWeight: AXES.weight.base,
   fontRound: AXES.round.base,
   fontOptical: null,
+  fontFeatures: [...DEFAULT_FEATURES],
   hideKeyboard: false,
 };
 
@@ -239,6 +243,7 @@ function cleanSettings(saved: Partial<Settings> | undefined, preferred: Lang): S
   settings.fontWeight = onAxis(settings.fontWeight, AXES.weight, AXES.weight.base);
   settings.fontRound = onAxis(settings.fontRound, AXES.round, AXES.round.base);
   settings.fontOptical = onAxis(settings.fontOptical, AXES.optical, null);
+  settings.fontFeatures = savedFeatures(settings.fontFeatures);
   if (typeof settings.hideKeyboard !== 'boolean') settings.hideKeyboard = false;
   return settings;
 }
