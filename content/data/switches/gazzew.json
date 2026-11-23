@@ -1,0 +1,319 @@
+{
+  "maker": {
+    "id": "gazzew",
+    "name": "Gazzew",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "about": "Switch designer behind the Boba U4 and U4T, made by Outemu and sold through vendors such as Pantheon Keys.",
+    "sources": [
+      {
+        "title": "Pantheon Keys: Gazzew Boba U4T (Thocky) Tactile Switches",
+        "url": "https://pantheonkeys.com/products/gazzew-boba-u4t",
+        "kind": "retailer",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Gazzew's Boba U4 Switch Review",
+        "url": "https://www.theremingoat.com/blog/boba-u4-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "gazzew-boba-gum",
+      "name": "Boba Gum",
+      "maker": "gazzew",
+      "made_by": "outemu",
+      "family": "Boba",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Boba plastic",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Pantheon Keys: Gazzew Boba Gum RGB Silent Linear Switches",
+          "url": "https://pantheonkeys.com/products/gazzews-boba-gum-rgb-silent-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "total_travel_mm",
+            "materials",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in 52g, 55g, 62g and 68g bottom-out weights; the leaf is factory lubed, the rails are dry. Pantheon Keys says it is discontinued."
+    },
+    {
+      "id": "gazzew-boba-u4",
+      "name": "Boba U4",
+      "maker": "gazzew",
+      "made_by": "outemu",
+      "family": "Boba",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Boba plastic",
+        "bottom": "Boba plastic",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/boba-u4-switch-review",
+          "date": "2020-08-07",
+          "score": null,
+          "verdict": "Further proof of Gazzew's progress with Outemu: a silent tactile with a prominent rounded bump and quiet stainless springs."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/gazzew/boba-u4-62g",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pantheon Keys: Gazzew Boba U4 Silent Tactile Switches",
+          "url": "https://pantheonkeys.com/products/gazzews-boba-u4-silent-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Gazzew's Boba U4 Switch Review",
+          "url": "https://www.theremingoat.com/blog/boba-u4-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in 62g and 68g bottom-out weights; light factory lube."
+    },
+    {
+      "id": "gazzew-boba-u4-v3",
+      "name": "Boba U4 V3",
+      "maker": "gazzew",
+      "made_by": "outemu",
+      "family": "Boba",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Boba plastic",
+        "bottom": "Boba plastic",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Pantheon Keys: Gazzew Boba U4 V3 Silent Tactile Switches",
+          "url": "https://pantheonkeys.com/products/gazzew-boba-u4-v3-silent-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Fully clear V3 housings for PCB LEDs; light factory lube."
+    },
+    {
+      "id": "gazzew-boba-u4t",
+      "name": "Boba U4T",
+      "maker": "gazzew",
+      "made_by": "outemu",
+      "family": "Boba",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Boba plastic",
+        "bottom": "Boba plastic",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/gazzew/boba-u4t-62g",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pantheon Keys: Gazzew Boba U4T (Thocky) Tactile Switches",
+          "url": "https://pantheonkeys.com/products/gazzew-boba-u4t",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Long-pole tactile sold in 62g and 68g bottom-out weights; light factory lube; the milky housing was replaced by an all-black one. Pantheon Keys lists 3.2mm total travel, which other listings put at 4mm, so it is left out."
+    },
+    {
+      "id": "gazzew-u4tx",
+      "name": "U4Tx",
+      "maker": "gazzew",
+      "made_by": "outemu",
+      "family": "U4",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Gazzew plastic (PC on the RGB version)",
+        "bottom": "Gazzew plastic",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Pantheon Keys: Gazzew U4Tx Tactile Switches",
+          "url": "https://pantheonkeys.com/products/gazzew-u4tx-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Semi-silent tactile: pads on the box-style dustproof stem quiet the upstroke; light factory lube."
+    }
+  ]
+}

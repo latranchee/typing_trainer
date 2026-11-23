@@ -1,0 +1,980 @@
+{
+  "brand": {
+    "id": "realforce",
+    "name": "REALFORCE",
+    "country": "JP",
+    "founded": null,
+    "official_url": "https://www.realforce.co.jp/en/",
+    "focus": [
+      "premium",
+      "office",
+      "gaming"
+    ],
+    "about": "REALFORCE is the keyboard brand of Topre, the Japanese maker of capacitive non-contact Topre switches; its boards are made in Japan.",
+    "sources": [
+      {
+        "title": "REALFORCE: All products",
+        "url": "https://www.realforce.co.jp/en/products/series_all.html",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "REALFORCE: R4HB11",
+        "url": "https://www.realforce.co.jp/en/products/R4HB11/",
+        "kind": "official",
+        "backs": [
+          "country"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "realforce-gx1",
+      "brand": "realforce",
+      "model": "GX1",
+      "aka": [
+        "GX1 Keyboard",
+        "X1UD11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/X1UD11/",
+      "reviews": [
+        {
+          "outlet": "PC Watch",
+          "url": "https://pc.watch.impress.co.jp/docs/column/kaimono/1547299.html",
+          "date": "2023-11-17",
+          "score": null,
+          "verdict": "Japanese buyer column: the writer wanted an all-30g, tenkeyless, silent, wired board and settled on the GX1."
+        }
+      ],
+      "sources": [
+        {
+          "title": "REALFORCE: GX1 Keyboard / X1UD11",
+          "url": "https://www.realforce.co.jp/en/products/X1UD11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: GX1 Keyboard / X1UD13",
+          "url": "https://www.realforce.co.jp/en/products/X1UD13/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: GX1 Plus / GX1 series page",
+          "url": "https://www.realforce.co.jp/en/products/series_gaming_gx1.html",
+          "kind": "official",
+          "backs": [
+            "adjustable_actuation",
+            "rapid_trigger",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dual-APC: actuation set from 0.1 to 3.0 mm in 0.1 mm steps, with Dynamic Mode (rapid-trigger style release). Black or Super White, 45g or 30g silent. No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    },
+    {
+      "id": "realforce-gx1-plus",
+      "brand": "realforce",
+      "model": "GX1 Plus",
+      "aka": [
+        "GX1 Plus Keyboard",
+        "X1PD11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/X1PD11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: GX1 Plus Keyboard / X1PD11",
+          "url": "https://www.realforce.co.jp/en/products/X1PD11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: GX1 Plus Keyboard / X1PD13",
+          "url": "https://www.realforce.co.jp/en/products/X1PD13/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: GX1 Plus / GX1 series page",
+          "url": "https://www.realforce.co.jp/en/products/series_gaming_gx1.html",
+          "kind": "official",
+          "backs": [
+            "adjustable_actuation",
+            "rapid_trigger",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Detachable USB cable; Kill Switch key-pair priority raised from 2 pairs (GX1) to 8. Dark Gray/Black or Super White, 45g or 30g silent. No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    },
+    {
+      "id": "realforce-r3",
+      "brand": "realforce",
+      "model": "R3",
+      "aka": [
+        "R3 Keyboard",
+        "R3HB11"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Discontinued Products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status",
+            "connectivity",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hybrid (Bluetooth and USB) full-size predecessor of the R4, listed with APC, 45g or 30g silent switches and a Mac version. Replaced by the R4."
+    },
+    {
+      "id": "realforce-r3-tkl",
+      "brand": "realforce",
+      "model": "R3 TKL",
+      "aka": [
+        "R3HD11"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Discontinued Products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status",
+            "connectivity",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hybrid tenkeyless R3 (R3HD codes) with APC and 45g or 30g silent switches. Replaced by the R4 TKL."
+    },
+    {
+      "id": "realforce-r3s",
+      "brand": "realforce",
+      "model": "R3S",
+      "aka": [
+        "R3S Keyboard",
+        "R3SB11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        },
+        {
+          "name": "Topre 45g (APC, non-silent)",
+          "id": "topre-apc"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/R3SB11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SB11",
+          "url": "https://www.realforce.co.jp/en/products/R3SB11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os",
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SB13",
+          "url": "https://www.realforce.co.jp/en/products/R3SB13/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SB31",
+          "url": "https://www.realforce.co.jp/en/products/R3SB31/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired full-size with APC; Black, 45g or 30g silent or 45g non-silent. No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    },
+    {
+      "id": "realforce-r3s-tkl",
+      "brand": "realforce",
+      "model": "R3S TKL",
+      "aka": [
+        "R3SD11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        },
+        {
+          "name": "Topre 45g (APC, non-silent)",
+          "id": "topre-apc"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/R3SD11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SD11",
+          "url": "https://www.realforce.co.jp/en/products/R3SD11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os",
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SD13",
+          "url": "https://www.realforce.co.jp/en/products/R3SD13/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SD31",
+          "url": "https://www.realforce.co.jp/en/products/R3SD31/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired tenkeyless. No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    },
+    {
+      "id": "realforce-r4",
+      "brand": "realforce",
+      "model": "R4",
+      "aka": [
+        "R4 Keyboard",
+        "R4HB11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/R4HB11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R4 Keyboard / R4HB11",
+          "url": "https://www.realforce.co.jp/en/products/R4HB11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R4 Keyboard / R4HB13",
+          "url": "https://www.realforce.co.jp/en/products/R4HB13/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R4 Keyboard series page",
+          "url": "https://www.realforce.co.jp/en/products/series_r4.html",
+          "kind": "official",
+          "backs": [
+            "adjustable_actuation",
+            "software",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hybrid Bluetooth 5.0 and USB, up to four paired devices, runs on 3 AAA batteries, proximity sensor; APC from 0.8 to 3.0 mm per key. Black or Super White. No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    },
+    {
+      "id": "realforce-r4-tkl",
+      "brand": "realforce",
+      "model": "R4 TKL",
+      "aka": [
+        "R4HD11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/R4HD11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R4 Keyboard / R4HD11",
+          "url": "https://www.realforce.co.jp/en/products/R4HD11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R4 Keyboard / R4HD13",
+          "url": "https://www.realforce.co.jp/en/products/R4HD13/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R4 Keyboard series page",
+          "url": "https://www.realforce.co.jp/en/products/series_r4.html",
+          "kind": "official",
+          "backs": [
+            "adjustable_actuation",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tenkeyless R4, hybrid Bluetooth 5.0 and USB, APC from 0.8 to 3.0 mm. No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    },
+    {
+      "id": "realforce-rc1",
+      "brand": "realforce",
+      "model": "RC1",
+      "aka": [
+        "RC1 Keyboard",
+        "C1HK11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 78,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        },
+        {
+          "name": "Topre silent 30g",
+          "id": "topre-silent-30g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/C1HK11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: RC1 Keyboard / C1HK11",
+          "url": "https://www.realforce.co.jp/en/products/C1HK11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: RC1 Keyboard / C1HK13",
+          "url": "https://www.realforce.co.jp/en/products/C1HK13/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: RC1 Keyboard series page",
+          "url": "https://www.realforce.co.jp/en/products/series_rc1.html",
+          "kind": "official",
+          "backs": [
+            "adjustable_actuation",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Smallest Realforce (295 mm, 0.6 kg) with F1-F12 and arrow keys; size 75 is our classification of its 78-key layout. Battery lasts up to one month per charge; APC in four steps (0.8/1.5/2.2/3.0 mm). No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    },
+    {
+      "id": "realforce-rt1",
+      "brand": "realforce",
+      "model": "RT1 Ten Keyboard",
+      "aka": [
+        "RT1",
+        "T1UX11"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "numpad",
+      "key_count": 23,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "topre",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Topre silent 45g",
+          "id": "topre-silent-45g"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Realforce Connect",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.realforce.co.jp/en/products/T1UX11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: RT1 Ten Keyboard / T1UX11",
+          "url": "https://www.realforce.co.jp/en/products/T1UX11/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "switches",
+            "os",
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: RT1 Ten Keyboard series page",
+          "url": "https://www.realforce.co.jp/en/products/series_rt1.html",
+          "kind": "official",
+          "backs": [
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Shops",
+          "url": "https://www.realforce.co.jp/en/shops/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired numeric keypad with silent 45g switches and APC; up to four keys remappable. No REALFORCE-run US store: the brand lists Mechanical Keyboards, LLC as its US shop."
+    }
+  ]
+}

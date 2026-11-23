@@ -1,0 +1,486 @@
+{
+  "maker": {
+    "id": "steelseries",
+    "name": "SteelSeries",
+    "role": "brand",
+    "country": "DK",
+    "founded": 2001,
+    "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+    "about": "Danish gaming peripheral brand, designing in Denmark since 2001. It sells keyboards with its own OmniPoint Hall effect, OptiPoint optical and QX2 mechanical switches.",
+    "sources": [
+      {
+        "title": "SteelSeries: About",
+        "url": "https://steelseries.com/about",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "SteelSeries: Gaming Keyboard Switches",
+        "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "steelseries-omnipoint",
+      "name": "OmniPoint",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "OmniPoint",
+      "aka": [
+        "OmniPoint 1.0",
+        "OmniPoint Adjustable Mechanical Switch"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2019",
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Tom's Hardware: SteelSeries Reinvents the Key Switch for Apex Pro Keyboards (2019-05-29)",
+          "url": "https://www.tomshardware.com/news/steelseries-apex-pro-specs-price,39511.html",
+          "kind": "reference",
+          "backs": [
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First SteelSeries adjustable-actuation switch, launched with the original Apex Pro keyboards in 2019."
+    },
+    {
+      "id": "steelseries-omnipoint-2-0",
+      "name": "OmniPoint 2.0",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "OmniPoint",
+      "aka": [
+        "OmniPoint 2.0 Adjustable"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": [
+        0.2,
+        3.8
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Gaming Keyboard Switches",
+          "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Adjustable-actuation switch with per-key sensitivity, used in Apex Pro keyboards before Gen 3."
+    },
+    {
+      "id": "steelseries-omnipoint-3-0",
+      "name": "OmniPoint 3.0",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "OmniPoint",
+      "aka": [
+        "OmniPoint 3.0 Adjustable HyperMagnetic",
+        "OmniPoint 3.0 HyperMagnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": [
+        0.1,
+        4.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro Gen 3",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Redesigned Hall effect switch of the Apex Pro Gen 3 line with 40 actuation levels, Rapid Trigger, Rapid Tap and Protection Mode."
+    },
+    {
+      "id": "steelseries-optipoint-blue-clicky",
+      "name": "OptiPoint Blue Clicky",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "OptiPoint",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": [
+        1.0,
+        1.5
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Gaming Keyboard Switches",
+          "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Optical switch with two selectable actuation points, 1.0 or 1.5 mm."
+    },
+    {
+      "id": "steelseries-optipoint-pink-tactile",
+      "name": "OptiPoint Pink Tactile",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "OptiPoint",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": [
+        1.0,
+        1.5
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Gaming Keyboard Switches",
+          "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Optical switch with two selectable actuation points, 1.0 or 1.5 mm."
+    },
+    {
+      "id": "steelseries-optipoint-yellow-linear",
+      "name": "OptiPoint Yellow Linear",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "OptiPoint",
+      "aka": [],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": [
+        1.0,
+        1.5
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Gaming Keyboard Switches",
+          "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Optical switch with two selectable actuation points, 1.0 or 1.5 mm."
+    },
+    {
+      "id": "steelseries-qx2-blue-clicky",
+      "name": "QX2 Blue Clicky",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "QX2",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Gaming Keyboard Switches",
+          "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "SteelSeries mechanical switch with a 2.0 mm actuation point. The SteelSeries page does not state the footprint or pin count."
+    },
+    {
+      "id": "steelseries-qx2-brown-tactile",
+      "name": "QX2 Brown Tactile",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "QX2",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Gaming Keyboard Switches",
+          "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "SteelSeries mechanical switch with a 2.0 mm actuation point. The SteelSeries page does not state the footprint or pin count."
+    },
+    {
+      "id": "steelseries-qx2-red-linear",
+      "name": "QX2 Red Linear",
+      "maker": "steelseries",
+      "made_by": null,
+      "family": "QX2",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Gaming Keyboard Switches",
+          "url": "https://steelseries.com/innovation/keyboard-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "SteelSeries mechanical switch with a 2.0 mm actuation point. The SteelSeries page does not state the footprint or pin count."
+    }
+  ]
+}

@@ -1,0 +1,1917 @@
+{
+  "brand": {
+    "id": "ducky",
+    "name": "Ducky",
+    "country": "TW",
+    "founded": 2008,
+    "official_url": "https://ducky.global/",
+    "focus": [
+      "gaming",
+      "enthusiast"
+    ],
+    "about": "Taipei keyboard maker (DuckyChannel International) that launched its own brand in 2008, best known for the One series of Cherry MX boards with PBT double-shot keycaps.",
+    "sources": [
+      {
+        "title": "Ducky (archived): About Ducky",
+        "url": "https://web.archive.org/web/20261101225923/https://ducky.global/pages/about-ducky",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "ducky-cushion-98",
+      "brand": "ducky",
+      "model": "Cushion 98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 100,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4200,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Ducky Shush Silent Linear",
+          "id": null
+        },
+        {
+          "name": "Ducky Shush Silent Tactile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "other",
+      "firmware": [
+        "via"
+      ],
+      "software": "DuckyHub Web Config",
+      "os": [],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/cushion-98",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-11-01): Cushion 98",
+          "url": "https://web.archive.org/web/20261101225940/https://ducky.global/products/cushion-98",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: Cushion 98 (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "100 keys in an 80% footprint. Aluminum top case with ABS bottom, aluminum plate, Ducky Nest Mount. The store names the switches Ducky Silent Red (linear) and Silent Green (tactile). Hot-swap pin count not stated."
+    },
+    {
+      "id": "ducky-ok-he-65",
+      "brand": "ducky",
+      "model": "OK-HE 65",
+      "aka": [
+        "OK-HE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Haimu magnetic switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Ducky web config",
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/ok-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-11-01): OK-HE",
+          "url": "https://web.archive.org/web/20261101225943/https://ducky.global/products/ok-he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: OK-HE (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Hall-effect board with Haimu magnetic switches (model not named), SOCD, ABS case and PC plate; one product page covers the 65%, 75% and 98 sizes."
+    },
+    {
+      "id": "ducky-ok-he-75",
+      "brand": "ducky",
+      "model": "OK-HE 75",
+      "aka": [
+        "OK-HE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Haimu magnetic switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Ducky web config",
+      "os": [],
+      "price_usd": 89.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/ok-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-11-01): OK-HE",
+          "url": "https://web.archive.org/web/20261101225943/https://ducky.global/products/ok-he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: OK-HE (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Hall-effect board with Haimu magnetic switches (model not named), SOCD, ABS case and PC plate; one product page covers the 65%, 75% and 98 sizes."
+    },
+    {
+      "id": "ducky-ok-he-98",
+      "brand": "ducky",
+      "model": "OK-HE 98",
+      "aka": [
+        "OK-HE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Haimu magnetic switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Ducky web config",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/ok-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-11-01): OK-HE",
+          "url": "https://web.archive.org/web/20261101225943/https://ducky.global/products/ok-he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: OK-HE (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Hall-effect board with Haimu magnetic switches (model not named), SOCD, ABS case and PC plate; one product page covers the 65%, 75% and 98 sizes."
+    },
+    {
+      "id": "ducky-ok-m-65",
+      "brand": "ducky",
+      "model": "OK-M 65",
+      "aka": [
+        "OK-M"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "KTT Wine Red",
+          "id": "ktt-red-wine"
+        },
+        {
+          "name": "KTT Baby",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/ok-m",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/ok-m",
+          "date": "2026-05-13",
+          "score": null,
+          "verdict": "All-plastic but solid, with excellent typing quality, pre-lubed KTT switches and wireless; legends are hard to read in the dark."
+        },
+        {
+          "outlet": "PCWorld",
+          "url": "https://www.pcworld.com/article/3063899/ducky-ok-m-keyboard-review.html",
+          "date": "2026-02-23",
+          "score": "4.5/5",
+          "verdict": "Hot-swap, two wireless modes and VIA at a budget price; the reviewer calls it a new value champion."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-19): OK-M (product text and VIA JSON files for ANSI and ISO per size)",
+          "url": "https://web.archive.org/web/20260919211058/https://ducky.global/products/ok-m",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "mount",
+            "firmware",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: OK-M (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Ducky OK-M review",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/ok-m",
+          "kind": "review",
+          "backs": [
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Budget tri-mode board with side RGB. The archived spec table on the OK-M page repeats the OK-HE table (wired, Haimu), so specs here come from the product text, the VIA files and the store variants. Hot-swap pin count not stated."
+    },
+    {
+      "id": "ducky-ok-m-75",
+      "brand": "ducky",
+      "model": "OK-M 75",
+      "aka": [
+        "OK-M"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "KTT Wine Red",
+          "id": "ktt-red-wine"
+        },
+        {
+          "name": "KTT Baby",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/ok-m",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/ok-m",
+          "date": "2026-05-13",
+          "score": null,
+          "verdict": "All-plastic but solid, with excellent typing quality, pre-lubed KTT switches and wireless; legends are hard to read in the dark."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-19): OK-M (product text and VIA JSON files for ANSI and ISO per size)",
+          "url": "https://web.archive.org/web/20260919211058/https://ducky.global/products/ok-m",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "mount",
+            "firmware",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: OK-M (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Ducky OK-M review",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/ok-m",
+          "kind": "review",
+          "backs": [
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Budget tri-mode board with side RGB. The archived spec table on the OK-M page repeats the OK-HE table (wired, Haimu), so specs here come from the product text, the VIA files and the store variants. Hot-swap pin count not stated."
+    },
+    {
+      "id": "ducky-ok-m-98",
+      "brand": "ducky",
+      "model": "OK-M 98",
+      "aka": [
+        "OK-M"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "KTT Wine Red",
+          "id": "ktt-red-wine"
+        },
+        {
+          "name": "KTT Baby",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 89.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/ok-m",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/ok-m",
+          "date": "2026-05-13",
+          "score": null,
+          "verdict": "All-plastic but solid, with excellent typing quality, pre-lubed KTT switches and wireless; legends are hard to read in the dark."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-19): OK-M (product text and VIA JSON files for ANSI and ISO per size)",
+          "url": "https://web.archive.org/web/20260919211058/https://ducky.global/products/ok-m",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "mount",
+            "firmware",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: OK-M (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Ducky OK-M review",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/ok-m",
+          "kind": "review",
+          "backs": [
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Budget tri-mode board with side RGB. The archived spec table on the OK-M page repeats the OK-HE table (wired, Haimu), so specs here come from the product text, the VIA files and the store variants. Hot-swap pin count not stated."
+    },
+    {
+      "id": "ducky-one-2-sf",
+      "brand": "ducky",
+      "model": "One 2 SF",
+      "aka": [
+        "One 2 SF RGB"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Kailh Box Navy",
+          "id": "kailh-box-navy"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky US store feed: One 2 SF RGB (USB Type-C, hardware Ducky Macro) (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches",
+            "firmware",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-09-30): One 3 RGB (SF manual for the 65% size)",
+          "url": "https://web.archive.org/web/20260930135946/https://ducky.global/products/one-3-rgb",
+          "kind": "official",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Ducky One 3 Fuji review (hot-swap new in the One 3)",
+          "url": "https://www.pcgamer.com/ducky-one-3-review/",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Only the Kailh Box Navy version is listed in the US store. The store does not mention hot-swap; PC Gamer lists hot-swap as new in the One 3. Size read from Ducky's SF = 65% naming."
+    },
+    {
+      "id": "ducky-one-2-tkl",
+      "brand": "ducky",
+      "model": "One 2 TKL",
+      "aka": [
+        "One 2 TKL RGB"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky US store feed: One 2 TKL RGB (Cherry MX, detachable USB Type-C, Ducky Macro 2.0) (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "firmware",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Ducky One 3 Fuji review (hot-swap new in the One 3)",
+          "url": "https://www.pcgamer.com/ducky-one-3-review/",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The store does not mention hot-swap; PC Gamer lists hot-swap as new in the One 3."
+    },
+    {
+      "id": "ducky-one-3",
+      "brand": "ducky",
+      "model": "One 3",
+      "aka": [
+        "One 3 RGB",
+        "One 3 AURA",
+        "One 3 Matcha"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron Box Jellyfish Y",
+          "id": null
+        },
+        {
+          "name": "Gateron Baby Kangaroo",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/one-3-rgb",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/one-3",
+          "date": "2022-02-11",
+          "score": null,
+          "verdict": "Well built, quiet and low-latency with hot-swap sockets and PBT keycaps, but wired only and configured by key combos, not software."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-30): One 3 RGB",
+          "url": "https://web.archive.org/web/20260930135946/https://ducky.global/products/one-3-rgb",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-10-14): One 3 AURA",
+          "url": "https://web.archive.org/web/20261014100738/https://ducky.global/products/one-aura",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-09-19): One 3 Matcha",
+          "url": "https://web.archive.org/web/20260919211031/https://ducky.global/products/one-3-matcha",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: One 3 RGB, One 3 AURA, One 3 Matcha (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Ducky One 3 review (no software; settings and macros by key combos)",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/one-3",
+          "kind": "review",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Same board sold as the One 3 RGB, AURA and Matcha editions; Gateron switch options come with the AURA edition only. Kailh hot-swap sockets (pin count not stated). Only US-layout SKUs are sold in the US store."
+    },
+    {
+      "id": "ducky-one-3-mini",
+      "brand": "ducky",
+      "model": "One 3 Mini",
+      "aka": [
+        "One 3 RGB Mini",
+        "One 3 AURA Mini"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron Box Jellyfish Y",
+          "id": null
+        },
+        {
+          "name": "Gateron Baby Kangaroo",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/one-3-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-30): One 3 RGB",
+          "url": "https://web.archive.org/web/20260930135946/https://ducky.global/products/one-3-rgb",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-10-14): One 3 AURA",
+          "url": "https://web.archive.org/web/20261014100738/https://ducky.global/products/one-aura",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-09-19): One 3 Matcha",
+          "url": "https://web.archive.org/web/20260919211031/https://ducky.global/products/one-3-matcha",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: One 3 RGB, One 3 AURA, One 3 Matcha (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Ducky One 3 review (no software; settings and macros by key combos)",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/one-3",
+          "kind": "review",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Same board sold as the One 3 RGB, AURA and Matcha editions; Gateron switch options come with the AURA edition only. Kailh hot-swap sockets (pin count not stated). Only US-layout SKUs are sold in the US store."
+    },
+    {
+      "id": "ducky-one-3-sf",
+      "brand": "ducky",
+      "model": "One 3 SF",
+      "aka": [
+        "One 3 RGB SF",
+        "One 3 AURA SF"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron Box Jellyfish Y",
+          "id": null
+        },
+        {
+          "name": "Gateron Baby Kangaroo",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/one-3-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-30): One 3 RGB",
+          "url": "https://web.archive.org/web/20260930135946/https://ducky.global/products/one-3-rgb",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-10-14): One 3 AURA",
+          "url": "https://web.archive.org/web/20261014100738/https://ducky.global/products/one-aura",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-09-19): One 3 Matcha",
+          "url": "https://web.archive.org/web/20260919211031/https://ducky.global/products/one-3-matcha",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: One 3 RGB, One 3 AURA, One 3 Matcha (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Ducky One 3 review (no software; settings and macros by key combos)",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/one-3",
+          "kind": "review",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Same board sold as the One 3 RGB, AURA and Matcha editions; Gateron switch options come with the AURA edition only. Kailh hot-swap sockets (pin count not stated). Only US-layout SKUs are sold in the US store."
+    },
+    {
+      "id": "ducky-one-3-tkl",
+      "brand": "ducky",
+      "model": "One 3 TKL",
+      "aka": [
+        "One 3 RGB TKL",
+        "One 3 AURA TKL",
+        "One 3 Matcha TKL"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron Box Jellyfish Y",
+          "id": null
+        },
+        {
+          "name": "Gateron Baby Kangaroo",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/one-3-rgb",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/ducky-one-3-tkl-review",
+          "date": "2024-05-09",
+          "score": "3/5",
+          "verdict": "Great typing experience, but missing features make the price hard to justify."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-30): One 3 RGB",
+          "url": "https://web.archive.org/web/20260930135946/https://ducky.global/products/one-3-rgb",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-10-14): One 3 AURA",
+          "url": "https://web.archive.org/web/20261014100738/https://ducky.global/products/one-aura",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky (archived 2026-09-19): One 3 Matcha",
+          "url": "https://web.archive.org/web/20260919211031/https://ducky.global/products/one-3-matcha",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: One 3 RGB, One 3 AURA, One 3 Matcha (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Ducky One 3 review (no software; settings and macros by key combos)",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/one-3",
+          "kind": "review",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Same board sold as the One 3 RGB, AURA and Matcha editions; Gateron switch options come with the AURA edition only. Kailh hot-swap sockets (pin count not stated). Only US-layout SKUs are sold in the US store."
+    },
+    {
+      "id": "ducky-one-3-pro",
+      "brand": "ducky",
+      "model": "One 3 Pro",
+      "aka": [
+        "One 3 Pro Nazca Line"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/one-3-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2025-12-15): One 3 Pro (Nazca Line)",
+          "url": "https://web.archive.org/web/20251215193054/https://ducky.global/products/one-3-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: One 3 Pro (Nazca Line) (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PBT triple-shot keycaps on ANSI boards, double-shot on ISO. Hot-swap pin count not stated."
+    },
+    {
+      "id": "ducky-one-3-pro-mini",
+      "brand": "ducky",
+      "model": "One 3 Pro Mini",
+      "aka": [
+        "One 3 Pro Nazca Line Mini"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/one-3-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2025-12-15): One 3 Pro (Nazca Line), 60% size",
+          "url": "https://web.archive.org/web/20251215193054/https://ducky.global/products/one-3-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: One 3 Pro (Nazca Line) (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PBT triple-shot keycaps on ANSI boards, double-shot on ISO. Hot-swap pin count not stated."
+    },
+    {
+      "id": "ducky-one-x",
+      "brand": "ducky",
+      "model": "One X",
+      "aka": [
+        "One X Wireless"
+      ],
+      "status": "current",
+      "released": "2025",
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Ducky inductive switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Ducky web-based software",
+      "os": [
+        "windows",
+        "linux",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://ducky.global/products/one-x-wireless",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/ducky-one-x-review/",
+          "date": "2025-02-18",
+          "score": "60/100",
+          "verdict": "First inductive-switch keyboard, but it does not turn into a must-buy."
+        },
+        {
+          "outlet": "GamesRadar+",
+          "url": "https://www.gamesradar.com/hardware/gaming-keyboards/ducky-one-x-review/",
+          "date": "2025-02-18",
+          "score": "3/5",
+          "verdict": "Feels smooth like a mechanical board while offering analog features, with some trade-offs."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/ducky/one-x",
+          "date": "2025-03-19",
+          "score": null,
+          "verdict": "Very low, consistent latency; inductive switches set actuation as precisely as the best Hall-effect boards, though they sit loosely in the PCB."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ducky (archived 2025-02-18): One X Wireless",
+          "url": "https://web.archive.org/web/20250218110344/https://ducky.global/products/one-x-wireless",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Ducky One X review (February 2025)",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/ducky-one-x-review/",
+          "kind": "review",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Inductive (analog) switches, linear, 3.5 mm travel, 40 g initial force; hot-swappable within Ducky inductive switches. Mac support Intel only. The US store lists it at a placeholder price, so it cannot be bought there now."
+    },
+    {
+      "id": "ducky-one-x-mini",
+      "brand": "ducky",
+      "model": "One X Mini",
+      "aka": [
+        "One X Mini Wireless"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Ducky inductive switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Ducky web-based software",
+      "os": [
+        "windows",
+        "linux",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://ducky.global/products/one-x-mini-wireless",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-09-19): One X Mini Wireless",
+          "url": "https://web.archive.org/web/20260919211020/https://ducky.global/products/one-x-mini-wireless",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Inductive (analog) switches, linear, 3.5 mm travel, 40 g initial force; steel plate. Mac support Intel only. The US store lists it at a placeholder price, so it cannot be bought there now."
+    },
+    {
+      "id": "ducky-origin",
+      "brand": "ducky",
+      "model": "Origin",
+      "aka": [
+        "Origin Phantom Black",
+        "Origin Vintage"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products.json?limit=250",
+      "official_url": "https://ducky.global/products/ducky-origin-phantom-black",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ducky (archived 2026-07-14): Ducky Origin Phantom Black",
+          "url": "https://web.archive.org/web/20260714132525/https://ducky.global/products/ducky-origin-phantom-black",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: Ducky Origin Phantom Black, Ducky Origin Vintage (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "No backlight. Only the large keys (Esc, Backspace, Enter, both Shifts, Space, numpad 0, + and Enter) are hot-swappable; the rest are soldered."
+    },
+    {
+      "id": "ducky-zero-6108",
+      "brand": "ducky",
+      "model": "Zero 6108",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX2A Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://ducky.global/products/zero-6108",
+      "official_url": "https://ducky.global/products/zero-6108",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/ducky-zero-6108-review/",
+          "date": "2024-07-30",
+          "score": "86/100",
+          "verdict": "Excellent full-size board under $100: MX2A switches, sturdy chassis and tri-mode wireless; no software."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ducky: Zero 6108",
+          "url": "https://ducky.global/products/zero-6108",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Ducky US store feed: Zero 6108 (variants, US SKUs, prices)",
+          "url": "https://ducky.global/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Ducky Zero 6108 review",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/ducky-zero-6108-review/",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tri-mode board with Cherry MX2A switches, 3- and 5-pin hot-swap and PBT double-shot keycaps; Ducky publishes no software for it."
+    }
+  ]
+}

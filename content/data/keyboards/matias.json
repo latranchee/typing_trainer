@@ -1,0 +1,1209 @@
+{
+  "brand": {
+    "id": "matias",
+    "name": "Matias",
+    "country": "CA",
+    "founded": null,
+    "official_url": "https://matias.ca/",
+    "focus": [
+      "office",
+      "ergonomic",
+      "enthusiast"
+    ],
+    "about": "Matias, based in Aurora, Ontario, sells slim scissor-switch Mac and PC boards to mechanical boards on its own ALPS-inspired switches.",
+    "sources": [
+      {
+        "title": "Matias: Contact",
+        "url": "https://matias.ca/contact/",
+        "kind": "official",
+        "backs": [
+          "country"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Matias: Products",
+        "url": "https://matias.ca/products/",
+        "kind": "official",
+        "backs": [
+          "lineup",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "matias-60",
+      "brand": "matias",
+      "model": "60% Keyboard",
+      "aka": [
+        "Matias 60%"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "alps",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Click",
+          "id": "matias-click"
+        },
+        {
+          "name": "Matias Quiet Click",
+          "id": "matias-quiet-click"
+        },
+        {
+          "name": "Matias Quiet Linear",
+          "id": "matias-quiet-linear"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 150,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/60-keyboard",
+      "official_url": "https://matias.store/products/60-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: 60% Keyboard",
+          "url": "https://matias.store/products/60-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: 60% Keyboard",
+          "url": "https://matias.ca/60/pc/",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "case_material",
+            "os",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold as a group buy on the Matias store (available on 2026-11-23). 60% with a full navigation cluster; plate and PCB take ALPS switches and Cherry MX on keys that do not need ALPS. Plastic case, or $290 with a milled aluminum case."
+    },
+    {
+      "id": "matias-dvorak-pro",
+      "brand": "matias",
+      "model": "Dvorak Pro",
+      "aka": [
+        "Dvorak Pro Keyboard"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "alps",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Quiet Click",
+          "id": "matias-quiet-click"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 149.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/dvorak-pro-keyboard",
+      "official_url": "https://matias.store/products/dvorak-pro-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Dvorak Pro Keyboard",
+          "url": "https://matias.store/products/dvorak-pro-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dvorak layout in the keyboard hardware with a key that toggles to QWERTY; Dvorak legends on the keys, three-port USB hub."
+    },
+    {
+      "id": "matias-half-keyboard",
+      "brand": "matias",
+      "model": "Half Keyboard",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 595,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/half-keyboard",
+      "official_url": "https://matias.store/products/half-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Half Keyboard",
+          "url": "https://matias.store/products/half-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assistive left-half keyboard for one-handed touch typing with existing QWERTY skills. Switch type not stated."
+    },
+    {
+      "id": "matias-half-qwerty-pro",
+      "brand": "matias",
+      "model": "Half-QWERTY Pro",
+      "aka": [
+        "Half-QWERTY Pro Keyboard",
+        "508 Keyboard"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 595,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/half-qwerty-508-keyboard",
+      "official_url": "https://matias.store/products/half-qwerty-508-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Half-QWERTY Pro Keyboard",
+          "url": "https://matias.store/products/half-qwerty-508-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assistive full-size keyboard: touch-type with the left hand, the right hand or both, using mirrored one-handed typing switched on with the matias key. Mechanical switches and a 2-port USB hub; switch type not named."
+    },
+    {
+      "id": "matias-mini-tactile-pro",
+      "brand": "matias",
+      "model": "Mini Tactile Pro",
+      "aka": [
+        "Mini Tactile Pro Keyboard for Mac"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "alps",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Click",
+          "id": "matias-click"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac"
+      ],
+      "price_usd": 129.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/mini-tactile-pro-keyboard-for-mac",
+      "official_url": "https://matias.store/products/mini-tactile-pro-keyboard-for-mac",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Mini Tactile Pro Keyboard for Mac",
+          "url": "https://matias.store/products/mini-tactile-pro-keyboard-for-mac",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "connectivity",
+            "price_usd",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Mini Tactile Pro Keyboard for Mac",
+          "url": "https://matias.ca/minitactilepro/mac/",
+          "kind": "official",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact Tactile Pro without the number pad, with Mac function keys, n-key rollover, three USB 2.0 ports and a detachable cable. Size 75 is our reading of its Apple-style compact layout."
+    },
+    {
+      "id": "matias-ergo-pro",
+      "brand": "matias",
+      "model": "Programmable Ergo Pro",
+      "aka": [
+        "Ergo Pro",
+        "FK403QPC-P",
+        "FK403Q-P"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "alps",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Quiet Click",
+          "id": "matias-quiet-click"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 220,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk403qpc-p",
+      "official_url": "https://matias.store/products/fk403qpc-p",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Programmable Ergo Pro Keyboard for PC",
+          "url": "https://matias.store/products/fk403qpc-p",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "split",
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias store: Programmable Ergo Pro Keyboard for Mac",
+          "url": "https://matias.store/products/fk403q-p",
+          "kind": "official",
+          "backs": [
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Programmable Ergo Pro Keyboard",
+          "url": "https://matias.ca/ergopro/programmable/",
+          "kind": "official",
+          "backs": [
+            "tenting",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Two halves joined by a bridge cable; gel palm supports with fold-out legs give tenting (9 degrees) or negative tilt. Macros and remaps set on the keyboard without software. Three USB 2.0 ports. No number pad."
+    },
+    {
+      "id": "matias-sculpted-ergonomic-rechargeable",
+      "brand": "matias",
+      "model": "Sculpted Ergonomic Rechargeable Keyboard",
+      "aka": [
+        "FK413PCD",
+        "FK413D"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 119,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk413pcd",
+      "official_url": "https://matias.store/products/fk413pcd",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Sculpted Ergonomic Rechargeable Keyboard for PC",
+          "url": "https://matias.store/products/fk413pcd",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "connectivity",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Sculpted Ergonomic Keyboard",
+          "url": "https://matias.ca/sculpted/wireless/",
+          "kind": "official",
+          "backs": [
+            "split",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless version with both a USB-C nano receiver and a USB-A receiver, rechargeable. Matias says on Linux the F-keys only send media functions."
+    },
+    {
+      "id": "matias-sculpted-ergonomic-wired",
+      "brand": "matias",
+      "model": "Sculpted Ergonomic Wired Keyboard",
+      "aka": [
+        "FK313PC",
+        "FK313"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 79,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk313pc",
+      "official_url": "https://matias.store/products/fk313pc",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Sculpted Ergonomic Wired Keyboard for PC",
+          "url": "https://matias.store/products/fk313pc",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias store: Sculpted Ergonomic Wired Keyboard for Mac",
+          "url": "https://matias.store/products/fk313",
+          "kind": "official",
+          "backs": [
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Sculpted Ergonomic Keyboard",
+          "url": "https://matias.ca/sculpted/wireless/",
+          "kind": "official",
+          "backs": [
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Follows the Microsoft Sculpt ergonomic layout, with thicker palm rest and an optional magnetic negative-tilt bar; keys programmable without software. UK, German and French layouts are sold on the Matias EU store."
+    },
+    {
+      "id": "matias-tactile-pro",
+      "brand": "matias",
+      "model": "Tactile Pro",
+      "aka": [
+        "Tactile Pro Keyboard for Mac",
+        "Tactile Pro 4"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "alps",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Click",
+          "id": "matias-click"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac"
+      ],
+      "price_usd": 149.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/tactile-pro-keyboard-for-mac",
+      "official_url": "https://matias.store/products/tactile-pro-keyboard-for-mac",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Tactile Pro Keyboard for Mac",
+          "url": "https://matias.store/products/tactile-pro-keyboard-for-mac",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "connectivity",
+            "price_usd",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Tactile Pro & Mini Tactile Pro",
+          "url": "https://matias.ca/tactilepro/",
+          "kind": "official",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky Matias Click (ALPS-inspired) switches, 60 g peak force; micro-USB cable plus a USB-C adapter."
+    },
+    {
+      "id": "matias-wired-aluminum",
+      "brand": "matias",
+      "model": "Wired Aluminum Keyboard",
+      "aka": [
+        "FK318"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac"
+      ],
+      "price_usd": 69,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk318s",
+      "official_url": "https://matias.store/products/fk318s",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Wired Aluminum Keyboard for Mac - Silver",
+          "url": "https://matias.store/products/fk318s",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stand-in for Apple's discontinued wired aluminum keyboard with number pad, with a 2-port USB 2.0 hub. RGB backlit versions for Mac and PC cost $99."
+    },
+    {
+      "id": "matias-wired-aluminum-tenkeyless",
+      "brand": "matias",
+      "model": "Wired Aluminum Tenkeyless Keyboard",
+      "aka": [
+        "FK308"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac",
+        "windows"
+      ],
+      "price_usd": 65,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk308s",
+      "official_url": "https://matias.store/products/fk308s",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Wired Aluminum Tenkeyless Keyboard for Mac - Silver",
+          "url": "https://matias.store/products/fk308s",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Slim tenkeyless with a 2-port USB 2.0 hub; RGB backlit version $95."
+    },
+    {
+      "id": "matias-wireless-aluminum",
+      "brand": "matias",
+      "model": "Wireless Aluminum Keyboard",
+      "aka": [
+        "FK418BT"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": 1600,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac",
+        "windows",
+        "ios",
+        "android"
+      ],
+      "price_usd": 99,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/wireless-aluminum-keyboard-silver",
+      "official_url": "https://matias.store/products/wireless-aluminum-keyboard-silver",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Wireless Aluminum Keyboard - Silver",
+          "url": "https://matias.store/products/wireless-aluminum-keyboard-silver",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "connectivity",
+            "battery_mah",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth, pairs with up to 4 devices, 1600 mAh battery rated up to a year. A backlit version costs $139. Size full is our reading of the name next to its tenkeyless sibling."
+    },
+    {
+      "id": "matias-wireless-aluminum-tenkeyless",
+      "brand": "matias",
+      "model": "Wireless Aluminum Tenkeyless Keyboard",
+      "aka": [
+        "FK408BT"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": 1600,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac",
+        "windows",
+        "ios",
+        "android"
+      ],
+      "price_usd": 89,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk408bts",
+      "official_url": "https://matias.store/products/fk408bts",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Wireless Aluminum Tenkeyless Keyboard - Silver",
+          "url": "https://matias.store/products/fk408bts",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "connectivity",
+            "battery_mah",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth, pairs with up to 3 devices, 1600 mAh battery rated up to a year."
+    },
+    {
+      "id": "matias-wireless-usb-c-aluminum",
+      "brand": "matias",
+      "model": "Wireless USB-C Aluminum Keyboard",
+      "aka": [
+        "FK418DCS",
+        "FK418PCDCBB"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac",
+        "windows"
+      ],
+      "price_usd": 79,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk418dcs",
+      "official_url": "https://matias.store/products/fk418dcs",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Wireless USB-C Aluminum Keyboard for Mac - Silver",
+          "url": "https://matias.store/products/fk418dcs",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "connectivity",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Wireless USB-C Aluminum keyboard",
+          "url": "https://matias.ca/aluminum/wireless-usbc/",
+          "kind": "official",
+          "backs": [
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size with a USB-C nano receiver; rechargeable, up to 3 years per charge. Mac and PC versions."
+    },
+    {
+      "id": "matias-wireless-usb-c",
+      "brand": "matias",
+      "model": "Wireless USB-C Keyboard",
+      "aka": [
+        "FK416DCS",
+        "FK416PCDCBB"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Matias Scissor Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac",
+        "windows"
+      ],
+      "price_usd": 49,
+      "price_date": "2026-11-23",
+      "price_url": "https://matias.store/products/fk416dcs",
+      "official_url": "https://matias.store/products/fk416dcs",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias store: Wireless USB-C Keyboard for Mac - Silver",
+          "url": "https://matias.store/products/fk416dcs",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "connectivity",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Matias: Products",
+          "url": "https://matias.ca/products/",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Plastic sibling of the aluminum USB-C model; rechargeable, up to 1 year per charge."
+    }
+  ]
+}

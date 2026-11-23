@@ -1,0 +1,201 @@
+{
+  "maker": {
+    "id": "matias",
+    "name": "Matias",
+    "role": "manufacturer",
+    "country": "CA",
+    "founded": 1989,
+    "official_url": "https://matias.ca/switches/",
+    "about": "Toronto keyboard company founded in 1989 by Edgar Matias and Steve McGowan. It designed its own Alps-style switches when original Alps switches ran out, and sells them to builders in boxes of 200.",
+    "sources": [
+      {
+        "title": "Matias: About",
+        "url": "https://matias.ca/about/",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Matias: Mechanical Keyswitches",
+        "url": "https://matias.ca/switches/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Matias: Click Mechanical Keyswitches",
+        "url": "https://matias.ca/switches/click/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "matias-click",
+      "name": "Matias Click",
+      "maker": "matias",
+      "made_by": null,
+      "family": "Matias",
+      "aka": [
+        "Matias Click Switch",
+        "KS101"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 35,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://matias.ca/switches/click/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias: Click Mechanical Keyswitches",
+          "url": "https://matias.ca/switches/click/",
+          "kind": "official",
+          "backs": [
+            "tactile_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Alps-style clicky switch with a white stem, plate mount and transparent housing; part KS101. Matias designed it to replace the Alps switch of its Tactile Pro keyboard."
+    },
+    {
+      "id": "matias-quiet-click",
+      "name": "Matias Quiet Click",
+      "maker": "matias",
+      "made_by": null,
+      "family": "Matias",
+      "aka": [
+        "KS101Q"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 35,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://matias.ca/switches/quiet/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias: Quiet Click Mechanical Keyswitches",
+          "url": "https://matias.ca/switches/quiet/",
+          "kind": "official",
+          "backs": [
+            "tactile_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Despite the name it does not click: a tactile Alps-style switch damped on the downstroke and upstroke, grey stem (formerly white), part KS101Q. Made for the Matias Quiet Pro keyboards."
+    },
+    {
+      "id": "matias-quiet-linear",
+      "name": "Matias Quiet Linear",
+      "maker": "matias",
+      "made_by": null,
+      "family": "Matias",
+      "aka": [
+        "KS102Q"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 35,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://matias.ca/switches/linear/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Matias: Quiet Linear Mechanical Keyswitches",
+          "url": "https://matias.ca/switches/linear/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Damped Alps-style linear with a red stem and an internal leaf spring that evens out the force across the stroke, part KS102Q. Developed for the Open Steno Project."
+    }
+  ]
+}

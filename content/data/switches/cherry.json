@@ -1,0 +1,2656 @@
+{
+  "maker": {
+    "id": "cherry",
+    "name": "Cherry",
+    "role": "manufacturer",
+    "country": "DE",
+    "founded": 1953,
+    "official_url": "https://www.cherry.de/",
+    "about": "Founded in 1953 by Walter Lorain Cherry in Highland Park, Illinois, and now based in Auerbach in der Oberpfalz, Germany. Its MX switch was developed and patented in the early 1980s and first marketed around 1985.",
+    "sources": [
+      {
+        "title": "Wikipedia: Cherry (keyboards)",
+        "url": "https://en.wikipedia.org/wiki/Cherry_(keyboards)",
+        "kind": "reference",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Cherry: switches",
+        "url": "https://www.cherry.de/en-gb/products/switches",
+        "kind": "official",
+        "backs": [
+          "official_url"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "cherry-mx-black-clear-top",
+      "name": "MX Black Clear-Top",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX",
+      "aka": [
+        "Cherry MX Black Clear-Top",
+        "MX2A Clear Top"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 63.5,
+      "bottom_out_force_gf": 110,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": null
+      },
+      "spring": "gold colour",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-black-clear-top",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-new-nixie-switch-review",
+          "date": "2022-12-04",
+          "score": null,
+          "verdict": "Big gains over stock Cherry linears in scratch, spring ping and wobble; the unlubed version keeps some scratch and a thin top-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX Black Clear-Top product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-black-clear-top",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Black Clear-Top",
+          "url": "https://pim.cherry-world.net/datasheet/23080?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: Cherry MX2A Clear Top Switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx2a-clear-top-switches/",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Cherry MX 'New Nixie' Switch Review",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-new-nixie-switch-review",
+          "kind": "review",
+          "backs": [
+            "pins",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cherry calls it a re-release of the 1980s MX Nixie made for Nixdorf; sold unlubed (MX1A-61NW) and pre-lubed."
+    },
+    {
+      "id": "cherry-mx-clear",
+      "name": "MX Clear",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX",
+      "aka": [
+        "Cherry MX Clear"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 110,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-clear",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Clear product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-clear",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Clear",
+          "url": "https://pim.cherry-world.net/datasheet/23061?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Classic MX1A part numbers (MX1A-C1xx), in RGB and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx-green",
+      "name": "MX Green",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX",
+      "aka": [
+        "Cherry MX Green"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 80,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-green",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Green product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-green",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Green",
+          "url": "https://pim.cherry-world.net/datasheet/23068?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Classic MX1A part numbers (MX1A-F1xx); a two-part stem produces the click."
+    },
+    {
+      "id": "cherry-mx-nature-white",
+      "name": "MX RGB Nature White",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX",
+      "aka": [
+        "MX Nature White",
+        "Cherry MX Nature White"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 52,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2016",
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "telcontar.net: Cherry MX variants",
+          "url": "https://telcontar.net/KBK/Cherry/MX_variants",
+          "kind": "reference",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "released",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Linear between MX Red and MX Black, part MX1A-41NA; last order date 24 September 2019 per telcontar.net. Retailers still list remaining stock."
+    },
+    {
+      "id": "cherry-mx-tactile-grey",
+      "name": "MX Tactile Grey",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX",
+      "aka": [
+        "MX Grey",
+        "Cherry MX Grey",
+        "Cherry MX Tactile Grey"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 80,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-grey-tactile",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Grey product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-grey-tactile",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "type",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Tactile Grey",
+          "url": "https://pim.cherry-world.net/datasheet/23075?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Classic MX1A part numbers (MX1A-D1xx), in RGB and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx-low-profile-red",
+      "name": "MX Low Profile Red",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Low Profile",
+      "aka": [
+        "Cherry MX Low Profile Red",
+        "MX Low Profile RGB Red"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "cherry-lp",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2018",
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Cherry MX Low Profile",
+          "url": "https://deskthority.net/wiki/Cherry_MX_Low_Profile",
+          "kind": "reference",
+          "backs": [
+            "keycap_mount",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part MX1B-L2NA, shown at CES 2018 and used in keyboards such as the Cooler Master SK630. Cherry now lists only the Low Profile 2.0 versions."
+    },
+    {
+      "id": "cherry-mx-low-profile-speed",
+      "name": "MX Low Profile Speed",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Low Profile",
+      "aka": [
+        "Cherry MX Low Profile Speed",
+        "MX Low Profile RGB Speed"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "cherry-lp",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2018",
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Cherry MX Low Profile",
+          "url": "https://deskthority.net/wiki/Cherry_MX_Low_Profile",
+          "kind": "reference",
+          "backs": [
+            "keycap_mount",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part MX1B-52NA, first sold through Corsair keyboards such as the K70 MK.2 Low Profile. Cherry now lists only the Low Profile 2.0 versions."
+    },
+    {
+      "id": "cherry-mx-low-profile-2-0-red",
+      "name": "MX Low Profile 2.0 Red",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Low Profile 2.0",
+      "aka": [
+        "Cherry MX Low Profile 2.0 Red"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "cherry-lp",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-low-profile-2-0-red",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Low Profile 2.0 Red product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-low-profile-2-0-red",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Low Profile 2.0 Red",
+          "url": "https://pim.cherry-world.net/datasheet/26396?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: New standards for low-profile mechanical typing (2025-04-29)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/new-standards-for-low-profile-mechanical-typing",
+          "kind": "official",
+          "backs": [
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Cherry MX Low Profile",
+          "url": "https://deskthority.net/wiki/Cherry_MX_Low_Profile",
+          "kind": "reference",
+          "backs": [
+            "keycap_mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part MX2B-L2NA, 11.9 mm tall, RGB housing; first used in the Cherry KC 500 MX LP keyboards (2025)."
+    },
+    {
+      "id": "cherry-mx-low-profile-2-0-speed",
+      "name": "MX Low Profile 2.0 Speed",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Low Profile 2.0",
+      "aka": [
+        "Cherry MX Low Profile 2.0 Speed"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "cherry-lp",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-low-profile-2-0-speed",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Low Profile 2.0 Speed product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-low-profile-2-0-speed",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Low Profile 2.0 Speed",
+          "url": "https://pim.cherry-world.net/datasheet/26391?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: New standards for low-profile mechanical typing (2025-04-29)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/new-standards-for-low-profile-mechanical-typing",
+          "kind": "official",
+          "backs": [
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Cherry MX Low Profile",
+          "url": "https://deskthority.net/wiki/Cherry_MX_Low_Profile",
+          "kind": "reference",
+          "backs": [
+            "keycap_mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part MX2B-52NA, 11.9 mm tall, RGB housing with a silver stem."
+    },
+    {
+      "id": "cherry-mx-multipoint-black",
+      "name": "MX Multipoint Black",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Multipoint",
+      "aka": [
+        "Cherry MX Multipoint Black"
+      ],
+      "type": "linear",
+      "sensing": "inductive",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 70.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 200,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-multipoint-black",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Multipoint Black product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-multipoint-black",
+          "kind": "official",
+          "backs": [
+            "type",
+            "sensing",
+            "keycap_mount",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Multipoint Black",
+          "url": "https://pim.cherry-world.net/datasheet/26402?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "bottom_out_force_gf",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry: MX Multipoint switches",
+          "url": "https://www.cherry.de/en-gb/products/switches/mx-multipoint",
+          "kind": "official",
+          "backs": [
+            "sensing"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Inductive analog switch (part MXID-11NA) with a software-set actuation point; works only with dedicated Multipoint PCBs."
+    },
+    {
+      "id": "cherry-mx-multipoint-cyan",
+      "name": "MX Multipoint Cyan",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Multipoint",
+      "aka": [
+        "Cherry MX Multipoint Cyan"
+      ],
+      "type": "linear",
+      "sensing": "inductive",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 73.7,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": "progressive",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 200,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-multipoint-cyan",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Multipoint Cyan product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-multipoint-cyan",
+          "kind": "official",
+          "backs": [
+            "type",
+            "sensing",
+            "keycap_mount",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Multipoint Cyan",
+          "url": "https://pim.cherry-world.net/datasheet/26404?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry: MX Multipoint switches",
+          "url": "https://www.cherry.de/en-gb/products/switches/mx-multipoint",
+          "kind": "official",
+          "backs": [
+            "sensing"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Inductive analog switch (part MXID-P1NA) with a progressive spring whose force rises through the travel; works only with dedicated Multipoint PCBs."
+    },
+    {
+      "id": "cherry-mx-multipoint-silver",
+      "name": "MX Multipoint Silver",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Multipoint",
+      "aka": [
+        "Cherry MX Multipoint Silver"
+      ],
+      "type": "linear",
+      "sensing": "inductive",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 52.7,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 200,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-multipoint-silver",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Multipoint Silver product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-multipoint-silver",
+          "kind": "official",
+          "backs": [
+            "type",
+            "sensing",
+            "keycap_mount",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Multipoint Silver",
+          "url": "https://pim.cherry-world.net/datasheet/26406?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "bottom_out_force_gf",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry: MX Multipoint switches",
+          "url": "https://www.cherry.de/en-gb/products/switches/mx-multipoint",
+          "kind": "official",
+          "backs": [
+            "sensing"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Inductive analog switch (part MXID-51NA), the light one of the three; works only with dedicated Multipoint PCBs."
+    },
+    {
+      "id": "cherry-mx-ulp-click",
+      "name": "MX ULP Click",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Ultra Low Profile",
+      "aka": [
+        "MX Ultra Low Profile Click",
+        "Cherry MX Ultra Low Profile Click"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "cherry-ulp",
+      "keycap_mount": "other",
+      "profile": "ultra-low",
+      "pins": null,
+      "actuation_force_gf": 52,
+      "bottom_out_force_gf": 200,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": 0.8,
+      "total_travel_mm": 1.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "stainless steel",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2021-03",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-ulp-click",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Ultra Low Profile Click product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-ulp-click",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "spring",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX ULP Click",
+          "url": "https://pim.cherry-world.net/datasheet/23173?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Cherry MX Ultra Low Profile",
+          "url": "https://deskthority.net/wiki/Cherry_MX_Ultra_Low_Profile",
+          "kind": "reference",
+          "backs": [
+            "keycap_mount",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "SMD-soldered scissor-type switch (part MX6C-K3NB), 3.9 mm tall per Cherry; used in Alienware m15/m17 R4 laptops and the Corsair K100 Air."
+    },
+    {
+      "id": "cherry-mx-ulp-tactile",
+      "name": "MX ULP Tactile",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX Ultra Low Profile",
+      "aka": [
+        "MX Ultra Low Profile Tactile",
+        "Cherry MX Ultra Low Profile Tactile"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "cherry-ulp",
+      "keycap_mount": "other",
+      "profile": "ultra-low",
+      "pins": null,
+      "actuation_force_gf": 52,
+      "bottom_out_force_gf": 200,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": 0.8,
+      "total_travel_mm": 1.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "stainless steel",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-ulp-tactile",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Ultra Low Profile Tactile product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-ulp-tactile",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "spring",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX ULP Tactile",
+          "url": "https://pim.cherry-world.net/datasheet/23175?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Cherry MX Ultra Low Profile",
+          "url": "https://deskthority.net/wiki/Cherry_MX_Ultra_Low_Profile",
+          "kind": "reference",
+          "backs": [
+            "keycap_mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "SMD-soldered scissor-type switch (part MX6C-T3NB) without the click, 3.9 mm tall per Cherry."
+    },
+    {
+      "id": "cherry-mx-blossom",
+      "name": "MX Blossom",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX Blossom"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "stainless steel, barrel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2025-06",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-blossom",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Blossom product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-blossom",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Blossom",
+          "url": "https://pim.cherry-world.net/datasheet/23150?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: CHERRY MX BLOSSOM SWITCHES",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx-blossom-switches/",
+          "kind": "official",
+          "backs": [
+            "pins",
+            "spring",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY leads the revolution from mechanical to smart switches (2025-05-20)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-leads-the-revolution-from-mechanical-to-smart-switches",
+          "kind": "official",
+          "backs": [
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cherry calls it its lightest linear mechanical switch (part MX2A-LC9D), with an RGB housing."
+    },
+    {
+      "id": "cherry-mx-falcon",
+      "name": "MX Falcon",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX Falcon"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 1.7,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "PA66",
+        "stem": null
+      },
+      "spring": "15mm, copper-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2025-06",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-falcon",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Falcon product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-falcon",
+          "kind": "official",
+          "backs": [
+            "type",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Falcon",
+          "url": "https://pim.cherry-world.net/datasheet/23161?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: CHERRY MX FALCON SWITCHES",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx-falcon-switches/",
+          "kind": "official",
+          "backs": [
+            "tactile_force_gf",
+            "pins",
+            "materials",
+            "spring",
+            "pre_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY leads the revolution from mechanical to smart switches (2025-05-20)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-leads-the-revolution-from-mechanical-to-smart-switches",
+          "kind": "official",
+          "backs": [
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cherry's first long-pole MX switch (part MX2A-HCAD), a heavy tactile with a shortened 3.5 mm travel."
+    },
+    {
+      "id": "cherry-mx-northern-light",
+      "name": "MX Northern Light",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX Northern Light"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "PA66",
+        "stem": null
+      },
+      "spring": "18mm single-stage gold-plated spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2025-04",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-northern-light",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-northern-light-switch-review",
+          "date": "2025-04-17",
+          "score": null,
+          "verdict": "Smooth silent linears that barely change after break-in, though less well and evenly lubed than rival silent linears."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX Northern Light product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-northern-light",
+          "kind": "official",
+          "backs": [
+            "type",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Northern Light",
+          "url": "https://pim.cherry-world.net/datasheet/23148?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: CHERRY MX NORTHERN LIGHT SWITCHES",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx-northern-light/",
+          "kind": "official",
+          "backs": [
+            "pins",
+            "materials",
+            "spring",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Cherry MX Northern Light Switch Review",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-northern-light-switch-review",
+          "kind": "review",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent linear (part MX2A-8C7D) with a two-part anthracite stem taken from the MX Silent Black."
+    },
+    {
+      "id": "cherry-mx-petal",
+      "name": "MX Petal",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX Petal"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": 45,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2025-10",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-petal",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-petal-switch-review",
+          "date": "2025-11-09",
+          "score": null,
+          "verdict": "Decent light tactiles with a sharper-than-usual bump and soft spring, but some scratch, uneven sound and stem wobble."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX Petal product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-petal",
+          "kind": "official",
+          "backs": [
+            "type",
+            "tactile_force_gf",
+            "bottom_out_force_gf",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Petal",
+          "url": "https://pim.cherry-world.net/datasheet/23166?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Cherry MX Petal Switch Review",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-petal-switch-review",
+          "kind": "review",
+          "backs": [
+            "pins",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light tactile (part MX2A-GCBD) with an RGB housing."
+    },
+    {
+      "id": "cherry-mx2a-black",
+      "name": "MX2A Black",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Black",
+        "MX Black",
+        "Cherry MX Black",
+        "MX2A RGB Black",
+        "Cherry MX Black RGB"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": 110,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "barrel spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2023-08",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-black",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx2a-rgb-black-switch-review",
+          "date": "2023-08-27",
+          "score": null,
+          "verdict": "A modest step up from older MX Blacks in smoothness and spring ping, but still scratchy until well broken in."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Black product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-black",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Black",
+          "url": "https://pim.cherry-world.net/datasheet/23002?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY MX2A, exceeding expectations (2023-08-24)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-mx2a-exceeding-expectations",
+          "kind": "official",
+          "backs": [
+            "released",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: Cherry MX2A Black Switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx2a-black-switches/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: keyboard switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with and without PCB fixing pins, and in RGB (translucent housing) and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx2a-blue",
+      "name": "MX2A Blue",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Blue",
+        "MX Blue",
+        "Cherry MX Blue",
+        "Cherry MX Blue RGB"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2023-08",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-blue",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Blue product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-blue",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Blue",
+          "url": "https://pim.cherry-world.net/datasheet/23093?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY MX2A, exceeding expectations (2023-08-24)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-mx2a-exceeding-expectations",
+          "kind": "official",
+          "backs": [
+            "released",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: Cherry MX2A Blue Switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx2a-blue-switches/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: keyboard switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Per Cherry, the MX2A Blue keeps its click mechanism without the MX2A factory lube and barrel spring. Sold with and without PCB fixing pins, and in RGB (translucent housing) and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx2a-brown",
+      "name": "MX2A Brown",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Brown",
+        "MX Brown",
+        "Cherry MX Brown",
+        "Cherry MX Brown RGB"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 80,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "barrel spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2023-08",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-brown",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Brown product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-brown",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Brown",
+          "url": "https://pim.cherry-world.net/datasheet/23113?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY MX2A, exceeding expectations (2023-08-24)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-mx2a-exceeding-expectations",
+          "kind": "official",
+          "backs": [
+            "released",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: Cherry MX2A Brown Switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx2a-brown-switches/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: keyboard switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with and without PCB fixing pins, and in RGB (translucent housing) and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx2a-ergo-clear",
+      "name": "MX2A Ergo Clear",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Ergo Clear",
+        "MX Ergo Clear",
+        "Cherry MX Ergo Clear"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 70,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-ergo-clear",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Ergo Clear product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-ergo-clear",
+          "kind": "official",
+          "backs": [
+            "type",
+            "tactile_force_gf",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Ergo Clear",
+          "url": "https://pim.cherry-world.net/datasheet/23152?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "telcontar.net: Cherry MX variants",
+          "url": "https://telcontar.net/KBK/Cherry/MX_variants",
+          "kind": "reference",
+          "backs": [
+            "tactile_force_gf",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The first MX Ergo Clear (MX1A-H1Nx) came out in 2022. Cherry's datasheet lists a 40 cN pressure point while its page and telcontar.net give 55 cN; 55 is kept."
+    },
+    {
+      "id": "cherry-mx2a-honey",
+      "name": "MX2A Honey",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Honey",
+        "MX Honey",
+        "Cherry MX Honey"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 110,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "Barrel Spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2025-06",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-honey",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-honey-switch-review",
+          "date": "2025-09-28",
+          "score": null,
+          "verdict": "A strong, early bump undone by scratch, weak dampening and loud housing noise; feels unfinished for a silent tactile."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Honey product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-honey",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Honey",
+          "url": "https://pim.cherry-world.net/datasheet/23141?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: CHERRY MX2A HONEY SWITCHES",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx-honey-switches/",
+          "kind": "official",
+          "backs": [
+            "tactile_force_gf",
+            "pins",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY leads the revolution from mechanical to smart switches (2025-05-20)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-leads-the-revolution-from-mechanical-to-smart-switches",
+          "kind": "official",
+          "backs": [
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cherry's first silent tactile MX switch, with an Ergo Clear-based silenced stem. The 2025 press release claims over 100 million keystrokes; the product pages say 50 million."
+    },
+    {
+      "id": "cherry-mx2a-orange",
+      "name": "MX2A Orange",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Orange",
+        "MX Orange",
+        "Cherry MX Orange"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "barrel spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2024",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-orange",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-orange-switch-review",
+          "date": "2024-07-21",
+          "score": null,
+          "verdict": "Decent medium-heavy linears and better than older Cherry linears, held back by uneven factory lube and leftover scratch."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX Orange product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-orange",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Orange",
+          "url": "https://pim.cherry-world.net/datasheet/23138?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Cherry MX Orange Switch Review",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-orange-switch-review",
+          "kind": "review",
+          "backs": [
+            "pins",
+            "materials",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cherry calls it a reissue of the rare original MX Orange. The per-part datasheet pages give 55 cN; the datasheet summary table says 45 cN."
+    },
+    {
+      "id": "cherry-mx2a-purple",
+      "name": "MX2A Purple",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Purple",
+        "MX Purple",
+        "Cherry MX Purple"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 80,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-coloured",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-purple",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-purple-switch-review",
+          "date": "2024-01-07",
+          "score": null,
+          "verdict": "A competent, subdued medium tactile that feels almost identical to the MX Ergo Clear, underwhelming for its hype and price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX Purple product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-purple",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Purple",
+          "url": "https://pim.cherry-world.net/datasheet/23132?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Cherry MX Purple Switch Review",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-purple-switch-review",
+          "kind": "review",
+          "backs": [
+            "pins",
+            "materials",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ThereminGoat reviewed it as a Glarses x Cherry collaboration. The per-part datasheet page and the highlights give 35 cN; the datasheet summary table says 45 cN."
+    },
+    {
+      "id": "cherry-mx2a-red",
+      "name": "MX2A Red",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Red",
+        "MX Red",
+        "Cherry MX Red",
+        "MX RGB Red",
+        "Cherry MX Red RGB"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "barrel spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2023-08",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-red",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Red product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-red",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Red",
+          "url": "https://pim.cherry-world.net/datasheet/23117?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY MX2A, exceeding expectations (2023-08-24)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-mx2a-exceeding-expectations",
+          "kind": "official",
+          "backs": [
+            "released",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: Cherry MX2A Red Switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx2a-red-switches/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: keyboard switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with and without PCB fixing pins, and in RGB (translucent housing) and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx2a-silent-black",
+      "name": "MX2A Silent Black",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Silent Black",
+        "MX Silent Black",
+        "Cherry MX Silent Black",
+        "Cherry MX Silent Black RGB"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-silent-black",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Silent Black product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-silent-black",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Silent Black",
+          "url": "https://pim.cherry-world.net/datasheet/23143?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "telcontar.net: Cherry MX variants",
+          "url": "https://telcontar.net/KBK/Cherry/MX_variants",
+          "kind": "reference",
+          "backs": [
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: keyboard switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cherry's highlights and the MX2A-81NA datasheet page give 60 cN; the property table repeats the Silent Red's 45 cN and red stem."
+    },
+    {
+      "id": "cherry-mx2a-silent-red",
+      "name": "MX2A Silent Red",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Silent Red",
+        "MX Silent Red",
+        "Cherry MX Silent Red",
+        "Cherry MX Silent Red RGB"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "barrel spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2023-08",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-silent-red",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Silent Red product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-silent-red",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Silent Red",
+          "url": "https://pim.cherry-world.net/datasheet/23122?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY MX2A, exceeding expectations (2023-08-24)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-mx2a-exceeding-expectations",
+          "kind": "official",
+          "backs": [
+            "released",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: Cherry MX2A Silent Red Switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx2a-silent-red-switches/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: keyboard switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with and without PCB fixing pins, and in RGB (translucent housing) and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx2a-speed-silver",
+      "name": "MX2A Speed Silver",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MX2A",
+      "aka": [
+        "Cherry MX2A Speed Silver",
+        "MX Speed Silver",
+        "Cherry MX Speed Silver",
+        "Cherry MX Speed Silver RGB"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "barrel spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2023-08",
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx2a-speed-silver",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX2A Speed Silver product page",
+          "url": "https://www.cherry.de/en-gb/product/mx2a-speed-silver",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX2A Speed Silver",
+          "url": "https://pim.cherry-world.net/datasheet/23127?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry press release: CHERRY MX2A, exceeding expectations (2023-08-24)",
+          "url": "https://www.cherry.de/en-gb/company/news/press/article/cherry-mx2a-exceeding-expectations",
+          "kind": "official",
+          "backs": [
+            "released",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: Cherry MX2A Speed Silver Switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/cherry-mx2a-speed-silver-switches/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry Xtrfy shop: keyboard switches",
+          "url": "https://cherryxtrfy.com/keyboard-switches/",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with and without PCB fixing pins, and in RGB (translucent housing) and non-RGB versions."
+    },
+    {
+      "id": "cherry-mx-emerald-reef",
+      "name": "MX Emerald Reef",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MXAA",
+      "aka": [
+        "Cherry MX Emerald Reef",
+        "MX Emerald"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 41,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-emerald-reef",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-emerald-switch-review",
+          "date": "2026-11-08",
+          "score": null,
+          "verdict": "Forceful, snappy silent tactiles with almost no stem wobble; the only real flaw is a slight sandy scratch through the bump."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX Emerald Reef product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-emerald-reef",
+          "kind": "official",
+          "backs": [
+            "type",
+            "tactile_force_gf",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Emerald Reef",
+          "url": "https://pim.cherry-world.net/datasheet/23171?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "pins",
+            "spring",
+            "factory_lubed",
+            "light_pipe",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Cherry MX Emerald Switch Review",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-emerald-switch-review",
+          "kind": "review",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent tactile on the MXAA platform (part MXAA-JCCD) with an integrated lens in the top housing."
+    },
+    {
+      "id": "cherry-mx-illuma-brown",
+      "name": "MX Illuma Brown",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MXAA",
+      "aka": [
+        "Cherry MX Illuma Brown",
+        "MX Lumina Brown",
+        "Cherry MX Lumina Brown"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 80,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx3-brown",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-lumina-brown-switch-review",
+          "date": "2026-07-19",
+          "score": null,
+          "verdict": "A big step back for Cherry: poor push feel, heavy stem wobble and harsh sound, weak value even at a low price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cherry: MX Illuma Brown product page",
+          "url": "https://www.cherry.de/en-gb/product/mx3-brown",
+          "kind": "official",
+          "backs": [
+            "type",
+            "tactile_force_gf",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Illuma Brown",
+          "url": "https://pim.cherry-world.net/datasheet/23168?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "pins",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Cherry MX Lumina Brown Switch Review",
+          "url": "https://www.theremingoat.com/blog/cherry-mx-lumina-brown-switch-review",
+          "kind": "review",
+          "backs": [
+            "aka",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "RGB switch on the MXAA platform, sold with (MXAA-G1LB) or without (MXAA_G1NB) an integrated lens; ThereminGoat reviewed part MXAA-G1LB as \"Lumina Brown\"."
+    },
+    {
+      "id": "cherry-mx-illuma-red",
+      "name": "MX Illuma Red",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "MXAA",
+      "aka": [
+        "Cherry MX Illuma Red"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 100,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "plastic polymer and glass fibre",
+        "stem": null
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.cherry.de/en-gb/product/mx-illuma-red",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Cherry: MX Illuma Red product page",
+          "url": "https://www.cherry.de/en-gb/product/mx-illuma-red",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cherry datasheet: MX Illuma Red",
+          "url": "https://pim.cherry-world.net/datasheet/23163?locale=en_GB",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "pins",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "RGB switch on the MXAA platform, sold with (MXAA-L1LB) or without (MXAA_L1NB) an integrated lens."
+    },
+    {
+      "id": "cherry-viola",
+      "name": "Viola",
+      "maker": "cherry",
+      "made_by": null,
+      "family": "Viola",
+      "aka": [
+        "Cherry Viola"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "proprietary",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 75,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2020",
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Cherry Viola",
+          "url": "https://deskthority.net/wiki/Cherry_Viola",
+          "kind": "reference",
+          "backs": [
+            "keycap_mount",
+            "footprint",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "released",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-cost plate-mounted switch with MX keycap mount whose leaf shorts contacts on the PCB; shown at CES 2020 and used in Corsair K60 Pro keyboards. Absent from Cherry's switch pages; Deskthority records 2023 reports that it was discontinued."
+    }
+  ]
+}

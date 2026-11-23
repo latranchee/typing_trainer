@@ -1,0 +1,207 @@
+{
+  "maker": {
+    "id": "roccat",
+    "name": "ROCCAT (Turtle Beach)",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.turtlebeach.com/products/vulcan-ii-max-keyboard",
+    "about": "Gaming peripheral brand now sold by Turtle Beach. Its Vulcan keyboards use its own Titan switches, the first developed with TTC.",
+    "sources": [
+      {
+        "title": "Turtle Beach: ROCCAT Vulcan II Max",
+        "url": "https://www.turtlebeach.com/products/vulcan-ii-max-keyboard",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "PC Gamer: Roccat is building its own mechanical key switches now (2018-05-31)",
+        "url": "https://www.pcgamer.com/roccat-is-building-its-own-mechanical-key-switches-now/",
+        "kind": "reference",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "roccat-titan-linear",
+      "name": "Titan Switch Linear",
+      "maker": "roccat",
+      "made_by": null,
+      "family": "Titan",
+      "aka": [
+        "Titan Red"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TechPowerUp: ROCCAT Vulcan 120 AIMO review, switches",
+          "url": "https://techpowerup.com/review/roccat-vulcan-120-aimo/6.html",
+          "kind": "review",
+          "backs": [
+            "pre_travel_mm",
+            "total_travel_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Linear version of the Titan offered in the Vulcan series."
+    },
+    {
+      "id": "roccat-titan-tactile",
+      "name": "Titan Switch Tactile",
+      "maker": "roccat",
+      "made_by": "ttc",
+      "family": "Titan",
+      "aka": [
+        "Titan Brown",
+        "ROCCAT Titan"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2018",
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "PC Gamer: Roccat is building its own mechanical key switches now (2018-05-31)",
+          "url": "https://www.pcgamer.com/roccat-is-building-its-own-mechanical-key-switches-now/",
+          "kind": "reference",
+          "backs": [
+            "made_by",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "TechRadar: How Roccat built the Titan Switch inside the Vulcan keyboard (2019-01-15)",
+          "url": "https://www.techradar.com/news/how-roccat-built-the-titan-switch-inside-the-brilliant-vulcan-keyboard",
+          "kind": "reference",
+          "backs": [
+            "made_by",
+            "pre_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "TechPowerUp: ROCCAT Vulcan 120 AIMO review, switches",
+          "url": "https://techpowerup.com/review/roccat-vulcan-120-aimo/6.html",
+          "kind": "review",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Roccat's first own switch, developed with TTC and shown in May 2018 for the Vulcan keyboards: a quiet tactile with a transparent housing and a wall around the stem. TechPowerUp puts its average actuation force near 55 gf."
+    },
+    {
+      "id": "roccat-titan-ii-optical-red",
+      "name": "TITAN II Optical Red",
+      "maker": "roccat",
+      "made_by": null,
+      "family": "Titan II",
+      "aka": [
+        "TITAN II Optical"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 200,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-max-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Turtle Beach: ROCCAT Vulcan II Max",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-max-keyboard",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Optical linear of the Vulcan II Max; Turtle Beach says it takes third-party cross-mount keycaps."
+    }
+  ]
+}

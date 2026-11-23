@@ -1,0 +1,223 @@
+{
+  "maker": {
+    "id": "drop",
+    "name": "Drop",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://drop.com/",
+    "about": "Enthusiast store, formerly Massdrop, that sold Drop-designed switches such as the Gateron-made Holy Panda X. Its product pages now lead to a Corsair gaming-collaborations page.",
+    "sources": [
+      {
+        "title": "Drop: drop.com now shows Corsair gaming collaborations",
+        "url": "https://drop.com/buy/drop-holy-panda-x-mechanical-switches",
+        "kind": "official",
+        "backs": [
+          "status"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Holy Panda X Switch Review",
+        "url": "https://www.theremingoat.com/blog/holy-panda-x-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "drop-invyr-holy-panda",
+      "name": "Drop + Invyr Holy Panda",
+      "maker": "drop",
+      "made_by": null,
+      "family": "Holy Panda",
+      "aka": [
+        "Massdrop x Invyr Holy Panda"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/drop/invyr-holy-panda",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: Holy Panda X Switch Review (history of the Massdrop x Invyr Holy Panda)",
+          "url": "https://www.theremingoat.com/blog/holy-panda-x-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Drop: drop.com now shows Corsair gaming collaborations",
+          "url": "https://drop.com/buy/drop-holy-panda-x-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Drop's earlier Holy Panda made with Invyr; ThereminGoat describes the original Holy Panda as a Halo True or Halo Clear stem in an Invyr Panda housing."
+    },
+    {
+      "id": "drop-holy-panda-x",
+      "name": "Holy Panda X",
+      "maker": "drop",
+      "made_by": "gateron",
+      "family": "Holy Panda",
+      "aka": [
+        "HPX"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "60 g",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/holy-panda-x-switch-review",
+          "date": "2022-03-01",
+          "score": null,
+          "verdict": "Drop met its goals for consistency and smoothness with a well-balanced PC-over-nylon sound, though spring ping and a scratchy bump remain."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Drop: Drop Holy Panda X Mechanical Switches (archived 2023-06-01)",
+          "url": "https://web.archive.org/web/20230601015403/https://drop.com/buy/drop-holy-panda-x-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Drop: drop.com now shows Corsair gaming collaborations",
+          "url": "https://drop.com/buy/drop-holy-panda-x-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by Drop with Quakemz, Invyr and Mech27, produced by Gateron; sold in 3-pin and 5-pin versions. The drop.com product page no longer exists."
+    },
+    {
+      "id": "drop-holy-panda-x-clear",
+      "name": "Holy Panda X Clear",
+      "maker": "drop",
+      "made_by": "gateron",
+      "family": "Holy Panda",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "60 g",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Drop: Drop Holy Panda X Clear Mechanical Switches (archived 2023-07-19)",
+          "url": "https://web.archive.org/web/20230719183549/https://drop.com/buy/drop-holy-panda-x-clear-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Drop: drop.com now shows Corsair gaming collaborations",
+          "url": "https://drop.com/buy/drop-holy-panda-x-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clear-housing version of the Holy Panda X, produced by Gateron; sold in 3-pin and 5-pin versions."
+    }
+  ]
+}

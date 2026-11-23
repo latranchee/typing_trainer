@@ -1,0 +1,1065 @@
+{
+  "maker": {
+    "id": "cannonkeys",
+    "name": "CannonKeys",
+    "role": "brand",
+    "country": "US",
+    "founded": null,
+    "official_url": "https://cannonkeys.com/",
+    "about": "US keyboard vendor whose own switches, such as the Ice Cream and Pastel series, are made by Tecsee, Haimu and Durock/JWK.",
+    "sources": [
+      {
+        "title": "CannonKeys: CK x Haimu Pastel Sand Linear Switch",
+        "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-sand-linear-switch",
+        "kind": "official",
+        "backs": [
+          "about",
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Wuque Studio: WS Onion Switch (CannonKeys as the US vendor)",
+        "url": "https://shop.wuquestudio.com/products/ws-onion-switch",
+        "kind": "official",
+        "backs": [
+          "country"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "cannonkeys-blue-macaw",
+      "name": "Blue Macaw",
+      "maker": "cannonkeys",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Polycarbonate",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/blue-macaw-silent-tactile-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Blue Macaw Silent Tactile Switch",
+          "url": "https://cannonkeys.com/products/blue-macaw-silent-tactile-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Moyu Black-like bottom housing with a T1-like stem."
+    },
+    {
+      "id": "cannonkeys-blush-light",
+      "name": "Blush Light",
+      "maker": "cannonkeys",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "63.5g two-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/blush-light-tactile-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Blush Light Tactile Switch",
+          "url": "https://cannonkeys.com/products/blush-light-tactile-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-cherry-blossom",
+      "name": "Cherry Blossom",
+      "maker": "cannonkeys",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM (P3)"
+      },
+      "spring": "65g",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/cherry-blossom-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Cherry Blossom Linear Switch",
+          "url": "https://cannonkeys.com/products/cherry-blossom-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full POM housing; the P3 stem gives about 3.9mm of travel."
+    },
+    {
+      "id": "cannonkeys-chocolate-toffee",
+      "name": "Chocolate Toffee",
+      "maker": "cannonkeys",
+      "made_by": "tecsee",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "63.5g two-stage",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/chocolate-toffee-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Chocolate Toffee Linear Switch",
+          "url": "https://cannonkeys.com/products/chocolate-toffee-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-coral",
+      "name": "Coral",
+      "maker": "cannonkeys",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Polycarbonate",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/coral-silent-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Coral Silent Linear Switch",
+          "url": "https://cannonkeys.com/products/coral-silent-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-mauve",
+      "name": "Mauve",
+      "maker": "cannonkeys",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon/PC-blend",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/mauve-linear-switch-10",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Mauve Linear Switch",
+          "url": "https://cannonkeys.com/products/mauve-linear-switch-10",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-sunny-side-up",
+      "name": "Sunny Side Up",
+      "maker": "cannonkeys",
+      "made_by": "tecsee",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "UPE",
+        "bottom": "UPE",
+        "stem": "POM"
+      },
+      "spring": "63.5g two-stage",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/sunny-side-up-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Sunny Side Up Linear Switch",
+          "url": "https://cannonkeys.com/products/sunny-side-up-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "CannonKeys' own bottom housing mold and a top housing with the CannonKeys logo."
+    },
+    {
+      "id": "cannonkeys-taro-ball",
+      "name": "Taro Ball",
+      "maker": "cannonkeys",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Polycarbonate",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g gold plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/taro-ball-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Taro Ball Tactile Switch",
+          "url": "https://cannonkeys.com/products/taro-ball-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-clipper-sea-serpent",
+      "name": "CK x Haimu Clipper Sea Serpent",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Clipper",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "nylon"
+      },
+      "spring": "63.5g single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/haimu-clipper-sea-serpent-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Clipper Sea Serpent Linear Switch",
+          "url": "https://cannonkeys.com/products/haimu-clipper-sea-serpent-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clip-in mechanism instead of the usual latches."
+    },
+    {
+      "id": "cannonkeys-clipper-swordfish",
+      "name": "CK x Haimu Clipper Swordfish",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Clipper",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "nylon"
+      },
+      "spring": "63.5g single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-clipper-swordfish-tactile-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Clipper Swordfish Tactile Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-clipper-swordfish-tactile-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clip-in mechanism instead of the usual latches."
+    },
+    {
+      "id": "cannonkeys-coffee-chip-ice-cream",
+      "name": "Coffee Chip Ice Cream",
+      "maker": "cannonkeys",
+      "made_by": "tecsee",
+      "family": "Ice Cream",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PME",
+        "bottom": "PME",
+        "stem": "POM"
+      },
+      "spring": "68g",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/coffee-chip-ice-cream-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Coffee Chip Ice Cream Tactile Switch",
+          "url": "https://cannonkeys.com/products/coffee-chip-ice-cream-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PME is a plastic blend Tecsee developed for its sound."
+    },
+    {
+      "id": "cannonkeys-neapolitan-ice-cream",
+      "name": "Neapolitan Ice Cream",
+      "maker": "cannonkeys",
+      "made_by": "tecsee",
+      "family": "Ice Cream",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Polycarbonate",
+        "bottom": "Polycarbonate",
+        "stem": "POM"
+      },
+      "spring": "63.5g two-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/neapolitan-ice-cream-switch",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/neapolitan-ice-cream-switch-review",
+          "date": "2021-05-02",
+          "score": null,
+          "verdict": "A clean, sharp tactile that impressed the reviewer by not chasing maximum tactility at the cost of the fundamentals."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CannonKeys: Neapolitan Ice Cream Tactile Switch",
+          "url": "https://cannonkeys.com/products/neapolitan-ice-cream-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Custom bottom housing mold meant to mimic a Zyko frankenswitch; light factory lube."
+    },
+    {
+      "id": "cannonkeys-pastel-azalea",
+      "name": "CK x Haimu Pastel Azalea",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM + UPE",
+        "bottom": "PA + UPE",
+        "stem": "POM"
+      },
+      "spring": "63.5g double-stage 22mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-pastel-azalea-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Azalea Linear Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-azalea-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-pastel-flan",
+      "name": "CK x Haimu Pastel Flan",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA (nylon)",
+        "stem": "POM"
+      },
+      "spring": "63.5g single-stage 18mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-flan-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Flan Linear Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-flan-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-pastel-lemon",
+      "name": "CK x Haimu Pastel Lemon",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM + UPE",
+        "stem": "UPE"
+      },
+      "spring": "63.5g single-stage 22mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-pastel-lemon-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Lemon Linear Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-lemon-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-pastel-mint",
+      "name": "CK x Haimu Pastel Mint",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "POM + UPE",
+        "stem": "POM"
+      },
+      "spring": "63.5g double stage 22mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-pastel-mint-tactile-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Mint Tactile Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-mint-tactile-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Very tactile with hardly any pre-travel."
+    },
+    {
+      "id": "cannonkeys-pastel-peach",
+      "name": "CK x Haimu Pastel Peach",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "nylon",
+        "stem": "POM+UPE"
+      },
+      "spring": "63.5g double stage 22mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-pastel-peach-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Peach Linear Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-peach-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-pastel-sand",
+      "name": "CK x Haimu Pastel Sand",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "nylon"
+      },
+      "spring": "65g single-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-pastel-sand-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Sand Linear Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-sand-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-pastel-sky",
+      "name": "CK x Haimu Pastel Sky",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "PA (nylon)",
+        "stem": "POM"
+      },
+      "spring": "63.5g single-stage 22mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-pastel-sky-linear-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Sky Linear Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-sky-linear-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "cannonkeys-pastel-thistle",
+      "name": "CK x Haimu Pastel Thistle",
+      "maker": "cannonkeys",
+      "made_by": "haimu",
+      "family": "Pastel",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA (nylon)",
+        "bottom": "PA (nylon)",
+        "stem": "POM"
+      },
+      "spring": "63.5g double stage 22mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://cannonkeys.com/products/ck-x-haimu-pastel-thistle-tactile-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: CK x Haimu Pastel Thistle Tactile Switch",
+          "url": "https://cannonkeys.com/products/ck-x-haimu-pastel-thistle-tactile-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Loud tactile with the bump felt almost at once."
+    }
+  ]
+}

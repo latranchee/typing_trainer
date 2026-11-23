@@ -38,3 +38,6 @@ dist-ssr
 
 # wrangler working files
 .wrangler
+
+# local Worker settings (sign-in links echoed, never mailed)
+.dev.vars

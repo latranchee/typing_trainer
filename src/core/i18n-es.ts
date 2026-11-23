@@ -18,7 +18,7 @@ const esSide = (side: Hand): string => (side === 'left' ? 'izquierda' : 'derecha
 
 export const es: Strings = {
   none: 'n/d',
-  drills: { highway: 'autopista', words: 'palabras', pairs: 'pares', anchors: 'anclas', stats: 'stats' },
+  drills: { highway: 'autopista', words: 'palabras', pairs: 'pares', anchors: 'anclas', stats: 'stats', boards: 'clasificaciones' },
   layouts: {
     'ca-fr': 'francés canadiense',
     us: 'qwerty estadounidense',
@@ -75,6 +75,14 @@ export const es: Strings = {
     },
     boardFound: (board) => `teclado ${board} detectado: el de la pantalla ya coincide`,
     interface: 'interfaz',
+    fontWeight: 'grosor',
+    fontRound: 'redondez',
+    fontOptical: 'tamaño óptico',
+    fontAuto: 'auto',
+    fontAutoTitle: 'cada tamaño elige su tamaño óptico',
+    fontNote: 'Allo, de Josh Puckett. La autopista dibuja sus notas con la redondez por defecto.',
+    hideKeyboard: 'ocultar teclado',
+    hideKeyboardTitle: 'escribe de memoria: el teclado en pantalla se aparta',
     focus: 'dedos',
     focusGroup: 'dedos que entrenar más',
     focusNote: 'los dedos encendidos teclean más',

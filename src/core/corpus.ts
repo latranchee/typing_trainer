@@ -1,6 +1,6 @@
 import { DE_PAIRS, DE_SENTENCES, DE_TRIPLES, DE_WORDS } from './corpus-de';
 import { ES_PAIRS, ES_SENTENCES, ES_TRIPLES, ES_WORDS } from './corpus-es';
-import type { Lang } from './store';
+import type { Lang } from './lang';
 
 const split = (text: string): string[] => text.trim().split(/\s+/);
 

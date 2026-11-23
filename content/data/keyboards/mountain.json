@@ -1,0 +1,468 @@
+{
+  "brand": {
+    "id": "mountain",
+    "name": "Mountain",
+    "country": "DE",
+    "founded": null,
+    "official_url": "https://mountain.gg/",
+    "focus": [
+      "gaming",
+      "enthusiast"
+    ],
+    "about": "German gaming peripheral brand known for its modular Everest keyboards. MOUNTAIN is a brand of 360 Service Agency GmbH (c/o LISTAN GmbH, Glinde); its own shop sells in euros and ships to Austria, Germany, France, Italy and the Netherlands.",
+    "sources": [
+      {
+        "title": "MOUNTAIN: Keyboards (lineup)",
+        "url": "https://mountain.gg/keyboards/",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "MOUNTAIN: Imprint",
+        "url": "https://mountain.gg/imprint/",
+        "kind": "official",
+        "backs": [
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "MOUNTAIN shop: store metadata (EUR, ships to AT, DE, FR, IT, NL)",
+        "url": "https://mountainggshop.com/meta.json",
+        "kind": "official",
+        "backs": [
+          "about",
+          "price_usd"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "mountain-everest-60",
+      "brand": "mountain",
+      "model": "Everest 60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 64,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "MOUNTAIN Linear 45",
+          "id": null
+        },
+        {
+          "name": "MOUNTAIN Linear 45 Speed",
+          "id": null
+        },
+        {
+          "name": "MOUNTAIN Tactile 55",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top, ABS bottom",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Base Camp",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://mountain.gg/keyboards/everest-60",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/mountain-everest-60",
+          "date": "2022-05-14",
+          "score": "4.5/5",
+          "verdict": "Smooth pre-lubed switches and a well-damped case make it a top compact gaming board; downsides are a 1u right Shift and occasional software bugs."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/mountain-everest-60-gaming-keyboard-review/",
+          "date": "2022-04-19",
+          "score": "93/100",
+          "verdict": "The best-feeling 60% gaming keyboard the reviewer had used: robust, responsive, and expandable with the optional numpad and PBT keycaps."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MOUNTAIN: Everest 60",
+          "url": "https://mountain.gg/keyboards/everest-60",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MOUNTAIN shop: product feed (Everest 60 options: US ANSI, UK/German/Nordic ISO; Linear 45, Linear 45 Speed, Tactile 55)",
+          "url": "https://mountainggshop.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "switches",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A 64-key board with arrow keys; a separate Everest 60 Numpad attaches on either side. MOUNTAIN's shop sells it in euros only, with no US store."
+    },
+    {
+      "id": "mountain-everest-core",
+      "brand": "mountain",
+      "model": "Everest Core",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Base Camp",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://mountain.gg/everest-core/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MOUNTAIN: Everest Core",
+          "url": "https://mountain.gg/everest-core/",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "case_material",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MOUNTAIN shop: product feed (Everest Core options: MX Red, Brown, Blue, Silent Red, Speed Silver; ANSI and ISO layouts)",
+          "url": "https://mountainggshop.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Mountain Everest Max review (Everest Core = the TKL board alone)",
+          "url": "https://www.rtings.com/keyboard/reviews/mountain/everest-max",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The tenkeyless Everest board without the numpad and media dock of the Everest Max. Every variant showed as unavailable in MOUNTAIN's euro-only shop on 2026-11-23."
+    },
+    {
+      "id": "mountain-everest-core-barebone",
+      "brand": "mountain",
+      "model": "Everest Core Barebone",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Base Camp",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://mountain.gg/everest-core-barebone/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MOUNTAIN: Everest Core Barebone",
+          "url": "https://mountain.gg/everest-core-barebone/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "case_material",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MOUNTAIN shop: product feed (Everest Core Barebone)",
+          "url": "https://mountainggshop.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Everest Core sold without switches and keycaps; takes 3-pin Cherry MX-compatible switches. Shown as unavailable in MOUNTAIN's euro-only shop on 2026-11-23."
+    },
+    {
+      "id": "mountain-everest-max",
+      "brand": "mountain",
+      "model": "Everest Max",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Base Camp",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://mountain.gg/keyboards/everest-max/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/mountain/everest-max",
+          "date": "2021-11-24",
+          "score": null,
+          "verdict": "Highly customizable modular board with a detachable numpad and media dock; hot-swappable for 3-pin switches, but Base Camp software is Windows-only."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/mountain-everest-max",
+          "date": "2021-07-28",
+          "score": "4.5/5",
+          "verdict": "Expensive but not overpriced: the modular design and display control center impressed, while the software was the weak point."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/mountain-everest-max-review-gaming-keyboard/",
+          "date": "2020-12-04",
+          "score": "89/100",
+          "verdict": "Great hardware with impressive modularity, and the barebones version suits custom builds; Base Camp software still felt immature."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MOUNTAIN: Everest Max",
+          "url": "https://mountain.gg/keyboards/everest-max/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "case_material",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MOUNTAIN shop: Everest Max (Wayback Machine copy of 2025-02-01; switch and layout options)",
+          "url": "https://web.archive.org/web/20250201213933/https://mountainggshop.com/products/everest-max",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MOUNTAIN shop: product feed (Everest Max no longer listed)",
+          "url": "https://mountainggshop.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Mountain Everest Max review",
+          "url": "https://www.rtings.com/keyboard/reviews/mountain/everest-max",
+          "kind": "review",
+          "backs": [
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A tenkeyless Everest board bundled with a detachable numpad (four display keys) and a media dock with a display dial. Still described on mountain.gg but absent from MOUNTAIN's shop on 2026-11-23."
+    }
+  ]
+}

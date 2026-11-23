@@ -37,6 +37,18 @@ export const SOFT_FIELD = 'soft-field';
 
 const isSoftField = (node: EventTarget | null): boolean => node instanceof HTMLElement && node.classList.contains(SOFT_FIELD);
 
+/**
+ * Alt pressed and let go alone moves the focus to the browser's menu on Windows and Linux, which takes
+ * the keys away from the drill. Its default is dropped on the way down and on the way up. A text field
+ * keeps it: there AltGr (sent as Alt) types characters such as @ on some layouts.
+ */
+const holdAlt = (event: KeyboardEvent): void => {
+  if (event.code !== 'AltLeft' && event.code !== 'AltRight') return;
+  const target = event.target;
+  if (target instanceof HTMLElement && target.matches('input:not([type="range"]), textarea, [contenteditable]')) return;
+  event.preventDefault();
+};
+
 /** True while focus sits on a control, where keys belong to that control. */
 const focusIsOnControl = (): boolean => {
   const active = document.activeElement;
@@ -75,6 +87,7 @@ export function attachInput(handlers: InputHandlers): () => void {
       return;
     }
 
+    holdAlt(event);
     if (!event.repeat) {
       held.add(code);
       handlers.down(code);
@@ -118,6 +131,7 @@ export function attachInput(handlers: InputHandlers): () => void {
 
   const onUp = (event: KeyboardEvent): void => {
     if (!event.code || isSoftField(event.target)) return;
+    holdAlt(event);
     held.delete(event.code);
     handlers.up(event.code);
   };

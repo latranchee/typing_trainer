@@ -1,0 +1,2560 @@
+{
+  "maker": {
+    "id": "hmx",
+    "name": "HMX",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": null,
+    "official_url": null,
+    "about": "Chinese switch factory in Dongguan (Dongguan Huimuxin) that makes factory-lubed MX-style switches under its own name, often designed with outside studios, and for other brands. ThereminGoat reports it was once connected to KTT.",
+    "sources": [
+      {
+        "title": "Akko Gear EU: Are HMX switches good?",
+        "url": "https://akkogear.eu/blogs/news/are-hmx-switches-good",
+        "kind": "retailer",
+        "backs": [
+          "about",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Kinetic Labs: HMX switches",
+        "url": "https://kineticlabs.com/switches/hmx",
+        "kind": "retailer",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Raptor MX Extreme Switch Review",
+        "url": "https://www.theremingoat.com/blog/raptor-mx-extreme-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Milktooth: HMX products",
+        "url": "https://milktooth.com/brands/hmx",
+        "kind": "retailer",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "hmx-retro-j",
+      "name": "Retro J",
+      "maker": "hmx",
+      "made_by": null,
+      "family": "Retro",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Retro J Tactile Switch",
+          "url": "https://milktooth.com/products/retro-j",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "family"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short 3mm total travel with almost no pre- or post-travel around the bump."
+    },
+    {
+      "id": "hmx-anti",
+      "name": "Anti",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "18mm single-stage extended Korean spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/hmx-anti-switch-review",
+          "date": "2025-11-23",
+          "score": null,
+          "verdict": "Pleasant despite its deliberate fine scratch, with sparse but effective lube; wobble and bottom-out consistency are only average."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Anti Linear Switch",
+          "url": "https://milktooth.com/products/anti",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: HMX Anti Switch Review",
+          "url": "https://www.theremingoat.com/blog/hmx-anti-switch-review",
+          "kind": "review",
+          "backs": [
+            "pins",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by Unlimited Studio with a deliberately textured stroke."
+    },
+    {
+      "id": "hmx-bleed",
+      "name": "Bleed",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage extended spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Bleed Tactile Switch",
+          "url": "https://milktooth.com/products/bleed",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-blossoms",
+      "name": "Blossoms",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "H3"
+      },
+      "spring": "22mm KOS single-stage extended",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Blossoms Linear Switch",
+          "url": "https://milktooth.com/products/blossoms",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-blue-star",
+      "name": "Blue Star",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 3.65,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Blue Star Tactile Switch",
+          "url": "https://milktooth.com/products/blue-star",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-blue-topaz",
+      "name": "Blue Topaz",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "P4",
+        "stem": "LY"
+      },
+      "spring": "22mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX Blue Topaz Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/hmx-blue-topaz-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Made with Mage Studio; P4 bottom housing is a PA66 blend with less fiberglass and more PTFE."
+    },
+    {
+      "id": "hmx-bruise",
+      "name": "Bruise",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage extended spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Bruise Tactile Switch",
+          "url": "https://milktooth.com/products/bruise",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-butter",
+      "name": "Butter",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kinetic Labs: HMX Butter Linear Switches",
+          "url": "https://kineticlabs.com/switches/hmx/hmx-butter-switches",
+          "kind": "retailer",
+          "backs": [
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-canglan-v3",
+      "name": "Canglan V3",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "UPE"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX Canglan V3 Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/canglan-v3-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-caramel-pudding",
+      "name": "Caramel Pudding",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 52,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA66",
+        "stem": "modified UPE"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX Caramel Pudding Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/caramel-pudding-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-cheese",
+      "name": "Cheese",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 46,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "Ly"
+      },
+      "spring": "22mm single-staged spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Cheese Linear Switch",
+          "url": "https://milktooth.com/products/cheese",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-cloud-63-5g",
+      "name": "Cloud (63.5g)",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Cloud - 63.5g"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 56,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "Ly"
+      },
+      "spring": "22mm single-staged spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Cloud - 63.5g Linear Switch",
+          "url": "https://milktooth.com/products/cloud-heavy",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavier variant of the HMX Cloud."
+    },
+    {
+      "id": "hmx-coral-sea",
+      "name": "Coral Sea",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "proprietary POM blend",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Coral Sea Linear Switch",
+          "url": "https://milktooth.com/products/coral-sea",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-crystal-he",
+      "name": "Crystal HE",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 42,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Crystal HE Hall Effect Switch",
+          "url": "https://milktooth.com/products/crystal-he",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards."
+    },
+    {
+      "id": "hmx-cthulhu",
+      "name": "Cthulhu",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "P7",
+        "stem": "M1 modified POM"
+      },
+      "spring": "22mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/hmx-cthulhu-switch-review",
+          "date": "2026-09-27",
+          "score": null,
+          "verdict": "Heavily factory-lubed linear whose lube is felt in the stroke; very little wobble; the reviewer calls it a clear success."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: HMX Cthulhu Switch Review",
+          "url": "https://www.theremingoat.com/blog/hmx-cthulhu-switch-review",
+          "kind": "review",
+          "backs": [
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by SULAB; sold in 37-42g, 45-50g and 50-56g spring versions. P7 is nylon with 50% fiberglass."
+    },
+    {
+      "id": "hmx-deep-navy",
+      "name": "Deep Navy",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "P3",
+        "bottom": "P3",
+        "stem": "LY"
+      },
+      "spring": "20mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX Deep Navy Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/hmx-deep-navy-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by MZ Studio; P3 is a PA66 blend with 30% fiberglass."
+    },
+    {
+      "id": "hmx-egg-yolk",
+      "name": "Egg Yolk",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 43,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "M2"
+      },
+      "spring": "22mm single-stage KOS",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Egg Yolk Linear Switch",
+          "url": "https://milktooth.com/products/egg-yolk",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A split bottom housing seats a rigid S1 post where the stem bottoms out."
+    },
+    {
+      "id": "hmx-eva",
+      "name": "EVA",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Eva"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "P4",
+        "stem": "T2"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX Eva Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/eva-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-frog",
+      "name": "Frog",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2025",
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/hmx-frog-switch-review",
+          "date": "2026-01-18",
+          "score": null,
+          "verdict": "Decent first HMX tactile with a medium bump that peaks early; factory lube is spotty and breaks in worse than other HMX switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kinetic Labs: HMX Frog Tactile Switches",
+          "url": "https://kineticlabs.com/switches/hmx/hmx-frog-switches",
+          "kind": "retailer",
+          "backs": [
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: HMX Frog Switch Review",
+          "url": "https://www.theremingoat.com/blog/hmx-frog-switch-review",
+          "kind": "review",
+          "backs": [
+            "bottom_out_force_gf",
+            "pins",
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kinetic Labs and HMX collaboration; HMX's first tactile switch."
+    },
+    {
+      "id": "hmx-game-1989-classic",
+      "name": "Game 1989 Classic",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "80Retros Game 1989"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "P4",
+        "stem": "T5"
+      },
+      "spring": "22mm KOS single-stage extended",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX 1989 Game Classic Linear Switch 35-pack",
+          "url": "https://us.maxgaming.com/us/switches/hmx-80retros-1989-game-classic-linear-switch-35-pack",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by 80Retros, part of its film switch series; lubed with GPL105 and GPL205."
+    },
+    {
+      "id": "hmx-gamer-fuel",
+      "name": "Gamer Fuel",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 42,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Gamer Fuel Hall Effect Switch",
+          "url": "https://milktooth.com/products/gamer-fuel",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "HMX's first Hall-effect switch. Magnetic switch for Hall-effect boards."
+    },
+    {
+      "id": "hmx-grape-soda",
+      "name": "Grape Soda",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.3,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage Korean spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Grape Soda Tactile Switch",
+          "url": "https://milktooth.com/products/grape-soda",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-hades-v2-58g",
+      "name": "Hades V2 58g",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA12",
+        "stem": "T5"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX Hades V2 58g Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/hades-v2-58g-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Made with Moyu Studio. The retailer page gives the actuation force as both 48g and 37g."
+    },
+    {
+      "id": "hmx-hibiscus",
+      "name": "Hibiscus",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA66 nylon",
+        "stem": "T3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kinetic Labs: HMX Hibiscus Linear Switches",
+          "url": "https://kineticlabs.com/switches/hmx/hmx-hibiscus-switches",
+          "kind": "retailer",
+          "backs": [
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Akko Gear EU: Are HMX switches good?",
+          "url": "https://akkogear.eu/blogs/news/are-hmx-switches-good",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-hyacinth-v2",
+      "name": "Hyacinth V2",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Sillyworks Hyacinth V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 52,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "modified nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Sillyworks Hyacinth V2 Linear Switch",
+          "url": "https://milktooth.com/products/hyacinth-v2",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MaxGaming: HMX Sillyworks Hyacinth V2 Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/hmx-sillyworks-hyacinth-v2-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by Sillyworks and made by HMX; long-pole stem."
+    },
+    {
+      "id": "hmx-hyacinth-v2u",
+      "name": "Hyacinth V2U",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Sillyworks Hyacinth V2U"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 52,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Sillyworks Hyacinth V2U Linear Switch",
+          "url": "https://milktooth.com/products/hyacinth-v2u",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kinetic Labs: HMX Hyacinth V2U Linear Switches",
+          "url": "https://kineticlabs.com/switches/hmx/hmx-hyacinth-v2u-switches",
+          "kind": "retailer",
+          "backs": [
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sillyworks x HMX variant of the Hyacinth V2 with new housing materials and a longer 3.9mm travel."
+    },
+    {
+      "id": "hmx-jammy",
+      "name": "Jammy",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "P4",
+        "stem": "POM"
+      },
+      "spring": "22mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MaxGaming: HMX Jammy Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/hmx-jammy-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "pre_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-latte",
+      "name": "Latte",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kinetic Labs: HMX Latte Linear Switches",
+          "url": "https://kineticlabs.com/switches/hmx/hmx-latte-switches",
+          "kind": "retailer",
+          "backs": [
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-lotus-heavy",
+      "name": "Lotus (Heavy)",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 62.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-staged spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Lotus (Heavy) Linear Switch",
+          "url": "https://milktooth.com/products/lotus-heavy",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-martini-v2",
+      "name": "Martini V2",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "Ly"
+      },
+      "spring": "18mm single-stage extended Korean spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Martini V2 Linear Switch",
+          "url": "https://milktooth.com/products/martini-v2",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Factory lube only on the leaves and springs; rail bottom-out design."
+    },
+    {
+      "id": "hmx-mochi",
+      "name": "Mochi",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 32,
+      "bottom_out_force_gf": 37,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "H2"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Mochi Linear Switch",
+          "url": "https://milktooth.com/products/mochi",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dustproof walls."
+    },
+    {
+      "id": "hmx-neo-amber",
+      "name": "Neo Amber",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage Korean spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Neo Amber Linear Switch",
+          "url": "https://milktooth.com/products/neo-amber",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-pebble",
+      "name": "Pebble",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Gravel"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Gravel Linear Switch",
+          "url": "https://milktooth.com/products/gravel",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kinetic Labs: HMX Pebble Linear Switch",
+          "url": "https://kineticlabs.com/switches/hmx/hmx-pebble-switches",
+          "kind": "retailer",
+          "backs": [
+            "pins",
+            "factory_lubed",
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-poro",
+      "name": "Poro",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "P3",
+        "bottom": "PA30",
+        "stem": "LY"
+      },
+      "spring": "22mm single-stage KOS extended stainless steel spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Poro Linear Switch",
+          "url": "https://milktooth.com/products/poro",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MaxGaming: HMX Poro Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/hmx-poro-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed with Soul Cat."
+    },
+    {
+      "id": "hmx-quantum",
+      "name": "Quantum",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "N4 nylon",
+        "stem": "modified POM"
+      },
+      "spring": "22mm single-stage extended",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Quantum Linear Switch",
+          "url": "https://milktooth.com/products/hmx-quantum",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Made on HMX's third-generation molds."
+    },
+    {
+      "id": "hmx-saru-v2",
+      "name": "Saru V2",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 52,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 2.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "modified POM"
+      },
+      "spring": "20mm KOS single-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Saru V2 Tactile Switch",
+          "url": "https://milktooth.com/products/saru-v2",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full tactile: the bump runs through most of the stroke."
+    },
+    {
+      "id": "hmx-su",
+      "name": "SU",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA12",
+        "stem": "T5"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX SU Linear Switch",
+          "url": "https://milktooth.com/products/su",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-sunset-gleam",
+      "name": "Sunset Gleam",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Duck Duck"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "Ly"
+      },
+      "spring": "22mm single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Sunset Gleam Linear Switch",
+          "url": "https://milktooth.com/products/sunset-gleam",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MaxGaming: HMX Sunset Gleam Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/sunset-gleam-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by Knock Knock Studio. A later full-travel version is listed with 50g actuation, 56g bottom-out and 3.9mm total travel."
+    },
+    {
+      "id": "hmx-swift",
+      "name": "Swift",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "Ly"
+      },
+      "spring": "22mm extended spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Swift Linear Switch",
+          "url": "https://milktooth.com/products/swift",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "hmx-swift-v2",
+      "name": "Swift V2",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "Ly"
+      },
+      "spring": "22mm extended spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Swift V2 Linear Switch",
+          "url": "https://milktooth.com/products/swift-v2",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "New Ly stem blend compared with the Swift."
+    },
+    {
+      "id": "hmx-volume-0-t",
+      "name": "Volume 0-T",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "P4",
+        "stem": "POM+TPE"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/hmx-volume-0-t-switch-review",
+          "date": "2025-12-21",
+          "score": null,
+          "verdict": "Spot-on factory lube and almost no wobble; quieter than normal tactiles but not truly silent; solid for about $0.26."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: HMX Volume 0-T Switch Review",
+          "url": "https://www.theremingoat.com/blog/hmx-volume-0-t-switch-review",
+          "kind": "review",
+          "backs": [
+            "materials",
+            "pins",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed and marketed by 80Retros."
+    },
+    {
+      "id": "hmx-waverider-v2",
+      "name": "Waverider V2",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Sillyworks x HMX Waverider V2"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm KOS single-stage spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/sillyworks-x-hmx-waverider-v2-switch-review",
+          "date": "2026-05-03",
+          "score": null,
+          "verdict": "Snappy medium-strong bump that starts at the top of the stroke; soft, slightly pokey bottom-out from large dampening pads."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Waverider V2 Tactile Switch",
+          "url": "https://milktooth.com/products/waverider-v2",
+          "kind": "retailer",
+          "backs": [
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Sillyworks x HMX Waverider V2 Switch Review",
+          "url": "https://www.theremingoat.com/blog/sillyworks-x-hmx-waverider-v2-switch-review",
+          "kind": "review",
+          "backs": [
+            "materials",
+            "pins",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by Sillyworks; large dampening pads under the slider rails."
+    },
+    {
+      "id": "hmx-xinhai",
+      "name": "Xinhai",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "modified nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm KOS single stage extended",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "The Key Source",
+          "url": "https://thekeysource.co.uk/hmx-xinhai-review-never-going-back-again/",
+          "date": "2024-04-22",
+          "score": null,
+          "verdict": "Praised for smoothness and sound; the light 37g weight caused mistypes until the reviewer adjusted."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Xinhai Linear Switch",
+          "url": "https://milktooth.com/products/xinhai",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MaxGaming: HMX Xinhai Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/xinhai-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by HC Studio."
+    },
+    {
+      "id": "hmx-xinhai-heavy",
+      "name": "Xinhai (Heavy)",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Xinhai 62.5g"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 62.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "modified nylon",
+        "stem": "POM"
+      },
+      "spring": "22mm KOS single stage extended",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Xinhai (Heavy) Linear Switch",
+          "url": "https://milktooth.com/products/xinhai-heavy",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "pins",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MaxGaming: HMX Xinhai 62.5g Linear Switch",
+          "url": "https://us.maxgaming.com/us/switches/xinhai-625g-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by HC Studio."
+    },
+    {
+      "id": "hmx-yogurt-s",
+      "name": "Yogurt S",
+      "maker": "hmx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 43,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "nylon",
+        "stem": "modified POM"
+      },
+      "spring": "single-staged spring",
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: HMX Yogurt S Linear Switch",
+          "url": "https://milktooth.com/products/yogurt-s",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    }
+  ]
+}

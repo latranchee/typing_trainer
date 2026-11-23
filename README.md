@@ -17,7 +17,18 @@ Then open http://127.0.0.1:5183/. Progress is saved in the browser's local stora
 
 petitdoigt.ca is a Cloudflare Worker that serves the built files as static assets (`wrangler.jsonc`). Every push to `main` runs the tests, builds, and deploys there through Cloudflare's Git integration (Workers Builds). The same push publishes a copy to GitHub Pages (`.github/workflows/deploy.yml`). To deploy by hand: `npm run build`, then `npx wrangler deploy`.
 
-Other commands: `npm test` (engine tests), `npm run typecheck`, `npm run build` (the trainer, then the guides), `npm run guides:check` (checks every guide file).
+Other commands: `npm test` (engine tests), `npm run typecheck` (the trainer and the Worker), `npm run build` (the trainer, then the guides), `npm run guides:check` (checks every guide file).
+
+The accounts, boards and races need the Worker. Run it beside Vite:
+
+```
+echo ECHO_LINKS=1 > .dev.vars
+npx wrangler dev --port 8787 --persist-to .wrangler/state
+```
+
+Vite sends `/api` to it (`vite.config.ts`). With `ECHO_LINKS=1` no mail leaves the machine: the account panel shows the sign-in code instead. `API_URL=http://127.0.0.1:8787 npm run test:api` runs the API tests against it (sign-in, a replayed and ranked set, a forged set, a two-typist race).
+
+Before the first deploy with the Worker script: `npx wrangler email sending enable petitdoigt.ca` (it adds the SPF and DKIM records), and let `wrangler deploy` create the D1 database, or create it with `npx wrangler d1 create petitdoigt` and put its id in `wrangler.jsonc`. The Worker writes its own tables on first use (`worker/db.ts`).
 
 ## How it works
 
@@ -39,9 +50,15 @@ On a phone the trainer types with the phone's own keyboard: tap the text or `tap
 
 ## Settings
 
-`settings` at the right of the top strip opens one list in place of the hands: the open drill's options, the fingers to train, hardcore, the key sound, the layout and the shape of your keyboard, the profile, tracking and the interface language. The text and the board stay in view beside it, so you see a change as you make it. It closes on its button, on `esc`, on a click outside it, and at the first key you type.
+`settings` at the right of the top strip opens one list in place of the hands: the open drill's options, the fingers to train, hardcore, the key sound, the layout and the shape of your keyboard, the font, the profile, tracking and the interface language. The text and the board stay in view beside it, so you see a change as you make it. It closes on its button, on `esc`, on a click outside it, and at the first key you type.
 
 Under the keyboard there is only a line of key hints: `esc` new text, `enter` next set after a result.
+
+The on-screen keyboard follows Shift and Caps Lock: hold Shift and it shows capitals and the symbols over the digits; Caps Lock capitalizes the letters only.
+
+`hide keyboard` takes the on-screen keyboard away in every typing drill, so you type from memory; the hands and the next key stay. The stats keep their keyboard. On a window too short for the whole list, the list scrolls.
+
+The font is [Allo](https://allo.joshpuckett.me) by Josh Puckett. Three sliders in the settings move its axes: `weight` (every weight of the page moves with it), `roundness` and `optical size`. The optical size starts on `auto`, which matches it to each text size; `auto` beside the slider brings it back. The highway's notes are drawn on a canvas and follow the weight only.
 
 ## Your keyboard's shape
 
@@ -140,7 +157,14 @@ As the fuse empties a heartbeat sets in, which you also hear (`heartbeat` in the
 
 History is kept per profile in local storage. The newest 300 sets stay as they are; older ones are merged into one entry per day and layout, so the long view survives without filling the browser's storage. Finger and key history starts with the sets finished after this feature arrived: earlier sets only carry their overall speed and accuracy. Numbers saved by the first version (one typist, no profiles) are carried over into the first profile, `main`.
 
-## What it can and cannot check
+## Accounts, boards and races
+
+The trainer works without an account. `sign in` in the top strip takes an email address and mails a link and a 6-digit code; either one signs in. The account follows the profile that was active at sign-in: its history syncs to every device signed in to the same account, and turning `tracking` off keeps a set off the boards as well. In the account panel you pick the name the boards show and, if you like, your keyboard: model, switch and size.
+
+`boards` ranks typists by their best set in a period, keyboards by the mean of their typists' bests, and texts by how many typed them. Each board is one drill on one kind of input (keys or a touch screen), narrowed in the settings by language and layout. A set counts when the server can replay it: every keystroke is sent with the set, and a set under 95% accuracy, shorter than 40 characters or faster than 260 WPM stays off.
+
+Every set has a text id. `share this text` copies a link that opens the same text (`?text=…`, with `&mode=highway` for the highway); the best runs on it race along as ghosts in a strip above the drill, with a caret in the text for each. `race it` or `new race` opens a room (`?race=…`): whoever opens the link joins, the host starts a countdown, and everyone types the same text with the others' progress live in the strip. Guests can race under any name. What is kept and for how long is on the privacy page (`/privacy/`).
+
 
 A browser cannot see which finger pressed a key. The trainer only claims what key events prove:
 
@@ -167,8 +191,12 @@ If the anchor drill reports a lifted anchor while your fingers are down, your ke
 ## Project files
 
 - `src/core/`: the boards (`physical.ts`), layouts, finger maps, text generation and the finger focus (`generator.ts`), metrics, storage (`store.ts`: profiles, options, numbers), history math (`history.ts`), streaks, records and the glow rules (`rewards.ts`), the list of key sounds (`switches.ts`), the practice text (`corpus.ts`, with German and Spanish in `corpus-de.ts` and `corpus-es.ts`), launch links (`launch.ts`) and every interface string (`i18n.ts` for English and French, `i18n-de.ts`, `i18n-es.ts`). No DOM.
-- `src/drills/`: one file per drill.
-- `src/ui/`: shell, keyboard, hands, settings panel (`panel.ts`), finger picker, dropdown, profile menu, sound, sparks, and the ink centring of letters in shapes (`glyph.ts`).
+- `src/core/online.ts`, `replay.ts`, `texts.ts`, `keyboards.ts`: what the client and the Worker share (board queries, the keystroke log and its replay, text ids and ghosts, keyboard names). `i18n-online.ts`: the strings of the online parts.
+- `src/net/`: the API client, the account and its sync (`online.ts`), the race socket (`race.ts`).
+- `worker/`: the Worker (`index.ts` routes `/api/*`): sign-in and mail, accounts, sets and boards, the tables, and the race room Durable Object (`room.ts`).
+- `src/drills/`: one file per drill, `boards.ts` included.
+- `src/ui/`: shell, keyboard, hands, settings panel (`panel.ts`), finger picker, dropdown, profile menu, sound, sparks, the ink centring of letters in shapes (`glyph.ts`), the account rows (`account.ts`), the race card (`race.ts`) and the strip of rivals (`strip.ts`).
+- `public/privacy/`: the privacy page, one file in four languages.
 - `public/switches/`: the switch recordings, one folder per switch.
 - `PRODUCT.md`: product record. `DESIGN.md`: the design system. `.impeccable/`: design tokens, the surface brief and the approved mock.
 - `content/guides/<lang>/<id>.html`: the guides, one file per guide and language. `scripts/guides/`: the checker, the page builder, the stylesheet, the keyboard figures and the page strings.
@@ -184,4 +212,4 @@ The guides state only what their sources say; each one lists them. They make no 
 
 ## License
 
-MIT. See [LICENSE](LICENSE). The switch recordings in `public/switches/` come from kbsim and keep its MIT license, copied beside them.
+MIT. See [LICENSE](LICENSE). The switch recordings in `public/switches/` come from kbsim and keep its MIT license, copied beside them. The font, Allo by Josh Puckett, is under the SIL Open Font License 1.1 and comes from the `allo-font` package.

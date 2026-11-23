@@ -31,99 +31,99 @@ colors:
   finger-thumb: "#aab0ba"
 typography:
   display:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "6.5rem"
     fontWeight: 700
     lineHeight: 0.846
     letterSpacing: "-0.03em"
     fontFeature: "'tnum'"
   headline:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "4.5rem"
     fontWeight: 700
     lineHeight: 1
     fontFeature: "'tnum'"
   headline-sm:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "3.5rem"
     fontWeight: 700
     lineHeight: 1
     fontFeature: "'tnum'"
   title:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.9375rem"
     fontWeight: 700
     lineHeight: 1.1
     fontFeature: "'tnum'"
   drill:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.75rem"
     fontWeight: 400
     lineHeight: 2
   wordmark:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.4375rem"
     fontWeight: 600
     letterSpacing: "0.01em"
   counter:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.4375rem"
     fontWeight: 700
     lineHeight: 1
     fontFeature: "'tnum'"
   body:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.3
   base:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.3
   label:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "0.9375rem"
     fontWeight: 400
     lineHeight: 1.3
   label-sm:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.3
   micro:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "0.8125rem"
     fontWeight: 400
     lineHeight: 1.3
   legend:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 500
     lineHeight: 1
   root:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "clamp(11px, min(1.04167vw, 1.5625vh), 28px)"
   root-narrow:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "14px"
   narrow-wordmark:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.25rem"
     fontWeight: 600
     letterSpacing: "0.01em"
   narrow-next-cap:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "1.125rem"
     fontWeight: 500
     lineHeight: 1
   narrow-legend:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "0.6875rem"
     fontWeight: 500
     lineHeight: 1
   narrow-legend-modifier:
-    fontFamily: "'Roboto Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+    fontFamily: "'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif"
     fontSize: "0.5625rem"
     fontWeight: 400
     lineHeight: 1
@@ -286,7 +286,7 @@ components:
 
 petitdoigt is the familiar quiet-dark typing test finished to the Linear / Raycast standard, with one change of unit: the finger, not the key, is what the screen teaches. One fixed screen holds three zones on a charcoal ground. The left rail carries the product's numbers, the centre stage drops falling notes straight onto an on-screen keyboard, and the right rail shows the hands with the finger to use filled in. Nothing scrolls on desktop and nothing needs a click to start; the primary action is typing.
 
-The palette is restrained everywhere except where it carries meaning. Chrome stays in four steps of cool slate and three greys of text; color arrives only as finger hues, one mustard accent for the product's own figures, and a coral for misses. Zones are separated by space and low-contrast hairlines rather than cards or boxes. Roboto Mono runs through everything, so legends, drill text and numerals share one grid and tabular digits never jump.
+The palette is restrained everywhere except where it carries meaning. Chrome stays in four steps of cool slate and three greys of text; color arrives only as finger hues, one mustard accent for the product's own figures, and a coral for misses. Zones are separated by space and low-contrast hairlines rather than cards or boxes. Allo runs through everything, with tabular digits so numbers never jump. Each typist sets its weight, roundness and optical size in the settings.
 
 Motion is short and ease-out, with no bounce. The signature beat is a note landing on the strike line, its key cap pressing, and its finger lighting on the hands plate, all within about 80 to 220ms.
 
@@ -323,7 +323,7 @@ The hue names the finger. Each hue comes in three shades, one per letter row; th
 - **Key Slate** (`key-slate`): neutral key caps, the segmented-control track, the dropdown button's hover fill, the dropdown menu.
 - **Key Slate Lit** (`key-slate-lit`): hover fill for segments and menu options, the pressed neutral key.
 - **Bar Track** (`bar-track`): empty finger-bar tracks.
-- **Hairline** (`hairline`): the top-strip divider, rail rules, stats table row rules, sparkline baseline.
+- **Hairline** (`hairline`): the top-strip divider, rail rules, stats table row rules.
 - **Hairline Strong** (`hairline-strong`): dropdown border, the selected segment, the pressed option, the stats scrollbar.
 - **Lane Rule** (`lane-rule`): the vertical lane edges of the highway.
 - **Strike Line** (`strike-line`): the 2px line notes land on.
@@ -349,11 +349,15 @@ The highway fades notes in at the top through a mask (`linear-gradient(to bottom
 
 ## Typography
 
-**Display Font:** Roboto Mono Variable (with ui-monospace, Cascadia Mono, Consolas)
-**Body Font:** Roboto Mono Variable
-**Label/Mono Font:** Roboto Mono Variable
+**Display Font:** Allo (with system-ui, -apple-system, Segoe UI)
+**Body Font:** Allo
+**Label/Mono Font:** Allo
 
-**Character:** One monospace family in every role, with tabular numerals on by default. Weight carries hierarchy: 700 for numbers, 600 for the wordmark and tokens, 500 for finger legends, 400 for everything else.
+**Character:** One variable sans in every role: Allo by Josh Puckett (SIL Open Font License 1.1, npm `allo-font`), with tabular numerals on by default. Weight carries hierarchy: 700 for numbers, 600 for the wordmark and tokens, 500 for finger legends, 400 for everything else.
+
+**The typist's axes.** The settings hold three sliders on Allo's axes. `weight` (100 to 900, default 400) sets plain text and moves every other weight by the same amount through `--wght-shift`, so a number stays heavier than its label; `calc()` clamps each to the font's range. `roundness` (`ROND` 0 to 100, default 50) and `optical size` (`opsz` 9 to 32) are set as `font-variation-settings` on the root. The optical size starts on `auto`, where the browser matches it to each size; a fixed value holds for every size until `auto` is pressed. Text drawn on a canvas (highway notes, the stats chart) follows the weight only: a canvas cannot take variation settings.
+
+Drill letters are spaced as text. A letter box is as wide as its letter; a space keeps 0.5em so the cursor bar has room.
 
 ### Hierarchy
 - **Display** (700, 6.5rem, 0.846, -0.03em): the live rolling WPM numeral in the left rail only.
@@ -381,7 +385,7 @@ A word on a key one unit wide (the short Backspace of a JIS board) is set at 0.6
 
 **The Two Languages Rule.** Every string lives in `src/core/i18n.ts`, in English and in French, and the French follows the same voice: lowercase labels, the reader addressed as "tu", no space before a colon. French runs about a quarter longer, so a new string is checked in French at the width its English fits.
 
-**The One Family Rule.** Roboto Mono for everything, numerals included; no second face.
+**The One Family Rule.** Allo for everything, numerals included; no second face. Scripts Allo lacks (Cyrillic and CJK key legends) fall back to the system sans.
 
 ## Layout
 
@@ -389,7 +393,7 @@ The screen is built at a 1536 x 1024 reference frame where 1rem = 16px, and the 
 
 A 5.0625rem top strip (wordmark, five text tabs and, at its right end, the settings button) sits above a hairline. The button ends where the right rail ends, 1.75rem from the cockpit's edge. Below the strip a 96rem centred cockpit holds three fixed columns: a 17rem left rail, a 49.75rem centre and a 21rem right rail, separated by 2.375rem and 1.25rem gaps with a 2.875rem outer gutter. The centre is a grid of stage, keyboard and a 4.75rem foot that holds one line: the key hints, centred under the board, or what the stage has to say. The 2.25rem strip between the stage and the keyboard holds the streak counter at its right end. The highway lanes are measured from the keyboard, so every note falls straight onto its finger's home key.
 
-The right rail has two faces. At rest it shows the hands and the next key. The settings button swaps them for the settings list (see Settings), which starts 1.125rem inside the rail and 2.25rem under the strip, and ends with the rail. That puts the list as far from the last key cap as the first cap is from the left rail, 3.3125rem: the board sits in the middle of what flanks it. The stage and the board stay in view, so a change of text, layout or board shows as it is made.
+The right rail has two faces. At rest it shows the hands and the next key. The settings button swaps them for the settings list (see Settings), which starts 1.125rem inside the rail and 2.25rem under the strip, and ends with the rail. A window too short for the whole list scrolls it inside the rail (see Settings). That puts the list as far from the last key cap as the first cap is from the left rail, 3.3125rem: the board sits in the middle of what flanks it. The stage and the board stay in view, so a change of text, layout or board shows as it is made.
 
 Spacing recurs at 0.375rem, 0.625rem, 1.25rem, 2.25rem and 2.875rem. The keyboard is a 60-column grid with 0.625rem row gaps and 3.125rem rows.
 
@@ -440,12 +444,13 @@ A 1.875 by 1.125rem pill: the control of every off / on line of the settings (ca
 
 ### Settings (signature)
 One list for everything that can be set, opened by the settings button in the right rail's place. It sits on the bare ground like the rail it replaces: no card, no border, no shadow. Each line is a name and one control on a two-column grid: the name in Label Small, Muted Label, in a 5.875rem column (eleven letters, the longest name in either language), then the control, 0.75rem away, left-aligned. Lines are 2.25rem tall and 0.5rem apart. A Hairline parts each group from the next, with 0.375rem more room on each side.
-- **Groups, top to bottom:** the open drill's own options and the fingers to train; hardcore (its switch, then `min wpm`, `difficulty` and `heartbeat` once it is on); the key sound; the layout and the board; the profile, tracking and the interface language. The stats view has no fingers and no hardcore group.
+- **Groups, top to bottom:** the open drill's own options and the fingers to train; hardcore (its switch, then `min wpm`, `difficulty` and `heartbeat` once it is on); the key sound; the font (weight, roundness, optical size); the layout, the board and `hide keyboard`; the profile, tracking and the interface language. The stats view has no fingers, no hardcore group and no `hide keyboard`. A rule only ever stands between two groups that have lines: never two rules in a row, none at either end.
+- **Scrolling:** on a window too short for the whole list, the list scrolls inside the rail. The scroll box reaches 1.125rem past the rail's right edge, where a thin scrollbar sits (Hairline Strong thumb on no track), and the list keeps the rail's width, so its edges do not move when the scrollbar comes or goes. Its top 1.5rem and bottom 2rem dissolve into Charcoal Ground through a mask over padding of the same height, so the first and last lines show whole at either end of the scroll; the scrollbar's strip is left out of the mask.
 - **Off / on line:** the whole line is one button, its name and a switch. Off: Muted Label name. On or hovered: Cool Grey Text; on and hovered: Warm Paper Text. A press shows on the switch alone (0.92). The list is drawn anew on each click, so the switch just clicked is drawn in its old state and slides to the new one over 240ms.
 - **Notes:** what a choice means, in Micro, Muted Label, under its control: which fingers get more letters, what tells the picked board from the others, what the layout changes.
 - **Dropdowns:** the layout, the key sound and the profile keep the dropdown of the top strip at the size of the segments (2.25rem tall, Label Small). Their lists open downward from the left edge of the button; the key sound's list holds `silent` and the thirteen switches and scrolls past 17rem. Moving through it with the pointer or the arrow keys plays the switch under the cursor (one key down and up); picking one plays it again. The profile popover is wider than the room beside its button, so it hangs from its line and spans the list, flush with both of its edges.
 - **Open and close:** the list fades in and slides 0.5rem from the right over 160ms while the hands fade out; it leaves over 240ms. It closes on its button, on Escape, on a click outside it, and at the first key typed, so the hands and the next key are back before the second.
-- **Narrow layout:** the list opens in the page under the top strip, in place of the next-key line, and the page scrolls.
+- **Narrow layout:** the list opens in the page under the top strip, in place of the next-key line, and the page scrolls. On a phone the list is a sheet (see Phone), without the dissolve and without `hide keyboard`, since a phone shows no board.
 
 ### Finger picker
 The fingers to train more, in the settings: two hands of four bars in the mark's own proportions (pinky 0.56 of the middle finger, ring 0.89, index 0.78), each bar 1.125rem wide on a 2.25rem line, 0.25rem apart, the hands 1rem apart. Each bar is a button named after its finger. Dim: a finger left as it is, its hue mixed 30% into the ground (52% on hover). Lit: the finger's plain hue (its top shade on hover): its letters come up more often and the anchor drill takes it in turn. The note under the bars says which of the two the open drill does.
@@ -455,6 +460,8 @@ The fingers to train more, in the settings: two hands of four bars in the mark's
 - **Finger cap:** the finger hue in its row's shade at full strength, Finger Ink legend at 500, so the three letter rows read as three bands of brightness. The stats view drops the row shades, mixes the home shade toward Charcoal Ground by a heat value, and dims low-work keys to a dark mix with light legends.
 - **Row legend:** a 0.625rem Muted Label mark in the gutter left of each letter row, in that row's shape. Hidden on the narrow layout, which has no gutter.
 - **Number row:** stays neutral until it is the target, so the letter rows lead.
+- **Modifier layer:** the board shows what the keys type right now. Holding Shift, every key shows its Shift character alone, at the size of the legend it stands in for: capitals, and the characters over the digits. Caps Lock capitalizes the letters only and lights its own cap like a held key (Key Hover, Warm Paper Text); Shift with Caps Lock on brings the small letters back and keeps the other keys shifted, as on the desk. The swap is instant, read off every key event. The layouts carry no AltGr layer, so AltGr changes nothing yet.
+- **Hidden:** `hide keyboard` in the settings fades the board out (240ms, back in over 160ms) in every typing drill, to type from memory. It keeps its room, so the stage stays put and the highway still reads its lanes from it. The stats view keeps its board, since it is the heat map. The hands plate and the next key stay.
 - **Next / shift target:** its row's shade with a Warm Paper Text outline offset 0.125rem. The outline is what marks the target; the fill does not change.
 - **Anchor:** outline in the finger's hue.
 - **Pressed:** scales to 0.93 in 80ms.
@@ -471,7 +478,7 @@ Canvas stage: vertical Lane Rule edges taken from the keyboard, a 2px Strike Lin
 An outline plate of both hands with a fingertip dot in each finger's hue. The finger to use fills through a matte cut from the plate, in the shade of the row it is about to reach, fading in over 80ms. Below it, the next key sits in a 4.625rem cap filled with the same shade. Under the cap a 1rem token in the row's shape sits beside the finger and the row spelled out ("right ring, top row"), so the words accompany color and shape in every drill, the text drills included.
 
 ### Stat rail
-The live WPM in Display Mustard, a caption that cycles the rolling window, a sparkline, acc and streak split by a vertical Hairline between top and bottom Hairline rules, then four finger bars (0.5rem tall, Bar Track, fill grows over 600ms ease-out), each on a 2.5rem line beside its finger's name: the bar runs through the middle of the lowercase name, 0.0625rem under the middle of the line. Under the streak sits the longest one for the layout and drill, at 0.9375rem in Cool Grey Text ("best 212"); once the streak has passed it, the number goes and the word "best" stays in Mustard, the same pattern as a hardcore run.
+The live WPM in Display Mustard, a caption that cycles the rolling window, a sparkline (its slot stays empty until the trace has a few seconds to show, so no flat line sits over the rule under it), acc and streak split by a vertical Hairline between top and bottom Hairline rules, then four finger bars (0.5rem tall, Bar Track, fill grows over 600ms ease-out), each on a 2.5rem line beside its finger's name: the bar runs through the middle of the lowercase name, 0.0625rem under the middle of the line. Under the streak sits the longest one for the layout and drill, at 0.9375rem in Cool Grey Text ("best 212"); once the streak has passed it, the number goes and the word "best" stays in Mustard, the same pattern as a hardcore run.
 
 ### Streak counter (signature)
 Right keys in a row, from one set to the next, shown a second time where the eyes are: in the strip between the stage and the keyboard, flush with the right edge of the last key cap. The number in Counter Mustard, then "in a row" in Label Small, Muted Label. It is `aria-hidden`; the left rail carries the same number for a screen reader.
@@ -520,6 +527,18 @@ An option of the highway, words and pairs drills (2026-11-18, the user's three p
 - **Sound:** synthesized in the page, no audio files: the heartbeat, a knock on a wrong key, two ticks when the floor climbs, a low drop on a failed set. Hardcore only, on by default, off with the `heartbeat` switch.
 - **Reduced motion:** the beat's swell, the sparks, the drop, the knock, the tremor and the jolt stop outright; the coral states, the strength of the edges, the narrowing and the sound stay.
 
+### Boards
+A tab beside stats, shown only when the API answers (`data-online`), since the GitHub Pages copy has none. The head holds Segmented controls (view: typists / keyboards / texts; drill; period, left out for texts; grouping by model, switch or size in the keyboards view), then a Micro line naming the filters that live in the settings (language, layout, input) and a `new race` button. A Mustard link under it asks for a sign-in or a name. Tables: cells padded at least 12px, Hairline separators, numbers right-aligned in tabular figures, WPM at 600. The typist's own row is tinted Mustard at 9% with rounded ends and no separators. A typist or text row ends with `type it`, which opens that text. On a phone the layout, keyboard and when columns leave, headers included.
+
+### Strip
+Over the top of the stage when a set has rivals: a shared text's best ghosts or a race. A Micro head (the text or room, typists, the best, one quiet action at the right), then one lane per typist: name, a 0.375rem track, and "#place · wpm". The typist's lane fills Mustard, a racer's Cool Grey Text, a ghost's the strike tone at 70%. The drill below moves down by the strip's height (`--strip-h`). In the text, each ghost leaves a 0.125rem caret before the letter it has reached.
+
+### Race card
+Over the stage while a room waits or after a round. The room code in Headline Small with the config line in Micro, the link and `copy the link`, a chip per racer (Key Slate; the typist's own lighter, with `host` and `you` in Micro), a name field for a guest, one note, then `start` (or `again`) filled Mustard on Ink for the host and a quiet `leave`. The places list joins the card when a round ends. The countdown is one 7rem Mustard numeral over the stage, rising in 260ms, then `go`; while it runs the keys are shut. A racer who joins mid-round sees the card with a note that the next round is theirs.
+
+### Account
+Rows of the settings list. Opened from the top strip's account button, the panel holds the account alone and its title reads `account`; it goes back to the settings when it closes. Signed out: the email field, then the code field, with a link to use another address. Signed in: the address, the name with `save`, the keyboard model (free text with suggestions from what others typed), switch and size dropdowns, a note on what the keyboard is for, then `sign out` and `delete account` stacked as quiet buttons whose text lines up with the fields; delete asks once inline. A `privacy` link closes the rows.
+
 ## Do's and Don'ts
 
 ### Do:
@@ -531,7 +550,7 @@ An option of the highway, words and pairs drills (2026-11-18, the user's three p
 - **Do** set text on a finger hue or on Miss Coral in Finger Ink.
 - **Do** draw a history line in its subject's color: Mustard for the layout's own number, the finger's hue for a finger, the row's shade of it for a key.
 - **Do** separate zones with space and Hairline rules.
-- **Do** keep all copy lowercase and in Roboto Mono.
+- **Do** keep all copy lowercase and in Allo.
 - **Do** write every string in both languages in `src/core/i18n.ts`, and look at the French at desktop and phone width before calling a screen done.
 - **Do** keep a celebration for a record: a streak past the longest one, a set faster than every one before it. A milestone gets one swell of the counter and nothing else.
 - **Do** build a celebration from what is already on screen (the key caps, the mark, the counter) and leave the reading area clear.

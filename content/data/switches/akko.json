@@ -1,0 +1,3519 @@
+{
+  "maker": {
+    "id": "akko",
+    "name": "Akko",
+    "role": "brand",
+    "country": "CN",
+    "founded": 2016,
+    "official_url": "https://en.akkogear.com/",
+    "about": "Chinese keyboard and peripheral brand founded on 15 August 2016, with MonsGeek as a sub-brand. It sells switches made by several factories under its own CS, V3, V5 and U1 lines.",
+    "sources": [
+      {
+        "title": "Akko: Our Story",
+        "url": "https://en.akkogear.com/about/",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Akko: Switch store",
+        "url": "https://en.akkogear.com/store/switch/",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Akko Mirror Switch Review (Akko switch history)",
+        "url": "https://www.theremingoat.com/blog/akko-mirror-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "akko-bittersweet",
+      "name": "Bittersweet",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/bittersweet-switch-lubed/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Bittersweet Switch - Lubed",
+          "url": "https://en.akkogear.com/product/bittersweet-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile counterpart to Rosewood with a light bump."
+    },
+    {
+      "id": "akko-botany",
+      "name": "Botany",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA6",
+        "stem": "Nylon (Pro)"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-botany-switches/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko Botany Switch",
+          "url": "https://en.akkogear.com/product/akko-botany-switches/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Mid-pitched version of Rosewood."
+    },
+    {
+      "id": "akko-cilantro",
+      "name": "Cilantro",
+      "maker": "akko",
+      "made_by": "hmx",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 2.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2025-03",
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/cilantro-switch-lubed/",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/akko-cilantro-switch-review",
+          "date": "2025-05-18",
+          "score": null,
+          "verdict": "Medium-strong tactile with a rounded, slightly aggressive bump at the top; the reviewer came away fairly happy with it."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko Cilantro Tactile Switch",
+          "url": "https://en.akkogear.com/product/cilantro-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Akko Cilantro Switch Review",
+          "url": "https://www.theremingoat.com/blog/akko-cilantro-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko calls it an early tactile with the bump at the very top. Sold as HMX-made; ThereminGoat finds parts that look KTT-designed."
+    },
+    {
+      "id": "akko-creamy-cyan",
+      "name": "Creamy Cyan",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-creamy-cyan-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko Creamy Cyan Switch",
+          "url": "https://en.akkogear.com/product/akko-creamy-cyan-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's first retail clicky switch."
+    },
+    {
+      "id": "akko-dracula",
+      "name": "Dracula",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POK",
+        "bottom": null,
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-dracula-switch/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/akko/dracula-linear",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko Dracula Switch",
+          "url": "https://en.akkogear.com/product/akko-dracula-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's first switch with a POK top housing and stem; the stem has an extra hole at the bottom."
+    },
+    {
+      "id": "akko-fairy-silent",
+      "name": "Fairy (Silent)",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": "17mm spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-fairy-switch-silent45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko Fairy Switch (Silent)",
+          "url": "https://en.akkogear.com/product/akko-v3-fairy-switch-silent45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-haze-pink-silent",
+      "name": "Haze Pink (Silent)",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-haze-pink-silent-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko Haze Pink Silent Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-haze-pink-silent-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's first silent switch."
+    },
+    {
+      "id": "akko-mirror",
+      "name": "Mirror",
+      "maker": "akko",
+      "made_by": "hmx",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "Modified Nylon",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-mirror-switch/",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/akko-mirror-switch-review",
+          "date": "2024-11-24",
+          "score": null,
+          "verdict": "Well-lubed, low-wobble budget linear with a sharp bottom-out; the reviewer calls it a stellar linear despite misgivings about Akko's release habits."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko Mirror Switch",
+          "url": "https://en.akkogear.com/product/akko-mirror-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Akko Mirror Switch Review",
+          "url": "https://www.theremingoat.com/blog/akko-mirror-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed for foamless builds with a clean sound."
+    },
+    {
+      "id": "akko-penguin-silent",
+      "name": "Penguin (Silent)",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": "19.5mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-pro-penguin-switch-silent/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko Penguin Switch (Silent)",
+          "url": "https://en.akkogear.com/product/akko-v3-pro-penguin-switch-silent/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's first silent tactile; Akko lists the bottom-out force as 60gf max."
+    },
+    {
+      "id": "akko-rosewood",
+      "name": "Rosewood",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA6",
+        "stem": "Nylon (Pro)"
+      },
+      "spring": "22mm spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-rosewood-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko Rosewood Switch",
+          "url": "https://en.akkogear.com/product/akko-rosewood-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-pitched switch first made for the MU01 wooden keyboard."
+    },
+    {
+      "id": "akko-starlit",
+      "name": "Starlit",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-starlit-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Starlit Switch - Lubed",
+          "url": "https://en.akkogear.com/product/akko-starlit-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Glitter-infused PC top housing."
+    },
+    {
+      "id": "akko-stellar-rose",
+      "name": "Stellar Rose",
+      "maker": "akko",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA12",
+        "stem": "T5"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-stellar-rose-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko Stellar Rose Switch",
+          "url": "https://en.akkogear.com/product/akko-stellar-rose-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's first deep-clack switch."
+    },
+    {
+      "id": "akko-green-fog",
+      "name": "Green Fog",
+      "maker": "akko",
+      "made_by": null,
+      "family": "Akko x MonsGeek",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": 70,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-x-monsgeek-green-fog-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko x Monsgeek Green Fog Switch - Lubed",
+          "url": "https://en.akkogear.com/product/akko-x-monsgeek-green-fog-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy linear made with sister brand MonsGeek; end force listed as 70gf max."
+    },
+    {
+      "id": "akko-ttc-demon",
+      "name": "Demon",
+      "maker": "akko",
+      "made_by": "ttc",
+      "family": "Akko x TTC",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-x-ttc-demon-switch-10pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko x TTC Demon Switch",
+          "url": "https://en.akkogear.com/product/akko-x-ttc-demon-switch-10pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "light_pipe",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Made with TTC and fitted with TTC's light condenser; Akko labels the 50gf rating End Force and lists 63.5gf bottom-out force."
+    },
+    {
+      "id": "akko-ttc-princess",
+      "name": "Princess",
+      "maker": "akko",
+      "made_by": "ttc",
+      "family": "Akko x TTC",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-x-ttc-princess-switch-10pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko x TTC Princess Switch (10pcs)",
+          "url": "https://en.akkogear.com/product/akko-x-ttc-princess-switch-10pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "light_pipe",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Made with TTC and fitted with TTC's light condenser; Akko labels the 45gf rating End Force and lists 53.5gf bottom-out force."
+    },
+    {
+      "id": "akko-cs-air",
+      "name": "CS Air",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 56,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": "22mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-air-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Air Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-air-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Fitted to Akko's Air version keyboards for Mac users; pole stem length 13.3mm."
+    },
+    {
+      "id": "akko-cs-crystal",
+      "name": "CS Crystal",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "PC"
+      },
+      "spring": "18mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-crystal-switch-45pcs/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/akko/cs-crystal",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Crystal Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-crystal-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's first full polycarbonate switch; the spec table labels the 43gf value End Force, the description calls it actuation force."
+    },
+    {
+      "id": "akko-cs-crystal-blue",
+      "name": "CS Crystal Blue",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "PC"
+      },
+      "spring": "22mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-crystal-blue-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Crystal Blue Switch",
+          "url": "https://en.akkogear.com/product/akko-cs-crystal-blue-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's table labels the 40gf rating End Force, as on its other CS pages where the description calls that value the actuation force."
+    },
+    {
+      "id": "akko-cs-crystal-silver",
+      "name": "CS Crystal Silver",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "PC"
+      },
+      "spring": "22mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-crystal-silver-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Crystal Silver Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-crystal-silver-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-cs-crystal-wine-red",
+      "name": "CS Crystal Wine Red",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "PC"
+      },
+      "spring": "23mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-crystal-wine-red-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Crystal Wine Red Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-crystal-wine-red-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-cs-jelly-black",
+      "name": "CS Jelly Black",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-jelly-black-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Jelly Black Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-jelly-black-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Akko: Akko CS Jelly Black Switch (Lubed, 45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-jelly-black-switch-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heaviest CS switch, with a dustproof stem. Also sold hand-lubed (Krytox GPL 105 and GPL 205 G0) as a separate pack; the regular version has dry-film-lubed stem and spring."
+    },
+    {
+      "id": "akko-cs-jelly-blue",
+      "name": "CS Jelly Blue",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-jelly-blue-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Jelly Blue Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-jelly-blue-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dual tactile bump, felt on the press and on the release; dustproof stem."
+    },
+    {
+      "id": "akko-cs-jelly-pink",
+      "name": "CS Jelly Pink",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-jelly-pink-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Jelly Pink Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-jelly-pink-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dustproof stem."
+    },
+    {
+      "id": "akko-cs-jelly-purple",
+      "name": "CS Jelly Purple",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 56,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "PC",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-jelly-purple-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Jelly Purple Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-jelly-purple-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Slightly heavier than Lavender Purple, with a dustproof stem and PC bottom housing."
+    },
+    {
+      "id": "akko-cs-jelly-white",
+      "name": "CS Jelly White",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "PC",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-jelly-white-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Jelly White Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-jelly-white-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Akko: Akko CS Jelly White Switch (Lubed, 45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-jelly-white-switch-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Vintage White with a dustproof stem and a PC bottom housing. Also sold hand-lubed (Krytox GPL 105 and GPL 205 G0) as a separate pack; the regular version has dry-film-lubed stem and spring."
+    },
+    {
+      "id": "akko-cs-lavender-purple",
+      "name": "CS Lavender Purple",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "classic extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-lavender-purple-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Lavender Purple Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-lavender-purple-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Akko: Akko CS Lavender Purple Switch (Lubed, 45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-lavender-purple-switch-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Early bump starting at 0.5mm. Also sold hand-lubed (Krytox GPL 105 and GPL 205 G0) as a separate pack; the regular version has dry-film-lubed stem and spring."
+    },
+    {
+      "id": "akko-cs-matcha-green",
+      "name": "CS Matcha Green",
+      "maker": "akko",
+      "made_by": "ktt",
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "progressive coil spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-matcha-green-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Matcha Green Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-matcha-green-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Akko: Akko CS Matcha Green Switch (Lubed, 45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-matcha-green-switch-hand-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Akko Mirror Switch Review (Akko history)",
+          "url": "https://www.theremingoat.com/blog/akko-mirror-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "One of the original CS trio with Rose Red and Ocean Blue, which ThereminGoat reports were made by KTT. Also sold hand-lubed (Krytox GPL 105 and GPL 205 G0) as a separate pack; the regular version has dry-film-lubed stem and spring."
+    },
+    {
+      "id": "akko-cs-ocean-blue",
+      "name": "CS Ocean Blue",
+      "maker": "akko",
+      "made_by": "ktt",
+      "family": "CS",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 45,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "progressive coil spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-ocean-blue-switch/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/akko/cs-ocean-blue",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Ocean Blue Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-ocean-blue-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Akko Mirror Switch Review (Akko history)",
+          "url": "https://www.theremingoat.com/blog/akko-mirror-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "High tactile position: the bump starts at 0.5mm and lasts to 1.8mm. Akko's table labels the 36gf value End Force."
+    },
+    {
+      "id": "akko-cs-piano",
+      "name": "CS Piano",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-piano-switch-lubed-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Piano Switch (Lubed, 45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-piano-switch-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold hand-lubed with Krytox GPL 105 and GPL 205 G0."
+    },
+    {
+      "id": "akko-cs-radiant-red",
+      "name": "CS Radiant Red",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 53,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "classic extension spring",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-radiant-red-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Radiant Red Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-radiant-red-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-cs-rose-red",
+      "name": "CS Rose Red",
+      "maker": "akko",
+      "made_by": "ktt",
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "progressive coil spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-rose-red-switch/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/akko/cs-rose-red",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Rose Red Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-rose-red-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Akko Mirror Switch Review (Akko history)",
+          "url": "https://www.theremingoat.com/blog/akko-mirror-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-cs-sakura",
+      "name": "CS Sakura",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 39,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-sakura-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Sakura Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-sakura-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dustproof stem; lighter than Jelly Pink, heavier than Jelly White."
+    },
+    {
+      "id": "akko-cs-silver",
+      "name": "CS Silver",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-silver-switch-45pcs/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/akko/cs-silver",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Silver Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-silver-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Akko: Akko CS Silver Switch (Lubed,45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-silver-switch-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short 1mm pre-travel for gaming; dustproof stem. Also sold hand-lubed (Krytox GPL 105 and GPL 205 G0) as a separate pack; the regular version has dry-film-lubed stem and spring."
+    },
+    {
+      "id": "akko-cs-snow-blue-gray",
+      "name": "CS Snow Blue Gray",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": "18mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-snow-blue-gray-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Snow Blue Gray Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-snow-blue-gray-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Akko's first 5-pin switch with a POM/PC/PA structure, made with Bilibili creator XCJZ."
+    },
+    {
+      "id": "akko-cs-sponge",
+      "name": "CS Sponge",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-sponge-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Sponge Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-sponge-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Recolored Jelly Blue with the same dual tactile bump on press and release."
+    },
+    {
+      "id": "akko-cs-starfish",
+      "name": "CS Starfish",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "two-stage spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-starfish-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Starfish Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-starfish-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-cs-vintage-white",
+      "name": "CS Vintage White",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "22mm extension spring",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-vintage-white-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Vintage White Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-vintage-white-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-cs-wine-red",
+      "name": "CS Wine Red",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-wine-red-switch-lubed-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Wine Red Switch (Lubed, 45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-wine-red-switch-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold hand-lubed with Krytox GPL 105 and GPL 205 G0; Akko's table labels the 43gf value End Force."
+    },
+    {
+      "id": "akko-cs-wine-white",
+      "name": "CS Wine White",
+      "maker": "akko",
+      "made_by": null,
+      "family": "CS",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-cs-wine-white-switch-lubed-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko CS Wine White Switch (Lubed, 45pcs)",
+          "url": "https://en.akkogear.com/product/akko-cs-wine-white-switch-lubed-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold hand-lubed with Krytox GPL 105 and GPL 205 G0."
+    },
+    {
+      "id": "akko-astroaim-magnetic",
+      "name": "AstroAim",
+      "maker": "akko",
+      "made_by": null,
+      "family": "Magnetic",
+      "aka": [
+        "AstroAim Magnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/astroaim-magnetic-switch-lubed/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: AstroAim Magnetic Switch - Lubed",
+          "url": "https://en.akkogear.com/product/astroaim-magnetic-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect switch, 35gf initial force; downward-facing N-pole magnet, not compatible with MOD007B HE / MOD007 HE YOTD v1."
+    },
+    {
+      "id": "akko-astrolink-magnetic",
+      "name": "Astrolink",
+      "maker": "akko",
+      "made_by": null,
+      "family": "Magnetic",
+      "aka": [
+        "Astrolink Magnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-astrolink-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Astrolink Magnetic Keyboard Switch",
+          "url": "https://en.akkogear.com/product/akko-astrolink-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect switch, 36gf initial force; downward-facing N-pole magnet, not compatible with MOD007B HE / MOD007 HE YOTD v1."
+    },
+    {
+      "id": "akko-flash-magnetic",
+      "name": "Flash",
+      "maker": "akko",
+      "made_by": null,
+      "family": "Magnetic",
+      "aka": [
+        "Flash Magnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/flash-magnetic-switch-lubed/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Flash Magnetic Switch - Lubed",
+          "url": "https://en.akkogear.com/product/flash-magnetic-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Ultra-light Hall effect switch with a 25gf initial force."
+    },
+    {
+      "id": "akko-pom-brown",
+      "name": "POM Brown",
+      "maker": "akko",
+      "made_by": null,
+      "family": "POM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "18mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-pom-brown-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko POM Brown Switch",
+          "url": "https://en.akkogear.com/product/akko-pom-brown-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full POM switch with a medium-position bump at 1.0mm."
+    },
+    {
+      "id": "akko-pom-pink",
+      "name": "POM Pink",
+      "maker": "akko",
+      "made_by": null,
+      "family": "POM",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "22mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-pom-pink-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko POM Pink Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-pom-pink-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-pom-silver",
+      "name": "POM Silver",
+      "maker": "akko",
+      "made_by": null,
+      "family": "POM",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "22mm extension spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-pom-silver-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko POM Silver Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-pom-silver-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-u1-creamy-blue",
+      "name": "Creamy Blue U1",
+      "maker": "akko",
+      "made_by": null,
+      "family": "U1",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/creamy-blue-u1-switch-lubed/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Creamy Blue U1 Switch - Lubed",
+          "url": "https://en.akkogear.com/product/creamy-blue-u1-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Early bump with a deliberate light 'sandy' texture; sold in packs of 100."
+    },
+    {
+      "id": "akko-u1-creamy-purple",
+      "name": "Creamy Purple U1",
+      "maker": "akko",
+      "made_by": null,
+      "family": "U1",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": 57,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/creamy-purple-u1-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Creamy Purple U1 Switch - Lubed",
+          "url": "https://en.akkogear.com/product/creamy-purple-u1-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Successor to V3 Creamy Purple Pro with a heavier operating force."
+    },
+    {
+      "id": "akko-u1-creamy-yellow",
+      "name": "Creamy Yellow U1",
+      "maker": "akko",
+      "made_by": "huano",
+      "family": "U1",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": "2026",
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/creamy-yellow-u1-switch-lubed/",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/akko-creamy-yellow-u1-switch-review",
+          "date": "2026-08-16",
+          "score": null,
+          "verdict": "A Huano-made linear the reviewer found competent but nondescript, lacking a distinct personality."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Creamy Yellow U1 Switch - Lubed",
+          "url": "https://en.akkogear.com/product/creamy-yellow-u1-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Akko Creamy Yellow U1 Switch Review",
+          "url": "https://www.theremingoat.com/blog/akko-creamy-yellow-u1-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in packs of 100."
+    },
+    {
+      "id": "akko-u1-crystal-silver",
+      "name": "Crystal Silver U1",
+      "maker": "akko",
+      "made_by": null,
+      "family": "U1",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "PA12"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/crystal-silver-u1-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Crystal Silver U1 Switch - Lubed",
+          "url": "https://en.akkogear.com/product/crystal-silver-u1-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Speed switch actuating at 1.0mm; Akko lists the end force as 50gf max."
+    },
+    {
+      "id": "akko-u1-piano",
+      "name": "Piano U1",
+      "maker": "akko",
+      "made_by": null,
+      "family": "U1",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": "LY"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/piano-u1-switch-lubed/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Piano U1 Switch - Lubed",
+          "url": "https://en.akkogear.com/product/piano-u1-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The retail version has an LY stem; the version pre-installed in keyboards uses a POM stem."
+    },
+    {
+      "id": "akko-v3-creamy-black-pro",
+      "name": "V3 Creamy Black Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [
+        "V3 Cream Black Pro"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-cream-black-pro-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Creamy Black Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-cream-black-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "5-pin version of Jelly Black with lubed rails."
+    },
+    {
+      "id": "akko-v3-creamy-blue",
+      "name": "V3 Creamy Blue",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [
+        "V3 Cream Blue"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 53,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-cream-blue-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Creamy Blue Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-v3-cream-blue-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-v3-creamy-blue-pro",
+      "name": "V3 Creamy Blue Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [
+        "V3 Cream Blue Pro"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-cream-blue-pro-switch-45pcs/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/akko/v3-cream-blue-pro",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Creamy Blue Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-cream-blue-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Upgrade of Creamy Blue: 5 pins, dustproof stem, palladium-gold contacts, lubed rails."
+    },
+    {
+      "id": "akko-v3-creamy-purple-pro",
+      "name": "V3 Creamy Purple Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [
+        "V3 Cream Purple Pro"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": "Custom Nylon (Pro)"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-creamy-purple-pro-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Creamy Purple Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-creamy-purple-pro-switch/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Strong bump at the very top over a short 3.0mm travel."
+    },
+    {
+      "id": "akko-v3-creamy-yellow",
+      "name": "V3 Creamy Yellow",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [
+        "V3 Cream Yellow"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-cream-yellow-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Creamy Yellow Switch (45pcs)",
+          "url": "https://en.akkogear.com/product/akko-v3-cream-yellow-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-v3-creamy-yellow-pro",
+      "name": "V3 Creamy Yellow Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [
+        "V3 Cream Yellow Pro"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-cream-yellow-pro-switch-45pcs/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/akko/v3-cream-yellow-pro",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Creamy Yellow Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-cream-yellow-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Upgrade of Creamy Yellow: 5 pins, dustproof stem, palladium-gold contacts, lubed rails."
+    },
+    {
+      "id": "akko-v3-crystal-pro",
+      "name": "V3 Crystal Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "PC"
+      },
+      "spring": "18mm extension spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-crystal-pro-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Crystal Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-crystal-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full polycarbonate; CS Crystal with a dustproof stem and lubed rails."
+    },
+    {
+      "id": "akko-v3-lavender-purple-pro",
+      "name": "V3 Lavender Purple Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-lavender-purple-pro-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Lavender Purple Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-lavender-purple-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-v3-matcha-green-pro",
+      "name": "V3 Matcha Green Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-matcha-green-pro-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Matcha Green Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-matcha-green-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-v3-piano-pro",
+      "name": "V3 Piano Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.1,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-piano-pro-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Piano Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-piano-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-v3-silver-pro",
+      "name": "V3 Silver Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V3",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/akko-v3-silver-pro-switch-45pcs/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V3 Silver Pro Switch",
+          "url": "https://en.akkogear.com/product/akko-v3-silver-pro-switch-45pcs/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-v5-creamy-blue-pro",
+      "name": "V5 Creamy Blue Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V5",
+      "aka": [
+        "V5 Cream Blue Pro"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/v5-creamy-blue-pro-switch-lubed/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V5 Creamy Blue Pro Switch",
+          "url": "https://en.akkogear.com/product/v5-creamy-blue-pro-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-v5-creamy-yellow-pro",
+      "name": "V5 Creamy Yellow Pro",
+      "maker": "akko",
+      "made_by": null,
+      "family": "V5",
+      "aka": [
+        "V5 Cream Yellow Pro"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.akkogear.com/product/v5-creamy-yellow-pro-switch-lubed/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Akko V5 Creamy Yellow Pro Switch",
+          "url": "https://en.akkogear.com/product/v5-creamy-yellow-pro-switch-lubed/",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    }
+  ]
+}

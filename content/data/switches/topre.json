@@ -1,0 +1,956 @@
+{
+  "maker": {
+    "id": "topre",
+    "name": "Topre Corporation",
+    "role": "manufacturer",
+    "country": "JP",
+    "founded": 1935,
+    "official_url": "https://www.realforce.co.jp/en/",
+    "about": "Japanese industrial company whose electronic equipment division makes electrostatic capacitive keyboards and switches; it launched the Realforce consumer keyboard brand in 2001. Its switches also go into PFU's Happy Hacking Keyboard.",
+    "sources": [
+      {
+        "title": "Topre Corporation: Company profile",
+        "url": "https://www.topre.co.jp/en/company/profile.html",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Topre Corporation: Electronic equipment",
+        "url": "https://www.topre.co.jp/en/products/elec/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "REALFORCE: Brand",
+        "url": "https://www.realforce.co.jp/en/brand/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "PFU America store: HHKB Professional HYBRID Type-S Snow 45g",
+        "url": "https://store.pfu-us.ricoh.com/cg01000-307201",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "topre-silent-apc",
+      "name": "Topre silent switch with APC",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre APC",
+      "aka": [
+        "Realforce silent APC"
+      ],
+      "type": "silent-tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": [
+        0.8,
+        3.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.realforce.co.jp/en/products/series_r4.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R4 Keyboard series",
+          "url": "https://www.realforce.co.jp/en/products/series_r4.html",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R4 Keyboard / R4HB11",
+          "url": "https://www.realforce.co.jp/en/products/R4HB11/",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: RC1 Keyboard series",
+          "url": "https://www.realforce.co.jp/en/products/series_rc1.html",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3 Keyboard / R3HB11 (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R3HB11/index.html",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Features",
+          "url": "https://www.realforce.co.jp/en/features/",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent Topre switch with per-key actuation in 30g or 45g. The R4 sets 0.8 to 3.0 mm; the RC1 and R3 use four steps (0.8, 1.5, 2.2, 3.0 mm)."
+    },
+    {
+      "id": "topre-silent-dual-apc",
+      "name": "Topre silent switch with Dual-APC",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre APC",
+      "aka": [
+        "Realforce Dual-APC",
+        "GX1 switch"
+      ],
+      "type": "silent-tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": [
+        0.1,
+        3.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.realforce.co.jp/en/products/series_gaming_gx1.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: GX1 Plus / GX1 Keyboard",
+          "url": "https://www.realforce.co.jp/en/products/series_gaming_gx1.html",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: GX1 Plus Keyboard / X1PD11",
+          "url": "https://www.realforce.co.jp/en/products/X1PD11/",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: GX1 Keyboard / X1UD13",
+          "url": "https://www.realforce.co.jp/en/products/X1UD13",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Realforce GX1 and GX1 Plus: actuation and release points set in 0.1 mm steps from 0.1 to 3.0 mm, with a dynamic (rapid-trigger style) mode. Sold in 30g and 45g."
+    },
+    {
+      "id": "topre-apc",
+      "name": "Topre switch with APC",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre APC",
+      "aka": [
+        "Realforce APC"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": [
+        0.8,
+        3.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.realforce.co.jp/en/products/R3SB31/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SB31",
+          "url": "https://www.realforce.co.jp/en/products/R3SB31/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Features",
+          "url": "https://www.realforce.co.jp/en/features/",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard series",
+          "url": "https://www.realforce.co.jp/en/products/series_master_r3s.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Non-silent APC switch of the Realforce R3S (R3SB31, R3SD31). The R3 generation sets 0.8, 1.5, 2.2 or 3.0 mm per key."
+    },
+    {
+      "id": "topre-apc-r2",
+      "name": "Topre switch with APC (R2)",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre APC",
+      "aka": [
+        "Realforce APC",
+        "Actuation Point Changer"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": [
+        1.5,
+        3.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.realforce.co.jp/en/products/discontinued/R2A-US-BK/US3.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Realforce A R2A-US3-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2A-US-BK/US3.html",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Realforce R2-US3-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2-US-BK/US3.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Features",
+          "url": "https://www.realforce.co.jp/en/features/",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Discontinued products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Realforce A and TKL A boards set each key to 1.5, 2.2 or 3.0 mm. Offered in 30g, 45g, 55g and variable weight; PFU sold silent 45g versions (Realforce SA)."
+    },
+    {
+      "id": "topre-cross-stem-apc",
+      "name": "Topre switch with cross stem and APC (Realforce RGB)",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre APC",
+      "aka": [
+        "Realforce RGB switch",
+        "Topre MX-compatible stem"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": [
+        1.5,
+        3.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.realforce.co.jp/en/products/discontinued/R2A-US4G-BK/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Realforce RGB R2A-US4G-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2A-US4G-BK/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "keycap_mount"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Discontinued products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Topre switch with a cross-shaped stem that takes Cherry MX-style keycaps, used in the RGB-backlit Realforce RGB and RGB TKL."
+    },
+    {
+      "id": "topre-silent-30g",
+      "name": "Topre silent switch 30g",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre silent 30g",
+        "Topre silenced 30g"
+      ],
+      "type": "silent-tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.realforce.co.jp/en/products/R4HB13/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R4 Keyboard / R4HB13",
+          "url": "https://www.realforce.co.jp/en/products/R4HB13/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R4 Keyboard series",
+          "url": "https://www.realforce.co.jp/en/products/series_r4.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Realforce S R2S-US3-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2S-US-BK/US3.html",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PFU America store: HHKB Professional HYBRID Type-S Charcoal 30g, 30th Anniversary",
+          "url": "https://store.pfu-us.ricoh.com/cg01000-399220/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Used in the Realforce R4, R3S, RC1 and GX1 30g models; earlier in the Realforce S (R2). A 30g HHKB Professional HYBRID Type-S was a 30th-anniversary limited edition."
+    },
+    {
+      "id": "topre-silent-45g",
+      "name": "Topre silent switch 45g",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre silent 45g",
+        "Topre silenced 45g",
+        "HHKB Type-S switch"
+      ],
+      "type": "silent-tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.realforce.co.jp/en/products/R4HB11/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R4 Keyboard / R4HB11",
+          "url": "https://www.realforce.co.jp/en/products/R4HB11/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R4 Keyboard series",
+          "url": "https://www.realforce.co.jp/en/products/series_r4.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SB11",
+          "url": "https://www.realforce.co.jp/en/products/R3SB11/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PFU America store: HHKB Professional HYBRID Type-S Snow 45g",
+          "url": "https://store.pfu-us.ricoh.com/cg01000-307201",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Topre switch",
+          "url": "https://deskthority.net/wiki/Topre_switch",
+          "kind": "reference",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silenced with a foam ring, per Deskthority. Used in the Realforce R4, R3S, RC1 and GX1 45g models and in the HHKB Professional HYBRID Type-S."
+    },
+    {
+      "id": "topre-silent-55g",
+      "name": "Topre silent switch 55g",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre silent 55g"
+      ],
+      "type": "silent-tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.realforce.co.jp/en/products/discontinued/R2S-US-BK/US5.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Realforce S R2S-US5-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2S-US-BK/US5.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Discontinued products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in the Realforce S and Realforce TKL S (R2 generation)."
+    },
+    {
+      "id": "topre-silent-variable",
+      "name": "Topre silent switch variable weight",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre silent variable"
+      ],
+      "type": "silent-tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.realforce.co.jp/en/products/discontinued/R2S-US-BK/USV.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Realforce S R2S-USV-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2S-US-BK/USV.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Discontinued products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent switches in 30g, 45g and 55g mixed on one board by finger. Sold in the Realforce S (R2 generation)."
+    },
+    {
+      "id": "topre-30g",
+      "name": "Topre switch 30g",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre 30g"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.realforce.co.jp/en/products/discontinued/R2-US-BK/US3.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Realforce R2-US3-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2-US-BK/US3.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard series",
+          "url": "https://www.realforce.co.jp/en/products/series_master_r3s.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in the Realforce R2 (rated 50 million keystrokes there). No current Realforce series lists a non-silent 30g model."
+    },
+    {
+      "id": "topre-45g",
+      "name": "Topre switch 45g",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre 45g"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "conical spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.realforce.co.jp/en/products/R3SB31/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: R3S Keyboard / R3SB31",
+          "url": "https://www.realforce.co.jp/en/products/R3SB31/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: R3S Keyboard series",
+          "url": "https://www.realforce.co.jp/en/products/series_master_r3s.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Topre switch",
+          "url": "https://deskthority.net/wiki/Topre_switch",
+          "kind": "reference",
+          "backs": [
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The standard Topre weight: a rubber dome over a conical spring sensed capacitively, without electrical contact. Realforce R3S pages rate it at 100 million keystrokes; R2-era pages said 50 million."
+    },
+    {
+      "id": "topre-55g",
+      "name": "Topre switch 55g",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre 55g"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.realforce.co.jp/en/products/discontinued/R2-US-BK/US5.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Realforce R2-US5-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2-US-BK/US5.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Discontinued products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heaviest Realforce weight, sold in the Realforce R2 and R2 TKL."
+    },
+    {
+      "id": "topre-variable",
+      "name": "Topre switch variable weight",
+      "maker": "topre",
+      "made_by": null,
+      "family": "Topre switch",
+      "aka": [
+        "Topre variable weighting",
+        "Topre variable"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "topre",
+      "keycap_mount": "topre",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.realforce.co.jp/en/products/discontinued/R2-US-BK/USV.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "REALFORCE: Realforce R2-USV-BK (discontinued)",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/R2-US-BK/USV.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Features",
+          "url": "https://www.realforce.co.jp/en/features/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "REALFORCE: Discontinued products",
+          "url": "https://www.realforce.co.jp/en/products/discontinued/",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "One board mixes 30g, 45g and 55g switches by finger: lighter keys for the little fingers, heavier for the index fingers. Sold in the Realforce R2."
+    }
+  ]
+}

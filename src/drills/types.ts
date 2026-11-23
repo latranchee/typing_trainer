@@ -6,6 +6,23 @@ import type { Layout, Stroke } from '../core/layouts';
 import type { Row } from '../core/physical';
 import type { DrillId, Lang, Settings, Store } from '../core/store';
 import { LANGS } from '../core/store';
+import type { TextKind } from '../core/texts';
+
+/** A text typed again instead of drawn fresh: a shared one, one picked on the boards, or a race's. */
+export interface FixedText {
+  /** Its id on the server; null for a race's text before the room names it. */
+  id: string | null;
+  lang: Lang;
+  kind: TextKind;
+  text: string;
+}
+
+/** What a set types: its text and where the text came from. */
+export interface SetText {
+  text: string;
+  kind: TextKind;
+  lang: Lang;
+}
 
 /** One stroke of practice text, ready to draw. */
 export interface Note {
@@ -93,6 +110,8 @@ export interface DrillHost {
   readonly store: Store;
   /** What tilts the choice of text: the fingers picked in the settings and the typist's slow keys. */
   readonly bias: Bias;
+  /** The text every set types while one is fixed, in place of a fresh one. */
+  readonly fixed: FixedText | null;
   hit(note: Note, event: KeyEvt): void;
   miss(expected: Note, event: KeyEvt): void;
   setNext(hint: NextHint): void;
@@ -129,4 +148,8 @@ export interface Drill {
    * that define this take part in hardcore mode.
    */
   typos?(typed: readonly string[]): void;
+  /** The text of the set on screen. Drills that type text define it. */
+  current?(): SetText | null;
+  /** Where the ghosts of a fixed text are: for each, how many characters it has finished. */
+  ghosts?(positions: readonly number[]): void;
 }

@@ -1,0 +1,2401 @@
+{
+  "maker": {
+    "id": "huano",
+    "name": "Huano",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": 2014,
+    "official_url": "https://www.huannnuo.com/",
+    "about": "Huano is the brand of Huizhou Huannuo Electronic Technology Co., Ltd. (惠州市环诺电子科技有限公司), founded in 2014, which began mass-producing mechanical keyboard switches in 2015 and also makes mouse micro switches, encoders and tact switches. It moved its factory from Dongguan to Yuanzhou, Huizhou in 2020.",
+    "sources": [
+      {
+        "title": "Huano: 走进我们 (About us)",
+        "url": "https://www.huannnuo.com/bk_25170997.html",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Huano: 产品中心 (Product centre)",
+        "url": "https://www.huannnuo.com/pro_25170998_0_0_1.html",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "huano-cs-01dd-53",
+      "name": "CS-01DD-53",
+      "maker": "huano",
+      "made_by": null,
+      "family": "CS",
+      "aka": [
+        "大地轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 53,
+      "bottom_out_force_gf": 73,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_52518780.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: CS-01DD-53大地轴",
+          "url": "https://www.huannnuo.com/pro_52518780.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Listed in Huano's factory-lubed switch series."
+    },
+    {
+      "id": "huano-cs-01lf-42",
+      "name": "CS-01LF-42",
+      "maker": "huano",
+      "made_by": null,
+      "family": "CS",
+      "aka": [
+        "灵风轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_52518967.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: CS-01LF-42灵风轴",
+          "url": "https://www.huannnuo.com/pro_52518967.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano classes it as a speed linear. Listed in its factory-lubed switch series. Huano writes the pre-travel unit as gf; the value is recorded in mm."
+    },
+    {
+      "id": "huano-cs-01ql-31",
+      "name": "CS-01QL-31",
+      "maker": "huano",
+      "made_by": null,
+      "family": "CS",
+      "aka": [
+        "青绿轴",
+        "Qinglv"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 31,
+      "bottom_out_force_gf": 40,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_52560500.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: CS-01QL-31青绿轴",
+          "url": "https://www.huannnuo.com/pro_52560500.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Listed in Huano's factory-lubed switch series."
+    },
+    {
+      "id": "huano-cs-01sq-45",
+      "name": "CS-01SQ-45",
+      "maker": "huano",
+      "made_by": null,
+      "family": "CS",
+      "aka": [
+        "晓山青轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 57,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_52535472.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: CS-01SQ-45晓山青轴",
+          "url": "https://www.huannnuo.com/pro_52535472.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano classes it as an early-bump tactile. Listed in its factory-lubed switch series."
+    },
+    {
+      "id": "huano-ds-01hq-40",
+      "name": "DS-01HQ-40",
+      "maker": "huano",
+      "made_by": null,
+      "family": "DS",
+      "aka": [
+        "红旗轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_52535477.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: DS-01HQ-40红旗轴",
+          "url": "https://www.huannnuo.com/pro_52535477.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "huano-low-profile-blue",
+      "name": "Low-profile Blue",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Low-profile",
+      "aka": [
+        "青矮轴"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.1,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_54478613.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 青矮轴",
+          "url": "https://www.huannnuo.com/pro_54478613.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 青矮轴. Huano does not state the footprint or keycap mount. Huano writes the pre-travel unit as gf; the value is recorded in mm."
+    },
+    {
+      "id": "huano-ms-08b-60-black",
+      "name": "MS-08B-60 Black",
+      "maker": "huano",
+      "made_by": null,
+      "family": "MS",
+      "aka": [
+        "MS-08B-60黑轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": 80,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_30547884.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: MS-08B-60黑轴",
+          "url": "https://www.huannnuo.com/pro_30547884.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano also lists MS-09, MS-14, MS-15, MS-25, MS-27 and MS-33 versions with dust-proof stems or copper sleeves and 20 or 50 million rated keystrokes."
+    },
+    {
+      "id": "huano-ms-08c-50-blue",
+      "name": "MS-08C-50 Blue",
+      "maker": "huano",
+      "made_by": null,
+      "family": "MS",
+      "aka": [
+        "MS-08C-50青轴"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_30548176.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: MS-08C-50青轴",
+          "url": "https://www.huannnuo.com/pro_30548176.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano also lists MS-09, MS-14, MS-15, MS-25, MS-27 and MS-33 versions with dust-proof stems or copper sleeves and 20 or 50 million rated keystrokes."
+    },
+    {
+      "id": "huano-ms-08r-45-red",
+      "name": "MS-08R-45 Red",
+      "maker": "huano",
+      "made_by": null,
+      "family": "MS",
+      "aka": [
+        "MS-08R-45红轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_30555301.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: MS-08R-45红轴",
+          "url": "https://www.huannnuo.com/pro_30555301.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano also lists MS-09, MS-14, MS-15, MS-25, MS-27 and MS-33 versions with dust-proof stems or copper sleeves and 20 or 50 million rated keystrokes."
+    },
+    {
+      "id": "huano-ms-08t-45-brown",
+      "name": "MS-08T-45 Brown",
+      "maker": "huano",
+      "made_by": null,
+      "family": "MS",
+      "aka": [
+        "MS-08T-45茶轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_30556162.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: MS-08T-45茶轴",
+          "url": "https://www.huannnuo.com/pro_30556162.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano also lists MS-09, MS-14, MS-15, MS-25, MS-27 and MS-33 versions with dust-proof stems or copper sleeves and 20 or 50 million rated keystrokes."
+    },
+    {
+      "id": "huano-silent-brown",
+      "name": "Silent Brown",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Silent",
+      "aka": [
+        "静音茶轴"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621400.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 静音茶轴",
+          "url": "https://www.huannnuo.com/pro_53621400.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 静音茶轴."
+    },
+    {
+      "id": "huano-silent-red",
+      "name": "Silent Red",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Silent",
+      "aka": [
+        "静音红轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621398.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 静音红轴",
+          "url": "https://www.huannnuo.com/pro_53621398.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 静音红轴."
+    },
+    {
+      "id": "huano-citrine",
+      "name": "Citrine",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "黄水晶轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621394.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 黄水晶轴",
+          "url": "https://www.huannnuo.com/pro_53621394.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-citrine-v2",
+      "name": "Citrine V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "黄水晶V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53699740.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 黄水晶V2",
+          "url": "https://www.huannnuo.com/pro_53699740.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-conchbead",
+      "name": "Conchbead",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "海螺珠轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 33,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621391.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 海螺珠轴",
+          "url": "https://www.huannnuo.com/pro_53621391.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano classes it as a speed linear. Huano writes the pre-travel unit as gf; the value is recorded in mm. Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-conchbead-v2",
+      "name": "Conchbead V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "海螺珠V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 33,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53699739.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 海螺珠V2",
+          "url": "https://www.huannnuo.com/pro_53699739.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano classes it as a speed linear. Huano writes the pre-travel unit as gf; the value is recorded in mm. Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-green",
+      "name": "Green",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "青黛轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621396.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 青黛轴",
+          "url": "https://www.huannnuo.com/pro_53621396.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-green-v2",
+      "name": "Green V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "青黛V2轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53699741.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 青黛V2轴",
+          "url": "https://www.huannnuo.com/pro_53699741.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-hibiscus-jade",
+      "name": "Hibiscus Jade",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "芙蓉玉轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621381.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 芙蓉玉轴",
+          "url": "https://www.huannnuo.com/pro_53621381.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-hibiscus-jade-v2",
+      "name": "Hibiscus Jade V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "芙蓉玉V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53699737.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 芙蓉玉V2",
+          "url": "https://www.huannnuo.com/pro_53699737.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-tortoise-shell",
+      "name": "Tortoise Shell",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "玳瑁轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621364.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 玳瑁轴",
+          "url": "https://www.huannnuo.com/pro_53621364.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-tortoise-shell-v2",
+      "name": "Tortoise Shell V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "玳瑁轴V2"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53699728.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 玳瑁轴V2",
+          "url": "https://www.huannnuo.com/pro_53699728.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-tourmaline",
+      "name": "Tourmaline",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "碧玺轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621363.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 碧玺轴",
+          "url": "https://www.huannnuo.com/pro_53621363.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-tourmaline-v2",
+      "name": "Tourmaline V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": "Spring Liuli",
+      "aka": [
+        "碧玺轴V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53699718.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 碧玺轴V2",
+          "url": "https://www.huannnuo.com/pro_53699718.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "family",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MechKeys: Huano Introduces All New Spring Liuli Series Of Transparent Mechanical Switches",
+          "url": "https://mechkeys.com/blogs/news/huano-introduces-all-new-spring-liuli-series-of-transparent-mechanical-switches",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "family",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housings with an integrated light guide; the English name is the one MechKeys used at launch."
+    },
+    {
+      "id": "huano-caramel-latte",
+      "name": "Caramel Latte",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Huano Caramel Latte",
+        "焦糖拿铁轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POK",
+        "bottom": "PA66 + 30% fiberglass",
+        "stem": "POM"
+      },
+      "spring": "22mm single-stage extended stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53965618.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/huano-caramel-latte-switch-review",
+          "date": "2024-06-23",
+          "score": null,
+          "verdict": "Consistent, smooth, muted factory-lubed linear; the reviewer calls it shockingly good for about $0.30 per switch."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Huano: 焦糖拿铁轴",
+          "url": "https://www.huannnuo.com/pro_53965618.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "kbd.news: Huano Caramel Latte V2 data sheet",
+          "url": "https://kbd.news/switch/Huano-Caramel-Latte-V2-switch-176.html",
+          "kind": "reference",
+          "backs": [
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Huano Caramel Latte Switch Review",
+          "url": "https://www.theremingoat.com/blog/huano-caramel-latte-switch-review",
+          "kind": "review",
+          "backs": [
+            "pins",
+            "materials",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano's own page gives forces and travel only; materials, spring and pins come from the kbd.news data sheet (listed as Caramel Latte V2) and ThereminGoat."
+    },
+    {
+      "id": "huano-fengming",
+      "name": "Fengming",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "蜂鸣轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_54500410.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 蜂鸣轴",
+          "url": "https://www.huannnuo.com/pro_54500410.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano classes it as a semi-silent linear. Huano lists it only under the Chinese name 蜂鸣轴."
+    },
+    {
+      "id": "huano-fi",
+      "name": "Fi",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Huano Fi",
+        "FI轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2023",
+      "status": "limited",
+      "official_url": "https://www.huannnuo.com/pro_53621339.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/huano-fi-switch-review",
+          "date": "2023-07-02",
+          "score": null,
+          "verdict": "Decent light linears sold only in an elaborate 2023 Lunar New Year Hi/Fi box; the reviewer doubts their value at that price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Huano: FI轴",
+          "url": "https://www.huannnuo.com/pro_53621339.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Huano Fi Switch Review",
+          "url": "https://www.theremingoat.com/blog/huano-fi-switch-review",
+          "kind": "review",
+          "backs": [
+            "factory_lubed",
+            "released",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with the Hi in a 2023 Lunar New Year box set; ThereminGoat reports a thin factory lube."
+    },
+    {
+      "id": "huano-full-pom",
+      "name": "Full POM",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Huano Full POM",
+        "全POM轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621287.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 全POM轴",
+          "url": "https://www.huannnuo.com/pro_53621287.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano names it full POM and lists it in its factory-lubed switch series."
+    },
+    {
+      "id": "huano-hi",
+      "name": "Hi",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Huano Hi",
+        "HI轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": "2023",
+      "status": "limited",
+      "official_url": "https://www.huannnuo.com/pro_53621338.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/huano-fi-switch-review",
+          "date": "2023-07-02",
+          "score": null,
+          "verdict": "Decent light linears sold only in an elaborate 2023 Lunar New Year Hi/Fi box; the reviewer doubts their value at that price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Huano: HI轴",
+          "url": "https://www.huannnuo.com/pro_53621338.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Huano Fi Switch Review",
+          "url": "https://www.theremingoat.com/blog/huano-fi-switch-review",
+          "kind": "review",
+          "backs": [
+            "factory_lubed",
+            "released",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with the Fi in a 2023 Lunar New Year box set; ThereminGoat reports a thin factory lube."
+    },
+    {
+      "id": "huano-liwu",
+      "name": "Liwu",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "礼物轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53921548.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 礼物轴",
+          "url": "https://www.huannnuo.com/pro_53921548.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 礼物轴. Listed in its factory-lubed switch series."
+    },
+    {
+      "id": "huano-liwu-milky",
+      "name": "Liwu Milky Housing",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "礼物轴乳壳"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53921556.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 礼物轴乳壳",
+          "url": "https://www.huannnuo.com/pro_53921556.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Milky-housing version of the Liwu. Huano lists it only under the Chinese name 礼物轴乳壳."
+    },
+    {
+      "id": "huano-luoying-v1",
+      "name": "Luoying V1",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "落樱V1轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 52,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53965633.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 落樱V1轴",
+          "url": "https://www.huannnuo.com/pro_53965633.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 落樱V1轴."
+    },
+    {
+      "id": "huano-luoying-v2",
+      "name": "Luoying V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "落樱V2轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 52,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_54371373.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 落樱V2轴",
+          "url": "https://www.huannnuo.com/pro_54371373.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 落樱V2轴."
+    },
+    {
+      "id": "huano-pineapple",
+      "name": "Pineapple",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Huano Pineapple"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/huano-pineapple-switch-review",
+          "date": "2023-05-28",
+          "score": null,
+          "verdict": "Very cheap, slightly lubed linear that pleasantly surprised the reviewer and landed mid-pack in his rankings."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: Huano Pineapple Switch Review",
+          "url": "https://www.theremingoat.com/blog/huano-pineapple-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "materials",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Not listed on Huano's site in 2026-11. ThereminGoat describes it as a roughly 45g bottom-out linear with reportedly PC top and nylon bottom housings and a slight factory lube."
+    },
+    {
+      "id": "huano-purple",
+      "name": "Purple",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "紫轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_54478511.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 紫轴",
+          "url": "https://www.huannnuo.com/pro_54478511.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 紫轴. Listed in its factory-lubrication switch series."
+    },
+    {
+      "id": "huano-qinglv-v2",
+      "name": "Qinglv V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "青绿V2轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 31,
+      "bottom_out_force_gf": 40,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_53621278.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 青绿V2轴",
+          "url": "https://www.huannnuo.com/pro_53621278.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 青绿V2轴."
+    },
+    {
+      "id": "huano-qinglv-v3",
+      "name": "Qinglv V3",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "青绿V3轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 31,
+      "bottom_out_force_gf": 40,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_54500411.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 青绿V3轴",
+          "url": "https://www.huannnuo.com/pro_54500411.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 青绿V3轴."
+    },
+    {
+      "id": "huano-sakura-v2",
+      "name": "Sakura V2",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Huano Sakura V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POK",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "23mm single-stage",
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "kbd.news: Huano Sakura V2 data sheet",
+          "url": "https://kbd.news/switch/Huano-Sakura-V2-switch-532.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Not listed on Huano's own site; specs come from the kbd.news data sheet, which names Huano as designer and maker."
+    },
+    {
+      "id": "huano-sakura-v2-tactile",
+      "name": "Sakura V2 Tactile",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Huano Sakura V2 Tactile"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.8,
+      "total_travel_mm": 3.1,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POK",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "kbd.news: Huano Sakura V2 Tactile data sheet",
+          "url": "https://kbd.news/switch/Huano-Sakura-V2-Tactile-switch-595.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Not listed on Huano's own site; specs come from the kbd.news data sheet, which names Huano as maker."
+    },
+    {
+      "id": "huano-xingye",
+      "name": "Xingye",
+      "maker": "huano",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "星夜轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.huannnuo.com/pro_54371453.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Huano: 星夜轴",
+          "url": "https://www.huannnuo.com/pro_54371453.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Huano lists it only under the Chinese name 星夜轴."
+    }
+  ]
+}

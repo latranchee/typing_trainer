@@ -1,0 +1,272 @@
+{
+  "brand": {
+    "id": "uhk",
+    "name": "Ultimate Hacking Keyboard",
+    "country": "HU",
+    "founded": null,
+    "official_url": "https://uhk.io/",
+    "focus": [
+      "ergonomic",
+      "premium"
+    ],
+    "about": "Ultimate Gadget Laboratories Kft. (Kalocsa, Hungary) has made the Ultimate Hacking Keyboard line since 2015: the UHK 60 v1, UHK 60 v2 and UHK 80 split keyboards with add-on modules, configured with its open-source Agent app.",
+    "sources": [
+      {
+        "title": "UHK: home page",
+        "url": "https://uhk.io/",
+        "kind": "official",
+        "backs": [
+          "about",
+          "focus"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "naya.tech: page operated by Ultimate Gadget Laboratories",
+        "url": "https://naya.tech/",
+        "kind": "official",
+        "backs": [
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "uhk-60-v2",
+      "brand": "uhk",
+      "model": "UHK 60 v2",
+      "aka": [
+        "Ultimate Hacking Keyboard 60 v2"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Kailh Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Blue",
+          "id": null
+        },
+        {
+          "name": "Kailh Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Box Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Box White",
+          "id": null
+        },
+        {
+          "name": "Kailh Box Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Silent Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Silent Pink",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Agent",
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 352,
+      "price_date": "2026-11-23",
+      "price_url": "https://uhk.io/product/uhk60v2",
+      "official_url": "https://uhk.io/uhk60",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "UHK: UHK 60",
+          "url": "https://uhk.io/uhk60",
+          "kind": "official",
+          "backs": [
+            "split",
+            "hot_swap",
+            "tenting",
+            "software",
+            "os",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "UHK: UHK 60 v2 shop page",
+          "url": "https://uhk.io/product/uhk60v2",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards",
+            "price_usd",
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bundled flip-out feet give tenting and negative tilt; the Riser 60 and palm rest are sold separately. Switch names are UHK's Kailh options (Regular, Box, Silent). Hot-swap pin support is not stated. Price is the regular price; a 25% Black Friday sale was running."
+    },
+    {
+      "id": "uhk-80",
+      "brand": "uhk",
+      "model": "UHK 80",
+      "aka": [
+        "Ultimate Hacking Keyboard 80"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8500,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Kailh Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Blue",
+          "id": null
+        },
+        {
+          "name": "Kailh Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Box Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Box White",
+          "id": null
+        },
+        {
+          "name": "Kailh Box Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Silent Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Silent Pink",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Agent",
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 429,
+      "price_date": "2026-11-23",
+      "price_url": "https://uhk.io/product/uhk80",
+      "official_url": "https://uhk.io/uhk80",
+      "reviews": [
+        {
+          "outlet": "GBAtemp",
+          "url": "https://gbatemp.net/review/ultimate-hacking-keyboard-80.2730/",
+          "date": "2026-07-08",
+          "score": "9/10",
+          "verdict": "Excellent wireless split board with strong battery life and software; recommended if you accept the included keycaps."
+        }
+      ],
+      "sources": [
+        {
+          "title": "UHK: UHK 80",
+          "url": "https://uhk.io/uhk80",
+          "kind": "official",
+          "backs": [
+            "split",
+            "hot_swap",
+            "connectivity",
+            "software",
+            "os",
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "UHK: UHK 80 shop page",
+          "url": "https://uhk.io/product/uhk80",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards",
+            "price_usd",
+            "battery_mah",
+            "thumb_cluster",
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Batteries are 3500 mAh (left) and 5000 mAh (right) and are an optional add-on; the four bottom thumb keys use Kailh Choc v2 switches. Connects over USB, Bluetooth or UHK dongles to up to 20 hosts. Included feet give about 5 degrees of tenting; the Riser 80 goes higher. Price is the regular price; a 25% Black Friday sale was running."
+    }
+  ]
+}

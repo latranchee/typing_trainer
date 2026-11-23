@@ -1,0 +1,5472 @@
+{
+  "maker": {
+    "id": "kailh",
+    "name": "Kailh",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": 1990,
+    "official_url": "https://www.kailhswitch.com/",
+    "about": "Kailh is the switch brand of Dongguan City Kaihua Electronics Co., Ltd., a Chinese maker of keyboard, mouse and micro switches founded in 1990. Its keyboard range spans MX-style Box, Speed and Pro switches, Choc low-profile switches and magnetic switches.",
+    "sources": [
+      {
+        "title": "Kailh: home page (Dongguan City Kaihua Electronics)",
+        "url": "https://www.kailhswitch.com/",
+        "kind": "official",
+        "backs": [
+          "name",
+          "official_url"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Kailh: About Us",
+        "url": "https://www.kailhswitch.com/about-us",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "kailh-box-ancient-grey",
+      "name": "Box Ancient Grey",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 95,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-heavy-blue-key-switch.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/from-the-vault-kailh-china-style-box-switch-review",
+          "date": "2020-04-24",
+          "score": null,
+          "verdict": "Covers the China Style Box set; the 95 g Ancient Grey linear is the one the reviewer thinks deserves more attention."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Box%20Ancient%20Grey",
+          "date": "2023-04-05",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 121 gf near bottom-out over 3.9 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Ancient Grey Linear",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-heavy-blue-key-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S34 (Ancient grey shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S34.pdf?rnd=265",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Very heavy linear from Kailh's China Style Box set, sold beside Chinese Red, Noble Yellow and Glazed Green."
+    },
+    {
+      "id": "kailh-box-black",
+      "name": "Box Black",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": "2015",
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-black-switches.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-black",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured 2 mm pre-travel on this linear switch; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Box Black (CPG1511F01S05) and Box comparison table",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-black-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S05 (Black shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S05.pdf?rnd=313",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Keyboard RGB Key Switch (Box switch history)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/keyboard-rgb-key-switch.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "kailh-box-brown",
+      "name": "Box Brown",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": "2015",
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-brown-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box Brown (CPG1511F01S03)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-brown-switches.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S03 (Brown shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S03.pdf?rnd=291",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Keyboard RGB Key Switch (Box switch history)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/keyboard-rgb-key-switch.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh's Box comparison table lists 50 gf operating and 60 gf tactile force; the values here come from the current datasheet."
+    },
+    {
+      "id": "kailh-box-jade",
+      "name": "Box Jade",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 75,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-jade",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 77 gf tactile peak and 1.7 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Box%20Jade",
+          "date": "2022-07-10",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 79 gf near 1.5 mm and reads about 57 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Box comparison table (Jade)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-black-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S11 (Aqua shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S11.pdf?rnd=755",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavier clicky Box switch with a thick click bar. The datasheet is the aqua-stem part CPG1511F01S11, whose forces match the Jade column of Kailh's Box table."
+    },
+    {
+      "id": "kailh-box-navy",
+      "name": "Box Navy",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 95,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Box%20Navy",
+          "date": "2022-07-10",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 92 gf near 1.4 mm and reads about 84 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Box comparison table (Navy)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-black-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heaviest clicky in the original Box table, with a thick click bar."
+    },
+    {
+      "id": "kailh-box-red",
+      "name": "Box Red",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": "2015",
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-red-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box Red (CPG1511F01S04)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/smt-keyboard-red-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S04 (Red shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S04.pdf?rnd=587",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Keyboard RGB Key Switch (Box switch history)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/keyboard-rgb-key-switch.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Original Box linear (part CPG1511F01S04); a wall around the cross stem shields the contacts from dust and water."
+    },
+    {
+      "id": "kailh-box-summer",
+      "name": "Box Summer",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-summer-keyboard-switch.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Box%20Summer%20(Zhixia)",
+          "date": "2022-08-18",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 59 gf near 1.5 mm and reads about 55 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Box Summer Keyboard Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-summer-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "pins",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S150",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S150.pdf?rnd=715",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Turquoise clicky Box switch with a torsion-spring click. Kailh's later ZHI Four Seasons page lists another Box Summer with a fully transparent body."
+    },
+    {
+      "id": "kailh-box-white",
+      "name": "Box White",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": "2015",
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/box-blue-white-switches-for-mechanical.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-white",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 52 gf tactile peak and 1.9 mm pre-travel; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Box White",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/box-blue-white-switches-for-mechanical.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S02 (White shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S02.pdf?rnd=297",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Keyboard RGB Key Switch (Box switch history)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/keyboard-rgb-key-switch.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky Box switch whose click comes from a click bar instead of a two-part stem."
+    },
+    {
+      "id": "kailh-box-canary",
+      "name": "Canary",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/canary-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Canary Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/canary-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Custom-colour tactile built on the Box stem, sold in two colourways."
+    },
+    {
+      "id": "kailh-box-crackle-ice",
+      "name": "Crackle Ice Box",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [
+        "Crackle Ice Box Clicky"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-crackle-ice-box-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Crackle Ice BOX Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-crackle-ice-box-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "factory_lubed",
+            "light_pipe",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S259",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S259.pdf?rnd=32",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky Box switch with a torsion-spring click, full POM housing and a frosted PC light guide."
+    },
+    {
+      "id": "kailh-box-fried-egg",
+      "name": "Fried Egg",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-fried-egg-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Fried Egg Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-fried-egg-switch.html",
+          "kind": "official",
+          "backs": [
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S62, revision B 2022",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S62.pdf?rnd=29",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full POM Box switch. The product page lists 42 gf, 3.6 mm travel and 60 million cycles; the revised datasheet gives the values here."
+    },
+    {
+      "id": "kailh-box-jellyfish",
+      "name": "Jellyfish Box",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [
+        "Jellyfish Box Y"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "nylon"
+      },
+      "spring": "18mm silver spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-jellyfish-box-switch.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/jellyfish-box-y",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured 1.6 mm pre-travel on this linear switch; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Jellyfish Box Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-jellyfish-box-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S70-1",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S70-1.pdf?rnd=163",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Kailh Jellyfish Box Y review",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/jellyfish-box-y",
+          "kind": "review",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Fully transparent Box switch; Kailh's page also mentions a 47 gf tactile version."
+    },
+    {
+      "id": "kailh-box-red-bean-pudding",
+      "name": "Red Bean Pudding",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/bed-bean-pudding-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Red Bean Pudding Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/bed-bean-pudding-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S67",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S67.pdf?rnd=468",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh calls it the master version of the Box Red, with a translucent top, a light pipe and a short spring."
+    },
+    {
+      "id": "kailh-box-white-owl",
+      "name": "White Owl",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box",
+      "aka": [
+        "White Owl Box"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 46,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-white-owl-switch.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/white-owl-box",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 78 gf tactile peak and 1.7 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20White%20Owl",
+          "date": "2022-07-28",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 78 gf near 1.6 mm and reads about 65 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Box White Owl Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-white-owl-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S68",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S68.pdf?rnd=322",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Kailh White Owl Box review",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/white-owl-box",
+          "kind": "review",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh calls it the master version of the Box White, with a stronger bump and a light pipe."
+    },
+    {
+      "id": "kailh-box-burnt-orange",
+      "name": "Box Burnt Orange",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box Heavy",
+      "aka": [
+        "Box Heavy Burnt Orange"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-heavy-switch-series.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box Heavy Switch Series",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-heavy-switch-series.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy tactile Box switch (CPG1511F01S07)."
+    },
+    {
+      "id": "kailh-box-dark-yellow",
+      "name": "Box Dark Yellow",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box Heavy",
+      "aka": [
+        "Box Heavy Dark Yellow"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-heavy-switch-series.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box Heavy Switch Series",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-heavy-switch-series.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy linear (CPG1511F01S08) with the Box Red stem and a stiffer spring."
+    },
+    {
+      "id": "kailh-box-pale-blue",
+      "name": "Box Pale Blue",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box Heavy",
+      "aka": [
+        "Box Heavy Pale Blue"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-heavy-switch-series.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box Heavy Switch Series",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-heavy-switch-series.html",
+          "kind": "official",
+          "backs": [
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S06 (Pale Blue shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S06.pdf?rnd=874",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy clicky Box switch (CPG1511F01S06). The series page gives a 65 gf tactile force; the datasheet gives 70 gf."
+    },
+    {
+      "id": "kailh-box-hush-silent-v3",
+      "name": "Box Hush Silent V3",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box Hush",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-hush-switch-silent-v3.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box Hush Switch-Silent V3",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-hush-switch-silent-v3.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S77",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S77.pdf?rnd=781",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Third-generation silent Box switch with separate TPE dampers at both ends of the stroke."
+    },
+    {
+      "id": "kailh-box-silent-brown",
+      "name": "Box Silent Brown",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box Silent",
+      "aka": [
+        "Box Tactile Silent"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-silent-tactile-switch.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-silent-brown",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 49 gf tactile peak and 2 mm pre-travel; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Silent Tactile Switch (Tactile Silent BOX)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-silent-tactile-switch.html",
+          "kind": "official",
+          "backs": [
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S38 (Tactile Silent shaft), revision C 2025",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S38.pdf?rnd=389",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet revision C (2025) changed the total travel to 3.0 mm; the older product page still lists 3.6 mm travel and a 65 gf bump."
+    },
+    {
+      "id": "kailh-box-silent-pink",
+      "name": "Box Silent Pink",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box Silent",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/silent-smt-key-switch.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-silent-pink",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured 1.8 mm pre-travel on this linear switch; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Box Silent Pink",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/smt-key-switches/silent-smt-key-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S37 (Linear Silent shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S37.pdf?rnd=456",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Total travel left empty: the product page gives 3.6 mm and the linked datasheet 3.0 mm."
+    },
+    {
+      "id": "kailh-box-v2-brown",
+      "name": "Box V2 Brown",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box V2",
+      "aka": [
+        "Box Brown V2"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-switch-v2-tactile.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-brown-v2",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 66 gf tactile peak and 2 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Box%20V2%20Brown",
+          "date": "2022-07-03",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 66 gf near 0.6 mm and reads about 56 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: BOX Switch V2 Tactile",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-switch-v2-tactile.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "pins",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S109 (Brown shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S109.pdf?rnd=694",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh says the V2 Brown moved from a light to a heavy bump. The product page lists a 75 gf bump and 50 million cycles; the datasheet gives 70 gf and 80 million."
+    },
+    {
+      "id": "kailh-box-v2-red",
+      "name": "Box V2 Red",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box V2",
+      "aka": [
+        "Box Red V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-switch-v2-linear.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-red-v2",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured 1.9 mm pre-travel on this linear switch; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Box%20V2%20Red",
+          "date": "2022-07-03",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 46 gf near bottom-out over 3.8 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: BOX Switch V2 Linear",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-switch-v2-linear.html",
+          "kind": "official",
+          "backs": [
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "pins",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S108 (Red shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S108.pdf?rnd=36",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Box V2 has a solid black 5-pin base and a half-open LED slot that also takes 2-pin mini LEDs."
+    },
+    {
+      "id": "kailh-box-v2-white",
+      "name": "Box V2 White",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box V2",
+      "aka": [
+        "Box White V2"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "gold-plated long spring, about 19mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-switch-v2-white.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/box-white-v2",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 57 gf tactile peak and 1.8 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Box%20V2%20White",
+          "date": "2022-07-03",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 59 gf near 1.7 mm and reads about 51 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: BOX Switch V2 White",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-switch-v2-white.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "pins",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S110 (White shaft)",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S110.pdf?rnd=876",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Click bar triggered by a small foot on the stem."
+    },
+    {
+      "id": "kailh-box-autumn",
+      "name": "Box Autumn",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box ZHI Four Seasons",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "long 20mm",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-zhi-series-four-seasons-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box \"ZHI\" Series Four Seasons Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-zhi-series-four-seasons-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "spring",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky of the ZHI Four Seasons Box set."
+    },
+    {
+      "id": "kailh-box-spring",
+      "name": "Box Spring",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box ZHI Four Seasons",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": "extended 20mm",
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-zhi-series-four-seasons-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box \"ZHI\" Series Four Seasons Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-zhi-series-four-seasons-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S222",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S222.pdf?rnd=774",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Linear of the ZHI Four Seasons Box set, with a lubricated stem and a new high-slip POM base."
+    },
+    {
+      "id": "kailh-box-winter",
+      "name": "Box Winter",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Box ZHI Four Seasons",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "extended 20mm",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-zhi-series-four-seasons-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Box \"ZHI\" Series Four Seasons Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/box-zhi-series-four-seasons-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "spring",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile of the ZHI Four Seasons Box set; Kailh calls it advanced tactile."
+    },
+    {
+      "id": "kailh-choc-v1-brown",
+      "name": "Choc Brown",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [
+        "Choc V1 Brown"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/tactile-mechanical-keyboard-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Choc Brown (CPG135001D02)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/tactile-mechanical-keyboard-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D02 Brown Tactile Choc",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D02_-_Brown_Tactile_Choc-(1).pdf?rnd=940",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "kailh-choc-v1-burnt-orange",
+      "name": "Choc Burnt Orange",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/burnt-orange-switch.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Choc%20Low%20Profile%20Burnt%20Orange",
+          "date": "2023-10-15",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 70 gf near 1.2 mm and reads about 82 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Choc Low Profile Switches (Burnt Orange)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/burnt-orange-switch.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D02-1 Choc Burnt Orange",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D02-1_Choc_Burnt_Orange.pdf?rnd=169",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy tactile Choc."
+    },
+    {
+      "id": "kailh-choc-v1-dark-yellow",
+      "name": "Choc Dark Yellow",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/dark-yellow-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Choc Dark Yellow (CPG135001D01-1)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/dark-yellow-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D01-1 Choc Dark Yellow",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D01-1_Choc_Dark_yellow.pdf?rnd=603",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy linear Choc."
+    },
+    {
+      "id": "kailh-choc-v1-jade",
+      "name": "Choc Jade",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 10,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/jade-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Low profile Clicky Key Switches (Choc Jade)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/jade-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D03-2 Choc Jade",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D03-2_choc-Jade.pdf?rnd=334",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Choc White spring with a different stem; the datasheet rates it for 10 million cycles."
+    },
+    {
+      "id": "kailh-choc-v1-navy",
+      "name": "Choc Navy",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 10,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/navy-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Clicky Tactile Low Profile Key Switch (Choc Navy)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/navy-switch.html",
+          "kind": "official",
+          "backs": [
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D03-3 Choc Navy",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D03-3_choc-Navy.pdf?rnd=154",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Choc White spring with a thicker click bar. The datasheet rates it for 10 million cycles, the product page for 50 million."
+    },
+    {
+      "id": "kailh-choc-v1-pale-blue",
+      "name": "Choc Pale Blue",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 70,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/pale-blue-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Low Profile Keyboard Key Switch (Pale Blue)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/pale-blue-switch.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D03-1 Choc Pale Blue",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D03-1_Choc_Pale_Blue.pdf?rnd=206",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy clicky Choc."
+    },
+    {
+      "id": "kailh-choc-v1-pro-pink",
+      "name": "Choc Pro Pink",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 20,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/choc-pro-pink-keyboard-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Choc Pro Pink Keyboard Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/choc-pro-pink-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D01-16",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/202215927/CPG135001D01-16.pdf?rnd=445",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Very light 20 gf linear Choc with five pins (two contacts, a centre post and two side posts)."
+    },
+    {
+      "id": "kailh-choc-v1-red",
+      "name": "Choc Red",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [
+        "Choc V1 Red"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/linear-mechanical-keyboard-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Choc Red (CPG135001D01)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/linear-mechanical-keyboard-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D01 Red Linear Choc",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D01_-_Red_Linear_Choc.pdf?rnd=473",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PG1350 low-profile switch; its keycap mount is not MX compatible."
+    },
+    {
+      "id": "kailh-choc-v1-white",
+      "name": "Choc White",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V1",
+      "aka": [
+        "Choc V1 White"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v1",
+      "keycap_mount": "choc",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/c-mechanical-keyboard-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Choc White (CPG135001D03)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/c-mechanical-keyboard-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG135001D03 White Clicky Choc",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/201915927/CPG135001D03_-_White_Clicky_Choc.pdf?rnd=616",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky Choc with a click bar."
+    },
+    {
+      "id": "kailh-black-cloud",
+      "name": "Black Cloud",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/black-cloud",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": "RTINGS measured a 53 gf tactile peak and 1.7 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Black%20Cloud",
+          "date": "2025-03-30",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 56 gf near 0.5 mm and reads about 52 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Kailh PG1353 series (Choc V2)",
+          "url": "https://deskthority.net/wiki/Kailh_Choc_V2",
+          "kind": "reference",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Choc V2 custom variant listed by Deskthority; no Kailh product page found."
+    },
+    {
+      "id": "kailh-choc-v2-blue",
+      "name": "Choc V2 Blue",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Low Profile Switch Choc V2",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: PG1353 CPG135301D03",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/202015927/PG135301D03.pdf?rnd=739",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Kailh PG1353 series (Choc V2)",
+          "url": "https://deskthority.net/wiki/Kailh_Choc_V2",
+          "kind": "reference",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky Choc V2 (CPG135301D03); Deskthority identifies this part as the blue stem."
+    },
+    {
+      "id": "kailh-choc-v2-brown",
+      "name": "Choc V2 Brown",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Low Profile Switch Choc V2",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Kailh PG1353 series (Choc V2)",
+          "url": "https://deskthority.net/wiki/Kailh_Choc_V2",
+          "kind": "reference",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part CPG135301D02; only partly backwards compatible with Choc V1 footprints."
+    },
+    {
+      "id": "kailh-choc-v2-full-pom",
+      "name": "Choc V2 Full POM",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [
+        "Choc V2 Full POM Shadow Series"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/kailh-choc-v2-full-pom-low-profile-keyboard.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Choc V2 Full POM Low Profile Keyboard Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/kailh-choc-v2-full-pom-low-profile-keyboard.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353D01D01-16",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353D01D01-16-data-sheet.pdf?rnd=824",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The product page headline gives 50 gf; the datasheet gives 40 gf."
+    },
+    {
+      "id": "kailh-choc-v2-ice-cream",
+      "name": "Choc V2 Ice Cream",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/choc-v2-low-profile-ice-cream-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Choc V2 Low Profile Ice Cream Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/choc-v2-low-profile-ice-cream-switch.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353D01D01-31",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353D01D01-31-data-sheet.pdf?rnd=403",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full POM Choc V2 linear; the product page gives 40 gf, the datasheet 38 gf."
+    },
+    {
+      "id": "kailh-choc-v2-red",
+      "name": "Choc V2 Red",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Low Profile Switch Choc V2",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Kailh PG1353 series (Choc V2)",
+          "url": "https://deskthority.net/wiki/Kailh_Choc_V2",
+          "kind": "reference",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Choc V2 (CPG135301D01) has a round post with an MX-style cross; Kailh publishes no per-colour sheet, so forces come from the Deskthority table."
+    },
+    {
+      "id": "kailh-choc-v2-silent-linear",
+      "name": "Choc V2 Silent Linear",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/choc-v2-low-profile-silent-linear-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Choc V2 Low Profile Silent Linear Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/choc-v2-low-profile-silent-linear-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353S01D01-01",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353S01D01-01-data-sheet.pdf?rnd=14",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "kailh-choc-v2-silent-tactile",
+      "name": "Choc V2 Silent Tactile",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/choc-v2-low-profile-silent-tactile-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Choc V2 Low Profile Silent Tactile Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/choc-v2-low-profile-silent-tactile-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353S01D02-01",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353S01D02-01-data-sheet.pdf?rnd=66",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "kailh-hide-mountain",
+      "name": "Hide Mountain",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Hide%20Mountain",
+          "date": "2025-04-06",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 57 gf near 1.5 mm and reads about 54 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Kailh PG1353 series (Choc V2)",
+          "url": "https://deskthority.net/wiki/Kailh_Choc_V2",
+          "kind": "reference",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Choc V2 custom variant listed by Deskthority; no Kailh product page found."
+    },
+    {
+      "id": "kailh-white-rain",
+      "name": "White Rain",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Choc V2",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/white-rain",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": "RTINGS measured 1.3 mm pre-travel on this linear switch; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20White%20Rain",
+          "date": "2025-04-06",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 52 gf near bottom-out over 3.4 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Kailh PG1353 series (Choc V2)",
+          "url": "https://deskthority.net/wiki/Kailh_Choc_V2",
+          "kind": "reference",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Choc V2 custom variant listed by Deskthority; no Kailh product page found."
+    },
+    {
+      "id": "kailh-clione-limacina-linear",
+      "name": "Clione Limacina Linear",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Clione Limacina",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": null
+      },
+      "spring": "long spring (gold-plated version available)",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-clione-limacina-linear-switch-lighter.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Clione Limacina Linear Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-clione-limacina-linear-switch-lighter.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101S107",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG151101S107.pdf?rnd=293",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh's fully transparent PC switch with a cross stem."
+    },
+    {
+      "id": "kailh-clione-limacina-tactile",
+      "name": "Clione Limacina Tactile",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Clione Limacina",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": null
+      },
+      "spring": "long spring (gold-plated version available)",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-clione-limacina-tactile-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Clione Limacina Tactile Switch (CPG151101S108)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-clione-limacina-tactile-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile version of the transparent Clione Limacina."
+    },
+    {
+      "id": "kailh-mini-autumn",
+      "name": "Mini Autumn",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Four Seasons Mini",
+      "aka": [
+        "Autumn Mini"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/autumn-mini",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": "RTINGS measured a 42 gf tactile peak and 1.4 mm pre-travel; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Four Seasons Series Mini Low Profile Switches",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+          "kind": "official",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh publishes its specs only as an image."
+    },
+    {
+      "id": "kailh-mini-spring",
+      "name": "Mini Spring",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Four Seasons Mini",
+      "aka": [
+        "Spring Mini"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/spring-mini",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": "RTINGS measured 1.4 mm pre-travel on this linear switch; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Four Seasons Series Mini Low Profile Switches",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+          "kind": "official",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353D01D01-24",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353D01D01-24-data-sheet.pdf?rnd=926",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile series aimed at low-profile keyboards and hitbox controllers; Kailh numbers it in its PG1353 (Choc V2) range."
+    },
+    {
+      "id": "kailh-mini-summer",
+      "name": "Mini Summer",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Four Seasons Mini",
+      "aka": [
+        "Summer Mini"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/summer-mini",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": "RTINGS measured a 53 gf tactile peak and 1.5 mm pre-travel; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Four Seasons Series Mini Low Profile Switches",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+          "kind": "official",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh publishes its specs only as an image."
+    },
+    {
+      "id": "kailh-mini-winter",
+      "name": "Mini Winter",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Four Seasons Mini",
+      "aka": [
+        "Winter Mini"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/winter-mini",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": "RTINGS measured a 50 gf tactile peak and 1.7 mm pre-travel; its full test results are for members only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Four Seasons Series Mini Low Profile Switches",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/four-seasons-series-mini-low-profile-switches.html",
+          "kind": "official",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh publishes its specs only as an image."
+    },
+    {
+      "id": "kailh-moon",
+      "name": "Moon",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Galaxy",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-moon-magnetic-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Moon Magnetic Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-moon-magnetic-switch.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear of the Galaxy series, sold in four light-pipe versions; Kailh gives a 35 gf initial force."
+    },
+    {
+      "id": "kailh-star-magnetic-mini",
+      "name": "Star Magnetic Mini",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Galaxy",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/kailh-galaxy-series-star-magnetic-mini-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: KAILH Galaxy Series - Star Magnetic Mini Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/kailh-galaxy-series-star-magnetic-mini-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353C01D01-03",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353C01D01-03.pdf?rnd=917",
+          "kind": "datasheet",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile Hall-effect switch numbered in Kailh's PG1353 (Choc V2) range."
+    },
+    {
+      "id": "kailh-deep-sea-islet",
+      "name": "Deep Sea Islet",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Hush Box Pro",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-hush-box-switch-pro.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Hush Box Switch Pro",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-hush-box-switch-pro.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511F01S129",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511F01S129.pdf?rnd=473",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Linear half of the Hush Box Pro pair (CPG1511F01S129); Kailh's page spells it \"Lslet\". Silicone dampers lower the noise."
+    },
+    {
+      "id": "kailh-deep-sea-whale",
+      "name": "Deep Sea Whale",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Hush Box Pro",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-hush-box-switch-pro.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Hush Box Switch Pro",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-hush-box-switch-pro.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile half of the Hush Box Pro pair (CPG1511F01S172)."
+    },
+    {
+      "id": "kailh-kk-bronze",
+      "name": "KK Bronze",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KK",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-kk-bronze-switch-mx-stem-clicky.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh KK Bronze Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-kk-bronze-switch-mx-stem-clicky.html",
+          "kind": "official",
+          "backs": [
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101D292 (KK Bronze)",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/202215927/Datasheet-for-KK-Bronze.pdf?rnd=331",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The only clicky KK switch, with a torsion-spring click."
+    },
+    {
+      "id": "kailh-kk-copper",
+      "name": "KK Copper",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KK",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "18mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-kk-copper-mx-structure-tactile.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh KK Copper Tactile Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-kk-copper-mx-structure-tactile.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101D291 (KK Copper)",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/202215927/Datasheet-for-KK-Copper.pdf?rnd=685",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-travel tactile with the shortest spring of the KK series."
+    },
+    {
+      "id": "kailh-kk-red",
+      "name": "KK Red",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KK",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 42,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "about 20.5mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kk-red-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: KK Red Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kk-red-switch.html",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101S102",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG151101S102.pdf?rnd=784",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "KK series = factory-lubed successors of the KS Speed switches with longer springs."
+    },
+    {
+      "id": "kailh-kk-silver",
+      "name": "KK Silver",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KK",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kk-silver.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: KK Silver Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kk-silver.html",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101D293 (KK Silver)",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/202215927/Datasheet-for-KK-Silver.pdf?rnd=394",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-travel linear; the product page claims 80 million cycles, the datasheet 70 million."
+    },
+    {
+      "id": "kailh-kt-black",
+      "name": "KT Black",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KT",
+      "aka": [
+        "Kailh Black"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/dip-keyboard-black-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: DIP Keyboard Black Switches (KT series)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/dip-keyboard-black-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh RGB Keyboard Switch (Kailh Black)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-rgb-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "kailh-kt-blue",
+      "name": "KT Blue",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KT",
+      "aka": [
+        "Kailh Blue"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/dip-keyboard-blue-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: DIP Keyboard Blue Switches (KT series)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/dip-keyboard-blue-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Classic PG1511 clicky with a two-part slider."
+    },
+    {
+      "id": "kailh-kt-brown",
+      "name": "KT Brown",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KT",
+      "aka": [
+        "Kailh Brown"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/dip-keyboard-brown-switches.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: DIP Keyboard Brown Switches (KT series)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/dip-keyboard-brown-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Classic PG1511 tactile with gold contacts."
+    },
+    {
+      "id": "kailh-kt-red",
+      "name": "KT Red",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "KT",
+      "aka": [
+        "Kailh Red"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-rgb-keyboard-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh RGB Keyboard Switch (Kailh Red)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-rgb-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Classic PG1511 linear used in many budget keyboards."
+    },
+    {
+      "id": "kailh-aurora-green",
+      "name": "Aurora Green",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Light-Aurora",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/light-aurora-series-magnetic-switch-aurora.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Aurora%20Green",
+          "date": "2026-07-12",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 40 gf near bottom-out over 3.8 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Light-Aurora Series Magnetic Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/light-aurora-series-magnetic-switch-aurora.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511R01D01 specifications",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511R01D01-Specifications.pdf?rnd=66",
+          "kind": "datasheet",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear in Kailh's MX-size PG1511 range; Kailh gives a 30 gf initial force instead of a fixed actuation force. Part CPG1511R01D01."
+    },
+    {
+      "id": "kailh-aurora-pink",
+      "name": "Aurora Pink",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Light-Aurora",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/light-aurora-series-magnetic-switch-aurora.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Aurora%20Pink",
+          "date": "2026-07-12",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 40 gf near bottom-out over 3.8 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Light-Aurora Series Magnetic Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/light-aurora-series-magnetic-switch-aurora.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511R01D01 specifications",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511R01D01-Specifications.pdf?rnd=66",
+          "kind": "datasheet",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear in Kailh's MX-size PG1511 range; Kailh gives a 30 gf initial force instead of a fixed actuation force. Part CPG1511R01D01-01."
+    },
+    {
+      "id": "kailh-aurora-purple",
+      "name": "Aurora Purple",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Light-Aurora",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/light-aurora-series-magnetic-switch-aurora.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Light-Aurora Series Magnetic Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/light-aurora-series-magnetic-switch-aurora.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1511R01D01 specifications",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1511R01D01-Specifications.pdf?rnd=66",
+          "kind": "datasheet",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear in Kailh's MX-size PG1511 range; Kailh gives a 30 gf initial force instead of a fixed actuation force. Part CPG1511P01D01-05."
+    },
+    {
+      "id": "kailh-midnight-silent-linear",
+      "name": "Midnight Silent Linear",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Midnight",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/midnight-mx-silent-switch-linear.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Midnight MX Silent Switch-Linear",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/midnight-mx-silent-switch-linear.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh Midnight Pro Silent Linear Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-midnight-slient-linear-switch-pro-elite.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First Elite series switch, with silicone dampers in the top and base. Kailh presents Midnight Pro as its upgrade."
+    },
+    {
+      "id": "kailh-midnight-silent-tactile",
+      "name": "Midnight Silent Tactile",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Midnight",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/midnight-mx-silent-switch-tactile.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Midnight MX Silent Switch-Tactile",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/midnight-mx-silent-switch-tactile.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh Midnight Pro Silent Tactile Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-midnight-slient-tactile-switch-pro.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile version of the first Midnight silent switch, replaced by Midnight Pro."
+    },
+    {
+      "id": "kailh-midnight-pro-silent-linear",
+      "name": "Midnight Pro Silent Linear",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Midnight Pro",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "longer spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-midnight-slient-linear-switch-pro-elite.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Midnight Pro Silent Linear Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-midnight-slient-linear-switch-pro-elite.html",
+          "kind": "official",
+          "backs": [
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101S153",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG151101S153.pdf?rnd=818",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Upgrade of the Midnight silent linear with thicker, wider dampers."
+    },
+    {
+      "id": "kailh-midnight-pro-silent-tactile",
+      "name": "Midnight Pro Silent Tactile",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Midnight Pro",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-midnight-slient-tactile-switch-pro.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Midnight Pro Silent Tactile Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-midnight-slient-tactile-switch-pro.html",
+          "kind": "official",
+          "backs": [
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101S163",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG151101S163.pdf?rnd=332",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Adds white dampers to quiet the tactile bump."
+    },
+    {
+      "id": "kailh-paptor-purple-gleoe",
+      "name": "Purple Gleoe",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Paptor",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 0.8,
+      "total_travel_mm": 1.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/paptor-series-purple-gleoe-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Paptor Series-purple Gleoe Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/paptor-series-purple-gleoe-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353S01D01-21 Silent Low Profile Switch",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353S01D01-21--Silent-Low-Profile-Switch.pdf?rnd=241",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent low-profile switch with 1.8 mm travel."
+    },
+    {
+      "id": "kailh-pro-berry",
+      "name": "Pro Berry",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Pro",
+      "aka": [
+        "Pro Heavy Berry"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.7,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/pro-berry-switch.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Pro%20Heavy%20Berry%20(Plate%20Mount)",
+          "date": "2022-09-05",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 92 gf near bottom-out over 3.8 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Berry Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/pro-berry-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat force curves: Kailh Pro Heavy Berry",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Pro%20Heavy%20Berry%20(Plate%20Mount)",
+          "kind": "measurement",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Pro Burgundy stem with a heavier spring. The same page also repeats the 50 gf Burgundy figure."
+    },
+    {
+      "id": "kailh-pro-burgundy",
+      "name": "Pro Burgundy",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Pro",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.7,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-brown-switches.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Pro%20Burgundy%20(Plate%20Mount)",
+          "date": "2022-09-05",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 64 gf near bottom-out over 3.8 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Mechanical Keyboard Pro Purple Switches (Pro series specs)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-red-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh Pro Burgundy (CPG151101D221)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-brown-switches.html",
+          "kind": "official",
+          "backs": [
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Shorter-travel linear of the Pro series (CPG151101D221)."
+    },
+    {
+      "id": "kailh-pro-light-green",
+      "name": "Pro Light Green",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Pro",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.7,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-black-switches.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Pro%20Light%20Green%20(Plate%20Mount)",
+          "date": "2022-09-05",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 64 gf near 1.1 mm and reads about 69 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Mechanical Keyboard Pro Purple Switches (Pro series specs)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-red-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh Pro Light Green (CPG151101D223)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-black-switches.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky of the Pro series (CPG151101D223)."
+    },
+    {
+      "id": "kailh-pro-purple",
+      "name": "Pro Purple",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Pro",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.7,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-red-switches.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/pro-purple",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 53 gf tactile peak and 1.7 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Pro%20Purple%20(Plate%20Mount)",
+          "date": "2022-09-05",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 55 gf near 0.6 mm and reads about 72 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Mechanical Keyboard Pro Purple Switches (CPG151101D222)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/mechanical-keyboard-red-switches.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile of the Pro series (CPG151101D222)."
+    },
+    {
+      "id": "kailh-speed-bronze",
+      "name": "Speed Bronze",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Speed",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "50g",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/tactile-mechanical-brwon-switch.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/speed-bronze",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 57 gf tactile peak and 1.4 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Speed%20Bronze%20(Plate%20Mount)",
+          "date": "2022-09-11",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 62 gf near 1.3 mm and reads about 64 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh KS Series Bronze Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/tactile-mechanical-brwon-switch.html",
+          "kind": "official",
+          "backs": [
+            "pre_travel_mm",
+            "rated_lifespan_million",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh Speed Switch (series overview)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-speed-switch.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-travel clicky with a click bar."
+    },
+    {
+      "id": "kailh-speed-burnt-orange",
+      "name": "Speed Burnt Orange",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Speed",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/burnt-orange-speed-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh KS Series Burnt Orange (CPG151101S25)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/burnt-orange-speed-switch.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Speed Copper stem with a heavier spring. Forces left empty: the page gives both 60 cN and 70 g."
+    },
+    {
+      "id": "kailh-speed-copper",
+      "name": "Speed Copper",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Speed",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/Purple-Switch.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/speed-copper",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured a 51 gf tactile peak and 1.1 mm pre-travel; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Speed%20Copper%20(Plate%20Mount)",
+          "date": "2022-09-11",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 71 gf near bottom-out over 3.8 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: KS Copper Mechanical Key Switches",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/Purple-Switch.html",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-travel tactile. Actuation force left empty: the same Kailh page gives both 40 cN and 50 g."
+    },
+    {
+      "id": "kailh-speed-gold",
+      "name": "Speed Gold",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Speed",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-speed-switch.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Speed%20Gold%20(Plate%20Mount)",
+          "date": "2022-09-11",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 63 gf near 0.9 mm and reads about 65 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Speed Switch (series overview)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-speed-switch.html",
+          "kind": "official",
+          "backs": [
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky Speed switch with a 1.4 mm actuation point."
+    },
+    {
+      "id": "kailh-speed-navy",
+      "name": "Speed Navy",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Speed",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/navy-speed-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Speed Navy (CPG151101D234)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/navy-speed-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Speed Pale Blue spring with a thicker click bar for a deeper, louder click."
+    },
+    {
+      "id": "kailh-speed-pink",
+      "name": "Speed Pink",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Speed",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-pink-switch.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Speed%20Pink",
+          "date": "2022-09-05",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve peaks at 61 gf near 1.4 mm and reads about 65 gf near bottom-out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Pink Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-pink-switch.html",
+          "kind": "official",
+          "backs": [],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh Speed Switch (series overview)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-speed-switch.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky with a click bar; Kailh says it shares the Bronze design with a different stem and was first sold in Korea."
+    },
+    {
+      "id": "kailh-speed-silver",
+      "name": "Speed Silver",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Speed",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.1,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/linear-mechanical-key-switch.html",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/kailh/speed-silver",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": "RTINGS measured 1.3 mm pre-travel on this linear switch; its full test results are for members only."
+        },
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Speed%20Silver%20(Plate%20Mount)",
+          "date": "2022-09-11",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 59 gf near bottom-out over 3.7 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Speed Switch (series overview)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-speed-switch.html",
+          "kind": "official",
+          "backs": [
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh: Kailh KS Series Silver Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/dip-key-switches/linear-mechanical-key-switch.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-travel linear. Actuation force left empty: Kailh's overview gives 50 gf in a loose sentence that other Kailh pages do not repeat."
+    },
+    {
+      "id": "kailh-turbo-brown-silent",
+      "name": "Turbo Brown Silent",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Turbo",
+      "aka": [
+        "Turbo Silent Brown"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/turbo-brown-tactile-silent-keyboard-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Turbo Brown Tactile Silent Keyboard Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/turbo-brown-tactile-silent-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101S209",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG151101S209.pdf?rnd=813",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh lists the Turbo line as Red, Brown, Silver, Silent Red and Silent Brown."
+    },
+    {
+      "id": "kailh-turbo-red",
+      "name": "Turbo Red",
+      "maker": "kailh",
+      "made_by": null,
+      "family": "Turbo",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/turbo-red-linear-keyboard-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Turbo Red Linear Keyboard Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/turbo-red-linear-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101S201",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG151101S201.pdf?rnd=216",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Its page headline gives 45 gf and 1.9 mm; the page's spec table and datasheet give the values here."
+    },
+    {
+      "id": "kailh-lime",
+      "name": "Lime",
+      "maker": "kailh",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/lime-magnetic-linear-keyboard-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Lime Magnetic Linear Keyboard Switch (CPG1515M01D37)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/lime-magnetic-linear-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear; Kailh gives a 35 gf initial force and calls the 100 million cycle rating temporary."
+    },
+    {
+      "id": "kailh-lychee",
+      "name": "Lychee",
+      "maker": "kailh",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/lychee-magnetic-linear-keyboard-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Lychee Magnetic Linear Keyboard Switch (CPG1515M01D38)",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/lychee-magnetic-linear-keyboard-switch.html",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear; Kailh gives a 35 gf initial force and calls the 100 million cycle rating temporary."
+    },
+    {
+      "id": "kailh-polia",
+      "name": "Polia",
+      "maker": "kailh",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-polia-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Polia Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-polia-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101D280 (Pale Purple shaft)",
+          "url": "https://www.kailhswitch.com/Content/upload/PDF/202115927/CPG151101D280-data-sheet.pdf?rnd=158",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh calls its feel \"advanced tactile\"."
+    },
+    {
+      "id": "kailh-saker-mini",
+      "name": "Saker Mini",
+      "maker": "kailh",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "choc-v2",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 0.8,
+      "total_travel_mm": 1.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/kailh-saker-mini-low-profile-switch.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat force curves",
+          "url": "https://github.com/ThereminGoat/force-curves/tree/main/Kailh%20Low%20Profile%20Saker",
+          "date": "2026-07-05",
+          "score": null,
+          "verdict": "ThereminGoat's measured curve reads about 41 gf near bottom-out over 2.3 mm of measured travel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kailh: Kailh Saker Mini Low Profile Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/kailh-saker-mini-low-profile-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG1353D01D01-40",
+          "url": "https://www.kailhswitch.com/uploads/15927/files/CPG1353D01D01-40-Data-Sheet.pdf?rnd=234",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short 1.8 mm travel switch for gaming, 12.9 mm tall, with a cylindrical stem."
+    },
+    {
+      "id": "kailh-starry-sky",
+      "name": "Starry Sky",
+      "maker": "kailh",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.kailhswitch.com/mechanical-keyboard-switches/starry-sky-mechanical-linear-switch.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Kailh: Starry Sky Mechanical Linear Switch",
+          "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/starry-sky-mechanical-linear-switch.html",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kailh datasheet: CPG151101S157",
+          "url": "https://www.kailhswitch.com/Content/upload/pdf/202215927/CPG151101S157.pdf?rnd=578",
+          "kind": "datasheet",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh x Newmen collaboration with a sequinned transparent top."
+    }
+  ]
+}

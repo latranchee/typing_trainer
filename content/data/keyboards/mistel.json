@@ -1,0 +1,491 @@
+{
+  "brand": {
+    "id": "mistel",
+    "name": "Mistel",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.mistelkeyboard.com/",
+    "focus": [
+      "ergonomic",
+      "enthusiast"
+    ],
+    "about": "MISTEL Co., Ltd makes the Barocco split mechanical keyboards and other compact boards; several product pages list Taiwan as the origin.",
+    "sources": [
+      {
+        "title": "Mistel: products",
+        "url": "https://www.mistelkeyboard.com/products",
+        "kind": "official",
+        "backs": [
+          "about",
+          "focus"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "mistel-barocco-md600",
+      "brand": "mistel",
+      "model": "Barocco MD600",
+      "aka": [
+        "MD600",
+        "Barocco MD600 RGB",
+        "MD600V3 RGB"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 62,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.mistelkeyboard.com/products/403141daeeeeb8dc68707c70cd07de48",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mistel: Barocco MD600 (EOL)",
+          "url": "https://www.mistelkeyboard.com/products/403141daeeeeb8dc68707c70cd07de48",
+          "kind": "official",
+          "backs": [
+            "status",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mistel: Barocco MD600 RGB (EOL)",
+          "url": "https://www.mistelkeyboard.com/products/3cad723edbbfcc35bdd7f19739005344",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mistel: MD600V3 RGB Classic Black (EOL)",
+          "url": "https://www.mistelkeyboard.com/products/807a19ebcb8b2924891d471974d65438",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Mistel's first split board, with Cherry MX switches and a Mini USB port; marked end of life. Mistel does not list hot-swap."
+    },
+    {
+      "id": "mistel-barocco-md650l",
+      "brand": "mistel",
+      "model": "Barocco MD650L",
+      "aka": [
+        "MD650L"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 69,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry ML",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.mistelkeyboard.com/products/cb03056c9d98b4b73709c7cf5744b579",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mistel: Barocco MD650L (EOL)",
+          "url": "https://www.mistelkeyboard.com/products/cb03056c9d98b4b73709c7cf5744b579",
+          "kind": "official",
+          "backs": [
+            "status",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "os",
+            "switches",
+            "split",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile split board with Cherry ML switches and a 16 mm tall CNC aluminium case; marked end of life."
+    },
+    {
+      "id": "mistel-barocco-md770",
+      "brand": "mistel",
+      "model": "Barocco MD770",
+      "aka": [
+        "MD770",
+        "Barocco MD770 RGB",
+        "MD770 ISO-DE RGB",
+        "MD770 ISO-UK RGB",
+        "MD770 ISO-NOR RGB"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 85,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.mistelkeyboard.com/products/d11cf7a73da49468e2a530b4cf18e76c",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mistel: Barocco MD770",
+          "url": "https://www.mistelkeyboard.com/products/d11cf7a73da49468e2a530b4cf18e76c",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "tenting",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "os",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mistel: Barocco MD770 RGB",
+          "url": "https://www.mistelkeyboard.com/products/5e53c3254c6f41f25c914273fb3a4d8b",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Uses Cherry MX switches (Mistel does not list the colours on the page) and ships with rubber feet for tenting. The RGB version adds backlighting. Mistel does not list hot-swap."
+    },
+    {
+      "id": "mistel-barocco-md770-bt",
+      "brand": "mistel",
+      "model": "Barocco MD770 RGB BT",
+      "aka": [
+        "MD770 RGB BT 5.0",
+        "MD770 RGB BT 3.0"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 85,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.mistelkeyboard.com/products/bd20945a731491407807e80d48c5d790",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mistel: Barocco MD770 RGB BT 5.0",
+          "url": "https://www.mistelkeyboard.com/products/bd20945a731491407807e80d48c5d790",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mistel: Barocco MD770 RGB BT 3.0",
+          "url": "https://www.mistelkeyboard.com/products/94f05206cb24bbeeb103e664e89d7b98",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth version of the MD770 with Cherry MX switches and RGB backlighting, sold with Bluetooth 5.0 or the older 3.0 radio. Mistel does not list hot-swap."
+    },
+    {
+      "id": "mistel-md600-alpha-bt",
+      "brand": "mistel",
+      "model": "MD600 Alpha BT",
+      "aka": [
+        "MD600 Alpha BT RGB",
+        "MD600 Alpha BT Rhino"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 64,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.mistelkeyboard.com/products/0a26d32ac1e3b1d2af2896e00bb1177a",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mistel: MD600 Alpha BT RGB",
+          "url": "https://www.mistelkeyboard.com/products/0a26d32ac1e3b1d2af2896e00bb1177a",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "os",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mistel: MD600 Alpha BT Rhino",
+          "url": "https://www.mistelkeyboard.com/products/5d46dac330c3f8432b9b611655d5abce",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Split 64-key Bluetooth board with 'Cherry & Others' switches and six magnetic feet. A switch puller ships in the box; the page states neither hot-swap nor pin count."
+    },
+    {
+      "id": "mistel-md770pro",
+      "brand": "mistel",
+      "model": "MD770PRO",
+      "aka": [
+        "MD770 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 83,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.mistelkeyboard.com/products/03d60ba9381cb19e3f55f9a98db88778",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mistel: MD770PRO Urban Grey - US",
+          "url": "https://www.mistelkeyboard.com/products/03d60ba9381cb19e3f55f9a98db88778",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "firmware",
+            "os",
+            "hot_swap",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "CNC aluminium split board with MX switches, VIA support and a 2.4 GHz receiver. The box includes a switch puller and spare switches, but the page states neither hot-swap nor pin count; it also ships with 9 mm and 11 mm feet."
+    }
+  ]
+}

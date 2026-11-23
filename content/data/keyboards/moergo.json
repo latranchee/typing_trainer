@@ -1,0 +1,247 @@
+{
+  "brand": {
+    "id": "moergo",
+    "name": "MoErgo",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.moergo.com/",
+    "focus": [
+      "ergonomic",
+      "premium"
+    ],
+    "about": "MoErgo makes the Glove80 contoured wireless split keyboard and the smaller Go60, both on low-profile Kailh Choc v1 switches and ZMK firmware.",
+    "sources": [
+      {
+        "title": "MoErgo: home page",
+        "url": "https://www.moergo.com/",
+        "kind": "official",
+        "backs": [
+          "about",
+          "focus"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "moergo-glove80",
+      "brand": "moergo",
+      "model": "Glove80",
+      "aka": [
+        "Glove80 Revision 2"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 80,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Kailh Choc v1 Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Red Pro",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 White",
+          "id": null
+        },
+        {
+          "name": "Cherry Blossom",
+          "id": null
+        },
+        {
+          "name": "Plum Blossom",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": "MoErgo Layout Editor (web)",
+      "os": [],
+      "price_usd": 369,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.moergo.com/products.json?limit=250",
+      "official_url": "https://www.moergo.com/pages/glove80",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/moergo/glove80",
+          "date": "2023-06-30",
+          "score": null,
+          "verdict": "Wireless low-profile split with concave key wells, thumb clusters and tenting; customizable through ZMK and a web layout editor."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MoErgo: Glove80 technical specification",
+          "url": "https://www.moergo.com/pages/glove80-technical-specification",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "tenting",
+            "thumb_cluster",
+            "key_wells",
+            "low_profile",
+            "switch_footprint",
+            "connectivity",
+            "firmware",
+            "software",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MoErgo: products (Shopify listing)",
+          "url": "https://www.moergo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MoErgo: FAQs",
+          "url": "https://www.moergo.com/pages/faqs",
+          "kind": "official",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Switches are soldered: MoErgo says hot-swap sockets are unreliable on a curved key well, and sells a switches-not-soldered option. Cherry Blossom (30 gf) and Plum Blossom (45 gf) are silent linear Choc v1 switches sold on the silent edition from $395. Bluetooth to four hosts plus USB."
+    },
+    {
+      "id": "moergo-go60",
+      "brand": "moergo",
+      "model": "Go60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 60,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": 2000,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [
+        {
+          "name": "Golden Kiwi",
+          "id": null
+        },
+        {
+          "name": "Cherry Blossom",
+          "id": null
+        },
+        {
+          "name": "Plum Blossom",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "steel and PC/ABS plastic",
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": "MoErgo Layout Editor (web)",
+      "os": [],
+      "price_usd": 300,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.moergo.com/products.json?limit=250",
+      "official_url": "https://www.moergo.com/pages/go60",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/moergo/go60",
+          "date": "2026-09-03",
+          "score": null,
+          "verdict": "Compact true-split board with a touchpad on each half, tenting hardware and hot-swappable Choc V1 switches; Bluetooth or USB."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MoErgo: Go60 technical specification",
+          "url": "https://www.moergo.com/pages/go60-technical-specification",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "tenting",
+            "thumb_cluster",
+            "low_profile",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "battery_mah",
+            "case_material",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MoErgo: products (Shopify listing)",
+          "url": "https://www.moergo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: MoErgo Go60 review",
+          "url": "https://www.rtings.com/keyboard/reviews/moergo/go60",
+          "kind": "review",
+          "backs": [
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Two 40 mm trackpads, a three-key thumb row per half and magnetic tenting with six settings from 6.2 to 17 degrees; halves link over Bluetooth or TRRS. Battery is 2 x 1000 mAh. Switch options are Golden Kiwi (42 gf silent tactile), Cherry Blossom (30 gf) and Plum Blossom (45 gf silent linear)."
+    }
+  ]
+}

@@ -1,0 +1,1599 @@
+{
+  "brand": {
+    "id": "monsgeek",
+    "name": "MonsGeek",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.monsgeek.com/",
+    "focus": [
+      "enthusiast",
+      "gaming",
+      "budget"
+    ],
+    "about": "MonsGeek sells aluminum M-series custom keyboards, budget FUN-series Hall effect boards and barebone kits through its own store.",
+    "sources": [
+      {
+        "title": "MonsGeek: home page",
+        "url": "https://www.monsgeek.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "monsgeek-fun60-pro",
+      "brand": "monsgeek",
+      "model": "FUN60 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Glare",
+          "id": null
+        },
+        {
+          "name": "Hakutaku",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "tray",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 29.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/product/fun60-pro-max/",
+      "official_url": "https://www.monsgeek.com/product/fun60-pro-max/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/monsgeek/fun60-pro",
+          "date": "2026-10-30",
+          "score": null,
+          "verdict": "Exceptionally low, consistent latency for competitive play at a budget price; the tested unit was wired only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MonsGeek: FUN60 Pro & Max",
+          "url": "https://www.monsgeek.com/product/fun60-pro-max/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "mount",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MonsGeek: FUN60 Pro",
+          "url": "https://www.monsgeek.com/keyboard/fun60-pro-magnetic-keyboard/",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Budget Hall effect 60% board; $29.99 wired, $34.99 tri-mode. The FUN60 Max ($39.99) shares the page."
+    },
+    {
+      "id": "monsgeek-fun60-ultra",
+      "brand": "monsgeek",
+      "model": "FUN60 Ultra",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "tray",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver & Web-Based Driver",
+      "os": [],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/product/fun60-ultra/",
+      "official_url": "https://www.monsgeek.com/product/fun60-ultra/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/monsgeek/fun60-ultra",
+          "date": "2025-06-04",
+          "score": null,
+          "verdict": "Outstanding raw gaming performance with an aluminum case and pre-lubed switches; the 60% layout drops keys some office users need."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MonsGeek: FUN60 Ultra",
+          "url": "https://www.monsgeek.com/product/fun60-ultra/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Aluminum Hall effect 60% board; $59.99 wired, battery only in the tri-mode version."
+    },
+    {
+      "id": "monsgeek-fun60-ultra-tmr",
+      "brand": "monsgeek",
+      "model": "FUN60 Ultra TMR",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "tray",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/product/monsgeek-fun60-ultra-tmr-magnetic-switch-keyboard/",
+      "official_url": "https://www.monsgeek.com/product/monsgeek-fun60-ultra-tmr-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: FUN60 Ultra TMR",
+          "url": "https://www.monsgeek.com/product/monsgeek-fun60-ultra-tmr-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MonsGeek: FUN60 Ultra",
+          "url": "https://www.monsgeek.com/product/fun60-ultra/",
+          "kind": "official",
+          "backs": [
+            "hot_swap",
+            "case_material",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TMR-sensor version of the FUN60 Ultra that also accepts mechanical switches (MagMech)."
+    },
+    {
+      "id": "monsgeek-fun68-he",
+      "brand": "monsgeek",
+      "model": "FUN68 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Glare",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 34.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/keyboard/fun68-he-wired-magnetic-keyboard/",
+      "official_url": "https://www.monsgeek.com/keyboard/fun68-he-wired-magnetic-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: FUN68 HE",
+          "url": "https://www.monsgeek.com/keyboard/fun68-he-wired-magnetic-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired budget Hall effect 65% board."
+    },
+    {
+      "id": "monsgeek-m1",
+      "brand": "monsgeek",
+      "model": "M1",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/monsgeek-m1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M1",
+          "url": "https://www.monsgeek.com/product/monsgeek-m1/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switch_footprint",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First wired M1; out of stock on monsgeek.com on 2026-11-23."
+    },
+    {
+      "id": "monsgeek-m1-v3",
+      "brand": "monsgeek",
+      "model": "M1 V3",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/m1-v3/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M1 V3",
+          "url": "https://www.monsgeek.com/product/m1-v3/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switch_footprint",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired QMK/VIA board; out of stock on monsgeek.com on 2026-11-23, succeeded by the M1 V5."
+    },
+    {
+      "id": "monsgeek-m1-v5",
+      "brand": "monsgeek",
+      "model": "M1 V5",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/keyboard/m1-v5-black-brown-mechanical-keyboard/",
+      "official_url": "https://www.monsgeek.com/keyboard/m1-v5-black-brown-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M1 V5 Black & Brown",
+          "url": "https://www.monsgeek.com/keyboard/m1-v5-black-brown-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MonsGeek: M1 V5 Barebone",
+          "url": "https://www.monsgeek.com/keyboard/m1-v5-mechanical-keyboard-barebone/",
+          "kind": "official",
+          "backs": [
+            "battery_mah",
+            "connectivity",
+            "hot_swap",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Non-VIA version of the M1 V5, sold pre-assembled or as a barebone; the pre-assembled page lists an 8000 mAh battery, the barebone page 10000 mAh."
+    },
+    {
+      "id": "monsgeek-m1-v5-he",
+      "brand": "monsgeek",
+      "model": "M1 V5 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko AstroLink Magnetic",
+          "id": "akko-astrolink-magnetic"
+        },
+        {
+          "name": "Akko AstroAim Magnetic",
+          "id": "akko-astroaim-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/keyboard/m1-v5-he-magnetic-switch-keyboard/",
+      "official_url": "https://www.monsgeek.com/keyboard/m1-v5-he-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M1 V5 HE",
+          "url": "https://www.monsgeek.com/keyboard/m1-v5-he-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect version of the M1 V5; rapid trigger precision down to 0.005 mm. A barebone HE version is sold separately."
+    },
+    {
+      "id": "monsgeek-m1-v5-tmr",
+      "brand": "monsgeek",
+      "model": "M1 V5 TMR",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Akko AstroLink Magnetic",
+          "id": "akko-astrolink-magnetic"
+        },
+        {
+          "name": "Akko AstroAim Magnetic",
+          "id": "akko-astroaim-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/keyboard/m1-v5-tmr-fully-assembled/",
+      "official_url": "https://www.monsgeek.com/keyboard/m1-v5-tmr-fully-assembled/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/monsgeek/m1-v5-tmr",
+          "date": "2026-05-20",
+          "score": null,
+          "verdict": "Outstanding raw performance for competitive gaming and a superb aluminum build, though heavy for mobile use."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MonsGeek: M1 V5 TMR",
+          "url": "https://www.monsgeek.com/keyboard/m1-v5-tmr-fully-assembled/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TMR-sensor board that also accepts mechanical MX switches (MagMech); the ISO version has a German layout. Battery is 8000 or 10000 mAh depending on version."
+    },
+    {
+      "id": "monsgeek-m1-v5-via",
+      "brand": "monsgeek",
+      "model": "M1 V5 VIA",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        },
+        {
+          "name": "Akko Rosewood",
+          "id": "akko-rosewood"
+        },
+        {
+          "name": "Akko Creamy Purple Pro",
+          "id": null
+        },
+        {
+          "name": "Akko Creamy Cyan",
+          "id": "akko-creamy-cyan"
+        },
+        {
+          "name": "Akko Botany",
+          "id": "akko-botany"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/product/m1-v5-via-rapid-disassembly/",
+      "official_url": "https://www.monsgeek.com/product/m1-v5-via-rapid-disassembly/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M1 V5 VIA",
+          "url": "https://www.monsgeek.com/product/m1-v5-via-rapid-disassembly/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Quick-release 75% board; takes 3- and 5-pin switches. Also sold as a barebone kit ($89.99)."
+    },
+    {
+      "id": "monsgeek-m1w",
+      "brand": "monsgeek",
+      "model": "M1W",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Cloud Driver",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/m1w-fully-assembled/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M1W",
+          "url": "https://www.monsgeek.com/product/m1w-fully-assembled/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Out of stock on monsgeek.com on 2026-11-23."
+    },
+    {
+      "id": "monsgeek-m1w-v3",
+      "brand": "monsgeek",
+      "model": "M1W V3",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        },
+        {
+          "name": "Akko Rosewood",
+          "id": "akko-rosewood"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/m1w-v3-barebone-fully-assembled/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M1W V3",
+          "url": "https://www.monsgeek.com/product/m1w-v3-barebone-fully-assembled/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Out of stock on monsgeek.com on 2026-11-23, succeeded by the M1 V5."
+    },
+    {
+      "id": "monsgeek-m2-v5-he",
+      "brand": "monsgeek",
+      "model": "M2 V5 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 98,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko AstroAim Magnetic",
+          "id": "akko-astroaim-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/keyboard/m2-v5-he-magnetic-switch-keyboard/",
+      "official_url": "https://www.monsgeek.com/keyboard/m2-v5-he-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M2 V5 HE",
+          "url": "https://www.monsgeek.com/keyboard/m2-v5-he-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "1800-compact (96%) Hall effect board."
+    },
+    {
+      "id": "monsgeek-m2-v5-via",
+      "brand": "monsgeek",
+      "model": "M2 V5 VIA",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko Mirror",
+          "id": "akko-mirror"
+        },
+        {
+          "name": "Akko Stellar Rose",
+          "id": "akko-stellar-rose"
+        },
+        {
+          "name": "Akko Cilantro",
+          "id": "akko-cilantro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/product/monsgeek-m2-v5-via-mechanical-keyboard/",
+      "official_url": "https://www.monsgeek.com/product/monsgeek-m2-v5-via-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M2 V5 VIA",
+          "url": "https://www.monsgeek.com/product/monsgeek-m2-v5-via-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "1800-compact (96%) board. Also sold as a barebone kit ($99.99)."
+    },
+    {
+      "id": "monsgeek-m3-v5-he",
+      "brand": "monsgeek",
+      "model": "M3 V5 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko AstroAim Magnetic",
+          "id": "akko-astroaim-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 114.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/keyboard/m3-v5-he-fully-assembled/",
+      "official_url": "https://www.monsgeek.com/keyboard/m3-v5-he-fully-assembled/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M3 V5 HE",
+          "url": "https://www.monsgeek.com/keyboard/m3-v5-he-fully-assembled/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "monsgeek-m3w",
+      "brand": "monsgeek",
+      "model": "M3W",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Creamy Yellow Pro",
+          "id": "akko-v3-creamy-yellow-pro"
+        },
+        {
+          "name": "Akko V3 Creamy Blue Pro",
+          "id": "akko-v3-creamy-blue-pro"
+        },
+        {
+          "name": "Kailh Ice Cream Purple",
+          "id": null
+        },
+        {
+          "name": "Kailh Ice Cream Pink",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/m3w-fully-assembled/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M3W",
+          "url": "https://www.monsgeek.com/product/m3w-fully-assembled/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Out of stock on monsgeek.com on 2026-11-23."
+    },
+    {
+      "id": "monsgeek-m5w",
+      "brand": "monsgeek",
+      "model": "M5W",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/m5w/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M5W",
+          "url": "https://www.monsgeek.com/product/m5w/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size barebone kit; out of stock on monsgeek.com on 2026-11-23."
+    },
+    {
+      "id": "monsgeek-m7w",
+      "brand": "monsgeek",
+      "model": "M7W",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 5000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Cream Yellow Pro",
+          "id": "akko-v3-creamy-yellow-pro"
+        },
+        {
+          "name": "Akko V3 Cream Blue Pro",
+          "id": "akko-v3-creamy-blue-pro"
+        },
+        {
+          "name": "Kailh Ice Cream Purple",
+          "id": null
+        },
+        {
+          "name": "Kailh Ice Cream Pink",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/m7w-fully-assembled/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: M7W",
+          "url": "https://www.monsgeek.com/product/m7w-fully-assembled/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Out of stock on monsgeek.com on 2026-11-23."
+    },
+    {
+      "id": "monsgeek-mg75w",
+      "brand": "monsgeek",
+      "model": "MG75W",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz"
+      ],
+      "battery_mah": 500,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Cream Yellow Pro",
+          "id": "akko-v3-creamy-yellow-pro"
+        },
+        {
+          "name": "Akko V3 Cream Blue Pro",
+          "id": "akko-v3-creamy-blue-pro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "tray",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.monsgeek.com/product/mg75w-midnight/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: MG75W Midnight",
+          "url": "https://www.monsgeek.com/product/mg75w-midnight/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Budget plastic 75% board; out of stock on monsgeek.com on 2026-11-23."
+    },
+    {
+      "id": "monsgeek-verve68-he",
+      "brand": "monsgeek",
+      "model": "Verve68 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko Flash",
+          "id": "akko-flash-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "tray",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MonsGeek Driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 49.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.monsgeek.com/keyboard/verve68-he-magnetic-switch-keyboard/",
+      "official_url": "https://www.monsgeek.com/keyboard/verve68-he-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MonsGeek: Verve68 HE",
+          "url": "https://www.monsgeek.com/keyboard/verve68-he-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold as a wired-only version ($49.99) or a tri-mode version."
+    }
+  ]
+}

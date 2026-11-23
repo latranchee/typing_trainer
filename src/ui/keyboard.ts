@@ -29,6 +29,11 @@ export class KeyboardView {
   private layout: Layout | null = null;
   private picker: ((code: string) => void) | null = null;
   private picked: string | null = null;
+  /** Keys whose Shift character differs from the one printed big, and whether it is the capital of a letter. */
+  private alts = new Map<string, boolean>();
+  /** The modifiers that change what the keys type, as the last key event left them. */
+  private shift = false;
+  private caps = false;
 
   constructor() {
     const pick = (event: Event): void => {
@@ -42,6 +47,14 @@ export class KeyboardView {
       pick(event);
     });
     this.setBoard('ansi');
+
+    // The board shows what the keys type right now: Shift and Caps Lock are read off every key event,
+    // whichever drill is open, so the board follows them even when a press reaches no drill.
+    const read = (event: KeyboardEvent): void => this.setLayer(event.getModifierState('Shift'), event.getModifierState('CapsLock'));
+    window.addEventListener('keydown', read, true);
+    window.addEventListener('keyup', read, true);
+    // A Shift let go in another window never comes back as a keyup here.
+    window.addEventListener('blur', () => this.setLayer(false, this.caps));
   }
 
   /** Draws the keys of a board. The legends, the targets and the heat are set again by the caller. */
@@ -50,6 +63,7 @@ export class KeyboardView {
     this.board = board;
     this.root.dataset.board = board;
     this.keys.clear();
+    this.alts.clear();
     this.marked = [];
     this.root.replaceChildren(
       ...rowsOf(board).map((row, rowIndex) => {
@@ -82,6 +96,7 @@ export class KeyboardView {
   setLayout(layout: Layout): void {
     this.layout = layout;
     this.setBoard(layout.board);
+    this.alts.clear();
     for (const key of rowsOf(layout.board).flat()) {
       const keyEl = this.keys.get(key.code)!;
       const cap = keyEl.firstElementChild as HTMLElement;
@@ -100,7 +115,29 @@ export class KeyboardView {
       } else {
         cap.append(el('span.leg-shift', {}, legend.shift), el('span.leg-base', {}, legend.base));
       }
+      // What the key types with Shift, alone and full size: shown while the layer is up.
+      if (legend.base !== legend.shift) {
+        cap.append(el('span.leg-alt', {}, legend.shift));
+        this.alts.set(key.code, legend.letter);
+      }
     }
+    this.paintLayer();
+  }
+
+  /**
+   * Shift up: every key shows its Shift character. Caps Lock: letters show their capital, other keys
+   * keep their own. Both: letters fall back to small, the other keys stay shifted, as on the desk.
+   */
+  setLayer(shift: boolean, caps: boolean): void {
+    if (shift === this.shift && caps === this.caps) return;
+    this.shift = shift;
+    this.caps = caps;
+    this.paintLayer();
+  }
+
+  private paintLayer(): void {
+    for (const [code, letter] of this.alts) this.keys.get(code)?.classList.toggle('is-alt', letter ? this.shift !== this.caps : this.shift);
+    this.keys.get('CapsLock')?.classList.toggle('is-locked', this.caps);
   }
 
   /** Mark the keys the drill wants next. Replaces the previous marks. */

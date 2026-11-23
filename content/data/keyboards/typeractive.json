@@ -1,0 +1,526 @@
+{
+  "brand": {
+    "id": "typeractive",
+    "name": "Typeractive",
+    "country": null,
+    "founded": 2022,
+    "official_url": "https://typeractive.xyz/",
+    "focus": [
+      "ergonomic",
+      "diy"
+    ],
+    "about": "Typeractive, the store of nice!nano creator Nice Technologies, sells wireless Corne and Lily58 boards fully assembled or as no-solder kits built on its own partially assembled PCBs.",
+    "sources": [
+      {
+        "title": "Typeractive: About Us",
+        "url": "https://typeractive.xyz/pages/about",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "typeractive-corne-wireless-pcb",
+      "brand": "typeractive",
+      "model": "Corne Wireless PCBs (Partially Assembled)",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 35,
+      "price_date": "2026-11-23",
+      "price_url": "https://typeractive.xyz/products.json?limit=250",
+      "official_url": "https://docs.typeractive.xyz/build-guides/corne-wireless",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Typeractive: products listing (Corne PCBs)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "hot_swap",
+            "switch_footprint",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive docs: Corne Wireless firmware",
+          "url": "https://docs.typeractive.xyz/build-guides/corne-wireless/firmware",
+          "kind": "official",
+          "backs": [
+            "firmware",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "foostan/crkbd: Corne keyboard",
+          "url": "https://github.com/foostan/crkbd",
+          "kind": "reference",
+          "backs": [
+            "key_count",
+            "thumb_cluster",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB pair only, with diodes, Kailh hot-swap sockets, battery jack, power switch and reset button pre-soldered; MX and Choc v1 variants (each takes only its own switch type; Choc v1 for the Choc one). The nice!nano controllers and nice!view displays still need soldering unless no-solder headers are ordered. Pin support of the MX sockets is not stated."
+    },
+    {
+      "id": "typeractive-lily58-wireless-pcb",
+      "brand": "typeractive",
+      "model": "Lily58 Wireless PCBs (Partially Assembled)",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 35,
+      "price_date": "2026-11-23",
+      "price_url": "https://typeractive.xyz/products.json?limit=250",
+      "official_url": "https://docs.typeractive.xyz/build-guides/lily58-wireless",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Typeractive: products listing (Lily58 PCBs)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "hot_swap",
+            "switch_footprint",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb.com: products listing (Lily58 has 58 keys)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "reference",
+          "backs": [
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive docs: Lily58 Wireless firmware",
+          "url": "https://docs.typeractive.xyz/build-guides/lily58-wireless/firmware",
+          "kind": "official",
+          "backs": [
+            "firmware",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "kata0510/Lily58",
+          "url": "https://github.com/kata0510/Lily58",
+          "kind": "reference",
+          "backs": [
+            "thumb_cluster",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB pair only, with diodes, Kailh hot-swap sockets, battery jack, power switch and reset button pre-soldered; MX and Choc v1 variants (each takes only its own switch type; Choc v1 for the Choc one). The nice!nano controllers and nice!view displays still need soldering unless no-solder headers are ordered. Pin support of the MX sockets is not stated."
+    },
+    {
+      "id": "typeractive-wireless-corne-aluminum",
+      "brand": "typeractive",
+      "model": "Premium Aluminum Corne (Fully Assembled)",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [
+        {
+          "name": "Kailh Choc v1 Pro Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 White",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Pink",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum, polycarbonate back",
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 467.5,
+      "price_date": "2026-11-23",
+      "price_url": "https://typeractive.xyz/products.json?limit=250",
+      "official_url": "https://docs.typeractive.xyz/build-guides/corne-wireless/premium-case",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Typeractive: products listing (aluminum Corne)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "kind",
+            "case_material",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive: Corne PCB (in products listing)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive docs: Corne Wireless firmware",
+          "url": "https://docs.typeractive.xyz/build-guides/corne-wireless/firmware",
+          "kind": "official",
+          "backs": [
+            "firmware",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "foostan/crkbd: Corne keyboard",
+          "url": "https://github.com/foostan/crkbd",
+          "kind": "reference",
+          "backs": [
+            "key_count",
+            "thumb_cluster",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Ships fully assembled with nice!nano controllers, nice!view displays, batteries, Kailh Choc v1 switches and MBK keycaps, flashed with ZMK. Tenting feet are sold separately. Hot-swap is inferred from Typeractive's wireless PCBs, which carry Kailh hot-swap sockets. Milled aluminum case with integrated plate and frosted polycarbonate back."
+    },
+    {
+      "id": "typeractive-wireless-corne",
+      "brand": "typeractive",
+      "model": "Wireless Corne (Fully Assembled)",
+      "aka": [
+        "Typeractive Corne"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [
+        {
+          "name": "Kailh Choc v1 Pro Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 White",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Pink",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 367.5,
+      "price_date": "2026-11-23",
+      "price_url": "https://typeractive.xyz/products.json?limit=250",
+      "official_url": "https://docs.typeractive.xyz/build-guides/corne-wireless",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Typeractive: products listing (assembled Corne)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "kind",
+            "low_profile",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive: Corne PCB (in products listing)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive docs: Corne Wireless firmware",
+          "url": "https://docs.typeractive.xyz/build-guides/corne-wireless/firmware",
+          "kind": "official",
+          "backs": [
+            "firmware",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "foostan/crkbd: Corne keyboard",
+          "url": "https://github.com/foostan/crkbd",
+          "kind": "reference",
+          "backs": [
+            "key_count",
+            "thumb_cluster",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Ships fully assembled with nice!nano controllers, nice!view displays, batteries, Kailh Choc v1 switches and MBK keycaps, flashed with ZMK. Tenting feet are sold separately. Hot-swap is inferred from Typeractive's wireless PCBs, which carry Kailh hot-swap sockets. Case is 3D-printed with an FR-4 plate."
+    },
+    {
+      "id": "typeractive-wireless-lily58",
+      "brand": "typeractive",
+      "model": "Wireless Lily58 (Fully Assembled)",
+      "aka": [
+        "Typeractive Lily58"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [
+        {
+          "name": "Kailh Choc v1 Pro Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 White",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Pink",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc v1 Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 373,
+      "price_date": "2026-11-23",
+      "price_url": "https://typeractive.xyz/products.json?limit=250",
+      "official_url": "https://docs.typeractive.xyz/build-guides/lily58-wireless",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Typeractive: products listing (assembled Lily58)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "kind",
+            "low_profile",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive: Lily58 PCB (in products listing)",
+          "url": "https://typeractive.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb.com: products listing (Lily58 has 58 keys)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "reference",
+          "backs": [
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Typeractive docs: Lily58 Wireless firmware",
+          "url": "https://docs.typeractive.xyz/build-guides/lily58-wireless/firmware",
+          "kind": "official",
+          "backs": [
+            "firmware",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "kata0510/Lily58",
+          "url": "https://github.com/kata0510/Lily58",
+          "kind": "reference",
+          "backs": [
+            "thumb_cluster",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Ships fully assembled with nice!nano controllers, nice!view displays, batteries, Kailh Choc v1 switches and MBK keycaps, flashed with ZMK. Tenting feet are sold separately. Hot-swap is inferred from Typeractive's wireless PCBs, which carry Kailh hot-swap sockets. Case is 3D-printed with an FR-4 plate."
+    }
+  ]
+}

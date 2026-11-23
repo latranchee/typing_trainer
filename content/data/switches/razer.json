@@ -1,0 +1,778 @@
+{
+  "maker": {
+    "id": "razer",
+    "name": "Razer",
+    "role": "manufacturer",
+    "country": "SG",
+    "founded": 2005,
+    "official_url": "https://www.razer.com/razer-keyboard-switches",
+    "about": "Gaming hardware company dual-headquartered in Irvine, California and Singapore. It has designed its own keyboard switches since 2014 and says it controls their whole manufacturing process.",
+    "sources": [
+      {
+        "title": "Razer: About Razer",
+        "url": "https://www.razer.com/about-razer",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Razer: Razer key switch technology",
+        "url": "https://www.razer.com/razer-keyboard-switches",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "razer-analog-optical-gen-1",
+      "name": "Razer Analog Optical Switch (Gen-1)",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Analog Optical Switches",
+      "aka": [
+        "Razer Analog Optical Switch"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2019",
+      "status": "current",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v2-analog",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer newsroom: Razer Analog Optical Switches Gen-2 (2024-04-17)",
+          "url": "https://www.razer.com/newsroom/product-news/razer-analog-optical-switches-gen-2",
+          "kind": "official",
+          "backs": [
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer: Razer Huntsman V2 Analog",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v2-analog",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer: Razer Analog Optical Switches Gen-2",
+          "url": "https://www.razer.com/technology/razer-analog-optical-switch",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First introduced in the Tartarus Pro keypad (2019), then the Huntsman V2 Analog and Huntsman Mini Analog: analog input, adjustable and dual-step actuation. The Razer pages opened give no actuation range or force."
+    },
+    {
+      "id": "razer-analog-optical-gen-2",
+      "name": "Razer Analog Optical Switch Gen-2",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Analog Optical Switches",
+      "aka": [
+        "Razer Analog Optical Switches Gen-2"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": [
+        0.1,
+        4.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2024-04",
+      "status": "current",
+      "official_url": "https://www.razer.com/technology/razer-analog-optical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Analog Optical Switches Gen-2",
+          "url": "https://www.razer.com/technology/razer-analog-optical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "actuation_range_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer newsroom: Razer Analog Optical Switches Gen-2 (2024-04-17)",
+          "url": "https://www.razer.com/newsroom/product-news/razer-analog-optical-switches-gen-2",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "total_travel_mm",
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Razer Huntsman V3 Pro TKL review",
+          "url": "https://www.tomshardware.com/peripherals/keyboards/razer-huntsman-v3-pro-tkl-review",
+          "kind": "review",
+          "backs": [
+            "actuation_force_gf",
+            "actuation_range_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Measures how much light passes the stem, so actuation is set anywhere in the 4.0 mm travel; Rapid Trigger, analog input and dual-step actuation. Used in the Huntsman V3 Pro line and Huntsman Signature Edition."
+    },
+    {
+      "id": "razer-low-profile-analog-optical",
+      "name": "Razer Low-profile Analog Optical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Analog Optical Switches",
+      "aka": [
+        "Razer Low-Profile Analog Optical Switches"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": [
+        0.1,
+        2.8
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/technology/razer-low-profile-analog-optical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Low-Profile Analog Optical Switches",
+          "url": "https://www.razer.com/technology/razer-low-profile-analog-optical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile version of the Gen-2 analog optical switch with Rapid Trigger, used in the Huntsman V3 Pro Low-Profile Tenkeyless 8KHz."
+    },
+    {
+      "id": "razer-low-profile-green",
+      "name": "Razer Low-profile Green Clicky Mechanical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Low-Profile Mechanical Switches",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/technology/razer-low-profile-mechanical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Low-Profile Mechanical Switches",
+          "url": "https://www.razer.com/technology/razer-low-profile-mechanical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Reset point 1.3 mm; modified cross stem with a notch for the LED. Razer does not guarantee fit in other brands' low-profile sockets."
+    },
+    {
+      "id": "razer-low-profile-orange",
+      "name": "Razer Low-profile Orange Tactile Mechanical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Low-Profile Mechanical Switches",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/technology/razer-low-profile-mechanical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Low-Profile Mechanical Switches",
+          "url": "https://www.razer.com/technology/razer-low-profile-mechanical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "footprint",
+            "notes",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Reset point 1.7 mm; used in the BlackWidow V4 Low-profile. Razer does not guarantee fit in other brands' low-profile sockets."
+    },
+    {
+      "id": "razer-low-profile-yellow",
+      "name": "Razer Low-profile Yellow Linear Mechanical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Low-Profile Mechanical Switches",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/technology/razer-low-profile-mechanical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Low-Profile Mechanical Switches",
+          "url": "https://www.razer.com/technology/razer-low-profile-mechanical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "footprint",
+            "notes",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation and reset both at 1.2 mm. Razer does not guarantee fit in other brands' low-profile sockets."
+    },
+    {
+      "id": "razer-low-profile-clicky-optical",
+      "name": "Razer Clicky Low-Profile Optical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Low-Profile Optical Switches",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/technology/razer-low-profile-optical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Low-Profile Optical Switches",
+          "url": "https://www.razer.com/technology/razer-low-profile-optical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile point and actuation both at 1.5 mm; used in the DeathStalker V2 family. Razer does not state the keycap mount."
+    },
+    {
+      "id": "razer-low-profile-linear-optical",
+      "name": "Razer Linear Low-Profile Optical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Low-Profile Optical Switches",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/technology/razer-low-profile-optical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Low-Profile Optical Switches",
+          "url": "https://www.razer.com/technology/razer-low-profile-optical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silicone dampeners; used in the DeathStalker V2 family. Razer does not state the keycap mount."
+    },
+    {
+      "id": "razer-green",
+      "name": "Razer Green Clicky Mechanical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Mechanical Switches",
+      "aka": [
+        "Razer Green",
+        "Razer Green Switch"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": "2014",
+      "status": "current",
+      "official_url": "https://www.razer.com/gaming-keyboards-accessories/razer-mechanical-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Mechanical Switches",
+          "url": "https://www.razer.com/gaming-keyboards-accessories/razer-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "pins",
+            "light_pipe",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer: Razer key switch technology",
+          "url": "https://www.razer.com/razer-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gen-3 figures (BlackWidow V4 line), reset point 1.5 mm. Gen-1 (2014) was rated 60 million keystrokes, Gen-2 (BlackWidow V3) 80 million with a clear housing and LED lens."
+    },
+    {
+      "id": "razer-orange",
+      "name": "Razer Orange Tactile Mechanical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Mechanical Switches",
+      "aka": [
+        "Razer Orange",
+        "Razer Orange Switch"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": "2014",
+      "status": "current",
+      "official_url": "https://www.razer.com/gaming-keyboards-accessories/razer-mechanical-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Mechanical Switches",
+          "url": "https://www.razer.com/gaming-keyboards-accessories/razer-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "pins",
+            "light_pipe",
+            "notes",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer: Razer key switch technology",
+          "url": "https://www.razer.com/razer-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gen-3 figures; reset point 1.8 mm, factory lubed with GPL 205g0. The Gen-3 tactile was revised with a new bump for the BlackWidow V4 75%."
+    },
+    {
+      "id": "razer-yellow",
+      "name": "Razer Yellow Linear Mechanical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Mechanical Switches",
+      "aka": [
+        "Razer Yellow",
+        "Razer Yellow Switch"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/gaming-keyboards-accessories/razer-mechanical-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Mechanical Switches",
+          "url": "https://www.razer.com/gaming-keyboards-accessories/razer-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "pins",
+            "light_pipe",
+            "notes",
+            "factory_lubed",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Built-in sound dampener; actuation and reset both at 1.2 mm. Introduced in the BlackWidow V2; Gen-3 figures shown, factory lubed with GPL 205g0."
+    },
+    {
+      "id": "razer-clicky-optical",
+      "name": "Razer Clicky Optical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Optical Switches",
+      "aka": [
+        "Razer Purple",
+        "Razer Purple Optical"
+      ],
+      "type": "clicky",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": "2018",
+      "status": "current",
+      "official_url": "https://www.razer.com/razer-optical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Optical Switches",
+          "url": "https://www.razer.com/razer-optical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer newsroom: Razer Analog Optical Switches Gen-2 (2024-04-17)",
+          "url": "https://www.razer.com/newsroom/product-news/razer-analog-optical-switches-gen-2",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light-beam actuation through the stem, cross stem with a metal stabilizer bar. Found in the Razer Huntsman family; fits only Razer optical boards."
+    },
+    {
+      "id": "razer-linear-optical",
+      "name": "Razer Linear Optical Switch",
+      "maker": "razer",
+      "made_by": null,
+      "family": "Razer Optical Switches",
+      "aka": [
+        "Razer Red",
+        "Razer Red Optical"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.razer.com/razer-optical-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Razer Optical Switches",
+          "url": "https://www.razer.com/razer-optical-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light-beam actuation through the stem, cross stem with a metal stabilizer bar. Found in the Huntsman V2 line; fits only Razer optical boards."
+    }
+  ]
+}

@@ -1,0 +1,814 @@
+{
+  "maker": {
+    "id": "glorious",
+    "name": "Glorious",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.gloriousgaming.com/",
+    "about": "Gaming peripheral brand selling Panda, Lynx, Fox, Mako and Raptor switches in MX and Hall effect versions; some are Outemu-made.",
+    "sources": [
+      {
+        "title": "Glorious: switches collection (Wayback Machine copy)",
+        "url": "https://web.archive.org/web/20261021011203/https://www.gloriousgaming.com/collections/switches",
+        "kind": "official",
+        "backs": [
+          "switches",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Glorious Mako Ultralight Switch Review",
+        "url": "https://www.theremingoat.com/blog/glorious-mako-ultralight-switch-review",
+        "kind": "review",
+        "backs": [
+          "made_by"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "glorious-fox-he",
+      "name": "Fox HE",
+      "maker": "glorious",
+      "made_by": "outemu",
+      "family": "Fox",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20260907133845/https://www.gloriousgaming.com/products/fox-he-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Fox HE Linear Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20260907133845/https://www.gloriousgaming.com/products/fox-he-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Glorious Mako Ultralight Switch Review",
+          "url": "https://www.theremingoat.com/blog/glorious-mako-ultralight-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect linear with an adjustable actuation point, made for the HE GMMK keyboards."
+    },
+    {
+      "id": "glorious-fox-mx",
+      "name": "Fox MX",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Fox",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261111165024/https://www.gloriousgaming.com/products/fox-mx-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Fox MX Linear Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261111165024/https://www.gloriousgaming.com/products/fox-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Standard weight; 3-pin."
+    },
+    {
+      "id": "glorious-fox-mx-heavy",
+      "name": "Fox MX Heavy",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Fox",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261111165024/https://www.gloriousgaming.com/products/fox-mx-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Fox MX Linear Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261111165024/https://www.gloriousgaming.com/products/fox-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "glorious-fox-mx-ultralight",
+      "name": "Fox MX Ultralight",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Fox",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": 40,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261111165024/https://www.gloriousgaming.com/products/fox-mx-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Fox MX Linear Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261111165024/https://www.gloriousgaming.com/products/fox-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "glorious-lynx",
+      "name": "Lynx",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Lynx",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "60g nickel-plated stainless steel",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20260914153934/https://www.gloriousgaming.com/products/glorious-mechanical-switches-lynx",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Lynx Linear Unlubed (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20260914153934/https://www.gloriousgaming.com/products/glorious-mechanical-switches-lynx",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Original Lynx, sold lubed or unlubed."
+    },
+    {
+      "id": "glorious-lynx-he",
+      "name": "Lynx HE",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Lynx",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261108114850/https://www.gloriousgaming.com/products/lynx-he-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Lynx HE Linear Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261108114850/https://www.gloriousgaming.com/products/lynx-he-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect linear with an adjustable actuation point; sold in standard and silent versions."
+    },
+    {
+      "id": "glorious-lynx-mx",
+      "name": "Lynx MX",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Lynx",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261117124724/https://www.gloriousgaming.com/products/lynx-mx-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Lynx MX Linear Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261117124724/https://www.gloriousgaming.com/products/lynx-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Also sold in a silent version with 3.3mm total travel."
+    },
+    {
+      "id": "glorious-mako-mx",
+      "name": "Mako MX",
+      "maker": "glorious",
+      "made_by": "outemu",
+      "family": "Mako",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20260828024801/https://www.gloriousgaming.com/products/mako-mx-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Mako MX Tactile Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20260828024801/https://www.gloriousgaming.com/products/mako-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Glorious Mako Ultralight Switch Review",
+          "url": "https://www.theremingoat.com/blog/glorious-mako-ultralight-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light tactile bump."
+    },
+    {
+      "id": "glorious-mako-mx-ultralight",
+      "name": "Mako MX Ultralight",
+      "maker": "glorious",
+      "made_by": "outemu",
+      "family": "Mako",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20260828024801/https://www.gloriousgaming.com/products/mako-mx-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/glorious-mako-ultralight-switch-review",
+          "date": "2024-10-20",
+          "score": null,
+          "verdict": "A mess the reviewer says truly sucks to use, even at about $0.32 per switch."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Mako MX Tactile Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20260828024801/https://www.gloriousgaming.com/products/mako-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Glorious Mako Ultralight Switch Review",
+          "url": "https://www.theremingoat.com/blog/glorious-mako-ultralight-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "glorious-panda",
+      "name": "Panda",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Panda",
+      "aka": [
+        "Glorious Panda",
+        "Glorious Holy Panda"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 49,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "nylon PA66",
+        "stem": "POM"
+      },
+      "spring": "67g nickel-plated stainless steel",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20260914153934/https://www.gloriousgaming.com/products/glorious-panda-mechanical-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/glorious-panda-switch-review",
+          "date": "2020-09-04",
+          "score": null,
+          "verdict": "Impressive for the company's first switch: a high-tactility alternative to Drop's Holy Pandas, sold unlubed and primed for modding."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Panda Tactile (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20260914153934/https://www.gloriousgaming.com/products/glorious-panda-mechanical-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Original Panda, sold lubed or unlubed; replaced in the lineup by the Panda MX."
+    },
+    {
+      "id": "glorious-panda-he",
+      "name": "Panda HE",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Panda",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261117124739/https://www.gloriousgaming.com/products/panda-he-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Panda HE Tactile Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261117124739/https://www.gloriousgaming.com/products/panda-he-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect tactile with an adjustable actuation point."
+    },
+    {
+      "id": "glorious-panda-mx",
+      "name": "Panda MX",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Panda",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 70,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261123153227/https://www.gloriousgaming.com/products/panda-mx-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Panda MX Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261123153227/https://www.gloriousgaming.com/products/panda-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Also sold in a silent version that actuates at 2mm."
+    },
+    {
+      "id": "glorious-raptor-he",
+      "name": "Raptor HE",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Raptor",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "polycarbonate",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20260828031125/https://www.gloriousgaming.com/products/raptor-he-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Raptor HE Clicky Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20260828031125/https://www.gloriousgaming.com/products/raptor-he-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect clicky with an adjustable actuation point."
+    },
+    {
+      "id": "glorious-raptor-mx",
+      "name": "Raptor MX",
+      "maker": "glorious",
+      "made_by": null,
+      "family": "Raptor",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 70,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "nylon PA12",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://web.archive.org/web/20261112210316/https://www.gloriousgaming.com/products/raptor-mx-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Glorious: Glorious Raptor MX Clicky Switches (Wayback Machine copy)",
+          "url": "https://web.archive.org/web/20261112210316/https://www.gloriousgaming.com/products/raptor-mx-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    }
+  ]
+}

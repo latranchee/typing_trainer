@@ -4,7 +4,7 @@ import { fingerHand, fingerKind, FINGERS } from './fingers';
 import type { Layout, Stroke } from './layouts';
 import { MIN_SAMPLES } from './metrics';
 import { HOME_CODE, letterRowCodes } from './physical';
-import type { Lang } from './store';
+import type { Lang } from './lang';
 
 /** How hard a key needs work, 0 to 1. Supplied by the store. */
 export type Weakness = (code: string) => number;

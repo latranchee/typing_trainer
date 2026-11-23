@@ -1,0 +1,770 @@
+{
+  "maker": {
+    "id": "wuque",
+    "name": "Wuque Studio",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://shop.wuquestudio.com/",
+    "about": "Keyboard studio that sells WS-branded switches made by factories such as JWK, Haimu and Gateron.",
+    "sources": [
+      {
+        "title": "Wuque Studio: shop",
+        "url": "https://shop.wuquestudio.com/",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Wuque Studio Morandi Switch Review",
+        "url": "https://www.theremingoat.com/blog/wuque-studio-morandi-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Wuque WS POM+ Switch Review",
+        "url": "https://www.theremingoat.com/blog/wuque-ws-pom-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "wuque-original-aspiration",
+      "name": "Original Aspiration (OA)",
+      "maker": "wuque",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [
+        "OA"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": "UHMWPE",
+        "stem": "POM"
+      },
+      "spring": "67g gold plated",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "limited",
+      "official_url": "https://shop.wuquestudio.com/products/original-aspiration-oa-switch-gb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: Original Aspiration (OA) Switch",
+          "url": "https://shop.wuquestudio.com/products/original-aspiration-oa-switch-gb",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Group buy that ended on 9 October 2020."
+    },
+    {
+      "id": "wuque-ws-jade",
+      "name": "WS Jade",
+      "maker": "wuque",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "UPE and stainless steel"
+      },
+      "spring": "18mm double stage",
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-jade-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Jade Switch",
+          "url": "https://shop.wuquestudio.com/products/ws-jade-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "light_pipe",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PMMA light diffuser, as on the WS Morandi."
+    },
+    {
+      "id": "wuque-ws-light-tactile",
+      "name": "WS Light Tactile",
+      "maker": "wuque",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "15.4mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-light-tactile-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Light Tactile Switch",
+          "url": "https://shop.wuquestudio.com/products/ws-light-tactile-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "wuque-ws-morandi",
+      "name": "WS Morandi",
+      "maker": "wuque",
+      "made_by": "haimu",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-morandi-switch",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/wuque-studio-morandi-switch-review",
+          "date": "2023-03-19",
+          "score": null,
+          "verdict": "Strong performer with deep, firm housing collisions and adequate stock smoothness; small issues such as stem wobble."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Morandi Switch",
+          "url": "https://shop.wuquestudio.com/products/ws-morandi-switch",
+          "kind": "official",
+          "backs": [
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Wuque Studio Morandi Switch Review",
+          "url": "https://www.theremingoat.com/blog/wuque-studio-morandi-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Haimu-made; the official page lists no specs."
+    },
+    {
+      "id": "wuque-ws-pearl",
+      "name": "WS Pearl",
+      "maker": "wuque",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": "16mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 500,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-pearl-switch-35pcs",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Pearl Switch (35Pcs)",
+          "url": "https://shop.wuquestudio.com/products/ws-pearl-switch-35pcs",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Four ball bearings in each stem and base; bottom-out force listed as 58gf max, preload 30gf min."
+    },
+    {
+      "id": "wuque-ws-pom-plus",
+      "name": "WS POM+",
+      "maker": "wuque",
+      "made_by": "gateron",
+      "family": null,
+      "aka": [
+        "WS POM"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "22mm double stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-pom-switch-35pcs",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/wuque-ws-pom-switch-review",
+          "date": "2024-08-18",
+          "score": null,
+          "verdict": "Gateron-made full-POM linear, consistently well lubed with distinct housing collisions; decent for its price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS POM+ Switch (35Pcs)",
+          "url": "https://shop.wuquestudio.com/products/ws-pom-switch-35pcs",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Wuque WS POM+ Switch Review",
+          "url": "https://www.theremingoat.com/blog/wuque-ws-pom-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bottom-out force listed as 55gf max."
+    },
+    {
+      "id": "wuque-ws-aurora",
+      "name": "WS Aurora",
+      "maker": "wuque",
+      "made_by": null,
+      "family": "WS Aurora",
+      "aka": [
+        "Aurora Fog",
+        "Aurora Pink",
+        "Aurora Blue",
+        "Aurora Clear"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 53,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polycarbonate",
+        "bottom": null,
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-aurora-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Switches Aurora Series",
+          "url": "https://shop.wuquestudio.com/products/ws-aurora-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Fog, Pink and Blue have nylon bottom housings, Clear a UHMWPE one; sold unlubed or thinly factory-lubed."
+    },
+    {
+      "id": "wuque-ws-biglucky-clicky",
+      "name": "WS BigLucky Clicky",
+      "maker": "wuque",
+      "made_by": null,
+      "family": "WS BigLucky",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "SUS304 spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-biglucky-switch-clicky35pcs",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS BigLucky Switch-Clicky(35Pcs)",
+          "url": "https://shop.wuquestudio.com/products/ws-biglucky-switch-clicky35pcs",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "wuque-ws-biglucky-linear",
+      "name": "WS BigLucky Linear",
+      "maker": "wuque",
+      "made_by": null,
+      "family": "WS BigLucky",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "SUS304 spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-biglucky-switch-linear35pcs",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS BigLucky Switch-Linear(35Pcs)",
+          "url": "https://shop.wuquestudio.com/products/ws-biglucky-switch-linear35pcs",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "wuque-ws-biglucky-tactile",
+      "name": "WS BigLucky Tactile",
+      "maker": "wuque",
+      "made_by": null,
+      "family": "WS BigLucky",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "SUS304 spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-biglucky-switch-tactile35pcs",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS BigLucky Switch-Tactile(35Pcs)",
+          "url": "https://shop.wuquestudio.com/products/ws-biglucky-switch-tactile35pcs",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "wuque-ws-dash-he",
+      "name": "WS Dash HE",
+      "maker": "wuque",
+      "made_by": null,
+      "family": "WS Flux",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": "15mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-dash-he-switch-70pcs",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Dash HE Magnetic Switches (70Pcs)",
+          "url": "https://shop.wuquestudio.com/products/ws-dash-he-switch-70pcs",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect switch with a 30gf preload; Wuque lists SteelSeries, Wooting, Corsair and Rakka keyboards as compatible."
+    },
+    {
+      "id": "wuque-ws-flux",
+      "name": "WS Flux",
+      "maker": "wuque",
+      "made_by": null,
+      "family": "WS Flux",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-flux-switch",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/ws-flux-he-switch-review",
+          "date": "2025-04-27",
+          "score": null,
+          "verdict": "Excellent design details and the most precise factory lubing the reviewer has seen; stem wobble is only average."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Flux Standard Series - HE Switches",
+          "url": "https://shop.wuquestudio.com/products/ws-flux-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect switch with a 35gf initial force and an octagonal stem; sold in Clacky, Deep Clacky and Pink Lotus versions."
+    },
+    {
+      "id": "wuque-ws-red",
+      "name": "WS Red",
+      "maker": "wuque",
+      "made_by": null,
+      "family": "WS Switch Series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "67g double stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://shop.wuquestudio.com/products/ws-switch-series",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wuque Studio: WS Switch Series",
+          "url": "https://shop.wuquestudio.com/products/ws-switch-series",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part of the WS Switch Series with WS Quartz, Yellow, Brown, Heavy Tactile, Silent Linear and Silent Tactile, for which the page lists no specs."
+    }
+  ]
+}

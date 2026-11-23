@@ -158,7 +158,7 @@ ${links.join('\n')}
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#212227">
 <link rel="icon" type="image/svg+xml" href="${up(depth)}favicon.svg">
-<link rel="preload" href="${up(depth)}${ASSETS}/roboto-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${up(depth)}${ASSETS}/allo-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${up(depth)}${ASSETS}/guides.css">
 <script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>
 </head>`;
@@ -356,9 +356,8 @@ for (const lang of langsWithAny) {
 
 mkdirSync(join(OUT, ASSETS), { recursive: true });
 copyFileSync(join(import.meta.dirname, 'guides.css'), join(OUT, ASSETS, 'guides.css'));
-const fonts = join(repo, 'node_modules', '@fontsource-variable', 'roboto-mono', 'files');
-copyFileSync(join(fonts, 'roboto-mono-latin-wght-normal.woff2'), join(OUT, ASSETS, 'roboto-mono-latin.woff2'));
-copyFileSync(join(fonts, 'roboto-mono-latin-ext-wght-normal.woff2'), join(OUT, ASSETS, 'roboto-mono-latin-ext.woff2'));
+// Allo by Josh Puckett (SIL OFL 1.1): one variable file covers every Latin script the guides use.
+copyFileSync(join(repo, 'node_modules', 'allo-font', 'fonts', 'webfonts', 'AlloVariable.woff2'), join(OUT, ASSETS, 'allo-variable.woff2'));
 
 // Sitemap: the trainer, each index, each guide with its translations.
 const urlEntry = (loc, alternates, lastmod) =>

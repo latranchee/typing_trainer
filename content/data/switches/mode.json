@@ -1,0 +1,212 @@
+{
+  "maker": {
+    "id": "mode",
+    "name": "MODE Designs",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://modedesigns.com/",
+    "about": "Custom keyboard maker selling its own Outemu-made switches for its boards.",
+    "sources": [
+      {
+        "title": "MODE: Tomorrow Tactile Switches",
+        "url": "https://modedesigns.com/products/tomorrow-tactile-switches",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: MODE Tomorrow Switch Review",
+        "url": "https://www.theremingoat.com/blog/mode-tomorrow-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "mode-anthracite",
+      "name": "Anthracite",
+      "maker": "mode",
+      "made_by": "outemu",
+      "family": null,
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM with integrated silencing pads"
+      },
+      "spring": "19mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://modedesigns.com/products/anthracite-silent-tactile-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MODE: Anthracite Silent Tactile Switches",
+          "url": "https://modedesigns.com/products/anthracite-silent-tactile-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: MODE Tomorrow Switch Review",
+          "url": "https://www.theremingoat.com/blog/mode-tomorrow-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lightly pre-lubed; embossed MODE logo."
+    },
+    {
+      "id": "mode-obscura",
+      "name": "Obscura",
+      "maker": "mode",
+      "made_by": "outemu",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://modedesigns.com/products/obscura-linear-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MODE: Obscura Linear Switches",
+          "url": "https://modedesigns.com/products/obscura-linear-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: MODE Tomorrow Switch Review",
+          "url": "https://www.theremingoat.com/blog/mode-tomorrow-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "MODE describes a bouncy feel."
+    },
+    {
+      "id": "mode-tomorrow",
+      "name": "Tomorrow",
+      "maker": "mode",
+      "made_by": "outemu",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://modedesigns.com/products/tomorrow-tactile-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/mode-tomorrow-switch-review",
+          "date": "2023-01-15",
+          "score": null,
+          "verdict": "Not revolutionary, but a well-judged, just-shy-of-medium tactile most enthusiasts can appreciate in many keyboards."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MODE: Tomorrow Tactile Switches",
+          "url": "https://modedesigns.com/products/tomorrow-tactile-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: MODE Tomorrow Switch Review",
+          "url": "https://www.theremingoat.com/blog/mode-tomorrow-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "bottom_out_force_gf",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Long-pole tactile with a rounded bump on the downstroke."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "brand": {
+    "id": "hp",
+    "name": "HP",
+    "country": "US",
+    "founded": 1939,
+    "official_url": "https://www.hp.com/us-en/home.html",
+    "focus": ["gaming"],
+    "about": "PC and printer maker whose OMEN gaming line sold its own keyboards. On 2026-11-23 the US store's gaming keyboard listing showed only HyperX models, so every OMEN keyboard here is discontinued. HyperX keyboards have their own file.",
+    "sources": [
+      { "title": "Wikipedia: HP Inc.", "url": "https://en.wikipedia.org/wiki/HP_Inc.", "kind": "reference", "backs": ["country", "founded"], "checked": "2026-11-23" },
+      { "title": "HP US store: Gaming keyboards", "url": "https://www.hp.com/us-en/shop/vwa/accessories-88342--1/subcat=Gaming-Accessories&typegaming=Keyboards", "kind": "official", "backs": ["about"], "checked": "2026-11-23" }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "hp-omen-encoder",
+      "brand": "hp",
+      "model": "OMEN Encoder",
+      "aka": ["OMEN by HP Encoder"],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": ["ansi"],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": ["usb"],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        { "name": "Cherry MX Red", "id": null },
+        { "name": "Cherry MX Brown", "id": null }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "fiberglass",
+      "mount": null,
+      "firmware": ["proprietary"],
+      "software": "OMEN Gaming Hub",
+      "os": ["windows"],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://jp.ext.hp.com/gaming/personal/accessories/encoder_keyboard/",
+      "reviews": [],
+      "sources": [
+        { "title": "HP Japan: OMEN by HP Encoder gaming keyboard (6YW76AA, 6YW75AA)", "url": "https://jp.ext.hp.com/gaming/personal/accessories/encoder_keyboard/", "kind": "official", "backs": ["size", "layout_standards", "connectivity", "switches", "case_material", "software"], "checked": "2026-11-23" },
+        { "title": "HP US store: Gaming keyboards", "url": "https://www.hp.com/us-en/shop/vwa/accessories-88342--1/subcat=Gaming-Accessories&typegaming=Keyboards", "kind": "official", "backs": ["status"], "checked": "2026-11-23" }
+      ],
+      "notes": "HP Japan lists an English-layout full-size board with Cherry MX Red or Brown switches, N-key rollover, a 1.8 m braided cable and a glass-fiber frame; Windows is inferred from OMEN Gaming Hub, a Microsoft Store app."
+    },
+    {
+      "id": "hp-omen-sequencer",
+      "brand": "hp",
+      "model": "OMEN Sequencer",
+      "aka": ["HP OMEN Sequencer Optical Mechanical Gaming Keyboard"],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": ["ansi"],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": ["usb"],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        { "name": "Optical-mechanical Blue switch", "id": null }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": ["proprietary"],
+      "software": "OMEN Command Center",
+      "os": ["windows"],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.hp.com/gb-en/tech-takes/gaming/best/which-is-the-best-hp-gaming-keyboard.html",
+      "reviews": [],
+      "sources": [
+        { "title": "HP UK Tech Takes: Which is the best HP gaming keyboard?", "url": "https://www.hp.com/gb-en/tech-takes/gaming/best/which-is-the-best-hp-gaming-keyboard.html", "kind": "official", "backs": ["switches", "switch_footprint", "software"], "checked": "2026-11-23" },
+        { "title": "Coolblue: HP OMEN Sequencer Optical Mechanical Gaming Keyboard QWERTY", "url": "https://www.coolblue.nl/en/product/821459/hp-omen-sequencer-optical-mechanical-gaming-keyboard-qwerty.html", "kind": "retailer", "backs": ["size", "layout_standards", "connectivity", "case_material", "status"], "checked": "2026-11-23" }
+      ],
+      "notes": "HP quotes a 0.2 ms response and a 70 million click life for the clicky optical Blue switches. Coolblue lists it as no longer available. HP's own US and UK product pages could not be loaded, so no official spec sheet backs the layout or connection."
+    },
+    {
+      "id": "hp-omen-spacer-wireless-tkl",
+      "brand": "hp",
+      "model": "OMEN Spacer Wireless TKL",
+      "aka": ["OMEN Spacer"],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": ["usb", "2.4ghz"],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        { "name": "CHERRY MX Brown", "id": null }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": ["proprietary"],
+      "software": "OMEN Command Center",
+      "os": ["windows"],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/8a0126c65c294d608dc72185529ba559/hp-omen-spacer-keyboard-data-sheet-1",
+      "reviews": [
+        { "outlet": "Tom's Hardware", "url": "https://www.tomshardware.com/reviews/hp-omen-spacer-review-the-mature-wireless-tkl", "date": "2020-12-24", "score": null, "verdict": "Reliable, understated wireless TKL with long battery life and a comfy magnetic wrist rest; only Cherry MX Browns and plain red or white backlighting." }
+      ],
+      "sources": [
+        { "title": "HP datasheet: OMEN Spacer Wireless TKL Keyboard (9BU31AA), hosted by Bechtle", "url": "https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/8a0126c65c294d608dc72185529ba559/hp-omen-spacer-keyboard-data-sheet-1", "kind": "datasheet", "backs": ["size", "connectivity", "switches", "software", "os"], "checked": "2026-11-23" },
+        { "title": "Tom's Hardware: HP Omen Spacer review", "url": "https://www.tomshardware.com/reviews/hp-omen-spacer-review-the-mature-wireless-tkl", "kind": "review", "backs": ["switches", "hot_swap"], "checked": "2026-11-23" },
+        { "title": "HP US store: Gaming keyboards", "url": "https://www.hp.com/us-en/shop/vwa/accessories-88342--1/subcat=Gaming-Accessories&typegaming=Keyboards", "kind": "official", "backs": ["status"], "checked": "2026-11-23" }
+      ],
+      "notes": "HP rates the battery at up to 75 hours with backlighting off and lists Xbox support next to Windows 10. Product number 9BU31AA. Tom's Hardware gives an MSRP of $160."
+    }
+  ]
+}

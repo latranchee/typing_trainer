@@ -5,6 +5,7 @@ import { DEFAULT_FOCUS, TYPING_FINGERS } from './generator';
 import type { Difficulty, Floor, RunBest } from './hardcore';
 import { DEFAULT_DIFFICULTY, DIFFICULTIES, FLOORS } from './hardcore';
 import type { HistoryEntry } from './history';
+import { AXES, onAxis } from './font';
 import { compactHistory } from './history';
 import { preferredLang } from './i18n';
 import type { Layout, LayoutId } from './layouts';
@@ -15,10 +16,12 @@ import { BOARDS } from './physical';
 import type { KeySound } from './switches';
 import { isKeySound } from './switches';
 
-export type DrillId = 'highway' | 'words' | 'pairs' | 'anchors' | 'stats';
-export type Lang = 'en' | 'fr' | 'de' | 'es';
-export const DRILL_IDS: DrillId[] = ['highway', 'words', 'pairs', 'anchors', 'stats'];
-export const LANGS: Lang[] = ['fr', 'en', 'de', 'es'];
+export type DrillId = 'highway' | 'words' | 'pairs' | 'anchors' | 'stats' | 'boards';
+import type { Lang } from './lang';
+import { LANGS } from './lang';
+export type { Lang };
+export { LANGS };
+export const DRILL_IDS: DrillId[] = ['highway', 'words', 'pairs', 'anchors', 'stats', 'boards'];
 
 export interface Settings {
   layout: LayoutId;
@@ -59,6 +62,14 @@ export interface Settings {
   sound: boolean;
   /** What the keys sound like: a recorded switch, or nothing. With a switch picked, a streak's marks are heard too. */
   keySound: KeySound;
+  /** Allo's weight for plain text, 100 to 900. Every other weight of the page moves with it. */
+  fontWeight: number;
+  /** Allo's roundness, 0 sharp to 100 round. */
+  fontRound: number;
+  /** Allo's optical size for every size, or null to let the browser match it to each size. */
+  fontOptical: number | null;
+  /** The on-screen keyboard stays out of sight in the typing drills, to type from memory. */
+  hideKeyboard: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -86,6 +97,10 @@ export const DEFAULT_SETTINGS: Settings = {
   sound: true,
   // Silent until the typist picks a switch: a page does not start clicking on its own.
   keySound: 'off',
+  fontWeight: AXES.weight.base,
+  fontRound: AXES.round.base,
+  fontOptical: null,
+  hideKeyboard: false,
 };
 
 const HIGHWAY_SOURCES: Settings['highwaySource'][] = ['words', 'pairs', 'sentences'];
@@ -139,6 +154,18 @@ interface Data {
   active: string;
   profiles: ProfileData[];
 }
+
+/** A profile's numbers as the account keeps them. */
+export interface SyncedProfile {
+  v: 1;
+  layouts: Partial<Record<LayoutId, LayoutStats>>;
+  runs: Record<string, RunBest>;
+  streaks: Record<string, number>;
+  sets: HistoryEntry[];
+}
+
+/** One set, or one day rollup, told apart from every other. */
+const setKey = (entry: HistoryEntry): string => `${entry.t}|${entry.drill}|${entry.layout}|${entry.sets ?? 0}`;
 
 /** What the single-profile version saved under `auriculaire:v1`. */
 interface LegacyData {
@@ -209,6 +236,10 @@ function cleanSettings(saved: Partial<Settings> | undefined, preferred: Lang): S
   if (settings.wordsSource !== 'sentences') settings.wordsSource = 'words';
   if (settings.pairTraining !== 'classic') settings.pairTraining = 'adaptive';
   if (!isKeySound(settings.keySound)) settings.keySound = DEFAULT_SETTINGS.keySound;
+  settings.fontWeight = onAxis(settings.fontWeight, AXES.weight, AXES.weight.base);
+  settings.fontRound = onAxis(settings.fontRound, AXES.round, AXES.round.base);
+  settings.fontOptical = onAxis(settings.fontOptical, AXES.optical, null);
+  if (typeof settings.hideKeyboard !== 'boolean') settings.hideKeyboard = false;
   return settings;
 }
 
@@ -578,6 +609,45 @@ export class Store {
     this.sets = [];
     this.flush();
     this.writeSets();
+  }
+
+  // ---------- sync ----------
+
+  /** The active profile's numbers and sets, as an account keeps them between devices. The options stay on each device. */
+  snapshot(): SyncedProfile {
+    const { layouts, runs, streaks } = this.current;
+    return { v: 1, layouts, runs: runs ?? {}, streaks: streaks ?? {}, sets: this.sets };
+  }
+
+  /**
+   * Takes in what another device saved. Sets of both are kept, each once. A layout's key
+   * numbers come from whichever side measured more strokes on it, since smoothed times
+   * cannot be added up. Best runs and streaks keep the higher of the two.
+   */
+  merge(remote: unknown): void {
+    const theirs = remote as Partial<SyncedProfile> | null;
+    if (!theirs || theirs.v !== 1) return;
+    const strokes = (stats: LayoutStats | undefined): number => Object.values(stats?.keys ?? {}).reduce((sum, key) => sum + (Number(key.n) || 0), 0);
+    for (const [id, stats] of Object.entries(theirs.layouts ?? {}) as [LayoutId, LayoutStats][]) {
+      if (!LAYOUT_IDS.includes(id) || !stats?.keys) continue;
+      if (strokes(stats) > strokes(this.current.layouts[id])) this.current.layouts[id] = { ...emptyStats(), ...stats };
+    }
+    for (const [key, best] of Object.entries(theirs.runs ?? {})) {
+      const mine = this.bestRun(key);
+      (this.current.runs ??= {})[key] = { ms: Math.max(mine.ms, Number(best?.ms) || 0), sets: Math.max(mine.sets, Number(best?.sets) || 0) };
+    }
+    for (const [key, streak] of Object.entries(theirs.streaks ?? {})) {
+      (this.current.streaks ??= {})[key] = Math.max(this.bestStreak(key), Number(streak) || 0);
+    }
+    if (Array.isArray(theirs.sets)) {
+      const seen = new Set(this.sets.map(setKey));
+      const fresh = theirs.sets.filter((entry) => entry && typeof entry.t === 'number' && !seen.has(setKey(entry)));
+      if (fresh.length > 0) {
+        this.sets = compactHistory([...this.sets, ...fresh].sort((a, b) => a.t - b.t));
+        this.writeSets();
+      }
+    }
+    this.flush();
   }
 
   // ---------- storage ----------

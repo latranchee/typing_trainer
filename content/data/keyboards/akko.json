@@ -1,0 +1,1585 @@
+{
+  "brand": {
+    "id": "akko",
+    "name": "Akko",
+    "country": null,
+    "founded": null,
+    "official_url": "https://en.akkogear.com/",
+    "focus": [
+      "enthusiast",
+      "gaming",
+      "budget"
+    ],
+    "about": "Akko makes mechanical and magnetic-switch keyboards, its own switches and keycaps, and sells many themed and licensed editions.",
+    "sources": [
+      {
+        "title": "Akko: home page",
+        "url": "https://en.akkogear.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "akko-3108-v3",
+      "brand": "akko",
+      "model": "3108 v3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Akko V3 Cream Yellow Pro",
+          "id": "akko-v3-creamy-yellow-pro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Web Driver",
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/glacier-3108v3-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/glacier-3108v3-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Glacier 3108v3",
+          "url": "https://en.akkogear.com/product/glacier-3108v3-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sleeve-socket hot-swap. The RF wireless version runs on 2 AAA batteries and has no backlight. Sold in several themed editions; the price is the cheapest edition listed."
+    },
+    {
+      "id": "akko-5075-v5",
+      "brand": "akko",
+      "model": "5075 V5",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Web Driver",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/my-sweet-piano-5075-v5-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/my-sweet-piano-5075-v5-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: My Sweet Piano 5075 V5",
+          "url": "https://en.akkogear.com/product/my-sweet-piano-5075-v5-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in several themed editions; the price is the cheapest edition listed. Hot-swappable; pin count not stated."
+    },
+    {
+      "id": "akko-5075-v5-he",
+      "brand": "akko",
+      "model": "5075 V5 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko Prism Magnetic",
+          "id": null
+        },
+        {
+          "name": "Akko Hakutaku Magnetic",
+          "id": null
+        },
+        {
+          "name": "Kailh Aurora Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Driver / Web-Based Driver",
+      "os": [],
+      "price_usd": 84.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/5075-v5-he-magnetic-switch-keyboard/",
+      "official_url": "https://en.akkogear.com/product/5075-v5-he-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: 5075 V5 HE",
+          "url": "https://en.akkogear.com/product/5075-v5-he-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired version ships with Akko Hakutaku Magnetic switches; wireless versions with Akko Prism or Kailh Aurora Magnetic."
+    },
+    {
+      "id": "akko-5075-v5-tmr",
+      "brand": "akko",
+      "model": "5075 V5 TMR",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Kailh Aurora Magnetic",
+          "id": null
+        },
+        {
+          "name": "Akko Prism Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko HUB Driver",
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/5075-v5-tmr-magnetic-switch-keyboard/",
+      "official_url": "https://en.akkogear.com/product/5075-v5-tmr-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: 5075 V5 TMR",
+          "url": "https://en.akkogear.com/product/5075-v5-tmr-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TMR-sensor board that takes both magnetic and mechanical switches."
+    },
+    {
+      "id": "akko-5087-v3-he",
+      "brand": "akko",
+      "model": "5087 V3 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Cloud Driver",
+      "os": [],
+      "price_usd": 74.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/5087-v3-he-magnetic-switch-keyboard/",
+      "official_url": "https://en.akkogear.com/product/5087-v3-he-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: 5087 V3 HE",
+          "url": "https://en.akkogear.com/product/5087-v3-he-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in wired and wireless versions; the page does not say which wireless modes. Actuation 0.1-3.3 mm."
+    },
+    {
+      "id": "akko-5087-v5",
+      "brand": "akko",
+      "model": "5087 V5",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Web Driver",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/my-sweet-piano-5087-v5-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/my-sweet-piano-5087-v5-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: My Sweet Piano 5087 V5",
+          "url": "https://en.akkogear.com/product/my-sweet-piano-5087-v5-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in several themed editions; the price is the cheapest edition listed."
+    },
+    {
+      "id": "akko-5087-v5-he",
+      "brand": "akko",
+      "model": "5087 V5 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 88,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko Prism Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Driver / Web-Based Driver",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/5087-v5-he-magnetic-switch-keyboard/",
+      "official_url": "https://en.akkogear.com/product/5087-v5-he-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: 5087 V5 HE",
+          "url": "https://en.akkogear.com/product/5087-v5-he-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-5087-v5-tmr",
+      "brand": "akko",
+      "model": "5087 V5 TMR",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 88,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Akko Prism Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Web Driver / Akko Cloud Driver",
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/5087-v5-tmr-magnetic-switch-keyboard/",
+      "official_url": "https://en.akkogear.com/product/5087-v5-tmr-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: 5087 V5 TMR",
+          "url": "https://en.akkogear.com/product/5087-v5-tmr-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TMR-sensor board that takes both magnetic and mechanical switches."
+    },
+    {
+      "id": "akko-5098-v5",
+      "brand": "akko",
+      "model": "5098 V5",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Web Driver",
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/glacier-5098-v5-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/glacier-5098-v5-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Glacier 5098 V5",
+          "url": "https://en.akkogear.com/product/glacier-5098-v5-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "1800-compact board with a 2.2-inch LCD screen and knob. Sold in several themed editions; the price is the cheapest edition listed."
+    },
+    {
+      "id": "akko-5108-v5",
+      "brand": "akko",
+      "model": "5108 V5",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko Creamy Yellow U1",
+          "id": "akko-u1-creamy-yellow"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 94.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/bun-wonderland-5108-v5-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/greedy-bear-5108-v5-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Greedy Bear 5108 V5",
+          "url": "https://en.akkogear.com/product/greedy-bear-5108-v5-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Akko: Bun Wonderland 5108 V5",
+          "url": "https://en.akkogear.com/product/bun-wonderland-5108-v5-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Successor of the 5108B Plus. Sold in several themed editions; the price is the cheapest edition listed."
+    },
+    {
+      "id": "akko-5108b-plus",
+      "brand": "akko",
+      "model": "5108B Plus",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Cloud Driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 89.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/yier-and-bubu-5108b-plus-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/yier-and-bubu-5108b-plus-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Yier and Bubu 5108B Plus",
+          "url": "https://en.akkogear.com/product/yier-and-bubu-5108b-plus-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switch_footprint",
+            "hot_swap",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Switch options differ by themed edition. Sold in several themed editions; the price is the cheapest edition listed."
+    },
+    {
+      "id": "akko-air-01",
+      "brand": "akko",
+      "model": "Air 01",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4500,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Kailh Cloud",
+          "id": null
+        },
+        {
+          "name": "Kailh Drift",
+          "id": null
+        },
+        {
+          "name": "Kailh Summer Mini",
+          "id": "kailh-mini-summer"
+        },
+        {
+          "name": "Kailh Winter Mini",
+          "id": "kailh-mini-winter"
+        },
+        {
+          "name": "Kailh Deep Sea Island Pink Mini",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Web Driver",
+      "os": [
+        "mac",
+        "windows"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/air-01-low-profile-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/air-01-low-profile-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Air 01",
+          "url": "https://en.akkogear.com/product/air-01-low-profile-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "low_profile",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile board with a native Mac layout (Windows keycaps included); takes Kailh low-profile switches only."
+    },
+    {
+      "id": "akko-gem-01-via",
+      "brand": "akko",
+      "model": "Gem 01 VIA",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko Mirror",
+          "id": "akko-mirror"
+        },
+        {
+          "name": "Akko Stellar Rose",
+          "id": "akko-stellar-rose"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/gem-01-black-on-white-via-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/gem-01-black-on-white-via-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Gem 01 Black on White VIA",
+          "url": "https://en.akkogear.com/product/gem-01-black-on-white-via-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MonsGeek: Gem 01 VIA Black on White",
+          "url": "https://www.monsgeek.com/keyboard/akko-gem-01-via-black-on-white-mechanical-keyboard/",
+          "kind": "retailer",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-mineral-01-via",
+      "brand": "akko",
+      "model": "Mineral 01 VIA",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko Mirror",
+          "id": "akko-mirror"
+        },
+        {
+          "name": "Akko Stellar Rose",
+          "id": "akko-stellar-rose"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/mineral-01-black-on-white-via-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/mineral-01-black-on-white-via-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Mineral 01 Black on White VIA",
+          "url": "https://en.akkogear.com/product/mineral-01-black-on-white-via-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MonsGeek: Mineral 01 VIA Black on White",
+          "url": "https://www.monsgeek.com/keyboard/akko-mineral-01-via-black-on-white-mechanical-keyboard/",
+          "kind": "retailer",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "akko-mineral-02-via",
+      "brand": "akko",
+      "model": "Mineral 02 VIA",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko Mirror",
+          "id": "akko-mirror"
+        },
+        {
+          "name": "Akko Stellar Rose",
+          "id": "akko-stellar-rose"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/mineral-02-black-on-white-via-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/mineral-02-black-on-white-via-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: Mineral 02 Black on White VIA",
+          "url": "https://en.akkogear.com/product/mineral-02-black-on-white-via-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "MonsGeek: Mineral 02 VIA Black on White",
+          "url": "https://www.monsgeek.com/keyboard/akko-mineral-02-via-black-on-white-mechanical-keyboard/",
+          "kind": "retailer",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "1800-compact board."
+    },
+    {
+      "id": "akko-mod007-he-pc",
+      "brand": "akko",
+      "model": "MOD007-HE PC",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Akko Cream Yellow Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/mod007-he-pc-purple-melody-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/mod007-he-pc-purple-melody-mechanical-keyboard/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/akko/mod007-he-pc",
+          "date": "2025-06-13",
+          "score": null,
+          "verdict": "Sturdy polycarbonate gasket build and rapid trigger support; fine for casual gaming, but wired only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Akko: MOD007-HE PC Purple Melody",
+          "url": "https://en.akkogear.com/product/mod007-he-pc-purple-melody-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Akko MOD007-HE PC review",
+          "url": "https://www.rtings.com/keyboard/reviews/akko/mod007-he-pc",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Polycarbonate-case HE board that also takes 3-pin mechanical switches; actuation 0.1-4.0 mm. The listed editions were out of stock on 2026-11-23."
+    },
+    {
+      "id": "akko-mod68-he",
+      "brand": "akko",
+      "model": "MOD68 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko Starlit Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Web & Cloud Driver",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/the-legend-of-hei-mod68-he-magnetic-switch-keyboard/",
+      "official_url": "https://en.akkogear.com/product/the-legend-of-hei-mod68-he-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: The Legend of Hei MOD68 HE",
+          "url": "https://en.akkogear.com/product/the-legend-of-hei-mod68-he-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired CNC-aluminum HE board; actuation 0.1-3.3 mm. Listed as The Legend of Hei edition."
+    },
+    {
+      "id": "akko-mu01",
+      "brand": "akko",
+      "model": "MU01",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        },
+        {
+          "name": "Akko Rosewood",
+          "id": "akko-rosewood"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "wood",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Cloud Driver",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/mu01-mountain-seclusion-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/mu01-mountain-seclusion-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: MU01 Mountain Seclusion",
+          "url": "https://en.akkogear.com/product/mu01-mountain-seclusion-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Walnut wooden case."
+    },
+    {
+      "id": "akko-mu02",
+      "brand": "akko",
+      "model": "MU02",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Akko V3 Piano Pro",
+          "id": "akko-v3-piano-pro"
+        },
+        {
+          "name": "Akko Rosewood",
+          "id": "akko-rosewood"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "wood",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Cloud Driver",
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/mu02-mountain-seclusion-mechanical-keyboard/",
+      "official_url": "https://en.akkogear.com/product/mu02-mountain-seclusion-mechanical-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: MU02 Mountain Seclusion",
+          "url": "https://en.akkogear.com/product/mu02-mountain-seclusion-mechanical-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Walnut wooden case."
+    },
+    {
+      "id": "akko-tac75-he",
+      "brand": "akko",
+      "model": "TAC75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Akko Astrolink Magnetic",
+          "id": "akko-astrolink-magnetic"
+        },
+        {
+          "name": "Akko AstroAim Magnetic",
+          "id": "akko-astroaim-magnetic"
+        },
+        {
+          "name": "Akko Glare Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Akko Hub",
+      "os": [],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://en.akkogear.com/product/tac75-he-white-magnetic-switch-keyboard/",
+      "official_url": "https://en.akkogear.com/product/tac75-he-white-magnetic-switch-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Akko: TAC75 HE White",
+          "url": "https://en.akkogear.com/product/tac75-he-white-magnetic-switch-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switch_footprint",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired budget HE board; actuation 0.1-3.3 mm, rapid trigger 0.005-2 mm."
+    }
+  ]
+}

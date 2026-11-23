@@ -1,0 +1,1244 @@
+{
+  "brand": {
+    "id": "filco",
+    "name": "FILCO",
+    "country": "JP",
+    "founded": 1982,
+    "official_url": "https://web.archive.org/web/20260302113102/https://www.diatec.co.jp/en/",
+    "focus": [
+      "enthusiast",
+      "office"
+    ],
+    "about": "FILCO was the keyboard brand of Diatec Corporation of Tokyo, known for the Majestouch line with Cherry MX switches launched in 2004. Diatec ended operations on 2026-04-22.",
+    "sources": [
+      {
+        "title": "Diatec (archived): English home page",
+        "url": "https://web.archive.org/web/20260302113102/https://www.diatec.co.jp/en/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Diatec (archived): About us (services started 1982-06-17)",
+        "url": "https://web.archive.org/web/20250819174858/https://www.diatec.co.jp/en/aboutus.php",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+        "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "filco-majestouch-2",
+      "brand": "filco",
+      "model": "Majestouch 2",
+      "aka": [
+        "Majestouch 2 HAKUA",
+        "Majestouch 2SC ASAGI",
+        "Majestouch 2SS Edition",
+        "Majestouch Lumi S",
+        "Majestouch NINJA"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250816100120/https://www.diatec.co.jp/en/det.php?prod_c=757",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch 2 [Brown Switch/Full size/US ASCII]",
+          "url": "https://web.archive.org/web/20250816100120/https://www.diatec.co.jp/en/det.php?prod_c=757",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 2 series list",
+          "url": "https://web.archive.org/web/20250719021656/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10026",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 2 Europe model (105-key FR/DE/SE/UK)",
+          "url": "https://web.archive.org/web/20260304133349/https://www.diatec.co.jp/en/FKBN88MUKB/",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Diatec listed it as discontinued before closing; editions such as HAKUA, 2SC ASAGI, 2SS (Speed Silver) and NINJA (front-printed legends) used the same board. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-2-tenkeyless",
+      "brand": "filco",
+      "model": "Majestouch 2 Tenkeyless",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20260228172116/https://www.diatec.co.jp/en/det.php?prod_c=763",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch 2 Tenkeyless [Brown Switch/Tenkeyless/US ASCII]",
+          "url": "https://web.archive.org/web/20260228172116/https://www.diatec.co.jp/en/det.php?prod_c=763",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 2 series list",
+          "url": "https://web.archive.org/web/20250719021656/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10026",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 2 Europe model (88-key FR/DE/SE/UK)",
+          "url": "https://web.archive.org/web/20260304133349/https://www.diatec.co.jp/en/FKBN88MUKB/",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Diatec listed it as discontinued before closing. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-3",
+      "brand": "filco",
+      "model": "Majestouch 3",
+      "aka": [
+        "Majestouch 3 NINJA",
+        "Majestouch 3 HAKUA"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Northern Light",
+          "id": "cherry-mx-northern-light"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250522064736/https://diatec.co.jp/en/det.php?prod_c=6148",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch 3 [MX Brown Switch/Full size/US ASCII]",
+          "url": "https://web.archive.org/web/20250522064736/https://diatec.co.jp/en/det.php?prod_c=6148",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 3 series list (English site)",
+          "url": "https://web.archive.org/web/20250218034040/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10323",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 3 series list (Japanese site, JIS 108-key and Northern Light models)",
+          "url": "https://web.archive.org/web/20260214231634/https://diatec.co.jp/products/list.php?s%5B%5D=110:1006:10323",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 3 NINJA series list",
+          "url": "https://web.archive.org/web/20250924210816/https://diatec.co.jp/en/list.php?s%5B%5D=110%3A1006%3A10338",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired USB; the spec sheet also lists PS/2 through the included adapter. The Japanese JIS version has 108 keys; NINJA editions print legends on the key fronts. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-3-tenkeyless",
+      "brand": "filco",
+      "model": "Majestouch 3 Tenkeyless",
+      "aka": [
+        "Majestouch 3 NINJA Tenkeyless"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250822174500/https://diatec.co.jp/en/det.php?prod_c=6153",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch 3 Tenkeyless [MX Brown Switch/Tenkeyless/US ASCII]",
+          "url": "https://web.archive.org/web/20250822174500/https://diatec.co.jp/en/det.php?prod_c=6153",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 3 series list (English site)",
+          "url": "https://web.archive.org/web/20250218034040/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10323",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch 3 series list (Japanese site, JIS 91-key models)",
+          "url": "https://web.archive.org/web/20260214231634/https://diatec.co.jp/products/list.php?s%5B%5D=110:1006:10323",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired USB; the spec sheet also lists PS/2 through the included adapter. The Japanese JIS version has 91 keys. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-convertible-3",
+      "brand": "filco",
+      "model": "Majestouch Convertible 3",
+      "aka": [
+        "Majestouch Convertible 3 HAKUA"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250419041410/https://diatec.co.jp/en/det.php?prod_c=7229",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch Convertible 3 [MX Brown switch/Full size/US ASCII]",
+          "url": "https://web.archive.org/web/20250419041410/https://diatec.co.jp/en/det.php?prod_c=7229",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch Convertible 3 series list",
+          "url": "https://web.archive.org/web/20250519213351/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10348",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch Convertible 3 HAKUA series list",
+          "url": "https://web.archive.org/web/20251212060833/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10373",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Japanese site menu listing Convertible 3 JIS full-size and tenkeyless",
+          "url": "https://web.archive.org/web/20260214231634/https://diatec.co.jp/products/list.php?s%5B%5D=110:1006:10323",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "USB-C cable and Bluetooth; runs on AA batteries in wireless mode. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-convertible-3-tenkeyless",
+      "brand": "filco",
+      "model": "Majestouch Convertible 3 Tenkeyless",
+      "aka": [
+        "Majestouch Convertible 3 HAKUA Tenkeyless"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250924210816/https://www.diatec.co.jp/en/det.php?prod_c=7233",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch Convertible 3 Tenkeyless [MX Brown switch/Tenkeyless/US ASCII]",
+          "url": "https://web.archive.org/web/20250924210816/https://www.diatec.co.jp/en/det.php?prod_c=7233",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch Convertible 3 series list",
+          "url": "https://web.archive.org/web/20250519213351/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10348",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Japanese site menu listing Convertible 3 JIS full-size and tenkeyless",
+          "url": "https://web.archive.org/web/20260214231634/https://diatec.co.jp/products/list.php?s%5B%5D=110:1006:10323",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "USB-C cable and Bluetooth; runs on AA batteries in wireless mode. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-minila-r-convertible",
+      "brand": "filco",
+      "model": "Majestouch MINILA-R Convertible",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 63,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250429132703/https://diatec.co.jp/en/det.php?prod_c=4577",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch MINILA-R Convertible [MX Brown Switch/US/Matte Black]",
+          "url": "https://web.archive.org/web/20250429132703/https://diatec.co.jp/en/det.php?prod_c=4577",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch MINILA-R Convertible series list",
+          "url": "https://web.archive.org/web/20251207215945/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10281",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact 63-key board with USB 2.0 and Bluetooth 5.1; runs on AA batteries in wireless mode. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-stingray",
+      "brand": "filco",
+      "model": "Majestouch Stingray",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Low Profile Red",
+          "id": "cherry-mx-low-profile-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250716081428/https://diatec.co.jp/en/det.php?prod_c=4034",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch Stingray [LowProfile Red Switch/Fullsize/US ASCII]",
+          "url": "https://web.archive.org/web/20250716081428/https://diatec.co.jp/en/det.php?prod_c=4034",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "switches",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch Stingray series list",
+          "url": "https://web.archive.org/web/20260315225711/https://www.diatec.co.jp/en/list.php?s%5B%5D=110:1006:10245",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile board with 3.2 mm key stroke; sold with top-printed or front-printed legends. Wired USB; the spec sheet also lists PS/2 through the included adapter. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-stingray-tenkeyless",
+      "brand": "filco",
+      "model": "Majestouch Stingray Tenkeyless",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Low Profile Red",
+          "id": "cherry-mx-low-profile-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250914061819/https://diatec.co.jp/en/det.php?prod_c=4039",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch Stingray [LowProfile Red Switch/Tenkeyless/US ASCII]",
+          "url": "https://web.archive.org/web/20250914061819/https://diatec.co.jp/en/det.php?prod_c=4039",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "switches",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch Stingray series list",
+          "url": "https://web.archive.org/web/20260315225711/https://www.diatec.co.jp/en/list.php?s%5B%5D=110:1006:10245",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile board with 3.2 mm key stroke. Wired USB; the spec sheet also lists PS/2 through the included adapter. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-tenkeypad-2-professional",
+      "brand": "filco",
+      "model": "Majestouch TenKeyPad 2 Professional",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "numpad",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Silent",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20250717125253/https://diatec.co.jp/en/det.php?prod_c=3240",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch TenKeyPad 2 Professional [Brown Switch / BLACK]",
+          "url": "https://web.archive.org/web/20250717125253/https://diatec.co.jp/en/det.php?prod_c=3240",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "os",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch TenKeyPad 2 Professional series list",
+          "url": "https://web.archive.org/web/20250924210816/https://diatec.co.jp/en/list.php?s%5B%5D=110%3A1006%3A10216",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "USB numeric keypad with its own NumLock, plus Esc, Tab, Backspace and 00 keys. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-xacro-m10sp",
+      "brand": "filco",
+      "model": "Majestouch Xacro M10SP",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 72,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "FILCO Assist",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20251215174643/https://diatec.co.jp/en/det.php?prod_c=7551",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch Xacro M10SP 72US [MX Brown Switch/US ASCII/Macro Supported/Separate]",
+          "url": "https://web.archive.org/web/20251215174643/https://diatec.co.jp/en/det.php?prod_c=7551",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards",
+            "split",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch Xacro M10SP series list",
+          "url": "https://web.archive.org/web/20251111194140/https://diatec.co.jp/en/list.php?s%5B%5D=110:1006:10383",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Two-piece 72-key board with ten macro keys, programmed on the keyboard or with FILCO Assist; ships with a tilt stand, and the page does not describe tenting. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    },
+    {
+      "id": "filco-majestouch-xacro-m3a",
+      "brand": "filco",
+      "model": "Majestouch Xacro M3A",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "FILCO Assist",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://web.archive.org/web/20251107151216/https://www.diatec.co.jp/en/det.php?prod_c=6227",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Diatec (archived): Majestouch Xacro M3A 67US [MX Brown Switch/US ASCII/Macro Supported]",
+          "url": "https://web.archive.org/web/20251107151216/https://www.diatec.co.jp/en/det.php?prod_c=6227",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): Majestouch Xacro M3A series list",
+          "url": "https://web.archive.org/web/20250924210816/https://diatec.co.jp/en/list.php?s%5B%5D=110%3A1006%3A10343",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived): 65% keyboard category",
+          "url": "https://web.archive.org/web/20250924210816/https://diatec.co.jp/en/list.php?s%5B%5D=120%3A1109%3A0",
+          "kind": "official",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Diatec (archived home page): closure notice, operations ended 2026-04-22",
+          "url": "https://web.archive.org/web/20260517221431/https://diatec.co.jp/index.html",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "67-key board with three macro keys, programmed on the keyboard or with FILCO Assist. Diatec, the Japanese company behind FILCO, ended operations on 2026-04-22."
+    }
+  ]
+}

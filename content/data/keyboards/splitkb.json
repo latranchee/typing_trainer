@@ -1,0 +1,791 @@
+{
+  "brand": {
+    "id": "splitkb",
+    "name": "splitkb.com",
+    "country": null,
+    "founded": null,
+    "official_url": "https://splitkb.com/",
+    "focus": [
+      "ergonomic",
+      "diy"
+    ],
+    "about": "splitkb.com sells split keyboard kits: its own Kyria and Elora designs, the Halcyon series of pre-soldered PCBs with swappable controllers, and Aurora PCB kits of popular open designs (Corne, Lily58, Sofle, Sweep, Helix). The store prices in euros.",
+    "sources": [
+      {
+        "title": "splitkb.com: home page",
+        "url": "https://splitkb.com/",
+        "kind": "official",
+        "backs": [
+          "about",
+          "focus"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "splitkb.com: products listing",
+        "url": "https://splitkb.com/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "splitkb-aurora-corne",
+      "brand": "splitkb",
+      "model": "Aurora Corne",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/aurora",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/aurora on GitHub",
+          "url": "https://github.com/splitkb/aurora",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB kit sold with MX hot-swap, Choc hot-swap or hand-solder options (Kailh Choc v1 only); runs QMK or ZMK with a wired or wireless controller bought separately. Supports the splitkb tenting puck. 42 keys."
+    },
+    {
+      "id": "splitkb-aurora-helix",
+      "brand": "splitkb",
+      "model": "Aurora Helix",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 64,
+      "layout_standards": [],
+      "stagger": "ortholinear",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/aurora",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/aurora on GitHub",
+          "url": "https://github.com/splitkb/aurora",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB kit sold with MX hot-swap, Choc hot-swap or hand-solder options (Kailh Choc v1 only); runs QMK or ZMK with a wired or wireless controller bought separately. Supports the splitkb tenting puck. Ortholinear split with up to 64 keys, a number row and up to two encoders."
+    },
+    {
+      "id": "splitkb-aurora-lily58",
+      "brand": "splitkb",
+      "model": "Aurora Lily58",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/aurora",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/aurora on GitHub",
+          "url": "https://github.com/splitkb/aurora",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB kit sold with MX hot-swap, Choc hot-swap or hand-solder options (Kailh Choc v1 only); runs QMK or ZMK with a wired or wireless controller bought separately. Supports the splitkb tenting puck. 58 keys with a number row."
+    },
+    {
+      "id": "splitkb-aurora-sofle-v2",
+      "brand": "splitkb",
+      "model": "Aurora Sofle v2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/aurora",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/aurora on GitHub",
+          "url": "https://github.com/splitkb/aurora",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB kit sold with MX hot-swap, Choc hot-swap or hand-solder options (Kailh Choc v1 only); runs QMK or ZMK with a wired or wireless controller bought separately. Supports the splitkb tenting puck. 58 keys with a number row and at least two encoders."
+    },
+    {
+      "id": "splitkb-aurora-sweep",
+      "brand": "splitkb",
+      "model": "Aurora Sweep",
+      "aka": [
+        "Sweep Bling MX"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 34,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/aurora",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/aurora on GitHub",
+          "url": "https://github.com/splitkb/aurora",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB kit sold with MX hot-swap, Choc hot-swap or hand-solder options (Kailh Choc v1 only); runs QMK or ZMK with a wired or wireless controller bought separately. Supports the splitkb tenting puck. 34 keys; splitkb's version of David Barr's Sweep Bling MX."
+    },
+    {
+      "id": "splitkb-halcyon-corne",
+      "brand": "splitkb",
+      "model": "Halcyon Corne",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/halcyon",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Halcyon kits are the pre-soldered, tested PCB assembly with hot-swap sockets, per-key RGB and USB-C; the controller is sold separately: RP2040 (wired, QMK and Vial) or nRF52840 (wireless, ZMK). Tenting with the splitkb tenting puck. 42 keys with staggered pinky columns; MX and Choc v1 versions (Choc v2 does not fit)."
+    },
+    {
+      "id": "splitkb-halcyon-elora",
+      "brand": "splitkb",
+      "model": "Halcyon Elora",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "50",
+      "key_count": 62,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/elora",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind",
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/elora on GitHub",
+          "url": "https://github.com/splitkb/elora",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Halcyon kits are the pre-soldered, tested PCB assembly with hot-swap sockets, per-key RGB and USB-C; the controller is sold separately: RP2040 (wired, QMK and Vial) or nRF52840 (wireless, ZMK). Tenting with the splitkb tenting puck. A 50% split based on the Kyria with a number row, up to 62 keys; MX and Choc v1 versions."
+    },
+    {
+      "id": "splitkb-halcyon-ferris",
+      "brand": "splitkb",
+      "model": "Halcyon Ferris",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 34,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/halcyon",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Halcyon kits are the pre-soldered, tested PCB assembly with hot-swap sockets, per-key RGB and USB-C; the controller is sold separately: RP2040 (wired, QMK and Vial) or nRF52840 (wireless, ZMK). Tenting with the splitkb tenting puck. 34 keys, Choc v1 only."
+    },
+    {
+      "id": "splitkb-halcyon-kyria",
+      "brand": "splitkb",
+      "model": "Halcyon Kyria",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "40",
+      "key_count": 50,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/halcyon",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind",
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/halcyon on GitHub",
+          "url": "https://github.com/splitkb/halcyon",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Halcyon kits are the pre-soldered, tested PCB assembly with hot-swap sockets, per-key RGB and USB-C; the controller is sold separately: RP2040 (wired, QMK and Vial) or nRF52840 (wireless, ZMK). Tenting with the splitkb tenting puck. Up to 50 keys with an aggressive column stagger and a large thumb cluster; MX and Choc v1 versions (Choc v2 does not fit)."
+    },
+    {
+      "id": "splitkb-halcyon-lily58",
+      "brand": "splitkb",
+      "model": "Halcyon Lily58",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/halcyon",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Halcyon kits are the pre-soldered, tested PCB assembly with hot-swap sockets, per-key RGB and USB-C; the controller is sold separately: RP2040 (wired, QMK and Vial) or nRF52840 (wireless, ZMK). Tenting with the splitkb tenting puck. 58 keys with a number row; MX and Choc v1 versions."
+    },
+    {
+      "id": "splitkb-kyria-rev3",
+      "brand": "splitkb",
+      "model": "Kyria rev3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "40",
+      "key_count": 50,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/splitkb/kyria",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (product descriptions)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "firmware",
+            "connectivity",
+            "tenting",
+            "kind",
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "splitkb/kyria on GitHub",
+          "url": "https://github.com/splitkb/kyria",
+          "kind": "official",
+          "backs": [
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB kit sold with MX hot-swap, Choc hot-swap or hand-solder options (Kailh Choc v1 only); runs QMK or ZMK with a wired or wireless controller bought separately. Supports the splitkb tenting puck. Up to 50 keys with an aggressive column stagger and a large thumb cluster."
+    }
+  ]
+}

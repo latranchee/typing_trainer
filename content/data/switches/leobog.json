@@ -1,0 +1,1910 @@
+{
+  "maker": {
+    "id": "leobog",
+    "name": "LEOBOG",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": null,
+    "official_url": "https://www.leobog.com/en/",
+    "about": "LEOBOG is a Chinese brand of keyboards, mice and headsets that also sells its own linear, tactile and magnetic switches. Its company page cites more than 20 years of R&D and manufacturing.",
+    "sources": [
+      {
+        "title": "LEOBOG: About Us",
+        "url": "https://www.leobog.com/en/about-us/",
+        "kind": "official",
+        "backs": [
+          "name",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "LEOBOG: switch lineup",
+        "url": "https://www.leobog.com/en/switch/",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "leobog-graywood-magnetic",
+      "name": "Graywood Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": "Graywood",
+      "aka": [
+        "灰木磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/graywood-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Graywood Switch (灰木磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/graywood-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 33gf and a bottom-out magnetic flux of 480±60Gs."
+    },
+    {
+      "id": "leobog-graywood-v3",
+      "name": "Graywood Switch V3",
+      "maker": "leobog",
+      "made_by": null,
+      "family": "Graywood",
+      "aka": [
+        "灰木轴V3"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/graywood-switch-v3/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Graywood Switch V3 (灰木轴V3) spec sheet",
+          "url": "https://www.leobog.com/en/graywood-switch-v3/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-graywood-v4",
+      "name": "Graywood Switch V4",
+      "maker": "leobog",
+      "made_by": null,
+      "family": "Graywood",
+      "aka": [
+        "灰木轴V4"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/graywood-switch-v4/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Graywood Switch V4 (灰木轴V4) spec sheet",
+          "url": "https://www.leobog.com/en/graywood-switch-v4/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-barbie",
+      "name": "Barbie Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "芭比轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 33,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/barbie-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Barbie Switch (芭比轴) spec sheet",
+          "url": "https://www.leobog.com/en/barbie-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-black-king-magnetic",
+      "name": "Black King Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "黑皇磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/obsidian-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Black King Switch (黑皇磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/obsidian-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 33gf and a bottom-out magnetic flux of 480±60Gs."
+    },
+    {
+      "id": "leobog-block-v3",
+      "name": "Block Switch V3",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "积木轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": 54,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/juggle-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Block Switch V3 (积木轴) spec sheet",
+          "url": "https://www.leobog.com/en/juggle-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Leobog calls it an advanced (early) tactile switch and lists an initial force of 42gf; the spec image names it 积木轴 without the V3."
+    },
+    {
+      "id": "leobog-blossom",
+      "name": "Blossom Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "花田轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 33,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/blossom-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Blossom Switch (花田轴) spec sheet",
+          "url": "https://www.leobog.com/en/blossom-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-chive-v2",
+      "name": "Chive Switch V2",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "韭黄轴V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 53,
+      "bottom_out_force_gf": 68,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/chive-switch-v2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Chive Switch V2 (韭黄轴V2) spec sheet",
+          "url": "https://www.leobog.com/en/chive-switch-v2/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-dragon-king-magnetic",
+      "name": "Dragon King Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "海皇磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/poseidon-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Dragon King Switch (海皇磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/poseidon-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 28gf and a bottom-out magnetic flux of 480±60Gs."
+    },
+    {
+      "id": "leobog-dream-sakura",
+      "name": "Dream Sakura",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "幻樱轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PA12",
+        "bottom": "PA12",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/dream-sakura/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Dream Sakura (幻樱轴) spec sheet",
+          "url": "https://www.leobog.com/en/dream-sakura/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Housing top and bottom are transparent PA12, per Leobog."
+    },
+    {
+      "id": "leobog-ice-crystal",
+      "name": "Ice Crystal Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "冰晶轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/ice-crystal-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Ice Crystal Switch (冰晶轴) spec sheet",
+          "url": "https://www.leobog.com/en/ice-crystal-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-ice-soul",
+      "name": "ICE Soul Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "冰魄轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.7,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/ice-soul-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: ICE Soul Switch (冰魄轴) spec sheet",
+          "url": "https://www.leobog.com/en/ice-soul-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Leobog calls it an advanced (early) tactile switch and lists an initial force of 49gf."
+    },
+    {
+      "id": "leobog-ice-vein",
+      "name": "Ice Vein Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "冰脉轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POK",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/ice-vein-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Ice Vein Switch (冰脉轴) spec sheet",
+          "url": "https://www.leobog.com/en/ice-vein-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The spec image on Leobog's Ice Vein page is captioned Nimbus V3 in its table, while its force graph is titled Ice Vein; values here come from that image."
+    },
+    {
+      "id": "leobog-ink-crystal-v3",
+      "name": "Ink Crystal Switch V3",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "墨晶轴V3"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 64,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/inky-crystal-switch-v3/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Ink Crystal Switch V3 (墨晶轴V3) spec sheet",
+          "url": "https://www.leobog.com/en/inky-crystal-switch-v3/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Leobog lists an initial force of 62gf."
+    },
+    {
+      "id": "leobog-jade-emperor-magnetic",
+      "name": "Jade Emperor Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "玉帝磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/jade-emperor-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Jade Emperor Switch (玉帝磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/jade-emperor-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 29gf and a bottom-out magnetic flux of 550±60Gs."
+    },
+    {
+      "id": "leobog-jade-king-magnetic",
+      "name": "Jade King Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "玉皇磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/jade-monarch-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Jade King Switch (玉皇磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/jade-monarch-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 30gf and a bottom-out magnetic flux of 480±60Gs."
+    },
+    {
+      "id": "leobog-jasper",
+      "name": "Jasper Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "碧玉轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 33,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/jade-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Jasper Switch (碧玉轴) spec sheet",
+          "url": "https://www.leobog.com/en/jade-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-lavender",
+      "name": "Lavender Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "烟紫轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/lavender-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Lavender Switch (烟紫轴) spec sheet",
+          "url": "https://www.leobog.com/en/lavender-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-meteor-magnetic",
+      "name": "Meteor Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "形意磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/meteor-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Meteor Switch (形意磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/meteor-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 33gf and a bottom-out magnetic flux of 480±60Gs."
+    },
+    {
+      "id": "leobog-nimbus-v3",
+      "name": "Nimbus Switch V3",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "灵动轴V3"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/nimbus-switch-v3/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Nimbus Switch V3 (灵动轴V3) spec sheet",
+          "url": "https://www.leobog.com/en/nimbus-switch-v3/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-pink-king-magnetic",
+      "name": "Pink King Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "粉皇磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/pink-emperor-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Pink King Switch (粉皇磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/pink-emperor-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 33gf and a bottom-out magnetic flux of 480±60Gs."
+    },
+    {
+      "id": "leobog-raindrop",
+      "name": "Raindrop Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "听雨轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/zephyr-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Raindrop Switch (听雨轴) spec sheet",
+          "url": "https://www.leobog.com/en/zephyr-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Leobog lists an initial force of 45gf and no separate operating force. The page URL calls it the Zephyr switch."
+    },
+    {
+      "id": "leobog-rambo",
+      "name": "Rambo Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "兰博轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/rambo-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Rambo Switch (兰博轴) spec sheet",
+          "url": "https://www.leobog.com/en/rambo-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-reaper",
+      "name": "Reaper Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "收割者轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/reaper-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Reaper Switch (收割者轴) spec sheet",
+          "url": "https://www.leobog.com/en/reaper-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-seiya",
+      "name": "Seiya Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "星矢轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/seiya-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Seiya Switch (星矢轴) spec sheet",
+          "url": "https://www.leobog.com/en/seiya-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-silent-cotton-candy",
+      "name": "Silent Cotton Candy",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "轻羽轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/silent-cotton-candy/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Silent Cotton Candy (轻羽轴) spec sheet",
+          "url": "https://www.leobog.com/en/silent-cotton-candy/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-silent-iris",
+      "name": "Silent Iris Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "鸢尾静音轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/silent-iris-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Silent Iris Switch (鸢尾静音轴) spec sheet",
+          "url": "https://www.leobog.com/en/silent-iris-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-space-golden",
+      "name": "Space Golden Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "太空金轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.7,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/space-golden-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Space Golden Switch (太空金轴) spec sheet",
+          "url": "https://www.leobog.com/en/space-golden-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "materials",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "leobog-wing-chun-magnetic",
+      "name": "Wing Chun Switch",
+      "maker": "leobog",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "咏春磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 49,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.leobog.com/en/wing-chun-magnetic-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Wing Chun Switch (咏春磁轴) spec sheet",
+          "url": "https://www.leobog.com/en/wing-chun-magnetic-switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: switch lineup",
+          "url": "https://www.leobog.com/en/switch/",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Leobog lists an initial force of 36gf and a bottom-out magnetic flux of 480±60Gs."
+    }
+  ]
+}

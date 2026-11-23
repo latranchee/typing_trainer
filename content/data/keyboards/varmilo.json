@@ -1,0 +1,795 @@
+{
+  "brand": {
+    "id": "varmilo",
+    "name": "Varmilo",
+    "country": "CN",
+    "founded": 2013,
+    "official_url": "https://varmilo.com/",
+    "focus": [
+      "enthusiast",
+      "office",
+      "gaming"
+    ],
+    "about": "Shenzhen keyboard brand founded in 2013 that makes its keyboards in its own factory, known for themed dye-sublimated keycap designs and its Minilo and magnetic-switch lines.",
+    "sources": [
+      {
+        "title": "Varmilo (archived): About us",
+        "url": "https://web.archive.org/web/20261009111317/https://varmilo.com/pages/about-us",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "varmilo-minilo65",
+      "brand": "varmilo",
+      "model": "Minilo65",
+      "aka": [
+        "Minilo 65%"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3400,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Kailh Prestige Silent",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "bottom",
+      "firmware": [],
+      "software": null,
+      "os": [
+        "mac",
+        "windows",
+        "android",
+        "ios"
+      ],
+      "price_usd": 120,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/minilo65",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-08-25): Minilo 65%",
+          "url": "https://web.archive.org/web/20260825190209/https://varmilo.com/products/minilo65",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo (archived 2026-09-19): Minilo 75% (states Minilo 65% is bottom mount)",
+          "url": "https://web.archive.org/web/20260919042246/https://varmilo.com/products/minilo75",
+          "kind": "official",
+          "backs": [
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: Minilo 65% (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable (pin count not stated); mode changes use shortcut keys instead of a physical switch. The store lists it as \"Minilo 65% - 50% off\" at the price recorded."
+    },
+    {
+      "id": "varmilo-minilo75",
+      "brand": "varmilo",
+      "model": "Minilo75",
+      "aka": [
+        "Minilo 75%"
+      ],
+      "status": "current",
+      "released": "2022",
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3400,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Kailh Prestige Silent",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "android"
+      ],
+      "price_usd": 143.87,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/minilo75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-09-19): Minilo 75%",
+          "url": "https://web.archive.org/web/20260919042246/https://varmilo.com/products/minilo75",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: Minilo 75% (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo (archived): About us (Minilo series released 2022)",
+          "url": "https://web.archive.org/web/20261009111317/https://varmilo.com/pages/about-us",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable (pin count not stated); ABS double-shot keycaps and a physical connection-mode switch."
+    },
+    {
+      "id": "varmilo-minilo75-he",
+      "brand": "varmilo",
+      "model": "Minilo75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Mag White",
+          "id": null
+        },
+        {
+          "name": "Huano Mag Marble",
+          "id": null
+        },
+        {
+          "name": "Gateron Mag Jade Pro",
+          "id": "gateron-magnetic-jade-pro"
+        },
+        {
+          "name": "TTC King of Mag RGB",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [],
+      "software": "HE Driver",
+      "os": [
+        "mac",
+        "windows"
+      ],
+      "price_usd": 140,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/minilo75-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-10-15): Minilo75 HE",
+          "url": "https://web.archive.org/web/20261015134358/https://varmilo.com/products/minilo75-he",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: Minilo75 HE (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired magnetic-switch board with a metal inlay frame; actuation range depends on the switch (0.01-3.40 mm on some options). Regular price shown; the store had it on sale."
+    },
+    {
+      "id": "varmilo-minilo75-pro",
+      "brand": "varmilo",
+      "model": "Minilo75 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Cherry Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Kailh Prestige Voice",
+          "id": null
+        },
+        {
+          "name": "Kailh Prestige Silent",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "mac",
+        "windows",
+        "android",
+        "ios"
+      ],
+      "price_usd": 145,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/minilo75-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-09-06): Minilo75 Pro",
+          "url": "https://web.archive.org/web/20260906090056/https://varmilo.com/products/minilo75-pro",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: Minilo75 Pro (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ISO boards ship in a Swedish layout with extra keycaps for other ISO languages; 3- and 5-pin switches fit."
+    },
+    {
+      "id": "varmilo-minilo98-pro",
+      "brand": "varmilo",
+      "model": "Minilo98 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Kailh Prestige Silent",
+          "id": null
+        },
+        {
+          "name": "Kailh Prestige Voice",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "mac",
+        "windows",
+        "android",
+        "ios"
+      ],
+      "price_usd": 155,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/minilo98-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-08-29): Minilo98 Pro",
+          "url": "https://web.archive.org/web/20260829180536/https://varmilo.com/products/minilo98-pro",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "battery_mah",
+            "case_material",
+            "mount",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo (archived 2026-09-06): Minilo75 Pro (comparison table: Minilo98 Pro 99 keys, QMK/VIA; 3/5-pin hot-swap)",
+          "url": "https://web.archive.org/web/20260906090056/https://varmilo.com/products/minilo75-pro",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "firmware",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: Minilo98 Pro (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable; the pin count is stated for the Minilo Pro line on the Minilo75 Pro page. ISO boards default to a Swedish layout."
+    },
+    {
+      "id": "varmilo-muse65-he",
+      "brand": "varmilo",
+      "model": "Muse65 HE",
+      "aka": [
+        "Muse65"
+      ],
+      "status": "current",
+      "released": "2024",
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "TTC King of Magnetic RGB",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade Pro",
+          "id": "gateron-magnetic-jade-pro"
+        },
+        {
+          "name": "Magnetic White",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "metal",
+      "mount": null,
+      "firmware": [],
+      "software": "VAHUB",
+      "os": [
+        "mac",
+        "windows"
+      ],
+      "price_usd": 155,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/muse65",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-08-01): Muse65 HE",
+          "url": "https://web.archive.org/web/20260801174950/https://varmilo.com/products/muse65",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "software",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: Muse65 HE (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo (archived): About us (Muse launched 2024)",
+          "url": "https://web.archive.org/web/20261009111317/https://varmilo.com/pages/about-us",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired magnetic-switch board in a full CNC metal case with an aluminum plate; the driver supports rapid trigger, DKS and SOCD. Regular price shown; the store had it on sale."
+    },
+    {
+      "id": "varmilo-va100",
+      "brand": "varmilo",
+      "model": "VA100",
+      "aka": [
+        "VA100 Sakura",
+        "VA100 Sea Melody",
+        "VA100 CMYK",
+        "VA100 Moonlight",
+        "VA100 Aurora",
+        "VA100 Dream of the Red Chamber",
+        "VA100 Hygge"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 105,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Kailh Prestige Silent",
+          "id": null
+        },
+        {
+          "name": "Kailh Prestige Voice",
+          "id": null
+        },
+        {
+          "name": "Prestige Silent Pro",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 133,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/va100-cmyk-moonlight",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-08-17): VA100 CMYK/Moonlight/Aurora",
+          "url": "https://web.archive.org/web/20260817211443/https://varmilo.com/products/va100-cmyk-moonlight",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "mount",
+            "firmware",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo (archived 2026-10-16): VA100 Dream of the Red Chamber",
+          "url": "https://web.archive.org/web/20261016082318/https://varmilo.com/products/va100-dream-of-the-red-chamber",
+          "kind": "official",
+          "backs": [
+            "case_material",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: VA100 CMYK/Moonlight/Aurora (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in several themed editions with the same specification; PCB leaf-spring gasket structure. The cheapest listed configuration (CMYK, Prestige Voice) was out of stock when read."
+    },
+    {
+      "id": "varmilo-va80",
+      "brand": "varmilo",
+      "model": "VA80",
+      "aka": [
+        "VA80 Hygge"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Kailh Prestige Voice",
+          "id": null
+        },
+        {
+          "name": "Kailh Prestige Silent",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 159,
+      "price_date": "2026-11-23",
+      "price_url": "https://varmilo.com/products.json?limit=250",
+      "official_url": "https://varmilo.com/products/va80-hygge",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo (archived 2026-08-16): VA80/100 Hygge",
+          "url": "https://web.archive.org/web/20260816162418/https://varmilo.com/products/va80-hygge",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "firmware",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Varmilo store: VA80/100 Hygge (variants and prices)",
+          "url": "https://varmilo.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable (pin count not stated on the VA80 page). The OS list is the one the brand gives for its QMK/VIA web driver. Regular price shown; the store had it on sale."
+    }
+  ]
+}

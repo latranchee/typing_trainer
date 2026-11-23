@@ -1,0 +1,671 @@
+{
+  "maker": {
+    "id": "zealpc",
+    "name": "ZealPC",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://zealpc.net/",
+    "about": "Switch and stabilizer brand behind the Zealio, Tealio, Zilent and Healio switches, most of them built by Gateron.",
+    "sources": [
+      {
+        "title": "ZealPC: Switches",
+        "url": "https://zealpc.net/collections/switches",
+        "kind": "official",
+        "backs": [
+          "switches",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy (genuine Zealios V2 / Tealios V2 are Gateron-made)",
+        "url": "https://www.theremingoat.com/blog/t1s",
+        "kind": "review",
+        "backs": [
+          "made_by"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "zealpc-clickiez",
+      "name": "Clickiez",
+      "maker": "zealpc",
+      "made_by": "gateron",
+      "family": null,
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2021-12",
+      "status": "current",
+      "official_url": "https://zealpc.net/products/clickiez",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/clickiez-switch-review",
+          "date": "2022-07-10",
+          "score": null,
+          "verdict": "Tactile and clicky modes impressed the reviewer with an Alps-like feel and sound; the linear mode is average; the price is steep."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ZealPC: Clickiez Switches (Clicky)",
+          "url": "https://zealpc.net/products/clickiez",
+          "kind": "official",
+          "backs": [
+            "type",
+            "released",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Zeal 3-in-1 Clickiez Switch Review",
+          "url": "https://www.theremingoat.com/blog/clickiez-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Converts between clicky, ultra-high tactile and linear by moving a second leaf. 40g version: 32g actuation, 73g peak; 75g version: 58g actuation, 95g peak."
+    },
+    {
+      "id": "zealpc-crystal",
+      "name": "Crystal",
+      "maker": "zealpc",
+      "made_by": "gateron",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "polished nylon"
+      },
+      "spring": "gold plated",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/crystal",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Crystal Switches (Tactile)",
+          "url": "https://zealpc.net/products/crystal",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "materials",
+            "spring",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Zeal's first fully clear switch, with a stem based on the Zealio V2; built on Gateron's CAP series design."
+    },
+    {
+      "id": "zealpc-pearlio",
+      "name": "Pearlio",
+      "maker": "zealpc",
+      "made_by": "gateron",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "UHMWPE"
+      },
+      "spring": "gold plated long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/pearlio",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Pearlio Switches (Linear)",
+          "url": "https://zealpc.net/products/pearlio",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "materials",
+            "spring",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Built on Gateron's CAP series design."
+    },
+    {
+      "id": "zealpc-healio-v2",
+      "name": "Healio V2",
+      "maker": "zealpc",
+      "made_by": null,
+      "family": "Healio",
+      "aka": [
+        "Healios V2"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/healio",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Healio V2 Switches (Silent Linear)",
+          "url": "https://zealpc.net/products/healio",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housing with a translucent orange silent stem; PCB mount."
+    },
+    {
+      "id": "zealpc-roselio",
+      "name": "Rosélio",
+      "maker": "zealpc",
+      "made_by": null,
+      "family": "Healio",
+      "aka": [
+        "Roselio"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/sakurio-roselio",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Sakurio / Rosélio Switches (Silent Linear)",
+          "url": "https://zealpc.net/products/sakurio-roselio",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent linear with a Pantone 189C stem."
+    },
+    {
+      "id": "zealpc-sakurio",
+      "name": "Sakurio",
+      "maker": "zealpc",
+      "made_by": null,
+      "family": "Healio",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/sakurio-roselio",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Sakurio / Rosélio Switches (Silent Linear)",
+          "url": "https://zealpc.net/products/sakurio-roselio",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent linear with a Pantone 1765C stem."
+    },
+    {
+      "id": "zealpc-tealio-v2",
+      "name": "Tealio V2",
+      "maker": "zealpc",
+      "made_by": "gateron",
+      "family": "Tealio",
+      "aka": [
+        "Tealios V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/tealio",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Tealio V2 Switches (Linear)",
+          "url": "https://zealpc.net/products/tealio",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy (genuine Zealios V2 / Tealios V2 are Gateron-made)",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Transparent housing with a light teal-blue stem; PCB mount."
+    },
+    {
+      "id": "zealpc-turquoise-tealio",
+      "name": "Turquoise Tealio",
+      "maker": "zealpc",
+      "made_by": null,
+      "family": "Tealio",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/turquoise-tealio",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Turquoise Tealio Switches (Linear)",
+          "url": "https://zealpc.net/products/turquoise-tealio",
+          "kind": "official",
+          "backs": [
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Boutique Collection Tealio with a revised bottom housing, in 63.5g or 65g bottom-out."
+    },
+    {
+      "id": "zealpc-zealio-v1-redux",
+      "name": "Zealio V1 Redux",
+      "maker": "zealpc",
+      "made_by": "gateron",
+      "family": "Zealio",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/zealio_v1_redux",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/zealio-v1-redux-switch-review",
+          "date": "2021-11-28",
+          "score": null,
+          "verdict": "Revives the original Zealio V1 mid-travel bump with less wobble, though spring ping and scratch remain."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ZealPC: Zealio V1 Redux Switches",
+          "url": "https://zealpc.net/products/zealio_v1_redux",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Zealio V1 Redux Switch Review",
+          "url": "https://www.theremingoat.com/blog/zealio-v1-redux-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Medium tactile with the bump mid-travel; 62g or 67g bottom-out; opaque nylon housing without an SMD LED cutout."
+    },
+    {
+      "id": "zealpc-zealio-v2",
+      "name": "Zealio V2",
+      "maker": "zealpc",
+      "made_by": "gateron",
+      "family": "Zealio",
+      "aka": [
+        "Zealios V2"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/zealio",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/gateron/zealio-v2-67g",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "ZealPC: Zealio V2 Switches (Tactile)",
+          "url": "https://zealpc.net/products/zealio",
+          "kind": "official",
+          "backs": [
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy (genuine Zealios V2 / Tealios V2 are Gateron-made)",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in 62g, 65g, 67g and 78g bottom-out weights; transparent PCB-mount housing with the bump at the very top. Zeal rates its springs at bottom-out force."
+    },
+    {
+      "id": "zealpc-aqua-zilent-v2",
+      "name": "Aqua Zilent V2",
+      "maker": "zealpc",
+      "made_by": null,
+      "family": "Zilent",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/aqua-zilent",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Aqua Zilent V2 Switches (Silent Tactile)",
+          "url": "https://zealpc.net/products/aqua-zilent",
+          "kind": "official",
+          "backs": [
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Boutique Collection recolor of the Zilent V2 in aqua housings, 62g or 67g bottom-out."
+    },
+    {
+      "id": "zealpc-zilent-v2",
+      "name": "Zilent V2",
+      "maker": "zealpc",
+      "made_by": null,
+      "family": "Zilent",
+      "aka": [
+        "Zilents V2"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://zealpc.net/products/zilent",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ZealPC: Zilent V2 Switches (Silent Tactile)",
+          "url": "https://zealpc.net/products/zilent",
+          "kind": "official",
+          "backs": [
+            "type",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent Zealio V2 in 62g, 65g, 67g and 78g bottom-out weights with a redesigned dampener. Zeal rates its springs at bottom-out force."
+    }
+  ]
+}

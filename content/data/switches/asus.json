@@ -1,0 +1,755 @@
+{
+  "maker": {
+    "id": "asus",
+    "name": "ASUS Republic of Gamers (ROG)",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+    "about": "Gaming brand of ASUS. ROG keyboards use its own NX mechanical, RX optical and HFX Hall effect switches.",
+    "sources": [
+      {
+        "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+        "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "asus-rog-hfx-magnetic",
+      "name": "ROG HFX Magnetic",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG HFX",
+      "aka": [
+        "HFX Magnetic",
+        "HFX V1"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": [
+        0.1,
+        4.0
+      ],
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "actuation_range_mm",
+            "factory_lubed",
+            "materials",
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First ROG Hall effect switch, with a one-piece walled stem and a side-mounted magnet (initial force 40 gf); used in the Falchion Ace HFX. ROG gives no footprint."
+    },
+    {
+      "id": "asus-rog-hfx-v2-magnetic",
+      "name": "ROG HFX V2 Magnetic",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG HFX",
+      "aka": [
+        "HFX V2"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 49,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": [
+        0.1,
+        3.5
+      ],
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "actuation_range_mm",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "materials",
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Snap-fit cross stem with a larger vertical magnet (initial force 32 gf), adjustable in 0.01 mm steps; used in the Falcata, Azoth 96 HE and Falchion Ace 75 HE."
+    },
+    {
+      "id": "asus-rog-hfx-v2x-magnetic",
+      "name": "ROG HFX V2X Magnetic",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG HFX",
+      "aka": [
+        "HFX V2X"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": [
+        0.1,
+        3.5
+      ],
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "materials",
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hollow-square stem with an X-stabilizer (initial force 30 gf) that takes plunger and cross-shaped keycaps; used in the Falchion Ace 75 HE."
+    },
+    {
+      "id": "asus-rog-nx-blue",
+      "name": "ROG NX Blue",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG NX",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": 2.3,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "footprint",
+            "tactile_force_gf",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "materials",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky with a 16% click ratio and about 0.1 mm between actuation and reset. Hot-swappable in the Azoth; the Strix Flare II Animate takes \"ROG NX/Cherry\" switches in the same sockets."
+    },
+    {
+      "id": "asus-rog-nx-brown",
+      "name": "ROG NX Brown",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG NX",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "footprint",
+            "tactile_force_gf",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "materials",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile with a 33% click ratio for a pronounced bump. Hot-swappable in the Azoth; the Strix Flare II Animate takes \"ROG NX/Cherry\" switches in the same sockets."
+    },
+    {
+      "id": "asus-rog-nx-red",
+      "name": "ROG NX Red",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG NX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 70,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "footprint",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "materials",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lubricated linear with gold-plated crosspoint contacts; initial force 40 gf, tuned to actuate and reset at the same point. Hot-swappable in the Azoth; the Strix Flare II Animate takes \"ROG NX/Cherry\" switches in the same sockets."
+    },
+    {
+      "id": "asus-rog-nx-snow",
+      "name": "ROG NX Snow",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG NX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "footprint",
+            "bottom_out_force_gf",
+            "factory_lubed",
+            "materials",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Factory-lubed walled-stem linear tuned for a \"thocky\" sound; initial force 40 gf."
+    },
+    {
+      "id": "asus-rog-nx-snow-v2",
+      "name": "ROG NX Snow V2",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG NX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "type",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Second version of the NX Snow, listed with the same forces in ROG's comparison table."
+    },
+    {
+      "id": "asus-rog-nx-storm",
+      "name": "ROG NX Storm",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG NX",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "footprint",
+            "tactile_force_gf",
+            "factory_lubed",
+            "materials",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Factory-lubed walled-stem clicky tuned for a \"clacky\" sound, 25% click ratio."
+    },
+    {
+      "id": "asus-rog-nx-storm-v2",
+      "name": "ROG NX Storm V2",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG NX",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "type",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Second version of the NX Storm, listed with the same forces and 25% click ratio in ROG's comparison table."
+    },
+    {
+      "id": "asus-rog-rx-blue",
+      "name": "ROG RX Blue",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG RX",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 65,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "tactile_force_gf",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky optical switch with a 31% click ratio."
+    },
+    {
+      "id": "asus-rog-rx-blue-low-profile",
+      "name": "ROG RX Blue Low-Profile",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG RX",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "tactile_force_gf",
+            "profile",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile clicky optical switch with an 18% click ratio, used in the Falchion RX Low Profile."
+    },
+    {
+      "id": "asus-rog-rx-red",
+      "name": "ROG RX Red",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG RX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First ROG optical switch, with a hollow-square stem, four corner latches and an X-stabilizer; initial force 40 gf. Used in the Strix Scope RX and Claymore II."
+    },
+    {
+      "id": "asus-rog-rx-red-low-profile",
+      "name": "ROG RX Red Low-Profile",
+      "maker": "asus",
+      "made_by": null,
+      "family": "ROG RX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ROG: Keyboard Switches, Switch to a Game Changer",
+          "url": "https://rog.asus.com/us/content/rog-keyboard-switch/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "type",
+            "bottom_out_force_gf",
+            "profile",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile optical linear used in the Falchion RX Low Profile; initial force 40 gf."
+    }
+  ]
+}

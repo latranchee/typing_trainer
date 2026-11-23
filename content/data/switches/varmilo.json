@@ -1,0 +1,1455 @@
+{
+  "maker": {
+    "id": "varmilo",
+    "name": "Varmilo",
+    "role": "brand",
+    "country": "CN",
+    "founded": 2013,
+    "official_url": "https://varmilo.com/pages/switches-parameter",
+    "about": "Shenzhen keyboard brand founded in 2013. It makes its own electrostatic capacitive (EC) switches and L mechanical switches tuned to match them.",
+    "sources": [
+      {
+        "title": "Varmilo: Switches Parameter",
+        "url": "https://varmilo.com/pages/switches-parameter",
+        "kind": "official",
+        "backs": [
+          "country",
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "varmilo-ec-v2-daisy",
+      "name": "EC V2 Daisy",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Daisy V2",
+        "EC Daisy V2"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light linear, lighter than a Cherry Red. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v2-iris",
+      "name": "EC V2 Iris",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Iris V2",
+        "EC Iris V2"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "tactile_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile that Varmilo compares to a Holy Panda. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v2-ivy",
+      "name": "EC V2 Ivy",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Ivy V2",
+        "EC Ivy V2"
+      ],
+      "type": "clicky",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.3,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "tactile_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky switch that Varmilo compares to a Cherry Blue. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v2-jasmine",
+      "name": "EC V2 Jasmine",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Jasmine V2",
+        "EC Jasmine V2"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-throw speed linear that Varmilo compares to a Cherry Silver. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v2-moxa",
+      "name": "EC V2 Moxa",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Moxa V2",
+        "EC Moxa V2"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Moderate linear that Varmilo calls similar to the Sakura. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v2-rose",
+      "name": "EC V2 Rose",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Rose V2",
+        "EC Rose V2"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavier linear, a little heavier than a Cherry Red. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v2-sakura",
+      "name": "EC V2 Sakura",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Sakura V2",
+        "EC Sakura V2"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "date": "2020-10-29",
+          "score": "4/5 (MA108M Moonlight keyboard)",
+          "verdict": "Smooth, light linear electrostatic capacitive switch with little keycap wobble; felt better for typing than Cherry MX Red, though louder on the upstroke."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Moderate linear that Varmilo compares to a Cherry Red. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only. Tom's Hardware gives 60 g at bottom-out."
+    },
+    {
+      "id": "varmilo-ec-v2-silent-daisy",
+      "name": "EC V2 Silent Daisy",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Silent Daisy V2",
+        "EC Silent Daisy V2"
+      ],
+      "type": "silent-linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silenced version of the light Daisy. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v2-violet",
+      "name": "EC V2 Violet",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V2",
+      "aka": [
+        "Varmilo EC Violet V2",
+        "EC Violet V2"
+      ],
+      "type": "tactile",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": 52,
+      "pre_travel_mm": 2.1,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "tactile_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Varmilo MA108M Moonlight Review, Smooth EC Sakura V2 Switches (2020-10-29)",
+          "url": "https://www.tomshardware.com/reviews/varmilo-ma108m-moonlight",
+          "kind": "review",
+          "backs": [
+            "keycap_mount",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile that Varmilo compares to a Cherry Brown. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v3-daisy",
+      "name": "EC V3 Daisy",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V3",
+      "aka": [
+        "Varmilo EC Daisy V3"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2024-10",
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Third-generation EC switch, launched October 2024 with hot-swap support and a web driver; same feel as the EC V2 Daisy. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v3-jasmine",
+      "name": "EC V3 Jasmine",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V3",
+      "aka": [
+        "Varmilo EC Jasmine V3"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2024-10",
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Third-generation EC switch, launched October 2024 with hot-swap support and a web driver; same feel as the EC V2 Jasmine. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v3-rose",
+      "name": "EC V3 Rose",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V3",
+      "aka": [
+        "Varmilo EC Rose V3"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2024-10",
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Third-generation EC switch, launched October 2024 with hot-swap support and a web driver; same feel as the EC V2 Rose. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-ec-v3-sakura",
+      "name": "EC V3 Sakura",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "EC V3",
+      "aka": [
+        "Varmilo EC Sakura V3"
+      ],
+      "type": "linear",
+      "sensing": "capacitive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2024-10",
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Third-generation EC switch, launched October 2024 with hot-swap support and a web driver; same feel as the EC V2 Sakura. Electrostatic capacitive: a spring and plastic slider like a Cherry switch, sensed by capacitance with no metal contact. Fits Varmilo EC boards only."
+    },
+    {
+      "id": "varmilo-daisy-l",
+      "name": "Daisy L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Daisy L"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light linear with a long-pole stem. Contact-leaf mechanical switch for hot-swap boards, made to feel like the matching Varmilo EC switch."
+    },
+    {
+      "id": "varmilo-iris-l",
+      "name": "Iris L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Iris L"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "tactile_force_gf",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile in the Holy Panda style. Contact-leaf mechanical switch for hot-swap boards, made to feel like the matching Varmilo EC switch."
+    },
+    {
+      "id": "varmilo-ivy-l",
+      "name": "Ivy L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Ivy L"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.3,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "tactile_force_gf",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky. Contact-leaf mechanical switch for hot-swap boards, made to feel like the matching Varmilo EC switch."
+    },
+    {
+      "id": "varmilo-jasmine-l",
+      "name": "Jasmine L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Jasmine L"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-throw speed linear. Contact-leaf mechanical switch for hot-swap boards, made to feel like the matching Varmilo EC switch."
+    },
+    {
+      "id": "varmilo-rose-l",
+      "name": "Rose L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Rose L"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 75,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy linear. Contact-leaf mechanical switch for hot-swap boards, made to feel like the matching Varmilo EC switch."
+    },
+    {
+      "id": "varmilo-sakura-l",
+      "name": "Sakura L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Sakura L"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Moderate linear. Contact-leaf mechanical switch for hot-swap boards, made to feel like the matching Varmilo EC switch."
+    },
+    {
+      "id": "varmilo-silent-daisy-l",
+      "name": "Silent Daisy L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Silent Daisy L"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "type",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silenced Daisy L; Varmilo calls it the same as the Daisy L but quieter and gives no separate figures."
+    },
+    {
+      "id": "varmilo-silent-jasmine-l",
+      "name": "Silent Jasmine L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Silent Jasmine L"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "type",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silenced Jasmine L; Varmilo calls it the same as the Jasmine L but quieter and gives no separate figures."
+    },
+    {
+      "id": "varmilo-silent-rose-l",
+      "name": "Silent Rose L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Silent Rose L"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "type",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silenced Rose L; Varmilo calls it the same as the Rose L but quieter and gives no separate figures."
+    },
+    {
+      "id": "varmilo-silent-sakura-l",
+      "name": "Silent Sakura L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Silent Sakura L"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "type",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silenced Sakura L; Varmilo calls it the same as the Sakura L but quieter and gives no separate figures."
+    },
+    {
+      "id": "varmilo-silent-violet-l",
+      "name": "Silent Violet L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Silent Violet L"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "type",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silenced Violet L; Varmilo calls it the same as the Violet L but quieter and gives no separate figures."
+    },
+    {
+      "id": "varmilo-violet-l",
+      "name": "Violet L",
+      "maker": "varmilo",
+      "made_by": null,
+      "family": "L",
+      "aka": [
+        "Varmilo Violet L"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": 52,
+      "pre_travel_mm": 2.1,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://varmilo.com/pages/switches-parameter",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Varmilo: Switches Parameter",
+          "url": "https://varmilo.com/pages/switches-parameter",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "type",
+            "notes",
+            "tactile_force_gf",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile. Contact-leaf mechanical switch for hot-swap boards, made to feel like the matching Varmilo EC switch."
+    }
+  ]
+}

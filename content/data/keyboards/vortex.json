@@ -1,0 +1,1314 @@
+{
+  "brand": {
+    "id": "vortex",
+    "name": "Vortex",
+    "country": "TW",
+    "founded": null,
+    "official_url": "https://www.vortexgear.tw/",
+    "focus": [
+      "enthusiast"
+    ],
+    "about": "Vortex (Vortexgear) is a Taiwanese keyboard brand; its store sells the Pok3r, Multix and M0110 lines, Model M-inspired boards and custom kits, priced in TWD.",
+    "sources": [
+      {
+        "title": "Vortex store home (Taiwan)",
+        "url": "https://www.vortexgear.tw/",
+        "kind": "official",
+        "backs": [
+          "lineup",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "vortex-core-plus",
+      "brand": "vortex",
+      "model": "Core Plus",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "40",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Red",
+          "id": null
+        },
+        {
+          "name": "Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/coreplus",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Core Plus",
+          "url": "https://www.vortexgear.tw/products/coreplus",
+          "kind": "official",
+          "backs": [
+            "size",
+            "low_profile",
+            "connectivity",
+            "hot_swap",
+            "firmware",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Vortex 40% low-profile wireless board with a CNC aluminum bottom case, sold assembled only. Switch maker and socket type not named; no US store, Taiwan store prices in TWD."
+    },
+    {
+      "id": "vortex-hellcat",
+      "brand": "vortex",
+      "model": "Hellcat",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "tray",
+      "firmware": [
+        "qmk",
+        "via",
+        "vial"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/hellcat-kit",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Hellcat",
+          "url": "https://www.vortexgear.tw/products/hellcat-kit",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired-only kit with PCB set, MiTo-designed keycaps and screw-in stabilizers; switches not included. Also sold assembled. No US store."
+    },
+    {
+      "id": "vortex-m0110-qmk",
+      "brand": "vortex",
+      "model": "M0110 QMK/VIA/Vial",
+      "aka": [
+        "M0110 QMK/VIA/Vial 版本"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Milky",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron G Pro Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Red",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Yellow",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Retro White",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Silver",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via",
+        "vial"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/m0110-qmk-via-vial-version",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: M0110 QMK/VIA/Vial 版本",
+          "url": "https://www.vortexgear.tw/products/m0110-qmk-via-vial-version",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired version on a hot-swap PCB taking 3- and 5-pin switches, FR4 plate. Connectivity read as wired from the page. No US store."
+    },
+    {
+      "id": "vortex-m0110",
+      "brand": "vortex",
+      "model": "M0110 Tri-mode",
+      "aka": [
+        "M0110 三模版本"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Milky",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron G Pro Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Red",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Yellow",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Retro White",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Silver",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Vortexgear GUI",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/m0110-triple-mode-version",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: M0110 三模版本",
+          "url": "https://www.vortexgear.tw/products/m0110-triple-mode-version",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "mount",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in an HHKB-style layout or with a 6.25u spacebar; ANSI US/Chinese and ISO UK/DE. Not VIA or QMK; runs on two AA batteries. Hot-swap not stated. No US store."
+    },
+    {
+      "id": "vortex-m0110a",
+      "brand": "vortex",
+      "model": "M0110A",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/m0110a-kit",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: M0110A",
+          "url": "https://www.vortexgear.tw/products/m0110a-kit",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Function-row-less 78-key (ANSI) / 80-key (ISO) kit, wired only; stabilizers, switches and cable not included. An M0110A-1800 kit and assembled versions are also sold. No US store."
+    },
+    {
+      "id": "vortex-model-m-65",
+      "brand": "vortex",
+      "model": "Model M 65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Gateron G Pro Brown 3.0",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro Yellow 3.0",
+          "id": "gateron-g-pro-3-0-yellow"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Milky (White)",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": null
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/model-m-65",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Model M 65",
+          "url": "https://www.vortexgear.tw/products/model-m-65",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "mount",
+            "firmware",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PC plate with stack/gasket mount; wireless runs on two AAA batteries. Pin count not stated. Also sold as a barebone. No US store."
+    },
+    {
+      "id": "vortex-model-m-ssk-kit",
+      "brand": "vortex",
+      "model": "Model M SSK",
+      "aka": [
+        "Vortex Model M SSK"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via",
+        "vial"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/model-m-1",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Vortex Model M SSK",
+          "url": "https://www.vortexgear.tw/products/model-m-1",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "CNC aluminum kit with FR4 plate and hot-swap PCB, WK (6.25u or 7u) or WKL; a solderable PCB adds stepped Caps Lock and Tsangan. Pin count not stated; connection read as wired. No US store."
+    },
+    {
+      "id": "vortex-model-m-ssk-tri-mode",
+      "brand": "vortex",
+      "model": "Model M SSK Tri-mode",
+      "aka": [
+        "Model M SSK 三模"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Gateron G Pro Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Yellow",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Silver",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Retro White",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Milky",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/model-m-ssk-wktkl",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Model M SSK 三模 WK(TKL)",
+          "url": "https://www.vortexgear.tw/products/model-m-ssk-wktkl",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Vortex: Model M SSK 三模 WKL",
+          "url": "https://www.vortexgear.tw/products/model-m-ssk-tklwk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Retro beige plastic case, WK or WKL bottom row, pairs with 3 Bluetooth devices and one 2.4GHz receiver. Pin count not stated. Barebone version sold too. No US store."
+    },
+    {
+      "id": "vortex-multix-104",
+      "brand": "vortex",
+      "model": "Multix 104 VIA V2",
+      "aka": [
+        "Multix 104"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Vortex 200MT",
+          "id": null
+        },
+        {
+          "name": "Vortex 200C",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Yellow",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Silver",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Retro White",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Milky",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": null
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "stack",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/multix-104-via",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Multix 104 VIA V2",
+          "url": "https://www.vortexgear.tw/products/multix-104-via",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "FR-4 plate, Gateron hot-swap sockets for 3- and 5-pin switches; wireless runs on two AA batteries. ISO sold only as a barebone. No US store."
+    },
+    {
+      "id": "vortex-multix-tkl",
+      "brand": "vortex",
+      "model": "Multix TKL VIA",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Gateron G Pro Brown 3.0",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro Yellow 3.0",
+          "id": "gateron-g-pro-3-0-yellow"
+        },
+        {
+          "name": "Gateron G Pro Silver 3.0",
+          "id": "gateron-g-pro-3-0-silver"
+        },
+        {
+          "name": "Gateron G Pro Retro White 3.0",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Milky",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": null
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "stack",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/multix-tkl-via%E7%84%A1%E7%B7%9A%E6%A9%9F%E6%A2%B0%E5%BC%8F%E9%8D%B5%E7%9B%A4",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Multix TKL VIA",
+          "url": "https://www.vortexgear.tw/products/multix-tkl-via%E7%84%A1%E7%B7%9A%E6%A9%9F%E6%A2%B0%E5%BC%8F%E9%8D%B5%E7%9B%A4",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "80% layout, steel plate with stack mount, Gateron sockets for 3- and 5-pin switches; wireless runs on two AAA batteries. No US store."
+    },
+    {
+      "id": "vortex-pc66",
+      "brand": "vortex",
+      "model": "PC66",
+      "aka": [
+        "PC66 (68 鍵)"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Milky",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron G Pro Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Silver",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Retro White",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Yellow",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Vortexgear GUI",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/pc-66-68-key",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: PC66 (68 鍵)",
+          "url": "https://www.vortexgear.tw/products/pc-66-68-key",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "South-facing hot-swap PCB, pin count not stated; wireless runs on two AAA batteries. A 66-key version and a wired QMK/VIA/Vial PC66 (sold out) also exist. No US store."
+    },
+    {
+      "id": "vortex-pok3r-rgb",
+      "brand": "vortex",
+      "model": "The New Pok3r RGB",
+      "aka": [
+        "Pok3r RGB"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry RGB MX Brown",
+          "id": null
+        },
+        {
+          "name": "Cherry RGB MX Red",
+          "id": null
+        },
+        {
+          "name": "Cherry RGB MX Blue",
+          "id": null
+        },
+        {
+          "name": "Cherry RGB MX Silent Black",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/the-new-pok3r-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: The New Pok3r RGB",
+          "url": "https://www.vortexgear.tw/products/the-new-pok3r-rgb",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ANSI, ISO Nordic and ISO German; USB-C. Sold out on 2026-11-23. No US store."
+    },
+    {
+      "id": "vortex-type-v2",
+      "brand": "vortex",
+      "model": "TYPE V2",
+      "aka": [
+        "TYPE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Gateron G Pro 3.0 Brown",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro 3.0 Yellow",
+          "id": "gateron-g-pro-3-0-yellow"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/type",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: TYPE V2",
+          "url": "https://www.vortexgear.tw/products/type",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Entry full-size board with numpad, built-in lithium battery, PBT double-shot keycaps; on-board programming only (no software). Pin count not stated. No US store."
+    },
+    {
+      "id": "vortex-10",
+      "brand": "vortex",
+      "model": "Vortex 10",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Cherry MX RGB Blue",
+          "id": null
+        },
+        {
+          "name": "Cherry MX RGB Red",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron G Pro Yellow",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.vortexgear.tw/products/vortex-10",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Vortex: Vortex 10",
+          "url": "https://www.vortexgear.tw/products/vortex-10",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact wired board, 29 x 10.5 cm; ANSI US, ISO German and ISO Finnish; on-board programming. Pin count not stated. Sold out on 2026-11-23. No US store."
+    }
+  ]
+}

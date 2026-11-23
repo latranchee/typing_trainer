@@ -1,0 +1,243 @@
+{
+  "maker": {
+    "id": "adomax",
+    "name": "Adomax",
+    "role": "manufacturer",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "about": "Maker of the Flaretech optical switches. It built the analog Lens B version with Wooting for the Wooting One and Two.",
+    "sources": [
+      {
+        "title": "Wooting: Flaretech, the optical keyboard switch (2016-05-02, updated for the Linear80)",
+        "url": "https://wooting.io/post/flaretech-the-optical-keyboard-switch",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Deskthority wiki: Adomax Flaretech",
+        "url": "https://deskthority.net/wiki/Adomax_Flaretech",
+        "kind": "reference",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "adomax-flaretech-blue",
+      "name": "Flaretech Clicky55 Blue",
+      "maker": "adomax",
+      "made_by": null,
+      "family": "Flaretech",
+      "aka": [
+        "Flaretech Blue",
+        "Clicky55"
+      ],
+      "type": "clicky",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": [
+        1.5,
+        3.6
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wooting: Flaretech, the optical keyboard switch (2016-05-02, updated for the Linear80)",
+          "url": "https://wooting.io/post/flaretech-the-optical-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Adomax Flaretech",
+          "url": "https://deskthority.net/wiki/Adomax_Flaretech",
+          "kind": "reference",
+          "backs": [
+            "light_pipe",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Clicky Flaretech switch with a Cherry MX Blue style inner slider and click leaf; the click comes at 1.8 mm down and 0.5 mm on the way back. On Wooting boards the Lens B version reads analog travel, so actuation is set between 1.5 and 3.6 mm (Tom's Hardware lists 1.6 to 3.6 mm). The switch holds no electronics: the PCB carries the infrared sensor and the LED, whose light runs up a light guide. It fits only Flaretech sockets."
+    },
+    {
+      "id": "adomax-flaretech-red",
+      "name": "Flaretech Linear55 Red",
+      "maker": "adomax",
+      "made_by": null,
+      "family": "Flaretech",
+      "aka": [
+        "Flaretech Red",
+        "Linear55"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": [
+        1.5,
+        3.6
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wooting: Flaretech, the optical keyboard switch (2016-05-02, updated for the Linear80)",
+          "url": "https://wooting.io/post/flaretech-the-optical-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "footprint",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Adomax Flaretech",
+          "url": "https://deskthority.net/wiki/Adomax_Flaretech",
+          "kind": "reference",
+          "backs": [
+            "light_pipe",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Wooting One Analog Mechanical Keyboard Review, switches",
+          "url": "https://www.tomshardware.com/reviews/wooting-one-analog-mechanical-keyboard,5124-2.html",
+          "kind": "review",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Linear Flaretech switch fitted to the Wooting One and Two. On Wooting boards the Lens B version reads analog travel, so actuation is set between 1.5 and 3.6 mm (Tom's Hardware lists 1.6 to 3.6 mm). The switch holds no electronics: the PCB carries the infrared sensor and the LED, whose light runs up a light guide. It fits only Flaretech sockets."
+    },
+    {
+      "id": "adomax-flaretech-black",
+      "name": "Flaretech Linear80 Black",
+      "maker": "adomax",
+      "made_by": null,
+      "family": "Flaretech",
+      "aka": [
+        "Flaretech Black",
+        "Linear80"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 80,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": [
+        1.5,
+        3.6
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": "2018",
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wooting: Flaretech, the optical keyboard switch (2016-05-02, updated for the Linear80)",
+          "url": "https://wooting.io/post/flaretech-the-optical-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "keycap_mount",
+            "footprint",
+            "released",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Adomax Flaretech",
+          "url": "https://deskthority.net/wiki/Adomax_Flaretech",
+          "kind": "reference",
+          "backs": [
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy linear Flaretech switch, available from November 2018. On Wooting boards the Lens B version reads analog travel, so actuation is set between 1.5 and 3.6 mm (Tom's Hardware lists 1.6 to 3.6 mm). The switch holds no electronics: the PCB carries the infrared sensor and the LED, whose light runs up a light guide. It fits only Flaretech sockets."
+    }
+  ]
+}

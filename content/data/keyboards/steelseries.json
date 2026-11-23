@@ -1,0 +1,1095 @@
+{
+  "brand": {
+    "id": "steelseries",
+    "name": "SteelSeries",
+    "country": "DK",
+    "founded": 2001,
+    "official_url": "https://steelseries.com/",
+    "focus": [
+      "gaming"
+    ],
+    "about": "Danish gaming peripheral maker founded in 2001; its Apex Pro keyboards use adjustable OmniPoint Hall-effect switches.",
+    "sources": [
+      {
+        "title": "Wikipedia: SteelSeries",
+        "url": "https://en.wikipedia.org/wiki/SteelSeries",
+        "kind": "reference",
+        "backs": [
+          "country",
+          "founded"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "SteelSeries US store: gaming keyboards",
+        "url": "https://steelseries.com/gaming-keyboards",
+        "kind": "official",
+        "backs": [
+          "status"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "steelseries-apex-7",
+      "brand": "steelseries",
+      "model": "Apex 7",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "SteelSeries Red QX2 Mechanical",
+          "id": null
+        },
+        {
+          "name": "SteelSeries Brown QX2 Mechanical",
+          "id": null
+        },
+        {
+          "name": "SteelSeries Blue QX2 Mechanical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aircraft grade aluminum alloy frame",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-7?switchType=red-qx2-mechanical&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-7?switchType=red-qx2-mechanical&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex 7 (Red Switch)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-7?switchType=red-qx2-mechanical&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex 7 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-7?keyboardSize=fullSize&switchType=red-qx2-mechanical&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "OLED smart display; 2 mm actuation. Red, Brown or Blue QX2 switches. Price is the regular US price in the page's product data; the page showed a promotional price of $119.99 on 2026-11-23."
+    },
+    {
+      "id": "steelseries-apex-7-tkl",
+      "brand": "steelseries",
+      "model": "Apex 7 TKL",
+      "aka": [
+        "Apex 7 TKL Ghost"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "SteelSeries Red QX2 Mechanical",
+          "id": null
+        },
+        {
+          "name": "SteelSeries Blue QX2 Mechanical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aircraft grade aluminum alloy frame",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-7?switchType=red-qx2-mechanical&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/steelseries/apex-7-tkl",
+          "date": "2020-01-20",
+          "score": null,
+          "verdict": "TKL gaming keyboard with many features, full RGB and superb companion software."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex 7 (variant list: Apex 7 TKL Red and Blue Switch)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-7?switchType=red-qx2-mechanical&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex 7 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-7?keyboardSize=fullSize&switchType=red-qx2-mechanical&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TKL variants listed on the Apex 7 page; price not shown for them on the page read."
+    },
+    {
+      "id": "steelseries-apex-9-mini",
+      "brand": "steelseries",
+      "model": "Apex 9 Mini",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "optical",
+      "switches": [
+        {
+          "name": "SteelSeries Linear OptiPoint Optical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-9?color=black&keyboardSize=mini&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-9?color=black&keyboardSize=mini&keyboardLanguage=english",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex 9 Mini",
+          "url": "https://steelseries.com/gaming-keyboards/apex-9?color=black&keyboardSize=mini&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries: Apex 9 TKL page (swappable switches)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-9?color=black&keyboardSize=tkl&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex 9 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-9?keyboardSize=tkl&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Two preset actuation points (1.0 or 1.5 mm). Detachable USB-C."
+    },
+    {
+      "id": "steelseries-apex-9-tkl",
+      "brand": "steelseries",
+      "model": "Apex 9 TKL",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "optical",
+      "switches": [
+        {
+          "name": "SteelSeries Linear OptiPoint Optical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-9?color=black&keyboardSize=tkl&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-9?color=black&keyboardSize=tkl&keyboardLanguage=english",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex 9 TKL",
+          "url": "https://steelseries.com/gaming-keyboards/apex-9?color=black&keyboardSize=tkl&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "adjustable_actuation",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex 9 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-9?keyboardSize=tkl&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Two preset actuation points (1.0 or 1.5 mm); 'fully swappable' optical switches. Detachable USB-C."
+    },
+    {
+      "id": "steelseries-apex-pro",
+      "brand": "steelseries",
+      "model": "Apex Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/steelseries/apex-pro",
+          "date": "2020-01-20",
+          "score": null,
+          "verdict": "Outstanding, versatile gaming keyboard whose actuation distance can be changed."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro (variant list: Apex Pro US, full size)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: SteelSeries Apex Pro review",
+          "url": "https://www.rtings.com/keyboard/reviews/steelseries/apex-pro",
+          "kind": "review",
+          "backs": [
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro?keyboardSize=mini&connectivityType=wired&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Original full-size Apex Pro, still a variant on the Apex Pro page; its switch name and price were not shown on the page read."
+    },
+    {
+      "id": "steelseries-apex-pro-gen-3",
+      "brand": "steelseries",
+      "model": "Apex Pro Gen 3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 259.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/steelseries/apex-pro-gen-3",
+          "date": "2024-11-18",
+          "score": null,
+          "verdict": "Full-size Apex Pro with OmniPoint Hall-effect switches and adjustable actuation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro Gen 3 (full size, wired)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=fullSize&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro Gen 3 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro-gen-3?keyboardSize=tkl&connectivityType=wired&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 4.0 mm; Rapid Trigger, Rapid Tap and Protection Mode. Price is the regular US price in the page's product data; the page showed a promotional price of $194.99 on 2026-11-23."
+    },
+    {
+      "id": "steelseries-apex-pro-mini",
+      "brand": "steelseries",
+      "model": "Apex Pro Mini",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 2.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-pro?connectivityType=wired&keyboardSize=mini&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro?connectivityType=wired&keyboardSize=mini&keyboardLanguage=english",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/steelseries/apex-pro-mini",
+          "date": "2022-08-17",
+          "score": null,
+          "verdict": "Compact 60% version of the Apex Pro with analog Hall-effect switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro Mini (wired)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro?connectivityType=wired&keyboardSize=mini&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro?keyboardSize=mini&connectivityType=wired&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Detachable USB-C. Price is the regular US price in the page's product data; the page showed a promotional price of $125.99 on 2026-11-23."
+    },
+    {
+      "id": "steelseries-apex-pro-mini-gen-3",
+      "brand": "steelseries",
+      "model": "Apex Pro Mini Gen 3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 219.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=mini&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=mini&keyboardLanguage=english",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro Mini Gen 3 (wired)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=mini&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro Gen 3 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro-gen-3?keyboardSize=tkl&connectivityType=wired&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Price is the regular US price in the page's product data; the page showed a promotional price of $158.99 on 2026-11-23."
+    },
+    {
+      "id": "steelseries-apex-pro-mini-wireless",
+      "brand": "steelseries",
+      "model": "Apex Pro Mini Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 2.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 239.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-pro?connectivityType=wireless&keyboardSize=mini&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro?connectivityType=wireless&keyboardSize=mini&keyboardLanguage=english",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/steelseries/apex-pro-mini-wireless",
+          "date": "2022-08-12",
+          "score": null,
+          "verdict": "Compact wireless Apex Pro that keeps the adjustable Hall-effect switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro Mini Wireless",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro?connectivityType=wireless&keyboardSize=mini&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro?keyboardSize=mini&connectivityType=wired&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Battery 30 h (2.4 GHz) / 40 h (Bluetooth). Price is the regular US price in the page's product data; the page showed a promotional price of $119.99 on 2026-11-23."
+    },
+    {
+      "id": "steelseries-apex-pro-tkl-2023",
+      "brand": "steelseries",
+      "model": "Apex Pro TKL (2023)",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 2.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro-2023?connectivityType=wireless&keyboardLanguage=english",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/steelseries/apex-pro-tkl-2023",
+          "date": "2023-03-09",
+          "score": null,
+          "verdict": "Wired TKL Apex Pro with Hall-effect switches and adjustable actuation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro - 2023 (variant list)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro-2023?connectivityType=wireless&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro - 2023 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro-2023?keyboardLanguage=english&connectivityType=wireless",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired version, listed on the Apex Pro 2023 page; its own price was not shown on the page read."
+    },
+    {
+      "id": "steelseries-apex-pro-tkl-gen-3",
+      "brand": "steelseries",
+      "model": "Apex Pro TKL Gen 3",
+      "aka": [
+        "Apex Pro TKL Gen 3 White",
+        "Apex Pro TKL Gen 3 Cyber",
+        "Apex Pro TKL Gen 3 Steel"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 239.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=tkl&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=tkl&keyboardLanguage=english",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/steelseries-apex-pro-tkl-gen-3-review/",
+          "date": "2024-11-07",
+          "score": "82/100",
+          "verdict": "Expensive for a TKL board, but it gives a lot in return."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/steelseries-apex-pro-tkl-gen-3-review",
+          "date": "2024-11-27",
+          "score": "4/5",
+          "verdict": "Super-solid analog gaming keyboard with top performance."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro TKL Gen 3 (wired)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wired&color=black&keyboardSize=tkl&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro Gen 3 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro-gen-3?keyboardSize=tkl&connectivityType=wired&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 4.0 mm. Price is the regular US price in the page's product data; the page showed a promotional price of $203.99 on 2026-11-23."
+    },
+    {
+      "id": "steelseries-apex-pro-tkl-wireless-2023",
+      "brand": "steelseries",
+      "model": "Apex Pro TKL Wireless (2023)",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 2.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 249.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-pro-2023?connectivityType=wireless&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro-2023?connectivityType=wireless&keyboardLanguage=english",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro TKL Wireless (2023)",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro-2023?connectivityType=wireless&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro - 2023 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro-2023?keyboardLanguage=english&connectivityType=wireless",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "OLED smart display. Battery 37.5 h (2.4 GHz) / 45 h (Bluetooth). Price is the regular US price in the page's product data; the page showed a promotional price of $174.99 on 2026-11-23."
+    },
+    {
+      "id": "steelseries-apex-pro-tkl-wireless-gen-3",
+      "brand": "steelseries",
+      "model": "Apex Pro TKL Wireless Gen 3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "SteelSeries GG",
+      "os": [],
+      "price_usd": 299.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wireless&color=black&keyboardSize=tkl&keyboardLanguage=english",
+      "official_url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wireless&color=black&keyboardSize=tkl&keyboardLanguage=english",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/steelseries-apex-pro-tkl-wireless-gen-3-review",
+          "date": "2025-01-13",
+          "score": "4/5",
+          "verdict": "Premium gaming keyboard with stellar analog performance and a price to match."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SteelSeries: Apex Pro TKL Wireless Gen 3",
+          "url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3?connectivityType=wireless&color=black&keyboardSize=tkl&keyboardLanguage=english",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SteelSeries UK store: Apex Pro Gen 3 (English UK, French, German, Nordic layouts listed)",
+          "url": "https://steelseries.com/en-gb/gaming-keyboards/apex-pro-gen-3?keyboardSize=tkl&connectivityType=wired&keyboardLanguage=english&color=black",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Battery 37.5 h (2.4 GHz) / 45 h (Bluetooth) with default lighting. Price is the regular US price in the page's product data; the page showed a promotional price of $218.49 on 2026-11-23."
+    }
+  ]
+}

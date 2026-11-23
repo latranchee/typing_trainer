@@ -1,0 +1,1701 @@
+{
+  "brand": {
+    "id": "corsair",
+    "name": "Corsair",
+    "country": "US",
+    "founded": 1994,
+    "official_url": "https://www.corsair.com/",
+    "focus": [
+      "gaming"
+    ],
+    "about": "American maker of PC components and gaming peripherals, founded in 1994 as Corsair Microsystems; its keyboards span the K-series, VANGUARD, MAKR and GALLEON lines.",
+    "sources": [
+      {
+        "title": "Wikipedia: Corsair Gaming",
+        "url": "https://en.wikipedia.org/wiki/Corsair_Gaming",
+        "kind": "reference",
+        "backs": [
+          "country",
+          "founded"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Corsair US store: keyboards",
+        "url": "https://www.corsair.com/us/en/c/keyboards",
+        "kind": "official",
+        "backs": [
+          "status"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "corsair-clipper-pro-mini-60",
+      "brand": "corsair",
+      "model": "CLIPPER PRO MINI 60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR MGX Hyperdrive Core",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CORSAIR WEB HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-979101j-na/clipper-pro-mini-60-hall-effect-gaming-keyboard-ch-979101j-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-979101j-na/clipper-pro-mini-60-hall-effect-gaming-keyboard-ch-979101j-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: CLIPPER PRO MINI 60",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-979101j-na/clipper-pro-mini-60-hall-effect-gaming-keyboard-ch-979101j-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired 60% Hall-effect board; an ARC Raiders edition exists."
+    },
+    {
+      "id": "corsair-one-cstm80",
+      "brand": "corsair",
+      "model": "CORSAIR ONE CSTM80",
+      "aka": [
+        "Drop CSTM80"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/cs-8901001/corsair-one-cstm80-mechanical-keyboard-black-walnut-wood-accent-cs-8901001",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/cs-8901001/corsair-one-cstm80-mechanical-keyboard-black-walnut-wood-accent-cs-8901001",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: CORSAIR ONE CSTM80",
+          "url": "https://www.corsair.com/us/en/p/keyboards/cs-8901001/corsair-one-cstm80-mechanical-keyboard-black-walnut-wood-accent-cs-8901001",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "75% board with a magnetic decorative top case (Drop CSTM80). Box includes a USB cable, switch puller and extra gaskets; hot-swap is inferred from the switch puller, pin count and stock switches not stated on the page read."
+    },
+    {
+      "id": "corsair-galleon-100-sd",
+      "brand": "corsair",
+      "model": "GALLEON 100 SD",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "CORSAIR MLX Pulse",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CORSAIR WEB HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 349.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-912a31i-na/galleon-100-sd-stream-deck-integrated-mechanical-keyboard-ch-912a31i-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-912a31i-na/galleon-100-sd-stream-deck-integrated-mechanical-keyboard-ch-912a31i-na",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/corsair-galleon-100-sd-review",
+          "date": "2026-02-04",
+          "score": "4/5",
+          "verdict": "A gaming keyboard with a built-in Stream Deck; good, though buying both separately is an option."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/corsair-galleon-100-sd-review/",
+          "date": "2026-02-17",
+          "score": "74/100",
+          "verdict": "Thocky typing combined with an integrated Stream Deck."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: GALLEON 100 SD",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-912a31i-na/galleon-100-sd-stream-deck-integrated-mechanical-keyboard-ch-912a31i-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-912a31i-uk/galleon-100-sd-stream-deck-integrated-mechanical-keyboard-uk-ch-912a31i-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Extended full-size layout with built-in Stream Deck LCD keys, dials and screen; hot-swap for 3-pin and 5-pin switches; FlashTap SOCD."
+    },
+    {
+      "id": "corsair-k100-air-wireless",
+      "brand": "corsair",
+      "model": "K100 AIR WIRELESS RGB",
+      "aka": [
+        "K100 AIR"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "cherry-ulp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Ultra Low Profile Tactile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 329.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-913a01u-na/k100-air-wireless-rgb-ultra-thin-mechanical-gaming-keyboard-cherry-mx-ultra-low-profile-tactile-ch-913a01u-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-913a01u-na/k100-air-wireless-rgb-ultra-thin-mechanical-gaming-keyboard-cherry-mx-ultra-low-profile-tactile-ch-913a01u-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: K100 AIR WIRELESS RGB",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-913a01u-na/k100-air-wireless-rgb-ultra-thin-mechanical-gaming-keyboard-cherry-mx-ultra-low-profile-tactile-ch-913a01u-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "SLIPSTREAM wireless and Bluetooth 4.2; battery up to 50 h with RGB, 200 h with backlighting off."
+    },
+    {
+      "id": "corsair-k100-rgb",
+      "brand": "corsair",
+      "model": "K100 RGB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 110,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR OPX",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Speed",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 289.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-912a01a-na/k100-rgb-optical-mechanical-gaming-keyboard-corsair-opx-switch-black-ch-912a01a-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-912a01a-na/k100-rgb-optical-mechanical-gaming-keyboard-corsair-opx-switch-black-ch-912a01a-na",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/corsair/k100-rgb",
+          "date": "2020-11-09",
+          "score": null,
+          "verdict": "Well-built full-size gaming board with a detachable wrist rest and macro keys."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: K100 RGB (OPX)",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-912a01a-na/k100-rgb-optical-mechanical-gaming-keyboard-corsair-opx-switch-black-ch-912a01a-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Extended full-size layout with macro keys and iCUE control wheel. Out of stock on the US store on 2026-11-23."
+    },
+    {
+      "id": "corsair-k65-plus-wireless",
+      "brand": "corsair",
+      "model": "K65 PLUS WIRELESS",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "CORSAIR MLX Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-91d401l-na/k65-plus-wireless-75-percent-rgb-mechanical-gaming-keyboard-ch-91d401l-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-91d401l-na/k65-plus-wireless-75-percent-rgb-mechanical-gaming-keyboard-ch-91d401l-na",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/corsair-k65-plus-wireless-keyboard-review",
+          "date": "2024-02-28",
+          "score": "4.5/5",
+          "verdict": "Comfortable 75% with foam and silicone dampening and lubed, swappable switches; high-end value."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: K65 PLUS WIRELESS",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91d401l-na/k65-plus-wireless-75-percent-rgb-mechanical-gaming-keyboard-ch-91d401l-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-91d401l-uk/k65-plus-wireless-75-percent-rgb-mechanical-gaming-keyboard-uk-ch-91d401l-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable PCB (pin count not stated on the page read); battery up to 266 h with LEDs off. Editions include a 'Tactile' and Mac versions; licensed editions exist."
+    },
+    {
+      "id": "corsair-k65-pro-mini",
+      "brand": "corsair",
+      "model": "K65 PRO MINI RGB",
+      "aka": [
+        "K65 PRO MINI"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR OPX",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-91a401a-na/k65-pro-mini-rgb-65-optical-mechanical-gaming-keyboard-ch-91a401a-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-91a401a-na/k65-pro-mini-rgb-65-optical-mechanical-gaming-keyboard-ch-91a401a-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: K65 PRO MINI RGB",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91a401a-na/k65-pro-mini-rgb-65-optical-mechanical-gaming-keyboard-ch-91a401a-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-91a401a-uk/k65-pro-mini-rgb-65-optical-mechanical-gaming-keyboard-uk-ch-91a401a-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The UK page also lists a French (FR) layout."
+    },
+    {
+      "id": "corsair-k70-core",
+      "brand": "corsair",
+      "model": "K70 CORE RGB",
+      "aka": [
+        "K70 CORE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR MLX Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-910991e-na/k70-core-rgb-mechanical-gaming-keyboard-steel-grey-ch-910991e-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-910991e-na/k70-core-rgb-mechanical-gaming-keyboard-steel-grey-ch-910991e-na",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/corsair/k70-core",
+          "date": "2024-02-14",
+          "score": null,
+          "verdict": "Wired full-size mechanical board continuing the K70 line."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: K70 CORE RGB Steel Grey",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-910991e-na/k70-core-rgb-mechanical-gaming-keyboard-steel-grey-ch-910991e-na",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair: K70 CORE RGB with Palm Rest",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-910981e-na/k70-core-rgb-mechanical-gaming-keyboard-with-palm-rest-black-ch-910981e-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-910981e-uk/k70-core-rgb-mechanical-gaming-keyboard-with-palm-rest-black-uk-ch-910981e-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Pre-lubed MLX Red linear switches. Steel Grey, White and Black; a palm-rest bundle lists at $109.99."
+    },
+    {
+      "id": "corsair-k70-core-se",
+      "brand": "corsair",
+      "model": "K70 CORE SE RGB",
+      "aka": [
+        "K70 CORE SE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR MLX V2 Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-9109e1e-na/k70-core-se-rgb-mechanical-gaming-keyboard-dark-cherry-blossom-ch-9109e1e-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-9109e1e-na/k70-core-se-rgb-mechanical-gaming-keyboard-dark-cherry-blossom-ch-9109e1e-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: K70 CORE SE RGB",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-9109e1e-na/k70-core-se-rgb-mechanical-gaming-keyboard-dark-cherry-blossom-ch-9109e1e-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "K70 CORE variant with PBT dye-sublimated keycaps and palm rest."
+    },
+    {
+      "id": "corsair-k70-core-tkl",
+      "brand": "corsair",
+      "model": "K70 CORE TKL RGB",
+      "aka": [
+        "K70 CORE TKL"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR MLX Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-911911e-na/k70-core-tkl-rgb-mechanical-gaming-keyboard-ch-911911e-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-911911e-na/k70-core-tkl-rgb-mechanical-gaming-keyboard-ch-911911e-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: K70 CORE TKL RGB",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-911911e-na/k70-core-tkl-rgb-mechanical-gaming-keyboard-ch-911911e-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-911911e-uk/k70-core-tkl-rgb-mechanical-gaming-keyboard-uk-ch-911911e-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "corsair-k70-core-tkl-wireless",
+      "brand": "corsair",
+      "model": "K70 CORE TKL WIRELESS RGB",
+      "aka": [
+        "K70 CORE TKL WIRELESS"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR MLX Red v2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-914901e-na/k70-core-tkl-wireless-rgb-mechanical-gaming-keyboard-ch-914901e-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-914901e-na/k70-core-tkl-wireless-rgb-mechanical-gaming-keyboard-ch-914901e-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: K70 CORE TKL WIRELESS RGB",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-914901e-na/k70-core-tkl-wireless-rgb-mechanical-gaming-keyboard-ch-914901e-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-914901e-uk/k70-core-tkl-wireless-rgb-mechanical-gaming-keyboard-uk-ch-914901e-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "SLIPSTREAM 2.4 GHz wireless, Bluetooth and USB."
+    },
+    {
+      "id": "corsair-k70-pro-mini-wireless",
+      "brand": "corsair",
+      "model": "K70 PRO MINI WIRELESS",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "CHERRY MX Speed",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: K70 PRO MINI WIRELESS (refurbished listing)",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-9189114-na-rf/k70-pro-mini-wireless-60-mechanical-cherry-mx-speed-switch-keyboard-with-rgb-backlighting-white-ch-9189114-na-rf",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "hot_swap",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Only a refurbished unit was listed on the US store on 2026-11-23. Hot-swappable switches (pin count not stated on the page read)."
+    },
+    {
+      "id": "corsair-k70-pro-tkl",
+      "brand": "corsair",
+      "model": "K70 PRO TKL",
+      "aka": [
+        "K70 PRO TKL Hall Effect"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR MGX V2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-911911g-na/k70-pro-tkl-hall-effect-programmable-keyboard-ch-911911g-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-911911g-na/k70-pro-tkl-hall-effect-programmable-keyboard-ch-911911g-na",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/corsair-k70-pro-tkl-review",
+          "date": "2025-03-17",
+          "score": "4/5",
+          "verdict": "Strong stock performance from the Hall-effect switches, with one loud drawback."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: K70 PRO TKL",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-911911g-na/k70-pro-tkl-hall-effect-programmable-keyboard-ch-911911g-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-911911g-uk/k70-pro-tkl-hall-effect-programmable-keyboard-uk-ch-911911g-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "MGX Hyperdrive magnetic switches; page gives a 0.3 to 3.6 mm actuation range. ABS or PBT double-shot keycap options. The UK page also lists a Spanish (ES) layout."
+    },
+    {
+      "id": "corsair-k70-rgb-pro",
+      "brand": "corsair",
+      "model": "K70 RGB PRO",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX RGB Speed",
+          "id": null
+        },
+        {
+          "name": "CORSAIR OPX",
+          "id": null
+        },
+        {
+          "name": "Cherry MX RGB Brown",
+          "id": null
+        },
+        {
+          "name": "Cherry MX RGB Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum frame",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-9109414-na/k70-rgb-pro-mechanical-gaming-keyboard-with-pbt-double-shot-pro-keycaps-cherry-mx-speed-ch-9109414-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-9109414-na/k70-rgb-pro-mechanical-gaming-keyboard-with-pbt-double-shot-pro-keycaps-cherry-mx-speed-ch-9109414-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: K70 RGB PRO",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-9109414-na/k70-rgb-pro-mechanical-gaming-keyboard-with-pbt-double-shot-pro-keycaps-cherry-mx-speed-ch-9109414-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Out of stock on the US store on 2026-11-23. The OPX option uses Corsair's optical-mechanical switches; the others are Cherry MX."
+    },
+    {
+      "id": "corsair-k70-rgb-tkl-champion",
+      "brand": "corsair",
+      "model": "K70 RGB TKL CHAMPION SERIES",
+      "aka": [
+        "K70 RGB TKL"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 88,
+      "layout_standards": [
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR OPX Optical-Mechanical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.corsair.com/uk/en/p/keyboards/ch-911901a-uk/k70-rgb-tkl-champion-series-optical-mechanical-gaming-keyboard-with-pbt-double-shot-pro-keycaps-uk-ch-911901a-uk",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair UK store: K70 RGB TKL CHAMPION SERIES",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-911901a-uk/k70-rgb-tkl-champion-series-optical-mechanical-gaming-keyboard-with-pbt-double-shot-pro-keycaps-uk-ch-911901a-uk",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Seen only on the Corsair UK store (UK layout) on 2026-11-23, not on the US store, so no USD price."
+    },
+    {
+      "id": "corsair-makr-pro-75",
+      "brand": "corsair",
+      "model": "MAKR PRO 75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "CORSAIR MGX V2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CORSAIR iCUE",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 249.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-91ce21g-na/makr-pro-75-hall-effect-diy-keyboard-ch-91ce21g-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-91ce21g-na/makr-pro-75-hall-effect-diy-keyboard-ch-91ce21g-na",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/corsair-makr-pro-75-review",
+          "date": "2026-02-21",
+          "score": "3.5/5",
+          "verdict": "Priced above DIY boards and less DIY than the name suggests; enthusiast boards compete well."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/corsair-makr-pro-75-review",
+          "date": "2026-06-13",
+          "score": "4/5",
+          "verdict": "Close to perfect, making a custom build hard to justify."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: MAKR PRO 75",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91ce21g-na/makr-pro-75-hall-effect-diy-keyboard-ch-91ce21g-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-91ce21g-uk/makr-pro-75-hall-effect-diy-keyboard-uk-ch-91ce21g-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Machined aluminum 75% with FR4 plate; hot-swap for compatible magnetic switches; actuation 0.3 to 3.6 mm. The spec table lists wired; the page also describes 2.4 GHz and Bluetooth use up to 50 h, apparently with an add-on module."
+    },
+    {
+      "id": "corsair-vanguard-96",
+      "brand": "corsair",
+      "model": "VANGUARD 96",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "CORSAIR MLX Fusion",
+          "id": null
+        },
+        {
+          "name": "CORSAIR MLX Quantum",
+          "id": null
+        },
+        {
+          "name": "CORSAIR MLX Pulse",
+          "id": null
+        },
+        {
+          "name": "CORSAIR MLX Plasma",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CORSAIR WEB HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-91e911e-na/vanguard-96-mechanical-gaming-keyboard-corsair-mlx-quantum-ch-91e911e-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-91e911e-na/vanguard-96-mechanical-gaming-keyboard-corsair-mlx-quantum-ch-91e911e-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: VANGUARD 96 (MLX Quantum)",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91e911e-na/vanguard-96-mechanical-gaming-keyboard-corsair-mlx-quantum-ch-91e911e-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair: VANGUARD 96 (MLX Pulse)",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91e901i-na/vanguard-96-mechanical-gaming-keyboard-corsair-mlx-pulse-ch-91e901i-na",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-91e901e-uk/vanguard-96-mechanical-gaming-keyboard-corsair-mlx-plasma-ch-91e901e-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap for 3-pin and 5-pin switches; LCD screen and Elgato Virtual Stream Deck integration; FlashTap SOCD. MLX Pulse version costs $189.99."
+    },
+    {
+      "id": "corsair-vanguard-96-wireless",
+      "brand": "corsair",
+      "model": "VANGUARD 96 WIRELESS",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "CORSAIR MLX Plasma",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CORSAIR WEB HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-91f901e-na/vanguard-96-wireless-mechanical-gaming-keyboard-ch-91f901e-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-91f901e-na/vanguard-96-wireless-mechanical-gaming-keyboard-ch-91f901e-na",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Corsair: VANGUARD 96 WIRELESS",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91f901e-na/vanguard-96-wireless-mechanical-gaming-keyboard-ch-91f901e-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-91f901e-uk/vanguard-96-wireless-mechanical-gaming-keyboard-uk-ch-91f901e-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "8K SLIPSTREAM wireless and BLE; 8 kHz polling wired and wireless; hot-swap for 3-pin and 5-pin switches."
+    },
+    {
+      "id": "corsair-vanguard-air-99-wireless",
+      "brand": "corsair",
+      "model": "VANGUARD AIR 99 WIRELESS",
+      "aka": [
+        "VANGUARD AIR 99 WIRELESS Apple Edition"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 107,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CORSAIR OPX Low Profile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum frame",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 259.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-91ha01b-na/vanguard-air-99-wireless-optical-mechanical-gaming-keyboard-black-ch-91ha01b-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-91ha01b-na/vanguard-air-99-wireless-optical-mechanical-gaming-keyboard-black-ch-91ha01b-na",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/corsair-vanguard-air-99-wireless-review",
+          "date": "2026-05-15",
+          "score": "4/5",
+          "verdict": "Slim 99% board with fast wireless, quiet keys and Stream Deck features, at a premium price."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/corsair-vanguard-air-99-wireless-review",
+          "date": "2026-05-08",
+          "score": "3/5",
+          "verdict": "Capable low-profile board for gaming and typing whose drawbacks outweigh the premium."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/corsair-vanguard-air-99-wireless-review/",
+          "date": "2026-03-23",
+          "score": "70/100",
+          "verdict": "Low-profile optical switches in a 99% layout, priced like a full-size flagship."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: VANGUARD AIR 99 WIRELESS",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91ha01b-na/vanguard-air-99-wireless-optical-mechanical-gaming-keyboard-black-ch-91ha01b-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "low_profile",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-91ha01b-uk/vanguard-air-99-wireless-optical-mechanical-gaming-keyboard-black-uk-ch-91ha01b-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "99% layout. 8K SLIPSTREAM and BLE; battery up to 55 h with keyboard lighting off. An Apple Edition is sold separately."
+    },
+    {
+      "id": "corsair-vanguard-pro-96",
+      "brand": "corsair",
+      "model": "VANGUARD PRO 96",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "CORSAIR MGX Hyperdrive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CORSAIR WEB HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 229.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.corsair.com/us/en/p/keyboards/ch-91e911g-na/vanguard-pro-96-hall-effect-gaming-keyboard-ch-91e911g-na",
+      "official_url": "https://www.corsair.com/us/en/p/keyboards/ch-91e911g-na/vanguard-pro-96-hall-effect-gaming-keyboard-ch-91e911g-na",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/corsairvanguard-pro-96-review",
+          "date": "2025-10-12",
+          "score": "3.5/5",
+          "verdict": "96% magnetic-switch board with a semi-customizable LCD screen."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/corsair-vanguard-pro-96-review/",
+          "date": "2025-12-03",
+          "score": "85/100",
+          "verdict": "Powerful Hall-effect performance at a high price."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/gaming/gaming-peripherals/corsair-vanguard-pro-96-review",
+          "date": "2026-03-27",
+          "score": "3.5/5",
+          "verdict": "Good premium gaming board with current features, but rivals give more for the money."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corsair: VANGUARD PRO 96",
+          "url": "https://www.corsair.com/us/en/p/keyboards/ch-91e911g-na/vanguard-pro-96-hall-effect-gaming-keyboard-ch-91e911g-na",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "os",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Corsair UK store: UK layout variant",
+          "url": "https://www.corsair.com/uk/en/p/keyboards/ch-91e911g-uk/vanguard-pro-96-hall-effect-gaming-keyboard-ch-91e911g-uk",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap for compatible magnetic switches (the page also mentions compatible mechanical switches); actuation 0.1 to 4.0 mm; FlashTap SOCD."
+    }
+  ]
+}

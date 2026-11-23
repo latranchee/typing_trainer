@@ -3,6 +3,8 @@ import { fingerHand, fingerKind } from './fingers';
 import type { Difficulty } from './hardcore';
 import { de } from './i18n-de';
 import { es } from './i18n-es';
+import type { OnlineStrings } from './i18n-online';
+import { ONLINE } from './i18n-online';
 import type { LayoutId } from './layouts';
 import type { Board, Row } from './physical';
 import type { DrillId, Lang } from './store';
@@ -18,7 +20,7 @@ type Side = 'left' | 'right';
 
 const en = {
   none: 'n/a',
-  drills: { highway: 'highway', words: 'words', pairs: 'pairs', anchors: 'anchors', stats: 'stats' } satisfies Record<DrillId, string>,
+  drills: { highway: 'highway', words: 'words', pairs: 'pairs', anchors: 'anchors', stats: 'stats', boards: 'boards' } satisfies Record<DrillId, string>,
   layouts: {
     'ca-fr': 'canadian french',
     us: 'us qwerty',
@@ -83,6 +85,14 @@ const en = {
     } satisfies Record<Board, string>,
     boardFound: (board: string): string => `${board} keyboard detected: the board on screen now matches it`,
     interface: 'interface',
+    fontWeight: 'weight',
+    fontRound: 'roundness',
+    fontOptical: 'optical size',
+    fontAuto: 'auto',
+    fontAutoTitle: 'let each size pick its optical size',
+    fontNote: 'Allo, by Josh Puckett. The highway draws its notes at the default roundness.',
+    hideKeyboard: 'hide keyboard',
+    hideKeyboardTitle: 'type from memory: the on-screen keyboard steps aside',
     focus: 'fingers',
     focusGroup: 'fingers to train more',
     focusNote: 'the lit fingers type more',
@@ -323,7 +333,7 @@ const frSide = (side: Side): string => (side === 'left' ? 'gauche' : 'droite');
 
 const fr: Strings = {
   none: 'n/d',
-  drills: { highway: 'autoroute', words: 'mots', pairs: 'paires', anchors: 'ancrages', stats: 'stats' },
+  drills: { highway: 'autoroute', words: 'mots', pairs: 'paires', anchors: 'ancrages', stats: 'stats', boards: 'classements' },
   layouts: {
     'ca-fr': 'français canadien',
     us: 'qwerty américain',
@@ -380,6 +390,14 @@ const fr: Strings = {
     },
     boardFound: (board) => `clavier ${board} détecté: le clavier à l'écran le suit`,
     interface: 'interface',
+    fontWeight: 'graisse',
+    fontRound: 'arrondi',
+    fontOptical: 'taille optique',
+    fontAuto: 'auto',
+    fontAutoTitle: 'chaque taille choisit sa taille optique',
+    fontNote: 'Allo, de Josh Puckett. L’autoroute dessine ses notes avec l’arrondi par défaut.',
+    hideKeyboard: 'cacher le clavier',
+    hideKeyboardTitle: 'tape de mémoire: le clavier à l’écran s’efface',
     focus: 'doigts',
     focusGroup: 'doigts à travailler',
     focusNote: 'les doigts allumés tapent plus',
@@ -606,9 +624,12 @@ export const LANG_NAMES: Record<Lang, string> = { fr: 'français', en: 'english'
 
 /** The strings of the current interface language. Reassigned by `setUiLang`, so read it at the moment of use. */
 export let t: Strings = en;
+/** The strings of the online parts (account, boards, races), switched with the rest. */
+export let o: OnlineStrings = ONLINE.en;
 
 export function setUiLang(lang: Lang): void {
   t = STRINGS[lang] ?? en;
+  o = ONLINE[lang] ?? ONLINE.en;
 }
 
 /** For tests and tools: one language's strings without switching the interface. */

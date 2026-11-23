@@ -1,0 +1,2932 @@
+{
+  "brand": {
+    "id": "logitech",
+    "name": "Logitech",
+    "country": "CH",
+    "founded": 1981,
+    "official_url": "https://www.logitech.com/",
+    "focus": [
+      "gaming",
+      "office",
+      "ergonomic"
+    ],
+    "about": "Swiss maker of computer peripherals founded in 1981; its gaming keyboards are sold under the Logitech G brand and its office keyboards under Logitech.",
+    "sources": [
+      {
+        "title": "Wikipedia: Logitech",
+        "url": "https://en.wikipedia.org/wiki/Logitech",
+        "kind": "reference",
+        "backs": [
+          "country",
+          "founded"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Logitech G US store: gaming keyboards",
+        "url": "https://www.logitechg.com/en-us/shop/c/gaming-keyboards",
+        "kind": "official",
+        "backs": [
+          "status",
+          "price_usd"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Logitech US store: keyboards",
+        "url": "https://www.logitech.com/en-us/shop/c/keyboards",
+        "kind": "official",
+        "backs": [
+          "status"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "logitech-alto-keys-k98m",
+      "brand": "logitech",
+      "model": "Alto Keys K98M",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 98,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Logitech Linear Marble Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/alto-keys-k98m",
+      "official_url": "https://www.logitech.com/en-us/shop/p/alto-keys-k98m",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/alto-keys-k98m-wireless",
+          "date": "2026-02-05",
+          "score": null,
+          "verdict": "Wireless gasket-mounted 98-key mechanical board; taller and better built than the MX Mechanical, white backlight only."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: Alto Keys K98M",
+          "url": "https://www.logitech.com/en-us/shop/p/alto-keys-k98m",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "mount",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable linear Marble switches (socket standard not stated) in a UniCushion full-frame gasket mount; battery up to 12 months with backlighting off."
+    },
+    {
+      "id": "logitech-ergo-k860",
+      "brand": "logitech",
+      "model": "ERGO K860",
+      "aka": [
+        "K860"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "scissor",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/k860-split-ergonomic",
+      "official_url": "https://www.logitech.com/en-us/shop/p/k860-split-ergonomic",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/ergo-k860",
+          "date": "2020-02-06",
+          "score": null,
+          "verdict": "Comfortable curved split board once you adapt, with weak raw performance for gaming."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/logitech-ergo-k860-keyboard",
+          "date": "2021-03-16",
+          "score": "4/5",
+          "verdict": "Curved split design with a double-layer foam wrist rest for ergonomic support."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: ERGO K860",
+          "url": "https://www.logitech.com/en-us/shop/p/k860-split-ergonomic",
+          "kind": "official",
+          "backs": [
+            "size",
+            "split",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Curved, split keyframe with integrated number pad and pillowed wrist rest; tilt legs at 0, -4 and -7 degrees. Bluetooth or Unifying receiver; 2 AAA batteries, up to 24 months."
+    },
+    {
+      "id": "logitech-g316-x-75",
+      "brand": "logitech",
+      "model": "G316 X 75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Tactile",
+          "id": null
+        },
+        {
+          "name": "Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g316-x-75-gaming-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g316-x-75-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: G316 X 75",
+          "url": "https://www.logitechg.com/en-us/shop/p/g316-x-75-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "mount",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable switches (Logitech does not state the socket standard). Tactile: 55 g, 2.2 mm actuation; linear: 40 g, 1.9 mm."
+    },
+    {
+      "id": "logitech-g316-x-98",
+      "brand": "logitech",
+      "model": "G316 X 98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Tactile",
+          "id": null
+        },
+        {
+          "name": "Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g316-x-98-gaming-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g316-x-98-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g316-x",
+          "date": "2026-07-23",
+          "score": null,
+          "verdict": "Wired 98% mechanical gaming board with 8000 Hz polling."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/logitech-g316-x-98-review",
+          "date": "2026-09-30",
+          "score": "4/5",
+          "verdict": "Deep, thocky typing feel; the small display adds little."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g316-x-tactile-gaming-keyboard-review/",
+          "date": "2026-06-29",
+          "score": "61/100",
+          "verdict": "Tested with tactile switches; the reviewer found it fell short of its potential."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G316 X 98",
+          "url": "https://www.logitechg.com/en-us/shop/p/g316-x-98-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "mount",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "98% layout. Hot-swappable switches (socket standard not stated)."
+    },
+    {
+      "id": "logitech-g413-se",
+      "brand": "logitech",
+      "model": "G413 SE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Tactile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 89.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g413-se-gaming-keyboard.920-010433",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g413-se-gaming-keyboard.920-010433",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: G413 SE",
+          "url": "https://www.logitechg.com/en-us/shop/p/g413-se-gaming-keyboard.920-010433",
+          "kind": "official",
+          "backs": [
+            "size",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Brushed 5052 aluminum alloy top case and PBT keycaps."
+    },
+    {
+      "id": "logitech-g413-tkl-se",
+      "brand": "logitech",
+      "model": "G413 TKL SE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Tactile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g413-tkl-se-gaming-keyboard.920-010442",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g413-tkl-se-gaming-keyboard.920-010442",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: G413 TKL SE",
+          "url": "https://www.logitechg.com/en-us/shop/p/g413-tkl-se-gaming-keyboard.920-010442",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile switch: 50 g, 1.9 mm actuation, 4 mm travel. White backlighting."
+    },
+    {
+      "id": "logitech-g512",
+      "brand": "logitech",
+      "model": "G512",
+      "aka": [
+        "G512 CARBON"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GX Blue Clicky",
+          "id": null
+        },
+        {
+          "name": "GX Brown Tactile",
+          "id": null
+        },
+        {
+          "name": "GX Red Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum-magnesium alloy",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g512-mechanical-gaming-keyboard.920-008936",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g512-mechanical-gaming-keyboard.920-008936",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: G512",
+          "url": "https://www.logitechg.com/en-us/shop/p/g512-mechanical-gaming-keyboard.920-008936",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Out of stock on the US store on 2026-11-23. USB passthrough."
+    },
+    {
+      "id": "logitech-g512-x-75",
+      "brand": "logitech",
+      "model": "G512 X 75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Tactile Mechanical",
+          "id": null
+        },
+        {
+          "name": "Linear Mechanical",
+          "id": null
+        },
+        {
+          "name": "Linear Magnetic Analog",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g512-x-75-gaming-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g512-x-75-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: G512 X 75",
+          "url": "https://www.logitechg.com/en-us/shop/p/g512-x-75-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dual Swap board: 39 sockets take TMR magnetic analog or mechanical switches (9 magnetic analog switches included), the rest take mechanical switches; actuation and rapid trigger apply to the analog switches."
+    },
+    {
+      "id": "logitech-g512-x-98",
+      "brand": "logitech",
+      "model": "G512 X 98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Tactile Mechanical",
+          "id": null
+        },
+        {
+          "name": "Linear Mechanical",
+          "id": null
+        },
+        {
+          "name": "Linear Magnetic Analog",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g512-x-98-gaming-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g512-x-98-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g512-x-review/",
+          "date": "2026-04-28",
+          "score": "90/100",
+          "verdict": "Logitech's first TMR-switch board, rated one of the best gaming keyboards the reviewer had used."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G512 X 98",
+          "url": "https://www.logitechg.com/en-us/shop/p/g512-x-98-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "98% Dual Swap board: 39 sockets take TMR magnetic analog or mechanical switches (9 magnetic analog switches included)."
+    },
+    {
+      "id": "logitech-g515-lightspeed-tkl",
+      "brand": "logitech",
+      "model": "G515 LIGHTSPEED TKL",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Tactile",
+          "id": null
+        },
+        {
+          "name": "GL Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g515-tkl-wireless-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g515-tkl-wireless-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g515-lightspeed-tkl",
+          "date": "2024-08-16",
+          "score": null,
+          "verdict": "Low-profile wireless TKL with GL switches; slim build suited to both work and games."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/logitech-g515-lightspeed-tkl-review",
+          "date": "2024-06-25",
+          "score": "4/5",
+          "verdict": "Slim and light with updated switches and a much lower price than the G915; flat keys can hinder fast shooters."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/logitech-g515-lightspeed-tkl-review",
+          "date": "2024-08-29",
+          "score": "4/5",
+          "verdict": "Comfortable, quiet keystrokes and good software; looks more like an office keyboard than a gaming one."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G515 LIGHTSPEED TKL",
+          "url": "https://www.logitechg.com/en-us/shop/p/g515-tkl-wireless-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "low_profile",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile GL mechanical switches, double-shot PBT keycaps."
+    },
+    {
+      "id": "logitech-g515-rapid-tkl",
+      "brand": "logitech",
+      "model": "G515 RAPID TKL",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "low-profile magnetic analog switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g515-rapid-tkl.920-013855",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g515-rapid-tkl.920-013855",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g515-rapid-tkl-magnetic",
+          "date": "2025-11-12",
+          "score": null,
+          "verdict": "Low-profile Hall-effect TKL with customizable actuation and rapid trigger."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g515-rapid-tkl-review/",
+          "date": "2025-12-03",
+          "score": "72/100",
+          "verdict": "Good software and rapid trigger, but wired only, pricey, and the switches feel hollow for long typing."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G515 RAPID TKL",
+          "url": "https://www.logitechg.com/en-us/shop/p/g515-rapid-tkl.920-013855",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "22 mm tall; actuation settable from 0.1 to 2.5 mm, 35 g actuation force; Key Priority (SOCD) in G HUB."
+    },
+    {
+      "id": "logitech-g515-tkl-wired",
+      "brand": "logitech",
+      "model": "G515 TKL",
+      "aka": [
+        "G515 TKL Wired"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Tactile",
+          "id": null
+        },
+        {
+          "name": "GL Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g515-tkl-gaming-keyboard.920-012868",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g515-tkl-gaming-keyboard.920-012868",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: G515 TKL (wired)",
+          "url": "https://www.logitechg.com/en-us/shop/p/g515-tkl-gaming-keyboard.920-012868",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "low_profile",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired version of the G515 with low-profile GL switches (1.3 mm actuation)."
+    },
+    {
+      "id": "logitech-g715",
+      "brand": "logitech",
+      "model": "G715",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GX Blue",
+          "id": null
+        },
+        {
+          "name": "GX Red",
+          "id": null
+        },
+        {
+          "name": "GX Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/logitech-g715",
+          "date": "2022-07-28",
+          "score": "3.5/5",
+          "verdict": "Attractive Aurora design, but few programmable keys, no hot-swap, one Bluetooth profile and average battery life."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g715",
+          "date": "2022-09-20",
+          "score": null,
+          "verdict": "Wireless TKL from the Aurora line; switches are not hot-swappable."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tom's Hardware: Logitech G715 review",
+          "url": "https://www.tomshardware.com/reviews/logitech-g715",
+          "kind": "review",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G US store: gaming keyboards",
+          "url": "https://www.logitechg.com/en-us/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "status",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Not in the US store keyboard listing on 2026-11-23."
+    },
+    {
+      "id": "logitech-g815",
+      "brand": "logitech",
+      "model": "G815 LIGHTSYNC RGB",
+      "aka": [
+        "G815"
+      ],
+      "status": "discontinued",
+      "released": "2019-08",
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Clicky",
+          "id": null
+        },
+        {
+          "name": "GL Tactile",
+          "id": null
+        },
+        {
+          "name": "GL Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech press release: G915 LIGHTSPEED and G815 LIGHTSYNC RGB (2019)",
+          "url": "https://news.logitech.com/press-releases/news-details/2019/Logitech-G915-LIGHTSPEED-and-G815-LIGHTSYNC-RGB-Mechanical-Gaming-Keyboards-Offer-a-New-Dimension-of-Gameplay/",
+          "kind": "official",
+          "backs": [
+            "released",
+            "connectivity",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired sibling of the G915 with five G-keys and USB passthrough; launch MSRP $199.99 per Logitech's 2019 press release."
+    },
+    {
+      "id": "logitech-g915-lightspeed",
+      "brand": "logitech",
+      "model": "G915 LIGHTSPEED",
+      "aka": [],
+      "status": "discontinued",
+      "released": "2019-08",
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Clicky",
+          "id": null
+        },
+        {
+          "name": "GL Tactile",
+          "id": null
+        },
+        {
+          "name": "GL Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 249.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g915-low-profile-wireless-mechanical-gaming-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g915-low-profile-wireless-mechanical-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g915-lightspeed",
+          "date": "2022-01-07",
+          "score": null,
+          "verdict": "Low-profile full-size wireless gaming board with dedicated macro keys and RGB."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G915 LIGHTSPEED",
+          "url": "https://www.logitechg.com/en-us/shop/p/g915-low-profile-wireless-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches",
+            "low_profile",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Logitech G915 LIGHTSPEED review",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g915-lightspeed",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech press release: G915 LIGHTSPEED and G815 LIGHTSYNC RGB (2019)",
+          "url": "https://news.logitech.com/press-releases/news-details/2019/Logitech-G915-LIGHTSPEED-and-G815-LIGHTSYNC-RGB-Mechanical-Gaming-Keyboards-Offer-a-New-Dimension-of-Gameplay/",
+          "kind": "official",
+          "backs": [
+            "released",
+            "connectivity",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Replaced by the G915 X and absent from the US keyboard listing; its store page still showed $249.99 on 2026-11-23. Charges over Micro USB."
+    },
+    {
+      "id": "logitech-g915-tkl",
+      "brand": "logitech",
+      "model": "G915 TKL",
+      "aka": [
+        "G915 TKL LIGHTSPEED"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Tactile",
+          "id": null
+        },
+        {
+          "name": "GL Clicky",
+          "id": null
+        },
+        {
+          "name": "GL Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 239.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g915-tkl-wireless",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g915-tkl-wireless",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/logitech-g915-tkl-wireless-gaming-keyboard",
+          "date": "2020-08-25",
+          "score": "4/5",
+          "verdict": "Slim, sturdy frame with easy switching between LIGHTSPEED and Bluetooth."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/logitech-g915-tkl-wireless-gaming-keyboard-review/",
+          "date": "2020-05-29",
+          "score": "82/100",
+          "verdict": "Wireless gaming in a compact package, at a high price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G915 TKL",
+          "url": "https://www.logitechg.com/en-us/shop/p/g915-tkl-wireless",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "low_profile",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Logitech G915 TKL review",
+          "url": "https://www.tomshardware.com/reviews/logitech-g915-tkl-wireless-gaming-keyboard",
+          "kind": "review",
+          "backs": [
+            "switches",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Replaced by the G915 X TKL and absent from the US keyboard listing; its store page still showed $239.99 on 2026-11-23."
+    },
+    {
+      "id": "logitech-g915-x-wired",
+      "brand": "logitech",
+      "model": "G915 X",
+      "aka": [
+        "G915 X Wired"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Linear",
+          "id": null
+        },
+        {
+          "name": "GL Tactile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum alloy top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g915-x-mechanical-gaming-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g915-x-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: G915 X (wired)",
+          "url": "https://www.logitechg.com/en-us/shop/p/g915-x-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "low_profile",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired full-size low-profile board; GL linear 43 g and tactile 45 g, 1.3 mm actuation."
+    },
+    {
+      "id": "logitech-g915-x-lightspeed",
+      "brand": "logitech",
+      "model": "G915 X LIGHTSPEED",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Tactile",
+          "id": null
+        },
+        {
+          "name": "GL Linear",
+          "id": null
+        },
+        {
+          "name": "GL Clicky",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum alloy top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 259.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g915-x-wireless-mechanical-gaming-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g915-x-wireless-mechanical-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g915-x-lightspeed-review/",
+          "date": "2024-10-31",
+          "score": "70/100",
+          "verdict": "Pretty and sturdy with good switches and battery life, spoiled by the price and G HUB."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g915-x-lightspeed",
+          "date": "2024-12-09",
+          "score": null,
+          "verdict": "Full-size wireless low-profile board continuing the G915 line with redesigned switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G915 X LIGHTSPEED",
+          "url": "https://www.logitechg.com/en-us/shop/p/g915-x-wireless-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "low_profile",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Battery up to 36 h at full RGB brightness, up to 800 h with RGB off. GL switches actuate at 1.3 mm with 3.2 mm travel."
+    },
+    {
+      "id": "logitech-g915-x-lightspeed-tkl",
+      "brand": "logitech",
+      "model": "G915 X LIGHTSPEED TKL",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GL Tactile",
+          "id": null
+        },
+        {
+          "name": "GL Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 229.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/g915-x-tkl-wireless",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/g915-x-tkl-wireless",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/logitech-g915-x-tkl-review",
+          "date": "2025-06-01",
+          "score": "4/5",
+          "verdict": "Looks like the old G915 TKL but improves the internals; some rattle while typing."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/logitech-g915-x-lightspeed-tkl-review",
+          "date": "2025-03-11",
+          "score": "3.5/5",
+          "verdict": "Thin, light and clicky with competent performance; scratchy keycaps and awkward G HUB navigation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: G915 X LIGHTSPEED TKL",
+          "url": "https://www.logitechg.com/en-us/shop/p/g915-x-tkl-wireless",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "low_profile",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Battery up to 42 h at full RGB brightness, up to 1000 h with RGB off."
+    },
+    {
+      "id": "logitech-mx-keys-mini",
+      "brand": "logitech",
+      "model": "MX Keys Mini",
+      "aka": [
+        "MX Keys Mini for Mac"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": 1500,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "scissor",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [
+        "windows",
+        "mac",
+        "ios",
+        "linux",
+        "android"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/mx-keys-mini",
+      "official_url": "https://www.logitech.com/en-us/shop/p/mx-keys-mini",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/mx-keys-mini",
+          "date": "2021-10-28",
+          "score": null,
+          "verdict": "Low-profile 75% compact with F-row and arrows, close to the full-size MX Keys."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/logitech-mx-keys-mini-review",
+          "date": "2024-05-16",
+          "score": "4/5",
+          "verdict": "Light and fast to type on, though other boards give more for the money."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: MX Keys Mini",
+          "url": "https://www.logitech.com/en-us/shop/p/mx-keys-mini",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Logitech MX Keys Mini review",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/mx-keys-mini",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth only in the box; compatible with a separately sold Logi Bolt receiver."
+    },
+    {
+      "id": "logitech-mx-keys-s",
+      "brand": "logitech",
+      "model": "MX Keys S",
+      "aka": [
+        "MX Keys S for Mac"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 1500,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "scissor",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android"
+      ],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/mx-keys-s",
+      "official_url": "https://www.logitech.com/en-us/shop/p/mx-keys-s",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/mx-keys-s",
+          "date": "2023-07-05",
+          "score": null,
+          "verdict": "Low-profile wireless office keyboard continuing the MX Keys line."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/logitech-mx-keys-s-review",
+          "date": "2024-07-25",
+          "score": "4/5",
+          "verdict": "Excellent for productivity with a nice typing feel; dim white-only backlight and no dongle storage."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: MX Keys S",
+          "url": "https://www.logitech.com/en-us/shop/p/mx-keys-s",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "battery_mah",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Logitech MX Keys S review",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/mx-keys-s",
+          "kind": "review",
+          "backs": [
+            "size",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth Low Energy or Logi Bolt receiver; up to 10 days per charge, 5 months with backlighting off."
+    },
+    {
+      "id": "logitech-mx-mechanical",
+      "brand": "logitech",
+      "model": "MX Mechanical",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 1500,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Tactile Quiet",
+          "id": null
+        },
+        {
+          "name": "Clicky",
+          "id": null
+        },
+        {
+          "name": "Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/mx-mechanical",
+      "official_url": "https://www.logitech.com/en-us/shop/p/mx-mechanical",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/logitech-mx-mechanical-keyboard",
+          "date": "2022-05-24",
+          "score": "4/5",
+          "verdict": "Easy device switching and a good low-profile typing feel; the low height rules out many wrist rests."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/reviews/logitech-mx-mechanical-keyboard",
+          "date": "2024-01-01",
+          "score": "3/5",
+          "verdict": "Solid low-profile wireless board, but too expensive for its limited programmability and no wrist rest."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: MX Mechanical",
+          "url": "https://www.logitech.com/en-us/shop/p/mx-mechanical",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "low_profile",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Connects over Bluetooth or the Logi Bolt receiver, up to 3 devices. Battery up to 15 days, or 10 months with backlighting off."
+    },
+    {
+      "id": "logitech-mx-mechanical-mini",
+      "brand": "logitech",
+      "model": "MX Mechanical Mini",
+      "aka": [
+        "MX Mechanical Mini for Mac"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Tactile Quiet",
+          "id": null
+        },
+        {
+          "name": "Clicky",
+          "id": null
+        },
+        {
+          "name": "Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/mx-mechanical-mini",
+      "official_url": "https://www.logitech.com/en-us/shop/p/mx-mechanical-mini",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/logitech-mx-mechanical-mini-keyboard-review",
+          "date": "2024-04-16",
+          "score": "3.5/5",
+          "verdict": "Productive compact low-profile mechanical board, held back by its price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: MX Mechanical Mini",
+          "url": "https://www.logitech.com/en-us/shop/p/mx-mechanical-mini",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches",
+            "low_profile",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact version of the MX Mechanical without number pad; size 75 is our reading of the layout (Logitech gives no percentage). A Mac edition is sold separately."
+    },
+    {
+      "id": "logitech-pebble-keys-2-k380s",
+      "brand": "logitech",
+      "model": "Pebble Keys 2 K380s",
+      "aka": [
+        "K380s"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "scissor",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [
+        "windows",
+        "mac",
+        "ios",
+        "android",
+        "linux"
+      ],
+      "price_usd": 39.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/pebble-keys-2",
+      "official_url": "https://www.logitech.com/en-us/shop/p/pebble-keys-2",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/pebble-keys-2-k380s",
+          "date": "2024-03-21",
+          "score": null,
+          "verdict": "Compact wireless successor to the K380, nearly identical in design."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: Pebble Keys 2 K380s",
+          "url": "https://www.logitech.com/en-us/shop/p/pebble-keys-2",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Logitech Pebble Keys 2 K380s review",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/pebble-keys-2-k380s",
+          "kind": "review",
+          "backs": [
+            "size",
+            "switches",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact layout without number pad. Bluetooth Low Energy; compatible with a separately sold Logi Bolt receiver; 2 AAA batteries, up to 36 months."
+    },
+    {
+      "id": "logitech-pop-keys",
+      "brand": "logitech",
+      "model": "POP Keys",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TTC Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/pop-keys-wireless-mechanical",
+      "official_url": "https://www.logitech.com/en-us/shop/p/pop-keys-wireless-mechanical",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/pop-keys",
+          "date": "2021-12-10",
+          "score": null,
+          "verdict": "Wireless-only mechanical board with round typewriter keycaps; disappointing for programming."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/logitech-pop-keys-review-looks-unique-sounds-loud",
+          "date": "2021-11-27",
+          "score": "3.5/5",
+          "verdict": "Distinctive look and loud typing; a decent if niche wireless mechanical keyboard."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: POP Keys",
+          "url": "https://www.logitech.com/en-us/shop/p/pop-keys-wireless-mechanical",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Logitech POP Keys review",
+          "url": "https://www.tomshardware.com/reviews/logitech-pop-keys-review-looks-unique-sounds-loud",
+          "kind": "review",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact layout without number pad, with emoji keys; runs on 2 AAA batteries (up to 3 years) and ships with a Logi Bolt receiver. Logitech does not name the switch; TTC Brown is from Tom's Hardware."
+    },
+    {
+      "id": "logitech-pro",
+      "brand": "logitech",
+      "model": "PRO",
+      "aka": [
+        "PRO Mechanical Gaming Keyboard"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GX Blue Clicky",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/pro-mechanical-gaming-keyboard.920-009388",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/pro-mechanical-gaming-keyboard.920-009388",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: PRO Mechanical Gaming Keyboard",
+          "url": "https://www.logitechg.com/en-us/shop/p/pro-mechanical-gaming-keyboard.920-009388",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired tenkeyless board with a detachable Micro USB cable."
+    },
+    {
+      "id": "logitech-pro-x-60",
+      "brand": "logitech",
+      "model": "PRO X 60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "GX Optical Tactile",
+          "id": null
+        },
+        {
+          "name": "GX Optical Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/pro-x-60-wireless-keyboard",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/pro-x-60-wireless-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/logitech-g-pro-x-60-lightspeed-review",
+          "date": "2024-04-15",
+          "score": "3.5/5",
+          "verdict": "Compact and highly programmable with good optical switches, but expensive, limited to 1 ms polling, with G HUB bugs."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-pro-x60-keyboard-review/",
+          "date": "2024-05-20",
+          "score": "77/100",
+          "verdict": "Accurate and customisable, though much of the price pays for pro features most players will not use."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: PRO X 60",
+          "url": "https://www.logitechg.com/en-us/shop/p/pro-x-60-wireless-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "switch_footprint",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "60% LIGHTSPEED wireless board with GX optical switches in tactile and linear."
+    },
+    {
+      "id": "logitech-pro-x-tkl-lightspeed",
+      "brand": "logitech",
+      "model": "PRO X TKL",
+      "aka": [
+        "PRO X TKL LIGHTSPEED"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Tactile",
+          "id": null
+        },
+        {
+          "name": "Clicky",
+          "id": null
+        },
+        {
+          "name": "Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 219.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/pro-x-tkl-wireless-keyboard.920-012154",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/pro-x-tkl-wireless-keyboard.920-012154",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Logitech: PRO X TKL (LIGHTSPEED)",
+          "url": "https://www.logitechg.com/en-us/shop/p/pro-x-tkl-wireless-keyboard.920-012154",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "LIGHTSPEED wireless TKL; the page offers tactile, clicky and linear switches without naming them further."
+    },
+    {
+      "id": "logitech-pro-x-tkl-rapid",
+      "brand": "logitech",
+      "model": "PRO X TKL RAPID",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "magnetic analog switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [],
+      "price_usd": 189.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/pro-x-tkl-rapid.920-013131",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/pro-x-tkl-rapid.920-013131",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/g-pro-x-tkl-rapid",
+          "date": "2025-01-29",
+          "score": null,
+          "verdict": "Logitech's first Hall-effect board: wired TKL with adjustable actuation and rapid trigger."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g-pro-x-tkl-rapid-review/",
+          "date": "2025-01-17",
+          "score": "86/100",
+          "verdict": "A solid entry into rapid-trigger play; wired only, with a noticeable bottom-out thump and few extras."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/logitech-pro-x-tkl-rapid-gaming-keyboard-review",
+          "date": "2025-03-28",
+          "score": "3.5/5",
+          "verdict": "Superbly built with analog features, but the analog switches lack tactility."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: PRO X TKL RAPID",
+          "url": "https://www.logitechg.com/en-us/shop/p/pro-x-tkl-rapid.920-013131",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page states a 1 ms report rate. PC Gamer reports an actuation range of 0.1 to 4.0 mm."
+    },
+    {
+      "id": "logitech-pro-x2-rapid",
+      "brand": "logitech",
+      "model": "PRO X2 RAPID",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "High Profile Analog Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum key plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logitech G HUB",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 229.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitechg.com/en-us/shop/p/pro-x2-rapid.920-014077",
+      "official_url": "https://www.logitechg.com/en-us/shop/p/pro-x2-rapid.920-014077",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/logitech-g-pro-x2-rapid-review",
+          "date": "2026-10-19",
+          "score": "4/5",
+          "verdict": "Compact esports board with strong analog performance that the reviewer found a joy to use."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/logitech-g-pro-x2-rapid-review",
+          "date": "2026-10-15",
+          "score": "3.5/5",
+          "verdict": "A decent gaming keyboard, but rivals offer much more for the money."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: PRO X2 RAPID",
+          "url": "https://www.logitechg.com/en-us/shop/p/pro-x2-rapid.920-014077",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech G UK store: gaming keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitechg.com/en-gb/shop/c/gaming-keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic analog (Hall-effect) switches with actuation settable from 0.1 to 4 mm in 0.05 mm steps; also has KEY PRIORITY (SOCD) and an OLED display."
+    },
+    {
+      "id": "logitech-signature-slim-k950",
+      "brand": "logitech",
+      "model": "Signature Slim Keyboard K950",
+      "aka": [
+        "K950"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "laptop-style keys",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [],
+      "price_usd": 89.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard",
+      "official_url": "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/logitech-signature-slim-k950-review-a-great-keyboard-thats-ideal-for-mac-windows-or-both",
+          "date": "2024-05-23",
+          "score": "4/5",
+          "verdict": "A slim crossover keyboard that works well with Mac, Windows or both."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: Signature Slim Keyboard K950",
+          "url": "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Connects over Bluetooth Low Energy or the included Logi Bolt receiver; 2 AAA batteries, no backlight."
+    },
+    {
+      "id": "logitech-wave-keys",
+      "brand": "logitech",
+      "model": "Wave Keys",
+      "aka": [
+        "Wave Keys for Mac"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "rubber dome",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Logi Options+",
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android"
+      ],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.logitech.com/en-us/shop/p/wave-keys-ergonomic-wireless",
+      "official_url": "https://www.logitech.com/en-us/shop/p/wave-keys-ergonomic-wireless",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/logitech-wave-keys-review-a-truly-ergonomic-option-for-office-workers",
+          "date": "2023-10-11",
+          "score": "5/5",
+          "verdict": "Wave-shaped ergonomic board for office workers; not mechanical and runs on AAA batteries."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/wave-keys",
+          "date": "2023-12-07",
+          "score": null,
+          "verdict": "Full-size wireless ergonomic board with a gently curved, tented layout and quiet rubber dome switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Logitech: Wave Keys",
+          "url": "https://www.logitech.com/en-us/shop/p/wave-keys-ergonomic-wireless",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Logitech UK store: keyboards (layout variants incl. English UK)",
+          "url": "https://www.logitech.com/en-gb/shop/c/keyboards",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Logitech Wave Keys review",
+          "url": "https://www.rtings.com/keyboard/reviews/logitech/wave-keys",
+          "kind": "review",
+          "backs": [
+            "switches",
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Logitech calls it a compact layout with number pad (RTINGS: full-size); wave-curved keyframe with cushioned palm rest, +4 degree tilt legs; Logi Bolt receiver included, 2 AAA batteries up to 36 months."
+    }
+  ]
+}

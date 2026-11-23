@@ -1,0 +1,2087 @@
+{
+  "brand": {
+    "id": "cherry",
+    "name": "CHERRY",
+    "country": "DE",
+    "founded": 1953,
+    "official_url": "https://www.cherry.de/",
+    "focus": [
+      "office",
+      "gaming"
+    ],
+    "about": "Maker of CHERRY MX switches and keyboards, founded in 1953 in Highland Park, Illinois; CHERRY Europe GmbH is based in Auerbach in der Oberpfalz, Germany. It integrated the Swedish esports brand Xtrfy in 2022 and sells gaming boards as CHERRY XTRFY.",
+    "sources": [
+      {
+        "title": "CHERRY: About CHERRY",
+        "url": "https://www.cherry.de/en-gb/company/about-cherry",
+        "kind": "official",
+        "backs": [
+          "country",
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "CHERRY: keyboards listing (cherry.de)",
+        "url": "https://www.cherry.de/en-gb/products/keyboards",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "CHERRY XTRFY: keyboards (store with USD prices)",
+        "url": "https://cherryxtrfy.com/keyboards/",
+        "kind": "official",
+        "backs": [
+          "lineup",
+          "price_usd"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "CHERRY: MX 10.0N RGB US page (no US shop, request form only)",
+        "url": "https://www.cherry.de/en-us/product/mx-10-0n-rgb",
+        "kind": "official",
+        "backs": [
+          "price_usd"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "cherry-g80-3000n",
+      "brand": "cherry",
+      "model": "G80-3000N",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY Utility",
+      "os": [],
+      "price_usd": 119.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: G80-3000N product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "RGB update of the 1980s G80-3000 design. Store sale price 69.99 USD on 2026-11-23."
+    },
+    {
+      "id": "cherry-g80-3000n-tkl",
+      "brand": "cherry",
+      "model": "G80-3000N TKL",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY Utility",
+      "os": [],
+      "price_usd": 99.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n-tkl/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n-tkl/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: G80-3000N TKL product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n-tkl/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tenkeyless G80-3000N. Store sale price 59.99 USD on 2026-11-23."
+    },
+    {
+      "id": "cherry-kc-200-mx",
+      "brand": "cherry",
+      "model": "KC 200 MX",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX2A BROWN",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "CHERRY MX2A SILENT RED",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "CHERRY MX2A BLUE",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "CHERRY MX BROWN",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "CHERRY MX ERGO CLEAR",
+          "id": "cherry-mx2a-ergo-clear"
+        },
+        {
+          "name": "CHERRY MX RED",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY KEYS",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.cherry.de/en-gb/product/kc-200-mx",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/cherry-kc-200-mx-review",
+          "date": "2024-02-15",
+          "score": "3/5",
+          "verdict": "Stylish, near-silent office board with a bronze aluminum top plate, but otherwise forgettable for the price."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/cherry-kc-200-mx",
+          "date": "2024-01-29",
+          "score": "4/5",
+          "verdict": "A pleasure to type on thanks to the MX2A switches, at a low price."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/cherry-kc-200-mx-review/",
+          "date": "2023-11-29",
+          "score": "79/100",
+          "verdict": "Sleek and easy budget board; no wireless option and keys are a little sensitive."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: KC 200 MX product page",
+          "url": "https://www.cherry.de/en-gb/product/kc-200-mx",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "case_material",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired office board with an anodized aluminum surface; 104 keys plus 4 extra keys. cherry.de lists only an RRP in EUR and no US shop."
+    },
+    {
+      "id": "cherry-kc-500-mx-lp",
+      "brand": "cherry",
+      "model": "KC 500 MX LP",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX LOW PROFILE 2.0 IVORY",
+          "id": null
+        },
+        {
+          "name": "CHERRY MX LOW PROFILE 2.0 RED",
+          "id": "cherry-mx-low-profile-2-0-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "metal",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY KEYS",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.cherry.de/en-gb/product/kc-500-mx-lp",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: KC 500 MX LP product page",
+          "url": "https://www.cherry.de/en-gb/product/kc-500-mx-lp",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "low_profile",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired low-profile office board, 104 keys plus 4 extra; the Red switch is listed for CN SKUs only. No US shop on cherry.de."
+    },
+    {
+      "id": "cherry-kc-500-mx-lp-tkl",
+      "brand": "cherry",
+      "model": "KC 500 MX LP TKL",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Low Profile 2.0 Ivory",
+          "id": null
+        },
+        {
+          "name": "CHERRY MX Low Profile 2.0 Red",
+          "id": "cherry-mx-low-profile-2-0-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "metal",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY KEYS",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.cherry.de/en-gb/product/kc-500-mx-lp-tkl",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: KC 500 MX LP TKL product page",
+          "url": "https://www.cherry.de/en-gb/product/kc-500-mx-lp-tkl",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "low_profile",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tenkeyless KC 500 MX LP with white backlight; the page does not say whether switches are hot-swappable. No US shop on cherry.de."
+    },
+    {
+      "id": "cherry-kw-300-mx",
+      "brand": "cherry",
+      "model": "KW 300 MX",
+      "aka": [
+        "KW 300W MX"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "CHERRY MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "CHERRY MX2A Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "CHERRY MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY KEYS",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.cherry.de/en-gb/product/kw-300-mx",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: KW 300 MX product page",
+          "url": "https://www.cherry.de/en-gb/product/kw-300-mx",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "75% Bluetooth board with hot-swap sockets (pin count not stated) and PBT keycaps; the KW 300W MX is the Windows-only version without Mac keycaps. No US shop on cherry.de."
+    },
+    {
+      "id": "cherry-kw-550-mx-lp",
+      "brand": "cherry",
+      "model": "KW 550 MX LP",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX LOW PROFILE 2.0 IVORY",
+          "id": null
+        },
+        {
+          "name": "CHERRY MX LOW PROFILE 2.0 RED",
+          "id": "cherry-mx-low-profile-2-0-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY KEYS",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.cherry.de/en-gb/product/kw-550-mx-lp",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: KW 550 MX LP product page",
+          "url": "https://www.cherry.de/en-gb/product/kw-550-mx-lp",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "low_profile",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact 96% low-profile board with three Bluetooth 5.2 channels and a cable channel. No US shop on cherry.de."
+    },
+    {
+      "id": "cherry-kw-x-ulp-2-0-mini",
+      "brand": "cherry",
+      "model": "KW X ULP 2.0 MINI",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-ulp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX ULP TACTILE",
+          "id": "cherry-mx-ulp-tactile"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY KEYS",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.cherry.de/en-gb/product/kw-x-ulp-2-0-mini",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: KW X ULP 2.0 MINI product page",
+          "url": "https://www.cherry.de/en-gb/product/kw-x-ulp-2-0-mini",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "low_profile",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Ultra-low-profile 75% board, 15.6 mm high, with a combined Mac/Windows layout in DE and US versions. No US shop on cherry.de."
+    },
+    {
+      "id": "cherry-mx-10-0n-rgb",
+      "brand": "cherry",
+      "model": "MX 10.0N RGB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Low Profile RGB Speed",
+          "id": "cherry-mx-low-profile-speed"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY Utility",
+      "os": [],
+      "price_usd": 179.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-10-0n/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-10-0n/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/cherry-mx-10-0-n-gaming-keyboard-review/",
+          "date": "2022-04-11",
+          "score": "85/100",
+          "verdict": "Sturdy, sleek low-profile board with snappy switches and great lighting, though expensive."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/reviews/cherry-mx-100n-rgb-keyboard-review",
+          "date": "2022-07-26",
+          "score": "4/5",
+          "verdict": "Premium, remarkably thin metal keyboard with low-profile linear switches; worth the price if you want that feel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: MX 10.0N RGB product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-mx-10-0n/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "low_profile",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Thin full-size board with MX Low Profile Speed switches and an aluminum base. Store sale price 99.99 USD on 2026-11-23."
+    },
+    {
+      "id": "cherry-mx-2-0s-rgb",
+      "brand": "cherry",
+      "model": "MX 2.0S RGB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 109,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "CHERRY MX Brown",
+          "id": "cherry-mx2a-brown"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY Utility",
+      "os": [],
+      "price_usd": 109.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-2-0s-rgb-black/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-2-0s-rgb-black/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: MX 2.0S RGB product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-mx-2-0s-rgb-black/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired RGB gaming board, 104 keys plus 5 extra keys (US). Store sale price 65.99 USD on 2026-11-23."
+    },
+    {
+      "id": "cherry-mx-3-0s-wireless",
+      "brand": "cherry",
+      "model": "MX 3.0S Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 109,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "CHERRY MX Brown",
+          "id": "cherry-mx2a-brown"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY Utility",
+      "os": [],
+      "price_usd": 179.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-3-0s-wireless-black/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-3-0s-wireless-black/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: MX 3.0S Wireless product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-mx-3-0s-wireless-black/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "software",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Aluminum full-size board with a low-latency dongle mode, Bluetooth and cable; the store sells Red and Brown switches. Store sale price 109.99 USD on 2026-11-23."
+    },
+    {
+      "id": "cherry-mx-8-2-tkl-wireless",
+      "brand": "cherry",
+      "model": "MX 8.2 TKL Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 88,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "CHERRY MX Brown",
+          "id": "cherry-mx2a-brown"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 209.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-8-2-tkl-wireless-black/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-8-2-tkl-wireless-black/",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/peripherals-accessories/cherry-mx-82-tkl-review-strength-speed-and-accuracy-in-a-compact-frame",
+          "date": "2023-08-14",
+          "score": "4.25/5",
+          "verdict": "Excellent switches, sturdy aluminum frame and three connection modes make it good for work and gaming."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: MX 8.2 TKL Wireless product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-mx-8-2-tkl-wireless-black/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "TechRadar: Cherry MX 8.2 TKL review (switches not hot-swappable)",
+          "url": "https://www.techradar.com/computing/peripherals-accessories/cherry-mx-82-tkl-review-strength-speed-and-accuracy-in-a-compact-frame",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Aluminum TKL with dongle, Bluetooth and cable. Store sale price 119.99 USD on 2026-11-23."
+    },
+    {
+      "id": "cherry-mx-board-3-0s-rgb",
+      "brand": "cherry",
+      "model": "MX BOARD 3.0S RGB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 109,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "CHERRY MX Brown",
+          "id": "cherry-mx2a-brown"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY Utility",
+      "os": [],
+      "price_usd": 129.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-board-3-0s-rgb-black/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-board-3-0s-rgb-black/",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/cherry-mx-board-30-s-keyboard",
+          "date": "2021-12-31",
+          "score": "2.5/5",
+          "verdict": "Quiet, with RGB and an aluminum case, but mediocre typing feel and annoying ping."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: MX BOARD 3.0S RGB product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-mx-board-3-0s-rgb-black/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Extruded aluminum housing, 104 keys plus 5 extra (US); store layouts are US and German. Store sale price 99.99 USD on 2026-11-23."
+    },
+    {
+      "id": "cherry-mx-lp-2-1-compact-wireless",
+      "brand": "cherry",
+      "model": "MX-LP 2.1 Compact Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 69,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX Low profile Speed Silver",
+          "id": "cherry-mx-low-profile-speed"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY Utility",
+      "os": [],
+      "price_usd": 139.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-lp-2-1-compact-wireless-black/",
+      "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-lp-2-1-compact-wireless-black/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: MX-LP 2.1 Compact Wireless product page",
+          "url": "https://cherryxtrfy.com/keyboards/cherry-mx-lp-2-1-compact-wireless-black/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "low_profile",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "69-key compact low-profile board; the spec lists UK, German and French layouts and the store also offers US on the white version."
+    },
+    {
+      "id": "cherry-xtrfy-k33-compact-wireless",
+      "brand": "cherry",
+      "model": "Xtrfy K33 Compact Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 83,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Mem-chanical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k33-compact-wireless/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k33-compact-wireless/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K33 Compact Wireless product page",
+          "url": "https://cherryxtrfy.com/keyboards/k33-compact-wireless/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "75% tri-mode board with membrane-based Mem-chanical switches and a Win/Mac mode."
+    },
+    {
+      "id": "cherry-xtrfy-k4-rgb",
+      "brand": "cherry",
+      "model": "Xtrfy K4 RGB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Kailh Red RGB",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 109.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k4/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k4/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K4 RGB product page",
+          "url": "https://cherryxtrfy.com/keyboards/k4/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size Xtrfy board with metal plate; settings are made on the keyboard without software."
+    },
+    {
+      "id": "cherry-xtrfy-k4-tkl-rgb",
+      "brand": "cherry",
+      "model": "Xtrfy K4 TKL RGB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Kailh Red RGB",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 109.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k4-tkl/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k4-tkl/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K4 TKL RGB product page",
+          "url": "https://cherryxtrfy.com/keyboards/k4-tkl/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tenkeyless K4, sold in black, white and retro colours; no software needed."
+    },
+    {
+      "id": "cherry-xtrfy-k4v2-tkl",
+      "brand": "cherry",
+      "model": "Xtrfy K4V2 TKL",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX2A Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 119.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k4v2-tkl/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k4v2-tkl/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K4V2 TKL product page",
+          "url": "https://cherryxtrfy.com/keyboards/k4v2-tkl/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "K4 TKL updated with CHERRY MX2A Red switches; black, white and retro colours."
+    },
+    {
+      "id": "cherry-xtrfy-k5-compact",
+      "brand": "cherry",
+      "model": "Xtrfy K5 Compact",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Kailh Red",
+          "id": null
+        },
+        {
+          "name": "Cherry MX Speed Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "CHERRY MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "CHERRY MX Silent Black",
+          "id": "cherry-mx2a-silent-black"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k5-compact/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k5-compact/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K5 Compact product page",
+          "url": "https://cherryxtrfy.com/keyboards/k5-compact/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap 65% board with 5-pin sockets; the Kailh Red version is standard, editions carry CHERRY MX switches and cost more."
+    },
+    {
+      "id": "cherry-xtrfy-k5-compact-rgb-barebone",
+      "brand": "cherry",
+      "model": "Xtrfy K5 Compact RGB Barebone",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 89.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k5-compact-rgb-barebone-black/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k5-compact-rgb-barebone-black/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K5 Compact RGB Barebone product page",
+          "url": "https://cherryxtrfy.com/keyboards/k5-compact-rgb-barebone-black/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "polling_rate_hz",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "K5 Compact base without switches, keycaps or cable; takes 3-pin and 5-pin MX-style switches."
+    },
+    {
+      "id": "cherry-xtrfy-k5-pro-tmr-compact",
+      "brand": "cherry",
+      "model": "Xtrfy K5 Pro TMR Compact",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "CHERRY MK Crystal Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY MagCrate",
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k5-pro-tmr-compact/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k5-pro-tmr-compact/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/cherry-k5-pro-tmr-compact-review/",
+          "date": "2026-04-09",
+          "score": "76/100",
+          "verdict": "Comfortable 65% TMR board with rich competitive features, though plain-looking for the price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K5 Pro TMR Compact product page",
+          "url": "https://cherryxtrfy.com/keyboards/k5-pro-tmr-compact/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic TMR-sensing 65% board; per-key actuation, Rapid Trigger, DKS and SnapKey in CHERRY MagCrate."
+    },
+    {
+      "id": "cherry-xtrfy-k5v2-compact",
+      "brand": "cherry",
+      "model": "Xtrfy K5V2 Compact",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "CHERRY MX2A Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k5v2-compact/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k5v2-compact/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-desktops/cherry-xtrfy-k5v2-review/",
+          "date": "2024-04-19",
+          "score": "71/100",
+          "verdict": "MX2A switches are a clear upgrade and the board is bright and sturdy, but cheaper compacts feel nicer."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K5V2 Compact product page",
+          "url": "https://cherryxtrfy.com/keyboards/k5v2-compact/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "K5 updated with hot-swappable CHERRY MX2A Red switches; the page does not give the socket pin count."
+    },
+    {
+      "id": "cherry-xtrfy-k63w-pro",
+      "brand": "cherry",
+      "model": "Xtrfy K63W Pro Compact Ultra-Wideband",
+      "aka": [
+        "K63W Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX LOW PROFILE 2.0 Red",
+          "id": "cherry-mx-low-profile-2-0-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/k63w-pro-compact-ultra-wideband/",
+      "official_url": "https://cherryxtrfy.com/keyboards/k63w-pro-compact-ultra-wideband/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy K63W Pro Compact Ultra-Wideband product page",
+          "url": "https://cherryxtrfy.com/keyboards/k63w-pro-compact-ultra-wideband/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz",
+            "battery_mah",
+            "low_profile",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile board Cherry calls Compact (70%), whose wireless mode uses an ultra-wideband (UWB) dongle, not 2.4 GHz or Bluetooth; 8000 Hz wired or wireless."
+    },
+    {
+      "id": "cherry-xtrfy-mx-10-1-wireless",
+      "brand": "cherry",
+      "model": "Xtrfy MX 10.1 Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "cherry-lp",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX LOW PROFILE 2.0 Red",
+          "id": "cherry-mx-low-profile-2-0-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY UTILITY",
+      "os": [],
+      "price_usd": 249.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/mx-10-1-wireless/",
+      "official_url": "https://cherryxtrfy.com/keyboards/mx-10-1-wireless/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy MX 10.1 Wireless product page",
+          "url": "https://cherryxtrfy.com/keyboards/mx-10-1-wireless/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz",
+            "battery_mah",
+            "low_profile",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Slim aluminum full-size board with display, 4000 Hz wireless and 8000 Hz wired polling."
+    },
+    {
+      "id": "cherry-xtrfy-mx-3-1",
+      "brand": "cherry",
+      "model": "Xtrfy MX 3.1",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "CHERRY MX2A Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY software",
+      "os": [],
+      "price_usd": 129.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/mx-3-1/",
+      "official_url": "https://cherryxtrfy.com/keyboards/mx-3-1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy MX 3.1 product page",
+          "url": "https://cherryxtrfy.com/keyboards/mx-3-1/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size aluminum board with MX2A switches and detachable USB-C cable; black, white and pink."
+    },
+    {
+      "id": "cherry-xtrfy-mx-8-2-pro-tmr-wireless",
+      "brand": "cherry",
+      "model": "Xtrfy MX 8.2 Pro TMR Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "CHERRY MK Crystal Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY MagCrate",
+      "os": [],
+      "price_usd": 249.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/mx-8-2-pro-tmr-wireless/",
+      "official_url": "https://cherryxtrfy.com/keyboards/mx-8-2-pro-tmr-wireless/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/cherry-xtrfy-mx-8-2-pro-tmr-tkl-review/",
+          "date": "2026-03-02",
+          "score": "74/100",
+          "verdict": "Solid typing feel and TMR magnetic switches, but niche and far too expensive."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy MX 8.2 Pro TMR Wireless product page",
+          "url": "https://cherryxtrfy.com/keyboards/mx-8-2-pro-tmr-wireless/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz",
+            "battery_mah",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TKL with TMR magnetic sensing at 8000 Hz wired and wireless; its sockets take both CHERRY MK magnetic and MX mechanical switches."
+    },
+    {
+      "id": "cherry-xtrfy-mx-8-3-tkl-wireless",
+      "brand": "cherry",
+      "model": "Xtrfy MX 8.3 TKL Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4600,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "CHERRY MX2A Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "CHERRY UTILITY",
+      "os": [],
+      "price_usd": 299.0,
+      "price_date": "2026-11-23",
+      "price_url": "https://cherryxtrfy.com/keyboards/mx-8-3-tkl-wireless/",
+      "official_url": "https://cherryxtrfy.com/keyboards/mx-8-3-tkl-wireless/",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/keyboards/cherry-xtrfy-mx-8-3-tkl-wireless-review",
+          "date": "2025-08-22",
+          "score": "3.5/5",
+          "verdict": "Good gasket TKL with 4K wireless and 8K wired polling, held back by a steep price and limited software."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CHERRY: Xtrfy MX 8.3 TKL Wireless product page",
+          "url": "https://cherryxtrfy.com/keyboards/mx-8-3-tkl-wireless/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd",
+            "polling_rate_hz",
+            "battery_mah",
+            "mount",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gasket-mount TKL with display and knob, 4000 Hz wireless and 8000 Hz wired; hot-swap socket pin count not stated."
+    }
+  ]
+}

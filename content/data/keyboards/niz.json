@@ -1,0 +1,959 @@
+{
+  "brand": {
+    "id": "niz",
+    "name": "NIZ",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.nizkeyboard.com/",
+    "focus": [
+      "enthusiast",
+      "office"
+    ],
+    "about": "NIZ (also sold as NiZ Plum) makes electro-capacitive keyboards with rubber-dome-and-spring switches in 30g, 35g and 45g weights, sold wired or with Bluetooth from its own store.",
+    "sources": [
+      {
+        "title": "NIZ keyboard store",
+        "url": "https://www.nizkeyboard.com/",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "niz-108-ec-wf",
+      "brand": "niz",
+      "model": "108 EC-WF",
+      "aka": [
+        "108 IP68 waterproof series"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 229,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/niz-2019-new-87-108-ip68-waterproof-series-non-rgb",
+      "official_url": "https://www.nizkeyboard.com/products/niz-2019-new-87-108-ip68-waterproof-series-non-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: 87/108 IP68 waterproof series",
+          "url": "https://www.nizkeyboard.com/products/niz-2019-new-87-108-ip68-waterproof-series-non-rgb",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "IP68 waterproof version with a fixed USB cable; sold out on 2026-11-23."
+    },
+    {
+      "id": "niz-87-ec-wf",
+      "brand": "niz",
+      "model": "87 EC-WF",
+      "aka": [
+        "87 IP68 waterproof series",
+        "WF87"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 219,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/niz-2019-new-87-108-ip68-waterproof-series-non-rgb",
+      "official_url": "https://www.nizkeyboard.com/products/niz-2019-new-87-108-ip68-waterproof-series-non-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: 87/108 IP68 waterproof series",
+          "url": "https://www.nizkeyboard.com/products/niz-2019-new-87-108-ip68-waterproof-series-non-rgb",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "IP68 waterproof version with a fixed (not detachable) USB cable."
+    },
+    {
+      "id": "niz-atom-68",
+      "brand": "niz",
+      "model": "Atom 68",
+      "aka": [
+        "Atom68 Pro",
+        "Plum Atom 68"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 194,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/niz-2019-new-atom-68-ec-bluetooth-keyboard-rgb-or-non-rgb",
+      "official_url": "https://www.nizkeyboard.com/products/niz-2019-new-atom-68-ec-bluetooth-keyboard-rgb-or-non-rgb",
+      "reviews": [
+        {
+          "outlet": "Switch and Click",
+          "url": "https://switchandclick.com/epomaker-niz-plum-atom-68-review/",
+          "date": "2020-10-07",
+          "score": null,
+          "verdict": "Impressive switches make it a budget Topre alternative; build is decent, but the hook-in Costar stabilizers are its biggest weakness."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIZ: Atom 68 White / Atom68 Pro",
+          "url": "https://www.nizkeyboard.com/products/niz-2019-new-atom-68-ec-bluetooth-keyboard-rgb-or-non-rgb",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "adjustable_actuation",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "NIZ states the trigger point switches between 2mm and 3mm; a 10g spring can be added for a heavier feel."
+    },
+    {
+      "id": "niz-atom-66",
+      "brand": "niz",
+      "model": "Atom66",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 184,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/niz-2019-new-member-atom66-the-smallest-electro-capactive-bluetooth-keyboard-with-rgb-or-non-rgb",
+      "official_url": "https://www.nizkeyboard.com/products/niz-2019-new-member-atom66-the-smallest-electro-capactive-bluetooth-keyboard-with-rgb-or-non-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: Atom66",
+          "url": "https://www.nizkeyboard.com/products/niz-2019-new-member-atom66-the-smallest-electro-capactive-bluetooth-keyboard-with-rgb-or-non-rgb",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Layout based on the Filco Minila and HHKB, per NIZ. Sold out on 2026-11-23."
+    },
+    {
+      "id": "niz-i84",
+      "brand": "niz",
+      "model": "i84 ALU",
+      "aka": [
+        "i84"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 269,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/i84-al",
+      "official_url": "https://www.nizkeyboard.com/products/i84-al",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: i84 ALU",
+          "url": "https://www.nizkeyboard.com/products/i84-al",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Aluminum-case version of the Mini84 Pro / i84, also sold as a case alone; gaming firmware with a fixed 1.4mm actuation and manual 6KRO/NKRO switching. Regular price $269, $249 on sale."
+    },
+    {
+      "id": "niz-l84",
+      "brand": "niz",
+      "model": "L84",
+      "aka": [
+        "NEW L84",
+        "Plum L84"
+      ],
+      "status": "current",
+      "released": "2025",
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 85,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "30g electro capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 195,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/new-l84",
+      "official_url": "https://www.nizkeyboard.com/products/new-l84",
+      "reviews": [
+        {
+          "outlet": "Parka Blogs",
+          "url": "https://www.parkablogs.com/content/niz-l84-electro-capacity-keyboard-review",
+          "date": "2025-11-16",
+          "score": null,
+          "verdict": "Well made and nearly silent; light force and short travel reduce fatigue, but those are the main reasons to pay its price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIZ: NEW L84 White",
+          "url": "https://www.nizkeyboard.com/products/new-l84",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "low_profile",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "NIZ: NEW L84 Grey",
+          "url": "https://www.nizkeyboard.com/products/new-l84-black",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Parka Blogs: Review: NIZ L84 electro-capacitive keyboard",
+          "url": "https://www.parkablogs.com/content/niz-l84-electro-capacity-keyboard-review",
+          "kind": "review",
+          "backs": [
+            "released",
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile EC board, Bluetooth 5.2. Parka Blogs reports software-adjustable actuation from 0.6mm to 2.6mm; NIZ's page says 2mm/3mm. Sold out on 2026-11-23."
+    },
+    {
+      "id": "niz-micro-82",
+      "brand": "niz",
+      "model": "Micro 82",
+      "aka": [
+        "Micro82 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 82,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 200,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/2019-new-micro-82-ec-keyboard-s-ble-ble-rgb-or-non-rgb",
+      "official_url": "https://www.nizkeyboard.com/products/2019-new-micro-82-ec-keyboard-s-ble-ble-rgb-or-non-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: Micro 82 White / Micro82 Pro",
+          "url": "https://www.nizkeyboard.com/products/2019-new-micro-82-ec-keyboard-s-ble-ble-rgb-or-non-rgb",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "NIZ: Micro 82 Black",
+          "url": "https://www.nizkeyboard.com/products/2020-new-micro-82-ec-keyboard-s-ble-ble-black-rgb-or-non-rgb",
+          "kind": "official",
+          "backs": [
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "niz-micro-84",
+      "brand": "niz",
+      "model": "Micro84",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 195,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/new-micro84-bluetooth-usb-ec-keyboard-with-rgb-non-rgb",
+      "official_url": "https://www.nizkeyboard.com/products/new-micro84-bluetooth-usb-ec-keyboard-with-rgb-non-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: Micro84",
+          "url": "https://www.nizkeyboard.com/products/new-micro84-bluetooth-usb-ec-keyboard-with-rgb-non-rgb",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "niz-mini-84-pro",
+      "brand": "niz",
+      "model": "Mini84 Pro V6",
+      "aka": [
+        "MINI 84 V6 PRO"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 200,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/plum-mini-84-pro-keys-35g-45g-electro-capacitive-keyboard-rgb-non-rgb-backlighting",
+      "official_url": "https://www.nizkeyboard.com/products/plum-mini-84-pro-keys-35g-45g-electro-capacitive-keyboard-rgb-non-rgb-backlighting",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: MINI 84 V6 PRO WHITE/BLACK",
+          "url": "https://www.nizkeyboard.com/products/plum-mini-84-pro-keys-35g-45g-electro-capacitive-keyboard-rgb-non-rgb-backlighting",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "case_material",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gaming version; plastic case from $200 or aluminum case from $269."
+    },
+    {
+      "id": "niz-s104",
+      "brand": "niz",
+      "model": "S104",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 194,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/new-s104-ec-usb-35g",
+      "official_url": "https://www.nizkeyboard.com/products/new-s104-ec-usb-35g",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: S104 WHITE",
+          "url": "https://www.nizkeyboard.com/products/new-s104-ec-usb-35g",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired gaming version $194, Bluetooth version $259."
+    },
+    {
+      "id": "niz-x108",
+      "brand": "niz",
+      "model": "X108",
+      "aka": [
+        "x108 White/Black"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 194,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/niz-2019-new-x108-electro-capactive-bluetooth-keyboard-non-rgb",
+      "official_url": "https://www.nizkeyboard.com/products/niz-2019-new-x108-electro-capactive-bluetooth-keyboard-non-rgb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: x108 White/Black",
+          "url": "https://www.nizkeyboard.com/products/niz-2019-new-x108-electro-capactive-bluetooth-keyboard-non-rgb",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "os",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "2021 revision with multimedia keys and Mac keycaps included; Win key lock for games."
+    },
+    {
+      "id": "niz-x87",
+      "brand": "niz",
+      "model": "X87 Pro",
+      "aka": [
+        "X87",
+        "Plum X87"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 3000,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g Electro Capacitive",
+          "id": null
+        },
+        {
+          "name": "45g Electro Capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 190,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/niz-2019-new-x87-electro-capacitive-bluetooth-keyboard-non-rgb-white-black",
+      "official_url": "https://www.nizkeyboard.com/products/niz-2019-new-x87-electro-capacitive-bluetooth-keyboard-non-rgb-white-black",
+      "reviews": [
+        {
+          "outlet": "TechPowerUp",
+          "url": "https://www.techpowerup.com/review/nlz-plum-x87-35g-keyboard/",
+          "date": "2021-04-01",
+          "score": "5/5",
+          "verdict": "A budget alternative to Topre with light 35g electro-capacitive switches and modern features."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIZ: X87/x87 pro White/Black",
+          "url": "https://www.nizkeyboard.com/products/niz-2019-new-x87-electro-capacitive-bluetooth-keyboard-non-rgb-white-black",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "price_usd",
+            "os",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "NIZ: N87 inner parts & QMK PCB (wired)",
+          "url": "https://www.nizkeyboard.com/products/n87-inner-part-qmk-pcb",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Game version with switchable 6KRO/NKRO; NIZ lists 1000Hz on the old board and up to 3000Hz on this one. A QMK/VIA wired PCB and the N87 aluminum case are sold separately for the X87 series."
+    },
+    {
+      "id": "niz-x99",
+      "brand": "niz",
+      "model": "X99",
+      "aka": [
+        "X99 Gaming Keyboard"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "35g capacitive",
+          "id": null
+        },
+        {
+          "name": "45g capacitive",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 195,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.nizkeyboard.com/products/x99-white",
+      "official_url": "https://www.nizkeyboard.com/products/x99-white",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NIZ: X99 WHITE/BLACK Gaming Keyboard",
+          "url": "https://www.nizkeyboard.com/products/x99-white",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switches",
+            "connectivity",
+            "price_usd",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired $195, Bluetooth $245."
+    }
+  ]
+}

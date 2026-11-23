@@ -1,0 +1,662 @@
+{
+  "maker": {
+    "id": "invokeys",
+    "name": "Invokeys",
+    "role": "brand",
+    "country": "US",
+    "founded": null,
+    "official_url": "https://invokeys.com/",
+    "about": "Southern California switch brand selling its Artisanal and Reserve series, made by Aflion, BSUN and LICHICX.",
+    "sources": [
+      {
+        "title": "Invokeys: Blueberry Chiffon Switches (SoCal origin)",
+        "url": "https://invokeys.com/products/invokeys-blueberry-chiffon-switches",
+        "kind": "official",
+        "backs": [
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Invokeys: products",
+        "url": "https://invokeys.com/",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "invokeys-black-sesame",
+      "name": "Black Sesame",
+      "maker": "invokeys",
+      "made_by": "aflion",
+      "family": "Artisanal",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 63,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "20mm single stage long spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://invokeys.com/products/invokeys-black-sesame-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/invokeys-black-sesame-switch-review",
+          "date": "2022-10-02",
+          "score": null,
+          "verdict": "A refined Matcha Latte with a thicker central pole; the reviewer rates it a standout out-of-box linear in its price range."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Invokeys: Black Sesame Switches",
+          "url": "https://invokeys.com/products/invokeys-black-sesame-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Specs are for V2; dustproof long-pole stem, hand-lubed at the factory. Invokeys lists it as discontinued."
+    },
+    {
+      "id": "invokeys-blueberry-chiffon",
+      "name": "Blueberry Chiffon",
+      "maker": "invokeys",
+      "made_by": "aflion",
+      "family": "Artisanal",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "15mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://invokeys.com/products/invokeys-blueberry-chiffon-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/invokeys-blueberry-chiffon-switch-review",
+          "date": "2022-08-21",
+          "score": null,
+          "verdict": "A rare light tactile from Aflion that pays off, ticking the major boxes with room left for finer-detail improvements."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Invokeys: Blueberry Chiffon Switches",
+          "url": "https://invokeys.com/products/invokeys-blueberry-chiffon-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Specs are for V2; light long-pole tactile inspired by MX Browns. Invokeys lists it as discontinued."
+    },
+    {
+      "id": "invokeys-matcha-latte",
+      "name": "Matcha Latte",
+      "maker": "invokeys",
+      "made_by": "aflion",
+      "family": "Artisanal",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "15mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://invokeys.com/products/invokeys-matcha-latte-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/invokeys-matcha-latte-switch-review",
+          "date": "2022-01-09",
+          "score": null,
+          "verdict": "Nails the hand-lubed feel Invokeys aimed for; the reviewer was surprised how well these Aflion-made linears performed."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Invokeys: Matcha Latte Switches",
+          "url": "https://invokeys.com/products/invokeys-matcha-latte-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Specs are for V2 with a 13.6mm long-pole POM stem. Invokeys lists it as discontinued."
+    },
+    {
+      "id": "invokeys-purple-rice",
+      "name": "Purple Rice",
+      "maker": "invokeys",
+      "made_by": "bsun",
+      "family": "Artisanal",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 52,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "nylon",
+        "stem": "UPE"
+      },
+      "spring": "22mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://invokeys.com/products/invokeys-purple-rice-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Invokeys: Purple Rice Switches",
+          "url": "https://invokeys.com/products/invokeys-purple-rice-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Invokeys lists it as discontinued."
+    },
+    {
+      "id": "invokeys-red-bean",
+      "name": "Red Bean",
+      "maker": "invokeys",
+      "made_by": "aflion",
+      "family": "Artisanal",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "PBT",
+        "stem": "HDPE"
+      },
+      "spring": "22mm double stage",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://invokeys.com/products/invokeys-red-bean-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Invokeys: Red Bean Switches",
+          "url": "https://invokeys.com/products/invokeys-red-bean-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dustproof-style stem; Invokeys' first 4.0mm full-travel switch."
+    },
+    {
+      "id": "invokeys-daydreamer",
+      "name": "Daydreamer",
+      "maker": "invokeys",
+      "made_by": "lichicx",
+      "family": "Invokeys x Alas",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POK",
+        "bottom": "nylon",
+        "stem": "dustproof POM with silicone silencer"
+      },
+      "spring": "18mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://invokeys.com/products/invokeys-x-alas-daydreamer-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/invokeys-x-alas-daydreamer-switch-review",
+          "date": "2023-11-26",
+          "score": null,
+          "verdict": "Decent silent tactile with well-muted collisions and a bump stronger than most silent tactiles; close to the JKDK Crimson."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Invokeys: Daydreamer Switches",
+          "url": "https://invokeys.com/products/invokeys-x-alas-daydreamer-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy P-shaped bump with no pre-travel; designed with Alas and made by Wikuo/LICHICX. Invokeys lists it as discontinued."
+    },
+    {
+      "id": "invokeys-nightshade",
+      "name": "Nightshade",
+      "maker": "invokeys",
+      "made_by": "lichicx",
+      "family": "Invokeys x Alas",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POK",
+        "bottom": "nylon",
+        "stem": "dustproof POM with silicone silencer"
+      },
+      "spring": "18mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": "https://invokeys.com/products/invokeys-x-alas-nightshade-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Invokeys: Nightshade Switches",
+          "url": "https://invokeys.com/products/invokeys-x-alas-nightshade-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "made_by",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed with Alas and made by Wikuo/LICHICX. Invokeys lists it as discontinued."
+    },
+    {
+      "id": "invokeys-goji-reserve",
+      "name": "Goji Reserve",
+      "maker": "invokeys",
+      "made_by": "bsun",
+      "family": "Reserve",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 36,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM with gold flakes",
+        "bottom": "POM",
+        "stem": "POK"
+      },
+      "spring": "21mm single-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://invokeys.com/products/invokeys-goji-reserve-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/invokeys-goji-reserve-switch-review",
+          "date": "2025-10-26",
+          "score": null,
+          "verdict": "Solid very light tactile with a long, subtle rolling bump mid-stroke and soft, muted housing collisions."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Invokeys: Goji Reserve Switches",
+          "url": "https://invokeys.com/products/invokeys-goji-reserve-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Invokeys Goji Reserve Switch Review",
+          "url": "https://www.theremingoat.com/blog/invokeys-goji-reserve-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light tactile; ThereminGoat shows BSUN factory prototypes."
+    },
+    {
+      "id": "invokeys-hojicha-reserve",
+      "name": "Hojicha Reserve",
+      "maker": "invokeys",
+      "made_by": null,
+      "family": "Reserve",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 33,
+      "bottom_out_force_gf": 51,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM with gold flakes",
+        "bottom": "POM",
+        "stem": "POK"
+      },
+      "spring": "21mm single-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://invokeys.com/products/invokeys-hojicha-reserve-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Invokeys: Hojicha Reserve Switches",
+          "url": "https://invokeys.com/products/invokeys-hojicha-reserve-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Specs are for version 2; medium bump felt through the whole stroke."
+    },
+    {
+      "id": "invokeys-matcha-reserve",
+      "name": "Matcha Reserve",
+      "maker": "invokeys",
+      "made_by": null,
+      "family": "Reserve",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 53,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM with gold flakes",
+        "bottom": "POM",
+        "stem": "LY"
+      },
+      "spring": "21mm single-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://invokeys.com/products/invokeys-matcha-reserve-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Invokeys: Matcha Reserve Switches",
+          "url": "https://invokeys.com/products/invokeys-matcha-reserve-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "invokeys-pea-flower",
+      "name": "Pea Flower",
+      "maker": "invokeys",
+      "made_by": null,
+      "family": "Reserve",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.9,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC with gold flakes",
+        "bottom": "PC",
+        "stem": "LY"
+      },
+      "spring": "15mm single-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://invokeys.com/products/invokeys-pea-flower-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Invokeys: Pea Flower Switches",
+          "url": "https://invokeys.com/products/invokeys-pea-flower-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    }
+  ]
+}

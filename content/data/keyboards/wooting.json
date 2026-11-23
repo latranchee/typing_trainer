@@ -1,0 +1,620 @@
+{
+  "brand": {
+    "id": "wooting",
+    "name": "Wooting",
+    "country": "NL",
+    "founded": null,
+    "official_url": "https://wooting.io/",
+    "focus": [
+      "gaming",
+      "enthusiast"
+    ],
+    "about": "Dutch maker of analog Hall-effect gaming keyboards with adjustable actuation and Rapid Trigger, configured in its Wootility software. Wooting.io is operated by Wooting Store B.V. in Zeist, the Netherlands.",
+    "sources": [
+      {
+        "title": "Wooting: home page and product lineup",
+        "url": "https://wooting.io/",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Wooting: Company & Trademarks",
+        "url": "https://wooting.io/ja/policies/company-trademarks",
+        "kind": "official",
+        "backs": [
+          "country"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "wooting-60he",
+      "brand": "wooting",
+      "model": "60HE",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Gateron Lekker",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Wootility",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/wooting-60he-review/",
+          "date": "2022-08-02",
+          "score": "91/100",
+          "verdict": "A superb 60% gaming keyboard whose analog switches give real in-game benefits, backed by one of the best peripheral apps."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/wooting/60he",
+          "date": "2023-04-18",
+          "score": null,
+          "verdict": "Excellent build and remarkably low latency; magnetic switches let you set the pre-travel per key."
+        }
+      ],
+      "sources": [
+        {
+          "title": "RTINGS: Wooting 60HE review (size, hot-swap, wired, magnetic switches)",
+          "url": "https://www.rtings.com/keyboard/reviews/wooting/60he",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "connectivity",
+            "switches",
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Wooting 60HE review",
+          "url": "https://www.pcgamer.com/wooting-60he-review/",
+          "kind": "review",
+          "backs": [
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The original 60HE, no longer listed on wooting.io; its product URL now shows the 60HE+. Specs here come from reviews."
+    },
+    {
+      "id": "wooting-60he-v2",
+      "brand": "wooting",
+      "model": "60HE v2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Lekker Tikken Medium",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic or aluminum",
+      "mount": "strap",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Wootility",
+      "os": [],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://wooting.io/wooting-60he-v2",
+      "official_url": "https://wooting.io/wooting-60he-v2",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-60he-v2-review/",
+          "date": "2026-02-27",
+          "score": "93/100",
+          "verdict": "Wooting's best board so far, good for gaming and typing; costs more than the 60HE and some keys ping slightly."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/wooting/60he-v2-magnetic",
+          "date": "2026-01-29",
+          "score": null,
+          "verdict": "Outstanding gaming keyboard with extremely low, consistent latency and Rapid Trigger and SOCD options."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wooting: 60HE v2 product page and tech specs",
+          "url": "https://wooting.io/wooting-60he-v2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ANSI and ISO come with a regular or split spacebar; actuation 0.1 to 4.0 mm in 0.1 mm steps; FR4 plate. ISO ships without keycaps and costs less (from 164.99 USD); a v2 Module without case is also sold."
+    },
+    {
+      "id": "wooting-60he-plus",
+      "brand": "wooting",
+      "model": "60HE+",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Lekker L60",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Wootility",
+      "os": [],
+      "price_usd": 154.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://wooting.io/wooting-60he",
+      "official_url": "https://wooting.io/wooting-60he",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/wooting-60he-review",
+          "date": "2024-12-12",
+          "score": "4.5/5",
+          "verdict": "Still among the most responsive, customizable competitive keyboards, though rivals are catching up and comfort could be better."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wooting: 60HE+ product page and tech specs",
+          "url": "https://wooting.io/wooting-60he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 4.0 mm in 0.1 mm steps; steel plate; spare Lekker L60 switches and a switch puller in the box. ISO ships without keycaps and costs less (134.99 USD)."
+    },
+    {
+      "id": "wooting-60he-plus-module",
+      "brand": "wooting",
+      "model": "60HE+ Module",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Wootility",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://wooting.io/wooting-60he-module",
+      "official_url": "https://wooting.io/wooting-60he-module",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wooting: 60HE+ Module product page",
+          "url": "https://wooting.io/wooting-60he-module",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "firmware",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "GH60-format PCBA with PC plate and screw-in stabilizers, sold without case, switches or keycaps; needs Lekker magnetic switches. The page states it is not compatible with QMK."
+    },
+    {
+      "id": "wooting-80he",
+      "brand": "wooting",
+      "model": "80HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Lekker L60 V2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic or zinc alloy",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Wootility",
+      "os": [],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://wooting.io/wooting-80he",
+      "official_url": "https://wooting.io/wooting-80he",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/wooting/80he",
+          "date": "2024-12-13",
+          "score": null,
+          "verdict": "Outstanding gaming keyboard with exceptionally low latency and 8000Hz polling; the gasket mount feels fairly stiff."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-80he-review/",
+          "date": "2024-10-29",
+          "score": "78/100",
+          "verdict": "Powerful Hall-effect switches and light web software, but the chassis flexes."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/wooting-80he-review",
+          "date": "2025-01-09",
+          "score": "4/5",
+          "verdict": "Perhaps the most powerful gaming keyboard around; wired only and its non-standard PCB limits aftermarket parts."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wooting: 80HE product page and tech specs",
+          "url": "https://wooting.io/wooting-80he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Wooting 80HE review (hot-swappable switches)",
+          "url": "https://www.rtings.com/keyboard/reviews/wooting/80he",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wooting calls it an 80% board. ANSI ships with keycaps; ISO and JIS ship without keycaps and cost less (from 159.99 USD); the ANSI plastic case was out of stock on 2026-11-23."
+    },
+    {
+      "id": "wooting-80he-plus",
+      "brand": "wooting",
+      "model": "80HE+",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Lekker Tikken Medium",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic or zinc alloy",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Wootility",
+      "os": [],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://wooting.io/wooting-80he-plus",
+      "official_url": "https://wooting.io/wooting-80he-plus",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wooting: 80HE+ product page and tech specs",
+          "url": "https://wooting.io/wooting-80he-plus",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Update of the 80HE with a new MCU, Lekker Tikken switches and FR4 plate; actuation 0.1 to 4.0 mm. ISO prebuilts cost less (from 179.99 USD); split-spacebar layouts only via the Module; zinc version ships mid-December."
+    },
+    {
+      "id": "wooting-two-he",
+      "brand": "wooting",
+      "model": "Two HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Lekker L60",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Wootility",
+      "os": [],
+      "price_usd": 194.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://wooting.io/wooting-two-he",
+      "official_url": "https://wooting.io/wooting-two-he",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/wooting/two-he",
+          "date": "2022-07-04",
+          "score": null,
+          "verdict": "Amazing for gaming with extremely low latency and software features that adjust pre-travel by hand."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/wooting-two-he",
+          "date": "2021-10-08",
+          "score": "3.5/5",
+          "verdict": "Fun to tinker with and highly configurable, but build and keycaps fall short and analog input needs supported games."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/wooting-two-he-review/",
+          "date": "2021-12-13",
+          "score": "91/100",
+          "verdict": "Analog magnetic switches, hot-swap sockets, a great app and superb build make a gaming keyboard like no other."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wooting: Two HE product page and tech specs",
+          "url": "https://wooting.io/wooting-two-he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Wooting Two HE review (hot-swappable switches)",
+          "url": "https://www.pcgamer.com/wooting-two-he-review/",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size analog board, aluminium plate, four spare Lekker switches in the box. ISO ships without keycaps and costs less (174.99 USD)."
+    }
+  ]
+}

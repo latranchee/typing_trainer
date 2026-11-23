@@ -3,7 +3,7 @@ import { makePairs, makeSentences, makeWords } from '../core/generator';
 import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import { el, flash } from '../ui/dom';
-import type { Drill, DrillHost, Note, OptionGroup } from './types';
+import type { Drill, DrillHost, Note, OptionGroup, SetText } from './types';
 import { languageOption, matches, toggleOption, toNotes } from './types';
 
 /** Line-height of the text block, in rem. Matches `.line-text` in the stylesheet. */
@@ -23,6 +23,10 @@ export class LineDrill implements Drill {
   private notes: Note[] = [];
   /** Character element for each note; a dead-key pair shares one element. */
   private cells: HTMLElement[] = [];
+  /** One element per character, in order: where the ghosts' carets go. */
+  private chars: HTMLElement[] = [];
+  private ghosted: HTMLElement[] = [];
+  private set: SetText | null = null;
   private cursor = 0;
   private total = 0;
   private done = false;
@@ -47,15 +51,21 @@ export class LineDrill implements Drill {
   }
 
   restart(): void {
-    const { layout, settings, bias } = this.host;
-    const source =
-      this.id === 'pairs'
+    const { layout, settings, bias, fixed } = this.host;
+    const source = fixed
+      ? fixed.text
+      : this.id === 'pairs'
         ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, training: settings.pairTraining }, bias)
         : settings.wordsSource === 'sentences'
           ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias)
           : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias);
+    this.set = fixed
+      ? { text: fixed.text, kind: fixed.kind, lang: fixed.lang }
+      : { text: source, kind: this.id === 'pairs' ? 'pairs' : settings.wordsSource, lang: settings.lang };
     this.notes = toNotes(layout, source);
     this.cells = [];
+    this.chars = [];
+    this.ghosted = [];
     this.cursor = 0;
     this.done = false;
     this.here = null;
@@ -78,6 +88,7 @@ export class LineDrill implements Drill {
           note.char === ' ' ? String.fromCharCode(0xa0) : note.char,
         );
         word.append(cell);
+        this.chars.push(cell);
         this.total++;
         if (note.char === ' ') {
           this.text.append(word);
@@ -159,6 +170,18 @@ export class LineDrill implements Drill {
       return;
     }
     this.show();
+  }
+
+  current(): SetText | null {
+    return this.set;
+  }
+
+  ghosts(positions: readonly number[]): void {
+    const cells = positions.map((done) => this.chars[done]).filter((cell): cell is HTMLElement => cell !== undefined);
+    if (cells.length === this.ghosted.length && cells.every((cell, i) => cell === this.ghosted[i])) return;
+    for (const cell of this.ghosted) cell.classList.remove('is-ghost');
+    for (const cell of cells) cell.classList.add('is-ghost');
+    this.ghosted = cells;
   }
 
   typos(typed: readonly string[]): void {

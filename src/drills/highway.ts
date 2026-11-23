@@ -5,8 +5,9 @@ import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import type { Row } from '../core/physical';
 import { css, el, fitCanvas } from '../ui/dom';
+import { weighted } from '../ui/font';
 import { baselineDrop } from '../ui/glyph';
-import type { Drill, DrillHost, Note, OptionGroup } from './types';
+import type { Drill, DrillHost, Note, OptionGroup, SetText } from './types';
 import { languageOption, matches, toNotes } from './types';
 
 /** Notes ahead of the strike line when a set is waiting to start. */
@@ -65,6 +66,7 @@ export class HighwayDrill implements Drill {
   /** Hardcore: the wrong keys typed past the front note, waiting for Backspace. */
   private typed: readonly string[] = [];
   private fixture: HighwayFixture | null = null;
+  private set: SetText | null = null;
   private colors: Record<FingerKind, Shades> | null = null;
   private resizer = new ResizeObserver(() => this.draw(performance.now()));
   /** Shake and pop are feedback flourishes; the falling notes themselves are the task and stay. */
@@ -86,13 +88,15 @@ export class HighwayDrill implements Drill {
   }
 
   restart(): void {
-    const { layout, settings, bias } = this.host;
-    const text =
-      settings.highwaySource === 'pairs'
+    const { layout, settings, bias, fixed } = this.host;
+    const text = fixed
+      ? fixed.text
+      : settings.highwaySource === 'pairs'
         ? makePairs(layout, settings.lang, 14, { size: settings.pairSize, training: settings.pairTraining }, bias)
         : settings.highwaySource === 'sentences'
           ? makeSentences(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias)
           : makeWords(layout, settings.lang, settings.setWords, { caps: settings.caps }, bias);
+    this.set = fixed ? { text: fixed.text, kind: fixed.kind, lang: fixed.lang } : { text, kind: settings.highwaySource, lang: settings.lang };
     this.notes = toNotes(layout, text);
     this.cursor = 0;
     this.progress = -START_LEAD;
@@ -164,7 +168,7 @@ export class HighwayDrill implements Drill {
     }
 
     const lead = this.cursor - this.progress;
-    if (this.host.settings.tempoLock && this.started && lead > HIT_WINDOW) {
+    if (this.locked && this.started && lead > HIT_WINDOW) {
       this.shakeAt = event.time;
       this.host.say(t.highway.early, 'error');
       return;
@@ -192,6 +196,15 @@ export class HighwayDrill implements Drill {
     }
   }
 
+  /** A locked tempo, except on a fixed text: a shared text and a race are typed at the typist's own pace. */
+  private get locked(): boolean {
+    return this.host.settings.tempoLock && this.host.fixed === null;
+  }
+
+  current(): SetText | null {
+    return this.set;
+  }
+
   typos(typed: readonly string[]): void {
     this.typed = [...typed];
     this.draw(performance.now());
@@ -201,7 +214,7 @@ export class HighwayDrill implements Drill {
     if (!this.fixture && this.started && !this.done) {
       const lead = this.cursor - this.progress;
       let target: number;
-      if (this.host.settings.tempoLock) {
+      if (this.locked) {
         target = (this.host.settings.tempoWpm * 5) / 60;
       } else {
         // Bring the next note to the line at the moment the next keypress is due.
@@ -362,7 +375,7 @@ export class HighwayDrill implements Drill {
       ctx.save();
       ctx.fillStyle = css('--ink');
       const px = Math.round(size * 0.46);
-      ctx.font = `600 ${px}px ${css('--font')}`;
+      ctx.font = `${weighted(600)} ${px}px ${css('--font')}`;
       ctx.textAlign = 'center';
       // The letter is set by its own ink: a baseline placed on the em box leaves a lowercase letter under the middle of its shape.
       ctx.textBaseline = 'alphabetic';
@@ -400,7 +413,7 @@ export class HighwayDrill implements Drill {
     const color = css('--error');
     ctx.save();
     ctx.fillStyle = color;
-    ctx.font = `500 ${Math.round(size * 0.5)}px ${css('--font')}`;
+    ctx.font = `${weighted(500)} ${Math.round(size * 0.5)}px ${css('--font')}`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     this.typed.forEach((label, i) => {

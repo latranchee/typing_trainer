@@ -1,0 +1,282 @@
+{
+  "maker": {
+    "id": "greetech",
+    "name": "Greetech",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": 2007,
+    "official_url": null,
+    "about": "Huizhou Greetech Electronics is a micro switch maker in Huizhou, Guangdong, that also makes MX-style mechanical keyboard switches (the GT02 series).",
+    "sources": [
+      {
+        "title": "HKTDC Sourcing: Huizhou Greetech Electronic Co., Ltd profile",
+        "url": "https://sourcing.hktdc.com/en/Supplier-Store/Profile/Huizhou-Greetech-Electronic-Co-Ltd-s/1S00O741T",
+        "kind": "reference",
+        "backs": [
+          "name",
+          "country",
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Deskthority wiki: Greetech",
+        "url": "https://deskthority.net/wiki/Greetech",
+        "kind": "reference",
+        "backs": [
+          "founded",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "greetech-black",
+      "name": "Greetech Black",
+      "maker": "greetech",
+      "made_by": null,
+      "family": "GT02",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 65,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MechanicalKeyboards.com: Greetech Black switch",
+          "url": "https://mechanicalkeyboards.com/products/greetech-black-65g-linear",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Greetech GT02 series",
+          "url": "https://deskthority.net/wiki/Greetech_GT02_series",
+          "kind": "reference",
+          "backs": [
+            "family",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in plate-mount (GT02A2ANN) and PCB-mount (GT02A2AFW) versions."
+    },
+    {
+      "id": "greetech-blue",
+      "name": "Greetech Blue",
+      "maker": "greetech",
+      "made_by": null,
+      "family": "GT02",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MechanicalKeyboards.com: Greetech Blue switch",
+          "url": "https://mechanicalkeyboards.com/products/greetech-blue-55g-clicky",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Greetech GT02 series",
+          "url": "https://deskthority.net/wiki/Greetech_GT02_series",
+          "kind": "reference",
+          "backs": [
+            "family",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in plate-mount (GT02A1DNN) and PCB-mount (GT02A1DFW) versions. MechanicalKeyboards.com gives the actuation force as both 55g and 50 cN, so it is left open."
+    },
+    {
+      "id": "greetech-brown",
+      "name": "Greetech Brown",
+      "maker": "greetech",
+      "made_by": null,
+      "family": "GT02",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MechanicalKeyboards.com: Greetech Brown switch",
+          "url": "https://mechanicalkeyboards.com/products/greetech-brown-50g-tactile",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Greetech GT02 series",
+          "url": "https://deskthority.net/wiki/Greetech_GT02_series",
+          "kind": "reference",
+          "backs": [
+            "family",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in plate-mount (GT02A1BNN) and PCB-mount (GT02A1BFW) versions."
+    },
+    {
+      "id": "greetech-red",
+      "name": "Greetech Red",
+      "maker": "greetech",
+      "made_by": null,
+      "family": "GT02",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MechanicalKeyboards.com: Greetech Red switch",
+          "url": "https://mechanicalkeyboards.com/products/greetech-red-45g-linear",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "status",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Deskthority wiki: Greetech GT02 series",
+          "url": "https://deskthority.net/wiki/Greetech_GT02_series",
+          "kind": "reference",
+          "backs": [
+            "family",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in plate-mount (GT02A1ENN) and PCB-mount (GT02A1EFW) versions."
+    }
+  ]
+}

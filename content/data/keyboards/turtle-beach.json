@@ -1,0 +1,1523 @@
+{
+  "brand": {
+    "id": "turtle-beach",
+    "name": "Turtle Beach",
+    "country": null,
+    "founded": 1975,
+    "official_url": "https://www.turtlebeach.com/",
+    "focus": [
+      "gaming"
+    ],
+    "about": "Gaming accessory company that moved from headsets into PC keyboards and mice in 2019. It bought ROCCAT and now sells the former ROCCAT Vulcan keyboards under the Turtle Beach name, alongside its Command Series boards.",
+    "sources": [
+      {
+        "title": "Turtle Beach: About Turtle Beach",
+        "url": "https://www.turtlebeach.com/pages/about-turtle-beach",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Turtle Beach: Keyboards collection (current lineup)",
+        "url": "https://www.turtlebeach.com/collections/keyboards",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "RTINGS: ROCCAT Vulcan II Max/Mini review (note on Turtle Beach buying ROCCAT and rebranding)",
+        "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-ii-max-mini",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "turtle-beach-command-series-kb5",
+      "brand": "turtle-beach",
+      "model": "Command Series KB5",
+      "aka": [],
+      "status": "current",
+      "released": "2026-05",
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 109,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN Low-Profile Mechanical Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic, aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/command-series-kb5-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/command-series-kb5-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-command-series-kb5-review-a-touchscreen-and-a-numberpad-in-one-keyboard",
+          "date": "2026-08-09",
+          "score": "4/5",
+          "verdict": "Low-profile full-size board with a touchscreen, extra macro keys and 8K polling; firmware updates are convoluted and the wrist rest feels flimsy."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/turtle-beach-command-series-kb5-review",
+          "date": "2026-08-06",
+          "score": "3.5/5",
+          "verdict": "Useful touchscreen and comfortable wrist rest, but a deep actuation point, very wide body and cheap-feeling plastic hurt it at this price."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/turtle-beach-command-series-kb5-review",
+          "date": "2026-09-11",
+          "score": "3/5",
+          "verdict": "A decent gaming keyboard held back by its price, a wired-only connection and switches that are not hot-swappable."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Command Series KB5 Keyboard",
+          "url": "https://www.turtlebeach.com/products/command-series-kb5-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "low_profile",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Turtle Beach Command Series KB5 review",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-command-series-kb5-review-a-touchscreen-and-a-numberpad-in-one-keyboard",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Turtle Beach Command Series KB5 review",
+          "url": "https://www.tomsguide.com/computing/keyboards/turtle-beach-command-series-kb5-review",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size low-profile board with a 2.4-inch touch display and five dedicated macro keys. Switches actuate at 1.2 mm with 42 gf and 3.1 mm total travel, per Turtle Beach."
+    },
+    {
+      "id": "turtle-beach-command-series-kb7",
+      "brand": "turtle-beach",
+      "model": "Command Series KB7",
+      "aka": [
+        "Command Series KB7 TKL"
+      ],
+      "status": "current",
+      "released": "2026-05",
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 78,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN Low-Profile Hall-Effect",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic, aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/command-series-kb7-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/command-series-kb7-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-command-series-kb7-review",
+          "date": "2026-07-05",
+          "score": "3.5/5",
+          "verdict": "Touchscreen, modular design and Hall-effect switches show potential, but the software needs an overhaul and the board draws a lot of power."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/turtle-beach-command-series-kb7-review",
+          "date": "2026-07-21",
+          "score": "4/5",
+          "verdict": "Smooth, precise Hall-effect performance with 8K polling and deep customization; no wireless option and a fairly high price."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/turtle-beach-command-series-kb7-tkl-review/",
+          "date": "2026-06-30",
+          "score": "85/100",
+          "verdict": "Feature-rich Hall-effect TKL with premium build and a luxurious screen; the screen is superfluous for most, and the switches feel less tactile than mechanical ones."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Command Series KB7 Keyboard",
+          "url": "https://www.turtlebeach.com/products/command-series-kb7-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "low_profile",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Turtle Beach Command Series KB7 review",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-command-series-kb7-review",
+          "kind": "review",
+          "backs": [
+            "hot_swap",
+            "key_count",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile Hall-effect TKL with a 4.3-inch touch display; actuation adjustable from 0.1 to 3.2 mm, per Turtle Beach. Docks with the KP7 keypad on rails."
+    },
+    {
+      "id": "turtle-beach-command-series-kp7",
+      "brand": "turtle-beach",
+      "model": "Command Series KP7",
+      "aka": [
+        "KP7 Keypad"
+      ],
+      "status": "current",
+      "released": "2026-05",
+      "kind": "prebuilt",
+      "size": "numpad",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN Low-Profile Hall-Effect",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/command-series-kp7-keypad",
+      "official_url": "https://www.turtlebeach.com/products/command-series-kp7-keypad",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-kp7-review",
+          "date": "2026-07-03",
+          "score": "4/5",
+          "verdict": "Works well as a standalone numpad or gaming keypad with 8,000 Hz polling; better on its own than as a KB7 add-on."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Command Series KP7 Keypad",
+          "url": "https://www.turtlebeach.com/products/command-series-kp7-keypad",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "low_profile",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Turtle Beach KP7 review",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-kp7-review",
+          "kind": "review",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect gaming keypad that works alone or docks to the KB7; Turtle Beach sells it as a gaming keypad, macro pad or numpad, with an extendable thumb bar and scroll wheel. Hot-swap is not mentioned by Turtle Beach."
+    },
+    {
+      "id": "turtle-beach-pyro",
+      "brand": "turtle-beach",
+      "model": "Pyro",
+      "aka": [
+        "ROCCAT Pyro"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TTC Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic, metal top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "ROCCAT Swarm",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/pyro",
+          "date": "2021-06-25",
+          "score": null,
+          "verdict": "Excellent value gaming board with low latency and light linear TTC Red switches; the plastic chassis flexes and ABS keycaps get shiny."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/roccat-pyro",
+          "date": "2021-07-12",
+          "score": "3/5",
+          "verdict": "Solid gaming performance and a striking look, held back by rattly stabilizers, poor keycaps, dated software and minimal macro support."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/roccat-pyro-rgb-gaming-keyboard",
+          "date": "2021-06-04",
+          "score": "4.5/5",
+          "verdict": "Sleek metal finish, very responsive keys and well-handled RGB, plus a volume slider and Game Mode, with only minor drawbacks."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tom's Hardware: Roccat Pyro review (specs table)",
+          "url": "https://www.tomshardware.com/reviews/roccat-pyro",
+          "kind": "review",
+          "backs": [
+            "switches",
+            "switch_footprint",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Roccat Pyro review (specs and build)",
+          "url": "https://www.pcgamer.com/roccat-pyro-review/",
+          "kind": "review",
+          "backs": [
+            "connectivity",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: ROCCAT Pyro review",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/pyro",
+          "kind": "review",
+          "backs": [
+            "size",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ROCCAT-branded wired full-size board, no longer in Turtle Beach's store. Specs come from reviews because no maker page was found."
+    },
+    {
+      "id": "turtle-beach-vulcan-120-aimo",
+      "brand": "turtle-beach",
+      "model": "Vulcan 120 AIMO",
+      "aka": [
+        "ROCCAT Vulcan 120 AIMO"
+      ],
+      "status": "discontinued",
+      "released": "2018",
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "ROCCAT Titan Tactile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "ROCCAT Swarm",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-120-aimo",
+          "date": "2020-02-04",
+          "score": null,
+          "verdict": "Excellent, distinctive gaming keyboard and the first with ROCCAT Titan tactile switches; the low-profile keys are most comfortable with the wrist rest."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/roccat-vulcan-120-aimo",
+          "date": "2018-06-05",
+          "score": "5/5",
+          "verdict": "Among the best gaming keyboards the reviewer had used: stylish and a joy to type on, though pricey with a hard wrist rest."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/roccat-vulcan-120-review/",
+          "date": "2018-06-07",
+          "score": "92/100",
+          "verdict": "Titan Tactile switches feel excellent to type on, with a clean aluminum design, good keycaps and solid software; no USB or audio passthrough."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TechRadar: Roccat Vulcan 120 Aimo review (switches, release timing)",
+          "url": "https://www.techradar.com/reviews/roccat-vulcan-120-aimo",
+          "kind": "review",
+          "backs": [
+            "switches",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PC Gamer: Roccat Vulcan 120 review (wired, aluminum design)",
+          "url": "https://www.pcgamer.com/roccat-vulcan-120-review/",
+          "kind": "review",
+          "backs": [
+            "connectivity",
+            "case_material",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: ROCCAT Vulcan 120 AIMO review",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-120-aimo",
+          "kind": "review",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First Vulcan, sold under the ROCCAT name with Titan tactile switches only; succeeded by the Vulcan 121/122 AIMO. Specs come from reviews because no maker page was found."
+    },
+    {
+      "id": "turtle-beach-vulcan-121-aimo",
+      "brand": "turtle-beach",
+      "model": "Vulcan 121 AIMO",
+      "aka": [
+        "ROCCAT Vulcan 121 AIMO",
+        "ROCCAT Vulcan 122 AIMO",
+        "Vulcan 122 AIMO"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "ROCCAT Titan Tactile",
+          "id": null
+        },
+        {
+          "name": "ROCCAT Titan Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top plate, plastic base",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "ROCCAT Swarm",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-122-aimo-gaming-keyboard",
+          "date": "2020-06-14",
+          "score": "3.5/5",
+          "verdict": "Reviewed as the white Vulcan 122: bright RGB and tactile Titan switches good for typing, but widely spaced keys and a high price."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/roccat-vulcan-122-aimo",
+          "date": "2019-10-21",
+          "score": "4.5/5",
+          "verdict": "Reviewed as the Vulcan 122: gorgeous design, comfortable switches and easy to clean; expensive, and the wrist rest is not very comfortable."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/reviews/roccat-vulcan-121-aimo",
+          "date": "2019-12-11",
+          "score": "4/5",
+          "verdict": "Same design, features and price as the Vulcan 120 AIMO, now with a choice of linear or tactile switches; the software is so-so."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tom's Hardware: Roccat Vulcan 122 Aimo review (122 = white version of the black 121; specs table)",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-122-aimo-gaming-keyboard",
+          "kind": "review",
+          "backs": [
+            "aka",
+            "switches",
+            "connectivity",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Roccat Vulcan 121 Aimo review (linear red or tactile brown option)",
+          "url": "https://www.tomsguide.com/reviews/roccat-vulcan-121-aimo",
+          "kind": "review",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Black (121) and white (122) versions of the same full-size ROCCAT keyboard, per Tom's Hardware. Specs come from reviews because no maker page was found."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii",
+      "brand": "turtle-beach",
+      "model": "Vulcan II",
+      "aka": [
+        "ROCCAT Vulcan II"
+      ],
+      "status": "current",
+      "released": "2023-07",
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN II Mechanical Red",
+          "id": null
+        },
+        {
+          "name": "TITAN II Mechanical Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic, anodized aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-ii",
+          "date": "2023-07-17",
+          "score": "3.5/5",
+          "verdict": "A cheaper Vulcan II with smooth mechanical linear switches and pretty lighting; the wrist rest is weak and the USB cable is not detachable."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Roccat Vulcan II review (specs table)",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-ii",
+          "kind": "review",
+          "backs": [
+            "released",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Mechanical (not optical) version of the Vulcan II Max design, first sold under the ROCCAT name. Turtle Beach rates TITAN II Red at 1.4 mm actuation and Brown at 1.8 mm, both 3.6 mm travel."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii-max",
+      "brand": "turtle-beach",
+      "model": "Vulcan II Max",
+      "aka": [
+        "ROCCAT Vulcan II Max"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN II Optical Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic, anodized aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 229.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-max-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-max-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-ii-max-mini",
+          "date": "2023-03-02",
+          "score": null,
+          "verdict": "Tested the Max: wired full-size board with TITAN II optical switches, per-key RGB and extra LEDs that show when secondary functions are active."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-ii-max",
+          "date": "2022-10-17",
+          "score": "4/5",
+          "verdict": "Beautiful full-size wired keyboard with bright lighting and enough dedicated keys that you rarely need the Swarm software."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/roccat-vulcan-ii-max/",
+          "date": "2023-05-03",
+          "score": "86/100",
+          "verdict": "Gorgeous and very responsive with sensitive optical switches, but expensive, plasticky for the price, and it needs two USB ports."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II Max",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-max-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Roccat Vulcan II Max review (specs table)",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-ii-max",
+          "kind": "review",
+          "backs": [
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: ROCCAT Vulcan II Max/Mini review (Turtle Beach rebranding note)",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-ii-max-mini",
+          "kind": "review",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired with two USB-A plugs; 24 smart keys carry a second LED for secondary functions. Turtle Beach now lists only the linear TITAN II Optical Red; Tom's Hardware also mentions a Brown option."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii-mini",
+      "brand": "turtle-beach",
+      "model": "Vulcan II Mini",
+      "aka": [
+        "ROCCAT Vulcan II Mini"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN II Optical Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic, aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-mini-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-mini-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-ii-mini-review-so-pretty-colorful-and-bright-i-can-almost-overlook-the-software",
+          "date": "2022-09-30",
+          "score": "3.5/5",
+          "verdict": "Bright, colorful 65% board with speedy optical switches and a better-than-expected typing feel; key programmability and software disappoint."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/roccat-vulcan-ii-mini-review-multilayered-and-mod-friendly",
+          "date": "2022-12-30",
+          "score": "4.5/5",
+          "verdict": "Strong gaming performance, Easy-Shift function layers and support for third-party cross-stem keycaps, though the switches are still not hot-swappable."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II Mini",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-mini-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "TechRadar: Roccat Vulcan II Mini review (switches not hot-swappable)",
+          "url": "https://www.techradar.com/reviews/roccat-vulcan-ii-mini-review-multilayered-and-mod-friendly",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "65% wired board with arrow keys and 30 smart keys with a second LED for secondary functions. Takes third-party keycaps with cross-shaped stems, per TechRadar."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii-mini-air",
+      "brand": "turtle-beach",
+      "model": "Vulcan II Mini Air",
+      "aka": [
+        "ROCCAT Vulcan II Mini Air"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN II Optical Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-mini-air-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-mini-air-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-ii-mini-air",
+          "date": "2023-11-09",
+          "score": null,
+          "verdict": "Wireless 65% version of the Vulcan II Mini with linear TITAN II optical switches, per-key RGB and a proximity sensor that dims the lighting."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II Mini Air",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-mini-air-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: ROCCAT Vulcan II Mini Air review (Turtle Beach rebranding note)",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-ii-mini-air",
+          "kind": "review",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired, 2.4 GHz dongle and three Bluetooth 5.2 channels; Turtle Beach rates battery life at up to 240 hours (90 hours with full lighting). Hot-swap is not mentioned by Turtle Beach."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii-tkl",
+      "brand": "turtle-beach",
+      "model": "Vulcan II TKL",
+      "aka": [],
+      "status": "current",
+      "released": "2025-10",
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "TITAN HS Linear Mechanical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-tkl-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-tkl-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-vulcan-ii-tkl-review",
+          "date": "2025-12-17",
+          "score": "4/5",
+          "verdict": "Pretty, well-built and hot-swappable for 3- and 5-pin switches; the soft linear switches suit gaming, but the keys sound mushy and keycaps feel cheap."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/turtle-beach-vulcan-ii-tkl-review/",
+          "date": "2025-11-14",
+          "score": "83/100",
+          "verdict": "Affordable, feature-rich TKL with smooth short-travel linear switches; hot-swapping is fiddly in practice and RGB bleeds between keys."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II TKL",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-tkl-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "switch_footprint",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Turtle Beach Vulcan II TKL review (specs table)",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/turtle-beach-vulcan-ii-tkl-review",
+          "kind": "review",
+          "backs": [
+            "released",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable for 3-pin and 5-pin mechanical switches; Turtle Beach rates TITAN HS at 1.8 mm actuation and 45 g. Store showed a $79.99 sale against the $119.99 regular price on 2026-11-23."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii-tkl-pro",
+      "brand": "turtle-beach",
+      "model": "Vulcan II TKL Pro",
+      "aka": [
+        "Vulcan 2 TKL Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-tkl-pro-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-tkl-pro-keyboard",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/turtle-beach-vulcan-2-tkl-pro-review-an-analog-keyboard-that-aims-high-but-falls-short",
+          "date": "2024-09-24",
+          "score": "3.5/5",
+          "verdict": "Solid analog Hall-effect gaming board at a good price, but the analog functions are not always practical and better performers exist."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/gaming/peripherals/turtle-beach-vulcan-ii-tkl-pro-review",
+          "date": "2024-07-26",
+          "score": "3/5",
+          "verdict": "Well built, with per-key adjustable Hall-effect actuation, but cheap keycaps and a frustrating design hold back gaming performance."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II TKL Pro",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-tkl-pro-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect magnetic switches (Turtle Beach gives no switch name) with per-key actuation from 0.1 to 4 mm and Rapid Trigger. Hot-swap is not mentioned by Turtle Beach or the reviews."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii-xp",
+      "brand": "turtle-beach",
+      "model": "Vulcan II XP",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "TITAN HS Linear Red",
+          "id": null
+        },
+        {
+          "name": "TITAN HS Tactile Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-xp-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-xp-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II XP",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-xp-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "switch_footprint",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired full-size board, hot-swappable for 3-pin and 5-pin mechanical switches, sold with linear or tactile TITAN HS switches. Store showed a $124.99 sale against the $149.99 regular price on 2026-11-23."
+    },
+    {
+      "id": "turtle-beach-vulcan-ii-xp-air",
+      "brand": "turtle-beach",
+      "model": "Vulcan II XP Air",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "TITAN HS Linear Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-ii-xp-air-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-ii-xp-air-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan II XP Air",
+          "url": "https://www.turtlebeach.com/products/vulcan-ii-xp-air-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "switch_footprint",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tri-mode wireless full-size board with an AirTrack gesture sensor, hot-swappable for 3-pin and 5-pin switches. Store showed a $174.99 sale against the $199.99 regular price on 2026-11-23."
+    },
+    {
+      "id": "turtle-beach-vulcan-tkl",
+      "brand": "turtle-beach",
+      "model": "Vulcan TKL",
+      "aka": [
+        "ROCCAT Vulcan TKL"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "TITAN Mechanical Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Swarm II",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.turtlebeach.com/products/vulcan-tkl-keyboard",
+      "official_url": "https://www.turtlebeach.com/products/vulcan-tkl-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-tkl",
+          "date": "2021-04-12",
+          "score": null,
+          "verdict": "Tested the ROCCAT-branded unit with tactile Titan switches: well built with strong software, but latency is a bit high and software is Windows-only."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/gaming/peripherals/turtle-beach-vulcan-tkl-review",
+          "date": "2024-07-31",
+          "score": "3/5",
+          "verdict": "Solid build and good for shooters, but cheap keycaps, odd key spacing and no hot-swap leave it behind similarly priced boards."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Turtle Beach: Vulcan TKL",
+          "url": "https://www.turtlebeach.com/products/vulcan-tkl-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Turtle Beach Vulcan TKL review (not hot-swappable)",
+          "url": "https://www.tomsguide.com/gaming/peripherals/turtle-beach-vulcan-tkl-review",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: ROCCAT Vulcan TKL review (Turtle Beach rebranding note)",
+          "url": "https://www.rtings.com/keyboard/reviews/roccat/vulcan-tkl",
+          "kind": "review",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Former ROCCAT Vulcan TKL. Turtle Beach now lists only the linear TITAN Mechanical switch (1.4 mm actuation, 3.6 mm travel); the ROCCAT version also came with tactile Titan switches."
+    },
+    {
+      "id": "turtle-beach-vulcan-tkl-pro",
+      "brand": "turtle-beach",
+      "model": "Vulcan TKL Pro",
+      "aka": [
+        "ROCCAT Vulcan TKL Pro"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "ROCCAT Titan Switch Optical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top plate, plastic base",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "ROCCAT Swarm",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-tkl-pro-gaming-keyboard-review-optical-titan",
+          "date": "2020-12-09",
+          "score": "4/5",
+          "verdict": "Quality TKL whose optical Titan switches excel in fast games and feel fine for typing; aluminum plate and five profiles, middling software."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/roccat-vulcan-tkl-pro-gaming-keyboard",
+          "date": "2021-04-20",
+          "score": "4.5/5",
+          "verdict": "Compact Vulcan with quiet, fast Titan optical switches, a brushed gunmetal finish and floating keys that show off the RGB lighting."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/reviews/roccat-vulcan-tkl-pro",
+          "date": "2020-11-03",
+          "score": "4/5",
+          "verdict": "Eye-catching, premium-feeling TKL with robust RGB and responsive keys; the software is the weak point."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tom's Hardware: Roccat Vulcan TKL Pro review (specs table)",
+          "url": "https://www.tomshardware.com/reviews/roccat-vulcan-tkl-pro-gaming-keyboard-review-optical-titan",
+          "kind": "review",
+          "backs": [
+            "size",
+            "switches",
+            "connectivity",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ROCCAT-branded optical TKL, not in Turtle Beach's current store. Specs come from reviews because no maker page was found."
+    }
+  ]
+}

@@ -1,0 +1,3481 @@
+{
+  "maker": {
+    "id": "ktt",
+    "name": "KTT",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": null,
+    "official_url": "https://www.ktt-switch.com/",
+    "about": "KTT is the switch brand of Dongguan Content Electronics Co., Ltd. (东莞市康腾特电子有限公司) in Shipai, Dongguan, which states 20 years of experience making switch products.",
+    "sources": [
+      {
+        "title": "KTT: About us",
+        "url": "https://www.ktt-switch.com/en/guanyuwomen.html",
+        "kind": "official",
+        "backs": [
+          "name",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "KTT: Product center",
+        "url": "https://www.ktt-switch.com/en/chanpinzhanshi.html",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "KTT (Chinese site): 产品中心",
+        "url": "https://www.ktt-switch.com/chanpinzhanshi.html",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "ktt-baby-blue",
+      "name": "Baby Blue",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Baby Series",
+      "aka": [
+        "Baby蓝轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 53,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395191.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Baby Blue",
+          "url": "https://www.ktt-switch.com/en/product_395191.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): Baby蓝轴",
+          "url": "https://www.ktt-switch.com/product_212931.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-baby-pink",
+      "name": "Baby Pink",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Baby Series",
+      "aka": [
+        "Baby粉轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395210.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Baby Pink",
+          "url": "https://www.ktt-switch.com/en/product_395210.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): Baby粉轴",
+          "url": "https://www.ktt-switch.com/product_267788.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-baby-white",
+      "name": "Baby White",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Baby Series",
+      "aka": [
+        "Baby白轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395189.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Baby White",
+          "url": "https://www.ktt-switch.com/en/product_395189.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): Baby白轴",
+          "url": "https://www.ktt-switch.com/product_212928.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-baby-yellow",
+      "name": "Baby Yellow",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Baby Series",
+      "aka": [
+        "Baby黄轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395190.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Baby Yellow",
+          "url": "https://www.ktt-switch.com/en/product_395190.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): Baby黄轴",
+          "url": "https://www.ktt-switch.com/product_212930.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-hyacinth",
+      "name": "Hyacinth",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Hyacinth Series",
+      "aka": [
+        "风信紫轴",
+        "KTT Hyacinth"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": "extended spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395200.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Hyacinth",
+          "url": "https://www.ktt-switch.com/en/product_395200.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 风信紫轴",
+          "url": "https://www.ktt-switch.com/product_212941.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "KTT lists factory lubing, a five-pin bottom housing and an extended spring."
+    },
+    {
+      "id": "ktt-hyacinth-green",
+      "name": "Hyacinth Green",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Hyacinth Series",
+      "aka": [
+        "风信紫绿轴",
+        "KTT Hyacinth Green"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395231.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Hyacinth Green",
+          "url": "https://www.ktt-switch.com/en/product_395231.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 风信紫绿轴",
+          "url": "https://www.ktt-switch.com/product_271397.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Only the product title line gives specs; the page shows the Hyacinth spec card."
+    },
+    {
+      "id": "ktt-hyacinth-pink",
+      "name": "Hyacinth Pink",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Hyacinth Series",
+      "aka": [
+        "风信紫粉轴",
+        "KTT Hyacinth Pink"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395230.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Hyacinth Pink",
+          "url": "https://www.ktt-switch.com/en/product_395230.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 风信紫粉轴",
+          "url": "https://www.ktt-switch.com/product_271396.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-blueberry-ice-cream",
+      "name": "Blueberry Ice Cream",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Ice Cream Series",
+      "aka": [
+        "蓝莓雪糕轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 53,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395216.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Blueberry Ice Cream",
+          "url": "https://www.ktt-switch.com/en/product_395216.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 蓝莓雪糕轴",
+          "url": "https://www.ktt-switch.com/product_268080.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile travel 0.5 mm per KTT."
+    },
+    {
+      "id": "ktt-creamy-ice-cream",
+      "name": "Creamy Ice Cream",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Ice Cream Series",
+      "aka": [
+        "奶油雪糕轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "KT3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395215.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Creamy Ice Cream",
+          "url": "https://www.ktt-switch.com/en/product_395215.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 奶油雪糕轴",
+          "url": "https://www.ktt-switch.com/product_268079.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stem in KT3, a material KTT describes as its own (自研材料)."
+    },
+    {
+      "id": "ktt-guava-ice-cream",
+      "name": "Guava Ice Cream",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Ice Cream Series",
+      "aka": [
+        "芭乐雪糕轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "KT2"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395218.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Guava Ice Cream",
+          "url": "https://www.ktt-switch.com/en/product_395218.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 芭乐雪糕轴",
+          "url": "https://www.ktt-switch.com/product_268082.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stem in KT2, a material KTT describes as its own (自研材料)."
+    },
+    {
+      "id": "ktt-taro-ice-cream",
+      "name": "Taro Ice Cream",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Ice Cream Series",
+      "aka": [
+        "芋泥雪糕轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "KT3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395217.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Taro Ice Cream",
+          "url": "https://www.ktt-switch.com/en/product_395217.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 芋泥雪糕轴",
+          "url": "https://www.ktt-switch.com/product_268081.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stem in KT3, a material KTT describes as its own (自研材料)."
+    },
+    {
+      "id": "ktt-vanilla-ice-cream",
+      "name": "Vanilla Ice Cream",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Ice Cream Series",
+      "aka": [
+        "香草雪糕轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM+TPE",
+        "bottom": "POK",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395219.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Vanilla Ice Cream",
+          "url": "https://www.ktt-switch.com/en/product_395219.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 香草雪糕轴",
+          "url": "https://www.ktt-switch.com/product_268083.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-cabbage-tofu",
+      "name": "Cabbage Tofu",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K1 Series",
+      "aka": [
+        "白菜豆腐轴",
+        "白绿轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395192.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Cabbage Tofu",
+          "url": "https://www.ktt-switch.com/en/product_395192.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 白菜豆腐轴",
+          "url": "https://www.ktt-switch.com/product_212932.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-63W3 (白绿轴)."
+    },
+    {
+      "id": "ktt-kang-white",
+      "name": "Kang White",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K1 Series",
+      "aka": [
+        "康白轴",
+        "Kang White V3",
+        "White Kang V3"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395193.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Kang White",
+          "url": "https://www.ktt-switch.com/en/product_395193.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 白轴 V3",
+          "url": "https://www.ktt-switch.com/product_212933.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-41W1 (白轴 V3). The Chinese title line says 3-pin and the English line 5-pin, so pins are left open."
+    },
+    {
+      "id": "ktt-mango-pomelo",
+      "name": "Mango Pomelo",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K1 Series",
+      "aka": [
+        "杨枝甘露轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395195.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Mango Pomelo",
+          "url": "https://www.ktt-switch.com/en/product_395195.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 杨枝甘露轴",
+          "url": "https://www.ktt-switch.com/product_212935.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-63Y3 gives 37 gf operating force; the product title line says 43 g."
+    },
+    {
+      "id": "ktt-purple-click",
+      "name": "Purple Click",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K1 Series",
+      "aka": [
+        "酱紫响轴",
+        "Purple Sauce"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395233.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/ktt-purple-sauce-switch-review",
+          "date": "2023-06-11",
+          "score": null,
+          "verdict": "Budget click-jacket switch, KTT's second clicky design, reviewed as the KTT Purple Sauce from eastern sales listings."
+        }
+      ],
+      "sources": [
+        {
+          "title": "KTT: Purple Click",
+          "url": "https://www.ktt-switch.com/en/product_395233.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 酱紫响轴",
+          "url": "https://www.ktt-switch.com/product_271424.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: KTT Purple Sauce Switch Review",
+          "url": "https://www.theremingoat.com/blog/ktt-purple-sauce-switch-review",
+          "kind": "review",
+          "backs": [
+            "aka",
+            "reviews"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "KTT spec card lists total travel as \"4.0-5.0mm\", so total travel is left open. ThereminGoat reviewed it as KTT Purple Sauce, a click-jacket switch."
+    },
+    {
+      "id": "ktt-red-wine",
+      "name": "Red Wine",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K1 Series",
+      "aka": [
+        "酒红轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395194.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Red Wine",
+          "url": "https://www.ktt-switch.com/en/product_395194.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 酒红轴",
+          "url": "https://www.ktt-switch.com/product_212934.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-41F1."
+    },
+    {
+      "id": "ktt-lightning-v2",
+      "name": "Lightning V2",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K3 Series",
+      "aka": [
+        "闪电轴V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/product_395248.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT (Chinese site): 闪电轴V2",
+          "url": "https://www.ktt-switch.com/product_395248.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Listed on the Chinese site only. The spec card gives 48 gf operating force; the product title line says 45 g."
+    },
+    {
+      "id": "ktt-orange",
+      "name": "Orange",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K3 Series",
+      "aka": [
+        "甜橙轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 46,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395199.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Orange",
+          "url": "https://www.ktt-switch.com/en/product_395199.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 甜橙轴",
+          "url": "https://www.ktt-switch.com/product_212940.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-65C1."
+    },
+    {
+      "id": "ktt-phalaenopsis",
+      "name": "Phalaenopsis",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K3 Series",
+      "aka": [
+        "蝴蝶兰轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395197.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Phalaenopsis",
+          "url": "https://www.ktt-switch.com/en/product_395197.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 蝴蝶兰轴",
+          "url": "https://www.ktt-switch.com/product_212938.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-65F3; return force 15-25 gf."
+    },
+    {
+      "id": "ktt-pine",
+      "name": "Pine",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K3 Series",
+      "aka": [
+        "松树轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395198.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Pine",
+          "url": "https://www.ktt-switch.com/en/product_395198.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 松树轴",
+          "url": "https://www.ktt-switch.com/product_212939.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64G3."
+    },
+    {
+      "id": "ktt-strawberry",
+      "name": "Strawberry",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "K3 Series",
+      "aka": [
+        "草莓轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 56,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395196.html",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/ktt-strawberry-switch-review",
+          "date": "2021-01-30",
+          "score": null,
+          "verdict": "Smooth linear with rock-solid housings and a muted, firm bottom-out; only slightly short of endgame smoothness and topping out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "KTT: Strawberry",
+          "url": "https://www.ktt-switch.com/en/product_395196.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 草莓轴",
+          "url": "https://www.ktt-switch.com/product_212937.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: KTT Strawberry Switch Review",
+          "url": "https://www.theremingoat.com/blog/ktt-strawberry-switch-review",
+          "kind": "review",
+          "backs": [
+            "reviews"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-65F1."
+    },
+    {
+      "id": "ktt-macaron-blue",
+      "name": "Macaron Blue",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Macaron Series",
+      "aka": [
+        "马卡龙蓝轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395207.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Macaron Blue",
+          "url": "https://www.ktt-switch.com/en/product_395207.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 马卡龙蓝轴",
+          "url": "https://www.ktt-switch.com/product_212949.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64L2. Its list gives 50 gf operation and 40 gf end force, while its chart marks 50 gf as the tactile peak and 40 gf as operating force."
+    },
+    {
+      "id": "ktt-macaron-green",
+      "name": "Macaron Green",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Macaron Series",
+      "aka": [
+        "马卡龙绿轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 63,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395208.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Macaron Green",
+          "url": "https://www.ktt-switch.com/en/product_395208.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 马卡龙绿轴",
+          "url": "https://www.ktt-switch.com/product_212950.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64G5."
+    },
+    {
+      "id": "ktt-macaron-orange",
+      "name": "Macaron Orange",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Macaron Series",
+      "aka": [
+        "马卡龙橙轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395203.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Macaron Orange",
+          "url": "https://www.ktt-switch.com/en/product_395203.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 马卡龙橙轴",
+          "url": "https://www.ktt-switch.com/product_212945.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64C1. Its list gives 50 gf operation and 38 gf end force, while its chart marks 50 gf as the tactile peak and 38 gf as operating force."
+    },
+    {
+      "id": "ktt-macaron-pink",
+      "name": "Macaron Pink",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Macaron Series",
+      "aka": [
+        "马卡龙粉轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395204.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Macaron Pink",
+          "url": "https://www.ktt-switch.com/en/product_395204.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 马卡龙粉轴",
+          "url": "https://www.ktt-switch.com/product_212946.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64F7."
+    },
+    {
+      "id": "ktt-macaron-purple",
+      "name": "Macaron Purple",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Macaron Series",
+      "aka": [
+        "马卡龙紫轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 58,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395209.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Macaron Purple",
+          "url": "https://www.ktt-switch.com/en/product_395209.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 马卡龙紫轴",
+          "url": "https://www.ktt-switch.com/product_212951.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64P1."
+    },
+    {
+      "id": "ktt-macaron-red",
+      "name": "Macaron Red",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Macaron Series",
+      "aka": [
+        "马卡龙红轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395205.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Macaron Red",
+          "url": "https://www.ktt-switch.com/en/product_395205.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 马卡龙红轴",
+          "url": "https://www.ktt-switch.com/product_212947.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64R1."
+    },
+    {
+      "id": "ktt-macaron-yellow",
+      "name": "Macaron Yellow",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Macaron Series",
+      "aka": [
+        "马卡龙黄轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 56,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395206.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Macaron Yellow",
+          "url": "https://www.ktt-switch.com/en/product_395206.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 马卡龙黄轴",
+          "url": "https://www.ktt-switch.com/product_212948.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-64Y6."
+    },
+    {
+      "id": "ktt-aquaprime-magnetic",
+      "name": "AquaPrime Magnetic",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Magnetic Series",
+      "aka": [
+        "水王磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/product_395245.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT (Chinese site): 水王磁轴",
+          "url": "https://www.ktt-switch.com/product_395245.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "total_travel_mm",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Listed on the Chinese site only; magnetic flux 90±10 Gs at rest and 520±50 Gs bottomed out."
+    },
+    {
+      "id": "ktt-nebula-magnetic",
+      "name": "Nebula Magnetic",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Magnetic Series",
+      "aka": [
+        "星河磁轴"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395239.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Nebula Magnetic",
+          "url": "https://www.ktt-switch.com/en/product_395239.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "total_travel_mm",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 星河磁轴",
+          "url": "https://www.ktt-switch.com/product_391520.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Magnetic flux 80±15 Gs at rest and 700±50 Gs bottomed out."
+    },
+    {
+      "id": "ktt-bamboogleam",
+      "name": "BambooGleam",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Mystic Forest Series",
+      "aka": [
+        "竹影清轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "KT3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395223.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: BambooGleam",
+          "url": "https://www.ktt-switch.com/en/product_395223.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 竹影清轴",
+          "url": "https://www.ktt-switch.com/product_268145.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stem in KT3, a material KTT describes as its own (自研材料)."
+    },
+    {
+      "id": "ktt-blueflutter",
+      "name": "BlueFlutter",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Mystic Forest Series",
+      "aka": [
+        "蓝蝶舞轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 53,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395221.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: BlueFlutter",
+          "url": "https://www.ktt-switch.com/en/product_395221.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 蓝蝶舞轴",
+          "url": "https://www.ktt-switch.com/product_268143.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile travel 0.5 mm per KTT."
+    },
+    {
+      "id": "ktt-peachglow",
+      "name": "PeachGlow",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Mystic Forest Series",
+      "aka": [
+        "桃花红轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395222.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: PeachGlow",
+          "url": "https://www.ktt-switch.com/en/product_395222.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 桃花红轴",
+          "url": "https://www.ktt-switch.com/product_268144.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-wheatsun",
+      "name": "WheatSun",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Mystic Forest Series",
+      "aka": [
+        "麦田黄轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "KT2"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395224.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: WheatSun",
+          "url": "https://www.ktt-switch.com/en/product_395224.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 麦田黄轴",
+          "url": "https://www.ktt-switch.com/product_268146.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stem in KT2, a material KTT describes as its own (自研材料)."
+    },
+    {
+      "id": "ktt-wisteriadream",
+      "name": "WisteriaDream",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Mystic Forest Series",
+      "aka": [
+        "紫藤梦轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "KT3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395220.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: WisteriaDream",
+          "url": "https://www.ktt-switch.com/en/product_395220.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 紫藤梦轴",
+          "url": "https://www.ktt-switch.com/product_268142.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stem in KT3, a material KTT describes as its own (自研材料)."
+    },
+    {
+      "id": "ktt-laurel",
+      "name": "Laurel",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "POM Series",
+      "aka": [
+        "月桂轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM blend",
+        "bottom": "POM",
+        "stem": "POM blend"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395232.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Laurel",
+          "url": "https://www.ktt-switch.com/en/product_395232.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 月桂轴",
+          "url": "https://www.ktt-switch.com/product_271414.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-65Y3. The datasheet labels 50 gf as tactile force while its chart marks it as bottom-out force; title lines disagree on 3-pin or 5-pin."
+    },
+    {
+      "id": "ktt-moonrosa",
+      "name": "MoonRosa",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "POM Series",
+      "aka": [
+        "月季粉轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.85,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM blend",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395202.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: MoonRosa",
+          "url": "https://www.ktt-switch.com/en/product_395202.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 月季粉轴",
+          "url": "https://www.ktt-switch.com/product_212944.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-61F5; top housing listed as POM 混合 (POM blend)."
+    },
+    {
+      "id": "ktt-purple-star",
+      "name": "Purple Star",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "POM Series",
+      "aka": [
+        "星黛紫轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Tailored POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395201.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Purple Star",
+          "url": "https://www.ktt-switch.com/en/product_395201.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 星黛紫轴",
+          "url": "https://www.ktt-switch.com/product_212943.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-dustproof-retro-pure",
+      "name": "Dustproof Retro Pure",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Retro Series",
+      "aka": [
+        "防尘复古白"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "KT3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Retro Pure (Retro Series spec sheet)",
+          "url": "https://www.ktt-switch.com/en/product_395229.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Appears on the Retro Series spec sheet shown on KTT product pages but has no product page of its own."
+    },
+    {
+      "id": "ktt-dustproof-retro-silver",
+      "name": "Dustproof Retro Silver",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Retro Series",
+      "aka": [
+        "防尘复古银轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 46,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395225.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Dustproof Retro Silver",
+          "url": "https://www.ktt-switch.com/en/product_395225.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 防尘复古银轴",
+          "url": "https://www.ktt-switch.com/product_268153.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-retro-blue",
+      "name": "Retro Blue",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Retro Series",
+      "aka": [
+        "复古蓝轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395227.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Retro Blue",
+          "url": "https://www.ktt-switch.com/en/product_395227.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 复古蓝轴",
+          "url": "https://www.ktt-switch.com/product_268196.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-retro-pure",
+      "name": "Retro Pure",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Retro Series",
+      "aka": [
+        "复古白轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "KT3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395229.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Retro Pure",
+          "url": "https://www.ktt-switch.com/en/product_395229.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 复古白轴",
+          "url": "https://www.ktt-switch.com/product_268203.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Stem in KT3, a material KTT describes as its own (自研材料)."
+    },
+    {
+      "id": "ktt-retro-red",
+      "name": "Retro Red",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Retro Series",
+      "aka": [
+        "复古红轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395228.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Retro Red",
+          "url": "https://www.ktt-switch.com/en/product_395228.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 复古红轴",
+          "url": "https://www.ktt-switch.com/product_268197.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-retro-silver",
+      "name": "Retro Silver",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Retro Series",
+      "aka": [
+        "复古银轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 46,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395226.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Retro Silver",
+          "url": "https://www.ktt-switch.com/en/product_395226.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 复古银轴",
+          "url": "https://www.ktt-switch.com/product_268194.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Datasheet model KS-61S2."
+    },
+    {
+      "id": "ktt-green-hush",
+      "name": "Green Hush",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Silent Series",
+      "aka": [
+        "静谧绿轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM+TPE"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395237.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Green Hush",
+          "url": "https://www.ktt-switch.com/en/product_395237.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 静谧绿轴",
+          "url": "https://www.ktt-switch.com/product_391518.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-phantom-silent",
+      "name": "Phantom Silent",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Silent Series",
+      "aka": [
+        "幽影轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM+TPE"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395238.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Phantom Silent",
+          "url": "https://www.ktt-switch.com/en/product_395238.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 幽影轴",
+          "url": "https://www.ktt-switch.com/product_391519.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-silent",
+      "name": "Silent",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Silent Series",
+      "aka": [
+        "轻音轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM+TPE"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395235.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Silent",
+          "url": "https://www.ktt-switch.com/en/product_395235.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 轻音轴",
+          "url": "https://www.ktt-switch.com/product_312077.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-silent-blue",
+      "name": "Silent Blue",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Silent Series",
+      "aka": [
+        "轻音蓝轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM+TPE"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395234.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Silent Blue",
+          "url": "https://www.ktt-switch.com/en/product_395234.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 轻音蓝轴",
+          "url": "https://www.ktt-switch.com/product_312076.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-silent-red",
+      "name": "Silent Red",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Silent Series",
+      "aka": [
+        "牡丹静音红轴"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM+TPE"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395236.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: Silent Red",
+          "url": "https://www.ktt-switch.com/en/product_395236.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 牡丹静音红轴",
+          "url": "https://www.ktt-switch.com/product_312078.html",
+          "kind": "official",
+          "backs": [
+            "aka",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-zencha-silent-tactile",
+      "name": "ZenCha Silent Tactile",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Silent Series",
+      "aka": [
+        "禅茶轴",
+        "ZenCha"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM+TPE"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/product_395246.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT (Chinese site): 禅茶轴",
+          "url": "https://www.ktt-switch.com/product_395246.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "pins"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Listed on the Chinese site only. The spec card gives 40 gf operating force; the product title line says 43 g."
+    },
+    {
+      "id": "ktt-bluef",
+      "name": "BlueF",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Storm Series",
+      "aka": [
+        "疾风蓝翼轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395211.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: BlueF",
+          "url": "https://www.ktt-switch.com/en/product_395211.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 疾风蓝翼轴",
+          "url": "https://www.ktt-switch.com/product_267797.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-greens",
+      "name": "GreenS",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Storm Series",
+      "aka": [
+        "疾风绿影轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395212.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: GreenS",
+          "url": "https://www.ktt-switch.com/en/product_395212.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 疾风绿影轴",
+          "url": "https://www.ktt-switch.com/product_267798.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-snowcha",
+      "name": "SnowChA",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Storm Series",
+      "aka": [
+        "疾风雪樱轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395214.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: SnowChA",
+          "url": "https://www.ktt-switch.com/en/product_395214.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 疾风雪樱轴",
+          "url": "https://www.ktt-switch.com/product_267823.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ktt-transa",
+      "name": "TransA",
+      "maker": "ktt",
+      "made_by": null,
+      "family": "Storm Series",
+      "aka": [
+        "疾风幻光轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 45,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.ktt-switch.com/en/product_395213.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KTT: TransA",
+          "url": "https://www.ktt-switch.com/en/product_395213.html",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KTT (Chinese site): 疾风幻光轴",
+          "url": "https://www.ktt-switch.com/product_267812.html",
+          "kind": "official",
+          "backs": [
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile travel 0.5 mm per KTT."
+    }
+  ]
+}

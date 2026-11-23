@@ -1,0 +1,405 @@
+{
+  "maker": {
+    "id": "everglide",
+    "name": "Everglide",
+    "role": "brand",
+    "country": "CN",
+    "founded": null,
+    "official_url": null,
+    "about": "Everglide is a Chinese switch brand known for the Aqua King (Water King) linears and, more recently, Hall-effect switches. ThereminGoat describes it as a brand produced out of JWK, the way Zeal works with Gateron.",
+    "sources": [
+      {
+        "title": "ThereminGoat: Everglide V3 'Water King' Switch Review",
+        "url": "https://www.theremingoat.com/blog/everglide-v3-water-king-switch-review",
+        "kind": "review",
+        "backs": [
+          "role",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Milktooth: Everglide brand page",
+        "url": "https://milktooth.com/brands/everglide",
+        "kind": "retailer",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "everglide-aqua-king-v3",
+      "name": "Aqua King (V3)",
+      "maker": "everglide",
+      "made_by": "jwk",
+      "family": "V3",
+      "aka": [
+        "Water King",
+        "Aqua King"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 46,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "Nylon"
+      },
+      "spring": "Gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2020",
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/everglide-v3-water-king-switch-review",
+          "date": "2021-02-28",
+          "score": null,
+          "verdict": "Consistent thin factory lube, better push feel than expected and minimal wobble; some variation from switch to switch."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Milktooth: Everglide Aqua King (V3) Linear",
+          "url": "https://milktooth.com/products/aqua-king",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Milktooth: Everglide Aqua King (V3) vs. Everglide Oreo",
+          "url": "https://milktooth.com/comparisons/aqua-king-vs-oreo",
+          "kind": "retailer",
+          "backs": [
+            "pre_travel_mm",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Everglide V3 'Water King' Switch Review",
+          "url": "https://www.theremingoat.com/blog/everglide-v3-water-king-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "aka",
+            "released",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ThereminGoat describes Everglide as a brand produced out of JWK and saw the V3 teased in August 2020 with an all-clear housing. Sold with several spring weights."
+    },
+    {
+      "id": "everglide-master-he",
+      "name": "Master HE",
+      "maker": "everglide",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 38,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Nylon",
+        "stem": "PC"
+      },
+      "spring": "Stainless steel lengthened spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: Everglide Master HE Hall Effect",
+          "url": "https://milktooth.com/products/master-he",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "actuation_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kinetic Labs: JWK shop page (lists Everglide Sticky Rice V2 HE and Master HE under JWK)",
+          "url": "https://kineticlabs.com/shop/jwk",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards."
+    },
+    {
+      "id": "everglide-oreo",
+      "name": "Oreo",
+      "maker": "everglide",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": "Gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: Everglide Oreo Tactile",
+          "url": "https://milktooth.com/products/oreo",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Milktooth: Everglide Aqua King (V3) vs. Everglide Oreo",
+          "url": "https://milktooth.com/comparisons/aqua-king-vs-oreo",
+          "kind": "retailer",
+          "backs": [
+            "pre_travel_mm",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "everglide-sticky-rice-v2",
+      "name": "Sticky Rice (V2)",
+      "maker": "everglide",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Nylon",
+        "stem": "POM"
+      },
+      "spring": "Stainless steel",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: Everglide Sticky Rice (V2) Hall Effect",
+          "url": "https://milktooth.com/products/sticky-rice",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kinetic Labs: JWK shop page (lists Everglide Sticky Rice V2 HE and Master HE under JWK)",
+          "url": "https://kineticlabs.com/shop/jwk",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Uses a dustproof stem, per Milktooth."
+    },
+    {
+      "id": "everglide-tourmaline-blue",
+      "name": "Tourmaline Blue",
+      "maker": "everglide",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 59,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": "Gold-plated, lengthened single-stage",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: Everglide Tourmaline Blue Linear",
+          "url": "https://milktooth.com/products/tourmaline-blue",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "everglide-wukong-he",
+      "name": "Wukong HE",
+      "maker": "everglide",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 35,
+      "bottom_out_force_gf": 48,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Milktooth: Everglide Wukong HE Hall Effect",
+          "url": "https://milktooth.com/products/wukong-he",
+          "kind": "retailer",
+          "backs": [
+            "name",
+            "type",
+            "sensing",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards."
+    }
+  ]
+}

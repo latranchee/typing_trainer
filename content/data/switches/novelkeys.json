@@ -1,0 +1,777 @@
+{
+  "maker": {
+    "id": "novelkeys",
+    "name": "NovelKeys",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://novelkeys.com/",
+    "about": "Keyboard vendor selling its own NK_ switches, including the Kailh-made Cream line and the Silk series.",
+    "sources": [
+      {
+        "title": "NovelKeys: NK_ Cream Series",
+        "url": "https://novelkeys.com/products/nk-cream-series",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: Novelkeys Cream Tactile Switch Review (Kailh nameplates across the Cream line)",
+        "url": "https://www.theremingoat.com/blog/novelkeys-cream-tactile-switch-review",
+        "kind": "review",
+        "backs": [
+          "made_by"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "novelkeys-blueberry",
+      "name": "Blueberry",
+      "maker": "novelkeys",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/novelkeys-blueberry-switch-review",
+          "date": "2020-05-07",
+          "score": null,
+          "verdict": "An experimental NovelKeys and Kailh tactile the reviewer liked more than the Sherbet."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: Novelkeys Blueberry Switch Review",
+          "url": "https://www.theremingoat.com/blog/novelkeys-blueberry-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream Tactile Switch Review (Cream Tactile replaces the Blueberry line)",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-tactile-switch-review",
+          "kind": "review",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Replaced by the Cream Tactile."
+    },
+    {
+      "id": "novelkeys-classic-blue",
+      "name": "Classic Blue",
+      "maker": "novelkeys",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/novelkeys-classic-blue-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/novelkeys-classic-blue-switch-review",
+          "date": "2025-08-10",
+          "score": null,
+          "verdict": "Solid, medium-weight, full-travel linear with light factory lube and a little flair."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NovelKeys: NovelKeys Classic Blue Switches",
+          "url": "https://novelkeys.com/products/novelkeys-classic-blue-switches",
+          "kind": "official",
+          "backs": [
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Classic Blue Switch Review",
+          "url": "https://www.theremingoat.com/blog/novelkeys-classic-blue-switch-review",
+          "kind": "review",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold lubricated or unlubricated."
+    },
+    {
+      "id": "novelkeys-sherbet",
+      "name": "Sherbet",
+      "maker": "novelkeys",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 70,
+      "tactile_force_gf": 83,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/sherbets",
+          "date": "2020-01-25",
+          "score": null,
+          "verdict": "A clicky switch the reviewer, not a clicky fan, calls a hidden gem for anyone chasing click sound."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: Novelkeys Sherbet Switch Review",
+          "url": "https://www.theremingoat.com/blog/sherbets",
+          "kind": "review",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "tactile_force_gf"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "NovelKeys: product catalog (no Sherbet listed)",
+          "url": "https://novelkeys.com/products.json?limit=250&page=1",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "novelkeys-cream",
+      "name": "Cream",
+      "maker": "novelkeys",
+      "made_by": "kailh",
+      "family": "Cream",
+      "aka": [
+        "NK Cream",
+        "NovelKeys Cream"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/nk-cream-series",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/from-the-vault-novelkeys-cream-switch-review",
+          "date": "2020-05-20",
+          "score": null,
+          "verdict": "A strong, distinctive-sounding linear near the high end, best for users willing to lube and break them in."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NovelKeys: NK_ Cream Series",
+          "url": "https://novelkeys.com/products/nk-cream-series",
+          "kind": "official",
+          "backs": [
+            "materials",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream Tactile Switch Review (Kailh nameplates across the Cream line)",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-tactile-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: From The Vault: Novelkeys Cream Switch Review",
+          "url": "https://www.theremingoat.com/blog/from-the-vault-novelkeys-cream-switch-review",
+          "kind": "review",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full POM housing and stem."
+    },
+    {
+      "id": "novelkeys-cream-arc",
+      "name": "Cream Arc",
+      "maker": "novelkeys",
+      "made_by": "kailh",
+      "family": "Cream",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/nk-cream-series",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-arc-switch-review",
+          "date": "2022-05-29",
+          "score": null,
+          "verdict": "Less wobble and better molds than earlier Creams, yet painfully average overall for the improvements it claims."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NovelKeys: NK_ Cream Series",
+          "url": "https://novelkeys.com/products/nk-cream-series",
+          "kind": "official",
+          "backs": [
+            "materials",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream Tactile Switch Review (Kailh nameplates across the Cream line)",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-tactile-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream Arc Switch Review",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-arc-switch-review",
+          "kind": "review",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cream variant with a conical spring."
+    },
+    {
+      "id": "novelkeys-cream-clicky",
+      "name": "Cream Clicky",
+      "maker": "novelkeys",
+      "made_by": "kailh",
+      "family": "Cream",
+      "aka": [
+        "Cream Clickie"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/cream-clickie-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-clickie-switch-review",
+          "date": "2023-02-12",
+          "score": null,
+          "verdict": "A mostly linear clicky design the reviewer urges everyone to try, though it has issues such as north-south stem wobble."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NovelKeys: Cream Clicky Switches",
+          "url": "https://novelkeys.com/products/cream-clickie-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream Clickie Switch Review",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-clickie-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The stem strikes a 'snapple cap' to make the click."
+    },
+    {
+      "id": "novelkeys-cream-tactile",
+      "name": "Cream Tactile",
+      "maker": "novelkeys",
+      "made_by": "kailh",
+      "family": "Cream",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/nk-cream-series",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-tactile-switch-review",
+          "date": "2021-10-31",
+          "score": null,
+          "verdict": "Mixed feelings: meant to replace the Blueberry line, but stock units showed scratch, spring ping and leaf ping."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NovelKeys: NK_ Cream Series",
+          "url": "https://novelkeys.com/products/nk-cream-series",
+          "kind": "official",
+          "backs": [
+            "materials",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream Tactile Switch Review",
+          "url": "https://www.theremingoat.com/blog/novelkeys-cream-tactile-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "novelkeys-cream-plus",
+      "name": "Cream+",
+      "maker": "novelkeys",
+      "made_by": "kailh",
+      "family": "Cream",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/cream-plus-switches",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/novelkeys-creamplus-switch-review",
+          "date": "2023-01-01",
+          "score": null,
+          "verdict": "The reviewer calls it NovelKeys' best switch innovation so far, though users must open switches to swap inserts."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NovelKeys: Cream+ Switches",
+          "url": "https://novelkeys.com/products/cream-plus-switches",
+          "kind": "official",
+          "backs": [
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream+ Switch Review",
+          "url": "https://www.theremingoat.com/blog/novelkeys-creamplus-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hollow stem that takes inserts of different materials to change the sound."
+    },
+    {
+      "id": "novelkeys-dream-cream",
+      "name": "Dream Cream",
+      "maker": "novelkeys",
+      "made_by": "kailh",
+      "family": "Cream",
+      "aka": [
+        "Dream"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/nk-cream-series",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/novelkeys-dream-cream-switch-review",
+          "date": "2022-10-16",
+          "score": null,
+          "verdict": "Factory break-in that answers a community request; the reviewer confirms they feel broken in."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NovelKeys: NK_ Cream Series",
+          "url": "https://novelkeys.com/products/nk-cream-series",
+          "kind": "official",
+          "backs": [
+            "materials",
+            "name"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Cream+ Switch Review (Dream Cream break-in by Kailh)",
+          "url": "https://www.theremingoat.com/blog/novelkeys-creamplus-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Novelkeys Dream Cream Switch Review",
+          "url": "https://www.theremingoat.com/blog/novelkeys-dream-cream-switch-review",
+          "kind": "review",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kailh runs each switch for 600,000 actuations before shipping."
+    },
+    {
+      "id": "novelkeys-silk-awaken",
+      "name": "NK Silk Awaken",
+      "maker": "novelkeys",
+      "made_by": null,
+      "family": "Silk",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/nk-silk-awaken-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NovelKeys: NK Silk Awaken Switches",
+          "url": "https://novelkeys.com/products/nk-silk-awaken-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lubricated with Krytox 205g0; NovelKeys sells batch 2 with improved lube application."
+    },
+    {
+      "id": "novelkeys-silk-tfue",
+      "name": "NK Silk TFUE",
+      "maker": "novelkeys",
+      "made_by": null,
+      "family": "Silk",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/nk-silk-tfue-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NovelKeys: NK Silk TFUE Switches",
+          "url": "https://novelkeys.com/products/nk-silk-tfue-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lubricated with Krytox 205g0; NovelKeys sells batch 2 with improved lube application."
+    },
+    {
+      "id": "novelkeys-silk-olivia",
+      "name": "NK_ Silk Olivia",
+      "maker": "novelkeys",
+      "made_by": null,
+      "family": "Silk",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://novelkeys.com/products/nk-silk-olivia-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NovelKeys: NK_ Silk Olivia Switches",
+          "url": "https://novelkeys.com/products/nk-silk-olivia-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lubricated with Krytox 205g0; NovelKeys sells batch 2 with improved lube application."
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "brand": {
+    "id": "svalboard",
+    "name": "Svalboard",
+    "country": null,
+    "founded": null,
+    "official_url": "https://svalboard.com/",
+    "focus": [
+      "ergonomic",
+      "premium",
+      "diy"
+    ],
+    "about": "Svalboard makes the Lightly, a DataHand-style keyboard with five magnetic keys around each finger and an adjustable fit, sold assembled or as a 3D-print kit.",
+    "sources": [
+      {
+        "title": "Svalboard: home page",
+        "url": "https://svalboard.com/",
+        "kind": "official",
+        "backs": [
+          "about",
+          "focus"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "svalboard-lightly",
+      "brand": "svalboard",
+      "model": "Lightly",
+      "aka": [
+        "Svalboard Lightly"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 50,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "vial",
+        "qmk"
+      ],
+      "software": "Vial / Keybard",
+      "os": [],
+      "price_usd": 800,
+      "price_date": "2026-11-23",
+      "price_url": "https://svalboard.com/products.json?limit=250",
+      "official_url": "https://svalboard.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Svalboard: products listing (Lightly description and prices)",
+          "url": "https://svalboard.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "price_usd",
+            "firmware",
+            "connectivity",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Svalboard: key mechanism",
+          "url": "https://svalboard.com/pages/key-mechanism",
+          "kind": "official",
+          "backs": [
+            "switch_footprint",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Svalboard: FAQ",
+          "url": "https://svalboard.com/pages/faqs-1",
+          "kind": "official",
+          "backs": [
+            "thumb_cluster",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Fifty 20 gf magneto-optical keys: five around each finger and a thumb cluster, with optional trackball, touchpad or Trackpoint ($800 without pointer, up to $1,050). Not a switch-based board, so standard switches do not fit. Mounts on chairs or desk clamps; pitch towers are sold separately."
+    },
+    {
+      "id": "svalboard-self-print-kit",
+      "brand": "svalboard",
+      "model": "Self-Print Kit",
+      "aka": [
+        "Svalboard Self-Print Kit"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "vial",
+        "qmk"
+      ],
+      "software": "Vial / Keybard",
+      "os": [],
+      "price_usd": 330,
+      "price_date": "2026-11-23",
+      "price_url": "https://svalboard.com/products.json?limit=250",
+      "official_url": "https://svalboard.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Svalboard: products listing (Self-Print Kit description and prices)",
+          "url": "https://svalboard.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Svalboard: key mechanism",
+          "url": "https://svalboard.com/pages/key-mechanism",
+          "kind": "official",
+          "backs": [
+            "switch_footprint",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Electronics and hardware for printing your own Lightly; needs a 3D printer, heat-set inserts and glue but no soldering. Pointing PCBAs are options."
+    }
+  ]
+}

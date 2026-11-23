@@ -1,0 +1,838 @@
+{
+  "maker": {
+    "id": "alps",
+    "name": "Alps Alpine",
+    "role": "manufacturer",
+    "country": "JP",
+    "founded": 1948,
+    "official_url": "https://www.alpsalpine.com/e/",
+    "about": "Japanese electronic components maker, founded as Kataoka Electric in 1948 and known as Alps Electric until its 2019 merger with Alpine; it made keyboard switches from 1966. Its SKCL/SKCM plate-mount switches were made from about 1983 and mostly discontinued by 1996.",
+    "sources": [
+      {
+        "title": "Alps Alpine: Company profile",
+        "url": "https://www.alpsalpine.com/e/company/profile/",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Alps Alpine: History",
+        "url": "https://www.alpsalpine.com/e/company/history/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Deskthority wiki: Alps SKCM series",
+        "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+        "kind": "reference",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "alps-skcl-brown",
+      "name": "Alps SKCL Brown",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCL",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Korean-market linear."
+    },
+    {
+      "id": "alps-skcl-cream",
+      "name": "Alps SKCL Cream",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCL",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "alps-skcl-green",
+      "name": "Alps SKCL Green",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCL",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1983–1989."
+    },
+    {
+      "id": "alps-skcl-striped-amber",
+      "name": "Alps SKCL Striped Amber",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCL",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "alps-skcl-yellow",
+      "name": "Alps SKCL Yellow",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCL",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1988–1998. Part numbers: SKCLAR, SKCLFQ, SKCLFM. Force from the 1994 catalogue."
+    },
+    {
+      "id": "alps-skcm-amber",
+      "name": "Alps SKCM Amber",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1986–1988. Nicknamed \"taxi yellow\"."
+    },
+    {
+      "id": "alps-skcm-black",
+      "name": "Alps SKCM Black",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1988–1996. Part numbers: SKCMAP."
+    },
+    {
+      "id": "alps-skcm-blue",
+      "name": "Alps SKCM Blue",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1985–1988. Part numbers: SKCMAG."
+    },
+    {
+      "id": "alps-skcm-brown",
+      "name": "Alps SKCM Brown",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "alps-skcm-cream",
+      "name": "Alps SKCM Cream",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part numbers: SKCMAF."
+    },
+    {
+      "id": "alps-skcm-green",
+      "name": "Alps SKCM Green",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Part numbers: SKCMAT."
+    },
+    {
+      "id": "alps-skcm-ivory",
+      "name": "Alps SKCM Ivory",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [
+        "Alps Cream Damped"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1988–1994. Part numbers: SKCMBB. Damped tactile, known as \"cream damped\"."
+    },
+    {
+      "id": "alps-skcm-orange",
+      "name": "Alps SKCM Orange",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1987–1991."
+    },
+    {
+      "id": "alps-skcm-salmon",
+      "name": "Alps SKCM Salmon",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1988–1992."
+    },
+    {
+      "id": "alps-skcm-white",
+      "name": "Alps SKCM White",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 70,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes",
+            "actuation_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from 1988–1996. Part numbers: SKCMAQ."
+    },
+    {
+      "id": "alps-skcm-white-damped",
+      "name": "Alps SKCM White Damped",
+      "maker": "alps",
+      "made_by": null,
+      "family": "SKCM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "alps",
+      "keycap_mount": "alps",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 20,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Deskthority wiki: Alps SKCM series",
+          "url": "https://deskthority.net/wiki/Alps_SKCM_series",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "family",
+            "rated_lifespan_million",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Found in keyboards from about 1995. Damped tactile."
+    }
+  ]
+}

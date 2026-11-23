@@ -115,7 +115,7 @@ export function fingerChart(layoutId, fingerNames, label) {
     .map(([k, color]) => `<span class="chart-swatch"><i style="background:${color}"></i>${esc(fingerNames[k])}</span>`)
     .join('')}</div>`;
 
-  const svg = `<svg class="chart-board" viewBox="0 0 ${15 * U} ${5 * U}" role="img" aria-label="${esc(label)}" font-family="'Roboto Mono Variable', ui-monospace, monospace">${parts.join('')}</svg>`;
+  const svg = `<svg class="chart-board" viewBox="0 0 ${15 * U} ${5 * U}" role="img" aria-label="${esc(label)}" font-family="'Allo', system-ui, sans-serif">${parts.join('')}</svg>`;
   return svg + legend;
 }
 

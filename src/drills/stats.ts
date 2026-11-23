@@ -6,6 +6,7 @@ import { fingerName, fingerShort, t } from '../core/i18n';
 import { intervalToWpm, MIN_SAMPLES } from '../core/metrics';
 import { pairAccuracy, pairErrors } from '../core/store';
 import { css, el, fitCanvas } from '../ui/dom';
+import { weighted } from '../ui/font';
 import type { Drill, DrillHost, OptionGroup } from './types';
 
 const ROLLING_SETS = 10;
@@ -454,7 +455,7 @@ export class StatsView implements Drill {
     const color = this.subjectColor();
 
     // Rules and their values.
-    ctx.font = `400 ${0.8125 * rem}px ${css('--font')}`;
+    ctx.font = `${weighted(400)} ${0.8125 * rem}px ${css('--font')}`;
     ctx.lineWidth = 1;
     ctx.strokeStyle = css('--line');
     ctx.fillStyle = muted;

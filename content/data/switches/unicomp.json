@@ -1,0 +1,97 @@
+{
+  "maker": {
+    "id": "unicomp",
+    "name": "Unicomp",
+    "role": "manufacturer",
+    "country": "US",
+    "founded": 1996,
+    "official_url": "https://www.pckeyboard.com/",
+    "about": "Keyboard maker in Lexington, Kentucky, started in 1996 when it bought the Model M keyboard technology from Lexmark and IBM. It builds buckling spring keyboards (New Model M, Mini M, Classic, Ultra Classic) and rubber-dome Quiet Touch models.",
+    "sources": [
+      {
+        "title": "Unicomp: About Us",
+        "url": "https://www.pckeyboard.com/page/ABUS",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Unicomp: FAQs",
+        "url": "https://www.pckeyboard.com/page/FAQS",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "unicomp-buckling-spring",
+      "name": "Unicomp buckling spring",
+      "maker": "unicomp",
+      "made_by": null,
+      "family": "Buckling spring",
+      "aka": [
+        "Buckling Spring",
+        "B/S",
+        "Model M buckling spring"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "buckling-spring",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 72,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "coil spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 25,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.pckeyboard.com/page/product/NEW_M",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Unicomp: FAQs",
+          "url": "https://www.pckeyboard.com/page/FAQS",
+          "kind": "official",
+          "backs": [
+            "tactile_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Unicomp: New Model M",
+          "url": "https://www.pckeyboard.com/page/product/NEW_M",
+          "kind": "official",
+          "backs": [
+            "spring",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The IBM Model M mechanism: a coil spring between the keycap and a pivoting hammer collapses when pressed, with a loud tactile click. Unicomp states the peak force as 72 g ±20 g."
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · petitdoigt</title>
+<meta name="description" content="What petitdoigt keeps about you, why, and how to erase it.">
+<link rel="canonical" href="https://petitdoigt.ca/privacy/">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#212227">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+  @font-face {
+    font-family: 'Allo';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(../guides-assets/allo-variable.woff2) format('woff2');
+  }
+  :root {
+    color-scheme: dark;
+    --bg: #212227;
+    --key: #33363c;
+    --key-hover: #3c4047;
+    --line: #32353b;
+    --line-strong: #4b4f57;
+    --text: #e6e6e2;
+    --text-2: #aab0ba;
+    --muted: #8a8f9b;
+    --accent: #f8d95c;
+    --ink: #1d1e22;
+    --font: 'Allo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --hover-in: 160ms;
+    --hover-out: 240ms;
+    --press: 80ms;
+    --gutter: 1.25rem;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 6.5rem; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 1rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 0.25rem; }
+  a { color: inherit; }
+
+  /* The header stays at the top, as on the guides: full width so the dissolve behind it is, its padding
+     keeps it on the 52rem column, and the page dissolves under it in place of a hairline. */
+  .head {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    padding: 1.125rem max(var(--gutter), calc((100% - 52rem) / 2 + var(--gutter)));
+  }
+  .head::before,
+  .head::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0 0 -2.5rem;
+    pointer-events: none;
+  }
+  .head::before {
+    background: linear-gradient(color-mix(in srgb, var(--bg) 88%, transparent), color-mix(in srgb, var(--bg) 60%, transparent) 62%, transparent);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    -webkit-mask-image: linear-gradient(#000 55%, transparent);
+    mask-image: linear-gradient(#000 55%, transparent);
+  }
+  .head::after {
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    -webkit-mask-image: linear-gradient(#000 35%, transparent 72%);
+    mask-image: linear-gradient(#000 35%, transparent 72%);
+  }
+  .brand {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4em;
+    margin-right: auto;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .brand svg { width: 1.1em; height: 0.9em; align-self: center; }
+  .langs { display: flex; gap: 0.25rem; margin: 0; padding: 0; list-style: none; }
+  .langs a, .back {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    color: var(--text-2);
+    text-decoration: none;
+    transition: background-color var(--hover-out) var(--ease-out), color var(--hover-out) var(--ease-out), scale var(--hover-out) var(--ease-out);
+  }
+  .langs a:hover, .back:hover {
+    background: var(--key);
+    color: var(--text);
+    transition-duration: var(--hover-in);
+  }
+  .langs a:active, .back:active { scale: 0.96; transition-duration: var(--press); }
+  .langs a[aria-current='true'] { background: var(--key); color: var(--text); }
+
+  main { max-width: 52rem; margin: 0 auto; padding: 2.5rem var(--gutter) 4rem; }
+  section + section { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+  .js section { display: none; }
+  .js section.is-on { display: block; }
+  .js section + section { margin-top: 0; padding-top: 0; border-top: 0; }
+  h1 { margin: 0 0 0.25rem; font-size: 2rem; font-weight: 300; letter-spacing: -0.01em; line-height: 1.2; }
+  .date { margin: 0 0 2.5rem; color: var(--muted); font-size: 0.875rem; }
+  .lede { margin: 0 0 2.5rem; font-size: 1.0625rem; color: var(--text); max-width: 62ch; }
+  h2 { margin: 2.5rem 0 0.75rem; font-size: 1.0625rem; font-weight: 600; color: var(--text); }
+  p, li { color: var(--text-2); max-width: 66ch; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 0.5rem; }
+  li::marker { color: var(--muted); }
+  strong { color: var(--text); font-weight: 600; }
+  code { font-family: inherit; color: var(--text); }
+  .contact {
+    margin-top: 2.5rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 0.5rem;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .contact a {
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-color var(--hover-out) var(--ease-out);
+  }
+  .contact a:hover { text-decoration-color: transparent; transition-duration: var(--hover-in); }
+  .langs .code { display: none; }
+  @media (max-width: 560px) {
+    h1 { font-size: 1.625rem; }
+    .langs a, .back { padding: 0.625rem 0.75rem; }
+    .langs .name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .langs .code { display: inline; text-transform: uppercase; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition-duration: 0s !important; }
+  }
+</style>
+</head>
+<body>
+<header class="head">
+  <a class="brand" href="../"><svg viewBox="6 6 22 18" aria-hidden="true"><rect x="6" y="10" width="4" height="14" rx="2" fill="#8a8f9b"/><rect x="12" y="6" width="4" height="18" rx="2" fill="#8a8f9b"/><rect x="18" y="8" width="4" height="16" rx="2" fill="#8a8f9b"/><rect x="24" y="14" width="4" height="10" rx="2" fill="#fb8ab1"/></svg><span>petitdoigt</span></a>
+  <ul class="langs">
+    <li><a href="#en" hreflang="en" lang="en"><span class="name">English</span><span class="code" aria-hidden="true">en</span></a></li>
+    <li><a href="#fr" hreflang="fr" lang="fr"><span class="name">Français</span><span class="code" aria-hidden="true">fr</span></a></li>
+    <li><a href="#de" hreflang="de" lang="de"><span class="name">Deutsch</span><span class="code" aria-hidden="true">de</span></a></li>
+    <li><a href="#es" hreflang="es" lang="es"><span class="name">Español</span><span class="code" aria-hidden="true">es</span></a></li>
+  </ul>
+</header>
+<main>
+
+<section id="en" lang="en">
+  <h1>Privacy</h1>
+  <p class="date">Updated November 22, 2026</p>
+  <p class="lede">petitdoigt works without an account. Your practice stays in your browser until you choose to sign in, and even then we keep only what the boards and the sync need.</p>
+
+  <h2>Without an account</h2>
+  <p>Your settings, profiles and progress live in your browser's storage. Nothing about them reaches our servers. Reading the boards sends nothing about you either.</p>
+  <p>In a race, the others in the room see the name you type, your layout, your board shape and whether you type on keys or a touch screen. The room forgets all of it 30 minutes after the last racer leaves.</p>
+
+  <h2>With an account</h2>
+  <ul>
+    <li><strong>Your email address</strong>, to send you a sign-in link and code. It is never shown to anyone, never sold, and we send nothing else to it.</li>
+    <li><strong>Your name on the boards</strong>, which everyone can see next to your sets.</li>
+    <li><strong>Your keyboard</strong>, if you give it: model, switch and size. It shows next to your sets and counts toward the keyboard boards.</li>
+    <li><strong>Your practice history</strong>, so your progress follows you from one device to another. Only you see it.</li>
+    <li><strong>Your ranked sets</strong>: speed, accuracy, layout, drill, text, kind of input, keyboard, and when each character was typed, so others can race your ghost. These are public, with your name.</li>
+    <li><strong>Your interface language</strong>, to write the sign-in mail in it.</li>
+  </ul>
+
+  <h2>One cookie</h2>
+  <p>Signing in sets a single cookie, <code>pd_session</code>, that keeps you signed in for 30 days and renews while you use the site. petitdoigt has no ads, no analytics and no trackers.</p>
+
+  <h2>Keeping abuse out</h2>
+  <p>To stop someone flooding inboxes, we count sign-in requests per address and per network. Those counts are stored hashed and erased after a day. A sign-in link that is never used expires after 15 minutes and is erased within a day.</p>
+
+  <h2>Where it is kept</h2>
+  <p>Cloudflare hosts the site and the database and sends the sign-in mails. Your information may be stored and processed outside Québec, including in the United States.</p>
+
+  <h2>Your rights</h2>
+  <p>You can change your name and keyboard at any time in the settings, under account. <strong>Delete account</strong> erases your account, your sets, your history and your sessions at once. You can also ask to see what we hold about you, ask for a correction, or file a complaint with the Commission d'accès à l'information du Québec.</p>
+
+  <div class="contact">
+    <p>The person in charge of personal information is the publisher of petitdoigt. Write to <a href="mailto:privacy@petitdoigt.ca">privacy@petitdoigt.ca</a>.</p>
+  </div>
+</section>
+
+<section id="fr" lang="fr">
+  <h1>Confidentialité</h1>
+  <p class="date">Mise à jour le 22 novembre 2026</p>
+  <p class="lede">petitdoigt fonctionne sans compte. Votre pratique reste dans votre navigateur tant que vous ne vous connectez pas, et même après, nous gardons seulement ce dont les classements et la synchronisation ont besoin.</p>
+
+  <h2>Sans compte</h2>
+  <p>Vos réglages, vos profils et vos progrès vivent dans le stockage de votre navigateur. Rien de tout cela n'atteint nos serveurs. Consulter les classements n'envoie rien sur vous non plus.</p>
+  <p>Pendant une course, les autres personnes de la salle voient le nom que vous tapez, votre disposition, la forme de votre clavier et si vous tapez sur des touches ou sur un écran tactile. La salle oublie tout 30 minutes après le départ du dernier participant.</p>
+
+  <h2>Avec un compte</h2>
+  <ul>
+    <li><strong>Votre adresse courriel</strong>, pour vous envoyer un lien et un code de connexion. Elle n'est jamais affichée, jamais vendue, et nous n'y envoyons rien d'autre.</li>
+    <li><strong>Votre nom dans les classements</strong>, visible par tous à côté de vos séries.</li>
+    <li><strong>Votre clavier</strong>, si vous l'indiquez : modèle, interrupteurs et format. Il paraît à côté de vos séries et compte dans les classements de claviers.</li>
+    <li><strong>Votre historique de pratique</strong>, pour que vos progrès vous suivent d'un appareil à l'autre. Vous seul le voyez.</li>
+    <li><strong>Vos séries classées</strong> : vitesse, précision, disposition, exercice, texte, type de saisie, clavier, et le moment de chaque caractère, pour que d'autres puissent affronter votre fantôme. Elles sont publiques, avec votre nom.</li>
+    <li><strong>La langue de l'interface</strong>, pour vous écrire le courriel de connexion dans cette langue.</li>
+  </ul>
+
+  <h2>Un seul témoin</h2>
+  <p>La connexion dépose un seul témoin, <code>pd_session</code>, qui vous garde connecté pendant 30 jours et se renouvelle tant que vous utilisez le site. petitdoigt n'a ni publicité, ni outil d'analyse, ni traceur.</p>
+
+  <h2>Contre les abus</h2>
+  <p>Pour empêcher quelqu'un d'inonder des boîtes de réception, nous comptons les demandes de connexion par adresse et par réseau. Ces compteurs sont conservés sous forme hachée et effacés après une journée. Un lien de connexion jamais utilisé expire après 15 minutes et disparaît dans la journée.</p>
+
+  <h2>Où c'est conservé</h2>
+  <p>Cloudflare héberge le site et la base de données, et envoie les courriels de connexion. Vos renseignements peuvent être conservés et traités à l'extérieur du Québec, notamment aux États-Unis.</p>
+
+  <h2>Vos droits</h2>
+  <p>Vous pouvez changer votre nom et votre clavier en tout temps dans les réglages, sous compte. <strong>Supprimer le compte</strong> efface d'un coup votre compte, vos séries, votre historique et vos sessions. Vous pouvez aussi demander à consulter les renseignements que nous détenons sur vous, en demander la rectification, ou porter plainte auprès de la Commission d'accès à l'information du Québec.</p>
+
+  <div class="contact">
+    <p>La personne responsable de la protection des renseignements personnels est l'éditeur de petitdoigt. Écrivez à <a href="mailto:privacy@petitdoigt.ca">privacy@petitdoigt.ca</a>.</p>
+  </div>
+</section>
+
+<section id="de" lang="de">
+  <h1>Datenschutz</h1>
+  <p class="date">Aktualisiert am 22. November 2026</p>
+  <p class="lede">petitdoigt funktioniert ohne Konto. Ihr Training bleibt in Ihrem Browser, bis Sie sich anmelden, und auch dann speichern wir nur, was die Ranglisten und der Abgleich brauchen.</p>
+
+  <h2>Ohne Konto</h2>
+  <p>Ihre Einstellungen, Profile und Fortschritte liegen im Speicher Ihres Browsers. Nichts davon erreicht unsere Server. Wer die Ranglisten ansieht, sendet dabei nichts über sich.</p>
+  <p>In einem Rennen sehen die anderen im Raum den Namen, den Sie eingeben, Ihr Layout, die Form Ihrer Tastatur und ob Sie auf Tasten oder einem Touchscreen tippen. Der Raum vergisst alles 30 Minuten, nachdem der Letzte ihn verlassen hat.</p>
+
+  <h2>Mit Konto</h2>
+  <ul>
+    <li><strong>Ihre E-Mail-Adresse</strong>, um Ihnen einen Anmeldelink und einen Code zu senden. Sie wird nie angezeigt, nie verkauft, und wir schicken nichts anderes dorthin.</li>
+    <li><strong>Ihr Name in den Ranglisten</strong>, für alle sichtbar neben Ihren Durchgängen.</li>
+    <li><strong>Ihre Tastatur</strong>, wenn Sie sie angeben: Modell, Schalter und Größe. Sie erscheint neben Ihren Durchgängen und zählt für die Tastatur-Ranglisten.</li>
+    <li><strong>Ihr Trainingsverlauf</strong>, damit Ihr Fortschritt Ihnen von Gerät zu Gerät folgt. Nur Sie sehen ihn.</li>
+    <li><strong>Ihre gewerteten Durchgänge</strong>: Tempo, Genauigkeit, Layout, Übung, Text, Eingabeart, Tastatur und der Zeitpunkt jedes Zeichens, damit andere gegen Ihren Geist antreten können. Sie sind öffentlich, mit Ihrem Namen.</li>
+    <li><strong>Ihre Oberflächensprache</strong>, um die Anmelde-Mail darin zu schreiben.</li>
+  </ul>
+
+  <h2>Ein Cookie</h2>
+  <p>Die Anmeldung setzt ein einziges Cookie, <code>pd_session</code>, das Sie 30 Tage angemeldet hält und sich erneuert, solange Sie die Seite nutzen. petitdoigt hat keine Werbung, keine Analyse und keine Tracker.</p>
+
+  <h2>Gegen Missbrauch</h2>
+  <p>Damit niemand Postfächer flutet, zählen wir Anmeldeanfragen pro Adresse und pro Netzwerk. Diese Zähler werden gehasht gespeichert und nach einem Tag gelöscht. Ein nie benutzter Anmeldelink verfällt nach 15 Minuten und wird innerhalb eines Tages gelöscht.</p>
+
+  <h2>Wo die Daten liegen</h2>
+  <p>Cloudflare hostet die Seite und die Datenbank und verschickt die Anmelde-Mails. Ihre Daten können außerhalb von Québec gespeichert und verarbeitet werden, auch in den Vereinigten Staaten.</p>
+
+  <h2>Ihre Rechte</h2>
+  <p>Namen und Tastatur ändern Sie jederzeit in den Einstellungen unter Konto. <strong>Konto löschen</strong> entfernt Ihr Konto, Ihre Durchgänge, Ihren Verlauf und Ihre Sitzungen auf einmal. Sie können außerdem Auskunft über Ihre Daten oder deren Berichtigung verlangen oder sich bei der Commission d'accès à l'information du Québec beschweren.</p>
+
+  <div class="contact">
+    <p>Verantwortlich für personenbezogene Daten ist der Herausgeber von petitdoigt. Schreiben Sie an <a href="mailto:privacy@petitdoigt.ca">privacy@petitdoigt.ca</a>.</p>
+  </div>
+</section>
+
+<section id="es" lang="es">
+  <h1>Privacidad</h1>
+  <p class="date">Actualizado el 22 de noviembre de 2026</p>
+  <p class="lede">petitdoigt funciona sin cuenta. Tu práctica se queda en tu navegador hasta que decides iniciar sesión, y aun entonces guardamos solo lo que necesitan las clasificaciones y la sincronización.</p>
+
+  <h2>Sin cuenta</h2>
+  <p>Tus ajustes, perfiles y progresos viven en el almacenamiento de tu navegador. Nada de eso llega a nuestros servidores. Consultar las clasificaciones tampoco envía nada sobre ti.</p>
+  <p>En una carrera, los demás de la sala ven el nombre que escribes, tu distribución, la forma de tu teclado y si tecleas en teclas o en una pantalla táctil. La sala lo olvida todo 30 minutos después de que se vaya el último corredor.</p>
+
+  <h2>Con cuenta</h2>
+  <ul>
+    <li><strong>Tu correo electrónico</strong>, para enviarte un enlace y un código de acceso. Nunca se muestra, nunca se vende, y no te enviamos nada más.</li>
+    <li><strong>Tu nombre en las clasificaciones</strong>, visible para todos junto a tus series.</li>
+    <li><strong>Tu teclado</strong>, si lo indicas: modelo, interruptores y tamaño. Aparece junto a tus series y cuenta para las clasificaciones de teclados.</li>
+    <li><strong>Tu historial de práctica</strong>, para que tu progreso te siga de un dispositivo a otro. Solo tú lo ves.</li>
+    <li><strong>Tus series clasificadas</strong>: velocidad, precisión, distribución, ejercicio, texto, tipo de entrada, teclado y el momento de cada carácter, para que otros puedan competir contra tu fantasma. Son públicas, con tu nombre.</li>
+    <li><strong>El idioma de la interfaz</strong>, para escribirte en él el correo de acceso.</li>
+  </ul>
+
+  <h2>Una sola cookie</h2>
+  <p>Iniciar sesión crea una única cookie, <code>pd_session</code>, que mantiene tu sesión 30 días y se renueva mientras usas el sitio. petitdoigt no tiene publicidad, ni analítica, ni rastreadores.</p>
+
+  <h2>Contra el abuso</h2>
+  <p>Para que nadie inunde buzones, contamos las solicitudes de acceso por dirección y por red. Esos recuentos se guardan cifrados con hash y se borran al cabo de un día. Un enlace de acceso que nunca se usa caduca a los 15 minutos y se borra en el día.</p>
+
+  <h2>Dónde se guarda</h2>
+  <p>Cloudflare aloja el sitio y la base de datos y envía los correos de acceso. Tu información puede guardarse y tratarse fuera de Quebec, incluso en Estados Unidos.</p>
+
+  <h2>Tus derechos</h2>
+  <p>Puedes cambiar tu nombre y tu teclado cuando quieras en los ajustes, en cuenta. <strong>Eliminar cuenta</strong> borra de una vez tu cuenta, tus series, tu historial y tus sesiones. También puedes pedir ver lo que guardamos sobre ti, pedir que se corrija o presentar una queja ante la Commission d'accès à l'information du Québec.</p>
+
+  <div class="contact">
+    <p>La persona responsable de la información personal es el editor de petitdoigt. Escribe a <a href="mailto:privacy@petitdoigt.ca">privacy@petitdoigt.ca</a>.</p>
+  </div>
+</section>
+
+</main>
+<script>
+  (function () {
+    var LANGS = ['en', 'fr', 'de', 'es'];
+    var root = document.documentElement;
+    root.classList.add('js');
+    function pick() {
+      var wanted = location.hash.slice(1);
+      if (LANGS.indexOf(wanted) < 0) {
+        var nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+        wanted = LANGS.indexOf(nav) >= 0 ? nav : 'en';
+      }
+      root.lang = wanted;
+      LANGS.forEach(function (lang) {
+        document.getElementById(lang).classList.toggle('is-on', lang === wanted);
+        var link = document.querySelector('.langs a[href="#' + lang + '"]');
+        if (link) link.setAttribute('aria-current', String(lang === wanted));
+      });
+      var title = document.querySelector('#' + wanted + ' h1');
+      if (title) document.title = title.textContent + ' · petitdoigt';
+      window.scrollTo(0, 0);
+    }
+    window.addEventListener('hashchange', pick);
+    pick();
+  })();
+</script>
+</body>
+</html>

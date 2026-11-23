@@ -29,7 +29,7 @@ const deShift = (side: Side): string => `${side === 'left' ? 'linke' : 'rechte'}
 
 export const de: Strings = {
   none: 'k. a.',
-  drills: { highway: 'autobahn', words: 'wörter', pairs: 'paare', anchors: 'anker', stats: 'statistik' },
+  drills: { highway: 'autobahn', words: 'wörter', pairs: 'paare', anchors: 'anker', stats: 'statistik', boards: 'ranglisten' },
   layouts: {
     'ca-fr': 'kanadisch-französisch',
     us: 'us-qwerty',
@@ -86,6 +86,14 @@ export const de: Strings = {
     },
     boardFound: (board) => `${board}-tastatur erkannt: die tastatur am bildschirm passt jetzt dazu`,
     interface: 'oberfläche',
+    fontWeight: 'stärke',
+    fontRound: 'rundung',
+    fontOptical: 'optische größe',
+    fontAuto: 'auto',
+    fontAutoTitle: 'jede schriftgröße wählt ihre optische größe',
+    fontNote: 'Allo, von Josh Puckett. Die Autobahn zeichnet ihre Noten mit der Standardrundung.',
+    hideKeyboard: 'tastatur ausblenden',
+    hideKeyboardTitle: 'aus dem gedächtnis tippen: die bildschirmtastatur tritt zur seite',
     focus: 'finger',
     focusGroup: 'finger, die mehr üben',
     focusNote: 'die leuchtenden finger tippen mehr',

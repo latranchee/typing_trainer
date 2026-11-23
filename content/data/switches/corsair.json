@@ -1,0 +1,562 @@
+{
+  "maker": {
+    "id": "corsair",
+    "name": "CORSAIR",
+    "role": "brand",
+    "country": null,
+    "founded": 1994,
+    "official_url": "https://www.corsair.com/us/en/s/keyboard-switches",
+    "about": "PC hardware and gaming peripheral company founded in 1994. Its keyboards use its own MLX mechanical, OPX optical and MGX Hall effect switch lines.",
+    "sources": [
+      {
+        "title": "CORSAIR: About",
+        "url": "https://www.corsair.com/ca/en/s/about",
+        "kind": "official",
+        "backs": [
+          "founded"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "CORSAIR: Keyboard switches (MLX, OPX, MGX)",
+        "url": "https://www.corsair.com/us/en/s/keyboard-switches",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "corsair-mgx-hyperdrive",
+      "name": "MGX Hyperdrive",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "MGX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": [
+        0.1,
+        4.0
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 150,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: MGX Magnetic Key Switches Explained",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/",
+          "kind": "official",
+          "backs": [
+            "actuation_range_mm",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Corsair's first Hall effect switch, introduced with the K70 MAX; force rises from 30 g to 55 g with the chosen actuation depth. Corsair's comparison table gives the range as 0.1 to 3.8 mm."
+    },
+    {
+      "id": "corsair-mgx-hyperdrive-core",
+      "name": "MGX Hyperdrive Core",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "MGX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": [
+        0.2,
+        3.8
+      ],
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "total_travel_mm",
+            "actuation_range_mm",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CORSAIR: MGX Magnetic Key Switches Explained",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/",
+          "kind": "official",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lighter Hall effect switch (27 g to 40 g) with a square-wall stem, set in 0.1 mm steps; introduced with the Clipper Pro Mini 60."
+    },
+    {
+      "id": "corsair-mlx-fusion",
+      "name": "MLX Fusion",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "MLX",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CORSAIR: Keyboard switches (MLX, OPX, MGX)",
+          "url": "https://www.corsair.com/us/en/s/keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "factory_lubed",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tactile with a short 3.4 mm travel; found in the K65 Plus, Vanguard 96 and Makr 75. Pre-lubricated and made for hot-swap sockets, per Corsair."
+    },
+    {
+      "id": "corsair-mlx-plasma",
+      "name": "MLX Plasma",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "MLX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CORSAIR: Keyboard switches (MLX, OPX, MGX)",
+          "url": "https://www.corsair.com/us/en/s/keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "factory_lubed",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Linear that Corsair describes as quieter than its other mechanical switches; found in the Makr 75 and Vanguard 96. Pre-lubricated and made for hot-swap sockets, per Corsair."
+    },
+    {
+      "id": "corsair-mlx-pulse",
+      "name": "MLX Pulse",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "MLX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CORSAIR: Keyboard switches (MLX, OPX, MGX)",
+          "url": "https://www.corsair.com/us/en/s/keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "factory_lubed",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Linear tuned for a deeper sound; found in the Galleon 100 SD, Vanguard 96 and Makr 75. Pre-lubricated and made for hot-swap sockets, per Corsair."
+    },
+    {
+      "id": "corsair-mlx-quantum",
+      "name": "MLX Quantum",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "MLX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CORSAIR: Keyboard switches (MLX, OPX, MGX)",
+          "url": "https://www.corsair.com/us/en/s/keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "factory_lubed",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Short-actuation linear; found in the Makr 75 and Vanguard 96. Pre-lubricated and made for hot-swap sockets, per Corsair."
+    },
+    {
+      "id": "corsair-mlx-red",
+      "name": "MLX Red",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "MLX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CORSAIR: Keyboard switches (MLX, OPX, MGX)",
+          "url": "https://www.corsair.com/us/en/s/keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "factory_lubed",
+            "rated_lifespan_million",
+            "footprint"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "All-round linear; found in the K65 Plus and K70 series. Pre-lubricated and made for hot-swap sockets, per Corsair."
+    },
+    {
+      "id": "corsair-opx",
+      "name": "OPX",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "OPX",
+      "aka": [
+        "CORSAIR OPX",
+        "OPX optical"
+      ],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.0,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 150,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-height optical linear switch with 1.0 mm actuation, found in the K65 and K70 series and the K100 RGB Optical-Mechanical."
+    },
+    {
+      "id": "corsair-opx-low-profile",
+      "name": "OPX Low-Profile",
+      "maker": "corsair",
+      "made_by": null,
+      "family": "OPX",
+      "aka": [],
+      "type": "linear",
+      "sensing": "optical",
+      "footprint": "proprietary",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 2.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CORSAIR: Key Switches Compared (updated 2026-11-19)",
+          "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile optical linear with a metal light shield and a curved lens on top, first in the Vanguard Air 99 Wireless."
+    }
+  ]
+}

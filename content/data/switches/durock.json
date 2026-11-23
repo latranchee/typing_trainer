@@ -1,0 +1,1746 @@
+{
+  "maker": {
+    "id": "durock",
+    "name": "Durock",
+    "role": "brand",
+    "country": "CN",
+    "founded": null,
+    "official_url": null,
+    "about": "Shenzhen switch brand tied to the JWK factory, known for the T1 tactile. It has no shop of its own; vendors such as KeebsForAll, Thockking and CannonKeys sell its switches.",
+    "sources": [
+      {
+        "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+        "url": "https://www.theremingoat.com/blog/t1s",
+        "kind": "review",
+        "backs": [
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "KeebsForAll: JWK/Durock switches",
+        "url": "https://keebsforall.com/collections/jwk-durock-switches",
+        "kind": "retailer",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Thockking: JWK / Durock Mechanical Keyboard Switches",
+        "url": "https://www.thockking.com/collections/jwk-durock-mechanical-keyboard-switches",
+        "kind": "retailer",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "durock-burgundy",
+      "name": "Burgundy",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Burgundy Tactile Switches",
+          "url": "https://keebsforall.com/products/durock-burgundy-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lighter bump than the T1."
+    },
+    {
+      "id": "durock-cerulean",
+      "name": "Cerulean",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g gold plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Cerulean Tactile Switch by Durock",
+          "url": "https://cannonkeys.com/products/durock-cerulean-switch",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Blue-tinted full-nylon housing with an MX Clear-like tactile stem; sold by CannonKeys."
+    },
+    {
+      "id": "durock-daybreak",
+      "name": "Daybreak",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Daybreak Linear Switches",
+          "url": "https://keebsforall.com/products/durock-daybreak-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock Daybreak Linear Switches",
+          "url": "https://keebsforall.com/products/durock-daybreak-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Smoky clear housing with a blue stem."
+    },
+    {
+      "id": "durock-dolphin",
+      "name": "Dolphin",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "polymer nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Thockking: Durock Dolphin Silent Linear Switches",
+          "url": "https://www.thockking.com/products/durock-dolphin-silent-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock Dolphin Silent Linear Switches",
+          "url": "https://keebsforall.com/products/durock-dolphin-silent-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silicone dampeners on the stem."
+    },
+    {
+      "id": "durock-lavender",
+      "name": "Lavender",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g gold plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Lavender Linear Switch",
+          "url": "https://cannonkeys.com/products/lavender-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-nylon housing on new molds with Durock branding; sold by CannonKeys."
+    },
+    {
+      "id": "durock-lilac-linear",
+      "name": "Lilac Linear",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon/PC blend",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "62g",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Lilac Linear Switch",
+          "url": "https://cannonkeys.com/products/lilac-linear-switch",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold by CannonKeys with a light factory lube."
+    },
+    {
+      "id": "durock-lilac-tactile",
+      "name": "Lilac Tactile",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon/PC blend",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Lilac Tactile Switch",
+          "url": "https://cannonkeys.com/products/lilac-tactile-switch-10",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold by CannonKeys, which describes it as similar to a T1 but smoother."
+    },
+    {
+      "id": "durock-sea-glass",
+      "name": "Sea Glass",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polymer nylon and UPE blend",
+        "bottom": "polymer nylon and UPE blend",
+        "stem": "P3+"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Sea Glass Linear Switches",
+          "url": "https://keebsforall.com/products/durock-sea-glass-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "durock-silent-shrimp",
+      "name": "Silent Shrimp",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [
+        "Shrimp Silent T1",
+        "T1 Silent Shrimp"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/durock/t1-silent-shrimp",
+          "date": "2025-10-03",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Silent Shrimp Tactile Switches",
+          "url": "https://keebsforall.com/products/durock-silent-shrimp-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "pins",
+            "factory_lubed",
+            "spring",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Thockking: Durock Shrimp Silent T1 Tactile Switches",
+          "url": "https://www.thockking.com/products/durock-shrimp-silent-t1-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "pre_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent T1 with silicone dampeners on the stem."
+    },
+    {
+      "id": "durock-ice-king-linear",
+      "name": "Ice King Linear",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "Ice King",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 52,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polymer nylon",
+        "bottom": "polymer nylon",
+        "stem": "modified nylon"
+      },
+      "spring": "20mm gold-plated progressive",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Thockking: Durock Ice King Linear Switches",
+          "url": "https://www.thockking.com/products/durock-ice-king-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "durock-ice-king-tactile",
+      "name": "Ice King Tactile",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "Ice King",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 58,
+      "bottom_out_force_gf": 68,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "polymer nylon",
+        "bottom": "polymer nylon",
+        "stem": "modified nylon"
+      },
+      "spring": "20mm gold-plated progressive",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Thockking: Durock Ice King Tactile Switches",
+          "url": "https://www.thockking.com/products/durock-ice-king-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "durock-l1-creamy-yellow",
+      "name": "L1 Creamy Yellow",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "L series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock L1 Creamy Yellow Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l1-creamy-yellow-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock L1 Creamy Yellow Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l1-creamy-yellow-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Translucent housing; KeebsForAll quotes Durock that the L-series switches differ in stem mold."
+    },
+    {
+      "id": "durock-l2-creamy-green",
+      "name": "L2 Creamy Green",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "L series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock L2 Creamy Green Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l2-creamy-green-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock L2 Creamy Green Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l2-creamy-green-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Translucent housing; KeebsForAll quotes Durock that the L-series switches differ in stem mold."
+    },
+    {
+      "id": "durock-l3-pink",
+      "name": "L3 Pink",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "L series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 65,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock L3 Pink Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l3-pink-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock L3 Pink Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l3-pink-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Translucent housing; KeebsForAll quotes Durock that the L-series switches differ in stem mold."
+    },
+    {
+      "id": "durock-l4-creamy-purple",
+      "name": "L4 Creamy Purple",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "L series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock L4 Creamy Purple Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l4-creamy-purple-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock L4 Creamy Purple Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l4-creamy-purple-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Translucent housing; KeebsForAll quotes Durock that the L-series switches differ in stem mold."
+    },
+    {
+      "id": "durock-l5-blue",
+      "name": "L5 Blue",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "L series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock L5 Blue Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l5-blue-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock L5 Blue Linear Switches",
+          "url": "https://keebsforall.com/products/durock-l5-blue-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Translucent housing; KeebsForAll quotes Durock that the L-series switches differ in stem mold."
+    },
+    {
+      "id": "durock-l7-smokey",
+      "name": "L7 Smokey",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "L series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock L7 Smokey Switches",
+          "url": "https://keebsforall.com/products/durock-l7-smokey-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock L7 Smokey Switches",
+          "url": "https://keebsforall.com/products/durock-l7-smokey-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with a 62g or 67g bottom-out force."
+    },
+    {
+      "id": "durock-lupine",
+      "name": "Lupine",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "L series",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "62g double-stage long spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Lupine Linear Switches",
+          "url": "https://keebsforall.com/products/durock-lupine-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Improved L7 with a box-style stem and a 13.1mm long pole."
+    },
+    {
+      "id": "durock-black-lotus",
+      "name": "Black Lotus",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "Lotus",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "modified PC and UPE blend",
+        "bottom": "nylon",
+        "stem": "modified POM"
+      },
+      "spring": "19mm gold-plated stainless steel",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Thockking: Durock Black Lotus Linear Switches",
+          "url": "https://www.thockking.com/products/durock-black-lotus-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock Black Lotus Linear Switches",
+          "url": "https://keebsforall.com/products/durock-black-lotus-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "New molds with a long-pole stem; the light column is removable."
+    },
+    {
+      "id": "durock-blue-lotus-t1",
+      "name": "Blue Lotus T1",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "Lotus",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Blue Lotus T1 Tactile Switches",
+          "url": "https://keebsforall.com/products/durock-blue-lotus-t1-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Long-pole stem; the light column is removable."
+    },
+    {
+      "id": "durock-white-lotus",
+      "name": "White Lotus",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "Lotus",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 56,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock White Lotus Tactile Switches",
+          "url": "https://keebsforall.com/products/durock-white-lotus-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "light_pipe",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light tactile with a long-pole stem; the light column is removable."
+    },
+    {
+      "id": "durock-pom-linear",
+      "name": "POM Linear",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "POM",
+      "aka": [
+        "POM Piano",
+        "Piano"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 48,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/durock-pom-linear-switch-review",
+          "date": "2020-12-20",
+          "score": null,
+          "verdict": "Full-POM linear that is smooth unlubed with a good bottom-out; the reviewer sees strong potential with aftermarket modding."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Thockking: Durock POM Piano Linear Switches",
+          "url": "https://www.thockking.com/products/durock-piano-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KeebsForAll: Durock POM Linear Switches",
+          "url": "https://keebsforall.com/products/durock-pom-linear-switches",
+          "kind": "retailer",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full POM housing; Thockking sells it as the POM Piano."
+    },
+    {
+      "id": "durock-sunflower-pom-t1",
+      "name": "Sunflower POM T1",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "T1",
+      "aka": [
+        "T1 Sunflower POM",
+        "POM T1"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 52,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "proprietary P3 blend"
+      },
+      "spring": "67g gold-plated",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/durock/sunflower-pom-t1",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Sunflower POM T1 Tactile Switches",
+          "url": "https://keebsforall.com/products/durock-sunflower-pom-t1-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "pins",
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Thockking: Durock T1 Sunflower POM Tactile Switches",
+          "url": "https://www.thockking.com/products/durock-t1-sunflower-pom-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "actuation_force_gf",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "T1 bump in a full POM housing; Thockking lists total travel as 3.7mm to 4.0mm."
+    },
+    {
+      "id": "durock-t1-clear",
+      "name": "T1 Clear",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "T1",
+      "aka": [
+        "T1"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 60,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard-switch/reviews/durock/t1",
+          "date": "2023-11-06",
+          "score": null,
+          "verdict": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Thockking: Durock T1 Clear Tactile Switches",
+          "url": "https://www.thockking.com/products/durock-t1-clear-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sharp bump at the top of the stroke; Thockking gives the actuation force as about 55g."
+    },
+    {
+      "id": "durock-t1-dark-amber",
+      "name": "T1 Dark Amber",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "T1",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "65g gold plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "limited",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "CannonKeys: Dark Amber T1 Tactile Switch",
+          "url": "https://cannonkeys.com/products/durock-t1-dark-amber-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-nylon T1 sold as a CannonKeys exclusive; listed in clearance."
+    },
+    {
+      "id": "durock-t1-smokey",
+      "name": "T1 Smokey",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "T1",
+      "aka": [
+        "Smokey T1"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KeebsForAll: Durock Smokey T1 Tactile Switches",
+          "url": "https://keebsforall.com/products/durock-smokey-t1-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "durock-t1-transparent-black",
+      "name": "T1 Transparent Black",
+      "maker": "durock",
+      "made_by": "jwk",
+      "family": "T1",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon PA",
+        "stem": "POM"
+      },
+      "spring": "gold-plated",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Thockking: Durock T1 Transparent Black Tactile Switches",
+          "url": "https://www.thockking.com/products/durock-t1-transparent-black-tactile-switches",
+          "kind": "retailer",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: T1s, Durock, and the Stealios Controversy",
+          "url": "https://www.theremingoat.com/blog/t1s",
+          "kind": "review",
+          "backs": [
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    }
+  ]
+}

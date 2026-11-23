@@ -1,0 +1,2402 @@
+{
+  "brand": {
+    "id": "razer",
+    "name": "Razer",
+    "country": "SG",
+    "founded": 1998,
+    "official_url": "https://www.razer.com/",
+    "focus": [
+      "gaming"
+    ],
+    "about": "Gaming hardware company founded in 1998 with headquarters in Singapore; its keyboard lines include Huntsman (optical and analog), BlackWidow (mechanical), DeathStalker (low-profile) and Reclusa.",
+    "sources": [
+      {
+        "title": "Wikipedia: Razer Inc.",
+        "url": "https://en.wikipedia.org/wiki/Razer_Inc.",
+        "kind": "reference",
+        "backs": [
+          "country",
+          "founded"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Razer US store: gaming keyboards and keypads",
+        "url": "https://www.razer.com/pc/gaming-keyboards-and-keypads",
+        "kind": "official",
+        "backs": [
+          "status"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "razer-blackwidow-v3-tenkeyless",
+      "brand": "razer",
+      "model": "BlackWidow V3 Tenkeyless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Green Mechanical Switches",
+          "id": null
+        },
+        {
+          "name": "Razer Yellow Mechanical Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top frame",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v3-tenkeyless",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V3 Tenkeyless",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v3-tenkeyless",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired; still listed on the US store page but no price shown on 2026-11-23."
+    },
+    {
+      "id": "razer-blackwidow-v4",
+      "brand": "razer",
+      "model": "BlackWidow V4",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Green Mechanical Switches (Clicky)",
+          "id": null
+        },
+        {
+          "name": "Razer Yellow Mechanical Switches (Linear)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "6 dedicated macro keys; Snap Tap (SOCD)."
+    },
+    {
+      "id": "razer-blackwidow-v4-75",
+      "brand": "razer",
+      "model": "BlackWidow V4 75%",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Razer Mechanical Switches (Tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 189.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-75",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-75",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/razer/blackwidow-v4-75",
+          "date": "2023-10-13",
+          "score": null,
+          "verdict": "Wired hot-swappable 75% BlackWidow aimed at modding."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/computer-gaming-accessories/razer-blackwidow-v4-75-review",
+          "date": "2023-08-17",
+          "score": "4.5/5",
+          "verdict": "Hot-swappable and fast; suits modders and gamers alike."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 75%",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-75",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 75% (US ISO variant) (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4-75",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable (pin count not stated on the page read). Sold in the UK with a 'US (ISO)' layout."
+    },
+    {
+      "id": "razer-blackwidow-v4-75-barebones",
+      "brand": "razer",
+      "model": "BlackWidow V4 75% Barebones",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-75",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 75% (Barebones variant)",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-75",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "hot_swap",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Ships without switches; pin count not stated on the page read."
+    },
+    {
+      "id": "razer-blackwidow-v4-low-profile-hyperspeed",
+      "brand": "razer",
+      "model": "BlackWidow V4 Low-Profile HyperSpeed",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Low-profile Mechanical Switches (Clicky)",
+          "id": null
+        },
+        {
+          "name": "Razer Low-profile Mechanical Switches (Tactile)",
+          "id": null
+        },
+        {
+          "name": "Razer Low-profile Mechanical Switches (Linear)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-low-profile-hyperspeed",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-low-profile-hyperspeed",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 Low-Profile HyperSpeed",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-low-profile-hyperspeed",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 Low-Profile HyperSpeed (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4-low-profile-hyperspeed",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Green, orange or yellow low-profile switches."
+    },
+    {
+      "id": "razer-blackwidow-v4-low-profile-tenkeyless-hyperspeed",
+      "brand": "razer",
+      "model": "BlackWidow V4 Low-Profile Tenkeyless HyperSpeed",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Low-profile Mechanical Switches (Clicky)",
+          "id": null
+        },
+        {
+          "name": "Razer Low-profile Mechanical Switches (Tactile)",
+          "id": null
+        },
+        {
+          "name": "Razer Low-profile Mechanical Switches (Linear)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-low-profile-tenkeyless-hyperspeed",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-low-profile-tenkeyless-hyperspeed",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 Low-Profile Tenkeyless HyperSpeed",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-low-profile-tenkeyless-hyperspeed",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 Low-Profile Tenkeyless HyperSpeed (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4-low-profile-hyperspeed",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "razer-blackwidow-v4-mini-hyperspeed",
+      "brand": "razer",
+      "model": "BlackWidow V4 Mini HyperSpeed",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Razer Orange Tactile Switches Gen-3",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-mini-hyperspeed",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 Mini HyperSpeed",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-mini-hyperspeed",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Takes 3-pin and 5-pin switches; Green Clicky and Yellow Linear switches sold separately. Battery up to 200 h. No US price shown on 2026-11-23."
+    },
+    {
+      "id": "razer-blackwidow-v4-pro",
+      "brand": "razer",
+      "model": "BlackWidow V4 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Green Mechanical Switches (Clicky)",
+          "id": null
+        },
+        {
+          "name": "Razer Yellow Mechanical Switches (Linear)",
+          "id": null
+        },
+        {
+          "name": "Razer Orange Mechanical Switch (Tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 229.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-pro",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-pro",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/razer-blackwidow-v4-pro-review-the-return-of-the-dedicated-macro-keys",
+          "date": "2023-02-16",
+          "score": "5/5",
+          "verdict": "Improves an already strong full-size board and brings back dedicated macro keys."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 Pro",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 Pro (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4-pro",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Command dial, 8 macro keys, USB passthrough; Snap Tap (SOCD)."
+    },
+    {
+      "id": "razer-blackwidow-v4-pro-75",
+      "brand": "razer",
+      "model": "BlackWidow V4 Pro 75%",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Razer Mechanical Switches Gen-3 (Tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top case, ABS bottom case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 299.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-pro-75",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-pro-75",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/razer-blackwidow-v4-pro-75-percent-review",
+          "date": "2025-01-17",
+          "score": "4/5",
+          "verdict": "Thick wireless 75% with excellent typing and performance, priced to match."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 Pro 75%",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-pro-75",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 Pro 75% (US only) (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4-pro-75",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Up to 4,000 Hz wireless and 1,000 Hz wired polling; OLED display with command dial. Hot-swappable (pin count not stated on the page read)."
+    },
+    {
+      "id": "razer-blackwidow-v4-tenkeyless-hyperspeed",
+      "brand": "razer",
+      "model": "BlackWidow V4 Tenkeyless HyperSpeed",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Razer Mechanical Switches Gen-3 (Tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top case, ABS bottom case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-tenkeyless-hyperspeed",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-tenkeyless-hyperspeed",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 Tenkeyless HyperSpeed",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-tenkeyless-hyperspeed",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 Tenkeyless HyperSpeed (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4-tenkeyless-hyperspeed",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Orange (tactile) switches; top-mounted steel plate. Hot-swappable (pin count not stated on the page read)."
+    },
+    {
+      "id": "razer-blackwidow-v4-x",
+      "brand": "razer",
+      "model": "BlackWidow V4 X",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Green Mechanical Switches (Clicky)",
+          "id": null
+        },
+        {
+          "name": "Razer Yellow Mechanical Switches (Linear)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-x",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-x",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: BlackWidow V4 X",
+          "url": "https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-x",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "hot_swap",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: BlackWidow V4 X (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-blackwidow-v4-x",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Attached cable; 6 dedicated macro keys; Snap Tap (SOCD)."
+    },
+    {
+      "id": "razer-deathstalker-v2",
+      "brand": "razer",
+      "model": "DeathStalker V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Linear Low-Profile Optical Switch",
+          "id": null
+        },
+        {
+          "name": "Razer Clicky Low-Profile Optical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-deathstalker-v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: DeathStalker V2",
+          "url": "https://www.razer.com/gaming-keyboards/razer-deathstalker-v2",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches",
+            "case_material",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired, detachable USB-C. Size not stated on the page; Razer sells a separate Tenkeyless model of the V2 Pro. No US price shown on 2026-11-23."
+    },
+    {
+      "id": "razer-deathstalker-v2-pro",
+      "brand": "razer",
+      "model": "DeathStalker V2 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Linear Low-profile Optical Switch",
+          "id": null
+        },
+        {
+          "name": "Razer Clicky Low-profile Optical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-deathstalker-v2-pro",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/razer-deathstalker-v2-pro-review",
+          "date": "2022-08-08",
+          "score": "4.5/5",
+          "verdict": "Full-size low-profile wireless board with short-travel linear optical switches and low-latency wireless."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: DeathStalker V2 Pro",
+          "url": "https://www.razer.com/gaming-keyboards/razer-deathstalker-v2-pro",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "TechRadar: Razer DeathStalker V2 Pro review",
+          "url": "https://www.techradar.com/reviews/razer-deathstalker-v2-pro-review",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Battery figures on the page conflict (up to 200 h and 40 h). No US price shown on 2026-11-23."
+    },
+    {
+      "id": "razer-deathstalker-v2-pro-tenkeyless",
+      "brand": "razer",
+      "model": "DeathStalker V2 Pro Tenkeyless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Low-Profile Optical Switches (Linear)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "5052 aluminum alloy",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-deathstalker-v2-pro-tenkeyless",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: DeathStalker V2 Pro Tenkeyless",
+          "url": "https://www.razer.com/gaming-keyboards/razer-deathstalker-v2-pro-tenkeyless",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "case_material",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "No US price shown on 2026-11-23."
+    },
+    {
+      "id": "razer-huntsman-mini",
+      "brand": "razer",
+      "model": "Huntsman Mini",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Clicky Optical Switch",
+          "id": null
+        },
+        {
+          "name": "Razer Linear Optical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-mini",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/razer/huntsman-mini",
+          "date": "2020-08-07",
+          "score": null,
+          "verdict": "Compact 60% optical gaming board with strong gaming performance."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Huntsman Mini",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-mini",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Razer Huntsman Mini review",
+          "url": "https://www.rtings.com/keyboard/reviews/razer/huntsman-mini",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The US page offers clicky or linear optical switches and shows no price on 2026-11-23. Detachable USB-C cable, PBT keycaps."
+    },
+    {
+      "id": "razer-huntsman-signature-edition",
+      "brand": "razer",
+      "model": "Huntsman Signature Edition",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "6063 aluminum alloy",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 499.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-signature-edition",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-signature-edition",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Huntsman Signature Edition",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-signature-edition",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Mirror-polished PVD aluminum chassis; actuation 0.1 to 4.0 mm."
+    },
+    {
+      "id": "razer-huntsman-v2-analog",
+      "brand": "razer",
+      "model": "Huntsman V2 Analog",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/razer-huntsman-v2-analog-keyboard-review-pressure-sensitive-swank",
+          "date": "2021-02-05",
+          "score": "4/5",
+          "verdict": "Premium analog optical board with pressure-sensitive input and a premium price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tom's Hardware: Razer Huntsman V2 Analog review",
+          "url": "https://www.tomshardware.com/reviews/razer-huntsman-v2-analog-keyboard-review-pressure-sensitive-swank",
+          "kind": "review",
+          "backs": [
+            "connectivity",
+            "switches",
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Not on Razer's US keyboard page on 2026-11-23; succeeded by the Huntsman V3 Pro."
+    },
+    {
+      "id": "razer-huntsman-v3-he-magnetic-mini-65-8khz",
+      "brand": "razer",
+      "model": "Huntsman V3 HE Magnetic Mini 65% 8KHz",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Hall Effect Magnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 HE Magnetic 8KHz (Mini 65% variant)",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 HE Magnetic 8KHz (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "razer-huntsman-v3-he-magnetic-tenkeyless-8khz",
+      "brand": "razer",
+      "model": "Huntsman V3 HE Magnetic Tenkeyless 8KHz",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Hall Effect Magnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/razer-huntsman-v3-he-magnetic-tenkeyless-8khz-review",
+          "date": "2026-09-05",
+          "score": "4/5",
+          "verdict": "Razer's Hall-effect Huntsman comes close to a perfect analog keyboard."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 HE Magnetic 8KHz",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 HE Magnetic 8KHz (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-he-magnetic-8khz",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect switches with 0.1 to 4.0 mm actuation; wired."
+    },
+    {
+      "id": "razer-huntsman-v3-pro",
+      "brand": "razer",
+      "model": "Huntsman V3 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 brushed aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 249.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/razer/huntsman-v3-pro-mini-tkl",
+          "date": "2023-11-27",
+          "score": null,
+          "verdict": "Analog optical gaming board with customizable actuation; review covers the full-size, TKL and Mini versions."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/computer-gaming-accessories/razer-huntsman-v3-pro-review-pro-gaming-keyboard-paradise-at-a-price",
+          "date": "2024-04-11",
+          "score": "4/5",
+          "verdict": "Deep tuning of actuation and rapid trigger, at a high price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Pro",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 Pro (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-pro",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired, detachable USB-C. Actuation adjustable; Snap Tap (SOCD) and dual-step actuation."
+    },
+    {
+      "id": "razer-huntsman-v3-pro-8khz",
+      "brand": "razer",
+      "model": "Huntsman V3 Pro 8KHz",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 249.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-8khz",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-8khz",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/razer/huntsman-v3-pro-8khz-wired",
+          "date": "2026-02-13",
+          "score": null,
+          "verdict": "Flagship analog optical Huntsman with customizable actuation and 8000 Hz polling."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Pro 8KHz",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-8khz",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "size"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer: Huntsman V3 Pro Tenkeyless 8KHz family page",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-tenkeyless-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 Pro 8KHz (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-pro-8khz",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 4.0 mm; Snap Tap (SOCD) and dual-step actuation."
+    },
+    {
+      "id": "razer-huntsman-v3-pro-low-profile-tenkeyless-8khz",
+      "brand": "razer",
+      "model": "Huntsman V3 Pro Low-profile Tenkeyless 8KHz",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Low-profile Analog Optical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 229.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-low-profile-tenkeyless-8khz",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-low-profile-tenkeyless-8khz",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Pro Low-profile Tenkeyless 8KHz",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-low-profile-tenkeyless-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 Pro Low-profile Tenkeyless 8KHz (DE, FR) (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-pro-low-profile-tenkeyless-8khz",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 2.8 mm."
+    },
+    {
+      "id": "razer-huntsman-v3-pro-mini",
+      "brand": "razer",
+      "model": "Huntsman V3 Pro Mini",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-mini",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-mini",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Pro Mini",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-mini",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer: Huntsman V3 Pro family page (Mini variant)",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 Pro (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-pro",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "60% version of the Huntsman V3 Pro."
+    },
+    {
+      "id": "razer-huntsman-v3-pro-mini-8khz",
+      "brand": "razer",
+      "model": "Huntsman V3 Pro Mini 8KHz",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-mini-8khz",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-mini-8khz",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Pro Mini 8KHz",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-mini-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer: Huntsman V3 Pro Tenkeyless 8KHz family page (Mini 8KHz variant)",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-tenkeyless-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 Pro Mini 8KHz (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-pro-mini-8khz",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "razer-huntsman-v3-pro-tenkeyless",
+      "brand": "razer",
+      "model": "Huntsman V3 Pro Tenkeyless",
+      "aka": [
+        "Huntsman V3 Pro TKL"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 brushed aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 219.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/keyboards/razer-huntsman-v3-pro-tkl-review",
+          "date": "2023-11-05",
+          "score": "4.5/5",
+          "verdict": "Customizable actuation and Rapid Trigger Mode work well together; typing is good too, but the price is high."
+        },
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/razer-huntsman-v3-pro-tkl-review/",
+          "date": "2024-06-27",
+          "score": "85/100",
+          "verdict": "Pricey but powerful analog performance in a compact board."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Pro family page (Tenkeyless variant)",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 Pro (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-pro",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold on the Huntsman V3 Pro page; a Counter-Strike 2 Edition exists."
+    },
+    {
+      "id": "razer-huntsman-v3-pro-tenkeyless-8khz",
+      "brand": "razer",
+      "model": "Huntsman V3 Pro Tenkeyless 8KHz",
+      "aka": [
+        "Huntsman V3 Pro Tenkeyless 8KHz NiKo Edition",
+        "Huntsman V3 Pro Tenkeyless 8KHz Sentinels Edition"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 219.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-tenkeyless-8khz",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-tenkeyless-8khz",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Pro Tenkeyless 8KHz",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-tenkeyless-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 4.0 mm, Snap Tap and Snap Flex. White and esports editions cost more."
+    },
+    {
+      "id": "razer-huntsman-v3-tenkeyless-8khz",
+      "brand": "razer",
+      "model": "Huntsman V3 Tenkeyless 8KHz",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Razer Analog Optical Switch Gen-2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "5052 aluminum alloy top case",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-tenkeyless-8khz",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-tenkeyless-8khz",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/razer-huntsman-v3-tenkeyless-8khz-review",
+          "date": "2026-06-12",
+          "score": "3.5/5",
+          "verdict": "Very tweakable analog board whose switches give little feedback."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Huntsman V3 Tenkeyless 8KHz",
+          "url": "https://www.razer.com/gaming-keyboards/razer-huntsman-v3-tenkeyless-8khz",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Huntsman V3 Tenkeyless 8KHz (DE, ES) (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-huntsman-v3-tenkeyless-8khz",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 4.0 mm."
+    },
+    {
+      "id": "razer-pro-type-ultra",
+      "brand": "razer",
+      "model": "Pro Type Ultra",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "silent mechanical switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.razer.com/productivity/razer-pro-type-ultra",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/razer/pro-type-ultra",
+          "date": "2021-12-17",
+          "score": null,
+          "verdict": "Full-size wireless office keyboard with quiet switches and no trackpad."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Pro Type Ultra",
+          "url": "https://www.razer.com/productivity/razer-pro-type-ultra",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Razer Pro Type Ultra review",
+          "url": "https://www.rtings.com/keyboard/reviews/razer/pro-type-ultra",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth pairs with up to 4 devices; battery up to 214 h (Bluetooth). No US price shown on 2026-11-23."
+    },
+    {
+      "id": "razer-reclusa-mini-65",
+      "brand": "razer",
+      "model": "Reclusa Mini 65%",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Razer Hall Effect Magnetic Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-reclusa-mini-65",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-reclusa-mini-65",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Razer: Reclusa Mini 65%",
+          "url": "https://www.razer.com/gaming-keyboards/razer-reclusa-mini-65",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Reclusa Mini 65% (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-reclusa-mini-65",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swappable Hall-effect board; actuation 0.1 to 4.0 mm; Snap Tap and Snap Flex. The 8000 Hz figure is from the page's feature list (connection mode not specified)."
+    },
+    {
+      "id": "razer-reclusa-x-mini-65",
+      "brand": "razer",
+      "model": "Reclusa X Mini 65%",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Razer Mechanical Switches Gen-3 (Tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Razer Synapse",
+      "os": [],
+      "price_usd": 49.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.razer.com/gaming-keyboards/razer-reclusa-x-mini-65",
+      "official_url": "https://www.razer.com/gaming-keyboards/razer-reclusa-x-mini-65",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/razer-reclusa-x-mini-65-percent-review/",
+          "date": "2026-09-24",
+          "score": "89/100",
+          "verdict": "Budget hot-swappable 65% that feels more expensive than it is."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Razer: Reclusa X Mini 65%",
+          "url": "https://www.razer.com/gaming-keyboards/razer-reclusa-x-mini-65",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Razer UK store: Reclusa X Mini 65% (layout variants)",
+          "url": "https://www.razer.com/gb-en/gaming-keyboards/razer-reclusa-x-mini-65",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired, detachable USB-C. Hot-swappable (pin count not stated on the page read)."
+    }
+  ]
+}

@@ -1,0 +1,1321 @@
+{
+  "maker": {
+    "id": "jerrzi",
+    "name": "JERRZI",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": 2021,
+    "official_url": "https://en.jerrzi.com/",
+    "about": "Huizhou JERRZI Electronic Technology, founded in July 2021 in Huizhou, Guangdong, makes mechanical keyboard switches and MX switch connectors and states an annual capacity above 500 million switches.",
+    "sources": [
+      {
+        "title": "JERRZI: home page / About Us",
+        "url": "https://en.jerrzi.com/",
+        "kind": "official",
+        "backs": [
+          "name",
+          "country",
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "JERRZI: product index",
+        "url": "https://en.jerrzi.com/products_index/1.html",
+        "kind": "official",
+        "backs": [
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "jerrzi-blueberry-silent-low-profile",
+      "name": "Bluberry Silent Low-Profile Switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 2.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/49.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Bluberry Silent Low-Profile Switch",
+          "url": "https://en.jerrzi.com/Products_detail/49.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi lists it as a low-profile switch without naming the socket or keycap mount it fits."
+    },
+    {
+      "id": "jerrzi-blueberry-mousse",
+      "name": "Blueberry mousse keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "蓝莓慕斯轴"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 2.5,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/36.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Blueberry mousse keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/36.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "tactile_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "jerrzi-brownie",
+      "name": "Brownie keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "布朗尼轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/39.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Brownie keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/39.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Milktooth: Jerrzi brand page",
+          "url": "https://milktooth.com/brands/jerrzi",
+          "kind": "retailer",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Offered in 37gf and 45gf operating-force versions."
+    },
+    {
+      "id": "jerrzi-canneles",
+      "name": "Cannelés keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "Canale",
+        "可露丽轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/37.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Cannelés keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/37.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Milktooth: Jerrzi brand page",
+          "url": "https://milktooth.com/brands/jerrzi",
+          "kind": "retailer",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Offered in 37gf and 45gf operating-force versions."
+    },
+    {
+      "id": "jerrzi-crystalmag",
+      "name": "CrystalMag switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/46.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: CrystalMag switch",
+          "url": "https://en.jerrzi.com/Products_detail/46.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Jerrzi lists an initial force of 35gf and a bottom-out flux of 800Gs (1.2mm PCB) or 600Gs (1.6mm PCB)."
+    },
+    {
+      "id": "jerrzi-golden",
+      "name": "Golden Switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/48.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Golden Switch",
+          "url": "https://en.jerrzi.com/Products_detail/48.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "tactile_force_gf",
+            "profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi lists it as a low-profile switch without naming the socket or keycap mount it fits."
+    },
+    {
+      "id": "jerrzi-honey-bean",
+      "name": "Honey Bean keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/26.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Honey Bean keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/26.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "jerrzi-jade",
+      "name": "Jade Switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 50,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/50.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Jade Switch",
+          "url": "https://en.jerrzi.com/Products_detail/50.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "tactile_force_gf",
+            "profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi lists it as a low-profile switch without naming the socket or keycap mount it fits."
+    },
+    {
+      "id": "jerrzi-lotus",
+      "name": "Lotus Keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/23.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Lotus Keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/23.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Offered in 40gf and 45gf operating-force versions."
+    },
+    {
+      "id": "jerrzi-low-profile-brown",
+      "name": "Low profile brown keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/12.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Low profile brown keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/12.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "tactile_force_gf",
+            "profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi lists it as a low-profile switch without naming the socket or keycap mount it fits."
+    },
+    {
+      "id": "jerrzi-low-profile-green",
+      "name": "Low profile green keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/11.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Low profile green keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/11.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "tactile_force_gf",
+            "profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi lists it as a low-profile switch without naming the socket or keycap mount it fits."
+    },
+    {
+      "id": "jerrzi-low-profile-red",
+      "name": "Low profile red keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.2,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/13.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Low profile red keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/13.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi lists it as a low-profile switch without naming the socket or keycap mount it fits."
+    },
+    {
+      "id": "jerrzi-misty-lavender",
+      "name": "Misty Lavender keysiwtch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "烟霞紫轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/34.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Misty Lavender keysiwtch",
+          "url": "https://en.jerrzi.com/Products_detail/34.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Type read from Jerrzi's force-travel diagram, which shows no bump."
+    },
+    {
+      "id": "jerrzi-misty-lavender-v2",
+      "name": "Misty Lavender switch V2",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/51.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Misty Lavender switch V2",
+          "url": "https://en.jerrzi.com/Products_detail/51.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Offered in 37gf and 45gf operating-force versions. Type read from Jerrzi's force-travel diagrams, which show no bump."
+    },
+    {
+      "id": "jerrzi-muyun-powder",
+      "name": "Muyun Powder keysiwtch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "暮云粉轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/35.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Muyun Powder keysiwtch",
+          "url": "https://en.jerrzi.com/Products_detail/35.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Type read from Jerrzi's force-travel diagram, which shows no bump."
+    },
+    {
+      "id": "jerrzi-mx-black",
+      "name": "MX black keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 60,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/22.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: MX black keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/22.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "jerrzi-mx-green",
+      "name": "MX green keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/21.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: MX green keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/21.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "tactile_force_gf"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi calls it a paragraph (tactile) switch."
+    },
+    {
+      "id": "jerrzi-qingluo",
+      "name": "Qingluo Switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/45.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Qingluo Switch",
+          "url": "https://en.jerrzi.com/Products_detail/45.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Type read from Jerrzi's force-travel diagram, which shows no bump."
+    },
+    {
+      "id": "jerrzi-ruyi-magnetic",
+      "name": "Ruyi magnetic switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/40.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Ruyi magnetic switch",
+          "url": "https://en.jerrzi.com/Products_detail/40.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Jerrzi lists an initial force of 35gf and a bottom-out flux of 800Gs (1.2mm PCB) or 600Gs (1.6mm PCB)."
+    },
+    {
+      "id": "jerrzi-sea-salt-mousse",
+      "name": "Sea salt mousse keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "海盐慕斯轴"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/38.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Sea salt mousse keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/38.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Milktooth: Jerrzi brand page",
+          "url": "https://milktooth.com/brands/jerrzi",
+          "kind": "retailer",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "jerrzi-seashell",
+      "name": "Seashell keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/25.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Seashell keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/25.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi's page gives the operating force as 45gf in its text and 48gf in its spec sheet, so it is left open."
+    },
+    {
+      "id": "jerrzi-snow-white-low-profile",
+      "name": "Snow White Low-Profile Switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.3,
+      "total_travel_mm": 2.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/47.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Snow White Low-Profile Switch",
+          "url": "https://en.jerrzi.com/Products_detail/47.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "type",
+            "profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi lists it as a low-profile switch without naming the socket or keycap mount it fits. Type read from Jerrzi's force-travel diagram, which shows no bump."
+    },
+    {
+      "id": "jerrzi-violet",
+      "name": "Violet keyswitch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2.0,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/24.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Violet keyswitch",
+          "url": "https://en.jerrzi.com/Products_detail/24.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "tactile_force_gf",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "jerrzi-wind-chasing-inductive",
+      "name": "Wind-Chasing Inductive Switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "inductive",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/41.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Wind-Chasing Inductive Switch",
+          "url": "https://en.jerrzi.com/Products_detail/41.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Jerrzi files it under magnetic switches, calls it inductive and lists a custom actuation point and an initial force of 35gf."
+    },
+    {
+      "id": "jerrzi-wind-driven-magnetic",
+      "name": "Wind-Driven Magnetic Switch",
+      "maker": "jerrzi",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://en.jerrzi.com/Products_detail/43.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "JERRZI: Wind-Driven Magnetic Switch",
+          "url": "https://en.jerrzi.com/Products_detail/43.html",
+          "kind": "official",
+          "backs": [
+            "name",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Jerrzi lists an initial force of 35gf and a bottom-out flux of 800Gs (1.2mm PCB) or 600Gs (1.6mm PCB)."
+    }
+  ]
+}

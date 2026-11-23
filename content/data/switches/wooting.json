@@ -1,0 +1,196 @@
+{
+  "maker": {
+    "id": "wooting",
+    "name": "Wooting",
+    "role": "brand",
+    "country": null,
+    "founded": 2015,
+    "official_url": "https://wooting.io/about",
+    "about": "Analog keyboard company started in 2015. It sells Hall effect keyboards and its own Lekker magnetic switches.",
+    "sources": [
+      {
+        "title": "Wooting: About",
+        "url": "https://wooting.io/about",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "wooting-lekker-tikken-medium",
+      "name": "Lekker Tikken Medium",
+      "maker": "wooting",
+      "made_by": null,
+      "family": "Lekker",
+      "aka": [
+        "Lekker Tikken"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 54,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Nylon",
+        "stem": "POM"
+      },
+      "spring": "non-magnetic steel, 22 mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://wooting.io/product/wooting-lekker-tikken-medium-switch",
+      "reviews": [
+        {
+          "outlet": "Notebookcheck",
+          "url": "https://www.notebookcheck.net/A-world-first-and-near-perfect-thocky-Hall-effect-switch-Wooting-Lekker-Tikken-vs-Lekker-V2-switch-hands-on-test.1156046.0.html",
+          "date": "2025-11-06",
+          "score": null,
+          "verdict": "Closed-bottom Hall effect switch that sounds deeper and quieter than the Lekker L60 V2 and Gateron Jade Pro; a clear step up in quality."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wooting: Lekker Tikken Medium",
+          "url": "https://wooting.io/product/wooting-lekker-tikken-medium-switch",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Closed-bottom Hall effect linear with a 22 mm spring and the full 4 mm travel, voiced deeper than the Lekker V2. Wooting starts the press at 42 gf and ends at 54 gf; the actuation point is set in software on Hall effect boards only."
+    },
+    {
+      "id": "wooting-lekker-l45-v2",
+      "name": "Lekker V2 L45",
+      "maker": "wooting",
+      "made_by": null,
+      "family": "Lekker",
+      "aka": [
+        "Lekker L45 V2",
+        "Linear45 V2",
+        "L45"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 30,
+      "bottom_out_force_gf": 45,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Nylon",
+        "stem": "POM"
+      },
+      "spring": "non-magnetic steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://wooting.io/product/lekker-switch-l45-v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wooting: Lekker switch Linear45 (L45) V2",
+          "url": "https://wooting.io/product/lekker-switch-l45-v2",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light linear analog magnetic switch, revised with tighter housing tolerances and more lube. Wooting starts the press at 30 gf and ends at 45 gf; the actuation point is set in software on Hall effect boards only."
+    },
+    {
+      "id": "wooting-lekker-l60-v2",
+      "name": "Lekker V2 L60",
+      "maker": "wooting",
+      "made_by": null,
+      "family": "Lekker",
+      "aka": [
+        "Lekker L60 V2",
+        "Linear60 V2",
+        "L60"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "other",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 4.0,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Nylon",
+        "stem": "POM"
+      },
+      "spring": "non-magnetic steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://wooting.io/product/lekker-switch-l60-v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Wooting: Lekker switch Linear60 (L60) V2",
+          "url": "https://wooting.io/product/lekker-switch-l60-v2",
+          "kind": "official",
+          "backs": [
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Medium linear analog magnetic switch, revised with tighter housing tolerances and more lube. Wooting starts the press at 40 gf and ends at 60 gf; the actuation point is set in software on Hall effect boards only."
+    }
+  ]
+}

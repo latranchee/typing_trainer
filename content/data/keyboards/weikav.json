@@ -1,0 +1,977 @@
+{
+  "brand": {
+    "id": "weikav",
+    "name": "Weikav",
+    "country": null,
+    "founded": null,
+    "official_url": "https://weikav.com/",
+    "focus": [
+      "enthusiast",
+      "diy"
+    ],
+    "about": "Weikav sells aluminum mechanical keyboards, barebones keyboard kits, Hall effect boards, switches and keycaps through its own store.",
+    "sources": [
+      {
+        "title": "Weikav: home page",
+        "url": "https://weikav.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "weikav-air68-he",
+      "brand": "weikav",
+      "model": "Air68 HE",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Weikav Online HUB (web driver)",
+      "os": [],
+      "price_usd": 74,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-air68-he/",
+      "official_url": "https://weikav.com/product/weikav-air68-he/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: Air68 HE",
+          "url": "https://weikav.com/product/weikav-air68-he/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "rapid_trigger",
+            "firmware",
+            "software",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired-only Hall effect board; the page lists a rapid-trigger range of 0.01-3.4 mm and an 8K scan rate. Listed under Discontinued on weikav.com."
+    },
+    {
+      "id": "weikav-d75",
+      "brand": "weikav",
+      "model": "D75",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "75",
+      "key_count": 80,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 94,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-d75/",
+      "official_url": "https://weikav.com/product/weikav-d75/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: D75",
+          "url": "https://weikav.com/product/weikav-d75/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit (no switches or keycaps); the price is the kit price. Ball-catch case with FR4 plate."
+    },
+    {
+      "id": "weikav-eg75-he",
+      "brand": "weikav",
+      "model": "EG75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Ice Blade",
+          "id": null
+        },
+        {
+          "name": "Cherry Blossom",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Weikav web driver",
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 177,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-eg75-he/",
+      "official_url": "https://weikav.com/product/weikav-eg75-he/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: EG75 HE",
+          "url": "https://weikav.com/product/weikav-eg75-he/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Hall effect 75% board with an aluminum case and PC plate; the page lists a 0.01-3.4 mm rapid-trigger range and 8K scan rate."
+    },
+    {
+      "id": "weikav-lucky65-v2",
+      "brand": "weikav",
+      "model": "Lucky65 V2",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 79,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-lucky65-v2/",
+      "official_url": "https://weikav.com/product/weikav-lucky65-v2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: Lucky65 V2",
+          "url": "https://weikav.com/product/weikav-lucky65-v2/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit with a PCB-gasket mount and FR4 plate; the PCB supports ANSI, ISO and split-spacebar plates (extra plates sold as options). Price is the kit price."
+    },
+    {
+      "id": "weikav-lucky65-v3",
+      "brand": "weikav",
+      "model": "Lucky65 v3",
+      "aka": [
+        "Lucky65 V3"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "via",
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 84,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-lucky65-v3/",
+      "official_url": "https://weikav.com/product/weikav-lucky65-v3/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: Lucky65 v3",
+          "url": "https://weikav.com/product/weikav-lucky65-v3/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "6063 aluminum case, PCB-gasket mount, FR4 plate. Listed under Discontinued; price shown is the lowest option."
+    },
+    {
+      "id": "weikav-lucky80",
+      "brand": "weikav",
+      "model": "Lucky80",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 115,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-lucky80/",
+      "official_url": "https://weikav.com/product/weikav-lucky80/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: Lucky80 TKL Gaming Keyboard Kit",
+          "url": "https://weikav.com/product/weikav-lucky80/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Keyboard kit with a 6063 aluminum case and FR4 plate. Price is the kit price."
+    },
+    {
+      "id": "weikav-max102",
+      "brand": "weikav",
+      "model": "Max102",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "full",
+      "key_count": 102,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 162,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-max102/",
+      "official_url": "https://weikav.com/product/weikav-max102/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: Max102",
+          "url": "https://weikav.com/product/weikav-max102/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The page says all orders ship as barebones (no switches or keycaps); the price is the kit price. CNC aluminum case, FR4 plate, QMK/VIA plus an in-house driver."
+    },
+    {
+      "id": "weikav-nut108",
+      "brand": "weikav",
+      "model": "NUT108",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "full",
+      "key_count": 108,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 237,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-nut108/",
+      "official_url": "https://weikav.com/product/weikav-nut108/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: NUT108",
+          "url": "https://weikav.com/product/weikav-nut108/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "case_material",
+            "firmware",
+            "price_usd",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The page says all orders ship as barebones and that the sockets take 3-pin and 5-pin MX switches. 6063 aluminum case, FR4 plate, pogo-pin daughterboard, front light bar. Price is the kit price."
+    },
+    {
+      "id": "weikav-nut65",
+      "brand": "weikav",
+      "model": "NUT65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via",
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 102,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-nut65/",
+      "official_url": "https://weikav.com/product/weikav-nut65/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: NUT65",
+          "url": "https://weikav.com/product/weikav-nut65/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The FAQ says NUT65 is a barebones kit and ANSI only. Dual-gasket structure, FR4 plate, rhythm-reactive light bar. Price is the kit price."
+    },
+    {
+      "id": "weikav-nut75",
+      "brand": "weikav",
+      "model": "NUT75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "HMX Lingyu",
+          "id": null
+        },
+        {
+          "name": "HMX Naihuang",
+          "id": null
+        },
+        {
+          "name": "Yanyun Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Weikav web driver",
+      "os": [
+        "windows",
+        "mac",
+        "ios",
+        "android"
+      ],
+      "price_usd": 179,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-nut75/",
+      "official_url": "https://weikav.com/product/weikav-nut75/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: NUT75",
+          "url": "https://weikav.com/product/weikav-nut75/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt with 8K polling wired and over 2.4 GHz, a 6063 aluminum case and a gasket-mounted PC plate."
+    },
+    {
+      "id": "weikav-nut87",
+      "brand": "weikav",
+      "model": "NUT87",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "HMX Naihuang",
+          "id": null
+        },
+        {
+          "name": "HMX Titanium Silver",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Weikav web driver",
+      "os": [
+        "windows",
+        "mac",
+        "ios",
+        "android"
+      ],
+      "price_usd": 199,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-nut87/",
+      "official_url": "https://weikav.com/product/weikav-nut87/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: NUT87",
+          "url": "https://weikav.com/product/weikav-nut87/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt TKL with 8K polling wired and over 2.4 GHz, 6063 aluminum case, gasket mount with PC or FR4 plate depending on the switch option."
+    },
+    {
+      "id": "weikav-record-alice",
+      "brand": "weikav",
+      "model": "Record Alice",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "leaf-spring gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 68,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/record-alice/",
+      "official_url": "https://weikav.com/product/record-alice/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: Record Alice",
+          "url": "https://weikav.com/product/record-alice/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "key_count",
+            "split",
+            "connectivity",
+            "case_material",
+            "mount",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Alice-layout kit (67 keys, the page calls it a 68% layout) with a CNC aluminum case; an acrylic version is also listed."
+    },
+    {
+      "id": "weikav-record-alice-v2",
+      "brand": "weikav",
+      "model": "Record Alice V2",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "leaf-spring",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 130,
+      "price_date": "2026-11-23",
+      "price_url": "https://weikav.com/product/weikav-record-alice-v2/",
+      "official_url": "https://weikav.com/product/weikav-record-alice-v2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Weikav: Record Alice V2",
+          "url": "https://weikav.com/product/weikav-record-alice-v2/",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "key_count",
+            "split",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones 65% Alice-layout kit with a leaf-spring mount. Regular price 130 USD shown with a 99 USD sale price."
+    }
+  ]
+}

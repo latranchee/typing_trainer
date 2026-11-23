@@ -1,0 +1,1686 @@
+{
+  "brand": {
+    "id": "leopold",
+    "name": "Leopold",
+    "country": "KR",
+    "founded": 2005,
+    "official_url": "https://www.leopold.co.kr/",
+    "focus": [
+      "enthusiast",
+      "office"
+    ],
+    "about": "Korean keyboard brand founded in 2005 that designs its own mechanical keyboards, mostly with Cherry MX switches and PBT double-shot keycaps. Its Korean shop also sells Realforce keyboards.",
+    "sources": [
+      {
+        "title": "Leopold: brand page",
+        "url": "https://www.leopold.co.kr/brand.html",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Leopold shop: product list",
+        "url": "https://www.leopold.co.kr/product/list.html?cate_no=23",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "leopold-alchemie",
+      "brand": "leopold",
+      "model": "ALCHEMIE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Leopold Linear",
+          "id": null
+        },
+        {
+          "name": "Leopold Silent Linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "top",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/alchemie-%EC%95%A0%EC%89%AC-%ED%99%94%EC%9D%B4%ED%8A%B8/256/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: ALCHEMIE Ash White",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=33327&board_no=12",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: ALCHEMIE Ash White",
+          "url": "https://www.leopold.co.kr/product/alchemie-%EC%95%A0%EC%89%AC-%ED%99%94%EC%9D%B4%ED%8A%B8/256/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full CNC-machined 6063 aluminum case with north-facing Gateron hot-swap sockets that take 3- and 5-pin switches; VIA keymapping works in wired mode only."
+    },
+    {
+      "id": "leopold-fc220tp",
+      "brand": "leopold",
+      "model": "FC220TP",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "numpad",
+      "key_count": 22,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 2000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Leopold Linear",
+          "id": null
+        },
+        {
+          "name": "Leopold Silent Linear",
+          "id": null
+        },
+        {
+          "name": "Kailh Silent Linear",
+          "id": null
+        },
+        {
+          "name": "Kailh Silent Tactile",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc220tp-pd/248/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC220TP Ash White",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=33325&board_no=12",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "firmware",
+            "os",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC220TP PD",
+          "url": "https://www.leopold.co.kr/product/fc220tp-pd/248/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Numeric keypad with a NumLock mode independent from the main keyboard; hot-swap sockets take 3- and 5-pin switches."
+    },
+    {
+      "id": "leopold-fc630mbt",
+      "brand": "leopold",
+      "model": "FC630MBT",
+      "aka": [
+        "FC630MBT MX2A"
+      ],
+      "status": "current",
+      "released": "2024",
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 60,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX2A Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX2A Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc630mbt-mx2a-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/211/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC630MBT MX2A Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=6197&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC630MBT MX2A Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc630mbt-mx2a-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/211/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold: brand history (630M and 730M layouts launched 2024)",
+          "url": "https://www.leopold.co.kr/brand.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "60% layout with a split spacebar; runs on AAA batteries in wireless mode."
+    },
+    {
+      "id": "leopold-fc650mds",
+      "brand": "leopold",
+      "model": "FC650MDS",
+      "aka": [
+        "FC650MDS PD"
+      ],
+      "status": "current",
+      "released": "2020",
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 65,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc650mds-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/157/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold shop: FC650MDS PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc650mds-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/157/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold: brand history (650MDS layout launched 2020)",
+          "url": "https://www.leopold.co.kr/brand.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "65% layout with a split (\"double\") spacebar and a USB Type-C port."
+    },
+    {
+      "id": "leopold-fc650mdsbt",
+      "brand": "leopold",
+      "model": "FC650MDSBT",
+      "aka": [
+        "FC650MDSBT PD"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 65,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc650mdsbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/124/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold shop: FC650MDSBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc650mdsbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/124/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold global spec page: FC650MDSBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=1201&board_no=8",
+          "kind": "official",
+          "backs": [
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth 5.1 version of the FC650MDS."
+    },
+    {
+      "id": "leopold-fc660m",
+      "brand": "leopold",
+      "model": "FC660M",
+      "aka": [
+        "FC660M PD",
+        "FC660M OE"
+      ],
+      "status": "current",
+      "released": "2013",
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc660m-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/164/category/23/display/1/",
+      "reviews": [
+        {
+          "outlet": "Switch and Click",
+          "url": "https://switchandclick.com/leopold-fc660m/",
+          "date": "2020-11-10",
+          "score": "4/5",
+          "verdict": "Sturdy 65% board with PBT keycaps and handy DIP switches; the mini-USB port and loose rubber feet show its age."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Leopold shop: FC660M PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc660m-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/164/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold: brand history (660M layout launched 2013)",
+          "url": "https://www.leopold.co.kr/brand.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The spec sheet lists a USB and PS/2 interface."
+    },
+    {
+      "id": "leopold-fc660mbt",
+      "brand": "leopold",
+      "model": "FC660MBT",
+      "aka": [
+        "FC660MBT PD"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc660mbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/116/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC660MBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=1212&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC660MBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc660mbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/116/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth 5.1 version of the FC660M; runs on AAA batteries in wireless mode."
+    },
+    {
+      "id": "leopold-fc730mbt",
+      "brand": "leopold",
+      "model": "FC730MBT",
+      "aka": [
+        "FC730MBT MX2A"
+      ],
+      "status": "current",
+      "released": "2024",
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 73,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX2A Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX2A Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX2A Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX2A Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc730mbt-mx2a-%EC%BD%94%EB%9E%84-%EB%B8%94%EB%A3%A8/217/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC730MBT MX2A Coral Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=10679&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC730MBT MX2A Coral Blue",
+          "url": "https://www.leopold.co.kr/product/fc730mbt-mx2a-%EC%BD%94%EB%9E%84-%EB%B8%94%EB%A3%A8/217/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold: brand history (630M and 730M layouts launched 2024)",
+          "url": "https://www.leopold.co.kr/brand.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "73-key layout: a 60% block with a split spacebar plus a numeric/navigation cluster on the right and no function row; AAA batteries in wireless mode."
+    },
+    {
+      "id": "leopold-fc750r",
+      "brand": "leopold",
+      "model": "FC750R",
+      "aka": [
+        "FC750R PD",
+        "FC750R OE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc750r-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/179/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold shop: FC750R PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc750r-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/179/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The spec sheet lists a USB and PS/2 interface."
+    },
+    {
+      "id": "leopold-fc750rbt",
+      "brand": "leopold",
+      "model": "FC750RBT",
+      "aka": [
+        "FC750RBT PD",
+        "FC750RBT MX2A"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX2A Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX2A Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX2A Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX2A Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc750rbt-mx2a-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/197/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC750RBT MX2A Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=5764&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold global spec page: FC750RBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=1271&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC750RBT MX2A Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc750rbt-mx2a-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/197/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC750RBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc750rbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/91/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold as FC750RBT PD (Cherry MX) and FC750RBT MX2A (Cherry MX2A); Bluetooth 5.1 pairs with up to four devices and runs on AAA batteries."
+    },
+    {
+      "id": "leopold-fc900r",
+      "brand": "leopold",
+      "model": "FC900R",
+      "aka": [
+        "FC900R PD",
+        "FC900R OE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc900r-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/187/category/23/display/1/",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/leopold/fc900r",
+          "date": "2020-12-17",
+          "score": null,
+          "verdict": "Well built with a solid plastic frame and doubleshot PBT keycaps, but no backlight or macro programming."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC900R PD Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=1313&board_no=2",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "os",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC900R PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc900r-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/187/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Leopold FC900R review",
+          "url": "https://www.rtings.com/keyboard/reviews/leopold/fc900r",
+          "kind": "review",
+          "backs": [
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The spec sheet lists a USB and PS/2 interface."
+    },
+    {
+      "id": "leopold-fc900rbt",
+      "brand": "leopold",
+      "model": "FC900RBT",
+      "aka": [
+        "FC900RBT PD",
+        "FC900RBT MX2A"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        },
+        {
+          "name": "Cherry MX2A Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX2A Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX2A Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX2A Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX2A Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX2A Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc900rbt-mx2a-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/198/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC900RBT MX2A Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=5765&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC900RBT MX2A Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc900rbt-mx2a-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/198/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC900RBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc900rbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/58/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold as FC900RBT PD (Cherry MX) and FC900RBT MX2A (Cherry MX2A); Bluetooth 5.1 pairs with up to four devices and runs on AAA batteries."
+    },
+    {
+      "id": "leopold-fc980m",
+      "brand": "leopold",
+      "model": "FC980M",
+      "aka": [
+        "FC980M PD"
+      ],
+      "status": "current",
+      "released": "2016",
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 98,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc980m-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/170/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold shop: FC980M PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc980m-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/170/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "key_count",
+            "connectivity",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold: brand history (980M layout launched 2016)",
+          "url": "https://www.leopold.co.kr/brand.html",
+          "kind": "official",
+          "backs": [
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact 1800-style layout; the spec sheet lists a USB and PS/2 interface."
+    },
+    {
+      "id": "leopold-fc980mbt",
+      "brand": "leopold",
+      "model": "FC980MBT",
+      "aka": [
+        "FC980MBT PD"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 98,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/fc980mbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/111/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: FC980MBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=1221&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: FC980MBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/fc980mbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/111/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bluetooth 5.1 version of the FC980M; runs on AAA batteries in wireless mode."
+    },
+    {
+      "id": "leopold-np750rbt",
+      "brand": "leopold",
+      "model": "NP750RBT",
+      "aka": [
+        "NP750RBT PD"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "plate-less",
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/np750rbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/92/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: NP750RBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=1195&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: NP750RBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/np750rbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/92/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lighter \"non steel plate\" version of the FC750RBT: switches sit on the PCB without a steel plate."
+    },
+    {
+      "id": "leopold-np900rbt",
+      "brand": "leopold",
+      "model": "NP900RBT",
+      "aka": [
+        "NP900RBT PD"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": "cherry-mx2a-speed-silver"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "plate-less",
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leopold.co.kr/product/np900rbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/80/category/23/display/1/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Leopold global spec page: NP900RBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/board/global/read.html?no=1162&board_no=8",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "layout_standards",
+            "os",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Leopold shop: NP900RBT PD Gray Blue",
+          "url": "https://www.leopold.co.kr/product/np900rbt-pd-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B8%94%EB%A3%A8/80/category/23/display/1/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lighter \"non steel plate\" version of the FC900RBT: switches sit on the PCB without a steel plate."
+    }
+  ]
+}

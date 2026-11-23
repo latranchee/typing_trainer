@@ -1,0 +1,4015 @@
+{
+  "maker": {
+    "id": "ttc",
+    "name": "TTC",
+    "role": "manufacturer",
+    "country": "CN",
+    "founded": 1998,
+    "official_url": "https://ttcswitches.com/",
+    "about": "TTC is the switch brand of Huizhou Trantek Electronics Co., Ltd., founded in 1998 in Huizhou, which also makes mouse switches, encoders and connectors. Its keyboard line covers MX-style mechanical and Hall-effect magnetic switches.",
+    "sources": [
+      {
+        "title": "TTC: Company profile",
+        "url": "https://ttcswitches.com/pages/company-profile",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "TTC Switch store (home)",
+        "url": "https://ttcswitches.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "ttc-horse",
+      "name": "Horse",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Horse"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.45,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-horse-magnetic-switch-clip-clop-sound-smooth-stable-keyboard-switch-new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Horse Switch-Clip Clop Sound",
+          "url": "https://ttcswitches.com/products/ttc-horse-magnetic-switch-clip-clop-sound-smooth-stable-keyboard-switch-new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard. Sold in an OG version with an original code and an RGB version."
+    },
+    {
+      "id": "ttc-limited-white-horse",
+      "name": "Limited White Horse",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Limited White Horse"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.45,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "limited",
+      "official_url": "https://ttcswitches.com/products/ttc-exclusive-white-horse-he-switch-clip-clop-sound",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Limited White Horse HE Switch-Clip Clop Sound",
+          "url": "https://ttcswitches.com/products/ttc-exclusive-white-horse-he-switch-clip-clop-sound",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-noble-horse",
+      "name": "Noble Horse",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Noble Horse"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.45,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-noble-horse-magnetic-switch-clip-clop-sound",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Noble Horse HE Switch-Clip Clop Sound",
+          "url": "https://ttcswitches.com/products/ttc-noble-horse-magnetic-switch-clip-clop-sound",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-qing-loong",
+      "name": "Qing Loong",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Qing Loong"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 49,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.08,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-qing-loong-mechanical-keyboard-switches-linear-factory-pre-lubed-firm-5-pin-keyboard-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Qing Loong Switch (RGB)",
+          "url": "https://ttcswitches.com/products/ttc-qing-loong-mechanical-keyboard-switches-linear-factory-pre-lubed-firm-5-pin-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-rabbit",
+      "name": "Rabbit",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Rabbit"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-rabbit-keyswitch-lego-structure-rgb-og-edition-fast-and-silent-42gf-mechanical-keyboard-keyswitch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Rabbit Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-rabbit-keyswitch-lego-structure-rgb-og-edition-fast-and-silent-42gf-mechanical-keyboard-keyswitch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Specs are printed in the product image. Sold in an OG edition with an original code and an RGB edition."
+    },
+    {
+      "id": "ttc-snow-tiger",
+      "name": "Snow Tiger",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Snow Tiger"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.08,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-snow-tiger-mechanical-keyboard-switches-factory-pre-lubed-24mm-strong-rebound-long-spring-5-pin-keyboard-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Snow Tiger Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-snow-tiger-mechanical-keyboard-switches-factory-pre-lubed-24mm-strong-rebound-long-spring-5-pin-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC lists an initial force of 40gf and no operating force."
+    },
+    {
+      "id": "ttc-tiger",
+      "name": "Tiger",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Tiger"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.08,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "25.5mm single-stage gold",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-tiger-switches-standard-rgb-original-version-factory-pre-lubed-regular-price-192-00-usd",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/ttc-tiger-switch-review",
+          "date": "2022-05-15",
+          "score": null,
+          "verdict": "Well-built, smooth light linear that performs well, though it does not stand far apart from cheaper TTC linears at its price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TTC: Tiger Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-tiger-switches-standard-rgb-original-version-factory-pre-lubed-regular-price-192-00-usd",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: TTC Tiger Switch Review",
+          "url": "https://www.theremingoat.com/blog/ttc-tiger-switch-review",
+          "kind": "review",
+          "backs": [
+            "bottom_out_force_gf",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Specs are printed in the product image (initial force 40gf min). Sold in OG, Standard and RGB versions."
+    },
+    {
+      "id": "ttc-zodiac-snake",
+      "name": "Zodiac Snake",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Chinese Zodiac",
+      "aka": [
+        "TTC Zodiac Snake"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/chinese-zodiac-snake-magnetic-keyswitch-new-structure-new-formula-high-precision-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Zodiac Snake Magnetic Switch",
+          "url": "https://ttcswitches.com/products/chinese-zodiac-snake-magnetic-keyswitch-new-structure-new-formula-high-precision-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. Sold as Green Snake and White Snake KOM versions with a centered magnet; TTC gives magnetic flux tolerances but no force or travel."
+    },
+    {
+      "id": "ttc-commander-king",
+      "name": "Commander King",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Commander King",
+      "aka": [
+        "TTC Commander King"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/camo-king-magnetic-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Commander King Magnetic Switch",
+          "url": "https://ttcswitches.com/products/camo-king-magnetic-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±10gf and a pre-travel set by the keyboard. Sold in Standard and Pro editions."
+    },
+    {
+      "id": "ttc-dragon-lord",
+      "name": "Dragon Lord",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Commander King",
+      "aka": [
+        "TTC Dragon Lord"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "20mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-full-pom-dragon-lord-he-magetic-switch-new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Dragon Lord Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ttc-full-pom-dragon-lord-he-magetic-switch-new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard. TTC describes it as full POM."
+    },
+    {
+      "id": "ttc-hifi-snow-magneto",
+      "name": "HiFi Snow Magneto",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Commander King",
+      "aka": [
+        "TTC HiFi Snow Magneto"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "18mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-hifi-snow-magneto-switch-new-arrival-first-openwork-snowflake-craft",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: HiFi Snow Magneto HE Switch",
+          "url": "https://ttcswitches.com/products/ttc-hifi-snow-magneto-switch-new-arrival-first-openwork-snowflake-craft",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±6gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-golden-magnetic",
+      "name": "Golden Magnetic",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "External Magnetic",
+      "aka": [
+        "TTC Golden Magnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-golden-magnetic-keyswitch-external-magnet-maintain-the-original-mechanical-switch-sound",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Golden Magnetic HE Switch (Compatible with ROG HFX V2)",
+          "url": "https://ttcswitches.com/products/ttc-golden-magnetic-keyswitch-external-magnet-maintain-the-original-mechanical-switch-sound",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±5gf and a pre-travel set by the keyboard. The magnet sits on the side; TTC sells it as compatible with ROG HFX V2 boards."
+    },
+    {
+      "id": "ttc-snow-white-magnetic",
+      "name": "Snow-White Magnetic",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "External Magnetic",
+      "aka": [
+        "TTC Snow-White Magnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/-rog-hfx-v2-ttc-snow-white-magnetic-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Snow-White Magnetic Switch (ROG HFX V2 HE Switch)",
+          "url": "https://ttcswitches.com/products/-rog-hfx-v2-ttc-snow-white-magnetic-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 30±10gf and a pre-travel set by the keyboard. The magnet sits on the side; TTC lists it as compatible only with the ROG Azoth 96 HE, ROG Falchion Ace 75 HE and ROG Falcata."
+    },
+    {
+      "id": "ttc-flaming-orange",
+      "name": "Flaming Orange",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Flaming",
+      "aka": [
+        "TTC Flaming Orange"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POK"
+      },
+      "spring": "24mm long spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-flaming-orange-linear-switch-long-spring-rapid-trigger-flame-orange-rgb-gaming-keyboard-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Flaming Orange Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-flaming-orange-linear-switch-long-spring-rapid-trigger-flame-orange-rgb-gaming-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-flaming-pink",
+      "name": "Flaming Pink",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Flaming",
+      "aka": [
+        "TTC Flaming Pink"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA",
+        "stem": "POM"
+      },
+      "spring": "24mm long spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-flaming-pink-hot-selling-keyboard-switches-linear-5pins-pre-lubed-gaming-43gf-switch-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Flaming Pink Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-flaming-pink-hot-selling-keyboard-switches-linear-5pins-pre-lubed-gaming-43gf-switch-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-flaming-purple-v2",
+      "name": "Flaming Purple V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Flaming",
+      "aka": [
+        "TTC Flaming Purple V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": "23mm long spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-flaming-purple-keyswitch-with-dustproof-stem-for-mechanical-gaming-keyboard-5-pin-tactile-switches-pre-lubed-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Flaming Purple V2 Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-flaming-purple-keyswitch-with-dustproof-stem-for-mechanical-gaming-keyboard-5-pin-tactile-switches-pre-lubed-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC lists it as linear although the page address says tactile."
+    },
+    {
+      "id": "ttc-flaming-red-v2",
+      "name": "Flaming Red V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Flaming",
+      "aka": [
+        "TTC Flaming Red V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 53,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-flaming-red-v2-linear-high-quality-elastic-and-rgb-gaming-soft-smooth-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Flaming Red V2 Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-flaming-red-v2-linear-high-quality-elastic-and-rgb-gaming-soft-smooth-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-flaming-snow-v2",
+      "name": "Flaming Snow V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Flaming",
+      "aka": [
+        "TTC Flaming Snow V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "PA",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-flaming-snow-keyswitch-with-dustproof-stem-for-mechanical-gaming-keyboard-5-pin-tactile-switches-pre-lubed-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Flaming Snow V2 Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-flaming-snow-keyswitch-with-dustproof-stem-for-mechanical-gaming-keyboard-5-pin-tactile-switches-pre-lubed-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-golden-brown-pro",
+      "name": "Golden Brown Pro",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "G Keyswitch Series",
+      "aka": [
+        "TTC Golden Brown Pro"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/golden-switch-for-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: TTC Golden Switch (spec table image)",
+          "url": "https://ttcswitches.com/products/golden-switch-for-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-golden-red-pro",
+      "name": "Golden Red Pro",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "G Keyswitch Series",
+      "aka": [
+        "TTC Golden Red Pro"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/golden-switch-for-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: TTC Golden Switch (spec table image)",
+          "url": "https://ttcswitches.com/products/golden-switch-for-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-golden-silver",
+      "name": "Golden Silver",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "G Keyswitch Series",
+      "aka": [
+        "TTC Golden Silver"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/golden-switch-for-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: TTC Golden Switch (spec table image)",
+          "url": "https://ttcswitches.com/products/golden-switch-for-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-flaming-yellow-kom",
+      "name": "Flaming Yellow KOM",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC Flaming Yellow KOM"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-flaming-yellow-kom-he-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Flaming Yellow KOM HE Switch",
+          "url": "https://ttcswitches.com/products/ttc-flaming-yellow-kom-he-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-flip-king",
+      "name": "Flip King of Magnetic",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC Flip King of Magnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-flip-king-of-magnetic-switch-silky-smooth-stable-keyboard-switch--new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Flip King of Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ttc-flip-king-of-magnetic-switch-silky-smooth-stable-keyboard-switch--new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-helios",
+      "name": "Helios",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC Helios"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm long spring",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-helios-he-magnetic-switch-new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Helios HE Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ttc-helios-he-magnetic-switch-new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "light_pipe",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-honey-king",
+      "name": "Honey King",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC Honey King"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-honey-king-magnetic-keyswitch-exclusive-love-design-valentine-gift",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Honey King Magnetic HE Switch",
+          "url": "https://ttcswitches.com/products/ttc-honey-king-magnetic-keyswitch-exclusive-love-design-valentine-gift",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-king-kom",
+      "name": "King/KOM HE Magneto",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC King/KOM HE Magneto",
+        "King Magnetic Switch"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-king-magnetic-keyswitch-linear-switches-factory-pre-lubed-switches-for-wooting-rakka-melgeek-apex-pro-15",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: King/KOM HE Magneto Switch",
+          "url": "https://ttcswitches.com/products/ttc-king-magnetic-keyswitch-linear-switches-factory-pre-lubed-switches-for-wooting-rakka-melgeek-apex-pro-15",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-lite-kom",
+      "name": "Lite KOM HE Magneto",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC Lite KOM HE Magneto"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-king-kom-pro-lite-he-magneto-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Lite KOM HE Magneto Switch",
+          "url": "https://ttcswitches.com/products/ttc-king-kom-pro-lite-he-magneto-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-pom-magneto",
+      "name": "POM Magneto",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC POM Magneto",
+        "Full POM King Magnetic Switch"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-full-pom-magneto-linear-gaming-dust-proof-keyswitch-gaming-hall-sensor-35g-rapid-trigger-switch-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: POM Magneto HE Switch",
+          "url": "https://ttcswitches.com/products/ttc-full-pom-magneto-linear-gaming-dust-proof-keyswitch-gaming-hall-sensor-35g-rapid-trigger-switch-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard. TTC describes it as full POM."
+    },
+    {
+      "id": "ttc-pro-kom",
+      "name": "Pro KOM HE Magneto",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC Pro KOM HE Magneto"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": null,
+        "stem": "POM"
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-pro-kom-he-magneto-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Pro KOM HE Magneto Switch",
+          "url": "https://ttcswitches.com/products/ttc-pro-kom-he-magneto-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-rgb-king-magnetic",
+      "name": "RGB King Magnetic",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC RGB King Magnetic"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-rgb-lighting-linear-magnetic-switch-rapid-trigger-35gf-magnetic-gaming-keyboard-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: RGB King Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ttc-rgb-lighting-linear-magnetic-switch-rapid-trigger-35gf-magnetic-gaming-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-rgb-purple-heart",
+      "name": "RGB Purple Heart",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC RGB Purple Heart"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-rgb-king-purple-heart-he-magetic-switch-new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: RGB Purple Heart Switch",
+          "url": "https://ttcswitches.com/products/ttc-rgb-king-purple-heart-he-magetic-switch-new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-rgb-sacred-heart",
+      "name": "RGB Sacred Heart",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "King Magnetic",
+      "aka": [
+        "TTC RGB Sacred Heart"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "20mm long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-rgb-king-sacred-heart-he-magetic-switch-new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: RGB Sacred Heart Switch",
+          "url": "https://ttcswitches.com/products/ttc-rgb-king-sacred-heart-he-magetic-switch-new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-ktek-aquarius",
+      "name": "KTEK Aquarius",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "KTEK",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ktek-aquarius-keyswitch-first-constellation-magnetic-keyswitch-deep-blue-rapid-trigger",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: KTEK Aquarius HE Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ktek-aquarius-keyswitch-first-constellation-magnetic-keyswitch-deep-blue-rapid-trigger",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±10gf and a pre-travel set by the keyboard. Sold on TTC's store under the KTEK name."
+    },
+    {
+      "id": "ttc-ktek-magnetic",
+      "name": "KTEK Magnetic",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "KTEK",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "17mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ktek-magnetic-keyswitch-pre-lubed-gaming-keyswitch-hall-sensor-rapid-trigger-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: KTEK Magnetic HE Switch",
+          "url": "https://ttcswitches.com/products/ktek-magnetic-keyswitch-pre-lubed-gaming-keyswitch-hall-sensor-rapid-trigger-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±8gf and a pre-travel set by the keyboard. Sold on TTC's store under the KTEK name."
+    },
+    {
+      "id": "ttc-ktek-magnetic-pro",
+      "name": "KTEK Magnetic Pro",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "KTEK",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "18mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ktek-magnetic-keyswitch-pre-lubed-gaming-keyswitch-hall-sensor-rapid-trigger-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: KTEK Magnetic HE Switch (Pro)",
+          "url": "https://ttcswitches.com/products/ktek-magnetic-keyswitch-pre-lubed-gaming-keyswitch-hall-sensor-rapid-trigger-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±8gf and a pre-travel set by the keyboard. Sold on TTC's store under the KTEK name."
+    },
+    {
+      "id": "ttc-ktek-new-star",
+      "name": "KTEK New Star",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "KTEK",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ktek-new-star-magnetic-keyswitch-long-spring-smooth-bouncing-precise-trigger-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: KTEK New Star HE Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ktek-new-star-magnetic-keyswitch-long-spring-smooth-bouncing-precise-trigger-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±8gf and a pre-travel set by the keyboard. Sold on TTC's store under the KTEK name."
+    },
+    {
+      "id": "ttc-frozen-silent-v2",
+      "name": "Frozen Silent V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Silent",
+      "aka": [
+        "TTC Frozen Silent V2",
+        "Silent Frozen V2"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 39,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-forzen-silent-keyswitch-v2-dust-proof-pre-lubed-silver-coated-terminal-mechanical-keyboard-switches-gaming-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Frozen Silent Switch V2",
+          "url": "https://ttcswitches.com/products/ttc-forzen-silent-keyswitch-v2-dust-proof-pre-lubed-silver-coated-terminal-mechanical-keyboard-switches-gaming-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-silent-bluish-white",
+      "name": "Silent Bluish White",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Silent",
+      "aka": [
+        "TTC Silent Bluish White"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "double spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-silent-bluish-white-keyboard-switches-factory-pre-lubed-double-silent-firm-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Silent Bluish White Switch-Tactile",
+          "url": "https://ttcswitches.com/products/ttc-silent-bluish-white-keyboard-switches-factory-pre-lubed-double-silent-firm-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-silent-brown-v3",
+      "name": "Silent Brown V3",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Silent",
+      "aka": [
+        "TTC Silent Brown V3"
+      ],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon PA",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-silent-brown-keyswitch-v2-mechanical-keyboard-switches-linear-factory-pre-lubed-dust-proof-keyboard-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Silent Brown Switch V3-Tactile",
+          "url": "https://ttcswitches.com/products/ttc-silent-brown-keyswitch-v2-mechanical-keyboard-switches-linear-factory-pre-lubed-dust-proof-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The page title says V3 while its spec block is headed Silent Brown Switch V2."
+    },
+    {
+      "id": "ttc-silent-red-v3",
+      "name": "Silent Red V3",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Silent",
+      "aka": [
+        "TTC Silent Red V3"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-silent-red-mechanical-keyboard-switches-linear-factory-pre-lubed-long-spring-keyboard-switches-for-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Silent Red Switch V3",
+          "url": "https://ttcswitches.com/products/ttc-silent-red-mechanical-keyboard-switches-linear-factory-pre-lubed-long-spring-keyboard-switches-for-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-taie-sword",
+      "name": "Tai'e Sword",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Sword",
+      "aka": [
+        "TTC Tai'e Sword"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "20mm long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-taie-sword-magnetic-switch-linear-factory-pre-lubed-freely-setting-pre-travel-high-speed-rail-structure-soft-elastic-design-gaming-switches-for-magnetic-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Tai'e Sword Hall Effect Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ttc-taie-sword-magnetic-switch-linear-factory-pre-lubed-freely-setting-pre-travel-high-speed-rail-structure-soft-elastic-design-gaming-switches-for-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-uranus-e-sports",
+      "name": "Uranus E-Sports Edition",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Uranus",
+      "aka": [
+        "TTC Uranus E-Sports Edition",
+        "Uranus gaming edition",
+        "Esports Uranus"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-uranus-keyswitch-new-magnetic-linear-gaming-blue-transparent-gaming-hall-sensor-0-1mm-rapid-trigger-keyswitch-gaming",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Uranus HE Magnetic Switch (spec image)",
+          "url": "https://ttcswitches.com/products/ttc-uranus-keyswitch-new-magnetic-linear-gaming-blue-transparent-gaming-hall-sensor-0-1mm-rapid-trigger-keyswitch-gaming",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±5gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-uranus-se",
+      "name": "Uranus SE Edition",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Uranus",
+      "aka": [
+        "TTC Uranus SE Edition"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-uranus-keyswitch-new-magnetic-linear-gaming-blue-transparent-gaming-hall-sensor-0-1mm-rapid-trigger-keyswitch-gaming",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Uranus HE Magnetic Switch (spec image)",
+          "url": "https://ttcswitches.com/products/ttc-uranus-keyswitch-new-magnetic-linear-gaming-blue-transparent-gaming-hall-sensor-0-1mm-rapid-trigger-keyswitch-gaming",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±6gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-uranus-standard",
+      "name": "Uranus Standard Edition",
+      "maker": "ttc",
+      "made_by": null,
+      "family": "Uranus",
+      "aka": [
+        "TTC Uranus Standard Edition"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-uranus-he-magnetic-switch-standard-",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Uranus HE Magnetic Switch (Standard)",
+          "url": "https://ttcswitches.com/products/ttc-uranus-he-magnetic-switch-standard-",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±6gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-blaze-pink",
+      "name": "Blaze Pink",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Blaze Pink"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": null,
+        "stem": "POM"
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-blaze-silver-switch-hifi-style",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Blaze Pink Switch-HiFi Style",
+          "url": "https://ttcswitches.com/products/ttc-blaze-silver-switch-hifi-style",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC's page for this switch heads its spec block 'TTC Blaze Silver Switch'; the values differ from the Blaze Silver page and are recorded as listed."
+    },
+    {
+      "id": "ttc-blaze-silver",
+      "name": "Blaze Silver",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Blaze Silver"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-blaze-silver-switch-dual-spring-linear-5pin-fast-factory-pre-lube-mechanical-keyboard-switch-hifi-style",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Blaze Silver Switch-HiFi Style",
+          "url": "https://ttcswitches.com/products/ttc-blaze-silver-switch-dual-spring-linear-5pin-fast-factory-pre-lube-mechanical-keyboard-switch-hifi-style",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-bluish-white",
+      "name": "Bluish White",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Bluish White"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "dual spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-bluish-white-mechanical-keyboard-switches-factory-pre-lubed-long-spring-tactile-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Bluish White Switch-3 Pin-Tactile",
+          "url": "https://ttcswitches.com/products/ttc-bluish-white-mechanical-keyboard-switches-factory-pre-lubed-long-spring-tactile-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-brother",
+      "name": "Brother",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Brother"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2.2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-brother-tactile-mechanical-switch-clicky-sound",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Brother Tactile Switch-Clicky",
+          "url": "https://ttcswitches.com/products/ttc-brother-tactile-mechanical-switch-clicky-sound",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC's page heads its spec block 'TTC Blaze Silver Switch'; the tactile 3-pin values are recorded as listed for the Brother."
+    },
+    {
+      "id": "ttc-brother-v2",
+      "name": "Brother V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Brother V2"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 58,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.7,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": "22mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-brother-v2-tactile-switch-clicky",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/ttc-brother-v2-switch-review",
+          "date": "2026-08-02",
+          "score": null,
+          "verdict": "Well-lubed click-bar switch with a softer, less aggressive click than rivals like Box Jades; batch variation and some stem wobble."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TTC: Brother Switch V2—Clicky Tactile",
+          "url": "https://ttcswitches.com/products/ttc-brother-v2-tactile-switch-clicky",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: TTC Brother V2 Switch Review",
+          "url": "https://www.theremingoat.com/blog/ttc-brother-v2-switch-review",
+          "kind": "review",
+          "backs": [
+            "type"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC describes a torsion-spring click with a damping leaf spring."
+    },
+    {
+      "id": "ttc-clear-sky",
+      "name": "Clear Sky",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Clear Sky"
+      ],
+      "type": "clicky",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 60,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-clear-sky-mechanical-keyboard-switches-factory-pre-lubed-dust-proof-clicky-sound-tactile-gaming-keyboard-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Clear Sky Switch-Tactile",
+          "url": "https://ttcswitches.com/products/ttc-clear-sky-mechanical-keyboard-switches-factory-pre-lubed-dust-proof-clicky-sound-tactile-gaming-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC's spec block says tactile; the store files it under Clicky and the page address says clicky sound."
+    },
+    {
+      "id": "ttc-cloud-sea",
+      "name": "Cloud Sea",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Cloud Sea"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-cloud-sea-keyswitch-silky-smooth-hifi-gaming",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Cloud Sea Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-cloud-sea-keyswitch-silky-smooth-hifi-gaming",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-elf-king",
+      "name": "Elf King",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Elf King"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "17mm long spring",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/elf-king-he-magnetic-switch-new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Elf King HE Magnetic Switch",
+          "url": "https://ttcswitches.com/products/elf-king-he-magnetic-switch-new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 32±10gf and a pre-travel set by the keyboard."
+    },
+    {
+      "id": "ttc-fast-silver",
+      "name": "Fast Silver",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Fast Silver"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-fast-silver-keyswitch-hifi-linear-fast-mechanical-keyboard-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Fast Silver Switch-HIFI Style",
+          "url": "https://ttcswitches.com/products/ttc-fast-silver-keyswitch-hifi-linear-fast-mechanical-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-frost-whisper",
+      "name": "Frost Whisper",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Frost Whisper"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 39,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "P3"
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-frost-whisper-switch-linear-factory-pre-lube-mechanical-keyboard-switch-hifi-style",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Frost Whisper Switch-HiFi Style",
+          "url": "https://ttcswitches.com/products/ttc-frost-whisper-switch-linear-factory-pre-lube-mechanical-keyboard-switch-hifi-style",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-golden-pink-v3",
+      "name": "Golden Pink V3",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Golden Pink V3"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 37,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-5-pins-37gf-hifi-keyswitch-anti-oxidation-durability-v3-version-gold-pink-mechanical-keyswitch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Golden Pink V3 Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-5-pins-37gf-hifi-keyswitch-anti-oxidation-durability-v3-version-gold-pink-mechanical-keyswitch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-golden-red-v3",
+      "name": "Golden Red V3",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Golden Red V3"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-golden-red-v3-switch-factory-pre-lubed-for-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Golden Red V3 Switch",
+          "url": "https://ttcswitches.com/products/ttc-golden-red-v3-switch-factory-pre-lubed-for-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-heart",
+      "name": "Heart",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Heart",
+        "Honey Heart"
+      ],
+      "type": "silent-linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": "gold-plated, lengthened",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "TechPowerUp",
+          "url": "https://www.techpowerup.com/review/building-a-keyboard-11-epomaker-mini-cat-64-kit-kitty-keycaps-ttc-heart-switches/4.html",
+          "date": "2022-09-09",
+          "score": null,
+          "verdict": "Silent linear with internal dampers and light factory lube; the reviewer counts it among TTC switches that rival enthusiast mods."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TechPowerUp: TTC Heart Switches",
+          "url": "https://www.techpowerup.com/review/building-a-keyboard-11-epomaker-mini-cat-64-kit-kitty-keycaps-ttc-heart-switches/4.html",
+          "kind": "review",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent linear first used by Ducky keyboards and later sold separately by vendors such as Epomaker. Not listed on TTC's store in 2026-11."
+    },
+    {
+      "id": "ttc-holy-panda-v2",
+      "name": "Holy Panda V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Holy Panda V2"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": "15mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-holly-panda-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Holy Panda Switch V2",
+          "url": "https://ttcswitches.com/products/ttc-holly-panda-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-honey-v2",
+      "name": "Honey V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Honey V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PC",
+        "stem": "POM"
+      },
+      "spring": "22.5mm long spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-honey-v2-transparent-pink-heart-linear-5-pin-new-version-keyswitch-mechanical-keyboard-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Honey V2 Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-honey-v2-transparent-pink-heart-linear-5-pin-new-version-keyswitch-mechanical-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-ice",
+      "name": "Ice",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Ice"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "24mm long spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-ice-mechanical-keyboard-switches-linear-factory-pre-lubed-smooth-high-pure-24mm-long-spring-5-pin-keyboard-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Ice Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-ice-mechanical-keyboard-switches-linear-factory-pre-lubed-smooth-high-pure-24mm-long-spring-5-pin-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC lists an initial force of 45gf and no operating force; stem, top and base are transparent."
+    },
+    {
+      "id": "ttc-iron-v2",
+      "name": "Iron V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Iron V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 41,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-iron-keyswitch-v2-modified-pom-mechanical-keyboard-switch-red-color-dustproof",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Iron V2 Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-iron-keyswitch-v2-modified-pom-mechanical-keyboard-switch-red-color-dustproof",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-low-profile-kom",
+      "name": "Low-profile KOM Magnetic",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Low-profile KOM Magnetic",
+        "Mini King Magnetic Switch"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "other",
+      "keycap_mount": "other",
+      "profile": "low",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 2.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-mini-king-magnetic-keyswitch-low-profile-key-dust-proof",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Low-profile KOM Magnetic Switch (Only for Melgeek Made 68 Air)",
+          "url": "https://ttcswitches.com/products/ttc-mini-king-magnetic-keyswitch-low-profile-key-dust-proof",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 34±10gf and a pre-travel set by the keyboard. TTC sells it only for the MelGeek Made68 Air and does not state the keycap mount."
+    },
+    {
+      "id": "ttc-mojin",
+      "name": "Mojin",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Mojin"
+      ],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": 55,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": "PA66",
+        "stem": "POM"
+      },
+      "spring": "19mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-mojin-switch--tactile-hifi-style",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Mojin Switch- Tactile HiFi Style",
+          "url": "https://ttcswitches.com/products/ttc-mojin-switch--tactile-hifi-style",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "tactile_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-mysteries",
+      "name": "Mysteries",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Mysteries"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 40,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/mysteries-keyswitch-linear-factory-pre-lubed-long-spring-fast-trigger-mechanical-keyboard-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Mysteries Mechanical Switch",
+          "url": "https://ttcswitches.com/products/mysteries-keyswitch-linear-factory-pre-lubed-long-spring-fast-trigger-mechanical-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-neptune",
+      "name": "Neptune",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Neptune"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 41,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-high-speed-rail-structure-keyswitch-neptune-and-venus-5-pin-linear-mechanical-gaming-rapid-trigger-keyswitch",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/shorts/odd-switch-short-ii-ttc-venusneptune",
+          "date": "2023-05-23",
+          "score": null,
+          "verdict": "Short look: very low stem wobble and well-judged factory lube make it one of the best of its alternative MX style."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TTC: Neptune and Venus Switch-MX Style",
+          "url": "https://ttcswitches.com/products/ttc-high-speed-rail-structure-keyswitch-neptune-and-venus-5-pin-linear-mechanical-gaming-rapid-trigger-keyswitch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Odd Switch Short II: TTC Venus/Neptune",
+          "url": "https://www.theremingoat.com/shorts/odd-switch-short-ii-ttc-venusneptune",
+          "kind": "review",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Flattened top housing with the slider rails moved into the top housing and an LED slot."
+    },
+    {
+      "id": "ttc-new-moon",
+      "name": "New Moon",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC New Moon"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.5,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POK"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-new-moon-mechanical-keyboard-switches-factory-pre-lubed-dust-proof-keyboard-switches",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: New Moon Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-new-moon-mechanical-keyboard-switches-factory-pre-lubed-dust-proof-keyboard-switches",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-poseidon",
+      "name": "Poseidon",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Poseidon"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "21mm",
+      "factory_lubed": null,
+      "light_pipe": true,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-poseidon-magnetic-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Poseidon Magnetic Switch",
+          "url": "https://ttcswitches.com/products/ttc-poseidon-magnetic-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "total_travel_mm",
+            "spring",
+            "light_pipe",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists an initial force of 35±10gf and a pre-travel set by the keyboard. Two independent light pipes."
+    },
+    {
+      "id": "ttc-pt-black",
+      "name": "PT Black",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC PT Black",
+        "PantheonKeys x TTC PT Black"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "modified nylon",
+        "bottom": "modified nylon",
+        "stem": "POM"
+      },
+      "spring": "19mm single stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-pt-black-switch-no-lubrication",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/pantheonkeys-x-ttc-pt-black-switch-review",
+          "date": "2026-03-29",
+          "score": null,
+          "verdict": "Close to Cherry MX Hyperglide Blacks with a consistent scratch that hurts it stock; cheap, uniform, much better after break-in."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TTC: TTC X Pantheonkeys PT Black Switch",
+          "url": "https://ttcswitches.com/products/ttc-pt-black-switch-no-lubrication",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: PantheonKeys x TTC PT Black Switch Review",
+          "url": "https://www.theremingoat.com/blog/pantheonkeys-x-ttc-pt-black-switch-review",
+          "kind": "review",
+          "backs": [
+            "materials"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Made with PantheonKeys. TTC lists a light lube on the stem legs and spring bottom."
+    },
+    {
+      "id": "ttc-speed-gold-v2",
+      "name": "Speed Gold V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Speed Gold V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 39,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/speed-gold-keyswitch-v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Speed Gold V2 Switch-HIFI Style",
+          "url": "https://ttcswitches.com/products/speed-gold-keyswitch-v2",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC lists an initial force of 36gf."
+    },
+    {
+      "id": "ttc-speed-gold-v3",
+      "name": "Speed Gold V3",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Speed Gold V3"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.6,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": "POM"
+      },
+      "spring": "22mm",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-speed-gold-v3-mechanical-switch-hifi-style-new-arrival",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Speed Gold V3 Switch-HIFI Style",
+          "url": "https://ttcswitches.com/products/ttc-speed-gold-v3-mechanical-switch-hifi-style-new-arrival",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TTC lists an initial force of 42±10gf and no operating force."
+    },
+    {
+      "id": "ttc-speed-silver-v2",
+      "name": "Speed Silver V2",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Speed Silver V2"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.08,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": "dual spring",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-speed-silver-v2-gaming-linear-45g-force-diy-3pins-mechanical-keyboard-switch-fast-rgb-gaming-dual-spring-keyboard-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Speed Silver V2 Mechanical Switch",
+          "url": "https://ttcswitches.com/products/ttc-speed-silver-v2-gaming-linear-45g-force-diy-3pins-mechanical-keyboard-switch-fast-rgb-gaming-dual-spring-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-titan-heart",
+      "name": "Titan Heart",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Titan Heart"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.2,
+      "total_travel_mm": 3.6,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-titan-heart-switch-with-love-symbol-42gf-linear-factory-pre-lube-mechanical-keyboard-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Titan Heart Switch",
+          "url": "https://ttcswitches.com/products/ttc-titan-heart-switch-with-love-symbol-42gf-linear-factory-pre-lube-mechanical-keyboard-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ttc-venus",
+      "name": "Venus",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Venus"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-high-speed-rail-structure-keyswitch-neptune-and-venus-5-pin-linear-mechanical-gaming-rapid-trigger-keyswitch",
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/shorts/odd-switch-short-ii-ttc-venusneptune",
+          "date": "2023-05-23",
+          "score": null,
+          "verdict": "Short look at the Neptune and Venus pair; praises their low stem wobble and factory lube."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TTC: Neptune and Venus Switch-MX Style",
+          "url": "https://ttcswitches.com/products/ttc-high-speed-rail-structure-keyswitch-neptune-and-venus-5-pin-linear-mechanical-gaming-rapid-trigger-keyswitch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "factory_lubed",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: Odd Switch Short II: TTC Venus/Neptune",
+          "url": "https://www.theremingoat.com/shorts/odd-switch-short-ii-ttc-venusneptune",
+          "kind": "review",
+          "backs": [
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Same housing design as the Neptune: flattened top housing with the slider rails in the top housing."
+    },
+    {
+      "id": "ttc-wild",
+      "name": "Wild",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Wild"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": null
+      },
+      "spring": "double-staged gold",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2021",
+      "status": "discontinued",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/ttc-wild-switch-review",
+          "date": "2021-09-05",
+          "score": null,
+          "verdict": "Smooth, well-balanced light linear with low wobble; bass-heavy stock sound and uneven top-out across the batch."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: TTC Wild Switch Review",
+          "url": "https://www.theremingoat.com/blog/ttc-wild-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "released",
+            "status",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold through 2021 group buys in 42g and 55g weights; the group buys have ended."
+    },
+    {
+      "id": "ttc-zero35",
+      "name": "Zero35",
+      "maker": "ttc",
+      "made_by": null,
+      "family": null,
+      "aka": [
+        "TTC Zero35"
+      ],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 35,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": "https://ttcswitches.com/products/ttc-zero35-he-switch-three-magnet-structure",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "TTC: Zero35 HE Switch Three-Magnet Structure (Fan Reward)",
+          "url": "https://ttcswitches.com/products/ttc-zero35-he-switch-three-magnet-structure",
+          "kind": "official",
+          "backs": [
+            "type",
+            "bottom_out_force_gf",
+            "total_travel_mm"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Hall-effect boards. TTC lists the same 35±10gf at the start and at the bottom of travel, from a three-magnet structure."
+    }
+  ]
+}

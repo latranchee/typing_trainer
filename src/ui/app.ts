@@ -21,13 +21,17 @@ import {
 } from '../core/hardcore';
 import type { KeyTally } from '../core/history';
 import { WORDS } from '../core/corpus';
-import { LANG_NAMES, preferredLang, preferredLayout, setUiLang, t } from '../core/i18n';
+import { AXES } from '../core/font';
+import { LANG_NAMES, o, preferredLang, preferredLayout, setUiLang, t } from '../core/i18n';
 import type { Command, KeyEvt } from '../core/input';
 import { attachInput, SOFT_FIELD } from '../core/input';
-import { readLaunch, withoutLaunch } from '../core/launch';
+import { readLaunch, withoutLaunch, withShare } from '../core/launch';
 import type { Layout, Stroke } from '../core/layouts';
 import { getLayout, LAYOUTS } from '../core/layouts';
 import { intervalToWpm, MIN_SAMPLES, PairWatch, RollingWpm, SetStats } from '../core/metrics';
+import type { InputKind, Mode, RankedDrill, RoomConfig, RoomState, RunAnswer, TextInfo } from '../core/online';
+import { modeOf, RANKED_DRILLS } from '../core/online';
+import { decodeGhost, ghostAt, KeyLog } from '../core/replay';
 import type { Board, Row } from '../core/physical';
 import { boardOf, BOARDS } from '../core/physical';
 import { dayStreak, fingerGain, HOT_BASE, isAhead, isHot, setVerdict, Streak, STREAK_SHOWN_FROM, streakHeat, streakKey } from '../core/rewards';
@@ -41,7 +45,8 @@ import type { HighwayFixture } from '../drills/highway';
 import { HighwayDrill } from '../drills/highway';
 import { LineDrill } from '../drills/line';
 import { StatsView } from '../drills/stats';
-import type { Drill, DrillHost, NextHint, Note, OptionGroup } from '../drills/types';
+import { BoardsView } from '../drills/boards';
+import type { Drill, DrillHost, FixedText, NextHint, Note, OptionGroup, SetText } from '../drills/types';
 import { toggleOption } from '../drills/types';
 import { css, el, fitCanvas, flash } from './dom';
 import { FingerPick } from './fingerpick';
@@ -53,9 +58,18 @@ import { brandMark } from './mark';
 import { Panel } from './panel';
 import { ProfileMenu } from './profile';
 import { Select } from './select';
+import { Slider } from './slider';
+import { applyFont } from './font';
 import { Sound } from './sound';
 import { Sparks } from './sparks';
 import { Viewport } from './viewport';
+import { ApiError, api, textLink } from '../net/api';
+import { Online } from '../net/online';
+import { RaceClient } from '../net/race';
+import { AccountView } from './account';
+import { RaceView } from './race';
+import type { Lane } from './strip';
+import { Strip } from './strip';
 
 /** A gap longer than this between strokes is a pause and is not measured. */
 const PAUSE_MS = 2000;
@@ -129,6 +143,10 @@ export interface ReadoutFixture {
 export class App implements DrillHost {
   readonly store = launchStore();
   layout: Layout;
+  /** The account and what goes to the server. Quiet on a host with no /api. */
+  private online = new Online(this.store);
+  /** The text every set types while one is fixed: a shared text, one picked on the boards, a race's. */
+  fixed: FixedText | null = null;
   private readonly weakness: Weakness = (code) => this.store.weakness(this.layout.id, code);
   private readonly heat = (code: string): number => this.store.heat(this.layout.id, code);
 
@@ -211,7 +229,15 @@ export class App implements DrillHost {
   /** Every option on one list, in the right rail's place. Its button sits at the end of the top strip. */
   private panel = new Panel((open) => {
     this.root.dataset.menu = String(open);
+    // Opened on the account, the panel goes back to the settings once it closes.
+    if (!open && this.panelView === 'account') {
+      this.panelView = 'settings';
+      this.panel.relabel(t.menu.button, t.menu.region, t.touch.close);
+      this.renderOptions();
+    }
   });
+  /** What the right rail's panel holds: the settings, or the account alone when the top strip's account opened it. */
+  private panelView: 'settings' | 'account' = 'settings';
   /** The fingers to train more: the text leans toward their letters. */
   private fingerPick = new FingerPick((focus) => this.setFocus(focus));
   /** The active profile's name beside the settings button, once there is more than one profile. */
@@ -222,6 +248,12 @@ export class App implements DrillHost {
   private layoutSelect!: Select;
   /** What the keys sound like. One dropdown for every drill: it is put back into the options each time they are drawn. */
   private soundSelect!: Select;
+  /** Allo's three axes. Like the dropdowns, they live on between redraws of the list. */
+  private weightSlider!: Slider;
+  private roundSlider!: Slider;
+  private opticalSlider!: Slider;
+  /** Back to the optical size the browser picks for each size. Shown only while one is fixed. */
+  private opticalAuto = el('button.slider-auto.ctl', { type: 'button' });
   /** The label of the switch just clicked: it is drawn again in its old state and slides to the new one. */
   private flipped: string | null = null;
   private profileMenu!: ProfileMenu;
@@ -288,6 +320,37 @@ export class App implements DrillHost {
   /** On a phone, the dark behind the settings sheet. A tap on it closes the sheet. */
   private scrim = el('div.scrim', { 'aria-hidden': 'true' });
 
+  // ---------- online ----------
+  /** Every key of the set, for the server to play back. */
+  private keyLog = new KeyLog();
+  /** When the set's first key came: the ghosts' clock starts there. */
+  private logStart: number | null = null;
+  /** Characters finished in the set, and in its text. */
+  private charsDone = 0;
+  private charsTotal = 0;
+  /** True when a key of the set came from the phone's own keyboard: the set ranks among phone sets. */
+  private softSet = false;
+  /** The fixed text as the server knows it: who typed it and the runs that are its ghosts. */
+  private textInfo: TextInfo | null = null;
+  private ghostRuns: { name: string; wpm: number; marks: number[] }[] = [];
+  /** The set just finished, once the server knows its text. */
+  private lastText: { id: string; set: SetText } | null = null;
+  private strip = new Strip();
+  private account = new AccountView(this.online, () => this.settings.ui);
+  private accountBtn = el('button.top-account.ctl', { type: 'button' });
+  private race: RaceClient | null = null;
+  /** The round whose text is on screen. */
+  private raceRound = -1;
+  private raceShown = '';
+  private raceView = new RaceView({
+    start: () => this.race?.start(),
+    leave: () => this.leaveRace(),
+    rename: (name) => this.race?.rename(name),
+    open: (config) => void this.openRoom(config),
+  });
+  /** The set's line about the boards on its result, filled in when the server answers. */
+  private rankEl: HTMLElement | null = null;
+
   constructor(root: HTMLElement) {
     this.root = root;
     this.layout = getLayout(this.store.settings.layout, this.store.settings.board);
@@ -338,7 +401,10 @@ export class App implements DrillHost {
     });
     // A click wakes the audio as well, so the first key after one already has its sound.
     window.addEventListener('pointerdown', () => this.sound.wake(), { passive: true });
-    window.addEventListener('hashchange', () => this.setDrill(this.drillFromHash()));
+    window.addEventListener('hashchange', () => {
+      this.leaveShared();
+      this.setDrill(this.drillFromHash());
+    });
     window.addEventListener('pagehide', () => {
       // A streak still running is banked as it stands.
       this.store.recordStreak(this.streakKey, this.streak.count);
@@ -349,6 +415,23 @@ export class App implements DrillHost {
     this.setDrill(this.drillFromHash());
     this.updateBars();
     requestAnimationFrame(this.frame);
+
+    this.online.onChange(() => this.onAccount());
+    this.onAccount();
+    new ResizeObserver(() => this.root.style.setProperty('--strip-h', `${this.strip.shown ? this.strip.root.offsetHeight : 0}px`)).observe(this.strip.root);
+    const launch = readLaunch(location.search);
+    this.online
+      .load()
+      .then((made) => {
+        // Signed in by the link: a new account picks its name first.
+        if (made) this.openAccount();
+      })
+      .catch((error: unknown) => {
+        this.say(o.errors[error instanceof ApiError ? error.code : 'default'] ?? o.errors.default, 'error');
+        this.openAccount();
+      });
+    if (launch.race) this.joinRace(launch.race);
+    else if (launch.text) void this.openText(launch.text, launch.mode ?? 'line');
   }
 
   get settings(): Settings {
@@ -364,6 +447,10 @@ export class App implements DrillHost {
 
   hit(note: Note, event: KeyEvt): void {
     const now = event.time;
+    if (note.last) {
+      this.charsDone++;
+      this.race?.progress(this.charsDone);
+    }
     const { code, shift } = note.stroke;
     const gap = this.lastHitAt === null ? null : now - this.lastHitAt;
     const clean = !this.missedSince && gap !== null && gap < PAUSE_MS;
@@ -559,6 +646,7 @@ export class App implements DrillHost {
       el('p.result-wpm', {}, figure, el('small', {}, t.result.forSet)),
       isBest || notes.length > 0 ? el('p.result-vs', {}, badge(t.result.newBest, isBest), notes.join(' · ')) : null,
       el('dl.result-list', {}, ...rows),
+      this.onlineResult(),
       // A set typed with tracking off: the page says it kept nothing.
       store.tracking ? null : el('p.result-unsaved', {}, t.result.unsaved),
     );
@@ -704,6 +792,10 @@ export class App implements DrillHost {
       if (skipped) return;
     }
     if (this.frozen || this.resultOpen) return;
+    // A race opens the keys at the signal and closes them once this racer is through.
+    if (this.race && !this.race.open) return;
+    this.logStart ??= event.time;
+    this.keyLog.stroke(event.code, event.shift, event.time);
     // Hardcore: past a typo every key lands as one more, right or wrong, until Backspace clears them.
     if (this.hardcore && this.typos.length > 0) {
       this.stats.miss(event.time);
@@ -721,6 +813,7 @@ export class App implements DrillHost {
    * for counts as one wrong key, even when the layout takes two strokes to type it.
    */
   private onSoftChar(typed: string, time: number): void {
+    this.softSet = true;
     const char = foldTyped(typed, (candidate) => this.layout.strokesFor(candidate) !== null);
     const strokes = this.layout.strokesFor(char);
     if (!strokes) {
@@ -748,7 +841,7 @@ export class App implements DrillHost {
 
   /** Brings the phone's keyboard up. Only a tap may do it: a browser opens it for a user's gesture alone. */
   private focusSoft(): void {
-    if (this.drill.id === 'stats') return;
+    if (this.drill.id === 'stats' || this.drill.id === 'boards') return;
     this.panel.close();
     const field = this.softField;
     // A keyboard put away by the system's back button leaves the field focused, and focusing it again would not bring it back.
@@ -919,7 +1012,8 @@ export class App implements DrillHost {
 
   /** The floor picked in the options, 0 when there is none. */
   private get baseFloor(): number {
-    return this.hardcore ? this.settings.floor : 0;
+    // A race is typed whole: no fuse burns a racer out of it.
+    return this.hardcore && !this.race ? this.settings.floor : 0;
   }
 
   /** The numbers of the difficulty picked in the options. */
@@ -964,6 +1058,7 @@ export class App implements DrillHost {
 
   private onErase(all: boolean, time: number): void {
     if (this.frozen || this.resultOpen || this.typos.length === 0) return;
+    this.keyLog.erase(all, time);
     if (all) this.typos = [];
     else this.typos.pop();
     // Erasing is typing time: it counts toward the set's pace.
@@ -1179,6 +1274,8 @@ export class App implements DrillHost {
 
   private onCommand(command: Command): void {
     if (this.frozen) return;
+    // In a race the room starts each set: no new text, no next set.
+    if (this.race) return;
     if (command === 'tempo-up' || command === 'tempo-down') {
       this.drill.nudge?.(command === 'tempo-up' ? 1 : -1);
       this.renderOptions();
@@ -1212,6 +1309,7 @@ export class App implements DrillHost {
     // The break between two sets is not typing: the rolling rate starts over with the new text.
     this.rolling.reset();
     this.drill.restart();
+    this.freshLog();
     this.resetHardcore();
     this.primeGlow();
     this.setTyping(false);
@@ -1230,7 +1328,7 @@ export class App implements DrillHost {
 
   /** On a result or the stats view the centre figure leads and the live counter steps back. */
   private syncRest(): void {
-    this.root.dataset.rest = String(this.resultOpen || this.drill.id === 'stats');
+    this.root.dataset.rest = String(this.resultOpen || this.drill.id === 'stats' || this.drill.id === 'boards');
   }
 
   // ---------- state changes ----------
@@ -1243,6 +1341,8 @@ export class App implements DrillHost {
   private setDrill(id: DrillId, force = false): void {
     // Holding anchor keys down takes a physical keyboard.
     if (id === 'anchors' && this.touchScreen.matches) id = 'words';
+    // The boards live on the server: a copy served without one has none.
+    if (id === 'boards' && this.online.checked && !this.online.available) id = 'words';
     if (!force && this.drill?.id === id) return;
     // A streak belongs to one drill: the one left behind ends here.
     this.endStreak();
@@ -1264,7 +1364,14 @@ export class App implements DrillHost {
           ? new AnchorsDrill(this)
           : id === 'stats'
             ? new StatsView(this)
-            : new LineDrill(id, this);
+            : id === 'boards'
+              ? new BoardsView(this, {
+                  online: this.online,
+                  typeText: (textId, mode) => void this.openText(textId, mode),
+                  newRace: () => this.showRaceSetup(),
+                  signIn: () => this.openAccount(),
+                })
+              : new LineDrill(id, this);
     this.stats = new SetStats();
     this.setKeys = {};
     this.lastHitAt = null;
@@ -1272,6 +1379,7 @@ export class App implements DrillHost {
     this.typos = [];
     this.rolling.reset();
     this.drill.mount(this.stage);
+    this.freshLog();
     this.loadStreak();
     // A run belongs to one drill: the one left behind ends here.
     this.freshRun();
@@ -1391,12 +1499,458 @@ export class App implements DrillHost {
     this.fingerPick.set(settings.focus);
     this.soundSelect.set(settings.keySound);
     this.sound.use(settings.keySound);
+    this.weightSlider.set(settings.fontWeight);
+    this.roundSlider.set(settings.fontRound);
+    this.opticalSlider.set(settings.fontOptical ?? AXES.optical.base);
+    this.syncFont();
     this.rolling.windowMs = settings.window * 1000;
     this.rolling.reset();
     this.samples = [];
     this.drawSpark();
     this.setDrill(this.drill.id, true);
     this.updateBars();
+  }
+
+  // ---------- font ----------
+
+  /** The page in the font being dragged, nothing saved: the other axes keep their saved values. */
+  private showFont(patch: Partial<Pick<Settings, 'fontWeight' | 'fontRound' | 'fontOptical'>>): void {
+    const font = { ...this.fontSettings(), ...patch };
+    applyFont(font.fontWeight, font.fontRound, font.fontOptical);
+    if ('fontOptical' in patch) this.showOptical(font.fontOptical);
+  }
+
+  private saveFont(patch: Partial<Pick<Settings, 'fontWeight' | 'fontRound' | 'fontOptical'>>): void {
+    this.store.update(patch);
+    this.syncFont();
+  }
+
+  private fontSettings(): Pick<Settings, 'fontWeight' | 'fontRound' | 'fontOptical'> {
+    const { fontWeight, fontRound, fontOptical } = this.settings;
+    return { fontWeight, fontRound, fontOptical };
+  }
+
+  /** The page and the optical size's readout, as saved. */
+  private syncFont(): void {
+    const { fontWeight, fontRound, fontOptical } = this.settings;
+    applyFont(fontWeight, fontRound, fontOptical);
+    this.showOptical(fontOptical);
+  }
+
+  /** On auto the readout says so and the thumb rests on the font's default; fixed, a button offers auto again. */
+  private showOptical(value: number | null): void {
+    this.opticalSlider.show(value === null ? t.menu.fontAuto : null);
+    this.opticalAuto.hidden = value === null;
+    this.opticalAuto.textContent = t.menu.fontAuto;
+    this.opticalAuto.title = t.menu.fontAutoTitle;
+  }
+
+  // ---------- online ----------
+
+  /** The account changed, or the page learned whether it has a server. */
+  private onAccount(): void {
+    const { online } = this;
+    this.root.dataset.online = String(online.available);
+    const account = online.account;
+    this.accountBtn.hidden = !online.available;
+    this.accountBtn.textContent = account ? (account.handle ?? o.account) : o.signIn;
+    this.accountBtn.classList.toggle('is-in', account !== null);
+    if (online.checked && !online.available && this.drill?.id === 'boards') this.setDrill('words');
+    // The list holds the account group only where there is a server.
+    if (!this.account.isEditing) this.renderOptions();
+  }
+
+  /** Opens the settings at the account. */
+  private openAccount(): void {
+    if (!this.online.available) return;
+    this.panelView = 'account';
+    this.panel.relabel(t.menu.button, o.account, t.touch.close);
+    this.renderOptions();
+    this.panel.open();
+    requestAnimationFrame(() => this.account.focus());
+  }
+
+  /** A fresh set: an empty log, nothing finished, ghosts at the start. */
+  private freshLog(): void {
+    this.keyLog.reset();
+    this.logStart = null;
+    this.charsDone = 0;
+    this.softSet = false;
+    this.rankEl = null;
+    const set = this.drill.current?.() ?? null;
+    this.charsTotal = set ? this.layout.targets(set.text).length : 0;
+    this.drill.ghosts?.([]);
+    this.paintLanes(performance.now(), true);
+  }
+
+  private get inputKind(): InputKind {
+    return this.softSet ? 'touch' : 'keys';
+  }
+
+  /** The drill a set ranks in, or null: anchors, stats and a locked highway tempo do not rank. */
+  private get rankedDrill(): RankedDrill | null {
+    const id = this.drill.id;
+    if (!RANKED_DRILLS.includes(id as RankedDrill)) return null;
+    if (id === 'highway' && this.settings.tempoLock && !this.fixed) return null;
+    return id as RankedDrill;
+  }
+
+  /**
+   * Under a set's numbers: where it ranks once the server has played it back, and what can
+   * be done with its text. In a race the set goes to the room instead, which places it.
+   */
+  private onlineResult(): HTMLElement | null {
+    const set = this.drill.current?.() ?? null;
+    const drill = this.rankedDrill;
+    if (!this.online.available || !set || !drill) return null;
+    const line = el('div.result-online');
+    const rank = el('p.result-rank', { role: 'status' });
+    this.rankEl = rank;
+    line.append(rank);
+
+    if (this.race) {
+      rank.textContent = o.racing;
+      this.race.finish(this.keyLog.take(), this.hardcore);
+      return line;
+    }
+
+    const share = el('button.result-act.ctl', { type: 'button' }, o.share);
+    share.addEventListener('mousedown', (event) => event.preventDefault());
+    share.addEventListener('click', () => void this.shareSet(set, share));
+    const race = el('button.result-act.ctl', { type: 'button' }, o.raceIt);
+    race.addEventListener('mousedown', (event) => event.preventDefault());
+    race.addEventListener('click', () => void this.raceSet(set, drill));
+    line.append(el('div.result-acts', {}, share, race));
+
+    const { online, store } = this;
+    if (!online.account) {
+      const join = el('button.result-join.ctl', { type: 'button' }, o.rankIt);
+      join.addEventListener('click', () => this.openAccount());
+      rank.replaceChildren(join);
+    } else if (!online.linked) {
+      rank.textContent = o.otherProfile(online.otherProfile ?? '');
+    } else if (!store.tracking) {
+      rank.replaceChildren();
+    } else {
+      rank.textContent = o.ranking;
+      void this.submitSet(set, drill, rank);
+    }
+    return line;
+  }
+
+  private async submitSet(set: SetText, drill: RankedDrill, rank: HTMLElement): Promise<void> {
+    let answer: RunAnswer | null;
+    try {
+      answer = await this.online.submit({
+        text: set.text,
+        kind: set.kind,
+        lang: set.lang,
+        drill,
+        layout: this.layout.id,
+        board: this.layout.board,
+        input: this.inputKind,
+        hardcore: this.hardcore,
+        log: this.keyLog.take(),
+      });
+    } catch {
+      if (this.rankEl === rank) rank.textContent = o.notSaved;
+      return;
+    }
+    if (!answer) return;
+    this.lastText = { id: answer.textId, set };
+    if (this.rankEl !== rank) return;
+    const parts: (HTMLElement | string)[] = [];
+    const placing = (label: string, place: { rank: number; of: number; best: boolean }): HTMLElement =>
+      el('span.result-place', {}, el('span.result-place-label', {}, label), ` ${o.place(place.rank, place.of)}`, place.best ? el('span.result-best', {}, o.yourBest) : null);
+    if (answer.board) parts.push(placing(o.board, answer.board));
+    else if (!answer.ranked) parts.push(el('span.result-place.is-off', {}, o.offBoards));
+    parts.push(placing(o.thisText, answer.text));
+    if (!this.online.account?.handle) {
+      const name = el('button.result-join.ctl', { type: 'button' }, o.pickName);
+      name.addEventListener('click', () => this.openAccount());
+      parts.push(name);
+    }
+    rank.replaceChildren(...parts);
+    // The text's ghosts now hold this run: the next set on it races it.
+    if (this.fixed?.id === answer.textId) void this.loadText(answer.textId, modeOf(drill));
+  }
+
+  /** The set's text on the server: known from its answer, or saved now. */
+  private async textIdOf(set: SetText): Promise<string> {
+    if (this.lastText?.set === set) return this.lastText.id;
+    if (this.fixed?.id && this.fixed.text === set.text) return this.fixed.id;
+    const { id } = await api.shareText(set.lang, set.kind, set.text);
+    this.lastText = { id, set };
+    return id;
+  }
+
+  private async shareSet(set: SetText, button: HTMLElement): Promise<void> {
+    try {
+      const id = await this.textIdOf(set);
+      const link = textLink(id, this.drill.id === 'highway' ? 'highway' : 'line');
+      await navigator.clipboard?.writeText(link);
+      button.textContent = o.copied;
+    } catch {
+      this.say(o.errors.default, 'error');
+    }
+  }
+
+  private async raceSet(set: SetText, drill: RankedDrill): Promise<void> {
+    try {
+      const id = await this.textIdOf(set);
+      await this.openRoom({ mode: modeOf(drill), lang: set.lang, kind: set.kind, words: this.settings.setWords, textId: id });
+    } catch {
+      this.say(o.errors.default, 'error');
+    }
+  }
+
+  // ---------- fixed texts ----------
+
+  /** Types a known text again, against the ghosts of its best runs. */
+  private async openText(id: string, mode: Mode): Promise<void> {
+    if (this.race) this.leaveRace(false);
+    const info = await this.loadText(id, mode, true);
+    if (!info) return;
+    if (!this.layout.canType(info.text)) {
+      this.say(o.textNeedsLayout, 'error');
+      return;
+    }
+    this.fixed = { id: info.id, lang: info.lang, kind: info.kind, text: info.text };
+    history.replaceState(null, '', `${location.pathname}${withShare(location.search, '', { text: info.id, mode })}#${this.drill.id}`);
+    this.setDrill(mode === 'highway' ? 'highway' : info.kind === 'pairs' ? 'pairs' : 'words', true);
+    this.showStrip();
+  }
+
+  /** Fetches a text's numbers and ghosts. `first` says the text is being opened, so a failure is said. */
+  private async loadText(id: string, mode: Mode, first = false): Promise<TextInfo | null> {
+    let info: TextInfo;
+    try {
+      info = await api.text(id, mode, this.touchScreen.matches ? 'touch' : 'keys');
+    } catch {
+      if (first) {
+        this.say(o.textMissing, 'error');
+        history.replaceState(null, '', `${location.pathname}${withShare(location.search, location.hash, null)}`);
+      }
+      return null;
+    }
+    this.textInfo = info;
+    this.ghostRuns = this.pickGhosts(info);
+    if (!first) this.showStrip();
+    return info;
+  }
+
+  /** Up to three ghosts: the best run, the one just ahead of the typist's own, and their own best. */
+  private pickGhosts(info: TextInfo): { name: string; wpm: number; marks: number[] }[] {
+    const me = this.online.account?.handle ?? null;
+    const others = info.runs.filter((run) => run.handle !== me);
+    const picked = new Set<(typeof info.runs)[number]>();
+    if (others[0]) picked.add(others[0]);
+    if (info.mine) {
+      const ahead = [...others].reverse().find((run) => run.wpm > info.mine!.wpm);
+      if (ahead) picked.add(ahead);
+    } else if (others[1]) picked.add(others[1]);
+    if (others[2] && picked.size < 2) picked.add(others[2]);
+    const ghosts = [...picked].sort((a, b) => b.wpm - a.wpm).map((run) => ({ name: run.handle, wpm: run.wpm, marks: decodeGhost(run.ghost) }));
+    if (info.mine) ghosts.push({ name: o.yourBest, wpm: info.mine.wpm, marks: decodeGhost(info.mine.ghost) });
+    return ghosts.slice(0, 3);
+  }
+
+  /** Back to fresh text: the shared one is put down, quietly. */
+  private dropFixed(): void {
+    this.fixed = null;
+    this.textInfo = null;
+    this.ghostRuns = [];
+    this.strip.show(false);
+    this.root.dataset.strip = 'off';
+    history.replaceState(null, '', `${location.pathname}${withShare(location.search, location.hash, null)}`);
+  }
+
+  /** Leaves whatever is shared: a race, or a fixed text. */
+  private leaveShared(): void {
+    if (this.race) this.leaveRace(false);
+    else if (this.fixed) this.dropFixed();
+  }
+
+  /** The strip's head and lanes for a fixed text or a race. */
+  private showStrip(): void {
+    const info = this.textInfo;
+    if (this.race) {
+      const state = this.race.state;
+      const leave = el('button.strip-act.ctl', { type: 'button' }, o.leaveRoom);
+      leave.addEventListener('click', () => this.leaveRace());
+      this.strip.setHead(el('span.strip-title', {}, o.room(this.race.code)), state ? el('span.strip-meta', {}, state.config.textId ? o.thisText : `${state.config.kind === 'words' ? '' : `${o.kinds[state.config.kind]} · `}${state.config.words} ${o.words}`) : null, leave);
+    } else if (this.fixed && info) {
+      const top = info.runs[0];
+      const leave = el('button.strip-act.ctl', { type: 'button' }, o.leaveText);
+      leave.addEventListener('mousedown', (event) => event.preventDefault());
+      leave.addEventListener('click', () => {
+        this.dropFixed();
+        this.newSet();
+      });
+      this.strip.setHead(
+        el('span.strip-title', {}, o.thisText),
+        el('span.strip-meta', {}, [o.textOf(info.players), top ? o.bestOn(top.handle, Math.round(top.wpm)) : ''].filter(Boolean).join(' · ')),
+        leave,
+      );
+    } else {
+      this.strip.show(false);
+      this.root.dataset.strip = 'off';
+      return;
+    }
+    this.strip.show(true);
+    this.root.dataset.strip = 'on';
+    this.root.style.setProperty('--strip-h', `${this.strip.root.offsetHeight}px`);
+    this.paintLanes(performance.now(), true);
+  }
+
+  /** Moves the bars: the typist's own, the ghosts' on their clock, the racers' as the room reports them. */
+  private paintLanes(now: number, force = false): void {
+    if (!this.strip.shown && !force) return;
+    const total = this.charsTotal;
+    const lanes: Lane[] = [];
+    const name = this.online.account?.handle ?? o.you;
+    if (this.race?.state) {
+      const state = this.race.state;
+      const roomNow = this.race.now();
+      const ms = state.startAt !== null && state.phase === 'race' ? roomNow - state.startAt : 0;
+      for (const racer of state.racers) {
+        const you = racer.id === state.you;
+        lanes.push({
+          id: racer.id,
+          name: racer.name,
+          kind: you ? 'you' : 'racer',
+          done: you && racer.place === null ? this.charsDone : racer.done,
+          total,
+          wpm: racer.wpm,
+          place: racer.place,
+          waiting: racer.waiting,
+        });
+      }
+      state.ghosts.forEach((ghost, i) => {
+        lanes.push({ id: `ghost-${i}`, name: ghost.handle, kind: 'ghost', done: ghostAt(decodeGhost(ghost.ghost), ms), total, wpm: ghost.wpm, place: null });
+      });
+    } else if (this.fixed && this.textInfo) {
+      // A ghost waits for the typist's first key, then types as it did.
+      const ms = this.logStart === null ? 0 : this.resultOpen ? Number.POSITIVE_INFINITY : now - this.logStart;
+      lanes.push({ id: 'you', name, kind: 'you', done: this.charsDone, total, wpm: this.resultOpen ? this.stats.wpm : null, place: null });
+      const positions: number[] = [];
+      this.ghostRuns.forEach((ghost, i) => {
+        const done = ghostAt(ghost.marks, ms);
+        positions.push(done);
+        lanes.push({ id: `ghost-${i}`, name: ghost.name, kind: 'ghost', done, total, wpm: ghost.wpm, place: null });
+      });
+      if (!this.resultOpen) this.drill.ghosts?.(positions.filter((done) => done < total));
+    } else {
+      return;
+    }
+    this.strip.set(lanes);
+  }
+
+  // ---------- races ----------
+
+  /** The form that opens a room, over the stage. */
+  private showRaceSetup(error = ''): void {
+    if (!this.online.available) return;
+    const kind = this.drill.current?.()?.kind ?? (this.settings.wordsSource === 'sentences' ? 'sentences' : 'words');
+    this.raceView.showSetup({ mode: this.drill.id === 'highway' ? 'highway' : 'line', kind, words: this.settings.setWords, lang: this.settings.lang }, false, error);
+    this.stage.append(this.raceView.root);
+    this.root.dataset.race = 'setup';
+  }
+
+  private async openRoom(config: RoomConfig): Promise<void> {
+    try {
+      const { code } = await api.createRoom(config);
+      this.joinRace(code);
+    } catch (error) {
+      const text = o.errors[error instanceof ApiError ? error.code : 'default'] ?? o.errors.default;
+      if (this.root.dataset.race === 'setup') this.showRaceSetup(text);
+      else this.say(text, 'error');
+    }
+  }
+
+  private joinRace(code: string): void {
+    this.race?.close();
+    if (this.fixed) this.dropFixed();
+    this.raceRound = -1;
+    this.raceShown = '';
+    const account = this.online.account;
+    this.race = new RaceClient(
+      code,
+      { name: account?.handle ?? '', layout: this.layout.id, board: this.layout.board, input: this.touchScreen.matches ? 'touch' : 'keys' },
+      {
+        state: (state) => this.onRoom(state),
+        progress: () => undefined,
+        error: (error) => this.onRaceError(error),
+        lost: (lost) => {
+          if (lost) this.say(o.lost, 'error');
+        },
+      },
+    );
+    history.replaceState(null, '', `${location.pathname}${withShare(location.search, location.hash, { race: code })}`);
+    this.root.dataset.race = 'lobby';
+    this.raceView.root.replaceChildren(el('div.race-card', {}, el('h2.race-title', {}, o.room(code)), el('p.race-note', {}, o.loading)));
+    this.stage.append(this.raceView.root);
+    this.showStrip();
+  }
+
+  private onRoom(state: RoomState): void {
+    // A new round: its text goes on screen under the count, and the set starts fresh on it.
+    if ((state.phase === 'countdown' || state.phase === 'race') && state.text && state.round !== this.raceRound) {
+      const me = state.racers.find((racer) => racer.id === state.you);
+      if (me && !me.waiting) {
+        this.raceRound = state.round;
+        const { config } = state;
+        this.fixed = { id: state.textId, lang: config.lang, kind: config.kind, text: state.text };
+        this.setDrill(config.mode === 'highway' ? 'highway' : config.kind === 'pairs' ? 'pairs' : 'words', true);
+      }
+    }
+    // The room placed this racer: the result says where.
+    const me = state.racers.find((racer) => racer.id === state.you);
+    if (this.rankEl && me?.place) this.rankEl.textContent = `${o.placeOf(me.place)} · ${Math.round(me.wpm ?? 0)} ${o.cols.wpm}`;
+    this.root.dataset.race = state.phase;
+    this.showStrip();
+    this.renderRace(true);
+  }
+
+  /** Draws the room's overlay when what it shows changed: the phase, the racers, the count. */
+  private renderRace(changed = false): void {
+    const race = this.race;
+    const state = race?.state;
+    if (!race || !state) return;
+    let count: number | null = null;
+    if (state.startAt !== null && (state.phase === 'countdown' || state.phase === 'race')) {
+      const left = state.startAt - race.now();
+      // The count reads 3, 2, 1, then go for a moment once the keys are open.
+      if (left > 0) count = Math.ceil(left / 1000);
+      else if (left > -600) count = 0;
+    }
+    const key = `${state.phase}|${count}`;
+    if (!changed && key === this.raceShown) return;
+    this.raceShown = key;
+    this.raceView.render(state, race, Boolean(this.online.account?.handle), count);
+    if (!this.raceView.root.isConnected) this.stage.append(this.raceView.root);
+  }
+
+  private onRaceError(code: string): void {
+    if (code === 'machine' || code === 'too-fast' || code === 'incomplete') {
+      if (this.rankEl) this.rankEl.textContent = o.notSaved;
+      return;
+    }
+    this.say(code === 'full' ? o.roomFull : o.roomGone, 'error');
+    this.leaveRace();
+  }
+
+  /** Out of the room, back to fresh text. `restart` mounts the drill again on its own text. */
+  private leaveRace(restart = true): void {
+    const wasSetup = this.root.dataset.race === 'setup';
+    this.race?.close();
+    this.race = null;
+    this.raceRound = -1;
+    this.raceView.root.remove();
+    delete this.root.dataset.race;
+    const hadText = this.fixed !== null;
+    this.dropFixed();
+    if (restart && !wasSetup && hadText) this.setDrill(this.drill.id, true);
   }
 
   // ---------- rendering ----------
@@ -1458,13 +2012,15 @@ export class App implements DrillHost {
   private renderOptions(): void {
     // Runs on every drill, layout and option change, so the stats heat map always matches the saved numbers.
     this.keyboard.setHeat(this.drill.id === 'stats' ? this.heat : null);
+    // Typing from memory: the board steps aside in the typing drills; the stats keep it as their heat map.
+    this.root.dataset.keys = this.settings.hideKeyboard ? 'hidden' : 'shown';
     // A drill that charts single keys turns the board's keys into buttons.
     const { drill, settings, store, layout } = this;
     this.keyboard.setPicker(drill.pickKey ? (code) => drill.pickKey?.(code) : null, drill.pickedKey?.() ?? null);
 
     // The settings, one list: the drill's own options and the fingers to train, how hard it is,
     // what is heard, the keyboard, then who is typing. A rule parts each group from the next.
-    const typing = drill.id !== 'stats';
+    const typing = drill.id !== 'stats' && drill.id !== 'boards';
     const groups: (HTMLElement | null)[][] = [drill.options().map((group) => this.optionEl(group))];
     if (typing) {
       const lit = settings.focus.length > 0;
@@ -1481,6 +2037,17 @@ export class App implements DrillHost {
       ]);
     }
     groups.push([this.row(t.options.keys, this.soundSelect.root, '', t.options.keySoundTitle)]);
+    // The font: one group for every drill, the weight first since it changes the most.
+    this.weightSlider.relabel(t.menu.fontWeight);
+    this.roundSlider.relabel(t.menu.fontRound);
+    this.opticalSlider.relabel(t.menu.fontOptical);
+    this.showOptical(settings.fontOptical);
+    groups.push([
+      this.row(t.menu.fontWeight, this.weightSlider.root, 'is-slider'),
+      this.row(t.menu.fontRound, this.roundSlider.root, 'is-slider'),
+      this.row(t.menu.fontOptical, this.opticalSlider.root, 'is-slider'),
+      el('p.set-note.is-under', {}, t.menu.fontNote),
+    ]);
 
     // Say plainly what the layout and the board change, so nothing is filtered behind the typist's back.
     const notes = [t.menu.boardNotes[settings.board]];
@@ -1499,6 +2066,7 @@ export class App implements DrillHost {
         keeps: true,
       }),
       el('p.set-note.is-under', {}, notes.join('. ')),
+      typing ? this.hideKeyboardEl() : null,
     ]);
     groups.push([
       this.row(t.menu.profile, this.profileMenu.root),
@@ -1518,9 +2086,14 @@ export class App implements DrillHost {
       }),
     ]);
     this.flipped = null;
-    this.panel.body.replaceChildren(
-      ...groups.flatMap((rows, i) => [i > 0 ? el('div.set-rule', { 'aria-hidden': 'true' }) : null, ...rows]).filter((node) => node !== null),
-    );
+    if (this.panelView === 'account' && this.online.available) {
+      // The account alone: the settings keep their own length.
+      this.panel.body.replaceChildren(this.account.root);
+    } else {
+      this.panel.body.replaceChildren(
+        ...groups.flatMap((rows, i) => [i > 0 ? el('div.set-rule', { 'aria-hidden': 'true' }) : null, ...rows]).filter((node) => node !== null),
+      );
+    }
 
     // Under the board, only the keys that do something beside typing.
     const hints: HTMLElement[] = [];
@@ -1536,6 +2109,18 @@ export class App implements DrillHost {
     this.showFloor();
   }
 
+  /** The switch that hides the board. A phone shows no board, so the line stays off its sheet. */
+  private hideKeyboardEl(): HTMLElement {
+    const line = this.optionEl(
+      toggleOption(t.menu.hideKeyboard, this.settings.hideKeyboard, (hideKeyboard) => this.store.update({ hideKeyboard }), {
+        keeps: true,
+        title: t.menu.hideKeyboardTitle,
+      }),
+    );
+    line.classList.add('is-desk');
+    return line;
+  }
+
   /** One line of the settings: its name, then its control. */
   private row(label: string, control: HTMLElement, modifier = '', title = ''): HTMLElement {
     const row = el('div.set-row', title ? { title } : {}, el('span.set-label', {}, label), control);
@@ -1547,6 +2132,8 @@ export class App implements DrillHost {
   private optionEl(group: OptionGroup): HTMLElement {
     const pick = (value: string, button: HTMLElement): void => {
       const leaving = this.underWay;
+      // A choice that changes the text leaves a shared text for fresh ones.
+      if (!group.keeps && this.fixed && !this.race) this.dropFixed();
       group.set(value);
       // An option that brings new text ends the run and the streak: no typo is left behind and the fuse starts whole.
       if (!group.keeps) {
@@ -1603,17 +2190,9 @@ export class App implements DrillHost {
 
     const { floor } = this;
 
-    // A few seconds of data are needed before a trace says anything. Until then
-    // the slot shows an empty track, so it never holds an orphan stub.
-    if (points.length < 8 || Math.max(...points) === 0) {
-      ctx.strokeStyle = css('--line');
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.moveTo(0, height - 0.5);
-      ctx.lineTo(width, height - 0.5);
-      ctx.stroke();
-      return;
-    }
+    // A few seconds of data are needed before a trace says anything. Until then the slot stays
+    // empty: a flat track there would read as a second hairline over the one under it.
+    if (points.length < 8 || Math.max(...points) === 0) return;
 
     // Scale to the recent range so a steady pace still shows its small swings. A hardcore floor stays in view.
     const low = Math.max(0, Math.min(...points, floor > 0 ? floor - 6 : Infinity) - 10);
@@ -1672,6 +2251,8 @@ export class App implements DrillHost {
         this.drawSpark();
       }
       if (this.root.dataset.typing === 'true' && now - this.lastKeyAt > IDLE_MS) this.setTyping(false);
+      this.paintLanes(now);
+      this.renderRace();
     }
     requestAnimationFrame(this.frame);
   };
@@ -1693,6 +2274,7 @@ export class App implements DrillHost {
       const tab = this.label(el('button.tab.ctl', { type: 'button', 'data-id': id }), () => t.drills[id]);
       tab.addEventListener('click', () => {
         tab.blur();
+        this.leaveShared();
         this.setDrill(id);
       });
       this.tabs.set(id, tab);
@@ -1715,6 +2297,36 @@ export class App implements DrillHost {
       { onCursor: (value) => this.sound.audition(value as KeySound) },
     );
     this.profileMenu = new ProfileMenu(this.store, () => this.applyProfile());
+    const { fontWeight, fontRound, fontOptical } = this.settings;
+    // While a thumb moves the page follows it; the value is saved once it is let go.
+    this.weightSlider = new Slider({
+      name: t.menu.fontWeight,
+      axis: AXES.weight,
+      value: fontWeight,
+      onInput: (value) => this.showFont({ fontWeight: value }),
+      onChange: (value) => this.saveFont({ fontWeight: value }),
+    });
+    this.roundSlider = new Slider({
+      name: t.menu.fontRound,
+      axis: AXES.round,
+      value: fontRound,
+      onInput: (value) => this.showFont({ fontRound: value }),
+      onChange: (value) => this.saveFont({ fontRound: value }),
+    });
+    this.opticalSlider = new Slider({
+      name: t.menu.fontOptical,
+      axis: AXES.optical,
+      value: fontOptical ?? AXES.optical.base,
+      onInput: (value) => this.showFont({ fontOptical: value }),
+      onChange: (value) => this.saveFont({ fontOptical: value }),
+    });
+    this.opticalSlider.root.append(this.opticalAuto);
+    this.opticalAuto.addEventListener('click', () => {
+      this.opticalAuto.blur();
+      this.opticalSlider.set(AXES.optical.base);
+      this.saveFont({ fontOptical: null });
+    });
+    this.syncFont();
     this.panel.relabel(t.menu.button, t.menu.region, t.touch.close);
     this.fingerPick.set(this.settings.focus);
 
@@ -1770,12 +2382,18 @@ export class App implements DrillHost {
       this.focusSoft();
     });
 
+    this.accountBtn.addEventListener('click', () => {
+      this.accountBtn.blur();
+      this.openAccount();
+    });
+    this.stage.append(this.strip.root);
+
     // A plain link to the written guides in the interface language: crawlable, and it works without the app.
     const guides = this.label(this.label(el('a.top-guides.ctl'), () => t.top.guides), () => `./${this.store.settings.ui}/`, 'href');
 
     this.root.append(
       this.softField,
-      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, guides, this.panel.button))),
+      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, this.accountBtn, guides, this.panel.button))),
       el(
         'main.cockpit',
         {},

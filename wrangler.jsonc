@@ -1,11 +1,15 @@
-// Cloudflare Worker that serves the built trainer as static assets at petitdoigt.ca.
-// There is no Worker script: every request is answered from ./dist.
+// Cloudflare Worker for petitdoigt.ca. The built trainer in ./dist is served as static
+// assets; only /api/* reaches the Worker script: accounts, sets, boards and races.
 // Build first (`npm run build`), then `npx wrangler deploy`.
 {
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "petitdoigt",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-11-01",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
   },
   "routes": [
     {
@@ -15,5 +19,24 @@
   ],
   // The custom domain is the only public address.
   "workers_dev": false,
-  "preview_urls": false
+  "preview_urls": false,
+  // Accounts, sign-in links, sets, texts and keyboards. The Worker writes its own tables (worker/db.ts).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "petitdoigt"
+    }
+  ],
+  // One object per race room: the racers' sockets, the text, the countdown.
+  "durable_objects": {
+    "bindings": [{ "name": "ROOMS", "class_name": "RaceRoom" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["RaceRoom"] }],
+  // Sign-in links. petitdoigt.ca is onboarded to Cloudflare Email Sending.
+  "send_email": [{ "name": "EMAIL", "allowed_sender_addresses": ["connexion@petitdoigt.ca"] }],
+  "vars": {
+    "SITE": "https://petitdoigt.ca",
+    "MAIL_FROM": "connexion@petitdoigt.ca"
+  },
+  "observability": { "enabled": true }
 }

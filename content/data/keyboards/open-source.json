@@ -1,0 +1,636 @@
+{
+  "brand": {
+    "id": "open-source",
+    "name": "Open-source designs",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "focus": [
+      "diy",
+      "ergonomic"
+    ],
+    "about": "Keyboard designs published as open hardware (PCB files, cases, firmware) that anyone can build or sell; each record points to the design's repository.",
+    "sources": []
+  },
+  "keyboards": [
+    {
+      "id": "open-source-corne",
+      "brand": "open-source",
+      "model": "Corne",
+      "aka": [
+        "crkbd",
+        "Corne Cherry",
+        "Corne Chocolate"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/foostan/crkbd",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "foostan/crkbd: Corne keyboard",
+          "url": "https://github.com/foostan/crkbd",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "split",
+            "thumb_cluster",
+            "switch_footprint",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/crkbd",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ZMK: corne shield",
+          "url": "https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/corne",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "3x6 column-staggered keys plus three thumb keys per half. Current v4 comes as corne-cherry (MX) and corne-chocolate (Kailh Choc v1 and v2), both hot-swappable; pin support is not stated. Wireless builds use ZMK."
+    },
+    {
+      "id": "open-source-dactyl",
+      "brand": "open-source",
+      "model": "Dactyl",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/adereth/dactyl-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "adereth/dactyl-keyboard: The Dactyl Keyboard",
+          "url": "https://github.com/adereth/dactyl-keyboard",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "split",
+            "key_wells",
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Parameterized, split-hand, concave, columnar design generated in Clojure and 3D printed; built by hand-wiring MX switches, so it has no PCB."
+    },
+    {
+      "id": "open-source-dactyl-manuform",
+      "brand": "open-source",
+      "model": "Dactyl-ManuForm",
+      "aka": [
+        "Dactyl Manuform"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "built-in",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/tshort/dactyl-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "tshort/dactyl-keyboard: The Dactyl-ManuForm Keyboard",
+          "url": "https://github.com/tshort/dactyl-keyboard",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "split",
+            "key_wells",
+            "tenting",
+            "thumb_cluster"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/handwired/dactyl_manuform",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Fork of the Dactyl with the ManuForm thumb cluster; parameters set the rows, columns, curvature and tenting (common builds are 4x5 and 5x6). Hand-wired and 3D printed."
+    },
+    {
+      "id": "open-source-ergodox",
+      "brand": "open-source",
+      "model": "ErgoDox",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/Ergodox-io/ErgoDox",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Ergodox-io/ErgoDox: PCB and acrylic case",
+          "url": "https://github.com/Ergodox-io/ErgoDox",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "The original open ErgoDox PCB and acrylic case; the repository is archived. ZSA's ErgoDox EZ is the assembled commercial version."
+    },
+    {
+      "id": "open-source-ferris",
+      "brand": "open-source",
+      "model": "Ferris",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": 34,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/pierrechevalier83/ferris",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "pierrechevalier83/ferris",
+          "url": "https://github.com/pierrechevalier83/ferris",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "split",
+            "switch_footprint",
+            "hot_swap",
+            "low_profile",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/ferris",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/ferris",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "34-key low-profile split board with USB-C. Variants: Base (Choc with MX spacing), Low (Choc mini) and High (MX); the README lists hot-swap support as a design goal."
+    },
+    {
+      "id": "open-source-sweep",
+      "brand": "open-source",
+      "model": "Ferris Sweep",
+      "aka": [
+        "Sweep",
+        "Sweep 2",
+        "Sweep Bling"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": 34,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/davidphilipbarr/Sweep",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "davidphilipbarr/Sweep",
+          "url": "https://github.com/davidphilipbarr/Sweep",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "switch_footprint",
+            "connectivity",
+            "firmware",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/ferris (includes sweep)",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/ferris",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ZMK: cradio shield (Sweep)",
+          "url": "https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/cradio",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "34-key Ferris-inspired board on a Pro Micro or nice!nano daughter board, so it can run wired or over Bluetooth. Sweep 2 takes Choc v1; the Bling MX and Bling LP variants add Kailh hot-swap sockets."
+    },
+    {
+      "id": "open-source-lily58",
+      "brand": "open-source",
+      "model": "Lily58",
+      "aka": [
+        "Lily58 Pro",
+        "Lily58 Lite"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/kata0510/Lily58",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "kata0510/Lily58",
+          "url": "https://github.com/kata0510/Lily58",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "split",
+            "thumb_cluster",
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/lily58",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ZMK: lily58 shield",
+          "url": "https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/lily58",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "6x4 column-staggered keys plus four thumb keys per half; published as Lily58 Pro and Lily58 Lite Rev2. The README does not state the switch socket type."
+    },
+    {
+      "id": "open-source-redox",
+      "brand": "open-source",
+      "model": "Redox",
+      "aka": [
+        "Reduced Ergodox"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/mattdibi/redox-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "mattdibi/redox-keyboard: The Redox project",
+          "url": "https://github.com/mattdibi/redox-keyboard",
+          "kind": "official",
+          "backs": [
+            "split",
+            "firmware",
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/redox",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A reduced ErgoDox with a 3D-printable case and RGB support; the README links a separate wireless implementation, Falbatech PCBs and bamboo cases, and a community tenting kit."
+    },
+    {
+      "id": "open-source-sofle",
+      "brand": "open-source",
+      "model": "Sofle",
+      "aka": [
+        "SofleKeyboard",
+        "Sofle RGB",
+        "Sofle Choc"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "pcb",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/josefadamcik/SofleKeyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "josefadamcik/SofleKeyboard",
+          "url": "https://github.com/josefadamcik/SofleKeyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "split",
+            "thumb_cluster",
+            "hot_swap",
+            "aka"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/sofle",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ZMK: sofle shield",
+          "url": "https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/sofle",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "6x4 column-staggered keys plus five keys per half with rotary encoders, based on Lily58, Corne and Helix. Sofle v1, v2 and RGB take MX switches (RGB with MX sockets); Sofle Choc takes Kailh Choc v1 in hot-swap sockets."
+    }
+  ]
+}
