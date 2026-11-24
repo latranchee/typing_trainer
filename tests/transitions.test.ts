@@ -47,10 +47,11 @@ function countDraws(group: string, transitions: Transitions | undefined, trainin
   const random = seeded(11);
   let count = 0;
   for (let i = 0; i < sets; i++) {
-    const groups = makePairs(layout, 'en', 14, { size: 2, training }, bias(transitions), random).split(' ').filter((_, j) => j % 3 === 0);
+    const groups = makePairs(layout, 'en', 14, { size: 2, training }, bias(transitions), random).split(' ');
     count += groups.filter((item) => item === group).length;
   }
-  return count;
+  // Each drawn group is typed three times.
+  return count / 3;
 }
 
 describe('transition weakness', () => {
@@ -244,13 +245,11 @@ describe('adaptive letter groups', () => {
       const text = makePairs(layout, 'en', 14, { size: 2, training: 'adaptive' }, bias(empty), random);
       const groups = text.split(' ');
       expect(groups).toHaveLength(42);
-      const picks = groups.filter((_, j) => j % 3 === 0);
-      expect(new Set(picks).size).toBeGreaterThanOrEqual(8);
-      picks.forEach((pick, j) => {
-        expect(PAIRS.en).toContain(pick);
-        expect(groups[j * 3 + 1]).toBe(pick);
-        expect(groups[j * 3 + 2]).toBe(pick);
-        if (j > 0) expect(pick, `set ${i} group ${j}`).not.toBe(picks[j - 1]);
+      expect(new Set(groups).size).toBeGreaterThanOrEqual(8);
+      groups.forEach((group, j) => {
+        expect(PAIRS.en).toContain(group);
+        expect(groups.filter((other) => other === group).length % 3).toBe(0);
+        if (j > 0) expect(group, `set ${i} group ${j}`).not.toBe(groups[j - 1]);
       });
     }
   });
@@ -317,7 +316,8 @@ describe('adaptive letter groups', () => {
     let hits = 0;
     let slots = 0;
     for (let i = 0; i < 200; i++) {
-      const picks = makePairs(layout, 'en', 14, { size: 2, training: 'adaptive' }, bias(transitions), random).split(' ').filter((_, j) => j % 3 === 0);
+      // Every drawn group is typed three times, so the copies hold the same shares as the draws.
+      const picks = makePairs(layout, 'en', 14, { size: 2, training: 'adaptive' }, bias(transitions), random).split(' ');
       hits += picks.filter((pick) => weak.includes(pick)).length;
       slots += picks.length;
     }

@@ -2,9 +2,10 @@ import { describe, expect, it } from 'vitest';
 import { PAIRS, SENTENCES, TRIPLES, WORDS } from '../src/core/corpus';
 import type { Finger } from '../src/core/fingers';
 import type { Bias } from '../src/core/generator';
-import { anchorTurns, DEFAULT_FOCUS, fingerShare, makeAnchorSet, makePairs, makeSentences, makeWords, TYPING_FINGERS } from '../src/core/generator';
+import { anchorTurns, DEFAULT_FOCUS, fingerShare, makeAnchorSet, makePairs, makeSentences, makeWords, scramble, TYPING_FINGERS } from '../src/core/generator';
 import { getLayout, isTypingCode, LAYOUTS } from '../src/core/layouts';
 import { RollingWpm, SetStats } from '../src/core/metrics';
+import { seeded } from '../src/core/texts';
 import { LANGS } from '../src/core/store';
 import { boardOf, BOARDS, hasCode, letterRowCodes, rowOf, rowsOf } from '../src/core/physical';
 
@@ -449,11 +450,31 @@ describe('generator', () => {
     expect(fingerShare(layout, 'was', new Set())).toBe(0);
   });
 
-  it('repeats each letter group three times', () => {
-    const groups = makePairs(getLayout('us'), 'en', 5, { size: 2 }, plain).split(' ');
-    expect(groups).toHaveLength(15);
-    expect(groups[0]).toBe(groups[1]);
-    expect(groups[1]).toBe(groups[2]);
+  it('types each letter group three times, scrambled so no group follows itself', () => {
+    for (const layout of LAYOUTS) {
+      for (const lang of LANGS) {
+        for (const size of [2, 3] as const) {
+          for (let seed = 1; seed <= 40; seed++) {
+            const groups = makePairs(layout, lang, 14, { size }, plain, seeded(seed)).split(' ');
+            const where = `${layout.id} ${lang} ${size} seed ${seed}`;
+            expect(groups, where).toHaveLength(42);
+            const counts = new Map<string, number>();
+            for (const group of groups) counts.set(group, (counts.get(group) ?? 0) + 1);
+            expect([...counts.values()].every((count) => count % 3 === 0), where).toBe(true);
+            expect(groups.some((group, i) => group === groups[i + 1]), `${where}: ${groups.join(' ')}`).toBe(false);
+          }
+        }
+      }
+    }
+  });
+
+  it('keeps scrambled copies apart even when one group fills half the set, and runs a lone group on', () => {
+    for (let seed = 1; seed <= 200; seed++) {
+      const out = scramble(['th', 'he', 'th', 'in', 'th', 'er', 'th', 'an', 'th', 'on'], seeded(seed));
+      expect(out.filter((group) => group === 'th')).toHaveLength(15);
+      expect(out.some((group, i) => group === out[i + 1]), out.join(' ')).toBe(false);
+    }
+    expect(scramble(['th'], seeded(1))).toEqual(['th', 'th', 'th']);
   });
 
   it('only draws letter groups that give a focus finger a letter', () => {

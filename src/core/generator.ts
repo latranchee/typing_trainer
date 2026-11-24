@@ -201,8 +201,12 @@ export const WEAK_FLOOR = 0.1;
  */
 const WEAK_YIELD = 0.5;
 
+/** How many times each drawn group comes up in a set. */
+export const GROUP_REPEATS = 3;
+
 /**
- * Letter associations with no words: each group is typed three times, then the next one.
+ * Letter associations with no words: each drawn group is typed three times, the copies
+ * scrambled through the set so no group follows itself.
  * With a focus, only the groups that give a focus finger a letter are drawn, while enough of them exist.
  * Adaptive training draws most groups from the typist's weak transitions; classic draws by frequency alone.
  */
@@ -226,7 +230,49 @@ export function makePairs(
     options.training === 'adaptive' && bias.transitions
       ? adaptivePicks(items, weights, bias.transitions, groups, random)
       : classicPicks(items, weights, groups, random);
-  return picks.flatMap((item) => [item, item, item]).join(' ');
+  return scramble(picks, random).join(' ');
+}
+
+/**
+ * Each pick `GROUP_REPEATS` times, in a random order where no group follows itself. Each
+ * step draws among the groups with copies left, in proportion to how many, never the one
+ * just typed and never one that would leave the rest unable to stay apart. A set drawn
+ * from a single group cannot be kept apart: its copies run on as they must.
+ */
+export function scramble(picks: readonly string[], random: () => number = Math.random): string[] {
+  const left = new Map<string, number>();
+  for (const pick of picks) left.set(pick, (left.get(pick) ?? 0) + GROUP_REPEATS);
+  let remaining = picks.length * GROUP_REPEATS;
+  // The copies left can still be laid out apart after `previous`: no group holds more than
+  // every other slot, and `previous` itself cannot take the first one.
+  const fits = (previous: string, count: number): boolean =>
+    [...left].every(([group, n]) => n <= (group === previous ? Math.floor(count / 2) : Math.ceil(count / 2)));
+  const out: string[] = [];
+  let previous = '';
+  while (remaining > 0) {
+    const open = [...left].filter(([group, n]) => n > 0 && group !== previous);
+    const safe = open.filter(([group]) => {
+      left.set(group, left.get(group)! - 1);
+      const ok = fits(group, remaining - 1);
+      left.set(group, left.get(group)! + 1);
+      return ok;
+    });
+    const choices = safe.length > 0 ? safe : open.length > 0 ? open : [...left].filter(([, n]) => n > 0);
+    let roll = random() * choices.reduce((sum, [, n]) => sum + n, 0);
+    let [choice] = choices[choices.length - 1];
+    for (const [group, n] of choices) {
+      roll -= n;
+      if (roll < 0) {
+        choice = group;
+        break;
+      }
+    }
+    left.set(choice, left.get(choice)! - 1);
+    out.push(choice);
+    previous = choice;
+    remaining--;
+  }
+  return out;
 }
 
 function classicPicks(items: string[], weights: number[], groups: number, random: () => number): string[] {
