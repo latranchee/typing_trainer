@@ -171,6 +171,13 @@ export const de: Strings = {
     gain: 'größter fortschritt',
     gainValue: (finger, wpm, gain) => `${deFinger(finger)}, ${wpm} wpm, ${gain} über seinem schnitt`,
     days: (count) => `${count} ${count === 1 ? 'tag' : 'tage'} in folge`,
+    centile: 'perzentil',
+    centileFigure: (figure) => (figure < 1 ? 'unter 1' : String(figure).replace('.', ',')),
+    centileOf: (typists, study, phone) =>
+      study === null
+        ? `von ${typists.toLocaleString('de-DE')} tippenden auf petitdoigt`
+        : `von ${typists.toLocaleString('de-DE')} ${phone ? 'handy-tippenden' : 'tippenden'} · aalto-studie,\u00a0${study}`,
+    centileTitle: (figure) => `schneller als ${figure}% von ihnen`,
   },
 
   options: {

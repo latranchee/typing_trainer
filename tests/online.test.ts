@@ -3,8 +3,8 @@ import { DEFAULT_FOCUS, makePairs, makeSentences, makeWords } from '../src/core/
 import { cleanModel, modelKey } from '../src/core/keyboards';
 import { getLayout } from '../src/core/layouts';
 import { SetStats } from '../src/core/metrics';
-import type { LogEvent } from '../src/core/replay';
-import { decodeGhost, encodeGhost, ERASE, ghostAt, KeyLog, ranks, replay, verdict } from '../src/core/replay';
+import type { GhostStep, LogEvent } from '../src/core/replay';
+import { decodeGhost, encodeGhost, ERASE, GHOST_FLASH_MS, ghostAt, ghostView, KeyLog, ranks, replay, verdict } from '../src/core/replay';
 import { LANGS } from '../src/core/store';
 import { isTrainerText, raceText, seeded, textId } from '../src/core/texts';
 
@@ -110,11 +110,31 @@ describe('replay', () => {
 });
 
 describe('ghosts', () => {
-  it('round-trips a run to within ten milliseconds a character', () => {
-    const marks = [0, 140, 305, 470, 2600, 2711];
-    const back = decodeGhost(encodeGhost(marks));
-    expect(back).toHaveLength(marks.length);
-    back.forEach((mark, i) => expect(Math.abs(mark - marks[i])).toBeLessThanOrEqual(5));
+  const chars = (marks: number[]): GhostStep[] => marks.map((at) => ({ at, kind: 'char', label: '' }));
+
+  it('round-trips a run to within ten milliseconds a step', () => {
+    const steps: GhostStep[] = [
+      ...chars([0, 140, 305]),
+      { at: 390, kind: 'flash', label: 'x' },
+      ...chars([470]),
+      { at: 600, kind: 'stick', label: ' ' },
+      { at: 700, kind: 'stick', label: 'é' },
+      { at: 820, kind: 'erase', label: '' },
+      { at: 900, kind: 'clear', label: '' },
+      ...chars([2600, 2711]),
+    ];
+    const back = decodeGhost(encodeGhost(steps));
+    expect(back.steps.map((step) => [step.kind, step.label])).toEqual(steps.map((step) => [step.kind, step.label]));
+    back.steps.forEach((step, i) => expect(Math.abs(step.at - steps[i].at)).toBeLessThanOrEqual(5));
+    expect(back.marks).toHaveLength(6);
+  });
+
+  it('keeps a clean run at two characters a letter, and still plays ghosts saved before wrong keys were kept', () => {
+    const marks = [0, 140, 305, 470];
+    const ghost = encodeGhost(chars(marks));
+    expect(ghost).toHaveLength(marks.length * 2);
+    expect(ghost).toMatch(/^[A-Za-z0-9_-]+$/);
+    expect(decodeGhost(ghost).marks).toEqual([0, 140, 310, 470]);
   });
 
   it('says how far a ghost got at any moment', () => {
@@ -123,6 +143,64 @@ describe('ghosts', () => {
     expect(ghostAt(marks, 0)).toBe(1);
     expect(ghostAt(marks, 150)).toBe(2);
     expect(ghostAt(marks, 5000)).toBe(4);
+  });
+
+  it('records the wrong keys a set typed, as the page showed them', () => {
+    const log: LogEvent[] = [
+      [0, 'KeyA', 0],
+      [100, 'KeyX', 1],
+      [100, 'KeyB', 0],
+      [100, 'KeyC', 0],
+    ];
+    const run = replay(us, 'abc', log, false);
+    expect(run.steps.map((step) => [step.kind, step.label, step.at])).toEqual([
+      ['char', '', 0],
+      ['flash', 'X', 100],
+      ['char', '', 200],
+      ['char', '', 300],
+    ]);
+  });
+
+  it('records a hardcore typo run and its erases', () => {
+    const log: LogEvent[] = [
+      [0, 'KeyA', 0],
+      [100, 'KeyX', 0],
+      [100, 'Space', 0],
+      [100, ERASE, 0],
+      [100, ERASE, 0],
+      [100, 'KeyB', 0],
+      [100, 'KeyC', 0],
+    ];
+    const track = decodeGhost(encodeGhost(replay(us, 'abc', log, true).steps));
+    expect(ghostView(track, 50)).toEqual({ done: 1, typos: [], flash: null });
+    expect(ghostView(track, 250)).toEqual({ done: 1, typos: ['x', ' '], flash: null });
+    expect(ghostView(track, 350)).toEqual({ done: 1, typos: ['x'], flash: null });
+    expect(ghostView(track, 450)).toEqual({ done: 1, typos: [], flash: null });
+    expect(ghostView(track, 600)).toEqual({ done: 3, typos: [], flash: null });
+  });
+
+  it('shows a wrong key that did not stick for a moment, on the letter it missed', () => {
+    const track = decodeGhost(encodeGhost([...chars([0]), { at: 100, kind: 'flash', label: 'q' }, ...chars([200])]));
+    expect(ghostView(track, 99).flash).toBeNull();
+    expect(ghostView(track, 250)).toEqual({ done: 2, typos: [], flash: { label: 'q', cell: 1, at: 100 } });
+    expect(ghostView(track, 100 + GHOST_FLASH_MS).flash).toBeNull();
+  });
+
+  it('wipes every typo on an erase of all of them', () => {
+    const track = decodeGhost(
+      encodeGhost([
+        { at: 0, kind: 'stick', label: 'a' },
+        { at: 10, kind: 'stick', label: 'b' },
+        { at: 20, kind: 'clear', label: '' },
+      ]),
+    );
+    expect(ghostView(track, 15).typos).toEqual(['a', 'b']);
+    expect(ghostView(track, 25).typos).toEqual([]);
+  });
+
+  it('stops reading at a broken step', () => {
+    expect(decodeGhost('AK~A').steps).toHaveLength(1);
+    expect(decodeGhost('AK*AK').steps).toHaveLength(1);
   });
 });
 

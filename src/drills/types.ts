@@ -4,6 +4,7 @@ import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
 import type { Layout, Stroke } from '../core/layouts';
 import type { Row } from '../core/physical';
+import type { GhostView } from '../core/replay';
 import type { DrillId, Lang, Settings, Store } from '../core/store';
 import { LANGS } from '../core/store';
 import type { TextKind } from '../core/texts';
@@ -150,6 +151,6 @@ export interface Drill {
   typos?(typed: readonly string[]): void;
   /** The text of the set on screen. Drills that type text define it. */
   current?(): SetText | null;
-  /** Where the ghosts of a fixed text are: for each, how many characters it has finished. */
-  ghosts?(positions: readonly number[]): void;
+  /** The ghosts of a fixed text as they type it: where each one's caret is, and its wrong keys. */
+  ghosts?(views: readonly GhostView[]): void;
 }

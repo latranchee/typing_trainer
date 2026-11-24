@@ -178,6 +178,16 @@ const en = {
     gainValue: (finger: Finger, wpm: number, gain: number): string =>
       `${fingerHand(finger)} ${fingerKind(finger)}, ${wpm} wpm, ${gain} over its average`,
     days: (count: number): string => `${count} days in a row`,
+    /** The set's percentile: the share of typists slower than it, against a study or the trainer's own typists. */
+    centile: 'percentile',
+    /** The figure, whole below 99 and to a tenth from 99; 0 stands for under 1. */
+    centileFigure: (figure: number): string => (figure < 1 ? 'under 1' : String(figure)),
+    /** What the figure is held against: a study (its year) or this trainer's typists (null), on a keyboard or a phone. The study's name and year never part on a narrow screen. */
+    centileOf: (typists: number, study: number | null, phone: boolean): string =>
+      study === null
+        ? `of ${typists.toLocaleString('en-US')} typists on petitdoigt`
+        : `of ${typists.toLocaleString('en-US')} ${phone ? 'phone typists' : 'typists'} · aalto\u00a0study,\u00a0${study}`,
+    centileTitle: (figure: string): string => `faster than ${figure}% of them`,
   },
 
   options: {
@@ -494,6 +504,13 @@ const fr: Strings = {
     gain: 'plus gros progrès',
     gainValue: (finger, wpm, gain) => `${frFinger(finger)}, ${wpm} mpm, ${gain} de plus que sa moyenne`,
     days: (count) => `${count} jours de suite`,
+    centile: 'centile',
+    centileFigure: (figure) => (figure < 1 ? 'moins de 1' : String(figure).replace('.', ',')),
+    centileOf: (typists, study, phone) =>
+      study === null
+        ? `sur ${typists.toLocaleString('fr-CA')} dactylos de petitdoigt`
+        : `sur ${typists.toLocaleString('fr-CA')} dactylos${phone ? ' sur téléphone' : ''} · étude\u00a0aalto,\u00a0${study}`,
+    centileTitle: (figure) => `plus rapide que ${figure}% d'entre eux`,
   },
 
   options: {

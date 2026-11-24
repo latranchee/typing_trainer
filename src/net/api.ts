@@ -8,6 +8,7 @@ import type {
   Mode,
   InputKind,
   PlayerRow,
+  RankedDrill,
   RoomConfig,
   RunAnswer,
   RunSubmit,
@@ -15,6 +16,7 @@ import type {
   TextRow,
 } from '../core/online';
 import type { TextKind } from '../core/texts';
+import type { CentileAnswer } from '../core/centile';
 
 /**
  * The page's side of the Worker's /api. The online parts live at petitdoigt.ca only: a copy
@@ -77,6 +79,7 @@ export const api = {
   keyboardBoard: (q: BoardQuery, by: KeyboardGroup) => call<{ rows: KeyboardRow[] }>('GET', `boards?${query({ view: 'keyboards', by, ...q })}`),
   texts: (q: BoardQuery) => call<{ rows: TextRow[] }>('GET', `boards?${query({ view: 'texts', ...q })}`),
   text: (id: string, mode: Mode, input: InputKind) => call<TextInfo>('GET', `texts/${id}?${query({ mode, input })}`),
+  centiles: (drill: RankedDrill, kind: TextKind, input: InputKind) => call<CentileAnswer>('GET', `centiles?${query({ drill, kind, input })}`),
   shareText: (lang: Lang, kind: TextKind, text: string) => call<{ id: string }>('POST', 'texts', { lang, kind, text }),
 
   createRoom: (config: RoomConfig) => call<{ code: string; config: RoomConfig }>('POST', 'rooms', config),

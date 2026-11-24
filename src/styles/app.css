@@ -1732,6 +1732,18 @@ p {
   align-items: center;
   gap: 0.625rem;
 }
+/* The percentile, first in the list: the figure in Text, what it is held against in Muted beside it. */
+.result-centile {
+  flex-wrap: wrap;
+  row-gap: 0.125rem;
+}
+.result-centile-figure {
+  font-weight: calc(600 + var(--wght-shift));
+  font-variant-numeric: tabular-nums;
+}
+.result-centile-of {
+  color: var(--muted);
+}
 .result-unsaved {
   margin-top: 1.25rem;
   font-size: 1rem;
@@ -4064,6 +4076,31 @@ p {
   border-radius: 0.0625rem;
   background: var(--strike);
   opacity: 0.85;
+}
+/* A ghost's wrong keys, sitting on its caret like a flag on its pole: coral like the typist's own,
+   smaller. One that missed fades again; hardcore typos wait there for the ghost's erase. */
+.ghost-keys {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-left: -0.0625rem;
+  translate: 0 calc(-100% + 0.375rem);
+  font-size: 1rem;
+  font-weight: calc(500 + var(--wght-shift));
+  line-height: 1;
+  color: var(--error);
+  white-space: pre;
+  pointer-events: none;
+}
+/* A space it typed by mistake: a short coral bar, as in the typist's own typo run. */
+.ghost-key.sp {
+  display: inline-block;
+  width: 0.4em;
+  height: 0.125rem;
+  margin: 0 0.0625rem 0.0625rem;
+  border-radius: 0.0625rem;
+  background: currentColor;
 }
 
 /* ---------- races ---------- */

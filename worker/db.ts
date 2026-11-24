@@ -76,6 +76,8 @@ const MIGRATIONS: string[][] = [
     'CREATE INDEX IF NOT EXISTS runs_text ON runs (text_id, mode, wpm)',
     'CREATE INDEX IF NOT EXISTS runs_user ON runs (user_id, created_at)',
   ],
+  // The trainer's own percentile curves: one drill, kind of text and input at a time.
+  ['CREATE INDEX IF NOT EXISTS runs_centile ON runs (drill, kind, input, ranked, user_id, created_at)'],
 ];
 
 let ready: Promise<void> | null = null;

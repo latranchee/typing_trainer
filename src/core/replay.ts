@@ -59,8 +59,10 @@ export interface Replay {
   correct: number;
   wrong: number;
   activeMs: number;
-  /** When each character was finished, in ms from the first key: what a ghost of this run plays. */
+  /** When each character was finished, in ms from the first key. */
   marks: number[];
+  /** Every finished character, wrong key and erase, in order: what a ghost of this run plays. */
+  steps: GhostStep[];
   /** Gaps between strokes, in ms, for the checks below. */
   gaps: number[];
 }
@@ -77,7 +79,10 @@ export function replay(layout: Layout, text: string, log: readonly LogEvent[], h
   );
   const stats = new SetStats();
   const marks: number[] = [];
+  const steps: GhostStep[] = [];
   const gaps: number[] = [];
+  // What a wrong key typed, as the page shows it: the key's own character, or a stand-in when no key of the layout types it.
+  const labelOf = (code: string, shift: boolean): string => (code && layout.strokeLabel({ code, shift })) || UNKNOWN_KEY;
   let cursor = 0;
   let typos = 0;
   let time = 0;
@@ -89,6 +94,7 @@ export function replay(layout: Layout, text: string, log: readonly LogEvent[], h
       if (typos === 0) continue;
       typos = flag ? 0 : typos - 1;
       stats.pace(time);
+      steps.push({ at: time, kind: flag ? 'clear' : 'erase', label: '' });
       continue;
     }
     if (previous !== null) gaps.push(time - previous);
@@ -96,16 +102,21 @@ export function replay(layout: Layout, text: string, log: readonly LogEvent[], h
     if (hardcore && typos > 0) {
       stats.miss(time);
       typos = Math.min(MAX_TYPOS, typos + 1);
+      steps.push({ at: time, kind: 'stick', label: labelOf(code, flag === 1) });
       continue;
     }
     const note = notes[cursor];
     if (note.code === code && note.shift === (flag === 1)) {
       stats.hit(time, note.last);
-      if (note.last) marks.push(time);
+      if (note.last) {
+        marks.push(time);
+        steps.push({ at: time, kind: 'char', label: '' });
+      }
       cursor++;
     } else {
       stats.miss(time);
       if (hardcore) typos = Math.min(MAX_TYPOS, typos + 1);
+      steps.push({ at: time, kind: hardcore ? 'stick' : 'flash', label: labelOf(code, flag === 1) });
     }
   }
   return {
@@ -117,6 +128,7 @@ export function replay(layout: Layout, text: string, log: readonly LogEvent[], h
     wrong: stats.wrong,
     activeMs: stats.activeMs,
     marks,
+    steps,
     gaps,
   };
 }
@@ -153,34 +165,77 @@ export const ranks = (run: Replay): boolean => run.acc >= RANK_ACCURACY && run.c
 
 // ---------- ghosts ----------
 
+/**
+ * One thing a ghost does, `at` ms after its first key: finishes the next character, types a
+ * wrong key that only flashes (`label` is what it typed), types one that sticks as a hardcore
+ * typo, or erases one typo or all of them.
+ */
+export interface GhostStep {
+  at: number;
+  kind: 'char' | 'flash' | 'stick' | 'erase' | 'clear';
+  label: string;
+}
+
+/** What a ghost shows for a wrong key no key of its layout types, such as one from a phone's own keyboard. */
+const UNKNOWN_KEY = '?';
+
 const B64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
+/** The sign before a step that is not a finished character. None of them is a base64 digit. */
+const SIGN: Record<Exclude<GhostStep['kind'], 'char'>, string> = { flash: '~', stick: '!', erase: '<', clear: '|' };
+const KIND_OF_SIGN = new Map(Object.entries(SIGN).map(([kind, sign]) => [sign, kind as GhostStep['kind']]));
 
 /**
- * A ghost: when each character of a run was finished. Stored as the gaps between them in
- * tens of ms, two base64 characters per gap (up to 40.95 s), so a 60-word run fits in under a kilobyte.
+ * A ghost as one short string, the lightest form that still replays the run key by key.
+ * Each step is the gap before it in tens of ms, two base64 digits (up to 40.95 s): a finished
+ * character is the two digits alone, so a clean 60-word run stays under a kilobyte. A wrong
+ * key that flashed is `~`, the gap and the character it typed; one that stuck is `!`, the gap
+ * and the character; an erase is `<` and the gap; an erase of every typo `|` and the gap.
+ * Ghosts saved before wrong keys were kept hold characters only, and still play.
  */
-export function encodeGhost(marks: readonly number[]): string {
+export function encodeGhost(steps: readonly GhostStep[]): string {
   let out = '';
   let previous = 0;
-  for (const mark of marks) {
-    const gap = Math.min(4095, Math.max(0, Math.round((mark - previous) / 10)));
+  for (const step of steps) {
+    const gap = Math.min(4095, Math.max(0, Math.round((step.at - previous) / 10)));
     previous += gap * 10;
-    out += B64[gap >> 6] + B64[gap & 63];
+    const digits = B64[gap >> 6] + B64[gap & 63];
+    if (step.kind === 'char') out += digits;
+    else if (step.kind === 'flash' || step.kind === 'stick') out += SIGN[step.kind] + digits + String.fromCodePoint(step.label.codePointAt(0) ?? UNKNOWN_KEY.charCodeAt(0));
+    else out += SIGN[step.kind] + digits;
   }
   return out;
 }
 
-export function decodeGhost(ghost: string): number[] {
+/** A ghost read back: its steps, and when each character was finished, for the bars. */
+export interface GhostTrack {
+  steps: GhostStep[];
+  marks: number[];
+}
+
+export function decodeGhost(ghost: string): GhostTrack {
+  const steps: GhostStep[] = [];
   const marks: number[] = [];
   let time = 0;
-  for (let i = 0; i + 1 < ghost.length; i += 2) {
+  let i = 0;
+  while (i < ghost.length) {
+    const kind = KIND_OF_SIGN.get(ghost[i]) ?? 'char';
+    if (kind !== 'char') i++;
     const high = B64.indexOf(ghost[i]);
     const low = B64.indexOf(ghost[i + 1]);
     if (high < 0 || low < 0) break;
+    i += 2;
     time += ((high << 6) | low) * 10;
-    marks.push(time);
+    let label = '';
+    if (kind === 'flash' || kind === 'stick') {
+      const point = ghost.codePointAt(i);
+      if (point === undefined) break;
+      label = String.fromCodePoint(point);
+      i += label.length;
+    }
+    steps.push({ at: time, kind, label });
+    if (kind === 'char') marks.push(time);
   }
-  return marks;
+  return { steps, marks };
 }
 
 /** How many characters a ghost had finished `ms` after its first key. */
@@ -193,4 +248,35 @@ export function ghostAt(marks: readonly number[], ms: number): number {
     else high = mid;
   }
   return low;
+}
+
+/** How long a ghost's wrong key stays in sight when it did not stick. */
+export const GHOST_FLASH_MS = 520;
+
+/** A ghost at one moment, as the text draws it. */
+export interface GhostView {
+  /** Characters finished: its caret is on the next one. */
+  done: number;
+  /** Its hardcore typos, oldest first, waiting at the caret for their erase. */
+  typos: string[];
+  /** Its last wrong key that only flashed, while still in sight: what it typed, on which character, and when. */
+  flash: { label: string; cell: number; at: number } | null;
+}
+
+/** Plays a ghost's steps up to `ms` after its first key. */
+export function ghostView(track: GhostTrack, ms: number): GhostView {
+  let done = 0;
+  let typos: string[] = [];
+  let flash: GhostView['flash'] = null;
+  for (const step of track.steps) {
+    if (step.at > ms) break;
+    if (step.kind === 'char') done++;
+    else if (step.kind === 'flash') flash = { label: step.label, cell: done, at: step.at };
+    else if (step.kind === 'stick') {
+      if (typos.length < MAX_TYPOS) typos = [...typos, step.label];
+    } else if (step.kind === 'erase') typos = typos.slice(0, -1);
+    else typos = [];
+  }
+  if (flash && ms - flash.at >= GHOST_FLASH_MS) flash = null;
+  return { done, typos, flash };
 }

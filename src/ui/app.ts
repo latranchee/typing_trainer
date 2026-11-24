@@ -20,6 +20,8 @@ import {
   tunnelAmount,
 } from '../core/hardcore';
 import type { KeyTally } from '../core/history';
+import type { Curve } from '../core/centile';
+import { centileFigure, centileOf, isCurve, STUDY } from '../core/centile';
 import { WORDS } from '../core/corpus';
 import type { FontFeature } from '../core/font';
 import { AXES, FONT_FEATURES, featureOn, setFeature } from '../core/font';
@@ -32,7 +34,8 @@ import { getLayout, LAYOUTS } from '../core/layouts';
 import { intervalToWpm, MIN_SAMPLES, PairWatch, RollingWpm, SetStats } from '../core/metrics';
 import type { InputKind, Mode, RankedDrill, RoomConfig, RoomState, RunAnswer, TextInfo } from '../core/online';
 import { modeOf, RANKED_DRILLS } from '../core/online';
-import { decodeGhost, ghostAt, KeyLog } from '../core/replay';
+import type { GhostTrack, GhostView } from '../core/replay';
+import { decodeGhost, ghostAt, ghostView, KeyLog } from '../core/replay';
 import type { Board, Row } from '../core/physical';
 import { boardOf, BOARDS } from '../core/physical';
 import { dayStreak, fingerGain, HOT_BASE, isAhead, isHot, setVerdict, Streak, STREAK_SHOWN_FROM, streakHeat, streakKey } from '../core/rewards';
@@ -365,9 +368,13 @@ export class App implements DrillHost {
   private charsTotal = 0;
   /** True when a key of the set came from the phone's own keyboard: the set ranks among phone sets. */
   private softSet = false;
+  /** The trainer's own percentile curves, by drill, kind of text and input: null while there is none to use. */
+  private curves = new Map<string, Curve | null>();
   /** The fixed text as the server knows it: who typed it and the runs that are its ghosts. */
   private textInfo: TextInfo | null = null;
-  private ghostRuns: { name: string; wpm: number; marks: number[] }[] = [];
+  private ghostRuns: { name: string; wpm: number; track: GhostTrack }[] = [];
+  /** A race's ghosts, read once each: the room sends them as strings with every state. */
+  private raceTracks = new Map<string, GhostTrack>();
   /** The set just finished, once the server knows its text. */
   private lastText: { id: string; set: SetText } | null = null;
   private strip = new Strip();
@@ -452,6 +459,8 @@ export class App implements DrillHost {
     requestAnimationFrame(this.frame);
 
     this.online.onChange(() => this.onAccount());
+    // Once the server answers, the curve for the set on screen is asked for, so its result can use it.
+    this.online.onChange(() => void this.ownCurve(this.guessInput));
     this.onAccount();
     new ResizeObserver(() => this.root.style.setProperty('--strip-h', `${this.strip.shown ? this.strip.root.offsetHeight : 0}px`)).observe(this.strip.root);
     const launch = readLaunch(location.search);
@@ -623,6 +632,7 @@ export class App implements DrillHost {
     // A record is only called one when it is being kept.
     const badge = (text: string, earned: boolean): HTMLElement | null => (earned ? el('span.result-best', {}, text) : null);
     const rows: (Node | string)[] = [
+      ...this.centileRow(stats.wpm),
       el('dt', {}, t.result.accuracy),
       el('dd', {}, `${Math.round(stats.accuracy * 100)}%`, badge(t.result.clean, stats.wrong === 0 && stats.correct > 0)),
       el('dt', {}, t.result.bestStreak),
@@ -1344,6 +1354,7 @@ export class App implements DrillHost {
     // The break between two sets is not typing: the rolling rate starts over with the new text.
     this.rolling.reset();
     this.drill.restart();
+    this.ownCurve(this.guessInput);
     this.freshLog();
     this.resetHardcore();
     this.primeGlow();
@@ -1678,6 +1689,54 @@ export class App implements DrillHost {
     return this.softSet ? 'touch' : 'keys';
   }
 
+  /** The input a set about to start will most likely come in by: a set's own is known once its first key lands. */
+  private get guessInput(): InputKind {
+    return this.softSet || this.touchScreen.matches ? 'touch' : 'keys';
+  }
+
+  /**
+   * The trainer's own percentile curve for the set on screen, once the server has one. Asked for once
+   * per kind of set and page, as a set starts; a failed ask is not repeated, and the study stands in.
+   */
+  private ownCurve(input: InputKind): Curve | null {
+    const drill = this.rankedDrill;
+    const kind = this.drill.current?.()?.kind;
+    if (!drill || !kind || !this.online.available) return null;
+    const key = `${drill}|${kind}|${input}`;
+    if (!this.curves.has(key)) {
+      this.curves.set(key, null);
+      api.centiles(drill, kind, input).then(
+        (answer) => this.curves.set(key, isCurve(answer.curve) ? answer.curve : null),
+        () => undefined,
+      );
+    }
+    return this.curves.get(key) ?? null;
+  }
+
+  /**
+   * The set's percentile, first in the result's list: against the trainer's own typists once it has
+   * enough of them on this kind of set, against a published study until then. The drills that type
+   * text have one; the anchors' taps are no typing speed a study measured.
+   */
+  private centileRow(wpm: number): Node[] {
+    if (!RANKED_DRILLS.includes(this.drill.id as RankedDrill) || !(wpm > 0)) return [];
+    const input = this.inputKind;
+    const centile = centileOf(wpm, input, this.ownCurve(input));
+    const shown = t.result.centileFigure(centileFigure(centile.share));
+    const here = centile.source === 'here';
+    // A study's count is given in thousands, as its authors give it.
+    const typists = here ? centile.typists : Math.floor(centile.typists / 1000) * 1000;
+    return [
+      el('dt', {}, t.result.centile),
+      el(
+        'dd.result-centile',
+        { title: t.result.centileTitle(shown) },
+        el('span.result-centile-figure', {}, shown),
+        el('span.result-centile-of', {}, t.result.centileOf(typists, here ? null : STUDY[input].year, input === 'touch')),
+      ),
+    ];
+  }
+
   /** The drill a set ranks in, or null: anchors, stats and a locked highway tempo do not rank. */
   private get rankedDrill(): RankedDrill | null {
     const id = this.drill.id;
@@ -1831,7 +1890,7 @@ export class App implements DrillHost {
   }
 
   /** Up to three ghosts: the best run, the one just ahead of the typist's own, and their own best. */
-  private pickGhosts(info: TextInfo): { name: string; wpm: number; marks: number[] }[] {
+  private pickGhosts(info: TextInfo): { name: string; wpm: number; track: GhostTrack }[] {
     const me = this.online.account?.handle ?? null;
     const others = info.runs.filter((run) => run.handle !== me);
     const picked = new Set<(typeof info.runs)[number]>();
@@ -1841,8 +1900,8 @@ export class App implements DrillHost {
       if (ahead) picked.add(ahead);
     } else if (others[1]) picked.add(others[1]);
     if (others[2] && picked.size < 2) picked.add(others[2]);
-    const ghosts = [...picked].sort((a, b) => b.wpm - a.wpm).map((run) => ({ name: run.handle, wpm: run.wpm, marks: decodeGhost(run.ghost) }));
-    if (info.mine) ghosts.push({ name: o.yourBest, wpm: info.mine.wpm, marks: decodeGhost(info.mine.ghost) });
+    const ghosts = [...picked].sort((a, b) => b.wpm - a.wpm).map((run) => ({ name: run.handle, wpm: run.wpm, track: decodeGhost(run.ghost) }));
+    if (info.mine) ghosts.push({ name: o.yourBest, wpm: info.mine.wpm, track: decodeGhost(info.mine.ghost) });
     return ghosts.slice(0, 3);
   }
 
@@ -1917,24 +1976,39 @@ export class App implements DrillHost {
           waiting: racer.waiting,
         });
       }
+      const views: GhostView[] = [];
       state.ghosts.forEach((ghost, i) => {
-        lanes.push({ id: `ghost-${i}`, name: ghost.handle, kind: 'ghost', done: ghostAt(decodeGhost(ghost.ghost), ms), total, wpm: ghost.wpm, place: null });
+        const track = this.raceTrack(ghost.ghost);
+        views.push(ghostView(track, ms));
+        lanes.push({ id: `ghost-${i}`, name: ghost.handle, kind: 'ghost', done: ghostAt(track.marks, ms), total, wpm: ghost.wpm, place: null });
       });
+      // The ghosts type in the text too, once it is this round's on screen.
+      if (!this.resultOpen && this.raceRound === state.round) this.drill.ghosts?.(views);
     } else if (this.fixed && this.textInfo) {
       // A ghost waits for the typist's first key, then types as it did.
       const ms = this.logStart === null ? 0 : this.resultOpen ? Number.POSITIVE_INFINITY : now - this.logStart;
       lanes.push({ id: 'you', name, kind: 'you', done: this.charsDone, total, wpm: this.resultOpen ? this.stats.wpm : null, place: null });
-      const positions: number[] = [];
+      const views: GhostView[] = [];
       this.ghostRuns.forEach((ghost, i) => {
-        const done = ghostAt(ghost.marks, ms);
-        positions.push(done);
-        lanes.push({ id: `ghost-${i}`, name: ghost.name, kind: 'ghost', done, total, wpm: ghost.wpm, place: null });
+        views.push(ghostView(ghost.track, ms));
+        lanes.push({ id: `ghost-${i}`, name: ghost.name, kind: 'ghost', done: ghostAt(ghost.track.marks, ms), total, wpm: ghost.wpm, place: null });
       });
-      if (!this.resultOpen) this.drill.ghosts?.(positions.filter((done) => done < total));
+      if (!this.resultOpen) this.drill.ghosts?.(views);
     } else {
       return;
     }
     this.strip.set(lanes);
+  }
+
+  /** A race ghost's steps, read from its string the first time the room sends it. */
+  private raceTrack(ghost: string): GhostTrack {
+    let track = this.raceTracks.get(ghost);
+    if (!track) {
+      if (this.raceTracks.size >= 12) this.raceTracks.clear();
+      track = decodeGhost(ghost);
+      this.raceTracks.set(ghost, track);
+    }
+    return track;
   }
 
   // ---------- races ----------

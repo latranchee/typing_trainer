@@ -1,6 +1,6 @@
 import { isLang } from '../src/core/lang';
-import type { InputKind, RoomConfig, RunSubmit } from '../src/core/online';
-import { ROOM_CODE } from '../src/core/online';
+import type { InputKind, RankedDrill, RoomConfig, RunSubmit } from '../src/core/online';
+import { RANKED_DRILLS, ROOM_CODE } from '../src/core/online';
 import type { TextKind } from '../src/core/texts';
 import { isTrainerText, TEXT_ID, TEXT_KINDS } from '../src/core/texts';
 import { accountOf, deleteAccount, readProfile, suggestKeyboards, updateAccount, writeProfile } from './account';
@@ -8,7 +8,7 @@ import { clearCookie, finishSignIn, requireUser, session, signOut, startSignIn }
 import { database } from './db';
 import type { Env } from './env';
 import { checkOrigin, clientIp, HttpError, json, limit, randomFrom, readJson } from './http';
-import { boardQuery, checkSubmit, isKeyboardGroup, keyboardBoard, playerBoard, popularTexts, recordRun, saveText, textInfo } from './runs';
+import { boardQuery, centileCurve, checkSubmit, isKeyboardGroup, keyboardBoard, playerBoard, popularTexts, recordRun, saveText, textInfo } from './runs';
 
 export { RaceRoom } from './room';
 
@@ -74,6 +74,14 @@ async function api(request: Request, env: Env, url: URL): Promise<Response> {
       return json({ rows: await popularTexts(db, query.drill === 'highway' ? 'highway' : 'line', query.input, isLang(lang) ? lang : 'all') }, cache);
     }
     return json({ rows: await playerBoard(db, query) }, cache);
+  }
+  if (path === '/centiles' && method === 'GET') {
+    const drill = url.searchParams.get('drill') as RankedDrill;
+    const kind = url.searchParams.get('kind') as TextKind;
+    if (!RANKED_DRILLS.includes(drill) || !TEXT_KINDS.includes(kind)) throw new HttpError(400, 'bad-centiles');
+    const input: InputKind = url.searchParams.get('input') === 'touch' ? 'touch' : 'keys';
+    // A curve of hundreds of typists moves slowly: an hour in the browser's cache is fresh enough.
+    return json(await centileCurve(db, drill, kind, input), { headers: { 'cache-control': 'public, max-age=3600' } });
   }
   const textMatch = path.match(/^\/texts\/([a-z2-9]{12})$/);
   if (textMatch && method === 'GET') {

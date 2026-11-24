@@ -160,6 +160,13 @@ export const es: Strings = {
     gain: 'mayor progreso',
     gainValue: (finger, wpm, gain) => `${esFinger(finger)}, ${wpm} ppm, ${gain} más que su media`,
     days: (count) => `${count} días seguidos`,
+    centile: 'percentil',
+    centileFigure: (figure) => (figure < 1 ? 'menos de 1' : String(figure).replace('.', ',')),
+    centileOf: (typists, study, phone) =>
+      study === null
+        ? `de ${typists.toLocaleString('es-ES')} mecanógrafos en petitdoigt`
+        : `de ${typists.toLocaleString('es-ES')} mecanógrafos${phone ? ' en móvil' : ''} · estudio\u00a0aalto,\u00a0${study}`,
+    centileTitle: (figure) => `más rápido que el ${figure}% de ellos`,
   },
 
   options: {

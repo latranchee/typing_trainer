@@ -2,6 +2,8 @@ import { fingerKind } from '../core/fingers';
 import { makePairs, makeSentences, makeWords } from '../core/generator';
 import { t } from '../core/i18n';
 import type { KeyEvt } from '../core/input';
+import type { GhostView } from '../core/replay';
+import { GHOST_FLASH_MS } from '../core/replay';
 import { el, flash } from '../ui/dom';
 import type { Drill, DrillHost, Note, OptionGroup, SetText } from './types';
 import { languageOption, matches, toggleOption, toNotes } from './types';
@@ -26,6 +28,8 @@ export class LineDrill implements Drill {
   /** One element per character, in order: where the ghosts' carets go. */
   private chars: HTMLElement[] = [];
   private ghosted: HTMLElement[] = [];
+  /** One per ghost: the wrong keys it typed, over its caret, as it typed them. */
+  private ghostKeys: { root: HTMLElement; shown: string; at: number }[] = [];
   private set: SetText | null = null;
   private cursor = 0;
   private total = 0;
@@ -66,6 +70,7 @@ export class LineDrill implements Drill {
     this.cells = [];
     this.chars = [];
     this.ghosted = [];
+    this.ghostKeys = [];
     this.cursor = 0;
     this.done = false;
     this.here = null;
@@ -176,12 +181,52 @@ export class LineDrill implements Drill {
     return this.set;
   }
 
-  ghosts(positions: readonly number[]): void {
-    const cells = positions.map((done) => this.chars[done]).filter((cell): cell is HTMLElement => cell !== undefined);
-    if (cells.length === this.ghosted.length && cells.every((cell, i) => cell === this.ghosted[i])) return;
-    for (const cell of this.ghosted) cell.classList.remove('is-ghost');
-    for (const cell of cells) cell.classList.add('is-ghost');
-    this.ghosted = cells;
+  ghosts(views: readonly GhostView[]): void {
+    // A ghost past the last character has no caret left to show.
+    const cells = views.map((view) => this.chars[view.done]).filter((cell): cell is HTMLElement => cell !== undefined);
+    if (cells.length !== this.ghosted.length || cells.some((cell, i) => cell !== this.ghosted[i])) {
+      for (const cell of this.ghosted) cell.classList.remove('is-ghost');
+      for (const cell of cells) cell.classList.add('is-ghost');
+      this.ghosted = cells;
+    }
+    const count = Math.max(views.length, this.ghostKeys.length);
+    for (let i = 0; i < count; i++) this.ghostKeysOf(i, views[i]);
+  }
+
+  /**
+   * A ghost's wrong keys, over the letter it was on: one that flashed shows for a moment and
+   * fades, as the typist's own does; hardcore typos stay until the ghost erases them.
+   */
+  private ghostKeysOf(i: number, view: GhostView | undefined): void {
+    const slot = (this.ghostKeys[i] ??= { root: el('span.ghost-keys', { 'aria-hidden': 'true' }), shown: '', at: -1 });
+    const stuck = view !== undefined && view.typos.length > 0;
+    const flash = !stuck && view?.flash ? view.flash : null;
+    const labels = stuck ? view.typos : flash ? [flash.label] : [];
+    const cell = stuck ? this.chars[view.done] : flash ? this.chars[flash.cell] : undefined;
+    if (!cell || labels.length === 0) {
+      slot.root.remove();
+      slot.at = -1;
+      return;
+    }
+    if (!slot.root.isConnected) this.text.append(slot.root);
+    const shown = `${stuck ? '!' : '~'}${labels.join('')}`;
+    if (shown !== slot.shown) {
+      slot.shown = shown;
+      slot.root.replaceChildren(...labels.map((label) => (label === ' ' ? el('span.ghost-key.sp') : el('span.ghost-key', {}, label))));
+      slot.root.classList.toggle('is-stuck', stuck);
+    }
+    const left = `${cell.offsetLeft}px`;
+    const top = `${cell.offsetTop}px`;
+    if (slot.root.style.left !== left) slot.root.style.left = left;
+    if (slot.root.style.top !== top) slot.root.style.top = top;
+    if (flash && flash.at !== slot.at) {
+      slot.at = flash.at;
+      for (const running of slot.root.getAnimations()) running.cancel();
+      slot.root.animate([{ opacity: 1 }, { opacity: 1, offset: 0.5 }, { opacity: 0 }], { duration: GHOST_FLASH_MS, easing: 'ease-in', fill: 'forwards' });
+    } else if (stuck && slot.at !== -1) {
+      slot.at = -1;
+      for (const running of slot.root.getAnimations()) running.cancel();
+    }
   }
 
   typos(typed: readonly string[]): void {

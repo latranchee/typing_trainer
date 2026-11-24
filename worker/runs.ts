@@ -24,6 +24,8 @@ import type { TextKind } from '../src/core/texts';
 import { isTrainerText, MAX_TEXT, TEXT_ID, TEXT_KINDS, textId } from '../src/core/texts';
 import type { User } from './auth';
 import { HttpError } from './http';
+import type { CentileAnswer } from '../src/core/centile';
+import { curveOf, OWN_MIN_SETS, OWN_RECENT, OWN_TYPISTS } from '../src/core/centile';
 
 /** Longest log taken: a 60-word set with every key missed once over, and room to spare. */
 const MAX_EVENTS = 6000;
@@ -118,7 +120,7 @@ export async function recordRun(db: D1Database, user: User, submit: RunSubmit, r
       user.kb_model,
       user.kb_switch,
       user.kb_size,
-      encodeGhost(run.marks),
+      encodeGhost(run.steps),
       Date.now(),
     )
     .run();
@@ -243,4 +245,23 @@ export async function popularTexts(db: D1Database, mode: 'line' | 'highway', inp
     .bind(mode, input, mode, input, ...(lang === 'all' ? [] : [lang]))
     .all<TextRow>();
   return results;
+}
+
+/**
+ * The trainer's own curve for one drill, kind of text and input: each typist once, with the
+ * average of their latest ranked sets of that kind. The curve is sent only once enough typists
+ * have enough sets; until then the page holds a set against a study.
+ */
+export async function centileCurve(db: D1Database, drill: RankedDrill, kind: TextKind, input: InputKind): Promise<CentileAnswer> {
+  const { results } = await db
+    .prepare(
+      `SELECT AVG(wpm) AS w FROM (
+         SELECT user_id, wpm, ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY created_at DESC) AS n
+         FROM runs WHERE drill = ? AND kind = ? AND input = ? AND ranked = 1
+       ) WHERE n <= ? GROUP BY user_id HAVING COUNT(*) >= ?`,
+    )
+    .bind(drill, kind, input, OWN_RECENT, OWN_MIN_SETS)
+    .all<{ w: number }>();
+  const averages = results.map((row) => row.w);
+  return { typists: averages.length, curve: averages.length >= OWN_TYPISTS ? curveOf(averages) : null };
 }
