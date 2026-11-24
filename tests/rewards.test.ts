@@ -192,13 +192,17 @@ describe('finger gain', () => {
 });
 
 describe('key sounds', () => {
-  it('starts silent and keeps a saved switch', () => {
-    expect(DEFAULT_SETTINGS.keySound).toBe('off');
+  it('starts on Gateron Black Ink and keeps a saved switch, silent included', () => {
+    expect(DEFAULT_SETTINGS.keySound).toBe('blackink');
     const storage = memory();
     const store = new Store(storage, 'en');
+    expect(store.settings.keySound).toBe('blackink');
     store.update({ keySound: 'mxbrown' });
     store.flush();
     expect(new Store(storage, 'en').settings.keySound).toBe('mxbrown');
+    store.update({ keySound: 'off' });
+    store.flush();
+    expect(new Store(storage, 'en').settings.keySound).toBe('off');
   });
 
   it('drops a switch it does not know', () => {
@@ -206,7 +210,7 @@ describe('key sounds', () => {
     const store = new Store(storage, 'en');
     store.update({ keySound: 'gamer-rgb' as never });
     store.flush();
-    expect(new Store(storage, 'en').settings.keySound).toBe('off');
+    expect(new Store(storage, 'en').settings.keySound).toBe(DEFAULT_SETTINGS.keySound);
   });
 
   it('plays each row of the board its own press, and the big keys theirs where the set has them', () => {

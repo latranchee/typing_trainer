@@ -98,8 +98,8 @@ export const DEFAULT_SETTINGS: Settings = {
   floor: 0,
   difficulty: DEFAULT_DIFFICULTY,
   sound: true,
-  // Silent until the typist picks a switch: a page does not start clicking on its own.
-  keySound: 'off',
+  // A first visit starts on Gateron Black Ink: the keys sound from the first stroke, `silent` is one pick away.
+  keySound: 'blackink',
   fontWeight: AXES.weight.base,
   fontRound: AXES.round.base,
   fontOptical: null,
