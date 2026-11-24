@@ -5,11 +5,30 @@
     "country": "GB",
     "founded": 2004,
     "official_url": "https://fnatic.com/",
-    "focus": ["gaming"],
+    "focus": [
+      "gaming"
+    ],
     "about": "London-based esports organisation that sold its own Fnatic Gear keyboards, mice and headsets. On 2026-11-23 every keyboard in its store was sold out or marked no longer available for sale.",
     "sources": [
-      { "title": "Wikipedia: Fnatic", "url": "https://en.wikipedia.org/wiki/Fnatic", "kind": "reference", "backs": ["founded", "country"], "checked": "2026-11-23" },
-      { "title": "Fnatic: Keyboards collection", "url": "https://fnatic.com/collections/keyboards", "kind": "official", "backs": ["about"], "checked": "2026-11-23" }
+      {
+        "title": "Wikipedia: Fnatic",
+        "url": "https://en.wikipedia.org/wiki/Fnatic",
+        "kind": "reference",
+        "backs": [
+          "founded",
+          "country"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Fnatic: Keyboards collection",
+        "url": "https://fnatic.com/collections/keyboards",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
     ]
   },
   "keyboards": [
@@ -17,36 +36,61 @@
       "id": "fnatic-ministreak",
       "brand": "fnatic",
       "model": "miniSTREAK",
-      "aka": ["MiniStreak", "miniSTREAK RGB Tenkeyless"],
+      "aka": [
+        "MiniStreak",
+        "miniSTREAK RGB Tenkeyless"
+      ],
       "status": "discontinued",
       "released": null,
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": null,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Kailh Speed Silver", "id": null },
-        { "name": "Cherry MX Silent Red", "id": null },
-        { "name": "Cherry MX Red", "id": null },
-        { "name": "Cherry MX Blue", "id": null },
-        { "name": "Cherry MX Brown", "id": null }
+        {
+          "name": "Kailh Speed Silver",
+          "id": "kailh-speed-silver"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "aluminum, polycarbonate",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "Fnatic OP",
       "os": [],
       "price_usd": null,
@@ -54,13 +98,57 @@
       "price_url": null,
       "official_url": "https://fnatic.com/products/mini-streak-rgb-tenkeyless-speed-silver",
       "reviews": [
-        { "outlet": "RTINGS", "url": "https://www.rtings.com/keyboard/reviews/fnatic/ministreak", "date": "2021-05-05", "score": null, "verdict": "Well-built TKL with macro-programmable keys and RGB; latency is not the lowest and there is no wrist rest or wireless mode." },
-        { "outlet": "TechRadar", "url": "https://www.techradar.com/reviews/fnatic-mini-streak-rgb-speed-edition", "date": "2020-11-04", "score": "4/5", "verdict": "Speed Silver switches feel great in a clean tenkeyless body, though the extra buttons are hard to reach and it suits gaming over typing." }
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/fnatic/ministreak",
+          "date": "2021-05-05",
+          "score": null,
+          "verdict": "Well-built TKL with macro-programmable keys and RGB; latency is not the lowest and there is no wrist rest or wireless mode."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/fnatic-mini-streak-rgb-speed-edition",
+          "date": "2020-11-04",
+          "score": "4/5",
+          "verdict": "Speed Silver switches feel great in a clean tenkeyless body, though the extra buttons are hard to reach and it suits gaming over typing."
+        }
       ],
       "sources": [
-        { "title": "Fnatic: MiniStreak Speed (Speed Silver)", "url": "https://fnatic.com/products/mini-streak-rgb-tenkeyless-speed-silver", "kind": "official", "backs": ["size", "layout_standards", "switches", "connectivity", "case_material", "software", "status"], "checked": "2026-11-23" },
-        { "title": "Fnatic: MiniStreak Silent (Silent Red)", "url": "https://www.fnatic.com/products/mini-streak-rgb-tenkeyless-silent-red", "kind": "official", "backs": ["switches", "layout_standards", "status"], "checked": "2026-11-23" },
-        { "title": "RTINGS: Fnatic miniSTREAK review", "url": "https://www.rtings.com/keyboard/reviews/fnatic/ministreak", "kind": "review", "backs": ["switches"], "checked": "2026-11-23" }
+        {
+          "title": "Fnatic: MiniStreak Speed (Speed Silver)",
+          "url": "https://fnatic.com/products/mini-streak-rgb-tenkeyless-speed-silver",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "connectivity",
+            "case_material",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Fnatic: MiniStreak Silent (Silent Red)",
+          "url": "https://www.fnatic.com/products/mini-streak-rgb-tenkeyless-silent-red",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "layout_standards",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Fnatic miniSTREAK review",
+          "url": "https://www.rtings.com/keyboard/reviews/fnatic/ministreak",
+          "kind": "review",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Fnatic sold a Kailh Speed Silver and a Cherry MX Silent Red version; both pages say the product is no longer available for sale. RTINGS notes an earlier version with a wrist rest and Cherry MX Red, Blue and Brown switches."
     },
@@ -68,7 +156,9 @@
       "id": "fnatic-streak",
       "brand": "fnatic",
       "model": "STREAK",
-      "aka": ["STREAK RGB"],
+      "aka": [
+        "STREAK RGB"
+      ],
       "status": "discontinued",
       "released": null,
       "kind": "prebuilt",
@@ -81,21 +171,34 @@
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX Blue", "id": null },
-        { "name": "Cherry MX Brown", "id": null },
-        { "name": "Cherry MX Red", "id": null }
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": null,
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": null,
       "os": [],
       "price_usd": null,
@@ -103,11 +206,34 @@
       "price_url": null,
       "official_url": null,
       "reviews": [
-        { "outlet": "PCWorld", "url": "https://www.pcworld.com/article/402257/fnatic-streak-rgb-review-esports-gaming-keyboard.html", "date": "2018-08-17", "score": "4.5/5", "verdict": "Genuine Cherry MX switches and full RGB at a low price, with front-printed function labels; the volume wheel is small." }
+        {
+          "outlet": "PCWorld",
+          "url": "https://www.pcworld.com/article/402257/fnatic-streak-rgb-review-esports-gaming-keyboard.html",
+          "date": "2018-08-17",
+          "score": "4.5/5",
+          "verdict": "Genuine Cherry MX switches and full RGB at a low price, with front-printed function labels; the volume wheel is small."
+        }
       ],
       "sources": [
-        { "title": "PCWorld: Fnatic Streak RGB review", "url": "https://www.pcworld.com/article/402257/fnatic-streak-rgb-review-esports-gaming-keyboard.html", "kind": "review", "backs": ["size", "switches"], "checked": "2026-11-23" },
-        { "title": "Fnatic: Keyboards collection (STREAK no longer listed)", "url": "https://fnatic.com/collections/keyboards", "kind": "official", "backs": ["status"], "checked": "2026-11-23" }
+        {
+          "title": "PCWorld: Fnatic Streak RGB review",
+          "url": "https://www.pcworld.com/article/402257/fnatic-streak-rgb-review-esports-gaming-keyboard.html",
+          "kind": "review",
+          "backs": [
+            "size",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Fnatic: Keyboards collection (STREAK no longer listed)",
+          "url": "https://fnatic.com/collections/keyboards",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Full-size model with Cherry MX switches. Fnatic's store no longer lists it, so the specs here come from PCWorld's review."
     },
@@ -121,26 +247,36 @@
       "kind": "prebuilt",
       "size": "65",
       "key_count": null,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": true,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "proprietary",
       "hot_swap": "none",
       "switches": [
-        { "name": "Fnatic Speed low profile", "id": null }
+        {
+          "name": "Fnatic Speed low profile",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "aluminum",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "Fnatic OP",
       "os": [],
       "price_usd": null,
@@ -148,11 +284,40 @@
       "price_url": null,
       "official_url": "https://fnatic.com/products/streak-65-ultra-compact-esports-keyboard",
       "reviews": [
-        { "outlet": "Windows Central", "url": "https://www.windowscentral.com/fnatic-streak65-review", "date": "2020-12-22", "score": null, "verdict": "Compact, well-built 65% board with fast low-profile switches and even RGB; pricey, and the matte keycaps collect fingerprints." }
+        {
+          "outlet": "Windows Central",
+          "url": "https://www.windowscentral.com/fnatic-streak65-review",
+          "date": "2020-12-22",
+          "score": null,
+          "verdict": "Compact, well-built 65% board with fast low-profile switches and even RGB; pricey, and the matte keycaps collect fingerprints."
+        }
       ],
       "sources": [
-        { "title": "Fnatic: STREAK65", "url": "https://fnatic.com/products/streak-65-ultra-compact-esports-keyboard", "kind": "official", "backs": ["size", "layout_standards", "low_profile", "switches", "case_material", "software", "status"], "checked": "2026-11-23" },
-        { "title": "Windows Central: Fnatic STREAK65 review", "url": "https://www.windowscentral.com/fnatic-streak65-review", "kind": "review", "backs": ["polling_rate_hz", "connectivity"], "checked": "2026-11-23" }
+        {
+          "title": "Fnatic: STREAK65",
+          "url": "https://fnatic.com/products/streak-65-ultra-compact-esports-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "low_profile",
+            "switches",
+            "case_material",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Windows Central: Fnatic STREAK65 review",
+          "url": "https://www.windowscentral.com/fnatic-streak65-review",
+          "kind": "review",
+          "backs": [
+            "polling_rate_hz",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Fnatic describes custom low-profile linear Fnatic Speed switches with 1.0 mm pre-travel, 3.2 mm total travel and a 45 g spring; it does not name the switch footprint. The page says the product is no longer available for sale."
     },
@@ -160,32 +325,44 @@
       "id": "fnatic-streak65-lp",
       "brand": "fnatic",
       "model": "STREAK65 LP",
-      "aka": ["Streak 65 LP"],
+      "aka": [
+        "Streak 65 LP"
+      ],
       "status": "discontinued",
       "released": null,
       "kind": "prebuilt",
       "size": "65",
       "key_count": null,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": true,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "choc-v2",
       "hot_swap": "none",
       "switches": [
-        { "name": "Fnatic Speed low profile", "id": null }
+        {
+          "name": "Fnatic Speed low profile",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "aluminum",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "Fnatic OP",
       "os": [],
       "price_usd": null,
@@ -193,12 +370,51 @@
       "price_url": null,
       "official_url": "https://fnatic.com/products/streak-65-lp-ultra-fast-low-profile-gaming-keyboard-black",
       "reviews": [
-        { "outlet": "TechRadar", "url": "https://www.techradar.com/reviews/fnatic-streak-65-lp", "date": "2022-08-08", "score": "4.5/5", "verdict": "Snappy low-profile switches, strong sound dampening and bright RGB in an aluminium 65% body; wired only, with limited software." }
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/fnatic-streak-65-lp",
+          "date": "2022-08-08",
+          "score": "4.5/5",
+          "verdict": "Snappy low-profile switches, strong sound dampening and bright RGB in an aluminium 65% body; wired only, with limited software."
+        }
       ],
       "sources": [
-        { "title": "Fnatic: STREAK65 LP - Black", "url": "https://fnatic.com/products/streak-65-lp-ultra-fast-low-profile-gaming-keyboard-black", "kind": "official", "backs": ["size", "layout_standards", "low_profile", "switches", "connectivity", "case_material", "software", "status"], "checked": "2026-11-23" },
-        { "title": "Fnatic: STREAK65 LP - White", "url": "https://fnatic.com/products/streak-65-lp-ultra-fast-low-profile-gaming-keyboard-white", "kind": "official", "backs": ["layout_standards", "status"], "checked": "2026-11-23" },
-        { "title": "TechRadar: Fnatic Streak 65 LP review", "url": "https://www.techradar.com/reviews/fnatic-streak-65-lp", "kind": "review", "backs": ["switch_footprint", "switches"], "checked": "2026-11-23" }
+        {
+          "title": "Fnatic: STREAK65 LP - Black",
+          "url": "https://fnatic.com/products/streak-65-lp-ultra-fast-low-profile-gaming-keyboard-black",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "low_profile",
+            "switches",
+            "connectivity",
+            "case_material",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Fnatic: STREAK65 LP - White",
+          "url": "https://fnatic.com/products/streak-65-lp-ultra-fast-low-profile-gaming-keyboard-white",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "TechRadar: Fnatic Streak 65 LP review",
+          "url": "https://www.techradar.com/reviews/fnatic-streak-65-lp",
+          "kind": "review",
+          "backs": [
+            "switch_footprint",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Sold in black and white with double-shot PBT keycaps and a coiled USB-C cable. TechRadar identifies the switches as Fnatic Speed Kailh Choc V2 orange; both Fnatic pages say the product is no longer available for sale."
     },
@@ -212,26 +428,35 @@
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": null,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": true,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "proprietary",
       "hot_swap": "none",
       "switches": [
-        { "name": "Fnatic Speed low profile", "id": null }
+        {
+          "name": "Fnatic Speed low profile",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "aluminum top, ABS bottom",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": null,
       "os": [],
       "price_usd": 129.99,
@@ -240,7 +465,23 @@
       "official_url": "https://fnatic.com/products/streak80-lp-white",
       "reviews": [],
       "sources": [
-        { "title": "Fnatic: STREAK80 LP - White US ANSI", "url": "https://fnatic.com/products/streak80-lp-white", "kind": "official", "backs": ["size", "layout_standards", "low_profile", "connectivity", "hot_swap", "switches", "case_material", "price_usd", "status"], "checked": "2026-11-23" }
+        {
+          "title": "Fnatic: STREAK80 LP - White US ANSI",
+          "url": "https://fnatic.com/products/streak80-lp-white",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "low_profile",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "price_usd",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "White, US ANSI only, with linear low-profile switches soldered to the PCB and a volume wheel. The price is the US MSRP Fnatic states; the page says the product is no longer available for sale."
     }

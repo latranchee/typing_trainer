@@ -147,7 +147,7 @@
       "switches": [
         {
           "name": "Lekker Tikken Medium",
-          "id": null
+          "id": "wooting-lekker-tikken-medium"
         }
       ],
       "adjustable_actuation": true,
@@ -375,7 +375,7 @@
       "switches": [
         {
           "name": "Lekker L60 V2",
-          "id": null
+          "id": "wooting-lekker-l60-v2"
         }
       ],
       "adjustable_actuation": true,
@@ -476,7 +476,7 @@
       "switches": [
         {
           "name": "Lekker Tikken Medium",
-          "id": null
+          "id": "wooting-lekker-tikken-medium"
         }
       ],
       "adjustable_actuation": true,

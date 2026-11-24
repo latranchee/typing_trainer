@@ -1,0 +1,237 @@
+{
+  "brand": {
+    "id": "keyboardio",
+    "name": "Keyboardio",
+    "country": "US",
+    "founded": 2014,
+    "official_url": "https://shop.keyboard.io/",
+    "focus": [
+      "ergonomic",
+      "premium"
+    ],
+    "about": "Keyboardio, founded in 2014 by Jesse Vincent and Kaia Dekker in Berkeley, California, makes the Model 100 split keyboard in a hardwood case and the compact Atreus, both running open-source firmware.",
+    "sources": [
+      {
+        "title": "Keyboardio: About Us",
+        "url": "https://shop.keyboard.io/pages/about",
+        "kind": "official",
+        "backs": [
+          "country",
+          "founded",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "keyboardio-atreus",
+      "brand": "keyboardio",
+      "model": "Atreus",
+      "aka": [
+        "Keyboardio Atreus"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 44,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Kailh BOX Silent Tactile",
+          "id": "kailh-box-silent-brown"
+        },
+        {
+          "name": "Kailh BOX Silent Linear",
+          "id": null
+        },
+        {
+          "name": "Kailh BOX White",
+          "id": "kailh-box-white"
+        },
+        {
+          "name": "Kailh Speed Bronze",
+          "id": "kailh-speed-bronze"
+        },
+        {
+          "name": "Kailh BOX Noble Yellow",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "anodized aluminum plate",
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 149,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.keyboard.io/products.json?limit=250",
+      "official_url": "https://shop.keyboard.io/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboardio: products listing (Atreus description, options and price)",
+          "url": "https://shop.keyboard.io/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/keyboardio/atreus (keyboard.json layout)",
+          "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/keyboardio/atreus/keyboard.json",
+          "kind": "reference",
+          "backs": [
+            "key_count",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Atreus Keyboard Kit (original design)",
+          "url": "https://atreus.technomancy.us/",
+          "kind": "reference",
+          "backs": [
+            "stagger",
+            "split",
+            "thumb_cluster"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kaleidoscope firmware (Keyboardio)",
+          "url": "https://github.com/keyboardio/Kaleidoscope",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact 44-key board designed with Phil Hagelberg: one body with two angled halves, vertical (column) stagger and thumb keys in the middle, full-size key spacing and PBT keycaps. Also runs Kaleidoscope. Hot-swap is not mentioned; set to none."
+    },
+    {
+      "id": "keyboardio-model-100",
+      "brand": "keyboardio",
+      "model": "Model 100",
+      "aka": [
+        "Keyboardio Model 100"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 64,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Kailh BOX Silent Tactile",
+          "id": "kailh-box-silent-brown"
+        },
+        {
+          "name": "Kailh BOX Silent Linear",
+          "id": null
+        },
+        {
+          "name": "Kailh BOX White",
+          "id": "kailh-box-white"
+        },
+        {
+          "name": "Kailh Speed Copper",
+          "id": "kailh-speed-copper"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "hardwood (walnut, maple or cherry)",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 349,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.keyboard.io/products.json?limit=250",
+      "official_url": "https://shop.keyboard.io/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboardio: products listing (Model 100 description, options and price)",
+          "url": "https://shop.keyboard.io/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "price_usd",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Keyboardio: products listing (Model 100 Stands)",
+          "url": "https://shop.keyboard.io/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "tenting",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Kaleidoscope firmware (Keyboardio)",
+          "url": "https://github.com/keyboardio/Kaleidoscope",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "64 hot-swappable keys with sculpted keycaps and per-key RGB in a milled hardwood enclosure. Runs Keyboardio's open-source Kaleidoscope firmware, which is not one of the schema's firmware values. The optional stands give up to 7.5 degrees of tent and tilt per half. Split halves, columnar layout, thumb keys and wired USB come from the known design: the product page itself was rate-limited and the listing text does not state them. Socket pin support is not stated."
+    }
+  ]
+}

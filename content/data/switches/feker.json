@@ -1,0 +1,133 @@
+{
+  "maker": {
+    "id": "feker",
+    "name": "Feker",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "about": "Budget keyboard and switch brand with a broad range of low-cost linear switches; the factory behind its switches is not named in the sources read.",
+    "sources": [
+      {
+        "title": "ThereminGoat: Feker Emerald Cabbage Switch Review",
+        "url": "https://www.theremingoat.com/blog/feker-emerald-cabbage-switch-review",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "feker-emerald-cabbage",
+      "name": "Emerald Cabbage",
+      "maker": "feker",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/feker-emerald-cabbage-switch-review",
+          "date": "2024-01-21",
+          "score": null,
+          "verdict": "A plain, technically sound middle-weight linear with a pointed bottom-out; some lube inconsistency across the batch."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: Feker Emerald Cabbage Switch Review",
+          "url": "https://www.theremingoat.com/blog/feker-emerald-cabbage-switch-review",
+          "kind": "review",
+          "backs": [
+            "type",
+            "pins",
+            "bottom_out_force_gf",
+            "materials",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ThereminGoat calls it a dustproof linear released in late 2023 or early 2024, 5-pin only, rated 62g and with a total travel below 3.5mm. Its factory is unknown."
+    },
+    {
+      "id": "feker-white-marble-v3",
+      "name": "White Marble V3",
+      "maker": "feker",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 42,
+      "bottom_out_force_gf": 47,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "20 mm",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: FEKER White Marble V3",
+          "url": "https://kbd.news/switch/FEKER-White-Marble-V3-switch-445.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "pre_travel_mm",
+            "actuation_force_gf",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Spring length listed as 20mm; maker and lube status unknown on the page read."
+    }
+  ]
+}

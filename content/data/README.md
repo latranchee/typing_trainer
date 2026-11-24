@@ -127,7 +127,7 @@ One maker or brand per file, so a file can be researched, refreshed and reviewed
 | `battery_mah` | number \| null | |
 | `polling_rate_hz` | number \| null | highest wired rate |
 | `switch_footprint` | enum | which switches fit: the switch `footprint` enum |
-| `hot_swap` | enum | `none` · `3-pin` · `5-pin` (takes 3 and 5) · `choc` · `magnetic` · `optical` · `other` |
+| `hot_swap` | enum \| null | `none` · `yes` (hot-swap stated, socket type not stated) · `3-pin` · `5-pin` (takes 3 and 5) · `choc` · `magnetic` · `optical` · `other` (another socket type); `null` when the brand does not say (never `none` by default) |
 | `switches` | object[] | options sold: `{ "name": "Gateron Jupiter Red", "id": "gateron-jupiter-red" \| null }` |
 | `adjustable_actuation` | bool | Hall effect / analog boards with a settable actuation point |
 | `rapid_trigger` | bool \| null | |

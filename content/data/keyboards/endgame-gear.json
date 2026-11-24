@@ -1,0 +1,155 @@
+{
+  "brand": {
+    "id": "endgame-gear",
+    "name": "Endgame Gear",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.endgamegear.com/",
+    "focus": [
+      "gaming"
+    ],
+    "about": "German gaming peripherals brand better known for mice; its keyboard lineup in the US store is the KB65HE Hall effect board in two versions.",
+    "sources": [
+      {
+        "title": "Endgame Gear store: catalog feed",
+        "url": "https://endgamegear.com/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "endgame-gear-kb65he",
+      "brand": "endgame-gear",
+      "model": "KB65HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron KS-37B",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://endgamegear.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Endgame Gear store: KB65HE product listing (catalog feed)",
+          "url": "https://endgamegear.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Store catalog feed only (the product page returned HTTP 429); sold at 49.99 USD on 2026-11-23 against a regular 139.99. Ducky doubleshot PBT keycaps; ANSI US only. Hot-swap not confirmed by any opened page."
+    },
+    {
+      "id": "endgame-gear-kb65he-8k",
+      "brand": "endgame-gear",
+      "model": "KB65HE 8K",
+      "aka": [],
+      "status": "current",
+      "released": "2026-03",
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Silent Raesha Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://endgamegear.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Endgame Gear store: KB65HE 8K product listing (catalog feed)",
+          "url": "https://endgamegear.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Store catalog feed only (the product page returned HTTP 429); listed as a pre-order tag; 8000 Hz polling and scan rate. Hot-swap not stated."
+    }
+  ]
+}

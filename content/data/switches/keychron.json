@@ -1,0 +1,665 @@
+{
+  "maker": {
+    "id": "keychron",
+    "name": "Keychron",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.keychron.com/",
+    "about": "Keyboard maker that sells its own Super, Silent, Silk POM and K Pro switches. Keychron does not name the factory on the pages read.",
+    "sources": [
+      {
+        "title": "Keychron: Keychron Super Switch",
+        "url": "https://www.keychron.com/products/keychron-super-switch",
+        "kind": "official",
+        "backs": [
+          "about",
+          "switches"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "keychron-camo",
+      "name": "Camo",
+      "maker": "keychron",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 3,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "gold-plated spring steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-camo-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Camo Switch",
+          "url": "https://www.keychron.com/products/keychron-camo-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "rated_lifespan_million",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Keychron lists no force or travel figures for it. Sold with a dustproof stem wall and a DIY option for top and bottom case colours."
+    },
+    {
+      "id": "keychron-silent-banana",
+      "name": "Silent Banana",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Silent",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.3,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon PA66",
+        "bottom": "nylon PA66",
+        "stem": "POM"
+      },
+      "spring": "spring steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-silent-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Silent Switch",
+          "url": "https://www.keychron.com/products/keychron-silent-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Bottom-out force listed as 60gf max; gold-plated contact."
+    },
+    {
+      "id": "keychron-silk-pom-banana",
+      "name": "Silk POM Banana",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Silk POM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 57,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": "two-stage",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-silk-pom-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Silk POM Switches",
+          "url": "https://www.keychron.com/products/keychron-silk-pom-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Total travel listed as a maximum. Two-stage spring."
+    },
+    {
+      "id": "keychron-silk-pom-brown",
+      "name": "Silk POM Brown",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Silk POM",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-silk-pom-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Silk POM Switches",
+          "url": "https://www.keychron.com/products/keychron-silk-pom-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Total travel listed as a maximum."
+    },
+    {
+      "id": "keychron-silk-pom-red",
+      "name": "Silk POM Red",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Silk POM",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "POM",
+        "bottom": "POM",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-silk-pom-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Silk POM Switches",
+          "url": "https://www.keychron.com/products/keychron-silk-pom-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Total travel listed as a maximum."
+    },
+    {
+      "id": "keychron-super-banana",
+      "name": "Super Banana",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Super",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 57,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "spring steel, double-stage long",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-super-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Super Switch",
+          "url": "https://www.keychron.com/products/keychron-super-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Earlier and stronger bump than the Super Brown; double-stage long spring."
+    },
+    {
+      "id": "keychron-super-brown",
+      "name": "Super Brown",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Super",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 55,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "spring steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-super-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Super Switch",
+          "url": "https://www.keychron.com/products/keychron-super-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "keychron-super-red",
+      "name": "Super Red",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Super",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "nylon",
+        "stem": "POM"
+      },
+      "spring": "spring steel, double-stage long",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 50,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-super-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Super Switch",
+          "url": "https://www.keychron.com/products/keychron-super-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "bottom_out_force_gf",
+            "rated_lifespan_million",
+            "materials",
+            "spring",
+            "pins",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Double-stage long spring."
+    },
+    {
+      "id": "keychron-ultra-fast-lime-lime",
+      "name": "Ultra-Fast Lime",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Ultra-Fast Lime",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Ultra-Fast Lime Magnetic Switch",
+          "url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Keychron HE keyboards with adjustable actuation point. Keychron lists a 30gf start force and the end force shown here."
+    },
+    {
+      "id": "keychron-ultra-fast-lime-banana",
+      "name": "Ultra-Fast Lime Banana",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Ultra-Fast Lime",
+      "aka": [],
+      "type": "tactile",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Ultra-Fast Lime Magnetic Switch",
+          "url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Keychron HE keyboards with adjustable actuation point. Keychron lists a 30gf start force and the end force shown here."
+    },
+    {
+      "id": "keychron-ultra-fast-lime-silent-banana",
+      "name": "Ultra-Fast Lime Silent Banana",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Ultra-Fast Lime",
+      "aka": [],
+      "type": "silent-tactile",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Ultra-Fast Lime Magnetic Switch",
+          "url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Keychron HE keyboards with adjustable actuation point. Keychron lists a 30gf start force and the end force shown here."
+    },
+    {
+      "id": "keychron-ultra-fast-lime-silent-red",
+      "name": "Ultra-Fast Lime Silent Red",
+      "maker": "keychron",
+      "made_by": null,
+      "family": "Ultra-Fast Lime",
+      "aka": [],
+      "type": "silent-linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 55,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keychron: Keychron Ultra-Fast Lime Magnetic Switch",
+          "url": "https://www.keychron.com/products/keychron-ultra-fast-lime-magnetic-switch",
+          "kind": "official",
+          "backs": [
+            "type",
+            "sensing",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "rated_lifespan_million",
+            "factory_lubed",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic switch for Keychron HE keyboards with adjustable actuation point. Keychron lists a 30gf start force and the end force shown here."
+    }
+  ]
+}

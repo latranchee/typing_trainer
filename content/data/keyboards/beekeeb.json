@@ -1,0 +1,845 @@
+{
+  "brand": {
+    "id": "beekeeb",
+    "name": "beekeeb",
+    "country": null,
+    "founded": null,
+    "official_url": "https://beekeeb.com/",
+    "focus": [
+      "ergonomic",
+      "diy"
+    ],
+    "about": "beekeeb sells pre-soldered split keyboards and DIY kits of open designs (Corne, Hillside, Allium58, Sweep, Piantor) and its own Toucan wireless board with a trackpad; switches and keycaps are bought separately.",
+    "sources": [
+      {
+        "title": "beekeeb: home page",
+        "url": "https://beekeeb.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "beekeeb shop: products listing",
+        "url": "https://shop.beekeeb.com/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "beekeeb-piantor-pro",
+      "brand": "beekeeb",
+      "model": "Piantor Pro with Aluminum Case",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum top, acrylic or aluminum bottom",
+      "mount": null,
+      "firmware": [
+        "vial",
+        "qmk",
+        "kmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 303,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": "https://beekeeb.com/piantor/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "case_material",
+            "price_usd",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "beekeeb: Introducing the Piantor keyboard",
+          "url": "https://beekeeb.com/piantor/",
+          "kind": "official",
+          "backs": [
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cantor layout with a strong pinky stagger; the breakable pinky column turns the 42 keys into 36. RP2040, pre-flashed with Vial; halves link by USB-C. Kailh Choc v1 hot-swap sockets. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-corne-v4-choc",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Corne v4 Choc",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "vial"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 188,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired RP2040 Corne v4 with per-key RGB, pre-flashed with Vial; halves link by TRRS. Sockets take Choc v1 and v2; case and keycaps are assembled by you. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-corne-v4-mx",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Corne v4 MX",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "vial"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 188,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired RP2040 Corne v4 with per-key RGB and MX hot-swap sockets, pre-flashed with Vial; halves link by TRRS. Pin support is not stated. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-sweep-choc-hotswap",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Sweep Choc Hotswap",
+      "aka": [
+        "Ferris Sweep Bling LP"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 34,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "vial"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 128,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "davidphilipbarr/Sweep",
+          "url": "https://github.com/davidphilipbarr/Sweep",
+          "kind": "reference",
+          "backs": [
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Sweep Bling LP with Sea Picro RP2040 controllers and Kailh Choc v1 hot-swap sockets, flashed with Vial; halves link by TRRS. Switches and keycaps are not included."
+    },
+    {
+      "id": "beekeeb-allium58-choc",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Wireless Allium58 Choc",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 208,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd",
+            "key_count",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Open-source Lily58 derivative (6x4 plus 4 keys per half) on nice!nano v2, pre-flashed with ZMK; hot-swap sockets for Choc v1. Wireless only (cannot be used wired); batteries are not included. Switches and keycaps are not included."
+    },
+    {
+      "id": "beekeeb-allium58-mx",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Wireless Allium58 MX",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 208,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd",
+            "key_count",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Open-source Lily58 derivative on nice!nano v2, pre-flashed with ZMK; MX hot-swap sockets, pin support not stated. Wireless only (cannot be used wired); batteries are not included. Switches and keycaps are not included."
+    },
+    {
+      "id": "beekeeb-wireless-corne-choc",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Wireless Corne Low Profile",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 232,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Corne on nice!nano v2 controllers with Kailh Choc v1 hot-swap sockets, power switches and JST battery sockets, pre-flashed with ZMK; no RGB. Wireless only (cannot be used wired); batteries are not included. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-wireless-corne-mx",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Wireless Corne MX",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 232,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Corne on nice!nano v2 controllers with MX hot-swap sockets, pre-flashed with ZMK; no RGB. Pin support is not stated. Wireless only (cannot be used wired); batteries are not included. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-felixkeeb-choc",
+      "brand": "beekeeb",
+      "model": "Pre-soldered Wireless FelixKeeb Choc",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 64,
+      "layout_standards": [],
+      "stagger": "ortholinear",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 242,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd",
+            "key_count",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "beekeeb's open-source 5x12+4 split ortholinear (Helix layout) with Kailh Choc hot-swap sockets, pre-flashed with ZMK. Sold out on the store when checked. Wireless only (cannot be used wired); batteries are not included. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-toucan2-36",
+      "brand": "beekeeb",
+      "model": "Toucan2 (36 keys)",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 36,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 338,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": "https://beekeeb.com/introducing-toucan2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "beekeeb: Introducing the Toucan keyboard",
+          "url": "https://beekeeb.com/toucan-keyboard/",
+          "kind": "official",
+          "backs": [
+            "firmware",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "36-key version of the Toucan2 with the thumb-angled trackpad. Hot-swap sockets take Choc v1 and v2. Price is the pre-soldered version; the DIY kit is $219. Batteries are not included. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-toucan2",
+      "brand": "beekeeb",
+      "model": "Toucan2 (42 keys)",
+      "aka": [
+        "Toucan2"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 338,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": "https://beekeeb.com/introducing-toucan2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "beekeeb: Introducing the Toucan keyboard",
+          "url": "https://beekeeb.com/toucan-keyboard/",
+          "kind": "official",
+          "backs": [
+            "firmware",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "beekeeb: Introducing the Toucan2 keyboard",
+          "url": "https://beekeeb.com/introducing-toucan2/",
+          "kind": "official",
+          "backs": [
+            "thumb_cluster"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cantor (Piantor) layout with a thumb-angled Azoteq trackpad, on XIAO nRF52840 Plus controllers; pairs over Bluetooth or with a dongle such as the Prospector. Hot-swap sockets take Choc v1 and v2. Price is the pre-soldered version; the DIY kit is $219. Batteries are not included. Switches and keycaps are not included. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "beekeeb-hshs46",
+      "brand": "beekeeb",
+      "model": "Wireless HSHS46",
+      "aka": [
+        "Hotswappable Hillside46"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 46,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 227,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap version of mmccoyd's Hillside46 on a nice!nano v2, pre-flashed with ZMK; sockets take Choc v1 and v2. Needs choc-spaced keycaps. Wireless only (cannot be used wired); batteries are not included. Switches and keycaps are not included."
+    },
+    {
+      "id": "beekeeb-hshs52",
+      "brand": "beekeeb",
+      "model": "Wireless HSHS52",
+      "aka": [
+        "Hotswappable Hillside52"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 52,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 227,
+      "price_date": "2026-11-23",
+      "price_url": "https://shop.beekeeb.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "beekeeb shop: products listing (product description and price)",
+          "url": "https://shop.beekeeb.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap version of the Hillside52 on a nice!nano v2, pre-flashed with ZMK; sockets take Choc v1 and v2. Wireless only (cannot be used wired); batteries are not included. Switches and keycaps are not included."
+    }
+  ]
+}

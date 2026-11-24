@@ -1,0 +1,1855 @@
+{
+  "brand": {
+    "id": "nuphy",
+    "name": "NuPhy",
+    "country": null,
+    "founded": null,
+    "official_url": "https://nuphy.com/",
+    "focus": [
+      "enthusiast",
+      "office",
+      "gaming"
+    ],
+    "about": "NuPhy sells wireless mechanical keyboards through its own store, from low-profile Air and Node boards to QMK/VIA gasket boards and Hall effect gaming boards.",
+    "sources": [
+      {
+        "title": "NuPhy: store",
+        "url": "https://nuphy.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "nuphy-air100-v3",
+      "brand": "nuphy",
+      "model": "Air100 V3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "gateron-lp",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Blush nano",
+          "id": null
+        },
+        {
+          "name": "Red nano",
+          "id": null
+        },
+        {
+          "name": "Brown nano",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "NuPhy IO",
+      "os": [],
+      "price_usd": 149.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-air-100-v3",
+      "official_url": "https://nuphy.com/products/nuphy-air-100-v3",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v3",
+          "date": "2025-08-26",
+          "score": null,
+          "verdict": "Covers the Air65 V3, Air75 V3 and Air100 V3 as one low-profile wireless series with a hot-swappable PCB for Gateron low-profile 3.0 switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air100 V3",
+          "url": "https://nuphy.com/products/nuphy-air-100-v3",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "key_count",
+            "battery_mah"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air75 V3 [Air65 V3, Air100 V3] review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v3",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Air75 V3 launch",
+          "url": "https://www.notebookcheck.net/NuPhy-Air75-V3-launches-as-wireless-low-profile-mechanical-keyboard-with-long-travel-switches-1-200-hour-battery-and-gasket-mount.1034008.0.html",
+          "kind": "review",
+          "backs": [
+            "polling_rate_hz",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: NuPhy Air75 V3 review",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-air75-v3-review",
+          "kind": "review",
+          "backs": [
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "No QMK/VIA: Tom's Guide and Notebookcheck report NuPhy IO 2.0 for remapping. Battery left empty: NuPhy's pages give 4000 mAh in one place and 3000 mAh on the pay page."
+    },
+    {
+      "id": "nuphy-air60-he",
+      "brand": "nuphy",
+      "model": "Air60 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 61,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Low-Profile Magnetic Jade",
+          "id": "gateron-low-profile-magnetic-jade"
+        },
+        {
+          "name": "Low-Profile Magnetic Jade Pro",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 119.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-air60-he-magnetic-switch-gaming-keyboard",
+      "official_url": "https://nuphy.com/products/nuphy-air60-he-magnetic-switch-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air60-he",
+          "date": "2025-02-13",
+          "score": null,
+          "verdict": "Reviews the Air60 HE as a compact Hall effect gaming board in a series with the larger Air75 HE."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-air60-he-tiny-profile-huge-performance",
+          "date": "2024-11-18",
+          "score": null,
+          "verdict": "Calls it the finest low-profile gaming keyboard thanks to magnetic switches, gaming features and customization."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air60 HE",
+          "url": "https://nuphy.com/products/nuphy-air60-he-magnetic-switch-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air60 HE review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air60-he",
+          "kind": "review",
+          "backs": [
+            "connectivity",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Hall effect board; actuation adjustable 0.1 to 3.3 mm per NuPhy's page. Polling can be lowered to 4000, 2000 or 1000 Hz (Tom's Guide)."
+    },
+    {
+      "id": "nuphy-air60-v2",
+      "brand": "nuphy",
+      "model": "Air60 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Red 2.0",
+          "id": null
+        },
+        {
+          "name": "Brown 2.0",
+          "id": null
+        },
+        {
+          "name": "Blue 2.0",
+          "id": null
+        },
+        {
+          "name": "Aloe (37gf)",
+          "id": null
+        },
+        {
+          "name": "Cowberry (45gf)",
+          "id": null
+        },
+        {
+          "name": "Moss (60gf)",
+          "id": null
+        },
+        {
+          "name": "Wisteria (55gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://pay.nuphy.com/products/air60-v2",
+      "official_url": "https://pay.nuphy.com/products/air60-v2",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v2-air60-v2-air96-v2",
+          "date": "2023-11-16",
+          "score": null,
+          "verdict": "Reviewed as one series: compact wireless mechanical boards led by the Air75 V2, with the Air60 V2 and Air96 V2 as size variants."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air60 V2",
+          "url": "https://pay.nuphy.com/products/air60-v2",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air75 V2 [Air60 V2, Air96 V2] review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v2-air60-v2-air96-v2",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless low-profile series; the store lists colour and switch options only, so ANSI is assumed from the absence of a layout option. Hot-swap socket type not stated on the pages read."
+    },
+    {
+      "id": "nuphy-air65-v3",
+      "brand": "nuphy",
+      "model": "Air65 V3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 2500,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "gateron-lp",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Blush nano",
+          "id": null
+        },
+        {
+          "name": "Red nano",
+          "id": null
+        },
+        {
+          "name": "Brown nano",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "NuPhy IO",
+      "os": [],
+      "price_usd": 129.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-air65-v3",
+      "official_url": "https://nuphy.com/products/nuphy-air65-v3",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v3",
+          "date": "2025-08-26",
+          "score": null,
+          "verdict": "Covers the Air65 V3, Air75 V3 and Air100 V3 as one low-profile wireless series with a hot-swappable PCB for Gateron low-profile 3.0 switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air65 V3",
+          "url": "https://nuphy.com/products/nuphy-air65-v3",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "key_count",
+            "battery_mah"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air75 V3 [Air65 V3, Air100 V3] review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v3",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Air75 V3 launch",
+          "url": "https://www.notebookcheck.net/NuPhy-Air75-V3-launches-as-wireless-low-profile-mechanical-keyboard-with-long-travel-switches-1-200-hour-battery-and-gasket-mount.1034008.0.html",
+          "kind": "review",
+          "backs": [
+            "polling_rate_hz",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: NuPhy Air75 V3 review",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-air75-v3-review",
+          "kind": "review",
+          "backs": [
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "No QMK/VIA: Tom's Guide and Notebookcheck report NuPhy IO 2.0 for remapping."
+    },
+    {
+      "id": "nuphy-air75-he",
+      "brand": "nuphy",
+      "model": "Air75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Low-Profile Magnetic Jade",
+          "id": "gateron-low-profile-magnetic-jade"
+        },
+        {
+          "name": "Low-Profile Magnetic Jade Pro",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 129.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-air75-he-magnetic-switch-gaming-keyboard",
+      "official_url": "https://nuphy.com/products/nuphy-air75-he-magnetic-switch-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air60-he",
+          "date": "2025-02-13",
+          "score": null,
+          "verdict": "Reviews the Air60 HE as a compact Hall effect gaming board in a series with the larger Air75 HE."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air75 HE",
+          "url": "https://nuphy.com/products/nuphy-air75-he-magnetic-switch-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air60 HE review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air60-he",
+          "kind": "review",
+          "backs": [
+            "connectivity",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Hall effect board; actuation adjustable 0.1 to 3.3 mm per NuPhy's page. Polling can be lowered to 4000, 2000 or 1000 Hz (Tom's Guide)."
+    },
+    {
+      "id": "nuphy-air75-v2",
+      "brand": "nuphy",
+      "model": "Air75 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Red 2.0",
+          "id": null
+        },
+        {
+          "name": "Brown 2.0",
+          "id": null
+        },
+        {
+          "name": "Blue 2.0",
+          "id": null
+        },
+        {
+          "name": "Aloe (37gf)",
+          "id": null
+        },
+        {
+          "name": "Cowberry (45gf)",
+          "id": null
+        },
+        {
+          "name": "Moss (60gf)",
+          "id": null
+        },
+        {
+          "name": "Wisteria (55gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 119.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://pay.nuphy.com/products/air75-v2",
+      "official_url": "https://pay.nuphy.com/products/air75-v2",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v2-air60-v2-air96-v2",
+          "date": "2023-11-16",
+          "score": null,
+          "verdict": "Reviewed as one series: compact wireless mechanical boards led by the Air75 V2, with the Air60 V2 and Air96 V2 as size variants."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air75 V2",
+          "url": "https://pay.nuphy.com/products/air75-v2",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air75 V2 [Air60 V2, Air96 V2] review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v2-air60-v2-air96-v2",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless low-profile series; the store lists colour and switch options only, so ANSI is assumed from the absence of a layout option. Hot-swap socket type not stated on the pages read."
+    },
+    {
+      "id": "nuphy-air75-v3",
+      "brand": "nuphy",
+      "model": "Air75 V3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "gateron-lp",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Blush nano",
+          "id": null
+        },
+        {
+          "name": "Red nano",
+          "id": null
+        },
+        {
+          "name": "Brown nano",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "NuPhy IO",
+      "os": [],
+      "price_usd": 139.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-air75-v3",
+      "official_url": "https://nuphy.com/products/nuphy-air75-v3",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v3",
+          "date": "2025-08-26",
+          "score": null,
+          "verdict": "Covers the Air65 V3, Air75 V3 and Air100 V3 as one low-profile wireless series with a hot-swappable PCB for Gateron low-profile 3.0 switches."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-air75-v3-review",
+          "date": "2025-09-05",
+          "score": null,
+          "verdict": "Judges the V3 to have fixed what was wrong with the Air75 V2."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air75 V3",
+          "url": "https://nuphy.com/products/nuphy-air75-v3",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "key_count",
+            "battery_mah"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air75 V3 [Air65 V3, Air100 V3] review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v3",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "switch_footprint"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Air75 V3 launch",
+          "url": "https://www.notebookcheck.net/NuPhy-Air75-V3-launches-as-wireless-low-profile-mechanical-keyboard-with-long-travel-switches-1-200-hour-battery-and-gasket-mount.1034008.0.html",
+          "kind": "review",
+          "backs": [
+            "polling_rate_hz",
+            "mount",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: NuPhy Air75 V3 review",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-air75-v3-review",
+          "kind": "review",
+          "backs": [
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "No QMK/VIA: Tom's Guide and Notebookcheck report NuPhy IO 2.0 for remapping."
+    },
+    {
+      "id": "nuphy-air96-v2",
+      "brand": "nuphy",
+      "model": "Air96 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Red 2.0",
+          "id": null
+        },
+        {
+          "name": "Brown 2.0",
+          "id": null
+        },
+        {
+          "name": "Blue 2.0",
+          "id": null
+        },
+        {
+          "name": "Aloe (37gf)",
+          "id": null
+        },
+        {
+          "name": "Cowberry (45gf)",
+          "id": null
+        },
+        {
+          "name": "Moss (60gf)",
+          "id": null
+        },
+        {
+          "name": "Wisteria (55gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 129.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://pay.nuphy.com/products/air96-v2",
+      "official_url": "https://pay.nuphy.com/products/air96-v2",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v2-air60-v2-air96-v2",
+          "date": "2023-11-16",
+          "score": null,
+          "verdict": "Reviewed as one series: compact wireless mechanical boards led by the Air75 V2, with the Air60 V2 and Air96 V2 as size variants."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Air96 V2",
+          "url": "https://pay.nuphy.com/products/air96-v2",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Air75 V2 [Air60 V2, Air96 V2] review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/air75-v2-air60-v2-air96-v2",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless low-profile series; the store lists colour and switch options only, so ANSI is assumed from the absence of a layout option. Hot-swap socket type not stated on the pages read."
+    },
+    {
+      "id": "nuphy-field75-he-v2",
+      "brand": "nuphy",
+      "model": "Field75 HE V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 83,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Magnetic Silver",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade Dragon-N",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 179,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-field75-he-v2-1",
+      "official_url": "https://nuphy.com/products/nuphy-field75-he-v2-1",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NuPhy: Field75 HE V2",
+          "url": "https://nuphy.com/products/nuphy-field75-he-v2-1",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "official_url",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired normal-profile Hall effect board with 8 customizable buttons, an RGB knob and a volume scroll wheel. The RTINGS and Tom's Guide reviews cover the original Field75 HE, not this V2."
+    },
+    {
+      "id": "nuphy-gem80",
+      "brand": "nuphy",
+      "model": "Gem80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Mint",
+          "id": null
+        },
+        {
+          "name": "Raspberry",
+          "id": null
+        },
+        {
+          "name": "Lemon",
+          "id": null
+        },
+        {
+          "name": "Panda",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 169.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://pay.nuphy.com/products/gem80-t",
+      "official_url": "https://pay.nuphy.com/products/gem80-t",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/gem80",
+          "date": "2024-04-03",
+          "score": null,
+          "verdict": "Wireless TKL barebones kit sold without switches or keycaps; NuPhy offers both separately."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Gem80",
+          "url": "https://pay.nuphy.com/products/gem80-t",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy Gem80 review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/gem80",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "polling_rate_hz",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit: price is the kit without switches or keycaps; switch sets are paid add-ons."
+    },
+    {
+      "id": "nuphy-halo65-v2",
+      "brand": "nuphy",
+      "model": "Halo65 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 67,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Lemon (55gf)",
+          "id": null
+        },
+        {
+          "name": "Blush (42gf)",
+          "id": null
+        },
+        {
+          "name": "Mint (37gf)",
+          "id": null
+        },
+        {
+          "name": "Raspberry (46gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top, PC bottom",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 119.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-halo65-v2",
+      "official_url": "https://nuphy.com/products/nuphy-halo65-v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NuPhy: Halo65 V2",
+          "url": "https://nuphy.com/products/nuphy-halo65-v2",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "key_count",
+            "battery_mah",
+            "mount",
+            "firmware",
+            "case_material",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Halo V2 update",
+          "url": "https://www.notebookcheck.net/NuPhy-updates-Halo-V2-wireless-mechanical-keyboards-for-up-to-4X-battery-life-improvements-and-there-s-an-option-with-a-num-pad.1135958.0.html",
+          "kind": "review",
+          "backs": [
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "QMK/VIA version of the Halo V2; NuPhy also sells a NuPhy IO version (Halo IO Series) with high-profile switches, not listed here. 3/5-pin socket stated for the Halo75 V2; the 65 and 96 pages say hot-swappable with normal-profile switches."
+    },
+    {
+      "id": "nuphy-halo75-v2",
+      "brand": "nuphy",
+      "model": "Halo75 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 83,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Lemon (55gf)",
+          "id": null
+        },
+        {
+          "name": "Blush (42gf)",
+          "id": null
+        },
+        {
+          "name": "Mint (37gf)",
+          "id": null
+        },
+        {
+          "name": "Raspberry (46gf)",
+          "id": null
+        },
+        {
+          "name": "Silent Red Clear-Top (45gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top, ABS bottom",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 129.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/halo75-v2-qmk-via-wireless-custom-mechanical-keyboard",
+      "official_url": "https://nuphy.com/products/halo75-v2-qmk-via-wireless-custom-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-halo-75-96-v2-review",
+          "date": "2024-06-18",
+          "score": null,
+          "verdict": "Calls the Halo75 V2 and Halo96 V2 stunning retro productivity boards with issues that are not serious."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Halo75 V2",
+          "url": "https://nuphy.com/products/halo75-v2-qmk-via-wireless-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "key_count",
+            "battery_mah",
+            "mount",
+            "firmware",
+            "case_material",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Halo V2 update",
+          "url": "https://www.notebookcheck.net/NuPhy-updates-Halo-V2-wireless-mechanical-keyboards-for-up-to-4X-battery-life-improvements-and-there-s-an-option-with-a-num-pad.1135958.0.html",
+          "kind": "review",
+          "backs": [
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "QMK/VIA version of the Halo V2; NuPhy also sells a NuPhy IO version (Halo IO Series) with high-profile switches, not listed here. 3/5-pin socket stated for the Halo75 V2; the 65 and 96 pages say hot-swappable with normal-profile switches."
+    },
+    {
+      "id": "nuphy-halo96-v2",
+      "brand": "nuphy",
+      "model": "Halo96 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Lemon (55gf)",
+          "id": null
+        },
+        {
+          "name": "Blush (42gf)",
+          "id": null
+        },
+        {
+          "name": "Mint (37gf)",
+          "id": null
+        },
+        {
+          "name": "Raspberry (46gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/halo96-v2-qmk-via-wireless-custom-mechanical-keyboard",
+      "official_url": "https://nuphy.com/products/halo96-v2-qmk-via-wireless-custom-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-halo-75-96-v2-review",
+          "date": "2024-06-18",
+          "score": null,
+          "verdict": "Calls the Halo75 V2 and Halo96 V2 stunning retro productivity boards with issues that are not serious."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Halo96 V2",
+          "url": "https://nuphy.com/products/halo96-v2-qmk-via-wireless-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "key_count",
+            "battery_mah",
+            "mount",
+            "firmware",
+            "case_material",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Halo V2 update",
+          "url": "https://www.notebookcheck.net/NuPhy-updates-Halo-V2-wireless-mechanical-keyboards-for-up-to-4X-battery-life-improvements-and-there-s-an-option-with-a-num-pad.1135958.0.html",
+          "kind": "review",
+          "backs": [
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "QMK/VIA version of the Halo V2; NuPhy also sells a NuPhy IO version (Halo IO Series) with high-profile switches, not listed here. 3/5-pin socket stated for the Halo75 V2; the 65 and 96 pages say hot-swappable with normal-profile switches."
+    },
+    {
+      "id": "nuphy-kick75",
+      "brand": "nuphy",
+      "model": "Kick75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 80,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Blush",
+          "id": null
+        },
+        {
+          "name": "Red",
+          "id": null
+        },
+        {
+          "name": "Brown",
+          "id": null
+        },
+        {
+          "name": "Silver",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via",
+        "proprietary"
+      ],
+      "software": "NuPhy IO (NuPhyIO version)",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://pay.nuphy.com/products/nuphy-kick75",
+      "official_url": "https://pay.nuphy.com/products/nuphy-kick75",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/nuphy-kick75-review",
+          "date": "2025-03-04",
+          "score": null,
+          "verdict": "Calls the Kick75 beautiful to look at, type on and hear, and NuPhy's best work at $89."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Kick75",
+          "url": "https://pay.nuphy.com/products/nuphy-kick75",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "polling_rate_hz",
+            "mount",
+            "switches",
+            "price_usd",
+            "firmware",
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hybrid-profile board that takes low-profile and standard-profile switches through swappable plates. Battery is 2500 mAh on the NuPhy IO version and 4000 mAh on the QMK version, so it is left empty. The store sells QMK & VIA and NuPhy IO firmware options."
+    },
+    {
+      "id": "nuphy-node100-high-profile",
+      "brand": "nuphy",
+      "model": "Node100 High-profile",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 109,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Red Max",
+          "id": null
+        },
+        {
+          "name": "Blush Max",
+          "id": null
+        },
+        {
+          "name": "Brown Max",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/node100-high-profile",
+      "official_url": "https://nuphy.com/products/node100-high-profile",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NuPhy: Node100 High-profile",
+          "url": "https://nuphy.com/products/node100-high-profile",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Node75 reveal",
+          "url": "https://www.notebookcheck.net/Retro-design-meets-Apple-Touch-Bar-in-a-wireless-mechanical-keyboard-with-1000-hour-battery-NuPhy-reveals-Node75.1140271.0.html",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tom's Guide says the high-profile version takes 3- or 5-pin north-facing mechanical switches. Remapping software not confirmed on the pages read."
+    },
+    {
+      "id": "nuphy-node100-low-profile",
+      "brand": "nuphy",
+      "model": "Node100 Low-profile",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 103,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "gateron-lp",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Red nano",
+          "id": null
+        },
+        {
+          "name": "Blush nano",
+          "id": null
+        },
+        {
+          "name": "Brown nano",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/node100-low-profile",
+      "official_url": "https://nuphy.com/products/node100-low-profile",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/node-series-low-profile",
+          "date": "2026-04-29",
+          "score": null,
+          "verdict": "Reviews the Node series as wireless boards in low- and high-profile versions; the tested unit was a low-profile Node100."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Node100 Low-profile",
+          "url": "https://nuphy.com/products/node100-low-profile",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Node75 reveal",
+          "url": "https://www.notebookcheck.net/Retro-design-meets-Apple-Touch-Bar-in-a-wireless-mechanical-keyboard-with-1000-hour-battery-NuPhy-reveals-Node75.1140271.0.html",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile version uses the nano switch family also sold on the Air V3; footprint inferred from that. Remapping software not confirmed on the pages read."
+    },
+    {
+      "id": "nuphy-node75-high-profile",
+      "brand": "nuphy",
+      "model": "Node75 High-profile",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Red Max",
+          "id": null
+        },
+        {
+          "name": "Blush Max",
+          "id": null
+        },
+        {
+          "name": "Brown Max",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-node-series-high-profile",
+      "official_url": "https://nuphy.com/products/nuphy-node-series-high-profile",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/nuphy-node75-review",
+          "date": "2026-01-09",
+          "score": null,
+          "verdict": "Finds the Node75 great to type on and good sounding, with plenty of customization at an affordable price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: Node75 High-profile",
+          "url": "https://nuphy.com/products/nuphy-node-series-high-profile",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Node75 reveal",
+          "url": "https://www.notebookcheck.net/Retro-design-meets-Apple-Touch-Bar-in-a-wireless-mechanical-keyboard-with-1000-hour-battery-NuPhy-reveals-Node75.1140271.0.html",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tom's Guide says the high-profile version takes 3- or 5-pin north-facing mechanical switches. Remapping software not confirmed on the pages read."
+    },
+    {
+      "id": "nuphy-node75-low-profile",
+      "brand": "nuphy",
+      "model": "Node75 Low-profile",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "gateron-lp",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Red nano",
+          "id": null
+        },
+        {
+          "name": "Blush nano",
+          "id": null
+        },
+        {
+          "name": "Brown nano",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://nuphy.com/products/nuphy-node-series-low-profile",
+      "official_url": "https://nuphy.com/products/nuphy-node-series-low-profile",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "NuPhy: Node75 Low-profile",
+          "url": "https://nuphy.com/products/nuphy-node-series-low-profile",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: NuPhy Node75 reveal",
+          "url": "https://www.notebookcheck.net/Retro-design-meets-Apple-Touch-Bar-in-a-wireless-mechanical-keyboard-with-1000-hour-battery-NuPhy-reveals-Node75.1140271.0.html",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile version uses the nano switch family also sold on the Air V3; footprint inferred from that. Remapping software not confirmed on the pages read."
+    },
+    {
+      "id": "nuphy-wh80",
+      "brand": "nuphy",
+      "model": "WH80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Magnetic Jade Dragon-N",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 249.95,
+      "price_date": "2026-11-23",
+      "price_url": "https://pay.nuphy.com/products/nuphy-wh80-gaming-keyboard",
+      "official_url": "https://pay.nuphy.com/products/nuphy-wh80-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/wh80",
+          "date": "2026-03-30",
+          "score": null,
+          "verdict": "Hall effect gaming keyboard with adjustable actuation and wireless connectivity."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NuPhy: WH80 Gaming Keyboard",
+          "url": "https://pay.nuphy.com/products/nuphy-wh80-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: NuPhy WH80 review",
+          "url": "https://www.rtings.com/keyboard/reviews/nuphy/wh80",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap",
+            "adjustable_actuation",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Key count, battery and polling rate not read on the pages available. Connectivity listed as tri-mode on NuPhy's gaming collection page."
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "brand": {
+    "id": "mode-designs",
+    "name": "Mode Designs",
+    "country": null,
+    "founded": null,
+    "official_url": "https://modedesigns.com/",
+    "focus": [
+      "enthusiast",
+      "premium"
+    ],
+    "about": "Keyboard company that designs and sells its own custom mechanical keyboards, mostly as barebones kits in seasonal editions, with keycaps, switches and stabilizers of its own. It keeps an open-source compendium of design files for boards that left production.",
+    "sources": [
+      {
+        "title": "Mode Designs: Sonnet page",
+        "url": "https://modedesigns.com/pages/sonnet",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Mode Keyboard Compendium",
+        "url": "https://compendium.modedesigns.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "mode-designs-encore",
+      "brand": "mode-designs",
+      "model": "Encore",
+      "aka": [
+        "Encore (2026)"
+      ],
+      "status": "current",
+      "released": "2026",
+      "kind": "barebones",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum and hardwood",
+      "mount": "crown mounting system (top mount optional)",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 299,
+      "price_date": "2026-11-23",
+      "price_url": "https://modedesigns.com/pages/encore",
+      "official_url": "https://modedesigns.com/pages/encore",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mode Designs: Encore page",
+          "url": "https://modedesigns.com/pages/encore",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "connectivity",
+            "price_usd",
+            "status",
+            "released",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kit without switches, keycaps or stabilizers; hotswap or solder PCB (about 68 MX-style switches, hotswap pin support not stated); solder PCBs support ISO but the plates are ANSI only. Most 2026 editions were sold out when read."
+    },
+    {
+      "id": "mode-designs-envoy",
+      "brand": "mode-designs",
+      "model": "Envoy",
+      "aka": [],
+      "status": "discontinued",
+      "released": "2023",
+      "kind": "barebones",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://modedesigns.com/pages/archive/envoy",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mode Designs: Envoy archive page",
+          "url": "https://modedesigns.com/pages/archive/envoy",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mode Keyboard Compendium: Envoy",
+          "url": "https://compendium.modedesigns.com/keyboards/envoy/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Discontinued one-piece 65% that introduced the lattice mounting system of Mode; production years 2023-2025."
+    },
+    {
+      "id": "mode-designs-loop",
+      "brand": "mode-designs",
+      "model": "Loop",
+      "aka": [],
+      "status": "discontinued",
+      "released": "2023",
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://modedesigns.com/pages/archive/loop",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mode Designs: Loop archive page",
+          "url": "https://modedesigns.com/pages/archive/loop",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mode Keyboard Compendium: Loop",
+          "url": "https://compendium.modedesigns.com/keyboards/loop/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Discontinued tenkeyless with a ring-split case, offered in WKL and standard variants with a lattice block mount; production years 2023-2025."
+    },
+    {
+      "id": "mode-designs-prologue",
+      "brand": "mode-designs",
+      "model": "Prologue",
+      "aka": [],
+      "status": "current",
+      "released": "2026",
+      "kind": "barebones",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "crown mounting system (top mount optional)",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 349,
+      "price_date": "2026-11-23",
+      "price_url": "https://modedesigns.com/pages/prologue",
+      "official_url": "https://modedesigns.com/pages/prologue",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mode Designs: Prologue page",
+          "url": "https://modedesigns.com/pages/prologue",
+          "kind": "official",
+          "backs": [
+            "size",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "connectivity",
+            "price_usd",
+            "status",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "98% layout with numpad and function row; hotswap MX-style PCB, wired USB-C with magnetic pogo-pin daughterboard. Case is aluminum with hardwood and steel parts; sold as a kit without switches, keycaps or stabilizers."
+    },
+    {
+      "id": "mode-designs-sonnet",
+      "brand": "mode-designs",
+      "model": "Sonnet",
+      "aka": [
+        "Sonnet (2026)"
+      ],
+      "status": "current",
+      "released": "2026",
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "mounting block system (top mount optional)",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 289,
+      "price_date": "2026-11-23",
+      "price_url": "https://modedesigns.com/pages/sonnet",
+      "official_url": "https://modedesigns.com/pages/sonnet",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/mechanical-keyboards/mode-sonnet-custom-mechanical-keyboard-review-refined-elegance",
+          "date": "2023-12-02",
+          "score": "5/5",
+          "verdict": "Review of the earlier Sonnet: refined looks and typing feel, costly once configured, one of the best boards sold outside a group buy."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mode Designs: Sonnet page",
+          "url": "https://modedesigns.com/pages/sonnet",
+          "kind": "official",
+          "backs": [
+            "size",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "firmware",
+            "os",
+            "connectivity",
+            "price_usd",
+            "status",
+            "released",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Mode Sonnet review",
+          "url": "https://www.tomshardware.com/peripherals/mechanical-keyboards/mode-sonnet-custom-mechanical-keyboard-review-refined-elegance",
+          "kind": "review",
+          "backs": [
+            "reviews"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kit without switches, keycaps or stabilizers; PCB offered in solder and hotswap versions (80-83 switches, MX-style, pin support not stated). Page showed all 2026 editions sold out when read; $289 is the cheapest listed configuration (solder, POM plate)."
+    },
+    {
+      "id": "mode-designs-tempo",
+      "brand": "mode-designs",
+      "model": "Tempo",
+      "aka": [],
+      "status": "discontinued",
+      "released": "2023",
+      "kind": "barebones",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://modedesigns.com/pages/archive/tempo",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Mode Designs: Tempo archive page",
+          "url": "https://modedesigns.com/pages/archive/tempo",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Mode Keyboard Compendium: Tempo",
+          "url": "https://compendium.modedesigns.com/keyboards/tempo/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Discontinued 60% in a one-piece case with a floating side profile; production years 2023-2025 per the compendium."
+    }
+  ]
+}

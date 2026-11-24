@@ -1,0 +1,1320 @@
+{
+  "brand": {
+    "id": "iqunix",
+    "name": "IQUNIX",
+    "country": null,
+    "founded": null,
+    "official_url": "https://iqunix.com/",
+    "focus": [
+      "premium",
+      "enthusiast",
+      "gaming"
+    ],
+    "about": "IQUNIX sells aluminum mechanical keyboards, low-profile wireless boards, Hall effect gaming boards and custom kits through its own store.",
+    "sources": [
+      {
+        "title": "IQUNIX: official store",
+        "url": "https://iqunix.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "iqunix-ardbeg-65",
+      "brand": "iqunix",
+      "model": "Ardbeg 65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "IQUNIX Moonstone",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "tray",
+      "firmware": [],
+      "software": "IQUNIX Firmware",
+      "os": [],
+      "price_usd": 239,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/ardbeg-65",
+      "official_url": "https://iqunix.com/products/ardbeg-65",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: Ardbeg 65",
+          "url": "https://iqunix.com/products/ardbeg-65",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "case_material",
+            "mount",
+            "software",
+            "price_usd",
+            "official_url",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Price is the barebone configuration; a Moonstone-switch configuration costs more. FR4 plate, Bluetooth 5.1, 2.4 GHz and USB-C. Hot-swap not stated on the page read."
+    },
+    {
+      "id": "iqunix-ec75",
+      "brand": "iqunix",
+      "model": "EC75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Diamond Pro",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum top case",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-ec75-hall-effect-gaming-keyboard",
+      "official_url": "https://iqunix.com/products/iqunix-ec75-hall-effect-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: EC75",
+          "url": "https://iqunix.com/products/iqunix-ec75-hall-effect-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Key count and connection modes not stated in the text read; recorded as wired. 0.01 mm Rapid Trigger sensitivity."
+    },
+    {
+      "id": "iqunix-ev63",
+      "brand": "iqunix",
+      "model": "EV63",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 64,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Magnetic X Pro",
+          "id": null
+        },
+        {
+          "name": "Magnetic X Ultra",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum with forged carbon front edge",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "EV Software (web-based)",
+      "os": [],
+      "price_usd": 169,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
+      "official_url": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: EV63",
+          "url": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "software",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "0.01 mm Rapid Trigger resolution. Special editions (EDG, Ghost in the Shell) are sold separately. Key count 64 per the product page."
+    },
+    {
+      "id": "iqunix-ez60",
+      "brand": "iqunix",
+      "model": "EZ60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Star Trail",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade",
+          "id": "gateron-magnetic-jade"
+        },
+        {
+          "name": "Magnetic Jade Pro",
+          "id": "gateron-magnetic-jade-pro"
+        },
+        {
+          "name": "Pink Jade Pro",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade Gaming",
+          "id": "gateron-magnetic-jade-gaming"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "web-based",
+      "os": [],
+      "price_usd": 179,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-ez60-ez63-he",
+      "official_url": "https://iqunix.com/products/iqunix-ez60-ez63-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: EZ60/EZ63 HE",
+          "url": "https://iqunix.com/products/iqunix-ez60-ez63-he",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "price_usd",
+            "official_url",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired only; key count not read. 0.05 mm Rapid Trigger and accuracy per the page. EZ63 colour editions cost more."
+    },
+    {
+      "id": "iqunix-ez63",
+      "brand": "iqunix",
+      "model": "EZ63",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Star Trail",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade",
+          "id": "gateron-magnetic-jade"
+        },
+        {
+          "name": "Magnetic Jade Pro",
+          "id": "gateron-magnetic-jade-pro"
+        },
+        {
+          "name": "Pink Jade Pro",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade Gaming",
+          "id": "gateron-magnetic-jade-gaming"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "web-based",
+      "os": [],
+      "price_usd": 179,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-ez60-ez63-he",
+      "official_url": "https://iqunix.com/products/iqunix-ez60-ez63-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: EZ60/EZ63 HE",
+          "url": "https://iqunix.com/products/iqunix-ez60-ez63-he",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "price_usd",
+            "official_url",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired only; key count not read. 0.05 mm Rapid Trigger and accuracy per the page. EZ63 colour editions cost more."
+    },
+    {
+      "id": "iqunix-ez75",
+      "brand": "iqunix",
+      "model": "EZ75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Magnetic X Ultra",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "web-based",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 259,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-ez80-he",
+      "official_url": "https://iqunix.com/products/iqunix-ez80-he",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/iqunix/ez80",
+          "date": "2025-10-01",
+          "score": null,
+          "verdict": "Compact Hall effect gaming boards with a solid CNC aluminum build, several layers of foam and a gasket mount."
+        }
+      ],
+      "sources": [
+        {
+          "title": "IQUNIX: EZ80/EZ75 HE",
+          "url": "https://iqunix.com/products/iqunix-ez80-he",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "os",
+            "price_usd",
+            "official_url",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: IQUNIX EZ80/EZ75 review",
+          "url": "https://www.rtings.com/keyboard/reviews/iqunix/ez80",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Shares the EZ80/EZ75 product page; the specification block read is written for the EZ80, so the EZ75 values are taken from it and its key count is not confirmed."
+    },
+    {
+      "id": "iqunix-ez80",
+      "brand": "iqunix",
+      "model": "EZ80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Magnetic X Ultra",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade Pro",
+          "id": "gateron-magnetic-jade-pro"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "web-based",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 289,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-ez80-he",
+      "official_url": "https://iqunix.com/products/iqunix-ez80-he",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/iqunix/ez80",
+          "date": "2025-10-01",
+          "score": null,
+          "verdict": "Compact Hall effect gaming boards with a solid CNC aluminum build, several layers of foam and a gasket mount."
+        }
+      ],
+      "sources": [
+        {
+          "title": "IQUNIX: EZ80/EZ75 HE",
+          "url": "https://iqunix.com/products/iqunix-ez80-he",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "software",
+            "os",
+            "price_usd",
+            "official_url",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: IQUNIX EZ80/EZ75 review",
+          "url": "https://www.rtings.com/keyboard/reviews/iqunix/ez80",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation adjustable 0.005 to 3.8 mm; 8000 Hz polling, wired only. Dark Side RS editions cost more."
+    },
+    {
+      "id": "iqunix-fox75",
+      "brand": "iqunix",
+      "model": "FOX75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Pearlstone",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "VIA",
+      "os": [],
+      "price_usd": 179,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "official_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: FOX series",
+          "url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+          "kind": "official",
+          "backs": [
+            "battery_mah",
+            "switches",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "One store page covers the FOX98, FOX99, FOX80 and FOX75. Tri-mode (Bluetooth 5.1, 2.4 GHz, USB-C), 4000 mAh, hot-swappable per the page; Pearlstone is the switch named for the FOX98/99 (37 gf). Key counts per model not confirmed."
+    },
+    {
+      "id": "iqunix-fox80",
+      "brand": "iqunix",
+      "model": "FOX80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Pearlstone",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "VIA",
+      "os": [],
+      "price_usd": 199,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "official_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: FOX series",
+          "url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+          "kind": "official",
+          "backs": [
+            "battery_mah",
+            "switches",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "One store page covers the FOX98, FOX99, FOX80 and FOX75. Tri-mode (Bluetooth 5.1, 2.4 GHz, USB-C), 4000 mAh, hot-swappable per the page; Pearlstone is the switch named for the FOX98/99 (37 gf). Key counts per model not confirmed."
+    },
+    {
+      "id": "iqunix-fox98",
+      "brand": "iqunix",
+      "model": "FOX98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Pearlstone",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "VIA",
+      "os": [],
+      "price_usd": 259,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "official_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: FOX series",
+          "url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+          "kind": "official",
+          "backs": [
+            "battery_mah",
+            "switches",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "One store page covers the FOX98, FOX99, FOX80 and FOX75. Tri-mode (Bluetooth 5.1, 2.4 GHz, USB-C), 4000 mAh, hot-swappable per the page; Pearlstone is the switch named for the FOX98/99 (37 gf). Key counts per model not confirmed."
+    },
+    {
+      "id": "iqunix-fox99",
+      "brand": "iqunix",
+      "model": "FOX99",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Pearlstone",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "VIA",
+      "os": [],
+      "price_usd": 259,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "official_url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: FOX series",
+          "url": "https://iqunix.com/products/iqunix-fox-series-mechanical-keyboards-fox98-99-80-75",
+          "kind": "official",
+          "backs": [
+            "battery_mah",
+            "switches",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "One store page covers the FOX98, FOX99, FOX80 and FOX75. Tri-mode (Bluetooth 5.1, 2.4 GHz, USB-C), 4000 mAh, hot-swappable per the page; Pearlstone is the switch named for the FOX98/99 (37 gf). Key counts per model not confirmed."
+    },
+    {
+      "id": "iqunix-magi65",
+      "brand": "iqunix",
+      "model": "Magi65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Gold Red Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "Le-Tray",
+      "firmware": [
+        "via"
+      ],
+      "software": "VIA",
+      "os": [
+        "windows",
+        "mac",
+        "ios",
+        "android"
+      ],
+      "price_usd": 119,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/magi65",
+      "official_url": "https://iqunix.com/products/magi65",
+      "reviews": [
+        {
+          "outlet": "Notebookcheck",
+          "url": "https://www.notebookcheck.net/Iqunix-Magi65-Pro-review-Low-profile-wireless-mechanical-keyboard-nails-it-with-an-affordable-price.974218.0.html",
+          "date": "2025-03-15",
+          "score": null,
+          "verdict": "Reviews the Magi65 Pro: exceptional typing feel and battery life in a compact, well-made package at an affordable price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "IQUNIX: Magi65",
+          "url": "https://iqunix.com/products/magi65",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magi65 Pro adds a scroll wheel and macro pad ($139). Bluetooth 5.1, 2.4 GHz and USB-C. Low-profile socket type not stated."
+    },
+    {
+      "id": "iqunix-magi75",
+      "brand": "iqunix",
+      "model": "Magi75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Gold Red Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "VIA",
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-magi75-96-aluminum-low-profile-mechanical-keyboard",
+      "official_url": "https://iqunix.com/products/iqunix-magi75-96-aluminum-low-profile-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: Magi75",
+          "url": "https://iqunix.com/products/iqunix-magi75-96-aluminum-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "battery_mah",
+            "switches",
+            "case_material",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A Pro version of each size costs $20 more. Key count not confirmed. Low-profile switches with 30 to 50 gf actuation and 1.2 mm pre-travel per the store page. Up to 500 hours claimed with the backlight off."
+    },
+    {
+      "id": "iqunix-magi96",
+      "brand": "iqunix",
+      "model": "Magi96",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Gold Red Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "VIA",
+      "os": [],
+      "price_usd": 159,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-magi75-96-aluminum-low-profile-mechanical-keyboard",
+      "official_url": "https://iqunix.com/products/iqunix-magi75-96-aluminum-low-profile-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: Magi96",
+          "url": "https://iqunix.com/products/iqunix-magi75-96-aluminum-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "battery_mah",
+            "switches",
+            "case_material",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A Pro version of each size costs $20 more. Key count not confirmed. Low-profile switches with 30 to 50 gf actuation and 1.2 mm pre-travel per the store page. Up to 500 hours claimed with the backlight off."
+    },
+    {
+      "id": "iqunix-mq80",
+      "brand": "iqunix",
+      "model": "MQ80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Kailh Gold Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "Le-Tray gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 159,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/mq80-aluminum-low-profile-mechanical-keyboard",
+      "official_url": "https://iqunix.com/products/mq80-aluminum-low-profile-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/mechanical-keyboards/iqunix-mq80-low-profile-mechanical-keyboard-review",
+          "date": "2026-10-25",
+          "score": null,
+          "verdict": "Reviews the low-profile aluminum MQ80, noting it faces stiff competition."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/iqunix-mq80-review",
+          "date": "2026-07-06",
+          "score": null,
+          "verdict": "Calls it a stellar mechanical keyboard that is a delight to type on."
+        }
+      ],
+      "sources": [
+        {
+          "title": "IQUNIX: MQ80",
+          "url": "https://iqunix.com/products/mq80-aluminum-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "official_url",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: IQUNIX MQ80 review",
+          "url": "https://www.tomshardware.com/peripherals/mechanical-keyboards/iqunix-mq80-low-profile-mechanical-keyboard-review",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "case_material",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "80% layout, 84 keys. 1000 Hz wired and 2.4 GHz, 125 Hz over Bluetooth. Sources disagree on the switch name (Kailh Gold Red on the official page, Rose Red in one review)."
+    },
+    {
+      "id": "iqunix-tilly-60",
+      "brand": "iqunix",
+      "model": "TILLY 60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "proprietary"
+      ],
+      "software": "IQUNIX Firmware / QMK Firmware",
+      "os": [],
+      "price_usd": 245,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-super-tilly60",
+      "official_url": "https://iqunix.com/products/iqunix-super-tilly60",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: TILLY 60",
+          "url": "https://iqunix.com/products/iqunix-super-tilly60",
+          "kind": "official",
+          "backs": [
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kit with HHKB or WK bottom-row layouts and a hot-swap PCB (wired QMK or tri-mode). Price is the wired hot-swap PCB kit."
+    },
+    {
+      "id": "iqunix-zonex-75",
+      "brand": "iqunix",
+      "model": "ZONEX 75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Moonstone",
+          "id": null
+        },
+        {
+          "name": "Moonstone Turbo",
+          "id": null
+        },
+        {
+          "name": "Moonstone Mute",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "proprietary"
+      ],
+      "software": "IQUNIX Firmware / QMK Firmware",
+      "os": [],
+      "price_usd": 265,
+      "price_date": "2026-11-23",
+      "price_url": "https://iqunix.com/products/iqunix-super-zonex-75",
+      "official_url": "https://iqunix.com/products/iqunix-super-zonex-75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "IQUNIX: ZONEX 75",
+          "url": "https://iqunix.com/products/iqunix-super-zonex-75",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "switches",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd",
+            "official_url",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Kit with wired or tri-mode PCB options; the price is the regular price of the wired barebone kit (the store lists a sale price). Hot-swap not stated on the page read."
+    }
+  ]
+}

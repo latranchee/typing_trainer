@@ -1,0 +1,181 @@
+{
+  "maker": {
+    "id": "owlab",
+    "name": "Owlab",
+    "role": "both",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "about": "Keyboard brand whose London Fog V2 is made by HMX; Keyboard Builders' Digest lists Owlab as manufacturer of its Ti HE magnetic switch.",
+    "sources": [
+      {
+        "title": "Keyboard Builders' Digest: Owlab London Fog V2",
+        "url": "https://kbd.news/switch/Owlab-London-Fog-V2-switch-556.html",
+        "kind": "reference",
+        "backs": [
+          "about",
+          "made_by"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "owlab-london-fog-v2",
+      "name": "London Fog V2",
+      "maker": "owlab",
+      "made_by": "hmx",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 43,
+      "bottom_out_force_gf": 49,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.9,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "modified P1",
+        "stem": "modified POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: Owlab London Fog V2",
+          "url": "https://kbd.news/switch/Owlab-London-Fog-V2-switch-556.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "pre_travel_mm",
+            "factory_lubed",
+            "actuation_force_gf",
+            "spring",
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Keyboard Builders' Digest quotes Divinikey saying this V2 is manufactured by HMX; the data sheet lists Owlab as manufacturer."
+    },
+    {
+      "id": "owlab-ti-he-40g",
+      "name": "Ti HE 40g",
+      "maker": "owlab",
+      "made_by": null,
+      "family": "Ti HE",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 40,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA (closed-bottom)",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: OWlab Ti HE (40g)",
+          "url": "https://kbd.news/switch/OWlab-Ti-HE-switch-366.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "factory_lubed",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear; the actuation point is set in firmware. Owlab's first Hall-effect switch."
+    },
+    {
+      "id": "owlab-ti-he-50g",
+      "name": "Ti HE 50g",
+      "maker": "owlab",
+      "made_by": null,
+      "family": "Ti HE",
+      "aka": [],
+      "type": "linear",
+      "sensing": "magnetic",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 50,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": 3.4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "PA (closed-bottom)",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": true,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: OWlab Ti HE (50g)",
+          "url": "https://kbd.news/switch/OWlab-Ti-HE-switch-297.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "sensing",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "factory_lubed",
+            "light_pipe"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall-effect linear; the actuation point is set in firmware. Owlab's first Hall-effect switch."
+    }
+  ]
+}

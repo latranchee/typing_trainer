@@ -1,0 +1,558 @@
+{
+  "brand": {
+    "id": "angry-miao",
+    "name": "Angry Miao",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.angrymiao.com/",
+    "focus": [
+      "premium",
+      "enthusiast"
+    ],
+    "about": "Keyboard and mouse brand known for limited-run design boards such as the Cyberboard line, sold on its own store as base kits and bundles with keycaps and switches. Its Dry Studio label covers cheaper gaming boards.",
+    "sources": [
+      {
+        "title": "Angry Miao: US store",
+        "url": "https://store.angrymiao.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "angry-miao-atm-98",
+      "brand": "angry-miao",
+      "model": "ATM 98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 259,
+      "price_date": "2026-11-23",
+      "price_url": "https://store.angrymiao.com/products/atm-98",
+      "official_url": "https://store.angrymiao.com/products/atm-98",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: ATM 98 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/atm-98",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dry Studio board described as silent-first and tagged 98 by the store; $259 is the regular price (sale price $209 when read). Connectivity, switches and mount not stated in the data read."
+    },
+    {
+      "id": "angry-miao-black-diamond-75-v2",
+      "brand": "angry-miao",
+      "model": "Black Diamond 75 V2",
+      "aka": [
+        "Dry Studio Black Diamond 75 V2"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "leaf spring",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 299,
+      "price_date": "2026-11-23",
+      "price_url": "https://store.angrymiao.com/products/dry-studio-black-diamond-75-v2-shadow-crimson",
+      "official_url": "https://store.angrymiao.com/products/dry-studio-black-diamond-75-v2-shadow-crimson",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: Black Diamond 75 V2 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/dry-studio-black-diamond-75-v2-shadow-crimson",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "mount",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dry Studio board with tri-mode connectivity, a leaf-spring mount and RGB; $299 is the regular price (sale price $269 when read) for the Shadow Crimson listing."
+    },
+    {
+      "id": "angry-miao-compact-touch",
+      "brand": "angry-miao",
+      "model": "Compact Touch",
+      "aka": [
+        "AM Compact Touch (65 Less) R1"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "60",
+      "key_count": 59,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "leaf spring",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://store.angrymiao.com/products/am-compact-touch",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: Compact Touch product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/am-compact-touch",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "status",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Base kit has an aluminum case, a 1.2 mm cut-out hotswap RGB PCB, an FR4 plate and a leaf-spring flex kit; the bundle adds 59 keycaps, 59 Icy Silver switches and stabilizers. Every variant was out of stock when read."
+    },
+    {
+      "id": "angry-miao-cyberboard-r3",
+      "brand": "angry-miao",
+      "model": "Cyberboard R3",
+      "aka": [
+        "Cyberboard R3 - Inspired by Wes Anderson"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://store.angrymiao.com/products/cyberboard-r3",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: Cyberboard R3 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/cyberboard-r3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "mount",
+            "status",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Base kit includes case, plate and USB, keyboard and LED PCBs; the bundle adds keycaps, TTC Golden Red switches and Gateron stabilizers. A soldering PCB is offered that enables ISO layout. All variants were out of stock when read."
+    },
+    {
+      "id": "angry-miao-cyberboard-r4",
+      "brand": "angry-miao",
+      "model": "Cyberboard R4",
+      "aka": [
+        "AM Cyberboard R4"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://store.angrymiao.com/products/am-cyberboard-r4",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: Cyberboard R4 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/am-cyberboard-r4",
+          "kind": "official",
+          "backs": [
+            "size",
+            "status",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold in base kit and bundle variants in several colors; every variant was out of stock when read, with a limited restock note on the page. Size comes from the 75keyboard store tag; connectivity, mount and PCB details not stated in the data read."
+    },
+    {
+      "id": "angry-miao-neon-80",
+      "brand": "angry-miao",
+      "model": "Neon 80",
+      "aka": [
+        "AM Neon 80"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://store.angrymiao.com/products/am-neon-80",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: Neon 80 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/am-neon-80",
+          "kind": "official",
+          "backs": [
+            "size",
+            "status",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Listed as a pre-sale in base kit and bundle versions in three colors; every variant was out of stock when read. Size taken from the 80keyboard store tag; other specifications not stated in the data read."
+    },
+    {
+      "id": "angry-miao-relic-80",
+      "brand": "angry-miao",
+      "model": "Relic 80",
+      "aka": [
+        "AM Relic 80"
+      ],
+      "status": "current",
+      "released": "2024",
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 5000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 660,
+      "price_date": "2026-11-23",
+      "price_url": "https://store.angrymiao.com/products/am-relic-80",
+      "official_url": "https://store.angrymiao.com/products/am-relic-80",
+      "reviews": [
+        {
+          "outlet": "TechCrunch",
+          "url": "https://techcrunch.com/2024/02/06/angry-miao-only-goes-slightly-over-the-top-with-the-relic-80-tkl-keyboard/",
+          "date": "2024-02-06",
+          "score": null,
+          "verdict": "A striking, pleasant-typing tenkeyless that avoids the brand's usual excess, though the price is steep."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Angry Miao store: Relic 80 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/am-relic-80",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "TechCrunch: Relic 80 review",
+          "url": "https://techcrunch.com/2024/02/06/angry-miao-only-goes-slightly-over-the-top-with-the-relic-80-tkl-keyboard/",
+          "kind": "review",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "released",
+            "reviews"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tenkeyless with an FR4 plate, hotswap sockets, wired, Bluetooth and 2.4 GHz connectivity and two 5,000 mAh batteries per the TechCrunch review of the launch unit. $660 is the regular price on the store (sale price $599 when read), for the base kit or bundle listing. Case material and mount not stated in the sources read."
+    },
+    {
+      "id": "angry-miao-retro-63-rt",
+      "brand": "angry-miao",
+      "model": "Retro 63 RT",
+      "aka": [
+        "Dry Studio Retro 63 RT"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 559,
+      "price_date": "2026-11-23",
+      "price_url": "https://store.angrymiao.com/products/retro-63-rt",
+      "official_url": "https://store.angrymiao.com/products/retro-63-rt",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: Retro 63 RT product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/retro-63-rt",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dry Studio board tagged Hall Effect and 60% by the store; $559 is the regular price (sale price $449 when read). Connectivity, switches and rapid-trigger support not stated in the data read."
+    },
+    {
+      "id": "angry-miao-rgb-65-r1",
+      "brand": "angry-miao",
+      "model": "RGB 65 R1",
+      "aka": [
+        "AM RGB 65 R1"
+      ],
+      "status": "discontinued",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Icy Silver Pro V2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "adjustable leaf spring",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://store.angrymiao.com/products/am-rgb-65-r1",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Angry Miao store: RGB 65 R1 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://store.angrymiao.com/products/am-rgb-65-r1",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "mount",
+            "switches",
+            "status",
+            "kind"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gameboy-inspired board with a DIY LED screen and tri-mode connectivity; the bundle includes Icy Silver Pro V2 switches and the base kit omits keycaps and switches. Every variant was out of stock when read. Hotswap not stated."
+    }
+  ]
+}

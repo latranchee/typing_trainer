@@ -1,0 +1,387 @@
+{
+  "brand": {
+    "id": "leobog",
+    "name": "LEOBOG",
+    "country": "CN",
+    "founded": null,
+    "official_url": "https://www.leobog.com/en/",
+    "focus": [
+      "budget",
+      "enthusiast",
+      "gaming"
+    ],
+    "about": "LEOBOG is a Chinese brand of keyboards, mice and headsets that also sells its own switches; its keyboards reach US buyers mainly through retailers and Epomaker.",
+    "sources": [
+      {
+        "title": "LEOBOG: keyboard lineup",
+        "url": "https://www.leobog.com/en/keyboard/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "leobog-amg65",
+      "brand": "leobog",
+      "model": "AMG65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leobog.com/en/amg65/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: AMG65",
+          "url": "https://www.leobog.com/en/amg65/",
+          "kind": "official",
+          "backs": [
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: keyboard lineup",
+          "url": "https://www.leobog.com/en/keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "model"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "LEOBOG's own product pages hold images only and no US store price was read, so price and most specs are empty. Dot-matrix display tri-mode board; hot-swap per retailer listings."
+    },
+    {
+      "id": "leobog-hi65",
+      "brand": "leobog",
+      "model": "Hi65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leobog.com/en/hi65/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Hi65",
+          "url": "https://www.leobog.com/en/hi65/",
+          "kind": "official",
+          "backs": [
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: keyboard lineup",
+          "url": "https://www.leobog.com/en/keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "model"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "LEOBOG's own product pages hold images only and no US store price was read, so price and most specs are empty. Tri-mode, gasket mount and hot-swap per comparison and retailer listings."
+    },
+    {
+      "id": "leobog-hi75",
+      "brand": "leobog",
+      "model": "Hi75",
+      "aka": [
+        "Epomaker x Leobog Hi75"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leobog.com/en/hi75/",
+      "reviews": [
+        {
+          "outlet": "Laptop Mag",
+          "url": "https://www.laptopmag.com/laptops/keyboards-mice/epomaker-x-leobog-hi75-keyboard-review-a-budget-keyboard-never-sounded-so-good",
+          "date": "2024-04-08",
+          "score": null,
+          "verdict": "Budget mechanical keyboard that is easy to recommend for its sound, full aluminum case and extensive customization."
+        },
+        {
+          "outlet": "SlashGear",
+          "url": "https://www.slashgear.com/1729985/leobog-hi75-viral-mechanical-keyboard-test",
+          "date": "2024-12-11",
+          "score": null,
+          "verdict": "Tests the viral Hi75 and finds it worth the hype."
+        }
+      ],
+      "sources": [
+        {
+          "title": "LEOBOG: Hi75",
+          "url": "https://www.leobog.com/en/hi75/",
+          "kind": "official",
+          "backs": [
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: keyboard lineup",
+          "url": "https://www.leobog.com/en/keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "model"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "SlashGear: LeoBog Hi75 test",
+          "url": "https://www.slashgear.com/1729985/leobog-hi75-viral-mechanical-keyboard-test",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "case_material",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "LEOBOG's own product pages hold images only and no US store price was read, so price and most specs are empty. Wired, hot-swappable 75% with an 81-key layout, aluminum case and gasket mount, per reviews and retailer listings. QMK/VIA support is unconfirmed."
+    },
+    {
+      "id": "leobog-hi86",
+      "brand": "leobog",
+      "model": "Hi86",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leobog.com/en/hi86/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "LEOBOG: Hi86",
+          "url": "https://www.leobog.com/en/hi86/",
+          "kind": "official",
+          "backs": [
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: keyboard lineup",
+          "url": "https://www.leobog.com/en/keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "model"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "LEOBOG's own product pages hold images only and no US store price was read, so price and most specs are empty. Full-aluminum custom tri-mode board listed under the 75% layouts; hot-swap and an 86-key layout per retailer listings (key count left empty)."
+    },
+    {
+      "id": "leobog-hi98-pro",
+      "brand": "leobog",
+      "model": "Hi98 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.leobog.com/en/hi98-pro/",
+      "reviews": [
+        {
+          "outlet": "The Gadgeteer",
+          "url": "https://the-gadgeteer.com/2025/02/07/leobog-hi98-pro-mechanical-keyboard-review-solid-build-and-battery/",
+          "date": "2025-02-07",
+          "score": null,
+          "verdict": "Reviews the Hi98 Pro as a mechanical keyboard with a solid build and a good battery."
+        }
+      ],
+      "sources": [
+        {
+          "title": "LEOBOG: Hi98 Pro",
+          "url": "https://www.leobog.com/en/hi98-pro/",
+          "kind": "official",
+          "backs": [
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "LEOBOG: keyboard lineup",
+          "url": "https://www.leobog.com/en/keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "model"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "LEOBOG's own product pages hold images only and no US store price was read, so price and most specs are empty. LEOBOG lists the Hi98 Pro as a full-aluminum wired board; a review and retail listings describe wireless use, so connectivity may be wider."
+    }
+  ]
+}

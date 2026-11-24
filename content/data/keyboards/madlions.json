@@ -1,0 +1,822 @@
+{
+  "brand": {
+    "id": "madlions",
+    "name": "Madlions",
+    "country": null,
+    "founded": null,
+    "official_url": "https://madlionskeyboard.com/",
+    "focus": [
+      "gaming",
+      "budget"
+    ],
+    "about": "Hall-effect gaming keyboard brand (not the esports team at madlions.com) selling wired magnetic-switch boards on madlionskeyboard.com; retailers list the boards as made with Hyekit or FGG. This file holds 11 of the store's current keyboards.",
+    "sources": [
+      {
+        "title": "Madlions keyboard store: home page",
+        "url": "https://madlionskeyboard.com/",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "madlions-fire68-ultra",
+      "brand": "madlions",
+      "model": "FIRE68 Ultra",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Gateron magnetic switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 89.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/fire68-ultra/",
+      "official_url": "https://madlionskeyboard.com/product/fire68-ultra/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: FIRE68 Ultra product page",
+          "url": "https://madlionskeyboard.com/product/fire68-ultra/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gateron magnetic switches, 0.02 mm adjustment step, aluminum alloy backplate per the store; sale 84.98 on 2026-11-23. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-mad-75",
+      "brand": "madlions",
+      "model": "MAD 75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Lime Switch",
+          "id": null
+        },
+        {
+          "name": "Snowlight HE Switch",
+          "id": null
+        },
+        {
+          "name": "White Horse HE Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 69.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/mad-75-hall-effect-keyboard/",
+      "official_url": "https://madlionskeyboard.com/product/mad-75-hall-effect-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: MAD 75 product page",
+          "url": "https://madlionskeyboard.com/product/mad-75-hall-effect-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Store lists switch force 35 gf with 3.2 to 3.5 mm travel; 256K scan rate, 0.08 ms rated latency. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-mad-light-60-he",
+      "brand": "madlions",
+      "model": "MAD LIGHT 60 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Huannuo Tianqi magnetic switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 118.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/mad-light-60-he/",
+      "official_url": "https://madlionskeyboard.com/product/mad-light-60-he/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: MAD LIGHT 60 HE product page",
+          "url": "https://madlionskeyboard.com/product/mad-light-60-he/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "CNC aluminum case, actuation 0.01 to 3.5 mm, 3.6 mm travel, 35 gf; 98.98 sale on 2026-11-23. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-mad60-pro",
+      "brand": "madlions",
+      "model": "MAD60 PRO",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Magnetic Silver Switch",
+          "id": null
+        },
+        {
+          "name": "Magnetic Jade Gaming Pro Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 79.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/mad60-pro/",
+      "official_url": "https://madlionskeyboard.com/product/mad60-pro/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: MAD60 PRO product page",
+          "url": "https://madlionskeyboard.com/product/mad60-pro/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Aluminum chassis, 0.01 mm actuation precision; out of stock on 2026-11-23. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-mad60-v2",
+      "brand": "madlions",
+      "model": "MAD60 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Snowlight HE Switch",
+          "id": null
+        },
+        {
+          "name": "White Horse HE Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 59.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/mad60v2-hall-effect-keyboard/",
+      "official_url": "https://madlionskeyboard.com/product/mad60v2-hall-effect-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: MAD60 V2 product page",
+          "url": "https://madlionskeyboard.com/product/mad60v2-hall-effect-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "RT precision 0.001 mm and 0.125 ms latency per the store; also sold as MAD68 V2. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-mad60he",
+      "brand": "madlions",
+      "model": "MAD60HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Magnetic Switch",
+          "id": null
+        },
+        {
+          "name": "Magnetic Gaming Switch",
+          "id": null
+        },
+        {
+          "name": "Gateron Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "tray",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 49.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/mad60he/",
+      "official_url": "https://madlionskeyboard.com/product/mad60he/",
+      "reviews": [
+        {
+          "outlet": "Tech4Gamers",
+          "url": "https://tech4gamers.com/wooting-60he-vs-its-exact-clone-but-is-it-worth-it/",
+          "date": "2025-09-22",
+          "score": null,
+          "verdict": "Remarkable bargain copy of the Wooting 60HE+, with inconsistent software, a 30-day warranty and a risk the brand disappears."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Madlions: MAD60HE product page",
+          "url": "https://madlionskeyboard.com/product/mad60he/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tech4Gamers: Madlions Mad60 vs Wooting 60HE+",
+          "url": "https://tech4gamers.com/wooting-60he-vs-its-exact-clone-but-is-it-worth-it/",
+          "kind": "review",
+          "backs": [
+            "case_material",
+            "mount",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Silent-switch design, RT step 0.04 mm per the store; priced 48.98 sale, 49.98 regular on the cheapest option (up to 72.98). Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-mad68-pro",
+      "brand": "madlions",
+      "model": "MAD68 PRO",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Magnetic Jade Custom Switch",
+          "id": null
+        },
+        {
+          "name": "Sealed Magnetic Silver Switch",
+          "id": null
+        },
+        {
+          "name": "Magnetic King Switch",
+          "id": null
+        },
+        {
+          "name": "TTC Titan Magnetic Gaming Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 74.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/mad68-pro/",
+      "official_url": "https://madlionskeyboard.com/product/mad68-pro/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: MAD68 PRO product page",
+          "url": "https://madlionskeyboard.com/product/mad68-pro/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Aluminum alloy case and plate; 0.01 mm precision; 72.98 sale on 2026-11-23. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-mad68he",
+      "brand": "madlions",
+      "model": "MAD68HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Magnetic Gaming Switch",
+          "id": null
+        },
+        {
+          "name": "Gateron Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 69.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/mad68he/",
+      "official_url": "https://madlionskeyboard.com/product/mad68he/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: MAD68HE product page",
+          "url": "https://madlionskeyboard.com/product/mad68he/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation distance as low as 0.04 mm per the store; sold in white and black, several keycap options; 62.98 sale on 2026-11-23. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-nano68-pro",
+      "brand": "madlions",
+      "model": "NANO68 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Amber Magnetic Switch PRO",
+          "id": null
+        },
+        {
+          "name": "TTC Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 89.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/nano68-pro/",
+      "official_url": "https://madlionskeyboard.com/product/nano68-pro/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: NANO68 Pro product page",
+          "url": "https://madlionskeyboard.com/product/nano68-pro/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.01 to 3.3 mm, RT 0.01 to 3.3 mm per the store; 128 kHz scan rate; wired. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-titan-68-turbo",
+      "brand": "madlions",
+      "model": "TITAN 68 Turbo",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Black Onyx Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 79.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/titan-68-turbo/",
+      "official_url": "https://madlionskeyboard.com/product/titan-68-turbo/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: TITAN 68 Turbo product page",
+          "url": "https://madlionskeyboard.com/product/titan-68-turbo/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Black Onyx switch rated 38 gf, 3.5 mm travel; 512K scan rate; wired; sale 74.98 on 2026-11-23. Hot-swap is not stated on the Madlions page."
+    },
+    {
+      "id": "madlions-titan75-turbo",
+      "brand": "madlions",
+      "model": "TITAN75 Turbo",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Floating Light Hall Effect",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Madlions web driver",
+      "os": [],
+      "price_usd": 89.98,
+      "price_date": "2026-11-23",
+      "price_url": "https://madlionskeyboard.com/product/titan75-turbo-hall-effect-keyboard/",
+      "official_url": "https://madlionskeyboard.com/product/titan75-turbo-hall-effect-keyboard/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Madlions: TITAN75 Turbo product page",
+          "url": "https://madlionskeyboard.com/product/titan75-turbo-hall-effect-keyboard/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "connectivity",
+            "software",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.001 to 3.0 mm per the store; five-layer internal filling; sale 79.98 on 2026-11-23. Hot-swap is not stated on the Madlions page."
+    }
+  ]
+}

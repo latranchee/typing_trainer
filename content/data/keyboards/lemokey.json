@@ -1,0 +1,920 @@
+{
+  "brand": {
+    "id": "lemokey",
+    "name": "Lemokey",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.lemokey.com/",
+    "focus": [
+      "gaming",
+      "enthusiast"
+    ],
+    "about": "Lemokey is the gaming-focused sub-brand of Keychron, selling all-metal QMK/VIA and Hall effect keyboards through its own store.",
+    "sources": [
+      {
+        "title": "Lemokey: store",
+        "url": "https://www.lemokey.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "RTINGS: Lemokey P1 HE review",
+        "url": "https://www.rtings.com/keyboard/reviews/lemokey/p1-he",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "lemokey-l0-he",
+      "brand": "lemokey",
+      "model": "L0 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 35,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Lemokey Ultra-fast Lime Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 159.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-l0-he-one-handed-magnetic-switch-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-l0-he-one-handed-magnetic-switch-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lemokey: L0 HE",
+          "url": "https://www.lemokey.com/products/lemokey-l0-he-one-handed-magnetic-switch-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "hot_swap",
+            "connectivity",
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "One-handed Hall effect keypad with a knob; 8K polling in wired mode only. Actuation 0.1 to 3.35 mm on the Lemokey page. Price is the regular price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-l1",
+      "brand": "lemokey",
+      "model": "L1 QMK",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Gateron Jupiter Red",
+          "id": "gateron-jupiter-red"
+        },
+        {
+          "name": "Gateron Jupiter Brown",
+          "id": "gateron-jupiter-brown"
+        },
+        {
+          "name": "Gateron Jupiter Banana",
+          "id": "gateron-jupiter-banana"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 214.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-l1-qmk-via-wireless-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-l1-qmk-via-wireless-custom-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/lemokey-l1-review",
+          "date": "2024-12-20",
+          "score": null,
+          "verdict": "Finds the L1 visually striking with plenty of gaming performance, though at its price it may be a vanity purchase."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lemokey: L1 QMK",
+          "url": "https://www.lemokey.com/products/lemokey-l1-qmk-via-wireless-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "case_material",
+            "mount",
+            "firmware",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "key_count",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Lemokey L1 review",
+          "url": "https://www.tomsguide.com/computing/peripherals/lemokey-l1-review",
+          "kind": "review",
+          "backs": [
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Fully assembled; a barebone is also sold. Up to 200 hours per Keychron's listing. Price is the regular fully assembled price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-l1-he",
+      "brand": "lemokey",
+      "model": "L1 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Gateron Double-rail Magnetic Switch-Nebula",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 239.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-l1-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-l1-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lemokey: L1 HE",
+          "url": "https://www.lemokey.com/products/lemokey-l1-he-wireless-magnetic-switch-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "hot_swap",
+            "connectivity",
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "75% ANSI with knob, full-metal build, plate-mounted stabilizers. Key count not confirmed. Price is the regular price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-l3",
+      "brand": "lemokey",
+      "model": "L3 QMK",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Gateron Jupiter Red",
+          "id": "gateron-jupiter-red"
+        },
+        {
+          "name": "Gateron Jupiter Brown",
+          "id": "gateron-jupiter-brown"
+        },
+        {
+          "name": "Gateron Jupiter Banana",
+          "id": "gateron-jupiter-banana"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 214.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-l3-qmk-via-wireless-custom-mechanical-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-l3-qmk-via-wireless-custom-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lemokey: L3 QMK",
+          "url": "https://www.lemokey.com/products/lemokey-l3-qmk-via-wireless-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "case_material",
+            "mount",
+            "firmware",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "key_count",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "80% TKL with knob, 6063 aluminum body. Key count conflicts between sources (91 on the Lemokey page), so it is left empty. Price is the regular fully assembled price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-l4",
+      "brand": "lemokey",
+      "model": "L4 QMK",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Keychron Super Red",
+          "id": "keychron-super-red"
+        },
+        {
+          "name": "Keychron Super Brown",
+          "id": "keychron-super-brown"
+        },
+        {
+          "name": "Keychron Super Banana",
+          "id": "keychron-super-banana"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 214.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-l4-qmk-wireless-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-l4-qmk-wireless-custom-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lemokey: L4 QMK",
+          "url": "https://www.lemokey.com/products/lemokey-l4-qmk-wireless-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "case_material",
+            "mount",
+            "firmware",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "key_count",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "80% TKL; hot-swap for most 3-pin and 5-pin MX switches per the Lemokey page; Bluetooth 5.2. Price is the regular fully assembled price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-l5-he",
+      "brand": "lemokey",
+      "model": "L5 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Lemokey Ultra-fast Lime Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 209.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-l5-he-magnetic-switch-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-l5-he-magnetic-switch-custom-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/lemokey-l5-he-review",
+          "date": "2025-02-12",
+          "score": null,
+          "verdict": "Describes it as Lemokey's new flagship gaming keyboard, wired only with 8K polling and magnetic switches."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lemokey: L5 HE",
+          "url": "https://www.lemokey.com/products/lemokey-l5-he-magnetic-switch-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "hot_swap",
+            "connectivity",
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Lemokey L5 HE review",
+          "url": "https://www.tomsguide.com/computing/peripherals/lemokey-l5-he-review",
+          "kind": "review",
+          "backs": [
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired only. Polling selectable 1000, 2000 or 8000 Hz. Actuation 0.1 to 3.35 mm on the Lemokey page (Notebookcheck gives 0.01). Accepts only the Lemokey Ultra-fast Lime switch. Price is the regular price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-p1",
+      "brand": "lemokey",
+      "model": "P1 QMK/VIA",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Keychron Super Red",
+          "id": "keychron-super-red"
+        },
+        {
+          "name": "Keychron Super Brown",
+          "id": "keychron-super-brown"
+        },
+        {
+          "name": "Keychron Super Banana",
+          "id": "keychron-super-banana"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 114.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-p1-qmk-via-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-p1-qmk-via-custom-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lemokey: P1 QMK/VIA",
+          "url": "https://www.lemokey.com/products/lemokey-p1-qmk-via-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "case_material",
+            "mount",
+            "firmware",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "key_count",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold as a wired base version and a wireless Pro version, so the connectivity list is the union. The price is the regular price of the wired fully assembled version with knob."
+    },
+    {
+      "id": "lemokey-p1-he",
+      "brand": "lemokey",
+      "model": "P1 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Gateron Double-Rail Magnetic Nebula Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-p1-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-p1-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/lemokey/p1-he",
+          "date": "2025-03-07",
+          "score": null,
+          "verdict": "First Hall effect board from Lemokey, the gaming sub-brand of Keychron; reviewed as a gaming keyboard with adjustable actuation."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/lemokey-p1-he-review",
+          "date": "2025-03-21",
+          "score": null,
+          "verdict": "Calls it a fantastic magnetic keyboard with per-key actuation, 1,000 Hz polling and Rapid Trigger."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lemokey: P1 HE",
+          "url": "https://www.lemokey.com/products/lemokey-p1-he-wireless-magnetic-switch-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "hot_swap",
+            "connectivity",
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Lemokey P1 HE review",
+          "url": "https://www.rtings.com/keyboard/reviews/lemokey/p1-he",
+          "kind": "review",
+          "backs": [
+            "size",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Lemokey P1 HE review",
+          "url": "https://www.tomsguide.com/computing/peripherals/lemokey-p1-he-review",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation adjustable 0.2 to 3.8 mm. 1000 Hz over 2.4 GHz and wired, 125 Hz over Bluetooth. Accepts only Gateron double-rail magnetic switches. ISO sold as a separate collection page. Price is the regular price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-p2-he",
+      "brand": "lemokey",
+      "model": "P2 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Gateron Double-Rail Magnetic Nebula Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-p2-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-p2-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/lemokey-p2-he-review-a-tiny-powerhouse",
+          "date": "2026-03-27",
+          "score": null,
+          "verdict": "Says it packs enough power to rival big gaming brands while typing well and offering many customization options."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lemokey: P2 HE",
+          "url": "https://www.lemokey.com/products/lemokey-p2-he-wireless-magnetic-switch-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "hot_swap",
+            "connectivity",
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Lemokey P2 HE review",
+          "url": "https://www.tomsguide.com/computing/keyboards/lemokey-p2-he-review-a-tiny-powerhouse",
+          "kind": "review",
+          "backs": [
+            "size"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "65% ANSI with knob; actuation adjustable 0.2 to 3.8 mm; 1000 Hz over 2.4 GHz and wired, 125 Hz over Bluetooth. Key count not read. Price is the regular price; the store lists a sale price."
+    },
+    {
+      "id": "lemokey-p3-he",
+      "brand": "lemokey",
+      "model": "P3 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Gateron Double-Rail Magnetic Nebula Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lemokey.com/products/lemokey-p3-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "official_url": "https://www.lemokey.com/products/lemokey-p3-he-wireless-magnetic-switch-custom-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lemokey: P3 HE",
+          "url": "https://www.lemokey.com/products/lemokey-p3-he-wireless-magnetic-switch-custom-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "official_url",
+            "layout_standards",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "hot_swap",
+            "connectivity",
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "80% layout; Bluetooth 5.2; actuation adjustable 0.2 to 3.8 mm. Price is the regular price; the store lists a sale price."
+    }
+  ]
+}

@@ -95,7 +95,7 @@
       ],
       "software": "CHERRY Utility",
       "os": [],
-      "price_usd": 119.0,
+      "price_usd": 119,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n/",
@@ -162,7 +162,7 @@
       ],
       "software": "CHERRY Utility",
       "os": [],
-      "price_usd": 99.0,
+      "price_usd": 99,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n-tkl/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-g80-3000n-tkl/",
@@ -474,7 +474,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "CHERRY MX2A Brown",
@@ -716,7 +716,7 @@
       ],
       "software": "CHERRY Utility",
       "os": [],
-      "price_usd": 179.0,
+      "price_usd": 179,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-10-0n/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-10-0n/",
@@ -803,7 +803,7 @@
       ],
       "software": "CHERRY Utility",
       "os": [],
-      "price_usd": 109.0,
+      "price_usd": 109,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-2-0s-rgb-black/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-2-0s-rgb-black/",
@@ -876,7 +876,7 @@
       ],
       "software": "CHERRY Utility",
       "os": [],
-      "price_usd": 179.0,
+      "price_usd": 179,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-3-0s-wireless-black/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-3-0s-wireless-black/",
@@ -950,7 +950,7 @@
       ],
       "software": null,
       "os": [],
-      "price_usd": 209.0,
+      "price_usd": 209,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-8-2-tkl-wireless-black/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-8-2-tkl-wireless-black/",
@@ -1038,7 +1038,7 @@
       ],
       "software": "CHERRY Utility",
       "os": [],
-      "price_usd": 129.0,
+      "price_usd": 129,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-board-3-0s-rgb-black/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-board-3-0s-rgb-black/",
@@ -1116,7 +1116,7 @@
       ],
       "software": "CHERRY Utility",
       "os": [],
-      "price_usd": 139.0,
+      "price_usd": 139,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/cherry-mx-lp-2-1-compact-wireless-black/",
       "official_url": "https://cherryxtrfy.com/keyboards/cherry-mx-lp-2-1-compact-wireless-black/",
@@ -1245,7 +1245,7 @@
       "switches": [
         {
           "name": "Kailh Red RGB",
-          "id": null
+          "id": "kailh-kt-red"
         }
       ],
       "adjustable_actuation": false,
@@ -1257,7 +1257,7 @@
       ],
       "software": null,
       "os": [],
-      "price_usd": 109.0,
+      "price_usd": 109,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/k4/",
       "official_url": "https://cherryxtrfy.com/keyboards/k4/",
@@ -1312,7 +1312,7 @@
       "switches": [
         {
           "name": "Kailh Red RGB",
-          "id": null
+          "id": "kailh-kt-red"
         }
       ],
       "adjustable_actuation": false,
@@ -1324,7 +1324,7 @@
       ],
       "software": null,
       "os": [],
-      "price_usd": 109.0,
+      "price_usd": 109,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/k4-tkl/",
       "official_url": "https://cherryxtrfy.com/keyboards/k4-tkl/",
@@ -1391,7 +1391,7 @@
       ],
       "software": null,
       "os": [],
-      "price_usd": 119.0,
+      "price_usd": 119,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/k4v2-tkl/",
       "official_url": "https://cherryxtrfy.com/keyboards/k4v2-tkl/",
@@ -1446,7 +1446,7 @@
       "switches": [
         {
           "name": "Kailh Red",
-          "id": null
+          "id": "kailh-kt-red"
         },
         {
           "name": "Cherry MX Speed Silver",
@@ -1470,7 +1470,7 @@
       ],
       "software": null,
       "os": [],
-      "price_usd": 139.0,
+      "price_usd": 139,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/k5-compact/",
       "official_url": "https://cherryxtrfy.com/keyboards/k5-compact/",
@@ -1531,7 +1531,7 @@
       ],
       "software": null,
       "os": [],
-      "price_usd": 89.0,
+      "price_usd": 89,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/k5-compact-rgb-barebone-black/",
       "official_url": "https://cherryxtrfy.com/keyboards/k5-compact-rgb-barebone-black/",
@@ -1675,7 +1675,7 @@
       ],
       "software": null,
       "os": [],
-      "price_usd": 139.0,
+      "price_usd": 139,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/k5v2-compact/",
       "official_url": "https://cherryxtrfy.com/keyboards/k5v2-compact/",
@@ -1824,7 +1824,7 @@
       ],
       "software": "CHERRY UTILITY",
       "os": [],
-      "price_usd": 249.0,
+      "price_usd": 249,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/mx-10-1-wireless/",
       "official_url": "https://cherryxtrfy.com/keyboards/mx-10-1-wireless/",
@@ -1895,7 +1895,7 @@
       ],
       "software": "CHERRY software",
       "os": [],
-      "price_usd": 129.0,
+      "price_usd": 129,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/mx-3-1/",
       "official_url": "https://cherryxtrfy.com/keyboards/mx-3-1/",
@@ -2031,7 +2031,7 @@
       "battery_mah": 4600,
       "polling_rate_hz": 8000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "CHERRY MX2A Red",
@@ -2047,7 +2047,7 @@
       ],
       "software": "CHERRY UTILITY",
       "os": [],
-      "price_usd": 299.0,
+      "price_usd": 299,
       "price_date": "2026-11-23",
       "price_url": "https://cherryxtrfy.com/keyboards/mx-8-3-tkl-wireless/",
       "official_url": "https://cherryxtrfy.com/keyboards/mx-8-3-tkl-wireless/",

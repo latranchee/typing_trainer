@@ -120,7 +120,7 @@
       "battery_mah": 8000,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "5-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Akko V3 Piano Pro",

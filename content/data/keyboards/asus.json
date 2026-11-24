@@ -1,0 +1,1737 @@
+{
+  "brand": {
+    "id": "asus",
+    "name": "ASUS ROG and TUF",
+    "country": null,
+    "founded": null,
+    "official_url": "https://rog.asus.com/us/keyboards/keyboards-series/",
+    "focus": [
+      "gaming",
+      "premium"
+    ],
+    "about": "Gaming keyboards from ASUS under the ROG (Republic of Gamers) and TUF Gaming lines, using ROG NX contact, RX optical and HFX Hall-effect switches.",
+    "sources": [
+      {
+        "title": "ROG US: gaming keyboards",
+        "url": "https://rog.asus.com/us/keyboards/keyboards-series/",
+        "kind": "official",
+        "backs": [
+          "status"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ASUS eShop USA keyboard search",
+        "url": "https://eshop.asus.com/us/catalogsearch/result/?q=keyboard",
+        "kind": "official",
+        "backs": [
+          "status",
+          "price_usd"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "asus-azoth",
+      "brand": "asus",
+      "model": "ROG Azoth",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "ROG NX Mechanical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 249.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/rog-azoth.html",
+      "official_url": "https://eshop.asus.com/us/rog-azoth.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Azoth",
+          "url": "https://eshop.asus.com/us/rog-azoth.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "status",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless 75% custom-style board with hot-swappable NX switches and an OLED panel (regular price 249.99); the store page shows it out of stock."
+    },
+    {
+      "id": "asus-azoth-96-he",
+      "brand": "asus",
+      "model": "ROG Azoth 96 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "ROG HFX V2 Magnetic",
+          "id": "asus-rog-hfx-v2-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Gear Link",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 359.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp040h-bkaa20-rog-azoth-96-he.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/compact/rog-azoth-96-he/spec/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/asus-rog-azoth-96-he-review/",
+          "date": "2026-01-23",
+          "score": "75/100",
+          "verdict": "Strong magnetic-switch performance, but at a high price."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Azoth 96 HE",
+          "url": "https://eshop.asus.com/us/90mp040h-bkaa20-rog-azoth-96-he.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Azoth 96 HE",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/compact/rog-azoth-96-he/spec/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "hot_swap",
+            "switches",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless 96% Hall-effect board with actuation adjustable from 0.1 to 3.5 mm in 0.01 mm steps, OLED display and three-way knob; regular price 359.99, currently sold at 259.99."
+    },
+    {
+      "id": "asus-azoth-96-he-lite",
+      "brand": "asus",
+      "model": "ROG Azoth 96 HE Lite",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "ROG HFX V2 Magnetic",
+          "id": "asus-rog-hfx-v2-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 359.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp048h-bkaa00-rog-azoth-96-he-lite.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-azoth-96-he-lite/spec/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Azoth 96 HE Lite",
+          "url": "https://eshop.asus.com/us/90mp048h-bkaa00-rog-azoth-96-he-lite.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Azoth 96 HE Lite",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-azoth-96-he-lite/spec/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "hot_swap",
+            "switches",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Lighter-spec version of the Azoth 96 HE with ABS keycaps and the same 0.1 to 3.5 mm adjustable actuation; the eShop shows 359.99."
+    },
+    {
+      "id": "asus-azoth-extreme",
+      "brand": "asus",
+      "model": "ROG Azoth Extreme",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "ROG NX Snow",
+          "id": "asus-rog-nx-snow"
+        },
+        {
+          "name": "ROG NX Storm",
+          "id": "asus-rog-nx-storm"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 499.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp03mb-bkaa01-rog-azoth-extreme.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-azoth-extreme/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Azoth Extreme",
+          "url": "https://eshop.asus.com/us/90mp03mb-bkaa01-rog-azoth-extreme.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Azoth Extreme",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-azoth-extreme/",
+          "kind": "official",
+          "backs": [
+            "hot_swap",
+            "case_material",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless 75% flagship with OLED touchscreen and adjustable gasket mount; 8000 Hz needs the bundled ROG Polling Rate Booster. Price shown is the 499.99 regular price."
+    },
+    {
+      "id": "asus-azoth-extreme-edition-20",
+      "brand": "asus",
+      "model": "ROG Azoth Extreme Edition 20",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "ROG NX Mechanical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate / Gear Link",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 599.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp04vf-bkaa20-rog-azoth-extreme-edition-20.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-azoth-extreme-edition-20/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/asus-rog-azoth-extreme-edition-20-review/",
+          "date": "2026-07-24",
+          "score": "70/100",
+          "verdict": "A showpiece board for buyers who want it because they can afford it."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Azoth Extreme Edition 20",
+          "url": "https://eshop.asus.com/us/90mp04vf-bkaa20-rog-azoth-extreme-edition-20.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Azoth Extreme Edition 20",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-azoth-extreme-edition-20/",
+          "kind": "official",
+          "backs": [
+            "hot_swap",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gold-accent anniversary version of the Azoth Extreme; 8000 Hz needs the ROG Polling Rate Booster."
+    },
+    {
+      "id": "asus-azoth-x",
+      "brand": "asus",
+      "model": "ROG Azoth X",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "ROG NX Snow V2",
+          "id": "asus-rog-nx-snow-v2"
+        },
+        {
+          "name": "ROG NX Storm V2",
+          "id": "asus-rog-nx-storm-v2"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 269.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp044g-bkaa32-rog-azoth-x.html",
+      "official_url": "https://eshop.asus.com/us/90mp044g-bkaa32-rog-azoth-x.html",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/asus-rog-azoth-x-review/",
+          "date": "2025-07-18",
+          "score": "60/100",
+          "verdict": "Essentially the original Azoth with a lighter new look."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/asus-rog-azoth-x-review",
+          "date": "2025-06-24",
+          "score": "3.5/5",
+          "verdict": "Much brighter styling than the original Azoth; a very different aesthetic."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Azoth X",
+          "url": "https://eshop.asus.com/us/90mp044g-bkaa32-rog-azoth-x.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless 75% board with hot-swappable NX V2 switches and five-layer dampening; regular price 269.99, currently sold at 213.99."
+    },
+    {
+      "id": "asus-falcata",
+      "brand": "asus",
+      "model": "ROG Falcata",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "ROG HFX V2 Magnetic",
+          "id": "asus-rog-hfx-v2-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/compact/rog-falcata/spec/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/asus-rog-falcata/",
+          "date": "2025-08-20",
+          "score": "74/100",
+          "verdict": "Looks ergonomic but is not truly an ergonomic split, which makes the design an odd choice."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ROG: ROG Falcata",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/compact/rog-falcata/spec/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "split",
+            "switches",
+            "polling_rate_hz",
+            "connectivity",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "75% Hall-effect board that separates into two modules, with 0.1 to 3.5 mm actuation in 0.01 mm steps; no price found on the US eShop."
+    },
+    {
+      "id": "asus-falchion",
+      "brand": "asus",
+      "model": "ROG Falchion",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX RGB Blue",
+          "id": "cherry-mx2a-blue"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp01y2-bkua00-rog-falchion.html",
+      "official_url": "https://eshop.asus.com/us/90mp01y2-bkua00-rog-falchion.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Falchion",
+          "url": "https://eshop.asus.com/us/90mp01y2-bkua00-rog-falchion.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Original wireless 65% Falchion with Cherry MX RGB Blue switches (60 gf); listed on the eShop at 149.99."
+    },
+    {
+      "id": "asus-falchion-ace",
+      "brand": "asus",
+      "model": "ROG Falchion Ace",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "ROG NX Red",
+          "id": "asus-rog-nx-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/rog-falchion-ace.html",
+      "official_url": "https://eshop.asus.com/us/rog-falchion-ace.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Falchion Ace",
+          "url": "https://eshop.asus.com/us/rog-falchion-ace.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired 65% board in a 60% frame with NX Red switches; regular price 119.99, store page shows it out of stock."
+    },
+    {
+      "id": "asus-falchion-ace-75-he",
+      "brand": "asus",
+      "model": "ROG Falchion Ace 75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "ROG HFX V2 Magnetic",
+          "id": "asus-rog-hfx-v2-magnetic"
+        },
+        {
+          "name": "ROG HFX V2X Magnetic",
+          "id": "asus-rog-hfx-v2x-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Gear Link",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 219.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp047i-bkaa20-rog-falchion-ace-75-he.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-falchion-ace-75-he/spec/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/asus-rog-falchion-ace-75-he-review/",
+          "date": "2026-03-24",
+          "score": "82/100",
+          "verdict": "A strong Hall-effect keyboard with physical adjustment controls."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Falchion Ace 75 HE",
+          "url": "https://eshop.asus.com/us/90mp047i-bkaa20-rog-falchion-ace-75-he.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Falchion Ace 75 HE",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/pbt-keycaps/rog-falchion-ace-75-he/spec/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "hot_swap",
+            "switches",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired 75% Hall-effect board with 0.1 to 3.5 mm adjustable actuation, adjustment wheel and touch panel; regular price 219.99, currently sold at 159.99."
+    },
+    {
+      "id": "asus-falchion-ace-hfx",
+      "brand": "asus",
+      "model": "ROG Falchion Ace HFX",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "ROG HFX Magnetic",
+          "id": "asus-rog-hfx-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp03ve-bkaa23-rog-falchion-ace-hfx.html",
+      "official_url": "https://eshop.asus.com/us/90mp03ve-bkaa23-rog-falchion-ace-hfx.html",
+      "reviews": [
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/computing/keyboards/asus-rog-falchion-ace-hfx-review",
+          "date": "2025-03-02",
+          "score": "4.5/5",
+          "verdict": "High-end 65% keyboard with plenty of extras."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Falchion Ace HFX",
+          "url": "https://eshop.asus.com/us/90mp03ve-bkaa23-rog-falchion-ace-hfx.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired 65% Hall-effect board with actuation adjustable from 0.1 to 4.0 mm and a Rapid Trigger toggle; regular price 199.99, currently sold at 119.99."
+    },
+    {
+      "id": "asus-falchion-ace-hfx-zywoo-edition",
+      "brand": "asus",
+      "model": "ROG Falchion Ace HFX ZywOo Edition",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "ROG HFX Magnetic",
+          "id": "asus-rog-hfx-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp04ke-bkaa20-rog-falchion-ace-hfx-zywoo-edition.html",
+      "official_url": "https://eshop.asus.com/us/90mp04ke-bkaa20-rog-falchion-ace-hfx-zywoo-edition.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Falchion Ace HFX ZywOo Edition",
+          "url": "https://eshop.asus.com/us/90mp04ke-bkaa20-rog-falchion-ace-hfx-zywoo-edition.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Player edition of the Falchion Ace HFX with the same specs; regular price 199.99, store page shows it out of stock."
+    },
+    {
+      "id": "asus-falchion-nx",
+      "brand": "asus",
+      "model": "ROG Falchion NX",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "ROG NX Brown",
+          "id": "asus-rog-nx-brown"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/asus-rog-falchion-nx.html",
+      "official_url": "https://eshop.asus.com/us/asus-rog-falchion-nx.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Falchion NX",
+          "url": "https://eshop.asus.com/us/asus-rog-falchion-nx.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless 65% board in a 60% frame with NX Brown switches (45 gf); regular price 149.99, store page shows it out of stock."
+    },
+    {
+      "id": "asus-falchion-rx-low-profile",
+      "brand": "asus",
+      "model": "ROG Falchion RX Low Profile",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "ROG RX Red Low-Profile",
+          "id": "asus-rog-rx-red-low-profile"
+        },
+        {
+          "name": "ROG RX Blue Low-Profile",
+          "id": "asus-rog-rx-blue-low-profile"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/rog-falchion-rx-low-profile.html",
+      "official_url": "https://eshop.asus.com/us/rog-falchion-rx-low-profile.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Falchion RX Low Profile",
+          "url": "https://eshop.asus.com/us/rog-falchion-rx-low-profile.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless 65% low-profile optical board in a 60% frame, 26.5 mm tall; regular price 169.99, store page shows it out of stock."
+    },
+    {
+      "id": "asus-strix-flare-ii",
+      "brand": "asus",
+      "model": "ROG Strix Flare II",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "ROG NX Mechanical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp02d6-bkaa01-rog-strix-flare-ii.html",
+      "official_url": "https://eshop.asus.com/us/90mp02d6-bkaa01-rog-strix-flare-ii.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Strix Flare II",
+          "url": "https://eshop.asus.com/us/90mp02d6-bkaa01-rog-strix-flare-ii.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired full-size board with NX switches and 8000 Hz polling; eShop shows 179.99. Size not stated in the page text."
+    },
+    {
+      "id": "asus-strix-morph-96-wireless",
+      "brand": "asus",
+      "model": "ROG Strix Morph 96 Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "ROG NX V2 Mechanical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top cover",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Gear Link",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp04if-bkaa03-rog-strix-morph-96-wireless.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/aura-rgb/rog-strix-morph-96-wireless/spec/",
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/hardware/gaming-keyboards/asus-rog-strix-morph-96-wireless-review/",
+          "date": "2026-03-24",
+          "score": "73/100",
+          "verdict": "Competent 96% board that offers little that is new."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/asus-rog-strix-morph-96-wireless-review",
+          "date": "2026-03-30",
+          "score": "3.5/5",
+          "verdict": "Close to the Scope II 96 Wireless but not meaningfully cheaper at review time."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Strix Morph 96 Wireless",
+          "url": "https://eshop.asus.com/us/90mp04if-bkaa03-rog-strix-morph-96-wireless.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Strix Morph 96 Wireless",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/aura-rgb/rog-strix-morph-96-wireless/spec/",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless hot-swappable 96% board with CNC aluminum top cover; regular price 139.99, currently sold at 99.99."
+    },
+    {
+      "id": "asus-strix-scope-ii-96-rx-wireless",
+      "brand": "asus",
+      "model": "ROG Strix Scope II 96 RX Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "proprietary",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "ROG RX Optical Mechanical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp03s0-bkaa20-rog-strix-scope-ii-96-rx-wireless.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/aura-rgb/rog-strix-scope-ii-96-rx-wireless/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Strix Scope II 96 RX Wireless",
+          "url": "https://eshop.asus.com/us/90mp03s0-bkaa20-rog-strix-scope-ii-96-rx-wireless.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Strix Scope II 96 RX Wireless",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/aura-rgb/rog-strix-scope-ii-96-rx-wireless/",
+          "kind": "official",
+          "backs": [
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless 96% optical board with 8000 Hz polling over the bundled booster setup; regular price 179.99, currently sold at 113.99."
+    },
+    {
+      "id": "asus-strix-scope-ii-96-wireless",
+      "brand": "asus",
+      "model": "ROG Strix Scope II 96 Wireless",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "ROG NX Mechanical Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 179.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp037a-bkaa01-rog-strix-scope-ii-96-wireless.html",
+      "official_url": "https://eshop.asus.com/us/90mp037a-bkaa01-rog-strix-scope-ii-96-wireless.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Strix Scope II 96 Wireless",
+          "url": "https://eshop.asus.com/us/90mp037a-bkaa01-rog-strix-scope-ii-96-wireless.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wireless hot-swappable 96% board; regular price 179.99, currently sold at 109.99 to 131.99 depending on variant."
+    },
+    {
+      "id": "asus-strix-scope-ii-rx",
+      "brand": "asus",
+      "model": "ROG Strix Scope II RX",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "proprietary",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "ROG RX Red",
+          "id": "asus-rog-rx-red"
+        },
+        {
+          "name": "ROG RX Blue",
+          "id": "asus-rog-rx-blue"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp0350-bkaa01-rog-strix-scope-ii-rx.html",
+      "official_url": "https://eshop.asus.com/us/90mp0350-bkaa01-rog-strix-scope-ii-rx.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Strix Scope II RX",
+          "url": "https://eshop.asus.com/us/90mp0350-bkaa01-rog-strix-scope-ii-rx.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired full-size optical board with a detachable wrist rest, listed at 139.99."
+    },
+    {
+      "id": "asus-strix-scope-ii-x",
+      "brand": "asus",
+      "model": "ROG Strix Scope II X",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "ROG NX Storm V2",
+          "id": "asus-rog-nx-storm-v2"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp03xg-bkaa22-rog-strix-scope-ii-x.html",
+      "official_url": "https://rog.asus.com/us/keyboards/keyboards/aura-rgb/rog-strix-scope-ii-x/spec/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Strix Scope II X",
+          "url": "https://eshop.asus.com/us/90mp03xg-bkaa22-rog-strix-scope-ii-x.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ROG: ROG Strix Scope II X",
+          "url": "https://rog.asus.com/us/keyboards/keyboards/aura-rgb/rog-strix-scope-ii-x/spec/",
+          "kind": "official",
+          "backs": [
+            "hot_swap",
+            "switches",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired board with hot-swappable NX Storm V2 switches; the eShop lists 129.99. Size not stated in the page text."
+    },
+    {
+      "id": "asus-strix-scope-tkl",
+      "brand": "asus",
+      "model": "ROG Strix Scope TKL",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Cherry MX RGB Red",
+          "id": "cherry-mx2a-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/rog-strix-scope-tkl.html",
+      "official_url": "https://eshop.asus.com/us/rog-strix-scope-tkl.html",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: ROG Strix Scope TKL",
+          "url": "https://eshop.asus.com/us/rog-strix-scope-tkl.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired tenkeyless board with Cherry MX RGB Red switches (45 gf) and aluminum frame; store page shows it out of stock."
+    },
+    {
+      "id": "asus-tuf-gaming-k3-gen-ii",
+      "brand": "asus",
+      "model": "TUF Gaming K3 Gen II",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 97,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "optical",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Optical-Mechanical RGB Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Armoury Crate",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://eshop.asus.com/us/90mp0390-bkaa01-tuf-gaming-k3-gen-ii.html",
+      "official_url": "https://eshop.asus.com/us/90mp0390-bkaa01-tuf-gaming-k3-gen-ii.html",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/asus-tuf-gaming-k3-gen-ii-review",
+          "date": "2026-03-20",
+          "score": "3/5",
+          "verdict": "Good for productivity and casual gaming thanks to optical-mechanical switches, but with significant flaws."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ASUS eShop USA: TUF Gaming K3 Gen II",
+          "url": "https://eshop.asus.com/us/90mp0390-bkaa01-tuf-gaming-k3-gen-ii.html",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "connectivity",
+            "polling_rate_hz",
+            "os",
+            "software",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ASUS eShop USA: TUF Gaming K3 Gen II (97-key layout)",
+          "url": "https://eshop.asus.com/us/tuf-gaming-k3-gen-ii.html",
+          "kind": "official",
+          "backs": [
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired 97-key optical-mechanical board with silicone gasket mount; regular price 79.99, currently sold at 62.99."
+    }
+  ]
+}

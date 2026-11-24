@@ -62,31 +62,31 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Kailh Brown",
-          "id": null
+          "id": "kailh-kt-brown"
         },
         {
           "name": "Kailh Blue",
-          "id": null
+          "id": "kailh-kt-blue"
         },
         {
           "name": "Kailh Red",
-          "id": null
+          "id": "kailh-kt-red"
         },
         {
           "name": "Kailh Box Brown",
-          "id": null
+          "id": "kailh-box-brown"
         },
         {
           "name": "Kailh Box White",
-          "id": null
+          "id": "kailh-box-white"
         },
         {
           "name": "Kailh Box Red",
-          "id": null
+          "id": "kailh-box-red"
         },
         {
           "name": "Kailh Silent Brown",
@@ -179,27 +179,27 @@
       "switches": [
         {
           "name": "Kailh Brown",
-          "id": null
+          "id": "kailh-kt-brown"
         },
         {
           "name": "Kailh Blue",
-          "id": null
+          "id": "kailh-kt-blue"
         },
         {
           "name": "Kailh Red",
-          "id": null
+          "id": "kailh-kt-red"
         },
         {
           "name": "Kailh Box Brown",
-          "id": null
+          "id": "kailh-box-brown"
         },
         {
           "name": "Kailh Box White",
-          "id": null
+          "id": "kailh-box-white"
         },
         {
           "name": "Kailh Box Red",
-          "id": null
+          "id": "kailh-box-red"
         },
         {
           "name": "Kailh Silent Brown",

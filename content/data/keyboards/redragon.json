@@ -1,0 +1,1005 @@
+{
+  "brand": {
+    "id": "redragon",
+    "name": "Redragon",
+    "country": null,
+    "founded": null,
+    "official_url": "https://redragonshop.com/",
+    "focus": [
+      "gaming",
+      "budget"
+    ],
+    "about": "Budget gaming peripherals brand with a very large keyboard catalog; the US web store is redragonshop.com. This file holds 13 current best sellers and widely reviewed models, not the full catalog.",
+    "sources": [
+      {
+        "title": "Redragon shop: catalog feed (pages 1 to 3)",
+        "url": "https://redragonshop.com/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "redragon-k530-draconic-pro",
+      "brand": "redragon",
+      "model": "K530 Draconic Pro",
+      "aka": [
+        "Draconic K530 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 61,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Brown",
+          "id": null
+        },
+        {
+          "name": "Red",
+          "id": null
+        },
+        {
+          "name": "Blue",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 54.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=3",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K530 Draconic Pro product listing (store catalog feed, handle draconic-k530)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Bluetooth 3.0/5.0, 2.4 GHz and USB-C; store text says hot-swap fits 3- and 5-pin switches."
+    },
+    {
+      "id": "redragon-k552-kumara",
+      "brand": "redragon",
+      "model": "K552 Kumara",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Outemu Red",
+          "id": "outemu-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "metal alloy and ABS",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows"
+      ],
+      "price_usd": 44.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=3",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/redragon/k552",
+          "date": null,
+          "score": null,
+          "verdict": "Solid budget TKL gaming keyboard with clicky switches, mediocre latency and unusable software; sturdier than the Dragonborn K630."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Redragon shop: K552 Kumara product listing (store catalog feed, handle redragon-kumara-k552)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Redragon K552 Kumara RGB review",
+          "url": "https://www.rtings.com/keyboard/reviews/redragon/k552",
+          "kind": "review",
+          "backs": [],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Soldered Outemu switches (the store text does not mention hot-swap). Store showed it out of stock on 2026-11-23. RTINGS tested a Blue-switch unit."
+    },
+    {
+      "id": "redragon-k556-devarajas",
+      "brand": "redragon",
+      "model": "K556 Devarajas",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Brown",
+          "id": null
+        },
+        {
+          "name": "Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=3",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K556 Devarajas product listing (store catalog feed, handle devarajas-k556)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Store text says hot-swap with 99.8%+ of switches compatible, with no pin count given."
+    },
+    {
+      "id": "redragon-k582-surara",
+      "brand": "redragon",
+      "model": "K582 Surara",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Quiet-Red Switches",
+          "id": null
+        },
+        {
+          "name": "OUTEMU Brown Switches",
+          "id": "outemu-brown"
+        },
+        {
+          "name": "Tactile Blue Switches",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 49.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=3",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K582 Surara product listing (store catalog feed, handle surara-k582)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. The store text mentions no hot-swap sockets."
+    },
+    {
+      "id": "redragon-k617-fizz",
+      "brand": "redragon",
+      "model": "K617 Fizz",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 61,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 47.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=3",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K617 Fizz product listing (store catalog feed, handle small-mechanical-keyboard)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Store text says the socket fits 3- and 5-pin switches. The white and grey listing is priced 44.99 (regular 47.99); a Red Inner variant listed at 34.99."
+    },
+    {
+      "id": "redragon-k617-he",
+      "brand": "redragon",
+      "model": "K617 HE",
+      "aka": [
+        "Fizz K617 HE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 61,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Hall Effect magnetic switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 39.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "The Gadgeteer",
+          "url": "https://the-gadgeteer.com/2025/03/16/redragon-fizz-k617-magnetic-hall-effect-keyboard-review-the-good-the-bad-and-the-absolutely-magnetic/",
+          "date": "2025-03-16",
+          "score": null,
+          "verdict": "Good-value way to try magnetic switches, held back by a plastic cable, cheap keycaps and PC-only software."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Redragon shop: K617 HE product listing (store catalog feed, handle fizz-k617-he-magnetic-hall-effect-keyboard)",
+          "url": "https://redragonshop.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "The Gadgeteer: Redragon Fizz K617 magnetic Hall effect keyboard review (hot-swap, 61 keys, 8k)",
+          "url": "https://the-gadgeteer.com/2025/03/16/redragon-fizz-k617-magnetic-hall-effect-keyboard-review-the-good-the-bad-and-the-absolutely-magnetic/",
+          "kind": "review",
+          "backs": [
+            "hot_swap",
+            "polling_rate_hz",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Actuation adjustable 0.1 to 3.4 mm in 0.1 mm steps; detachable USB-C cable. The Gadgeteer says the switches are soldered, and the store says they do not fit other brands' Hall switches."
+    },
+    {
+      "id": "redragon-k618-horus",
+      "brand": "redragon",
+      "model": "K618 Horus",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Blue Switch",
+          "id": null
+        },
+        {
+          "name": "Brown Switch",
+          "id": null
+        },
+        {
+          "name": "Red Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 64.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=3",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K618 Horus product listing (store catalog feed, handle horus-k618-ultrathin-wireless-keyboard)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Ultra-thin low-profile board with 4x5 macro keys; low-profile switch type not named, so the footprint is \"other\"."
+    },
+    {
+      "id": "redragon-k621-horus-tkl",
+      "brand": "redragon",
+      "model": "K621 Horus TKL",
+      "aka": [
+        "Horus TKL K621"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 1900,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Blue Switch",
+          "id": null
+        },
+        {
+          "name": "Brown Switch",
+          "id": null
+        },
+        {
+          "name": "Red Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=2",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K621 Horus TKL product listing (store catalog feed, handle k621-tkl-wireless-keyboard)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd",
+            "battery_mah"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Low-profile board with a 1900 mAh battery; price is the regular price (sale 59.99); out of stock on 2026-11-23. Low-profile switch type not named, so the footprint is \"other\"."
+    },
+    {
+      "id": "redragon-k628-pro-pollux",
+      "brand": "redragon",
+      "model": "K628 Pro Pollux",
+      "aka": [
+        "Pollux K628 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 78,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 64.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=2",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K628 Pro Pollux product listing (store catalog feed, handle pollux-k628-pro-hot-swappable-gaming-keyboard)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Price is the regular price (sale 59.99). Fits 3- and 5-pin switches per the store text."
+    },
+    {
+      "id": "redragon-k630-dragonborn",
+      "brand": "redragon",
+      "model": "K630 Dragonborn",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 61,
+      "layout_standards": [
+        "ansi",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Blue Switch",
+          "id": null
+        },
+        {
+          "name": "Brown Switch",
+          "id": null
+        },
+        {
+          "name": "Red Switch",
+          "id": null
+        },
+        {
+          "name": "Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 49.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=3",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K630 Dragonborn product listing (store catalog feed, handle dragonborn-k630)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=3",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Store text says hot-swappable with other Redragon switches; a \"Blue-Magnetic\" option is rated 80 million presses. Black and white; US English or Japanese (JIS) layouts."
+    },
+    {
+      "id": "redragon-k631-pro-castor",
+      "brand": "redragon",
+      "model": "K631 Pro Castor",
+      "aka": [
+        "Castor K631 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 67.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=2",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K631 Pro Castor product listing (store catalog feed, handle castor-k631-pro-65-wireless-gaming-keyboard)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Price is the regular price (sale 54.99); out of stock on 2026-11-23. Fits 3- and 5-pin switches per the store text."
+    },
+    {
+      "id": "redragon-k686-pro-eisa",
+      "brand": "redragon",
+      "model": "K686 Pro Eisa",
+      "aka": [
+        "Eisa K686 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 98,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Red Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 64.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=2",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K686 Pro Eisa product listing (store catalog feed, handle eisa-k686-pro)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Gasket mount, volume knob; store text says 3- and 5-pin switches fit."
+    },
+    {
+      "id": "redragon-k689-pro-wyvern",
+      "brand": "redragon",
+      "model": "K689 Pro Wyvern",
+      "aka": [
+        "Wyvern K689 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Mint Mambo",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 64.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://redragonshop.com/products.json?limit=250&page=2",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Redragon shop: K689 Pro Wyvern product listing (store catalog feed, handle wyvern-k689-pro)",
+          "url": "https://redragonshop.com/products.json?limit=250&page=2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap, pin type and layout are as the store text states; the store product page itself returned HTTP 429 to automated fetches, so specs come from the shop catalog feed. Gasket mount; custom lubed linear Mint Mambo switch; store text says 3- and 5-pin switches fit."
+    }
+  ]
+}

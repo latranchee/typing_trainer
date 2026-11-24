@@ -1,0 +1,319 @@
+{
+  "brand": {
+    "id": "dygma",
+    "name": "Dygma",
+    "country": null,
+    "founded": null,
+    "official_url": "https://dygma.com/",
+    "focus": [
+      "ergonomic",
+      "premium"
+    ],
+    "about": "Dygma makes programmable ergonomic keyboards: the Raise 2 and Defy splits with add-on wireless and tenting, and the low-profile Sonsei.",
+    "sources": [
+      {
+        "title": "Dygma: Defy page",
+        "url": "https://dygma.com/pages/defy",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Dygma: products listing",
+        "url": "https://dygma.com/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "dygma-defy",
+      "brand": "dygma",
+      "model": "Defy",
+      "aka": [
+        "Dygma Defy"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 70,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4740,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Gateron G Pro 2.0 Yellow",
+          "id": "gateron-g-pro-2-0-yellow"
+        },
+        {
+          "name": "Kailh Silent Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Box White",
+          "id": "kailh-box-white"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "anodized aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 369,
+      "price_date": "2026-11-23",
+      "price_url": "https://dygma.com/products.json?limit=250",
+      "official_url": "https://dygma.com/pages/defy",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Dygma: Defy page (tech specs)",
+          "url": "https://dygma.com/pages/defy",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "hot_swap",
+            "switch_footprint",
+            "connectivity",
+            "battery_mah",
+            "os",
+            "case_material",
+            "thumb_cluster",
+            "tenting",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Dygma: products listing (Defy options and prices)",
+          "url": "https://dygma.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Columnar split with a 16-key thumb cluster: 62 MX hot-swap sockets plus 8 Kailh Choc hot-swap sockets. Pin support of the MX sockets is not stated. Tenting add-on goes up to 60 degrees. Wireless (+$90), tenting (+$80) and underglow are paid add-ons; the wireless version has a 2370 mAh battery per half (4740 mAh total). Price is the regular price of the base (wired, no tenting) version; a sale was running."
+    },
+    {
+      "id": "dygma-raise-2",
+      "brand": "dygma",
+      "model": "Raise 2",
+      "aka": [
+        "Dygma Raise 2"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4740,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Gateron G Pro 2.0 Yellow",
+          "id": "gateron-g-pro-2-0-yellow"
+        },
+        {
+          "name": "Kailh Silent Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Box White",
+          "id": "kailh-box-white"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum plate",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 369,
+      "price_date": "2026-11-23",
+      "price_url": "https://dygma.com/products.json?limit=250",
+      "official_url": "https://dygma.com/pages/dygma-raise-2",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/dygma/raise-2",
+          "date": "2025-04-18",
+          "score": null,
+          "verdict": "True split with an aluminum plate, RGBW backlight, hot-swappable PCB, magnetic wrist rests and strong remapping software."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dygma: Raise 2 page (tech specs)",
+          "url": "https://dygma.com/pages/dygma-raise-2",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "hot_swap",
+            "switch_footprint",
+            "connectivity",
+            "battery_mah",
+            "os",
+            "case_material",
+            "thumb_cluster",
+            "tenting",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Dygma: products listing (Raise 2 options and prices)",
+          "url": "https://dygma.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd",
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "68 keys in ANSI (69 in ISO): 64/65 MX hot-swap sockets plus 4 low-profile Kailh Choc thumb keys; 8 thumb keys in all. Row stagger is inferred from the ANSI and ISO layouts. Pin support of the MX sockets is not stated. USB, Bluetooth (5 devices) and low-latency RF with the wireless add-on. Wireless (+$90), tenting (+$80) and underglow are paid add-ons; the wireless version has a 2370 mAh battery per half (4740 mAh total). Price is the regular price of the base (wired, no tenting) version; a sale was running."
+    },
+    {
+      "id": "dygma-sonsei",
+      "brand": "dygma",
+      "model": "Sonsei",
+      "aka": [
+        "Dygma Sonsei"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 56,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": 2000,
+      "polling_rate_hz": null,
+      "switch_footprint": "gateron-lp",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Gateron KS-33 2.0 Strawberry Chocolate",
+          "id": "gateron-ks-33-low-profile-2-0-strawberry-chocolate"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "anodized aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "ios",
+        "android"
+      ],
+      "price_usd": 279,
+      "price_date": "2026-11-23",
+      "price_url": "https://dygma.com/products.json?limit=250",
+      "official_url": "https://dygma.com/pages/sonsei",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Dygma: Sonsei page (tech specs)",
+          "url": "https://dygma.com/pages/sonsei",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "stagger",
+            "split",
+            "thumb_cluster",
+            "low_profile",
+            "connectivity",
+            "battery_mah",
+            "switch_footprint",
+            "hot_swap",
+            "case_material",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Dygma: products listing (Sonsei options and price)",
+          "url": "https://dygma.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dygma calls it a unibody design with a split columnar layout and 8 thumb keys. 56 hot-swap sockets for Gateron KS-33 2.0 low-profile switches; Bluetooth to 5 devices; about 40 days per charge with LEDs off. Price is the regular price; a sale was running."
+    }
+  ]
+}

@@ -278,7 +278,7 @@
       "battery_mah": null,
       "polling_rate_hz": 8000,
       "switch_footprint": "proprietary",
-      "hot_swap": "none",
+      "hot_swap": null,
       "switches": [
         {
           "name": "TITAN Low-Profile Hall-Effect",
@@ -765,7 +765,7 @@
       "switches": [
         {
           "name": "TITAN II Optical Red",
-          "id": null
+          "id": "roccat-titan-ii-optical-red"
         }
       ],
       "adjustable_actuation": false,
@@ -872,7 +872,7 @@
       "switches": [
         {
           "name": "TITAN II Optical Red",
-          "id": null
+          "id": "roccat-titan-ii-optical-red"
         }
       ],
       "adjustable_actuation": false,
@@ -962,11 +962,11 @@
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "optical",
-      "hot_swap": "none",
+      "hot_swap": null,
       "switches": [
         {
           "name": "TITAN II Optical Red",
-          "id": null
+          "id": "roccat-titan-ii-optical-red"
         }
       ],
       "adjustable_actuation": false,
@@ -1139,7 +1139,7 @@
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "proprietary",
-      "hot_swap": "none",
+      "hot_swap": null,
       "switches": [],
       "adjustable_actuation": true,
       "rapid_trigger": true,
@@ -1362,7 +1362,7 @@
       "switches": [
         {
           "name": "TITAN Mechanical Linear",
-          "id": null
+          "id": "roccat-titan-linear"
         }
       ],
       "adjustable_actuation": false,

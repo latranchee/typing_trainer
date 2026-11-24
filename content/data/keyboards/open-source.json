@@ -40,7 +40,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [],
       "adjustable_actuation": false,
       "rapid_trigger": null,

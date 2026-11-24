@@ -1,0 +1,153 @@
+{
+  "maker": {
+    "id": "thicthock",
+    "name": "ThicThock",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "about": "Keyboard vendor whose Marshmallow and Konpeitou switches are manufactured by JWK, according to ThereminGoat.",
+    "sources": [
+      {
+        "title": "ThereminGoat: ThicThock Marshmallow Switch Review",
+        "url": "https://www.theremingoat.com/blog/marshmallows",
+        "kind": "review",
+        "backs": [
+          "about",
+          "made_by"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "ThereminGoat: ThicThock Konpeitou Switch Review",
+        "url": "https://www.theremingoat.com/blog/thicthock-konpeitou-switch-review",
+        "kind": "review",
+        "backs": [
+          "about",
+          "made_by"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "thicthock-konpeitou",
+      "name": "Konpeitou",
+      "maker": "thicthock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 68,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "nylon",
+        "bottom": "nylon",
+        "stem": "POM or JX (varies by group buy round)"
+      },
+      "spring": "progressive",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/thicthock-konpeitou-switch-review",
+          "date": "2021-07-25",
+          "score": null,
+          "verdict": "The reviewer was let down: the switch did not live up to the marketing around its JX stem material."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: ThicThock Konpeitou Switch Review",
+          "url": "https://www.theremingoat.com/blog/thicthock-konpeitou-switch-review",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "bottom_out_force_gf",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Spring weights differed by round: 64g progressive and factory-lubed in the China round, 68g and unlubed in later worldwide rounds. Fields show the 68g round ThereminGoat reviewed."
+    },
+    {
+      "id": "thicthock-marshmallow",
+      "name": "Marshmallow",
+      "maker": "thicthock",
+      "made_by": "jwk",
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 68,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.4,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "custom nylon",
+        "bottom": "custom nylon",
+        "stem": "POM"
+      },
+      "spring": "ThicThock MP progressive, gold-plated",
+      "factory_lubed": false,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/marshmallows",
+          "date": "2019-09-26",
+          "score": null,
+          "verdict": "Written from a pre-release sample: a smooth, low-wobble progressive linear that the reviewer rates highly, sold unlubed so buyers can tune it."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: ThicThock Marshmallow Switch Review",
+          "url": "https://www.theremingoat.com/blog/marshmallows",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "actuation_force_gf",
+            "bottom_out_force_gf",
+            "pre_travel_mm",
+            "materials",
+            "spring",
+            "factory_lubed",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ThereminGoat describes it as JWK-made but designed and prototyped separately from the T1 and Durock lines. The review was written from pre-release samples; 1.4mm is the stated actuation distance."
+    }
+  ]
+}

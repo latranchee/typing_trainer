@@ -1,0 +1,604 @@
+{
+  "brand": {
+    "id": "drunkdeer",
+    "name": "DrunkDeer",
+    "country": null,
+    "founded": null,
+    "official_url": "https://drunkdeer.com/",
+    "focus": [
+      "gaming",
+      "budget"
+    ],
+    "about": "Hall-effect gaming keyboard brand with adjustable actuation and Rapid Trigger, configured in a web driver. Its store pages returned HTTP 429 to most automated fetches, so many specs come from the store catalog feed and reviews.",
+    "sources": [
+      {
+        "title": "DrunkDeer store: catalog feed",
+        "url": "https://drunkdeer.com/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "drunkdeer-a75",
+      "brand": "drunkdeer",
+      "model": "A75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "PC Gamer",
+          "url": "https://www.pcgamer.com/drunkdeer-a75-gaming-keyboard-review/",
+          "date": null,
+          "score": "71/100",
+          "verdict": "Lovely hardware held back by limited software."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://rtings.com/keyboard/reviews/drunkdeer/a75",
+          "date": null,
+          "score": null,
+          "verdict": "Excellent for gaming, with Rapid Trigger and a configurable reset point, but fewer advanced options than the Wooting 60HE."
+        }
+      ],
+      "sources": [
+        {
+          "title": "DrunkDeer store: A75 product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HLPlanet: DrunkDeer A75 Pro review (82 keys, hot-swap, 1000 Hz, aluminum)",
+          "url": "https://www.hlplanet.com/drunkdeer-a75-pro-keyboard-review/",
+          "kind": "review",
+          "backs": [
+            "hot_swap",
+            "polling_rate_hz",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.2 to 3.8 mm, Rapid Trigger 0.1 to 3.6 mm (steps of 0.1 mm); ANSI, ISO-DE, ISO-UK and ISO-FR, assembled or barebones. Hot-swap, polling and case come from the HLPlanet review of the A75 Pro, not the A75 itself; switch name not given on the store page. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    },
+    {
+      "id": "drunkdeer-a75-pro",
+      "brand": "drunkdeer",
+      "model": "A75 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Magnetic Switch",
+          "id": null
+        },
+        {
+          "name": "Magnetic Silent Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": "https://drunkdeer.com/products/drunkdeer-a75-pro-wired-actuation-distance-adjustable-magnetic-switch-keyboard",
+      "reviews": [
+        {
+          "outlet": "HLPlanet",
+          "url": "https://www.hlplanet.com/drunkdeer-a75-pro-keyboard-review/",
+          "date": "2025-05-22",
+          "score": null,
+          "verdict": "Budget-friendly, premium-feeling 75% Hall effect board with Rapid Trigger and solid latency; heavier and slightly slower than the Wooting 60HE."
+        }
+      ],
+      "sources": [
+        {
+          "title": "DrunkDeer store: A75 Pro product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HLPlanet: DrunkDeer A75 Pro review",
+          "url": "https://www.hlplanet.com/drunkdeer-a75-pro-keyboard-review/",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "hot_swap",
+            "polling_rate_hz",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Store lists actuation 0.2 to 3.3 mm and Rapid Trigger 0.1 to 3.3 mm; HLPlanet measured 0.2 to 3.8 mm analog range and Raesha magnetic switches. Wired. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    },
+    {
+      "id": "drunkdeer-a75-ultra",
+      "brand": "drunkdeer",
+      "model": "A75 Ultra",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Qian",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "DrunkDeer store: A75 Ultra product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Floating gasket design with a toggle between soft and hard bottom-out; web driver offers Rapid Trigger, SOCD, DKS. Layout and hot-swap not stated on the catalog feed. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    },
+    {
+      "id": "drunkdeer-g60",
+      "brand": "drunkdeer",
+      "model": "G60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [],
+      "price_usd": 98.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "DrunkDeer store: G60 product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Size taken from the model name. Actuation 0.2 to 3.8 mm, Rapid Trigger 0.1 to 3.6 mm; ANSI only. Out of stock on 2026-11-23. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    },
+    {
+      "id": "drunkdeer-g65",
+      "brand": "drunkdeer",
+      "model": "G65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [],
+      "price_usd": 117.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "DrunkDeer store: G65 product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Size taken from the model name. Actuation 0.2 to 3.3 mm, Rapid Trigger 0.1 to 3.3 mm; ANSI only; assembled (117.99) or barebones (109.99); aluminum case sold separately at 55 USD. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    },
+    {
+      "id": "drunkdeer-g75",
+      "brand": "drunkdeer",
+      "model": "G75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Magnetic Switch",
+          "id": null
+        },
+        {
+          "name": "Magnetic Silent Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": "https://drunkdeer.com/products/drunkdeer-g75-wired-adjustable-actuation-magnetic-switch-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "DrunkDeer store: G75 product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "DrunkDeer: G75 product page",
+          "url": "https://drunkdeer.com/products/drunkdeer-g75-wired-adjustable-actuation-magnetic-switch-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "hot_swap",
+            "polling_rate_hz",
+            "connectivity",
+            "os",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.2 to 3.3 mm, Rapid Trigger 0.1 to 3.3 mm; the page lists hot-swap yes, 1000 Hz, wired only, 100 million presses and a hull gasket structure; case material not stated. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    },
+    {
+      "id": "drunkdeer-x60-future",
+      "brand": "drunkdeer",
+      "model": "X60 Future",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Qian",
+          "id": null
+        },
+        {
+          "name": "BeiDou",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "metal",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "DrunkDeer store: X60 Future product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Size taken from the model name. 8000 Hz polling, 0.2 ms latency; full metal hollow case with a tempered-glass light bar. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    },
+    {
+      "id": "drunkdeer-x60-he",
+      "brand": "drunkdeer",
+      "model": "X60HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Qian",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "metal",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "DrunkDeer Antler (web driver)",
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://drunkdeer.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "DrunkDeer store: X60HE product listing (catalog feed)",
+          "url": "https://drunkdeer.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Size taken from the model name. 8000 Hz polling, 0.2 ms latency, Rapid Trigger sensitivity 0.01 mm; full metal case with cutout. Sale prices on 2026-11-23 were lower (Black Friday); price_usd is the regular price shown."
+    }
+  ]
+}

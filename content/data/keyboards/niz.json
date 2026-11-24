@@ -52,7 +52,7 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         }
       ],
       "adjustable_actuation": false,
@@ -113,7 +113,7 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         }
       ],
       "adjustable_actuation": false,
@@ -175,11 +175,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": true,
@@ -250,11 +250,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": false,
@@ -318,11 +318,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": false,
@@ -480,11 +480,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": false,
@@ -555,11 +555,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": false,
@@ -623,11 +623,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": false,
@@ -754,11 +754,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": false,
@@ -827,11 +827,11 @@
       "switches": [
         {
           "name": "35g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-35g"
         },
         {
           "name": "45g Electro Capacitive",
-          "id": null
+          "id": "niz-ec-45g"
         }
       ],
       "adjustable_actuation": false,

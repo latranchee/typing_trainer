@@ -1,0 +1,955 @@
+{
+  "brand": {
+    "id": "aula",
+    "name": "AULA",
+    "country": "CN",
+    "founded": null,
+    "official_url": "https://aula-keyboard.com/",
+    "focus": [
+      "budget",
+      "gaming"
+    ],
+    "about": "AULA sells budget tri-mode mechanical keyboards (F75, F99, S-series) and Hall effect gaming boards (Hero, WIN, Mini series), mainly through Amazon and its Shopify-based AULA Official Store.",
+    "sources": [
+      {
+        "title": "AULA: official website",
+        "url": "https://aula-keyboard.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "AULA Official Store",
+        "url": "https://aulagaming.com/",
+        "kind": "official",
+        "backs": [
+          "price_usd"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "aula-ag75",
+      "brand": "aula",
+      "model": "AG75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 229,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-ag75",
+      "official_url": "https://aulagaming.com/products/aula-ag75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA AG75 Shock-Absorbing Aluminum Keyboard",
+          "url": "https://aulagaming.com/products/aula-ag75",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "case_material",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall effect board with a carbon fiber plate; connectivity beyond USB is not stated on the page. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "aula-f75-he",
+      "brand": "aula",
+      "model": "F75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 80,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 119.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-f75-he-hall-effect-wireless-gaming-keyboard",
+      "official_url": "https://aulagaming.com/products/aula-f75-he-hall-effect-wireless-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA F75 HE Hall Effect Tri-Mode Gaming Keyboard",
+          "url": "https://aulagaming.com/products/aula-f75-he-hall-effect-wireless-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "8000 Hz wired, 1000 Hz wireless."
+    },
+    {
+      "id": "aula-f75-pro",
+      "brand": "aula",
+      "model": "F75 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Reaper Switch",
+          "id": "leobog-reaper"
+        },
+        {
+          "name": "Star Switch",
+          "id": null
+        },
+        {
+          "name": "Graywood V3 Switch",
+          "id": "leobog-graywood-v3"
+        },
+        {
+          "name": "Barbie Switch",
+          "id": "leobog-barbie"
+        },
+        {
+          "name": "Strawberry Mint Switch",
+          "id": null
+        },
+        {
+          "name": "Silent Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-f75-pro",
+      "official_url": "https://aulagaming.com/products/aula-f75-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA F75 Pro Knob Side-Printed Mechanical Keyboard",
+          "url": "https://aulagaming.com/products/aula-f75-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Official page gives no technical specs. Hot-swap support is not stated on the page. Wireless modes are not stated on the page; only USB is recorded."
+    },
+    {
+      "id": "aula-f87",
+      "brand": "aula",
+      "model": "F87",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Graywood V3 Switch",
+          "id": "leobog-graywood-v3"
+        },
+        {
+          "name": "Space gold Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-f87",
+      "official_url": "https://aulagaming.com/products/aula-f87",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA F87 Mechanical Keyboard",
+          "url": "https://aulagaming.com/products/aula-f87",
+          "kind": "official",
+          "backs": [
+            "size",
+            "battery_mah",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Size taken from the model name; the page lists a 4000 mAh battery. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "aula-f98-pro",
+      "brand": "aula",
+      "model": "F98 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Ice Crystal Switch",
+          "id": "leobog-ice-crystal"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 129.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-f98-pro",
+      "official_url": "https://aulagaming.com/products/aula-f98-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA F98 Pro Knob Version Keyboard",
+          "url": "https://aulagaming.com/products/aula-f98-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "OLED screen and knob. Page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "aula-f99",
+      "brand": "aula",
+      "model": "F99",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Reaper Switch",
+          "id": "leobog-reaper"
+        },
+        {
+          "name": "Barbie Switch",
+          "id": "leobog-barbie"
+        },
+        {
+          "name": "Graywood V3 Switch",
+          "id": "leobog-graywood-v3"
+        },
+        {
+          "name": "Flower Field Switch",
+          "id": null
+        },
+        {
+          "name": "Silent Switch",
+          "id": null
+        },
+        {
+          "name": "Star switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 114.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-f99",
+      "official_url": "https://aulagaming.com/products/aula-f99",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/aula/f99-f75",
+          "date": null,
+          "score": "8.0 gaming, 7.8 office",
+          "verdict": "Tested F99 with the F75 as a smaller variant; solid wireless gaming and office board, weaker for mobile and programming use."
+        }
+      ],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA F99 Tri-Mode Mechanical Keyboard",
+          "url": "https://aulagaming.com/products/aula-f99",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "RTINGS reviewed it in October 2024 (day not read). Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "aula-f99-pro",
+      "brand": "aula",
+      "model": "F99 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Graywood V3 Switch",
+          "id": "leobog-graywood-v3"
+        },
+        {
+          "name": "Reaper Switch",
+          "id": "leobog-reaper"
+        },
+        {
+          "name": "Silent Switch",
+          "id": null
+        },
+        {
+          "name": "Star Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 119.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-f99-pro",
+      "official_url": "https://aulagaming.com/products/aula-f99-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA F99 Pro Knob Mechanical Keyboard",
+          "url": "https://aulagaming.com/products/aula-f99-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "aula-hero-75-he",
+      "brand": "aula",
+      "model": "Hero 75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-hero-75-he-tri-mode-magnetic-keyboard",
+      "official_url": "https://aulagaming.com/products/aula-hero-75-he-tri-mode-magnetic-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA Hero 75 HE Tri-Mode Magnetic Keyboard",
+          "url": "https://aulagaming.com/products/aula-hero-75-he-tri-mode-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "case_material",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "8000 Hz also over the 2.4 GHz receiver per the page; page says hot-swappable for 3-pin or 5-pin switches."
+    },
+    {
+      "id": "aula-hero-84-he",
+      "brand": "aula",
+      "model": "Hero 84 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-hero84-he",
+      "official_url": "https://aulagaming.com/products/aula-hero84-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA Hero 84 HE Wired Magnetic Keyboard",
+          "url": "https://aulagaming.com/products/aula-hero84-he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Key count from the model name. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "aula-hero99",
+      "brand": "aula",
+      "model": "Hero99",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 129.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-hero99-wired-magnetic-gaming-keyboard",
+      "official_url": "https://aulagaming.com/products/aula-hero99-wired-magnetic-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA Hero99 Wired Magnetic Gaming Keyboard",
+          "url": "https://aulagaming.com/products/aula-hero99-wired-magnetic-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page calls it a 98% layout with numpad. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "aula-mini-60he",
+      "brand": "aula",
+      "model": "MINI 60HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 54.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-mini-60he-magnetic-switch-keyboard",
+      "official_url": "https://aulagaming.com/products/aula-mini-60he-magnetic-switch-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA MINI 60HE Tri-Mode Magnetic Keyboard",
+          "url": "https://aulagaming.com/products/aula-mini-60he-magnetic-switch-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "aula-s75-pro",
+      "brand": "aula",
+      "model": "S75 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Star Vector Switches",
+          "id": null
+        },
+        {
+          "name": "Caramel Latte Switch",
+          "id": "huano-caramel-latte"
+        },
+        {
+          "name": "Strawberry Mint Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-s75-pro",
+      "official_url": "https://aulagaming.com/products/aula-s75-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA S75 Pro Knob Mechanical Keyboard",
+          "url": "https://aulagaming.com/products/aula-s75-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Screen and knob. Page says hot-swappable without naming the pin type. Wireless modes are not stated on the page; only USB is recorded."
+    },
+    {
+      "id": "aula-s98-pro",
+      "brand": "aula",
+      "model": "S98 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Flower Switch",
+          "id": null
+        },
+        {
+          "name": "Star Vector Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 134.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-s98-pro-wireless-mechanical-keyboard",
+      "official_url": "https://aulagaming.com/products/aula-s98-pro-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA S98 Pro Mechanical Keyboard With Knob & LCD Screen",
+          "url": "https://aulagaming.com/products/aula-s98-pro-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Official page gives no technical specs. Hot-swap support is not stated on the page. Wireless modes are not stated on the page; only USB is recorded."
+    },
+    {
+      "id": "aula-win60-he",
+      "brand": "aula",
+      "model": "WIN60 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 79.9,
+      "price_date": "2026-11-23",
+      "price_url": "https://aulagaming.com/products/aula-win60-he",
+      "official_url": "https://aulagaming.com/products/aula-win60-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AULA Official Store: AULA WIN60 HE Wired Magnetic Keyboard",
+          "url": "https://aulagaming.com/products/aula-win60-he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap support is not stated on the page."
+    }
+  ]
+}

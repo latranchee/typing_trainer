@@ -61,11 +61,11 @@
       "switches": [
         {
           "name": "Razer Green Mechanical Switches",
-          "id": null
+          "id": "razer-green"
         },
         {
           "name": "Razer Yellow Mechanical Switches",
-          "id": null
+          "id": "razer-yellow"
         }
       ],
       "adjustable_actuation": false,
@@ -127,11 +127,11 @@
       "switches": [
         {
           "name": "Razer Green Mechanical Switches (Clicky)",
-          "id": null
+          "id": "razer-green"
         },
         {
           "name": "Razer Yellow Mechanical Switches (Linear)",
-          "id": null
+          "id": "razer-yellow"
         }
       ],
       "adjustable_actuation": false,
@@ -202,7 +202,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Razer Mechanical Switches (Tactile)",
@@ -291,7 +291,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [],
       "adjustable_actuation": false,
       "rapid_trigger": false,
@@ -589,15 +589,15 @@
       "switches": [
         {
           "name": "Razer Green Mechanical Switches (Clicky)",
-          "id": null
+          "id": "razer-green"
         },
         {
           "name": "Razer Yellow Mechanical Switches (Linear)",
-          "id": null
+          "id": "razer-yellow"
         },
         {
           "name": "Razer Orange Mechanical Switch (Tactile)",
-          "id": null
+          "id": "razer-orange"
         }
       ],
       "adjustable_actuation": false,
@@ -677,7 +677,7 @@
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Razer Mechanical Switches Gen-3 (Tactile)",
@@ -762,7 +762,7 @@
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Razer Mechanical Switches Gen-3 (Tactile)",
@@ -841,11 +841,11 @@
       "switches": [
         {
           "name": "Razer Green Mechanical Switches (Clicky)",
-          "id": null
+          "id": "razer-green"
         },
         {
           "name": "Razer Yellow Mechanical Switches (Linear)",
-          "id": null
+          "id": "razer-yellow"
         }
       ],
       "adjustable_actuation": false,
@@ -919,11 +919,11 @@
       "switches": [
         {
           "name": "Razer Linear Low-Profile Optical Switch",
-          "id": null
+          "id": "razer-low-profile-linear-optical"
         },
         {
           "name": "Razer Clicky Low-Profile Optical Switch",
-          "id": null
+          "id": "razer-low-profile-clicky-optical"
         }
       ],
       "adjustable_actuation": false,
@@ -987,11 +987,11 @@
       "switches": [
         {
           "name": "Razer Linear Low-profile Optical Switch",
-          "id": null
+          "id": "razer-low-profile-linear-optical"
         },
         {
           "name": "Razer Clicky Low-profile Optical Switch",
-          "id": null
+          "id": "razer-low-profile-clicky-optical"
         }
       ],
       "adjustable_actuation": false,
@@ -1071,7 +1071,7 @@
       "switches": [
         {
           "name": "Razer Low-Profile Optical Switches (Linear)",
-          "id": null
+          "id": "razer-low-profile-linear-optical"
         }
       ],
       "adjustable_actuation": false,
@@ -1134,11 +1134,11 @@
       "switches": [
         {
           "name": "Razer Clicky Optical Switch",
-          "id": null
+          "id": "razer-clicky-optical"
         },
         {
           "name": "Razer Linear Optical Switch",
-          "id": null
+          "id": "razer-linear-optical"
         }
       ],
       "adjustable_actuation": false,
@@ -1216,7 +1216,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -1282,7 +1282,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical",
-          "id": null
+          "id": "razer-analog-optical-gen-1"
         }
       ],
       "adjustable_actuation": true,
@@ -1512,7 +1512,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -1603,7 +1603,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -1697,7 +1697,7 @@
       "switches": [
         {
           "name": "Razer Low-profile Analog Optical Switch",
-          "id": null
+          "id": "razer-low-profile-analog-optical"
         }
       ],
       "adjustable_actuation": true,
@@ -1774,7 +1774,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -1858,7 +1858,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -1945,7 +1945,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -2038,7 +2038,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -2105,7 +2105,7 @@
       "switches": [
         {
           "name": "Razer Analog Optical Switch Gen-2",
-          "id": null
+          "id": "razer-analog-optical-gen-2"
         }
       ],
       "adjustable_actuation": true,
@@ -2342,7 +2342,7 @@
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Razer Mechanical Switches Gen-3 (Tactile)",

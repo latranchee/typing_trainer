@@ -1,0 +1,183 @@
+{
+  "maker": {
+    "id": "aflion",
+    "name": "Aflion",
+    "role": "manufacturer",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "about": "Switch maker named as manufacturer of its own stock switches and of KBDFans-designed switches by Keyboard Builders' Digest.",
+    "sources": [
+      {
+        "title": "Keyboard Builders' Digest: Aflion Blue Sky",
+        "url": "https://kbd.news/switch/Aflion-Blue-Sky-switch-116.html",
+        "kind": "reference",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "aflion-blue-sky",
+      "name": "Blue Sky",
+      "maker": "aflion",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Nylon",
+        "stem": "POM"
+      },
+      "spring": "15 mm stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: Aflion Blue Sky",
+          "url": "https://kbd.news/switch/Aflion-Blue-Sky-switch-116.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "pre_travel_mm",
+            "factory_lubed",
+            "actuation_force_gf",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Listed by Keyboard Builders' Digest as part of Aflion's 2023 lineup with a new mould."
+    },
+    {
+      "id": "aflion-thunder-shadow",
+      "name": "Thunder Shadow",
+      "maker": "aflion",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 63.5,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "PC",
+        "bottom": "Nylon",
+        "stem": "POM"
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: Aflion Thunder Shadow",
+          "url": "https://kbd.news/switch/Aflion-Thunder-Shadow-switch-295.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "pre_travel_mm",
+            "factory_lubed",
+            "actuation_force_gf",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Heavy tactile of a four-switch stock set; bump force not listed."
+    },
+    {
+      "id": "aflion-kbdfans-roller",
+      "name": "Roller",
+      "maker": "aflion",
+      "made_by": null,
+      "family": "KBDFans x Aflion",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": 60,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 2,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "INK PC",
+        "bottom": "Nylon PA66",
+        "stem": "POM"
+      },
+      "spring": "stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: KBDFans x Aflion Roller",
+          "url": "https://kbd.news/switch/KBDFans-x-Aflion-Roller-switch-147.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "pre_travel_mm",
+            "factory_lubed",
+            "actuation_force_gf",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Designed by KBDFans and manufactured by Aflion; each stem and base carries four ball bearings."
+    }
+  ]
+}

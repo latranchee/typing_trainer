@@ -48,7 +48,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [],
       "adjustable_actuation": false,
       "rapid_trigger": null,
@@ -125,7 +125,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [],
       "adjustable_actuation": false,
       "rapid_trigger": null,
@@ -210,7 +210,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "choc-v1",
-      "hot_swap": "choc",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Kailh Choc v1 Pro Red",
@@ -218,11 +218,11 @@
         },
         {
           "name": "Kailh Choc v1 White",
-          "id": null
+          "id": "kailh-choc-v1-white"
         },
         {
           "name": "Kailh Choc v1 Red",
-          "id": null
+          "id": "kailh-choc-v1-red"
         },
         {
           "name": "Kailh Choc v1 Pink",
@@ -230,7 +230,7 @@
         },
         {
           "name": "Kailh Choc v1 Brown",
-          "id": null
+          "id": "kailh-choc-v1-brown"
         }
       ],
       "adjustable_actuation": false,
@@ -320,7 +320,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "choc-v1",
-      "hot_swap": "choc",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Kailh Choc v1 Pro Red",
@@ -328,11 +328,11 @@
         },
         {
           "name": "Kailh Choc v1 White",
-          "id": null
+          "id": "kailh-choc-v1-white"
         },
         {
           "name": "Kailh Choc v1 Red",
-          "id": null
+          "id": "kailh-choc-v1-red"
         },
         {
           "name": "Kailh Choc v1 Pink",
@@ -340,7 +340,7 @@
         },
         {
           "name": "Kailh Choc v1 Brown",
-          "id": null
+          "id": "kailh-choc-v1-brown"
         }
       ],
       "adjustable_actuation": false,
@@ -430,7 +430,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "choc-v1",
-      "hot_swap": "choc",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Kailh Choc v1 Pro Red",
@@ -438,11 +438,11 @@
         },
         {
           "name": "Kailh Choc v1 White",
-          "id": null
+          "id": "kailh-choc-v1-white"
         },
         {
           "name": "Kailh Choc v1 Red",
-          "id": null
+          "id": "kailh-choc-v1-red"
         },
         {
           "name": "Kailh Choc v1 Pink",
@@ -450,7 +450,7 @@
         },
         {
           "name": "Kailh Choc v1 Brown",
-          "id": null
+          "id": "kailh-choc-v1-brown"
         }
       ],
       "adjustable_actuation": false,

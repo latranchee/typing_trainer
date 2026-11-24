@@ -465,7 +465,7 @@
       "switches": [
         {
           "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
-          "id": null
+          "id": "steelseries-omnipoint-3-0"
         }
       ],
       "adjustable_actuation": true,
@@ -629,7 +629,7 @@
       "switches": [
         {
           "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
-          "id": null
+          "id": "steelseries-omnipoint-3-0"
         }
       ],
       "adjustable_actuation": true,
@@ -872,7 +872,7 @@
       "switches": [
         {
           "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
-          "id": null
+          "id": "steelseries-omnipoint-3-0"
         }
       ],
       "adjustable_actuation": true,
@@ -1039,7 +1039,7 @@
       "switches": [
         {
           "name": "OmniPoint 3.0 Adjustable HyperMagnetic Switches",
-          "id": null
+          "id": "steelseries-omnipoint-3-0"
         }
       ],
       "adjustable_actuation": true,

@@ -5,11 +5,32 @@
     "country": "CN",
     "founded": 2016,
     "official_url": "https://www.durgod.com/",
-    "focus": ["office", "gaming"],
+    "focus": [
+      "office",
+      "gaming"
+    ],
     "about": "Durgod designs and builds mechanical keyboards in its own factory and calls itself a leading keyboard brand in China. The brand dates from 2016; its team has worked on keyboards since 2000.",
     "sources": [
-      { "title": "Durgod: About Us", "url": "https://www.durgod.com/about-us/", "kind": "official", "backs": ["founded", "country", "about"], "checked": "2026-11-23" },
-      { "title": "Durgod: Keyboards category", "url": "https://www.durgod.com/product-category/keyboards/", "kind": "official", "backs": ["lineup"], "checked": "2026-11-23" }
+      {
+        "title": "Durgod: About Us",
+        "url": "https://www.durgod.com/about-us/",
+        "kind": "official",
+        "backs": [
+          "founded",
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Durgod: Keyboards category",
+        "url": "https://www.durgod.com/product-category/keyboards/",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
     ]
   },
   "keyboards": [
@@ -23,39 +44,83 @@
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Gateron Optical Red", "id": null },
-        { "name": "Kailh Turbo Brown", "id": null },
-        { "name": "Kailh Turbo Red", "id": null },
-        { "name": "Kailh Turbo Silent Red", "id": null },
-        { "name": "Kailh Turbo Silver", "id": null }
+        {
+          "name": "Gateron Optical Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Red",
+          "id": "kailh-turbo-red"
+        },
+        {
+          "name": "Kailh Turbo Silent Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD software",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 73,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/cavalry-87-black/",
       "official_url": "https://www.durgod.com/product/cavalry-87-black/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: Cavalry 87 Black", "url": "https://www.durgod.com/product/cavalry-87-black/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: Cavalry 87 Black",
+          "url": "https://www.durgod.com/product/cavalry-87-black/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "RGB backlight. Hot-swap pin count not stated. The store also lists a Gateron Optical Red option (Russian layout) for this mechanical hot-swap board."
     },
@@ -69,36 +134,74 @@
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3000,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Kailh Turbo Brown", "id": null },
-        { "name": "Kailh Turbo Silver", "id": null }
+        {
+          "name": "Kailh Turbo Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD software",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 73,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/cavalry-87w-black/",
       "official_url": "https://www.durgod.com/product/cavalry-87w-black/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: Cavalry 87w Black", "url": "https://www.durgod.com/product/cavalry-87w-black/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: Cavalry 87w Black",
+          "url": "https://www.durgod.com/product/cavalry-87w-black/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "RGB backlight. Hot-swap pin count not stated."
     },
@@ -112,35 +215,67 @@
       "kind": "prebuilt",
       "size": "full",
       "key_count": 104,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "optical",
       "hot_swap": "none",
       "switches": [
-        { "name": "Gateron Optical Red", "id": null }
+        {
+          "name": "Gateron Optical Red",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "PBT plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 118,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/gk90-black/",
       "official_url": "https://www.durgod.com/product/gk90-black/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: GK90 Black", "url": "https://www.durgod.com/product/gk90-black/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: GK90 Black",
+          "url": "https://www.durgod.com/product/gk90-black/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "RGB backlight; optical switches, not hot-swappable."
     },
@@ -154,41 +289,91 @@
       "kind": "prebuilt",
       "size": "65",
       "key_count": 68,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX RGB Blue", "id": null },
-        { "name": "Cherry MX RGB Brown", "id": null },
-        { "name": "Cherry MX RGB Red", "id": null },
-        { "name": "Cherry MX RGB Silver", "id": null },
-        { "name": "Gateron Brown", "id": null },
-        { "name": "Gateron Red", "id": null },
-        { "name": "Gateron Silent Brown", "id": null }
+        {
+          "name": "Cherry MX RGB Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX RGB Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX RGB Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX RGB Silver",
+          "id": null
+        },
+        {
+          "name": "Gateron Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Silent Brown",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "aluminum",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Hera Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 96,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/hades-black/",
       "official_url": "https://www.durgod.com/product/hades-black/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: Hades Black", "url": "https://www.durgod.com/product/hades-black/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: Hades Black",
+          "url": "https://www.durgod.com/product/hades-black/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "RGB backlight; aluminum frame and bottom case."
     },
@@ -196,26 +381,36 @@
       "id": "durgod-hi-keys",
       "brand": "durgod",
       "model": "Hi Keys",
-      "aka": ["K710 Hi Keys"],
+      "aka": [
+        "K710 Hi Keys"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "75",
       "key_count": 84,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["2.4ghz", "bluetooth"],
+      "connectivity": [
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3600,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Kailh Turbo Silent Red", "id": null }
+        {
+          "name": "Kailh Turbo Silent Red",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
@@ -223,14 +418,36 @@
       "mount": null,
       "firmware": [],
       "software": null,
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 113,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/hi-keys-dark-blue/",
       "official_url": "https://www.durgod.com/product/hi-keys-dark-blue/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: Hi Keys Dark blue", "url": "https://www.durgod.com/product/hi-keys-dark-blue/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "hot_swap", "switches", "case_material", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: Hi Keys Dark blue",
+          "url": "https://www.durgod.com/product/hi-keys-dark-blue/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Wireless only (1000 Hz over 2.4 GHz); white backlight, silk-printed ABS keycaps."
     },
@@ -238,27 +455,40 @@
       "id": "durgod-hi-keys-plus",
       "brand": "durgod",
       "model": "Hi Keys Plus",
-      "aka": ["K710 Hi Keys Plus"],
+      "aka": [
+        "K710 Hi Keys Plus"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "75",
       "key_count": 84,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["2.4ghz", "bluetooth"],
+      "connectivity": [
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3600,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Kailh Turbo Brown", "id": null },
-        { "name": "Kailh Turbo Silent Red", "id": null }
+        {
+          "name": "Kailh Turbo Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Silent Red",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
@@ -266,14 +496,36 @@
       "mount": null,
       "firmware": [],
       "software": null,
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 103,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/hi-keys-plus-dark-blue/",
       "official_url": "https://www.durgod.com/product/hi-keys-plus-dark-blue/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: Hi Keys Plus Dark blue", "url": "https://www.durgod.com/product/hi-keys-plus-dark-blue/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "hot_swap", "switches", "case_material", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: Hi Keys Plus Dark blue",
+          "url": "https://www.durgod.com/product/hi-keys-plus-dark-blue/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Wireless only (1000 Hz over 2.4 GHz), up to 3 devices; white backlight, silk-printed ABS keycaps. Hot-swap pin count not stated."
     },
@@ -287,35 +539,67 @@
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "magnetic",
       "switches": [
-        { "name": "Gateron 20T Magnetic Switch", "id": null }
+        {
+          "name": "Gateron 20T Magnetic Switch",
+          "id": null
+        }
       ],
       "adjustable_actuation": true,
       "rapid_trigger": null,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD software",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 123,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k100-silvery/",
       "official_url": "https://www.durgod.com/product/k100-silvery/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K100 HE Silvery", "url": "https://www.durgod.com/product/k100-silvery/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K100 HE Silvery",
+          "url": "https://www.durgod.com/product/k100-silvery/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Magnetic switches with actuation adjustable from 0.1 to 4.0 mm; knob and RGB backlight. Out of stock on 2026-11-23."
     },
@@ -329,20 +613,29 @@
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3000,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Gateron Smoothie", "id": null }
+        {
+          "name": "Gateron Smoothie",
+          "id": "gateron-smoothie"
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
@@ -357,7 +650,21 @@
       "official_url": "https://www.durgod.com/product/k100w-icy/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K100w Icy", "url": "https://www.durgod.com/product/k100w-icy/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "hot_swap", "switches", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K100w Icy",
+          "url": "https://www.durgod.com/product/k100w-icy/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Knob and RGB backlight. The page gives no spec sheet (OS, polling rate, materials). Hot-swap pin count not stated. Out of stock on 2026-11-23."
     },
@@ -371,40 +678,91 @@
       "kind": "prebuilt",
       "size": "65",
       "key_count": 68,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 1200,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX Black", "id": null },
-        { "name": "Cherry MX Blue", "id": null },
-        { "name": "Cherry MX Brown", "id": null },
-        { "name": "Cherry MX Red", "id": null },
-        { "name": "Cherry MX Silent Red", "id": null },
-        { "name": "Cherry MX Silver", "id": null }
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 92,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k230-fusion-original/",
       "official_url": "https://www.durgod.com/product/k230-fusion-original/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K230 Fusion Original", "url": "https://www.durgod.com/product/k230-fusion-original/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K230 Fusion Original",
+          "url": "https://www.durgod.com/product/k230-fusion-original/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "68 keys ANSI, 69 ISO; no backlight."
     },
@@ -412,48 +770,109 @@
       "id": "durgod-k310",
       "brand": "durgod",
       "model": "K310",
-      "aka": ["Taurus K310"],
+      "aka": [
+        "Taurus K310"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "full",
       "key_count": 104,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX Black", "id": null },
-        { "name": "Cherry MX Brown", "id": null },
-        { "name": "Cherry MX RGB Brown", "id": null },
-        { "name": "Cherry MX RGB Red", "id": null },
-        { "name": "Cherry MX RGB Silent Red", "id": null },
-        { "name": "Cherry MX Red", "id": null },
-        { "name": "Cherry MX Silent Red", "id": null }
+        {
+          "name": "Cherry MX Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX RGB Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX RGB Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX RGB Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "PBT plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 95,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k310-space-gray/",
       "official_url": "https://www.durgod.com/product/k310-space-gray/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K310 (Taurus) Space Gray", "url": "https://www.durgod.com/product/k310-space-gray/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" },
-        { "title": "Durgod: K310 (Taurus) Nebula Space Purple", "url": "https://www.durgod.com/product/k310-nebula-space-purple/", "kind": "official", "backs": ["switches"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K310 (Taurus) Space Gray",
+          "url": "https://www.durgod.com/product/k310-space-gray/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Durgod: K310 (Taurus) Nebula Space Purple",
+          "url": "https://www.durgod.com/product/k310-nebula-space-purple/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "104 keys ANSI, 105 ISO. Space Gray is unlit; the Nebula Space Purple edition adds RGB with Cherry MX RGB switches. Edition prices: Nebula Space Purple from $113."
     },
@@ -461,42 +880,79 @@
       "id": "durgod-k310-corona",
       "brand": "durgod",
       "model": "K310 Corona",
-      "aka": ["Taurus K310 Corona"],
+      "aka": [
+        "Taurus K310 Corona"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "full",
       "key_count": 104,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Kailh Turbo Red", "id": null },
-        { "name": "Kailh Turbo Silver", "id": null }
+        {
+          "name": "Kailh Turbo Red",
+          "id": "kailh-turbo-red"
+        },
+        {
+          "name": "Kailh Turbo Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "ABS plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 92,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k310-corona-space-gray/",
       "official_url": "https://www.durgod.com/product/k310-corona-space-gray/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K310 (Taurus) Corona Space Gray", "url": "https://www.durgod.com/product/k310-corona-space-gray/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K310 (Taurus) Corona Space Gray",
+          "url": "https://www.durgod.com/product/k310-corona-space-gray/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "White backlight. Sold with hot-swap Kailh Turbo switches; the attribute table also lists Cherry MX switches without hot-swap. Hot-swap pin count not stated."
     },
@@ -504,41 +960,78 @@
       "id": "durgod-k310w",
       "brand": "durgod",
       "model": "K310w",
-      "aka": ["Taurus K310w"],
+      "aka": [
+        "Taurus K310w"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "full",
       "key_count": 104,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 1200,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX Silver", "id": null }
+        {
+          "name": "Cherry MX Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "PBT plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 113,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k310w-space-gray/",
       "official_url": "https://www.durgod.com/product/k310w-space-gray/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K310w (Taurus) Space Gray", "url": "https://www.durgod.com/product/k310w-space-gray/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K310w (Taurus) Space Gray",
+          "url": "https://www.durgod.com/product/k310w-space-gray/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "No backlight."
     },
@@ -546,53 +1039,129 @@
       "id": "durgod-k320",
       "brand": "durgod",
       "model": "K320",
-      "aka": ["Taurus K320"],
+      "aka": [
+        "Taurus K320"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX Blue", "id": null },
-        { "name": "Cherry MX Brown", "id": null },
-        { "name": "Cherry MX Clear", "id": null },
-        { "name": "Cherry MX RGB Black", "id": null },
-        { "name": "Cherry MX RGB Brown", "id": null },
-        { "name": "Cherry MX RGB Red", "id": null },
-        { "name": "Cherry MX RGB Silent Red", "id": null },
-        { "name": "Cherry MX Red", "id": null },
-        { "name": "Cherry MX Silent Black", "id": null },
-        { "name": "Cherry MX Silent Red", "id": null }
+        {
+          "name": "Cherry MX Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX Clear",
+          "id": "cherry-mx-clear"
+        },
+        {
+          "name": "Cherry MX RGB Black",
+          "id": "cherry-mx2a-black"
+        },
+        {
+          "name": "Cherry MX RGB Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX RGB Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX RGB Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Cherry MX Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX Silent Black",
+          "id": "cherry-mx2a-silent-black"
+        },
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "PBT plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 95,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k320-space-gray/",
       "official_url": "https://www.durgod.com/product/k320-space-gray/",
       "reviews": [
-        { "outlet": "RTINGS", "url": "https://www.rtings.com/keyboard/reviews/durgod/taurus-k320", "date": "2020-10-01", "score": null, "verdict": "A decent TKL gaming keyboard, really well-made with a solid plastic frame and doubleshot PBT keycaps." }
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/durgod/taurus-k320",
+          "date": "2020-10-01",
+          "score": null,
+          "verdict": "A decent TKL gaming keyboard, really well-made with a solid plastic frame and doubleshot PBT keycaps."
+        }
       ],
       "sources": [
-        { "title": "Durgod: K320 (Taurus) Space Gray", "url": "https://www.durgod.com/product/k320-space-gray/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" },
-        { "title": "Durgod: K320 (Taurus) Nebula Space Purple", "url": "https://www.durgod.com/product/durgod-k320-nebula-space-purple/", "kind": "official", "backs": ["switches"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K320 (Taurus) Space Gray",
+          "url": "https://www.durgod.com/product/k320-space-gray/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Durgod: K320 (Taurus) Nebula Space Purple",
+          "url": "https://www.durgod.com/product/durgod-k320-nebula-space-purple/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "87 keys ANSI, 88 ISO. Space Gray is unlit; the Nebula Space Purple edition adds RGB with Cherry MX RGB switches. Edition prices: Nebula Space Purple from $108."
     },
@@ -600,43 +1169,83 @@
       "id": "durgod-k320-corona",
       "brand": "durgod",
       "model": "K320 Corona",
-      "aka": ["Taurus K320 Corona"],
+      "aka": [
+        "Taurus K320 Corona"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Cherry MX Silent Black", "id": null },
-        { "name": "Kailh Turbo Brown", "id": null },
-        { "name": "Kailh Turbo Silent Red", "id": null }
+        {
+          "name": "Cherry MX Silent Black",
+          "id": "cherry-mx2a-silent-black"
+        },
+        {
+          "name": "Kailh Turbo Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Silent Red",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "ABS plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 89,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k320-corona-space-gray/",
       "official_url": "https://www.durgod.com/product/k320-corona-space-gray/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K320 (Taurus) Corona Space Gray", "url": "https://www.durgod.com/product/k320-corona-space-gray/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K320 (Taurus) Corona Space Gray",
+          "url": "https://www.durgod.com/product/k320-corona-space-gray/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "White backlight. Kailh Turbo versions are hot-swap; the Cherry MX Silent Black version is not. Hot-swap pin count not stated."
     },
@@ -644,41 +1253,77 @@
       "id": "durgod-k320w",
       "brand": "durgod",
       "model": "K320w",
-      "aka": ["Taurus K320w"],
+      "aka": [
+        "Taurus K320w"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
       "battery_mah": 1200,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX Silent Red", "id": null }
+        {
+          "name": "Cherry MX Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 97,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k320w-space-gray/",
       "official_url": "https://www.durgod.com/product/k320w-space-gray/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K320w (Taurus) Space Gray", "url": "https://www.durgod.com/product/k320w-space-gray/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K320w (Taurus) Space Gray",
+          "url": "https://www.durgod.com/product/k320w-space-gray/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "The spec sheet lists Bluetooth and USB-C; the attribute table says tri-mode wireless. No backlight. Out of stock on 2026-11-23."
     },
@@ -692,36 +1337,74 @@
       "kind": "prebuilt",
       "size": "60",
       "key_count": 61,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3600,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Gateron Crystal Red", "id": null },
-        { "name": "Gateron Crystal Silver", "id": null }
+        {
+          "name": "Gateron Crystal Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 88,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k330w-mint/",
       "official_url": "https://www.durgod.com/product/k330w-mint/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K330w Mint", "url": "https://www.durgod.com/product/k330w-mint/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K330w Mint",
+          "url": "https://www.durgod.com/product/k330w-mint/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "No backlight."
     },
@@ -735,36 +1418,74 @@
       "kind": "prebuilt",
       "size": "60",
       "key_count": 61,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3600,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Gateron Crystal Silent Red", "id": null },
-        { "name": "Gateron Crystal Silver", "id": null }
+        {
+          "name": "Gateron Crystal Silent Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 97,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k330w-plus-mint/",
       "official_url": "https://www.durgod.com/product/k330w-plus-mint/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K330w Plus Mint", "url": "https://www.durgod.com/product/k330w-plus-mint/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K330w Plus Mint",
+          "url": "https://www.durgod.com/product/k330w-plus-mint/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "No backlight. Hot-swap pin count not stated."
     },
@@ -778,42 +1499,104 @@
       "kind": "prebuilt",
       "size": "full",
       "key_count": 104,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3600,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Gateron Crystal Brown", "id": null },
-        { "name": "Gateron Crystal Red", "id": null },
-        { "name": "Gateron Crystal Silent Red", "id": null },
-        { "name": "Gateron Crystal Silver", "id": null },
-        { "name": "Kailh Turbo Brown", "id": null },
-        { "name": "Kailh Turbo Silent Red", "id": null },
-        { "name": "Kailh Turbo Silver", "id": null }
+        {
+          "name": "Gateron Crystal Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Silent Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Silver",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Silent Red",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 103,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k610w-echo/",
       "official_url": "https://www.durgod.com/product/k610w-echo/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K610w Echo", "url": "https://www.durgod.com/product/k610w-echo/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" },
-        { "title": "Durgod: K610w Corona Echo", "url": "https://www.durgod.com/product/k610w-corona-echo/", "kind": "official", "backs": ["switches"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K610w Echo",
+          "url": "https://www.durgod.com/product/k610w-echo/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Durgod: K610w Corona Echo",
+          "url": "https://www.durgod.com/product/k610w-corona-echo/",
+          "kind": "official",
+          "backs": [
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "No backlight; the Corona edition adds a white backlight with Kailh Turbo switches. Hot-swap pin count not stated. Edition prices: Corona from $108."
     },
@@ -821,43 +1604,86 @@
       "id": "durgod-k615w-corona",
       "brand": "durgod",
       "model": "K615w Corona",
-      "aka": ["K615w"],
+      "aka": [
+        "K615w"
+      ],
       "status": "current",
       "released": null,
       "kind": "prebuilt",
       "size": "96",
       "key_count": 97,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3600,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Kailh Turbo Brown", "id": null },
-        { "name": "Kailh Turbo Red", "id": null },
-        { "name": "Kailh Turbo Silver", "id": null }
+        {
+          "name": "Kailh Turbo Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Red",
+          "id": "kailh-turbo-red"
+        },
+        {
+          "name": "Kailh Turbo Silver",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 102,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/durgod-k615w-corona-echo/",
       "official_url": "https://www.durgod.com/product/durgod-k615w-corona-echo/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K615w Corona Echo", "url": "https://www.durgod.com/product/durgod-k615w-corona-echo/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K615w Corona Echo",
+          "url": "https://www.durgod.com/product/durgod-k615w-corona-echo/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "95% layout with a white backlight. Hot-swap pin count not stated. On sale from $92 on 2026-11-23."
     },
@@ -871,40 +1697,91 @@
       "kind": "prebuilt",
       "size": "tkl",
       "key_count": 87,
-      "layout_standards": ["ansi", "iso"],
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3600,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Gateron Crystal Brown", "id": null },
-        { "name": "Gateron Crystal Red", "id": null },
-        { "name": "Gateron Crystal Silent Red", "id": null },
-        { "name": "Gateron Crystal Silver", "id": null },
-        { "name": "Kailh Turbo Brown", "id": null },
-        { "name": "Kailh Turbo Silent Red", "id": null }
+        {
+          "name": "Gateron Crystal Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Silent Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Crystal Silver",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Brown",
+          "id": null
+        },
+        {
+          "name": "Kailh Turbo Silent Red",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Zeus Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 101,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/k620w-echo/",
       "official_url": "https://www.durgod.com/product/k620w-echo/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: K620w Echo", "url": "https://www.durgod.com/product/k620w-echo/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: K620w Echo",
+          "url": "https://www.durgod.com/product/k620w-echo/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "No backlight. Hot-swap pin count not stated."
     },
@@ -918,37 +1795,78 @@
       "kind": "prebuilt",
       "size": "75",
       "key_count": 82,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb", "2.4ghz", "bluetooth"],
+      "connectivity": [
+        "usb",
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 3000,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
-        { "name": "Huano Blue", "id": null },
-        { "name": "Huano Brown", "id": null },
-        { "name": "Huano Red", "id": null }
+        {
+          "name": "Huano Blue",
+          "id": null
+        },
+        {
+          "name": "Huano Brown",
+          "id": null
+        },
+        {
+          "name": "Huano Red",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "plastic",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD software",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 105,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/mk75-black/",
       "official_url": "https://www.durgod.com/product/mk75-black/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: MK75 Black", "url": "https://www.durgod.com/product/mk75-black/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: MK75 Black",
+          "url": "https://www.durgod.com/product/mk75-black/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "82 keys plus a knob; RGB backlight. Hot-swap pin count not stated. Every variant was out of stock on 2026-11-23."
     },
@@ -962,20 +1880,28 @@
       "kind": "prebuilt",
       "size": "65",
       "key_count": 67,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": true,
-      "connectivity": ["2.4ghz", "bluetooth"],
+      "connectivity": [
+        "2.4ghz",
+        "bluetooth"
+      ],
       "battery_mah": 2000,
       "polling_rate_hz": null,
       "switch_footprint": "choc-v2",
       "hot_swap": "none",
       "switches": [
-        { "name": "Kailh Choc V2 Red", "id": null }
+        {
+          "name": "Kailh Choc V2 Red",
+          "id": "kailh-choc-v2-red"
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
@@ -983,14 +1909,36 @@
       "mount": null,
       "firmware": [],
       "software": null,
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 92,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/s230-cream/",
       "official_url": "https://www.durgod.com/product/s230-cream/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: S230 Cream", "url": "https://www.durgod.com/product/s230-cream/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "battery_mah", "hot_swap", "switches", "case_material", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: S230 Cream",
+          "url": "https://www.durgod.com/product/s230-cream/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "Low-profile, wireless only (1000 Hz over 2.4 GHz); pad-printed ABS keycaps, no backlight."
     },
@@ -1004,42 +1952,95 @@
       "kind": "prebuilt",
       "size": "60",
       "key_count": 61,
-      "layout_standards": ["ansi"],
+      "layout_standards": [
+        "ansi"
+      ],
       "stagger": "row",
       "split": "none",
       "tenting": "none",
       "thumb_cluster": false,
       "key_wells": false,
       "low_profile": false,
-      "connectivity": ["usb"],
+      "connectivity": [
+        "usb"
+      ],
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
       "hot_swap": "none",
       "switches": [
-        { "name": "Cherry MX RGB Blue", "id": null },
-        { "name": "Cherry MX RGB Brown", "id": null },
-        { "name": "Cherry MX RGB Red", "id": null },
-        { "name": "Cherry MX RGB Silent Red", "id": null },
-        { "name": "Gateron Black", "id": null },
-        { "name": "Gateron Brown", "id": null },
-        { "name": "Gateron Red", "id": null },
-        { "name": "Gateron Silent Brown", "id": null }
+        {
+          "name": "Cherry MX RGB Blue",
+          "id": "cherry-mx2a-blue"
+        },
+        {
+          "name": "Cherry MX RGB Brown",
+          "id": "cherry-mx2a-brown"
+        },
+        {
+          "name": "Cherry MX RGB Red",
+          "id": "cherry-mx2a-red"
+        },
+        {
+          "name": "Cherry MX RGB Silent Red",
+          "id": "cherry-mx2a-silent-red"
+        },
+        {
+          "name": "Gateron Black",
+          "id": null
+        },
+        {
+          "name": "Gateron Brown",
+          "id": null
+        },
+        {
+          "name": "Gateron Red",
+          "id": null
+        },
+        {
+          "name": "Gateron Silent Brown",
+          "id": null
+        }
       ],
       "adjustable_actuation": false,
       "rapid_trigger": false,
       "case_material": "aluminum",
       "mount": null,
-      "firmware": ["proprietary"],
+      "firmware": [
+        "proprietary"
+      ],
       "software": "DURGOD Hera Engine",
-      "os": ["windows", "mac", "linux", "android", "ios"],
+      "os": [
+        "windows",
+        "mac",
+        "linux",
+        "android",
+        "ios"
+      ],
       "price_usd": 93,
       "price_date": "2026-11-23",
       "price_url": "https://www.durgod.com/product/venus-black/",
       "official_url": "https://www.durgod.com/product/venus-black/",
       "reviews": [],
       "sources": [
-        { "title": "Durgod: Venus Black", "url": "https://www.durgod.com/product/venus-black/", "kind": "official", "backs": ["key_count", "layout_standards", "connectivity", "polling_rate_hz", "hot_swap", "switches", "case_material", "software", "os", "price_usd"], "checked": "2026-11-23" }
+        {
+          "title": "Durgod: Venus Black",
+          "url": "https://www.durgod.com/product/venus-black/",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "software",
+            "os",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
       ],
       "notes": "RGB backlight; aluminum frame and bottom case."
     }

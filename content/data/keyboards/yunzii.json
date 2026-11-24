@@ -1,0 +1,1134 @@
+{
+  "brand": {
+    "id": "yunzii",
+    "name": "Yunzii",
+    "country": null,
+    "founded": null,
+    "official_url": "https://yunzii.com/",
+    "focus": [
+      "budget",
+      "enthusiast",
+      "gaming"
+    ],
+    "about": "Yunzii sells budget wireless mechanical keyboards, mostly gasket-mounted and hot-swappable, plus Hall effect gaming boards, keycaps and mice through its own US-priced store.",
+    "sources": [
+      {
+        "title": "YUNZII: store",
+        "url": "https://yunzii.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "yunzii-al98",
+      "brand": "yunzii",
+      "model": "AL98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 101,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "YUNZII Milk V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Cocoa Cream V2 Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-al98-qmk-via-full-aluminum-mechanical-gaming-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-al98-qmk-via-full-aluminum-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII AL98 QMK/VIA Full Aluminum Mechanical Gaming Keyboard",
+          "url": "https://yunzii.com/products/yunzii-al98-qmk-via-full-aluminum-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "yunzii-al98-pro",
+      "brand": "yunzii",
+      "model": "AL98 PRO",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 100,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Cocoa Cream V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [],
+      "software": "Windows/macOS software and online website",
+      "os": [],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-al98-pro-dual-8k-wireless-aluminum-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-al98-pro-dual-8k-wireless-aluminum-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII AL98 PRO Dual-8K Wireless Aluminum Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-al98-pro-dual-8k-wireless-aluminum-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd",
+            "polling_rate_hz",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Brand lists dual 8000 Hz polling; the page gives no per-mode breakdown."
+    },
+    {
+      "id": "yunzii-b75-pro",
+      "brand": "yunzii",
+      "model": "B75 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "YUNZII Milk Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Cocoa Cream V2 Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-b75-pro-coffee-brown-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-b75-pro-coffee-brown-wireless-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "Root-Nation",
+          "url": "https://root-nation.com/en/pc-en/pc-accessories-en/en-yunzii-b75pro-review",
+          "date": "2024-07-16",
+          "score": null,
+          "verdict": "Budget gasket 75% board praised as a strong buy for the price."
+        },
+        {
+          "outlet": "Parka Blogs",
+          "url": "https://www.parkablogs.com/content/review-yunzii-b75-pro-wireless-mechanical-keyboard",
+          "date": null,
+          "score": null,
+          "verdict": "Hands-on review of the wireless B75 Pro at about USD 79."
+        }
+      ],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII B75 Pro Coffee Brown Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-b75-pro-coffee-brown-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Source is the Coffee Brown colorway page; the page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "yunzii-b75-pro-max",
+      "brand": "yunzii",
+      "model": "B75 PRO MAX",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Milk V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Cocoa Cream V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-b75-pro-max-qmk-via-knob-tft-screen-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-b75-pro-max-qmk-via-knob-tft-screen-wireless-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "KeenGamer",
+          "url": "https://www.keengamer.com/articles/reviews/hardware-reviews/yunzii-b75-pro-max-keyboard-review-budget-price-pro-max-energy",
+          "date": "2026-01-21",
+          "score": null,
+          "verdict": "Feature-rich, easy-to-live-with 75% at a budget price; heavy dampening removes the usual gasket bounce."
+        }
+      ],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII B75 PRO MAX QMK/VIA Knob TFT Screen Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-b75-pro-max-qmk-via-knob-tft-screen-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Has a TFT screen and a knob."
+    },
+    {
+      "id": "yunzii-b87",
+      "brand": "yunzii",
+      "model": "B87",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "YUNZII Milk V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Cocoa Cream V2 Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-b87-qmk-via-custom-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-b87-qmk-via-custom-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII B87 QMK/VIA Custom Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-b87-qmk-via-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Brand calls the layout 80%. Sold in many colorways under separate pages. Page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "yunzii-b98-pro",
+      "brand": "yunzii",
+      "model": "B98 PRO",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 100,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Milk V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 109.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-b98-pro-qmk-via-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-b98-pro-qmk-via-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII B98 PRO QMK/VIA Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-b98-pro-qmk-via-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "yunzii-b104",
+      "brand": "yunzii",
+      "model": "B104",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 107,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Sage Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-b104-qmk-via-full-size-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-b104-qmk-via-full-size-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII B104 QMK/VIA Full-Size Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-b104-qmk-via-full-size-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page counts 107 keys plus a knob."
+    },
+    {
+      "id": "yunzii-c75",
+      "brand": "yunzii",
+      "model": "C75 MAO Cake Kitten",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 5500,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Milk V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": "Windows software; Win/Mac online website",
+      "os": [],
+      "price_usd": 112.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-c75-mao-cake-kitten-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-c75-mao-cake-kitten-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII C75 MAO Cake Kitten Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-c75-mao-cake-kitten-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "yunzii-c98",
+      "brand": "yunzii",
+      "model": "C98 MAO Cake Kitten",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Milk V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": "Windows software; Win/Mac online website",
+      "os": [],
+      "price_usd": 134.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-c98-mao-cake-kitten-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-c98-mao-cake-kitten-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII C98 MAO Cake Kitten Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-c98-mao-cake-kitten-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "yunzii-if68",
+      "brand": "yunzii",
+      "model": "IF68",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 63,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Milk V2 Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 96.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-if68-qmk-via-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-if68-qmk-via-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII IF68 QMK/VIA Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-if68-qmk-via-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Has a TFT screen and a knob."
+    },
+    {
+      "id": "yunzii-if75",
+      "brand": "yunzii",
+      "model": "IF75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 79,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Onyx Gray Tactile/Clicky Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-if75-qmk-via-wireless-mechanical-gaming-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-if75-qmk-via-wireless-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII IF75 QMK/VIA Wireless Mechanical Gaming Keyboard",
+          "url": "https://yunzii.com/products/yunzii-if75-qmk-via-wireless-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Has a TFT screen and a knob."
+    },
+    {
+      "id": "yunzii-rt75-pro",
+      "brand": "yunzii",
+      "model": "RT75 PRO",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Outemu Magnetic Red Switch",
+          "id": "outemu-magnetic-red"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "top",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 94.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-rt75-pro-dual-8k-rapid-trigger-wireless-gaming-magnetic-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-rt75-pro-dual-8k-rapid-trigger-wireless-gaming-magnetic-keyboard",
+      "reviews": [
+        {
+          "outlet": "KeenGamer",
+          "url": "https://www.keengamer.com/articles/reviews/hardware-reviews/yunzii-rt75-pro-keyboard-review-understated-outside-serious-inside/",
+          "date": "2026-05-01",
+          "score": null,
+          "verdict": "Tight, focused 75% magnetic board with five layers of internal dampening; understated look, serious hardware."
+        }
+      ],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII RT75 PRO Dual-8K Rapid Trigger Wireless Gaming Magnetic Keyboard",
+          "url": "https://yunzii.com/products/yunzii-rt75-pro-dual-8k-rapid-trigger-wireless-gaming-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "8000 Hz over wired and 2.4 GHz, 125 Hz over Bluetooth. Page says full-key hot-swappable without naming the switch family beyond the Outemu magnetic option."
+    },
+    {
+      "id": "yunzii-wood68",
+      "brand": "yunzii",
+      "model": "WOOD68",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "wood",
+      "mount": "tray",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-wood68-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-wood68-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII WOOD68 Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-wood68-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "yunzii-wood84",
+      "brand": "yunzii",
+      "model": "WOOD84",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "YUNZII Candy Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "wood",
+      "mount": "tray",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 104.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-wood84-wireless-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-wood84-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII WOOD84 Wireless Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-wood84-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "yunzii-x98",
+      "brand": "yunzii",
+      "model": "X98 Solid",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 96,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Snow Linear Switch",
+          "id": null
+        },
+        {
+          "name": "YUNZII Crystal Linear Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://yunzii.com/products/yunzii-x98-solid-qmk-via-mechanical-keyboard",
+      "official_url": "https://yunzii.com/products/yunzii-x98-solid-qmk-via-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "YUNZII: YUNZII X98 Solid QMK/VIA Mechanical Keyboard",
+          "url": "https://yunzii.com/products/yunzii-x98-solid-qmk-via-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Also sold as the X98 Transparent."
+    }
+  ]
+}

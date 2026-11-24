@@ -54,11 +54,11 @@
       "switches": [
         {
           "name": "Kailh Choc v1 Brown",
-          "id": null
+          "id": "kailh-choc-v1-brown"
         },
         {
           "name": "Kailh Choc v1 Red",
-          "id": null
+          "id": "kailh-choc-v1-red"
         },
         {
           "name": "Kailh Choc v1 Red Pro",
@@ -66,7 +66,7 @@
         },
         {
           "name": "Kailh Choc v1 White",
-          "id": null
+          "id": "kailh-choc-v1-white"
         },
         {
           "name": "Cherry Blossom",

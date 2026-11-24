@@ -55,7 +55,7 @@
       "battery_mah": 3400,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Kailh Prestige Silent",
@@ -146,7 +146,7 @@
       "battery_mah": 3400,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Kailh Prestige Silent",
@@ -732,7 +732,7 @@
       "battery_mah": 4000,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Kailh Prestige Voice",

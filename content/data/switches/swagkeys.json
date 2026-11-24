@@ -1,0 +1,76 @@
+{
+  "maker": {
+    "id": "swagkeys",
+    "name": "Swagkeys",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://swagkeys.com/",
+    "about": "Keyboard vendor with SWK and SWG switch collections in its store.",
+    "sources": [
+      {
+        "title": "Swagkeys: Home",
+        "url": "https://swagkeys.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "swagkeys-swk-catmint",
+      "name": "SWK Catmint",
+      "maker": "swagkeys",
+      "made_by": null,
+      "family": "SWK",
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 58,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.5,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "Nylon",
+        "bottom": "Nylon",
+        "stem": "POK partial box"
+      },
+      "spring": "20 mm stainless steel",
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: SwagKeys SWK Catmint",
+          "url": "https://kbd.news/switch/swagkeys-swk-catmint-switch-44.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "bottom_out_force_gf",
+            "total_travel_mm",
+            "pre_travel_mm",
+            "actuation_force_gf",
+            "spring"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Maker, designer and lube status are not listed on the page read."
+    }
+  ]
+}

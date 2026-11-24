@@ -1,0 +1,860 @@
+{
+  "brand": {
+    "id": "royal-kludge",
+    "name": "Royal Kludge",
+    "country": "CN",
+    "founded": null,
+    "official_url": "https://rkgamingstore.com/",
+    "focus": [
+      "budget",
+      "gaming"
+    ],
+    "about": "Royal Kludge (RK) sells budget wired and wireless mechanical and Hall effect keyboards in 60% to full-size layouts, with a US web store and a large Amazon presence.",
+    "sources": [
+      {
+        "title": "RK Gaming Store",
+        "url": "https://rkgamingstore.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "royal-kludge-c68",
+      "brand": "royal-kludge",
+      "model": "C68",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 64.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/c68-magnetic-switch-keyboard",
+      "official_url": "https://rkgamingstore.com/products/c68-magnetic-switch-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: C68 65% Hall Effect Magnetic Switch Keyboard",
+          "url": "https://rkgamingstore.com/products/c68-magnetic-switch-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page states 8000 Hz polling and actuation adjustable from 0.01 to 3.5 mm; connection and hot-swap are not stated, so USB only is recorded. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "royal-kludge-c84",
+      "brand": "royal-kludge",
+      "model": "C84",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 74.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/c84-magnetic-keyboard",
+      "official_url": "https://rkgamingstore.com/products/c84-magnetic-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: C84 75% Hall Effect Magnetic Keyboard",
+          "url": "https://rkgamingstore.com/products/c84-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page states 8000 Hz polling and actuation adjustable from 0.01 to 3.5 mm; connection and hot-swap are not stated, so USB only is recorded. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "royal-kludge-f99",
+      "brand": "royal-kludge",
+      "model": "F99",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 5000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Linear Cream Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 74.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/f99-96-wireless-mechanical-keyboard",
+      "official_url": "https://rkgamingstore.com/products/f99-96-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: F99 96% Wireless Mechanical Keyboard",
+          "url": "https://rkgamingstore.com/products/f99-96-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "royal-kludge-l75",
+      "brand": "royal-kludge",
+      "model": "L75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Linear Cream Switch",
+          "id": null
+        },
+        {
+          "name": "Tactile Beige Switch",
+          "id": null
+        },
+        {
+          "name": "Linear Violet Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 89.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/l75-75-wireless-mechanical-keyboard",
+      "official_url": "https://rkgamingstore.com/products/l75-75-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: L75 75% Wireless Mechanical Keyboard",
+          "url": "https://rkgamingstore.com/products/l75-75-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "royal-kludge-m75",
+      "brand": "royal-kludge",
+      "model": "M75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Fast Silver",
+          "id": "ttc-fast-silver"
+        },
+        {
+          "name": "Viridian Switch",
+          "id": null
+        },
+        {
+          "name": "Pale Green Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 84.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/m75-wireless-gaming-keyboard",
+      "official_url": "https://rkgamingstore.com/products/m75-wireless-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: M75 75% Wireless Gaming Keyboard",
+          "url": "https://rkgamingstore.com/products/m75-wireless-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "royal-kludge-r65",
+      "brand": "royal-kludge",
+      "model": "R65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Cream Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 64.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/r65-65-wireless-gaming-keyboard",
+      "official_url": "https://rkgamingstore.com/products/r65-65-wireless-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: R65 65% Wireless Gaming Keyboard (QMK/VIA)",
+          "url": "https://rkgamingstore.com/products/r65-65-wireless-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A wired R65 sells at a lower price on its own page."
+    },
+    {
+      "id": "royal-kludge-r75",
+      "brand": "royal-kludge",
+      "model": "R75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Cream Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 65.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/r75-75-wireless-gaming-keyboard",
+      "official_url": "https://rkgamingstore.com/products/r75-75-wireless-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: R75 75% Wireless Gaming Keyboard (QMK/VIA)",
+          "url": "https://rkgamingstore.com/products/r75-75-wireless-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A wired R75 sells at a lower price on its own page."
+    },
+    {
+      "id": "royal-kludge-r87-pro",
+      "brand": "royal-kludge",
+      "model": "R87 PRO",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Linear Matcha Switch",
+          "id": null
+        },
+        {
+          "name": "Light Gray Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 75.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/r87-pro-tkl-wireless-gaming-keyboard",
+      "official_url": "https://rkgamingstore.com/products/r87-pro-tkl-wireless-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: R87 PRO TKL Wireless Gaming Keyboard (QMK/VIA)",
+          "url": "https://rkgamingstore.com/products/r87-pro-tkl-wireless-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Brand text says 75% for the 87-key layout. A wired R87 Pro has its own page. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "royal-kludge-rk61",
+      "brand": "royal-kludge",
+      "model": "RK61",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 61,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": 1450,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 34.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/rk61-60-percent-keyboard",
+      "official_url": "https://rkgamingstore.com/products/rk61-60-percent-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/royal-kludge/rk61",
+          "date": null,
+          "score": null,
+          "verdict": "Compact 60% Bluetooth board, fine for everyday use but not for fast-paced competitive gaming."
+        }
+      ],
+      "sources": [
+        {
+          "title": "RK Gaming Store: RK61 60% Wireless Mechanical Keyboard (Single Color Backlit)",
+          "url": "https://rkgamingstore.com/products/rk61-60-percent-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Price is the cheapest RK61 listing on the store (a Red Switch dual-mode version); this page lists 49.99. Connectivity from the RK model table (Bluetooth, 3 devices). Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "royal-kludge-rk84",
+      "brand": "royal-kludge",
+      "model": "RK84",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3750,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Blue Switch",
+          "id": null
+        },
+        {
+          "name": "Brown Switch",
+          "id": null
+        },
+        {
+          "name": "Red Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/rk84-75-percent-keyboard",
+      "official_url": "https://rkgamingstore.com/products/rk84-75-percent-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/royal-kludge-rk84",
+          "date": "2021-06-16",
+          "score": null,
+          "verdict": "Feature-rich 75% wireless board at about $80 whose typing experience falls short; one serious flaw per the headline."
+        },
+        {
+          "outlet": "TechPowerUp",
+          "url": "https://www.techpowerup.com/review/royal-kludge-rk84-keyboard/",
+          "date": "2021-07-20",
+          "score": null,
+          "verdict": "Notes the laser-etched legends may wear out sooner than the keycaps themselves."
+        }
+      ],
+      "sources": [
+        {
+          "title": "RK Gaming Store: RK84 75% Wireless Mechanical Keyboard",
+          "url": "https://rkgamingstore.com/products/rk84-75-percent-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "royal-kludge-rk96",
+      "brand": "royal-kludge",
+      "model": "RK96",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 96,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Blue",
+          "id": null
+        },
+        {
+          "name": "Brown",
+          "id": null
+        },
+        {
+          "name": "Red",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/rk96-96-layout-mechanical-gaming-keyboard",
+      "official_url": "https://rkgamingstore.com/products/rk96-96-layout-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: RK96 96% Wireless Mechanical Keyboard",
+          "url": "https://rkgamingstore.com/products/rk96-96-layout-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "royal-kludge-s98",
+      "brand": "royal-kludge",
+      "model": "S98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3750,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Tactile Beige Switch",
+          "id": null
+        },
+        {
+          "name": "Linear Violet Switch",
+          "id": null
+        },
+        {
+          "name": "Linear Cream Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "top",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 89.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://rkgamingstore.com/products/s98-wireless-mechanical-keyboard",
+      "official_url": "https://rkgamingstore.com/products/s98-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "RK Gaming Store: S98 96% Wireless Mechanical Keyboard",
+          "url": "https://rkgamingstore.com/products/s98-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Has a display screen and a knob. Page says hot-swappable without naming the pin type."
+    }
+  ]
+}

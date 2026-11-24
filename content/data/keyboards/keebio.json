@@ -1,0 +1,201 @@
+{
+  "brand": {
+    "id": "keebio",
+    "name": "Keebio",
+    "country": null,
+    "founded": null,
+    "official_url": "https://keeb.io/",
+    "focus": [
+      "ergonomic",
+      "diy"
+    ],
+    "about": "Keebio (keeb.io) makes split keyboards sold as hot-swap PCB kits and assembled boards: the Iris, Quefrency, Sinc, Nyquist and Chiri lines, among others.",
+    "sources": [
+      {
+        "title": "Keebio: home page (product links)",
+        "url": "https://keeb.io/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "QMK: keyboards/keebio",
+        "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/keebio",
+        "kind": "reference",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "keebio-iris-rev7",
+      "brand": "keebio",
+      "model": "Iris Rev. 7",
+      "aka": [
+        "Iris"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 56,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/keebio/iris",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (keeb.io Iris rev 7.0 description)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "retailer",
+          "backs": [
+            "kind",
+            "key_count",
+            "stagger",
+            "split",
+            "thumb_cluster",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/keebio/iris",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/keebio/iris",
+          "kind": "reference",
+          "backs": [
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Keebio: home page (lists a magnetic tenting stand kit for split keyboards)",
+          "url": "https://keeb.io/",
+          "kind": "official",
+          "backs": [
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "PCB pair with MX hot-swap sockets pre-installed, per-key RGB and USB-C between halves; needs case parts, switches and keycaps. 4x6 keys with vertical stagger plus up to 4 thumb keys per half (54 keys with 2u thumbs). Socket pin support is not stated. Keebio's own store blocked automated access, so the price is missing; Keebio now also lists Iris CE, LM and SE versions."
+    },
+    {
+      "id": "keebio-quefrency-rev5",
+      "brand": "keebio",
+      "model": "Quefrency Rev. 5",
+      "aka": [
+        "Quefrency"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/keebio/quefrency",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "splitkb.com: products listing (keeb.io Quefrency rev 5.0 description)",
+          "url": "https://splitkb.com/products.json?limit=250",
+          "kind": "retailer",
+          "backs": [
+            "kind",
+            "size",
+            "layout_standards",
+            "stagger",
+            "split",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "QMK: keyboards/keebio/quefrency",
+          "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/keebio/quefrency",
+          "kind": "reference",
+          "backs": [
+            "stagger",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Keebio: home page (lists a magnetic tenting stand kit for split keyboards)",
+          "url": "https://keeb.io/",
+          "kind": "official",
+          "backs": [
+            "tenting"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Row-staggered split in 60%, 65% or 65XT layouts with an optional 2x5 macro block on the left half; up to 86 MX switches. Preassembled hot-swap PCBs, ANSI only; add a plate kit, switches and keycaps. Socket pin support is not stated. Keebio's own store blocked automated access, so the price is missing."
+    }
+  ]
+}

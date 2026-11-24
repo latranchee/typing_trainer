@@ -1,0 +1,511 @@
+{
+  "brand": {
+    "id": "boardsource",
+    "name": "Boardsource",
+    "country": "US",
+    "founded": null,
+    "official_url": "https://boardsource.xyz/",
+    "focus": [
+      "ergonomic",
+      "diy"
+    ],
+    "about": "Boardsource, which ships from Las Vegas, sells assembled hot-swap PCBs, DIY kits and aluminum cases for Corne and Lily58 split keyboards, plus the Equals 48 ortholinear board.",
+    "sources": [
+      {
+        "title": "Boardsource: home page",
+        "url": "https://boardsource.xyz/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Boardsource: products listing",
+        "url": "https://boardsource.xyz/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "boardsource-corne-diy-kit",
+      "brand": "boardsource",
+      "model": "Corne DIY Keyboard Kit",
+      "aka": [
+        "Corne"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 36,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "price_usd",
+            "stagger",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Solderable Corne v3.6 PCB with a minimal FR4 case; Boardsource calls it a 3x5x3 layout with a columnar stagger. The PCB takes MX, Choc v1 or Choc v2 switches; hot-swap sockets and a controller are add-ons. Sold out on the store when checked."
+    },
+    {
+      "id": "boardsource-corne-lp-smt-pcb",
+      "brand": "boardsource",
+      "model": "Corne LP SMT PCB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 85,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "low_profile",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assembled wired RP2040 PCB pair for low-profile builds with Choc v1 hot-swap sockets, per-key and underglow RGB, dual USB-C; pre-flashed with VIA. Made for the Unicorne LP case. Sold out on the store when checked."
+    },
+    {
+      "id": "boardsource-corne-mx-smt-pcb",
+      "brand": "boardsource",
+      "model": "Corne MX SMT PCB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 85,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assembled wired RP2040 PCB pair with MX hot-swap sockets and RGB, pre-flashed with VIA; made for the Unicorne aluminum case. Pin support of the sockets is not stated. Sold out on the store when checked."
+    },
+    {
+      "id": "boardsource-corne-wireless-smt-pcb",
+      "brand": "boardsource",
+      "model": "Corne Wireless SMT PCB",
+      "aka": [
+        "Corne Wireless SMT"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 90,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assembled hot-swap PCB pair, pre-flashed with ZMK (ZMK Studio ready); the halves talk wirelessly, no TRRS. One socket takes MX, Choc v1 or Choc v2 switches. Add a case, switches and keycaps."
+    },
+    {
+      "id": "boardsource-equals-48",
+      "brand": "boardsource",
+      "model": "Equals 48",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "40",
+      "key_count": 48,
+      "layout_standards": [],
+      "stagger": "ortholinear",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "kmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 236,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "size",
+            "key_count",
+            "stagger",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "case_material",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "4x12 grid with a CNC aluminum case, FR4 plates and an assembled RP2040 PCB with MX hot-swap sockets; add switches and keycaps. Pin support of the sockets is not stated. Sold out on the store when checked."
+    },
+    {
+      "id": "boardsource-lily-58-wireless-smt-pcb",
+      "brand": "boardsource",
+      "model": "Lily 58 Wireless SMT PCB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 90,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assembled hot-swap PCB pair, pre-flashed with ZMK (ZMK Studio ready); the halves talk wirelessly, no TRRS. One socket takes MX, Choc v1 or Choc v2 switches. Add a case, switches and keycaps. Sold out on the store when checked."
+    },
+    {
+      "id": "boardsource-lily58-diy-kit",
+      "brand": "boardsource",
+      "model": "Lily58 DIY Keyboard Kit",
+      "aka": [
+        "Lily58"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": 58,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 39,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "key_count",
+            "switch_footprint",
+            "hot_swap",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Solder-it-yourself Lily58 v2 PCB and FR4 case. The PCB takes MX, Choc v1 or Choc v2 switches, optional Kailh hot-swap sockets (sold separately) and has BLE footprints for a wireless controller."
+    },
+    {
+      "id": "boardsource-lily58-mx-smt-pcb",
+      "brand": "boardsource",
+      "model": "Lily58 SMT PCB (V2)",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 85,
+      "price_date": "2026-11-23",
+      "price_url": "https://boardsource.xyz/products.json?limit=250",
+      "official_url": "https://boardsource.xyz/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Boardsource: products listing (product description)",
+          "url": "https://boardsource.xyz/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "kind",
+            "switch_footprint",
+            "hot_swap",
+            "connectivity",
+            "firmware",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assembled wired RP2040 PCB pair with hot-swap sockets, RGB and dual USB-C; QMK and VIA. Made for the Lily Pad case. Pin support of the sockets is not stated. Sold out on the store when checked."
+    }
+  ]
+}

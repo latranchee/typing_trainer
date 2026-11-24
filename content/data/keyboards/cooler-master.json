@@ -1,0 +1,339 @@
+{
+  "brand": {
+    "id": "cooler-master",
+    "name": "Cooler Master",
+    "country": "TW",
+    "founded": null,
+    "official_url": "https://www.coolermaster.com/en-global/",
+    "focus": [
+      "gaming",
+      "enthusiast"
+    ],
+    "about": "Taiwanese PC hardware maker with a long-running keyboard line (MasterKeys, CK and SK series) configured in MasterPlus+. coolermaster.com renders specs by script, so most specs here come from reviews.",
+    "sources": [
+      {
+        "title": "Cooler Master: global site",
+        "url": "https://www.coolermaster.com/en-global/",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "cooler-master-ck720",
+      "brand": "cooler-master",
+      "model": "CK720",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Kailh Box V2 Red",
+          "id": "kailh-box-v2-red"
+        },
+        {
+          "name": "Kailh Box V2 Brown",
+          "id": "kailh-box-v2-brown"
+        },
+        {
+          "name": "Kailh Box V2 White",
+          "id": "kailh-box-v2-white"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic and aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MasterPlus+",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://store.coolermaster.com/products.json?limit=250",
+      "official_url": "https://www.coolermaster.com/en-global/products/ck720/",
+      "reviews": [
+        {
+          "outlet": "KitGuru",
+          "url": "https://www.kitguru.net/peripherals/mat-mynett/cooler-master-ck720-keyboard-review/",
+          "date": "2023-05-10",
+          "score": "8/10",
+          "verdict": "A good 65% enthusiast-style board: Kailh Box V2 switches, removable top frame and rotary encoder."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cooler Master: CK720 product page (title only; specs load by script)",
+          "url": "https://www.coolermaster.com/en-global/products/ck720/",
+          "kind": "official",
+          "backs": [
+            "model"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cooler Master store: CK720 listing (catalog feed)",
+          "url": "https://store.coolermaster.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "hot_swap",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KitGuru: Cooler Master CK720 review",
+          "url": "https://www.kitguru.net/peripherals/mat-mynett/cooler-master-ck720-keyboard-review/",
+          "kind": "review",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired USB-C; the store feed says hot-swappable (Kailh Box V2 Red, Brown or White); pin type not stated. Store showed it out of stock on 2026-11-23."
+    },
+    {
+      "id": "cooler-master-ck721",
+      "brand": "cooler-master",
+      "model": "CK721",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 2000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "TTC Red",
+          "id": null
+        },
+        {
+          "name": "TTC Blue",
+          "id": null
+        },
+        {
+          "name": "TTC Brown",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "plastic body with aluminum top plate",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MasterPlus+",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://www.coolermaster.com/en-global/products/ck721/",
+      "reviews": [
+        {
+          "outlet": "KitGuru",
+          "url": "https://www.kitguru.net/peripherals/keyboards/jack-woodhams/cooler-master-ck721-wireless-mechanical-keyboard-review/",
+          "date": "2022-02-22",
+          "score": "8/10",
+          "verdict": "Great performance for a competitive price, with flex, dim lighting, complicated software and short battery life with backlight on."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cooler Master: CK721 product page (title only; specs load by script)",
+          "url": "https://www.coolermaster.com/en-global/products/ck721/",
+          "kind": "official",
+          "backs": [
+            "model"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "KitGuru: Cooler Master CK721 wireless mechanical keyboard review",
+          "url": "https://www.kitguru.net/peripherals/keyboards/jack-woodhams/cooler-master-ck721-wireless-mechanical-keyboard-review/",
+          "kind": "review",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switches",
+            "case_material",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Polling 1000 Hz over 2.4 GHz and wired, 125 Hz over Bluetooth. Hot-swap not mentioned in the review; no US store price found (not listed in the store feed)."
+    },
+    {
+      "id": "cooler-master-mk770",
+      "brand": "cooler-master",
+      "model": "MK770",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 98,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Kailh Box V2 White",
+          "id": "kailh-box-v2-white"
+        },
+        {
+          "name": "Kailh Box V2 Red",
+          "id": "kailh-box-v2-red"
+        },
+        {
+          "name": "Kailh Box V2 Brown",
+          "id": "kailh-box-v2-brown"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "ABS plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MasterPlus+",
+      "os": [
+        "windows",
+        "mac",
+        "ios",
+        "android"
+      ],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://store.coolermaster.com/products.json?limit=250",
+      "official_url": "https://www.coolermaster.com/en-global/products/mk770/",
+      "reviews": [
+        {
+          "outlet": "CGMagazine",
+          "url": "https://www.cgmagonline.com/review/hardware/cooler-master-mk770-keyboard",
+          "date": "2024-02-23",
+          "score": "8.5/10",
+          "verdict": "A strong, affordable wireless gaming keyboard with excellent typing and gaming feel, held back by battery life and software crashes."
+        },
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/keyboards/cooler-master-mk770-keyboard-review-incredible-typing-experience-bold-color-scheme",
+          "date": null,
+          "score": null,
+          "verdict": "Editor's Choice per the outlet's headline; praises the typing experience and bold colour scheme (review text not readable when fetched)."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cooler Master: MK770 product page (title only; specs load by script)",
+          "url": "https://www.coolermaster.com/en-global/products/mk770/",
+          "kind": "official",
+          "backs": [
+            "model"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Cooler Master store: MK770 listing (catalog feed)",
+          "url": "https://store.coolermaster.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "CGMagazine: Cooler Master MK770 review",
+          "url": "https://www.cgmagonline.com/review/hardware/cooler-master-mk770-keyboard",
+          "kind": "review",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "case_material",
+            "mount",
+            "software",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact 98-key board with numpad (marketed as 95%); store sold Space Gray/White at 79.99 and Red at 119.99 on 2026-11-23, 119.99 is the stated MSRP. Hot-swap pin type not stated."
+    }
+  ]
+}

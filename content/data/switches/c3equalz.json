@@ -1,0 +1,159 @@
+{
+  "maker": {
+    "id": "c3equalz",
+    "name": "C³Equalz",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": null,
+    "about": "Switch brand sold mainly through The Key Company (TKC). The Tangerine V2 line is made by JWK; the earlier Tangerine versions were made by Gateron.",
+    "sources": [
+      {
+        "title": "ThereminGoat: C3 Equalz Tangerine V2 Switch Review (Tangerine history, JWK as maker)",
+        "url": "https://www.theremingoat.com/blog/tangerine-v2s",
+        "kind": "review",
+        "backs": [
+          "about",
+          "made_by"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "c3equalz-tangerine-v2-dark-green",
+      "name": "Tangerine V2 Dark Green",
+      "maker": "c3equalz",
+      "made_by": "jwk",
+      "family": "Tangerine V2",
+      "aka": [
+        "Tangerine 67g"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 67,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "UHMWPE",
+        "bottom": "UHMWPE",
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2020-01",
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/tangerine-v2s",
+          "date": "2020-02-06",
+          "score": null,
+          "verdict": "Very smooth, nearly scratch-free linear with a quiet stroke and little wobble; the reviewer calls both weights fantastic."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ThereminGoat: C3 Equalz Tangerine V2 Switch Review",
+          "url": "https://www.theremingoat.com/blog/tangerine-v2s",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "materials",
+            "bottom_out_force_gf",
+            "factory_lubed",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dark green stem, 67g weight (ThereminGoat gives it as the 67g variant). Same translucent orange UHMWPE housing as the Light Green."
+    },
+    {
+      "id": "c3equalz-tangerine-v2-light-green",
+      "name": "Tangerine V2 Light Green",
+      "maker": "c3equalz",
+      "made_by": "jwk",
+      "family": "Tangerine V2",
+      "aka": [
+        "C³Equalz x TKC Tangerine - Light",
+        "Tangerine 62g"
+      ],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": 5,
+      "actuation_force_gf": null,
+      "bottom_out_force_gf": 62,
+      "tactile_force_gf": null,
+      "pre_travel_mm": null,
+      "total_travel_mm": null,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": "UHMWPE",
+        "bottom": "UHMWPE",
+        "stem": "POM"
+      },
+      "spring": "gold-plated stainless steel",
+      "factory_lubed": true,
+      "light_pipe": null,
+      "rated_lifespan_million": null,
+      "released": "2020-01",
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "ThereminGoat",
+          "url": "https://www.theremingoat.com/blog/tangerine-v2s",
+          "date": "2020-02-06",
+          "score": null,
+          "verdict": "Very smooth, nearly scratch-free linear with a quiet stroke and little wobble; the reviewer calls both weights fantastic."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Keyboard Builders' Digest: C³Equalz x TKC Tangerine - Light",
+          "url": "https://kbd.news/switch/C-Equalz-x-TKC-Tangerine-Light-switch-186.html",
+          "kind": "reference",
+          "backs": [
+            "type",
+            "pins",
+            "materials",
+            "bottom_out_force_gf",
+            "spring",
+            "factory_lubed",
+            "made_by"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ThereminGoat: C3 Equalz Tangerine V2 Switch Review",
+          "url": "https://www.theremingoat.com/blog/tangerine-v2s",
+          "kind": "review",
+          "backs": [
+            "made_by",
+            "materials",
+            "bottom_out_force_gf",
+            "factory_lubed",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Light green stem, 62g weight. ThereminGoat reports first shipments to customers in mid to late January 2020, with translucent orange housings."
+    }
+  ]
+}

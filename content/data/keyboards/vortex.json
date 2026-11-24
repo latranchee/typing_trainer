@@ -208,15 +208,15 @@
         },
         {
           "name": "Gateron G Pro Brown",
-          "id": null
+          "id": "gateron-g-pro-brown"
         },
         {
           "name": "Gateron G Pro Red",
-          "id": null
+          "id": "gateron-g-pro-red"
         },
         {
           "name": "Gateron G Pro Yellow",
-          "id": null
+          "id": "gateron-g-pro-yellow"
         },
         {
           "name": "Gateron G Pro Retro White",
@@ -224,7 +224,7 @@
         },
         {
           "name": "Gateron G Pro Silver",
-          "id": null
+          "id": "gateron-g-pro-silver"
         }
       ],
       "adjustable_actuation": false,
@@ -295,7 +295,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "none",
+      "hot_swap": null,
       "switches": [
         {
           "name": "Cherry MX Blue",
@@ -323,15 +323,15 @@
         },
         {
           "name": "Gateron G Pro Brown",
-          "id": null
+          "id": "gateron-g-pro-brown"
         },
         {
           "name": "Gateron G Pro Red",
-          "id": null
+          "id": "gateron-g-pro-red"
         },
         {
           "name": "Gateron G Pro Yellow",
-          "id": null
+          "id": "gateron-g-pro-yellow"
         },
         {
           "name": "Gateron G Pro Retro White",
@@ -339,7 +339,7 @@
         },
         {
           "name": "Gateron G Pro Silver",
-          "id": null
+          "id": "gateron-g-pro-silver"
         }
       ],
       "adjustable_actuation": false,
@@ -461,7 +461,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Gateron G Pro Brown 3.0",
@@ -564,7 +564,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [],
       "adjustable_actuation": false,
       "rapid_trigger": false,
@@ -628,19 +628,19 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Gateron G Pro Brown",
-          "id": null
+          "id": "gateron-g-pro-brown"
         },
         {
           "name": "Gateron G Pro Yellow",
-          "id": null
+          "id": "gateron-g-pro-yellow"
         },
         {
           "name": "Gateron G Pro Silver",
-          "id": null
+          "id": "gateron-g-pro-silver"
         },
         {
           "name": "Gateron G Pro Retro White",
@@ -759,15 +759,15 @@
         },
         {
           "name": "Gateron G Pro Brown",
-          "id": null
+          "id": "gateron-g-pro-brown"
         },
         {
           "name": "Gateron G Pro Yellow",
-          "id": null
+          "id": "gateron-g-pro-yellow"
         },
         {
           "name": "Gateron G Pro Silver",
-          "id": null
+          "id": "gateron-g-pro-silver"
         },
         {
           "name": "Gateron G Pro Retro White",
@@ -980,7 +980,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Cherry MX Brown",
@@ -1008,11 +1008,11 @@
         },
         {
           "name": "Gateron G Pro Brown",
-          "id": null
+          "id": "gateron-g-pro-brown"
         },
         {
           "name": "Gateron G Pro Silver",
-          "id": null
+          "id": "gateron-g-pro-silver"
         },
         {
           "name": "Gateron G Pro Retro White",
@@ -1020,11 +1020,11 @@
         },
         {
           "name": "Gateron G Pro Yellow",
-          "id": null
+          "id": "gateron-g-pro-yellow"
         },
         {
           "name": "Gateron G Pro Red",
-          "id": null
+          "id": "gateron-g-pro-red"
         }
       ],
       "adjustable_actuation": false,
@@ -1096,19 +1096,19 @@
       "switches": [
         {
           "name": "Cherry RGB MX Brown",
-          "id": null
+          "id": "cherry-mx2a-brown"
         },
         {
           "name": "Cherry RGB MX Red",
-          "id": null
+          "id": "cherry-mx2a-red"
         },
         {
           "name": "Cherry RGB MX Blue",
-          "id": null
+          "id": "cherry-mx2a-blue"
         },
         {
           "name": "Cherry RGB MX Silent Black",
-          "id": null
+          "id": "cherry-mx2a-silent-black"
         }
       ],
       "adjustable_actuation": false,
@@ -1172,7 +1172,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Gateron G Pro 3.0 Brown",
@@ -1256,23 +1256,23 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": "yes",
       "switches": [
         {
           "name": "Cherry MX RGB Blue",
-          "id": null
+          "id": "cherry-mx2a-blue"
         },
         {
           "name": "Cherry MX RGB Red",
-          "id": null
+          "id": "cherry-mx2a-red"
         },
         {
           "name": "Gateron G Pro Brown",
-          "id": null
+          "id": "gateron-g-pro-brown"
         },
         {
           "name": "Gateron G Pro Yellow",
-          "id": null
+          "id": "gateron-g-pro-yellow"
         }
       ],
       "adjustable_actuation": false,

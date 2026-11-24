@@ -1,0 +1,500 @@
+{
+  "brand": {
+    "id": "meletrix",
+    "name": "Meletrix",
+    "country": null,
+    "founded": null,
+    "official_url": "https://meletrix.com/",
+    "focus": [
+      "enthusiast"
+    ],
+    "about": "Keyboard brand behind the Zoom series of aluminum custom keyboards, sold on its own store as barebones kits with matching WS keycaps and switches. Its US store also sells the BOOG75 magnetic keyboard.",
+    "sources": [
+      {
+        "title": "Meletrix: store",
+        "url": "https://meletrix.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "meletrix-boog75",
+      "brand": "meletrix",
+      "model": "BOOG75",
+      "aka": [],
+      "status": "current",
+      "released": "2023",
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Gateron KS-37B Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 229,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/boog75-prebuilt",
+      "official_url": "https://meletrix.com/products/boog75-prebuilt",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: BOOG75 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/boog75-prebuilt",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "switches",
+            "case_material",
+            "mount",
+            "price_usd",
+            "kind",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired prebuilt Hall-effect 75% with a 6063 aluminum case, aluminum plate and WS PBT keycaps; the page lists Gateron KS-37B magnetic switches (4.0 mm travel, 30 gf initial force) and does not say whether actuation is adjustable or whether rapid trigger exists. Switch change compatibility is listed with other Gateron magnetic switches."
+    },
+    {
+      "id": "meletrix-zoom-tkl-dyna",
+      "brand": "meletrix",
+      "model": "Zoom TKL DYNA",
+      "aka": [
+        "ZOOM TKL DYNA"
+      ],
+      "status": "current",
+      "released": "2025",
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 220,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/zoomtkl-dyna-anodized-black",
+      "official_url": "https://meletrix.com/products/zoomtkl-dyna-anodized-black",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: Zoom TKL DYNA product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/zoomtkl-dyna-anodized-black",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "kind",
+            "status",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit with tri-mode RGB PCB (flex cut or non-flex cut), plate choice (FR4, PC, POM, aluminum) and foam kit; $220 is the cheapest colorway (Ink Green). Hotswap, case material, mount and firmware not stated in the data read."
+    },
+    {
+      "id": "meletrix-zoom64",
+      "brand": "meletrix",
+      "model": "Zoom64",
+      "aka": [],
+      "status": "current",
+      "released": "2026",
+      "kind": "barebones",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 169,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/zoom64-liquid-silver",
+      "official_url": "https://meletrix.com/products/zoom64-liquid-silver",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: Zoom64 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/zoom64-liquid-silver",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "kind",
+            "status",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit with tri-mode RGB PCB (flex cut or non-flex cut), plate choice (PC, POM, FR4, aluminum) and foam kit; a case-only kit is $134 and a prebuilt version is $229. Size entered as other because the data read does not state the layout."
+    },
+    {
+      "id": "meletrix-zoom65-v3",
+      "brand": "meletrix",
+      "model": "Zoom65 V3",
+      "aka": [],
+      "status": "current",
+      "released": "2026",
+      "kind": "barebones",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 189,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/zoom65-v3-custom-keyboard",
+      "official_url": "https://meletrix.com/products/zoom65-v3-custom-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: Zoom65 V3 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/zoom65-v3-custom-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "firmware",
+            "price_usd",
+            "kind",
+            "status",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit (switches and keycaps separate) with tri-mode hotswap RGB PCB that supports QMK/VIA; the PCB add-on page states ANSI only, no ISO. Hotswap pin type, case material and mount style not stated in the data read; $189 is the version without tail light."
+    },
+    {
+      "id": "meletrix-zoom75-essential-edition",
+      "brand": "meletrix",
+      "model": "Zoom75 Essential Edition",
+      "aka": [
+        "Zoom75 EE"
+      ],
+      "status": "discontinued",
+      "released": "2026",
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 199,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/zoom75-essential-edition-orange",
+      "official_url": "https://meletrix.com/products/zoom75-essential-edition-orange",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: Zoom75 Essential Edition product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/zoom75-essential-edition-orange",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "kind",
+            "status",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit with a tri-mode hotswap RGB PCB (flex cut or non-flex cut); every listed variant was out of stock when read. Hotswap pin type, case material, mount and firmware not stated in the data read."
+    },
+    {
+      "id": "meletrix-zoom75-tiga",
+      "brand": "meletrix",
+      "model": "Zoom75 TIGA",
+      "aka": [],
+      "status": "current",
+      "released": "2024",
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 215,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/zoom75-tiga-scarlet-red",
+      "official_url": "https://meletrix.com/products/zoom75-tiga-scarlet-red",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: Zoom75 TIGA product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/zoom75-tiga-scarlet-red",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "kind",
+            "status",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit sold in colorways with a choice of plate (PC, aluminum, FR4, POM), foam kit and tri-mode RGB PCB (flex cut or non-flex cut). Several colorways were sold out; $215 is the cheapest one in stock, sold-out colorways listed from $205. Hotswap, case material, mount and firmware not stated in the data read."
+    },
+    {
+      "id": "meletrix-zoom98-ee",
+      "brand": "meletrix",
+      "model": "Zoom98 EE",
+      "aka": [
+        "Zoom98 Essential Edition"
+      ],
+      "status": "current",
+      "released": "2024",
+      "kind": "barebones",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 250,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/zoom98-ee-wild-green",
+      "official_url": "https://meletrix.com/products/zoom98-ee-wild-green",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: Zoom98 EE product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/zoom98-ee-wild-green",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd",
+            "kind",
+            "status",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit with a hotswap RGB PCB, flex cut or non-flex cut; the PCB name does not mention wireless, so only USB is listed. Pin type, case material and mount not stated in the data read."
+    },
+    {
+      "id": "meletrix-zoom98-se",
+      "brand": "meletrix",
+      "model": "Zoom98 SE",
+      "aka": [
+        "Zoom98 Special Edition"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 245,
+      "price_date": "2026-11-23",
+      "price_url": "https://meletrix.com/products/zoom98-se-anodized-black",
+      "official_url": "https://meletrix.com/products/zoom98-se-anodized-black",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Meletrix store: Zoom98 SE product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://meletrix.com/products/zoom98-se-anodized-black",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit that includes stabilizers; switches and keycaps are sold separately, and an LCD screen is default. Tri-mode hotswap RGB PCB, flex cut or non-flex cut; Pin type, case material and mount not stated in the data read."
+    }
+  ]
+}

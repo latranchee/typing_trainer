@@ -1,0 +1,817 @@
+{
+  "brand": {
+    "id": "ajazz",
+    "name": "Ajazz",
+    "country": "CN",
+    "founded": 2009,
+    "official_url": "https://www.ajazzstore.com/",
+    "focus": [
+      "budget",
+      "gaming"
+    ],
+    "about": "Ajazz sells budget wired and wireless mechanical and magnetic keyboards (AK820 family, AK870, AK980) and mice, mostly through Amazon and its own web store; the AK820 line is also rebranded by Epomaker.",
+    "sources": [
+      {
+        "title": "AJAZZ Store",
+        "url": "https://www.ajazzstore.com/",
+        "kind": "official",
+        "backs": [
+          "about",
+          "founded"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "ajazz-ak650",
+      "brand": "ajazz",
+      "model": "AK650",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 66,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 5000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Ajazz Dream Switch",
+          "id": null
+        },
+        {
+          "name": "Ajazz Flying Fish Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 65.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak650",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak650",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: AJAZZ AK650",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak650",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "switches",
+            "price_usd",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Screen and knob. Page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "ajazz-ak680-max",
+      "brand": "ajazz",
+      "model": "AK680 Max",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Magnetic Rice Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "top",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://ajazz.net/products/ajazz-ak680-max-wireless-keyboard-8-8k",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: AJAZZ AK680 MAX Wireless keyboard 8+8K",
+          "url": "https://ajazz.net/products/ajazz-ak680-max-wireless-keyboard-8-8k",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "mount",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Rapid trigger range 0.01 to 2.00 mm. Source is ajazz.net, a store that calls itself the Ajazz Amazon official store; price left null because the brand store does not list it."
+    },
+    {
+      "id": "ajazz-ak820",
+      "brand": "ajazz",
+      "model": "AK820",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Ajazz Sea Salt Switch",
+          "id": null
+        },
+        {
+          "name": "Ajazz Moon Switch",
+          "id": null
+        },
+        {
+          "name": "Ajazz Green Plum Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 49.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak820",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak820",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: AJAZZ AK820",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak820",
+          "kind": "official",
+          "backs": [
+            "size",
+            "mount",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Connectivity assumed from the AK820 family; page lists knob and gasket mount, key count and battery are not read. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "ajazz-ak820-max",
+      "brand": "ajazz",
+      "model": "AK820 Max",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Sea Salt Switch",
+          "id": "haimu-sea-salt"
+        },
+        {
+          "name": "Flying Fish Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak820-max",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak820-max",
+      "reviews": [
+        {
+          "outlet": "Tech4Gamers",
+          "url": "https://tech4gamers.com/ajazz-ak820-max-review/",
+          "date": "2025-01-20",
+          "score": null,
+          "verdict": "Competent budget board with satisfying sound and strong build, held back by cost-cutting."
+        }
+      ],
+      "sources": [
+        {
+          "title": "AJAZZ Store: Ajazz AK820 Max",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak820-max",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "hot_swap",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Plate option of FR4 or PC with a flex-cut PCB. Page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "ajazz-ak820-max-he",
+      "brand": "ajazz",
+      "model": "AK820 Max HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://ajazz.net/products/ajazz-ak820-max-he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: AJAZZ AK820 Max HE",
+          "url": "https://ajazz.net/products/ajazz-ak820-max-he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired version 8000 Hz; a tri-mode version with a screen runs 1000 Hz. Actuation 0.1 to 4 mm. Source is ajazz.net; price left null because the brand store does not list it."
+    },
+    {
+      "id": "ajazz-ak820-pro",
+      "brand": "ajazz",
+      "model": "AK820 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Ajazz Gift Switch",
+          "id": null
+        },
+        {
+          "name": "Ajazz Flying Fish Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 68.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak820-pro",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak820-pro",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/epomaker-ajazz-ak820-pro-review",
+          "date": "2025-01-17",
+          "score": null,
+          "verdict": "Reviews the Epomaker-branded version: well built and enjoyable to type on for about $68; the TFT screen disappoints."
+        }
+      ],
+      "sources": [
+        {
+          "title": "AJAZZ Store: Ajazz AK820 Pro",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak820-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "layout_standards",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Brand lists ANSI and ISO (DE, FR, ES) variants. Sold by Epomaker as the Epomaker Ajazz AK820 Pro. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "ajazz-ak820v2",
+      "brand": "ajazz",
+      "model": "AK820V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Coconut Switch",
+          "id": null
+        },
+        {
+          "name": "White Peach Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 65.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak820v2",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak820v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: AJAZZ AK820V2",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak820v2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "case_material",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Sold with or without a screen; case material ABS per the page. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "ajazz-ak832-pro",
+      "brand": "ajazz",
+      "model": "AK832 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 81,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 2500,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Ajazz Outemu Blue Switch",
+          "id": null
+        },
+        {
+          "name": "Ajazz Outemu Red Switch",
+          "id": null
+        },
+        {
+          "name": "Ajazz Outemu Brown Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak832-pro",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak832-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: Ajazz AK832 Pro",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak832-pro",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "switches",
+            "price_usd",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile Outemu switches with 3.0 mm travel; the page states it is not hot-swappable."
+    },
+    {
+      "id": "ajazz-ak870-v2",
+      "brand": "ajazz",
+      "model": "AK870 V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Red Switch",
+          "id": null
+        },
+        {
+          "name": "Day Dream Switch",
+          "id": null
+        },
+        {
+          "name": "Maillard Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 49.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak870-v2",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak870-v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: AJAZZ AK870 V2",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak870-v2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "A wired-only version and a tri-mode version are sold; the connectivity listed is the tri-mode one. The hot-swap screen-and-knob module is optional. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "ajazz-ak980",
+      "brand": "ajazz",
+      "model": "AK980",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 97,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Merrard Switch",
+          "id": null
+        },
+        {
+          "name": "Gift Switch V2",
+          "id": null
+        },
+        {
+          "name": "Cyan Cloud Switch",
+          "id": null
+        },
+        {
+          "name": "TTC Flame Red Switch V2",
+          "id": null
+        },
+        {
+          "name": "Slient Switch",
+          "id": null
+        },
+        {
+          "name": "Flying Fish Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-ak980",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-ak980",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: AJAZZ AK980",
+          "url": "https://www.ajazzstore.com/products/ajazz-ak980",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "switches",
+            "price_usd",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page says hot-swappable without naming the pin type."
+    },
+    {
+      "id": "ajazz-akl680",
+      "brand": "ajazz",
+      "model": "AKL680",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Low-profile Brown Switch",
+          "id": "jerrzi-low-profile-brown"
+        },
+        {
+          "name": "Low-profile Blue Switch",
+          "id": "huano-low-profile-blue"
+        },
+        {
+          "name": "Low-profile Red Switch",
+          "id": "jerrzi-low-profile-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 35.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.ajazzstore.com/products/ajazz-akl680",
+      "official_url": "https://www.ajazzstore.com/products/ajazz-akl680",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "AJAZZ Store: Ajazz AKL680",
+          "url": "https://www.ajazzstore.com/products/ajazz-akl680",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "low_profile",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile board, 342 x 116 mm, about 450 g. Connectivity beyond USB is not read. Hot-swap support is not stated on the page."
+    }
+  ]
+}

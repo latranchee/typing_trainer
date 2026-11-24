@@ -1,0 +1,1324 @@
+{
+  "brand": {
+    "id": "epomaker",
+    "name": "Epomaker",
+    "country": null,
+    "founded": null,
+    "official_url": "https://epomaker.com/",
+    "focus": [
+      "budget",
+      "enthusiast",
+      "gaming",
+      "diy"
+    ],
+    "about": "Epomaker sells budget wireless mechanical keyboards, Hall effect boards and AULA-built boards through its own store, with its own Creamy Jade and Sea Salt switches.",
+    "sources": [
+      {
+        "title": "Epomaker: store",
+        "url": "https://epomaker.com/",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "epomaker-alice40",
+      "brand": "epomaker",
+      "model": "Alice40",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "40",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "EPOMAKER Creamy Jade Switch",
+          "id": "epomaker-creamy-jade"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-alice40",
+      "official_url": "https://epomaker.com/products/epomaker-alice40",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: Alice40",
+          "url": "https://epomaker.com/products/epomaker-alice40",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Alice-style 40% layout; VIA per the store tags. Key count not read. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-aula-f108-pro",
+      "brand": "epomaker",
+      "model": "x AULA F108 Pro",
+      "aka": [
+        "EPOMAKER X AULA F108 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "LEOBOG Reaper Switch",
+          "id": "leobog-reaper"
+        },
+        {
+          "name": "LEOBOG Greywood V3 Switch",
+          "id": "leobog-graywood-v3"
+        },
+        {
+          "name": "LEOBOG Silent Cotton Candy Switch",
+          "id": "leobog-silent-cotton-candy"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-x-aula-f108-pro",
+      "official_url": "https://epomaker.com/products/epomaker-x-aula-f108-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: x AULA F108 Pro",
+          "url": "https://epomaker.com/products/epomaker-x-aula-f108-pro",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size version of the F75 Max with a 1.14-inch LCD; 3/5-pin hot-swap. Key count not read. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-aula-f75",
+      "brand": "epomaker",
+      "model": "x AULA F75",
+      "aka": [
+        "EPOMAKER x AULA F75"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 80,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "LEOBOG Reaper Switch",
+          "id": "leobog-reaper"
+        },
+        {
+          "name": "LEOBOG Ice Vein Switch",
+          "id": "leobog-ice-vein"
+        },
+        {
+          "name": "LEOBOG Greywood V3 Switch",
+          "id": "leobog-graywood-v3"
+        },
+        {
+          "name": "TTC Crescent Switch",
+          "id": null
+        },
+        {
+          "name": "LEOBOG Dream Sakura Switch",
+          "id": "leobog-dream-sakura"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-aula-f75",
+      "official_url": "https://epomaker.com/products/epomaker-aula-f75",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/aula/f99-f75",
+          "date": "2024-10-16",
+          "score": null,
+          "verdict": "Reviews the AULA F99 and F75 as wireless mechanical boards with a gasket mount and a soft, springy typing feel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Epomaker: x AULA F75",
+          "url": "https://epomaker.com/products/epomaker-aula-f75",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: AULA F99/F75 review",
+          "url": "https://www.rtings.com/keyboard/reviews/aula/f99-f75",
+          "kind": "review",
+          "backs": [
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Built by AULA and sold by Epomaker; the RTINGS review is of the AULA-branded F75/F99. Knob; full-key hot-swap, pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-aula-f99",
+      "brand": "epomaker",
+      "model": "x AULA F99",
+      "aka": [
+        "EPOMAKER x AULA F99"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 99,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "LEOBOG Greywood V3 Switch",
+          "id": "leobog-graywood-v3"
+        },
+        {
+          "name": "LEOBOG Reaper Switch",
+          "id": "leobog-reaper"
+        },
+        {
+          "name": "LEOBOG Dream Sakura Switch",
+          "id": "leobog-dream-sakura"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 79.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-aula-f99",
+      "official_url": "https://epomaker.com/products/epomaker-aula-f99",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/aula/f99-f75",
+          "date": "2024-10-16",
+          "score": null,
+          "verdict": "Reviews the AULA F99 and F75 as wireless mechanical boards with a gasket mount and a soft, springy typing feel."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Epomaker: x AULA F99",
+          "url": "https://epomaker.com/products/epomaker-aula-f99",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: AULA F99/F75 review",
+          "url": "https://www.rtings.com/keyboard/reviews/aula/f99-f75",
+          "kind": "review",
+          "backs": [
+            "hot_swap",
+            "connectivity"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Built by AULA and sold by Epomaker; the ISO-ES layout is wired only. PC or FR4 plate. Hot-swap pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-galaxy70",
+      "brand": "epomaker",
+      "model": "Galaxy70",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "EPOMAKER Zebra Switch",
+          "id": "epomaker-zebra"
+        },
+        {
+          "name": "HUANO Blossom Odyssey Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "powder-coated aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-galaxy70",
+      "official_url": "https://epomaker.com/products/epomaker-galaxy70",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: Galaxy70",
+          "url": "https://epomaker.com/products/epomaker-galaxy70",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Knob; ANSI and Russian layouts. Hot-swap pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-glyph",
+      "brand": "epomaker",
+      "model": "Glyph",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 83,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "EPOMAKER Wisteria Switch V2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "ABS and aluminum hybrid",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-glyph",
+      "official_url": "https://epomaker.com/products/epomaker-glyph",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/epomaker-glyph-review",
+          "date": "2026-06-11",
+          "score": null,
+          "verdict": "Calls it a wonderful typewriter-styled keyboard to type on, with responsive linear switches and dual screens."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Epomaker: Glyph",
+          "url": "https://epomaker.com/products/epomaker-glyph",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Epomaker Glyph review",
+          "url": "https://www.tomsguide.com/computing/keyboards/epomaker-glyph-review",
+          "kind": "review",
+          "backs": [
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Retro typewriter styling with two screens; hybrid ABS and aluminum plate. Hot-swap pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-he75-v2-tmr",
+      "brand": "epomaker",
+      "model": "HE75 V2 TMR",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 80,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "EPOMAKER Creamy Jade Magnetic Switch",
+          "id": "epomaker-creamy-jade-magnetic"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 129,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-he75-v2-tmr",
+      "official_url": "https://epomaker.com/products/epomaker-he75-v2-tmr",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: HE75 V2 TMR",
+          "url": "https://epomaker.com/products/epomaker-he75-v2-tmr",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "TMR sensors; actuation adjustable 0.1 to 3.3 mm; hybrid hot-swap takes magnetic or 3/5-pin switches. Bluetooth not confirmed on the listing. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-he80",
+      "brand": "epomaker",
+      "model": "HE80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "EPOMAKER MagneX Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 69.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-he80",
+      "official_url": "https://epomaker.com/products/epomaker-he80",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: HE80",
+          "url": "https://epomaker.com/products/epomaker-he80",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired Hall effect board; trigger and release adjustable in 0.02 mm steps; 8000 Hz polling. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-rt82",
+      "brand": "epomaker",
+      "model": "RT82",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 80,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Creamy Jade Switch",
+          "id": "epomaker-creamy-jade"
+        },
+        {
+          "name": "Sea Salt Silent Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "ABS plastic",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 85.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-rt82",
+      "official_url": "https://epomaker.com/products/epomaker-rt82",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/epomaker-rt82-review",
+          "date": "2026-03-27",
+          "score": null,
+          "verdict": "Quiet, hot-swappable retro board that feels good and handles gaming for under $90; the detachable screen is a gimmick."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Epomaker: RT82",
+          "url": "https://epomaker.com/products/epomaker-rt82",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Hardware: Epomaker RT82 review",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/epomaker-rt82-review",
+          "kind": "review",
+          "backs": [
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Detachable magnetic LCD screen. Key count taken from the store tag. VIA remapping per the listing. Hot-swap pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-split70",
+      "brand": "epomaker",
+      "model": "Split70",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 71,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Wisteria Linear Switch V2",
+          "id": "epomaker-wisteria-linear-v2"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 115.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-split70",
+      "official_url": "https://epomaker.com/products/epomaker-split70",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: Split70",
+          "url": "https://epomaker.com/products/epomaker-split70",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "70% layout in two detachable halves joined by a cable; knob. Bluetooth 5.0, 2.4 GHz, USB-C. 3/5-pin hot-swap. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-th108-pro",
+      "brand": "epomaker",
+      "model": "TH108 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": 104,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "EPOMAKER Creamy Jade Switch",
+          "id": "epomaker-creamy-jade"
+        },
+        {
+          "name": "EPOMAKER Sea Salt Silent V2 Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 98.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-th108-pro",
+      "official_url": "https://epomaker.com/products/epomaker-th108-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: TH108 Pro",
+          "url": "https://epomaker.com/products/epomaker-th108-pro",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Knob; hot-swap for mainstream 5-pin switches. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-th80-v2-pro",
+      "brand": "epomaker",
+      "model": "TH80 V2 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 78,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "EPOMAKER Creamy Jade Switch",
+          "id": "epomaker-creamy-jade"
+        },
+        {
+          "name": "EPOMAKER Sea Salt Silent V2 Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Epomaker web software (Chrome-based)",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 77.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-th80-v2-pro",
+      "official_url": "https://epomaker.com/products/epomaker-th80-v2-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: TH80 V2 Pro",
+          "url": "https://epomaker.com/products/epomaker-th80-v2-pro",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Knob and 1.06-inch glass screen; 2 ms wired latency at 1000 Hz. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-th87",
+      "brand": "epomaker",
+      "model": "TH87",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": 87,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Creamy Jade Switch",
+          "id": "epomaker-creamy-jade"
+        },
+        {
+          "name": "Sea Salt Silent Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 75.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-th87",
+      "official_url": "https://epomaker.com/products/epomaker-th87",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: TH87",
+          "url": "https://epomaker.com/products/epomaker-th87",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "2 ms wired and 5 ms 2.4 GHz latency per the listing. Hot-swap pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-th99",
+      "brand": "epomaker",
+      "model": "TH99",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 102,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "EPOMAKER Creamy Jade Switch",
+          "id": "epomaker-creamy-jade"
+        },
+        {
+          "name": "EPOMAKER Sea Salt Silent Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "ABS plastic",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 82.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-th99",
+      "official_url": "https://epomaker.com/products/epomaker-th99",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/peripherals/epomaker-th99-review",
+          "date": "2025-02-28",
+          "score": "4/5",
+          "verdict": "Calls it a fantastic 96% keyboard for productivity thanks to its responsive Creamy Jade switches, with a couple of flaws."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Epomaker: TH99",
+          "url": "https://epomaker.com/products/epomaker-th99",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Tom's Guide: Epomaker TH99 review",
+          "url": "https://www.tomsguide.com/computing/peripherals/epomaker-th99-review",
+          "kind": "review",
+          "backs": [
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "ISO-DE version uses OEM-profile keycaps. Hot-swap pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    },
+    {
+      "id": "epomaker-th99-pro",
+      "brand": "epomaker",
+      "model": "TH99 Pro",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 98,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "EPOMAKER Creamy Jade Switch",
+          "id": "epomaker-creamy-jade"
+        },
+        {
+          "name": "EPOMAKER Sea Salt Silent Switch V2",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 87.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://epomaker.com/products/epomaker-th99-pro",
+      "official_url": "https://epomaker.com/products/epomaker-th99-pro",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Epomaker: TH99 Pro",
+          "url": "https://epomaker.com/products/epomaker-th99-pro",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "hot_swap",
+            "mount",
+            "case_material",
+            "polling_rate_hz",
+            "firmware",
+            "software",
+            "os",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "split"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Knob and glass screen; 10,000 mAh battery. Hot-swap pin type not stated. The store lists a lower sale price; the price here is the regular compare-at price."
+    }
+  ]
+}

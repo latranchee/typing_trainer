@@ -1,0 +1,1066 @@
+{
+  "brand": {
+    "id": "lofree",
+    "name": "Lofree",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.lofree.co/",
+    "focus": [
+      "office",
+      "premium",
+      "enthusiast"
+    ],
+    "about": "Lofree sells wireless mechanical keyboards, mice and accessories through its own store, from low-profile Flow boards with Kailh POM switches to retro-styled gasket boards and a magnetic board.",
+    "sources": [
+      {
+        "title": "Lofree: store",
+        "url": "https://www.lofree.co/collections/all-products",
+        "kind": "official",
+        "backs": [
+          "official_url",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "lofree-1970s",
+      "brand": "lofree",
+      "model": "1970s",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Lofree x Gateron linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/1970s-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/1970s-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lofree: 1970s",
+          "url": "https://www.lofree.co/products/1970s-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "official_url",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Retro-styled normal-profile board; 3-pin and 5-pin switches fit. Lofree x Gateron linear switches, 45 gf."
+    },
+    {
+      "id": "lofree-edge",
+      "brand": "lofree",
+      "model": "Edge",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": 2000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Kailh POM Switch 2.0 low-profile linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 249,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/edge-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/edge-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/keyboards/lofree-edge-review",
+          "date": "2024-06-14",
+          "score": null,
+          "verdict": "Thin and light, but priced above Apple's Magic Keyboard."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lofree: Edge",
+          "url": "https://www.lofree.co/products/edge-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "official_url",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hot-swap not stated on the pages read. Price is the regular price shown ($249); the store lists $179 as a sale price. 15 mm thick, 485 g."
+    },
+    {
+      "id": "lofree-flow-2-100",
+      "brand": "lofree",
+      "model": "Flow 2 100",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 100,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Cloud Series Surfer (linear)",
+          "id": null
+        },
+        {
+          "name": "Cloud Series Void (silent linear)",
+          "id": null
+        },
+        {
+          "name": "Cloud Series Pulse (tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 169,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/flow-2-100-low-profile-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/flow-2-100-low-profile-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/lofree/flow-2-mechanical",
+          "date": "2026-01-22",
+          "score": null,
+          "verdict": "Reviews the Flow 2 series as low-profile wireless mechanical keyboards with aluminum cases and a gasket mount with several dampening layers."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/lofree-flow-2-review",
+          "date": "2025-12-17",
+          "score": null,
+          "verdict": "Finds the Flow 2 strong in build, styling and typing, with major problems in its acoustics."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lofree: Flow 2 100",
+          "url": "https://www.lofree.co/products/flow-2-100-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "firmware",
+            "polling_rate_hz",
+            "hot_swap",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Lofree Flow 2 review",
+          "url": "https://www.rtings.com/keyboard/reviews/lofree/flow-2-mechanical",
+          "kind": "review",
+          "backs": [
+            "case_material",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cloud Series switches are 40 gf with 2.8 mm total travel. Capacitive touch bar on the side; VIA remapping. Low-profile hot-swap sockets: Lofree sells its own switches and reviews describe sockets for Kailh low-profile switches; compatibility with other low-profile families (Choc V1, Gateron low-profile) is not confirmed, so the footprint is 'other'."
+    },
+    {
+      "id": "lofree-flow-2-68",
+      "brand": "lofree",
+      "model": "Flow 2 68",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 2000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Cloud Series Surfer (linear)",
+          "id": null
+        },
+        {
+          "name": "Cloud Series Void (silent linear)",
+          "id": null
+        },
+        {
+          "name": "Cloud Series Pulse (tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/flow-2-68-low-profile-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/flow-2-68-low-profile-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/lofree/flow-2-mechanical",
+          "date": "2026-01-22",
+          "score": null,
+          "verdict": "Reviews the Flow 2 series as low-profile wireless mechanical keyboards with aluminum cases and a gasket mount with several dampening layers."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/lofree-flow-2-review",
+          "date": "2025-12-17",
+          "score": null,
+          "verdict": "Finds the Flow 2 strong in build, styling and typing, with major problems in its acoustics."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lofree: Flow 2 68",
+          "url": "https://www.lofree.co/products/flow-2-68-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "firmware",
+            "polling_rate_hz",
+            "hot_swap",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Lofree Flow 2 review",
+          "url": "https://www.rtings.com/keyboard/reviews/lofree/flow-2-mechanical",
+          "kind": "review",
+          "backs": [
+            "case_material",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cloud Series switches are 40 gf with 2.8 mm total travel. Capacitive touch bar on the side; VIA remapping. Low-profile hot-swap sockets: Lofree sells its own switches and reviews describe sockets for Kailh low-profile switches; compatibility with other low-profile families (Choc V1, Gateron low-profile) is not confirmed, so the footprint is 'other'."
+    },
+    {
+      "id": "lofree-flow-2-84",
+      "brand": "lofree",
+      "model": "Flow 2 84",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Cloud Series Surfer (linear)",
+          "id": null
+        },
+        {
+          "name": "Cloud Series Void (silent linear)",
+          "id": null
+        },
+        {
+          "name": "Cloud Series Pulse (tactile)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 159,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/flow-2-84-low-profile-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/flow-2-84-low-profile-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/lofree/flow-2-mechanical",
+          "date": "2026-01-22",
+          "score": null,
+          "verdict": "Reviews the Flow 2 series as low-profile wireless mechanical keyboards with aluminum cases and a gasket mount with several dampening layers."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/lofree-flow-2-review",
+          "date": "2025-12-17",
+          "score": null,
+          "verdict": "Finds the Flow 2 strong in build, styling and typing, with major problems in its acoustics."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lofree: Flow 2 84",
+          "url": "https://www.lofree.co/products/flow-2-84-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "firmware",
+            "polling_rate_hz",
+            "hot_swap",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "RTINGS: Lofree Flow 2 review",
+          "url": "https://www.rtings.com/keyboard/reviews/lofree/flow-2-mechanical",
+          "kind": "review",
+          "backs": [
+            "case_material",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Cloud Series switches are 40 gf with 2.8 mm total travel. Capacitive touch bar on the side; VIA remapping. Low-profile hot-swap sockets: Lofree sells its own switches and reviews describe sockets for Kailh low-profile switches; compatibility with other low-profile families (Choc V1, Gateron low-profile) is not confirmed, so the footprint is 'other'."
+    },
+    {
+      "id": "lofree-flow-lite-100",
+      "brand": "lofree",
+      "model": "Flow Lite100",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Specter (low-profile POM)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/flow-lite100-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/flow-lite100-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lofree: Flow Lite100",
+          "url": "https://www.lofree.co/products/flow-lite100-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "switches",
+            "price_usd",
+            "official_url",
+            "low_profile"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First-generation Flow Lite, still sold. Key count and battery not read. Price is the regular price shown; the store lists a sale price. Low-profile hot-swap sockets: Lofree sells its own switches and reviews describe sockets for Kailh low-profile switches; compatibility with other low-profile families (Choc V1, Gateron low-profile) is not confirmed, so the footprint is 'other'."
+    },
+    {
+      "id": "lofree-flow-lite-2-100",
+      "brand": "lofree",
+      "model": "Flow Lite 2 100",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": 100,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Lofree x Kailh Echo (full POM, 45 gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 119,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/flow-lite-2-100-low-profile-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/flow-lite-2-100-low-profile-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lofree: Flow Lite 2 100",
+          "url": "https://www.lofree.co/products/flow-lite-2-100-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "polling_rate_hz",
+            "hot_swap",
+            "low_profile",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Integrated OLED screen. Firmware and remapping software not read. Low-profile hot-swap sockets: Lofree sells its own switches and reviews describe sockets for Kailh low-profile switches; compatibility with other low-profile families (Choc V1, Gateron low-profile) is not confirmed, so the footprint is 'other'."
+    },
+    {
+      "id": "lofree-flow-lite-2-84",
+      "brand": "lofree",
+      "model": "Flow Lite 2 84",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi",
+        "iso",
+        "jis"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 3000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Lofree x Kailh Echo (full POM, 45 gf)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 109,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/flow-lite-2-84-low-profile-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/flow-lite-2-84-low-profile-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lofree: Flow Lite 2 84",
+          "url": "https://www.lofree.co/products/flow-lite-2-84-low-profile-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "layout_standards",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url",
+            "polling_rate_hz",
+            "hot_swap",
+            "low_profile",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Integrated OLED screen. Firmware and remapping software not read. Low-profile hot-swap sockets: Lofree sells its own switches and reviews describe sockets for Kailh low-profile switches; compatibility with other low-profile families (Choc V1, Gateron low-profile) is not confirmed, so the footprint is 'other'."
+    },
+    {
+      "id": "lofree-flow-lite-84",
+      "brand": "lofree",
+      "model": "Flow Lite84",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 2000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "other",
+      "hot_swap": "other",
+      "switches": [
+        {
+          "name": "Specter (low-profile POM)",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 129,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/flow-lite84-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/flow-lite84-mechanical-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/lofree-flow-lite84-review",
+          "date": "2025-10-24",
+          "score": null,
+          "verdict": "Calls it gorgeous to type on, with minimalist charm, a sensible price and long-overdue customizable firmware."
+        },
+        {
+          "outlet": "Notebookcheck",
+          "url": "https://www.notebookcheck.net/Lofree-Flow-Lite-mechanical-keyboard-review-Excellent-low-profile-design-with-build-quality-oversights.949872.0.html",
+          "date": "2025-02-01",
+          "score": null,
+          "verdict": "Praises sound and typing feel but finds the lack of universal software and some build-quality issues make it hard to recommend."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lofree: Flow Lite84",
+          "url": "https://www.lofree.co/products/flow-lite84-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "layout_standards",
+            "switches",
+            "price_usd",
+            "official_url",
+            "low_profile",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: Lofree Flow Lite review",
+          "url": "https://www.notebookcheck.net/Lofree-Flow-Lite-mechanical-keyboard-review-Excellent-low-profile-design-with-build-quality-oversights.949872.0.html",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "mount"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "First-generation Flow Lite, still sold; 2000 mAh battery and 40 gf switches per the reviews. Price is the regular price shown; the store lists a sale price. Low-profile hot-swap sockets: Lofree sells its own switches and reviews describe sockets for Kailh low-profile switches; compatibility with other low-profile families (Choc V1, Gateron low-profile) is not confirmed, so the footprint is 'other'."
+    },
+    {
+      "id": "lofree-hyzen",
+      "brand": "lofree",
+      "model": "Hyzen",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 10000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Kailh Nexus TMR",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Lofree web driver",
+      "os": [],
+      "price_usd": 269,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/hyzen-mechanical-magnetic-keyboard",
+      "official_url": "https://www.lofree.co/products/hyzen-mechanical-magnetic-keyboard",
+      "reviews": [
+        {
+          "outlet": "Notebookcheck",
+          "url": "https://www.notebookcheck.net/Lofree-Hyzen-Magnetic-Mechanical-keyboard-review-Best-of-both-worlds.1343966.0.html",
+          "date": "2026-07-17",
+          "score": null,
+          "verdict": "Hands-on review of the hybrid magnetic and mechanical board with adjustable actuation; customization runs through a web driver without QMK or VIA."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://www.tomsguide.com/computing/keyboards/lofree-hyzen-review",
+          "date": "2026-04-28",
+          "score": null,
+          "verdict": "Early-access impressions of the hybrid magnetic-mechanical Hyzen."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lofree: Hyzen",
+          "url": "https://www.lofree.co/products/hyzen-mechanical-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "price_usd",
+            "official_url",
+            "rapid_trigger",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Notebookcheck: Lofree Hyzen review",
+          "url": "https://www.notebookcheck.net/Lofree-Hyzen-Magnetic-Mechanical-keyboard-review-Best-of-both-worlds.1343966.0.html",
+          "kind": "review",
+          "backs": [
+            "adjustable_actuation",
+            "firmware",
+            "switches",
+            "software",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hybrid board that takes magnetic switches and standard 3- or 5-pin mechanical switches. Sold as wired (USB-C) and tri-mode versions; the price is the wired version and the battery is the tri-mode one. 0.01 mm Rapid Trigger per Lofree; sources differ on actuation granularity."
+    },
+    {
+      "id": "lofree-lipstick",
+      "brand": "lofree",
+      "model": "Lipstick",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Lofree x Gateron linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 189,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/lipstick-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/lipstick-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lofree: Lipstick",
+          "url": "https://www.lofree.co/products/lipstick-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "official_url",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Retro-styled normal-profile board; 3-pin and 5-pin switches fit. Lofree x Gateron linear switches, 40 gf."
+    },
+    {
+      "id": "lofree-sugar-color-70s",
+      "brand": "lofree",
+      "model": "Sugar Color 70s",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Lofree x Gateron linear",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/sugar-color-70s-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/sugar-color-70s-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lofree: Sugar Color 70s",
+          "url": "https://www.lofree.co/products/sugar-color-70s-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "battery_mah",
+            "polling_rate_hz",
+            "switches",
+            "price_usd",
+            "official_url",
+            "mount",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Retro-styled normal-profile board; 3-pin and 5-pin switches fit. Same specifications as the 1970s on Lofree's page."
+    },
+    {
+      "id": "lofree-wanderfree",
+      "brand": "lofree",
+      "model": "Wanderfree",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 84,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Cherry MX Brown",
+          "id": "cherry-mx2a-brown"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 149,
+      "price_date": "2026-11-23",
+      "price_url": "https://www.lofree.co/products/wonderfree-mechanical-keyboard",
+      "official_url": "https://www.lofree.co/products/wonderfree-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Lofree: Wanderfree",
+          "url": "https://www.lofree.co/products/wonderfree-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "connectivity",
+            "battery_mah",
+            "switches",
+            "price_usd",
+            "official_url"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Portable board with a cover that doubles as a tablet stand; the store URL spells it 'wonderfree'. Hot-swappable per Lofree; pin type not stated."
+    }
+  ]
+}

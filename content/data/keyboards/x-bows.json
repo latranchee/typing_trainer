@@ -1,0 +1,599 @@
+{
+  "brand": {
+    "id": "x-bows",
+    "name": "X-Bows",
+    "country": null,
+    "founded": null,
+    "official_url": "https://x-bows.com/",
+    "focus": [
+      "ergonomic"
+    ],
+    "about": "X-Bows makes ergonomic mechanical keyboards with its radial-columnar layout and central thumb keys: the unibody Knight, Knight Plus, Nature, Crystal and Lite, and the Surfing wireless split.",
+    "sources": [
+      {
+        "title": "X-Bows: home page",
+        "url": "https://x-bows.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "X-Bows: products listing",
+        "url": "https://x-bows.com/products.json?limit=100",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "x-bows-crystal",
+      "brand": "x-bows",
+      "model": "Crystal",
+      "aka": [
+        "X-Bows Crystal"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "Gateron G Pro 3.0 Red",
+          "id": "gateron-g-pro-3-0-red"
+        },
+        {
+          "name": "Gateron G Pro 3.0 Brown",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro 3.0 White",
+          "id": "gateron-g-pro-3-0-white"
+        },
+        {
+          "name": "Gateron KS-9 Silent Red",
+          "id": "gateron-ks-9-silent-red"
+        },
+        {
+          "name": "Gateron KS-9 Silent Brown",
+          "id": "gateron-ks-9-silent-brown"
+        },
+        {
+          "name": "Gateron KS-9 Blue",
+          "id": "gateron-ks-9-blue"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "PMMA acrylic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "KeyboardLab",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 306,
+      "price_date": "2026-11-23",
+      "price_url": "https://x-bows.com/products.json?limit=100",
+      "official_url": "https://x-bows.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "X-Bows: products listing (product description, options and prices)",
+          "url": "https://x-bows.com/products.json?limit=100",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "switch_footprint",
+            "hot_swap",
+            "firmware",
+            "switches",
+            "price_usd",
+            "case_material",
+            "os",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "X-Bows calls the layout radial-columnar: angled key columns with thumb keys in the middle. Transparent acrylic case with RGB; Bluetooth 5.0 (five devices) and USB-C. Hot-swap takes 3-pin and 5-pin MX switches. Its firmware is QMK-based but configured with KeyboardLab, not QMK Configurator, VIA or Vial. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "x-bows-knight",
+      "brand": "x-bows",
+      "model": "Knight",
+      "aka": [
+        "X-Bows Knight"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Gateron G Pro 3.0 Red",
+          "id": "gateron-g-pro-3-0-red"
+        },
+        {
+          "name": "Gateron G Pro 3.0 Brown",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro 3.0 White",
+          "id": "gateron-g-pro-3-0-white"
+        },
+        {
+          "name": "Gateron KS-9 Silent Red",
+          "id": "gateron-ks-9-silent-red"
+        },
+        {
+          "name": "Gateron KS-9 Silent Brown",
+          "id": "gateron-ks-9-silent-brown"
+        },
+        {
+          "name": "Gateron KS-9 Blue",
+          "id": "gateron-ks-9-blue"
+        },
+        {
+          "name": "Gateron KS-9 Black",
+          "id": "gateron-ks-9-black"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via",
+        "vial"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 239,
+      "price_date": "2026-11-23",
+      "price_url": "https://x-bows.com/products.json?limit=100",
+      "official_url": "https://x-bows.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "X-Bows: products listing (product description, options and prices)",
+          "url": "https://x-bows.com/products.json?limit=100",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "switch_footprint",
+            "hot_swap",
+            "firmware",
+            "switches",
+            "price_usd",
+            "case_material",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "X-Bows calls the layout radial-columnar: angled key columns with thumb keys in the middle. CNC aluminum unibody with hot-swap sockets for 3-pin switches; Windows and Mac versions. Wired connection is inferred: the listing names no wireless mode. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "x-bows-knight-plus",
+      "brand": "x-bows",
+      "model": "Knight Plus",
+      "aka": [
+        "X-Bows Knight Plus"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 86,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "Gateron G Pro 3.0 Red",
+          "id": "gateron-g-pro-3-0-red"
+        },
+        {
+          "name": "Gateron G Pro 3.0 Brown",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro 3.0 White",
+          "id": "gateron-g-pro-3-0-white"
+        },
+        {
+          "name": "Gateron KS-9 Silent Red",
+          "id": "gateron-ks-9-silent-red"
+        },
+        {
+          "name": "Gateron KS-9 Silent Brown",
+          "id": "gateron-ks-9-silent-brown"
+        },
+        {
+          "name": "Gateron KS-9 Blue",
+          "id": "gateron-ks-9-blue"
+        },
+        {
+          "name": "Gateron KS-9 Black",
+          "id": "gateron-ks-9-black"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via",
+        "vial"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 299,
+      "price_date": "2026-11-23",
+      "price_url": "https://x-bows.com/products.json?limit=100",
+      "official_url": "https://x-bows.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "X-Bows: products listing (product description, options and prices)",
+          "url": "https://x-bows.com/products.json?limit=100",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "switch_footprint",
+            "hot_swap",
+            "firmware",
+            "switches",
+            "price_usd",
+            "case_material",
+            "os",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "X-Bows calls the layout radial-columnar: angled key columns with thumb keys in the middle. 86-key aluminum unibody plus a detachable, separately programmable 21-key magnetic numpad. Hot-swap pin support is not stated beyond 3-pin switch options. Wired connection is inferred. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "x-bows-lite",
+      "brand": "x-bows",
+      "model": "Lite",
+      "aka": [
+        "X-Bows Lite"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron G Pro 3.0 Red",
+          "id": "gateron-g-pro-3-0-red"
+        },
+        {
+          "name": "Gateron G Pro 3.0 Brown",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro 3.0 White",
+          "id": "gateron-g-pro-3-0-white"
+        },
+        {
+          "name": "Gateron KS-9 Silent Red",
+          "id": "gateron-ks-9-silent-red"
+        },
+        {
+          "name": "Gateron KS-9 Silent Brown",
+          "id": "gateron-ks-9-silent-brown"
+        },
+        {
+          "name": "Gateron KS-9 Blue",
+          "id": "gateron-ks-9-blue"
+        },
+        {
+          "name": "Gateron KS-9 Black",
+          "id": "gateron-ks-9-black"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum top, ABS chassis",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "X-Bows Lite software (Windows)",
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 99,
+      "price_date": "2026-11-23",
+      "price_url": "https://x-bows.com/products.json?limit=100",
+      "official_url": "https://x-bows.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "X-Bows: products listing (product description, options and prices)",
+          "url": "https://x-bows.com/products.json?limit=100",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "switch_footprint",
+            "hot_swap",
+            "firmware",
+            "switches",
+            "price_usd",
+            "case_material",
+            "os",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "X-Bows calls the layout radial-columnar: angled key columns with thumb keys in the middle. Entry model with white backlight; switches are soldered (no hot-swap) and remapping uses Windows-only software instead of QMK, VIA or Vial. Wired connection is inferred."
+    },
+    {
+      "id": "x-bows-nature",
+      "brand": "x-bows",
+      "model": "Nature",
+      "aka": [
+        "X-Bows Nature"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "unibody-angled",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "3-pin",
+      "switches": [
+        {
+          "name": "Gateron G Pro 3.0 Red",
+          "id": "gateron-g-pro-3-0-red"
+        },
+        {
+          "name": "Gateron G Pro 3.0 Brown",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro 3.0 White",
+          "id": "gateron-g-pro-3-0-white"
+        },
+        {
+          "name": "Gateron KS-9 Silent Red",
+          "id": "gateron-ks-9-silent-red"
+        },
+        {
+          "name": "Gateron KS-9 Silent Brown",
+          "id": "gateron-ks-9-silent-brown"
+        },
+        {
+          "name": "Gateron KS-9 Blue",
+          "id": "gateron-ks-9-blue"
+        },
+        {
+          "name": "Gateron KS-9 Black",
+          "id": "gateron-ks-9-black"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "aluminum top, ABS chassis",
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via",
+        "vial"
+      ],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 169,
+      "price_date": "2026-11-23",
+      "price_url": "https://x-bows.com/products.json?limit=100",
+      "official_url": "https://x-bows.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "X-Bows: products listing (product description, options and prices)",
+          "url": "https://x-bows.com/products.json?limit=100",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "switch_footprint",
+            "hot_swap",
+            "firmware",
+            "switches",
+            "price_usd",
+            "case_material",
+            "os"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "X-Bows calls the layout radial-columnar: angled key columns with thumb keys in the middle. Aluminum top panel over an ABS chassis, hot-swap sockets for 3-pin switches. Wired connection is inferred. Price is the regular price; a sale was running."
+    },
+    {
+      "id": "x-bows-surfing",
+      "brand": "x-bows",
+      "model": "Surfing",
+      "aka": [
+        "X-Bows Surfing"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 60,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Gateron G Pro 3.0 Red",
+          "id": "gateron-g-pro-3-0-red"
+        },
+        {
+          "name": "Gateron G Pro 3.0 Brown",
+          "id": "gateron-g-pro-3-0-brown"
+        },
+        {
+          "name": "Gateron G Pro 3.0 White",
+          "id": "gateron-g-pro-3-0-white"
+        },
+        {
+          "name": "Gateron KS-9 Silent Red",
+          "id": "gateron-ks-9-silent-red"
+        },
+        {
+          "name": "Gateron KS-9 Silent Brown",
+          "id": "gateron-ks-9-silent-brown"
+        },
+        {
+          "name": "Gateron KS-9 Blue",
+          "id": "gateron-ks-9-blue"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": "acrylic",
+      "mount": null,
+      "firmware": [
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 429,
+      "price_date": "2026-11-23",
+      "price_url": "https://x-bows.com/products.json?limit=100",
+      "official_url": "https://x-bows.com/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "X-Bows: products listing (product description, options and prices)",
+          "url": "https://x-bows.com/products.json?limit=100",
+          "kind": "official",
+          "backs": [
+            "key_count",
+            "split",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "switches",
+            "case_material",
+            "price_usd",
+            "stagger"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "60-key wireless split whose halves need no cable between them; tenting, tilt and splay come from camera ball heads and aluminum bases sold as kit options. X-Bows says the key layout follows natural finger paths (columnar). The listing does not say whether switches are hot-swappable or name the wireless standard; Bluetooth is inferred from ZMK. Price is the regular price; a sale was running."
+    }
+  ]
+}

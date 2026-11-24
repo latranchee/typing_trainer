@@ -1,0 +1,82 @@
+{
+  "maker": {
+    "id": "cooler-master",
+    "name": "Cooler Master",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://www.coolermaster.com/",
+    "about": "PC hardware and peripherals brand. Its CK351 keyboard uses LK DarGo optical switches that the reviewer found sold only by Cooler Master. Most of its other keyboards use Kailh, Gateron or Cherry switches.",
+    "sources": [
+      {
+        "title": "Pokde: Cooler Master CK351 review",
+        "url": "https://pokde.net/review/cooler-master-ck351-review-raising-the-bar-for-the-ck-series",
+        "kind": "review",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "cooler-master-lk-dargo-optical-blue",
+      "name": "LK DarGo Optical Blue",
+      "maker": "cooler-master",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "clicky",
+      "sensing": "optical",
+      "footprint": "optical",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 50,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 4,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 100,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "Pokde",
+          "url": "https://pokde.net/review/cooler-master-ck351-review-raising-the-bar-for-the-ck-series",
+          "date": "2021-08-03",
+          "score": "7.9/10",
+          "verdict": "Cooler Master moving the CK series to optical switches is a strong choice; the switch feel is praised, the chassis sounds hollow."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pokde: Cooler Master CK351 review",
+          "url": "https://pokde.net/review/cooler-master-ck351-review-raising-the-bar-for-the-ck-series",
+          "kind": "review",
+          "backs": [
+            "type",
+            "sensing",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Made by LK; the reviewer found no other vendor using DarGo. Specs are 50±10gf, 1.8±0.5mm and 4±0.5mm. Date is when the review was last updated. A Red variant exists but no specs were read."
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "brand": {
+    "id": "bastard-keyboards",
+    "name": "Bastard Keyboards",
+    "country": "NL",
+    "founded": null,
+    "official_url": "https://bastardkb.com/",
+    "focus": [
+      "ergonomic",
+      "diy"
+    ],
+    "about": "Bastard Keyboards designs and assembles 3D-printed split keyboards in Dordrecht, the Netherlands: Dactyl Manuform-style boards (Charybdis with trackball, Scylla, Skeletyl, TBK Mini) and the low-profile Dilemma. Each is sold built to order or as a DIY kit; the store prices in euros.",
+    "sources": [
+      {
+        "title": "Bastard Keyboards: Charybdis MK2 built to order",
+        "url": "https://bastardkb.com/product/charybdis-mk2-prebuilt-preorder/",
+        "kind": "official",
+        "backs": [
+          "country",
+          "about"
+        ],
+        "checked": "2026-11-23"
+      },
+      {
+        "title": "Bastard Keyboards: store products API",
+        "url": "https://bastardkb.com/wp-json/wc/store/v1/products?per_page=100",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "bastard-keyboards-charybdis-mini",
+      "brand": "bastard-keyboards",
+      "model": "Charybdis Mini",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 41,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron Yellow",
+          "id": null
+        },
+        {
+          "name": "Outemu Silent Yellow Cream/Jade",
+          "id": "outemu-silent-yellow-jade"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/charybdis-mini-prebuilt-preorder/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Charybdis Mini built to order",
+          "url": "https://bastardkb.com/product/charybdis-mini-prebuilt-preorder/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact Dactyl Manuform with 41 keys and a trackball on the side of your choice. Built to order with your choice of MX switches soldered in (Gateron Yellow linear or Outemu silent tactile, or a custom MX switch); keycaps optional or not included. 30-degree 3D-printed tents and per-key RGB are paid options. Wired, with USB-C and a 3.5 mm link between halves. Also sold as a DIY kit."
+    },
+    {
+      "id": "bastard-keyboards-charybdis-mk2",
+      "brand": "bastard-keyboards",
+      "model": "Charybdis MK2",
+      "aka": [
+        "Charybdis"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron Yellow",
+          "id": null
+        },
+        {
+          "name": "Outemu Silent Yellow Cream/Jade",
+          "id": "outemu-silent-yellow-jade"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": "Argos",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/charybdis-mk2-prebuilt-preorder/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Charybdis MK2 built to order",
+          "url": "https://bastardkb.com/product/charybdis-mk2-prebuilt-preorder/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Concave board with a trackball placed close to the thumb (PMW3360-based sensor). Built to order with your choice of MX switches soldered in (Gateron Yellow linear or Outemu silent tactile, or a custom MX switch); keycaps optional or not included. 30-degree 3D-printed tents and per-key RGB are paid options. Wired, with USB-C and a 3.5 mm link between halves. Also sold as a DIY kit."
+    },
+    {
+      "id": "bastard-keyboards-charybdis-nano",
+      "brand": "bastard-keyboards",
+      "model": "Charybdis Nano",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 35,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron Yellow",
+          "id": null
+        },
+        {
+          "name": "Outemu Silent Yellow Cream/Jade",
+          "id": "outemu-silent-yellow-jade"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/charybdis-nano-prebuilt-preorder-2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Charybdis Nano built to order",
+          "url": "https://bastardkb.com/product/charybdis-nano-prebuilt-preorder-2/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact Dactyl Manuform with 35 keys and a trackball on the side of your choice. Built to order with your choice of MX switches soldered in (Gateron Yellow linear or Outemu silent tactile, or a custom MX switch); keycaps optional or not included. 30-degree 3D-printed tents and per-key RGB are paid options. Wired, with USB-C and a 3.5 mm link between halves. Also sold as a DIY kit."
+    },
+    {
+      "id": "bastard-keyboards-dilemma-max-v3",
+      "brand": "bastard-keyboards",
+      "model": "Dilemma MAX V3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [
+        {
+          "name": "Kailh Choc Ambients Twilight",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc Sunset",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc Red",
+          "id": "kailh-choc-v1-red"
+        },
+        {
+          "name": "Kailh Choc White",
+          "id": "kailh-choc-v1-white"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": "Argos",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/dilemma-max-v3-hotswap/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Dilemma MAX V3 hotswap",
+          "url": "https://bastardkb.com/product/dilemma-max-v3-hotswap/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "low_profile",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Travel split with a 39 x 48 mm multi-touch trackpad, per-key RGB and Choc v1 hot-swap sockets; TRS link between halves; transport case included. Bastard Keyboards advises against macOS for now because the trackpad works poorly there."
+    },
+    {
+      "id": "bastard-keyboards-dilemma-v3-trackpad",
+      "brand": "bastard-keyboards",
+      "model": "Dilemma V3 Trackpad",
+      "aka": [
+        "Dilemma V3"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [
+        {
+          "name": "Kailh Choc Ambients Twilight",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc Sunset",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc Red",
+          "id": "kailh-choc-v1-red"
+        },
+        {
+          "name": "Kailh Choc White",
+          "id": "kailh-choc-v1-white"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": "Argos",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/dilemma-built-v3/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Dilemma V3 Trackpad",
+          "url": "https://bastardkb.com/product/dilemma-built-v3/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "low_profile",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact travel split with a 39 x 48 mm multi-touch trackpad, per-key RGB and Choc v1 hot-swap sockets; TRS link between halves; transport case included. Bastard Keyboards advises against macOS for now because the trackpad works poorly there."
+    },
+    {
+      "id": "bastard-keyboards-dilemma-v4-trackball",
+      "brand": "bastard-keyboards",
+      "model": "Dilemma V4 Trackball",
+      "aka": [
+        "Dilemma V4 hotswap trackball"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "none",
+      "thumb_cluster": true,
+      "key_wells": false,
+      "low_profile": true,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "choc-v1",
+      "hot_swap": "choc",
+      "switches": [
+        {
+          "name": "Kailh Choc Ambients Twilight",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc Sunset",
+          "id": null
+        },
+        {
+          "name": "Kailh Choc Red",
+          "id": "kailh-choc-v1-red"
+        },
+        {
+          "name": "Kailh Choc White",
+          "id": "kailh-choc-v1-white"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": "Argos",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/dilemma-v4-hotswap-trackball/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Dilemma V4 hotswap trackball",
+          "url": "https://bastardkb.com/product/dilemma-v4-hotswap-trackball/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "low_profile",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Low-profile travel split with a trackball by the index finger, per-key RGB and Choc v1 hot-swap sockets; halves link by USB-C. Ships assembled with switches; keycaps optional. Preorder."
+    },
+    {
+      "id": "bastard-keyboards-scylla-mk2",
+      "brand": "bastard-keyboards",
+      "model": "Scylla MK2",
+      "aka": [
+        "Scylla"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron Yellow",
+          "id": null
+        },
+        {
+          "name": "Outemu Silent Yellow Cream/Jade",
+          "id": "outemu-silent-yellow-jade"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/scylla-prebuilt-preorder-2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Scylla MK2 built to order",
+          "url": "https://bastardkb.com/product/scylla-prebuilt-preorder-2/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Concave key wells, columnar stagger, a number row and a 5-key thumb cluster. Built to order with your choice of MX switches soldered in (Gateron Yellow linear or Outemu silent tactile, or a custom MX switch); keycaps optional or not included. 30-degree 3D-printed tents and per-key RGB are paid options. Wired, with USB-C and a 3.5 mm link between halves. Also sold as a DIY kit."
+    },
+    {
+      "id": "bastard-keyboards-skeletyl",
+      "brand": "bastard-keyboards",
+      "model": "Skeletyl",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 36,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron Yellow",
+          "id": null
+        },
+        {
+          "name": "Outemu Silent Yellow Cream/Jade",
+          "id": "outemu-silent-yellow-jade"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/skeletyl-prebuilt-preorder-2/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: Skeletyl built to order",
+          "url": "https://bastardkb.com/product/skeletyl-prebuilt-preorder-2/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Very small Dactyl Manuform with 36 keys and a 3-key thumb cluster. Built to order with your choice of MX switches soldered in (Gateron Yellow linear or Outemu silent tactile, or a custom MX switch); keycaps optional or not included. 30-degree 3D-printed tents and per-key RGB are paid options. Wired, with USB-C and a 3.5 mm link between halves. Also sold as a DIY kit."
+    },
+    {
+      "id": "bastard-keyboards-tbk-mini",
+      "brand": "bastard-keyboards",
+      "model": "TBK Mini",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": 42,
+      "layout_standards": [],
+      "stagger": "column",
+      "split": "split",
+      "tenting": "accessory",
+      "thumb_cluster": true,
+      "key_wells": true,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Gateron Yellow",
+          "id": null
+        },
+        {
+          "name": "Outemu Silent Yellow Cream/Jade",
+          "id": "outemu-silent-yellow-jade"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": null,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://bastardkb.com/product/tbk-mini-prebuilt-preorder/",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Bastard Keyboards: TBK Mini built to order",
+          "url": "https://bastardkb.com/product/tbk-mini-prebuilt-preorder/",
+          "kind": "official",
+          "backs": [
+            "stagger",
+            "thumb_cluster",
+            "key_wells",
+            "switches",
+            "switch_footprint",
+            "hot_swap",
+            "tenting",
+            "connectivity",
+            "firmware",
+            "key_count"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Dactyl Manuform with 42 keys and a 3-key thumb cluster. Built to order with your choice of MX switches soldered in (Gateron Yellow linear or Outemu silent tactile, or a custom MX switch); keycaps optional or not included. 30-degree 3D-printed tents and per-key RGB are paid options. Wired, with USB-C and a 3.5 mm link between halves. Also sold as a DIY kit."
+    }
+  ]
+}

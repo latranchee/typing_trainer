@@ -1,0 +1,495 @@
+{
+  "brand": {
+    "id": "melgeek",
+    "name": "MelGeek",
+    "country": null,
+    "founded": null,
+    "official_url": "https://melgeek.com/",
+    "focus": [
+      "gaming",
+      "enthusiast"
+    ],
+    "about": "Brand known for the Mojo and Pixel mechanical boards and, since 2024, its MADE, REAL and Centauri Hall effect gaming keyboards configured in MelGeek Hive. This file holds the Hall effect boards with readable specs; the Mojo, Pixel and O2 lines are not included.",
+    "sources": [
+      {
+        "title": "MelGeek store: catalog feed",
+        "url": "https://melgeek.com/products.json?limit=250",
+        "kind": "official",
+        "backs": [
+          "lineup"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "melgeek-centauri60",
+      "brand": "melgeek",
+      "model": "Centauri60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": 61,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MelGeek Hive",
+      "os": [],
+      "price_usd": 299,
+      "price_date": "2026-11-23",
+      "price_url": "https://melgeek.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MelGeek store: Centauri60 product listing (catalog feed, handle centauri-hall-effect-gaming-keyboard)",
+          "url": "https://melgeek.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd",
+            "key_count",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Store lists 299 to 399 for the Centauri60/80 listing; actuation 0.1 to 3.4 mm, 100 million click lifespan, 8000 Hz polling. Store product pages returned HTTP 429; specs come from the catalog feed. Hot-swap not stated there."
+    },
+    {
+      "id": "melgeek-centauri80",
+      "brand": "melgeek",
+      "model": "Centauri80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": 82,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MelGeek Hive",
+      "os": [],
+      "price_usd": 399,
+      "price_date": "2026-11-23",
+      "price_url": "https://melgeek.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MelGeek store: Centauri80 product listing (catalog feed, handle centauri-hall-effect-gaming-keyboard)",
+          "url": "https://melgeek.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd",
+            "key_count",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Includes a built-in OLED touchscreen and dedicated arrow keys; 8000 Hz polling. Store product pages returned HTTP 429; specs come from the catalog feed. Hot-swap not stated there."
+    },
+    {
+      "id": "melgeek-made68-pro-plus",
+      "brand": "melgeek",
+      "model": "MADE68 Pro+",
+      "aka": [
+        "MADE68 Pro"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "MelGeek x TTC KOM",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MelGeek Hive",
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://melgeek.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MelGeek store: MADE68 Pro+ product listing (catalog feed, handle made68-pro)",
+          "url": "https://melgeek.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation 0.1 to 4 mm in 40 levels per the store; Rapid Trigger, Snap Tap, 4-in-1 DKS; sale price 109 on 2026-11-23. Store product pages returned HTTP 429; specs come from the catalog feed. Hot-swap not stated there."
+    },
+    {
+      "id": "melgeek-made68-ultra-plus",
+      "brand": "melgeek",
+      "model": "MADE68 Ultra+",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MelGeek Hive",
+      "os": [],
+      "price_usd": 169,
+      "price_date": "2026-11-23",
+      "price_url": "https://melgeek.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MelGeek store: MADE68 Ultra+ product listing (catalog feed, handle made68-ultra-aluminum-case-magnetic-keyboard)",
+          "url": "https://melgeek.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd",
+            "polling_rate_hz"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full aluminum alloy case with forged carbon fiber side panels, 16K scan rate, 0.125 ms theoretical latency; sale price 139 on 2026-11-23. Store product pages returned HTTP 429; specs come from the catalog feed. Hot-swap not stated there."
+    },
+    {
+      "id": "melgeek-made68-ultra-v2",
+      "brand": "melgeek",
+      "model": "MADE68 Ultra V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "MelGeek x TTC KOM Lite",
+          "id": null
+        },
+        {
+          "name": "MelGeek x TTC Flip King",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MelGeek Hive",
+      "os": [],
+      "price_usd": 219,
+      "price_date": "2026-11-23",
+      "price_url": "https://melgeek.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "Digital Trends",
+          "url": "https://www.digitaltrends.com/computing/melgeek-made68-ultra-v2-review/",
+          "date": "2026-08-16",
+          "score": null,
+          "verdict": "Pricey, yes, but excellent for gaming, typing and everything in between (Editors' Choice)."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MelGeek store: MADE68 Ultra V2 product listing (catalog feed, handle made68-ultra-v2-gaming-keyboard)",
+          "url": "https://melgeek.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Digital Trends: MelGeek MADE68 Ultra V2 review",
+          "url": "https://www.digitaltrends.com/computing/melgeek-made68-ultra-v2-review/",
+          "kind": "review",
+          "backs": [
+            "key_count",
+            "hot_swap",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "mount",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Review: 68 keys, wired USB-C, actuation 0.1 to 3.4 mm, CNC aluminum case, silicone-dampened gasket; replacement switches must be Hall effect. Store lists 189 (KOM Lite, sale) to 239 (Flip King); 219 is the regular price of the KOM Lite version."
+    },
+    {
+      "id": "melgeek-real67",
+      "brand": "melgeek",
+      "model": "REAL67",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "TTC Sacred Heart KOM",
+          "id": null
+        },
+        {
+          "name": "TTC Tai-E",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MelGeek Hive",
+      "os": [],
+      "price_usd": 119,
+      "price_date": "2026-11-23",
+      "price_url": "https://melgeek.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MelGeek store: REAL67 product listing (catalog feed, handle real67-hall-effect-magnetic-gaming-keyboard)",
+          "url": "https://melgeek.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Plastic or aluminum side panels depending on colour; store page body text was not available in the catalog feed. Store product pages returned HTTP 429; specs come from the catalog feed. Hot-swap not stated there."
+    },
+    {
+      "id": "melgeek-real81",
+      "brand": "melgeek",
+      "model": "REAL81",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Honey",
+          "id": null
+        },
+        {
+          "name": "Jellyfish Magnetic",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "MelGeek Hive",
+      "os": [],
+      "price_usd": 139,
+      "price_date": "2026-11-23",
+      "price_url": "https://melgeek.com/products.json?limit=250",
+      "official_url": null,
+      "reviews": [],
+      "sources": [
+        {
+          "title": "MelGeek store: REAL81 product listing (catalog feed, handle melgeek-real81-gaming-keyboard)",
+          "url": "https://melgeek.com/products.json?limit=250",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Gasket mount with five-layer sound dampening, 0.01 RT accuracy, 0.125 ms theoretical latency; sale price 119 on 2026-11-23; key count taken from the model name. Store product pages returned HTTP 429; specs come from the catalog feed. Hot-swap not stated there."
+    }
+  ]
+}

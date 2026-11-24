@@ -1,0 +1,825 @@
+{
+  "brand": {
+    "id": "qwertykeys",
+    "name": "Qwertykeys",
+    "country": null,
+    "founded": null,
+    "official_url": "https://qwertykeys.com/",
+    "focus": [
+      "enthusiast",
+      "premium"
+    ],
+    "about": "Keyboard brand that sells the QK and Neo lines of aluminum custom keyboards, as barebones kits (case, PCB and plate chosen separately) and as prebuilts. Its store also carries boards by Owlab and its Ticktype sub-brand.",
+    "sources": [
+      {
+        "title": "Qwertykeys: store",
+        "url": "https://qwertykeys.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "qwertykeys-hex80-he",
+      "brand": "qwertykeys",
+      "model": "HEX80 HE",
+      "aka": [
+        "QK&ATK HEX80 HE"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Ti HE Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 189,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/qk-atk-hex80-he-magnetic-gaming-keyboard",
+      "official_url": "https://qwertykeys.com/products/qk-atk-hex80-he-magnetic-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: HEX80 HE product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/qk-atk-hex80-he-magnetic-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "switches",
+            "adjustable_actuation",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hall Effect gaming board made with ATK; the page describes adjustable trigger points and analog input for its Ti HE switches. Marked final stock but in stock when read. Connectivity, polling rate, case and mount not stated in the data read; size taken from the name."
+    },
+    {
+      "id": "qwertykeys-neo65-cu",
+      "brand": "qwertykeys",
+      "model": "Neo65 Cu",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum with brass or copper bottom",
+      "mount": "gasket or top",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://qwertykeys.com/products/neo65-cu-custom-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: Neo65 Cu product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/neo65-cu-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "case_material",
+            "mount",
+            "firmware",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit with brass or copper bottom case; offered with tri-mode hotswap, wired hotswap or solder PCBs (all VIA) and carbon fiber, aluminum, PC or PP plates. Case and PCB are priced as separate add-ons, so no barebones price is entered; 8-degree typing angle."
+    },
+    {
+      "id": "qwertykeys-neo75",
+      "brand": "qwertykeys",
+      "model": "Neo75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "London Fog V2",
+          "id": "owlab-london-fog-v2"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 169,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard",
+      "official_url": "https://qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: Neo75 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "case_material",
+            "mount",
+            "os",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt with London Fog V2 switches rated 50 million keystrokes, multi-layer foam, RGB and double-shot keycaps; the page offers Neo75 and Neo98 (with number pad) on one listing. Hot-swap and firmware are not stated."
+    },
+    {
+      "id": "qwertykeys-neo75-cu",
+      "brand": "qwertykeys",
+      "model": "Neo75 Cu",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 2200,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum with brass or copper bottom",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://qwertykeys.com/products/neo75cu",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: Neo75 Cu product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/neo75cu",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "case_material",
+            "firmware",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit marked final stock; tri-mode PCBs ship with two 2200 mAh batteries and all PCBs are VIA compatible. Case, PCB and plate are priced separately, so no barebones price is entered; mount not stated in the data read."
+    },
+    {
+      "id": "qwertykeys-neo80-cu",
+      "brand": "qwertykeys",
+      "model": "Neo80 Cu",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum with brass or copper bottom",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://qwertykeys.com/products/neo80-cu-custom-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: Neo80 Cu product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/neo80-cu-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "case_material",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones kit marked final stock; case, PCB and plate are priced separately, so no barebones price is entered. Layout and Neo-series features beyond the name are not stated in the data read."
+    },
+    {
+      "id": "qwertykeys-neo98",
+      "brand": "qwertykeys",
+      "model": "Neo98",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "London Fog V2",
+          "id": "owlab-london-fog-v2"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [
+        "windows",
+        "mac"
+      ],
+      "price_usd": 179,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard",
+      "official_url": "https://qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: Neo98 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "switches",
+            "case_material",
+            "mount",
+            "os",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt with London Fog V2 switches rated 50 million keystrokes, multi-layer foam, RGB and double-shot keycaps; the page offers Neo75 and Neo98 (with number pad) on one listing. Hot-swap and firmware are not stated."
+    },
+    {
+      "id": "qwertykeys-pt750",
+      "brand": "qwertykeys",
+      "model": "PT750",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "leaf-spring gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 424,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/pt750-custom-mechanical-keyboard",
+      "official_url": "https://qwertykeys.com/products/pt750-custom-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: PT750 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/pt750-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "mount",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Barebones 75% designed by Percent Studio and made by Owlab; all PCBs are wired only. The only variant listed is the Korea Special Edition at $424; PCB and plate are chosen as add-ons. Typing angle 6.2 degrees."
+    },
+    {
+      "id": "qwertykeys-qk100-mk2",
+      "brand": "qwertykeys",
+      "model": "QK100 Mk2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "other",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 219,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/qk100mk2",
+      "official_url": "https://qwertykeys.com/products/qk100mk2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: QK100 Mk2 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/qk100mk2",
+          "kind": "official",
+          "backs": [
+            "connectivity",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt tri-mode keyboard in four colors; the data read gives no further specifications, so layout, hot-swap, case and mount are left unknown."
+    },
+    {
+      "id": "qwertykeys-qk101",
+      "brand": "qwertykeys",
+      "model": "QK101",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "barebones",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket top",
+      "firmware": [
+        "via"
+      ],
+      "software": "QK custom VIA web configurator",
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://qwertykeys.com/products/qk101-custom-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: QK101 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/qk101-custom-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "battery_mah",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size barebones kit with a screen and a dot-matrix LED; case listed at $165, PCB ($55 listed separately) and plate chosen as add-ons, so no single barebones price is entered. Dual 4000 mAh batteries; plates for plate-mount stabilizers support ANSI with a 6.25u spacebar only."
+    },
+    {
+      "id": "qwertykeys-qk60-he",
+      "brand": "qwertykeys",
+      "model": "QK60 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "leaf-spring gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 159,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/qk60he",
+      "official_url": "https://qwertykeys.com/products/qk60he",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: QK60 HE product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/qk60he",
+          "kind": "official",
+          "backs": [
+            "size",
+            "polling_rate_hz",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "price_usd",
+            "kind",
+            "connectivity",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt 60% Hall Effect gaming board, wired USB-C, with adjustable Rapid Trigger and an Owlab leaf-spring gasket mount. Switch name and software not stated in the data read; ANSI not stated."
+    },
+    {
+      "id": "qwertykeys-qk65-mk3",
+      "brand": "qwertykeys",
+      "model": "QK65 Mk3",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 234,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/qk65-mk3-prebuilt-mechanical-keyboard",
+      "official_url": "https://qwertykeys.com/products/qk65-mk3-prebuilt-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: QK65 Mk3 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/qk65-mk3-prebuilt-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt version sold in several colorways; the data read gives no specifications beyond the name, so connectivity, hot-swap, case and mount are left unknown. Size taken from the name."
+    },
+    {
+      "id": "qwertykeys-qk80-mk2",
+      "brand": "qwertykeys",
+      "model": "QK80 Mk2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 4000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "leaf-spring gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": "QK custom VIA web configurator",
+      "os": [],
+      "price_usd": 249,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/qk80-mk2-prebuilt-mechanical-keyboard",
+      "official_url": "https://qwertykeys.com/products/qk80-mk2-prebuilt-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: QK80 Mk2 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/qk80-mk2-prebuilt-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "mount",
+            "firmware",
+            "software",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Prebuilt version at $249 regular (on sale at $199.20); a custom barebones version (case $124 and up, PCB and plate sold as add-ons) is also listed. Two 4000 mAh batteries ship with units from the custom sale page; it has a screen, a dot-matrix LED and six leaf springs. Size taken from the model name (80), tri-mode and VIA data are from the custom page."
+    },
+    {
+      "id": "qwertykeys-ticktype-naja68",
+      "brand": "qwertykeys",
+      "model": "Ticktype NAJA68",
+      "aka": [
+        "NAJA68"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Ticktype magnetic Hall Effect",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": "tray",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "Web driver (no install)",
+      "os": [
+        "windows"
+      ],
+      "price_usd": 179,
+      "price_date": "2026-11-23",
+      "price_url": "https://qwertykeys.com/products/ticktype-naja68",
+      "official_url": "https://qwertykeys.com/products/ticktype-naja68",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Qwertykeys store: Ticktype NAJA68 product data (store product feed and search API; product page itself blocked fetching)",
+          "url": "https://qwertykeys.com/products/ticktype-naja68",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "layout_standards",
+            "polling_rate_hz",
+            "switches",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "mount",
+            "firmware",
+            "software",
+            "os",
+            "price_usd",
+            "kind",
+            "connectivity",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired USB-C Hall Effect 65% sold by Qwertykeys under its Ticktype label; per-key actuation and Rapid Trigger (0.005 mm resolution) are set in a web driver. Aluminum plate, about 1290 g; the page lists Windows compatibility only. Hot-swap not stated: the magnetic value follows the switch type."
+    }
+  ]
+}

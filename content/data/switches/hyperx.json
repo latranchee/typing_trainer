@@ -1,0 +1,158 @@
+{
+  "maker": {
+    "id": "hyperx",
+    "name": "HyperX",
+    "role": "brand",
+    "country": null,
+    "founded": null,
+    "official_url": "https://hyperx.com/",
+    "about": "Gaming peripherals brand whose Alloy Origins keyboards use its own HyperX Red and Aqua switches. The sources read do not name the factory.",
+    "sources": [
+      {
+        "title": "HyperX Support: Alloy Origins 65 Specifications",
+        "url": "https://supportcenter.hyperx.com/articles/alloy-origins-65/hyperx-alloy-origins-65-specifications/695c59e63766c437b1928012",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "switches": [
+    {
+      "id": "hyperx-aqua",
+      "name": "HyperX Aqua",
+      "maker": "hyperx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "tactile",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "PCPer",
+          "url": "https://pcper.com/2020/03/hyperx-alloy-origins-aqua-keyboard-review/",
+          "date": "2020-03-10",
+          "score": null,
+          "verdict": "Reviewed on the Alloy Origins; the author prefers the Aqua, a quiet tactile bump slightly firmer than the Red."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX Support: Alloy Origins 65 Specifications",
+          "url": "https://supportcenter.hyperx.com/articles/alloy-origins-65/hyperx-alloy-origins-65-specifications/695c59e63766c437b1928012",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PCPer: HyperX Alloy Origins Aqua Keyboard Review",
+          "url": "https://pcper.com/2020/03/hyperx-alloy-origins-aqua-keyboard-review/",
+          "kind": "review",
+          "backs": [
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "HyperX lists Red and Aqua together with shared figures. PCPer says Aqua adds a tactile bump but its spec sheet labelled Aqua as linear; HyperX labels it tactile."
+    },
+    {
+      "id": "hyperx-red",
+      "name": "HyperX Red",
+      "maker": "hyperx",
+      "made_by": null,
+      "family": null,
+      "aka": [],
+      "type": "linear",
+      "sensing": "contact",
+      "footprint": "mx",
+      "keycap_mount": "mx",
+      "profile": "standard",
+      "pins": null,
+      "actuation_force_gf": 45,
+      "bottom_out_force_gf": null,
+      "tactile_force_gf": null,
+      "pre_travel_mm": 1.8,
+      "total_travel_mm": 3.8,
+      "actuation_range_mm": null,
+      "materials": {
+        "top": null,
+        "bottom": null,
+        "stem": null
+      },
+      "spring": null,
+      "factory_lubed": null,
+      "light_pipe": null,
+      "rated_lifespan_million": 80,
+      "released": null,
+      "status": "current",
+      "official_url": null,
+      "reviews": [
+        {
+          "outlet": "PCPer",
+          "url": "https://pcper.com/2020/03/hyperx-alloy-origins-aqua-keyboard-review/",
+          "date": "2020-03-10",
+          "score": null,
+          "verdict": "Reviewed on the Alloy Origins; the author prefers the Aqua, a quiet tactile bump slightly firmer than the Red."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX Support: Alloy Origins Specifications",
+          "url": "https://supportcenter.hyperx.com/articles/alloy-origins/hyperx-alloy-origins-specifications/68d6c9a17579af534d6cc7ab",
+          "kind": "official",
+          "backs": [
+            "type",
+            "actuation_force_gf",
+            "pre_travel_mm",
+            "total_travel_mm",
+            "rated_lifespan_million"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "PCPer: HyperX Alloy Origins Aqua Keyboard Review",
+          "url": "https://pcper.com/2020/03/hyperx-alloy-origins-aqua-keyboard-review/",
+          "kind": "review",
+          "backs": [
+            "type",
+            "notes"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "HyperX gives 1.8mm as the actuation point. Soldered into Alloy Origins boards, which HyperX says are not hot-swappable."
+    }
+  ]
+}

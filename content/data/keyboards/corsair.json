@@ -61,7 +61,7 @@
       "switches": [
         {
           "name": "CORSAIR MGX Hyperdrive Core",
-          "id": null
+          "id": "corsair-mgx-hyperdrive-core"
         }
       ],
       "adjustable_actuation": true,
@@ -129,7 +129,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": null,
       "switches": [],
       "adjustable_actuation": false,
       "rapid_trigger": false,
@@ -192,7 +192,7 @@
       "switches": [
         {
           "name": "CORSAIR MLX Pulse",
-          "id": null
+          "id": "corsair-mlx-pulse"
         }
       ],
       "adjustable_actuation": false,
@@ -289,7 +289,7 @@
       "switches": [
         {
           "name": "CHERRY MX Ultra Low Profile Tactile",
-          "id": null
+          "id": "cherry-mx-ulp-tactile"
         }
       ],
       "adjustable_actuation": false,
@@ -358,7 +358,7 @@
       "switches": [
         {
           "name": "CORSAIR OPX",
-          "id": null
+          "id": "corsair-opx"
         },
         {
           "name": "Cherry MX Speed",
@@ -438,11 +438,11 @@
       "battery_mah": null,
       "polling_rate_hz": 1000,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": null,
       "switches": [
         {
           "name": "CORSAIR MLX Red",
-          "id": null
+          "id": "corsair-mlx-red"
         }
       ],
       "adjustable_actuation": false,
@@ -526,7 +526,7 @@
       "switches": [
         {
           "name": "CORSAIR OPX",
-          "id": null
+          "id": "corsair-opx"
         }
       ],
       "adjustable_actuation": false,
@@ -606,7 +606,7 @@
       "switches": [
         {
           "name": "CORSAIR MLX Red",
-          "id": null
+          "id": "corsair-mlx-red"
         }
       ],
       "adjustable_actuation": false,
@@ -773,7 +773,7 @@
       "switches": [
         {
           "name": "CORSAIR MLX Red",
-          "id": null
+          "id": "corsair-mlx-red"
         }
       ],
       "adjustable_actuation": false,
@@ -930,7 +930,7 @@
       "battery_mah": null,
       "polling_rate_hz": null,
       "switch_footprint": "mx",
-      "hot_swap": "3-pin",
+      "hot_swap": null,
       "switches": [
         {
           "name": "CHERRY MX Speed",
@@ -1090,15 +1090,15 @@
         },
         {
           "name": "CORSAIR OPX",
-          "id": null
+          "id": "corsair-opx"
         },
         {
           "name": "Cherry MX RGB Brown",
-          "id": null
+          "id": "cherry-mx2a-brown"
         },
         {
           "name": "Cherry MX RGB Red",
-          "id": null
+          "id": "cherry-mx2a-red"
         }
       ],
       "adjustable_actuation": false,
@@ -1169,7 +1169,7 @@
       "switches": [
         {
           "name": "CORSAIR OPX Optical-Mechanical",
-          "id": null
+          "id": "corsair-opx"
         }
       ],
       "adjustable_actuation": false,
@@ -1336,19 +1336,19 @@
       "switches": [
         {
           "name": "CORSAIR MLX Fusion",
-          "id": null
+          "id": "corsair-mlx-fusion"
         },
         {
           "name": "CORSAIR MLX Quantum",
-          "id": null
+          "id": "corsair-mlx-quantum"
         },
         {
           "name": "CORSAIR MLX Pulse",
-          "id": null
+          "id": "corsair-mlx-pulse"
         },
         {
           "name": "CORSAIR MLX Plasma",
-          "id": null
+          "id": "corsair-mlx-plasma"
         }
       ],
       "adjustable_actuation": false,
@@ -1439,7 +1439,7 @@
       "switches": [
         {
           "name": "CORSAIR MLX Plasma",
-          "id": null
+          "id": "corsair-mlx-plasma"
         }
       ],
       "adjustable_actuation": false,
@@ -1522,7 +1522,7 @@
       "switches": [
         {
           "name": "CORSAIR OPX Low Profile",
-          "id": null
+          "id": "corsair-opx-low-profile"
         }
       ],
       "adjustable_actuation": false,
@@ -1624,7 +1624,7 @@
       "switches": [
         {
           "name": "CORSAIR MGX Hyperdrive",
-          "id": null
+          "id": "corsair-mgx-hyperdrive"
         }
       ],
       "adjustable_actuation": true,

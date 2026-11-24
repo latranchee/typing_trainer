@@ -24,7 +24,7 @@ const E = {
   split: ['none', 'unibody-angled', 'split'],
   tenting: ['none', 'built-in', 'accessory'],
   connectivity: ['usb', 'bluetooth', '2.4ghz'],
-  hot_swap: ['none', '3-pin', '5-pin', 'choc', 'magnetic', 'optical', 'other'],
+  hot_swap: ['none', 'yes', '3-pin', '5-pin', 'choc', 'magnetic', 'optical', 'other'],
   firmware: ['qmk', 'via', 'vial', 'zmk', 'kmk', 'proprietary'],
   os: ['windows', 'mac', 'linux', 'ios', 'android'],
   focus: ['gaming', 'enthusiast', 'office', 'ergonomic', 'diy', 'premium', 'budget'],
@@ -219,7 +219,7 @@ for (const file of files('keyboards')) {
     numIn(w, 'battery_mah', k.battery_mah ?? null, 50, 20000);
     numIn(w, 'polling_rate_hz', k.polling_rate_hz ?? null, 100, 16000);
     oneOf(w, 'switch_footprint', k.switch_footprint, E.footprint);
-    oneOf(w, 'hot_swap', k.hot_swap, E.hot_swap);
+    oneOf(w, 'hot_swap', k.hot_swap, E.hot_swap, true);
     if (!Array.isArray(k.switches)) err(w, 'switches must be a list');
     else k.switches.forEach((s, j) => {
       if (typeof s?.name !== 'string') return err(w, `switches[${j}] needs a name`);

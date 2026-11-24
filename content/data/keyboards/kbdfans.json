@@ -1,0 +1,649 @@
+{
+  "brand": {
+    "id": "kbdfans",
+    "name": "KBDfans",
+    "country": null,
+    "founded": null,
+    "official_url": "https://kbdfans.com/",
+    "focus": [
+      "enthusiast",
+      "diy"
+    ],
+    "about": "Keyboard shop and designer that sells its own Tofu, Athena, Agar and other custom keyboards as DIY kits and as ready-to-use builds with PBTfans keycaps, next to many third-party boards that this file leaves out.",
+    "sources": [
+      {
+        "title": "KBDfans: store",
+        "url": "https://kbdfans.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "kbdfans-agar",
+      "brand": "kbdfans",
+      "model": "Agar",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum or polycarbonate",
+      "mount": null,
+      "firmware": [
+        "via",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 110,
+      "price_date": "2026-11-23",
+      "price_url": "https://kbdfans.com/products/agar",
+      "official_url": "https://kbdfans.com/products/agar",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Agar product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/agar",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "case_material",
+            "firmware",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "HHKB-style 60% kit in MX or EC switch variants with hotswap, solder or dual-mode PCB options and a copper weight bar; $110 is the regular price of the cheapest option (on sale at $93.50). Mount and ANSI/ISO not stated in the data read."
+    },
+    {
+      "id": "kbdfans-agar-mini",
+      "brand": "kbdfans",
+      "model": "Agar Mini",
+      "aka": [],
+      "status": "current",
+      "released": "2025",
+      "kind": "kit",
+      "size": "40",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": 300,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "qmk",
+        "via",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 74.8,
+      "price_date": "2026-11-23",
+      "price_url": "https://kbdfans.com/products/agar-mini",
+      "official_url": "https://kbdfans.com/products/agar-mini",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Agar Mini product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/agar-mini",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "battery_mah",
+            "case_material",
+            "firmware",
+            "price_usd",
+            "kind",
+            "status",
+            "released"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Compact 40% kit with a 9 degree typing angle; wired version runs QMK (VIA, VIAL, AVA) and the dual-mode Bluetooth version runs ZMK with a 300 mAh battery. Variants take MX or EC (Naevies) switches. Mount not stated in the data read."
+    },
+    {
+      "id": "kbdfans-athena-1800",
+      "brand": "kbdfans",
+      "model": "Athena 1800",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 161,
+      "price_date": "2026-11-23",
+      "price_url": "https://kbdfans.com/products/ready-to-use-athena-1800-anodized-black-with-pbtfans-orbit",
+      "official_url": "https://kbdfans.com/products/athena-1800-configurator",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Athena 1800 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/athena-1800-configurator",
+          "kind": "official",
+          "backs": [
+            "size",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Ready-to-use 95% board with PBTfans keycaps in anodized colors; the data read gives no further specifications, so connectivity, hot-swap, mount and firmware are left unknown. The DIY configurator listing is tagged 95%."
+    },
+    {
+      "id": "kbdfans-athena-75",
+      "brand": "kbdfans",
+      "model": "Athena 75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "top or gasket",
+      "firmware": [
+        "via",
+        "vial"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 159,
+      "price_date": "2026-11-23",
+      "price_url": "https://kbdfans.com/products/athena-75",
+      "official_url": "https://kbdfans.com/products/athena-75",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Athena 75 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/athena-75",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "case_material",
+            "mount",
+            "firmware",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "DIY kit with a screen (up to 5 GIFs) and a CNC 6063 aluminum case; solder, hotswap or RGB hotswap PCB with USB-C, VIA, VIAL and AVA support; 9 degree typing angle. Plate-mount stabilizer plates do not support ISO Enter, split backspace, 7U space or split left shift. Regular price shown; on sale at $143.10. Ready-to-use builds start at $159 regular."
+    },
+    {
+      "id": "kbdfans-gt-80",
+      "brand": "kbdfans",
+      "model": "GT-80",
+      "aka": [
+        "GT-80 8K MX Version"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "TOFIX configurator",
+      "os": [],
+      "price_usd": 174,
+      "price_date": "2026-11-23",
+      "price_url": "https://kbdfans.com/products/gt-80-kit-with-hotswap-pcb",
+      "official_url": "https://kbdfans.com/products/gt-80-kit-with-hotswap-pcb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: GT-80 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/gt-80-kit-with-hotswap-pcb",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "firmware",
+            "software",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hotswap PCB kit with a ball-catch structure, silicone bumpers and a through brass weight bar; the title says 8K, the price is the regular price, on sale at $139.20 when read. Layout and mount not stated beyond the 80% tag."
+    },
+    {
+      "id": "kbdfans-holy80",
+      "brand": "kbdfans",
+      "model": "Holy80",
+      "aka": [
+        "Holy80 8K MX Version"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "via"
+      ],
+      "software": "TOFIX configurator",
+      "os": [],
+      "price_usd": 215,
+      "price_date": "2026-11-23",
+      "price_url": "https://kbdfans.com/products/holy80-kit-with-hotswap-pcb",
+      "official_url": "https://kbdfans.com/products/holy80-kit-with-hotswap-pcb",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Holy80 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/holy80-kit-with-hotswap-pcb",
+          "kind": "official",
+          "backs": [
+            "size",
+            "layout_standards",
+            "connectivity",
+            "polling_rate_hz",
+            "case_material",
+            "firmware",
+            "software",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Hotswap PCB kit (1.6 mm FR4, 8 kHz polling) with aluminum top and bottom case and a choice of polycarbonate, aluminum or carbon fiber plate; ANSI plates are listed. The price is the regular price, on sale at $172 when read."
+    },
+    {
+      "id": "kbdfans-tofu-tkl-r2",
+      "brand": "kbdfans",
+      "model": "Tofu TKL R2",
+      "aka": [
+        "TOFU TKL R2"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "top or gasket",
+      "firmware": [
+        "via",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://kbdfans.com/products/tofu-tkl-r2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Tofu TKL R2 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/tofu-tkl-r2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "case_material",
+            "mount",
+            "firmware",
+            "connectivity",
+            "kind",
+            "status",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Group-buy kit (July 15 to August 15, 2026, estimated shipping Q4 2026) in WK or WKL layouts with solder, wired hotswap, dual-mode or Hall Effect PCBs; case aluminum, stainless steel or copper options. Listing starts at $59 for the case, so no kit price is entered."
+    },
+    {
+      "id": "kbdfans-tofu60-3-0",
+      "brand": "kbdfans",
+      "model": "Tofu60 3.0",
+      "aka": [
+        "TOFU60 3.0 Kit"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "top or gasket",
+      "firmware": [
+        "via",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://kbdfans.com/products/tofu60-3-0",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Tofu60 3.0 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/tofu60-3-0",
+          "kind": "official",
+          "backs": [
+            "size",
+            "case_material",
+            "mount",
+            "firmware",
+            "connectivity",
+            "kind",
+            "status",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "DIY kit in WK, WKL or HHKB layouts with solder, wired hotswap, dual-mode (Bluetooth, ZMK) or Hall Effect PCB options; 9 degree typing angle. The listing starts at $47.69 for the configurator base, so no kit price is entered. Hotswap pin type and ANSI/ISO not stated."
+    },
+    {
+      "id": "kbdfans-tofu60-redux-v2",
+      "brand": "kbdfans",
+      "model": "Tofu60 Redux V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "other",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "via",
+        "proprietary"
+      ],
+      "software": "TOFIX configurator",
+      "os": [],
+      "price_usd": 213,
+      "price_date": "2026-11-23",
+      "price_url": "https://kbdfans.com/products/ready-to-use-tofu-redux-v2-he-magnetic-gaming-keyboard-with-pbtfans-flash",
+      "official_url": "https://kbdfans.com/products/tofu60-redux-v2-fully-assembled",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Tofu60 Redux V2 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/tofu60-redux-v2-fully-assembled",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "firmware",
+            "software",
+            "price_usd",
+            "kind",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Assembled to order with a choice of Hall Effect magnetic PCB (8,000 Hz, 0.01 mm Rapid Trigger, TOFIX configuration) or MX hotswap PCB (VIA, RGB); the HE-only values apply to the HE version. 7 degree typing angle. $213 is the regular price of the cheapest ready-to-use listing with PBTfans keycaps (on sale at $159); the configurator listing is $226 regular."
+    },
+    {
+      "id": "kbdfans-tofu65-3-0",
+      "brand": "kbdfans",
+      "model": "Tofu65 3.0",
+      "aka": [
+        "TOFU65 3.0 Kit"
+      ],
+      "status": "current",
+      "released": null,
+      "kind": "kit",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "top or gasket",
+      "firmware": [
+        "via",
+        "vial",
+        "zmk"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": null,
+      "price_date": null,
+      "price_url": null,
+      "official_url": "https://kbdfans.com/products/tofu65-3-0",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "KBDfans store: Tofu65 3.0 product data (store product feed; product page itself blocked fetching)",
+          "url": "https://kbdfans.com/products/tofu65-3-0",
+          "kind": "official",
+          "backs": [
+            "size",
+            "case_material",
+            "mount",
+            "firmware",
+            "connectivity",
+            "kind",
+            "status",
+            "hot_swap"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "DIY kit with solder, wired hotswap or dual-mode (Bluetooth, ZMK, no 2.4 GHz) PCBs; bottom case in aluminum, copper or stainless steel; 9 degree typing angle. The listing starts at $50.49 for the configurator base, so no kit price is entered."
+    }
+  ]
+}

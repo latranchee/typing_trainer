@@ -1,0 +1,1165 @@
+{
+  "brand": {
+    "id": "hyperx",
+    "name": "HyperX",
+    "country": null,
+    "founded": null,
+    "official_url": "https://hyperx.com/",
+    "focus": [
+      "gaming"
+    ],
+    "about": "Gaming peripherals brand whose keyboards use in-house HyperX Red and Aqua switches (and magnetic switches on the Origins 2 Pro 65).",
+    "sources": [
+      {
+        "title": "HyperX US store catalog (products.json)",
+        "url": "https://hyperx.com/products.json",
+        "kind": "official",
+        "backs": [
+          "status",
+          "price_usd"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "hyperx-alloy-core-rgb",
+      "brand": "hyperx",
+      "model": "Alloy Core RGB",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Membrane",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 54.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-core-rgb-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "RTINGS",
+          "url": "https://www.rtings.com/keyboard/reviews/hyperx/alloy-core-rgb",
+          "date": null,
+          "score": null,
+          "verdict": "Rated a poor gaming keyboard: rubber dome keys have high pre-travel and there are no programmable keys or software, though the lighting suits dark rooms."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Core RGB",
+          "url": "https://hyperx.com/products/hyperx-alloy-core-rgb-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Core RGB",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size membrane keyboard with a light bar; the store lists a 54.99 regular price against a 39.99 current price. Wired only, no NGENUITY support listed."
+    },
+    {
+      "id": "hyperx-alloy-elite-2",
+      "brand": "hyperx",
+      "model": "Alloy Elite 2",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "steel",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-elite-2-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Elite 2",
+          "url": "https://hyperx.com/products/hyperx-alloy-elite-2-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Elite 2",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size mechanical board with media keys, volume wheel and USB pass-through. The store page shows it sold out."
+    },
+    {
+      "id": "hyperx-alloy-origins",
+      "brand": "hyperx",
+      "model": "Alloy Origins",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        },
+        {
+          "name": "HX Aqua",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 124.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-origins-mechanical-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/hyperx-alloy-origins-mechanical-gaming-keyboard,6373.html",
+          "date": "2020-10-05",
+          "score": "4.5/5",
+          "verdict": "Strong full-size board with a solid aluminum shell and well-tuned in-house linear switches at a fair price."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://rtings.com/keyboard/reviews/hyperx/alloy-origins",
+          "date": null,
+          "score": null,
+          "verdict": "Exceptionally well built full-size gaming board with short-pre-travel linear switches; no dedicated macro keys."
+        },
+        {
+          "outlet": "Tom's Guide",
+          "url": "https://tomsguide.com/reviews/hyperx-alloy-origins",
+          "date": "2019-11-04",
+          "score": "4/5",
+          "verdict": "Packs a lot for the price but lacks discrete media keys."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Origins",
+          "url": "https://hyperx.com/products/hyperx-alloy-origins-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Origins",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size aluminum-body board with detachable USB-C cable and 3 onboard profiles. The store page shows both switch options sold out."
+    },
+    {
+      "id": "hyperx-alloy-origins-60",
+      "brand": "hyperx",
+      "model": "Alloy Origins 60",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        },
+        {
+          "name": "HyperX Aqua",
+          "id": "hyperx-aqua"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-origins-60-mechanical-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://tomshardware.com/reviews/hyperx-alloy-origins-60-review-big-wins-small-keyboard",
+          "date": "2021-02-22",
+          "score": "4/5",
+          "verdict": "Premium build, responsive switches and attractive RGB in a 60% gaming board."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://www.techradar.com/reviews/hyperx-alloy-origins-60",
+          "date": "2021-07-01",
+          "score": "4/5",
+          "verdict": "Compact gaming keyboard at an affordable price."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://rtings.com/keyboard/reviews/hyperx/alloy-origins-60",
+          "date": null,
+          "score": null,
+          "verdict": "Feels very well built thanks to the aluminum body and uses HyperX Red linear switches in a 60% layout."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Origins 60",
+          "url": "https://hyperx.com/products/hyperx-alloy-origins-60-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Origins 60",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "60% board with aluminum body; regular prices on the store are 114.99 (Red) and 99.99 (Aqua), currently sold at 49.99."
+    },
+    {
+      "id": "hyperx-alloy-origins-65",
+      "brand": "hyperx",
+      "model": "Alloy Origins 65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        },
+        {
+          "name": "HyperX Aqua",
+          "id": "hyperx-aqua"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-origins-65",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/reviews/hyperx-alloy-origins-65",
+          "date": "2022-06-30",
+          "score": "4/5",
+          "verdict": "Feels good to type on and is solidly built; the numpad is the only thing missing."
+        },
+        {
+          "outlet": "GamesRadar",
+          "url": "https://www.gamesradar.com/hyperx-alloy-origins-65-review",
+          "date": "2022-06-08",
+          "score": "4.5/5",
+          "verdict": "Good form factor with fast response; a couple of macro presets are missing."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://rtings.com/keyboard/reviews/hyperx/alloy-origins-65",
+          "date": null,
+          "score": null,
+          "verdict": "65% gaming board with dedicated arrow keys and some navigation keys that the Origins 60 lacks."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Origins 65",
+          "url": "https://hyperx.com/products/hyperx-alloy-origins-65",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Origins 65",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "65% board with arrow keys and aluminum body; regular prices on the store are 114.99 (Red) and 99.99 (Aqua), currently sold at 49.99."
+    },
+    {
+      "id": "hyperx-alloy-origins-core",
+      "brand": "hyperx",
+      "model": "Alloy Origins Core",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "tkl",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        },
+        {
+          "name": "HX Aqua",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 104.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-origins-core-mechanical-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "TechPowerUp",
+          "url": "https://techpowerup.com/review/hyperx-alloy-origins-core-keyboard",
+          "date": "2021-04-20",
+          "score": "5/5",
+          "verdict": "Tested for its Aqua tactile switches; praised as a well-built TKL with a restrained look."
+        },
+        {
+          "outlet": "Switch and Click",
+          "url": "https://switchandclick.com/hyperx-alloy-origins-core-review",
+          "date": "2020-01-24",
+          "score": null,
+          "verdict": "Excellent build quality and good in-house switches in a tenkeyless aluminum board."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Origins Core",
+          "url": "https://hyperx.com/products/hyperx-alloy-origins-core-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Origins Core",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Tenkeyless version of the Alloy Origins with 3 onboard profiles; the store lists a 104.99 regular price against a 69.99 current price."
+    },
+    {
+      "id": "hyperx-alloy-origins-pbt",
+      "brand": "hyperx",
+      "model": "Alloy Origins PBT",
+      "aka": [],
+      "status": "discontinued",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 129.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-origins-pbt-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Origins PBT",
+          "url": "https://hyperx.com/products/hyperx-alloy-origins-pbt-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Origins PBT",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Alloy Origins with pre-installed side-printed PBT keycaps and a 1000 Hz polling rate. The store page shows it sold out."
+    },
+    {
+      "id": "hyperx-alloy-rise",
+      "brand": "hyperx",
+      "model": "Alloy Rise",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "full",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum top, plastic bottom",
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 199.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-rise-mechanical-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://tomshardware.com/peripherals/mechanical-keyboards/hyperx-alloy-rise-mechanical-gaming-keyboard-review",
+          "date": "2024-04-20",
+          "score": "3.5/5",
+          "verdict": "Hot-swap, magnetic cases and a good typing feel, but the 200 dollar price is hard to justify."
+        },
+        {
+          "outlet": "TechRadar",
+          "url": "https://techradar.com/computing/keyboards/hyperx-alloy-rise-review-a-lightning-performance-keyboard-with-weak-software",
+          "date": "2024-08-01",
+          "score": "3/5",
+          "verdict": "Fast keys and good performance held back by weak software."
+        },
+        {
+          "outlet": "RTINGS",
+          "url": "https://rtings.com/keyboard/reviews/hyperx/alloy-rise",
+          "date": null,
+          "score": null,
+          "verdict": "Wired full-size board with HyperX Red linear switches and impressive latency."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Rise",
+          "url": "https://hyperx.com/products/hyperx-alloy-rise-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Rise",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Full-size gasket-mounted board with hot-swap sockets (pin count not stated), magnetic top plates and 10 onboard profiles; regular price 199.99, currently sold at 99.99."
+    },
+    {
+      "id": "hyperx-alloy-rise-75",
+      "brand": "hyperx",
+      "model": "Alloy Rise 75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "yes",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "gasket",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 169.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-alloy-rise-75-mechanical-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "HyperX US store: Alloy Rise 75",
+          "url": "https://hyperx.com/products/hyperx-alloy-rise-75-mechanical-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Alloy Rise 75",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Wired 75% gasket-mounted board with hot-swap sockets (pin count not stated) and magnetic top plates; regular price 169.99, currently sold at 84.99."
+    },
+    {
+      "id": "hyperx-eve-1800",
+      "brand": "hyperx",
+      "model": "Eve 1800",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "other",
+      "hot_swap": "none",
+      "switches": [
+        {
+          "name": "Membrane",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": null,
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 49.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-eve-1800-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "HyperX US store: Eve 1800",
+          "url": "https://hyperx.com/products/hyperx-eve-1800-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Eve 1800",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Budget membrane keyboard in an 1800 layout with 10-zone RGB and 12-key rollover; regular price 49.99, currently sold at 39.99."
+    },
+    {
+      "id": "hyperx-origins-2-1800",
+      "brand": "hyperx",
+      "model": "Origins 2 1800",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "96",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "o-ring",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-origins-2-1800-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "HyperX US store: Origins 2 1800",
+          "url": "https://hyperx.com/products/hyperx-origins-2-1800-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Origins 2 1800",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "1800-layout hot-swap board with swappable housing; regular price 139.99, currently sold at 89.99."
+    },
+    {
+      "id": "hyperx-origins-2-65",
+      "brand": "hyperx",
+      "model": "Origins 2 65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "5-pin",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": null,
+      "mount": "o-ring",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 119.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-origins-2-65-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/hyperx-origins-2-65-review",
+          "date": "2026-03-11",
+          "score": "4/5",
+          "verdict": "Superb for gaming but typing is subpar, and the o-ring mount feels like an ordinary dampened tray mount."
+        },
+        {
+          "outlet": "The AU Review",
+          "url": "https://www.theaureview.com/technology/hyperx-origins-2-65-review/",
+          "date": "2026-06-25",
+          "score": null,
+          "verdict": "Solid value for casual gamers; light and compact but louder than expected."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Origins 2 65",
+          "url": "https://hyperx.com/products/hyperx-origins-2-65-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Origins 2 65",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "65% hot-swap board with swappable housing and 1.8 mm actuation Red switches; regular price 119.99, currently sold at 79.99."
+    },
+    {
+      "id": "hyperx-origins-2-pro-65",
+      "brand": "hyperx",
+      "model": "Origins 2 Pro 65",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "other",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "HyperX Red",
+          "id": "hyperx-red"
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": "o-ring",
+      "firmware": [
+        "proprietary"
+      ],
+      "software": "HyperX NGENUITY",
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://hyperx.com/products.json",
+      "official_url": "https://hyperx.com/products/hyperx-origins-2-pro-65-gaming-keyboard",
+      "reviews": [
+        {
+          "outlet": "CGMagazine",
+          "url": "https://www.cgmagonline.com/review/hardware/hyperx-origins-2-pro-65/",
+          "date": "2026-07-31",
+          "score": null,
+          "verdict": "Positioned to compete with premium gaming keyboards, with analog magnetic switches and a customizable housing."
+        }
+      ],
+      "sources": [
+        {
+          "title": "HyperX US store: Origins 2 Pro 65",
+          "url": "https://hyperx.com/products/hyperx-origins-2-pro-65-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "official_url",
+            "status"
+          ],
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "HyperX US store catalog (products.json): Origins 2 Pro 65",
+          "url": "https://hyperx.com/products.json",
+          "kind": "official",
+          "backs": [
+            "price_usd",
+            "switches",
+            "size",
+            "polling_rate_hz",
+            "hot_swap",
+            "mount",
+            "connectivity",
+            "software"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Magnetic linear switches with adjustable actuation and Rapid Trigger, swappable housing; regular price 149.99, currently sold at 79.99."
+    }
+  ]
+}

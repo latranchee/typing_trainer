@@ -1,0 +1,483 @@
+{
+  "brand": {
+    "id": "womier",
+    "name": "Womier",
+    "country": "CN",
+    "founded": null,
+    "official_url": "https://womierkeyboard.com/",
+    "focus": [
+      "budget",
+      "enthusiast",
+      "gaming"
+    ],
+    "about": "Womier sells budget aluminum, wooden and plastic wireless keyboards plus TMR and Hall effect gaming boards, keycaps and mice through its own web store, Amazon, Newegg and Best Buy.",
+    "sources": [
+      {
+        "title": "Womier: store",
+        "url": "https://womierkeyboard.com/",
+        "kind": "official",
+        "backs": [
+          "about"
+        ],
+        "checked": "2026-11-23"
+      }
+    ]
+  },
+  "keyboards": [
+    {
+      "id": "womier-k75-tmr",
+      "brand": "womier",
+      "model": "K75 TMR",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 6000,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 134.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://womierkeyboard.com/products/womier-k75-tmr-wireless-magnetic-gaming-keyboard",
+      "official_url": "https://womierkeyboard.com/products/womier-k75-tmr-wireless-magnetic-gaming-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Womier: Womier K75 TMR 75% Wireless Magnetic Gaming Keyboard",
+          "url": "https://womierkeyboard.com/products/womier-k75-tmr-wireless-magnetic-gaming-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "battery_mah",
+            "hot_swap",
+            "adjustable_actuation"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Uses TMR sensing and takes both magnetic and mechanical switches (6000 mAh as 2 x 3000 mAh). Rapid trigger is not stated on the page."
+    },
+    {
+      "id": "womier-l80",
+      "brand": "womier",
+      "model": "L80",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 1000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Womier Full POM Grey Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "plastic",
+      "mount": "gasket",
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 99.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://womierkeyboard.com/products/womier-l80-75-wireless-mechanical-keyboard",
+      "official_url": "https://womierkeyboard.com/products/womier-l80-75-wireless-mechanical-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Womier: Womier L80 75% Wireless Mechanical Keyboard with TFT Screen & Knob",
+          "url": "https://womierkeyboard.com/products/womier-l80-75-wireless-mechanical-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "battery_mah",
+            "polling_rate_hz",
+            "mount",
+            "case_material",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "1000 Hz polling on 2.4 GHz and wired. Page does not state the hot-swap type. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "womier-m68-he-v2",
+      "brand": "womier",
+      "model": "M68 HE V2",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "65",
+      "key_count": 68,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Outemu custom Hall effect switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 59.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://womierkeyboard.com/products/womier-m68-he-v2",
+      "official_url": "https://womierkeyboard.com/products/womier-m68-he-v2",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Womier: Womier M68 HE V2 65% Themed Hall Effect Wired Gaming Keyboard",
+          "url": "https://womierkeyboard.com/products/womier-m68-he-v2",
+          "kind": "official",
+          "backs": [
+            "size",
+            "key_count",
+            "connectivity",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "switches",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation adjustable from 0.3 to 4 mm in 0.1 mm steps; key count from the model name. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "womier-sk61-he",
+      "brand": "womier",
+      "model": "SK61 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "60",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": null,
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 128.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://womierkeyboard.com/products/womier-sk61-he-wireless-magnetic-keyboard",
+      "official_url": "https://womierkeyboard.com/products/womier-sk61-he-wireless-magnetic-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Womier: Womier SK61 HE 60% Hall Effect Wireless Gaming Keyboard",
+          "url": "https://womierkeyboard.com/products/womier-sk61-he-wireless-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "adjustable_actuation",
+            "price_usd"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Page body gives no specs; size and Hall effect type come from the title. Wireless mode is implied by the title only. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "womier-sk75",
+      "brand": "womier",
+      "model": "SK75",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi",
+        "iso"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": null,
+      "polling_rate_hz": null,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [
+        {
+          "name": "Womier Full POM Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": false,
+      "rapid_trigger": false,
+      "case_material": "aluminum",
+      "mount": "gasket",
+      "firmware": [
+        "via"
+      ],
+      "software": null,
+      "os": [],
+      "price_usd": 139.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://womierkeyboard.com/products/womier-sk75-ansi-iso-via-wireless-aluminum-keyboard",
+      "official_url": "https://womierkeyboard.com/products/womier-sk75-ansi-iso-via-wireless-aluminum-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Womier: Womier SK75 75% VIA Support Wireless Aluminum Custom Keyboard (ANSI/ISO)",
+          "url": "https://womierkeyboard.com/products/womier-sk75-ansi-iso-via-wireless-aluminum-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "layout_standards",
+            "case_material",
+            "mount",
+            "firmware",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Layouts ANSI plus ISO (DE/UK). Page does not state the hot-swap type. Hot-swap support is not stated on the page."
+    },
+    {
+      "id": "womier-sk75-tmr",
+      "brand": "womier",
+      "model": "SK75 TMR",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": "magnetic",
+      "switches": [
+        {
+          "name": "Womier Void Magnetic Switch",
+          "id": null
+        }
+      ],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "aluminum",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 159,
+      "price_date": "2026-11-23",
+      "price_url": "https://womierkeyboard.com/products/womier-sk75-tmr-magnetic-keyboard",
+      "official_url": "https://womierkeyboard.com/products/womier-sk75-tmr-magnetic-keyboard",
+      "reviews": [
+        {
+          "outlet": "Wccftech",
+          "url": "https://wccftech.com/review/womier-sk75-tmr-review/",
+          "date": "2025-11-29",
+          "score": null,
+          "verdict": "Very positive review of the aluminum TMR board, titled \"I Can't Stop Typing\"."
+        },
+        {
+          "outlet": "Tech4Gamers",
+          "url": "https://tech4gamers.com/womier-sk75-tmr-review/",
+          "date": "2025-11-14",
+          "score": null,
+          "verdict": "Presents the SK75 TMR as a great choice for competitive gaming."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Womier: Womier SK75 TMR Wireless Magnetic Switch Aluminum Keyboard",
+          "url": "https://womierkeyboard.com/products/womier-sk75-tmr-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "battery_mah",
+            "polling_rate_hz",
+            "hot_swap",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material",
+            "switches"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "Actuation adjustable from 0.1 to 3.5 mm; takes mechanical and most magnetic switches."
+    },
+    {
+      "id": "womier-wd75-he",
+      "brand": "womier",
+      "model": "WD75 HE",
+      "aka": [],
+      "status": "current",
+      "released": null,
+      "kind": "prebuilt",
+      "size": "75",
+      "key_count": null,
+      "layout_standards": [
+        "ansi"
+      ],
+      "stagger": "row",
+      "split": "none",
+      "tenting": "none",
+      "thumb_cluster": false,
+      "key_wells": false,
+      "low_profile": false,
+      "connectivity": [
+        "usb",
+        "bluetooth",
+        "2.4ghz"
+      ],
+      "battery_mah": 8000,
+      "polling_rate_hz": 8000,
+      "switch_footprint": "mx",
+      "hot_swap": null,
+      "switches": [],
+      "adjustable_actuation": true,
+      "rapid_trigger": true,
+      "case_material": "wood",
+      "mount": null,
+      "firmware": [],
+      "software": null,
+      "os": [],
+      "price_usd": 149.99,
+      "price_date": "2026-11-23",
+      "price_url": "https://womierkeyboard.com/products/womier-wd75-he-magnetic-keyboard",
+      "official_url": "https://womierkeyboard.com/products/womier-wd75-he-magnetic-keyboard",
+      "reviews": [],
+      "sources": [
+        {
+          "title": "Womier: Womier WD75 HE 75% Wireless Hall Effect Wooden Keyboard",
+          "url": "https://womierkeyboard.com/products/womier-wd75-he-magnetic-keyboard",
+          "kind": "official",
+          "backs": [
+            "size",
+            "connectivity",
+            "price_usd",
+            "battery_mah",
+            "polling_rate_hz",
+            "adjustable_actuation",
+            "rapid_trigger",
+            "case_material"
+          ],
+          "checked": "2026-11-23"
+        }
+      ],
+      "notes": "8000 Hz across wired, 2.4 GHz and Bluetooth per the page. Hot-swap support is not stated on the page."
+    }
+  ]
+}

@@ -570,15 +570,15 @@
       "switches": [
         {
           "name": "GX Blue Clicky",
-          "id": null
+          "id": "logitech-gx-blue"
         },
         {
           "name": "GX Brown Tactile",
-          "id": null
+          "id": "logitech-gx-brown"
         },
         {
           "name": "GX Red Linear",
-          "id": null
+          "id": "logitech-gx-red"
         }
       ],
       "adjustable_actuation": false,
@@ -827,11 +827,11 @@
       "switches": [
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         },
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         }
       ],
       "adjustable_actuation": false,
@@ -926,7 +926,7 @@
       "switches": [
         {
           "name": "low-profile magnetic analog switches",
-          "id": null
+          "id": "logitech-low-profile-magnetic-analog"
         }
       ],
       "adjustable_actuation": true,
@@ -1021,11 +1021,11 @@
       "switches": [
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         },
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         }
       ],
       "adjustable_actuation": false,
@@ -1099,15 +1099,15 @@
       "switches": [
         {
           "name": "GX Blue",
-          "id": null
+          "id": "logitech-gx-blue"
         },
         {
           "name": "GX Red",
-          "id": null
+          "id": "logitech-gx-red"
         },
         {
           "name": "GX Brown",
-          "id": null
+          "id": "logitech-gx-brown"
         }
       ],
       "adjustable_actuation": false,
@@ -1196,15 +1196,15 @@
       "switches": [
         {
           "name": "GL Clicky",
-          "id": null
+          "id": "logitech-gl-clicky"
         },
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         },
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         }
       ],
       "adjustable_actuation": false,
@@ -1267,15 +1267,15 @@
       "switches": [
         {
           "name": "GL Clicky",
-          "id": null
+          "id": "logitech-gl-clicky"
         },
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         },
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         }
       ],
       "adjustable_actuation": false,
@@ -1369,15 +1369,15 @@
       "switches": [
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         },
         {
           "name": "GL Clicky",
-          "id": null
+          "id": "logitech-gl-clicky"
         },
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         }
       ],
       "adjustable_actuation": false,
@@ -1467,11 +1467,11 @@
       "switches": [
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         },
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         }
       ],
       "adjustable_actuation": false,
@@ -1551,15 +1551,15 @@
       "switches": [
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         },
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         },
         {
           "name": "GL Clicky",
-          "id": null
+          "id": "logitech-gl-clicky"
         }
       ],
       "adjustable_actuation": false,
@@ -1649,11 +1649,11 @@
       "switches": [
         {
           "name": "GL Tactile",
-          "id": null
+          "id": "logitech-gl-tactile"
         },
         {
           "name": "GL Linear",
-          "id": null
+          "id": "logitech-gl-linear"
         }
       ],
       "adjustable_actuation": false,
@@ -2331,7 +2331,7 @@
       "switches": [
         {
           "name": "GX Blue Clicky",
-          "id": null
+          "id": "logitech-gx-blue"
         }
       ],
       "adjustable_actuation": false,
@@ -2403,11 +2403,11 @@
       "switches": [
         {
           "name": "GX Optical Tactile",
-          "id": null
+          "id": "logitech-gx-optical-tactile"
         },
         {
           "name": "GX Optical Linear",
-          "id": null
+          "id": "logitech-gx-optical-linear"
         }
       ],
       "adjustable_actuation": false,
@@ -2578,7 +2578,7 @@
       "switches": [
         {
           "name": "magnetic analog switches",
-          "id": null
+          "id": "logitech-magnetic-analog"
         }
       ],
       "adjustable_actuation": true,
@@ -2675,7 +2675,7 @@
       "switches": [
         {
           "name": "High Profile Analog Linear",
-          "id": null
+          "id": "logitech-high-profile-analog-linear"
         }
       ],
       "adjustable_actuation": true,
