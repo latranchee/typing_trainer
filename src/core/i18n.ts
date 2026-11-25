@@ -60,6 +60,8 @@ const en = {
     layout: 'keyboard layout',
     /** The link to the written guides, in the top strip. */
     guides: 'guides',
+    /** The link to the keyboard and switch database (English pages), in the top strip. */
+    keyboards: 'keyboards',
   },
 
   /** On a phone: the on-screen keyboard types, and these say how to bring it up. */
@@ -396,6 +398,7 @@ const fr: Strings = {
     trackingOff: "rien n'est enregistré tant que le suivi est désactivé",
     layout: 'disposition du clavier',
     guides: 'guides',
+    keyboards: 'claviers',
   },
 
   touch: {

@@ -52,6 +52,7 @@ export const es: Strings = {
     trackingOff: 'no se guarda nada mientras el registro esté desactivado',
     layout: 'distribución del teclado',
     guides: 'guías',
+    keyboards: 'teclados',
   },
 
   touch: {

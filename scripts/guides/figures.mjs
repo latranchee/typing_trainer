@@ -269,6 +269,7 @@ function columnSplit() {
 /** Default block names; the builder passes the page language's names. */
 export const STAGGER_NAMES = {
   en: { row: 'Row stagger (ANSI)', ortho: 'Ortholinear grid', column: 'Column stagger, split, with thumb keys' },
+  fr: { row: 'Décalage en rangées (ANSI)', ortho: 'Grille ortholinéaire', column: 'Décalage en colonnes, split, avec touches de pouce' },
 };
 
 /** The three board shapes one under the other, letters colored by finger, with a finger legend. */

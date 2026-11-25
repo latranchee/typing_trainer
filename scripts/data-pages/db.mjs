@@ -70,6 +70,11 @@ export const LISTS = [
   { id: 'full-size-keyboards', name: 'Full-size keyboards', test: (k) => k.size === 'full' || k.size === '96', q: 'full size', guide: 'keyboard-sizes', what: 'full-size and 96% keyboards, with a numpad' },
   { id: 'mac-keyboards', name: 'Mechanical keyboards for Mac', test: (k) => k.os.includes('mac') && mechanical(k), q: 'for mac', guide: 'keyboard-sizes', what: 'mechanical keyboards whose brand states macOS support' },
   { id: 'keyboards-under-100', name: 'Keyboards under $100', test: (k) => k.price_usd != null && k.price_usd < 100, q: 'under $100', guide: 'keyboard-switches', what: 'keyboards listed under $100 on their brand’s own store' },
+  { id: 'mechanical-keyboards-under-50', name: 'Mechanical keyboards under $50', test: (k) => mechanical(k) && k.price_usd != null && k.price_usd < 50, q: 'under $50', guide: 'mechanical-vs-membrane-keyboard', what: 'mechanical keyboards listed under $50 on their brand’s own store' },
+  { id: 'rapid-trigger-keyboards', name: 'Rapid trigger keyboards', test: (k) => k.rapid_trigger === true, q: 'rapid trigger', guide: 'hall-effect-switches', what: 'keyboards with rapid trigger, which resets a key the moment it starts to rise' },
+  { id: 'aluminum-keyboards', name: 'Aluminum keyboards', test: (k) => /alumin|^metal$|^cnc/i.test(k.case_material ?? '') && !/plastic|abs|polymer/i.test(k.case_material), q: 'aluminum', guide: 'keyboard-sizes', what: 'keyboards with an aluminum or metal case' },
+  { id: 'gasket-mount-keyboards', name: 'Gasket mount keyboards', test: (k) => /gasket/i.test(k.mount ?? ''), q: 'gasket', guide: 'hot-swappable-keyboard', what: 'gasket-mounted keyboards, where the plate sits on soft gaskets instead of screws' },
+  { id: 'qmk-via-keyboards', name: 'QMK and VIA keyboards', test: (k) => k.firmware.some((f) => f === 'qmk' || f === 'via' || f === 'vial'), q: 'qmk', guide: 'hot-swappable-keyboard', what: 'keyboards that run QMK firmware or remap in VIA or Vial' },
 ];
 for (const l of LISTS) {
   if (brandById.has(l.id)) throw new Error(`list id ${l.id} collides with a brand id`);

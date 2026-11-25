@@ -30,6 +30,9 @@ const article = (w) => (/^[aeiou8]/i.test(w) || /^(?:11|18)/.test(w) ? 'An' : 'A
 /** A description for search results: whole words, at most 158 characters. */
 const clip = (s, n = 158) => (s.length <= n ? s : `${s.slice(0, n - 1).replace(/\s+\S*$/, '').replace(/[,;:]$/, '')}…`);
 const abs = (path) => `${SITE}/${path}`;
+const REGIONS = new Intl.DisplayNames(['en'], { type: 'region' });
+/** "CN" -> "China". */
+const region = (cc) => (cc ? REGIONS.of(cc) : null);
 /** The longest of the suffixes that keeps "<name><suffix> · petitdoigt" within 62 characters (what a search result shows). */
 const fitTitle = (name, suffixes) => `${name}${suffixes.find((x) => (name + x).length <= 49) ?? suffixes.at(-1)}`;
 /** "MoErgo Glove80 specs: a split…": the lede, lower-cased after the colon. */
@@ -556,6 +559,7 @@ function keyboardsHub() {
     <p><a class="cap-button cap-lg" href="${u}en/keyboards/finder/">Describe the keyboard you want${ARROW}</a></p>
     <section class="block" aria-labelledby="lists"><h2 id="lists">By shape, size and feature</h2><ul class="chip-links">${LISTS.map((l) => `<li><a href="${u}${listPath(l.id)}">${esc(l.name)}<span>${l.items.length}</span></a></li>`).join('')}</ul></section>
     <section class="block" aria-labelledby="brands"><h2 id="brands">Brands</h2><ul class="brand-grid">${sorted.map((b) => `<li><a href="${u}en/keyboards/${b.id}/"><span class="bn">${esc(b.name)}</span><span class="bc">${counts.get(b.id) ?? 0}</span></a></li>`).join('')}</ul></section>
+    ${compareChips(u, null, 'Brands compared')}
     ${guideSection(u, [['staggered-vs-ortholinear-vs-columnar', 'Staggered, ortholinear or columnar'], ['split-keyboard', 'Split keyboards'], ['ergonomic-keyboard', 'Ergonomic keyboards'], ['keyboard-sizes', 'Keyboard sizes'], ['hot-swappable-keyboard', 'Hot-swappable keyboards']])}
   </div>`;
   const description = `${keyboards.length} keyboards from ${brands.length} brands with specs from the brands' own pages, the switches they ship with, prices and reviews. Split, ergonomic, wireless and more.`;
@@ -572,7 +576,7 @@ function brandPage(file) {
     ${crumbs(depth, [['Keyboards', 'en/keyboards/'], [b.name, null]])}
     <h1>${esc(b.name)} keyboards</h1>
     <p class="lede">${esc(b.about ?? '')}</p>
-    <p class="meta">${b.official_url ? `<a href="${esc(b.official_url)}" rel="noopener">${esc(b.name)}'s site${OUT_ARROW}</a>` : ''}<span>${ks.length} keyboard${ks.length === 1 ? '' : 's'}</span>${b.country ? `<span>${esc(b.country)}</span>` : ''}${b.founded ? `<span>founded ${b.founded}</span>` : ''}</p>
+    <p class="meta">${b.official_url ? `<a href="${esc(b.official_url)}" rel="noopener">${esc(b.name)}'s site${OUT_ARROW}</a>` : ''}<span>${ks.length} keyboard${ks.length === 1 ? '' : 's'}</span>${b.country ? `<span>${esc(region(b.country))}</span>` : ''}${b.founded ? `<span>founded ${b.founded}</span>` : ''}</p>
     <ul class="results-list">${ks.map((x) => resultRow(u, x, { showBrand: false })).join('')}</ul>
   </article></div>`;
   const firstPhoto = ks.find((x) => hasPhoto(x.id));
@@ -604,11 +608,27 @@ function listPage(l) {
   const tail = facts.slice(2);
   const lede = `${facts.slice(0, 2).join(' ')}${tail.length ? ` Of these, ${tail.join(' and ')}.` : ''}`;
   const finderHref = `${u}en/keyboards/finder/?q=${encodeURIComponent(l.q)}`;
+  // The boards outlets reviewed, most reviews first: what searchers asking for "the best" one want to read.
+  const reviewed = l.items.filter((k) => k.reviews.length).sort((a, b) => b.reviews.length - a.reviews.length || (a.price_usd ?? 1e9) - (b.price_usd ?? 1e9));
+  const outlets = [...new Set(reviewed.flatMap((k) => k.reviews.map((r) => r.outlet)))];
+  const reviewBlock = reviewed.length
+    ? `<section class="block" aria-labelledby="reviewed"><h2 id="reviewed">What the reviews say</h2><p>${reviewed.length === 1 ? 'One board on this list was' : `${reviewed.length} boards on this list were`} reviewed by ${esc(list(outlets.slice(0, 4)))}${outlets.length > 4 ? ` and ${outlets.length - 4} more outlet${outlets.length - 4 > 1 ? 's' : ''}` : ''}. ${reviewed.length > 8 ? 'The 8 with the most reviews' : 'Each one'}, with each review summed up in our words:</p>${reviewed
+        .slice(0, 8)
+        .map((k) => {
+          const name = `${brandById.get(k.brand).name} ${k.model}`;
+          return `<h3 class="rv-board"><a href="${u}${kbPath(k)}">${esc(name)}</a>${k.price_usd != null ? ` <span class="sub">${money(k.price_usd)}</span>` : ''}</h3><ul class="reviews">${k.reviews
+            .map((x) => `<li><a class="review" href="${esc(x.url)}" rel="noopener"><span class="rv-head"><span class="rv-outlet">${esc(x.outlet)}</span>${x.score ? `<span class="rv-score">${esc(x.score)}</span>` : ''}<span class="rv-date">${x.date ? fmtDate(x.date) : ''}</span></span><span class="rv-verdict">${esc(x.verdict)}</span><span class="rv-go">read the review${OUT_ARROW}</span></a></li>`)
+            .join('')}</ul>`;
+        })
+        .join('')}</section>`
+    : '';
   const body = `<div class="page data-page"><article class="article">
     ${crumbs(depth, [['Keyboards', 'en/keyboards/'], [l.name, null]])}
     <h1>${esc(l.name)}</h1>
     <p class="lede">${esc(lede)}</p>
     <p class="meta"><a href="${finderHref}">narrow it down in the finder${ARROW}</a>${hasGuide(l.guide) ? `<a href="${u}en/${l.guide}/">read the guide${ARROW}</a>` : ''}<span>specs checked ${fmtDate(CHECKED)}</span></p>
+    ${reviewBlock}
+    ${reviewed.length ? `<h2 id="all">All ${all.length}</h2>` : ''}
     <ul class="results-list">${shown.map((x) => resultRow(u, x)).join('')}</ul>
     ${all.length > LIMIT ? `<p class="fine">This page shows ${LIMIT} of the ${all.length}, reviewed boards first. <a href="${finderHref}">The finder lists all ${all.length}</a> and sorts them by price, reviews or name.</p>` : ''}
     <section class="block" aria-labelledby="more"><h2 id="more">More lists</h2><ul class="chip-links">${LISTS.filter((x) => x !== l).map((x) => `<li><a href="${u}${listPath(x.id)}">${esc(x.name)}<span>${x.items.length}</span></a></li>`).join('')}</ul></section>
@@ -616,7 +636,209 @@ function listPage(l) {
   const firstPhoto = shown.find((x) => hasPhoto(x.id));
   const image = firstPhoto ? photoAbs('keyboard', firstPhoto.id) : null;
   const jsonLd = [breadcrumbLd([['Keyboards', 'en/keyboards/'], [l.name, listPath(l.id)]]), itemListLd(listPath(l.id), l.name, shown.map((x) => [`${x.b} ${x.m}`, kbPath(keyboardById.get(x.id))]))];
-  return shell({ depth, title: fitTitle(l.name, [`: ${all.length} models with specs and prices`, `: ${all.length} models compared`, '']), description: clip(lede), path: listPath(l.id), section: 'keyboards', body, image, imageAlt: firstPhoto ? `${firstPhoto.b} ${firstPhoto.m}` : '', jsonLd });
+  const title = reviewed.length
+    ? fitTitle(l.name, [`: ${all.length} compared, with what reviewers found`, `: ${all.length} compared, with reviews`, `: ${all.length} models compared`, ''])
+    : fitTitle(l.name, [`: ${all.length} models with specs and prices`, `: ${all.length} models compared`, '']);
+  const description = clip(reviewed.length ? `Looking for the best ${l.name.replace(/keyboards\b/, 'keyboard').replace(/^[A-Z](?=[a-z])/, (c) => c.toLowerCase())}?${facts[0]} See what ${list(outlets.slice(0, 2))} found in their reviews.` : lede);
+  return shell({ depth, title, description, path: listPath(l.id), section: 'keyboards', body, image, imageAlt: firstPhoto ? `${firstPhoto.b} ${firstPhoto.m}` : '', jsonLd });
+}
+
+// ---------- comparisons ----------
+
+/** Brand and switch-maker pairs people search for ("nuphy vs keychron"), in the order they search them. */
+const BRAND_PAIRS = [['nuphy', 'keychron'], ['epomaker', 'keychron'], ['ducky', 'keychron'], ['hhkb', 'realforce']];
+const MAKER_PAIRS = [['cherry', 'gateron'], ['gateron', 'kailh']];
+const pairPath = (kind, [a, b]) => `en/${kind}/compare/${a}-vs-${b}/`;
+for (const [a, b] of BRAND_PAIRS) if (!brandById.has(a) || !brandById.has(b)) throw new Error(`compare: no brand ${a} or ${b}`);
+for (const [a, b] of MAKER_PAIRS) if (!makerById.has(a) || !makerById.has(b)) throw new Error(`compare: no maker ${a} or ${b}`);
+if (brandById.has('compare') || makerById.has('compare') || LISTS.some((l) => l.id === 'compare')) throw new Error('"compare" is taken');
+
+const pct = (n, of) => (of ? `${Math.round((n / of) * 100)}%` : '–');
+/** Sizes from the largest board to the smallest. */
+const SIZE_ORDER = ['full', '96', 'tkl', '75', '65', '60', '50', '40', '30', 'numpad', 'other'];
+const median = (xs) => (xs.length ? xs[Math.floor((xs.length - 1) / 2)] : null);
+const share = (n, of) => `${n} of ${of} (${pct(n, of)})`;
+
+function brandStats(id) {
+  const ks = keyboards.filter((k) => k.brand === id);
+  const fr = ks.map((k) => finderById.get(k.id));
+  const prices = ks.map((k) => k.price_usd).filter((p) => p != null).sort((a, b) => a - b);
+  const makerCount = new Map();
+  for (const x of fr) for (const m of x.swmNames) makerCount.set(m, (makerCount.get(m) ?? 0) + 1);
+  return {
+    b: brandById.get(id),
+    ks,
+    n: ks.length,
+    current: ks.filter((k) => k.status === 'current').length,
+    prices,
+    wireless: ks.filter((k) => k.connectivity.some((c) => c !== 'usb')).length,
+    hotswap: ks.filter((k) => k.hot_swap && k.hot_swap !== 'none').length,
+    lowProfile: ks.filter((k) => k.low_profile).length,
+    adjustable: ks.filter((k) => k.adjustable_actuation).length,
+    rapid: ks.filter((k) => k.rapid_trigger).length,
+    qmk: ks.filter((k) => k.firmware.some((f) => f === 'qmk' || f === 'via' || f === 'vial')).length,
+    zmk: ks.filter((k) => k.firmware.includes('zmk')).length,
+    aluminum: ks.filter((k) => /alumin|^metal$/i.test(k.case_material ?? '') && !/plastic|abs|polymer/i.test(k.case_material)).length,
+    sizes: new Map(SIZE_ORDER.filter((x) => SIZE_LABEL[x]).map((s) => [s, ks.filter((k) => k.size === s)]).filter(([, v]) => v.length)),
+    makers: [...makerCount].sort((x, y) => y[1] - x[1]),
+    reviews: ks.reduce((n, k) => n + k.reviews.length, 0),
+    reviewed: ks.filter((k) => k.reviews.length),
+  };
+}
+
+const cheapest = (ks) => ks.filter((k) => k.price_usd != null).sort((a, b) => a.price_usd - b.price_usd)[0] ?? null;
+
+function brandComparePage(pair) {
+  const depth = 4;
+  const u = up(depth);
+  const [A, B] = pair.map(brandStats);
+  const path = pairPath('keyboards', pair);
+  const title = `${A.b.name} vs ${B.b.name}`;
+  const range = (s) => (s.prices.length ? `${money(s.prices[0])} to ${money(s.prices.at(-1))}` : 'no prices published');
+  const lede = [
+    `${A.b.name} has ${A.n} keyboard${A.n === 1 ? '' : 's'} in the petitdoigt keyboard database and ${B.b.name} has ${B.n}.`,
+    A.prices.length && B.prices.length ? `${A.b.name}'s run from ${range(A)}, half of them under ${money(median(A.prices))}; ${B.b.name}'s run from ${range(B)}, half under ${money(median(B.prices))}.` : '',
+    `${pct(A.wireless, A.n)} of ${A.b.name}'s boards and ${pct(B.wireless, B.n)} of ${B.b.name}'s connect wirelessly, and ${pct(A.hotswap, A.n)} against ${pct(B.hotswap, B.n)} take hot-swap switches.`,
+  ]
+    .filter(Boolean)
+    .join(' ');
+  const row = (label, f) => `<tr><th scope="row">${esc(label)}</th><td>${f(A)}</td><td>${f(B)}</td></tr>`;
+  const table = `<div class="prose"><div class="table-wrap"><table><caption class="sr-only">${esc(title)}, side by side</caption><thead><tr><th scope="col"></th><th scope="col">${esc(A.b.name)}</th><th scope="col">${esc(B.b.name)}</th></tr></thead><tbody>
+    ${row('Keyboards in the database', (s) => `${s.n} (${s.current} sold now)`)}
+    ${row('Price range', (s) => range(s))}
+    ${row('Median price', (s) => (s.prices.length ? money(median(s.prices)) : NIL))}
+    ${row('Sizes', (s) => esc([...s.sizes.keys()].map((k) => SIZE_LABEL[k]).join(', ')))}
+    ${row('Wireless', (s) => share(s.wireless, s.n))}
+    ${row('Hot-swap', (s) => share(s.hotswap, s.n))}
+    ${row('Low profile', (s) => share(s.lowProfile, s.n))}
+    ${row('Adjustable actuation', (s) => share(s.adjustable, s.n))}
+    ${row('Rapid trigger', (s) => share(s.rapid, s.n))}
+    ${row('QMK, VIA or Vial', (s) => share(s.qmk, s.n))}
+    ${row('Aluminum case', (s) => share(s.aluminum, s.n))}
+    ${row('Switch makers', (s) => esc(s.makers.slice(0, 4).map(([m]) => m).join(', ') || 'not published'))}
+    ${row('Reviews in the database', (s) => `${s.reviews} on ${s.reviewed.length} board${s.reviewed.length === 1 ? '' : 's'}`)}
+    ${A.b.country || B.b.country ? row('Based in', (s) => esc(region(s.b.country) ?? 'not published')) : ''}
+    ${A.b.founded || B.b.founded ? row('Founded', (s) => (s.b.founded ? String(s.b.founded) : NIL)) : ''}
+  </tbody></table></div></div>`;
+  const sizes = [...new Set([...A.sizes.keys(), ...B.sizes.keys()])].sort((x, y) => SIZE_ORDER.indexOf(x) - SIZE_ORDER.indexOf(y));
+  const cell = (s, size) => {
+    const ks = s.sizes.get(size) ?? [];
+    if (!ks.length) return '<span class="nil">none</span>';
+    const c = cheapest(ks);
+    return `${ks.length} model${ks.length === 1 ? '' : 's'}${c ? `, from <a href="${u}${kbPath(c)}">${esc(c.model)}</a> at ${money(c.price_usd)}` : ''}`;
+  };
+  const sizeTable = `<div class="prose"><div class="table-wrap"><table><caption class="sr-only">Models by size and the cheapest of each</caption><thead><tr><th scope="col">Size</th><th scope="col">${esc(A.b.name)}</th><th scope="col">${esc(B.b.name)}</th></tr></thead><tbody>${sizes.map((size) => `<tr><th scope="row">${esc(SIZE_LABEL[size])}</th><td>${cell(A, size)}</td><td>${cell(B, size)}</td></tr>`).join('')}</tbody></table></div></div>`;
+  const top = (s) => [...s.ks].sort((x, y) => y.reviews.length - x.reviews.length || (x.price_usd ?? 1e9) - (y.price_usd ?? 1e9)).slice(0, 4).map((k) => finderById.get(k.id));
+  const body = `<div class="page data-page"><article class="article">
+    ${crumbs(depth, [['Keyboards', 'en/keyboards/'], ['Compare', null]])}
+    <h1>${esc(title)}: lineups, prices and specs side by side</h1>
+    <p class="lede">${esc(lede)}</p>
+    <p class="meta"><a href="${u}en/keyboards/${A.b.id}/">every ${esc(A.b.name)} keyboard${ARROW}</a><a href="${u}en/keyboards/${B.b.id}/">every ${esc(B.b.name)} keyboard${ARROW}</a><span>specs checked ${fmtDate(CHECKED)}</span></p>
+    <section class="block" aria-labelledby="side"><h2 id="side">Side by side</h2>${table}<p class="fine">Counts cover the keyboards each brand lists on its own site, current and discontinued, as the petitdoigt keyboard database holds them. A value a brand does not publish counts as absent.</p></section>
+    <section class="block" aria-labelledby="sizes"><h2 id="sizes">By size</h2>${sizeTable}</section>
+    ${[A, B].map((s) => `<section class="block" aria-labelledby="top-${s.b.id}"><h2 id="top-${s.b.id}">${esc(s.b.name)}: the most reviewed</h2><ul class="results-list">${top(s).map((x) => resultRow(u, x, { showBrand: false })).join('')}</ul></section>`).join('')}
+    <section class="block" aria-labelledby="about"><h2 id="about">The two brands</h2>${[A, B].map((s) => `<p><strong>${esc(s.b.name)}.</strong> ${esc(s.b.about ?? '')} ${s.b.official_url ? `<a href="${esc(s.b.official_url)}" rel="noopener">${esc(s.b.name)}'s site</a>` : ''}</p>`).join('')}</section>
+    ${compareChips(u, path)}
+  </article></div>`;
+  const jsonLd = [
+    breadcrumbLd([['Keyboards', 'en/keyboards/'], [title, path]]),
+    { '@type': 'WebPage', '@id': abs(path), name: `${title}: keyboards compared`, url: abs(path), inLanguage: 'en', about: [A, B].map((s) => ({ '@type': 'Brand', name: s.b.name, ...(s.b.official_url ? { url: s.b.official_url } : {}) })), publisher: PUBLISHER },
+  ];
+  return shell({ depth, title: fitTitle(title, [': keyboards, prices and specs compared', ': keyboards compared', ' keyboards', '']), description: clip(lede), path, section: 'keyboards', body, jsonLd });
+}
+
+function makerStats(id) {
+  const ss = switches.filter((s) => s.maker === id);
+  const forces = ss.map((s) => s.actuation_force_gf).filter((f) => typeof f === 'number').sort((a, b) => a - b);
+  const travel = ss.map((s) => s.total_travel_mm).filter((f) => typeof f === 'number').sort((a, b) => a - b);
+  const life = ss.map((s) => s.rated_lifespan_million).filter((f) => typeof f === 'number').sort((a, b) => a - b);
+  const families = new Map();
+  for (const s of ss) if (s.family) families.set(s.family, (families.get(s.family) ?? 0) + 1);
+  return {
+    m: makerById.get(id),
+    ss,
+    n: ss.length,
+    byType: new Map(Object.keys(TYPE).map((t) => [t, ss.filter((s) => s.type === t)])),
+    magnetic: ss.filter((s) => s.sensing === 'magnetic').length,
+    optical: ss.filter((s) => s.sensing === 'optical').length,
+    lowProfile: ss.filter((s) => s.profile === 'low' || s.profile === 'ultra-low').length,
+    lubed: ss.filter((s) => s.factory_lubed === true).length,
+    forces,
+    travel,
+    life,
+    families: [...families].sort((x, y) => y[1] - x[1]),
+    boards: finderData.keyboards.filter((x) => x.swm.includes(id)).length,
+  };
+}
+
+function makerComparePage(pair) {
+  const depth = 4;
+  const u = up(depth);
+  const [A, B] = pair.map(makerStats);
+  const path = pairPath('switches', pair);
+  const title = `${A.m.name} vs ${B.m.name} switches`;
+  const fr = (s) => (s.forces.length ? `${s.forces[0]} to ${s.forces.at(-1)} gf` : 'not published');
+  const lede = [
+    `The petitdoigt switch database holds ${A.n} ${A.m.name} switches and ${B.n} from ${B.m.name}.`,
+    A.forces.length && B.forces.length ? `Half of ${A.m.name}'s actuate under ${median(A.forces)} gf and half of ${B.m.name}'s under ${median(B.forces)} gf, by the makers' own figures.` : '',
+    `${A.boards} keyboards in the database ship with a ${A.m.name} switch option and ${B.boards} with a ${B.m.name} one.`,
+  ]
+    .filter(Boolean)
+    .join(' ');
+  const row = (label, f) => `<tr><th scope="row">${esc(label)}</th><td>${f(A)}</td><td>${f(B)}</td></tr>`;
+  const table = `<div class="prose"><div class="table-wrap"><table><caption class="sr-only">${esc(title)}, side by side</caption><thead><tr><th scope="col"></th><th scope="col">${esc(A.m.name)}</th><th scope="col">${esc(B.m.name)}</th></tr></thead><tbody>
+    ${row('Switches in the database', (s) => String(s.n))}
+    ${A.m.country || B.m.country ? row('Based in', (s) => esc(region(s.m.country) ?? 'not published')) : ''}
+    ${A.m.founded || B.m.founded ? row('Founded', (s) => (s.m.founded ? String(s.m.founded) : NIL)) : ''}
+    ${[...Object.keys(TYPE)].map((t) => row(TYPE[t].replace(/^./, (c) => c.toUpperCase()), (s) => String(s.byType.get(t).length))).join('')}
+    ${row('Magnetic (Hall effect)', (s) => String(s.magnetic))}
+    ${row('Optical', (s) => String(s.optical))}
+    ${row('Low profile', (s) => String(s.lowProfile))}
+    ${row('Actuation force', (s) => fr(s))}
+    ${row('Median actuation force', (s) => (s.forces.length ? `${median(s.forces)} gf` : NIL))}
+    ${row('Median total travel', (s) => (s.travel.length ? `${median(s.travel)} mm` : NIL))}
+    ${row('Factory lubed', (s) => share(s.lubed, s.n))}
+    ${row('Rated lifespan', (s) => (s.life.length ? `${s.life[0]} to ${s.life.at(-1)} million presses` : NIL))}
+    ${row('Keyboards sold with them', (s) => String(s.boards))}
+  </tbody></table></div></div>`;
+  const typeTable = `<div class="prose"><div class="table-wrap"><table><caption class="sr-only">Median actuation force by switch type</caption><thead><tr><th scope="col">Type</th><th scope="col">${esc(A.m.name)}</th><th scope="col">${esc(B.m.name)}</th></tr></thead><tbody>${Object.keys(TYPE)
+    .filter((t) => A.byType.get(t).length || B.byType.get(t).length)
+    .map((t) => {
+      const cell = (s) => {
+        const xs = s.byType.get(t);
+        const f = xs.map((x) => x.actuation_force_gf).filter((v) => typeof v === 'number').sort((a, b) => a - b);
+        return xs.length ? `${xs.length} switch${xs.length === 1 ? '' : 'es'}${f.length ? `, median ${median(f)} gf` : ''}` : '<span class="nil">none</span>';
+      };
+      return `<tr><th scope="row">${esc(TYPE[t])}</th><td>${cell(A)}</td><td>${cell(B)}</td></tr>`;
+    })
+    .join('')}</tbody></table></div></div>`;
+  const lines = (s) => `<p><strong>${esc(s.m.name)}</strong>: ${esc(s.families.slice(0, 10).map(([f, n]) => `${f} (${n})`).join(', ') || 'no named lines')}.</p>`;
+  const body = `<div class="page data-page"><article class="article">
+    ${crumbs(depth, [['Switches', 'en/switches/'], ['Compare', null]])}
+    <h1>${esc(title)}: force, types and lines side by side</h1>
+    <p class="lede">${esc(lede)}</p>
+    <p class="meta"><a href="${u}en/keyboards/finder/?q=${encodeURIComponent(`${A.m.name} switches`)}">keyboards with ${esc(A.m.name)} switches${ARROW}</a><a href="${u}en/keyboards/finder/?q=${encodeURIComponent(`${B.m.name} switches`)}">keyboards with ${esc(B.m.name)} switches${ARROW}</a><span>specs checked ${fmtDate(CHECKED)}</span></p>
+    <section class="block" aria-labelledby="side"><h2 id="side">Side by side</h2>${table}<p class="fine">Forces and travel are the makers' published figures, not measurements. A switch whose maker publishes no figure is left out of the medians.</p></section>
+    <section class="block" aria-labelledby="types"><h2 id="types">By type</h2>${typeTable}</section>
+    <section class="block" aria-labelledby="lines"><h2 id="lines">Their lines</h2>${lines(A)}${lines(B)}<p class="meta">${[A, B].map((s) => `<a href="${u}en/switches/${s.m.id}/">every ${esc(s.m.name)} switch${ARROW}</a>`).join("")}</p></section>
+    <section class="block" aria-labelledby="about"><h2 id="about">The two makers</h2>${[A, B].map((s) => `<p><strong>${esc(s.m.name)}.</strong> ${esc(s.m.about ?? '')} ${s.m.official_url ? `<a href="${esc(s.m.official_url)}" rel="noopener">${esc(s.m.name)}'s site</a>` : ''}</p>`).join('')}</section>
+    ${hasGuide('switch-manufacturers') ? `<p class="meta"><a href="${u}en/switch-manufacturers/">who makes keyboard switches${ARROW}</a>${hasGuide('red-vs-brown-vs-blue-switches') ? `<a href="${u}en/red-vs-brown-vs-blue-switches/">red, brown or blue${ARROW}</a>` : ''}</p>` : ''}
+    ${compareChips(u, path)}
+  </article></div>`;
+  const jsonLd = [
+    breadcrumbLd([['Switches', 'en/switches/'], [title, path]]),
+    { '@type': 'WebPage', '@id': abs(path), name: `${title} compared`, url: abs(path), inLanguage: 'en', about: [A, B].map((s) => ({ '@type': 'Organization', name: s.m.name, ...(s.m.official_url ? { url: s.m.official_url } : {}) })), publisher: PUBLISHER },
+  ];
+  return shell({ depth, title: fitTitle(title, [': force, types and lines compared', ' compared', '']), description: clip(lede), path, section: 'switches', body, jsonLd });
+}
+
+/** Every comparison, as chips (the current one left out). */
+function compareChips(u, current, heading = 'More comparisons') {
+  const items = [
+    ...BRAND_PAIRS.map((p) => [`${brandById.get(p[0]).name} vs ${brandById.get(p[1]).name}`, pairPath('keyboards', p)]),
+    ...MAKER_PAIRS.map((p) => [`${makerById.get(p[0]).name} vs ${makerById.get(p[1]).name} switches`, pairPath('switches', p)]),
+  ].filter(([, p]) => p !== current);
+  return `<section class="block" aria-labelledby="compare"><h2 id="compare">${heading}</h2><ul class="chip-links">${items.map(([n, p]) => `<li><a href="${u}${p}">${esc(n)}</a></li>`).join('')}</ul></section>`;
 }
 
 function switchesHub() {
@@ -629,6 +851,7 @@ function switchesHub() {
     <p class="lede">${switches.length.toLocaleString('en-US')} switches from ${makers.length} makers, with force, travel, materials and the keyboards that ship with each, from the makers' own spec sheets.</p>
     ${hasGuide('keyboard-switches') ? `<p><a class="cap-button cap-lg" href="${u}en/keyboard-switches/">How switches work${ARROW}</a></p>` : ''}
     <section class="block" aria-labelledby="makers"><h2 id="makers">Makers</h2><ul class="brand-grid">${sorted.map((f) => `<li><a href="${u}en/switches/${f.maker.id}/"><span class="bn">${esc(f.maker.name)}<em>${ROLE[f.maker.role] ?? ''}</em></span><span class="bc">${f.switches.length}</span></a></li>`).join('')}</ul></section>
+    ${compareChips(u, null, 'Makers compared')}
     ${guideSection(u, [['linear-vs-tactile-vs-clicky', 'Linear, tactile or clicky'], ['red-vs-brown-vs-blue-switches', 'Red, brown or blue'], ['quiet-switches', 'Quiet switches'], ['hall-effect-switches', 'Hall effect switches'], ['switch-specs', 'Reading switch specs'], ['switch-manufacturers', 'Who makes switches']])}
   </div>`;
   const description = `${switches.length} keyboard switches from ${makers.length} makers with actuation force, travel, materials and the keyboards that ship with each, from the makers' own spec sheets.`;
@@ -646,7 +869,7 @@ function makerPage(file) {
     ${crumbs(depth, [['Switches', 'en/switches/'], [m.name, null]])}
     <h1>${esc(m.name)} switches</h1>
     <p class="lede">${esc(m.about ?? '')}</p>
-    <p class="meta">${m.official_url ? `<a href="${esc(m.official_url)}" rel="noopener">${esc(m.name)}'s site${OUT_ARROW}</a>` : ''}<span>${ss.length} switch${ss.length === 1 ? '' : 'es'}</span>${m.country ? `<span>${esc(m.country)}</span>` : ''}</p>
+    <p class="meta">${m.official_url ? `<a href="${esc(m.official_url)}" rel="noopener">${esc(m.name)}'s site${OUT_ARROW}</a>` : ''}<span>${ss.length} switch${ss.length === 1 ? '' : 'es'}</span>${m.country ? `<span>${esc(region(m.country))}</span>` : ''}</p>
     <div class="prose"><div class="table-wrap"><table><caption class="sr-only">${esc(m.name)} switches with type, force and travel</caption><thead><tr><th scope="col">Switch</th><th scope="col">Type</th><th scope="col" class="num">Actuation</th><th scope="col" class="num">Pre-travel</th><th scope="col" class="num">Travel</th><th scope="col">Line</th></tr></thead><tbody>${ss
       .map((s) => `<tr><td>${swLink(u, s)}</td><td>${TYPE[s.type]}</td><td class="num">${s.actuation_force_gf ? `${s.actuation_force_gf} gf` : DOT}</td><td class="num">${s.actuation_range_mm ? `${s.actuation_range_mm[0]}–${s.actuation_range_mm[1]} mm` : s.pre_travel_mm ? `${s.pre_travel_mm} mm` : DOT}</td><td class="num">${s.total_travel_mm ? `${s.total_travel_mm} mm` : DOT}</td><td>${esc(s.family ?? '')}</td></tr>`)
       .join('')}</tbody></table></div></div>
@@ -670,6 +893,8 @@ write('en/keyboards/', keyboardsHub(), { lastmod: CHECKED });
 write('en/keyboards/finder/', finderPage(), { lastmod: CHECKED });
 write('en/switches/', switchesHub(), { lastmod: CHECKED });
 for (const l of LISTS) write(listPath(l.id), listPage(l), { lastmod: CHECKED });
+for (const pair of BRAND_PAIRS) write(pairPath('keyboards', pair), brandComparePage(pair), { lastmod: CHECKED });
+for (const pair of MAKER_PAIRS) write(pairPath('switches', pair), makerComparePage(pair), { lastmod: CHECKED });
 for (const f of brandFiles) write(`en/keyboards/${f.brand.id}/`, brandPage(f), { lastmod: f.keyboards.map(checkedOf).filter(Boolean).sort().at(-1) ?? CHECKED });
 for (const f of makerFiles) write(`en/switches/${f.maker.id}/`, makerPage(f), { lastmod: f.switches.map(checkedOf).filter(Boolean).sort().at(-1) ?? CHECKED });
 for (const k of keyboards) {

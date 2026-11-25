@@ -2557,10 +2557,12 @@ export class App implements DrillHost {
 
     // A plain link to the written guides in the interface language: crawlable, and it works without the app.
     const guides = this.label(this.label(el('a.top-guides.ctl'), () => t.top.guides), () => `./${this.store.settings.ui}/`, 'href');
+    // The keyboard and switch database: English pages for now, whatever the interface language.
+    const keyboards = this.label(el('a.top-guides.ctl', { href: './en/keyboards/' }), () => t.top.keyboards);
 
     this.root.append(
       this.softField,
-      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, this.accountBtn, guides, this.panel.button))),
+      el('header.top', {}, el('div.top-in', {}, el('span.wordmark', {}, this.mark, 'petitdoigt'), tabs, el('div.top-right', {}, this.profileChip, this.accountBtn, guides, keyboards, this.panel.button))),
       el(
         'main.cockpit',
         {},

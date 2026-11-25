@@ -63,6 +63,7 @@ export const de: Strings = {
     trackingOff: 'solange das aus ist, wird nichts gespeichert',
     layout: 'tastaturbelegung',
     guides: 'ratgeber',
+    keyboards: 'tastaturen',
   },
 
   touch: {
