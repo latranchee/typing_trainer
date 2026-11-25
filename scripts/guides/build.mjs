@@ -8,7 +8,8 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, writeFileSync } from 
 import { dirname, join, resolve } from 'node:path';
 import { checkGuide, measure, parseGuide } from './content.mjs';
 import { STAGGER_NAMES, boardShapes, fingerChart, staggerShapes } from './figures.mjs';
-import { dbPath } from '../data-pages/db.mjs';
+import { dbPath, finderPath, hubPath } from '../data-pages/db.mjs';
+import { DB_LANGS } from '../data-pages/i18n.mjs';
 import { GUIDE_LANGS, PAGE_IDS } from './pages.mjs';
 import { APP_LANGS, GROUPS, STRINGS } from './strings.mjs';
 
@@ -108,6 +109,44 @@ function tryBand(lang, label, drill, layout, depth) {
 </aside>`;
 }
 
+/** The keyboard and switch database, as the guides name it in each language it exists in. */
+const DB_INDEX = {
+  en: {
+    nav: ['keyboards', 'switches'],
+    h2: 'Keyboard and switch database',
+    finder: ['Keyboard finder', 'Describe the keyboard you want in a sentence and get the boards that match: split, wireless, switch brand, size, price.'],
+    keyboards: ['Keyboards', "Every model with its specs, switch options, price and reviews, from the brands' own pages."],
+    switches: ['Switches', "Force, travel and materials of each switch, from the makers' own spec sheets."],
+  },
+  fr: {
+    nav: ['claviers', 'switchs'],
+    h2: 'Base de données des claviers et des switchs',
+    finder: ['Trouver un clavier', 'Décrivez le clavier voulu en une phrase\u00a0: split, sans fil, marque de switch, taille, prix.'],
+    keyboards: ['Claviers', 'Chaque modèle avec ses caractéristiques, ses switchs, son prix et ses tests, d’après les pages des marques.'],
+    switches: ['Switchs', 'Force, course et matériaux de chaque switch, d’après les fiches des fabricants.'],
+  },
+  de: {
+    nav: ['tastaturen', 'switches'],
+    h2: 'Tastatur- und Switch-Datenbank',
+    finder: ['Tastatur-Finder', 'Beschreibe die gewünschte Tastatur in einem Satz und erhalte die passenden Modelle: split, kabellos, Switch-Marke, Größe, Preis.'],
+    keyboards: ['Tastaturen', 'Jedes Modell mit Daten, Switch-Optionen, Preis und Tests, von den Seiten der Marken.'],
+    switches: ['Switches', 'Kraft, Weg und Materialien jedes Switches, aus den Datenblättern der Hersteller.'],
+  },
+  es: {
+    nav: ['teclados', 'switches'],
+    h2: 'Base de datos de teclados y switches',
+    finder: ['Buscador de teclados', 'Describe en una frase el teclado que quieres y obtén los modelos que encajan: split, inalámbrico, marca de switches, tamaño, precio.'],
+    keyboards: ['Teclados', 'Cada modelo con sus especificaciones, opciones de switches, precio y análisis, según la web de cada marca.'],
+    switches: ['Switches', 'Fuerza, recorrido y materiales de cada switch, según las fichas técnicas de los fabricantes.'],
+  },
+};
+function dbBlock(lang, depth) {
+  const d = DB_INDEX[lang];
+  if (!d) return '';
+  const item = (href, [title, desc]) => `<li><a href="${up(depth)}${href}"><span class="link-title">${esc(title)}</span><span class="link-desc">${esc(desc)}</span></a></li>`;
+  return `<section class="block" aria-labelledby="g-database"><h2 id="g-database">${esc(d.h2)}</h2><ul class="link-list">${item(finderPath(lang), d.finder)}${item(hubPath('keyboards', lang), d.keyboards)}${item(hubPath('switches', lang), d.switches)}</ul></section>`;
+}
+
 function header(lang, depth, alternates, current) {
   const s = STRINGS[lang];
   const items = alternates
@@ -118,8 +157,8 @@ function header(lang, depth, alternates, current) {
   <a class="brand" href="${up(depth)}">${MARK}<span>${BRAND}</span></a>
   <nav class="site-nav" aria-label="${esc(BRAND)}">
     <a class="nav-link" href="${up(depth)}${lang}/"${current === 'index' ? ' aria-current="page"' : ''}>${esc(s.guides)}</a>
-    ${lang === 'en' ? `<a class="nav-link" href="${up(depth)}en/keyboards/">keyboards</a>
-    <a class="nav-link" href="${up(depth)}en/switches/">switches</a>` : ''}${lang === 'fr' ? `<a class="nav-link" href="${up(depth)}en/keyboards/" hreflang="en">claviers</a>` : ''}
+    ${DB_LANGS.includes(lang) ? `<a class="nav-link" href="${up(depth)}${hubPath('keyboards', lang)}">${esc(DB_INDEX[lang].nav[0])}</a>
+    <a class="nav-link" href="${up(depth)}${hubPath('switches', lang)}">${esc(DB_INDEX[lang].nav[1])}</a>` : ''}
     <a class="cap-button" href="${esc(appHref(lang, 'words', null, depth))}">${esc(s.start)}${ARROW}</a>
     <details class="lang">
       <summary aria-label="${esc(s.language)}">${GLOBE}<span class="lang-name">${esc(GUIDE_LANGS[lang].name)}</span><span class="lang-code">${lang}</span>${CHEVRON}</summary>
@@ -190,8 +229,12 @@ function renderBody(lang, body, depth) {
     return href ? `<a href="${esc(href)}">` : '<a>';
   });
   html = html.replace(/<a href="app:([a-z]+)(?:\?layout=([a-z-]+))?">/g, (_, drill, layout) => `<a href="${esc(appHref(lang, drill, layout, depth))}">`);
-  // The keyboard and switch database (English only): db:<page> -> a relative link; a missing record stops the build.
-  html = html.replace(/<a href="db:([a-z0-9/-]+)">/g, (_, target) => `<a href="${esc(up(depth) + dbPath(target))}">`);
+  // The keyboard and switch database: db:<page> -> a relative link to the page in this language (English for the
+  // languages the database is not in); a missing record stops the build.
+  html = html.replace(/<a href="db:([a-z0-9/-]+)">/g, (_, target) => {
+    const path = dbPath(target, lang);
+    return `<a href="${esc(up(depth) + path)}"${path.startsWith(`${lang}/`) ? '' : ' hreflang="en"'}>`;
+  });
   html = html.replace(/<a href="(https:\/\/[^"]+)">/g, (_, url) => `<a href="${url}" rel="noopener">`);
   html = html.replace(/<table>([\s\S]*?)<\/table>/g, (m) => `<div class="table-wrap">${m}</div>`);
   html = html.replace(/<figure data-figure="finger-chart" data-layout="([a-z-]+)">\s*(<figcaption>[\s\S]*?<\/figcaption>)\s*<\/figure>/g, (_, layout, caption) => {
@@ -339,8 +382,7 @@ ${header(lang, depth, alternates, 'index')}
       <h1>${esc(s.indexH1)}</h1>
       <p class="lede">${esc(s.indexIntro)}</p>
       ${groups}
-      ${lang === 'en' ? `<section class="block" aria-labelledby="g-database"><h2 id="g-database">Keyboard and switch database</h2><ul class="link-list"><li><a href="keyboards/finder/"><span class="link-title">Keyboard finder</span><span class="link-desc">Describe the keyboard you want in a sentence and get the boards that match: split, wireless, switch brand, size, price.</span></a></li><li><a href="keyboards/"><span class="link-title">Keyboards</span><span class="link-desc">Every model with its specs, switch options, price and reviews, from the brands' own pages.</span></a></li><li><a href="switches/"><span class="link-title">Switches</span><span class="link-desc">Force, travel and materials of each switch, from the makers' own spec sheets.</span></a></li></ul></section>` : ''}
-      ${lang === 'fr' ? `<section class="block" aria-labelledby="g-database"><h2 id="g-database">Base de données des claviers et des switchs</h2><p>Les fiches sont en anglais : elles reprennent les chiffres publiés par chaque marque.</p><ul class="link-list"><li><a href="../en/keyboards/finder/" hreflang="en"><span class="link-title">Trouver un clavier</span><span class="link-desc">Décrivez le clavier voulu en une phrase (en anglais) : split, sans fil, marque de switch, taille, prix.</span></a></li><li><a href="../en/keyboards/" hreflang="en"><span class="link-title">Claviers</span><span class="link-desc">Chaque modèle avec ses caractéristiques, ses switchs, son prix et ses tests.</span></a></li><li><a href="../en/switches/" hreflang="en"><span class="link-title">Switchs</span><span class="link-desc">Force, course et matériaux de chaque switch, d’après les fiches des fabricants.</span></a></li></ul></section>` : ''}
+      ${dbBlock(lang, depth)}
       ${tryBand(lang, s.start, 'words', null, depth)}
     </div>
   </div>

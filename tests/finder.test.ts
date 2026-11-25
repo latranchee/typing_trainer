@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest';
 // @ts-expect-error plain ES module without types
 import { evaluate, parse } from '../scripts/data-pages/finder.js';
 // @ts-expect-error plain ES module without types
-import { dbPath, finderDb, keyboards, LISTS } from '../scripts/data-pages/db.mjs';
+import { dbPath, finderDb, keyboards, LISTS, listText } from '../scripts/data-pages/db.mjs';
+// @ts-expect-error plain ES module without types
+import { strings } from '../scripts/data-pages/strings.mjs';
 
 type Filter = { key: string; value: unknown; label: string };
 type Board = { id: string; price: number | null; stagger: string; split: string; conn: string[]; swm: string[]; std: string[] };
@@ -41,6 +43,38 @@ describe('keyboard finder', () => {
     expect(keys('tkl')).toContain('size:tkl');
   });
 
+  it('reads French, German and Spanish sentences', () => {
+    const lang = (l: string, text: string) => parse(text, db, l) as { filters: Filter[]; unknown: string[] };
+    const fr = lang('fr', "j'aimerais un clavier split ortholinéaire sans fil avec switchs gateron à moins de 200 $");
+    expect(fr.filters.map((f) => `${f.key}:${f.value}`)).toEqual(['split:split', 'stagger:ortholinear', 'wireless:true', 'swmaker:gateron', 'pmax:200']);
+    expect(fr.unknown).toEqual([]);
+    expect(fr.filters.at(-1)!.label).toBe('moins de 200 $ US');
+    const de = lang('de', 'leise mechanische Tastatur für Mac ohne Nummernblock, Aluminiumgehäuse');
+    expect(de.filters.map((f) => `${f.key}:${f.value}`)).toEqual(['swtype:silent', 'os:mac', 'size:tkl', 'case:alumin']);
+    expect(de.unknown).toEqual([]);
+    const es = lang('es', 'quiero un teclado ergonómico escalonado por columnas, inalámbrico, por menos de 100 dólares');
+    expect(es.filters.map((f) => `${f.key}:${f.value}`)).toEqual(['ergo:true', 'stagger:column', 'wireless:true', 'pmax:100']);
+    expect(es.unknown).toEqual([]);
+  });
+
+  it('reads every preset list sentence in every language', () => {
+    for (const l of LISTS)
+      for (const lng of ['en', 'fr', 'de', 'es']) {
+        const { filters, unknown } = parse(listText(l.id, lng).q, db, lng) as { filters: Filter[]; unknown: string[] };
+        expect(unknown, `${lng} ${l.id}`).toEqual([]);
+        expect(filters.length, `${lng} ${l.id}`).toBeGreaterThan(0);
+      }
+  });
+
+  it('reads every example the finder page offers, in its language', () => {
+    for (const lng of ['en', 'fr', 'de', 'es'])
+      for (const example of strings(lng).examples as string[]) {
+        const { filters, unknown } = parse(example, db, lng) as { filters: Filter[]; unknown: string[] };
+        expect(unknown, `${lng}: ${example}`).toEqual([]);
+        expect(filters.length, `${lng}: ${example}`).toBeGreaterThan(1);
+      }
+  });
+
   it('gives every keyboard a finder record', () => {
     expect(db.keyboards.length).toBe(keyboards.length);
     expect(new Set(db.keyboards.map((k: Board) => k.id)).size).toBe(keyboards.length);
@@ -53,6 +87,14 @@ describe('database links', () => {
     expect(dbPath('list/split-keyboards')).toBe('en/keyboards/split-keyboards/');
     expect(dbPath(`keyboard/${keyboards[0].id}`)).toMatch(/^en\/keyboards\/[a-z0-9-]+\/[a-z0-9-]+\/$/);
     expect(() => dbPath('keyboard/no-such-board')).toThrow();
+  });
+
+  it('gives each database language its own addresses, and English to the others', () => {
+    expect(dbPath('finder', 'fr')).toBe('fr/claviers/recherche/');
+    expect(dbPath('switches', 'de')).toBe('de/switches/');
+    expect(dbPath('list/split-keyboards', 'es')).toBe('es/teclados/teclados-split/');
+    expect(dbPath(`keyboard/${keyboards[0].id}`, 'fr')).toMatch(/^fr\/claviers\/[a-z0-9-]+\/[a-z0-9-]+\/$/);
+    expect(dbPath('finder', 'ja')).toBe('en/keyboards/finder/');
   });
 
   it('keeps every preset list non-empty', () => {

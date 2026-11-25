@@ -3,6 +3,7 @@
 
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { DB_LANGS, LIST_TEXT, SEG, recLang } from './i18n.mjs';
 
 const repo = join(import.meta.dirname, '..', '..');
 const DATA = join(repo, 'content', 'data');
@@ -26,12 +27,17 @@ export const keyboardById = new Map(keyboards.map((k) => [k.id, k]));
 export const photos = existsSync(join(DATA, 'photos.json')) ? JSON.parse(readFileSync(join(DATA, 'photos.json'), 'utf8')) : {};
 
 const slugOf = (id, prefix) => (id.startsWith(`${prefix}-`) ? id.slice(prefix.length + 1) : id);
-/** Site paths, without the leading slash, ending in a slash. */
-export const kbPath = (k) => `en/keyboards/${k.brand}/${slugOf(k.id, k.brand)}/`;
-export const swPath = (s) => `en/switches/${s.maker}/${slugOf(s.id, s.maker)}/`;
-export const brandPath = (id) => `en/keyboards/${id}/`;
-export const makerPath = (id) => `en/switches/${id}/`;
-export const listPath = (id) => `en/keyboards/${id}/`;
+/** Site paths in a language, without the leading slash, ending in a slash. Model and brand slugs are the same in
+ * every language; folder words (SEG) and list slugs (LIST_TEXT) are translated. */
+export const kbPath = (k, lang = 'en') => `${lang}/${SEG[lang].keyboards}/${k.brand}/${slugOf(k.id, k.brand)}/`;
+export const swPath = (s, lang = 'en') => `${lang}/${SEG[lang].switches}/${s.maker}/${slugOf(s.id, s.maker)}/`;
+export const brandPath = (id, lang = 'en') => `${lang}/${SEG[lang].keyboards}/${id}/`;
+export const makerPath = (id, lang = 'en') => `${lang}/${SEG[lang].switches}/${id}/`;
+export const listPath = (id, lang = 'en') => `${lang}/${SEG[lang].keyboards}/${listText(id, lang).slug}/`;
+export const hubPath = (kind, lang = 'en') => `${lang}/${SEG[lang][kind]}/`;
+export const finderPath = (lang = 'en') => `${lang}/${SEG[lang].keyboards}/${SEG[lang].finder}/`;
+/** kind = 'keyboards' (brand pairs) or 'switches' (maker pairs). */
+export const comparePath = (kind, [a, b], lang = 'en') => `${lang}/${SEG[lang][kind]}/${SEG[lang].compare}/${a}-vs-${b}/`;
 
 /** A switch gets its own page when the maker's page is known or it publishes at least three figures; thin records
  * stay as rows on the maker page. */
@@ -51,7 +57,7 @@ const magnetic = (k) => k.adjustable_actuation === true || k.hot_swap === 'magne
 const ergonomic = (k) => k.split !== 'none' || k.stagger !== 'row' || k.tenting === 'built-in' || k.key_wells === true;
 
 /**
- * Preset lists: a page each at /en/keyboards/<id>/, with the matching boards and a link into the finder.
+ * Preset lists: a page each at /en/keyboards/<id>/ (translated slugs in i18n.mjs), with the matching boards and a link into the finder.
  * `guide` = the guide that explains the topic; `q` = the finder sentence for the same search.
  */
 export const LISTS = [
@@ -76,11 +82,26 @@ export const LISTS = [
   { id: 'gasket-mount-keyboards', name: 'Gasket mount keyboards', test: (k) => /gasket/i.test(k.mount ?? ''), q: 'gasket', guide: 'hot-swappable-keyboard', what: 'gasket-mounted keyboards, where the plate sits on soft gaskets instead of screws' },
   { id: 'qmk-via-keyboards', name: 'QMK and VIA keyboards', test: (k) => k.firmware.some((f) => f === 'qmk' || f === 'via' || f === 'vial'), q: 'qmk', guide: 'hot-swappable-keyboard', what: 'keyboards that run QMK firmware or remap in VIA or Vial' },
 ];
-for (const l of LISTS) {
-  if (brandById.has(l.id)) throw new Error(`list id ${l.id} collides with a brand id`);
-  l.items = keyboards.filter(l.test);
-}
+for (const l of LISTS) l.items = keyboards.filter(l.test);
 export const listById = new Map(LISTS.map((l) => [l.id, l]));
+/** A list's slug, name, noun phrase and finder sentence in a language. */
+export function listText(id, lang = 'en') {
+  const l = listById.get(id);
+  if (lang === 'en') return { slug: l.id, name: l.name, what: l.what, q: l.q };
+  const t = LIST_TEXT[id]?.[lang];
+  if (!t) throw new Error(`list ${id} has no ${lang} text in i18n.mjs`);
+  return t;
+}
+// Two pages may not share an address: under each language's keyboards folder sit the brands, the lists, the
+// finder and the comparisons; under the switches folder, the makers and the comparisons.
+for (const lang of DB_LANGS) {
+  const kb = [...brands.map((b) => b.id), ...LISTS.map((l) => listText(l.id, lang).slug), SEG[lang].finder, SEG[lang].compare];
+  const sw = [...makers.map((m) => m.id), SEG[lang].compare];
+  for (const [where, names] of [[SEG[lang].keyboards, kb], [SEG[lang].switches, sw]]) {
+    const dup = names.find((n, i) => names.indexOf(n) !== i);
+    if (dup) throw new Error(`${lang}/${where}/${dup}/ would be two pages`);
+  }
+}
 
 // ---------- switch makers of each keyboard option ----------
 
@@ -101,7 +122,8 @@ export function finderRecord(k) {
     brand: k.brand,
     b: brandById.get(k.brand)?.name ?? k.brand,
     m: k.model,
-    href: `../${kbPath(k).slice('en/keyboards/'.length)}`,
+    // The page's address under a keyboards folder; the finder page says which folder (its language's, or English).
+    path: `${k.brand}/${slugOf(k.id, k.brand)}/`,
     price: k.price_usd,
     size: k.size,
     keys: k.key_count,
@@ -143,16 +165,17 @@ export const finderDb = (photoBase) => ({
 
 // ---------- db: links in guides ----------
 
-/** The site path (no leading slash) of a db: link target, or throws when the record does not exist. */
-export function dbPath(target) {
-  if (target === 'keyboards') return 'en/keyboards/';
-  if (target === 'switches') return 'en/switches/';
-  if (target === 'finder') return 'en/keyboards/finder/';
+/** The site path (no leading slash) of a db: link target in a language, or throws when the record does not exist.
+ * A language the database is not written in gets the English page. */
+export function dbPath(target, lang = 'en') {
+  if (!DB_LANGS.includes(lang)) lang = 'en';
+  if (target === 'keyboards' || target === 'switches') return hubPath(target, lang);
+  if (target === 'finder') return finderPath(lang);
   const [kind, id] = target.split('/');
-  if (kind === 'keyboard' && keyboardById.has(id)) return kbPath(keyboardById.get(id));
-  if (kind === 'switch' && switchById.has(id) && switchHasPage(switchById.get(id))) return swPath(switchById.get(id));
-  if (kind === 'brand' && brandById.has(id)) return brandPath(id);
-  if (kind === 'maker' && makerById.has(id)) return makerPath(id);
-  if (kind === 'list' && listById.has(id)) return listPath(id);
+  if (kind === 'keyboard' && keyboardById.has(id)) return kbPath(keyboardById.get(id), recLang(lang));
+  if (kind === 'switch' && switchById.has(id) && switchHasPage(switchById.get(id))) return swPath(switchById.get(id), recLang(lang));
+  if (kind === 'brand' && brandById.has(id)) return brandPath(id, lang);
+  if (kind === 'maker' && makerById.has(id)) return makerPath(id, lang);
+  if (kind === 'list' && listById.has(id)) return listPath(id, lang);
   throw new Error(`db:${target}: no such ${kind}`);
 }
