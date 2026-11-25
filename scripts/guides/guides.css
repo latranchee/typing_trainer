@@ -500,6 +500,13 @@ kbd {
   border-bottom: 1px solid var(--line);
   vertical-align: top;
 }
+/* Row labels line up with their cells, not with the column headers. */
+.prose tbody th {
+  padding: 0.75rem 1rem 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
 .prose th:last-child,
 .prose td:last-child {
   padding-right: 0;

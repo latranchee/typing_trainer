@@ -1,0 +1,77 @@
+<!--meta
+{
+  "id": "ortholinear-keyboard",
+  "lang": "fr",
+  "slug": "clavier-ortholineaire",
+  "title": "Clavier ortholinéaire : Planck, couches, keycaps et firmware",
+  "description": "Le clavier ortholinéaire expliqué : les modèles en grille (Planck, Preonic, Equals 48, Keychron Q15 Max), les couches, les keycaps, QMK, VIA et ZMK.",
+  "h1": "Clavier ortholinéaire : la grille, les modèles et ce qu’il faut vérifier",
+  "keyword": "clavier ortholinéaire",
+  "keywords_secondary": ["clavier ortho", "clavier en grille", "clavier split ortholinéaire", "clavier Planck", "clavier ortholinéaire 40 %"],
+  "summary": "Un clavier ortholinéaire place ses touches dans une grille droite, sans décalage de rangée : chaque touche se trouve juste au-dessus et au-dessous de ses voisines. Le modèle le plus connu, l’OLKB Planck, est une grille 40 % de 12 colonnes sur 4 rangées, avec 47 ou 48 touches et des touches Lower et Raise qui ouvrent les couches des chiffres et des symboles. Les keycaps doivent avoir un profil uniforme. La plupart tournent sous QMK, souvent avec VIA ou ZMK.",
+  "faq": [
+    {"q": "Qu’est-ce qu’un clavier ortholinéaire ?", "a": "C’est un clavier dont les touches forment une grille rigide de rangées et de colonnes droites, sans décalage latéral d’une rangée à l’autre. Switch and Click décrit des rangées et des colonnes parfaitement alignées, avec des touches presque toutes de même taille. Deskthority appelle cet agencement sans décalage une matrice et indique que le terme ortho-linear est né lors d’une évaluation du TypeMatrix."},
+    {"q": "Le Planck est-il un clavier ortholinéaire ?", "a": "Oui. QMK présente l’OLKB Planck comme un kit de clavier ortholinéaire compact 40 % (12x4) fabriqué et vendu par OLKB et Massdrop. Switch and Click cite une disposition Grid de 48 touches en 4x12 et une disposition MIT de 47 touches, en 3x12 plus une rangée du bas de 11 touches. ZSA a vendu une version montée, le Planck EZ, jusqu’en 2023."},
+    {"q": "Peut-on utiliser un jeu de keycaps standard sur un clavier ortholinéaire ?", "a": "Beaucoup de jeux conviennent, à condition que le profil suive. Selon Switch and Click, les keycaps d’une grille doivent avoir une forme précise et une hauteur constante sur toutes les rangées, puisqu’une grille n’a pas de rangées sculptées. La disposition MIT de 47 touches demande aussi une barre d’espace de 2 u. Vérifiez la liste de keycaps du kit avant de commander."},
+    {"q": "Un clavier ortholinéaire a-t-il une rangée des chiffres ?", "a": "Les modèles compacts, comme le Planck à 4 rangées, n’en ont pas : les chiffres se trouvent sur une couche, que vous atteignez en tenant Lower ou Raise. Les grilles plus grandes ajoutent une rangée des chiffres. splitkb annonce pour son Aurora Helix ortholinéaire une rangée des chiffres et jusqu’à 64 touches."},
+    {"q": "Quel firmware utilisent les claviers ortholinéaires ?", "a": "La plupart utilisent QMK, que Switch and Click présente comme gratuit. La base de claviers de petitdoigt indique QMK et KMK sur le Boardsource Equals 48, QMK et VIA sur le Keychron Q15 Max, QMK et ZMK sur le splitkb Aurora Helix, et ZMK sur le beekeeb FelixKeeb sans fil."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Ortholinear", "url": "https://deskthority.net/wiki/Ortholinear"},
+    {"title": "Deskthority wiki: Matrix layout", "url": "https://deskthority.net/wiki/Matrix_layout"},
+    {"title": "Switch and Click: Best ortholinear keyboards", "url": "https://switchandclick.com/best-ortholinear-keyboards/"},
+    {"title": "The Sweet Setup: A first impressions review of the Planck EZ 40 keyboard", "url": "https://thesweetsetup.com/a-first-impressions-review-of-the-planck-ez-40-keyboard/"},
+    {"title": "QMK firmware: Planck readme", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/readme.md"},
+    {"title": "QMK firmware: Planck default keymap", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/keymaps/default/keymap.c"},
+    {"title": "ZSA blog: Goodbye Planck EZ", "url": "https://blog.zsa.io/2307-goodbye-planck-ez/"},
+    {"title": "Keychron: Q15 Max", "url": "https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard"},
+    {"title": "Boardsource", "url": "https://boardsource.xyz/"},
+    {"title": "splitkb Aurora (GitHub)", "url": "https://github.com/splitkb/aurora"},
+    {"title": "Wikipedia: Ergonomic keyboard", "url": "https://en.wikipedia.org/wiki/Ergonomic_keyboard"},
+    {"title": "ZSA: Moonlander", "url": "https://www.zsa.io/moonlander"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Entraînez chaque doigt depuis sa touche de repos", "drill": "anchors"}
+}
+-->
+<p>Un clavier ortholinéaire range ses touches dans une grille droite : les rangées vont de gauche à droite, les colonnes de haut en bas, et aucune rangée n’est décalée par rapport à la suivante. L’OLKB Planck a popularisé cette forme chez les passionnés de claviers, et une poignée de fabricants vendent aujourd’hui des grilles, d’un seul bloc ou split. La comparaison avec les claviers décalés et columnar se trouve dans le guide <a href="guide:staggered-vs-ortholinear-vs-columnar">clavier décalé, ortholinéaire ou columnar</a>.</p>
+
+<h2>Qu’est-ce qu’un clavier ortholinéaire ?</h2>
+<p>Un clavier ortholinéaire n’a aucun décalage : ses touches forment une grille de rangées et de colonnes parfaitement droites. Deskthority le définit comme une disposition sans décalage et lui donne d’autres noms en anglais, <em>matrix layout</em>, <em>ortho-linear</em> et <em>orthogonal</em>. En français, on parle aussi de clavier ortho ou de clavier en grille. Un clavier décalé déplace ses rangées de 1/2, 1/4 et 1/2 touche selon le modèle de la machine à écrire, et la grille ramène tous ces décalages à zéro.</p>
+<p>Sur ces claviers, la plupart des touches ont la même taille, la barre d’espace faisant parfois exception. Les claviers décalés restent la norme, et Switch and Click range les claviers ortholinéaires parmi les choix de niche. Une grille peut être grande : le <a href="db:keyboard/keychron-q15-max">Keychron Q15 Max</a> est un clavier ortholinéaire tout en métal avec deux molettes, et le <a href="db:keyboard/splitkb-aurora-helix">splitkb Aurora Helix</a> un split ortholinéaire qui monte jusqu’à 64 touches, avec une rangée des chiffres et jusqu’à deux encodeurs.</p>
+<p>Certains pensent que les dispositions en matrice soulagent les symptômes de RSI (les lésions dues aux gestes répétitifs), et Deskthority n’a trouvé aucune recherche sur le sujet. Aucune des sources consultées ici ne montre que la grille prévient ou soigne une blessure.</p>
+
+<h2>Qu’est-ce que le Planck, et comment fonctionne un clavier ortholinéaire 40 % ?</h2>
+<p>Le Planck est un kit ortholinéaire 12x4 de 47 ou 48 touches, fabriqué et vendu par OLKB et Massdrop selon le readme de QMK, et c’est le clavier que la plupart des guides désignent quand ils parlent de clavier ortholinéaire. Il compte douze colonnes et quatre rangées. Switch and Click cite deux dispositions : une disposition Grid de 48 touches en 4x12, et une disposition MIT de 47 touches, faite de 3x12 touches et d’une rangée du bas de 11 touches.</p>
+<p>La keymap QMK par défaut place une carte QWERTY sur la couche de base. En haut, <kbd>Tab</kbd>, puis <kbd>Q</kbd> à <kbd>P</kbd>, puis <kbd>Bksp</kbd> ; sur la rangée de repos, <kbd>Esc</kbd> et <kbd>A</kbd> à <kbd>'</kbd> ; en dessous, <kbd>Shift</kbd>, <kbd>Z</kbd> à <kbd>/</kbd> et <kbd>Enter</kbd> ; et une rangée du bas avec <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, <kbd>GUI</kbd>, <kbd>Lower</kbd>, <kbd>Space</kbd>, <kbd>Raise</kbd> et les flèches. Il n’y a pas de rangée des chiffres. Dans cette keymap, la couche Raise porte les chiffres <kbd>1</kbd> à <kbd>0</kbd>, le moins, l’égal, les crochets, la barre oblique inversée et les touches de fonction ; la couche Lower porte les symboles obtenus avec Maj et les mêmes touches de fonction. Le testeur du Planck EZ de The Sweet Setup écrit que le clavier peut contenir plus de 30 couches programmables, Raise et Lower, de part et d’autre de la barre d’espace, ouvrant les deux couches par défaut.</p>
+<p>Les couches changent le travail des doigts : pour taper un chiffre, vous tenez <kbd>Raise</kbd> avec un pouce et frappez le chiffre avec un doigt. Le testeur de The Sweet Setup avait retrouvé sa vitesse de frappe normale en moins d’une journée, et il a mis environ deux semaines à intégrer les couches. Switch and Click donne une estimation plus longue pour la forme elle-même : des semaines ou des mois pour s’habituer à un clavier ortholinéaire, avec une frappe plus lente et plus fautive au début. Les grilles plus grandes gardent une rangée des chiffres et évitent l’étape des couches.</p>
+<p>Le <a href="db:keyboard/zsa-planck-ez">Planck EZ</a> de ZSA, une version montée de 47 touches conçue avec Jack Humbert, a été arrêté en août 2023. Dans son message d’adieu, ZSA explique que le clavier ne s’est jamais très bien vendu et n’a pas décollé commercialement malgré des années d’efforts.</p>
+
+<h2>Quels claviers sont ortholinéaires ?</h2>
+<p>Cinq claviers de la <a href="db:keyboards">base de claviers de petitdoigt</a> (en anglais) sont ortholinéaires : trois d’un seul bloc et deux split. Switch and Click cite aussi l’OLKB Planck et le Preonic, que QMK et le site de tests décrivent et que la base ne recense pas.</p>
+<table>
+<caption>Claviers ortholinéaires, tels que les décrivent fabricants et testeurs (données vérifiées le 23 novembre 2026)</caption>
+<thead><tr><th scope="col">Clavier</th><th scope="col">Forme</th><th scope="col">Touches</th><th scope="col">Firmware</th><th scope="col">Remarques</th></tr></thead>
+<tbody>
+<tr><th scope="row">OLKB Planck</th><td>Un bloc, 40 %</td><td>47 ou 48</td><td>QMK</td><td>Kit 12x4 vendu par OLKB et Massdrop ; selon Switch and Click, kit à monter soi-même avec un PCB hot-swap</td></tr>
+<tr><th scope="row">OLKB Preonic</th><td>Un bloc, 60 %</td><td>Non précisé</td><td>QMK</td><td>Kit à monter avec switchs hot-swap, RGB et empreintes supplémentaires, selon Switch and Click</td></tr>
+<tr><th scope="row">ZSA Planck EZ</th><td>Un bloc, 40 %</td><td>47</td><td>QMK (Oryx)</td><td>Arrêté en août 2023</td></tr>
+<tr><th scope="row"><a href="db:keyboard/boardsource-equals-48">Boardsource Equals 48</a></th><td>Un bloc, 40 %</td><td>48</td><td>QMK, KMK</td><td>Grille 4x12, boîtier en aluminium usiné CNC, RP2040, hot-swap MX sans nombre de broches précisé ; épuisé lors de la vérification</td></tr>
+<tr><th scope="row">Keychron Q15 Max</th><td>Un bloc</td><td>Non précisé</td><td>QMK, VIA</td><td>Tout en métal, deux molettes ; USB, Bluetooth et 2,4 GHz ; hot-swap MX (5 broches) ; 229,99 $ US sur la boutique Keychron</td></tr>
+<tr><th scope="row">splitkb Aurora Helix</th><td>Split</td><td>Jusqu’à 64</td><td>QMK, ZMK</td><td>Rangée des chiffres, jusqu’à deux encodeurs ; kit hot-swap MX ou Choc</td></tr>
+<tr><th scope="row"><a href="db:keyboard/beekeeb-felixkeeb-choc">beekeeb FelixKeeb</a></th><td>Split, sans fil</td><td>64</td><td>ZMK</td><td>Disposition Helix 5x12+4, hot-swap Choc v1 ; épuisé lors de la vérification</td></tr>
+</tbody>
+</table>
+<p>Les deux premières lignes viennent de QMK et de Switch and Click ; les autres viennent des fiches des fabricants, telles que la base de petitdoigt les enregistre. Switch and Click classe le ZSA Moonlander et l’ErgoDox EZ parmi les claviers split ortholinéaires, alors que ZSA qualifie le Moonlander de columnar. Le <a href="guide:columnar-keyboard">guide du clavier columnar</a> couvre cette famille. Couper le clavier en deux change la position des mains et laisse la grille intacte, ce qui explique que les modèles split du tableau restent ortholinéaires. Le <a href="guide:split-keyboard">guide du clavier split</a> détaille la séparation.</p>
+
+<h2>Peut-on mettre des keycaps standard sur un clavier ortholinéaire ?</h2>
+<p>Le plus souvent, à condition que le profil convienne. Selon Switch and Click, les keycaps d’un clavier ortholinéaire doivent avoir une forme précise pour bien fonctionner, avec une hauteur constante d’une rangée à l’autre. Les keycaps du Planck EZ partagent un profil uniforme (OEM rangée 3), si bien que n’importe quelle touche peut aller à n’importe quelle place sans souci de forme, comme le note The Sweet Setup.</p>
+<p>La largeur compte aussi. La disposition Grid de 48 touches est en 4x12, et la disposition MIT de 47 touches a une rangée du bas de 11 touches, qui ne remplit un clavier de 12 unités de large qu’avec une touche plus large. Comparez la liste des touches demandées par le kit avec le jeu de keycaps avant de commander.</p>
+<p>Sur un clavier à couches, une touche porte plusieurs caractères, et les légendes imprimées ne montrent qu’une partie de ce qu’elle tape. petitdoigt dessine à l’écran un clavier coloré par doigt, et l’<a href="app:anchors">exercice ancrages</a> montre quel doigt prend chaque touche. Il enregistre les touches frappées et ne voit pas quel doigt les a frappées.</p>
+
+<h2>Quel firmware pour un clavier ortholinéaire ?</h2>
+<p>QMK sur la plupart, avec VIA, KMK ou ZMK sur certains. QMK est un firmware open source, gratuit selon Switch and Click, et la page du Planck se trouve dans le dépôt même de QMK, avec les commandes de compilation de chaque révision. La base de petitdoigt indique QMK et VIA sur le Keychron Q15 Max, QMK et KMK sur l’Equals 48, QMK et ZMK sur l’Aurora Helix, et ZMK sur le FelixKeeb sans fil. Le Keychron Q15 Max se configure dans l’application web de Keychron, le Keychron Launcher. Les claviers ZSA passent par Oryx, l’éditeur de la marque dans le navigateur, et la page du Moonlander annonce jusqu’à 32 couches.</p>
+<p>ZMK équipe le FelixKeeb sans fil et l’Aurora Helix compatible Bluetooth ; QMK, l’Equals 48 filaire et le Planck. Le kit Aurora Helix accepte l’un ou l’autre firmware.</p>
+
+<h2>Un clavier ortholinéaire est-il fait pour vous ?</h2>
+<p>Un clavier ortholinéaire vous convient si vous voulez des gestes verticaux et acceptez de reconstruire quelques habitudes. Les testeurs décrivent une adaptation d’un jour à plusieurs semaines, et les lettres gardent pour la plupart leur doigt : <kbd>B</kbd> se trouve juste sous <kbd>G</kbd>, sous l’index gauche, et <kbd>Y</kbd> au-dessus de <kbd>H</kbd>, sous l’index droit. Ces quatre touches gardent leur place sur un AZERTY. Le <a href="guide:finger-placement">guide du placement des doigts</a> donne le schéma complet, et le <a href="guide:touch-typing">guide de la dactylographie</a> aide à reconstruire l’habitude. Le guide des <a href="guide:keyboard-sizes">tailles de clavier</a> situe les claviers 40 % et 60 % parmi les autres formats, et le <a href="guide:ergonomic-keyboard">guide du clavier ergonomique</a> examine les promesses de confort. Le <a href="db:finder">moteur de recherche de claviers</a> liste les grilles de la base de petitdoigt quand vous en décrivez une, par exemple « clavier ortholinéaire hot-swap ».</p>

@@ -1,0 +1,105 @@
+<!--meta
+{
+  "id": "switch-specs",
+  "lang": "fr",
+  "slug": "force-d-actionnement",
+  "title": "Force d’actionnement et point d’actionnement des switchs",
+  "description": "Force d’actionnement, point d’actionnement, force en fin de course, pré-course et durée de vie : ce que disent les fiches de switchs, en gf et en cN.",
+  "h1": "Force d’actionnement et point d’actionnement : comment lire la fiche d’un switch",
+  "keyword": "force d’actionnement",
+  "keywords_secondary": ["point d’actionnement", "pré-course", "course switch", "gf ou cN", "force en fin de course"],
+  "summary": "La force d’actionnement est la force qu’il faut pour qu’une touche s’enregistre ; le point d’actionnement est la profondeur où cela se produit. Les fabricants donnent les forces en gramme-force (gf) ou en centinewtons (cN), et 1 gf vaut environ 0,98 cN. La pré-course mène à l’actionnement, la course totale va jusqu’au fond, où s’exerce la force en fin de course. Ces chiffres viennent des fabricants et peuvent différer des mesures.",
+  "faq": [
+    {"q": "Qu’est-ce que la force d’actionnement ?", "a": "La force qu’une touche demande pour que le switch enregistre l’appui. Cherry annonce 45 cN pour son MX2A Red, et Razer 45 g pour son switch optique linéaire. Ce chiffre correspond à la force au point d’actionnement ; la force en fin de course est indiquée à part."},
+    {"q": "Qu’est-ce que le point d’actionnement ?", "a": "La profondeur à laquelle l’appui s’enregistre, aussi appelée distance d’actionnement. La page du MX Red de Cherry indique 2,0 mm de pré-course sur une course de 4 mm. Razer annonce 1,2 mm pour son switch optique linéaire. Les claviers réglables vous laissent le choisir par logiciel, dans une plage comme 0,1 à 4,0 mm."},
+    {"q": "Quelle différence entre pré-course et course totale ?", "a": "La pré-course est la distance que parcourt la touche avant le point d’actionnement ; la course totale va jusqu’au fond. Cherry indique 2,0 mm de pré-course et 4,0 mm de course totale pour le MX Red, et Kailh 1,3 mm et 3,2 mm pour le Choc v2 Red. Les switchs optiques courts, comme l’OPX de Corsair, descendent à 1,0 mm de pré-course."},
+    {"q": "Quel est le meilleur point d’actionnement pour jouer ?", "a": "Les sources ne donnent pas de valeur idéale. Un point peu profond, de 1,0 à 1,5 mm, réagit plus tôt ; Wooting et Razer permettent de régler 0,1 à 4,0 mm touche par touche, et Corsair note que la force augmente avec la profondeur choisie. Les testeurs jugent les claviers sur la latence et la plage de réglage : choisissez selon le jeu, vos habitudes de doigts et les appuis involontaires."},
+    {"q": "Quelle différence entre gf et cN ?", "a": "Le gramme-force et le centinewton sont deux unités pour la même grandeur. Le wiki de Deskthority donne 1 gf = 0,98 cN et 1 cN = 1,02 gf, des valeurs assez proches pour que les passionnés les traitent comme équivalentes. Cherry écrit cN ; Kailh, Gateron et la plupart des autres écrivent gf."},
+    {"q": "Les forces annoncées correspondent-elles aux mesures ?", "a": "Pas toujours. A4Tech annonce son switch optique LK Libra Orange à 40 gf, et TechPowerUp a mesuré une force d’actionnement moyenne d’environ 49 gf sur 20 switchs. Les fabricants donnent aussi des tolérances, comme les 50 gf à 10 gf près de Kailh pour le Choc v2 Red, et ThereminGoat publie des courbes de force mesurées."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Force curve", "url": "https://deskthority.net/wiki/Force_curve"},
+    {"title": "ThereminGoat: force-curves repository", "url": "https://github.com/ThereminGoat/force-curves"},
+    {"title": "ThereminGoat’s Switches", "url": "https://www.theremingoat.com/"},
+    {"title": "Cherry: MX2A Red", "url": "https://www.cherry.de/en-gb/product/mx2a-red"},
+    {"title": "Cherry: MX2A Brown", "url": "https://www.cherry.de/en-gb/product/mx2a-brown"},
+    {"title": "Cherry: MX2A Blue", "url": "https://www.cherry.de/en-gb/product/mx2a-blue"},
+    {"title": "Cherry: MX ULP Tactile", "url": "https://www.cherry.de/en-gb/product/mx-ulp-tactile"},
+    {"title": "Cherry: switches", "url": "https://www.cherry.de/en-gb/products/switches"},
+    {"title": "Kailh: Choc v2 low profile switch", "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html"},
+    {"title": "Kailh: Choc v1 tactile (Brown) low profile switches", "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/tactile-mechanical-keyboard-switches.html"},
+    {"title": "Deskthority wiki: Kailh Choc V2", "url": "https://deskthority.net/wiki/Kailh_Choc_V2"},
+    {"title": "Wooting: Wooting 60HE v2", "url": "https://wooting.io/wooting-60he-v2"},
+    {"title": "Wooting: Lekker switch Linear60 (L60) V2", "url": "https://wooting.io/product/lekker-switch-l60-v2"},
+    {"title": "Wooting: Flaretech, the optical keyboard switch", "url": "https://wooting.io/post/flaretech-the-optical-keyboard-switch"},
+    {"title": "Razer: Razer Optical Switch", "url": "https://www.razer.com/razer-optical-switch"},
+    {"title": "Razer: Razer Analog Optical Switch", "url": "https://www.razer.com/technology/razer-analog-optical-switch"},
+    {"title": "Corsair: key switches compared", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/"},
+    {"title": "Corsair: MGX magnetic key switches explained", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/"},
+    {"title": "TechPowerUp: Bloody B945 review, measurements", "url": "https://techpowerup.com/review/bloody-b945/4.html"},
+    {"title": "RTINGS: Wooting 60HE v2 review", "url": "https://www.rtings.com/keyboard/reviews/wooting/60he-v2-magnetic"},
+    {"title": "PC Gamer: Wooting 60HE v2 review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-60he-v2-review/"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Entraînez-vous dans le navigateur, chaque touche à la couleur de son doigt", "drill": "words"}
+}
+-->
+<p>La fiche technique d’un switch donne quelques chiffres : la force d’actionnement, la profondeur où l’actionnement se produit, la force en fin de course et une durée de vie annoncée. Chacun a un sens précis, et les fabricants emploient des unités et des intitulés différents. Pour la sensation des différents types de switchs, voyez le guide <a href="guide:linear-vs-tactile-vs-clicky">linéaire, tactile ou clicky</a>.</p>
+
+<h2>Qu’est-ce que la force d’actionnement ?</h2>
+<p>La force d’actionnement est la force à laquelle le switch enregistre l’appui. On parle aussi de force de fonctionnement (operating force). La page de Cherry pour le MX2A Red annonce 45 cN de force de fonctionnement et reprend le même chiffre comme force d’actionnement dans son tableau des caractéristiques. Plus le chiffre est élevé, plus la touche est ferme.</p>
+<p>La force change le long de la course, et un chiffre isolé ne décrit donc qu’un moment. Le wiki de Deskthority définit la courbe de force comme un graphique avec la force en ordonnée et la course en abscisse. Il y marque le point d’actionnement (make) d’un point noir plein et le point de réinitialisation (release) d’un point creux. La courbe montre aussi d’autres éléments :</p>
+<ul>
+<li><strong>La précharge</strong> (preload) est la force de départ, avant que la touche bouge ; selon le wiki, elle évite une sensation lâche et molle.</li>
+<li><strong>La force tactile</strong> est la force à vaincre pour passer la bosse d’un switch tactile, et l’actionnement suit en général juste après, quand la force retombe. Le wiki ajoute que pour les switchs tactiles, le chiffre annoncé désigne en général cette force tactile, la plus facile à mesurer.</li>
+<li><strong>La force terminale</strong>, ou force en fin de course, est la force exercée en fin de course.</li>
+<li><strong>L’hystérésis</strong> désigne l’écart entre la courbe de descente et la courbe de remontée, surtout dans les switchs conçus pour en avoir.</li>
+</ul>
+<p>La page du Cherry MX Red indique une force initiale de 30 cN, une force d’actionnement de 45 cN et une force finale de 100 cN : le ressort part de 30 cN, atteint 45 cN au point d’actionnement et finit à 100 cN contre le fond.</p>
+
+<h2>Que sont le point d’actionnement, la pré-course et la course totale ?</h2>
+<p>Le point d’actionnement est la profondeur à laquelle la touche s’enregistre, mesurée depuis le haut de la course. La pré-course est la même distance, exprimée comme la longueur parcourue avant l’actionnement ; la course totale va jusqu’au fond. La page du MX Red de Cherry donne 2,0 mm de pré-course et 4,0 mm de course totale, sans point d’actionnement séparé.</p>
+<table>
+<caption>Chiffres de course et de force, dans l’unité de chaque fabricant</caption>
+<thead><tr><th scope="col">Switch</th><th scope="col">Force à l’actionnement</th><th scope="col">Force en fin de course ou force finale</th><th scope="col">Pré-course</th><th scope="col">Course totale</th></tr></thead>
+<tbody>
+<tr><th scope="row"><a href="db:switch/cherry-mx2a-red">Cherry MX2A Red</a></th><td>45 cN</td><td>100 cN</td><td>2,0 mm</td><td>4,0 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/cherry-mx2a-brown">Cherry MX2A Brown</a></th><td>45 cN (force tactile 55 cN)</td><td>80 cN</td><td>2,0 mm</td><td>4,0 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/cherry-mx2a-blue">Cherry MX2A Blue</a></th><td>50 cN (force tactile 60 cN)</td><td>Non indiquée</td><td>2,2 mm</td><td>4,0 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/kailh-choc-v2-red">Kailh Choc v2 Red</a></th><td>50 gf, à 10 gf près</td><td>Non indiquée</td><td>1,3 mm</td><td>3,2 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/razer-linear-optical">Razer Linear Optical</a></th><td>45 g</td><td>Non indiquée</td><td>1,2 mm</td><td>Non indiquée</td></tr>
+<tr><th scope="row">Corsair OPX</th><td>45 g</td><td>Non indiquée</td><td>1,0 mm</td><td>3,2 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/wooting-lekker-l60-v2">Wooting Lekker L60 V2</a></th><td>40 gf au début de l’appui</td><td>60 gf à la fin</td><td>Réglée par logiciel</td><td>4,0 mm</td></tr>
+</tbody>
+</table>
+<p>Corsair indique que l’OPX s’actionne à 1,0 mm, environ la moitié des 2,0 mm d’un switch mécanique courant, et Razer affirme que le point d’actionnement de son switch optique linéaire, à 1,2 mm, est 16,67 % plus court que celui des switchs linéaires standard. Une distance d’actionnement plus courte réagit à un appui moins profond. Le guide du <a href="guide:finger-placement">placement des doigts</a> montre où chaque doigt se repose entre deux appuis.</p>
+
+<h2>Quelle différence entre gf et cN ?</h2>
+<p>Ce sont deux unités pour une même grandeur. Le wiki de Deskthority donne 1 gf = 0,98 cN et 1 cN = 1,02 gf, et note que les passionnés les traitent comme équivalentes. Cherry écrit cN ; Kailh, Gateron, Wooting et la plupart des autres fabricants écrivent gf, et Razer et Corsair un simple g. Certains fabricants utilisent le newton, et d’anciens documents américains peuvent utiliser l’once.</p>
+<p>Les unités étant proches, un Cherry Red à 45 cN et un Gateron Red à 45 gf diffèrent d’environ 1 gramme-force.</p>
+
+<h2>Les chiffres des fabricants concordent-ils entre eux et avec les mesures ?</h2>
+<p>Les fabricants publient des tolérances, et certains donnent deux chiffres pour un même switch. Kailh annonce le Choc v2 Red à 50 gf, à 10 gf près. Les pages de Cherry se contredisent sur quelques switchs : celle du MX ULP Tactile indique 65 cN de force de fonctionnement dans ses points forts et 52 cN dans son tableau des caractéristiques, et la fiche technique de l’Ergo Clear donne un point de pression à 40 cN quand sa page produit annonce 55 cN.</p>
+<p>Les intitulés varient aussi d’un fabricant à l’autre. La page du <a href="db:switch/kailh-choc-v1-brown">Choc v1 Brown</a> de Kailh appelle force d’actionnement les 60 gf (à 10 gf près) et force de fonctionnement les 50 gf (à 10 gf près), et la <a href="db:switches">base de switchs de petitdoigt</a> les enregistre comme une force tactile de 60 gf et une force d’actionnement de 50 gf. Vérifiez quelle force un chiffre désigne avant de comparer deux switchs.</p>
+<p>Des mesures indépendantes existent pour certains switchs. TechPowerUp a mesuré une force d’actionnement moyenne d’environ 49 gf sur 20 switchs optiques A4Tech LK Libra Orange, annoncés à 40 gf par A4Tech. Un seul modèle de switch dans un seul test montre qu’un écart peut exister, sans en donner la fréquence.</p>
+<p>Pour des courbes mesurées, ThereminGoat publie sur GitHub un dépôt de courbes de force de switchs. Chaque dossier de switch contient un PDF de la courbe, une feuille XLSX des données traitées et un fichier CSV brut, et l’auteur demande à être cité quand les données sont réutilisées. Les courbes figurent dans ses tests détaillés depuis mai 2022, et le dépôt se trouve à l’adresse <a href="https://github.com/ThereminGoat/force-curves">github.com/ThereminGoat/force-curves</a>. Son blog de tests est sur <a href="https://www.theremingoat.com/">theremingoat.com</a>.</p>
+
+<h2>Quel est le meilleur point d’actionnement pour jouer ?</h2>
+<p>Aucune source ne désigne de meilleur point d’actionnement. Le choix dépend du jeu, de la façon dont vous posez les doigts, et de ce qui vous coûte le plus cher entre un appui involontaire et une réponse tardive.</p>
+<table>
+<caption>Options d’actionnement selon le fabricant</caption>
+<thead><tr><th scope="col">Switch</th><th scope="col">Réglage</th><th scope="col">Ce qu’en dit le fabricant</th></tr></thead>
+<tbody>
+<tr><th scope="row">Cherry MX Red</th><td>Fixe, 2,0 mm de pré-course</td><td>Linéaire, faible résistance du ressort</td></tr>
+<tr><th scope="row">Corsair OPX</th><td>Fixe, 1,0 mm</td><td>Plus court qu’un switch courant à 2,0 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/razer-analog-optical-gen-2">Razer Analog Optical (Gen-2)</a></th><td>0,1 à 4,0 mm par logiciel</td><td>Avec Rapid Trigger et actionnement en deux étapes</td></tr>
+<tr><th scope="row"><a href="db:keyboard/wooting-60he-v2">Wooting 60HE v2</a></th><td>0,1 à 4,0 mm par touche, par pas de 0,1 mm</td><td>Le Rapid Trigger réinitialise et active les touches à l’instant où vous bougez</td></tr>
+<tr><th scope="row"><a href="db:switch/corsair-mgx-hyperdrive">Corsair MGX Hyperdrive</a></th><td>0,1 à 3,8 mm dans le tableau de Corsair</td><td>La force passe de 30 à 55 g selon la profondeur choisie</td></tr>
+</tbody>
+</table>
+<p>Les testeurs notent ces claviers sur la latence et la plage de réglage. RTINGS voit dans le Wooting 60HE v2 un excellent clavier de jeu, à la latence extrêmement basse et régulière, et PC Gamer lui donne 93/100. Aucun des deux tests ne recommande de valeur en millimètres. Le guide des <a href="guide:hall-effect-switches">switchs magnétiques</a> explique l’actionnement réglable et le rapid trigger, et celui des <a href="guide:optical-switches">switchs optiques</a> présente les versions à faisceau lumineux.</p>
+
+<h2>Que signifie la durée de vie annoncée ?</h2>
+<p>La durée de vie annoncée est le nombre de frappes qu’un switch supporte selon son fabricant. Pour le MX Red, Cherry garantit plus de 100 millions de frappes sans perte de qualité, et le MX ULP Tactile est annoncé pour plus de 50 millions. Razer annonce 100 millions pour ses switchs optiques et compare ce chiffre à une norme du secteur de 50 millions de frappes. Corsair annonce 150 millions pour l’OPX et le MGX Hyperdrive, et 80 millions pour l’OPX Low-Profile. La base de switchs de petitdoigt indique 10 millions pour certains Kailh Choc v1 clicky et 50 millions pour la plupart des Choc v2.</p>
+<p>Ces chiffres sont des affirmations des fabricants. Les sources utilisées ici ne contiennent aucun test d’endurance indépendant, et la page comparative de Wooting prévient que ses propres données peuvent contenir des erreurs.</p>
+<p>Le guide des <a href="guide:keyboard-switches">switchs de clavier</a> explique comment le son et la sensation d’un switch découlent de son type. petitdoigt propose dans le navigateur des exercices où chaque touche a la couleur de son doigt, avec des sons de touches enregistrés sur 13 vrais switchs, à choisir dans une liste déroulante de ses réglages, et ne prétend pas qu’une caractéristique de switch améliore votre vitesse.</p>

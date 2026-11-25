@@ -119,7 +119,7 @@ function header(lang, depth, alternates, current) {
   <nav class="site-nav" aria-label="${esc(BRAND)}">
     <a class="nav-link" href="${up(depth)}${lang}/"${current === 'index' ? ' aria-current="page"' : ''}>${esc(s.guides)}</a>
     ${lang === 'en' ? `<a class="nav-link" href="${up(depth)}en/keyboards/">keyboards</a>
-    <a class="nav-link" href="${up(depth)}en/switches/">switches</a>` : ''}
+    <a class="nav-link" href="${up(depth)}en/switches/">switches</a>` : ''}${lang === 'fr' ? `<a class="nav-link" href="${up(depth)}en/keyboards/" hreflang="en">claviers</a>` : ''}
     <a class="cap-button" href="${esc(appHref(lang, 'words', null, depth))}">${esc(s.start)}${ARROW}</a>
     <details class="lang">
       <summary aria-label="${esc(s.language)}">${GLOBE}<span class="lang-name">${esc(GUIDE_LANGS[lang].name)}</span><span class="lang-code">${lang}</span>${CHEVRON}</summary>
@@ -340,6 +340,7 @@ ${header(lang, depth, alternates, 'index')}
       <p class="lede">${esc(s.indexIntro)}</p>
       ${groups}
       ${lang === 'en' ? `<section class="block" aria-labelledby="g-database"><h2 id="g-database">Keyboard and switch database</h2><ul class="link-list"><li><a href="keyboards/finder/"><span class="link-title">Keyboard finder</span><span class="link-desc">Describe the keyboard you want in a sentence and get the boards that match: split, wireless, switch brand, size, price.</span></a></li><li><a href="keyboards/"><span class="link-title">Keyboards</span><span class="link-desc">Every model with its specs, switch options, price and reviews, from the brands' own pages.</span></a></li><li><a href="switches/"><span class="link-title">Switches</span><span class="link-desc">Force, travel and materials of each switch, from the makers' own spec sheets.</span></a></li></ul></section>` : ''}
+      ${lang === 'fr' ? `<section class="block" aria-labelledby="g-database"><h2 id="g-database">Base de données des claviers et des switchs</h2><p>Les fiches sont en anglais : elles reprennent les chiffres publiés par chaque marque.</p><ul class="link-list"><li><a href="../en/keyboards/finder/" hreflang="en"><span class="link-title">Trouver un clavier</span><span class="link-desc">Décrivez le clavier voulu en une phrase (en anglais) : split, sans fil, marque de switch, taille, prix.</span></a></li><li><a href="../en/keyboards/" hreflang="en"><span class="link-title">Claviers</span><span class="link-desc">Chaque modèle avec ses caractéristiques, ses switchs, son prix et ses tests.</span></a></li><li><a href="../en/switches/" hreflang="en"><span class="link-title">Switchs</span><span class="link-desc">Force, course et matériaux de chaque switch, d’après les fiches des fabricants.</span></a></li></ul></section>` : ''}
       ${tryBand(lang, s.start, 'words', null, depth)}
     </div>
   </div>

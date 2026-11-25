@@ -1,0 +1,121 @@
+<!--meta
+{
+  "id": "hall-effect-switches",
+  "lang": "fr",
+  "slug": "switch-magnetique",
+  "title": "Switch magnétique : comment marche un clavier à effet Hall",
+  "description": "Un switch magnétique à effet Hall lit la position d’un aimant : fonctionnement, rapid trigger, actionnement réglable et ce que publient Wooting et Gateron.",
+  "h1": "Switch magnétique à effet Hall : fonctionnement, rapid trigger et claviers",
+  "keyword": "switch magnétique",
+  "keywords_secondary": ["switch à effet Hall", "clavier magnétique", "meilleur clavier magnétique", "clavier rapid trigger", "switch TMR"],
+  "summary": "Un switch magnétique, ou switch à effet Hall, porte un petit aimant, et un capteur placé sur le circuit imprimé mesure sa distance pendant la course de la touche. Le clavier connaît la position de chaque touche à tout moment : vous réglez le point d’actionnement touche par touche et profitez du rapid trigger, qui relâche et déclenche une touche dès qu’elle bouge. Ces switchs sont presque tous linéaires et demandent un clavier conçu pour eux.",
+  "faq": [
+    {"q": "Qu’est-ce qu’un clavier magnétique ?", "a": "Un clavier dont les switchs portent un aimant, pendant qu’un capteur à effet Hall placé sur le circuit imprimé mesure le champ magnétique. Le capteur indique de combien chaque touche est enfoncée, et aucun contact métallique ne se ferme. Wooting, SteelSeries, Corsair et Keychron vendent des claviers construits ainsi."},
+    {"q": "Qu’est-ce que le rapid trigger ?", "a": "Une fonction du firmware qui relâche une touche dès qu’elle remonte et la déclenche de nouveau dès qu’elle redescend, à n’importe quel point de la course. Wooting la décrit comme une réinitialisation et une activation des touches à l’instant où vous bougez, avec une sensibilité réglable séparément à l’appui et au relâchement."},
+    {"q": "Un switch à effet Hall et un switch TMR, est-ce la même chose ?", "a": "Ils partagent l’aimant dans le switch et diffèrent par le capteur. Un capteur à effet Hall produit une tension proportionnelle au champ magnétique. Un capteur à magnétorésistance à effet tunnel (TMR) change de résistance électrique selon le champ. Logitech, Cherry et Akko vendent des claviers TMR avec le même actionnement réglable."},
+    {"q": "Peut-on monter des switchs magnétiques sur n’importe quel clavier hot-swap ?", "a": "Seulement sur un clavier conçu pour eux. Le capteur se trouve sur le circuit imprimé, sous chaque support, et un clavier à contacts classique ne sait pas lire un aimant. Wooting précise que les switchs sans aimant ne sont pas détectés et recommande ses propres switchs Lekker."},
+    {"q": "Quel est le meilleur clavier magnétique pour taper ?", "a": "Aucune source ne désigne de gagnant, et les testeurs sont partagés. PC Gamer juge le Wooting 60HE v2 bon pour le jeu comme pour la frappe, alors que TechRadar trouve que les switchs analogiques du Logitech PRO X TKL Rapid manquent de retour tactile. Presque tous les switchs magnétiques sont linéaires, et la sensation reste celle d’un switch linéaire."}
+  ],
+  "sources": [
+    {"title": "Wikipedia: Hall effect sensor", "url": "https://en.wikipedia.org/wiki/Hall_effect_sensor"},
+    {"title": "Wikipedia: Tunnel magnetoresistance", "url": "https://en.wikipedia.org/wiki/Tunnel_magnetoresistance"},
+    {"title": "Wooting: Wooting 60HE v2", "url": "https://wooting.io/wooting-60he-v2"},
+    {"title": "Wooting: Lekker switch Linear60 (L60) V2", "url": "https://wooting.io/product/lekker-switch-l60-v2"},
+    {"title": "Wooting: Lekker switch Linear45 (L45) V2", "url": "https://wooting.io/product/lekker-switch-l45-v2"},
+    {"title": "Wooting: Lekker Tikken Medium switch", "url": "https://wooting.io/product/wooting-lekker-tikken-medium-switch"},
+    {"title": "Gateron: KS-20 Magnetic Orange", "url": "https://www.gateron.com/products/gateron-ks-20-magnetic-orange-hall-sensor-switch-set"},
+    {"title": "Gateron: Magnetic Jade Pro", "url": "https://www.gateron.com/products/gateron-magnetic-jade-pro-switch-set"},
+    {"title": "SteelSeries: Apex Pro Gen 3", "url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3"},
+    {"title": "SteelSeries: keyboard gaming switches", "url": "https://steelseries.com/innovation/keyboard-gaming-switches"},
+    {"title": "Corsair: MGX magnetic key switches explained", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/"},
+    {"title": "Corsair: key switches compared", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/"},
+    {"title": "Razer: Razer Analog Optical Switch", "url": "https://www.razer.com/technology/razer-analog-optical-switch"},
+    {"title": "Logitech G: G512 X 75 gaming keyboard", "url": "https://www.logitechg.com/en-us/shop/p/g512-x-75-gaming-keyboard"},
+    {"title": "PC Gamer: Wooting 60HE v2 review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-60he-v2-review/"},
+    {"title": "RTINGS: Wooting 60HE v2 review", "url": "https://www.rtings.com/keyboard/reviews/wooting/60he-v2-magnetic"},
+    {"title": "PC Gamer: Wooting 80HE review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-80he-review/"},
+    {"title": "Tom’s Hardware: Wooting Two HE review", "url": "https://www.tomshardware.com/reviews/wooting-two-he"},
+    {"title": "TechRadar: Logitech PRO X TKL Rapid review", "url": "https://www.techradar.com/computing/keyboards/logitech-pro-x-tkl-rapid-gaming-keyboard-review"},
+    {"title": "PC Gamer: Logitech G Pro X TKL Rapid review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g-pro-x-tkl-rapid-review/"},
+    {"title": "PC Gamer: Logitech G515 Rapid TKL review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g515-rapid-tkl-review/"},
+    {"title": "TechRadar: Corsair K70 Pro TKL review", "url": "https://www.techradar.com/computing/keyboards/corsair-k70-pro-tkl-review"},
+    {"title": "TechRadar: Razer Huntsman V3 Tenkeyless 8KHz review", "url": "https://www.techradar.com/computing/keyboards/razer-huntsman-v3-tenkeyless-8khz-review"},
+    {"title": "RTINGS: Ducky One X review", "url": "https://www.rtings.com/keyboard/reviews/ducky/one-x"},
+    {"title": "PC Gamer: Cherry Xtrfy K5 Pro TMR Compact review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/cherry-k5-pro-tmr-compact-review/"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Entraînez-vous dans le navigateur, chaque touche à la couleur de son doigt", "drill": "words"}
+}
+-->
+<p>Un switch magnétique à effet Hall mesure la position de la touche. Un petit aimant se déplace avec la tige, et un capteur posé sur le circuit imprimé lit l’intensité du champ magnétique à chaque instant. Le clavier suit ainsi toute la course de la touche, du haut jusqu’au fond, ce qui rend possibles un point d’actionnement réglable et le rapid trigger. Le guide des <a href="guide:keyboard-switches">switchs de clavier</a> présente les autres méthodes de détection.</p>
+
+<h2>Comment fonctionne un switch à effet Hall ?</h2>
+<p>L’appui sur la touche rapproche un aimant d’un capteur à effet Hall, et le capteur émet un signal qui suit le champ magnétique. Un élément à effet Hall est une fine bande de métal parcourue par un courant constant ; des électrodes placées sur ses côtés captent une tension proportionnelle à la composante du champ magnétique perpendiculaire à ce courant. Un capteur à effet Hall linéaire transmet cette valeur en continu, et le firmware du clavier la convertit en position de touche.</p>
+<p>Un switch mécanique classique ferme un contact métallique à un point fixe de la course. Un switch à effet Hall n’a aucun contact à fermer. Le firmware compare la mesure du capteur à un seuil que vous choisissez, et la touche s’enregistre quand la mesure le franchit. Sur le <a href="db:keyboard/wooting-60he-v2">Wooting 60HE v2</a>, des capteurs à effet Hall soudés sur le circuit détectent l’aimant logé dans chaque switch Lekker.</p>
+<p>L’idée est plus ancienne que les claviers de jeu. Des ingénieurs de Honeywell ont mis au point des switchs de clavier à effet Hall à la fin des années 1960 ; coûteux, ils servaient surtout dans l’aérospatiale et les systèmes militaires.</p>
+<p>Comme le capteur se trouve sur le circuit, le switch lui-même ne contient aucune électronique, seulement un aimant. La <a href="db:switches">base de switchs de petitdoigt</a> recense 129 switchs magnétiques, de Gateron, Kailh, TTC, Wooting, SteelSeries, Corsair et bien d’autres, dont 119 linéaires. Une poignée sont tactiles ou clicky, et quelques-uns silencieux.</p>
+
+<h2>Qu’est-ce que l’actionnement réglable ?</h2>
+<p>Avec l’actionnement réglable, vous choisissez la profondeur à laquelle chaque touche se déclenche. Sur un switch à contact, le métal fixe cette profondeur ; sur un switch à effet Hall, c’est un nombre dans un logiciel.</p>
+<p>D’après la page du 60HE v2, Wootility, le logiciel de Wooting, règle le point d’actionnement de chaque touche entre 0,1 et 4,0 mm, par pas de 0,1 mm. Les autres fabricants publient leurs propres plages :</p>
+<table>
+<caption>Plages d’actionnement publiées pour des switchs à effet Hall, telles que chaque fabricant les indique</caption>
+<thead><tr><th scope="col">Switch</th><th scope="col">Plage</th><th scope="col">Course totale</th><th scope="col">Force indiquée par le fabricant</th></tr></thead>
+<tbody>
+<tr><th scope="row"><a href="db:switch/wooting-lekker-l60-v2">Wooting Lekker L60 V2</a></th><td>0,1 à 4,0 mm sur les claviers Wooting</td><td>4,0 mm</td><td>40 gf au début de l’appui, 60 gf à la fin</td></tr>
+<tr><th scope="row"><a href="db:switch/wooting-lekker-l45-v2">Wooting Lekker L45 V2</a></th><td>0,1 à 4,0 mm sur les claviers Wooting</td><td>4,0 mm</td><td>30 gf au début, 45 gf à la fin</td></tr>
+<tr><th scope="row"><a href="db:switch/steelseries-omnipoint-3-0">SteelSeries OmniPoint 3.0</a></th><td>0,1 à 4,0 mm, 40 niveaux</td><td>4,0 mm</td><td>Absente des pages consultées</td></tr>
+<tr><th scope="row"><a href="db:switch/corsair-mgx-hyperdrive">Corsair MGX Hyperdrive</a></th><td>0,1 à 3,8 mm dans le tableau de Corsair (4,0 mm dans son texte)</td><td>4,0 mm</td><td>30 à 55 g, en hausse avec la profondeur choisie</td></tr>
+<tr><th scope="row"><a href="db:switch/corsair-mgx-hyperdrive-core">Corsair MGX Hyperdrive Core</a></th><td>0,2 à 3,8 mm</td><td>4,0 mm</td><td>27 à 40 g</td></tr>
+<tr><th scope="row"><a href="db:switch/gateron-ks-20-magnetic-orange">Gateron KS-20 Magnetic Orange</a></th><td>0,4 à 3,6 mm</td><td>4,1 mm</td><td>38 gf au départ et à l’actionnement</td></tr>
+</tbody>
+</table>
+<p>Corsair précise que la force varie avec la profondeur d’actionnement réglée, si bien qu’un chiffre de force va toujours avec sa plage. Wooting donne la force au début et à la fin de la course parce que la force du ressort augmente tout du long, et ses pages de switchs indiquent que le point d’actionnement se règle par logiciel sur les seuls claviers à effet Hall. Pour la façon dont les fabricants mesurent et annoncent la force, voyez le guide des <a href="guide:switch-specs">caractéristiques des switchs</a>.</p>
+<p>Un réglage peu profond déclenche la touche au moindre effleurement : réglée à 0,5 mm, une touche réagit plus tôt à un doigt posé dessus qu’une touche réglée à 2 mm. Le guide de la <a href="guide:typing-accuracy">précision de frappe</a> présente les habitudes qui limitent les appuis involontaires.</p>
+
+<h2>Qu’est-ce que le rapid trigger ?</h2>
+<p>Le rapid trigger fait suivre à la touche le sens de son mouvement. Dès que la touche remonte d’une petite distance, elle se relâche ; dès qu’elle redescend, elle se déclenche, où qu’elle soit dans sa course. Un switch normal doit remonter au-delà de son point de réinitialisation fixe avant de pouvoir se déclencher de nouveau.</p>
+<p>Wooting indique que son Rapid Trigger réinitialise et active les touches à l’instant où vous bougez, que la sensibilité à l’appui et au relâchement se règle séparément et qu’un mode Continuous Rapid Trigger existe, sans donner de distances. La page de Razer consacrée à son switch optique analogique décrit le même comportement : les touches se réinitialisent au moindre soulèvement du doigt, ce que Razer présente comme un atout dans les jeux de tir et les jeux de rythme.</p>
+<p>Dans la <a href="db:keyboards">base de claviers de petitdoigt</a>, 185 claviers mentionnent le rapid trigger, et 206 fiches sur 989 indiquent un actionnement réglable. La fonction dépend à la fois du firmware et du capteur, et on la trouve aussi sur des claviers optiques analogiques comme le <a href="db:keyboard/razer-huntsman-v3-pro">Razer Huntsman V3 Pro</a> (voir le guide des <a href="guide:optical-switches">switchs optiques</a>). Pour lister les claviers qui ont les deux, décrivez celui que vous cherchez au <a href="db:finder">moteur de recherche de claviers</a>, par exemple en anglais « hall effect 65% keyboard with rapid trigger », et il filtre la base.</p>
+
+<h2>Qu’est-ce que l’entrée analogique ?</h2>
+<p>Avec l’entrée analogique, le clavier indique de combien une touche est enfoncée, en plus de dire si elle l’est. Wooting affirme que ses claviers suivent le mouvement complet de chaque appui. Les jeux qui lisent cette valeur peuvent lier la profondeur d’appui à une vitesse ou à une direction : un appui à moitié fait avancer un personnage ou tourner une voiture à moitié.</p>
+<p>Seuls les jeux et logiciels prévus pour s’en servent. Le test du Wooting Two HE par Tom’s Hardware le dit sans détour : un clavier très configurable et amusant à bricoler, dont l’entrée analogique exige des jeux compatibles. Pour la frappe ordinaire, cette donnée reste inutilisée, et la touche se comporte comme n’importe quelle autre une fois son point d’actionnement réglé.</p>
+
+<h2>Quelle différence entre un switch à effet Hall et un switch TMR ?</h2>
+<p>Les switchs TMR reprennent l’aimant dans la tige et le lisent avec un autre capteur. La magnétorésistance à effet tunnel se produit dans une jonction tunnel magnétique, deux couches ferromagnétiques séparées par un isolant très fin, dont la résistance électrique dépend de l’alignement des couches magnétiques. Un champ magnétique extérieur modifie cet alignement, et la résistance renseigne donc le capteur sur le champ. Selon Wikipédia, ces jonctions remplacent les capteurs à effet Hall dans beaucoup d’usages de détection de position.</p>
+<p>Les claviers vendus comme TMR offrent les mêmes fonctions. Le Logitech G512 X a des supports qui acceptent ses switchs analogiques TMR linéaires ou des switchs mécaniques ordinaires à 3 et 5 broches. Akko, Epomaker, Cherry Xtrfy et Monsgeek vendent aussi des claviers TMR. Le K5 Pro TMR Compact de Cherry Xtrfy a obtenu 76/100 chez PC Gamer, qui y voit un clavier 65 % confortable, riche en fonctions pour la compétition.</p>
+<p>Une troisième méthode, la détection inductive, équipe le Ducky One X. RTINGS écrit que ses switchs inductifs règlent l’actionnement aussi précisément que les meilleurs claviers à effet Hall, mais qu’ils tiennent mal dans le circuit imprimé.</p>
+
+<h2>Quels claviers et switchs utilisent l’effet Hall ?</h2>
+<p>Chaque grande marque de matériel de jeu en vend au moins un.</p>
+<ul>
+<li><strong>Wooting</strong> fabrique le switch Lekker, et le <a href="https://wooting.io/wooting-60he-v2">60HE v2</a> est équipé du <a href="db:switch/wooting-lekker-tikken-medium">Lekker Tikken Medium</a>, annoncé à 42 gf au début de la course et 54 gf à la fin, pour 4,0 mm de course.</li>
+<li><strong>SteelSeries</strong> a lancé l’OmniPoint avec le premier Apex Pro en 2019. L’<a href="https://steelseries.com/gaming-keyboards/apex-pro-gen-3">Apex Pro Gen 3</a> utilise l’OmniPoint 3.0, avec Rapid Trigger, Rapid Tap et Protection Mode.</li>
+<li><strong>Corsair</strong> a introduit le MGX Hyperdrive avec le K70 MAX. Le <a href="db:keyboard/corsair-k70-pro-tkl">K70 Pro TKL</a>, le <a href="db:keyboard/corsair-makr-pro-75">MAKR PRO 75</a> et le <a href="db:keyboard/corsair-vanguard-pro-96">Vanguard PRO 96</a> utilisent des switchs MGX.</li>
+<li><strong>Razer</strong> a une gamme à effet Hall : le Huntsman V3 HE Magnetic et le <a href="db:keyboard/razer-reclusa-mini-65">Reclusa Mini 65</a>, hot-swap.</li>
+<li><strong>Gateron</strong> vend des switchs magnétiques que d’autres marques montent sur leurs claviers : la gamme KS-20, le <a href="db:switch/gateron-magnetic-jade-pro">Magnetic Jade Pro</a>, annoncé à 36 gf au départ, et des dizaines d’autres variantes dans la base de switchs de petitdoigt.</li>
+<li><strong>Keychron et Lemokey</strong> proposent des dizaines de claviers « HE », du <a href="db:keyboard/keychron-q1-he">Q1 HE</a> au <a href="db:keyboard/keychron-k2-he">K2 HE</a>.</li>
+<li><strong>Logitech G</strong> monte des switchs analogiques magnétiques sur le PRO X TKL Rapid et le G515 Rapid TKL, et des switchs TMR sur le G512 X.</li>
+</ul>
+<p>Des supports hot-swap pour switchs magnétiques existent, et 113 claviers de la base de claviers de petitdoigt en sont équipés. Ils n’acceptent que les switchs magnétiques prévus pour ce clavier : Wooting précise que le 60HE v2 ne détecte pas les switchs sans aimant. Un <a href="guide:hot-swappable-keyboard">clavier hot-swap</a> standard, à supports à contacts, ne sait pas lire un aimant, et les deux familles de switchs ne sont donc pas interchangeables.</p>
+
+<h2>Qu’en disent les testeurs ?</h2>
+<p>Les testeurs saluent la latence et les réglages, et certains critiquent la sensation de frappe.</p>
+<table>
+<caption>Une sélection de tests de claviers à effet Hall, TMR et analogiques</caption>
+<thead><tr><th scope="col">Clavier</th><th scope="col">Média et note</th><th scope="col">Ce qu’il en dit</th></tr></thead>
+<tbody>
+<tr><th scope="row">Wooting 60HE v2</th><td>PC Gamer, 93/100</td><td>Le meilleur clavier de Wooting à ce jour, bon pour le jeu et la frappe ; plus cher que le 60HE, et quelques touches tintent légèrement</td></tr>
+<tr><th scope="row">Wooting 60HE v2</th><td>RTINGS</td><td>Excellent clavier de jeu, à la latence extrêmement basse et régulière, avec Rapid Trigger et options SOCD</td></tr>
+<tr><th scope="row"><a href="db:keyboard/wooting-80he">Wooting 80HE</a></th><td>PC Gamer, 78/100</td><td>Switchs à effet Hall performants et logiciel web léger, mais le châssis fléchit</td></tr>
+<tr><th scope="row">Logitech PRO X TKL Rapid</th><td>TechRadar, 3,5/5</td><td>Superbement construit, avec des fonctions analogiques, mais ses switchs analogiques manquent de retour tactile</td></tr>
+<tr><th scope="row">Logitech G515 Rapid TKL</th><td>PC Gamer, 72/100</td><td>Bon logiciel et rapid trigger, mais uniquement filaire, et des switchs qui sonnent creux sur une longue frappe</td></tr>
+<tr><th scope="row">Corsair K70 Pro TKL</th><td>TechRadar, 4/5</td><td>Switchs à effet Hall très performants d’origine, avec un gros défaut</td></tr>
+<tr><th scope="row"><a href="db:keyboard/razer-huntsman-v3-tenkeyless-8khz">Razer Huntsman V3 TKL 8KHz</a></th><td>TechRadar, 3,5/5</td><td>Clavier analogique très réglable dont les switchs donnent peu de retour</td></tr>
+</tbody>
+</table>
+<p>La latence et les réglages obtiennent de bonnes notes ; les reproches portent sur le retour tactile, le bruit en fin de course, le prix et le logiciel. Si vous tapez pendant des heures, lisez le test du clavier exact qui vous intéresse et essayez le switch si vous le pouvez, puisqu’un switch magnétique linéaire n’a pas de bosse. Le guide <a href="guide:linear-vs-tactile-vs-clicky">linéaire, tactile ou clicky</a> explique ce que cela change en pratique, et le guide des <a href="guide:keyboard-sizes">tailles de clavier</a> aide à choisir le format, puisque beaucoup de claviers à effet Hall existent en 60 %, 65 %, 75 % ou TKL.</p>
+
+<h2>Un switch magnétique fait-il taper plus vite ?</h2>
+<p>Aucune source ne mesure la vitesse de frappe sur un clavier à effet Hall. Les avantages publiés concernent le temps de réponse, l’actionnement réglable et les jeux qui lisent l’entrée analogique. petitdoigt propose dans le navigateur des exercices où chaque touche a la couleur de son doigt, avec des sons de touches enregistrés sur 13 vrais switchs, à choisir dans une liste déroulante de ses réglages, et ne promet aucun gain de vitesse. Commencez par le guide de la <a href="guide:touch-typing">dactylographie</a> et prenez le switch qui vous laisse appuyer sur une touche sans en enfoncer d’autres. Pour une frappe plus discrète, le guide des <a href="guide:quiet-switches">switchs silencieux</a> présente les variantes silencieuses ; Gateron vend des switchs magnétiques silencieux comme le Magnetic Jade Silent.</p>

@@ -1,0 +1,109 @@
+<!--meta
+{
+  "id": "hot-swappable-keyboard",
+  "lang": "fr",
+  "slug": "clavier-hot-swap",
+  "title": "Clavier hot swap : supports, 3 ou 5 pins, switchs compatibles",
+  "description": "Clavier hot swap : les supports (Kailh, Gateron, Mill-Max), switchs 3 ou 5 broches, MX, Choc ou magnétiques, et comment changer ses switchs sans risque.",
+  "h1": "Clavier hot swap : supports, switchs 3 ou 5 broches et compatibilité",
+  "keyword": "clavier hot swap",
+  "keywords_secondary": ["clavier mécanique hot swap", "switch hot swap", "clavier hot-swappable", "PCB hot swap", "switch 3 pins ou 5 pins"],
+  "summary": "Un clavier hot swap tient chaque switch dans un support du circuit imprimé : vous changez de switch sans soudure. Kailh fabrique les supports courants, en versions MX et Choc. Un support MX à 5 broches accepte les switchs à 3 et à 5 broches ; un support à 3 broches demande de couper deux picots de plastique. Les claviers profil bas et certains magnétiques ont leurs propres supports. La base de claviers de petitdoigt en compte 593 sur 989.",
+  "faq": [
+    {"q": "Que veut dire hot swap sur un clavier ?", "a": "Chaque switch tient dans un support du circuit imprimé au lieu d’y être soudé. Un extracteur de switch retire le switch, et le suivant s’enfonce à sa place, clavier débranché."},
+    {"q": "Peut-on mettre des switchs 5 broches sur un clavier hot swap 3 broches ?", "a": "Oui, après avoir coupé à ras les deux petits picots de plastique avec une pince coupante de modélisme. Glorious précise de ne couper que ces picots de plastique, jamais les deux broches métalliques. La coupe est définitive. Dans l’autre sens, rien à changer : un switch à 3 broches entre dans un support à 5 broches, même s’il peut sortir avec le keycap."},
+    {"q": "Peut-on rendre un clavier hot swap ?", "a": "Parfois. Selon le wiki Deskthority, des supports Mill-Max ou Holtite peuvent se souder sur un PCB prévu pour des switchs soudés, alors que les supports Kailh ne s’ajoutent pas après coup. Le guide de Keebio utilise des supports Mill-Max et prévient que la plupart des PCB Choc ont des trous trop petits pour eux."},
+    {"q": "Les claviers profil bas et magnétiques sont-ils hot swap ?", "a": "Beaucoup le sont, avec des supports conçus pour leurs switchs. Les supports Kailh Choc prennent des switchs Choc, et les claviers profil bas Gateron des switchs profil bas Gateron. Des claviers magnétiques comme le Glorious GMMK 3 HE et le Cherry Xtrfy MX 8.2 Pro TMR indiquent que leurs supports prennent aussi des switchs MX."},
+    {"q": "Peut-on changer les switchs avec le clavier branché ?", "a": "Glorious demande d’éteindre et de débrancher le clavier avant de retirer des switchs. Une fois le clavier débranché, vous avez aussi le temps de vérifier les broches de chaque nouveau switch avant de l’insérer, puis de tester la touche."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Hot-swap", "url": "https://deskthority.net/wiki/Hot-swap"},
+    {"title": "Glorious: Hot-Swap Keyboard Explained", "url": "https://www.gloriousgaming.com/blogs/guides-resources/hot-swap-keyboard-explained"},
+    {"title": "Glorious: Mistakes to Avoid When Installing Switches Into a Hotswap Mechanical Keyboard", "url": "https://www.gloriousgaming.com/blogs/guides-resources/mistakes-to-avoid-when-installing-switches-into-a-hotswap-mechanical-keyboard"},
+    {"title": "splitkb.com docs: Switch sockets (Aurora build guide)", "url": "https://docs.splitkb.com/product-guides/aurora-series/build-guide/switch-sockets"},
+    {"title": "Keebio blog: How to make your keyboard hotswappable with Mill-Max sockets", "url": "https://blog.keeb.io/how-to-make-your-keyboard-hotswappable-with-mill-max-sockets/"},
+    {"title": "Glorious: GMMK 3 HE prebuilt keyboard", "url": "https://www.gloriousgaming.com/products/gmmk-3-he-prebuilt-keyboard"},
+    {"title": "Cherry Xtrfy: MX 8.2 Pro TMR Wireless", "url": "https://cherryxtrfy.com/keyboards/mx-8-2-pro-tmr-wireless/"},
+    {"title": "Ducky: Origin", "url": "https://ducky.global/products/ducky-origin-phantom-black"},
+    {"title": "Gateron: G Pro 2.0 5-pin switch set", "url": "https://www.gateron.com/products/gateron-g-pro-20-5-pin-switch-set"},
+    {"title": "Kailh", "url": "https://www.kailhswitch.com/"},
+    {"title": "Cherry: MX Multipoint Silver", "url": "https://www.cherry.de/en-gb/product/mx-multipoint-silver"},
+    {"title": "Gateron: KS-33 Low Profile 3.0", "url": "https://www.gateron.com/products/gateron-ks-33-low-profile-30-mechanical-switch"},
+    {"title": "Boardsource", "url": "https://boardsource.xyz/"},
+    {"title": "GitHub: foostan/crkbd (Corne)", "url": "https://github.com/foostan/crkbd"},
+    {"title": "GitHub: splitkb/aurora", "url": "https://github.com/splitkb/aurora"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Tapez sur votre propre clavier, doigt par doigt", "drill": "words"}
+}
+-->
+<p>Un clavier hot swap vous laisse changer de switchs sans fer à souder. Chaque switch s’enfiche dans un support du circuit imprimé (le PCB) : un extracteur en retire un, et le nouveau s’enfonce à sa place. Le hot-swap, littéralement des switchs remplaçables à chaud, convient à qui veut essayer une autre sensation, remplacer une touche en panne ou monter l’un des types de switchs décrits dans le guide des <a href="guide:keyboard-switches">switchs de clavier</a> sans acheter un second clavier.</p>
+
+<h2>Comment fonctionne un support hot swap ?</h2>
+<p>Un support hot swap (socket) est un petit boîtier à pince métallique soudé sous le PCB. Les deux pattes métalliques du switch s’y glissent et font contact ; tirer le switch tout droit vers le haut les libère. Le switch ne touche jamais la soudure, si bien que le clavier comme le switch supportent de nombreux échanges.</p>
+<p>Les principaux fabricants de supports se distinguent sur quelques points :</p>
+<ul>
+<li><strong>Kailh</strong> fabrique des supports montés en surface, sous le PCB, en versions pour switchs Cherry MX et pour switchs profil bas Kailh Choc. Le support Choc accepte aussi le Choc V2.</li>
+<li>Les supports <strong>Mill-Max</strong> (modèles 0305 et 7305) sont des douilles individuelles à collerette pour switchs MX. Le 0305 surélève le switch de 0,64 mm au-dessus du PCB, et le 7305 a une collerette plus fine.</li>
+<li>Les supports <strong>Holtite</strong> sont de petits manchons qui se logent dans les trous de soudure existants. Ils résistent moins bien que les supports Kailh.</li>
+</ul>
+<p>Les supports de type Kailh sont soudés au PCB en usine. Pour les poser à la main, on place chaque support face plate vers l’extérieur, à l’emplacement marqué pour son switch, comme le montre le guide de montage de splitkb.com, puis on soude les deux pastilles et on vérifie que le support repose à plat contre la carte.</p>
+
+<h2>Quelle différence entre hot swap 3 broches et 5 broches ?</h2>
+<p>Le nombre de broches (pins) décrit les pattes du switch : un switch à 3 broches a deux pattes de contact métalliques et un plot central en plastique, et un switch à 5 broches ajoute deux picots de plastique pour la stabilité. Ces picots ne changent rien au fonctionnement ; ils tiennent seulement le switch plus fermement dans la plaque et le PCB.</p>
+<p>Un support à 5 broches a un trou pour chacune. Un support à 3 broches n’a que le trou central, et un switch à 5 broches n’y entre pas tant que vous n’avez pas coupé ses deux picots de plastique extérieurs. Glorious conseille de couper seulement ces deux picots, avec une pince coupante de modélisme, et de laisser les broches métalliques intactes. La coupe est définitive : le switch devient un 3 broches pour de bon. Un switch à 3 broches entre sans modification dans un support à 5 broches, mais Glorious note qu’il peut sortir facilement quand vous retirez un keycap.</p>
+<p>Les fabricants vendent souvent un même switch sous les deux formes. Le <a href="db:switch/gateron-g-pro-2-0-white">G Pro 2.0 White</a> de Gateron, par exemple, existe en 3 et en 5 broches sur sa page produit. Dans la <a href="db:switches">base de switchs de petitdoigt</a>, 976 des 1 162 switchs ont l’empreinte MX ; 466 sont enregistrés en 5 broches, 62 en 3 broches, et 448 sans nombre de broches indiqué.</p>
+<p>Beaucoup de marques écrivent « hot-swappable » sans jamais indiquer le nombre de broches : la <a href="db:keyboards">base de claviers de petitdoigt</a> compte 111 claviers dans ce cas, de 35 marques. Quand la page n’en dit rien, achetez des switchs à 3 broches ou cherchez un clavier à 5 broches.</p>
+
+<h2>Quels switchs vont sur un clavier hot swap ?</h2>
+<p>Un switch convient quand son empreinte correspond au support. La plupart des claviers sont conçus pour des switchs de type MX, la forme lancée par Cherry et reprise par Gateron, Kailh et bien d’autres. Les claviers profil bas utilisent d’autres empreintes, chacune avec son propre support.</p>
+<table>
+<caption>Types de supports et switchs acceptés</caption>
+<thead><tr><th scope="col">Support</th><th scope="col">Accepte</th><th scope="col">Remarques</th></tr></thead>
+<tbody>
+<tr><th scope="row">MX (Kailh, Gateron, Glorious)</th><td>Switchs Cherry MX et de type MX, 3 et 5 broches</td><td>Le support le plus courant ; les supports à 5 broches acceptent les deux</td></tr>
+<tr><th scope="row">Choc (Kailh)</th><td>Switchs profil bas Kailh Choc, v1 et v2</td><td>Demande des keycaps Choc ; voir le guide du <a href="guide:low-profile-switches">clavier low profile</a></td></tr>
+<tr><th scope="row">Gateron profil bas</th><td>Switchs profil bas Gateron</td><td>Selon Gateron, son KS-33 3.0 ne va que sur les Nos75, Kick75, Air75 V3 et Node75 de NuPhy</td></tr>
+<tr><th scope="row">Mill-Max</th><td>Switchs MX</td><td>Rend hot swap un clavier à souder ; les supports vont aux switchs Choc, mais la plupart des PCB Choc ont des trous trop petits</td></tr>
+<tr><th scope="row">Claviers magnétiques</th><td>Leurs propres switchs magnétiques, et des MX sur certains</td><td>Glorious et Cherry Xtrfy indiquent que leurs supports acceptent aussi des switchs MX</td></tr>
+</tbody>
+</table>
+<p>Les switchs qui détectent la frappe sans contact métallique n’ont pas besoin d’un support spécial, puisque la détection se fait sur le PCB ; l’<a href="db:maker/adomax">Adomax Flaretech</a> et l’Input Club Silo en sont des exemples. Certains claviers magnétiques gardent tout de même des supports hot swap de forme MX. Le Glorious GMMK 3 HE accepte dans les mêmes supports les switchs magnétiques de Glorious et des switchs MX à 3 ou 5 broches, et le <a href="db:keyboard/cherry-xtrfy-mx-8-2-pro-tmr-wireless">Cherry Xtrfy MX 8.2 Pro TMR</a> prend à la fois les switchs magnétiques Cherry MK et les switchs mécaniques MX. Un clavier conçu autour d’une seule famille de switchs fait exception : le <a href="db:switch/cherry-mx-multipoint-silver">Multipoint Silver</a> de Cherry ne fonctionne qu’avec des PCB Multipoint dédiés.</p>
+<p>Certains switchs résistent aux supports. Ceux dont une patte est beaucoup plus large que l’autre, comme les Kailh Pro, entrent mal dans les supports Mill-Max, selon Keebio. Les switchs Outemu ICE portent leur propre support sur chaque patte et ne vont que sur les claviers prévus pour ce système.</p>
+<p>Dans la base de claviers de petitdoigt, aucun clavier Alps, Topre ou buckling spring n’est enregistré comme hot swap.</p>
+<p>Les claviers split laissent en général le choix. Le <a href="db:keyboard/open-source-corne">Corne</a> existe en version Cherry (MX) et en version Chocolate (Choc), toutes deux hot swap dans la v4 actuelle du projet sur GitHub, et les kits Aurora de <a href="db:brand/splitkb">splitkb.com</a> se vendent en hot swap MX, en hot swap Choc ou à souder. Le <a href="db:keyboard/boardsource-corne-wireless-smt-pcb">PCB Corne sans fil</a> de Boardsource accepte les switchs MX, Choc v1 et Choc v2 dans un même support. Les guides du <a href="guide:split-keyboard">clavier split</a> et du <a href="guide:ortholinear-keyboard">clavier ortholinéaire</a> détaillent ces claviers.</p>
+
+<h2>Les claviers hot swap sont-ils courants ?</h2>
+<p>Le hot swap est majoritaire dans la base de claviers de petitdoigt. Ces chiffres portent sur ses 989 claviers au 25 novembre 2026 et viennent des pages produits des marques :</p>
+<table>
+<caption>Claviers par valeur hot swap, sur les 989 claviers de la base de claviers de petitdoigt, au 25 novembre 2026</caption>
+<thead><tr><th scope="col">Valeur hot swap</th><th scope="col">Claviers</th><th scope="col">Signification</th></tr></thead>
+<tbody>
+<tr><th scope="row">Aucun</th><td>314</td><td>Switchs soudés</td></tr>
+<tr><th scope="row">5 broches</th><td>232</td><td>Supports pour switchs à 3 et à 5 broches</td></tr>
+<tr><th scope="row">Magnétique</th><td>113</td><td>Supports pour switchs magnétiques</td></tr>
+<tr><th scope="row">Oui, support non précisé</th><td>111</td><td>Hot swap annoncé sans type de support ni nombre de broches ; tous sont des claviers MX</td></tr>
+<tr><th scope="row">Autre</th><td>85</td><td>Un support hors des autres groupes, le plus souvent Gateron profil bas (38 claviers)</td></tr>
+<tr><th scope="row">Non précisé</th><td>82</td><td>Les pages de la marque ne disent pas si le clavier est hot swap</td></tr>
+<tr><th scope="row">3 broches</th><td>30</td><td>Seuls des switchs à 3 broches enregistrés</td></tr>
+<tr><th scope="row">Choc</th><td>18</td><td>Supports Kailh Choc</td></tr>
+<tr><th scope="row">Optique</th><td>4</td><td>Switchs optiques remplaçables sans soudure</td></tr>
+</tbody>
+</table>
+<p>Cela fait 593 claviers hot swap sur 989, soit 60 % de la base et 65 % des 907 claviers dont la marque se prononce. La part varie selon le format du clavier et la façon dont il est vendu. Sur 207 claviers 75 %, 158 sont hot swap ; sur 190 claviers complets, 72. Les kits le sont presque toujours (45 sur 47) et les barebones le plus souvent (35 sur 45), contre 510 des 888 claviers montés. Les claviers à switchs Topre, Alps, buckling spring ou Cherry profil bas tombent tous dans le groupe « aucun ». Le guide des <a href="guide:keyboard-sizes">tailles de clavier</a> explique les formats.</p>
+<p>Quelques claviers ne sont qu’en partie hot swap. Sur le <a href="db:keyboard/ducky-origin">Ducky Origin</a>, seules les grandes touches (Échap, Retour arrière, Entrée, les deux Maj, Espace, ainsi que 0, + et Entrée du pavé numérique) sont hot swap, et les autres sont soudées, d’après la page de la boutique.</p>
+<p>Pour ne voir que les claviers hot swap d’un format ou d’un prix, décrivez le clavier voulu au <a href="db:finder">moteur de recherche de claviers</a>, par exemple « clavier 75 % hot swap à moins de 150 $ », et il filtre la base de claviers de petitdoigt.</p>
+
+<h2>Comment changer ses switchs sans risque ?</h2>
+<p>Débranchez le clavier, retirez le keycap, tirez le switch tout droit vers le haut et enfoncez le nouveau jusqu’à ce qu’il soit en place. Glorious donne cet ordre :</p>
+<ol>
+<li>Éteignez le clavier et débranchez-le.</li>
+<li>Soulevez le keycap tout droit avec un extracteur de keycaps, en tirant de façon égale.</li>
+<li>Placez les branches de l’extracteur de switch dans les encoches des deux côtés opposés du boîtier, puis tirez tout droit vers le haut.</li>
+<li>Vérifiez les broches du nouveau switch. Coupez les deux picots de plastique seulement si le clavier prend des switchs à 3 broches.</li>
+<li>Orientez vers vous le côté du switch qui fait face à la LED, puis appuyez de façon égale jusqu’à ce que les deux broches métalliques entrent dans le support.</li>
+<li>Remettez le keycap, rebranchez le clavier et testez la touche.</li>
+</ol>
+<p>Deux habitudes protègent les supports. D’abord, vérifiez les broches métalliques avant chaque insertion : Deskthority note qu’un switch inséré de travers peut tordre ses broches et les abîmer, et Glorious indique qu’une broche tordue se redresse à la pince brucelles mais reste ensuite plus fragile. Ensuite, évitez la force. Selon Glorious, un switch doit entrer sans grande pression ; s’il résiste, retirez-le et inspectez les broches. Une pression venue d’en haut peut arracher les pastilles d’un support de type Kailh monté en surface. Certains claviers ajoutent pour cette raison un renfort en plastique sous le support, et Keebio recommande des patins en silicone sous le PCB, environ un pour quatre ou cinq switchs, sur les claviers qui encaissent des frappes appuyées.</p>
+<p>Chaque échange use un peu le support : gardez sous la main un switch de rechange du même type.</p>
+<p>Des switchs neufs changent la sensation de la touche et l’endroit où vos doigts atterrissent, alors laissez quelques minutes à un nouveau jeu avant de le juger. <a href="app:words">Tapez quelques séries de mots</a> dans petitdoigt avec les nouveaux switchs en place, et repérez les touches que vos doigts ratent désormais. petitdoigt joue des sons de touches enregistrés sur 13 vrais switchs, à choisir dans une liste déroulante de ses réglages. Le guide de la <a href="guide:switch-specs">force d’actionnement et des caractéristiques des switchs</a> explique les chiffres de force et de course inscrits sur la boîte d’un switch, et le guide de la <a href="guide:touch-typing">dactylographie</a> couvre le placement des doigts, le même quel que soit le switch sous la touche.</p>

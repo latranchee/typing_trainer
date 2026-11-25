@@ -39,7 +39,7 @@ export const STRINGS = {
     indexDescription: 'Des réponses claires sur la vitesse de frappe, la dactylographie, le placement des doigts et les dispositions comme AZERTY, Dvorak et Colemak.',
     indexH1: 'Guides de frappe au clavier',
     indexIntro: "La vitesse de frappe moyenne, comment taper plus vite, quel doigt pour quelle touche, et ce qui distingue les grandes dispositions de clavier. Chaque guide répond à une question, sources à l'appui.",
-    groups: { technique: 'Vitesse et technique', keyboards: 'Claviers et dispositions', switches: 'Switches de clavier', choosing: 'Choisir un clavier' },
+    groups: { technique: 'Vitesse et technique', keyboards: 'Claviers et dispositions', switches: 'Switchs de clavier', choosing: 'Choisir un clavier' },
     footer: "petitdoigt est un entraîneur de frappe gratuit qui t'apprend quel doigt frappe chaque touche.",
     code: 'code source',
     skip: 'aller au contenu',

@@ -1,0 +1,112 @@
+<!--meta
+{
+  "id": "staggered-vs-ortholinear-vs-columnar",
+  "lang": "fr",
+  "slug": "clavier-ortholineaire-decale-ou-columnar",
+  "title": "Clavier ortholinéaire, décalé ou columnar : les différences",
+  "description": "Clavier ortholinéaire, décalé ou columnar : décalage des touches, trajet des doigts, quel doigt pour quelle touche, temps d’adaptation et exemples de claviers.",
+  "h1": "Clavier décalé, ortholinéaire ou columnar : ce qui change pour vos doigts",
+  "keyword": "clavier ortholinéaire",
+  "keywords_secondary": ["clavier décalé", "décalage en colonnes", "clavier columnar", "clavier ortholinéaire ou décalé", "décalage en rangées"],
+  "summary": "Un clavier décalé décale chaque rangée sur le côté, un héritage des leviers de la machine à écrire. Un clavier ortholinéaire supprime ces décalages et aligne les touches en grille. Un clavier columnar, à décalage en colonnes, garde des colonnes droites et monte ou descend chacune selon la longueur de son doigt. Chaque forme confie quelques touches à un autre doigt, dont B, Y et celles des auriculaires. L’adaptation prend de quelques jours à quelques mois.",
+  "faq": [
+    {"q": "Quelle différence entre un clavier décalé et un clavier ortholinéaire ?", "a": "Un clavier décalé déplace chaque rangée de touches sur le côté par rapport à celle du dessous : d’une demi-touche, d’un quart, puis d’une demi-touche sur le modèle classique de la machine à écrire. Un clavier ortholinéaire ne décale rien. Ses touches forment une grille, et chaque colonne monte tout droit. Deskthority appelle cet agencement sans décalage une matrice."},
+    {"q": "Qu’est-ce qu’un clavier à décalage en colonnes ?", "a": "C’est un clavier dont les touches forment des colonnes verticales droites, chacune montée ou descendue selon le doigt qui la frappe. Deskthority décrit des colonnes décalées de valeurs différentes pour mieux convenir à chaque doigt. Le Corne, le Lily58, le Moonlander et le Glove80 en sont des exemples."},
+    {"q": "Un clavier ortholinéaire est-il meilleur pour taper ?", "a": "Aucune source ne montre d’avantage en vitesse ou en santé. Deskthority note que certains pensent qu’une disposition en matrice soulage les symptômes de RSI, sans avoir trouvé de recherche sur le sujet. Fabricants et testeurs décrivent des gestes plus courts vers Y et B. Wikipédia ajoute que les colonnes verticales allongent aussi certains gestes, si bien que le résultat dépend du dactylo."},
+    {"q": "Combien de temps pour s’habituer à un clavier ortholinéaire ?", "a": "Les témoignages varient beaucoup. Un testeur du Planck EZ avait retrouvé sa vitesse normale en moins d’une journée et a eu besoin d’environ deux semaines pour que les raccourcis de couches deviennent naturels. Switch and Click prévient qu’il faut des semaines ou des mois pour s’habituer à une grille, avec une frappe plus lente et moins précise pendant la transition."},
+    {"q": "Un clavier split est-il un clavier ortholinéaire ?", "a": "Pas forcément. Split veut dire deux moitiés séparées ; ortholinéaire et columnar décrivent l’agencement des touches dans chaque moitié. Dans la base de claviers de petitdoigt, 65 des 73 claviers à décalage en colonnes sont split, et 2 des 5 claviers ortholinéaires. Certains claviers d’un seul bloc, comme le Planck, sont ortholinéaires."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Ortholinear", "url": "https://deskthority.net/wiki/Ortholinear"},
+    {"title": "Deskthority wiki: Staggering", "url": "https://deskthority.net/wiki/Staggering"},
+    {"title": "Deskthority wiki: Matrix layout", "url": "https://deskthority.net/wiki/Matrix_layout"},
+    {"title": "Wikipedia: Ergonomic keyboard", "url": "https://en.wikipedia.org/wiki/Ergonomic_keyboard"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "The Sweet Setup: A first impressions review of the Planck EZ 40 keyboard", "url": "https://thesweetsetup.com/a-first-impressions-review-of-the-planck-ez-40-keyboard/"},
+    {"title": "Switch and Click: Best ortholinear keyboards", "url": "https://switchandclick.com/best-ortholinear-keyboards/"},
+    {"title": "QMK firmware: Planck default keymap", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/keymaps/default/keymap.c"},
+    {"title": "QMK firmware: Planck readme", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/readme.md"},
+    {"title": "xcmkb docs: Why columnar staggered?", "url": "https://xcmkb-docs.gitbook.io/doc/why-columnar-staggered"},
+    {"title": "GitHub: foostan/crkbd (Corne)", "url": "https://github.com/foostan/crkbd"},
+    {"title": "ZSA: Moonlander", "url": "https://www.zsa.io/moonlander"},
+    {"title": "ZSA: Voyager", "url": "https://www.zsa.io/voyager"},
+    {"title": "Kinesis: Advantage2", "url": "https://kinesis-ergo.com/shop/advantage2/"},
+    {"title": "MoErgo: Glove80", "url": "https://www.moergo.com/pages/glove80"},
+    {"title": "Dygma: Defy", "url": "https://dygma.com/pages/defy"},
+    {"title": "Keychron: Q15 Max", "url": "https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard"},
+    {"title": "ZSA blog: Goodbye Planck EZ", "url": "https://blog.zsa.io/2307-goodbye-planck-ez/"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Entraînez un doigt à la fois sur un clavier à l’écran", "drill": "anchors"}
+}
+-->
+<p>Décalé, ortholinéaire et columnar désignent trois façons de ranger les mêmes touches. Un clavier décalé, le clavier standard, déplace chaque rangée sur le côté. Un clavier ortholinéaire aligne toutes les touches en grille. Un clavier columnar, ou à décalage en colonnes, garde les colonnes verticales de la grille et monte ou descend chacune selon son doigt. La forme décide des touches que chaque doigt va chercher. Le guide <a href="guide:finger-placement">quel doigt pour quelle touche</a> part du clavier décalé, et le tableau des doigts plus bas montre ce qui bouge quand la forme change. Les décalages sont donnés en unités de touche : une unité (1 u) correspond à la largeur d’une touche de lettre standard.</p>
+
+<h2>Quelle différence entre un clavier décalé, ortholinéaire et columnar ?</h2>
+<p>Elle tient au sens du décalage. Les claviers décalés déplacent les rangées sur le côté, les claviers ortholinéaires ne déplacent rien, et les claviers columnar déplacent les colonnes vers le haut ou vers le bas.</p>
+<figure data-figure="stagger-shapes"><figcaption>Les mêmes lettres QWERTY sur les trois formes, colorées selon le doigt qui les frappe. B, N, Y et Z sont cerclées : ce sont les touches que suit le tableau des doigts plus bas. Les décalages de colonnes du clavier split servent d’exemple ; chaque clavier columnar fixe les siens.</figcaption></figure>
+<table>
+<caption>Les trois agencements de touches</caption>
+<thead><tr><th scope="col">Agencement</th><th scope="col">Ce qui est décalé</th><th scope="col">Décalages</th><th scope="col">Colonnes</th></tr></thead>
+<tbody>
+<tr><th scope="row">Décalage en rangées (modèle de la machine à écrire)</th><td>Chaque rangée, sur le côté, de gauche à droite</td><td>1/2, 1/4 et 1/2 touche d’une rangée à la suivante</td><td>Penchent vers la gauche en montant</td></tr>
+<tr><th scope="row">Décalage en rangées uniforme</th><td>Chaque rangée, sur le côté, de la même valeur</td><td>1/4 de touche (Filco Minila Air) ou 1/2 touche (claviers anciens et claviers de caisse)</td><td>Penchées</td></tr>
+<tr><th scope="row">Ortholinéaire (matrice)</th><td>Rien</td><td>0</td><td>Droites, rangées et colonnes en grille</td></tr>
+<tr><th scope="row">Décalage en colonnes (columnar)</th><td>Chaque colonne, verticalement</td><td>Variables selon la colonne ; Deskthority ne donne pas de valeurs</td><td>Droites, à des hauteurs différentes</td></tr>
+</tbody>
+</table>
+<p>Deskthority qualifie le modèle classique de la machine à écrire de double décalage (<em>double staggered</em>), et appelle matrice ou disposition <em>ortho-linear</em> une disposition sans aucun décalage. Le mot <em>ortho-linear</em> serait né lors d’une évaluation du clavier TypeMatrix.</p>
+
+<h2>Pourquoi les touches d’un clavier sont-elles décalées ?</h2>
+<p>Les claviers sont décalés parce que les machines à écrire l’étaient. Le décalage laissait la place aux liaisons physiques entre chaque touche et le mécanisme interne de la machine. Il permettait d’espacer les bras des touches de façon régulière, et la hauteur de leurs montants limitait le déplacement possible de chaque rangée, ce qui a figé le motif irrégulier 1/2, 1/4, 1/2.</p>
+<p>Les ordinateurs n’ont pas de bras de touches, et le décalage est resté, parce que les personnes déjà formées dessus pouvaient changer de machine sans effort. L’article de Wikipédia sur les claviers ergonomiques ajoute que la disposition décalée peut imposer des mouvements et des postures inconfortables et répétitifs, une affirmation que l’article signale lui-même comme une possible recherche originale.</p>
+<p>Sur un clavier ANSI, ce motif place la rangée de repos un quart de touche à droite de la rangée du haut, et la rangée du bas une demi-touche à droite de la rangée de repos. Le <a href="guide:iso-vs-ansi">guide des claviers ISO et ANSI</a> décrit les touches du bord qui changent d’une norme à l’autre ; les deux normes partagent ces décalages.</p>
+
+<h2>Qu’est-ce qu’un clavier ortholinéaire ?</h2>
+<p>Un clavier ortholinéaire range ses touches dans une grille rigide, où chaque rangée et chaque colonne s’alignent sur leurs voisines. Switch and Click décrit des rangées et des colonnes parfaitement alignées, avec des touches presque toutes de même taille, la barre d’espace faisant parfois exception. L’OLKB Planck, une grille de 12 colonnes sur 4 rangées avec 47 ou 48 touches, et le <a href="db:keyboard/keychron-q15-max">Keychron Q15 Max</a> en sont des exemples. Le <a href="guide:ortholinear-keyboard">guide du clavier ortholinéaire</a> passe les modèles en revue.</p>
+<p>Comme les touches sont alignées, un doigt atteint la touche située sous sa touche de repos en descendant tout droit. Selon un testeur du Planck EZ sur The Sweet Setup, la grille raccourcit le trajet des doigts vers des touches comme Y et B, placées en diagonale de la rangée de repos sur un clavier décalé.</p>
+
+<h2>Qu’est-ce qu’un clavier à décalage en colonnes ?</h2>
+<p>Un clavier à décalage en colonnes aligne ses touches en colonnes droites et monte ou descend chaque colonne pour l’adapter à son doigt. La documentation xcmkb décrit des touches alignées verticalement dans chaque colonne, avec un décalage qui suit la longueur naturelle des doigts. ZSA explique que sur ses claviers columnar, un doigt atteint les touches au-dessus et au-dessous de la rangée de repos sans dévier sur le côté. Kinesis affirme que des colonnes droites suivent mieux le mouvement naturel des doigts que des rangées décalées. Ces affirmations viennent des fabricants.</p>
+<p>Wikipédia nomme le compromis : des colonnes verticales sans décalage réduisent les mouvements latéraux des doigts d’une rangée à l’autre, et elles allongent la distance entre la position neutre de l’index et certaines de ses touches secondaires. Décaler chaque colonne selon la longueur de son doigt répond à ce second point sur des claviers comme le <a href="db:keyboard/open-source-corne">Corne</a>, le <a href="db:keyboard/zsa-moonlander">Moonlander</a> et le <a href="db:keyboard/moergo-glove80">Glove80</a>. Beaucoup de claviers columnar ajoutent aussi des blocs de pouce (<em>thumb clusters</em>), des groupes de touches frappées avec les pouces. Le <a href="guide:columnar-keyboard">guide du clavier columnar</a> les présente.</p>
+
+<h2>Quel doigt pour quelle touche selon la forme du clavier ?</h2>
+<p>La plupart des lettres restent au doigt qui les frappe déjà. Les touches qui changent sont celles qui se trouvaient entre deux colonnes sur un clavier décalé, plus le travail de l’auriculaire sur les claviers à blocs de pouce. Le tableau suit le schéma du <a href="guide:finger-placement">guide du placement des doigts</a> et la carte QWERTY de la keymap QMK par défaut du Planck, où la colonne de gauche porte <kbd>Tab</kbd>, <kbd>Échap</kbd> et <kbd>Maj</kbd> et où les cinq colonnes suivantes portent <kbd>Q</kbd> à <kbd>T</kbd>.</p>
+<table>
+<caption>Quel doigt prend chaque touche (déduit des décalages ci-dessus)</caption>
+<thead><tr><th scope="col">Touche</th><th scope="col">Décalé (ANSI)</th><th scope="col">Grille ortholinéaire</th><th scope="col">Columnar, avec touches de pouce</th></tr></thead>
+<tbody>
+<tr><th scope="row"><kbd>B</kbd></th><td>Index gauche, une demi-touche à droite de <kbd>G</kbd>, donc aussi près de <kbd>H</kbd> que de <kbd>G</kbd></td><td>Index gauche, juste sous <kbd>G</kbd></td><td>Index gauche, sous <kbd>G</kbd></td></tr>
+<tr><th scope="row"><kbd>N</kbd></th><td>Index droit, une demi-touche à droite de <kbd>H</kbd></td><td>Index droit, juste sous <kbd>H</kbd></td><td>Index droit, sous <kbd>H</kbd></td></tr>
+<tr><th scope="row"><kbd>Y</kbd></th><td>Index droit, en haut à gauche de <kbd>H</kbd></td><td>Index droit, juste au-dessus de <kbd>H</kbd></td><td>Index droit, au-dessus de <kbd>H</kbd></td></tr>
+<tr><th scope="row"><kbd>Z</kbd></th><td>Auriculaire gauche, une demi-touche à droite de <kbd>A</kbd></td><td>Auriculaire gauche, juste sous <kbd>A</kbd></td><td>Auriculaire gauche, sous <kbd>A</kbd></td></tr>
+<tr><th scope="row">Chiffres <kbd>1</kbd> à <kbd>0</kbd></th><td>Entre deux colonnes de lettres ; trois méthodes de doigté existent</td><td>Sur les grilles qui ont une rangée des chiffres, juste au-dessus de la colonne de lettres : <kbd>1</kbd> sur <kbd>Q</kbd>, <kbd>2</kbd> sur <kbd>W</kbd>, comme dans la méthode en colonnes. Le Planck à 4 rangées n’a pas de rangée des chiffres</td><td>En général sur une couche, car les claviers 3x6 comme le Corne n’ont pas de rangée des chiffres</td></tr>
+<tr><th scope="row"><kbd>Entrée</kbd> et <kbd>Retour arrière</kbd></th><td>Auriculaire droit</td><td>Auriculaire droit, sur la colonne extérieure de la grille de 12 colonnes</td><td>Souvent un pouce : Kinesis place <kbd>Entrée</kbd>, <kbd>Espace</kbd>, <kbd>Retour arrière</kbd> et <kbd>Suppr</kbd> dans les blocs de pouce</td></tr>
+</tbody>
+</table>
+<p>La rangée du bas d’un clavier décalé se trouve une demi-touche à droite de la rangée de repos, ce qui place <kbd>B</kbd> à mi-chemin entre <kbd>G</kbd> et <kbd>H</kbd>. Le schéma le donne à l’index gauche. Sur une grille ou un clavier columnar, <kbd>B</kbd> se trouve juste sous <kbd>G</kbd> : le même doigt garde la touche, et son geste devient vertical. La rangée des chiffres change le plus. Le guide du placement des doigts présente trois façons de la taper sur un clavier décalé, et une grille dotée d’une rangée des chiffres ne laisse que la méthode en colonnes, puisque chaque chiffre se trouve au-dessus de la lettre que son doigt frappe déjà. Les lettres suivent ici le QWERTY de la figure. Sur un AZERTY, <kbd>B</kbd>, <kbd>N</kbd> et <kbd>Y</kbd> gardent leur place, et la touche du <kbd>Z</kbd> QWERTY porte le <kbd>W</kbd>.</p>
+<p>Les blocs de pouce soulagent les auriculaires. Dygma annonce un bloc de 16 touches de pouce sur le <a href="db:keyboard/dygma-defy">Defy</a>, et MoErgo affirme que les six touches de pouce du Glove80 s’atteignent sans bouger la paume. Confier <kbd>Entrée</kbd>, <kbd>Retour arrière</kbd> ou les modificateurs aux pouces demande un réapprentissage à part entière, car dans le schéma des doigts les pouces ne frappent que la barre d’espace.</p>
+<p>Colemak-DH propose une variante pour les claviers décalés. Son doigté en angle (<em>angle mod</em>) décale <kbd>Z</kbd>, <kbd>X</kbd> et <kbd>C</kbd> d’une place vers la gauche sur la rangée du bas pour ajouter de la symétrie sur un clavier décalé standard, et la page Mod-DH recommande la version d’origine pour tous les autres types de claviers, ergonomiques et ortholinéaires compris. Le <a href="guide:colemak">guide du clavier Colemak</a> présente la disposition.</p>
+
+<h2>Combien de temps pour s’habituer à un clavier ortholinéaire ou columnar ?</h2>
+<p>Les sources parlent d’un jour à plusieurs mois, et aucune ne le mesure dans une étude. Le testeur de The Sweet Setup avait retrouvé sa vitesse de frappe normale en moins d’une journée sur le Planck EZ, a eu besoin d’environ deux semaines pour que les raccourcis de couches deviennent naturels, et trouve désormais les claviers décalés inconfortables. Switch and Click prévient que passer à un clavier ortholinéaire prend des semaines ou des mois, avec une frappe plus lente et plus fautive dans l’intervalle. Selon Wikipédia, un clavier à colonnes verticales peut demander une période d’adaptation, le temps de rééduquer les mouvements des doigts.</p>
+<p>Les grilles 40 % ajoutent une seconde tâche à la forme : les chiffres et les symboles se trouvent sur des couches, atteintes avec une touche Lower ou Raise. Les claviers qui ont plus de rangées gardent une rangée des chiffres et évitent cette étape. La carte des doigts d’un dactylo se transpose, donc le <a href="guide:touch-typing">guide de la dactylographie</a> reste le point de départ, et le guide pour <a href="guide:type-without-looking">taper sans regarder le clavier</a> aide à garder les yeux sur l’écran pendant que les nouveaux gestes s’installent.</p>
+<p>Personne n’a établi qu’une des trois formes protège mieux la santé. Deskthority note que certains pensent que les dispositions en matrice soulagent les symptômes de RSI (les lésions dues aux gestes répétitifs), et n’a trouvé aucune recherche sur le sujet. Wikipédia cite le guide de l’université Cornell, selon lequel peu de preuves montrent que les claviers ergonomiques préviennent les blessures. Kinesis annonce sur sa page produit des bienfaits ergonomiques pour sa disposition inclinée et concave, sans citer d’étude.</p>
+
+<h2>Quels claviers utilisent chaque forme ?</h2>
+<p>La <a href="db:keyboards">base de claviers de petitdoigt</a> (en anglais) recense 989 claviers : 911 à décalage en rangées, 73 à décalage en colonnes et 5 ortholinéaires. Les claviers columnar l’emportent donc sur les ortholinéaires, 73 contre 5.</p>
+<table>
+<caption>Claviers de la base de petitdoigt par agencement des touches (vérifié le 25 novembre 2026)</caption>
+<thead><tr><th scope="col">Agencement</th><th scope="col">Claviers</th><th scope="col">Exemples</th><th scope="col">Forme</th></tr></thead>
+<tbody>
+<tr><th scope="row">Décalage en rangées</th><td>911</td><td>Presque tous les claviers pleine taille, TKL, 75 %, 65 % et 60 %</td><td>Surtout d’un seul bloc ; 47 sont split ou en angle</td></tr>
+<tr><th scope="row">Ortholinéaire</th><td>5</td><td><a href="db:keyboard/zsa-planck-ez">ZSA Planck EZ</a> (47 touches, plus fabriqué), <a href="db:keyboard/boardsource-equals-48">Boardsource Equals 48</a>, Keychron Q15 Max, <a href="db:keyboard/splitkb-aurora-helix">splitkb Aurora Helix</a>, <a href="db:keyboard/beekeeb-felixkeeb-choc">beekeeb FelixKeeb</a></td><td>3 d’un seul bloc, 2 split</td></tr>
+<tr><th scope="row">Décalage en colonnes</th><td>73</td><td>Corne, <a href="db:keyboard/open-source-sofle">Sofle</a>, <a href="db:keyboard/open-source-lily58">Lily58</a>, <a href="db:keyboard/open-source-sweep">Ferris Sweep</a>, ZSA Moonlander et <a href="db:keyboard/zsa-voyager">Voyager</a>, MoErgo Glove80, <a href="db:keyboard/kinesis-advantage360">Kinesis Advantage360</a>, Dygma Defy</td><td>65 split, 7 d’un seul bloc en angle, 1 d’un seul bloc</td></tr>
+</tbody>
+</table>
+<p>La base indique un bloc de pouce sur 72 des 73 claviers columnar et classe 23 d’entre eux en profil bas. Les sources ne nomment pas les formes de la même façon : Switch and Click range le Moonlander et l’ErgoDox EZ parmi les claviers split ortholinéaires, ZSA qualifie le Moonlander de columnar, et Dygma décrit le Defy comme un clavier split columnar proche des claviers ortholinéaires. La base suit la description de chaque fabricant.</p>
+<p>ZSA a arrêté le Planck EZ en août 2023, en expliquant que le clavier ne s’était jamais très bien vendu. Le <a href="guide:split-keyboard">guide du clavier split</a> couvre les modèles split de la famille columnar, le <a href="guide:ergonomic-keyboard">guide du clavier ergonomique</a> la question du confort, et le guide des <a href="guide:keyboard-sizes">tailles de clavier</a> des termes comme 40 % et 60 %.</p>
+
+<h2>Quelle forme choisir ?</h2>
+<p>Un clavier en grille garde la carte des doigts des lettres, et chaque touche s’aligne sur celles du dessus et du dessous. Un clavier columnar décale les colonnes selon les doigts et, avec un bloc de pouce, ajoute des gestes de pouce à apprendre. Un clavier décalé ne demande aucun changement et offre de loin le plus grand choix de modèles, de jeux de keycaps et de dispositions : 911 des 989 claviers de la base de petitdoigt. Le <a href="db:finder">moteur de recherche de claviers</a> filtre cette base par forme quand vous décrivez le clavier voulu, par exemple « clavier split à décalage en colonnes à moins de 300 $ US ».</p>
+<p>Les keycaps réduisent le choix sur les grilles : selon Switch and Click, les keycaps d’un clavier ortholinéaire doivent avoir une forme précise pour bien fonctionner. petitdoigt dessine à l’écran un clavier coloré par doigt, et l’<a href="app:anchors">exercice ancrages</a> montre quel doigt prend chaque touche. Il enregistre les touches frappées et ne voit pas quel doigt vous avez utilisé.</p>
