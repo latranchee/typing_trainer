@@ -2,13 +2,11 @@
 // Same rules as scripts/guides/check.mjs, with the planned page ids added so drafts may link to each other.
 // With no file, checks every draft under .research/drafts/guides/<lang>/.
 
-import { readdirSync, existsSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { dbPath } from '../data-pages/db.mjs';
 import { checkGuide } from '../guides/content.mjs';
-import { FIGURES, PAGE_IDS } from '../guides/pages.mjs';
-
-// Planned figure, drafted in .research/drafts/figures/stagger-shapes.mjs.
-if (!FIGURES.includes('stagger-shapes')) FIGURES.push('stagger-shapes');
+import { PAGE_IDS } from '../guides/pages.mjs';
 
 export const NEW_IDS = [
   'keyboard-switches',
@@ -35,6 +33,12 @@ export const NEW_IDS = [
   'split-keyboard',
   'ergonomic-keyboard',
   'keyboard-sizes',
+  // Batch 2 (2026-11-25).
+  'wireless-mechanical-keyboard',
+  'keyboards-for-long-nails',
+  'number-pad',
+  '60-percent-keyboard',
+  'mechanical-vs-membrane-keyboard',
 ];
 for (const id of NEW_IDS) if (!PAGE_IDS.includes(id)) PAGE_IDS.push(id);
 
@@ -46,6 +50,14 @@ if (files.length === 0 && existsSync(root)) {
 let bad = 0;
 for (const file of files) {
   const problems = checkGuide(file);
+  // db: links must name a record that has a page (the guide checker sees only their shape).
+  for (const m of readFileSync(file, 'utf8').matchAll(/href="db:([^"]+)"/g)) {
+    try {
+      dbPath(m[1]);
+    } catch (e) {
+      problems.push(e.message);
+    }
+  }
   if (problems.length) {
     bad++;
     console.log(`FAIL ${file}`);

@@ -184,4 +184,114 @@ export function boardShapes() {
   return `<div class="board-shapes">${boards.map(block).join('')}</div>`;
 }
 
+
+// Three board shapes carrying the same QWERTY letters, colored by finger as in the trainer:
+// row stagger (ANSI), an ortholinear grid (Preonic-style 12 x 5) and a split column-staggered
+// board with thumb keys (Corne-style 3 x 6 + 3). B, N, Y and Z are ringed: the keys the
+// stagger guide's table follows from one shape to the next. Column offsets on the split board
+// are an example; every columnar board sets its own.
+
+const MARKED = new Set(['b', 'n', 'y', 'z']);
+const ROW_SHADE = ['top', 'top', 'home', 'bottom']; // number row, top, home, bottom
+const LETTERS = ['1234567890', 'qwertyuiop', 'asdfghjkl;', 'zxcvbnm,./'];
+const COL_FINGERS = ['LP', 'LR', 'LM', 'LI', 'LI', 'RI', 'RI', 'RM', 'RR', 'RP'];
+/** Vertical offset of each column of the left half, outer column first, in key units. */
+const COLUMN_OFFSETS = [0.45, 0.45, 0.15, 0, 0.15, 0.3];
+
+function ring(x, y, w) {
+  const px = x * U + 0.5;
+  const py = y * U + 0.5;
+  return `<rect x="${px}" y="${py}" width="${w * U - 1}" height="${U - 1}" rx="${R + 2}" fill="none" stroke="${TEXT}" stroke-width="1.75"/>`;
+}
+
+/** A letter key: `col` = letter column 0-9, `row` = 0 number, 1 top, 2 home, 3 bottom. */
+function letterKey(x, y, col, row, ch) {
+  const fill = SHADE[FINGER_HUE[COL_FINGERS[col]]][ROW_SHADE[row]];
+  const key = keyRect(x, y, 1, fill, { legend: ch, bump: ch === 'f' || ch === 'j' });
+  return MARKED.has(ch) ? key + ring(x, y, 1) : key;
+}
+
+function rowStagger() {
+  const p = [];
+  p.push(keyRect(0, 0, 1, SLATE));
+  [...LETTERS[0]].forEach((ch, i) => p.push(letterKey(1 + i, 0, i, 0, ch)));
+  p.push(keyRect(11, 0, 1, SLATE), keyRect(12, 0, 1, SLATE), keyRect(13, 0, 2, SLATE));
+  p.push(keyRect(0, 1, 1.5, SLATE));
+  [...LETTERS[1]].forEach((ch, i) => p.push(letterKey(1.5 + i, 1, i, 1, ch)));
+  p.push(keyRect(11.5, 1, 1, SLATE), keyRect(12.5, 1, 1, SLATE), keyRect(13.5, 1, 1.5, SLATE));
+  p.push(keyRect(0, 2, 1.75, SLATE));
+  [...LETTERS[2]].forEach((ch, i) => p.push(letterKey(1.75 + i, 2, i, 2, ch)));
+  p.push(keyRect(11.75, 2, 1, SLATE), keyRect(12.75, 2, 2.25, SLATE));
+  p.push(keyRect(0, 3, 2.25, SLATE));
+  [...LETTERS[3]].forEach((ch, i) => p.push(letterKey(2.25 + i, 3, i, 3, ch)));
+  p.push(keyRect(12.25, 3, 2.75, SLATE));
+  p.push(keyRect(0, 4, 1.25, SLATE), keyRect(1.25, 4, 1.25, SLATE), keyRect(2.5, 4, 1.25, SLATE));
+  p.push(keyRect(3.75, 4, 6.25, THUMB));
+  p.push(keyRect(10, 4, 1.25, SLATE), keyRect(11.25, 4, 1.25, SLATE), keyRect(12.5, 4, 1.25, SLATE), keyRect(13.75, 4, 1.25, SLATE));
+  return { h: 5, svg: p.join('') };
+}
+
+function orthoGrid() {
+  const p = [];
+  for (let row = 0; row < 4; row++) {
+    p.push(keyRect(0, row, 1, SLATE));
+    [...LETTERS[row]].forEach((ch, i) => p.push(letterKey(1 + i, row, i, row, ch)));
+    p.push(keyRect(11, row, 1, SLATE));
+  }
+  // Bottom row: four modifiers, Lower, a 2u space bar, Raise, four arrows. The thumbs take Lower, Space and Raise.
+  [0, 1, 2, 3].forEach((x) => p.push(keyRect(x, 4, 1, SLATE)));
+  p.push(keyRect(4, 4, 1, THUMB), keyRect(5, 4, 2, THUMB), keyRect(7, 4, 1, THUMB));
+  [8, 9, 10, 11].forEach((x) => p.push(keyRect(x, 4, 1, SLATE)));
+  return { h: 5, svg: p.join('') };
+}
+
+function columnSplit() {
+  const p = [];
+  const RIGHT = 7.5; // left edge of the right half
+  for (let row = 1; row <= 3; row++) {
+    const y = row - 1;
+    // Left half: outer column, then letter columns 0-4.
+    p.push(keyRect(0, y + COLUMN_OFFSETS[0], 1, SLATE));
+    for (let c = 1; c <= 5; c++) p.push(letterKey(c, y + COLUMN_OFFSETS[c], c - 1, row, LETTERS[row][c - 1]));
+    // Right half: letter columns 5-9, then the outer column, offsets mirrored.
+    for (let j = 0; j < 5; j++) p.push(letterKey(RIGHT + j, y + COLUMN_OFFSETS[5 - j], 5 + j, row, LETTERS[row][5 + j]));
+    p.push(keyRect(RIGHT + 5, y + COLUMN_OFFSETS[0], 1, SLATE));
+  }
+  // Thumb keys, three per half, stepping down toward the middle.
+  const thumbs = [[3.5, 3.45], [4.5, 3.55], [5.5, 3.7]];
+  for (const [x, y] of thumbs) {
+    p.push(keyRect(x, y, 1, THUMB));
+    p.push(keyRect(RIGHT + 6 - (x + 1), y, 1, THUMB));
+  }
+  return { h: 4.75, svg: p.join('') };
+}
+
+/** Default block names; the builder passes the page language's names. */
+export const STAGGER_NAMES = {
+  en: { row: 'Row stagger (ANSI)', ortho: 'Ortholinear grid', column: 'Column stagger, split, with thumb keys' },
+};
+
+/** The three board shapes one under the other, letters colored by finger, with a finger legend. */
+export function staggerShapes(names, fingerNames) {
+  const blocks = [
+    [names.row, rowStagger()],
+    [names.ortho, orthoGrid()],
+    [names.column, columnSplit()],
+  ];
+  const html = blocks
+    .map(([name, b]) => `<div class="board-shape"><p class="board-name">${esc(name)}</p><svg viewBox="0 0 ${15 * U} ${b.h * U}" role="img" aria-label="${esc(name)}" font-family="'Allo', system-ui, sans-serif">${b.svg}</svg></div>`)
+    .join('');
+  const entries = [
+    ['pinky', SHADE.pinky.home],
+    ['ring', SHADE.ring.home],
+    ['middle', SHADE.middle.home],
+    ['index', SHADE.index.home],
+    ['thumb', THUMB],
+  ];
+  const legend = `<div class="chart-legend">${entries
+    .map(([k, color]) => `<span class="chart-swatch"><i style="background:${color}"></i>${esc(fingerNames[k])}</span>`)
+    .join('')}</div>`;
+  return `<div class="board-shapes">${html}</div>${legend}`;
+}
+
 export const CHART_IDS = Object.keys(CHARTS);

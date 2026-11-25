@@ -1,0 +1,104 @@
+<!--meta
+{
+  "id": "switch-specs",
+  "lang": "en",
+  "slug": "switch-specs",
+  "title": "Actuation Force and Actuation Point: Switch Specs Explained",
+  "description": "What actuation force, actuation point, bottom-out force, pre-travel and rated lifespan mean on a switch spec sheet, in gf and cN, and how claims fare in tests.",
+  "h1": "Actuation force and actuation point: how to read switch specs",
+  "keyword": "actuation force",
+  "keywords_secondary": ["actuation point", "best actuation point for gaming", "actuation distance", "bottom out force", "gf vs cn"],
+  "summary": "Actuation force is the force needed to make a key register; the actuation point is the depth where that happens. Makers quote forces in gram-force (gf) or centinewtons (cN), and 1 gf is about 0.98 cN. Pre-travel is the distance to actuation, total travel is the full stroke, and bottom-out force is what the switch takes at the end. Figures are the makers' own and can differ from measurements.",
+  "faq": [
+    {"q": "What is actuation force?", "a": "The force a key needs for the switch to register the press. Cherry lists its MX2A Red at 45 cN operating force and the Razer linear optical switch lists 45 g. The figure is the force at the point of actuation; the force at the bottom of the stroke is listed separately."},
+    {"q": "What is the actuation point?", "a": "The depth in the stroke at which a key press registers, also called actuation distance. Cherry's MX Red page lists 2.0 mm of pre-travel in a 4 mm stroke. Razer lists 1.2 mm for its linear optical switch. Adjustable boards let you set it in software, within a range such as 0.1 to 4.0 mm."},
+    {"q": "What is the best actuation point for gaming?", "a": "The sources give no single best value. Shallow points such as 1.0 to 1.5 mm respond sooner, Wooting and Razer let you set 0.1 to 4.0 mm per key, and Corsair notes that force rises with the depth you pick. Reviewers rate boards by latency and tuning range, so choose by game, finger habit and accidental presses."},
+    {"q": "What is the difference between gf and cN?", "a": "Gram-force and centinewton are two units for the same quantity. Deskthority's wiki gives 1 gf as 0.98 cN and 1 cN as 1.02 gf, close enough that enthusiasts treat them as interchangeable. Cherry writes cN; Kailh, Gateron and most others write gf."},
+    {"q": "Do makers' force figures match measurements?", "a": "Not always. A4Tech lists its LK Libra Orange optical switch at 40 gf, and TechPowerUp measured about 49 gf average actuation over 20 switches. Makers also quote tolerances, such as Kailh's 50 gf plus or minus 10 for Choc v2 Red, and ThereminGoat publishes measured force curves."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Force curve", "url": "https://deskthority.net/wiki/Force_curve"},
+    {"title": "ThereminGoat: force-curves repository", "url": "https://github.com/ThereminGoat/force-curves"},
+    {"title": "ThereminGoat's Switches", "url": "https://www.theremingoat.com/"},
+    {"title": "Cherry: MX2A Red", "url": "https://www.cherry.de/en-gb/product/mx2a-red"},
+    {"title": "Cherry: MX2A Brown", "url": "https://www.cherry.de/en-gb/product/mx2a-brown"},
+    {"title": "Cherry: MX2A Blue", "url": "https://www.cherry.de/en-gb/product/mx2a-blue"},
+    {"title": "Cherry: MX ULP Tactile", "url": "https://www.cherry.de/en-gb/product/mx-ulp-tactile"},
+    {"title": "Cherry: switches", "url": "https://www.cherry.de/en-gb/products/switches"},
+    {"title": "Kailh: Choc v2 low profile switch", "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/key-switches/kailh-low-profile-switch-choc-v2.html"},
+    {"title": "Kailh: Choc v1 tactile (Brown) low profile switches", "url": "https://www.kailhswitch.com/mechanical-keyboard-switches/low-profile-key-switches/tactile-mechanical-keyboard-switches.html"},
+    {"title": "Deskthority wiki: Kailh Choc V2", "url": "https://deskthority.net/wiki/Kailh_Choc_V2"},
+    {"title": "Wooting: Wooting 60HE v2", "url": "https://wooting.io/wooting-60he-v2"},
+    {"title": "Wooting: Lekker switch Linear60 (L60) V2", "url": "https://wooting.io/product/lekker-switch-l60-v2"},
+    {"title": "Wooting: Flaretech, the optical keyboard switch", "url": "https://wooting.io/post/flaretech-the-optical-keyboard-switch"},
+    {"title": "Razer: Razer Optical Switch", "url": "https://www.razer.com/razer-optical-switch"},
+    {"title": "Razer: Razer Analog Optical Switch", "url": "https://www.razer.com/technology/razer-analog-optical-switch"},
+    {"title": "Corsair: key switches compared", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/"},
+    {"title": "Corsair: MGX magnetic key switches explained", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/"},
+    {"title": "TechPowerUp: Bloody B945 review, measurements", "url": "https://techpowerup.com/review/bloody-b945/4.html"},
+    {"title": "RTINGS: Wooting 60HE v2 review", "url": "https://www.rtings.com/keyboard/reviews/wooting/60he-v2-magnetic"},
+    {"title": "PC Gamer: Wooting 60HE v2 review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-60he-v2-review/"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Drill with finger-coded words in the browser", "drill": "words"}
+}
+-->
+<p>A switch spec sheet gives a handful of numbers: the force it takes to actuate, the depth where that happens, the force at the bottom of the stroke and a rated lifespan. Each has a precise meaning, and makers differ in the units and labels they use. For what the switch types feel like, see <a href="guide:linear-vs-tactile-vs-clicky">linear, tactile and clicky switches</a>.</p>
+
+<h2>What is actuation force?</h2>
+<p>Actuation force is the force at which the switch registers a press. It is also called operating force. Cherry's page for the MX2A Red says "45 cN operating force" and lists the same figure as actuation force in its properties table. A heavier number means a firmer key.</p>
+<p>The force changes along the stroke, so a single number describes one moment. Deskthority's wiki defines a force curve as a graph with force on the y axis and travel on the x axis. It marks the actuation (make) point with a solid black point and the reset (release) point with a hollow point. Other features on the curve:</p>
+<ul>
+<li><strong>Preload</strong> is the starting force before the key moves, which the wiki says prevents a loose, slack feel.</li>
+<li><strong>Tactile force</strong> is the force needed to overcome the bump on a tactile switch, and actuation usually follows just after it, when the force drops. The wiki adds that for tactile switches the quoted figure usually refers to the tactile force, the most readily measured force.</li>
+<li><strong>Terminal force</strong>, the bottom-out force, is the force at full travel.</li>
+<li><strong>Hysteresis</strong> means the downstroke and upstroke curves differ, particularly in switches that provide it.</li>
+</ul>
+<p>The Cherry MX Red page lists an initial force of 30 cN, an actuation force of 45 cN and a final force of 100 cN: the spring starts at 30 cN, reaches 45 cN at the actuation point and ends at 100 cN against the bottom.</p>
+
+<h2>What is the actuation point, pre-travel and total travel?</h2>
+<p>The actuation point is the depth at which the key registers, measured from the top of the stroke. Pre-travel is the same distance, written as a length of travel before actuation; total travel is the full stroke to the bottom. Cherry's MX Red page gives 2.0 mm pre-travel and 4.0 mm total travel, and no separate actuation point.</p>
+<table>
+<caption>Travel and force figures, in each maker's unit</caption>
+<thead><tr><th scope="col">Switch</th><th scope="col">Force at actuation</th><th scope="col">Bottom-out or final force</th><th scope="col">Pre-travel</th><th scope="col">Total travel</th></tr></thead>
+<tbody>
+<tr><th scope="row"><a href="db:switch/cherry-mx2a-red">Cherry MX2A Red</a></th><td>45 cN</td><td>100 cN</td><td>2.0 mm</td><td>4.0 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/cherry-mx2a-brown">Cherry MX2A Brown</a></th><td>45 cN (tactile force 55 cN)</td><td>80 cN</td><td>2.0 mm</td><td>4.0 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/cherry-mx2a-blue">Cherry MX2A Blue</a></th><td>50 cN (tactile force 60 cN)</td><td>Not listed</td><td>2.2 mm</td><td>4.0 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/kailh-choc-v2-red">Kailh Choc v2 Red</a></th><td>50 gf, tolerance plus or minus 10</td><td>Not listed</td><td>1.3 mm</td><td>3.2 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/razer-linear-optical">Razer Linear Optical</a></th><td>45 g</td><td>Not listed</td><td>1.2 mm</td><td>Not listed</td></tr>
+<tr><th scope="row">Corsair OPX</th><td>45 g</td><td>Not listed</td><td>1.0 mm</td><td>3.2 mm</td></tr>
+<tr><th scope="row"><a href="db:switch/wooting-lekker-l60-v2">Wooting Lekker L60 V2</a></th><td>40 gf at the start of the press</td><td>60 gf at the end</td><td>Set in software</td><td>4.0 mm</td></tr>
+</tbody>
+</table>
+<p>Corsair says OPX actuates at 1.0 mm, about half the 2.0 mm of a typical mechanical switch, and Razer says its 1.2 mm linear optical switch has an actuation point 16.67% shorter than standard linear switches. A shorter actuation distance responds to a shallower press. The <a href="guide:finger-placement">finger placement guide</a> covers where each finger rests between presses.</p>
+
+<h2>What is the difference between gf and cN?</h2>
+<p>They are two units for one quantity. Deskthority's wiki gives 1 gf as 0.98 cN and 1 cN as 1.02 gf and notes that enthusiasts treat them as interchangeable. Cherry writes cN; Kailh, Gateron, Wooting and most other makers write gf, and Razer and Corsair write a bare g. Some makers use newtons, and older US documents may use ounces.</p>
+<p>Because the units are close, a 45 cN Cherry Red and a 45 gf Gateron Red differ by about 1 gram of force.</p>
+
+<h2>Do makers' numbers agree with each other and with measurements?</h2>
+<p>Makers publish tolerances, and some publish two numbers for one switch. Kailh lists the Choc v2 Red at 50 gf plus or minus 10. Cherry's own pages disagree with each other on a few switches. The MX ULP Tactile page lists 65 cN operating force in its highlights and 52 cN in its properties table. The Ergo Clear datasheet gives a 40 cN pressure point while its product page gives 55 cN.</p>
+<p>Labels differ between makers too. Kailh's <a href="db:switch/kailh-choc-v1-brown">Choc v1 Brown</a> page calls 60 plus or minus 10 gf the actuation force and 50 plus or minus 10 gf the operation force, and the <a href="db:switches">petitdoigt switch database</a> records those as a 60 gf tactile force and a 50 gf actuation force. Check which force a figure names before comparing two switches.</p>
+<p>Independent measurements exist for some switches. TechPowerUp measured about 49 gf average actuation over 20 A4Tech LK Libra Orange optical switches, which A4Tech lists at 40 gf. One switch model in one review shows that a gap can occur and gives no general rate.</p>
+<p>For measured curves, ThereminGoat publishes a repository of switch force curves on GitHub. Each switch folder holds a PDF of the curve, an XLSX sheet of the processed data and a raw CSV file, and the author asks to be credited when the data is reused. The curves have appeared in his long-form reviews since May 2022, and the repository is available at <a href="https://github.com/ThereminGoat/force-curves">github.com/ThereminGoat/force-curves</a>. The review blog lives at <a href="https://www.theremingoat.com/">theremingoat.com</a>.</p>
+
+<h2>What is the best actuation point for gaming?</h2>
+<p>No source names a best actuation point. The choice depends on the game, on how you rest your fingers and on whether accidental presses cost you more than a late response.</p>
+<table>
+<caption>Actuation options by maker</caption>
+<thead><tr><th scope="col">Switch</th><th scope="col">Setting</th><th scope="col">What the maker says</th></tr></thead>
+<tbody>
+<tr><th scope="row">Cherry MX Red</th><td>Fixed, 2.0 mm pre-travel</td><td>Linear, low spring resistance</td></tr>
+<tr><th scope="row">Corsair OPX</th><td>Fixed, 1.0 mm</td><td>Shorter than a typical 2.0 mm switch</td></tr>
+<tr><th scope="row"><a href="db:switch/razer-analog-optical-gen-2">Razer Analog Optical (Gen-2)</a></th><td>0.1 to 4.0 mm in software</td><td>Includes Rapid Trigger and dual-step actuation</td></tr>
+<tr><th scope="row"><a href="db:keyboard/wooting-60he-v2">Wooting 60HE v2</a></th><td>0.1 to 4.0 mm per key, 0.1 mm steps</td><td>Rapid Trigger resets and activates keys the instant you move</td></tr>
+<tr><th scope="row"><a href="db:switch/corsair-mgx-hyperdrive">Corsair MGX Hyperdrive</a></th><td>0.1 to 3.8 mm in Corsair's table</td><td>Force rises from 30 g to 55 g with the chosen depth</td></tr>
+</tbody>
+</table>
+<p>Reviewers score such boards on latency and tuning range. RTINGS called the Wooting 60HE v2 an outstanding gaming keyboard with extremely low, consistent latency, and PC Gamer gave it 93/100. Neither review rates a particular millimetre value. The <a href="guide:hall-effect-switches">Hall effect switches</a> guide covers how adjustable actuation and rapid trigger work, and the <a href="guide:optical-switches">optical switches</a> guide covers the light-beam versions.</p>
+
+<h2>What does rated lifespan mean?</h2>
+<p>Rated lifespan is the number of keystrokes the maker says a switch survives. Cherry's MX Red page says "over 100 million keystrokes with no loss of quality guaranteed," and the MX ULP Tactile is rated over 50 million. Razer lists 100 million for its optical switches and compares that with an industry standard of 50 million keystrokes. Corsair lists 150 million for OPX and MGX Hyperdrive and 80 million for OPX Low-Profile. The petitdoigt switch database lists 10 million for some Kailh Choc v1 clicky switches and 50 million for most Choc v2.</p>
+<p>The figures are the makers' own claims. The sources used here contain no independent durability test, and Wooting's comparison page warns that its own data is subject to errors.</p>
+<p>The <a href="guide:keyboard-switches">keyboard switches overview</a> covers how a switch's sound and feel follow from its type. The trainer offers finger-coded drills in the browser, with key sounds recorded from 13 real switches that you choose from a dropdown in its settings, and makes no claim that any spec improves speed.</p>

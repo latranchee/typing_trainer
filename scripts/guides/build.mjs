@@ -7,7 +7,8 @@
 import { copyFileSync, existsSync, mkdirSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { checkGuide, measure, parseGuide } from './content.mjs';
-import { boardShapes, fingerChart } from './figures.mjs';
+import { STAGGER_NAMES, boardShapes, fingerChart, staggerShapes } from './figures.mjs';
+import { dbPath } from '../data-pages/db.mjs';
 import { GUIDE_LANGS, PAGE_IDS } from './pages.mjs';
 import { APP_LANGS, GROUPS, STRINGS } from './strings.mjs';
 
@@ -117,6 +118,8 @@ function header(lang, depth, alternates, current) {
   <a class="brand" href="${up(depth)}">${MARK}<span>${BRAND}</span></a>
   <nav class="site-nav" aria-label="${esc(BRAND)}">
     <a class="nav-link" href="${up(depth)}${lang}/"${current === 'index' ? ' aria-current="page"' : ''}>${esc(s.guides)}</a>
+    ${lang === 'en' ? `<a class="nav-link" href="${up(depth)}en/keyboards/">keyboards</a>
+    <a class="nav-link" href="${up(depth)}en/switches/">switches</a>` : ''}
     <a class="cap-button" href="${esc(appHref(lang, 'words', null, depth))}">${esc(s.start)}${ARROW}</a>
     <details class="lang">
       <summary aria-label="${esc(s.language)}">${GLOBE}<span class="lang-name">${esc(GUIDE_LANGS[lang].name)}</span><span class="lang-code">${lang}</span>${CHEVRON}</summary>
@@ -187,6 +190,8 @@ function renderBody(lang, body, depth) {
     return href ? `<a href="${esc(href)}">` : '<a>';
   });
   html = html.replace(/<a href="app:([a-z]+)(?:\?layout=([a-z-]+))?">/g, (_, drill, layout) => `<a href="${esc(appHref(lang, drill, layout, depth))}">`);
+  // The keyboard and switch database (English only): db:<page> -> a relative link; a missing record stops the build.
+  html = html.replace(/<a href="db:([a-z0-9/-]+)">/g, (_, target) => `<a href="${esc(up(depth) + dbPath(target))}">`);
   html = html.replace(/<a href="(https:\/\/[^"]+)">/g, (_, url) => `<a href="${url}" rel="noopener">`);
   html = html.replace(/<table>([\s\S]*?)<\/table>/g, (m) => `<div class="table-wrap">${m}</div>`);
   html = html.replace(/<figure data-figure="finger-chart" data-layout="([a-z-]+)">\s*(<figcaption>[\s\S]*?<\/figcaption>)\s*<\/figure>/g, (_, layout, caption) => {
@@ -194,6 +199,7 @@ function renderBody(lang, body, depth) {
     return `<figure class="figure figure-chart">${fingerChart(layout, STRINGS[lang].fingers, label)}${caption}</figure>`;
   });
   html = html.replace(/<figure data-figure="board-shapes">\s*(<figcaption>[\s\S]*?<\/figcaption>)\s*<\/figure>/g, (_, caption) => `<figure class="figure figure-boards">${boardShapes()}${caption}</figure>`);
+  html = html.replace(/<figure data-figure="stagger-shapes">\s*(<figcaption>[\s\S]*?<\/figcaption>)\s*<\/figure>/g, (_, caption) => `<figure class="figure figure-stagger">${staggerShapes(STAGGER_NAMES[lang] ?? STAGGER_NAMES.en, STRINGS[lang].fingers)}${caption}</figure>`);
   return { html, toc };
 }
 
@@ -333,6 +339,7 @@ ${header(lang, depth, alternates, 'index')}
       <h1>${esc(s.indexH1)}</h1>
       <p class="lede">${esc(s.indexIntro)}</p>
       ${groups}
+      ${lang === 'en' ? `<section class="block" aria-labelledby="g-database"><h2 id="g-database">Keyboard and switch database</h2><ul class="link-list"><li><a href="keyboards/finder/"><span class="link-title">Keyboard finder</span><span class="link-desc">Describe the keyboard you want in a sentence and get the boards that match: split, wireless, switch brand, size, price.</span></a></li><li><a href="keyboards/"><span class="link-title">Keyboards</span><span class="link-desc">Every model with its specs, switch options, price and reviews, from the brands' own pages.</span></a></li><li><a href="switches/"><span class="link-title">Switches</span><span class="link-desc">Force, travel and materials of each switch, from the makers' own spec sheets.</span></a></li></ul></section>` : ''}
       ${tryBand(lang, s.start, 'words', null, depth)}
     </div>
   </div>

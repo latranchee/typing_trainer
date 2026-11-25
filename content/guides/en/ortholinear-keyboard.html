@@ -1,0 +1,77 @@
+<!--meta
+{
+  "id": "ortholinear-keyboard",
+  "lang": "en",
+  "slug": "ortholinear-keyboard",
+  "title": "Ortholinear Keyboards: Planck, Layers, Keycaps, Firmware",
+  "description": "What an ortholinear keyboard is, which boards use the grid (Planck, Preonic, Equals 48, Keychron Q15 Max), how layers, keycaps and QMK, VIA and ZMK work.",
+  "h1": "Ortholinear keyboards: the grid layout, boards that use it and what to check",
+  "keyword": "ortholinear keyboard",
+  "keywords_secondary": ["split ortholinear keyboard", "planck keyboard", "ortho linear keyboard", "40% ortholinear keyboard"],
+  "summary": "An ortholinear keyboard places its keys in a straight grid with no row offset, so every key sits directly above and below its neighbors. The best-known board is the OLKB Planck, a 40% grid of 12 columns by 4 rows with 47 or 48 keys, where Lower and Raise keys reach layers for numbers and symbols. Grid boards need keycaps of a uniform shape. Most run QMK firmware, often with VIA or ZMK.",
+  "faq": [
+    {"q": "What is an ortholinear keyboard?", "a": "It is a keyboard with its keys in a rigid grid of straight rows and columns, with no sideways offset between rows. Switch and Click describes perfectly lined rows and columns, with most keys the same size. Deskthority calls the no-stagger arrangement a matrix layout and says ortho-linear was coined in an evaluation of the TypeMatrix."},
+    {"q": "Is the Planck ortholinear?", "a": "Yes. QMK describes the OLKB Planck as a compact 40% (12x4) ortholinear keyboard kit made and sold by OLKB and Massdrop. Switch and Click lists a 48-key Grid layout of 4x12 and a 47-key MIT layout with 3x12 plus an 11-key bottom row. ZSA sold a prebuilt version, the Planck EZ, until 2023."},
+    {"q": "Can I use normal keycaps on an ortholinear keyboard?", "a": "Many sets fit, but the keycap profile matters. Switch and Click says ortholinear keycaps need a specific shape and have a constant height between all rows, since a grid has no sculpted rows. The 47-key MIT layout also needs a 2u space bar. Check the kit's keycap list before ordering."},
+    {"q": "Do ortholinear keyboards have a number row?", "a": "Compact ones, such as the 4-row Planck, have none: numbers sit on a layer that you reach by holding Lower or Raise. Larger grids add a number row. splitkb lists its ortholinear Aurora Helix as having a number row and up to 64 keys."},
+    {"q": "Which firmware do ortholinear keyboards run?", "a": "Most run QMK, which Switch and Click calls free to use. The petitdoigt keyboard database lists QMK and KMK on the Boardsource Equals 48, QMK and VIA on the Keychron Q15 Max, QMK and ZMK on the splitkb Aurora Helix, and ZMK on the wireless beekeeb FelixKeeb."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Ortholinear", "url": "https://deskthority.net/wiki/Ortholinear"},
+    {"title": "Deskthority wiki: Matrix layout", "url": "https://deskthority.net/wiki/Matrix_layout"},
+    {"title": "Switch and Click: Best ortholinear keyboards", "url": "https://switchandclick.com/best-ortholinear-keyboards/"},
+    {"title": "The Sweet Setup: A first impressions review of the Planck EZ 40 keyboard", "url": "https://thesweetsetup.com/a-first-impressions-review-of-the-planck-ez-40-keyboard/"},
+    {"title": "QMK firmware: Planck readme", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/readme.md"},
+    {"title": "QMK firmware: Planck default keymap", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/keymaps/default/keymap.c"},
+    {"title": "ZSA blog: Goodbye Planck EZ", "url": "https://blog.zsa.io/2307-goodbye-planck-ez/"},
+    {"title": "Keychron: Q15 Max", "url": "https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard"},
+    {"title": "Boardsource", "url": "https://boardsource.xyz/"},
+    {"title": "splitkb Aurora (GitHub)", "url": "https://github.com/splitkb/aurora"},
+    {"title": "Wikipedia: Ergonomic keyboard", "url": "https://en.wikipedia.org/wiki/Ergonomic_keyboard"},
+    {"title": "ZSA: Moonlander", "url": "https://www.zsa.io/moonlander"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Drill each finger from its home key", "drill": "anchors"}
+}
+-->
+<p>An ortholinear keyboard sets its keys in a straight grid: rows run left to right, columns run top to bottom, and no row is shifted against the next. The OLKB Planck made the shape popular among keyboard hobbyists, and a handful of makers now sell grid boards, both one-piece and split. The comparison with staggered and columnar boards is in the guide to <a href="guide:staggered-vs-ortholinear-vs-columnar">staggered vs ortholinear vs columnar keyboards</a>.</p>
+
+<h2>What is an ortholinear keyboard?</h2>
+<p>An ortholinear keyboard is one with no stagger: its keys form a grid of perfectly straight rows and columns. Deskthority defines the layout as one with no staggering and gives the alternative names matrix layout, ortho-linear and orthogonal. A staggered keyboard offsets its rows by 1/2, 1/4 and 1/2 of a key on the typewriter pattern, and the grid sets all those offsets to zero.</p>
+<p>Most keys on such a board have the same size, with the space bar sometimes the exception. Staggered boards remain the norm, and Switch and Click calls ortholinear boards a niche choice. A grid can be large: the <a href="db:keyboard/keychron-q15-max">Keychron Q15 Max</a> is a full-metal ortholinear board with two knobs, and the <a href="db:keyboard/splitkb-aurora-helix">splitkb Aurora Helix</a> is an ortholinear split with up to 64 keys, a number row and up to two encoders.</p>
+<p>Some people believe matrix layouts help with RSI symptoms, and Deskthority found no research on it. No source reviewed here shows that the grid prevents or treats injury.</p>
+
+<h2>What is the Planck, and how does a 40% ortholinear board work?</h2>
+<p>The Planck is a 12x4 ortholinear kit with 47 or 48 keys, made and sold by OLKB and Massdrop according to QMK's readme, and the board most guides mean by "ortholinear keyboard". It has twelve columns and four rows. Switch and Click lists two layouts: a 48-key Grid layout of 4x12 and a 47-key MIT layout of 3x12 plus an 11-key bottom row.</p>
+<p>The default QMK keymap puts a QWERTY map on the base layer: <kbd>Tab</kbd> then <kbd>Q</kbd> to <kbd>P</kbd> then <kbd>Bksp</kbd> on top, <kbd>Esc</kbd>, <kbd>A</kbd> to <kbd>'</kbd> on the home row, <kbd>Shift</kbd>, <kbd>Z</kbd> to <kbd>/</kbd> and <kbd>Enter</kbd> below, and a bottom row of <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, <kbd>GUI</kbd>, <kbd>Lower</kbd>, <kbd>Space</kbd>, <kbd>Raise</kbd> and the arrows. There is no number row. The Raise layer in that keymap holds the number keys <kbd>1</kbd> to <kbd>0</kbd>, minus, equals, brackets, backslash and function keys; the Lower layer holds the shifted symbols and the same function keys. The Sweet Setup reviewer of the Planck EZ writes that the board can carry over 30 programmable layers, with Raise and Lower beside the space bar reaching the default two.</p>
+<p>Layers change the finger work: to type a number, hold <kbd>Raise</kbd> with a thumb and press the number with a finger. The Sweet Setup reviewer was back at normal typing speed in less than a day and took about two weeks for layer muscle memory to settle. Switch and Click gives a longer estimate for the shape itself: weeks or months to get used to an ortholinear board, with slower and more error-prone typing at first. Bigger grids keep a number row and skip the layer step.</p>
+<p>ZSA's <a href="db:keyboard/zsa-planck-ez">Planck EZ</a>, a prebuilt 47-key version made with Jack Humbert, was retired in August 2023. ZSA's farewell post says the board never sold very well and could not get off the ground commercially despite years of effort.</p>
+
+<h2>Which keyboards are ortholinear?</h2>
+<p>Five boards in the <a href="db:keyboards">petitdoigt keyboard database</a> are ortholinear, three one-piece and two split. Switch and Click also names the OLKB Planck and Preonic, which QMK and the review site describe and the database does not list.</p>
+<table>
+<caption>Ortholinear boards, as the makers and reviewers describe them (data checked 2026-11-23)</caption>
+<thead><tr><th scope="col">Board</th><th scope="col">Form</th><th scope="col">Keys</th><th scope="col">Firmware</th><th scope="col">Notes</th></tr></thead>
+<tbody>
+<tr><th scope="row">OLKB Planck</th><td>One piece, 40%</td><td>47 or 48</td><td>QMK</td><td>12x4 kit sold by OLKB and Massdrop; Switch and Click: DIY kit with a hot-swap PCB</td></tr>
+<tr><th scope="row">OLKB Preonic</th><td>One piece, 60%</td><td>Not stated</td><td>QMK</td><td>DIY kit with hot-swap switches, RGB and extra footprints, per Switch and Click</td></tr>
+<tr><th scope="row">ZSA Planck EZ</th><td>One piece, 40%</td><td>47</td><td>QMK (Oryx)</td><td>Discontinued August 2023</td></tr>
+<tr><th scope="row"><a href="db:keyboard/boardsource-equals-48">Boardsource Equals 48</a></th><td>One piece, 40%</td><td>48</td><td>QMK, KMK</td><td>4x12 grid, CNC aluminum case, RP2040, MX hot-swap with no stated pin support; sold out when checked</td></tr>
+<tr><th scope="row">Keychron Q15 Max</th><td>One piece</td><td>Not stated</td><td>QMK, VIA</td><td>Full-metal, two knobs; USB, Bluetooth and 2.4 GHz; MX hot-swap (5-pin); $229.99 on Keychron's store</td></tr>
+<tr><th scope="row">splitkb Aurora Helix</th><td>Split</td><td>Up to 64</td><td>QMK, ZMK</td><td>Number row, up to two encoders; kit with MX or Choc hot-swap</td></tr>
+<tr><th scope="row"><a href="db:keyboard/beekeeb-felixkeeb-choc">beekeeb FelixKeeb</a></th><td>Split, wireless</td><td>64</td><td>ZMK</td><td>5x12+4 Helix layout, Choc v1 hot-swap; sold out when checked</td></tr>
+</tbody>
+</table>
+<p>The first two rows come from QMK and Switch and Click; the others come from the makers' own listings, as the petitdoigt keyboard database records them. Switch and Click classes the ZSA Moonlander and the ErgoDox EZ as split ortholinear boards, while ZSA calls the Moonlander columnar. The <a href="guide:columnar-keyboard">columnar keyboard guide</a> covers that family. A split changes the hand position and leaves the grid unchanged, which is why the split boards above are still ortholinear. The <a href="guide:split-keyboard">split keyboard guide</a> explains the split part.</p>
+
+<h2>Do normal keycaps fit an ortholinear keyboard?</h2>
+<p>Mostly, if the profile matches. Switch and Click says ortholinear keycaps need a specific shape to work properly and notes a constant height between all the rows. The Planck EZ's keycaps share a uniform profile (OEM Row 3), so any key can go in any position without shape problems, as The Sweet Setup notes.</p>
+<p>Width matters too: the 48-key Grid layout is 4x12, and the 47-key MIT layout has an 11-key bottom row, which fits a 12-unit-wide board only with one wider key. Compare the kit's required key list against the keycap set before ordering.</p>
+<p>A layered board puts several characters on one key, so printed legends show only part of what it types. petitdoigt draws a finger-coded keyboard on screen, and the <a href="app:anchors">anchors drill</a> shows which finger takes each key. It records which keys you press and cannot see which finger did it.</p>
+
+<h2>Which firmware do ortholinear keyboards run?</h2>
+<p>QMK on most of them, with VIA, KMK or ZMK on some. QMK is open-source firmware, free to use per Switch and Click, and the Planck page sits in QMK's own repository with build commands for each revision. The petitdoigt keyboard database records QMK plus VIA on the Keychron Q15 Max, QMK plus KMK on the Equals 48, QMK plus ZMK on the Aurora Helix and ZMK on the wireless FelixKeeb. The Keychron Q15 Max is configured in Keychron's web app, the Keychron Launcher. ZSA's boards use its browser-based Oryx editor, and the Moonlander page lists up to 32 layers.</p>
+<p>ZMK appears on the wireless FelixKeeb and the Bluetooth-capable Aurora Helix, QMK on the wired Equals 48 and the Planck. The Aurora Helix kit supports either firmware.</p>
+
+<h2>Is an ortholinear keyboard right for you?</h2>
+<p>An ortholinear keyboard suits you if you want straight vertical reaches and are willing to rebuild a few habits. Reviewers describe an adjustment of a day to several weeks, and the letters mostly keep their fingers: <kbd>B</kbd> sits directly below <kbd>G</kbd>, with the left index finger, and <kbd>Y</kbd> sits above <kbd>H</kbd>, with the right index. The <a href="guide:finger-placement">finger placement guide</a> has the full chart and the <a href="guide:touch-typing">touch typing guide</a> covers building the habit again. The <a href="guide:keyboard-sizes">keyboard sizes guide</a> places 40% and 60% boards among the other sizes, and the <a href="guide:ergonomic-keyboard">ergonomic keyboard guide</a> weighs the comfort claims. The <a href="db:finder">keyboard finder</a> lists the grid boards in the petitdoigt keyboard database when you describe one, for example "ortholinear keyboard with hot-swap".</p>

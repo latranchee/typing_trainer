@@ -18,6 +18,35 @@ export const PAGE_IDS = [
   'azerty-vs-qwerty',
   'qwertz-vs-qwerty',
   'iso-vs-ansi',
+  'keyboard-switches',
+  'linear-vs-tactile-vs-clicky',
+  'linear-switches',
+  'tactile-switches',
+  'clicky-switches',
+  'red-vs-brown-vs-blue-switches',
+  'quiet-switches',
+  'best-switches-for-typing',
+  'hall-effect-switches',
+  'optical-switches',
+  'low-profile-switches',
+  'topre-switches',
+  'buckling-spring',
+  'alps-switches',
+  'switch-specs',
+  'hot-swappable-keyboard',
+  'lubing-switches',
+  'switch-manufacturers',
+  'staggered-vs-ortholinear-vs-columnar',
+  'ortholinear-keyboard',
+  'columnar-keyboard',
+  'split-keyboard',
+  'ergonomic-keyboard',
+  'keyboard-sizes',
+  '60-percent-keyboard',
+  'wireless-mechanical-keyboard',
+  'mechanical-vs-membrane-keyboard',
+  'keyboards-for-long-nails',
+  'number-pad',
 ];
 
 /** Guide languages. `cjk` languages are measured in characters, the others in words. */
@@ -44,4 +73,4 @@ export const APP_LAYOUTS = ['ca-fr', 'us', 'azerty', 'qwertz', 'qwertz-ch', 'es'
 export const CHART_LAYOUTS = ['qwerty', 'azerty', 'qwertz', 'dvorak', 'colemak', 'colemak-dh', 'workman'];
 
 /** Other figures the builder draws. */
-export const FIGURES = ['finger-chart', 'board-shapes'];
+export const FIGURES = ['finger-chart', 'board-shapes', 'stagger-shapes'];

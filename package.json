@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && tsc -p worker && vite build && node scripts/guides/build.mjs",
+    "build": "tsc && tsc -p worker && vite build && node scripts/guides/build.mjs && node scripts/data-pages/build.mjs",
     "guides:check": "node scripts/guides/check.mjs",
     "preview": "vite preview",
     "test": "vitest run",

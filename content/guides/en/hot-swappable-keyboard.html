@@ -1,0 +1,109 @@
+<!--meta
+{
+  "id": "hot-swappable-keyboard",
+  "lang": "en",
+  "slug": "hot-swappable-keyboard",
+  "title": "Hot Swappable Keyboard: Sockets, Pins and Which Switches Fit",
+  "description": "What a hot swappable keyboard is: the sockets (Kailh, Gateron, Mill-Max), 3-pin vs 5-pin, MX vs Choc vs magnetic, and how to swap switches safely.",
+  "h1": "Hot swappable keyboards: sockets, 3-pin vs 5-pin and which switches fit",
+  "keyword": "hot swappable keyboard",
+  "keywords_secondary": ["hot swap keyboard", "hot swappable mechanical keyboard", "hot swappable switches", "hot swappable pcb"],
+  "summary": "A hot swappable keyboard holds each switch in a socket on the circuit board, so you pull a switch out and press another in with no soldering. Kailh makes the common sockets, in MX and Choc versions. MX sockets take 3-pin and 5-pin switches, while a 5-pin board needs a 5-pin switch unless you clip two plastic pins. Low-profile and some magnetic boards use their own sockets. In the petitdoigt keyboard database, 593 of 989 keyboards are hot swappable.",
+  "faq": [
+    {"q": "What does hot swappable mean on a keyboard?", "a": "Each switch sits in a socket on the circuit board instead of being soldered to it. A switch puller lifts the switch out and the next one presses in, with the keyboard unplugged."},
+    {"q": "Can I use 5-pin switches on a 3-pin hot swap board?", "a": "Yes, after clipping the two small plastic pins flush with hobby clippers. Glorious says to cut only those plastic pins and never the two metal ones. Clipping is permanent. The other direction needs no change: a 3-pin switch fits a 5-pin socket, though it may pull out with a keycap."},
+    {"q": "Can I make a keyboard hot swappable?", "a": "Sometimes. Mill-Max or Holtite sockets can be soldered into a board made for soldered switches, according to the Deskthority wiki, while Kailh sockets cannot be retrofitted. Keeb.io's guide uses Mill-Max sockets and warns that most Choc boards have holes too small for them."},
+    {"q": "Do low-profile and magnetic keyboards hot swap?", "a": "Many do, with sockets built for their switches. Kailh Choc sockets take Choc switches, and Gateron low-profile boards take Gateron low-profile switches. Magnetic boards like the Glorious GMMK 3 HE and the Cherry Xtrfy MX 8.2 Pro TMR state that their sockets also take MX switches."},
+    {"q": "Can I swap switches while the keyboard is plugged in?", "a": "Glorious tells you to power the keyboard off and unplug it before pulling switches. Unplugging also lets you check each new switch for bent pins before it goes in, and press the key afterwards to test it."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Hot-swap", "url": "https://deskthority.net/wiki/Hot-swap"},
+    {"title": "Glorious: Hot-Swap Keyboard Explained", "url": "https://www.gloriousgaming.com/blogs/guides-resources/hot-swap-keyboard-explained"},
+    {"title": "Glorious: Mistakes to Avoid When Installing Switches Into a Hotswap Mechanical Keyboard", "url": "https://www.gloriousgaming.com/blogs/guides-resources/mistakes-to-avoid-when-installing-switches-into-a-hotswap-mechanical-keyboard"},
+    {"title": "splitkb.com docs: Switch sockets (Aurora build guide)", "url": "https://docs.splitkb.com/product-guides/aurora-series/build-guide/switch-sockets"},
+    {"title": "Keebio blog: How to make your keyboard hotswappable with Mill-Max sockets", "url": "https://blog.keeb.io/how-to-make-your-keyboard-hotswappable-with-mill-max-sockets/"},
+    {"title": "Glorious: GMMK 3 HE prebuilt keyboard", "url": "https://www.gloriousgaming.com/products/gmmk-3-he-prebuilt-keyboard"},
+    {"title": "Cherry Xtrfy: MX 8.2 Pro TMR Wireless", "url": "https://cherryxtrfy.com/keyboards/mx-8-2-pro-tmr-wireless/"},
+    {"title": "Ducky: Origin", "url": "https://ducky.global/products/ducky-origin-phantom-black"},
+    {"title": "Gateron: G Pro 2.0 5-pin switch set", "url": "https://www.gateron.com/products/gateron-g-pro-20-5-pin-switch-set"},
+    {"title": "Kailh", "url": "https://www.kailhswitch.com/"},
+    {"title": "Cherry: MX Multipoint Silver", "url": "https://www.cherry.de/en-gb/product/mx-multipoint-silver"},
+    {"title": "Gateron: KS-33 Low Profile 3.0", "url": "https://www.gateron.com/products/gateron-ks-33-low-profile-30-mechanical-switch"},
+    {"title": "Boardsource", "url": "https://boardsource.xyz/"},
+    {"title": "GitHub: foostan/crkbd (Corne)", "url": "https://github.com/foostan/crkbd"},
+    {"title": "GitHub: splitkb/aurora", "url": "https://github.com/splitkb/aurora"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Type on the board you own, finger by finger", "drill": "words"}
+}
+-->
+<p>A hot swappable keyboard lets you change switches without a soldering iron. Each switch plugs into a socket on the circuit board (the PCB), so a switch puller lifts one out and a new one presses in. Hot-swap suits anyone who wants to try a different feel, replace one failed key, or fit the switch types described in the guide to <a href="guide:keyboard-switches">keyboard switches</a> without buying a second board.</p>
+
+<h2>How does a hot swap socket work?</h2>
+<p>A hot swap socket is a small metal clip housing soldered to the underside of the PCB. The two metal legs of a switch slide into it and make contact, and pulling the switch straight up releases them. The switch never touches solder, so the board and the switch both survive many swaps.</p>
+<p>The common socket makers differ in a few ways:</p>
+<ul>
+<li><strong>Kailh</strong> makes surface-mounted sockets for the bottom of the PCB, in versions for Cherry MX switches and for Kailh Choc low-profile switches. The Choc socket also fits Choc V2.</li>
+<li><strong>Mill-Max</strong> sockets (the 0305 and 7305 models) are flanged single sockets for MX switches. The 0305 lifts the switch 0.64 mm above the board, and the 7305 has a thinner flange.</li>
+<li><strong>Holtite</strong> sockets are small sleeves that fit inside existing solder holes. They are less durable than Kailh sockets.</li>
+</ul>
+<p>Kailh-style sockets are soldered to the PCB at the factory. A builder fitting them by hand places each socket with its flat side facing out in the position marked for that switch, as the splitkb.com build guide shows, then solders both pads and checks that the socket sits flush against the board.</p>
+
+<h2>What is the difference between 3-pin and 5-pin hot swap?</h2>
+<p>The pin count describes the switch legs: a 3-pin switch has two metal contact legs and one plastic center pin, and a 5-pin switch adds two more plastic pins for stability. The extra pins have no effect on function; they only hold the switch more firmly in the plate and board.</p>
+<p>A 5-pin socket has holes for all five pins. A 3-pin socket has only the center hole, so a 5-pin switch will not seat until you clip off the two outer plastic pins. Glorious advises cutting only those two plastic pins with hobby clippers and leaving the metal pins alone. The cut is permanent, which makes the 5-pin switch a 3-pin one for good. A 3-pin switch in a 5-pin socket needs no change, but Glorious notes it may come out easily when you pull a keycap.</p>
+<p>Makers often sell one switch in both forms. Gateron's <a href="db:switch/gateron-g-pro-2-0-white">G Pro 2.0 White</a>, for example, comes in 3-pin and 5-pin versions on Gateron's product page. In the <a href="db:switches">petitdoigt switch database</a>, 976 of the 1,162 switches use the MX footprint; 466 of those are recorded as 5-pin, 62 as 3-pin, and 448 have no stated pin count.</p>
+<p>Many keyboard brands say "hot-swappable" and never state a pin count: the <a href="db:keyboards">petitdoigt keyboard database</a> holds 111 such boards from 35 brands. When the page names none, buy a 3-pin switch or look for a 5-pin board.</p>
+
+<h2>Which switches fit a hot swappable keyboard?</h2>
+<p>A switch fits when its footprint matches the socket. Most boards are built for MX-style switches, the shape Cherry introduced and Gateron, Kailh and many others copy. Low-profile boards use other footprints, and each needs its own socket.</p>
+<table>
+<caption>Socket types and the switches they take</caption>
+<thead><tr><th scope="col">Socket</th><th scope="col">Takes</th><th scope="col">Notes</th></tr></thead>
+<tbody>
+<tr><th scope="row">MX (Kailh, Gateron, Glorious)</th><td>Cherry MX and MX-style switches, 3-pin and 5-pin</td><td>The most common socket; 5-pin sockets accept both kinds</td></tr>
+<tr><th scope="row">Choc (Kailh)</th><td>Kailh Choc low-profile switches, v1 and v2</td><td>Needs Choc keycaps; see <a href="guide:low-profile-switches">low-profile switches</a></td></tr>
+<tr><th scope="row">Gateron low-profile</th><td>Gateron low-profile switches</td><td>Gateron says its KS-33 3.0 fits only NuPhy's Nos75, Kick75, Air75 V3 and Node75</td></tr>
+<tr><th scope="row">Mill-Max</th><td>MX switches</td><td>Retrofits soldered boards; the sockets fit Choc, but most Choc boards have holes too small</td></tr>
+<tr><th scope="row">Magnetic boards</th><td>Their own magnetic switches, and MX on some boards</td><td>Glorious and Cherry Xtrfy state that their sockets also take MX switches</td></tr>
+</tbody>
+</table>
+<p>Switches that sense a key press without metal contacts need no special socket because the sensing sits on the PCB; the <a href="db:maker/adomax">Adomax Flaretech</a> and the Input Club Silo are examples. Some magnetic boards still use MX-shaped hot swap sockets. The Glorious GMMK 3 HE takes Glorious's magnetic switches and 3- or 5-pin MX switches in the same sockets, and the <a href="db:keyboard/cherry-xtrfy-mx-8-2-pro-tmr-wireless">Cherry Xtrfy MX 8.2 Pro TMR</a> takes both Cherry MK magnetic and MX mechanical switches. A board built around one switch family is the exception: Cherry's <a href="db:switch/cherry-mx-multipoint-silver">Multipoint Silver</a> works only with dedicated Multipoint PCBs.</p>
+<p>Some switches resist sockets. Switches with one leg much wider than the other, such as Kailh Pro, are hard to fit in Mill-Max sockets, according to Keebio. Outemu ICE switches carry their own socket on each leg and fit only boards for that design.</p>
+<p>In the petitdoigt keyboard database, every Alps, Topre and buckling-spring board is recorded as having no hot swap.</p>
+<p>Split boards usually offer a choice. The <a href="db:keyboard/open-source-corne">Corne</a> comes in a Cherry (MX) and a Chocolate (Choc) build, both hot swappable in the project's current v4 on GitHub, and the <a href="db:brand/splitkb">splitkb.com</a> Aurora kits are sold with MX hot swap, Choc hot swap or hand-solder options. Boardsource's <a href="db:keyboard/boardsource-corne-wireless-smt-pcb">wireless Corne PCB</a> takes MX, Choc v1 and Choc v2 switches in one socket. The guides to <a href="guide:split-keyboard">split keyboards</a> and <a href="guide:ortholinear-keyboard">ortholinear keyboards</a> cover those boards in more depth.</p>
+
+<h2>How common are hot swappable keyboards?</h2>
+<p>Hot swap is the majority in the petitdoigt keyboard database. These counts cover its 989 keyboards on 2026-11-25, built from the brands' own product pages:</p>
+<table>
+<caption>Keyboards by hot-swap value, the 989 keyboards of the petitdoigt keyboard database, 2026-11-25</caption>
+<thead><tr><th scope="col">Hot-swap value</th><th scope="col">Keyboards</th><th scope="col">What the value means</th></tr></thead>
+<tbody>
+<tr><th scope="row">None</th><td>314</td><td>Switches are soldered</td></tr>
+<tr><th scope="row">5-pin</th><td>232</td><td>Sockets take 3-pin and 5-pin switches</td></tr>
+<tr><th scope="row">Magnetic</th><td>113</td><td>Sockets for magnetic switches</td></tr>
+<tr><th scope="row">Yes, socket not stated</th><td>111</td><td>Hot swap stated with no socket type or pin count; all are MX boards</td></tr>
+<tr><th scope="row">Other</th><td>85</td><td>A socket outside the other groups, most often Gateron low-profile (38 boards)</td></tr>
+<tr><th scope="row">Not stated</th><td>82</td><td>The brand's pages do not say whether the board hot swaps</td></tr>
+<tr><th scope="row">3-pin</th><td>30</td><td>Only 3-pin switches recorded</td></tr>
+<tr><th scope="row">Choc</th><td>18</td><td>Kailh Choc sockets</td></tr>
+<tr><th scope="row">Optical</th><td>4</td><td>Optical switches that swap without soldering</td></tr>
+</tbody>
+</table>
+<p>That adds up to 593 hot swappable boards out of 989, 60 percent of the database and 65 percent of the 907 boards whose brand says either way. The share changes with the board's size and how it is sold. Of 207 boards at 75 percent, 158 are hot swappable. Of 190 full-size boards, 72 are. Kits are almost always hot swappable (45 of 47) and barebones boards mostly so (35 of 45), against 510 of the 888 prebuilt boards. Boards with Topre, Alps, buckling-spring or Cherry low-profile switches are all in the none group. The sizes themselves are explained in the guide to <a href="guide:keyboard-sizes">keyboard sizes</a>.</p>
+<p>A few boards are only partly hot swappable. On the <a href="db:keyboard/ducky-origin">Ducky Origin</a> only the large keys (Esc, Backspace, Enter, both Shifts, Space, numpad 0, + and Enter) are hot swappable and the rest are soldered, according to the store page.</p>
+<p>To see only the hot-swap boards of one size or price, describe the board you want to the <a href="db:finder">keyboard finder</a>, for example "hot-swap 75% keyboard under $150", and it filters the petitdoigt keyboard database.</p>
+
+<h2>How do you swap switches safely?</h2>
+<p>Unplug the keyboard, pull the keycap, pull the switch straight up, and press the new one in until it seats. Glorious gives the sequence:</p>
+<ol>
+<li>Power the keyboard off and unplug it.</li>
+<li>Lift the keycap straight up with a keycap puller, pulling evenly.</li>
+<li>Fit the switch puller's prongs into the notches on opposite sides of the switch housing and pull straight up.</li>
+<li>Check the new switch's pins. Clip the two plastic pins only if the board takes 3-pin switches.</li>
+<li>Turn the switch so the LED-facing side points toward you, then press down evenly until both metal pins sit in the socket.</li>
+<li>Press the keycap back on, plug the keyboard in and test the key.</li>
+</ol>
+<p>Two habits protect the sockets. First, check the metal pins before every insertion: Deskthority notes that a switch put in crooked can bend its pins and damage them, and Glorious says a bent pin can be flattened with tweezers but then stays weaker. Second, avoid force. Glorious says a switch should go in without much pressure, and that you should pull it and inspect the pins when it resists. Pressure from above can tear the pads off a surface-mounted Kailh-style socket, which is why some keyboards add plastic support under the socket, and Keebio recommends silicone bumpers under the PCB, roughly one per four or five switches, on boards that take heavy presses.</p>
+<p>Treat each swap as wear and keep a spare switch of the same type handy.</p>
+<p>Fresh switches change how a key feels and where your fingers land, so give a new set a few minutes before judging it. <a href="app:words">Type a few sets of words</a> in petitdoigt with the new switches in place and watch which keys your fingers now miss. The trainer plays key sounds recorded from 13 real switches, which you pick from a dropdown in its settings. The <a href="guide:switch-specs">guide to switch specs</a> explains the force and travel numbers on a switch's box, and the guide to <a href="guide:touch-typing">touch typing</a> covers the finger placement that stays the same whichever switch sits under the key.</p>

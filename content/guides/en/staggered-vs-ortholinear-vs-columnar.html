@@ -1,0 +1,112 @@
+<!--meta
+{
+  "id": "staggered-vs-ortholinear-vs-columnar",
+  "lang": "en",
+  "slug": "staggered-vs-ortholinear-vs-columnar",
+  "title": "Ortholinear vs Staggered vs Columnar Keyboards",
+  "description": "Ortholinear vs staggered vs columnar keyboards compared: key offsets, finger travel, which finger presses which key, the learning period and example boards.",
+  "h1": "Staggered vs ortholinear vs columnar keyboards: what changes for your fingers",
+  "keyword": "ortholinear keyboard",
+  "keywords_secondary": ["column staggered keyboard", "columnar keyboard", "staggered keyboard", "ortholinear vs staggered"],
+  "summary": "A staggered keyboard offsets each row sideways, a leftover of typewriter levers. An ortholinear keyboard removes the offsets and lines every key up in a grid of straight rows and columns. A column staggered (columnar) keyboard keeps vertical columns and shifts each column up or down to match the length of its finger. Each shape moves a few keys to a different finger, notably B, Y and the keys the pinkies carry. Sources put the adjustment at days to months.",
+  "faq": [
+    {"q": "What is the difference between staggered and ortholinear keyboards?", "a": "A staggered keyboard shifts each key row sideways from the one below it, by a half, a quarter and a half key on the classic typewriter pattern. An ortholinear keyboard has no shift at all: keys sit in a grid, so every column runs straight up and down. Deskthority calls the no-stagger arrangement a matrix layout."},
+    {"q": "What is a column staggered keyboard?", "a": "It is a keyboard whose keys sit in straight vertical columns, with each column moved up or down to suit the finger that uses it. Deskthority describes columns shifted at different offsets to better suit the different fingers. Corne, Lily58, Moonlander and Glove80 are examples."},
+    {"q": "Are ortholinear keyboards better for typing?", "a": "No source shows a speed or health advantage. Deskthority notes that some believe a matrix layout helps RSI symptoms but finds no research on it. Makers and reviewers describe shorter reaches for keys like Y and B. Wikipedia adds that vertical columns also lengthen some reaches, so the result depends on the typist."},
+    {"q": "How long does it take to get used to an ortholinear keyboard?", "a": "Reports range widely. One Planck EZ reviewer was back to normal speed in under a day and needed about two weeks for layer shortcuts to settle. Switch and Click warns that it takes weeks or months to get used to an ortholinear board, with slower and less accurate typing during the move."},
+    {"q": "Is a split keyboard the same as an ortholinear keyboard?", "a": "No. Split means two separate halves; ortholinear and columnar describe how the keys inside each half are arranged. In the petitdoigt keyboard database, 65 of the 73 column staggered boards are split, and so are 2 of the 5 ortholinear ones. Some one-piece boards, such as the Planck, are ortholinear."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Ortholinear", "url": "https://deskthority.net/wiki/Ortholinear"},
+    {"title": "Deskthority wiki: Staggering", "url": "https://deskthority.net/wiki/Staggering"},
+    {"title": "Deskthority wiki: Matrix layout", "url": "https://deskthority.net/wiki/Matrix_layout"},
+    {"title": "Wikipedia: Ergonomic keyboard", "url": "https://en.wikipedia.org/wiki/Ergonomic_keyboard"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "The Sweet Setup: A first impressions review of the Planck EZ 40 keyboard", "url": "https://thesweetsetup.com/a-first-impressions-review-of-the-planck-ez-40-keyboard/"},
+    {"title": "Switch and Click: Best ortholinear keyboards", "url": "https://switchandclick.com/best-ortholinear-keyboards/"},
+    {"title": "QMK firmware: Planck default keymap", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/keymaps/default/keymap.c"},
+    {"title": "QMK firmware: Planck readme", "url": "https://github.com/qmk/qmk_firmware/blob/master/keyboards/planck/readme.md"},
+    {"title": "xcmkb docs: Why columnar staggered?", "url": "https://xcmkb-docs.gitbook.io/doc/why-columnar-staggered"},
+    {"title": "GitHub: foostan/crkbd (Corne)", "url": "https://github.com/foostan/crkbd"},
+    {"title": "ZSA: Moonlander", "url": "https://www.zsa.io/moonlander"},
+    {"title": "ZSA: Voyager", "url": "https://www.zsa.io/voyager"},
+    {"title": "Kinesis: Advantage2", "url": "https://kinesis-ergo.com/shop/advantage2/"},
+    {"title": "MoErgo: Glove80", "url": "https://www.moergo.com/pages/glove80"},
+    {"title": "Dygma: Defy", "url": "https://dygma.com/pages/defy"},
+    {"title": "Keychron: Q15 Max", "url": "https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard"},
+    {"title": "ZSA blog: Goodbye Planck EZ", "url": "https://blog.zsa.io/2307-goodbye-planck-ez/"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Drill one finger at a time on an on-screen keyboard", "drill": "anchors"}
+}
+-->
+<p>Staggered, ortholinear and columnar are three ways to arrange the same keys on a board. A staggered keyboard offsets each row sideways. An ortholinear keyboard lines every key up in a grid. A column staggered keyboard, also called a columnar keyboard, keeps the grid's vertical columns and moves each column up or down to match its finger. The shape decides which keys each finger reaches for. The guide to <a href="guide:finger-placement">which finger presses which key</a> assumes the staggered board, and the finger table below shows what moves when the board changes. Offsets are given in key units: one unit (1u) is the width of a standard letter key.</p>
+
+<h2>What is the difference between staggered, ortholinear and columnar keyboards?</h2>
+<p>The difference is which direction the keys are offset. Staggered boards shift rows sideways, ortholinear boards shift nothing, and columnar boards shift columns up and down.</p>
+<figure data-figure="stagger-shapes"><figcaption>The same QWERTY letters on three shapes, colored by the finger that presses them. B, N, Y and Z are ringed: they are the keys the finger table below follows. The column offsets on the split board are an example; each columnar board sets its own.</figcaption></figure>
+<table>
+<caption>The three key arrangements</caption>
+<thead><tr><th scope="col">Arrangement</th><th scope="col">What is offset</th><th scope="col">Offsets</th><th scope="col">Columns</th></tr></thead>
+<tbody>
+<tr><th scope="row">Row stagger (typewriter pattern)</th><td>Each row sideways, left to right</td><td>1/2, 1/4 and 1/2 key between successive rows</td><td>Lean left as they rise</td></tr>
+<tr><th scope="row">Uniform row stagger</th><td>Each row sideways by the same amount</td><td>1/4 key (Filco Minila Air) or 1/2 key (vintage and point-of-sale boards)</td><td>Lean</td></tr>
+<tr><th scope="row">Ortholinear (matrix)</th><td>Nothing</td><td>0</td><td>Straight, rows and columns on a grid</td></tr>
+<tr><th scope="row">Column stagger (columnar)</th><td>Each column vertically</td><td>Differs by column; Deskthority gives no values</td><td>Straight, at different heights</td></tr>
+</tbody>
+</table>
+<p>Deskthority describes the classic typewriter pattern as double staggered and a layout with no staggering as a matrix or ortho-linear layout. The word "ortho-linear" was reportedly coined in an evaluation of the TypeMatrix keyboard.</p>
+
+<h2>Why are keyboards staggered?</h2>
+<p>Keyboards are staggered because typewriters were. The stagger accommodated the physical links between each key and the typewriter's internal mechanism. The offsets let the key arms sit with equal spacing, and the heights of the arms' risers limited how far each row could move, which fixed the uneven 1/2, 1/4, 1/2 pattern.</p>
+<p>Computers have no key arms, and the stagger stayed, because people who had already trained on it could switch without effort. Wikipedia's article on ergonomic keyboards also says the staggered layout can force uncomfortable, repetitive movements and postures, a claim the article itself flags as possibly original research.</p>
+<p>On an ANSI board the pattern puts the home row a quarter key right of the top letter row and the bottom row half a key right of the home row. The <a href="guide:iso-vs-ansi">guide to ISO and ANSI keyboards</a> covers the edge keys that differ between standards; both share these offsets.</p>
+
+<h2>What is an ortholinear keyboard?</h2>
+<p>An ortholinear keyboard has its keys in a rigid grid, so each row and column lines up with its neighbors. Switch and Click describes "perfectly lined rows and columns" with most keys the same size, the space bar sometimes the exception. Examples are the OLKB Planck, a 12x4 grid with 47 or 48 keys, and the <a href="db:keyboard/keychron-q15-max">Keychron Q15 Max</a>. The <a href="guide:ortholinear-keyboard">ortholinear keyboard guide</a> lists the boards.</p>
+<p>Because the keys line up, a finger reaches the key below its home key by moving straight down. A reviewer of the Planck EZ at The Sweet Setup says the grid shortens the distance fingers travel to keys such as Y and B, which sit diagonally from the home row on a staggered board.</p>
+
+<h2>What is a column staggered keyboard?</h2>
+<p>A column staggered keyboard sets keys in straight columns and moves each column vertically to suit its finger. The xcmkb documentation describes keys aligned vertically within each column "but with a stagger to match the natural lengths of your fingers." ZSA says a finger on its columnar boards reaches above and below the home row without going sideways. Kinesis says straight columns match natural finger motion better than staggered rows. These are makers' claims.</p>
+<p>Wikipedia names the trade-off: vertical columns without stagger minimize sideways finger movement between rows, and they increase the distance from the index finger's neutral position to some of its secondary keys. Offsetting each column to its finger's length addresses that second point on boards like the <a href="db:keyboard/open-source-corne">Corne</a>, <a href="db:keyboard/zsa-moonlander">Moonlander</a> and <a href="db:keyboard/moergo-glove80">Glove80</a>. Many columnar boards also add thumb clusters, groups of keys pressed with the thumbs. The <a href="guide:columnar-keyboard">columnar keyboard guide</a> goes through them.</p>
+
+<h2>Which finger presses which key on each shape?</h2>
+<p>Most letters stay with the finger that already presses them. The keys that move are the ones that sat between two columns on a staggered board, plus the pinky's jobs on boards with thumb clusters. The table follows the finger chart in the <a href="guide:finger-placement">finger placement guide</a> and the QWERTY map in the Planck's default QMK keymap, where the left column holds <kbd>Tab</kbd>, <kbd>Esc</kbd> and <kbd>Shift</kbd> and the next five columns hold <kbd>Q</kbd> to <kbd>T</kbd>.</p>
+<table>
+<caption>Which finger takes each key (worked out from the key offsets above)</caption>
+<thead><tr><th scope="col">Key</th><th scope="col">Staggered (ANSI)</th><th scope="col">Ortholinear grid</th><th scope="col">Columnar, with thumb keys</th></tr></thead>
+<tbody>
+<tr><th scope="row"><kbd>B</kbd></th><td>Left index, half a key right of <kbd>G</kbd>, so as near to <kbd>H</kbd> as to <kbd>G</kbd></td><td>Left index, straight below <kbd>G</kbd></td><td>Left index, below <kbd>G</kbd></td></tr>
+<tr><th scope="row"><kbd>N</kbd></th><td>Right index, half a key right of <kbd>H</kbd></td><td>Right index, straight below <kbd>H</kbd></td><td>Right index, below <kbd>H</kbd></td></tr>
+<tr><th scope="row"><kbd>Y</kbd></th><td>Right index, up and left of <kbd>H</kbd></td><td>Right index, straight above <kbd>H</kbd></td><td>Right index, above <kbd>H</kbd></td></tr>
+<tr><th scope="row"><kbd>Z</kbd></th><td>Left pinky, half a key right of <kbd>A</kbd></td><td>Left pinky, directly below <kbd>A</kbd></td><td>Left pinky, below <kbd>A</kbd></td></tr>
+<tr><th scope="row">Number keys <kbd>1</kbd> to <kbd>0</kbd></th><td>Between two letter columns; three fingering methods exist</td><td>On grids with a number row, directly above the letter column: <kbd>1</kbd> over <kbd>Q</kbd>, <kbd>2</kbd> over <kbd>W</kbd>, which matches the column method. The 4-row Planck has no number row</td><td>Usually a layer, since 3x6 boards such as the Corne have no number row</td></tr>
+<tr><th scope="row"><kbd>Enter</kbd> and <kbd>Backspace</kbd></th><td>Right pinky</td><td>Right pinky, on the outer column of the 12-column grid</td><td>Often a thumb: Kinesis puts <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Backspace</kbd> and <kbd>Delete</kbd> in the thumb clusters</td></tr>
+</tbody>
+</table>
+<p>The staggered bottom row sits half a key to the right of the home row, which leaves <kbd>B</kbd> midway between <kbd>G</kbd> and <kbd>H</kbd>. The chart gives it to the left index. On a grid or a columnar board <kbd>B</kbd> sits directly below <kbd>G</kbd>, so the same finger keeps the key and the reach straightens. The number row changes most. The finger placement guide lists three ways to finger it on a staggered board. A grid with a number row leaves only the column method, because each number sits above the letter its finger already presses.</p>
+<p>Thumb clusters move work off the pinkies. Dygma lists a 16-key thumb cluster on the <a href="db:keyboard/dygma-defy">Defy</a>, and MoErgo says all six thumb keys of the Glove80 are reachable without moving the palm. Moving <kbd>Enter</kbd>, <kbd>Backspace</kbd> or modifiers to the thumbs is a retraining job of its own, since the thumbs in the finger chart only press the space bar.</p>
+<p>Colemak-DH has a variant for staggered boards. Its angle mod shifts <kbd>Z</kbd>, <kbd>X</kbd> and <kbd>C</kbd> one place left on the bottom row to add symmetry on a standard staggered board, and the Mod-DH page recommends the original mapping for all other keyboard types, ergonomic and ortholinear boards included. The <a href="guide:colemak">Colemak guide</a> explains the layout.</p>
+
+<h2>How long does it take to get used to an ortholinear or columnar keyboard?</h2>
+<p>Sources report anything from a day to several months, and none measures it in a study. The Sweet Setup reviewer was back to normal typing speed in less than a day on the Planck EZ, needed about two weeks for layer shortcuts to feel natural, and now finds staggered keyboards uncomfortable. Switch and Click warns that switching to an ortholinear board takes weeks or months, with slower and more error-prone typing meanwhile. Wikipedia says a keyboard with vertical columns can need an adjustment period while the user retrains finger movements.</p>
+<p>The 40% grid boards add a second task on top of the shape: numbers and symbols live on layers, reached with a Lower or Raise key. Boards with more rows keep a number row and skip that step. A touch typist's existing finger map transfers, so the <a href="guide:touch-typing">touch typing guide</a> remains the starting point, and the <a href="guide:type-without-looking">guide to typing without looking</a> covers keeping your eyes on the screen while the new reaches settle.</p>
+<p>Whether any of the three shapes is healthier is unsettled. Deskthority notes that some people believe matrix layouts help with RSI symptoms and found no research on it. Wikipedia quotes Cornell's guide saying there is not much evidence that ergonomic keyboards can prevent injuries. Kinesis states ergonomic benefits for its tented, concave layout on its product page and cites no study.</p>
+
+<h2>Which keyboards use each shape?</h2>
+<p>The <a href="db:keyboards">petitdoigt keyboard database</a> lists 989 boards: 911 row staggered, 73 column staggered and 5 ortholinear. Columnar boards outnumber ortholinear ones by 73 to 5.</p>
+<table>
+<caption>Keyboards in the petitdoigt keyboard database by key arrangement (checked 2026-11-25)</caption>
+<thead><tr><th scope="col">Arrangement</th><th scope="col">Boards</th><th scope="col">Examples</th><th scope="col">Form</th></tr></thead>
+<tbody>
+<tr><th scope="row">Row stagger</th><td>911</td><td>Nearly every full-size, TKL, 75%, 65% and 60% board</td><td>Mostly one-piece; 47 are split or angled</td></tr>
+<tr><th scope="row">Ortholinear</th><td>5</td><td><a href="db:keyboard/zsa-planck-ez">ZSA Planck EZ</a> (47 keys, discontinued), <a href="db:keyboard/boardsource-equals-48">Boardsource Equals 48</a>, Keychron Q15 Max, <a href="db:keyboard/splitkb-aurora-helix">splitkb Aurora Helix</a>, <a href="db:keyboard/beekeeb-felixkeeb-choc">beekeeb FelixKeeb</a></td><td>3 one-piece, 2 split</td></tr>
+<tr><th scope="row">Column stagger</th><td>73</td><td>Corne, <a href="db:keyboard/open-source-sofle">Sofle</a>, <a href="db:keyboard/open-source-lily58">Lily58</a>, <a href="db:keyboard/open-source-sweep">Ferris Sweep</a>, ZSA Moonlander and <a href="db:keyboard/zsa-voyager">Voyager</a>, MoErgo Glove80, <a href="db:keyboard/kinesis-advantage360">Kinesis Advantage360</a>, Dygma Defy</td><td>65 split, 7 angled one-piece, 1 one-piece</td></tr>
+</tbody>
+</table>
+<p>The database records 72 of the 73 columnar boards with a thumb cluster and 23 as low-profile builds. Sources label the shapes differently: Switch and Click calls the Moonlander and ErgoDox EZ "split ortholinear" boards, while ZSA calls the Moonlander columnar and Dygma describes the Defy as a split columnar design "similar to ortholinear keyboards". The database follows each maker's own description.</p>
+<p>ZSA retired the Planck EZ in August 2023, saying the board never sold very well. The <a href="guide:split-keyboard">split keyboard guide</a> covers the split designs in the columnar family, the <a href="guide:ergonomic-keyboard">ergonomic keyboard guide</a> the comfort question, and the <a href="guide:keyboard-sizes">keyboard sizes guide</a> terms such as 40% and 60%.</p>
+
+<h2>Which shape should you choose?</h2>
+<p>A grid board keeps the finger map of the letters, and each key lines up with the one above and below it. A columnar board offsets columns to the fingers and, with a thumb cluster, adds thumb jobs to learn. A staggered board needs no change and has by far the most models, keycap sets and layouts to pick from: 911 of the 989 boards in the petitdoigt keyboard database. The <a href="db:finder">keyboard finder</a> filters that database by shape when you describe the board you want, such as "column staggered split keyboard under $300".</p>
+<p>Keycaps narrow the choice on grid boards: Switch and Click says ortholinear keycaps need a specific shape to work properly. petitdoigt draws a finger-coded on-screen keyboard, so the <a href="app:anchors">anchors drill</a> shows which finger takes each key. It records the keys you press and cannot see which finger you used.</p>

@@ -1,0 +1,121 @@
+<!--meta
+{
+  "id": "hall-effect-switches",
+  "lang": "en",
+  "slug": "hall-effect-switches",
+  "title": "Hall Effect Switches: How a Hall Effect Keyboard Works",
+  "description": "Hall effect switches read a magnet's position, not a metal contact. See how they work, what rapid trigger is, and what Wooting, Gateron and others publish.",
+  "h1": "Hall effect switches: how a Hall effect keyboard works",
+  "keyword": "hall effect switches",
+  "keywords_secondary": ["hall effect keyboard", "rapid trigger keyboard", "magnetic switches", "magnetic keyboard switch", "TMR switches"],
+  "summary": "Hall effect switches carry a small magnet, and a sensor on the circuit board measures how close it is as the key travels. Because the keyboard knows the key's position at every moment, you can set the actuation point per key and use rapid trigger, which resets and fires a key the instant it moves. The switches are almost all linear and need a board built for them.",
+  "faq": [
+    {"q": "What is a Hall effect keyboard?", "a": "A keyboard whose switches hold a magnet while a Hall sensor on the circuit board measures the magnetic field. The sensor reports how far each key is pressed, so no metal contact closes. Wooting, SteelSeries, Corsair and Keychron all sell boards built this way."},
+    {"q": "What is rapid trigger?", "a": "A firmware feature that makes a key release the instant it moves back up and press again as soon as it moves down, from any point in the travel. Wooting describes it as resetting and activating keys the instant you move, with press and release sensitivity tuned separately."},
+    {"q": "Are Hall effect switches and TMR switches the same?", "a": "They share the magnet in the switch and differ in the sensor. A Hall sensor produces a voltage proportional to the magnetic field. A tunnel magnetoresistance (TMR) sensor changes its electrical resistance with the field. Logitech, Cherry and Akko sell TMR keyboards with the same adjustable actuation."},
+    {"q": "Can I use Hall effect switches in any hot-swap keyboard?", "a": "Only in a board built for them. The sensor sits on the PCB under each socket, so a standard contact board cannot read a magnet. Wooting's page says switches without the magnet are not detected, and Wooting recommends its own Lekker switches."},
+    {"q": "Are Hall effect keyboards good for typing?", "a": "Reviewers split. PC Gamer called the Wooting 60HE v2 good for gaming and typing, while TechRadar found the Logitech PRO X TKL Rapid's analog switches lacking in tactility. Nearly all magnetic switches are linear, so the feel is that of a linear switch."}
+  ],
+  "sources": [
+    {"title": "Wikipedia: Hall effect sensor", "url": "https://en.wikipedia.org/wiki/Hall_effect_sensor"},
+    {"title": "Wikipedia: Tunnel magnetoresistance", "url": "https://en.wikipedia.org/wiki/Tunnel_magnetoresistance"},
+    {"title": "Wooting: Wooting 60HE v2", "url": "https://wooting.io/wooting-60he-v2"},
+    {"title": "Wooting: Lekker switch Linear60 (L60) V2", "url": "https://wooting.io/product/lekker-switch-l60-v2"},
+    {"title": "Wooting: Lekker switch Linear45 (L45) V2", "url": "https://wooting.io/product/lekker-switch-l45-v2"},
+    {"title": "Wooting: Lekker Tikken Medium switch", "url": "https://wooting.io/product/wooting-lekker-tikken-medium-switch"},
+    {"title": "Gateron: KS-20 Magnetic Orange", "url": "https://www.gateron.com/products/gateron-ks-20-magnetic-orange-hall-sensor-switch-set"},
+    {"title": "Gateron: Magnetic Jade Pro", "url": "https://www.gateron.com/products/gateron-magnetic-jade-pro-switch-set"},
+    {"title": "SteelSeries: Apex Pro Gen 3", "url": "https://steelseries.com/gaming-keyboards/apex-pro-gen-3"},
+    {"title": "SteelSeries: keyboard gaming switches", "url": "https://steelseries.com/innovation/keyboard-gaming-switches"},
+    {"title": "Corsair: MGX magnetic key switches explained", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-mgx-magnetic-key-switches-explained/"},
+    {"title": "Corsair: key switches compared", "url": "https://www.corsair.com/us/en/explorer/gamer/keyboards/corsair-key-switches-compared/"},
+    {"title": "Razer: Razer Analog Optical Switch", "url": "https://www.razer.com/technology/razer-analog-optical-switch"},
+    {"title": "Logitech G: G512 X 75 gaming keyboard", "url": "https://www.logitechg.com/en-us/shop/p/g512-x-75-gaming-keyboard"},
+    {"title": "PC Gamer: Wooting 60HE v2 review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-60he-v2-review/"},
+    {"title": "RTINGS: Wooting 60HE v2 review", "url": "https://www.rtings.com/keyboard/reviews/wooting/60he-v2-magnetic"},
+    {"title": "PC Gamer: Wooting 80HE review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/wooting-80he-review/"},
+    {"title": "Tom's Hardware: Wooting Two HE review", "url": "https://www.tomshardware.com/reviews/wooting-two-he"},
+    {"title": "TechRadar: Logitech PRO X TKL Rapid review", "url": "https://www.techradar.com/computing/keyboards/logitech-pro-x-tkl-rapid-gaming-keyboard-review"},
+    {"title": "PC Gamer: Logitech G Pro X TKL Rapid review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g-pro-x-tkl-rapid-review/"},
+    {"title": "PC Gamer: Logitech G515 Rapid TKL review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/logitech-g515-rapid-tkl-review/"},
+    {"title": "TechRadar: Corsair K70 Pro TKL review", "url": "https://www.techradar.com/computing/keyboards/corsair-k70-pro-tkl-review"},
+    {"title": "TechRadar: Razer Huntsman V3 Tenkeyless 8KHz review", "url": "https://www.techradar.com/computing/keyboards/razer-huntsman-v3-tenkeyless-8khz-review"},
+    {"title": "RTINGS: Ducky One X review", "url": "https://www.rtings.com/keyboard/reviews/ducky/one-x"},
+    {"title": "PC Gamer: Cherry Xtrfy K5 Pro TMR Compact review", "url": "https://www.pcgamer.com/hardware/gaming-keyboards/cherry-k5-pro-tmr-compact-review/"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Drill with finger-coded words in the browser", "drill": "words"}
+}
+-->
+<p>A Hall effect switch measures where the key is. A small magnet travels with the stem, and a sensor on the circuit board reads how strong the magnetic field is at that moment. The keyboard therefore sees the whole stroke instead of a single on or off event, which makes an adjustable actuation point and rapid trigger possible. The <a href="guide:keyboard-switches">overview of keyboard switches</a> covers the other sensing methods.</p>
+
+<h2>How do Hall effect switches work?</h2>
+<p>The key press moves a magnet closer to a Hall sensor, and the sensor outputs a signal that follows the magnetic field. A Hall element is a thin strip of metal carrying a constant current; electrodes on its sides pick up a voltage proportional to the magnetic field component perpendicular to that current. A linear Hall sensor passes that value on continuously, so the keyboard's firmware can turn it into a key position.</p>
+<p>A conventional mechanical switch closes a metal contact at one fixed point in the stroke. A Hall switch has no contact to close. The firmware compares the sensor reading with a threshold you choose, and the key registers when the reading crosses it. On the <a href="db:keyboard/wooting-60he-v2">Wooting 60HE v2</a>, Hall effect sensors on the PCBA detect the magnet inside each Lekker switch.</p>
+<p>The idea is older than gaming keyboards. Honeywell engineers developed Hall-effect keyboard switches in the late 1960s, when they were costly and used mostly in aerospace and military systems.</p>
+<p>Because the sensor lives on the board, the switch itself holds a magnet and nothing else electronic. The <a href="db:switches">petitdoigt switch database</a> lists 129 magnetic switches, from Gateron, Kailh, TTC, Wooting, SteelSeries, Corsair and many more, and 119 of them are linear. A handful are tactile or clicky, and a few are silent.</p>
+
+<h2>What is adjustable actuation?</h2>
+<p>Adjustable actuation means you pick the depth at which each key fires. On a contact switch that depth is built into the metal; on a Hall switch it is a number in software.</p>
+<p>Wooting's page for the 60HE v2 says its software, Wootility, sets each key's actuation point from 0.1 mm to 4.0 mm in 0.1 mm steps. Other makers publish their own ranges:</p>
+<table>
+<caption>Published actuation ranges of Hall effect switches, as each maker states them</caption>
+<thead><tr><th scope="col">Switch</th><th scope="col">Range</th><th scope="col">Total travel</th><th scope="col">Force the maker lists</th></tr></thead>
+<tbody>
+<tr><th scope="row"><a href="db:switch/wooting-lekker-l60-v2">Wooting Lekker L60 V2</a></th><td>0.1 to 4.0 mm on Wooting boards</td><td>4.0 mm</td><td>40 gf at the start of the press, 60 gf at the end</td></tr>
+<tr><th scope="row"><a href="db:switch/wooting-lekker-l45-v2">Wooting Lekker L45 V2</a></th><td>0.1 to 4.0 mm on Wooting boards</td><td>4.0 mm</td><td>30 gf start, 45 gf end</td></tr>
+<tr><th scope="row"><a href="db:switch/steelseries-omnipoint-3-0">SteelSeries OmniPoint 3.0</a></th><td>0.1 to 4.0 mm, 40 levels</td><td>4.0 mm</td><td>Not listed on the pages opened</td></tr>
+<tr><th scope="row"><a href="db:switch/corsair-mgx-hyperdrive">Corsair MGX Hyperdrive</a></th><td>0.1 to 3.8 mm in Corsair's table (its text says 4.0 mm)</td><td>4.0 mm</td><td>30 to 55 g, rising with the chosen depth</td></tr>
+<tr><th scope="row"><a href="db:switch/corsair-mgx-hyperdrive-core">Corsair MGX Hyperdrive Core</a></th><td>0.2 to 3.8 mm</td><td>4.0 mm</td><td>27 to 40 g</td></tr>
+<tr><th scope="row"><a href="db:switch/gateron-ks-20-magnetic-orange">Gateron KS-20 Magnetic Orange</a></th><td>0.4 to 3.6 mm</td><td>4.1 mm</td><td>38 gf initial and actuation</td></tr>
+</tbody>
+</table>
+<p>Corsair states that the force changes with the actuation depth you set, so a force figure and a range go together. Wooting lists the press force at the start and end of the stroke because the spring force rises through it, and its switch pages say the actuation point is set in software on Hall effect boards only. For how makers measure and quote force, see the guide to <a href="guide:switch-specs">switch specs</a>.</p>
+<p>A shallow setting fires on a lighter touch, so a key set at 0.5 mm reacts to a resting finger sooner than one set at 2 mm. The trainer's <a href="guide:typing-accuracy">guide to typing accuracy</a> covers the habits that keep stray presses down.</p>
+
+<h2>What is rapid trigger?</h2>
+<p>Rapid trigger makes a key follow the direction of movement. As soon as the key moves up by a small distance, it releases; as soon as it moves down again, it presses, wherever it is in the stroke. A normal switch has to rise past its fixed reset point before it can fire again.</p>
+<p>Wooting says its Rapid Trigger resets and activates keys the instant you move, lets press and release sensitivity be tuned separately, and includes a Continuous Rapid Trigger mode, without giving distance figures. Razer's page for its analog optical switch describes the same behaviour: keys reset at the slightest lift of a finger, which Razer presents as useful in shooters and rhythm games.</p>
+<p>In the <a href="db:keyboards">petitdoigt keyboard database</a>, 185 boards list rapid trigger, and 206 of 989 records have adjustable actuation. The feature belongs to the firmware and the sensor together, and it appears on optical analog boards too, such as the <a href="db:keyboard/razer-huntsman-v3-pro">Razer Huntsman V3 Pro</a> (see <a href="guide:optical-switches">optical switches</a>). To list the boards with both, describe one to the <a href="db:finder">keyboard finder</a>, for example "hall effect 65% keyboard with rapid trigger", and it filters the database.</p>
+
+<h2>What is analog input?</h2>
+<p>Analog input means the keyboard reports how far a key is pressed, not only whether it is down. Wooting says its boards track the whole movement of each keypress. Games that read this value can map the press depth to speed or steering, so a half press moves a character or a car partway.</p>
+<p>Only games and software written for it use the value. Tom's Hardware's review of the Wooting Two HE made that point directly: highly configurable and fun to tinker with, but analog input needs supported games. For ordinary typing the extra data goes unused, and the key behaves like any other once its actuation point is set.</p>
+
+<h2>What is the difference between Hall effect and TMR switches?</h2>
+<p>TMR switches use the same magnet-in-the-stem design and read it with a different sensor. Tunnel magnetoresistance is an effect in a magnetic tunnel junction, two ferromagnets separated by a thin insulator, whose electrical resistance depends on the alignment of the magnetic layers. An outside magnetic field changes that alignment, so the resistance tells the sensor about the field. According to Wikipedia, these junctions are replacing Hall sensors in many position-sensing uses.</p>
+<p>Keyboards sold as TMR offer the same feature set. The Logitech G512 X has sockets that take its linear TMR analog switches or ordinary 3-pin and 5-pin mechanical switches. Akko, Epomaker, Cherry Xtrfy and Monsgeek also sell TMR boards. Cherry Xtrfy's K5 Pro TMR Compact earned 76/100 from PC Gamer as a comfortable 65% board with rich competitive features.</p>
+<p>A third method, inductive sensing, appears on the Ducky One X. RTINGS wrote that its inductive switches set actuation as precisely as the best Hall effect boards, though they sit loosely in the PCB.</p>
+
+<h2>Which keyboards and switches use Hall effect sensing?</h2>
+<p>Every large gaming brand sells at least one.</p>
+<ul>
+<li><strong>Wooting</strong> makes the Lekker switch, and the <a href="https://wooting.io/wooting-60he-v2">60HE v2</a> carries the <a href="db:switch/wooting-lekker-tikken-medium">Lekker Tikken Medium</a>. The Tikken Medium is listed at 42 gf start and 54 gf end with 4.0 mm travel.</li>
+<li><strong>SteelSeries</strong> launched OmniPoint with the original Apex Pro in 2019. The <a href="https://steelseries.com/gaming-keyboards/apex-pro-gen-3">Apex Pro Gen 3</a> uses OmniPoint 3.0, with Rapid Trigger, Rapid Tap and Protection Mode.</li>
+<li><strong>Corsair</strong> introduced MGX Hyperdrive with the K70 MAX. The <a href="db:keyboard/corsair-k70-pro-tkl">K70 Pro TKL</a>, <a href="db:keyboard/corsair-makr-pro-75">MAKR PRO 75</a> and <a href="db:keyboard/corsair-vanguard-pro-96">Vanguard PRO 96</a> use MGX switches.</li>
+<li><strong>Razer</strong> has a Hall effect line: the Huntsman V3 HE Magnetic and the hot-swappable <a href="db:keyboard/razer-reclusa-mini-65">Reclusa Mini 65</a>.</li>
+<li><strong>Gateron</strong> sells magnetic switches that other brands put in their boards: the KS-20 line, <a href="db:switch/gateron-magnetic-jade-pro">Magnetic Jade Pro</a>, which lists a 36 gf initial force, and dozens more variants in the petitdoigt switch database.</li>
+<li><strong>Keychron and Lemokey</strong> have dozens of "HE" boards, from the <a href="db:keyboard/keychron-q1-he">Q1 HE</a> to the <a href="db:keyboard/keychron-k2-he">K2 HE</a>.</li>
+<li><strong>Logitech G</strong> uses magnetic analog switches in the PRO X TKL Rapid and G515 Rapid TKL, and TMR in the G512 X.</li>
+</ul>
+<p>Hot-swap sockets for magnets exist, and 113 boards in the petitdoigt keyboard database list them. They only take magnetic switches built for that board. Wooting says the 60HE v2 does not detect switches without the magnet. A stock <a href="guide:hot-swappable-keyboard">hot-swappable keyboard</a> with contact sockets cannot read a magnet at all, so the two switch families are not interchangeable.</p>
+
+<h2>What did reviewers find?</h2>
+<p>Reviewers praise latency and tuning, and some criticise feel.</p>
+<table>
+<caption>Selected reviews of Hall effect, TMR and analog keyboards</caption>
+<thead><tr><th scope="col">Keyboard</th><th scope="col">Outlet and score</th><th scope="col">What it said</th></tr></thead>
+<tbody>
+<tr><th scope="row">Wooting 60HE v2</th><td>PC Gamer, 93/100</td><td>Wooting's best board so far, good for gaming and typing; costs more than the 60HE and some keys ping slightly</td></tr>
+<tr><th scope="row">Wooting 60HE v2</th><td>RTINGS</td><td>Outstanding gaming keyboard with extremely low, consistent latency, Rapid Trigger and SOCD options</td></tr>
+<tr><th scope="row"><a href="db:keyboard/wooting-80he">Wooting 80HE</a></th><td>PC Gamer, 78/100</td><td>Powerful Hall-effect switches and light web software, but the chassis flexes</td></tr>
+<tr><th scope="row">Logitech PRO X TKL Rapid</th><td>TechRadar, 3.5/5</td><td>Superbly built with analog features, but the analog switches lack tactility</td></tr>
+<tr><th scope="row">Logitech G515 Rapid TKL</th><td>PC Gamer, 72/100</td><td>Good software and rapid trigger, but wired only, and the switches feel hollow for long typing</td></tr>
+<tr><th scope="row">Corsair K70 Pro TKL</th><td>TechRadar, 4/5</td><td>Strong stock performance from the Hall-effect switches, with one loud drawback</td></tr>
+<tr><th scope="row"><a href="db:keyboard/razer-huntsman-v3-tenkeyless-8khz">Razer Huntsman V3 TKL 8KHz</a></th><td>TechRadar, 3.5/5</td><td>Very tweakable analog board whose switches give little feedback</td></tr>
+</tbody>
+</table>
+<p>Latency and configuration get high marks, and the complaints concern feedback, bottom-out sound, price and software. People who type for hours should read a review of the exact keyboard and, where possible, try the switch, since a magnetic linear switch has no bump. Our guide to <a href="guide:linear-vs-tactile-vs-clicky">linear, tactile and clicky switches</a> explains what that means in practice, and the <a href="guide:keyboard-sizes">keyboard sizes</a> guide helps with the layout question, since many Hall boards come as 60%, 65%, 75% or TKL.</p>
+
+<h2>Do Hall effect switches make typing faster?</h2>
+<p>No source measures typing speed on Hall effect boards. The published benefits concern response time, adjustable actuation and games that read analog input. The trainer offers finger-coded drills in the browser, with key sounds recorded from 13 real switches that you choose from a dropdown in its settings, and makes no claim about speed gains. Start with the <a href="guide:touch-typing">touch typing guide</a> and pick whichever switch lets you press keys without pressing extras. For a quieter feel, the <a href="guide:quiet-switches">quiet switches</a> guide covers silent variants; Gateron sells silent magnetic switches such as the Magnetic Jade Silent.</p>

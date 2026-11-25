@@ -1,8 +1,9 @@
 // Checks guide files: node scripts/guides/check.mjs [file ...]
 // With no file, checks every guide under content/guides. Exit code 1 when any file has a problem.
 
-import { readdirSync, existsSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { dbPath } from '../data-pages/db.mjs';
 import { checkGuide } from './content.mjs';
 import { GUIDE_LANGS } from './pages.mjs';
 
@@ -18,6 +19,14 @@ if (files.length === 0) {
 let bad = 0;
 for (const file of files) {
   const problems = checkGuide(file);
+  // db: links must name a record that has a page (the guide checker sees only their shape).
+  for (const m of readFileSync(file, 'utf8').matchAll(/href="db:([^"]+)"/g)) {
+    try {
+      dbPath(m[1]);
+    } catch (e) {
+      problems.push(e.message);
+    }
+  }
   if (problems.length) {
     bad++;
     console.log(`FAIL ${file}`);

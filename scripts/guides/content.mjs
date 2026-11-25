@@ -17,6 +17,7 @@ const ALLOWED_TAGS = new Set([
   'strong', 'em', 'a', 'kbd', 'code', 'figure', 'figcaption', 'blockquote', 'br',
 ]);
 const ALLOWED_ATTRS = { a: ['href'], figure: ['data-figure', 'data-layout'], th: ['scope'], td: [], table: [] };
+export const DB_LINK = /^db:(?:keyboards|switches|finder|(?:keyboard|switch|brand|maker|list)\/[a-z0-9]+(?:-[a-z0-9]+)*)$/;
 
 /** Characters for CJK languages, words for the others. */
 export function measure(text, cjk) {
@@ -126,8 +127,12 @@ export function checkGuide(file, { requireCounterparts = false } = {}) {
         const layout = new URLSearchParams(query).get('layout');
         if (!layout || !APP_LAYOUTS.includes(layout) || [...new URLSearchParams(query).keys()].some((k) => k !== 'layout')) problems.push(`link ${href}: the only query is layout=<${APP_LAYOUTS.join('|')}>`);
       }
+    } else if (href.startsWith('db:')) {
+      // The keyboard and switch database pages: db:keyboards, db:switches, db:finder, db:keyboard/<id>,
+      // db:switch/<id>, db:brand/<id>, db:maker/<id>, db:list/<id>. The builder checks that the record exists.
+      if (!DB_LINK.test(href)) problems.push(`link ${href}: use db:keyboards, db:switches, db:finder or db:<keyboard|switch|brand|maker|list>/<id>`);
     } else if (!/^https:\/\//.test(href)) {
-      problems.push(`link ${href}: use guide:<id>, app:<drill>[?layout=<id>] or a full https URL`);
+      problems.push(`link ${href}: use guide:<id>, app:<drill>[?layout=<id>], db:<page> or a full https URL`);
     }
   }
   if (guideLinks.size < 3) problems.push(`the body links to ${guideLinks.size} other guides with guide:<id>; link at least 3`);

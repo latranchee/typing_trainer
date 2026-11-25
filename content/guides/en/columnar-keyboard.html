@@ -1,0 +1,95 @@
+<!--meta
+{
+  "id": "columnar-keyboard",
+  "lang": "en",
+  "slug": "columnar-keyboard",
+  "title": "Columnar Keyboards: Corne, Moonlander, Glove80, Voyager",
+  "description": "What a columnar (column staggered) keyboard is, how thumb clusters change finger work, and how Corne, Sofle, Moonlander, Voyager and Glove80 compare.",
+  "h1": "Columnar keyboards: how column stagger works and which boards use it",
+  "keyword": "columnar keyboard",
+  "keywords_secondary": ["column staggered keyboard", "moonlander keyboard", "corne keyboard", "glove80", "voyager keyboard"],
+  "summary": "A columnar keyboard, also called column staggered, arranges keys in straight vertical columns and shifts each column up or down to suit the length of its finger. Most also add thumb clusters, groups of keys under the thumbs. Open designs include the Corne, Sofle, Lily58, Ferris Sweep and Kyria; commercial ones include ZSA's Moonlander and Voyager, the MoErgo Glove80, Kinesis, Dygma and X-Bows. Retraining takes days to weeks, per reviewers.",
+  "faq": [
+    {"q": "What is a columnar keyboard?", "a": "It is a keyboard with its keys in straight vertical columns rather than diagonal rows. ZSA says that a finger on a columnar board extends above and below the home row without going sideways. Column staggered boards also offset each column vertically, so the layout fits the different lengths of the fingers."},
+    {"q": "What is the difference between ortholinear and columnar?", "a": "An ortholinear board puts keys on a flat grid with every column at the same height. A columnar board keeps straight columns but moves each one up or down to suit its finger. Sources use the terms loosely: Switch and Click calls the Moonlander a split ortholinear board, while ZSA calls it columnar."},
+    {"q": "How many keys does a Corne have?", "a": "The Corne has 3x6 column-staggered keys and three thumb keys on each half, 42 keys in total by the petitdoigt keyboard database. Fewer keys than a standard board means numbers, symbols and navigation sit on layers that you reach with a held key."},
+    {"q": "Is the ZSA Moonlander or the Voyager better?", "a": "They differ in size and build. Per ZSA, the Moonlander has an articulating thumb cluster and open-source QMK firmware; the Voyager is a 52-key, low-profile board with Kailh Choc switches and four magnetic tenting legs in the box. Both list $365 on ZSA's store, per the petitdoigt keyboard database. Pick by key count and profile."},
+    {"q": "How long does it take to adapt to a columnar keyboard?", "a": "Wikipedia says a keyboard with vertical columns can need an adjustment period while the user retrains finger movements, and no source reviewed gives a typical length. One Planck EZ reviewer expected the Moonlander's transition to be shorter than the Planck's. Switch and Click warns of weeks or months for ortholinear boards."}
+  ],
+  "sources": [
+    {"title": "Deskthority wiki: Ortholinear", "url": "https://deskthority.net/wiki/Ortholinear"},
+    {"title": "Deskthority wiki: Staggering", "url": "https://deskthority.net/wiki/Staggering"},
+    {"title": "Wikipedia: Ergonomic keyboard", "url": "https://en.wikipedia.org/wiki/Ergonomic_keyboard"},
+    {"title": "xcmkb docs: Why columnar staggered?", "url": "https://xcmkb-docs.gitbook.io/doc/why-columnar-staggered"},
+    {"title": "ZSA: Moonlander", "url": "https://www.zsa.io/moonlander"},
+    {"title": "ZSA: Voyager", "url": "https://www.zsa.io/voyager"},
+    {"title": "MoErgo: Glove80", "url": "https://www.moergo.com/pages/glove80"},
+    {"title": "Kinesis: Advantage2", "url": "https://kinesis-ergo.com/shop/advantage2/"},
+    {"title": "Dygma: Defy", "url": "https://dygma.com/pages/defy"},
+    {"title": "GitHub: foostan/crkbd (Corne)", "url": "https://github.com/foostan/crkbd"},
+    {"title": "GitHub: josefadamcik/SofleKeyboard", "url": "https://github.com/josefadamcik/SofleKeyboard"},
+    {"title": "GitHub: kata0510/Lily58", "url": "https://github.com/kata0510/Lily58"},
+    {"title": "GitHub: davidphilipbarr/Sweep (Ferris Sweep)", "url": "https://github.com/davidphilipbarr/Sweep"},
+    {"title": "GitHub: splitkb/kyria", "url": "https://github.com/splitkb/kyria"},
+    {"title": "The Sweet Setup: A first impressions review of the Planck EZ 40 keyboard", "url": "https://thesweetsetup.com/a-first-impressions-review-of-the-planck-ez-40-keyboard/"},
+    {"title": "Switch and Click: Best ortholinear keyboards", "url": "https://switchandclick.com/best-ortholinear-keyboards/"},
+    {"title": "Colemak Mod-DH", "url": "https://colemakmods.github.io/mod-dh/"},
+    {"title": "Boardsource", "url": "https://boardsource.xyz/"},
+    {"title": "beekeeb shop (product data)", "url": "https://shop.beekeeb.com/products.json?limit=250"}
+  ],
+  "updated": "2026-11-25",
+  "try": {"label": "Drill each finger from its home key", "drill": "anchors"}
+}
+-->
+<p>A columnar keyboard, also sold as a column staggered keyboard, arranges its keys in straight vertical columns and moves each column up or down so that it matches the finger above it. Most columnar boards are split, small, and built around thumb clusters: groups of keys pressed with the thumbs. The best-known names are ZSA's <a href="db:keyboard/zsa-moonlander">Moonlander</a> and <a href="db:keyboard/zsa-voyager">Voyager</a>, the open-source <a href="db:keyboard/open-source-corne">Corne</a> and <a href="db:keyboard/open-source-sofle">Sofle</a>, and the MoErgo <a href="db:keyboard/moergo-glove80">Glove80</a>. The wider comparison with row-staggered and ortholinear boards is in <a href="guide:staggered-vs-ortholinear-vs-columnar">staggered vs ortholinear vs columnar keyboards</a>.</p>
+
+<h2>What is a column staggered keyboard?</h2>
+<p>A column staggered keyboard has straight columns of keys, each shifted vertically to fit its finger, where a classic keyboard offsets its rows sideways. The xcmkb documentation puts it this way: keys align vertically within each column "but with a stagger to match the natural lengths of your fingers." Deskthority describes columns shifted at different offsets to better suit the different fingers, and gives no values.</p>
+<p>Makers argue from finger motion. ZSA writes that a finger extended on a columnar board does not go sideways, so reaching above and below the home row is easier. Kinesis says straight columns match natural finger motion better than staggered rows. Wikipedia names a cost: removing the row stagger increases the distance from the index finger's neutral position to some of its secondary keys.</p>
+<p>The row stagger that columns replace is a typewriter inheritance, covered in the comparison guide. Ortholinear boards drop it too but keep every column at the same height, which makes a Planck ortholinear and a Corne columnar. Sources blur the line: Switch and Click calls the Moonlander and the <a href="db:keyboard/zsa-ergodox-ez">ErgoDox EZ</a> split ortholinear boards, and Dygma calls the <a href="db:keyboard/dygma-defy">Defy</a> a split columnar design "similar to ortholinear keyboards".</p>
+
+<h2>What do column stagger and thumb clusters change for your fingers?</h2>
+<p>Most letters stay with the finger that already presses them. The index finger keeps two columns, and the pinky keeps the outer ones. The changes sit where the staggered board was ambiguous or overloaded.</p>
+<p>The bottom row changes first. On a staggered board it sits half a key right of the home row; on a column board <kbd>B</kbd> sits below <kbd>G</kbd> and <kbd>N</kbd> below <kbd>H</kbd>, so each stays with its index finger. Next is the number row: boards with three letter rows, such as the Corne with its 3x6 grid, have none, and numbers go on a layer. Last are <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Backspace</kbd> and the modifiers. Kinesis puts <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Backspace</kbd> and <kbd>Delete</kbd> in the thumb clusters of the <a href="db:keyboard/kinesis-advantage2">Advantage2</a> and says this shifts work from the little fingers to the thumbs.</p>
+<p>The finger chart in the <a href="guide:finger-placement">finger placement guide</a> gives the thumbs only the space bar, so thumb clusters add a new finger job to learn. Boards differ widely: MoErgo says all six thumb keys of the Glove80 are reachable without moving the palm, ZSA gives the Moonlander an articulating thumb cluster whose module tilts up and down, and Dygma lists a 16-key thumb cluster on the Defy. In the <a href="db:keyboards">petitdoigt keyboard database</a>, 72 of the 73 columnar boards have a thumb cluster.</p>
+<p>Colemak-DH has an angle mod that adds symmetry on a standard staggered board. The Mod-DH page recommends the original mapping for all other keyboard types, ergonomic and ortholinear boards included. The <a href="guide:colemak">Colemak guide</a> has the layout.</p>
+
+<h2>How many columnar keyboards are there, and what kinds?</h2>
+<p>The petitdoigt keyboard database lists 73 column staggered boards out of 989. Of those 73, 65 are split into two halves, 7 are angled one-piece boards (<a href="db:keyboard/keyboardio-atreus">Keyboardio Atreus</a> and the <a href="db:brand/x-bows">X-Bows</a> line, <a href="db:keyboard/dygma-sonsei">Dygma Sonsei</a>), and 1, the Kinesis Advantage2, is one piece. By kind, 31 are prebuilt, 33 are kits and 9 are open designs sold as PCBs. Twenty-three are low-profile builds, and 12 have curved key wells, such as the Kinesis Advantage family, Glove80 and <a href="db:brand/bastard-keyboards">Bastard Keyboards</a>' Charybdis.</p>
+<p>Firmware counts, with some boards listing two: QMK on 42, ZMK on 33, Vial on 14 and VIA on 12. Tenting is built in on 9 boards and an accessory on 48. The <a href="guide:split-keyboard">split keyboard guide</a> covers what splitting and tenting change. The <a href="db:finder">keyboard finder</a> picks the matching boards out of the database from a description such as "column staggered wireless keyboard with tenting".</p>
+
+<h2>Which open-source columnar keyboards exist?</h2>
+<p>The open designs are the Corne, Sofle, <a href="db:keyboard/open-source-lily58">Lily58</a>, <a href="db:keyboard/open-source-ferris">Ferris</a> and <a href="db:keyboard/open-source-sweep">Ferris Sweep</a>, and the <a href="db:keyboard/splitkb-halcyon-kyria">Kyria</a>. All are split with thumb keys, and builders can buy a PCB, a kit or a pre-soldered set from vendors.</p>
+<table>
+<caption>Open-source columnar boards, from their own repositories and the petitdoigt keyboard database</caption>
+<thead><tr><th scope="col">Board</th><th scope="col">Layout</th><th scope="col">Keys</th><th scope="col">Switch type</th><th scope="col">Notes</th></tr></thead>
+<tbody>
+<tr><th scope="row">Corne (crkbd)</th><td>3x6 column-staggered keys plus 3 thumb keys</td><td>42</td><td>MX or Choc</td><td>Based on Helix; v4 comes as corne-cherry (MX) and corne-chocolate (Choc)</td></tr>
+<tr><th scope="row">Sofle</th><td>6x4+5 per the repository</td><td>58</td><td>MX</td><td>Column-staggered; QMK; encoder support</td></tr>
+<tr><th scope="row">Lily58</th><td>6x4+4 keys per the repository</td><td>58</td><td>MX</td><td>Column-staggered; variants Pro and Lite</td></tr>
+<tr><th scope="row">Ferris Sweep</th><td>Compact split</td><td>34</td><td>Choc v1</td><td>A version of Pierre Chevalier's Ferris with a daughter board controller</td></tr>
+<tr><th scope="row">Kyria</th><td>Split kit by splitkb.com</td><td>50</td><td>MX</td><td>Revisions 4.0 and up live in the Halcyon repository</td></tr>
+</tbody>
+</table>
+<p>The Corne has the most products in the petitdoigt keyboard database. Boardsource sells a solderable <a href="db:keyboard/boardsource-corne-diy-kit">Corne v3.6 DIY kit</a> with a minimal case at $36 (sold out when checked), and <a href="db:brand/beekeeb">beekeeb</a> sells a pre-soldered wired Corne v4 for $188 and wireless Corne builds for $232 (data checked 2026-11-23). <a href="db:brand/typeractive">Typeractive</a> and splitkb sell other builds, and the database lists 14 Corne-family products from five sources. The Corne repository warns that some v4 units may stop working because of electromagnetic interference, often from mobile phones, and suggests moving the phone more than 30 cm away.</p>
+
+<h2>Which commercial columnar keyboards are there?</h2>
+<p>ZSA, MoErgo, Kinesis, Dygma, Keyboardio and X-Bows sell the main prebuilt columnar boards. Prices below are the ones the petitdoigt keyboard database records from each maker's store on 2026-11-23.</p>
+<table>
+<caption>Commercial columnar boards from the petitdoigt keyboard database</caption>
+<thead><tr><th scope="col">Board</th><th scope="col">Keys</th><th scope="col">Switches</th><th scope="col">Firmware</th><th scope="col">Price</th><th scope="col">Notes</th></tr></thead>
+<tbody>
+<tr><th scope="row">ZSA Moonlander</th><td>72</td><td>MX-style, 5-pin hot-swap</td><td>QMK, Oryx editor</td><td>$365</td><td>Articulating thumb cluster; optional Platform for tenting</td></tr>
+<tr><th scope="row">ZSA Voyager</th><td>52</td><td>Kailh Choc, hot-swap</td><td>QMK, Oryx editor</td><td>$365</td><td>Four magnetic tenting legs in the box; wired</td></tr>
+<tr><th scope="row">MoErgo Glove80</th><td>80</td><td>Choc v1, soldered</td><td>ZMK</td><td>$369</td><td>Concave key wells; Bluetooth to four hosts and USB</td></tr>
+<tr><th scope="row">Kinesis Advantage2</th><td>Not stated</td><td>MX-style</td><td>Proprietary</td><td>$399</td><td>One piece, two concave wells, about 20 degrees of tenting</td></tr>
+<tr><th scope="row"><a href="db:keyboard/kinesis-advantage360-professional">Kinesis Advantage360 Professional</a></th><td>Not stated</td><td>MX-style</td><td>ZMK</td><td>$499</td><td>Split, built-in tenting, wireless</td></tr>
+<tr><th scope="row">Dygma Defy</th><td>70</td><td>MX-style</td><td>Proprietary configurator</td><td>$369</td><td>16-key thumb cluster; Bluetooth and RF; tenting up to 60 degrees</td></tr>
+<tr><th scope="row">Keyboardio Atreus</th><td>44</td><td>MX-style</td><td>QMK</td><td>$149</td><td>Angled one piece</td></tr>
+</tbody>
+</table>
+<p>ZSA's page describes the Moonlander with a columnar layout, up to 32 layers, QMK firmware configured in Oryx with no drivers needed, and a thumb module to tilt to hand size; the petitdoigt keyboard database records its 72 keys. The Voyager is a 52-key low-profile board with Kailh Choc switches. ZSA writes that a 52-key layout minimizes reach and that its four tenting legs snap on magnetically. The Glove80 has the most keys in this table, with RGB on all 80. MoErgo's page quotes RTINGS calling it the best ergonomic keyboard the site has tested as of 30 September 2026. Kinesis and the other makers here state ergonomic benefits on their own pages without citing a study.</p>
+<p>The Sweet Setup reviewer of the Planck EZ guessed the Moonlander would have a shorter transition time than the Planck, which he found demanding. That is one person's expectation. The <a href="guide:ergonomic-keyboard">ergonomic keyboard guide</a> covers what is known about comfort claims; Wikipedia quotes Cornell's guide saying there is not much evidence that ergonomic keyboards can prevent injuries.</p>
+
+<h2>How do you practice on a columnar keyboard?</h2>
+<p>Write the finger assignments down and start slowly. Each letter keeps its finger, the thumbs may take keys the pinkies used to press, and layers add key combinations with no counterpart on a staggered board. petitdoigt shows a finger-coded keyboard on screen and has drills for single fingers, including <a href="app:anchors">the anchors drill</a> for returns to the home row. It records which keys you press and cannot see your thumbs, so it does not cover a thumb cluster's layout. The <a href="guide:touch-typing">touch typing guide</a> lays out a practice plan, and the <a href="guide:keyboard-sizes">keyboard sizes guide</a> places small boards among the other sizes.</p>
