@@ -926,7 +926,7 @@ for (const lang of DB_LANGS) {
       write(swPath(s, lang), p.html, { lastmod: checkedOf(s), image: p.image });
     }
   }
-  if (lang !== 'en') missing[lang] = L.rec.missing();
+  if (lang !== 'en') missing[lang] = `${L.rec.missing()} missing, ${L.rec.stale()} outdated`;
 }
 
 // Sitemap: append these pages to the one the guides build wrote, with their photo (image sitemap).

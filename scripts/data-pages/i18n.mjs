@@ -55,20 +55,39 @@ export function formats(lang) {
 
 const repo = join(import.meta.dirname, '..', '..');
 const overlays = {};
-/** The translation of a record's prose, falling back to the English when a string is missing (counted). */
+/** A short fingerprint of an English string (FNV-1a, base 36): tells a translation made from older English. */
+export function srcHash(text) {
+  let h = 0x811c9dc5;
+  for (const ch of text) {
+    h ^= ch.codePointAt(0);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h.toString(36);
+}
+/** The translation of a record's prose, falling back to the English when a string is missing or was translated
+ * from English that has changed since (both counted). */
 export function recordText(lang) {
   if (!overlays[lang]) {
     const file = join(repo, 'content', 'data', 'i18n', `${lang}.json`);
     overlays[lang] = lang !== 'en' && existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : { notes: {}, reviews: {}, about: {}, values: {} };
     overlays[lang].missing = 0;
+    overlays[lang].stale = 0;
   }
   const o = overlays[lang];
   const pick = (table, key, en) => {
     if (en == null || en === '') return en;
     if (lang === 'en') return en;
     const t = o[table][key];
-    if (t == null) o.missing++;
-    return t ?? en;
+    if (t == null) {
+      o.missing++;
+      return en;
+    }
+    const from = o.from?.[table]?.[key];
+    if (from && from !== srcHash(en)) {
+      o.stale++;
+      return en;
+    }
+    return t;
   };
   return {
     note: (r) => pick('notes', r.id, r.notes),
@@ -76,6 +95,7 @@ export function recordText(lang) {
     about: (kind, x) => pick('about', `${kind}:${x.id}`, x.about),
     value: (field, v) => (typeof v === 'string' && /[a-z]{3}/i.test(v) ? pick('values', `${field}:${v}`, v) : v),
     missing: () => o.missing,
+    stale: () => o.stale,
   };
 }
 

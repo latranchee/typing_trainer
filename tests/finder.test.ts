@@ -5,6 +5,8 @@ import { evaluate, parse } from '../scripts/data-pages/finder.js';
 import { dbPath, finderDb, keyboards, LISTS, listText } from '../scripts/data-pages/db.mjs';
 // @ts-expect-error plain ES module without types
 import { strings } from '../scripts/data-pages/strings.mjs';
+// @ts-expect-error plain ES module without types
+import { recordText } from '../scripts/data-pages/i18n.mjs';
 
 type Filter = { key: string; value: unknown; label: string };
 type Board = { id: string; price: number | null; stagger: string; split: string; conn: string[]; swm: string[]; std: string[] };
@@ -95,6 +97,15 @@ describe('database links', () => {
     expect(dbPath('list/split-keyboards', 'es')).toBe('es/teclados/teclados-split/');
     expect(dbPath(`keyboard/${keyboards[0].id}`, 'fr')).toMatch(/^fr\/claviers\/[a-z0-9-]+\/[a-z0-9-]+\/$/);
     expect(dbPath('finder', 'ja')).toBe('en/keyboards/finder/');
+  });
+
+  it('shows the English when a translation was made from older English', () => {
+    const fr = recordText('fr');
+    const k = keyboards.find((x: { id: string }) => x.id === 'keychron-dayz-special-edition');
+    expect(fr.note(k)).not.toBe(k.notes);
+    const before = fr.stale();
+    expect(fr.note({ ...k, notes: `${k.notes} Back in stock.` })).toBe(`${k.notes} Back in stock.`);
+    expect(fr.stale()).toBe(before + 1);
   });
 
   it('keeps every preset list non-empty', () => {

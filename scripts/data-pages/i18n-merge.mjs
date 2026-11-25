@@ -5,6 +5,7 @@
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { basename, join, resolve } from 'node:path';
+import { srcHash } from './i18n.mjs';
 
 const [srcArg, outArg, lang, ...rest] = process.argv.slice(2);
 if (!srcArg || !outArg || !lang) throw new Error('usage: i18n-merge.mjs <src dir> <out dir> <lang> [--check] [chunk files...]');
@@ -25,6 +26,7 @@ const ENGLISH = /\b(the|and|with|which|its|does|not|from|this|that|are|has)\b/gi
 let errors = 0;
 let warnings = 0;
 const merged = {};
+const english = {};
 const files = readdirSync(SRC).filter((f) => f.endsWith('.json') && (!only.length || only.includes(f))).sort();
 for (const f of files) {
   const src = JSON.parse(readFileSync(join(SRC, f), 'utf8'));
@@ -64,6 +66,7 @@ for (const f of files) {
   console.log(`${problems.length ? 'FAIL' : 'ok  '} ${f}: ${Object.keys(src).length} strings${problems.length ? `, ${problems.length} problems` : ''}${warns.length ? `, ${warns.length} warnings` : ''}`);
   for (const p of [...problems, ...warns]) console.log(`  - ${p}`);
   Object.assign(merged, out);
+  Object.assign(english, src);
 }
 
 if (check) {
@@ -75,13 +78,17 @@ if (errors) {
   process.exit(1);
 }
 // Fold the flat keys into the shape build.mjs reads.
-const data = { notes: {}, reviews: {}, about: {}, values: {} };
+// `from` holds a hash of the English each translation was made from: the build ignores a translation whose English
+// has changed since (values need none: the English value is the key).
+const data = { notes: {}, reviews: {}, about: {}, values: {}, from: { notes: {}, reviews: {}, about: {} } };
 for (const [k, v] of Object.entries(merged)) {
   const [kind, ...restKey] = k.split(':');
   const id = restKey.join(':');
-  if (kind === 'kbn' || kind === 'swn') data.notes[id] = v;
-  else if (kind === 'rv') data.reviews[id] = v;
-  else if (kind === 'ab') data.about[id] = v;
+  const table = kind === 'kbn' || kind === 'swn' ? 'notes' : kind === 'rv' ? 'reviews' : kind === 'ab' ? 'about' : null;
+  if (table) {
+    data[table][id] = v;
+    data.from[table][id] = srcHash(english[k]);
+  }
   else if (kind === 'val') data.values[id] = v;
 }
 const target = join(repo, 'content', 'data', 'i18n', `${lang}.json`);
